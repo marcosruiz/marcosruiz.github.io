@@ -135,27 +135,6 @@ main() {
 while (($#)); do
   opt="$1"
   case $opt in
-<<<<<<< HEAD
-    -c | --config)
-      _config="$2"
-      shift
-      shift
-      ;;
-    --dry-run)
-      # build & test, but not deploy
-      _opt_dry_run=true
-      shift
-      ;;
-    -h | --help)
-      help
-      exit 0
-      ;;
-    *)
-      # unknown option
-      help
-      exit 1
-      ;;
-=======
   -c | --config)
     _config="$2"
     shift
@@ -175,7 +154,6 @@ while (($#)); do
     help
     exit 1
     ;;
->>>>>>> template/main
   esac
 done
 
