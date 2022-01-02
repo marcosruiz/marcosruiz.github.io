@@ -6,10 +6,10 @@ tags: [prueba]     # TAG names should always be lowercase
 mermaid: true
 ---
 
-## Hola mundo!
+# Hola mundo!
 Hola mundo!
 
-### Subtítulo
+## Subtítulo
 
 ```bash
 sudo apt install neofetch
@@ -17,7 +17,7 @@ sudo apt install neofetch
 
 Podemos tener código inline `sudo apt install neofetch`.
 
-
+### Subsubtitulo
 
 A continuación se muestra un ejemplo de fichero:
 
@@ -26,9 +26,10 @@ mucho texto
 ```
 {: file="path/to/file" }
 
+### Subsubtitulo
+
 A continuación, muestro un ejemplo de diagrama de clases a partir de código mermaid:
 
-{{<diagram>}}
 ```mermaid
 classDiagram
 Class01 <|-- AveryLongClass : Cool
@@ -47,7 +48,11 @@ class Class10 {
   size()
 }
 ```
-{{</diagram>}}
+# Hola again
+
+Hola de nuevo viejo
+
+## Subtítulo
 
 A continuación se muestra una imagen con pie de foto.
 
