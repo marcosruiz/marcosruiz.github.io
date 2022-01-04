@@ -3,9 +3,9 @@
 # ----- Commons label -----
 
 layout:
-  post: Post
-  category: Category
-  tag: Tag
+  post: Artículo
+  category: Categoria
+  tag: Etiqueta
 
 # The tabs of sidebar
 tabs:
@@ -23,13 +23,13 @@ search:
   no_results: Oops! Resultado no encontrado.
 
 panel:
-  lastmod: Recent Update
+  lastmod: Recientemente actualizado
   trending_tags: Etiquetas populares
   toc: Índice
 
 #  The liquid date format › http://strftime.net/
 date_format:
-  tooltip: '%a, %b %e, %Y, %l:%M %p %z'
+  tooltip: '%a, %e %b, %Y, %l:%M %p %z'
   post:
     long: '%e %b, %Y'
     short: '%e %b'
@@ -37,24 +37,24 @@ date_format:
 
 copyright:
   # Shown at the bottom of the post
-  license:
-    template: This post is licensed under :LICENSE_NAME by the author.
+  license: 
+    template: Este artículo está licenciado bajo :LICENSE_NAME por el autor.
     name: CC BY 4.0
     link: https://creativecommons.org/licenses/by/4.0/
 
   # Displayed in the footer
-  brief: Some rights reserved.
+  brief: Algunos derechos reservados.
   verbose: >-
-    Except where otherwise noted, the blog posts on this site are licensed
-    under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.
+    Excepto donde si indique lo contrario, los articulos de este blog están licenciados
+    bajo Creative Commons Attribution 4.0 International (CC BY 4.0) License por el autor.
 
 meta: Powered by :PLATFORM with :THEME theme.
 
 not_found:
-  statment: Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.
+  statment: Lo sentimos pero esta URL apunta a algo que no existe.
   hint_template: :HEAD_BAK to try finding it again, or search for it on the :ARCHIVES_PAGE.
-  head_back: Head back Home
-  archives_page: Archives page
+  head_back: Head atrás Inicio
+  archives_page: Página de archivos
 
 # ----- Posts related labels -----
 
@@ -71,7 +71,7 @@ post:
   read_time:
     unit: minutos
     prompt: lectura
-  relate_posts: Otras lecturas
+  relate_posts: Otros artículos
   share: Compartir
   button:
     next: Más nuevo
@@ -82,9 +82,9 @@ post:
       title: Copiar link
       succeed: Link copiado satisfactoriamente!
   # pinned prompt of posts list on homepage
-  pin_prompt: Pinned
+  pin_prompt: Fijado
 
 # categories page
 categories:
   category_measure: categorias
-  post_measure: posts
+  post_measure: artículos
