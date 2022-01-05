@@ -14,21 +14,29 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 .post-content {
 	counter-reset: heading;
 }
-.post-content > h1:before {
+.post-content > h2:before {
 	content: counter(heading)". ";
 	counter-increment: heading;
 }
-.post-content > h1 {
+.post-content > h2 {
 	counter-reset: subheading;
 }
-.post-content > h2:before {
+.post-content > h3:before {
 	content: counter(heading)"." counter(subheading)". ";
 	counter-increment: subheading;
 }
-.post-content > h2 {
+.post-content > h3 {
 	counter-reset: subsubheading;
 }
-.post-content > h3:before {
+.post-content > h4:before {
 	content: counter(heading)"." counter(subheading)"." counter(subsubheading)". ";
 	counter-increment: subsubheading;
+}
+
+.giscus, .giscus-frame {
+	width: 100%;
+}
+  
+.giscus-frame {
+	border: none;
 }

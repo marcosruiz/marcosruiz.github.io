@@ -4,17 +4,17 @@
 
 layout:
   post: Artículo
-  category: Categoria
+  category: Categoría
   tag: Etiqueta
 
 # The tabs of sidebar
 tabs:
   # format: <filename_without_extension>: <value>
   home: Inicio
-  categories: Categorias
+  categories: Categorías
   tags: Etiquetas
   archives: Archivos
-  about: Sobre mi
+  about: Sobre mí
 
 # the text displayed in the search bar & search results
 search:
@@ -62,7 +62,7 @@ post:
   published: 'on'
   updated: Actualizado
   timeago:
-    day: dias atrás
+    day: días atrás
     hour: horas atrás
     minute: minutos atrás
     just_now: justo ahora
@@ -86,5 +86,5 @@ post:
 
 # categories page
 categories:
-  category_measure: categorias
+  category_measure: categorías
   post_measure: artículos

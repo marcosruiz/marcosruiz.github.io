@@ -1,17 +1,17 @@
 ---
 title: Permisos en GNU Linux
-date: 2021-12-31 13:20:00 +/-TTTT
+date: 2022-01-05 13:20:00 +/-TTTT
 categories: [gnu linux]
 tags: [gnu linux, comandos, terminal, bash, dam, smr, entornos de desarrollo, seguridad informática, servicios en red]     # TAG names should always be lowercase
 ---
 
-# Vídeo introductorio
+## Vídeo introductorio
 
 A modo de introducción a los permisos de GNU Linux se recomienda ver el siguiente vídeo:
 
-[![8.- Curso de introducción a GNU/Linux - Permisos a Archivos o Carpetas (YouTube)](/assets/img/2022-01-05-permisos-gnu-linux/video.png)](https://www.youtube.com/watch?v=cETtDZQWLYg)
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/cETtDZQWLYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Tipos de usuario
+## Tipos de usuario
 
 Debemos saber que existen distintos grupos de usuarios:
 
@@ -20,14 +20,14 @@ Debemos saber que existen distintos grupos de usuarios:
 - **Otros o Resto de usuarios** (o): se representa con la letra O, aquí se agrupan al resto de usuarios o grupos con el cual el propietario no tiene ningún vínculo, es decir el resto de usuarios del sistema.
 - **Todos** (a): Todos los tipos de usuario (dueño, grupo y otros).
 
-# Tipos de permisos
+## Tipos de permisos
 
 En cada uno de los niveles de permisos se pueden asignar los siguientes permisos:
 - **Lectura** (r): En ficheros Puede listar, copiar o visualizarlo. En Directorios pueden ver el contenido, se pueden listar a través del comando ls
 - **Escritura** (w): En ficheros significa que se puede modificar o borrar el contenido, incluso puede modificar los permisos. En Directorios significa que puede crear, eliminar ficheros y directorios dentro de ese directorio.
 - **Ejecución** (x): En ficheros significa que se puede ejecutar el contenido. En Directorios significa que podemos entrar en la carpeta (comando cd).
 
-# ¿Cómo ver los permisos de un fichero?
+## ¿Cómo ver los permisos de un fichero?
 
 Con el comando `ls -l` se lista el contenido de un directorio y el argumento -l hace que se muestren los permisos de cada uno de los ficheros o directorios. A continuación vemos un ejemplo:
 
@@ -62,7 +62,7 @@ El primer carácter es el tipo de fichero.
 
 Los siguientes nueves caracteres conforman el tipo de permiso que están atribuido, se representan en el siguiente orden lectura(r), escritura (w), ejecución(x). Cuando se encuentra el carácter – indica que no tiene el permiso correspondiente al lugar.
 
-# ¿Cómo se modifican los permisos?
+## ¿Cómo se modifican los permisos?
 
 Con el comando `chmod` podemos cambiar los permisos de un fichero o un directorio. La sintaxis de este comando es `chmod <modificadores> <permisos> <nombreDelFichero>`. Los modificadores más importantes son:
 
@@ -71,7 +71,7 @@ Con el comando `chmod` podemos cambiar los permisos de un fichero o un directori
 
 Este comando se puede utilizar de dos maneras en octal o en notación simbólica, la diferencia entre ambos radica en que la notación octal se debe especificar todos los permisos de los tres niveles mientras que en la simbólica se puede modificar solo los necesarios.
 
-## Modo octal
+### Modo octal
 
 Este método agrupa la combinación de bits apagados o encendidos (0 1) en cada uno de los grupos generando ocho posibles combinaciones por cada uno de ellos.
 Para obtener el permiso de un fichero o directorio se deben combinar los permisos de usuario, grupo y otros del cual se obtiene un número de tres cifras.
@@ -102,7 +102,7 @@ A continuación se muestran una seria de ejemplos:
 - `chmod 756 fichero.txt`: Propietario (u) tiene acceso total. Grupo (g) Permite lectura y ejecución. Otros(o) permite lectura y escritura.
 - `chmod 342 fichero.txt`: Propietario (u) permite escritura y ejecución. Grupo (g) Permite lectura. Otros(o) permite escritura.
 
-## Modo notación simbólica
+### Modo notación simbólica
 
 En este modo solo se especifica a quien se otorga el permiso, usuario(u), grupo(g), otros(o) o todos(a), el operador más (+) agregar, menos (-) quitar, igual (=) específica un modo y los permisos otorgados., en esta notación se utiliza la asignación a (todos) la cual asigna a todos los nivel el permiso.
 

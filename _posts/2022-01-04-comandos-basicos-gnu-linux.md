@@ -1,7 +1,7 @@
 ---
 title: Comandos básicos de GNU Linux
 date: 2022-01-04 16:30:00 +/-TTTT
-categories: [gnu linux, general]
+categories: [gnu linux]
 tags: [gnu linux, terminal, dam, smr, servicios en red, seguridad informática, entornos de desarrollo, redes locales]     # TAG names should always be lowercase
 ---
 
