@@ -2,14 +2,14 @@
 title: Comandos básicos de GNU Linux
 date: 2022-01-04 16:30:00 +/-TTTT
 categories: [gnu linux]
-tags: [gnu linux, terminal, dam, smr, servicios en red, seguridad informática, entornos de desarrollo, redes locales]     # TAG names should always be lowercase
+tags: [gnu linux, terminal, dam, smr, servicios en red, seguridad informática, entornos de desarrollo, redes locales]
 ---
 
-# Introducción
+## Introducción
 
-En este articulo se van a explicar una serie de comandos básicos de GNU Linux que se consideran imprescindibles a la hora de trabajar con el terminal.
+En este articulo se van a explicar una serie de comandos básicos de GNU Linux que se consideran imprescindibles a la hora de trabajar con el terminal o la consola de comandos.
 
-# Pompt
+## Pompt
 
 Cuando abrimos por primera vez la terminal de GNU Linux nos aparecerá algo parecido a esto:
 
@@ -26,7 +26,7 @@ A continuación explicaré que significa cada parte:
 - `$`: Un indicador para informar de que la línea de comandos está lista para aceptar nuevos comandos sin permisos de superusuario.
 - `#`: Un indicador para informar de que la línea de comandos está lista para aceptar nuevos comandos con permisos de superusuario.
 
-# Comandos
+## Comandos
 
 Los comandos en GNU Linux son case sensitive, es decir, se diferencia entre mayúsculas y minúsculas. TODOS los comandos se escriben en minúsculas. Para acceder a la documentación de un comando se puede ejecutar la instrucción `man <nombreDelComando>` o `<nombreDelComando> -h` o `<nombreDelComando> --help`. A continuación se muestran varios ejemplos de uso:
 
@@ -36,7 +36,7 @@ $ chmod -h
 $ chmod --help
 ```
 
-## pwd
+### pwd
 
 Pwd (Print Working Directory) es un comando que sirve para saber en qué directorio estás. Su sintaxis es la siguiente : `pwd`. A continuación, se muestra un ejemplo de uso:
 
@@ -45,12 +45,12 @@ $ pwd
 /home/smr/
 ```
 
-## ls
+### ls
 
 Ls (LiSt) es un comando que sirve para ver los directorios y archivos del directorio actual. Su sintaxis es la siguiente : `ls <directorioAListar>`. A continuación, se muestra un ejemplo de uso:
 
 Atributos opcionales:
-- `-l` muestra todos los detalles de los ficheros incluido los permisos.
+- **-l** muestra todos los detalles de los ficheros incluido los permisos.
 
 A continuación se muestran varios ejemplos:
 
@@ -73,11 +73,11 @@ drwxr-xr-x 2 smr smr 4096 dic 21 10:35 Templates
 drwxr-xr-x 2 smr smr 4096 sep 20 10:06 Vídeos
 ```
 
-## clear
+### clear
 
 Clear es un comando que sirve para dejar vacío el terminal actual. Su sintaxis es la siguiente : `clear`.
 
-## cd
+### cd
 
 Cd (Change Directory) es un comando que sirve para moverte por los directorios del sistema. Su sintaxis es la siguiente : `cd <directorioAMoverse>`.
 
@@ -98,7 +98,7 @@ $ cd ../patata/
 $ cd ~/patata/
 ```
 
-## mkdir
+### mkdir
 
 Mkdir (MaKe DIRectory) es un comando que sirve para crear un nuevo directorio. Su sintaxis es la siguiente : `mkdir <directorioACrear>`. A continuación, se muestra un ejemplo de uso:
 
@@ -106,7 +106,7 @@ Mkdir (MaKe DIRectory) es un comando que sirve para crear un nuevo directorio. S
 $ mkdir patata
 ```
 
-## touch
+### touch
 
 Touch (MaKe DIRectory) es un comando que sirve para crear un nuevo fichero. Su sintaxis es la siguiente : `touch <ficheroACrear>`. A continuación, se muestra un ejemplo de uso:
 
@@ -114,7 +114,7 @@ Touch (MaKe DIRectory) es un comando que sirve para crear un nuevo fichero. Su s
 $ mkdir patata.txt
 ```
 
-## cat
+### cat
 
 Cat (conCATenate) es un comando que sirve para ver el contenido de un archivo. Su sintaxis es la siguiente : `cat <ficheroAVer>`. A continuación, se muestra un ejemplo de uso:
 
@@ -123,7 +123,7 @@ $ cat patata.txt
 Esto es el contenido del fichero patata.txt
 ```
 
-## echo
+### echo
 
 Echo es un comando que sirve para imprimir/mostrar por pantalla/terminal. Su sintaxis es la siguiente: `echo <textoAImprimir>`. A continuación, se muestra un ejemplo de uso:
 
@@ -132,12 +132,12 @@ $ echo "Hola mundo!"
 Hola mundo!
 ```
 
-## rm
+### rm
 
 Rm (ReMove) es un comando que sirve para eliminar directorios vacios o ficheros. Su sintaxis es la siguiente: `rm <ficheroAEliminar>`.
 
 Atributos opcionales:
-- `-R` (Recursive): Indica que la copia se hace de manera recursiva, es decir, se borrará el directorio y todo lo que haya en su interior.
+- **-R** (Recursive): Indica que la copia se hace de manera recursiva, es decir, se borrará el directorio y todo lo que haya en su interior.
 
 A continuación, se muestra un ejemplo de uso:
 
@@ -146,7 +146,7 @@ $ rm patata.txt
 $ rm -R patata
 ```
 
-## rmdir
+### rmdir
 
 Rmdir (ReMove DIRectory) es un comando que sirve para elimina ficheros, pero solo ficheros vacíos. Su sintaxis es la siguiente: `rmdir <directorioAEliminar>`. A continuación, se muestra un ejemplo de uso:
 
@@ -154,12 +154,12 @@ Rmdir (ReMove DIRectory) es un comando que sirve para elimina ficheros, pero sol
 $ rmdir patata
 ```
 
-## cp
+### cp
 
 Cp (CoPy) es un comando que sirve para copiar archivos. Su sintaxis es la siguiente: `cp <ficheroOrigen> <ficheroDestino>`.
 
 Atributos opcionales:
-- `-R` (Recursive): Indica que la copia se hace de manera recursiva, es decir, se copiará el directorio y todo lo que haya en su interior.
+- **-R** (Recursive): Indica que la copia se hace de manera recursiva, es decir, se copiará el directorio y todo lo que haya en su interior.
 
 A continuación, se muestra un ejemplo de uso:
 
@@ -168,13 +168,13 @@ $ rm patata.txt
 $ rm -R patata
 ```
 
-## mv
+### mv
 
 Mv (MoVe) es un comando que sirve para mover archivos y directorios. Su sintaxis es la siguiente: `mv <ficheroOrigen> <ficheroDestino>`.
 
 Atributos opcionales:
 
-- `-R` (Recursive): Indica que la copia se hace de manera recursiva, es decir, se copiará el directorio y todo lo que haya en su interior.
+- **-R** (Recursive): Indica que la copia se hace de manera recursiva, es decir, se copiará el directorio y todo lo que haya en su interior.
 
 A continuación se muestra un ejemplo de uso donde se elimina el fichero patata.txt:
 
@@ -188,7 +188,7 @@ A continuación se muestra otro ejemplo donde se elimina el directorio patata y 
 $ rm -R patata
 ```
 
-## chmod
+### chmod
 
 Nota: en el artículo [Permisos GNU Linux](https://marcosruiz.github.io/post/permisos-gnu-linux) se explica de manera detallada.
 
@@ -196,18 +196,20 @@ Chmod (CHange MODe) es un comando que sirve para cambiar permisos (lectura, escr
 
 Existen distintos tipos de usuarios:
 
-- u: usuario dueño del fichero
-- g: grupo de usuarios del dueño del fichero
-- o: todos los otros usuarios
-- a: todos los tipos de usuario (dueño, grupo y otros) 
+- **u**: usuario dueño del fichero
+- **g**: grupo de usuarios del dueño del fichero
+- **o**: todos los otros usuarios
+- **a**: todos los tipos de usuario (dueño, grupo y otros) 
 
 También hay que saber que existen tres tipos de permiso:
 
-- r (read): se refiere a los permisos de lectura
-- w (write): se refiere a los permisos de escritura
-- x (execute): se refiere a los permisos de ejecución
+- **r** (read): se refiere a los permisos de lectura
+- **w** (write): se refiere a los permisos de escritura
+- **x** (execute): se refiere a los permisos de ejecución
 
-### Modo octal
+Existen dos modos de uso del comando chmod: el modo octal y el modo notación simbólica.
+
+#### Modo octal
 
 A continuación se muestran varios ejemplos de uso de la notación octal:
 
@@ -215,20 +217,130 @@ A continuación se muestran varios ejemplos de uso de la notación octal:
 - `chmod 000 patata.txt` quita todos los permisos al fichero patata.txt.
 - `chmod 755 patata.txt` añade todos los permisos al dueño del fichero patata.txt y permisos de lectura y ejecución para el grupo y para el resto de usuarios. 
 
-
-### Modo notación simbólica
+#### Modo notación simbólica
 
 A continuación se muestran varios ejemplos de uso de la notación simbólica:
 
 - `chmod u+x patata.txt` añade permisos de ejecución al usuario propietario del fichero patata.txt.
 - `chmod a=rwx patata.txt` pone los permisos de lectura escritura y ejecución a todos los usuarios sobre el fichero patata.txt.
 
-## sudo
+### sudo
 
 Sudo (Super User DO) es un comando que sirve para ejecutar un comando como administrador. Su sintaxis es la siguiente: `sudo <comando>`. A continuación se muestra un ejemplo de uso donde se instala el programa neofetch:
 
 ```console
 $ sudo apt install neofetch
+```
+
+### exit
+
+Exit es un comando que sirve para cerrar sesión. Su sintaxis es la siguiente: `exit`.
+
+### history
+
+History es un comando que sirve para mostrar el histórico de comandos que se han realizado. Su sintaxis es la siguiente: `history`. A continuación se muestra un ejemplo de uso:
+
+```console
+$ history
+    1  ls
+    2  sudo apt install virtualbox-guest-x11-hwe
+    3  sudo apt install virtualbox-guest-utils
+    4  sudo apt install virtualbox-guest-x11-hwe
+    5  sudo apt install virtualbox-guest-x11-hwe
+```
+
+### tail
+
+Tail es un comando que sirve para mostrar el final de un fichero. Su sintaxis es la siguiente: `tail -<numeroDeLíneas>`. A continuación se muestra un ejemplo de uso donde se muestran las 5 ultimas lineas de el_quijote.txt:
+
+```console
+$ tail -5 el_quijote.txt
+Reposa aquí Dulcinea;
+y, aunque de carnes rolliza, la volvió en polvo y ceniza la muerte espantable y fea. Fue de castiza ralea,
+y tuvo asomos de dama; del gran Quijote fue llama, y fue gloria de su aldea.
+Estos fueron los versos que se pudieron leer; los demás, por estar carcomida la letra, se entregaron a un académico para que por conjeturas los declarase. Tiénese noticia que lo ha hecho, a costa de muchas vigilias y mucho trabajo, y que tiene intención de sacallos a luz, con esperanza de la tercera salida de don Quijote.
+Forse altri canterà con miglior plettro. FINIS
+```
+
+### head
+
+Head es un comando que sirve para mostrar el principio de un fichero. Su sintaxis es la siguiente: `head -<numeroDeLíneas>`. A continuación se muestra un ejemplo de uso donde se muestran las 5 primeras lineas de el_quijote.txt:
+
+```console
+$ head -5 el_quijote.txt
+DON QUIJOTE DE LA MANCHA
+Miguel de Cervantes Saavedra
+
+PRIMERA PARTE
+CAPÍTULO 1: Que trata de la condición y ejercicio del famoso hidalgo D. Quijote de la Mancha
+```
+
+### locate
+
+Locate es un comando que sirve para localizar un archivo. El argumento `-i` (ignore case) sirve para que no se haga distinción entre mayúsculas y minúsculas. También se puede usar el carácter comodín "*" que representa cero uno o más caracteres. A continuación se muestran varios ejemplos:
+
+```console
+$ locate quijote
+/home/smr/Documentos/el_quijote.txt
+$ locate -i documentos
+/home/smr/Documentos
+/home/smr/Documentos/el_quijote.txt
+```
+
+### find
+
+Find es un comando que sirve para buscar archivos y directorios dentro de un directorio. Los argumentos son los siguientes:
+
+- **-name** indica el nombre del archivo o directorio.
+- **-type**, si es `d` indica que se busca un directorio.
+
+```console
+$ find /home/ -name el_quijote.txt
+/home/smr/Documentos/el_quijote.txt
+$ find /home/ -name quijote
+$ find /home/ -name *quijote*
+/home/smr/Documentos/el_quijote.txt
+$ find . -name el_quijote.txt
+/home/smr/Documentos/el_quijote.txt
+```
+
+### grep
+
+Grep es un comando que sirve para buscar en un documento de texto dado.
+
+```console
+$ grep "azules, " el_quijote.txt
+de los miembros gigantes que está a su derecha mano, es el nunca medroso Brandabarbaran de Boliche, señor de las tres Arabias, que viene armado de aquel cuero de serpiente, y tiene por escudo una puerta, que según es fama, es una de las del templo que derribó Sanson cuando con su muerte se vengó de sus enemigos. Pero vuelve los ojos a estotra parte, y verás delante y en la frente de estotro ejército al siempre vencedor y jamás vencido Timonel de Carcajona, príncipe de la Nueva Vizcaya, que viene armado con las armas partidas a cuarteles azules, verdes, blancos y amarillos, y trae en el escudo un gato de oro en campo leonado con una letra que dice "Miau", que es el principio del nombre de su dama, que según se dice es la sin par Miaulina, hija del duque de Alfeñiquen del Algarbe. El otro, que carga y oprime los lomos de aquella poderosa alfana, que trae las armas como nieve blancas, y el escudo blanco y sin empresa alguna, es un caballero novel, de nación francés, llamado Pierres Papin, señor de las baronías de Utrique. El otro, que bate las hijadas con los herrados carcaños a aquella pintada y lijera cebra, y trae las armas de los veros azules, es el poderoso duque de Nervia, Espartafilardo del Bosque, que trae por empresa en el escudo una esparraguera con una letra en castellano, que dice así: "Rastrea mi suerte".
+```
+
+### diff
+
+Diff es un comando que compara el contenido de dos archivos línea por línea. Después de analizar los archivos, genera las líneas que no coinciden. Los programadores a menudo usan este comando cuando necesitan hacer modificaciones al programa en lugar de reescribir todo el código fuente.
+
+La forma más simple de usar este comando es `diff archivo1.ext archivo2.ext`.
+
+### chown
+
+Chown es un comando que sirve para cambiar o transferir la propiedad de un archivo a otro usuario. El siguiente ejemplo pone al usuario "marcos" como propietario del fichero "fichero.txt".
+
+```console
+$ chown marcos fichero.txt
+```
+
+### whoami
+
+Whoami (WHO AM I?) es un comando que sirve para saber quien soy yo, es decir, para saber el usuario con el que estoy logeado en la terminal correspondiente.
+
+```console
+$ whoami
+smr
+```
+
+### neofetch
+
+Neofetch es un comando que sirve para mostrar información detallada sobre tu sistema Linux, como el nombre de la máquina, el sistema operativo, el núcleo, etc. de una manera bonita. Este programa es necesario instalarlo previamente con la instrucción `sudo apt install neofetch`.
+
+```console
 $ neofetch
         `osssssssssssssssssssso`           smr@smr-VirtualBox 
        .osssssssssssssssssssssso.          ------------------ 
@@ -251,36 +363,155 @@ ssssssssssssso/-`      `-/osssssssssssss   Resolution: 1920x902
                                            Memory: 1372MiB / 7961MiB 
 ```
 
-## exit
+### wget
 
-Exit es un comando que sirve para cerrar sesión. Su sintaxis es la siguiente: `exit`.
-
-## history
-
-History es un comando que sirve para mostrar el histórico de comandos que se han realizado. Su sintaxis es la siguiente: `history`.
-
-## tail
-
-Tail es un comando que sirve para mostrar el final de un fichero. Su sintaxis es la siguiente: `tail -<numeroDeLíneas>`. A continuación se muestra un ejemplo de uso donde se muestran las 5 ultimas lineas de el_quijote.txt:
+Wget es un comando que sirve para descargar archivos de Internet. En el siguiente ejemplo nos descargamos una imagen de prueba para posteriormente comprobar que efectivamente la nueva imagen está ahí.
 
 ```console
-$ tail -5 el_quijote.txt
-Reposa aquí Dulcinea;
-y, aunque de carnes rolliza, la volvió en polvo y ceniza la muerte espantable y fea. Fue de castiza ralea,
-y tuvo asomos de dama; del gran Quijote fue llama, y fue gloria de su aldea.
-Estos fueron los versos que se pudieron leer; los demás, por estar carcomida la letra, se entregaron a un académico para que por conjeturas los declarase. Tiénese noticia que lo ha hecho, a costa de muchas vigilias y mucho trabajo, y que tiene intención de sacallos a luz, con esperanza de la tercera salida de don Quijote.
-Forse altri canterà con miglior plettro. FINIS
+$ wget https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg
+--2022-01-06 16:16:07--  https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg
+Resolviendo detallesorballo.com (detallesorballo.com)... 82.98.155.205
+Conectando con detallesorballo.com (detallesorballo.com)[82.98.155.205]:443... conectado.
+Petición HTTP enviada, esperando respuesta... 200 OK
+Longitud: 17247 (17K) [image/jpeg]
+Guardando como: “imagen-de-prueba-320x240-1.jpg”
+
+imagen-de-prueba-320x240-1.jpg                              100%[=========================================================================================================================================>]  16,84K  --.-KB/s    en 0s      
+
+2022-01-06 16:16:07 (126 MB/s) - “imagen-de-prueba-320x240-1.jpg” guardado [17247/17247]
+$ ls
+el_quijote.txt  imagen-de-prueba-320x240-1.jpg
 ```
 
-## head
+### curl
 
-Head es un comando que sirve para mostrar el principio de un fichero. Su sintaxis es la siguiente: `head -<numeroDeLíneas>`. A continuación se muestra un ejemplo de uso donde se muestran las 5 primeras lineas de el_quijote.txt:
+Curl (Client URL) es un comando que sirve para descargar archivos desde una ubicación remota.
+
+Atributos opcionales:
+
+- **-O** guardará el archivo en el directorio de trabajo actual con el mismo nombre de archivo que el remoto.
+- **-o** permite especificar un nombre de archivo o ubicación diferente.
+- **-I** recupera la información del encabezado de un sitio web.
+- **--cookie-jar** guarda las cookies en un fichero.
+- **--cookie** manda las cookie de un fichero.
+- **--limit-rate** restringe el ancho de banda.
 
 ```console
-$ head -5 el_quijote.txt
-DON QUIJOTE DE LA MANCHA
-Miguel de Cervantes Saavedra
+$ curl testdomain.com
+<html><head><title>testdomain.com</title></head><body><h1>testdomain.com</h1><p>Coming soon.</p></body></html>
+```
 
-PRIMERA PARTE
-CAPÍTULO 1: Que trata de la condición y ejercicio del famoso hidalgo D. Quijote de la Mancha
+```console
+$ curl -I www.testdomain.com
+HTTP/1.1 200 OK
+server: openresty/1.13.6.1
+date: Thu, 06 Jan 2022 15:30:09 GMT
+content-type: application/octet-stream
+content-length: 118
+content-type: text/html
+connection: close
+```
+
+```console
+$ curl --cookie-jar Mycookies.txt https://www.samplewebsite.com /index.html -O
+```
+
+```console
+$ curl --cookie Mycookies.txt https://www. samplewebsite.com
+```
+
+### top
+
+Top (Table Of Processes) es un comando que nos da información acerca del uso de la cpu, de la memoria, de los procesos en ejecución, etc en tiempo real. Nos puede ayudar a monitorizar nuestro servidor dedicado si notamos que algo no funciona bien.
+
+```console
+$ top
+top - 15:30:53 up 15:51,  1 user,  load average: 0,08, 0,06, 0,01
+Tareas: 204 total,   1 ejecutar,  154 hibernar,    0 detener,    0 zombie
+%Cpu(s):  2,4 usuario,  0,7 sist,  0,0 adecuado, 96,7 inact,  0,1 en espera,  0,0 hardw int,  0,1 softw int,  0,0 robar tiempo
+KiB Mem :  8152800 total,  4470668 libre,  1397904 usado,  2284228 búfer/caché
+KiB Intercambio:  1459804 total,  1459804 libre,        0 usado.  6409468 dispon Mem 
+
+  PID USUARIO   PR  NI    VIRT    RES    SHR S  %CPU %MEM     HORA+ ORDEN                                                                                                                                                                     
+ 1017 root      20   0 1098876 132956  54792 S   8,6  1,6   2:24.25 Xorg                                                                                                                                                                      
+ 1647 smr       20   0  780044  59372  31676 S   2,0  0,7   0:17.02 xfce4-terminal                                                                                                                                                            
+ 1388 smr       20   0 1191348  95760  56780 S   0,7  1,2   0:13.18 xfwm4                                                                                                                                                                     
+ 1900 smr       20   0 2622268 125872  91000 S   0,7  1,5   2:13.25 Isolated Web Co                                                                                                                                                           
+  202 root     -51   0       0      0      0 S   0,3  0,0   0:00.55 irq/18-vmwgfx                                                                                                                                                             
+ 1335 smr       20   0  193568   2884   2528 S   0,3  0,0   2:19.84 VBoxClient  
+...
+```
+
+### man
+
+Man (MANual) es un comando que sirve para aprender como se usa cualquier comando aún sin conexión a Internet. Por ejemplo el comando `man tail` nos mostrará por terminal una descripción del comando tail así como un listado con todos los argumentos que podemos utilizar junto a su significado. 
+Una vez estamos en el manual podemos salir de este pulsando la tecla "q".
+
+## Comandos para redes
+
+### ifconfig
+
+Ifconfig es un comando que sirve para mostrar la configuración vigente de las interfaces de red activas, con detalles como la dirección MAC o el tráfico que ha circulado por las mismas hasta el momento. Las interfaces de red en Linux se suelen denominar eth (eth0, eth1, etc.).
+
+```console
+$ ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::d148:566a:790c:a795  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:49:ad:33  txqueuelen 1000  (Ethernet)
+        RX packets 45223  bytes 50986705 (50.9 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 22344  bytes 2378071 (2.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Bucle local)
+        RX packets 7871  bytes 568691 (568.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 7871  bytes 568691 (568.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+
+### ping
+
+Ping es un comando que sirve para averiguar si el equipo en el que estamos trabajando puede comunicarse con otros a través de la red. De esta forma podemos constatar si una instalación de red está funcionando correctamente.
+
+```console
+$ ping 8.8.8.8
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=115 time=46.9 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=115 time=261 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=115 time=162 ms
+^C
+--- 8.8.8.8 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 46.900/157.255/261.976/87.895 ms
+```
+
+```console
+$ ping marcosruiz.github.io
+PING marcosruiz.github.io (185.199.109.153) 56(84) bytes of data.
+64 bytes from cdn-185-199-109-153.github.com (185.199.109.153): icmp_seq=1 ttl=56 time=202 ms
+64 bytes from cdn-185-199-109-153.github.com (185.199.109.153): icmp_seq=2 ttl=56 time=77.2 ms
+64 bytes from cdn-185-199-109-153.github.com (185.199.109.153): icmp_seq=3 ttl=56 time=62.5 ms
+^C
+--- marcosruiz.github.io ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 62.597/114.209/202.812/62.935 ms
+```
+
+### traceroute
+
+Traceroute es un comando que sirve para determinar la ruta que toma un paquete de protocolo de Internet (IP) para alcanzar su destino.
+
+```console
+$ traceroute xataka.com
+traceroute to xataka.com (52.85.187.44), 30 hops max, 60 byte packets
+ 1  _gateway (10.0.2.2)  0.510 ms  0.494 ms  0.462 ms
+ 2  * * *
+ 3  * * *
+ 4  * * *
+...
 ```

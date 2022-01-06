@@ -1,8 +1,8 @@
 ---
 title: Comandos avanzados
-date: 2022-01-05 17:17:00 +/-TTTT
+date: 2022-01-08 17:17:00 +/-TTTT
 categories: [gnu linux]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática]     # TAG names should always be lowercase
+tags: [gnu linux, comandos, terminal, bash, seguridad informática]
 ---
 
 Descargamos el fichero el_quijote.txt.
