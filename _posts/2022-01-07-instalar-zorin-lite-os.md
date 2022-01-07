@@ -2,6 +2,93 @@
 title: Instalar Zorin OS Lite en Virtual Box
 date: 2022-01-07 15:20:00 +/-TTTT
 categories: [gnu linux]
-tags: [gnu linux, comandos, terminal, bash, dam, smr, entornos de desarrollo, seguridad informática, servicios en red, redes locales]     # TAG names should always be lowercase
+tags: [gnu linux, comandos, terminal, bash, dam, smr, entornos de desarrollo, seguridad informática, servicios en red, redes locales, virtual box, zorin, ubuntu, tutorial]
 ---
 
+## Objetivo
+
+El objetivo de este documento es instalar y realizar la configuración inicial de una máquina virtual Zorin OS para la realización del resto de prácticas, de modo que todos los alumnos tengan las mismas credenciales por si es necesario cambiar de equipo.
+
+## Actividades
+
+A continuación se listan los pasos que se deben realizar para llevar a cabo una instalación adecuada para el uso en clase.
+
+### Descargar Zorin OS Lite 
+
+Ir a [este enlace](https://zorin.com/os/download/) y descargar Zorin OS Lite 15.3. Como resultado debes tener un fichero ISO.
+
+### ¿Por qué Zorin OS Lite?
+
+Porque es un sistema operativo ligero (ya que usa XFCE) basado en Ubuntu con una interfaz similar a la de Windows 7 por lo que se hace fácil de manejar por la mayoría de usuarios. 
+Al estar basado en Ubuntu tanto sus programas como sus ficheros de configuración serán iguales.
+
+### Crear máquina virtual
+
+Para crear la máquina virtual se deben seguir los siguientes pasos:
+
+1. Máquina > Nueva
+2. Nombre: Zorin OS Lite
+3. Tipo: Linux
+4. Versión: Oracle (64 bits)
+5. Tamaño de memoria RAM: 8 GB (aunque puede ser menos)
+6. Crear disco duro virtual con un tamaño de 30 GB.
+4. Instalar Zorin OS
+
+A la hora de instalar Zorin OS debemos crearlo con un usuario llamado como vuestro email del centro (sin el “@chabacier.es”) y con contraseña “chabacier”.
+Tras la instalación se deben instalar todas las actualizaciones pendientes.
+
+### Instalar las Guest Additions
+
+Importante: Para realizar este paso es necesario actualizar el sistema operativo completamente ya que pueden desinstalarse las Guest Additions al actualizar el sistema.
+Las Guest Additions son un conjunto de paquetes de software que permiten al SO (Sistema Operativo) ser consciente de que está en una máquina virtual lo que permite que el SO adapte su resolución a la ventana donde está.
+La forma más sencilla de instalar las Guest Additions es en la ventana de la máquina de Virtual Box hacer click en Dispositivos > Insertar imagen de CD de las “Guest Additions”. A continuación deberá aparecer un CD (virtual) en el escritorio. Haciendo doble click en el CD se montará y se abrirá.
+Una vez abierto el directorio haremos click derecho y seleccionaremos la opción “Abrir terminal aquí”. Ahora tendremos el terminal en la ruta del CD. Debemos ver el siguiente prompt:
+
+```console
+mruizg@mruizg-VirtualBox:/media/mruizg/VBox_GAs_6.1.22$
+```
+
+Primero debemos instalar los programas make, gcc y perl de la siguiente manera:
+
+```console
+$ sudo apt install make gcc perl
+```
+
+Deberemos escribir `./autorun.sh` para ejecutar el script de instalación y posteriormente reiniciar a máquina virtual desde el menú de inicio. Una vez reiniciada la máquina debes redimensionar la ventana para que se adapte la resolución.
+
+### Crear una instantánea
+
+Una vez hemos dejado el SO funcionando correctamente es momento de crear una instantánea. Hacemos click en Máquina > Tomar instantánea... y le damos un nombre descriptivo como por ejemplo “Recién instalado con Guest Additions”.
+
+A partir de ahora, aunque rompamos la máquina virtual, siempre podremos volver a este estado.
+
+### Clonar la máquina para tener un backup de seguridad
+
+Para tener un backup de seguridad se puede clonar la máquina ya preparada para realizar cualquier práctica de la siguiente manera:
+
+1. Click derecho en la máquina llamada “Zorin OS Lite”.
+2. Click en “Clonar...”.
+3. Siguiente, siguiente, siguiente con todas las opciones por defecto.
+
+### Portapapeles compartido y arrastrar y soltar
+
+Haciendo click en Máquina > Configuración > General > Avanzado podemos cambiar estas dos opciones que facilitarán nuestro trabajo haciendo que podamos copiar y pegar entre la máquina virtual y la máquina host (huésped).
+
+- Compartir portapapeles: Bidireccional
+- Arrastrar y soltar: Bidireccional
+
+Tanto el compartir portapapeles como el arrastrar y soltar solo funciona si la máquina host y la máquina virtual son GNU Linux. En caso de no tener disponible el estás dos opciones se recomienda tener una carpeta compartida entre la máquina host y la máquina virtual.
+
+### Mejora de rendimiento
+
+Para mejorar el rendimiento de la máquina virtual se pueden hacer los siguientes cambios en la configuración de la máquina virtual cuando esta está apagada:
+
+1. Configuración > Sistema > Procesador > Poner al menos 3 CPUs para la máquina.
+2. Configuración > Pantalla > Memoria de vídeo > Poner a 128 MB.
+ 
+## Errores habituales
+
+Si ocurre algún error durante la instalación, antes de preguntar al profesor asegúrate de haber comprobado estos errores comunes:
+- Si tras instalar el SO aparece el error “Failed to load ldlinux.c32” es probable que hayas indicado una versión diferente a “Oracle 64-bit”.
+- Si al insertar el Live CD virtual aparece el error “Failed to load ldlinux.c32” es probable que la imagen que te has descargado está corrupta.
+- Si no deja iniciar la máquina virtual desde un comienzo, probablemente tengas desactivada la virtualización en la BIOS del ordenador.

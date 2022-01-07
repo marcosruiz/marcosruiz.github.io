@@ -515,3 +515,7 @@ traceroute to xataka.com (52.85.187.44), 30 hops max, 60 byte packets
  4  * * *
 ...
 ```
+
+## Bibliografía
+
+- [34 comandos básicos de Linux que todo usuario debe saber](https://www.hostinger.es/tutoriales/linux-comandos#11-comando-locate)
