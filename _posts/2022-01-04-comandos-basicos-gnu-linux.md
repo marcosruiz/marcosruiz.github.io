@@ -1,5 +1,5 @@
 ---
-title: Comandos básicos de GNU Linux
+title: 30 comandos básicos de GNU Linux
 date: 2022-01-04 16:30:00 +/-TTTT
 categories: [General, GNU Linux]
 tags: [gnu linux, terminal, dam, smr, servicios en red, seguridad informática, entornos de desarrollo, redes locales]
@@ -14,15 +14,22 @@ En este articulo se van a explicar una serie de comandos básicos de GNU Linux q
 Cuando abrimos por primera vez la terminal de GNU Linux nos aparecerá algo parecido a esto:
 
 ```console
-smr@smr-VirtualBox:~$
+usuario@máquina:~$
 ```
+o a esto en caso de ser superusuario:
+
+```console
+root@máquina:~#
+```
+
+Esto se llama prompt y es un conjunto de caracteres que se muestran en una línea de comandos para indicar que está a la espera de órdenes.
 
 A continuación explicaré que significa cada parte:
 
-- `smr`: Es tu nombre de usuario en el equipo.
+- `usuario`: Es tu nombre de usuario en el equipo.
 - `@`: Un símbolo separador que se suele utilizar para indicar que lo que viene tras el nombre de usuario es un equipo.
-`smr-VirtualBox`: Se trata del nombre que tiene tu equipo, en este caso `smr-VirtualBox`.
-- `~`: Se trata del directorio del usuario actual, en este caso representa `/home/smr`.
+`máquina`: Se trata del nombre que tiene tu equipo, en este caso `máquina`.
+- `~`: Se trata del directorio del usuario actual, en este caso representa `/home/usuario`.
 - `$`: Un indicador para informar de que la línea de comandos está lista para aceptar nuevos comandos sin permisos de superusuario.
 - `#`: Un indicador para informar de que la línea de comandos está lista para aceptar nuevos comandos con permisos de superusuario.
 
@@ -42,7 +49,7 @@ Pwd (Print Working Directory) es un comando que sirve para saber en qué directo
 
 ```console
 $ pwd
-/home/smr/
+/home/usuario/
 ```
 
 ### ls
@@ -447,6 +454,10 @@ KiB Intercambio:  1459804 total,  1459804 libre,        0 usado.  6409468 dispon
 Man (MANual) es un comando que sirve para aprender como se usa cualquier comando aún sin conexión a Internet. Por ejemplo el comando `man tail` nos mostrará por terminal una descripción del comando tail así como un listado con todos los argumentos que podemos utilizar junto a su significado. 
 Una vez estamos en el manual podemos salir de este pulsando la tecla "q".
 
+### less
+
+Man (MANual) es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante y hacia atrás.
+
 ## Comandos para redes
 
 ### ifconfig
@@ -519,3 +530,4 @@ traceroute to xataka.com (52.85.187.44), 30 hops max, 60 byte packets
 ## Bibliografía
 
 - [34 comandos básicos de Linux que todo usuario debe saber](https://www.hostinger.es/tutoriales/linux-comandos#11-comando-locate)
+- [Los 42 comandos más importantes en GNU/Linux](https://www.ochobitshacenunbyte.com/2018/12/04/los-42-comandos-mas-importantes-en-gnu-linux/)

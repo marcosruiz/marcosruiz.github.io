@@ -5,7 +5,7 @@ categories: [General, GNU Linux]
 tags: [gnu linux, terminal, dam, smr, entornos de desarrollo, seguridad informática, servicios en red, redes locales]     # TAG names should always be lowercase
 ---
 
-## Consejos en el terminal
+## Consejos para el terminal
 
 Recuerda que puedes usar el comando **clear** si el terminal está abarrotado de información con comandos pasados.
 
