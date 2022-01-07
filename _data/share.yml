@@ -5,7 +5,7 @@ platforms:
   -
     type: Twitter
     icon: "fab fa-twitter"
-    link: "https://twitter.com/chirihop"
+    link: "https://twitter.com/intent/tweet?text=TITLE&url=URL"
   -
     type: Facebook
     icon: "fab fa-facebook-square"

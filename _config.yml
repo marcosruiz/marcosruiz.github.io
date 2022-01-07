@@ -32,7 +32,7 @@ github:
   username: marcosruiz             # change to your github username
 
 twitter:
-  username: chirihop            # change to your twitter username
+  username: whataweekhuh            # change to your twitter username
 
 social:
   # Change to your full name.
@@ -41,8 +41,8 @@ social:
   email: marcosruizgarcia@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/chirihop      # change to your twitter homepage
     - https://github.com/marcosruiz       # change to your github homepage
+    - https://twitter.com/whataweekhuh      # change to your twitter homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username

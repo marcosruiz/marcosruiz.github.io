@@ -1,9 +1,11 @@
 ---
 title: Instalar Zorin OS Lite en Virtual Box
-date: 2022-01-07 15:20:00 +/-TTTT
-categories: [gnu linux]
-tags: [gnu linux, comandos, terminal, bash, dam, smr, entornos de desarrollo, seguridad informática, servicios en red, redes locales, virtual box, zorin, ubuntu, tutorial]
+date: 2022-01-07 15:00:00 +/-TTTT
+categories: [General, GNU Linux]
+tags: [gnu linux, dam, smr, entornos de desarrollo, seguridad informática, servicios en red, redes locales, virtual box, zorin, ubuntu, tutorial]
 ---
+
+
 
 ## Objetivo
 
@@ -20,6 +22,7 @@ Ir a [este enlace](https://zorin.com/os/download/) y descargar Zorin OS Lite 15.
 ### ¿Por qué Zorin OS Lite?
 
 Porque es un sistema operativo ligero (ya que usa XFCE) basado en Ubuntu con una interfaz similar a la de Windows 7 por lo que se hace fácil de manejar por la mayoría de usuarios. 
+
 Al estar basado en Ubuntu tanto sus programas como sus ficheros de configuración serán iguales.
 
 ### Crear máquina virtual
@@ -30,19 +33,22 @@ Para crear la máquina virtual se deben seguir los siguientes pasos:
 2. Nombre: Zorin OS Lite
 3. Tipo: Linux
 4. Versión: Oracle (64 bits)
-5. Tamaño de memoria RAM: 8 GB (aunque puede ser menos)
+5. Tamaño de memoria RAM: Lo máximo que deje la barrita verde.
 6. Crear disco duro virtual con un tamaño de 30 GB.
 4. Instalar Zorin OS
 
-A la hora de instalar Zorin OS debemos crearlo con un usuario llamado como vuestro email del centro (sin el “@chabacier.es”) y con contraseña “chabacier”.
+A la hora de instalar Zorin OS debemos crearlo con un usuario llamado como vuestro email del centro (sin el "@chabacier.es") y con contraseña "chabacier". En mi caso mi usuario será "mruizg".
+
 Tras la instalación se deben instalar todas las actualizaciones pendientes.
 
 ### Instalar las Guest Additions
 
-Importante: Para realizar este paso es necesario actualizar el sistema operativo completamente ya que pueden desinstalarse las Guest Additions al actualizar el sistema.
+⚠️ Para realizar este paso es necesario actualizar el sistema operativo completamente ya que pueden desinstalarse las Guest Additions al actualizar el sistema.
+
 Las Guest Additions son un conjunto de paquetes de software que permiten al SO (Sistema Operativo) ser consciente de que está en una máquina virtual lo que permite que el SO adapte su resolución a la ventana donde está.
-La forma más sencilla de instalar las Guest Additions es en la ventana de la máquina de Virtual Box hacer click en Dispositivos > Insertar imagen de CD de las “Guest Additions”. A continuación deberá aparecer un CD (virtual) en el escritorio. Haciendo doble click en el CD se montará y se abrirá.
-Una vez abierto el directorio haremos click derecho y seleccionaremos la opción “Abrir terminal aquí”. Ahora tendremos el terminal en la ruta del CD. Debemos ver el siguiente prompt:
+
+La forma más sencilla de instalar las Guest Additions es en la ventana de la máquina de Virtual Box hacer click en Dispositivos > Insertar imagen de CD de las "Guest Additions". A continuación deberá aparecer un CD (virtual) en el escritorio. Haciendo doble click en el CD se montará y se abrirá.
+Una vez abierto el directorio haremos click derecho y seleccionaremos la opción "Abrir terminal aquí". Ahora tendremos el terminal en la ruta del CD. Debemos ver el siguiente prompt:
 
 ```console
 mruizg@mruizg-VirtualBox:/media/mruizg/VBox_GAs_6.1.22$
@@ -58,7 +64,7 @@ Deberemos escribir `./autorun.sh` para ejecutar el script de instalación y post
 
 ### Crear una instantánea
 
-Una vez hemos dejado el SO funcionando correctamente es momento de crear una instantánea. Hacemos click en Máquina > Tomar instantánea... y le damos un nombre descriptivo como por ejemplo “Recién instalado con Guest Additions”.
+Una vez hemos dejado el SO funcionando correctamente es momento de crear una instantánea. Hacemos click en Máquina > Tomar instantánea... y le damos un nombre descriptivo como por ejemplo "Recién instalado con Guest Additions".
 
 A partir de ahora, aunque rompamos la máquina virtual, siempre podremos volver a este estado.
 
@@ -66,9 +72,10 @@ A partir de ahora, aunque rompamos la máquina virtual, siempre podremos volver 
 
 Para tener un backup de seguridad se puede clonar la máquina ya preparada para realizar cualquier práctica de la siguiente manera:
 
-1. Click derecho en la máquina llamada “Zorin OS Lite”.
-2. Click en “Clonar...”.
-3. Siguiente, siguiente, siguiente con todas las opciones por defecto.
+1. Click derecho en la máquina llamada "Zorin OS Lite".
+2. Click en "Clonar...".
+3. Poner el nombre a la nueva máquina virtual "Zorin OS Lite Backup".
+4. Siguiente, siguiente, siguiente con todas las opciones por defecto.
 
 ### Portapapeles compartido y arrastrar y soltar
 
@@ -89,6 +96,7 @@ Para mejorar el rendimiento de la máquina virtual se pueden hacer los siguiente
 ## Errores habituales
 
 Si ocurre algún error durante la instalación, antes de preguntar al profesor asegúrate de haber comprobado estos errores comunes:
-- Si tras instalar el SO aparece el error “Failed to load ldlinux.c32” es probable que hayas indicado una versión diferente a “Oracle 64-bit”.
-- Si al insertar el Live CD virtual aparece el error “Failed to load ldlinux.c32” es probable que la imagen que te has descargado está corrupta.
+
+- Si tras instalar el SO aparece el error "Failed to load ldlinux.c32" es probable que hayas indicado una versión diferente a "Oracle 64-bit".
+- Si al insertar el Live CD virtual aparece el error "Failed to load ldlinux.c32" es probable que la imagen que te has descargado está corrupta.
 - Si no deja iniciar la máquina virtual desde un comienzo, probablemente tengas desactivada la virtualización en la BIOS del ordenador.

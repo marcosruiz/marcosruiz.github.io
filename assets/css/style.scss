@@ -12,7 +12,7 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 /* append your custom style below */
 
 .post-content {
-	counter-reset: heading;
+	counter-reset: heading figure;
 }
 .post-content > h2:before {
 	content: counter(heading)". ";
@@ -36,7 +36,11 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 .giscus, .giscus-frame {
 	width: 100%;
 }
-  
 .giscus-frame {
 	border: none;
+}
+
+.post-content > p > em:before {
+	content: "Figura " counter(figure) ": ";
+	counter-increment: figure;
 }
