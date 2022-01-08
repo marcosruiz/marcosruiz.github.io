@@ -23,7 +23,7 @@ A continuación se muestra un ejemplo de fichero:
 ```shell
 mucho texto
 ```
-{: file="path/to/file" }
+{: file="/camino/a/un/fichero" }
 
 #### Subsubtítulo
 
