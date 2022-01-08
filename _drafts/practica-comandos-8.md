@@ -15,10 +15,11 @@ Duración: 6 h.
 
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
-### Actividad: Llamada y ejecución de scripts de shell
+{:.activity}
+### Llamada y ejecución de scripts de shell
 
 Duración estimada: 20 minutos
-1. Conéctese en la segunda consola virtual texto (tty2) como el usuario tux.
+1. Conéctese en la segunda consola virtual texto (tty2) como el usuario \<tuNombreDeUsuario\>.
 2. En su directorio personal, cree el subdirectorio bin que será utilizado para almacenar todos los scripts de shell escritos más tarde y colóquelos en ese directorio.
 3. Cree el script de shell 01llamada que efectúe las operaciones siguientes:
 
@@ -43,10 +44,11 @@ Tras finalizar la ejecución del script, ¿cuál es el valor de la variable var 
 Tras finalizar la ejecución del script, ¿cuál es el valor de la variable var en su entorno shell? ¿Por qué?
 8. ¿Qué shell ha utilizado para interpretar el script 01llamada llamado anteriormente? Tenga en cuenta que debe ser obligatoriamente...
 
-### Actividad: Código de retorno
+{:.activity}
+### Código de retorno
 
 Duración estimada: 5 minutos
-1. Reconéctese a la segunda consola virtual texto (tty2) como el usuario tux.
+1. Reconéctese a la segunda consola virtual texto (tty2) como el usuario \<tuNombreDeUsuario\>.
 2. Teclee el comando ls /etc/passwd y visualice su código de retorno.
 3. Teclee el comando ls glop y visualice su código de retorno.
 4. Visualice de nuevo el código de retorno del última comando. ¿Es el mismo?
@@ -56,7 +58,8 @@ Pistas para el enunciado 8.2
 2. La variable especial $? contiene el código de retorno del último comando ejecutado.
 5. Utilice el comando exit.
 
-### Actividad: Encadenamiento de comandos
+{:.activity}
+### Encadenamiento de comandos
 
 Duración estimada: 5 minutos
 1. Visualice la fecha del sistema y la lista de los archivos presentes en el directorio actual en una sola línea de comando.
@@ -68,7 +71,8 @@ Pistas para el enunciado 8.3
 2. Utilice el código de retorno del comando ls para saber si el archivo /etc/hosts existe, después efectúe un encadenamiento de comandos condicional con los caracteres &&.
 3. Utilice el código de retorno del comando ls para saber si le archivo /tmp/glop existe, después efectúe un encadenamiento de comandos condicional con caracteres ||.
 
-### Actividad: Variables especiales
+{:.activity}
+### Variables especiales
 
 Duración estimada: 30 minutos
 1. En su directorio bin, cree el script de shell 02varspec que efectúe las operaciones siguientes: 
@@ -121,7 +125,8 @@ a b c d
 
 Verifique...
 
-### Actividad: Test de archivos
+{:.activity}
+### Test de archivos
 
 Duración estimada: 20 minutos
 1. En su directorio bin, cree el script de shell 04archivo que efectué los test siguientes a un archivo pasado como argumento:
@@ -140,7 +145,8 @@ Duración estimada: 20 minutos
 Pista para el enunciado 8.5
 1. Utilice el comando test con la sintaxis [].
 
-### Actividad: Test de cadenas de caracteres
+{:.activity}
+### Test de cadenas de caracteres
 
 Duración estimada: 15 minutos
 1. En su directorio bin, cree el script de shell 05cadena que efectúe los test siguientes en dos cadenas de caracteres pasadas como argumento:
@@ -165,7 +171,8 @@ abc "abc "
 Pista para el enunciado 8.6
 1. Utilice el comando test con la sintaxis [].
 
-### Actividad: Test y operaciones aritméticas
+{:.activity}
+### Test y operaciones aritméticas
 
 Duración estimada: 30 minutos
 1. En su directorio bin, cree el script de shell 06max que retorne el mayor de los dos argumentos pasados como parámetros. Utilice el comando test con la sintaxis [].
@@ -209,7 +216,8 @@ Pistas para el enunciado 8.7
 
     Si el segundo parámetro es igual a 0, salir con un código...
 
-### Actividad: Scripts interactivos
+{:.activity}
+### Scripts interactivos
 
 Duración estimada: 10 minutos
 1. En su directorio bin, cree el script de shell 09mult que pida introducir dos números y que retorne el resultado de la multiplicación de esos dos números.
@@ -218,7 +226,8 @@ Duración estimada: 10 minutos
 Pista para el enunciado 8.8
 1. Utilice el comando read.
 
-### Actividad: Para ir más lejos
+{:.activity}
+### Para ir más lejos
 
 Duración estimada: 30 minutos
 1. Escriba el script de shell 10compar que visualice el menor y el mayor número entre los argumentos pasados por la línea de comandos; el número de argumento deberá ser superior a 1.

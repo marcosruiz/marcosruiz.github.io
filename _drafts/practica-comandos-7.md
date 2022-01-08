@@ -15,10 +15,11 @@ Duración: 4 h.
 
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
-### Actividad: Variables
+{:.activity}
+### Variables
 
 Duración estimada: 30 minutos
-1. Conéctese en la segunda consola virtual texto (tty2) como el usuario tux.
+1. Conéctese en la segunda consola virtual texto (tty2) como el usuario \<tuNombreDeUsuario\>.
 2. Liste todas las variables definidas en su entorno shell.
 3. Asigne la cadena de caracteres "abc" a la variable var1. Después visualice de nuevo la lista de las variables definidas en el entorno shell.
 4. Visualice el contenido de la variable var1.
@@ -27,12 +28,13 @@ Duración estimada: 30 minutos
 7. Modifique el valor de la variable HOME por "/tmp". Después ejecute el comando cd y visualice su directorio de trabajo.
 8. Modifique el valor de la variable LANG por "C". Después consulte la página del manual electrónico referente al comando bash. ¿En qué idioma se visualiza la página del manual?
 9. Busque en la página del manual electrónico anteriormente abierta la sección "PROMPTING" y modifique su prompt para visualizar la fecha y el nombre de la máquina.
-10. Desconéctese, y reconéctese a la segunda consola virtual texto (tty2) como usuario tux. Después verifique los valores anteriormente modificados.
+10. Desconéctese, y reconéctese a la segunda consola virtual texto (tty2) como usuario \<tuNombreDeUsuario\>. Después verifique los valores anteriormente modificados.
 11. Asigne la cadena de caracteres "Bond" a la variable var3.
 12. Visualice la cadena de caracteres "Bond, James Bond." utilizando el contenido de la variable var3.
 13. Visualice la cadena de caracteres "Bondir" utilizando el contenido de la variable...
 
-### Actividad: Caracteres genéricos, caracteres de expansión
+{:.activity}
+### Caracteres genéricos, caracteres de expansión
 
 Duración estimada: 20 minutos
 1. Vaya al directorio /etc.
@@ -55,7 +57,8 @@ Duración estimada: 20 minutos
 
     seguido de la extensión ".conf" o ".config".
 
-### Actividad: Caracteres de escape
+{:.activity}
+### Caracteres de escape
 
 Duración estimada: 5 minutos
 1. Ejecute los comandos siguientes y explique sus resultados:
@@ -81,7 +84,8 @@ Duración estimada: 5 minutos
 3. Utilice los caracteres de escape.
 4. Utilice los caracteres de escape ’ o \.
 
-### Actividad: Redirecciones y tuberías
+{:.activity}
+### Redirecciones y tuberías
 
 Duración estimada: 40 minutos
 1. Ejecute el comando cat sin argumentos, después teclee algunas palabras y finalícelo normalmente. ¿Qué observa?
@@ -97,7 +101,8 @@ Duración estimada: 40 minutos
 11. ¿Cuántos archivos hay en el directorio /etc? Suprima el archivo /tmp/ls.out.
 12. Sin utilizar un archivo intermedio, cuente de nuevo el número...
 
-### Actividad: Alias
+{:.activity}
+### Alias
 
 Duración estimada: 15 minutos
 1. Elabore la lista de los alias definidos en su entorno shell.
@@ -113,7 +118,8 @@ Duración estimada: 15 minutos
 4. Prefije el comando de carácter \ o emplee el comando command.
 6. Utilice el comando unalias.
 
-### Actividad: Ejecución y sustitución de comandos
+{:.activity}
+### Ejecución y sustitución de comandos
 
 Duración estimada: 15 minutos
 1. Determine la naturaleza (alias, comando interno del shell, comando externo del shell) de los comandos cd, vi, y find.
@@ -128,7 +134,8 @@ Duración estimada: 15 minutos
 3. Utilice la opción --no-heading del comando ps que permitirá eliminar la línea de cabecera en el resultado del comando, después cuente el número de líneas devueltas.
 4. Utilice la sustitución de comandos con la sintaxis $() o la sintaxis ``.
 
-### Actividad: Opciones del shell Bash
+{:.activity}
+### Opciones del shell Bash
 
 Duración estimada: 10 minutos
 1. Liste las opciones de su shell.

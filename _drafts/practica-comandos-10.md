@@ -20,7 +20,8 @@ Duración: 3 h.
 
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
-### Actividad: Requisitos previos
+{:.activity}
+### Requisitos previos
 
 Para validar los requisitos previos necesarios, antes de iniciar la PT, responda las preguntas siguientes:
 1. ¿Qué comando permite buscar archivos siguiendo diferentes criterios?
@@ -41,10 +42,11 @@ Para validar los requisitos previos necesarios, antes de iniciar la PT, responda
     1. awk
     1. join
 
-### Actividad: find
+{:.activity}
+### find
 
 Duración estimada: 20 minutos
-1. Conéctese a la segunda consola virtual texto (tty2) como el usuario tux.
+1. Conéctese a la segunda consola virtual texto (tty2) como el usuario \<tuNombreDeUsuario\>.
 2. Vaya a su directorio personal y visualice la lista de todos los archivos presentes en su árbol. 
 3. Visualice la lista de todos los archivos presentes en los directorios /bin y /lib.
 4. Liste los archivos de su subdirectorio capítulo5 visualizando únicamente los nombres de los directorios. Después proceda del mismo modo visualizando únicamente los nombres de los archivos ordinarios.
@@ -63,7 +65,8 @@ Suprima los mensajes de error posibles con una redirección.
 2. Indique la ruta de búsqueda relativa en el comando find.
 3. Indique varias rutas de búsqueda en el comando...
 
-### Actividad: grep
+{:.activity}
+### grep
 
 Duración estimada: 25 minutos
 1. Visualice el PID de los procesos bash actualmente iniciados en el sistema.
@@ -71,10 +74,10 @@ Duración estimada: 25 minutos
 3. Filtre de nuevo el archivo /etc/services esta vez, con la cadena de caracteres "http" como palabra.
 4. Visualice las líneas del archivo /etc/passwd que no contengan la cadena de caracteres "home".
 5. ¿Cuántas líneas del archivo /etc/passwd contienen la cadena de caracteres "sbin"?
-6. ¿Qué archivos del directorio /etc contienen la cadena de caracteres "tux"?
+6. ¿Qué archivos del directorio /etc contienen la cadena de caracteres "\<tuNombreDeUsuario\>"?
 
 Suprima los mensajes de error eventuales con una redirección.
-7. ¿En qué números de líneas se encuentra la cadena de caracteres "tux" en los archivos anteriores? 
+7. ¿En qué números de líneas se encuentra la cadena de caracteres "\<tuNombreDeUsuario\>" en los archivos anteriores? 
 
 Suprima los mensajes de error eventuales con una redirección.
 8. Visualice todas las líneas del archivo /etc/services que contengan la cadena de caracteres "iana", sin importar el tipo de caracteres (mayúsculas/minúsculas).
@@ -90,7 +93,8 @@ Suprima los mensajes de error eventuales con una redirección.
 7. Utilice la opción -n .
 8. Utilice la opción -i.
 
-### Actividad: cut
+{:.activity}
+### cut
 
 Duración estimada: 10 minutos
 1. Visualice el primer y el tercer campo del archivo /etc/group (nombre del grupo y GID correspondiente).
@@ -104,7 +108,8 @@ Duración estimada: 10 minutos
 1. Utilice el comando cut con el carácter : como separador de campo.
 2. Utilice el comando cut en una tubería especificando las columnas de la visualización a conservar.
 
-### Actividad: sort
+{:.activity}
+### sort
 
 Duración estimada: 15 minutos
 1. Clasifique el archivo /etc/passwd alfabéticamente por el nombre de conexión (login) de cada usuario.
@@ -117,7 +122,8 @@ Duración estimada: 15 minutos
 3. Clasifique el tercer campo del archivo con el carácter : como separador de campo y utilice la opción -n.
 4. Utilice el comando sort en una tubería especificando la columna y el tipo de clasificación.
 
-### Actividad: head, tail
+{:.activity}
+### head, tail
 
 Duración estimada: 10 minutos
 1. Visualice las cinco primeras líneas del archivo /etc/passwd.
@@ -128,7 +134,8 @@ Duración estimada: 10 minutos
 #### Pistas
 4. Utilice los comandos head y tail con una tubería.
 
-### Actividad: Para ir más lejos
+{:.activity}
+### Para ir más lejos
 
 Duración estimada: 10 minutos
 1. Utilice el comando find para encontrar el emplazamiento de su archivo de configuración personal del navegador web.

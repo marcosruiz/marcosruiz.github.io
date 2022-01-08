@@ -15,11 +15,12 @@ Duración: 3 h.
 
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
-### Actividad: Inicialización y salida de Vi
+{:.activity}
+### Inicialización y salida de Vi
 
 Duración estimada : 2 minutos
 
-1. Conéctese a la segunda consola virtual texto (tty2) como el usuario tux.
+1. Conéctese a la segunda consola virtual texto (tty2) como el usuario "\<tuNombreDeUsuario\>".
 2. Inicie el editor de texto Vi sin argumento. ¿Qué observa?
 3. Salga de Vi.
 4. Edite ahora el archivo /etc/hosts. ¿Qué significan los caracteres ~ situados al comienzo de línea?
@@ -28,7 +29,8 @@ Duración estimada : 2 minutos
 #### Pistas
 2. A lo largo de estos ejercicios, podrá utilizar indiferentemente el comando vi o el comando vim. 
 
-### Actividad: Comandos de desplazamiento
+{:.activity}
+### Comandos de desplazamiento
 
 Duración estimada : 10 minutos
 
@@ -51,7 +53,8 @@ Duración estimada : 10 minutos
 
 
 
-### Actividad: Comandos de edición y de corrección
+{:.activity}
+### Comandos de edición y de corrección
 
  Duración estimada : 15 minutos
 1. Desplace el cursor hasta el sexto carácter de la primera línea del archivo.
@@ -73,7 +76,8 @@ Duración estimada : 10 minutos
 17. Borre las cuatro primeras líneas del archivo.
 18. Borre...
 
-### Actividad: Comandos globales
+{:.activity}
+### Comandos globales
 
  Duración estimada : 10 minutos
 1. Intente guardar las modificaciones que ha realizado en el archivo. ¿Es posible?
@@ -84,7 +88,8 @@ Duración estimada : 10 minutos
 6. Desplace siempre el cursor de ocurrencia en ocurrencia de la cadena de caracteres "tcp", pero esta vez, en el sentido inverso de la búsqueda.
 7. Reemplace todas las cadenas de caracteres "udp" del archivo por "UDP".
 
-### Actividad: Opciones del editor
+{:.activity}
+### Opciones del editor
 
  Duración estimada : 10 minutos
 1. Visualice todas las opciones del editor.

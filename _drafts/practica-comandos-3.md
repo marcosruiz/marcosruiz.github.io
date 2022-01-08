@@ -15,9 +15,10 @@ Duración: 5 h.
 
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
-### Actividad: Exploración del árbol de Linux
+{:.activity}
+### Exploración del árbol de Linux
 
-1. Conéctese a la segunda consola virtual texto (tty2) como el usuario tux.
+1. Conéctese a la segunda consola virtual texto (tty2) como el usuario "\<tuNombreDeUsuario\>".
 2. Indique con un comando en que directorio se encuentra.
 3. Vaya al directorio /usr/share/doc, después verifique la ruta de su directorio actual.
 4. Remonte al directorio padre y verifíquelo.
@@ -40,7 +41,8 @@ A continuación se listan las actividades que se deben realizar para esta práct
 7. Utilice el comando ls.
 10. Utilice la opción volviendo al comando...
 
-### Actividad: Consulta de archivos
+{:.activity}
+### Consulta de archivos
 
 Duración estimada: 10 minutos
 
@@ -59,18 +61,19 @@ images/0401CAT.png
 4. Si se encuentra desafortunadamente en este caso, puede teclear el comando reset (a "ciegas") para reinicializar su terminal.
 5. Utilice el comando strings.
 
-### Actividad: Directorios
+{:.activity}
+### Directorios
 
 Duración estimada: 15 minutos
 
-1. Como tux, vaya a su directorio personal.
+1. Como "\<tuNombreDeUsuario\>", vaya a su directorio personal.
 2. Cree un directorio con el nombre capítulo3.
 3. Vaya a su directorio capítulo3.
 4. Cree el árbol dir1/dir2/dir3/dir4.
 5. Liste el contenido del directorio actual de forma recursiva.
 6. Suprima el directorio dir1. ¿Es posible?
 7. Suprima el árbol de directorios dir1/dir2/dir3/dir4, después verifíquelo listando el directorio actual de forma recursiva.
-8. Cree ahora el árbol siguiente en su directorio actual (/home/tux/capítulo3) sin cambiar de directorio:
+8. Cree ahora el árbol siguiente en su directorio actual (/home/\<tuNombreDeUsuario\>/capítulo3) sin cambiar de directorio:
 images/0402arbo.png
 
 #### Pistas
@@ -83,7 +86,8 @@ images/0402arbo.png
 7. Utilice el comando rmdir con la opción adecuada.
 8. Es posible pasar varios argumentos en el mismo comando mkdir.
 
-### Actividad: Archivos
+{:.activity}
+### Archivos
 
 Duración estimada: 40 minutos
 
