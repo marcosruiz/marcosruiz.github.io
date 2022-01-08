@@ -51,3 +51,7 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 	content: "Figura " counter(figure) ": ";
 	counter-increment: figure;
 }
+
+/*body {
+	font-family: 'Georgia', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+}*/

@@ -35,7 +35,7 @@ A continuación se listan las actividades que se deben realizar para esta práct
 
 #### Pistas
 
-3. Utilice el comando cd; podrá ayudarse de la finalización de palabras con la tecla [Tab].
+3. Utilice el comando `cd`; podrá ayudarse de la finalización de palabras con la tecla [Tab].
 4. El directorio padre se referencia por "..".
 6. El directorio precedente en el que usted se encontraba es /usr/share.
 7. Utilice el comando ls.
@@ -54,10 +54,9 @@ Duración estimada: 10 minutos
 
 #### Pistas
 
-1. Utilice el comando cat, more o less.
-2. Utilice el comando more o less.
-3. Un archivo binario no debe visualizarse con la ayuda de herramientas reservadas a los archivos de texto. En efecto, ciertos caracteres no imprimibles contenidos en estos archivos pueden modificar el comportamiento del terminal si son visualizados como tales; esto puede acarrear por ejemplo una visualización como la siguiente en el terminal:
-images/0401CAT.png
+1. Utilice el comando `cat`, `more` o `less`.
+2. Utilice el comando `more` o `less`.
+3. Un archivo binario no debe visualizarse con la ayuda de herramientas reservadas a los archivos de texto. En efecto, ciertos caracteres no imprimibles contenidos en estos archivos pueden modificar el comportamiento del terminal si son visualizados como tales; esto puede acarrear por ejemplo una visualización como la siguiente en el terminal: `images/0401CAT.png`.
 4. Si se encuentra desafortunadamente en este caso, puede teclear el comando reset (a "ciegas") para reinicializar su terminal.
 5. Utilice el comando strings.
 
@@ -73,18 +72,17 @@ Duración estimada: 15 minutos
 5. Liste el contenido del directorio actual de forma recursiva.
 6. Suprima el directorio dir1. ¿Es posible?
 7. Suprima el árbol de directorios dir1/dir2/dir3/dir4, después verifíquelo listando el directorio actual de forma recursiva.
-8. Cree ahora el árbol siguiente en su directorio actual (/home/\<tuNombreDeUsuario\>/capítulo3) sin cambiar de directorio:
-images/0402arbo.png
+8. Cree ahora el árbol siguiente en su directorio actual (/home/\<tuNombreDeUsuario\>/capítulo3) sin cambiar de directorio: "images/0402arbo.png".
 
 #### Pistas
 
-1. Utilice el comando cd.
-2. Utilice el comando mkdir. Asegúrese de especificar correctamente la ruta del directorio a crear, ya sea como ruta relativa, absoluta o personal.
-4. Utilice el comando mkdir con la opción adecuada.
-5. Utilice el comando ls con la opción adecuada.
-6. Utilice el comando rmdir.
-7. Utilice el comando rmdir con la opción adecuada.
-8. Es posible pasar varios argumentos en el mismo comando mkdir.
+1. Utilice el comando `cd`.
+2. Utilice el comando `mkdir`. Asegúrese de especificar correctamente la ruta del directorio a crear, ya sea como ruta relativa, absoluta o personal.
+4. Utilice el comando `mkdir` con la opción adecuada.
+5. Utilice el comando `ls` con la opción adecuada.
+6. Utilice el comando `rmdir`.
+7. Utilice el comando `rmdir` con la opción adecuada.
+8. Es posible pasar varios argumentos en el mismo comando `mkdir`.
 
 {:.activity}
 ### Archivos
