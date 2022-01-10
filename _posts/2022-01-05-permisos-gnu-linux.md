@@ -45,10 +45,24 @@ drwx------ 4 smr smr 4096 dic  1 21:11 snap
 drwxr-xr-x 2 smr smr 4096 dic 21 10:35 Templates
 drwxr-xr-x 2 smr smr 4096 sep 20 10:06 Vídeos
 ```
-El primer carácter es el tipo de fichero.
 
-- **–**: fichero
-- **d**: directorio
+Cada columna está separada por un espacio y nos da cierta información que puede resultarnos útil:
+
+1. Tipo de fichero y sus permisos.
+1. Número de enlaces al archivo.
+1. Propietario del archivo.
+1. Grupo al que pertenece el archivo.
+1. Tamaño en bytes.
+1. Fecha y hora de la última modificación.
+1. Nombre del fichero o directorio.
+
+#### Tipo de fichero y sus permisos
+
+Centrandonos en la primera columna podemos ver que el primer carácter indica el tipo de fichero.
+A continuación se listan todas las opciones:
+
+- **–**: fichero.
+- **d**: directorio.
 - **l**: enlace simbólico.
 - **c**: dispositivo de caracteres.
 - **b**: dispositivo de bloques.
