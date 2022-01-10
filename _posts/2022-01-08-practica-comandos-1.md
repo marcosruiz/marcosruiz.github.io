@@ -2,7 +2,7 @@
 title: "Práctica: Comandos GNU Linux 1"
 date: 2022-01-08 15:00:00 +/-TTTT
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
-tags: [gnu linux, comandos, terminal, bash, servicios en red]
+tags: [gnu linux, comandos, terminal, bash, redes locales, practica, servicios en red, seguridad informática]
 ---
 
 ## Objetivo
@@ -130,8 +130,8 @@ Duración aproximada: 5 minutos
 
 #### Pistas
 
-1. Utilice el comando clear.
-2. Utilice el comando echo.
+1. Utilice el comando `clear`.
+2. Utilice el comando `echo`.
 4. Puede ser necesario utilizar la secuencia de teclas [Ctrl]-V para desactivar la terminación de palabras con la tecla [Tab]; será entonces posible introducir una tabulación en la línea de comandos. 
 
 {:.activity}
@@ -167,7 +167,7 @@ Duración aproximada : 10 minutos
 
 1. Utilice el comando `cal`.
 5. Utilice la secuencia de teclas [Ctrl]-R.
-6. El comando sleep se limita a esperar el numero de segundos indicados en el argumento. 
+6. El comando `sleep` se limita a esperar el numero de segundos indicados en el argumento. 
 
 {:.activity}
 ### Desconexión

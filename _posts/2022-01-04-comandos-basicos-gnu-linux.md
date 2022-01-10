@@ -45,12 +45,19 @@ Su sintaxis es la siguiente: `man <comando>`.
 Por ejemplo el comando `man tail` nos mostrará por terminal una descripción del comando tail así como un listado con todos los argumentos que podemos utilizar junto a su significado. 
 Una vez estamos en el manual podemos salir de este pulsando la tecla "q".
 
+### more
+
+More es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante. 
+Su sintaxis es la siguiente: `more <fichero>`.
+
+Por ejemplo `more el_quijote.txt` nos mostrará el contenido paginado de el_quijote.txt.
+
 ### less
 
-Man (MANual) es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante y hacia atrás. 
-Su sintaxis es la siguiente: `less <comando>`.
+Less es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante **y hacia atrás**. 
+Su sintaxis es la siguiente: `less <fichero>`.
 
-Por ejemplo `less tail` nos mostrará información sobre el comando tail.
+Por ejemplo `less el_quijote.txt` nos mostrará el contenido paginado de el_quijote.txt.
 
 ### pwd
 
@@ -69,6 +76,7 @@ Su sintaxis es la siguiente : `ls <directorioAListar>`.
 
 Atributos opcionales:
 - **-l** muestra todos los detalles de los ficheros incluido los permisos.
+- **-a** muestra los ficheros y directorios ocultos. En linux los ficheros y directorios ocultos son los que empiezan por ".".
 
 A continuación se muestran varios ejemplos:
 
@@ -104,10 +112,11 @@ Su sintaxis es la siguiente : `cd <directorioAMoverse>`.
 Existen dos tipos de rutas:
 
 - Absolutas: Las rutas absolutas indican toda la ruta de un fichero o directorio incluyendo el directorio raíz (/).
+  - `~` simboliza el directorio del usuario actual. Por ejemplo, "/home/smr" en el caso de que seamos el usuario "smr".
 - Relativas: Las rutas relativas indican la ruta a partir de donde se este en ese momento situado. Para ello se usan una serie de caracteres comodín.
   - `.` simboliza el directorio actual.
   - `..` simboliza el directorio padre.
-  - `~` simboliza el directorio del usuario actual. Por ejemplo, "/home/smr" en el caso de que seamos el usuario "smr".
+
 
  A continuación se muestran varios ejemplos de uso:
 
