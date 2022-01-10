@@ -43,7 +43,7 @@ La entrega de esta práctica debe ser un documento PDF con un nombre en el sigui
 Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 
 1. Debe contener una portada con título, nombre de la asignatura, curso, autor y fecha de realización.
-2. Debe tener un Índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.
+2. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.
 3. Debe tener cada página numerada.
 4. Cada actividad debe estar numerada. 
 5. Cada actividad debe tener el enunciado en negrita y la respuesta en texto normal.
