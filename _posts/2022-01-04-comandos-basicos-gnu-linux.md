@@ -39,16 +39,23 @@ Los comandos en GNU Linux son case sensitive, es decir, se diferencia entre may�
 
 ### man
 
-Man (MANual) es un comando que sirve para aprender como se usa cualquier comando aún sin conexión a Internet. Por ejemplo el comando `man tail` nos mostrará por terminal una descripción del comando tail así como un listado con todos los argumentos que podemos utilizar junto a su significado. 
+Man (MANual) es un comando que sirve para aprender como se usa cualquier comando aún sin conexión a Internet. 
+Su sintaxis es la siguiente: `man <comando>`. 
+
+Por ejemplo el comando `man tail` nos mostrará por terminal una descripción del comando tail así como un listado con todos los argumentos que podemos utilizar junto a su significado. 
 Una vez estamos en el manual podemos salir de este pulsando la tecla "q".
 
 ### less
 
-Man (MANual) es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante y hacia atrás.
+Man (MANual) es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante y hacia atrás. 
+Su sintaxis es la siguiente: `less <comando>`.
+
+Por ejemplo `less tail` nos mostrará información sobre el comando tail.
 
 ### pwd
 
-Pwd (Print Working Directory) es un comando que sirve para saber en qué directorio estás. Su sintaxis es la siguiente : `pwd`. A continuación, se muestra un ejemplo de uso:
+Pwd (Print Working Directory) es un comando que sirve para saber en qué directorio estás. 
+Su sintaxis es la siguiente : `pwd`. A continuación, se muestra un ejemplo de uso:
 
 ```console
 $ pwd
@@ -57,7 +64,8 @@ $ pwd
 
 ### ls
 
-Ls (LiSt) es un comando que sirve para ver los directorios y archivos del directorio actual. Su sintaxis es la siguiente : `ls <directorioAListar>`. A continuación, se muestra un ejemplo de uso:
+Ls (LiSt) es un comando que sirve para ver los directorios y archivos del directorio actual. 
+Su sintaxis es la siguiente : `ls <directorioAListar>`.
 
 Atributos opcionales:
 - **-l** muestra todos los detalles de los ficheros incluido los permisos.
@@ -85,11 +93,13 @@ drwxr-xr-x 2 smr smr 4096 sep 20 10:06 Vídeos
 
 ### clear
 
-Clear es un comando que sirve para dejar vacío el terminal actual. Su sintaxis es la siguiente : `clear`.
+Clear es un comando que sirve para dejar vacío el terminal actual. 
+Su sintaxis es la siguiente : `clear`.
 
 ### cd
 
-Cd (Change Directory) es un comando que sirve para moverte por los directorios del sistema. Su sintaxis es la siguiente : `cd <directorioAMoverse>`.
+Cd (Change Directory) es un comando que sirve para moverte por los directorios del sistema. 
+Su sintaxis es la siguiente : `cd <directorioAMoverse>`.
 
 Existen dos tipos de rutas:
 
@@ -110,7 +120,10 @@ $ cd ~/patata/
 
 ### mkdir
 
-Mkdir (MaKe DIRectory) es un comando que sirve para crear un nuevo directorio. Su sintaxis es la siguiente : `mkdir <directorioACrear>`. A continuación, se muestra un ejemplo de uso:
+Mkdir (MaKe DIRectory) es un comando que sirve para crear un nuevo directorio. 
+Su sintaxis es la siguiente : `mkdir <directorioACrear>`. 
+
+A continuación, se muestra un ejemplo de uso:
 
 ```console
 $ mkdir patata
@@ -118,7 +131,10 @@ $ mkdir patata
 
 ### touch
 
-Touch es un comando que sirve para crear un nuevo fichero. Su sintaxis es la siguiente : `touch <ficheroACrear>`. A continuación, se muestra un ejemplo de uso:
+Touch es un comando que sirve para crear un nuevo fichero. 
+Su sintaxis es la siguiente : `touch <ficheroACrear>`. 
+
+A continuación, se muestra un ejemplo de uso:
 
 ```console
 $ touch patata.txt
@@ -126,7 +142,10 @@ $ touch patata.txt
 
 ### cat
 
-Cat (conCATenate) es un comando que sirve para ver el contenido de un archivo. Su sintaxis es la siguiente : `cat <ficheroAVer>`. A continuación, se muestra un ejemplo de uso:
+Cat (conCATenate) es un comando que sirve para ver el contenido de un archivo. 
+Su sintaxis es la siguiente : `cat <ficheroAVer>`. 
+
+A continuación, se muestra un ejemplo de uso:
 
 ```console
 $ cat patata.txt
@@ -135,7 +154,10 @@ Esto es el contenido del fichero patata.txt
 
 ### echo
 
-Echo es un comando que sirve para imprimir/mostrar por pantalla/terminal. Su sintaxis es la siguiente: `echo <textoAImprimir>`. A continuación, se muestra un ejemplo de uso:
+Echo es un comando que sirve para imprimir/mostrar por pantalla/terminal. 
+Su sintaxis es la siguiente: `echo <textoAImprimir>`. 
+
+A continuación, se muestra un ejemplo de uso:
 
 ```console
 $ echo "Hola mundo!"
@@ -144,9 +166,11 @@ Hola mundo!
 
 ### rm
 
-Rm (ReMove) es un comando que sirve para eliminar directorios vacios o ficheros. Su sintaxis es la siguiente: `rm <ficheroAEliminar>`.
+Rm (ReMove) es un comando que sirve para eliminar directorios vacíos o ficheros. 
+Su sintaxis es la siguiente: `rm <ficheroAEliminar>`.
 
 Atributos opcionales:
+
 - **-R** (Recursive): Indica que la copia se hace de manera recursiva, es decir, se borrará el directorio y todo lo que haya en su interior.
 
 A continuación, se muestra un ejemplo de uso:
@@ -158,7 +182,10 @@ $ rm -R patata
 
 ### rmdir
 
-Rmdir (ReMove DIRectory) es un comando que sirve para elimina ficheros, pero solo ficheros vacíos. Su sintaxis es la siguiente: `rmdir <directorioAEliminar>`. A continuación, se muestra un ejemplo de uso:
+Rmdir (ReMove DIRectory) es un comando que sirve para elimina ficheros, pero solo ficheros vacíos. 
+Su sintaxis es la siguiente: `rmdir <directorioAEliminar>`. 
+
+A continuación, se muestra un ejemplo de uso:
 
 ```console
 $ rmdir patata
@@ -166,9 +193,11 @@ $ rmdir patata
 
 ### cp
 
-Cp (CoPy) es un comando que sirve para copiar archivos. Su sintaxis es la siguiente: `cp <ficheroOrigen> <ficheroDestino>`.
+Cp (CoPy) es un comando que sirve para copiar archivos. 
+Su sintaxis es la siguiente: `cp <ficheroOrigen> <ficheroDestino>`.
 
 Atributos opcionales:
+
 - **-R** (Recursive): Indica que la copia se hace de manera recursiva, es decir, se copiará el directorio y todo lo que haya en su interior.
 
 A continuación, se muestra un ejemplo de uso:
@@ -180,7 +209,8 @@ $ rm -R patata
 
 ### mv
 
-Mv (MoVe) es un comando que sirve para mover archivos y directorios. Su sintaxis es la siguiente: `mv <ficheroOrigen> <ficheroDestino>`.
+Mv (MoVe) es un comando que sirve para mover archivos y directorios. 
+Su sintaxis es la siguiente: `mv <ficheroOrigen> <ficheroDestino>`.
 
 Atributos opcionales:
 
@@ -202,26 +232,30 @@ $ rm -R patata
 
 Nota: en el artículo [Permisos GNU Linux](https://marcosruiz.github.io/post/permisos-gnu-linux) se explica de manera detallada.
 
-Chmod (CHange MODe) es un comando que sirve para cambiar permisos (lectura, escritura y ejecución) de archivos y directorios. Su sintaxis es la siguiente: `chmod <opciones> <permisos> <ficheroACambiarPermisos>`.
+Chmod (CHange MODe) es un comando que sirve para cambiar permisos (lectura, escritura y ejecución) de archivos y directorios. 
+Su sintaxis es la siguiente: `chmod <permisos> <ficheroACambiarPermisos>`.
 
-Existen distintos tipos de usuarios:
+A modo de resumen, se debe saber que existen distintos tipos de usuarios:
 
-- **u**: usuario dueño del fichero
-- **g**: grupo de usuarios del dueño del fichero
-- **o**: todos los otros usuarios
-- **a**: todos los tipos de usuario (dueño, grupo y otros) 
+- **u** (user): usuario dueño del fichero
+- **g** (group): grupo de usuarios del dueño del fichero
+- **o** (other): todos los otros usuarios
+- **a** (all): todos los tipos de usuario (dueño, grupo y otros) 
 
-También hay que saber que existen tres tipos de permiso:
+Y tres tipos de permiso:
 
 - **r** (read): se refiere a los permisos de lectura
 - **w** (write): se refiere a los permisos de escritura
 - **x** (execute): se refiere a los permisos de ejecución
 
-Existen dos modos de uso del comando chmod: el modo octal y el modo notación simbólica.
+Distribuidos de la siguiente manera:
+
+![Gestión de permisos en GNU Linux](/assets/img/2022-01-05-permisos-gnu-linux/gestion-de-permisos-linux.png)
+_Distribución de los permisos de un fichero_
+
+Teniendo esto en cuenta, existen dos modos de uso del comando chmod: el modo octal y el modo notación simbólica. De los cuales se muestran varios ejemplos:
 
 #### Modo octal
-
-A continuación se muestran varios ejemplos de uso de la notación octal:
 
 - `chmod 777 patata.txt` añade todos los permisos al fichero patata.txt.
 - `chmod 000 patata.txt` quita todos los permisos al fichero patata.txt.
@@ -229,14 +263,15 @@ A continuación se muestran varios ejemplos de uso de la notación octal:
 
 #### Modo notación simbólica
 
-A continuación se muestran varios ejemplos de uso de la notación simbólica:
-
 - `chmod u+x patata.txt` añade permisos de ejecución al usuario propietario del fichero patata.txt.
 - `chmod a=rwx patata.txt` pone los permisos de lectura escritura y ejecución a todos los usuarios sobre el fichero patata.txt.
 
 ### sudo
 
-Sudo (Super User DO) es un comando que sirve para ejecutar un comando como administrador. Su sintaxis es la siguiente: `sudo <comando>`. A continuación se muestra un ejemplo de uso donde se instala el programa neofetch:
+Sudo (Super User DO) es un comando que sirve para ejecutar un comando como administrador. 
+Su sintaxis es la siguiente: `sudo <comando>`. 
+
+A continuación se muestra un ejemplo de uso donde se instala el programa neofetch:
 
 ```console
 $ sudo apt install neofetch
@@ -244,11 +279,15 @@ $ sudo apt install neofetch
 
 ### exit
 
-Exit es un comando que sirve para cerrar sesión. Su sintaxis es la siguiente: `exit`.
+Exit es un comando que sirve para cerrar sesión. 
+Su sintaxis es la siguiente: `exit`.
 
 ### history
 
-History es un comando que sirve para mostrar el histórico de comandos que se han realizado. Su sintaxis es la siguiente: `history`. A continuación se muestra un ejemplo de uso:
+History es un comando que sirve para mostrar el histórico de comandos que se han realizado. 
+Su sintaxis es la siguiente: `history`. 
+
+A continuación se muestra un ejemplo de uso:
 
 ```console
 $ history
@@ -257,11 +296,15 @@ $ history
     3  sudo apt install virtualbox-guest-utils
     4  sudo apt install virtualbox-guest-x11-hwe
     5  sudo apt install virtualbox-guest-x11-hwe
+    6  history
 ```
 
 ### head
 
-Head es un comando que sirve para mostrar el principio de un fichero. Su sintaxis es la siguiente: `head -<numeroDeLíneas>`. A continuación se muestra un ejemplo de uso donde se muestran las 5 primeras lineas de el_quijote.txt:
+Head es un comando que sirve para mostrar el principio de un fichero. 
+Su sintaxis es la siguiente: `head -<numeroDeLíneas>`. 
+
+A continuación se muestra un ejemplo de uso donde se muestran las 5 primeras lineas de el_quijote.txt:
 
 ```console
 $ head -5 el_quijote.txt
@@ -274,7 +317,10 @@ CAPÍTULO 1: Que trata de la condición y ejercicio del famoso hidalgo D. Quij
 
 ### tail
 
-Tail es un comando que sirve para mostrar el final de un fichero. Su sintaxis es la siguiente: `tail -<numeroDeLíneas>`. A continuación se muestra un ejemplo de uso donde se muestran las 5 ultimas lineas de el_quijote.txt:
+Tail es un comando que sirve para mostrar el final de un fichero. 
+Su sintaxis es la siguiente: `tail -<numeroDeLíneas>`. 
+
+A continuación se muestra un ejemplo de uso donde se muestran las 5 ultimas lineas de el_quijote.txt:
 
 ```console
 $ tail -5 el_quijote.txt
@@ -287,7 +333,14 @@ Forse altri canterà con miglior plettro. FINIS
 
 ### locate
 
-Locate es un comando que sirve para localizar un archivo. El argumento `-i` (ignore case) sirve para que no se haga distinción entre mayúsculas y minúsculas. También se puede usar el carácter comodín "*" que representa cero uno o más caracteres. A continuación se muestran varios ejemplos:
+Locate es un comando que sirve para localizar un archivo. 
+Su sintaxis es la siguiente: `locate <nombreDelFichero>`. 
+En el `<nombreDelFichero>` se puede usar el carácter comodín "*" que representa cero uno o más caracteres. 
+
+Argumentos opcionales:
+- **-i** (ignore case) sirve para que no se haga distinción entre mayúsculas y minúsculas.
+
+Ejemplos:
 
 ```console
 $ locate quijote
@@ -299,10 +352,15 @@ $ locate -i documentos
 
 ### find
 
-Find es un comando que sirve para buscar archivos y directorios dentro de un directorio. Los argumentos son los siguientes:
+Find es un comando que sirve para buscar archivos y directorios dentro de un directorio. 
+Su sintaxis es la siguiente: `locate <directorioDondeBuscar>`. 
 
-- **-name** indica el nombre del archivo o directorio.
-- **-type**, si es `d` indica que se busca un directorio.
+Los argumentos son los siguientes:
+
+- **-name** indica el nombre del archivo o directorio. Uso `-name <nombreDelFicheroABuscar>`.
+- **-type**, si es `d` indica que se busca un directorio. Uso `-type <tipoDelFicheroABuscar>`.
+
+Ejemplos:
 
 ```console
 $ find /home/ -name el_quijote.txt
@@ -316,7 +374,10 @@ $ find . -name el_quijote.txt
 
 ### grep
 
-Grep es un comando que sirve para buscar en un documento de texto dado.
+Grep es un comando que sirve para buscar en un documento de texto dado. 
+Su sintaxis es la siguiente: `grep <cadenaABuscar> <ficheroDondeBuscar>`.
+
+Ejemplo:
 
 ```console
 $ grep "azules, " el_quijote.txt
@@ -325,13 +386,17 @@ de los miembros gigantes que está a su derecha mano, es el nunca medroso Brand
 
 ### diff
 
-Diff es un comando que compara el contenido de dos archivos línea por línea. Después de analizar los archivos, genera las líneas que no coinciden. Los programadores a menudo usan este comando cuando necesitan hacer modificaciones al programa en lugar de reescribir todo el código fuente.
+Diff es un comando que compara el contenido de dos archivos línea por línea. Después de analizar los archivos, genera las líneas que no coinciden. Los programadores a menudo usan este comando cuando necesitan hacer modificaciones al programa en lugar de reescribir todo el código fuente. 
+Su sintaxis es la siguiente: `grep <fichero1> <fichero2>`.
 
-La forma más simple de usar este comando es `diff archivo1.ext archivo2.ext`.
+La forma más simple de usar este comando es `diff fichero1.txt fichero2.txt`.
 
 ### chown
 
-Chown (CHange OWNer) es un comando que sirve para cambiar o transferir la propiedad de un archivo a otro usuario. El siguiente ejemplo pone al usuario "marcos" como propietario del fichero "fichero.txt".
+Chown (CHange OWNer) es un comando que sirve para cambiar o transferir la propiedad de un archivo a otro usuario. 
+Su sintaxis es la siguiente: `chown <usuario> <fichero>`. 
+
+El siguiente ejemplo pone al usuario "marcos" como propietario del fichero "fichero.txt".
 
 ```console
 $ chown marcos fichero.txt
@@ -339,7 +404,10 @@ $ chown marcos fichero.txt
 
 ### whoami
 
-Whoami (WHO AM I?) es un comando que sirve para saber quien soy yo, es decir, para saber el usuario con el que estoy logeado en la terminal correspondiente.
+Whoami (WHO AM I?) es un comando que sirve para saber quien soy yo, es decir, para saber el usuario con el que estoy logeado en la terminal correspondiente. 
+Su sintaxis es la siguiente: `whoami`.
+
+Ejemplo:
 
 ```console
 $ whoami
@@ -348,7 +416,11 @@ smr
 
 ### neofetch
 
-Neofetch es un comando que sirve para mostrar información detallada sobre tu sistema Linux, como el nombre de la máquina, el sistema operativo, el núcleo, etc. de una manera bonita. Este programa es necesario instalarlo previamente con la instrucción `sudo apt install neofetch`.
+Neofetch es un comando que sirve para mostrar información detallada sobre tu sistema Linux, como el nombre de la máquina, el sistema operativo, el núcleo, etc. de una manera bonita. 
+Su sintaxis es la siguiente: `neofetch`. 
+Este programa es necesario instalarlo previamente con la instrucción `sudo apt install neofetch`.
+
+Ejemplo:
 
 ```console
 $ neofetch
@@ -375,7 +447,10 @@ ssssssssssssso/-`      `-/osssssssssssss   Resolution: 1920x902
 
 ### wget
 
-Wget (Web Get) es un comando que sirve para descargar archivos de Internet. En el siguiente ejemplo nos descargamos una imagen de prueba para posteriormente comprobar que efectivamente la nueva imagen está ahí.
+Wget (Web Get) es un comando que sirve para descargar archivos de Internet. 
+Su sintaxis es la siguiente: `wget <url>`. 
+
+En el siguiente ejemplo nos descargamos una imagen de prueba para posteriormente comprobar que efectivamente la nueva imagen está ahí.
 
 ```console
 $ wget https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg
@@ -396,6 +471,7 @@ el_quijote.txt  imagen-de-prueba-320x240-1.jpg
 ### curl
 
 Curl (Client URL) es un comando que sirve para descargar archivos desde una ubicación remota.
+Su sintaxis es la siguiente: `curl <url>`. 
 
 Atributos opcionales:
 
@@ -405,6 +481,8 @@ Atributos opcionales:
 - **--cookie-jar** guarda las cookies en un fichero.
 - **--cookie** manda las cookie de un fichero.
 - **--limit-rate** restringe el ancho de banda.
+
+Ejemplos de uso:
 
 ```console
 $ curl testdomain.com
@@ -432,7 +510,10 @@ $ curl --cookie Mycookies.txt https://www. samplewebsite.com
 
 ### top
 
-Top (Table Of Processes) es un comando que nos da información acerca del uso de la cpu, de la memoria, de los procesos en ejecución, etc en tiempo real. Nos puede ayudar a monitorizar nuestro servidor dedicado si notamos que algo no funciona bien.
+Top (Table Of Processes) es un comando que nos da información acerca del uso de la cpu, de la memoria, de los procesos en ejecución, etc en tiempo real. 
+Nos puede ayudar a monitorizar nuestro servidor dedicado si notamos que algo no funciona bien.
+Su sintaxis es la siguiente: `top`. 
+
 
 ```console
 $ top
@@ -457,6 +538,10 @@ KiB Intercambio:  1459804 total,  1459804 libre,        0 usado.  6409468 dispon
 ### ifconfig
 
 Ifconfig es un comando que sirve para mostrar la configuración vigente de las interfaces de red activas, con detalles como la dirección MAC o el tráfico que ha circulado por las mismas hasta el momento. Las interfaces de red en Linux se suelen denominar eth (eth0, eth1, etc.).
+Su sintaxis es la siguiente: `ìfconfig`.
+
+
+Ejemplo:
 
 ```console
 $ ifconfig
@@ -482,6 +567,9 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
 ### ping
 
 Ping es un comando que sirve para averiguar si el equipo en el que estamos trabajando puede comunicarse con otros a través de la red. De esta forma podemos constatar si una instalación de red está funcionando correctamente.
+Su sintaxis es la siguiente: `ping <ipOURl>`.
+
+Ejemplo:
 
 ```console
 $ ping 8.8.8.8
@@ -510,6 +598,7 @@ rtt min/avg/max/mdev = 62.597/114.209/202.812/62.935 ms
 ### traceroute
 
 Traceroute es un comando que sirve para determinar la ruta que toma un paquete de protocolo de Internet (IP) para alcanzar su destino.
+Su sintaxis es la siguiente: `traceroute <ipOURl>`.
 
 ```console
 $ traceroute xataka.com

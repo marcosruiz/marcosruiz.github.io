@@ -72,11 +72,13 @@ A continuación se listan todas las opciones:
 Los siguientes nueves caracteres conforman el tipo de permiso que están atribuido, se representan en el siguiente orden lectura(`r`), escritura (`w`), ejecución (`x`) de el dueño (`u`), el grupo (`g`) y el resto de usuarios (`o`) respectivamente. Cuando se encuentra el carácter `–` indica que no tiene el permiso correspondiente al lugar.
 
 ![Gestión de permisos en GNU Linux](/assets/img/2022-01-05-permisos-gnu-linux/gestion-de-permisos-linux.png)
-_Resumen de los permisos de un fichero o directorio_
+_Distribución de los permisos de un fichero_
 
 ## ¿Cómo se modifican los permisos?
 
-Con el comando `chmod` podemos cambiar los permisos de un fichero o un directorio. La sintaxis de este comando es `chmod <modificadores> <permisos> <nombreDelFichero>`. Los modificadores más importantes son:
+Con el comando `chmod` podemos cambiar los permisos de un fichero o un directorio. 
+La sintaxis de este comando es `chmod <modificadores> <permisos> <nombreDelFichero>`. 
+Los modificadores más importantes son:
 
 - `-R`: modifica los permisos recursivamente.
 - `-v`: muestra cada fichero o directorio que se está modificando.
