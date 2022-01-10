@@ -46,6 +46,12 @@ drwxr-xr-x 2 smr smr 4096 dic 21 10:35 Templates
 drwxr-xr-x 2 smr smr 4096 sep 20 10:06 Vídeos
 ```
 
+```
+      ⬆    ⬆  ⬆   ⬆    ⬆       ⬆          ⬆
+
+    col1   2  3   4  col5     col6       col7
+```
+
 Cada columna está separada por un espacio y nos da cierta información que puede resultarnos útil:
 
 1. Tipo de fichero y sus permisos.

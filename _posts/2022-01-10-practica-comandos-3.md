@@ -1,9 +1,11 @@
 ---
 title: "Práctica: Comandos GNU Linux 3"
-date: 2022-01-08 14:00:00 +/-TTTT
+date: 2022-01-10 12:00:00 +/-TTTT
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática]
+tags: [gnu linux, comandos, terminal, bash, seguridad informática, redes locales]
 ---
+
+⚠️ La "Práctica: Comandos GNU Linux 2" NO existe.
 
 ## Objetivo
 
@@ -20,27 +22,32 @@ A continuación se listan las actividades que se deben realizar para esta práct
 
 Responde a las siguientes preguntas:
 
- 1. ¿En qué documentación se debe buscar para obtener información referente a un aspecto general del sistema GNU/Linux (red, impresión, particionamiento…)?
-    1. El manual electrónico.
-    1. La documentación Info.
-    1. La documentación HOWTO.
-    1. En el directorio /usr/share/doc.
-    1. En Internet.
-2. ¿En qué documentación se debe buscar para obtener información referente a un comando concreto del sistema GNU/Linux (wc, date, who, vi...)?
-    1. El manual electrónico.
-    1. La documentación Info.
-    1. La documentación HOWTO.
-    1. En el directorio /usr/share/doc.
-    1. En Internet.
-3. La documentación GNU/Linux está disponible únicamente en formato texto:
-    1. Verdadero
-    1. Falso
-4. ¿Qué secciones del manual electrónico corresponden a los comandos de usuario, a los comandos de administración y a los formatos de los archivos de configuración?
-5. ¿Qué representan las direcciones de Internet siguientes?
-    1. http://www.linux.org
-    1. http://www.gnu.org
-    1. http://www.tldp.org
-    1. es.comp.os.linux 
+1. ¿Qué significa el carácter "." (punto) al principio del nombre de un archivo?
+2. ¿Cuáles son los siete tipos de archivos en Linux?
+3. ¿Qué tipo de ruta son las siguientes (absoluta, relativa, personal)?
+    1. /home/tux/.bashrc
+    1. ~nicolas/.bashrc
+    1. /etc
+    1. ./services
+    1. ~Desktop
+    1. ../home
+    1. fic
+4. ¿Qué comando permite cambiar de directorio actual?
+    1. `pwd`
+    1. `cd`
+    1. `mv`
+    1. `mkdir`
+5. ¿Dónde se almacenan los nombres de archivos en un sistema de archivos Linux?
+    1. En los bloques de datos reservados a los archivos.
+    1. En el inodo de los archivos.
+    1. En los bloques de datos reservados a los directorios.
+    1. En el inodo de los directorios.
+6. ¿Qué comandos permiten visualizar el contenido de un archivo de texto?
+    1. `cat`
+    1. `more`
+    1. `od`
+    1. `strings`
+    1. `less`
 
 {:.activity}
 ### Exploración del árbol de Linux
@@ -65,7 +72,7 @@ Responde a las siguientes preguntas:
 3. Utilice el comando `cd`; podrá ayudarse de la finalización de palabras con la tecla [Tab].
 4. El directorio padre se referencia por "..".
 6. El directorio precedente en el que usted se encontraba es /usr/share.
-7. Utilice el comando ls.
+7. Utilice el comando `ls`.
 10. Utilice la opción volviendo al comando...
 
 {:.activity}
@@ -130,9 +137,21 @@ Duración estimada: 40 minutos
 12. Efectúe un segundo vínculo simbólico con el nombre naranjaAbsoluta hacia el archivo rojo especificando esta vez el archivo rojo con una ruta absoluta.
 13. Remonte al directorio capítulo3 y renombre el directorio color como pintura. ¿Es necesario especificar...
 
-## Entrega
+## Entrega y presentación
 
-La entrega de esta práctica debe ser un documento PDF con un nombre en el siguiente formato `<Apellidos>_<Nombre>_Práctica<NúmeroDeLaPráctica>.pdf`. Por ejemplo, en mi caso el nombre del documento PDF sería `RuizGarcía_Marcos_Práctica<NúmeroDeLaPráctica>.pdf`.
+La entrega de esta práctica debe ser un documento PDF con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.pdf". Por ejemplo, en mi caso el nombre del documento PDF sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.pdf".
+
+Asegúrate de que el documento PDF cumple con los siguientes parámetros:
+
+1. Debe contener una portada con título, nombre de la asignatura, curso, autor y fecha de realización.
+2. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.
+3. Debe tener cada página numerada.
+4. Cada actividad debe estar numerada. 
+5. Cada actividad debe tener el enunciado en negrita y la respuesta en texto normal.
+6. Cada imagen debe tener un pie de foto la cual tenga el siguiente formato: "Figura \<número\>: \<BreveDescripciónDeLaFigura\>".
+7. El documento no debe contener faltas ortográficas.
+8. Los comandos y ficheros de configuración que hayas utilizado deben quedar reflejados en el PDF de la entrega en texto para que permitirte copiar y pegar el día del examen todos los comandos de una manera rápida.
+9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
 
 ## Bibliografía
 

@@ -146,9 +146,9 @@ Duración aproximada : 10 minutos
 
 #### Pistas
 
-1. Utilice el comando date.
-2. Utilice el comando cal.
-3. Utilice el comando cal con los argumentos adecuados.
+1. Utilice el comando `date`.
+2. Utilice el comando `cal`.
+3. Utilice el comando `cal` con los argumentos adecuados.
 
 {:.activity}
 ### Utilización del ratón y del teclado
@@ -165,7 +165,7 @@ Duración aproximada : 10 minutos
 
 #### Pistas
 
-1. Utilice el comando cal.
+1. Utilice el comando `cal`.
 5. Utilice la secuencia de teclas [Ctrl]-R.
 6. El comando sleep se limita a esperar el numero de segundos indicados en el argumento. 
 
