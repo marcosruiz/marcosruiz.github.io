@@ -19,7 +19,7 @@ Duración: 1,5 horas.
 A continuación se listan las actividades a realizar para esta práctica.
 
 {:.activity}
-### Configurar Umask en ProFtpd en Zorin OS
+### Configurar Umask en ProFTPD en Zorin OS Lite
 
 Siguiendo los pasos del siguiente vídeo:
 

@@ -21,7 +21,7 @@ Duración: 3 horas.
 A continuación se listan las actividades a realizar para esta práctica.
 
 {:.activity}
-### Instalar el servidor ProFTPD
+### Instalar el servidor ProFTPD en Zorin OS Lite
 
 Siguiendo los pasos del vídeo FTP LINUX #1 INSTALAR Servidor FTP - ProFtpd Ubuntu de Redes Plus instalar, configurar y probar un servidor FTP en Zorin OS Lite. Deberás explicar todos los pasos realizados haciendo las capturas necesarias que demuestren la realización de dicha instalación, configuración y prueba del servidor.
 
