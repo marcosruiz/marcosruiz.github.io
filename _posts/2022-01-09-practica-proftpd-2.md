@@ -2,19 +2,17 @@
 title: "Práctica: Servicio FTP (Parte II)"
 date: 2022-01-09 22:30:00 +/-TTTT
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
-tags: [gnu linux, comandos, terminal, bash, smr, seguridad informática]
+tags: [gnu linux, comandos, terminal, bash, smr, servicios en red, ftp]
 ---
 
 ## Objetivo
 
 El objetivo de esta práctica es:
 
-- Conocer el funcionamiento del protocolo de transferencia de archivos.
-- Entender el modo de funcionamiento cliente-servidor.
-- Ser capaz de gestionar servidores FTP.
-- Aprender el uso de los comandos que debe utilizar un cliente FTP.
+- Conocer el sistema de permisos de GNU Linux.
+- Conocer el funcionamiento del UMask del servidor ProFTPD.
 
-Duración: 3 horas.
+Duración: 1,5 horas.
 
 ## Actividades
 
