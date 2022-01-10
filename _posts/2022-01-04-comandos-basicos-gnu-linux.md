@@ -117,7 +117,6 @@ Existen dos tipos de rutas:
   - `.` simboliza el directorio actual.
   - `..` simboliza el directorio padre.
 
-
  A continuación se muestran varios ejemplos de uso:
 
 ```console
@@ -180,7 +179,7 @@ Su sintaxis es la siguiente: `rm <ficheroAEliminar>`.
 
 Atributos opcionales:
 
-- **-R** (Recursive): Indica que la copia se hace de manera recursiva, es decir, se borrará el directorio y todo lo que haya en su interior.
+- **-R** (Recursive): Indica que el borrado se hace de manera recursiva, es decir, se borrará el directorio y todo lo que haya en su interior.
 
 A continuación, se muestra un ejemplo de uso:
 
@@ -223,7 +222,7 @@ Su sintaxis es la siguiente: `mv <ficheroOrigen> <ficheroDestino>`.
 
 Atributos opcionales:
 
-- **-R** (Recursive): Indica que la copia se hace de manera recursiva, es decir, se copiará el directorio y todo lo que haya en su interior.
+- **-R** (Recursive): Indica que el corte se hace de manera recursiva, es decir, se cortará el directorio y todo lo que haya en su interior.
 
 A continuación se muestra un ejemplo de uso donde se elimina el fichero patata.txt:
 
