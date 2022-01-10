@@ -18,7 +18,7 @@ A continuación se listan las actividades que se deben realizar para esta práct
 {:.activity}
 ### Requisitos previos
 
-Para validar los requisitos previos necesarios, antes de iniciar la PT, responda las preguntas siguientes:
+Responde a las siguientes preguntas:
 
 1. ¿Qué significan los acrónimos FSF, GNU y GPL?
 2. ¿Qué es Linux?

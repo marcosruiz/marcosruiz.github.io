@@ -16,6 +16,33 @@ Duración: 5 h.
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
 {:.activity}
+### Requisitos previos
+
+Responde a las siguientes preguntas:
+
+ 1. ¿En qué documentación se debe buscar para obtener información referente a un aspecto general del sistema GNU/Linux (red, impresión, particionamiento…)?
+    1. El manual electrónico.
+    1. La documentación Info.
+    1. La documentación HOWTO.
+    1. En el directorio /usr/share/doc.
+    1. En Internet.
+2. ¿En qué documentación se debe buscar para obtener información referente a un comando concreto del sistema GNU/Linux (wc, date, who, vi...)?
+    1. El manual electrónico.
+    1. La documentación Info.
+    1. La documentación HOWTO.
+    1. En el directorio /usr/share/doc.
+    1. En Internet.
+3. La documentación GNU/Linux está disponible únicamente en formato texto:
+    1. Verdadero
+    1. Falso
+4. ¿Qué secciones del manual electrónico corresponden a los comandos de usuario, a los comandos de administración y a los formatos de los archivos de configuración?
+5. ¿Qué representan las direcciones de Internet siguientes?
+    1. http://www.linux.org
+    1. http://www.gnu.org
+    1. http://www.tldp.org
+    1. es.comp.os.linux 
+
+{:.activity}
 ### Exploración del árbol de Linux
 
 1. Conéctese a la segunda consola virtual texto (tty2) como el usuario "\<tuNombreDeUsuario\>".
