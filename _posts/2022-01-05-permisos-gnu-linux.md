@@ -106,7 +106,7 @@ En este modo solo se especifica a quien se otorga el permiso, usuario(u), grupo(
 
 A continuación se muestran una serie de ejemplos:
 
-El comando `chmod u+rwx,g+rx,g-x,o-w fichero.txt` hace lo siguiente:
+El comando `chmod u+rwx,g+rx,g-w,o-w fichero.txt` hace lo siguiente:
 
 - El usuario gana permisos lectura, escritura y ejecución.
 - El grupo gana permisos de lectura, escritura y pierde los de ejecución.

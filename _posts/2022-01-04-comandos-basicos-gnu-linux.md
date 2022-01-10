@@ -35,13 +35,16 @@ A continuación explicaré que significa cada parte:
 
 ## Comandos
 
-Los comandos en GNU Linux son case sensitive, es decir, se diferencia entre mayúsculas y minúsculas. TODOS los comandos se escriben en minúsculas. Para acceder a la documentación de un comando se puede ejecutar la instrucción `man <nombreDelComando>` o `<nombreDelComando> -h` o `<nombreDelComando> --help`. A continuación se muestran varios ejemplos de uso:
+Los comandos en GNU Linux son case sensitive, es decir, se diferencia entre mayúsculas y minúsculas. TODOS los comandos se escriben en minúsculas.
 
-```console
-$ man chmod
-$ chmod -h
-$ chmod --help
-```
+### man
+
+Man (MANual) es un comando que sirve para aprender como se usa cualquier comando aún sin conexión a Internet. Por ejemplo el comando `man tail` nos mostrará por terminal una descripción del comando tail así como un listado con todos los argumentos que podemos utilizar junto a su significado. 
+Una vez estamos en el manual podemos salir de este pulsando la tecla "q".
+
+### less
+
+Man (MANual) es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante y hacia atrás.
 
 ### pwd
 
@@ -115,10 +118,10 @@ $ mkdir patata
 
 ### touch
 
-Touch (MaKe DIRectory) es un comando que sirve para crear un nuevo fichero. Su sintaxis es la siguiente : `touch <ficheroACrear>`. A continuación, se muestra un ejemplo de uso:
+Touch es un comando que sirve para crear un nuevo fichero. Su sintaxis es la siguiente : `touch <ficheroACrear>`. A continuación, se muestra un ejemplo de uso:
 
 ```console
-$ mkdir patata.txt
+$ touch patata.txt
 ```
 
 ### cat
@@ -256,19 +259,6 @@ $ history
     5  sudo apt install virtualbox-guest-x11-hwe
 ```
 
-### tail
-
-Tail es un comando que sirve para mostrar el final de un fichero. Su sintaxis es la siguiente: `tail -<numeroDeLíneas>`. A continuación se muestra un ejemplo de uso donde se muestran las 5 ultimas lineas de el_quijote.txt:
-
-```console
-$ tail -5 el_quijote.txt
-Reposa aquí Dulcinea;
-y, aunque de carnes rolliza, la volvió en polvo y ceniza la muerte espantable y fea. Fue de castiza ralea,
-y tuvo asomos de dama; del gran Quijote fue llama, y fue gloria de su aldea.
-Estos fueron los versos que se pudieron leer; los demás, por estar carcomida la letra, se entregaron a un académico para que por conjeturas los declarase. Tiénese noticia que lo ha hecho, a costa de muchas vigilias y mucho trabajo, y que tiene intención de sacallos a luz, con esperanza de la tercera salida de don Quijote.
-Forse altri canterà con miglior plettro. FINIS
-```
-
 ### head
 
 Head es un comando que sirve para mostrar el principio de un fichero. Su sintaxis es la siguiente: `head -<numeroDeLíneas>`. A continuación se muestra un ejemplo de uso donde se muestran las 5 primeras lineas de el_quijote.txt:
@@ -280,6 +270,19 @@ Miguel de Cervantes Saavedra
 
 PRIMERA PARTE
 CAPÍTULO 1: Que trata de la condición y ejercicio del famoso hidalgo D. Quijote de la Mancha
+```
+
+### tail
+
+Tail es un comando que sirve para mostrar el final de un fichero. Su sintaxis es la siguiente: `tail -<numeroDeLíneas>`. A continuación se muestra un ejemplo de uso donde se muestran las 5 ultimas lineas de el_quijote.txt:
+
+```console
+$ tail -5 el_quijote.txt
+Reposa aquí Dulcinea;
+y, aunque de carnes rolliza, la volvió en polvo y ceniza la muerte espantable y fea. Fue de castiza ralea,
+y tuvo asomos de dama; del gran Quijote fue llama, y fue gloria de su aldea.
+Estos fueron los versos que se pudieron leer; los demás, por estar carcomida la letra, se entregaron a un académico para que por conjeturas los declarase. Tiénese noticia que lo ha hecho, a costa de muchas vigilias y mucho trabajo, y que tiene intención de sacallos a luz, con esperanza de la tercera salida de don Quijote.
+Forse altri canterà con miglior plettro. FINIS
 ```
 
 ### locate
@@ -328,7 +331,7 @@ La forma más simple de usar este comando es `diff archivo1.ext archivo2.ext`.
 
 ### chown
 
-Chown es un comando que sirve para cambiar o transferir la propiedad de un archivo a otro usuario. El siguiente ejemplo pone al usuario "marcos" como propietario del fichero "fichero.txt".
+Chown (CHange OWNer) es un comando que sirve para cambiar o transferir la propiedad de un archivo a otro usuario. El siguiente ejemplo pone al usuario "marcos" como propietario del fichero "fichero.txt".
 
 ```console
 $ chown marcos fichero.txt
@@ -372,7 +375,7 @@ ssssssssssssso/-`      `-/osssssssssssss   Resolution: 1920x902
 
 ### wget
 
-Wget es un comando que sirve para descargar archivos de Internet. En el siguiente ejemplo nos descargamos una imagen de prueba para posteriormente comprobar que efectivamente la nueva imagen está ahí.
+Wget (Web Get) es un comando que sirve para descargar archivos de Internet. En el siguiente ejemplo nos descargamos una imagen de prueba para posteriormente comprobar que efectivamente la nueva imagen está ahí.
 
 ```console
 $ wget https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg
@@ -448,15 +451,6 @@ KiB Intercambio:  1459804 total,  1459804 libre,        0 usado.  6409468 dispon
  1335 smr       20   0  193568   2884   2528 S   0,3  0,0   2:19.84 VBoxClient  
 ...
 ```
-
-### man
-
-Man (MANual) es un comando que sirve para aprender como se usa cualquier comando aún sin conexión a Internet. Por ejemplo el comando `man tail` nos mostrará por terminal una descripción del comando tail así como un listado con todos los argumentos que podemos utilizar junto a su significado. 
-Una vez estamos en el manual podemos salir de este pulsando la tecla "q".
-
-### less
-
-Man (MANual) es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante y hacia atrás.
 
 ## Comandos para redes
 
