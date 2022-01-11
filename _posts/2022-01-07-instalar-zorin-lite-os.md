@@ -1,6 +1,6 @@
 ---
 title: Instalar Zorin OS Lite en Virtual Box
-date: 2022-01-07 15:00:00 +/-TTTT
+date: 2022-01-07 15:00:00 +0100
 categories: [General, GNU Linux]
 tags: [gnu linux, dam, smr, entornos de desarrollo, seguridad informática, servicios en red, redes locales, virtual box, zorin, ubuntu, tutorial]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Comandos GNU Linux 8"
-date: 2022-01-08 14:00:00 +/-TTTT
+date: 2022-01-08 14:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
 tags: [gnu linux, comandos, terminal, bash, smr, seguridad informática]
 ---

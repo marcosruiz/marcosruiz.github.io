@@ -1,6 +1,6 @@
 ---
 title: Hola mundo!
-date: 2021-12-31 17:17:00 +/-TTTT
+date: 2021-12-31 17:17:00 +0100
 categories: [General]
 tags: [prueba]
 ---

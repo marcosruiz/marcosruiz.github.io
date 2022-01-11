@@ -1,6 +1,6 @@
 ---
-title: "Práctica: Comandos GNU Linux 1"
-date: 2022-01-08 15:00:00 +/-TTTT
+title: "Práctica: Comandos GNU Linux (Parte 1)"
+date: 2022-01-08 15:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
 tags: [gnu linux, comandos, terminal, bash, redes locales, practica, servicios en red, seguridad informática]
 ---

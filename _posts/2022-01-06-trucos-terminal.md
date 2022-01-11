@@ -1,6 +1,6 @@
 ---
 title: Consejos y trucos terminal en GNU Linux
-date: 2022-01-06 15:20:00 +/-TTTT
+date: 2022-01-06 15:20:00 +0100
 categories: [General, GNU Linux]
 tags: [gnu linux, terminal, dam, smr, entornos de desarrollo, seguridad informática, servicios en red, redes locales]     # TAG names should always be lowercase
 ---

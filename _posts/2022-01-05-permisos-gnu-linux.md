@@ -1,6 +1,6 @@
 ---
 title: Permisos en GNU Linux
-date: 2022-01-05 13:20:00 +/-TTTT
+date: 2022-01-05 13:20:00 +0100
 categories: [General, GNU Linux]
 tags: [gnu linux, comandos, terminal, bash, dam, smr, entornos de desarrollo, seguridad informática, servicios en red]
 ---

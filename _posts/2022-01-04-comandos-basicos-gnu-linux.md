@@ -1,6 +1,6 @@
 ---
 title: 30 comandos básicos de GNU Linux
-date: 2022-01-04 16:30:00 +/-TTTT
+date: 2022-01-04 16:30:00 +0100
 categories: [General, GNU Linux]
 tags: [gnu linux, terminal, dam, smr, servicios en red, seguridad informática, entornos de desarrollo, redes locales]
 ---
@@ -37,6 +37,8 @@ A continuación explicaré que significa cada parte:
 
 Los comandos en GNU Linux son case sensitive, es decir, se diferencia entre mayúsculas y minúsculas. TODOS los comandos se escriben en minúsculas.
 
+{:.section}
+{:.section}
 ### man
 
 Man (MANual) es un comando que sirve para aprender como se usa cualquier comando aún sin conexión a Internet. 
@@ -45,6 +47,7 @@ Su sintaxis es la siguiente: `man <comando>`.
 Por ejemplo el comando `man tail` nos mostrará por terminal una descripción del comando tail así como un listado con todos los argumentos que podemos utilizar junto a su significado. 
 Una vez estamos en el manual podemos salir de este pulsando la tecla "q".
 
+{:.section}
 ### more
 
 More es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante. 
@@ -52,13 +55,16 @@ Su sintaxis es la siguiente: `more <fichero>`.
 
 Por ejemplo `more el_quijote.txt` nos mostrará el contenido paginado de el_quijote.txt.
 
-### less
+⚡ Si quieres realizar estos mismos ejemplos en tu ordenador puedes descargar el fichero de [aquí](https://gist.githubusercontent.com/jsdario/6d6c69398cb0c73111e49f1218960f79/raw/8d4fc4548d437e2a7203a5aeeace5477f598827d/el_quijote.txt).
+
+{:.section}less
 
 Less es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante **y hacia atrás**. 
 Su sintaxis es la siguiente: `less <fichero>`.
 
 Por ejemplo `less el_quijote.txt` nos mostrará el contenido paginado de el_quijote.txt.
 
+{:.section}
 ### pwd
 
 Pwd (Print Working Directory) es un comando que sirve para saber en qué directorio estás. 
@@ -69,6 +75,7 @@ $ pwd
 /home/usuario/
 ```
 
+{:.section}
 ### ls
 
 Ls (LiSt) es un comando que sirve para ver los directorios y archivos del directorio actual. 
@@ -99,11 +106,13 @@ drwxr-xr-x 2 smr smr 4096 dic 21 10:35 Templates
 drwxr-xr-x 2 smr smr 4096 sep 20 10:06 Vídeos
 ```
 
+{:.section}
 ### clear
 
 Clear es un comando que sirve para dejar vacío el terminal actual. 
 Su sintaxis es la siguiente : `clear`.
 
+{:.section}
 ### cd
 
 Cd (Change Directory) es un comando que sirve para moverte por los directorios del sistema. 
@@ -112,10 +121,10 @@ Su sintaxis es la siguiente : `cd <directorioAMoverse>`.
 Existen dos tipos de rutas:
 
 - Absolutas: Las rutas absolutas indican toda la ruta de un fichero o directorio incluyendo el directorio raíz (/).
-  - `~` simboliza el directorio del usuario actual. Por ejemplo, "/home/smr" en el caso de que seamos el usuario "smr".
 - Relativas: Las rutas relativas indican la ruta a partir de donde se este en ese momento situado. Para ello se usan una serie de caracteres comodín.
   - `.` simboliza el directorio actual.
   - `..` simboliza el directorio padre.
+  - `~` simboliza el directorio del usuario actual. Por ejemplo, "/home/smr" en el caso de que seamos el usuario "smr". Nota: Las rutas con el símbolo `~` no se consideran rutas válidas por lo que no tiene sentido clasificarla como absoluta o relativa.
 
  A continuación se muestran varios ejemplos de uso:
 
@@ -126,6 +135,7 @@ $ cd ../patata/
 $ cd ~/patata/
 ```
 
+{:.section}
 ### mkdir
 
 Mkdir (MaKe DIRectory) es un comando que sirve para crear un nuevo directorio. 
@@ -137,6 +147,7 @@ A continuación, se muestra un ejemplo de uso:
 $ mkdir patata
 ```
 
+{:.section}
 ### touch
 
 Touch es un comando que sirve para crear un nuevo fichero. 
@@ -148,6 +159,7 @@ A continuación, se muestra un ejemplo de uso:
 $ touch patata.txt
 ```
 
+{:.section}
 ### cat
 
 Cat (conCATenate) es un comando que sirve para ver el contenido de un archivo. 
@@ -160,6 +172,7 @@ $ cat patata.txt
 Esto es el contenido del fichero patata.txt
 ```
 
+{:.section}
 ### echo
 
 Echo es un comando que sirve para imprimir/mostrar por pantalla/terminal. 
@@ -172,6 +185,7 @@ $ echo "Hola mundo!"
 Hola mundo!
 ```
 
+{:.section}
 ### rm
 
 Rm (ReMove) es un comando que sirve para eliminar directorios vacíos o ficheros. 
@@ -188,6 +202,7 @@ $ rm patata.txt
 $ rm -R patata
 ```
 
+{:.section}
 ### rmdir
 
 Rmdir (ReMove DIRectory) es un comando que sirve para elimina ficheros, pero solo ficheros vacíos. 
@@ -199,6 +214,7 @@ A continuación, se muestra un ejemplo de uso:
 $ rmdir patata
 ```
 
+{:.section}
 ### cp
 
 Cp (CoPy) es un comando que sirve para copiar archivos. 
@@ -215,6 +231,7 @@ $ rm patata.txt
 $ rm -R patata
 ```
 
+{:.section}
 ### mv
 
 Mv (MoVe) es un comando que sirve para mover archivos y directorios. 
@@ -236,6 +253,7 @@ A continuación se muestra otro ejemplo donde se elimina el directorio patata y 
 $ rm -R patata
 ```
 
+{:.section}
 ### chmod
 
 Nota: en el artículo [Permisos GNU Linux](https://marcosruiz.github.io/post/permisos-gnu-linux) se explica de manera detallada.
@@ -263,17 +281,20 @@ _Distribución de los permisos de un fichero_
 
 Teniendo esto en cuenta, existen dos modos de uso del comando chmod: el modo octal y el modo notación simbólica. De los cuales se muestran varios ejemplos:
 
-#### Modo octal
+#{:.section}
+### Modo octal
 
 - `chmod 777 patata.txt` añade todos los permisos al fichero patata.txt.
 - `chmod 000 patata.txt` quita todos los permisos al fichero patata.txt.
 - `chmod 755 patata.txt` añade todos los permisos al dueño del fichero patata.txt y permisos de lectura y ejecución para el grupo y para el resto de usuarios. 
 
-#### Modo notación simbólica
+#{:.section}
+### Modo notación simbólica
 
 - `chmod u+x patata.txt` añade permisos de ejecución al usuario propietario del fichero patata.txt.
 - `chmod a=rwx patata.txt` pone los permisos de lectura escritura y ejecución a todos los usuarios sobre el fichero patata.txt.
 
+{:.section}
 ### sudo
 
 Sudo (Super User DO) es un comando que sirve para ejecutar un comando como administrador. 
@@ -285,11 +306,13 @@ A continuación se muestra un ejemplo de uso donde se instala el programa neofet
 $ sudo apt install neofetch
 ```
 
+{:.section}
 ### exit
 
 Exit es un comando que sirve para cerrar sesión. 
 Su sintaxis es la siguiente: `exit`.
 
+{:.section}
 ### history
 
 History es un comando que sirve para mostrar el histórico de comandos que se han realizado. 
@@ -307,6 +330,7 @@ $ history
     6  history
 ```
 
+{:.section}
 ### head
 
 Head es un comando que sirve para mostrar el principio de un fichero. 
@@ -323,6 +347,7 @@ PRIMERA PARTE
 CAPÍTULO 1: Que trata de la condición y ejercicio del famoso hidalgo D. Quijote de la Mancha
 ```
 
+{:.section}
 ### tail
 
 Tail es un comando que sirve para mostrar el final de un fichero. 
@@ -339,6 +364,7 @@ Estos fueron los versos que se pudieron leer; los demás, por estar carcomida l
 Forse altri canterà con miglior plettro. FINIS
 ```
 
+{:.section}
 ### locate
 
 Locate es un comando que sirve para localizar un archivo. 
@@ -358,6 +384,7 @@ $ locate -i documentos
 /home/smr/Documentos/el_quijote.txt
 ```
 
+{:.section}
 ### find
 
 Find es un comando que sirve para buscar archivos y directorios dentro de un directorio. 
@@ -380,6 +407,7 @@ $ find . -name el_quijote.txt
 /home/smr/Documentos/el_quijote.txt
 ```
 
+{:.section}
 ### grep
 
 Grep es un comando que sirve para buscar en un documento de texto dado. 
@@ -392,6 +420,7 @@ $ grep "azules, " el_quijote.txt
 de los miembros gigantes que está a su derecha mano, es el nunca medroso Brandabarbaran de Boliche, señor de las tres Arabias, que viene armado de aquel cuero de serpiente, y tiene por escudo una puerta, que según es fama, es una de las del templo que derribó Sanson cuando con su muerte se vengó de sus enemigos. Pero vuelve los ojos a estotra parte, y verás delante y en la frente de estotro ejército al siempre vencedor y jamás vencido Timonel de Carcajona, príncipe de la Nueva Vizcaya, que viene armado con las armas partidas a cuarteles azules, verdes, blancos y amarillos, y trae en el escudo un gato de oro en campo leonado con una letra que dice "Miau", que es el principio del nombre de su dama, que según se dice es la sin par Miaulina, hija del duque de Alfeñiquen del Algarbe. El otro, que carga y oprime los lomos de aquella poderosa alfana, que trae las armas como nieve blancas, y el escudo blanco y sin empresa alguna, es un caballero novel, de nación francés, llamado Pierres Papin, señor de las baronías de Utrique. El otro, que bate las hijadas con los herrados carcaños a aquella pintada y lijera cebra, y trae las armas de los veros azules, es el poderoso duque de Nervia, Espartafilardo del Bosque, que trae por empresa en el escudo una esparraguera con una letra en castellano, que dice así: "Rastrea mi suerte".
 ```
 
+{:.section}
 ### diff
 
 Diff es un comando que compara el contenido de dos archivos línea por línea. Después de analizar los archivos, genera las líneas que no coinciden. Los programadores a menudo usan este comando cuando necesitan hacer modificaciones al programa en lugar de reescribir todo el código fuente. 
@@ -399,6 +428,7 @@ Su sintaxis es la siguiente: `grep <fichero1> <fichero2>`.
 
 La forma más simple de usar este comando es `diff fichero1.txt fichero2.txt`.
 
+{:.section}
 ### chown
 
 Chown (CHange OWNer) es un comando que sirve para cambiar o transferir la propiedad de un archivo a otro usuario. 
@@ -410,6 +440,7 @@ El siguiente ejemplo pone al usuario "marcos" como propietario del fichero "fich
 $ chown marcos fichero.txt
 ```
 
+{:.section}
 ### whoami
 
 Whoami (WHO AM I?) es un comando que sirve para saber quien soy yo, es decir, para saber el usuario con el que estoy logeado en la terminal correspondiente. 
@@ -422,6 +453,7 @@ $ whoami
 smr
 ```
 
+{:.section}
 ### neofetch
 
 Neofetch es un comando que sirve para mostrar información detallada sobre tu sistema Linux, como el nombre de la máquina, el sistema operativo, el núcleo, etc. de una manera bonita. 
@@ -453,6 +485,7 @@ ssssssssssssso/-`      `-/osssssssssssss   Resolution: 1920x902
                                            Memory: 1372MiB / 7961MiB 
 ```
 
+{:.section}
 ### wget
 
 Wget (Web Get) es un comando que sirve para descargar archivos de Internet. 
@@ -476,6 +509,7 @@ $ ls
 el_quijote.txt  imagen-de-prueba-320x240-1.jpg
 ```
 
+{:.section}
 ### curl
 
 Curl (Client URL) es un comando que sirve para descargar archivos desde una ubicación remota.
@@ -516,6 +550,7 @@ $ curl --cookie-jar Mycookies.txt https://www.samplewebsite.com /index.html -O
 $ curl --cookie Mycookies.txt https://www. samplewebsite.com
 ```
 
+{:.section}
 ### top
 
 Top (Table Of Processes) es un comando que nos da información acerca del uso de la cpu, de la memoria, de los procesos en ejecución, etc en tiempo real. 
@@ -543,6 +578,7 @@ KiB Intercambio:  1459804 total,  1459804 libre,        0 usado.  6409468 dispon
 
 ## Comandos para redes
 
+{:.section}
 ### ifconfig
 
 Ifconfig es un comando que sirve para mostrar la configuración vigente de las interfaces de red activas, con detalles como la dirección MAC o el tráfico que ha circulado por las mismas hasta el momento. Las interfaces de red en Linux se suelen denominar eth (eth0, eth1, etc.).
@@ -572,6 +608,7 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
+{:.section}
 ### ping
 
 Ping es un comando que sirve para averiguar si el equipo en el que estamos trabajando puede comunicarse con otros a través de la red. De esta forma podemos constatar si una instalación de red está funcionando correctamente.
@@ -603,6 +640,7 @@ PING marcosruiz.github.io (185.199.109.153) 56(84) bytes of data.
 rtt min/avg/max/mdev = 62.597/114.209/202.812/62.935 ms
 ```
 
+{:.section}
 ### traceroute
 
 Traceroute es un comando que sirve para determinar la ruta que toma un paquete de protocolo de Internet (IP) para alcanzar su destino.

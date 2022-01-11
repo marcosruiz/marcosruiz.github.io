@@ -20,25 +20,24 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 	counter-increment: activity;
 }
 
-
-/*.post-content > h2:before {
+.section:before {
 	content: counter(heading)". ";
 	counter-increment: heading;
 }
-.post-content > h2 {
+.section {
 	counter-reset: subheading;
 }
-.post-content > h3:before {
+.subsection:before {
 	content: counter(heading)"." counter(subheading)". ";
 	counter-increment: subheading;
 }
-.post-content > h3 {
+.subsection {
 	counter-reset: subsubheading;
 }
-.post-content > h4:before {
+.subsubsection {
 	content: counter(heading)"." counter(subheading)"." counter(subsubheading)". ";
 	counter-increment: subsubheading;
-}*/
+}
 
 .giscus, .giscus-frame {
 	width: 100%;

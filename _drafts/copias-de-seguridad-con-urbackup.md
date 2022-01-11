@@ -1,6 +1,6 @@
 ---
 title: "Práctica 5: Copias de seguridad con UrBackup"
-date: 2022-01-07 16:00:00 +/-TTTT
+date: 2022-01-07 16:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática, urbackup, backup, seguridad pasiva, almacenamiento, práctica]
 ---
@@ -22,7 +22,7 @@ Debes documentar cada paso que realices (con capturas de pantalla si es necesari
 
 ### Actividad 2
 
-Utilizando la documentación de Install client on Debian or Ubuntu from sources instalar el cliente de UrBackup funcional en una máquina virtual Zorin OS Lite conectada a la máquina virtual IPCOP que hace de router de la práctica anterior.
+Utilizando la documentación de [Install client on Debian or Ubuntu from sources](https://www.urbackup.org/client_debian_ubuntu_install.html) instalar el cliente de UrBackup funcional en una máquina virtual Zorin OS Lite conectada a la máquina virtual IPCOP que hace de router de la práctica anterior.
 Realizar dos copias de seguridad del cliente en el servidor. La segunda copia de seguridad debe ser incremental sobre la primera. Para ello la primera copia de seguridad deberá contener un fichero llamado patata.txt que contenga la frase "hola soy una patata" y para la segunda copia este mismo fichero deberá contener "hola soy una alcachofa".
 Debes documentar cada paso que realices (con capturas de pantalla si es necesario) para llevar a cabo está instalación y configuración.
 
