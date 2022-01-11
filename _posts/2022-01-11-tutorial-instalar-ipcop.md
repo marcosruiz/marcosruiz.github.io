@@ -51,7 +51,7 @@ Dentro de Zorin OS Lite ir a Inicio > Conexiones de red > Conexión cableada 1 >
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rrWLBBQr5iw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Una vez instalado deberías poder conectarte en [192.168.1.1:8443](192.168.1.1:8443).
+Una vez instalado deberías poder conectarte en 192.168.1.1:8443.
 
 ## Soluciones a problemas habituales
 
