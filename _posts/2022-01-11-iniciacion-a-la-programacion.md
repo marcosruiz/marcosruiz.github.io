@@ -1,7 +1,7 @@
 ---
 title: Iniciación a la programación
 date: 2022-01-11 17:40:00 +0100
-categories: [2 Bachillerato, Tecnologías de la Información y Comunicación II]
+categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
 tags: [gnu linux, comandos, terminal, bash, tic ii, teoría]
 ---
 
@@ -145,8 +145,15 @@ Las desventajas de utilizar un intérprete son:
 
 Atendiendo al propósito para el que se crean, los lenguajes de programación pueden ser:
 
-- **Lenguajes de propósito general**. Son lenguajes que pueden ser usados para desarrollar cualquier tipo de programa y aplicarlo en la mayoría de las actividades que desarrolla el hombre. Ejemplos de este tipo de lenguajes son C, C++, Java, Pascal, etc.
-- **Lenguajes de propósito específico**. Se utilizan de forma específica para desarrollar aplicaciones muy específicas en ámbitos determinados como por ejemplo la ingeniería y tienen por lo general un alto nivel de abstracción. Ejemplos de este tipo de lenguajes son Snobol (orientado a aplicaciones para manipulación de textos), SQL (diseñado para administrar sistemas de gestión de bases de datos relacionales) o Matlab (para creación de aplicaciones matemáticas).
+{:.subsubsection}
+#### Lenguajes de propósito general
+
+Son lenguajes que pueden ser usados para desarrollar cualquier tipo de programa y aplicarlo en la mayoría de las actividades que desarrolla el hombre. Ejemplos de este tipo de lenguajes son C, C++, Java, Pascal, etc.
+
+{:.subsubsection}
+#### Lenguajes de propósito específico
+
+Se utilizan de forma específica para desarrollar aplicaciones muy específicas en ámbitos determinados como por ejemplo la ingeniería y tienen por lo general un alto nivel de abstracción. Ejemplos de este tipo de lenguajes son Snobol (orientado a aplicaciones para manipulación de textos), SQL (diseñado para administrar sistemas de gestión de bases de datos relacionales) o Matlab (para creación de aplicaciones matemáticas).
 
 {:.subsection}
 ### Según el paradigma de programación
