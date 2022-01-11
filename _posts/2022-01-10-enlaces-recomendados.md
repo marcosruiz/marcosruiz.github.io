@@ -47,7 +47,7 @@ pin: true
 - [Laracon EU](https://www.youtube.com/c/LaraconEU)
 - [Ben Awad](https://www.youtube.com/c/BenAwad97)
 - [Avelx](https://www.youtube.com/c/Avelx)
-- [ideos}{Defog Tech](https://www.youtube.com/c/DefogTech)
+- [Defog Tech](https://www.youtube.com/c/DefogTech)
 - [Seytonic](https://www.youtube.com/c/Seytonic)
 - [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified)
 - [Coding Tech](https://www.youtube.com/c/CodingTech)

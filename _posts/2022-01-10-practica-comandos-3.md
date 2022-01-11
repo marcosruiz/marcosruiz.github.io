@@ -1,8 +1,8 @@
 ---
 title: "Práctica: Comandos GNU Linux (Parte 3)"
 date: 2022-01-10 12:00:00 +0100
-categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática, redes locales, servicios en red]
+categories: [Sistemas Microinformáticos y Redes]
+tags: [gnu linux, comandos, terminal, bash, seguridad informática, redes locales, servicios en red, práctica]
 ---
 
 ⚠️ La "Práctica: Comandos GNU Linux 2" NO existe.

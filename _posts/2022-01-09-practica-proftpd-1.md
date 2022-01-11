@@ -2,7 +2,7 @@
 title: "Práctica: Servicio FTP (Parte I)"
 date: 2022-01-09 22:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
-tags: [gnu linux, comandos, terminal, bash, smr, servicios en red, ftp]
+tags: [gnu linux, comandos, terminal, bash, smr, servicios en red, ftp, práctica]
 ---
 
 ## Objetivo
