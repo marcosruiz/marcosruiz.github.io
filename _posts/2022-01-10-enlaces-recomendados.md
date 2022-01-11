@@ -3,7 +3,6 @@ title: Noticias y enlaces de interés
 date: 2022-01-10 18:30:00 +0100
 categories: [General]
 tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
-pin: true
 ---
 
 ## Noticias sobre tecnología
