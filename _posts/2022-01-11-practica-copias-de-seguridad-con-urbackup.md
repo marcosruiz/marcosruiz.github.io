@@ -34,6 +34,21 @@ Realizar dos copias de seguridad del cliente en el servidor. La segunda copia de
 
 Todas las contraseñas de todos los usuarios serán "chabacier".
 
+En resumen, lo que hay que hacer es lo siguiente:
+
+```console
+$ apt install build-essential "g++" libwxgtk3.0-dev "libcrypto++-dev" libz-dev
+$ wget https://hndl.urbackup.org/Client/2.4.11/urbackup-client-2.4.11.tar.gz
+$ tar xzf urbackup-client-2.4.11.tar.gz
+$ cd urbackup-client-2.4.11.0
+$ ./configure
+$ make -j4
+$ sudo make install
+$ sudo urbackupclientbackend -v info
+$ /usr/local/sbin/urbackupclientbackend -d
+$ urbackupclientgui
+```
+
 {:.activity}
 ### Pregunta
 
