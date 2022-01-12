@@ -148,3 +148,24 @@ El comando `chmod a-w fichero.txt` hace lo siguiente:
 El comando `chmod a=rwx fichero.txt` hace lo siguiente:
 
 - Asigna todos los permisos a todos los usuarios (usuario, el grupo y otros).
+
+## ¿Qué es el umask?
+
+Umask (User MASK) es una máscara que sirve para determinar los permisos por defecto de los nuevos ficheros y directorios creados.
+
+Los valores por defecto son los siguientes:
+
+- En el caso de ficheros: 666 (rw-rw-rw-)
+- En el caso de directorios: 777 (rwxrwxrwx)
+
+La máscara de usuario se aplica a estos permisos sustrayendo algunos. Por ejemplo a partir de un umask de 022 obtendriamos los siguientes permisos:
+
+- Para ficheros: 666 - 022 = 644 (rw-r--r--)
+- Para directorios: 777- 022 = 755 (rwxr-xr-x)
+
+Además podemos usar el comando umask para ver o modificar dicha máscara de usuario:
+
+```
+$ umask
+0002
+```
