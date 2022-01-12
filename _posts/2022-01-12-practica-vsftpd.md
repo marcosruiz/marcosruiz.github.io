@@ -1,6 +1,6 @@
 ---
-title: "Práctica: Servicio FTP (Parte III)"
-date: 2022-01-09 22:00:00 +0100
+title: "Práctica: Servicio FTP (Parte 3)"
+date: 2022-01-12 22:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
 tags: [gnu linux, comandos, terminal, bash, smr, servicios en red, ftp]
 ---
@@ -14,7 +14,7 @@ El objetivo de esta práctica es:
 - Ser capaz de gestionar servidores FTP.
 - Aprender el uso de los comandos que debe utilizar un cliente FTP.
 
-Duración: 3 horas.
+Duración: 4 horas.
 
 ## Actividades
 
@@ -23,11 +23,11 @@ A continuación se listan las actividades a realizar para esta práctica.
 {:.activity}
 ### Instalar y configurar el servidor VsFTPD en Zorin OS Lite
 
-Instalar, configurar y probar un servidor FTP en Zorin OS Lite. Deberás explicar todos los pasos realizados haciendo las capturas necesarias que demuestren la realización de dicha instalación, configuración y prueba del servidor.
+Instalar, configurar y probar un servidor FTP en Zorin OS Lite. Deberás explicar todos los pasos realizados haciendo las capturas de pantalla si son necesarias que demuestren la realización de dicha instalación, configuración y prueba del servidor.
 
 Los comandos y ficheros que hayas utilizado deben quedar reflejados en el PDF de la entrega en texto para permitirte copiar y pegar el día del examen todos los comandos de una manera rápida.
 
-Para realizar esta tarea debes crear un usuario que tenga el nombre de tu email (sin el "@chabacier.es") y cuya contraseña sea "chabacier". Por ejemplo, si mi correo es "mruizg@chabacier.es" mi usuario será "mruizg".
+Para realizar esta tarea debes crear un usuario que tenga el nombre de tu email (sin el "@chabacier.es") y cuya contraseña sea "chabacier". Por ejemplo, si mi correo es "mruizg@chabacier.es" mi usuario será "mruizg". Y deberás incluir una o varias capturas de pantalla que demuestren que has realizado la práctica donde se vea tu nombre de usuario.
 
 El servidor FTP debe tener las siguientes características:
 
@@ -37,10 +37,10 @@ El servidor FTP debe tener las siguientes características:
 - Debe permitir conectarse a 2 usuarios diferentes: "\<tuUsuario\>" y "\<tuUsuario\>2".
 - Hacer que el directorio raíz de cada usuario sea su directorio home.
 
-
+{:.activity}
 ### Cliente FTP
 
-A través de un cliente de terminal FTP ¿Cómo se haría lo siguiente?:
+A través de un cliente de terminal FTP explica como se harían las siguientes acciones:
 
 - Crear un directorio
 - Crear un fichero

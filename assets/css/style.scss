@@ -12,7 +12,7 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 /* append your custom style below */
 
 .post-content {
-	counter-reset: heading figure activity;
+	counter-reset: heading figure activity question;
 }
 
 .activity:before {
@@ -54,3 +54,13 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 /*body {
 	font-family: 'Georgia', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
 }*/
+
+.question{
+	padding: 1em;
+	box-shadow: rgba(148, 148, 148, 0.3) 0px 0px 0px 3px;
+}
+
+.question:before {
+	content: "Pregunta " counter(question) ": ";
+	counter-increment: question;
+}

@@ -4,6 +4,10 @@ date: 2022-01-11 17:40:00 +0100
 categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
 tags: [gnu linux, comandos, terminal, bash, tic ii, teoría]
 ---
+{:.section}
+## ¿Qué es la programación?
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/cONAp3Wchy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.section}
 ## ¿Qué es programar?
@@ -30,8 +34,16 @@ _Partes de un programa_
 - **Proceso**: Parte del programa que engloba las instrucciones encargadas de procesar los datos recogidos anteriormente. Los resultados se almacenan de nuevo en la memoria principal.
 - **Salida de resultados**: Instrucciones del programa que recogen los resultados obtenidos en la fase anterior y los envían a los dispositivos de salida de la información.
 
+{:.question}
+¿Qué es la entrada estándar?
+
+{:.question}
+¿Qué es la salida estándar?
+
 {:.section}
 ## Clasificación de lenguajes de programación
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/gFMMmi-EYEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 De la misma forma que el término genérico "lenguaje" se refiere a cualquier sistema estructurado de comunicación (gestos, sonidos, símbolos,... y las reglas que rigen su uso), podemos definir lenguaje de programación como un conjunto de caracteres y reglas que permiten crear un programa, para introducir y procesar la información en un ordenador. 
 Son lenguajes artificiales creados con el objetivo de conseguir la comunicación entre el humano y la máquina, o entre máquinas.
@@ -275,3 +287,5 @@ Cualquier actualización o cambio en el programa deberá reflejarse en su docume
 ## Bibliografía
 
 - [danielggtecnologia - APUNTES 2º BACH ](https://danielggtecnologia.blogspot.com/p/apuntes-2-bach.html)
+
+## Pies de página

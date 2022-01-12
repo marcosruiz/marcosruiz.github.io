@@ -9,7 +9,11 @@ tags: [gnu linux, comandos, terminal, bash, seguridad informática, urbackup, ba
 
 El objetivo de esta práctica es aprender a instalar y configurar copias de seguridad en red periódicas a través del software UrBackup.
 
-Duración: 6 h.
+Duración: - h.
+
+## Requistos previos
+
+Debes tener dos máquinas virtuales con Zorin OS Lite conectadas al enrutador IPCOP. Ambas maquinas virtuales deben estar en la misma red local para verse entre ellas y deben tener acceso a Internet a través del enrutador IPCOP.
 
 ## Actividades
 
