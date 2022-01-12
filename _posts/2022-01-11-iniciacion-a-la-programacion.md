@@ -291,4 +291,4 @@ Cualquier actualización o cambio en el programa deberá reflejarse en su docume
 
 - [danielggtecnologia - APUNTES 2º BACH ](https://danielggtecnologia.blogspot.com/p/apuntes-2-bach.html)
 
-## Pies de página
+## Notas

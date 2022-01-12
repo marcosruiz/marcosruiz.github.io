@@ -28,9 +28,9 @@ Utilizando la documentación de [Administration Manual for UrBackup Server 2.4.x
 
 #### Pasos para instalar el cliente de UrBackup
 
-Añade el repositorio[^repositorio] oficial de UrBackup:
+Añade el repositorio[^repo] oficial de UrBackup:
 
-[^repositorio] Un repositorio es una lista de programas, generalmente siempre actualizada, que nos permite buscar y descargar fácilmente todo tipo de programas y herramientas en nuestra distribución. Gracias a los repositorios vamos a poder tener un lugar seguro y fiable desde el que descargar software y las últimas actualizaciones de todos nuestros programas. Estos programas se instalarán sin ningún tipo de problema de dependencias, y además podremos actualizar todo nuestro repertorio de programas con un sencillo comando.
+[^repo]: Un repositorio es una lista de programas, generalmente siempre actualizada, que nos permite buscar y descargar fácilmente todo tipo de programas y herramientas en nuestra distribución. Gracias a los repositorios vamos a poder tener un lugar seguro y fiable desde el que descargar software y las últimas actualizaciones de todos nuestros programas. Estos programas se instalarán sin ningún tipo de problema de dependencias, y además podremos actualizar todo nuestro repertorio de programas con un sencillo comando.
 
 ```console
 $ sudo add-apt-repository ppa:uroni/urbackup
@@ -167,3 +167,5 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 - [Install client on Debian or Ubuntu from sources](https://www.urbackup.org/client_debian_ubuntu_install.html)
 - [Mantén Linux al día: la forma correcta de actualizar tus repositorios](https://www.softzone.es/linux/tutoriales/actualizar-lista-repositorios-linux/)
 - [Daemon (informática) Wikipedia](https://es.wikipedia.org/wiki/Daemon_(inform%C3%A1tica))
+
+## Notas
