@@ -35,10 +35,13 @@ _Partes de un programa_
 - **Salida de resultados**: Instrucciones del programa que recogen los resultados obtenidos en la fase anterior y los envían a los dispositivos de salida de la información.
 
 {:.question}
-¿Qué es la entrada estándar?
+¿Qué es la entrada estándar? ¿Cuál es la entrada estándar por defecto?
 
 {:.question}
-¿Qué es la salida estándar?
+¿Qué es la salida estándar? ¿Cuál es la salida estándar por defecto?
+
+{:.question}
+¿Qué es la salida de error? ¿Cuál es la salida de error por defecto?
 
 {:.section}
 ## Clasificación de lenguajes de programación

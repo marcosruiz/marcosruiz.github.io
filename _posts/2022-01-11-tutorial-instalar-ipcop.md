@@ -58,3 +58,4 @@ Una vez instalado deberías poder conectarte en 192.168.1.1:8443.
 - Comprueba que la red interna tiene el modo promiscuo en permitir todo.
 - Comprueba que los equipos tienen una IP asignada y es diferente. Si no es diferente el servidor DHCP no está funcionando bien. La solución más sencilla es dar las IP de manera manual en cada cliente.
 - Comprueba que tienes conexión a Internet desde la máquina IPCOP.
+- Comprueba que tienes acceso a la configuración del router a través de 192.168.1.1:8443. Comprueba que estás conectado. Si no estas conectado desconecta y vuelve a conectar.
