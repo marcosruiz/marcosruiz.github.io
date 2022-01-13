@@ -26,40 +26,6 @@ Debes realizar capturas de pantalla que demuestren la autoría de la práctica, 
 
 Utilizando la documentación de [Administration Manual for UrBackup Server 2.4.x](https://www.urbackup.org/administration_manual.html) instalar un servidor UrBackup funcional en una máquina virtual Zorin OS Lite conectada a la máquina virtual IPCOP que hace de router de la práctica anterior.
 
-#### Pasos para instalar el cliente de UrBackup
-
-Añade el repositorio[^repo] oficial de UrBackup:
-
-[^repo]: Un repositorio es una lista de programas, generalmente siempre actualizada, que nos permite buscar y descargar fácilmente todo tipo de programas y herramientas en nuestra distribución. Gracias a los repositorios vamos a poder tener un lugar seguro y fiable desde el que descargar software y las últimas actualizaciones de todos nuestros programas. Estos programas se instalarán sin ningún tipo de problema de dependencias, y además podremos actualizar todo nuestro repertorio de programas con un sencillo comando.
-
-```console
-$ sudo add-apt-repository ppa:uroni/urbackup
-```
-
-Actualiza la lista de repositorios:
-
-```console
-$ sudo apt update
-```
-
-Instala el servidor de UrBackup haciendo uso del repositorio:
-
-```console
-$ sudo apt install urbackup-server
-```
-
-Inicia el servicio de UrBackup:
-
-```console
-$ service urbackupsrv start
-```
-
-Comprueba que el estado del servicio es activo y corriendo:
-
-```console
-$ service urbackupsrv start
-```
-
 {:.activity}
 ### Instalar cliente UrBackup
 
@@ -69,59 +35,6 @@ Realizar dos copias de seguridad del cliente en el servidor. La segunda copia de
 Configura que el path para realizar las copias de seguridad sea /home/\<tuUsuario\>/Documentos/ y que las copias de seguridad se hagan cada semana.
 
 Todas las contraseñas de todos los usuarios serán "chabacier".
-
-En resumen, lo que hay que hacer es lo siguiente:
-
-#### Pasos para instalar el cliente de UrBackup
-
-Instala las dependencias de UrBackup:
-
-```console
-$ sudo apt install build-essential "g++" libwxgtk3.0-dev "libcrypto++-dev" libz-dev
-```
-
-Descarga código fuente del cliente de UrBackup:
-
-```console
-$ wget https://hndl.urbackup.org/Client/2.4.11/urbackup-client-2.4.11.tar.gz
-```
-
-Descomprime el .tar.gz:
-```console
-$ tar xzf urbackup-client-2.4.11.tar.gz
-```
-
-Instala el cliente de UrBackup a partir del código fuente:
-
-```console
-$ cd urbackup-client-2.4.11.0
-$ ./configure
-$ make -j4
-$ sudo make install
-```
-Comprueba que el cliente de UrBackup ha iniciado correctamente:
-
-```console
-$ sudo urbackupclientbackend -v info
-```
-
-Ejecuta el urbackupclientbackend como un demonio, es decir, en segundo plano:
-
-```console
-$ sudo /usr/local/sbin/urbackupclientbackend -d
-```
-
-Ejecuta la GUI (interfaz de usuario):
-
-```console
-$ urbackupclientgui
-```
-
-Haz click derecho en el icono de UrBackup y deberá aparecer de la siguiente figura y haz click en la opción "Add/remove backup paths" para configurar la ruta de la cual quieres hacer la copia de seguridad y el tiempo.
-
-![Menú sobre el icono de UrBackup GUI](/assets/img/practica-copias-de-seguridad-con-urbackup/add-remove-backup-paths.png)
-_Menú sobre el icono de UrBackup GUI_
-
 
 {:.activity}
 ### Rollback
@@ -143,7 +56,8 @@ Utilizando la máquina virtual con el cliente de UrBackup realizar una restaurac
 1. ¿Cómo se comprueba el estado de un servicio?
 1. ¿Qué es un rollback?
 1. ¿Qué hace la instrucción `wget`?
-1. ¿Esta práctica forma parte de la seguridad activa o pasiva?
+1. ¿UrBackup forma parte de la seguridad activa o pasiva?
+1. ¿Qué diferencia hay entre un backup completo y uno incremental? ¿Para qué situación conviene cada uno?
 
 ## Entrega y presentación
 
@@ -161,11 +75,3 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 8. Los comandos y ficheros de configuración que hayas utilizado deben quedar reflejados en el PDF de la entrega en texto para que permitirte copiar y pegar el día del examen todos los comandos de una manera rápida.
 9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
 
-## Bibliografía
-
-- [Administration Manual for UrBackup Server 2.4.x](https://www.urbackup.org/administration_manual.html)
-- [Install client on Debian or Ubuntu from sources](https://www.urbackup.org/client_debian_ubuntu_install.html)
-- [Mantén Linux al día: la forma correcta de actualizar tus repositorios](https://www.softzone.es/linux/tutoriales/actualizar-lista-repositorios-linux/)
-- [Daemon (informática) Wikipedia](https://es.wikipedia.org/wiki/Daemon_(inform%C3%A1tica))
-
-## Notas
