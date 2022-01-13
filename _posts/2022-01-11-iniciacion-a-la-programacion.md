@@ -55,6 +55,11 @@ _Partes de un programa_
 {:.question}
 ¿Cuántos tipos de lenguajes de alto nivel existen según el vídeo? ¿Sabrías poner un ejemplo de cada uno?
 
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/iOQnZKJ3fls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{:.question}
+¿Cómo es posible que el compilador de C esté escrito en C?
+
 De la misma forma que el término genérico "lenguaje" se refiere a cualquier sistema estructurado de comunicación (gestos, sonidos, símbolos,... y las reglas que rigen su uso), podemos definir lenguaje de programación como un conjunto de caracteres y reglas que permiten crear un programa, para introducir y procesar la información en un ordenador. 
 Son lenguajes artificiales creados con el objetivo de conseguir la comunicación entre el humano y la máquina, o entre máquinas.
 
