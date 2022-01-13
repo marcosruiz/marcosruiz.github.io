@@ -116,10 +116,14 @@ Si quieres cambiar la configuración deberás ejecutar la instrucción `setup` y
     - Conectado a: Red interna 
     - Nombre: intnet
 1. Inicia la máquina virtual con Zorin OS Lite
-1. Ir a Inicio > Conexiones de red > Conexión cableada 1 > ⚙️ > Ajustes de IPv4 y escribir esta configuración:
+1. Haz click en el menú de Inicio > 
+1. Búsca "Conexiones de red" y haz click en él
+1. Haz click en "Conexión cableada 1".
+1. Haz click en ⚙️.
+1. En la pestaña "Ajustes de IPv4" escribe esta configuración:
     - Dirección: 192.168.120.100
     - Máscara de red: 24
-    - Puerta de enlace: 192.168.1.1
+    - Puerta de enlace: 192.168.120.1
     - Servidor DNS: 8.8.8.8
 1. Inicia un navegador y escribe la URL https://192.168.120.1:8443/.
 1. Haz login como admin.
