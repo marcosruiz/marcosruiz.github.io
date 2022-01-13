@@ -59,7 +59,7 @@ $ service urbackupsrv start
 Comprueba que el estado del servicio es activo y corriendo:
 
 ```console
-$ service urbackupsrv start
+$ service urbackupsrv status
 ```
 
 Comprueba que puedes acceder a la interfaz web a través de la siguiente ruta "http://localhost:55414/".
