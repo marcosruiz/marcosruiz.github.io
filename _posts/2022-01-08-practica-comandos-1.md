@@ -14,6 +14,9 @@ Duración: 2 h.
 ## Actividades
 
 A continuación se listan las actividades que se deben realizar para esta práctica.
+Debes realizar todas las actividades en la máquina virtual de Zorin OS.
+Tras la realización de cada actividad debes realizar una captura o varias capturas de pantalla que demuestren la realización de dicha actividad.
+Cada captura debe tener solo la información que sea necesaria, es decir, debéis evitar que se vea la interfaz de cualquier cosa que no sea la máquina virtual de Zorin.
 
 {:.activity}
 ### Requisitos previos
@@ -55,7 +58,7 @@ En la mayoría de las distribuciones Linux, las teclas [F1] a [F6] representan s
 
 Sin embargo en las últimas distribuciones CentOS, Fedora y RedHat, por ejemplo, [F1] corresponde a la consola gráfica, las consolas texto se representan por la tecla [F2] a [F6]. 
 
-Para acceder a las distintas consolas virtuales se debe realizar la combinación de teclas [Ctrl][Alt][F1-F7].
+Para acceder a las distintas consolas virtuales en Zorin OS Lite se debe realizar la combinación de teclas [Ctrl][Alt][F1-F7] si tenemos un host Windows o [Host][F1-F7] si estamos en un host de GNU/Linux.
 
 {:.activity}
 ### Conexión, autenticación

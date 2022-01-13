@@ -57,7 +57,8 @@ Por ejemplo `more el_quijote.txt` nos mostrará el contenido paginado de el_quij
 
 ⚡ Si quieres realizar estos mismos ejemplos en tu ordenador puedes descargar el fichero de [aquí](https://gist.githubusercontent.com/jsdario/6d6c69398cb0c73111e49f1218960f79/raw/8d4fc4548d437e2a7203a5aeeace5477f598827d/el_quijote.txt).
 
-{:.section}less
+{:.section}
+### less
 
 Less es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante **y hacia atrás**. 
 Su sintaxis es la siguiente: `less <fichero>`.
@@ -304,6 +305,26 @@ A continuación se muestra un ejemplo de uso donde se instala el programa neofet
 
 ```console
 $ sudo apt install neofetch
+```
+
+{:.section}
+### su
+
+Su (Switch User) es un comando que sirve para cambiar de usuario.
+Es necesario tener permisos de administrados para ejecutar este comando.
+Su sintaxis es `su <nombreDeUsuario>`.
+
+Ejemplo donde cambiamos al superusuario o root:
+
+```console
+usuario@máquina:/home/usuario$ sudo su
+root@máquina:/home/usuario# 
+```
+Ejemplo donde cambiamos al usuario otroUsuario:
+
+```console
+usuario@máquina:/home/usuario$ sudo su otroUsuario
+otroUsuario@máquina:/home/usuario$ 
 ```
 
 {:.section}

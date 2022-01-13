@@ -4,19 +4,23 @@ date: 2022-01-11 17:40:00 +0100
 categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
 tags: [gnu linux, comandos, terminal, bash, tic ii, teoría]
 ---
-{:.section}
-## ¿Qué es la programación?
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/cONAp3Wchy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.section}
 ## ¿Qué es programar?
 
 Programar consiste en crear una serie de órdenes dirigidas a un ordenador o dispositivo para que lleve a cabo las tareas que le encomendemos, con el objetivo de solucionar un determinado problema. 
+
+{:.section}
+## ¿Qué es la programación?
+
 La programación es el instrumento que permite la ejecución de las tareas automatizadas de un sistema informático. 
 Es pues una herramienta muy poderosa.
 
 Para conseguir esto, se utilizan los lenguajes de programación, a través de los cuales se crearán los programas que contienen las instrucciones que se dan a la máquina para que ésta ejecute determinada acción.
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/cONAp3Wchy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 {:.section}
 ## ¿Qué es un programa?
@@ -47,6 +51,9 @@ _Partes de un programa_
 ## Clasificación de lenguajes de programación
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/gFMMmi-EYEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{:.question}
+¿Cuántos tipos de lenguajes de alto nivel existen según el vídeo? ¿Sabrías poner un ejemplo de cada uno?
 
 De la misma forma que el término genérico "lenguaje" se refiere a cualquier sistema estructurado de comunicación (gestos, sonidos, símbolos,... y las reglas que rigen su uso), podemos definir lenguaje de programación como un conjunto de caracteres y reglas que permiten crear un programa, para introducir y procesar la información en un ordenador. 
 Son lenguajes artificiales creados con el objetivo de conseguir la comunicación entre el humano y la máquina, o entre máquinas.
@@ -97,6 +104,17 @@ _Ejemplo de lenguaje ensamblador_
 
 [^microcontrolador]: Un microcontrolador es un circuito integrado o chip que incluye en su interior las tres unidades funcionales de un ordenador: CPU, Memoria y Unidades de E/S, es decir, se trata de un computador completo en un solo circuito integrado. Aunque sus prestaciones son limitadas, además de dicha integración, su característica principal es su alto nivel de especialización. Aunque los hay del tamaño de una moneda, lo normal es que sean incluso más pequeños, ya que, lógicamente, forman parte del dispositivo que controlan.
 
+{.question}
+¿En que circunstancias puede ser útil programar directamente en lenguaje ensamblador?
+
+{:.question}
+¿Sabrías nombrar dos arquitecturas de lenguajes de ensamblador? 
+Pista: uno se usa en PCs y otro en móviles y tablets.
+
+{:.question}
+¿Qué ventajas y desventajas tiene cada arquitectura de lenguaje de ensamblador? 
+¿Cuándo se usa cada una de ellas?
+
 {:.subsubsection}
 #### Lenguaje de alto nivel
 
@@ -124,12 +142,16 @@ El compilador traduce el programa completo a código máquina antes de empezar a
 ![Funcionamiento de un compilador](/assets/img/iniciacion-a-la-programacion/compilador.png)
 _Funcionamiento de un compilador_
 
-Una vez compilado el programa, podemos ejecutarlo, es decir, hacer que se inicie la carga del programa y que comiencen a realizarse las acciones programadas. Ejemplos de lenguajes compilados son C, C++, Java, Pascal o Processing.
+Una vez compilado el programa, podemos ejecutarlo, es decir, hacer que se inicie la carga del programa y que comiencen a realizarse las acciones programadas. 
+Ejemplos de lenguajes compilados son C, C++, Java, Pascal o Processing.
+
 Las ventajas de utilizar un compilador son:
+
 - El programa ejecutable no incluye el código fuente, por lo tanto, el código compilado es más seguro.
 - Un programa compilado se ejecuta más rápidamente que un programa que está siendo interpretado.
 
 Las desventajas de utilizar un compilador son:
+
 - Si el programa es muy largo, el proceso de compilación puede ser muy lento.
 - El código fuente debe estar libre de errores para que el archivo ejecutable se genere.
 - El archivo ejecutable generado por el compilador solo funcionará en el sistema operativo en el que fue creado.
@@ -141,7 +163,10 @@ A diferencia de un compilador, un intérprete transcribe a lenguaje máquina y e
 ![Compilador vs intérprete](/assets/img/iniciacion-a-la-programacion/compilador.png)
 _Compilador vs intérprete_
 
-Es decir, el programa intérprete traduce y ejecuta las instrucciones del programa línea a línea, siguiendo la secuencia real del programa. Cuando detecta un error, la traducción y ejecución del programa se detienen, e indica un código de error. La ejecución del programa en un intérprete es, por lo general, más lenta que en un compilador. El intérprete no genera un archivo ejecutable. La ventaja de ello es que cualquier programa puede ser interpretado en cualquier sistema operativo.
+Es decir, el programa intérprete traduce y ejecuta las instrucciones del programa línea a línea, siguiendo la secuencia real del programa. 
+Cuando detecta un error, la traducción y ejecución del programa se detienen, e indica un código de error. La ejecución del programa en un intérprete es, por lo general, más lenta que en un compilador. 
+El intérprete no genera un archivo ejecutable. 
+La ventaja de ello es que cualquier programa puede ser interpretado en cualquier sistema operativo.
 
 Ejemplos de lenguajes interpretados son las primeras versiones de BASIC, Logo, JavaScript o Python.
 
