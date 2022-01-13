@@ -1,7 +1,7 @@
 ---
 title: Comandos avanzados
 date: 2022-01-08 17:17:00 +0100
-categories: [gnu linux]
+categories: [General]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática]
 ---
 

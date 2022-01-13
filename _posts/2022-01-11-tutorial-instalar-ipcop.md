@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Instalar y configurar IPCOP"
 date: 2022-01-11 13:10:00 +0100
-categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
+categories: [Sistemas Microinformáticos y Redes]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática, servicios en red, smr]
 ---
 
