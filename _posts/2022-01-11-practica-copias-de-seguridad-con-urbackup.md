@@ -58,6 +58,8 @@ Utilizando la máquina virtual con el cliente de UrBackup realizar una restaurac
 1. ¿Qué hace la instrucción `wget`?
 1. ¿UrBackup forma parte de la seguridad activa o pasiva?
 1. ¿Qué diferencia hay entre un backup completo y uno incremental? ¿Para qué situación conviene cada uno?
+1. ¿Qué diferencia hay entre una copia total de ficheros y una copia de imagen completa?
+
 
 ## Entrega y presentación
 
