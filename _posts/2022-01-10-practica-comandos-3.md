@@ -5,7 +5,7 @@ categories: [Sistemas Microinformáticos y Redes]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática, redes locales, servicios en red, práctica]
 ---
 
-⚠️ La "Práctica: Comandos GNU Linux 2" NO existe.
+⚠️ La "Práctica: Comandos GNU Linux (Parte 2)" NO existe.
 
 ## Objetivo
 
@@ -75,8 +75,8 @@ Duración estimada: 10 minutos
 1. Visualice el contenido del archivo /etc/issue. ¿Qué contiene? Utilice el comando `cat`, `more` o `less`.
 2. Visualice página por página el contenido del archivo /etc/services. ¿Qué contiene? Utilice el comando `more` o `less`.
 3. Determine el formato del archivo /bin/false y visualice su contenido con el comando adecuado. Un archivo binario no debe visualizarse con la ayuda de herramientas reservadas a los archivos de texto. En efecto, ciertos caracteres no imprimibles contenidos en estos archivos pueden modificar el comportamiento del terminal si son visualizados como tales; esto puede acarrear por ejemplo una visualización como la siguiente en el terminal: `images/0401CAT.png`.
-4. Consulte la página del manual del comando od y visualice ahora el contenido del archivo /bin/false en hexadecimal. Si se encuentra desafortunadamente en este caso, puede teclear el comando reset (a "ciegas") para reinicializar su terminal.
-5. Visualice las cadenas de caracteres contenidas en el archivo /bin/false. Utilice el comando strings.
+4. Consulte la página del manual del comando `od` y visualice ahora el contenido del archivo /bin/false en hexadecimal. Si se encuentra desafortunadamente en este caso, puede teclear el comando `reset` (a "ciegas") para reinicializar su terminal.
+5. Visualice las cadenas de caracteres contenidas en el archivo /bin/false. Utilice el comando `strings`.
 
 {:.activity}
 ### Directorios
