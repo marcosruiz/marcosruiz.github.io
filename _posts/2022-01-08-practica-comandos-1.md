@@ -9,7 +9,7 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, practica, servicios e
 
 El objetivo de esta práctica es ser capaz de conectarse a un sistema GNU Linux y ejecutar sus primeros comandos en línea de comandos.
 
-Duración: 2 h.
+Duración: 5 h.
 
 ## Actividades
 
@@ -58,119 +58,84 @@ En la mayoría de las distribuciones Linux, las teclas [F1] a [F6] representan s
 
 Sin embargo en las últimas distribuciones CentOS, Fedora y RedHat, por ejemplo, [F1] corresponde a la consola gráfica, las consolas texto se representan por la tecla [F2] a [F6]. 
 
-Para acceder a las distintas consolas virtuales en Zorin OS Lite se debe realizar la combinación de teclas [Ctrl][Alt][F1-F7] si tenemos un host Windows o [Host][F1-F7] si estamos en un host de GNU/Linux.
+Para acceder a las distintas consolas virtuales en Zorin OS Lite se debe realizar la combinación de teclas [Ctrl][Alt][F1-F7] si tenemos un host Windows o [Host][^host][F1-F7] si estamos en un host de GNU/Linux.
+
+[^host]: En las máquinas virtuales la tecla [Host] es la tecla [Ctrl] de la derecha del teclado.
 
 {:.activity}
 ### Conexión, autenticación
 
 Duración aproximada : 10 minutos
-1. Crea los usuarios "\<tuNombreDeUsuario\>", "\<tuNombreDeUsuario\>2" con contraseña "chabacier". En mi caso es "mruizg" y "mruizg2".
-1. Conéctese a la segunda consola virtual texto (tty2) con el nombre de conexión "\<tuNombreDeUsuario\>" y la contraseña "chabacier".
+
+1. Crea los usuarios "\<tuNombreDeUsuario\>", "\<tuNombreDeUsuario\>2" con contraseña "chabacier". En mi caso es "mruizg" y "mruizg2". Puedes hacerlo utilizando la interfaz gráfica (manera fácil) o usando el terminal (buscando en Google cómo).
+1. Conéctese a la segunda consola virtual texto (tty2) con el nombre de conexión "\<tuNombreDeUsuario\>" y la contraseña "chabacier". El nombre de conexión (login) y la contraseña dependen de la cuenta de usuario previamente creada por el administrador del sistema GNU/Linux al que se conecte.
 1. Conéctese a la tercera terminal virtual texto (tty3) con el nombre de conexión "\<tuNombreDeUsuario\>2" y la contraseña "chabacier".
-1. Si posee la contraseña de administrador, conéctese como root en la cuarta terminal texto (tty4). ¿Observa alguna diferencia con respecto a los otros terminales?
+1. Si posee la contraseña de administrador, conéctese como root en la cuarta terminal texto (tty4). ¿Observa alguna diferencia con respecto a los otros terminales? En el caso de Zorin OS Lite no hay contraseña para el usuario root por lo que no se puede hacer login directamente por cuestiones de seguridad. Para hacer login como root se necesita hacer login como usuario administrador para posteriormente ejecutar la instrucción `sudo su root` o `sudo su`. Tras esto te pedirá la contraseña de tu usuario actual.
 1. Cambie a la consola gráfica y conéctese de nuevo como usuario "\<tuNombreDeUsuario\>".
 1. Inicie varios emuladores de terminal a partir de su sesión gráfica.
-
-#### Pistas
-
-1. El nombre de conexión (login) y la contraseña dependen de la cuenta de usuario previamente creada por el administrador del sistema GNU/Linux al que se conecte.     
 
 {:.activity}
 ### Identidad de los usuarios
 
 Duración aproximada : 8 minutos
 
-1. Vuelva a la segunda consola virtual (tty2) y liste los usuarios conectados al sistema de diferentes maneras.
-2. Muestre únicamente la línea relativa a la conexión con su shell actual.
-3. Vuelva a la tercera consola virtual (tty3) y muestre el nombre de conexión (login) del usuario conectado.
-4. Muestre la descripción de la cuenta de usuario "\<tuNombreDeUsuario\>".
-
-#### Pistas
-
-1. Los comandos `who` y `finger` permiten listar los usuarios conectados al sistema.
-2. Utilizar el comando `who`.
-3. Utilizar el comando `who`.
-4. Utilizar el comando `finger`. 
+1. Vuelva a la segunda consola virtual (tty2) y liste los usuarios conectados al sistema de diferentes maneras. Los comandos `who` y `finger` permiten listar los usuarios conectados al sistema.
+2. Muestre únicamente la línea relativa a la conexión con su shell actual. Utilizar el comando `who` con un atributo. Puedes consultar el atributo utilizando el comando `man`.
+3. Vuelva a la tercera consola virtual (tty3) y muestre el nombre de conexión (login) del usuario conectado. Utilizar el comando `who` con un atributo. Puedes consultar el atributo utilizando el comando `man`.
+4. Muestre la descripción de la cuenta de usuario "\<tuNombreDeUsuario\>". Utilizar el comando `finger` con un atributo. Puedes consultar el atributo utilizando el comando `man`.
 
 {:.activity}
 ### Cambio de contraseña
 
 Duración aproximada : 10 minutos
 
-1. Vuelva a la segunda consola virtual (tty2) y modifique la contraseña de "\<tuNombreDeUsuario\>2". ¿Es posible? 
-2. Cambie su contraseña por "qdgj". ¿Es posible?
-3. Cambie su contraseña por "azertyui". ¿Es posible?
-4. Modifique su contraseña a su conveniencia. Recuerde esta última para poderse reconectar posteriormente.
+1. Vuelva a la segunda consola virtual (tty2) y modifique la contraseña de "\<tuNombreDeUsuario\>2". ¿Es posible? Utilice el comando `passwd`. Escoja una contraseña autorizada por el sistema (con un mínimo de seis caracteres y no basada en palabras del diccionario).
+2. Cambie su contraseña por "qdgj". ¿Es posible? ¿Por qué?
+3. Cambie su contraseña por "azertyui". ¿Es posible? ¿Por qué?
+4. Modifique su contraseña para que vuelva a ser "chabacier". Recuerde esta última para poderse reconectar posteriormente.
 5. Cambie de nuevo su contraseña por "gnulinux". ¿Es posible?
-
-#### Pistas
-
-1. Utilice el comando `passwd`.
-2. Escoja una contraseña autorizada por el sistema (con un mínimo de seis caracteres y no basada en palabras del diccionario). 
 
 {:.activity}
 ### Recuento
 
 Duración aproximada: 5 minutos
 
-1. ¿Cuántas líneas, palabras y caracteres comportan el archivo /etc/services?
-2. ¿Cuántas cuentas de usuario están definidas en el sistema?
-
-#### Pistas
-
-1. Utilice el comando `wc`.
-2. Cada línea del archivo /etc/passwd define una cuenta de usuario. 
+1. ¿Cuántas líneas, palabras y caracteres comportan el archivo /etc/services? Utilice el comando `wc`.
+2. ¿Cuántas cuentas de usuario están definidas en el sistema? Cada línea del archivo /etc/passwd define una cuenta de usuario. 
 
 {:.activity}
 ### Visualización
 
 Duración aproximada: 5 minutos
 
-1. Borre la pantalla.
-2. Visualice la cadena de caracteres "a b" sin las comillas (letras "a" y "b" separadas por un espacio).
+1. Borre la pantalla. Utilice el comando `clear`.
+2. Visualice la cadena de caracteres "a b" sin las comillas (letras "a" y "b" separadas por un espacio). Utilice el comando `echo`.
 3. Visualice la cadena de caracteres "a  b" sin las comillas (letras "a" y "b" separadas por dos espacios). ¿Qué observa?
-4. Visualice la cadena de caracteres "a   b" sin las comillas (letras "a" y "b" separadas por un tabulador).
-
-#### Pistas
-
-1. Utilice el comando `clear`.
-2. Utilice el comando `echo`.
-4. Puede ser necesario utilizar la secuencia de teclas [Ctrl]-V para desactivar la terminación de palabras con la tecla [Tab]; será entonces posible introducir una tabulación en la línea de comandos. 
+4. Visualice la cadena de caracteres "a   b" sin las comillas (letras "a" y "b" separadas por un tabulador). Puede ser necesario utilizar la secuencia de teclas [Ctrl]-V para desactivar la terminación de palabras con la tecla [Tab]; será entonces posible introducir una tabulación en la línea de comandos. 
 
 {:.activity}
 ### Tiempo
 
 Duración aproximada : 10 minutos
 
-1. Visualice la fecha del sistema.
-2. Visualice el calendario del mes en curso.
-3. Visualice el calendario del mes de enero del año 5, después el del año 2005. ¿Hay alguna diferencia?
+1. Visualice la fecha del sistema. Utilice el comando `date`.
+2. Visualice el calendario del mes en curso. Utilice el comando `cal`.
+3. Visualice el calendario del mes de enero del año 5, después el del año 2005. ¿Hay alguna diferencia? Utilice el comando `cal` con los argumentos adecuados.
 4. Visualice el calendario del mes de septiembre de 1752. ¿Qué observa?
-
-#### Pistas
-
-1. Utilice el comando `date`.
-2. Utilice el comando `cal`.
-3. Utilice el comando `cal` con los argumentos adecuados.
 
 {:.activity}
 ### Utilización del ratón y del teclado
 
 Duración aproximada : 10 minutos
 
-1. Siempre en la segunda consola virtual texto (tty2), visualice el calendario del año 2005. ¿Ve los días del mes de enero, febrero y marzo?
+1. Siempre en la segunda consola virtual texto (tty2), visualice el calendario del año 2005. ¿Ve los días del mes de enero, febrero y marzo? Utilice el comando `cal`.
 2. Desplácese horizontalmente con el fin de mostrar las líneas precedentes visualizadas en el terminal.
-3. Borre la pantalla rápidamente.
-4. Recuerde los comandos tecleados anteriormente.5. Recupere los últimos comandos que contengan la cadena de caracteres "ho".
-6. Ejecute el comando sleep 999 y cancele su ejecución transcurridos unos pocos segundos.
-7. Compruebe la terminación de palabras con comandos y nombres de archivos.
-8. Vuelva a la consola gráfica y verifique la función de copiar/pegar del ratón.
-
-#### Pistas
-
-1. Utilice el comando `cal`.
-5. Utilice la secuencia de teclas [Ctrl]-R.
-6. El comando `sleep` se limita a esperar el numero de segundos indicados en el argumento. 
+3. Borre la pantalla rápidamente. Utilice el atajo de teclado [Ctrl]-L.
+4. Recuerde los comandos tecleados anteriormente. Utilice el comando `history`.
+5. Recupere los últimos comandos que contengan la cadena de caracteres "ho". Utilice la secuencia de teclas [Ctrl]-R. 
+6. Ejecute el comando `sleep 999` y cancele su ejecución transcurridos unos pocos segundos. El comando `sleep` se limita a esperar el numero de segundos indicados en el argumento. Para cancelar un proceso en ejecución se usa [Ctrl]-C.
+7. Compruebe la terminación de palabras con comandos y nombres de archivos. Utilice la tecla [Tab].
+8. Vuelva a la consola gráfica y verifique la función de copiar/pegar del ratón con el click derecho.
 
 {:.activity}
 ### Desconexión
@@ -178,7 +143,7 @@ Duración aproximada : 10 minutos
 Duración aproximada : 2 minutos
 
 1. Desconéctese de la sesión gráfica.
-2. Desconéctese de todos los terminales virtuales texto de diferentes maneras.
+2. Desconéctese de todos los terminales virtuales texto de diferentes maneras. Puedes usar `exit`, `logout` o [Ctrl]-D.
 
 ## Entrega y presentación
 
