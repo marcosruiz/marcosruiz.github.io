@@ -54,69 +54,43 @@ Responde a las siguientes preguntas:
 
 1. Conéctese a la segunda consola virtual texto (tty2) como el usuario "\<tuNombreDeUsuario\>".
 2. Indique con un comando en que directorio se encuentra.
-3. Vaya al directorio /usr/share/doc, después verifique la ruta de su directorio actual.
-4. Remonte al directorio padre y verifíquelo.
+3. Vaya al directorio /usr/share/doc, después verifique la ruta de su directorio actual. Utilice el comando `cd`; podrá ayudarse de la finalización de palabras con la tecla [Tab].
+4. Remonte al directorio padre y verifíquelo. El directorio padre se referencia por "..".
 5. Vaya a su directorio personal sin teclear su ruta.
-6. Vuelva al directorio precedente sin teclear su ruta.
-7. Vuelva a su directorio personal y liste los archivos presentes.
+6. Vuelva al directorio precedente sin teclear su ruta. El directorio precedente en el que usted se encontraba es /usr/share.
+7. Vuelva a su directorio personal y liste los archivos presentes. Utilice el comando `ls`.
 8. Liste ahora todos los archivos (incluso los ocultos).
 9. Visualice de forma detallada el contenido del directorio /usr sin cambiar de directorio de trabajo.
-10. Visualice el árbol de archivos contenidos en /var, siempre sin cambiar de directorio de trabajo.
+10. Visualice el árbol de archivos contenidos en /var, siempre sin cambiar de directorio de trabajo. Utilice la opción volviendo al comando...
 11. Visualice de forma detallada el contenido del directorio /var/log ordenando los archivos del más antiguo al más reciente.
 12. Visualice la información detallada del directorio /home sin listar su contenido.
 13. ¿Cuál es el formato de los archivos /etc/passwd, /usr/bin/passwd, /bin/ls y /usr?
 14. Visualice también la información contenida en los inodos de los archivos anteriores.
-
-#### Pistas
-
-3. Utilice el comando `cd`; podrá ayudarse de la finalización de palabras con la tecla [Tab].
-4. El directorio padre se referencia por "..".
-6. El directorio precedente en el que usted se encontraba es /usr/share.
-7. Utilice el comando `ls`.
-10. Utilice la opción volviendo al comando...
 
 {:.activity}
 ### Consulta de archivos
 
 Duración estimada: 10 minutos
 
-1. Visualice el contenido del archivo /etc/issue. ¿Qué contiene?
-2. Visualice página por página el contenido del archivo /etc/services. ¿Qué contiene?
-3. Determine el formato del archivo /bin/false y visualice su contenido con el comando adecuado.
-4. Consulte la página del manual del comando od y visualice ahora el contenido del archivo /bin/false en hexadecimal.
-5. Visualice las cadenas de caracteres contenidas en el archivo /bin/false.
-
-#### Pistas
-
-1. Utilice el comando `cat`, `more` o `less`.
-2. Utilice el comando `more` o `less`.
-3. Un archivo binario no debe visualizarse con la ayuda de herramientas reservadas a los archivos de texto. En efecto, ciertos caracteres no imprimibles contenidos en estos archivos pueden modificar el comportamiento del terminal si son visualizados como tales; esto puede acarrear por ejemplo una visualización como la siguiente en el terminal: `images/0401CAT.png`.
-4. Si se encuentra desafortunadamente en este caso, puede teclear el comando reset (a "ciegas") para reinicializar su terminal.
-5. Utilice el comando strings.
+1. Visualice el contenido del archivo /etc/issue. ¿Qué contiene? Utilice el comando `cat`, `more` o `less`.
+2. Visualice página por página el contenido del archivo /etc/services. ¿Qué contiene? Utilice el comando `more` o `less`.
+3. Determine el formato del archivo /bin/false y visualice su contenido con el comando adecuado. Un archivo binario no debe visualizarse con la ayuda de herramientas reservadas a los archivos de texto. En efecto, ciertos caracteres no imprimibles contenidos en estos archivos pueden modificar el comportamiento del terminal si son visualizados como tales; esto puede acarrear por ejemplo una visualización como la siguiente en el terminal: `images/0401CAT.png`.
+4. Consulte la página del manual del comando od y visualice ahora el contenido del archivo /bin/false en hexadecimal. Si se encuentra desafortunadamente en este caso, puede teclear el comando reset (a "ciegas") para reinicializar su terminal.
+5. Visualice las cadenas de caracteres contenidas en el archivo /bin/false. Utilice el comando strings.
 
 {:.activity}
 ### Directorios
 
 Duración estimada: 15 minutos
 
-1. Como "\<tuNombreDeUsuario\>", vaya a su directorio personal.
-2. Cree un directorio con el nombre capítulo3.
+1. Como "\<tuNombreDeUsuario\>", vaya a su directorio personal. Utilice el comando `cd`.
+2. Cree un directorio con el nombre capítulo3. Utilice el comando `mkdir`. Asegúrese de especificar correctamente la ruta del directorio a crear, ya sea como ruta relativa, absoluta o personal.
 3. Vaya a su directorio capítulo3.
-4. Cree el árbol dir1/dir2/dir3/dir4.
-5. Liste el contenido del directorio actual de forma recursiva.
-6. Suprima el directorio dir1. ¿Es posible?
-7. Suprima el árbol de directorios dir1/dir2/dir3/dir4, después verifíquelo listando el directorio actual de forma recursiva.
-8. Cree ahora el árbol siguiente en su directorio actual (/home/\<tuNombreDeUsuario\>/capítulo3) sin cambiar de directorio: "images/0402arbo.png".
-
-#### Pistas
-
-1. Utilice el comando `cd`.
-2. Utilice el comando `mkdir`. Asegúrese de especificar correctamente la ruta del directorio a crear, ya sea como ruta relativa, absoluta o personal.
-4. Utilice el comando `mkdir` con la opción adecuada.
-5. Utilice el comando `ls` con la opción adecuada.
-6. Utilice el comando `rmdir`.
-7. Utilice el comando `rmdir` con la opción adecuada.
-8. Es posible pasar varios argumentos en el mismo comando `mkdir`.
+4. Cree el árbol dir1/dir2/dir3/dir4. Utilice el comando `mkdir` con la opción adecuada.
+5. Liste el contenido del directorio actual de forma recursiva. Utilice el comando `ls` con la opción adecuada.
+6. Suprima el directorio dir1. ¿Es posible? Utilice el comando `rmdir`.
+7. Suprima el árbol de directorios dir1/dir2/dir3/dir4, después verifíquelo listando el directorio actual de forma recursiva. Utilice el comando `rmdir` con la opción adecuada.
+8. Cree ahora el árbol siguiente en su directorio actual (/home/\<tuNombreDeUsuario\>/capítulo3) sin cambiar de directorio: "images/0402arbo.png". Es posible pasar varios argumentos en el mismo comando `mkdir`.
 
 {:.activity}
 ### Archivos
