@@ -1,5 +1,5 @@
 ---
-title: Iniciación a la programación
+title: "Iniciación a la programación"
 date: 2022-01-11 17:40:00 +0100
 categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
 tags: [gnu linux, comandos, terminal, bash, tic ii, teoría]
@@ -78,10 +78,10 @@ Es el lenguaje de programación que entiende directamente la computadora o máqu
 Utiliza el sistema binario, es decir, únicamente utiliza dos dígitos, el 0 y el 1. 
 Con estos dos únicos dígitos, conocidos como bits, forma las cadenas binarias (combinaciones de ceros y unos) con las que la CPU de una máquina procesa la información.
 
-![Lenguaje máquina](/assets/img/iniciacion-a-la-programacion/lenguaje-maquina-bits.png)
+![Lenguaje máquina](/assets/img/iniciacion-a-la-programacion/lenguaje-maquina-bits.png){: width="400px"}
 _Lenguaje máquina_
 
-![Entrada y salida del lenguaje máquina](/assets/img/iniciacion-a-la-programacion/lenguaje-maquina-entrada-salida.png)
+![Entrada y salida del lenguaje máquina](/assets/img/iniciacion-a-la-programacion/lenguaje-maquina-entrada-salida.png){: width="400px"}
 _Entrada y salida del lenguaje máquina_
 
 Cualquier cosa que queramos que realice el ordenador debe expresarse con este código de ceros y unos, que es el lenguaje que realmente entiende y utiliza el microprocesador de un ordenador o cualquier otro dispositivo. El lenguaje máquina fue el primer lenguaje de programación.
@@ -99,12 +99,12 @@ Son mucho más fáciles de utilizar que el lenguaje máquina, pero son específi
 
 Estos lenguajes están constituidos, básicamente, por las instrucciones del lenguaje máquina escritas en forma simbólica, mediante códigos nemotécnicos (grupos de 3-4 caracteres alfanuméricos que simbolizan las órdenes o tareas a realizar) fáciles de leer y de recordar (ejemplo: ADD-sumar, MOV-mover,...). Un programa escrito en este lenguaje no es directamente ejecutable en la máquina. De esta forma, debido a su simbolismo, debe ser traducido a un programa equivalente, escrito en lenguaje máquina, capaz de ser ejecutado. Esta traducción se realiza mediante programas denominados programas ensambladores.
 
-![Entrada y salida del lenguaje ensamblador](/assets/img/iniciacion-a-la-programacion/ensamblador-entrada-salida.png)
+![Entrada y salida del lenguaje ensamblador](/assets/img/iniciacion-a-la-programacion/ensamblador-entrada-salida.png){: width="500px"}
 _Entrada y salida del lenguaje ensamblador_
 
 En la actualidad, se suelen usar en ambientes reducidos, académicos y de investigación, cuando se va a manipular hardware y se pretende conseguir un uso de recursos muy controlado, o cuando se pretende conseguir un alto rendimiento. En los ensambladores se necesitan muchas instrucciones para tareas simples y su utilización exige grandes conocimientos sobre el hardware de la máquina, por lo que programar en ensamblador es realmente complejo. Muchos dispositivos programables (como los microcontroladores[^microcontrolador]) aún cuentan con el ensamblador como la única manera de ser manipulados.
 
-![Ejemplo de lenguaje ensamblador](/assets/img/iniciacion-a-la-programacion/ensamblador-lengueje.png)
+![Ejemplo de lenguaje ensamblador](/assets/img/iniciacion-a-la-programacion/ensamblador-lengueje.png){: width="400px"}
 _Ejemplo de lenguaje ensamblador_
 
 [^microcontrolador]: Un microcontrolador es un circuito integrado o chip que incluye en su interior las tres unidades funcionales de un ordenador: CPU, Memoria y Unidades de E/S, es decir, se trata de un computador completo en un solo circuito integrado. Aunque sus prestaciones son limitadas, además de dicha integración, su característica principal es su alto nivel de especialización. Aunque los hay del tamaño de una moneda, lo normal es que sean incluso más pequeños, ya que, lógicamente, forman parte del dispositivo que controlan.
@@ -129,7 +129,7 @@ Además, los lenguajes de alto nivel son independientes de la máquina, por lo q
 
 Existen muchos lenguajes de programación de alto nivel con sus diferentes versiones y lenguajes derivados. Entre ellos tenemos el C, C++, Java, JavaScript, Python, Pascal, Logo, Processing (basado en Java),...
 
-![Hola mundo en lenguaje C, Java, Python](/assets/img/iniciacion-a-la-programacion/hola-mundo-c-java-python.png)
+![Hola mundo en lenguaje C, Java, Python](/assets/img/iniciacion-a-la-programacion/hola-mundo-c-java-python.png){: width="500px"}
 _Hola mundo en lenguaje C, Java, Python_
 
 El primer lenguaje de programación de alto nivel que se creó fue FORTRAN, que significa Traductor de Fórmulas y proviene de las palabras en inglés FORmula TRANslating.
@@ -144,7 +144,7 @@ El código escrito mediante el lenguaje de alto nivel (código fuente o programa
 
 El compilador traduce el programa completo a código máquina antes de empezar a ejecutarlo, obteniendo lo que se llama código objeto o programa objeto y, si no hay errores, genera un archivo ejecutable. Gráficamente:
 
-![Funcionamiento de un compilador](/assets/img/iniciacion-a-la-programacion/compilador.png)
+![Funcionamiento de un compilador](/assets/img/iniciacion-a-la-programacion/compilador.png){: width="400px"}
 _Funcionamiento de un compilador_
 
 Una vez compilado el programa, podemos ejecutarlo, es decir, hacer que se inicie la carga del programa y que comiencen a realizarse las acciones programadas. 
