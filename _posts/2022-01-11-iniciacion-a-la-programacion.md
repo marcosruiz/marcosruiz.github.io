@@ -248,9 +248,9 @@ Dentro de la programación declarativa distinguimos dos tipos:
 - **Lenguajes lógicos**: Utilizan la lógica matemática para expresar problemas complejos y resolverlos mediante la aplicación de reglas, hipótesis y teoremas. Ejemplo: Prolog.
 
 {:.subsection}
-### Fases del proceso de programación
+### Etapas del desarrollo de software
 
-La creación de un programa informático es un proceso ordenado que ha de realizarse de modo secuencial. Desde el programa más sencillo, con pocas instrucciones, hasta la programación de grandes aplicaciones que contienen miles de líneas de instrucciones, se han de seguir una serie de pasos, que constituyen las ETAPAS DE PROGRAMACIÓN:
+La creación de un programa informático es un proceso ordenado que ha de realizarse de modo secuencial. Desde el programa más sencillo, con pocas instrucciones, hasta la programación de grandes aplicaciones que contienen miles de líneas de instrucciones, se han de seguir una serie de pasos, que constituyen las **etapas del desarrollo de software**:
 
 - Definición del problema.
 - Análisis de los datos.
@@ -259,6 +259,21 @@ La creación de un programa informático es un proceso ordenado que ha de realiz
 - Prueba y depuración.
 - Documentación.
 - Mantenimiento.
+
+![Etapas del desarrollo de software](\assets\img\iniciacion-a-la-programacion\fases-programacion.png){: width="400px"}
+_Etapas del desarrollo de software_
+
+Teniendo en cuenta las anteriores etapas del desarrollo existen diferentes maneras de organizar estas fases:
+
+- En cascada.
+- En cascada con retroalimentación
+- En espiral
+- Metodologías ágiles
+    - SCRUM
+    - FDD (Feature Driven Development)
+    - TDD (Test Driven Development)
+    - Extreme programming
+
 
 {:.subsubsection}
 #### Definición del problema
@@ -283,7 +298,7 @@ Longitud del círculo (variable LONGITUD, de tipo real).
 
 Se llama algoritmo a la secuencia de pasos organizados a seguir para resolver un problema. Cualquier algoritmo debe tener las siguientes características:
 
-- La descripción de cada paso no debe llevar a ambigüedades, los pasos deben ser absolutamente explícitos y no inducir a error.
+- La descripción de cada paso no debe llevar a ambigüedades, los pasos deben ser absolutamente **explícitos y no inducir a error**.
 - El número de pasos debe ser finito, de forma que el algoritmo se pueda ejecutar en un tiempo finito.
 
 Los algoritmos son independientes de la sintaxis de cada lenguaje de programación en particular, de forma que el algoritmo que lleve a la solución de un determinado problema pueda ser expresado utilizando distintos lenguajes de programación.
@@ -292,8 +307,8 @@ Hay distintas formas de escribir un algoritmo, bien usando un lenguaje específi
 
 Veamos un ejemplo de diseño de un algoritmo, expresado de ambas formas:
 
-![Ejercicio](/assets/img/iniciacion-a-la-programacion/ejercicio-1.png)
-_Ejercicio_
+![Ejemplo de diseño de un algoritmo](/assets/img/iniciacion-a-la-programacion/ejercicio-1.png)
+_Ejemplo de diseño de un algoritmo_
 
 De los dos tipos, los algoritmos más utilizados en la programación son los diagramas de flujo u organigramas. Éstos utilizan símbolos estandarizados que permiten reflejar cada uno de los pasos que se deben seguir para diseñar un programa. El organigrama del programa se traduce más tarde a las instrucciones propias del lenguaje de programación que se utilice. Los símbolos más utilizados en los organigramas son:
 
@@ -313,9 +328,9 @@ Para comprobar un programa se realizan pruebas de diversa índole. De forma gene
 
 La depuración o localización de los errores detectados y su corrección, puede realizarse a tres niveles:
 
-- Depuración de errores de sintaxis. Un programador siempre agradece que el lenguaje de programación tenga ayudas a la depuración del código utilizado, encontrando e indicando los errores de sintaxis cometidos a la hora de crear el código fuente.
-- Depuración de errores en el funcionamiento. Aunque el programa no tenga errores de sintaxis, puede no estar haciendo lo que el programador desea. Se debe revisar la funcionalidad hasta conseguir que haga las operaciones deseadas.
-- Optimización de la programación. Aunque el programa no tenga errores y funcione de manera correcta, siempre hay que buscar la manera óptima de realizarlo, es decir, lograr que la ejecución sea más rápida, que consuma menos memoria, que utilice menos recursos,…
+1.**Depuración de errores de sintaxis**: Un programador siempre agradece que el lenguaje de programación tenga ayudas a la depuración del código utilizado, encontrando e indicando los errores de sintaxis cometidos a la hora de crear el código fuente.
+1. **Depuración de errores en el funcionamiento**: Aunque el programa no tenga errores de sintaxis, puede no estar haciendo lo que el programador desea. Se debe revisar la funcionalidad hasta conseguir que haga las operaciones deseadas.
+1. **Optimización de la programación**: Aunque el programa no tenga errores y funcione de manera correcta, siempre hay que buscar la manera óptima de realizarlo, es decir, lograr que la ejecución sea más rápida, que consuma menos memoria, que utilice menos recursos ...
 
 {:.subsubsection}
 #### Documentación
@@ -327,7 +342,8 @@ A menudo, un programa escrito por una persona es usado por otra. Por ello, la do
 {:.subsubsection}
 #### Mantenimiento
 
-Se refiere a las actualizaciones que deban aplicarse al programa cuando las circunstancias así lo requieran. Un programa debe ser susceptible de ser modificado para adecuarlo a nuevas condiciones de operación.
+Se refiere a las actualizaciones que deban aplicarse al programa cuando las circunstancias así lo requieran. 
+Un programa debe ser susceptible de ser modificado para adecuarlo a nuevas condiciones de operación.
 
 Cualquier actualización o cambio en el programa deberá reflejarse en su documentación.
 

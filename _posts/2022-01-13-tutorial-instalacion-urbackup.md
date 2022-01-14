@@ -98,7 +98,9 @@ Comprueba que el cliente de UrBackup ha iniciado correctamente:
 $ sudo urbackupclientbackend -v info
 ```
 
-Ejecuta el urbackupclientbackend como un daemon, es decir, en segundo plano:
+Ejecuta el urbackupclientbackend como un daemon[^daemon], es decir, en segundo plano:
+
+[^daemon]: Daemon es un nombre de origen griego y su significado mitológico es 'Espíritu guardián'.
 
 ```console
 $ sudo /usr/local/sbin/urbackupclientbackend -d
