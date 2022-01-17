@@ -36,6 +36,7 @@ El servidor FTP debe tener las siguientes características:
 - Modificar el banner de sesión con: "Bienvenido al servidor FTP de \<tuUsuario\>".
 - Debe permitir conectarse a 2 usuarios diferentes: "\<tuUsuario\>" y "\<tuUsuario\>2".
 - Hacer que el directorio raíz de cada usuario sea su directorio home.
+- Deshabilitar el acceso de usuarios anónimos al servidor.
 
 {:.activity}
 ### Cliente FTP
@@ -51,6 +52,18 @@ A través de un cliente de terminal FTP explica como se harían las siguientes a
 - Cambiar el nombre de un fichero.
 - Cambiar los permisos de un fichero.
 - Cambiar el propietario de un fichero.
+
+## Preguntas que debes saber contestar tras la realización de esta práctica
+
+- ¿Qué significa enjaular un usuario?
+- ¿Por qué es bueno enjaular a los usuarios?
+- ¿Para qué sirve la propiedad `chroot`?
+- ¿La propiedad umask en VSFTPD da o quita permisos a los usuarios?
+- ¿Por qué es bueno modificar el mensaje de bienvenida del servidor FTP?
+- ¿Cuál es la instrucción para subir/bajar/borrar un fichero?
+- ¿Cuál es la instrucción para crear/borrar un directorio?
+- ¿Qué significan las siglas VSFTPD?
+- ¿Qué es un daemon?
 
 ## Entrega y presentación
 

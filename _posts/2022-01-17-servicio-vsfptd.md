@@ -21,7 +21,7 @@ Para instalar el servicio escribimos lo siguiente:
 # apt install -y vsftpd
 ```
 
-## Arranque y parada de VSFTPD
+## Arranque, parada y estado de VSFTPD
 
 Para arrancar el servicio VSFTPD escribimos lo siguiente:
 
