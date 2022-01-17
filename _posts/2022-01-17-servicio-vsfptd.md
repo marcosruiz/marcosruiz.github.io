@@ -2,7 +2,7 @@
 title: Servicio VSFTPD
 date: 2022-01-17 09:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
-tags: [gnu linux, comandos, terminal, bash, smr, servicios en red, ftp, práctica, vsftpd]
+tags: [gnu linux, comandos, terminal, bash, smr, servicios en red, ftp, teoría, vsftpd]
 ---
 
 ## Introducción
@@ -36,13 +36,16 @@ Para parar el servicio VSFTPD escribimos lo siguiente:
 # service vsftpd stop
 ```
 
-## Ficheros de configuración
+Para saber el estado del servicio VSTPD escribimos lo siguiente:
 
-Hay dos ficheros de configuración principales:
 
-### /etc/vsftpd.conf
+```console
+# service vsftpd status
+```
 
-Fichero de configuración general.
+## Fichero de configuración /etc/vsftpd.conf
+
+Fichero de configuración general:
 
 ```
 # Example config file /etc/vsftpd.conf
@@ -203,34 +206,15 @@ ssl_enable=NO
 ```
 {: file="/etc/vsftpd.conf" }
 
-A continuación se explican algunas propiedades de este fichero:
+### Parámetros generales
+
+A continuación se explican algunos parámetros generales de este fichero:
 
 - Establecer un mensaje de bienvenida en el servidor FTP: `ftpd_banner`.
-- Habilitar o deshabilitar accesos anónimos al servidor FTP: `anonymous_enable`.
-- Enjaular a determinados usuarios: `chroot_local_user`.
-- Habilitar o deshabilitar la lista de usuarios enjaulados: `chroot_list_enable`.
-- Indicar el fichero donde están los usuarios enjaulados: `chroot_list_file`.
 - Limitar el número de conexiones hacia el servidor FTP: `max_clients`.
 - Limitar el número de conexiones por IP hacia el servidor FTP: `max_per_ip`.
-- Habilitar o deshabilitar autenticarse a los usuarios: `local_enable`.
-- Habilitar o deshabilitar la escritura del servidor FTP: `write_enable`.
-- Habilitar el acceso de invitado para ciertos usuarios FTP: `Chroot_list_enable`.
-- Habilitar el usuario anónimo para subir contenido al servidor FTP: `Anon_upload_enable`.
-- Habilitar el usuario anónimo la función de crear carpetas en el servidor FTP: `Anon_mkdir_write_enable`.
 
-### /etc/vsfptd/chroot_list
-
-En el fichero /etc/vsftpd/chroot_list introducimos la lista de usuarios del sistema que queremos enjaular.
-Sólo tendremos que crear tantas líneas con usuarios del sistema que vayan a tener acceso al FTP como queramos.
-Los usuarios del servicio FTP serán los usuarios del sistema. 
-
-```
-usuario1
-usuario2
-```
-{: file="/etc/vsftpd/chroot_list" }
-
-### Usuarios y grupos
+### Parámetros para la gestión de usuarios
 
 Los usuarios del servidor FTP son los usuarios del sistema.
 Crear usuarios en GNU Linux se hace de la siguiente forma:
@@ -239,11 +223,45 @@ Crear usuarios en GNU Linux se hace de la siguiente forma:
 useradd -d carpeta/usuario
 ```
 
-### Permisos
+A continuación se explican algunos parámetros que hacen referencia a la gestión de usuarios:
+
+- Habilitar o deshabilitar accesos anónimos al servidor FTP: `anonymous_enable`.
+- Habilitar o deshabilitar autenticarse a los usuarios: `local_enable`.
+- Habilitar o deshabilitar la escritura del servidor FTP: `write_enable`.
+- Habilitar el acceso de invitado para ciertos usuarios FTP: `Chroot_list_enable`.
+- Habilitar el usuario anónimo para subir contenido al servidor FTP: `Anon_upload_enable`.
+- Habilitar el usuario anónimo la función de crear carpetas en el servidor FTP: `Anon_mkdir_write_enable`.
+
+### Parámetros para enjaular usuarios (Chroot)
+
+Parámetros para enjaular a determinados usuarios, es decir, evitar que anden por otros directorios que no sean los que nosotros indicamos:
+
+- Enjaular a determinados usuarios: `chroot_local_user`.
+- Habilitar o deshabilitar la lista de usuarios enjaulados: `chroot_list_enable`.
+- Indicar el fichero donde están los usuarios enjaulados: `chroot_list_file`.
+
+En el fichero /etc/vsftpd.chroot_list introducimos la lista de usuarios del sistema que queremos enjaular.
+Es posible que sea necesario crear este fichero.
+Sólo tendremos que crear tantas líneas con usuarios del sistema que vayan a tener acceso al FTP como queramos.
+Los usuarios del servicio FTP serán los usuarios del sistema. 
+
+```
+usuario1
+usuario2
+```
+{: file="/etc/vsftpd.chroot_list" }
+
+### Parámetros para gestionar los permisos
+
+Parámetros para modificar los permisos de los ficheros que suban los usuarios al servidor FTP:
 
 - Establecer permisos usamos la propiedad: `local_umask`.
 
-## Límite de ancho de banda
+Si no recuerdas que es el umask o como funcionan los permisos en GNU Linux te recomiendo leer el artículo [Permisos en GNU Linux](/posts/permisos-gnu-linux/).
+
+### Parámetros para limitar el ancho de banda
+
+Parámetros para limitar de ancho de banda del servidor FTP:
 
 - Limitar la tasa de transferencia usamos: `anon_max_rate`.
 - Limitar la tasa de los usuarios: `local_max_rate`.
