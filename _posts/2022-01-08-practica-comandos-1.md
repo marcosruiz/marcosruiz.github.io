@@ -90,8 +90,8 @@ Duración aproximada : 10 minutos
 1. Vuelva a la segunda consola virtual (tty2) y modifique la contraseña de "\<tuNombreDeUsuario\>2". ¿Es posible? Utilice el comando `passwd`. Escoja una contraseña autorizada por el sistema (con un mínimo de seis caracteres y no basada en palabras del diccionario).
 2. Cambie su contraseña por "qdgj". ¿Es posible? ¿Por qué?
 3. Cambie su contraseña por "azertyui". ¿Es posible? ¿Por qué?
-4. Modifique su contraseña para que vuelva a ser "chabacier". Recuerde esta última para poderse reconectar posteriormente.
-5. Cambie de nuevo su contraseña por "gnulinux". ¿Es posible?
+4. Cambie de nuevo su contraseña por "gnulinux". ¿Es posible?
+5. Modifique su contraseña para que vuelva a ser "chabacier". Recuerde esta última para poderse reconectar posteriormente.
 
 {:.activity}
 ### Recuento
@@ -127,7 +127,7 @@ Duración aproximada : 10 minutos
 Duración aproximada : 10 minutos
 
 1. Siempre en la segunda consola virtual texto (tty2), visualice el calendario del año 2005. ¿Ve los días del mes de enero, febrero y marzo? Utilice el comando `cal`.
-2. Desplácese horizontalmente con el fin de mostrar las líneas precedentes visualizadas en el terminal.
+2. Desplácese verticalmente con el fin de mostrar las líneas precedentes visualizadas en el terminal.
 3. Borre la pantalla rápidamente. Utilice el atajo de teclado [Ctrl]-L.
 4. Recuerde los comandos tecleados anteriormente. Utilice el comando `history`.
 5. Recupere los últimos comandos que contengan la cadena de caracteres "ho". Utilice la secuencia de teclas [Ctrl]-R. 
