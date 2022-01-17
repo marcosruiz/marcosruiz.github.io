@@ -52,8 +52,6 @@ Duración aproximada : 2 minutos
 
 1. Verificar la presencia de los diferentes terminales virtuales (consolas en modo texto y una consola gráfica).
 
-#### Pistas
-
 En la mayoría de las distribuciones Linux, las teclas [F1] a [F6] representan seis consolas virtuales en modo texto y [F7] corresponde a la consola virtual gráfica.
 
 Sin embargo en las últimas distribuciones CentOS, Fedora y RedHat, por ejemplo, [F1] corresponde a la consola gráfica, las consolas texto se representan por la tecla [F2] a [F6]. 

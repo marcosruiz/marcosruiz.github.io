@@ -351,5 +351,6 @@ Cualquier actualización o cambio en el programa deberá reflejarse en su docume
 ## Bibliografía
 
 - [danielggtecnologia - APUNTES 2º BACH ](https://danielggtecnologia.blogspot.com/p/apuntes-2-bach.html)
+- [Desarrollo en cascada (Wikipedia)](https://es.wikipedia.org/wiki/Desarrollo_en_cascada)
 
-## Notas
+## Notas al pie
