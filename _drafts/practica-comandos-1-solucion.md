@@ -8,7 +8,6 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, practica, redes local
 {:.activity}
 ## Requisitos previos
 
-
 **1. ¿Qué significan los acrónimos FSF, GNU y GPL?**
 
 **2. ¿Qué es Linux?**

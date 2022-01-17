@@ -239,6 +239,7 @@ Parámetros para enjaular a determinados usuarios, es decir, evitar que anden po
 - Enjaular a determinados usuarios: `chroot_local_user`.
 - Habilitar o deshabilitar la lista de usuarios enjaulados: `chroot_list_enable`.
 - Indicar el fichero donde están los usuarios enjaulados: `chroot_list_file`.
+- Indicar que se permite escribir a los usuarios enjaulados: `allow_writeable_chroot`.
 
 En el fichero /etc/vsftpd.chroot_list introducimos la lista de usuarios del sistema que queremos enjaular.
 Es posible que sea necesario crear este fichero.
