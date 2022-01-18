@@ -182,9 +182,44 @@ Cuando se le asigna a un directorio, significa que los elementos que hay en ese 
 
 El sticky bit comúnmente es utilizado para /tmp.
 
-### SSUID
+Este tipo de permisos sobre un directorio se puede otorgar de varias maneras:
+
+Utilizando el modo octal:
+
+```console
+chmod 1775 test
+```
+
+Utilizando el modo de notación simbólica:
+
+```console
+chmod +t /test #para activar sticky bit
+chmod -t /test #para desactivar sticky bit
+```
+
+Si un usuario intenta borrar un fichero de una carpeta con sticky bit, recibierá el siguiente mensaje:
+
+```console
+$ rm -rf hola
+rm: cannot remove ‘hola’: Operation not permitted
+```
+
+### SUID
 
 Cuando se activa el bit SUID sobre un fichero significa que el que lo ejecute va a tener los mismos permisos que el que creó el archivo. Esto es útil en algunas ocasiones, aunque hay que utilizarlo con cuidado, ya que puede acarrear problemas de seguridad.
+
+Para activarlo:
+
+```console
+$ chmod 4775 hello.sh
+$ ls -l hello.sh
+-rwsrwxr-x 1 david david 26 Jun 11 19:02 hello.sh
+chmod -x hello.sh
+$ ls -l hello.sh
+-rwSrw-r-- 1 david david 26 Jun 12 19:02 hello.sh
+```
+
+Observamos que en la última línea le quitamos el servicio de ejecución al archivo y en los permisos se reemplaza la s minúscula por la S mayúsculas.
 
 ### SGID
 
@@ -192,6 +227,22 @@ El bit SGID es lo mismo que SUID, pero a nivel de grupo. Esto es, todo archivo q
 
 Opción bastante útil si queremos configurar un directorio para colaborar diferentes usuarios. Si se aplica este bit al directorio, cualquier archivo creado en dicho directorio, tendrá asignado el grupo al que pertenece el directorio.
 
+Por ejemplo, si un usuario que tiene permiso de escritura en el directorio crea un archivo allí, ese archivo es un miembro del mismo grupo que el directorio y no el grupo del usuario. Como hemos dicho, esto es muy útil en la creación de directorios compartidos.
+
+```console
+chmod g+s "directorio"
+```
+
+En el caso de un fichero:
+
+```console
+chmod 2555 "fichero"
+```
+
+Espero que esta información os pueda servir en algún momento. Nos vamos leyendo.
+
 ## Bibliografía
 
 - [Permisos especiales en Linux: Sticky Bit, SUID y SGID](https://www.ochobitshacenunbyte.com/2019/06/17/permisos-especiales-en-linux-sticky-bit-suid-y-sgid/)
+- [Permisos especiales: Sticky Bit, SUID, SGID](https://hvivani.com.ar/2013/09/06/permisos-especiales-sticky-bit-suid-sgid/)
+- [Sticky bit (Wikipedia)](https://es.wikipedia.org/wiki/Sticky_bit)
