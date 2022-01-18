@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Comandos GNU Linux (Parte 1) - Solución"
-date: 2022-01-17 10:30:00 +0100
+date: 2022-01-17 19:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, redes locales, practica, redes locales, solución]
 ---
@@ -9,6 +9,8 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, practica, redes local
 ## Requisitos previos
 
 **1. ¿Qué significan los acrónimos FSF, GNU y GPL?**
+
+La **FSF** (Free Software Foundation), creada por Richard Stallman, sostiene el proyecto **GNU** (GNU is Not Unix) para desarrollar un UNIX Libre con la finalidad de oponerse a la comercialización de los programas informáticos y a la falta de disponibilidad del código fuente. Con este fin, se creó la licencia **GPL** (General Public License), también llamada "copyleft".
 
 **2. ¿Qué es Linux?**
     

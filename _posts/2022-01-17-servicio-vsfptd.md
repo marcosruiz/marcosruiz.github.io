@@ -47,7 +47,7 @@ Para saber el estado del servicio VSTPD escribimos lo siguiente:
 
 Fichero de configuración general:
 
-```
+```shell
 # Example config file /etc/vsftpd.conf
 #
 # The default compiled in settings are fairly paranoid. This sample file
@@ -228,9 +228,8 @@ A continuación se explican algunos parámetros que hacen referencia a la gesti�
 - Habilitar o deshabilitar accesos anónimos al servidor FTP: `anonymous_enable`.
 - Habilitar o deshabilitar autenticarse a los usuarios: `local_enable`.
 - Habilitar o deshabilitar la escritura del servidor FTP: `write_enable`.
-- Habilitar el acceso de invitado para ciertos usuarios FTP: `Chroot_list_enable`.
-- Habilitar el usuario anónimo para subir contenido al servidor FTP: `Anon_upload_enable`.
-- Habilitar el usuario anónimo la función de crear carpetas en el servidor FTP: `Anon_mkdir_write_enable`.
+- Habilitar el usuario anónimo para subir contenido al servidor FTP: `anon_upload_enable`.
+- Habilitar el usuario anónimo la función de crear carpetas en el servidor FTP: `anon_mkdir_write_enable`.
 
 ### Parámetros para enjaular usuarios (Chroot)
 
