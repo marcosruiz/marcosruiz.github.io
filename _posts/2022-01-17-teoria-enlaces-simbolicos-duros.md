@@ -1,15 +1,15 @@
 ---
-title: "Teoría: Enlaces simbólicos, enlaces duros e inodos"
+title: "Teoría: Enlaces simbólicos y enlaces duros"
 date: 2022-01-17 19:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática]
+tags: [gnu linux, comandos, terminal, bash, seguridad informática, teoría, smr, asir]
 ---
 
 ## ¿Qué es un enlace simbólico o soft link?
 
-La manera más sencilla de comprender que es un enlace simbólico en Linux es compararlo con el «enlace directo» o «shortcut» en Windows. El fichero o directorio se encuentra en un único punto del disco y los enlaces son un puntero contra él. Cada enlace simbólico tiene su propio número de inodo lo que permite hacer enlaces simbólicos entre distintos sistemas de ficheros.
+La manera más sencilla de comprender que es un enlace simbólico en Linux es compararlo con el "acceso directo" o "shortcut" en Windows. El fichero o directorio se encuentra en un único punto del disco y los enlaces son un puntero contra él. Cada enlace simbólico tiene su propio número de inodo lo que permite hacer enlaces simbólicos entre distintos sistemas de ficheros.
 
-Para crear enlaces (tanto simbólicos como duros) usamos el comando ln. En este caso vamos a crear un enlace simbólico (parámetro -s) del fichero test:
+Para crear enlaces (tanto simbólicos como duros) usamos el comando `ln`. En este caso vamos a crear un enlace simbólico (parámetro `-s`) del fichero test:
 
 ```console
 $ ln -s test enlace-a-test
@@ -61,7 +61,7 @@ Los enlaces duros lo que hacen es asociar dos o más ficheros compartiendo el mi
 
 Los enlaces duros no pueden hacerse contra directorios y tampoco fuera del propio sistema de ficheros.
 
-Vamos a crear un hard link contra el fichero «test» de antes y veremos que efectivamente comparten inodo y que los datos se sincronizan entre ambos:
+Vamos a crear un hard link contra el fichero "test" de antes y veremos que efectivamente comparten inodo y que los datos se sincronizan entre ambos:
 
 ```console
 $ ln test enlace-duro-test
@@ -70,7 +70,7 @@ $ ls -li
 73793 -rw-r--r-- 2 alex alex 5 2011-04-27 19:09 test
 ```
 
-En la primera columna verificamos que tienen el mismo número de inodo y en la tercera se especifica cuando enlaces duros tiene el fichero. Si hacéis cambios en uno de ellos veréis que también se hacen en el resto. Si por ejemplo cambiamos los permisos al fichero test:
+En la primera columna verificamos que tienen el mismo número de inodo y en la tercera se especifica cuantos enlaces duros tiene el fichero. Si hacéis cambios en uno de ellos veréis que también se hacen en el resto. Si por ejemplo cambiamos los permisos al fichero test:
 
 ```console
 $ chmod 0755 test
@@ -107,7 +107,7 @@ Change: 2011-04-27 19:11:42.516138726 +0200
 - Los enlaces simbólicos se pueden hacer entre distintos sistemas de ficheros, los duros no.
 - Los enlaces duros comparten el número de inodo, los simbólicos no.
 - En los enlaces simbólicos si se borra el fichero o directorio original, la información se pierde, en los duros no.
-- Los enlaces duros son copias exactas del fichero mientras que los simbólicos son meros punteros o «accesos directos».
+- Los enlaces duros son copias exactas del fichero mientras que los simbólicos son meros punteros o "accesos directos".
 
 ## Bibliografía
 
