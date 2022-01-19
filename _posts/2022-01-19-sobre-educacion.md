@@ -1,6 +1,6 @@
 ---
 title: Sobre educación
-date: 2022-01-08 17:17:00 +0100
+date: 2022-01-19 09:00:00 +0100
 categories: [General]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática]
 ---
