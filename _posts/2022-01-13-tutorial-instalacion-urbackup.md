@@ -7,7 +7,7 @@ tags: [gnu linux, comandos, terminal, bash, seguridad informática, urbackup, ba
 
 ## Introducción
 
-Este es un sistema de copia de seguridad de cliente / servidor de código abierto y fácil de configurar que, a través de una combinación de copias de seguridad de imágenes y archivos, logra tanto la seguridad de los datos como un tiempo de restauración rápido. Según indican en la página web del proyecto, se pueden seguir las mismas instrucciones para Ubuntu 18.04, 16.04 y cualquier otra distribución basada en Debian como Linux Mint.
+UrBackup es un sistema de copia de seguridad de cliente/servidor de código abierto y fácil de configurar que, a través de una combinación de copias de seguridad de imágenes y archivos, logra tanto la seguridad de los datos como un tiempo de restauración rápido. Según indican en la página web del proyecto, se pueden seguir las mismas instrucciones para Ubuntu 18.04, 16.04 y cualquier otra distribución basada en Debian como Linux Mint.
 
 Los datos de cualquier organización son algo muy importante. Por esto, hacer una copia de seguridad de los datos es aún más importante tenerlos a buen recaudo en caso de cualquier desastre. UrBackup es una potente y gratuita solución de respaldo de red para uso personal o empresarial.
 

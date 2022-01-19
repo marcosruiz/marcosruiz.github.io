@@ -9,7 +9,7 @@ tags: [gnu linux, comandos, terminal, bash, smr, seguridad informática]
 
 El objetivo de esta práctica ser capaz de modificar los permisos de acceso a los ficheros y a los directorios con el fin de asegurar la confidencialidad de los datos almacenados en el sistema de ficheros GNU Linux.
 
-Duración: 6 h.
+Duración: 10 h.
 
 ## Actividades
 

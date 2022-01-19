@@ -112,4 +112,3 @@ Change: 2011-04-27 19:11:42.516138726 +0200
 ## Bibliografía
 
 - [Diferencias entre soft (symbolic) y hard links](https://rm-rf.es/diferencias-entre-soft-symbolic-y-hard-links/)
-- [Qué son y que utilidades tienen los inodos y dentries de un sistema de archivos](https://geekland.eu/inodos-dentires-sistema-archivos/)
