@@ -99,4 +99,22 @@ Si ocurre algún error durante la instalación, antes de preguntar al profesor a
 
 - Si tras instalar el SO aparece el error "Failed to load ldlinux.c32" es probable que hayas indicado una versión diferente a "Oracle 64-bit".
 - Si al insertar el Live CD virtual aparece el error "Failed to load ldlinux.c32" es probable que la imagen que te has descargado está corrupta.
-- Si no deja iniciar la máquina virtual desde un comienzo, probablemente tengas desactivada la virtualización en la BIOS del ordenador.
+- Si no deja iniciar la máquina virtual desde un comienzoy aparece el siguiente error:
+
+```plaintext
+Not in a hypervisor partition (HVP=0)
+(VERR_NEM_NOT_AVAILABLE).
+
+AMD-V is disabled in the BIOS (or by the host OS)
+(VERR_SVM_DISABLED).
+```
+
+Deberás reiniciar el ordenador, entrar en la BIOS y activar la tecnología de virtualización o VT-x.
+
+- Si deja da el error NS_ERROR_FAILURE (0x80004005) ejecutar los siguientes comandos como root:
+
+```console
+# dpkg -l | grep virtualbox-dkms
+# apt-get purge virtualbox-dkms && sudo apt-get install dkms
+# sudo /sbin/vboxconfig
+```
