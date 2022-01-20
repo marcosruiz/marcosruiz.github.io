@@ -59,15 +59,15 @@ Puedes ir al artículo [Clientes FTP](/posts/clientes-ftp/) donde se explica com
 
 ## Preguntas que debes saber contestar tras la realización de esta práctica
 
-- ¿Qué significa enjaular un usuario?
-- ¿Por qué es bueno enjaular a los usuarios?
-- ¿Para qué sirve la propiedad `chroot`?
-- ¿La propiedad umask en VSFTPD da o quita permisos a los usuarios?
-- ¿Por qué es bueno modificar el mensaje de bienvenida del servidor FTP?
-- ¿Cuál es la instrucción para subir/bajar/borrar un fichero?
-- ¿Cuál es la instrucción para crear/borrar un directorio?
-- ¿Qué significan las siglas VSFTPD?
-- ¿Qué es un daemon?
+1. ¿Qué significa enjaular un usuario?
+1. ¿Por qué es bueno enjaular a los usuarios?
+1. ¿Para qué sirve la propiedad `chroot`?
+1. ¿La propiedad umask en VSFTPD da o quita permisos a los usuarios?
+1. ¿Por qué es bueno modificar el mensaje de bienvenida del servidor FTP?
+1. ¿Cuál es la instrucción para subir/bajar/borrar un fichero?
+1. ¿Cuál es la instrucción para crear/borrar un directorio?
+1. ¿Qué significan las siglas VSFTPD?
+1. ¿Qué es un daemon?
 
 ## Entrega y presentación
 

@@ -1,9 +1,10 @@
 ---
-title: "Práctica: Red estática en Packet Tracer"
-date: 2022-01-19 23:00:00 +0100
+title: "(No definitiva) Práctica: Red estática en Packet Tracer"
+date: 2022-01-20 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
-tags: [packet tracer, redes locales, smr]
+tags: [packet tracer, redes locales, smr, práctica]
 ---
+
 ## Objetivo
 
 El objetivo de esta práctica es que el alumno se familiarice con la herramienta Packet Tracer.
