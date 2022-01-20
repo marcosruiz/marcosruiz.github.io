@@ -130,7 +130,7 @@ Duración aproximada : 10 minutos
 2. Desplácese verticalmente con el fin de mostrar las líneas precedentes visualizadas en el terminal.
 3. Borre la pantalla rápidamente. Utilice el atajo de teclado [Ctrl]-L.
 4. Recuerde los comandos tecleados anteriormente. Utilice el comando `history`.
-5. Recupere los últimos comandos que contengan la cadena de caracteres "ho". Utilice la secuencia de teclas [Ctrl]-R. 
+5. Recupere los últimos comandos que contengan la cadena de caracteres "ho". Utilice la secuencia de teclas [Ctrl]-R. Si pulsa más veces [Ctrl]-R una vez ha buscado una cadena de carácteres seguirá encontrando comandos cada vez más viejos.
 6. Ejecute el comando `sleep 999` y cancele su ejecución transcurridos unos pocos segundos. El comando `sleep` se limita a esperar el numero de segundos indicados en el argumento. Para cancelar un proceso en ejecución se usa [Ctrl]-C.
 7. Compruebe la terminación de palabras con comandos y nombres de archivos. Utilice la tecla [Tab].
 8. Vuelva a la consola gráfica y verifique la función de copiar/pegar del ratón con el click derecho.

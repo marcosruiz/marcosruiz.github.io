@@ -30,10 +30,10 @@ _Modo Topology_
 
 En la figura se identifican claramente 4 secciones: 
 
-- La primera consiste en la barra de herramientas con la cual se puede crear un nuevo esquema, guardar una configuración, zoom, entre otras funciones. 
-- La segunda sección corresponde al área de trabajo, sobre la cual se realiza el dibujo del esquema topológico de la red. 
-- La tercera es la sección correspondiente al grupo de elementos disponibles para la implementación de cualquier esquema topológico, el cual incluye: Routers, Switches, Cables para conexión, dispositivos terminales (PCs, impresoras, Servidores), Dispositivos Inalámbricos, entre otros. 
-- La sección 4, lista el conjunto de elementos que hacen parte del dispositivo seleccionado en la sección 3. A continuación se ilustran el conjunto de elementos que hacen parte de cada grupo de dispositivos.
+- **Sección 1**: Consiste en la barra de herramientas con la cual se puede crear un nuevo esquema, guardar una configuración, zoom, entre otras funciones. 
+- **Sección 2**: Corresponde al área de trabajo, sobre la cual se realiza el dibujo del esquema topológico de la red. 
+- **Sección 3**: Sección correspondiente al grupo de elementos disponibles para la implementación de cualquier esquema topológico, el cual incluye: Routers, Switches, Cables para conexión, dispositivos terminales (PCs, impresoras, Servidores), Dispositivos Inalámbricos, entre otros. 
+- **Sección 4**: Lista el conjunto de elementos que hacen parte del dispositivo seleccionado en la sección 3. A continuación se ilustran el conjunto de elementos que hacen parte de cada grupo de dispositivos.
     - Routers: Series 1800, 2600, 2800, Genéricos
     - Switches: Series 2950,2960, Genérico, Bridge
     - Dispositivos Inalámbricos: Access-Point, Router Inalámbrico
@@ -73,7 +73,7 @@ Dentro de este modo de operación se visualiza el proceso de transmisión y rece
 Una de las principales características del modo de operación simulation, es que permite desplegar ventanas durante la simulación, en las cuales aparece una breve descripción del proceso de transmisión de los paquetes; en términos de las capas del modelo OSI. En a siguiente figura se ilustra un ejemplo en el que se envía un paquete desde el PC0 al PC5.
 
 ![img-description](/assets/img/tutorial-packet-tracer/modo-simulacion-2.png)
-_Modo Simulación con ventana describiendo el proceso de tramsisión de paquetes_
+_Modo Simulación con ventana describiendo el proceso de transmisión de paquetes_
 
 ### Modo Realtime
 
