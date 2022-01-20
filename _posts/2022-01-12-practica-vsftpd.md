@@ -1,5 +1,5 @@
 ---
-title: "Práctica: Servicio FTP (Parte 3)"
+title: "Práctica: Servicio FTP (VSFTP)"
 date: 2022-01-12 22:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
 tags: [gnu linux, comandos, terminal, bash, smr, servicios en red, ftp]
@@ -31,12 +31,12 @@ Para realizar esta tarea debes crear un usuario que tenga el nombre de tu email 
 
 El servidor FTP debe tener las siguientes características:
 
-- Los ficheros nuevos deberán tener los siguientes permisos: rw- r-- ---.
-- Los directorios nuevos deberán tener los siguientes permisos: rwx r-x ---.
-- Modificar el banner de sesión con: "Bienvenido al servidor FTP de \<tuUsuario\>".
-- Debe permitir conectarse a 2 usuarios diferentes: "\<tuUsuario\>" y "\<tuUsuario\>2".
-- Hacer que el directorio raíz de cada usuario sea su directorio home.
-- Deshabilitar el acceso de usuarios anónimos al servidor.
+1. Los ficheros nuevos deberán tener los siguientes permisos: `rw- r-- ---`.
+1. Los directorios nuevos deberán tener los siguientes permisos: `rwx r-x ---`.
+1. Modificar el banner de sesión con: "Bienvenido al servidor FTP de \<tuUsuario\>".
+1. Debe permitir conectarse a 2 usuarios diferentes: "\<tuUsuario\>" y "\<tuUsuario\>2".
+1. Hacer que el directorio raíz de cada usuario sea su directorio home.
+1. Deshabilitar el acceso de usuarios anónimos al servidor.
 
 Puedes ir al artículo [Servicio VSFTPD](/posts/servicio-vsfptd/) que explica como instalar y configurar VsFTPD.
 
@@ -45,15 +45,17 @@ Puedes ir al artículo [Servicio VSFTPD](/posts/servicio-vsfptd/) que explica co
 
 A través de un cliente de terminal FTP explica como se harían las siguientes acciones:
 
-- Crear un directorio
-- Crear un fichero
-- Subir un fichero
-- Descargar un fichero
-- Listar los ficheros de un directorio
-- Moverte a otro directorio.
-- Cambiar el nombre de un fichero.
-- Cambiar los permisos de un fichero.
-- Cambiar el propietario de un fichero.
+1. Crear un directorio
+1. Crear un fichero
+1. Subir un fichero
+1. Descargar un fichero
+1. Listar los ficheros de un directorio
+1. Moverte a otro directorio.
+1. Cambiar el nombre de un fichero.
+1. Cambiar los permisos de un fichero.
+1. Cambiar el propietario de un fichero.
+
+Puedes ir al artículo [Clientes FTP](/posts/clientes-ftp/) donde se explica como instalar y configurar VsFTPD.
 
 ## Preguntas que debes saber contestar tras la realización de esta práctica
 
