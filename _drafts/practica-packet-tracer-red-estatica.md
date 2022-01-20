@@ -1,29 +1,26 @@
 ---
-title: "Práctica: OpenMediaVault"
-date: 2022-01-19 00:45:00 +0100
-categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática]
+title: "Práctica: Red estática en Packet Tracer"
+date: 2022-01-19 23:00:00 +0100
+categories: [Sistemas Microinformáticos y Redes, Redes Locales]
+tags: [packet tracer, redes locales, smr]
 ---
-
 ## Objetivo
 
-El objetivo de esta práctica ser capaz de montar un servidor NAS OpenMediaVault.
-
-Duración: 5 h.
+El objetivo de esta práctica es que el alumno se familiarice con la herramienta Packet Tracer.
 
 ## Actividades
 
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
 {:.activity}
-### Instalar y configurar OpenMediaVault
+### Red de ordenadores
 
+Tenemos que construir una red de ordenadores a partir de la IP 199.35.20.0/24. Y queremos disponer de 20 máquinas en cada subred. Calcular:
 
-
-{:.activity}
-### Instalar y configurar el NAS
-
-
+1. Máscara de subred que le permitiría tener 20 hosts en cada subred.
+1. Número máximo de subredes que se pueden definir.
+1. Especificar cada subred, será independiente una de otra.
+1. Realizar un esquema de las misma usando packet tracer (usa direccionamiento estático)
 
 ## Entrega y presentación
 

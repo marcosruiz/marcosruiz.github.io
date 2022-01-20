@@ -1,5 +1,5 @@
 ---
-title: Vídeos para guardias
+title: Vídeos para guardias o tutorías
 date: 2022-01-19 09:00:00 +0100
 categories: [General, Tutoría]
 tags: [tutoría, vídeos, debate, entretenimiento, guardia]
@@ -105,14 +105,14 @@ tags: [tutoría, vídeos, debate, entretenimiento, guardia]
 
 ### In Real Life - Bullying
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/URvC6T_xhE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/URvC6T_xhE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 - ¿Creeis que la libertad de expresión tiene límites?
 - ¿Dónde estaría ese límite?
 
 ### Sin Palabras, Este Video Toco Mi Corazón
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GEV-8wnvwes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/GEV-8wnvwes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Preguntas
 
@@ -123,7 +123,7 @@ tags: [tutoría, vídeos, debate, entretenimiento, guardia]
 
 ### Gift - Respeto a los animales
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JMs7dkdO4YY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/JMs7dkdO4YY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### Preguntas
 
@@ -149,6 +149,33 @@ tags: [tutoría, vídeos, debate, entretenimiento, guardia]
 - ¿Creeís que ha actuado bien al chica?
 - ¿Cómo deberia haber actuado?
 
+## Canciones
+
+### Morodo - Abuso y Maltrato
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/uy21J8yUwrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Akapellah - Milki
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/KYf0Dmhjqrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### EL NIÑO DE LA HIPOTECA & FERRAN EXCESO - Yonki
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/WMTXruNpfZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### John Lennon Imagine
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/rxCWSHzxjlU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### JARABE DE PALO - "AGUA"
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/2GhF2mPKnDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### Preguntas
+
+- ¿De qué trata la canción?
+- ¿Qué es el agua?
+- ¿Qué es la sed?
 
 ## Bibliografía
 

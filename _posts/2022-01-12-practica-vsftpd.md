@@ -23,7 +23,7 @@ A continuación se listan las actividades a realizar para esta práctica.
 {:.activity}
 ### Instalar y configurar el servidor VsFTPD en Zorin OS Lite
 
-Instalar, configurar y probar un servidor FTP en Zorin OS Lite. Deberás explicar todos los pasos realizados haciendo las capturas de pantalla si son necesarias que demuestren la realización de dicha instalación, configuración y prueba del servidor.
+Instalar, configurar y probar un servidor VsFTPD en Zorin OS Lite. Deberás explicar todos los pasos realizados haciendo las capturas de pantalla si son necesarias que demuestren la realización de dicha instalación, configuración y prueba del servidor.
 
 Los comandos y ficheros que hayas utilizado deben quedar reflejados en el PDF de la entrega en texto para permitirte copiar y pegar el día del examen todos los comandos de una manera rápida.
 
@@ -37,6 +37,8 @@ El servidor FTP debe tener las siguientes características:
 - Debe permitir conectarse a 2 usuarios diferentes: "\<tuUsuario\>" y "\<tuUsuario\>2".
 - Hacer que el directorio raíz de cada usuario sea su directorio home.
 - Deshabilitar el acceso de usuarios anónimos al servidor.
+
+Puedes ir al artículo [Servicio VSFTPD](/posts/servicio-vsfptd/) que explica como instalar y configurar VsFTPD.
 
 {:.activity}
 ### Cliente FTP

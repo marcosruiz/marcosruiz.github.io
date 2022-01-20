@@ -245,7 +245,7 @@ Es posible que sea necesario crear este fichero.
 Sólo tendremos que crear tantas líneas con usuarios del sistema que vayan a tener acceso al FTP como queramos.
 Los usuarios del servicio FTP serán los usuarios del sistema. 
 
-```
+```shell
 usuario1
 usuario2
 ```
@@ -255,7 +255,7 @@ usuario2
 
 Parámetros para modificar los permisos de los ficheros que suban los usuarios al servidor FTP:
 
-- Establecer permisos usamos la propiedad: `local_umask`.
+- Establecer permisos de creación y subida de ficheros y directorios: `local_umask`.
 
 Si no recuerdas que es el umask o como funcionan los permisos en GNU Linux te recomiendo leer el artículo [Permisos en GNU Linux](/posts/permisos-gnu-linux/).
 
