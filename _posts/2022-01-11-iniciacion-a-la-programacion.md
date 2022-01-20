@@ -2,7 +2,7 @@
 title: "Iniciación a la programación"
 date: 2022-01-11 17:40:00 +0100
 categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
-tags: [gnu linux, comandos, terminal, bash, tic ii, teoría]
+tags: [tic ii, teoría, programación]
 ---
 
 
