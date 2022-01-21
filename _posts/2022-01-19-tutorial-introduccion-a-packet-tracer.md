@@ -11,6 +11,15 @@ Una de las herramientas más utilizadas en el mundo orientadas a la simulación 
 
 Packet Tracer es un simulador que permite realizar el diseño de topologías, la configuración de dispositivos de red, así como la detección y corrección de errores en sistemas de comunicaciones. Ofrece como ventaja adicional el análisis de cada proceso que se ejecuta en el programa de acuerdo a la capa de modelo OSI que interviene en dicho proceso; razón por la cuál es una herramienta de gran ayuda en el estudio y aprendizaje del funcionamiento y configuración de redes telemáticas, adicionalmente, es un programa muy útil para familiarizarse con el uso de los comandos del IOS (El sistema operativo de los dispositivos de red de Cisco).
 
+## Descargar e instalar Packet Tracer
+
+Para descargar Packet Tracer debes ir al siguiente [enlace](https://www.netacad.com/portal/resources/packet-tracer). Y debes seleccionar el programa para el sistema operativo que tengas.
+
+![img-description](/assets/img/tutorial-packet-tracer/descargas.png)
+_Descargas de Packet Tracer_
+
+Una vez hemos descargado el .deb o el .exe hacer doble click en él e instalarlo siguiendo los pasos pertinentes.
+
 ## Interfaz de usuario
 
 Esta herramienta software ofrece una interfaz basada en ventanas, la cual ofrece al usuario facilidades para el diseño, configuración y simulación de redes. Presenta tres modos de operación: 
@@ -83,8 +92,3 @@ Y finalmente el Modo Realtime, está diseñado para enviar pings o mensajes SNMP
 _Modo Realtime_
 
 Dentro del modo Realtime, se encuentra el cuadro de registro Ping log, en donde se muestran los mensajes SNMP que han sido enviados y se detalla además el resultado de dicho proceso; con base en este resultado se puede establecer cuál o cuales de los terminales de la red están inactivos, a causa de un mal direccionamiento IP, o diferencias en el tamaño de bits de los paquetes. En la siguiente figura se ilustra claramente un ejemplo de una red, en donde se ingresa a uno de los equipos (PC5) y se hace PING al equipo PC0.
-
-Dentro de las ventajas y desventajas que ofrece el uso de Packet Tracer podemos mencionar:
-
-![img-description](/assets/img/tutorial-packet-tracer/ventajas-desventajas.png)
-_Ventajas y desventajas de Packet Tracer_
