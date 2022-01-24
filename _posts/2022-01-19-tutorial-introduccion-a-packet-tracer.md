@@ -13,12 +13,24 @@ Packet Tracer es un simulador que permite realizar el diseño de topologías, la
 
 ## Descargar e instalar Packet Tracer
 
-Para descargar Packet Tracer debes ir al siguiente [enlace](https://www.netacad.com/portal/resources/packet-tracer). Y debes seleccionar el programa para el sistema operativo que tengas.
+Antes de poder descargar Packet Tracer es necesario registrarse en un curso de NetAcad. Para ello iremos al siguiente enlace [Introduction to Packet Tracer](https://www.netacad.com/courses/packet-tracer/introduction-packet-tracer), bajamos hasta que encontremos el botón de "Sign up today!", hacemos click en él. Aparecerá un nuevo botón que pondrá "English" y también hacemos click en él.
+
+![img-description](/assets/img/tutorial-packet-tracer/sign-up-today.png)
+_Botón para crear una cuenta y matricularnos en un curso_
+
+Una vez estamos inscritos en el curso deberemos ver algo parecido a esto:
+
+![img-description](/assets/img/tutorial-packet-tracer/curso.png)
+_Curso de NetAcad_
+
+
+Una vez tenemos una cuenta y estamos inscritos en un curso puedes ir al siguiente enlace [Download Cisco Packet Tracer](https://www.netacad.com/portal/resources/packet-tracer) y descargar Packet Tracer. Debes seleccionar el programa para el sistema operativo que tengas.
 
 ![img-description](/assets/img/tutorial-packet-tracer/descargas.png)
 _Descargas de Packet Tracer_
 
 Una vez hemos descargado el .deb o el .exe hacer doble click en él e instalarlo siguiendo los pasos pertinentes.
+
 
 ## Interfaz de usuario
 
@@ -92,3 +104,7 @@ Y finalmente el Modo Realtime, está diseñado para enviar pings o mensajes SNMP
 _Modo Realtime_
 
 Dentro del modo Realtime, se encuentra el cuadro de registro Ping log, en donde se muestran los mensajes SNMP que han sido enviados y se detalla además el resultado de dicho proceso; con base en este resultado se puede establecer cuál o cuales de los terminales de la red están inactivos, a causa de un mal direccionamiento IP, o diferencias en el tamaño de bits de los paquetes. En la siguiente figura se ilustra claramente un ejemplo de una red, en donde se ingresa a uno de los equipos (PC5) y se hace PING al equipo PC0.
+
+## Errores habituales
+
+- Cuando hacemos login en la aplicación de Packet Tracer o en la web de Cisco aparece el mensaje "Sorry, we can't find a NetAcad account associated with this Cisco account.". Para solucionar este problema lee la sección "Descargar e instalar Packet Tracer" de este artículo.

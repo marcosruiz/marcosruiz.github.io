@@ -118,3 +118,11 @@ Deberás reiniciar el ordenador, entrar en la BIOS y activar la tecnología de v
 # apt-get purge virtualbox-dkms && sudo apt-get install dkms
 # sudo /sbin/vboxconfig
 ```
+
+- Si tras actualizar el sistema operativo aparece el mensaje de error "RTR3InitEx failed with rc=-1912 (rc=-1912)" realizamos los siguientes pasos para solucionarlo:
+
+```console
+$ su profesor
+$ sudo apt-get purge virtualbox-dkms && sudo apt-get install dkms
+$ sudo /sbin/vboxconfig
+```

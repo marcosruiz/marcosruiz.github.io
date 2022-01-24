@@ -22,10 +22,18 @@ Tenemos que construir una red de ordenadores a partir de la IP 199.35.20.0/24. Y
 1. Número máximo de subredes que se pueden definir.
 1. Especificar cada subred, será independiente una de otra.
 1. Realizar un esquema de las misma usando packet tracer (usa direccionamiento estático)
+    - Debes guardar ejercicio en formato .pkt
+    - Cada subred debe tener al menos dos PCs.
+1. Explica en el documento PDF:
+    1. Cómo has obtenido la máscara de subred modificada.
+    1. Cómo has obtenido las subredes.
+    1. Cómo has configurado cada dispositivo explicando las razones de tus decisiones.
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un documento PDF con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.pdf". Por ejemplo, en mi caso el nombre del documento PDF sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.pdf".
+La entrega de esta práctica debe ser un documento ZIP con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del documento PDF sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.zip".
+
+En la raíz del documento ZIP deben encontrarse el documento PDF con el nombre "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.pdf" y las actividades de Packet Tracer en formato PKT con el nombre "actividad_\<NúmeroDeActividad\>.pkt".
 
 Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 
