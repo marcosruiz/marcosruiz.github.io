@@ -178,6 +178,27 @@ tags: [tutoría, vídeos, debate, entretenimiento, guardia]
 - ¿Qué es el agua?
 - ¿Qué es la sed?
 
+### KASE.O - ESTO NO PARA (Prod. CASH FLOW) VideoLyric Oficial
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9JAAh8P-PnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### RAP CONTRA EL RACISMO
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zl8W6ddWfM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Jona x Piezas - Sin Rencor
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G7eKM3NHwWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Calle 13 - El Aguante
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LUk73pUe9i4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Niño soldado - Ska-P
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pl5mt4Nld7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Bibliografía
 
 - [6 vídeos cortos para debatir con nuestros alumnos](http://blog.tiching.com/6-videos-cortos-debatir-alumnos/)
