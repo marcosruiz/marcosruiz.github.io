@@ -19,6 +19,7 @@ tags: [tutoría, vídeos, debate, entretenimiento, guardia]
 
 - [Indefensión aprendida](https://www.youtube.com/embed/BbA5dpS4CcI?start=1457)
 - [Todo lo que me enseñaron los niños. José Antonio Fernández Bravo, maestro](https://youtu.be/6E4ct50dPKs)
+- [Imprescindibles - Emilio Lledó, mirar con palabras](https://www.rtve.es/play/videos/programa/imprescindibles-emilio-lledo-mirar-con-palabras/6200288/)
 
 ## Vídeos sobre informática
 
