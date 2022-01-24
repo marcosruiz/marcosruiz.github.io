@@ -12,6 +12,7 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 - [Multa de 4.000 euros por agregar a una antigua clienta a un grupo de WhatsApp: no protegieron sus datos personales ni tenían su consentimiento](https://www.xataka.com/pro/multa-4-000-euros-agregar-a-antigua-clienta-a-grupo-whatsapp-no-protegieron-sus-datos-personales-tenian-su-consentimiento)
 - [¿Cómo funcionan las redes inalámbricas de telefonía móvil?](https://unpocodecienciaporfavor.com/2017/02/24/como-funcionan-las-redes-inalambricas-de-telefonia-movil/?fbclid=IwAR0jA9P2Hgn9u5bbqe97XLyknUEjsUCL8m3zA5T35jX0RI4XpkBuUtkrjxw)
 - [La insólita historia de la invención del código QR](https://www.nippon.com/es/news/fnn20191214001/)
+- [Los streamers de Andorra se quedan sin internet a la vez por un ataque de denegación de servicio](https://es.gizmodo.com/los-streamers-de-andorra-se-quedan-sin-internet-a-la-ve-1848403292)
 
 ## Otras noticias
 
