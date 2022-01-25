@@ -2,7 +2,7 @@
 title: Servicio SSH
 date: 2022-01-25 10:30:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
-tags: [gnu linux, comandos, terminal, bash, servicios en red, ssh]
+tags: [gnu linux, comandos, terminal, bash, servicios en red, ssh, seguridad informática, smr]
 ---
 
 Pila TCP/IP:
@@ -49,7 +49,7 @@ La ventaja significativa ofrecida por el protocolo SSH sobre sus predecesores es
 2. Cifrado asimétrico
 3. Hashing
 
-Si tienes más curiosidad de saber como se aplican estas técnicas de cifrado puedes leer el artículo [¿Cómo funciona el SSH?](https://www.hostinger.es/tutoriales/que-es-ssh).
+Si estás cursando la asignatura de Seguridad Informática también debes leer el artículo [¿Cómo funciona el SSH?](https://www.hostinger.es/tutoriales/que-es-ssh).
 
 ## Bibliografía
 
