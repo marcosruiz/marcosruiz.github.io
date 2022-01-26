@@ -21,8 +21,9 @@ Tenemos que construir una red de ordenadores a partir de la IP 199.35.20.0/24. Y
 1. Máscara de subred que le permitiría tener 20 hosts en cada subred.
 1. Número máximo de subredes que se pueden definir.
 1. Especificar cada subred, será independiente una de otra.
-1. Realizar un esquema de las misma usando packet tracer (usa direccionamiento estático)
+1. Realizar un esquema de las misma usando Packet Tracer (usa direccionamiento estático)
     - Debes guardar ejercicio en formato .pkt
+    - Debe haber al menos 6 subredes.
     - Cada subred debe tener al menos dos PCs.
 1. Explica en el documento PDF:
     1. Cómo has obtenido la máscara de subred modificada.
