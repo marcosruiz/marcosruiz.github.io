@@ -35,6 +35,7 @@ Instalar un servicio SSH en una máquina virtual Zorin OS la cual actuará de se
 1. El servidor acepta conexiones por contraseña.
 1. El servidor debe usar el puerto por defecto del servicio SSH.
 1. El servidor debe dar un mensaje de bienvenida como el siguiente: "Bienvenido al servidor SSH de \<tuUsuario\>".
+1. El servidor no debe permitir conexiones a través del superusuario.
 
 {:.activity}
 ### Autenticación mediante usuario y clave

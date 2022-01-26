@@ -140,7 +140,7 @@ Para poder ejecutar aplicaciones gráficas en el host remoto de forma segura, ne
 
 1. Poner la opción `X11Forwarding` a `yes` en el fichero /etc/ssh/sshd_config
 1. Conectarnos utilizando la opción `-X` de la siguiente manera `ssh -X <usuario>@<host>`.
-1. Una vez conectados, ejecutar `xterm`.
+1. Una vez conectados, ejecutar `xterm` o la aplicación gráfica que deseemos como podría ser `gedit`.
 
 ## Autenticación basada en clave pública
 
