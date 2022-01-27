@@ -2,7 +2,7 @@
 title: "Práctica: PSeInt básico"
 date: 2022-01-20 14:00:00 +0100
 categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
-tags: [tic ii, práctica, programación]
+tags: [tic ii, práctica, programación, pseint]
 ---
 
 ## Objetivo

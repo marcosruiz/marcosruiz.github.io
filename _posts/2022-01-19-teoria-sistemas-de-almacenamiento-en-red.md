@@ -1,5 +1,5 @@
 ---
-title: "Teoría: Sistemas de almacenamiento en red"
+title: "Sistemas de almacenamiento en red"
 date: 2022-01-19 00:30:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática, servicios en red, smr, asir]

@@ -1,8 +1,8 @@
 ---
 title: Clientes FTP
 date: 2022-01-20 08:00:00 +0100
-categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [gnu linux, comandos, terminal, bash, smr, seguridad informática, ftp, teoría, filezilla]
+categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
+tags: [gnu linux, comandos, terminal, bash, smr, servicios en red, ftp, teoría, filezilla]
 ---
 
 ## Línea de comandos

@@ -2,7 +2,7 @@
 title: Servicio SSH
 date: 2022-01-25 10:30:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
-tags: [gnu linux, comandos, terminal, bash, servicios en red, ssh, seguridad informática, smr]
+tags: [gnu linux, comandos, terminal, bash, servicios en red, ssh, seguridad informática, smr, teoría]
 ---
 
 Pila TCP/IP:

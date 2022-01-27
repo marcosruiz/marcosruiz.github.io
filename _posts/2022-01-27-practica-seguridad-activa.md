@@ -2,7 +2,7 @@
 title: "Práctica: Seguridad activa"
 date: 2022-01-27 00:30:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática, seguridad activa, smr]
+tags: [gnu linux, comandos, terminal, bash, seguridad informática, seguridad activa, smr, packet tracer, práctica]
 ---
 
 ## Objetivo

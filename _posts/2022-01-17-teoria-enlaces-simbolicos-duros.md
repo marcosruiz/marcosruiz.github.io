@@ -1,5 +1,5 @@
 ---
-title: "Teoría: Enlaces simbólicos y enlaces duros"
+title: "Enlaces simbólicos y enlaces duros"
 date: 2022-01-17 19:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática, teoría, smr, asir]

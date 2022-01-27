@@ -1,8 +1,8 @@
 ---
-title: "Teoría: Seguridad activa"
+title: "Seguridad activa"
 date: 2022-01-27 01:20:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática, smr, seguridad activa]
+tags: [gnu linux, comandos, terminal, bash, seguridad informática, smr, seguridad activa, teoría, bios, grub, uefi, vpn, ssh, dmz, vlan, tcp wrapper, ids]
 ---
 
 ## ¿Qué es la BIOS?
