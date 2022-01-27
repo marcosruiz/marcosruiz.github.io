@@ -59,6 +59,13 @@ Conéctate desde un cliente SSH al servidor SSH utilizando autenticación de cla
 
 Conéctate desde un cliente SSH al servidor SSH en modo gráfico.
 
+## Preguntas que debes saber contestar tras la realización de esta práctica
+
+1. ¿Qué tipo de servicio es SSH?
+1. ¿De qué dos maneras podemos autenticarnos en un servidor SSH? ¿Qué diferencias hay entre ellas? ¿Cuál es mejor? ¿Por qués?
+1. ¿Qué significan las siglas SSH?
+1. ¿Para que puede ser usado SSH?
+
 ## Entrega y presentación
 
 La entrega de esta práctica debe ser un documento ZIP con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del documento PDF sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.zip".

@@ -64,6 +64,19 @@ Diseñar un algoritmo que pida por teclado tres números; si el primero es negat
 ### Actividad 7
 Un colegio desea saber qué porcentaje de niños y qué porcentaje de niñas hay en el curso actual. Diseñar un algoritmo para este propósito (recuerda que para calcular el porcentaje puedes hacer una regla de 3).
 
+#### Ejemplo de ejecución
+
+```
+*** Ejecución Iniciada. ***
+Introduce el numero de niños
+> 5
+Introduce el numero de niñas
+> 4
+Hay un 55.5555555556% de niños
+Hay un 44.4444444444% de niñas
+*** Ejecución Finalizada. ***
+```
+
 ### Actividad 8
 Una tienda ofrece un descuento del 15% sobre el total de la compra durante el mes de octubre. Dado un mes y un importe, calcular cuál es la cantidad que se debe cobrar al cliente.
 
@@ -77,7 +90,7 @@ Modificar el algoritmo anterior, de forma que si se teclea un cero, se vuelva a 
 Algoritmo que nos diga si una persona puede acceder a cursar un ciclo formativo de grado superior o no. Para acceder a un grado superior, si se tiene un titulo de bachiller, en caso de no tenerlo, se puede acceder si hemos superado una prueba de acceso.
 
 ### Actividad 12
-Desarrollar un algoritmo que nos calcule el cuadrado de los 9 primeros números naturales (recuerda la estructura desde-hasta)
+Desarrollar un algoritmo que nos calcule el cuadrado de los 9 primeros números naturales (recuerda la estructura desde-hasta). Este cálculo también es llamado factorial y se representa con el símbolo de exclamación (!).
 
 ### Actividad 13
 Se pide representar el algoritmo que nos calcule la suma de los N primeros números naturales. N se leerá por teclado (no tenemos porque llamar a la variable N, podemos llamarla como queramos).
