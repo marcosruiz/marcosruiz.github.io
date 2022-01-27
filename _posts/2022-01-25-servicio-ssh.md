@@ -85,24 +85,21 @@ El fichero /etc/ssh/sshd_config es el fichero principal de configuración del se
 
 Los parámetros más interesantes son:
 
-1. PermitRootLogin
-1. AllowGroups
-1. AllowUsers
-1. Banner
-1. DenyGroups
-1. DenyUserrs
-1. KerberosAuthentication
-1. ListenAddress
-1. LogingGraceTime
-1. PasswordAuthentication
-1. PermitRootLogin
-1. Port
-1. Protocol
-1. PubkeyAuthentication
-1. StrictModes
-1. X11Forwarding
-
-En [Utilización elemental de ssh](https://github.com/josedom24/serviciosgm_doc/blob/master/linux/acceso/doc/ssh.pdf) están explicados cada uno de ellos.
+1. **AllowGroups**: Esta opción puede ir seguida de una lista de grupos de nombres, separados por espacios. Si se especifica, sólo se permite realizar un login a los usuarios cuyo grupo principal o suplementarios coincida con uno de los patrones establecidos. Se puede usar '*' y '?' como comodines en los patrones.
+1. **AllowUsers**: Esta opción puede ir seguida de una lista de usuarios, separados por espacios. Si se especifica, sólo se permite realizar login a los usuarios cuyo nombre concuerde con el patrón. Se pueden usar y '?' para la construcción de patrones.
+1. **Banner**
+1. **DenyGroups**, **DenyUsers**: Similares a los anteriores pero denegando el servicio.
+1. **KerberosAuthentication**: Especifica si el método de autentificación Kerberos está permitido. Esto puede llevarse a cabo mediante un ticket Kerberos o si la opción `PasswordAuthentication` está habilitada. En ese caso, la contraseña suministrada por el usuario puede ser validada contra un KDC Kerberos.
+1. **ListenAddress**
+1. **LoginGraceTime**: El servidor desconecta después de este tiempo a los usuarios que no se hayan validado correctamente. Si el valor es 0, no hay límite de tiempo. Por defecto, 120 (segundos).
+1. **PasswordAuthentication**: Especifica si la autentificación por password está admitida. Por defecto, "yes".
+1. **PermitRootLogin**: Especifica si el superusuario puede validar usando ssh. Los argumentos posibles son: "yes", "without-password", "forced-commands-only" o "no". El valor por defecto es "yes". Si a esta opción se le asigna "without-password", la autentificación por password se deshabilita para el usuario root.
+Si a esta opción se le asigna "forced-commands-only", el login del superusuario con autentificación de clave pública será admitido, pero sólo si la opción del comando se ha especificado (lo que puede ser útil para realizar backups remotos incluso si el login de superusuario no está admitido normalmente). El resto de métodos de autentificación están vetados para el root. Si a la opción se le asigna "no", el root no puede hacer login.
+1. **Port**: Especifica el número de puerto al que escucha sshd. El puerto predeterminado es el 22/tcp. Este parámetro admite opciones múltiples.
+1. **Protocol**: Especifica las versiones del protocolo que soporta sshd. Las posibilidades son "1" y "2". Las opciones múltiples se separan por comas. El valor por defecto es "2".
+1. **PubkeyAuthentication**: Especifica si se admite la autentificación mediante clave pública. Por defecto, "yes". Esta opción sólo se aplica a la versión 2 del protocolo.
+1. **StrictModes**: Especifica si sshd debe comprobar los permisos y propietarios de los ficheros del usuario y el directorio home antes de aceptar el login. Es recomendable habilitar esta opción pues los usuarios noveles a veces dejan accidentalmente su directorio o sus ficheros con permisos de escritura universales. El valor por defecto, "yes".
+1. **X11Forwarding**: Establece si se permite o no la ejecución remota de aplicaciones gráficas. Si se va a acceder hacia el servidor desde red local, este parámetro puede quedarse con el valor yes. Si se va a permitir el acceso hacia el servidor desde redes públicas, resultará prudente utilizar este parámetro con el valor no.
 
 ## Uso del cliente SSH
 

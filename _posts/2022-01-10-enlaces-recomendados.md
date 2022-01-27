@@ -13,6 +13,7 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 - [¿Cómo funcionan las redes inalámbricas de telefonía móvil?](https://unpocodecienciaporfavor.com/2017/02/24/como-funcionan-las-redes-inalambricas-de-telefonia-movil/?fbclid=IwAR0jA9P2Hgn9u5bbqe97XLyknUEjsUCL8m3zA5T35jX0RI4XpkBuUtkrjxw)
 - [La insólita historia de la invención del código QR](https://www.nippon.com/es/news/fnn20191214001/)
 - [Los streamers de Andorra se quedan sin internet a la vez por un ataque de denegación de servicio](https://es.gizmodo.com/los-streamers-de-andorra-se-quedan-sin-internet-a-la-ve-1848403292)
+- [Un bug en Linux de hace 12 años permite obtener acceso root en casi cualquier distro, y ya lo han explotado ](https://www.genbeta.com/linux/bug-linux-hace-12-anos-permite-obtener-acceso-root-casi-cualquier-distro-han-explotado)
 
 ## Otras noticias
 
