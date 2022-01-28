@@ -96,7 +96,7 @@ Desarrollar un algoritmo que nos calcule el cuadrado de los 9 primeros números 
 Se pide representar el algoritmo que nos calcule la suma de los N primeros números naturales. N se leerá por teclado (no tenemos porque llamar a la variable N, podemos llamarla como queramos).
 
 ### Actividad 14
-Se pide representar el algoritmo que nos calcule la suma de los N primeros números pares. Es decir, si insertamos un 5, nos haga la suma de 6+8+10+12+14.
+Se pide representar el algoritmo que nos calcule la suma de los N primeros números pares. Es decir, si insertamos un 5, nos haga la suma de 2+4+6+8+10+12+14.
 
 ### Actividad 15
 Dada una secuencia de números leídos por teclado, que acabe con un –1, por ejemplo: 5,3,0,2,4,4,0,0,2,3,6,0,……,-1; Realizar el algoritmo que calcule la media aritmética. Suponemos que el usuario no insertara numero negativos.
