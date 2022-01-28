@@ -99,13 +99,13 @@ Se pide representar el algoritmo que nos calcule la suma de los N primeros núme
 Se pide representar el algoritmo que nos calcule la suma de los N primeros números pares. Es decir, si insertamos un 5, nos haga la suma de 2+4+6+8+10+12+14.
 
 ### Actividad 15
-Dada una secuencia de números leídos por teclado, que acabe con un –1, por ejemplo: 5,3,0,2,4,4,0,0,2,3,6,0,……,-1; Realizar el algoritmo que calcule la media aritmética. Suponemos que el usuario no insertara numero negativos.
+Dada una secuencia de números leídos por teclado, que acabe con un –1, por ejemplo: 5,3,0,2,4,4,0,0,2,3,6,0,...,-1; Realizar el algoritmo que calcule la media aritmética. Suponemos que el usuario no insertara numero negativos. El -1 no se debe tener en cuenta en el cálculo de la media.
 
 ### Actividad 16
 Teniendo en cuenta que la clave es "eureka", escribir un algoritmo que nos pida una clave. Solo tenemos 3 intentos para acertar, si fallamos los 3 intentos nos mostrara un mensaje indicándonos que hemos agotado esos 3 intentos. Si acertamos la clave, saldremos directamente del programa.
 
 ### Actividad 17
-Algoritmo que lea números enteros hasta teclear 0, y nos muestre el máximo, el mínimo y la media de todos ellos. Piensa como debemos inicializar las variables.
+Algoritmo que lea números enteros hasta teclear 0, y nos muestre el máximo, el mínimo y la media de todos ellos. Piensa como debemos inicializar las variables. El 0 no se debe tener en cuenta ya que solo indica que queremos terminar de introducir números.
 
 ### Actividad 18
 Algoritmo que visualice la cuenta de los números que son múltiplos de 2 o de 3 que hay entre 1 y 100.
