@@ -1,5 +1,5 @@
 ---
-title: "(No definitiva) Práctica: Red estática en Packet Tracer"
+title: "Práctica: Red estática en Packet Tracer"
 date: 2022-01-20 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [packet tracer, redes locales, smr, práctica]
@@ -28,6 +28,14 @@ Tenemos que construir una red de ordenadores a partir de la IP 199.35.20.0/24. Y
     1. Cómo has obtenido la máscara de subred modificada.
     1. Cómo has obtenido las subredes.
     1. Cómo has configurado cada dispositivo explicando las razones de tus decisiones.
+
+Si necesitas ayuda con el cálculo de subredes puedes ver este vídeo:
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/lEKR7WtKzDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Si necesitas ayuda con la creación de subredes en Packet Tracer puedes ver este vídeo:
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Mk8UZYTP3Xo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Entrega y presentación
 
