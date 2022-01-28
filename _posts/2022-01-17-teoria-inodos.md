@@ -2,7 +2,7 @@
 title: "Teoría: Enlaces simbólicos, enlaces duros e inodos"
 date: 2022-01-17 19:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática]
+tags: [gnu linux, comandos, terminal, bash, seguridad informática, smr, sistema de ficheros]
 ---
 
 ## ¿Qué es un inodo?
@@ -19,16 +19,16 @@ Un inodo contiene la totalidad de metadatos de un fichero de nuestro sistema de 
 
 Los metadatos almacenados en un inodo son los siguientes:
 
-    Número de inodo. El número de inodo es un número entero único que sirve para identificar un inodo.
-    Tamaño del fichero así como el número de bloques que ocupa el fichero en el disco duro.
-    El dispositivo de almacenamiento en que está almacenado el fichero. (Device ID)
-    Número de enlaces. Por lo tanto si hay 2 archivos que apuntan a un mismo inodo tendremos 2 enlaces. Si tenemos un directorio que contiene 15 archivos tendremos 15 enlaces.
-    El identificador de usuario (UID o User ID). Por lo tanto, los inodos especifican el propietario de un fichero.
-    El identificador de grupo (GID o Group ID). De este modo, un inodo contiene el grupo a que pertenece un fichero.
-    Marcas de tiempo como por ejemplo la fecha en que se ha creado el archivo, la fecha del último acceso, etc.
-    Tabla de direccionamiento donde se detallan los bloques del disco duro en que está almacenado el fichero.
+- Número de inodo. El número de inodo es un número entero único que sirve para identificar un inodo.
+- Tamaño del fichero así como el número de bloques que ocupa el fichero en el disco duro.
+- El dispositivo de almacenamiento en que está almacenado el fichero. (Device ID)
+- Número de enlaces. Por lo tanto si hay 2 archivos que apuntan a un mismo inodo tendremos 2 enlaces. Si tenemos un directorio que contiene 15 archivos tendremos 15 enlaces.
+- l identificador de usuario (UID o User ID). Por lo tanto, los inodos especifican el propietario de un fichero.
+- El identificador de grupo (GID o Group ID). De este modo, un inodo contiene el grupo a que pertenece un fichero.
+- Marcas de tiempo como por ejemplo la fecha en que se ha creado el archivo, la fecha del último acceso, etc.
+- Tabla de direccionamiento donde se detallan los bloques del disco duro en que está almacenado el fichero.
 
-Mediante el comando stat podemos consultar la información que un inodo guarda sobre un fichero. Si ejecutamos el comando stat seguido del nombre de un archivo, directorio o enlace obtendremos el siguiente resultado:
+Mediante el comando `stat` podemos consultar la información que un inodo guarda sobre un fichero. Si ejecutamos el comando `stat` seguido del nombre de un archivo, directorio o enlace obtendremos el siguiente resultado:
 
 ```console
 $ stat archivo_1

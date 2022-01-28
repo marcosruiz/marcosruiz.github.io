@@ -34,13 +34,13 @@ Si necesitas ayuda tienes los siguientes enlaces donde se explica toda la teorí
 1. [Estructuras condicionales](http://www.discoduroderoer.es/instruccion-de-control-condicional-en-pseudocodigo/)
 1. [Estructuras repetitivas](http://www.discoduroderoer.es/instrucciones-repetitivas-o-bucles-en-pseudocodigo/)
 
-Si con esto no te resulta suficiente, puedes ver los siguientes vídeos del canal [DiscoDuroDeRoer](https://www.youtube.com/channel/UCEzsgYrYzOCOcwmjhu_pngw) de YouTube:
+Si con esto no te resulta suficiente, puedes ver los siguientes vídeos del canal [DiscoDuroDeRoer](https://www.youtube.com/channel/UCEzsgYrYzOCOcwmjhu_pngw) de YouTube en los cuales se resuelven problemas muy similares a los de esta práctica:
 
-- Actividades 1 a 3: [Ejercicios PseInt - Básicos #1 - Empezando por lo básico](https://youtu.be/DHIi4dcaMEc)
-- Actividades 4 a 6: [Ejercicios PseInt - Básicos #2 If y precios](https://youtu.be/WmX_15MqBW4)
-- Actividades 7 a 9: [Ejercicios PseInt - Básicos #3 Usando bucles](https://youtu.be/Fr3hL3AdmC4)
-- Actividades 10 a 11: [Ejercicios Pseint - Básicos #4 - Calculando cuadrados y notas de alumnos](https://youtu.be/8J7a3BsvvNQ)
-- Actividad 12: [Ejercicios PseInt - Básicos #5 - Reloj digital](https://youtu.be/nWBy6TQpWYE)
+- [Ejercicios PseInt - Básicos #1 - Empezando por lo básico](https://youtu.be/DHIi4dcaMEc)
+- [Ejercicios PseInt - Básicos #2 If y precios](https://youtu.be/WmX_15MqBW4)
+- [Ejercicios PseInt - Básicos #3 Usando bucles](https://youtu.be/Fr3hL3AdmC4)
+- [Ejercicios Pseint - Básicos #4 - Calculando cuadrados y notas de alumnos](https://youtu.be/8J7a3BsvvNQ)
+- [Ejercicios PseInt - Básicos #5 - Reloj digital](https://youtu.be/nWBy6TQpWYE)
 - [Ejercicios PseInt - Básicos #6 - Panagrama](https://youtu.be/VMloTpEfhfg)
 
 ### Actividad 1
@@ -102,7 +102,7 @@ Se pide representar el algoritmo que nos calcule la suma de los N primeros núme
 Dada una secuencia de números leídos por teclado, que acabe con un –1, por ejemplo: 5,3,0,2,4,4,0,0,2,3,6,0,……,-1; Realizar el algoritmo que calcule la media aritmética. Suponemos que el usuario no insertara numero negativos.
 
 ### Actividad 16
-Teniendo en cuenta que la clave es "eureka", escribir un algoritmo que nos pida una clave. Solo tenemos 3 intentos para acertar, si fallamos los 3 intentos nos mostrara un mensaje indicándonos que hemos agotado esos 3 intentos. (Recomiendo utilizar un interruptor). Si acertamos la clave, saldremos directamente del programa.
+Teniendo en cuenta que la clave es "eureka", escribir un algoritmo que nos pida una clave. Solo tenemos 3 intentos para acertar, si fallamos los 3 intentos nos mostrara un mensaje indicándonos que hemos agotado esos 3 intentos. Si acertamos la clave, saldremos directamente del programa.
 
 ### Actividad 17
 Algoritmo que lea números enteros hasta teclear 0, y nos muestre el máximo, el mínimo y la media de todos ellos. Piensa como debemos inicializar las variables.
@@ -111,9 +111,9 @@ Algoritmo que lea números enteros hasta teclear 0, y nos muestre el máximo, el
 Algoritmo que visualice la cuenta de los números que son múltiplos de 2 o de 3 que hay entre 1 y 100.
 
 ### Actividad 19
-Leer tres números que denoten una fecha (día, mes, año). Comprobar que es una fecha válida. Si no es válida escribir un mensaje de error. Si es válida escribir la fecha cambiando el número del mes por su nombre. Ej. si se introduce 1 2 2006, se deberá imprimir "1 de febrero de 2006". El año debe ser mayor que 0. (Recuerda la estructura segun sea).
+Leer tres números que denoten una fecha (día, mes, año). Comprobar que es una fecha válida. Si no es válida escribir un mensaje de error. Si es válida escribir la fecha cambiando el número del mes por su nombre. Ej. si se introduce 1 2 2006, se deberá imprimir "1 de febrero de 2006". El año debe ser mayor que 0. (Recuerda la estructura según sea).
 
-NOTA: en PSeInt, si queremos escribir sin que haya saltos de linea, al final de la operacion escribir escribimos sin saltar.
+NOTA: en PSeInt, si queremos escribir sin que haya saltos de linea, al final de la operación escribir escribimos sin saltar.
 
 ### Actividad 20
 Calcular las calificaciones de un grupo de alumnos. La nota final de cada alumno se calcula según el siguiente criterio: la parte práctica vale el 10%; la parte de problemas vale el 50% y la parte teórica el 40%. El algoritmo leerá el nombre del alumno, las tres notas, escribirá el resultado y volverá a pedir los datos del siguiente alumno hasta que el nombre sea una cadena vacía. Las notas deben estar entre 0 y 10, si no lo están, no imprimirá las notas, mostrara un mensaje de error y volverá a pedir otro alumno.
@@ -174,7 +174,7 @@ Realiza un reloj digital que nunca pare. También debes hacer que espere un segu
 
 La entrega de esta práctica debe ser un documento ZIP con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del documento ZIP sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.zip". 
 
-En la raíz del documento ZIP deben estar todas las actividades. Cada actividad debe tener un nombre con el siguiente formato "actividad_\<númeroDeLaActividad\>_\<nombreDeUsuario\>.psc". Por ejemplo, en mi caso el nombre de la primera actividad sería "actividad_1_mruizg.psc" ya que mi correo del centro es "mruizg@chabacier.es".
+En la raíz del documento ZIP debe haber una carpeta llamada "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>" donde estén todas las actividades. Cada actividad debe tener un nombre con el siguiente formato "actividad_\<númeroDeLaActividad\>_\<nombreDeUsuario\>.psc". Por ejemplo, en mi caso el nombre de la primera actividad sería "actividad_1_mruizg.psc" ya que mi correo del centro es "mruizg@chabacier.es".
 
 ## Bibliografía
 

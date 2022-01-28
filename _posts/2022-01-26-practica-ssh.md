@@ -9,10 +9,10 @@ tags: [gnu linux, comandos, terminal, bash, servicios en red, smr, práctica, ss
 
 El objetivo de esta práctica es aprender a instalar y configurar un servicio SSH cliente-servidor:
 
-- Autenticandonos mediante usuario y contraseña.
-- Autenticandonos usando el algoritmo de clave pública.
+- Autenticándonos mediante usuario y contraseña.
+- Autenticándonos usando el algoritmo de clave pública.
 
-Para tener las siguientes funcionalidaes de manera segura.
+Para tener las siguientes funcionalidades de manera segura.
 
 - Utilizar un terminal remoto.
 - Utilizar un terminal gráfico remoto.
