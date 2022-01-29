@@ -63,6 +63,9 @@ Indica las reglas TCP Wrappers que se deberían incluir en el fichero /etc/hosts
 - Permitir a todas las máquinas el servicio ssh.
 - Permitir el servicio de correo a las máquinas del subdominio informatica.ejemplo.es excepto a la máquina con IP 192.168.1.143.
 - Permitir a todas las máquinas de la red utilizar todos los servicios, exceptuando a la máquina server.venta.ejemplo.es el uso del servicio ftp.
+- Permitir el uso de servicio Telnet proporcionado por in.tftpd a todos los equipos del dominio informática.ejemplo.es, excepto a las máquinas prueba1 y prueba2 de dicho dominio. 
+- Registrar la hora, la dirección IP, el nombre de la máquina origen y el servicio al que quiere acceder a las máquinas de preproducción (se encuentran en el subdominio preproduccion.ejemplo.es).
+
 
 {:.activity}
 ### Instalar configurar y usar fail2ban para evitar ataques de fuerza bruta
