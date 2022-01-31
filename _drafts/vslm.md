@@ -12,8 +12,18 @@ VLSM del Inglés Variable Length Subnet Mask o Máscara de Subred de Longitud Va
 
 ## Ejemplo de desperdicio de direcciones
 
-Si se utiliza una máscara de subred de tamaño fijo (la misma máscara de subred en todas las subredes), todas las subredes van a tener el mismo tamaño. Por ejemplo, si la subred más grande necesita 200 hosts, todas las subredes van a tener el mismo tamaño de 256 direcciones IP (nota: se ha redondeado hacia arriba, hacia la siguiente potencia, de 2). Si una subred que necesita 10 equipos, se asigna la misma subred de 256 direcciones, aunque las restantes 246 direcciones no se utilicen. Incluso los enlaces seriales (WAN), que solo necesitan dos direcciones IP, requieren una subred de 256 direcciones. (nota: en realidad serían 254 direcciones asignables a los hosts, ya que hay que descontar la dirección de la subred (todo ceros en la parte de la identificación del host) y la dirección de broadcast (todo unos en la parte de la identificación del host)). 
+Si se utiliza una máscara de subred de tamaño fijo (la misma máscara de subred en todas las subredes), todas las subredes van a tener el mismo tamaño. Por ejemplo, si la subred más grande necesita 200 hosts, todas las subredes van a tener el mismo tamaño de 256 direcciones IP (nota: se ha redondeado hacia arriba, hacia la siguiente potencia, de 2). Si una subred solo necesita 10 equipos se asigna una subred de 256 direcciones, aunque las restantes 246 direcciones no se utilicen. Incluso los enlaces seriales (WAN), que solo necesitan dos direcciones IP, requieren una subred de 256 direcciones. (nota: en realidad serían 254 direcciones asignables a los hosts, ya que hay que descontar la dirección de la subred (todo ceros en la parte de la identificación del host) y la dirección de broadcast (todo unos en la parte de la identificación del host)).
+
+## Ejercicio resuelto
+
+192.168.1.0/24
+
+60 host, 120 hosts, 10 hosts, 24 hosts.
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/KsMXVnqQ3sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Bibliografía
 
 - [Subredes VLSM paso a paso](https://arcadio.gq/subredes-vlsm-paso-a-paso.html#)
+- [Classless Inter-Domain Routing (Wikipedia)](https://es.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+- [CIDR: el classles inter-domain routing en detalle](https://www.ionos.es/digitalguide/servidores/know-how/classless-inter-domain-routing/)
