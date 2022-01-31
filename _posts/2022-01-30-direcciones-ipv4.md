@@ -53,7 +53,7 @@ Las direcciones con sus máscaras de subred se pueden expresar de varias formas.
 
 - **Notación decimal punteada:** Cuatro octetos decimales acompañando a la dirección IP: 172.16.3.45/255.255.255.0 
 - **Notación binaria:** Octetos binarios separados por puntos (no suele usarse para representar, pero sí para hacer cálculos con ela): 10101100.00010000.00000011.00101101/11111111.11111111.11111111.00000000 
-- **Notación prefija:** Un número decimal que indica el número de "unos" que tendría la máscara de subred si la expresáramos en binario: 172.16.3.45/24
+- **Notación prefija:** Un número decimal que indica el número de "unos" que tendría la máscara de subred si la expresáramos en binario: 172.16.3.45/24.
 
 ## Clases
 
@@ -71,6 +71,18 @@ Todo el espacio de direcciones IPy4 está inicialmente dividido en diferentes cl
 | C | 110 | 24 | 2097152 | 8 | 254 | 192-223 | 255.255.255.0 (/24) | 
 | D | 1110 | No aplicable | No aplicable | No aplicable | No aplicable | 224-239 | No aplicable |
 | E | 1111 | No aplicable | No aplicable | No aplicable | No aplicable | 240-255 | No aplicable |
+
+{:.question}
+¿Cuántas redes de clase A hay en total?
+
+{:.question}
+¿Cuántas redes de clase B hay en total?
+
+{:.question}
+¿Cuántas redes de clase C hay en total?
+
+{:.question}
+¿Podemos calcular los valores del primer octeto de una red de clase A, B o C? ¿Cómo?
 
 ## Dirección de red
 
@@ -120,7 +132,7 @@ Existe un rango de direcciones reservado para hacer referencia al propio equipo 
 
 127.0.0.0 - 127.255.255.255
 
-Aunque en la práctica sólo se utilice la dirección 127.0.0.1 /32 para localhost.
+Aunque en la práctica sólo se utilice la dirección 127.0.0.1/32 para localhost.
 
 ## Configuración IP en GNU Linux
 
@@ -143,6 +155,7 @@ En versiones de Linux actuales la configuración de la red se guarda en un archi
 
 Un router (también llamado enrutador o encaminador) es un equipo que conecta entre sí dos o más redes distintas.
 
+{:.question}
 ¿Cuántas redes ves a continuación?
 
 ![img-description](/assets/img/direcciones-ipv4/cuantas-redes.png)
@@ -167,14 +180,14 @@ En GNU Linux, podemos utilizar el comando `netstat` para consultar la tabla de e
 
 El contenido de las tablas se programa automáticamente; el router realiza una tarea de descubrimiento utilizando un algoritmo de encaminamiento. Existen varios protocolos, pero los más empleados son:
 
-- RIP v1: bastante eficiente, pero sólo funciona en redes con clase
-- RIP v2: menos eficiente que RIP v1, pero válido en redes sin clase
+- **RIP v1:** bastante eficiente, pero sólo funciona en redes con clase.
+- **RIP v2:** menos eficiente que RIP v1, pero válido en redes sin clase.
 
 ## Caso 1: Dos redes LAN unidas por un router
 
-- asignaremos IP a los adaptadores del router (interfaces Fa0/0 y Fa0/1).
+- Asignaremos IP a los adaptadores del router (interfaces Fa0/0 y Fa0/1).
 activaremos los adaptadores (por defecto, los NIC están desactivados).
-- configuraremos en las estaciones la puerta de enlace predeterminada con la
+- Configuraremos en las estaciones la puerta de enlace predeterminada con la
 dirección IP del interfaz del router correspondiente.
 
 ![img-description](/assets/img/direcciones-ipv4/caso1.png)
@@ -182,20 +195,18 @@ dirección IP del interfaz del router correspondiente.
 
 ## Caso 2: Dos redes, cada una con su propio router
 
-- asignaremos IP a los adaptadores de los routers. Para este caso hemosconsiderado que las interfaces Fa0/0 serán las correspondientes a las LAN, ylas interfaces Fa0/1 para la conexión entre routers.
-- activaremos los adaptadores (como siempre, los NIC de los routers Ciscoestán desactivados por defecto).
-- configuraremos en las estaciones la puerta de enlace predeterminada con ladirección IP del router correspondiente en su interfaz LAN (la interfaz Fa0/0).- tendremos tres dominios de difusión: el 10.0.0.0/8 (red de portátiles), el172.16.0.0/16 (red de sobremesas) y el 192.168.0.0/24 (red entre los dosrouters).
-- tendremos que configurar también el encaminamiento que vamos a usar.Veremos un ejemplo de encaminamiento dinámicoy otro de encaminamientoestático.
+- Asignaremos IP a los adaptadores de los routers. Para este caso hemosconsiderado que las interfaces Fa0/0 serán las correspondientes a las LAN, ylas interfaces Fa0/1 para la conexión entre routers.
+- Activaremos los adaptadores (como siempre, los NIC de los routers Ciscoestán desactivados por defecto).
+- Configuraremos en las estaciones la puerta de enlace predeterminada con ladirección IP del router correspondiente en su interfaz LAN (la interfaz Fa0/0).- tendremos tres dominios de difusión: el 10.0.0.0/8 (red de portátiles), el172.16.0.0/16 (red de sobremesas) y el 192.168.0.0/24 (red entre los dosrouters).
+- Tendremos que configurar también el encaminamiento que vamos a usar.Veremos un ejemplo de encaminamiento dinámicoy otro de encaminamientoestático.
 
 ![img-description](/assets/img/direcciones-ipv4/caso2.png)
 
 ### Encaminamiento dinámico con RIPv1
 
-- Pulsar sobre el router a configurar
+- Pulsar sobre el router a configurar.
 - En el apartado Enrutamiento - RIP, indicar las direcciones de subred de los dominios de difusión con los que está conectado el router.
 - Desde ese momento, el router aplicaráun algoritmo de encaminamiento para descubrir el camino que deben seguir los paquetes.
-
-
 
 ![img-description](/assets/img/direcciones-ipv4/caso2-encaminamiento-dinamico.png)
 
@@ -208,12 +219,11 @@ dirección IP del interfaz del router correspondiente.
 ![img-description](/assets/img/direcciones-ipv4/caso2-encaminamiento-estatico.png)
 _Desde este router se puede llegar a la red 10.50.0.0/16 a través de la interfaz del router cuya IP es 192.168.0.200_
 
-
 ## Caso 3: Routers unidos con conexiones serie
 
-- daremos IP a los adaptadores de los routers. Dejaremos las interfaces Serial0/1 para la conexión entre routers, y los activaremos y configuraremos en las estaciones la puerta de enlace predeterminada como siempre.
-- importantísimo: la velocidad de las comunicaciones serie va controlada con un reloj. Para que la comunicación se produzca, los dos routers tendrán que ir configurados a la misma velocidad de reloj.
-- los interfaces que suelen emplearse en comunicaciones serie con routers Cisco son los interfaces DTE V.35. Conectores DB-60 en los routers y Winchester en el otro extremo.
+- Daremos IP a los adaptadores de los routers. Dejaremos las interfaces Serial0/1 para la conexión entre routers, y los activaremos y configuraremos en las estaciones la puerta de enlace predeterminada como siempre.
+- Importantísimo: la velocidad de las comunicaciones serie va controlada con un reloj. Para que la comunicación se produzca, los dos routers tendrán que ir configurados a la misma velocidad de reloj.
+- Las interfaces que suelen emplearse en comunicaciones serie con routers Cisco son los interfaces DTE V.35. Conectores DB-60 en los routers y Winchester en el otro extremo.
 
 ![img-description](/assets/img/direcciones-ipv4/caso3.png)
 
