@@ -131,6 +131,9 @@ Por ejemplo:
 $ scp /home/mruizg/Documentos/prueba.txt smr@192.168.1.2:/home/smr/Documentos/prueba.txt
 ```
 
+{.:pregunta}
+¿Qué diferencias hay entre SCP y SFTP?
+
 ## Terminal en modo gráfico
 
 Para poder ejecutar aplicaciones gráficas en el host remoto de forma segura, necesitamos hacer tres cosas:
@@ -138,6 +141,7 @@ Para poder ejecutar aplicaciones gráficas en el host remoto de forma segura, ne
 1. Poner la opción `X11Forwarding` a `yes` en el fichero /etc/ssh/sshd_config
 1. Conectarnos utilizando la opción `-X` de la siguiente manera `ssh -X <usuario>@<host>`.
 1. Una vez conectados, ejecutar `xterm` o la aplicación gráfica que deseemos como podría ser `gedit`.
+1. ¿Qué servicio es mejor para transferir ficheros SFTP o SSH?
 
 ## Autenticación basada en clave pública
 
@@ -152,3 +156,5 @@ En [Generar y añadir claves SSH (para acceso sin contraseña)](http://www.ubunt
 - [Ataque de REPLAY (Wikipedia)](https://es.wikipedia.org/wiki/Ataque_de_REPLAY)
 - [Utilización elemental de ssh](https://github.com/josedom24/serviciosgm_doc/blob/master/linux/acceso/doc/ssh.pdf)
 - [Generar y añadir claves SSH (para acceso sin contraseña)](http://www.ubuntufacil.com/2014/01/generar-y-anadir-claves-ssh-para-acceso-sin-contrasenia/)
+- [SSH File Transfer Protocol (Wikipedia)](https://es.wikipedia.org/wiki/SSH_File_Transfer_Protocol)
+- [SCP vs SFTP: ¿Cuál debería usar para transferir archivos?](https://tecnotec.es/scp-vs-sftp-cual-deberia-usar-para-transferir-archivos/)

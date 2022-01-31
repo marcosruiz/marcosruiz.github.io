@@ -64,7 +64,7 @@ Conéctate desde un cliente SSH al servidor SSH en modo gráfico.
 1. ¿Qué tipo de servicio es SSH?
 1. ¿De qué dos maneras podemos autenticarnos en un servidor SSH? ¿Qué diferencias hay entre ellas? ¿Cuál es mejor? ¿Por qués?
 1. ¿Qué significan las siglas SSH?
-1. ¿Para que puede ser usado SSH?
+1. ¿Para qué puede ser usado SSH?
 
 ## Entrega y presentación
 
