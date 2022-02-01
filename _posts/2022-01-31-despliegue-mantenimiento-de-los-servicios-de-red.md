@@ -19,23 +19,6 @@ Los sistemas operativos en red más utilizados son:
 - Mac OS
 - Novell (Microfocus)
 
-{:.subsection}
-### Cuentas de usuario y grupo
-
-La cuenta de usuario es la forma habitual de personalizar el acceso a la red. Dos usuarios no deben compartir la misma cuenta.
-Una cuenta de grupo es una colección de cuentas de usuario, al hacer que un usuario pertenezca a un grupo hacemos que se le asignen automáticamente las propiedades, derechos, características, permisos y privilegios de ese grupo.
-Es una forma sencilla de configurar los permisos de red a un conjunto de usuarios.
-
-{:.subsection}
-### Derechos de acceso y permisos
-
-Lee los siguientes puntos del artículo [Permisos en GNU Linux](/posts/permisos-gnu-linux/):
-
-- Tipos de usuario
-- Tipos de permisos sobre ficheros y directorios
-- ¿Cómo ver los permisos de un fichero?
-- Tipo de fichero y sus permisos
-
 {:.section}
 ## Servicios de red
 
