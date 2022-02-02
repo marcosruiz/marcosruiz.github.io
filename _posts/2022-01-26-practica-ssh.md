@@ -47,7 +47,7 @@ Desde otra máquina virtual Zorin OS la cual actuará de cliente autenticarte y 
 {:.activity}
 ### Transferir ficheros con SSH
 
-Desde la máquina cliente envia un fichero y recibe otro diferente. 
+Desde la máquina cliente envía un fichero y recibe otro diferente. 
 
 {:.activity}
 ### Autenticación mediante clave pública

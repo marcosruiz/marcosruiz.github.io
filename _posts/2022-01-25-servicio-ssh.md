@@ -87,7 +87,7 @@ Los parámetros más interesantes son:
 
 1. **AllowGroups**: Esta opción puede ir seguida de una lista de grupos de nombres, separados por espacios. Si se especifica, sólo se permite realizar un login a los usuarios cuyo grupo principal o suplementarios coincida con uno de los patrones establecidos. Se puede usar '*' y '?' como comodines en los patrones.
 1. **AllowUsers**: Esta opción puede ir seguida de una lista de usuarios, separados por espacios. Si se especifica, sólo se permite realizar login a los usuarios cuyo nombre concuerde con el patrón. Se pueden usar y '?' para la construcción de patrones.
-1. **Banner**
+1. **Banner**: Esta opción indica la ruta de un fichero donde está escrito un mensaje de bienvenida.
 1. **DenyGroups**, **DenyUsers**: Similares a los anteriores pero denegando el servicio.
 1. **KerberosAuthentication**: Especifica si el método de autentificación Kerberos está permitido. Esto puede llevarse a cabo mediante un ticket Kerberos o si la opción `PasswordAuthentication` está habilitada. En ese caso, la contraseña suministrada por el usuario puede ser validada contra un KDC Kerberos.
 1. **ListenAddress**
