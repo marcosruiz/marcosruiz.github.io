@@ -13,9 +13,11 @@ Una LAN utiliza los siguientes elementos en su infraestructura:
 - Los **medios de trasmisión** que pueden ser cableados o inalámbricos y que conectan a los nodos de red entre sí.
 - Los **adaptadores de red** o tarjetas de **interfaz de red** que son los dispositivos que se instalan los ordenadores y periféricos para que puedan estar conectados a una red de área local.
 - Los **dispositivos de interconexión**, que sirven de punto de conexión dentro de la red y dependiendo del número de ordenadores que vayamos a tener nos interesará implantar un dispositivo u otro:
-    - Un concentrador (Hub)
-    - El conmutador (Switch)
-    - Un encaminador (Router)
+    - Repetidores
+    - Hubs (repetidores multipuerto)
+    - Switches (conmutadores)
+    - Bridges (puentes)
+    - Routers (enrutadores)
 
 {:.section}
 ## Medios de transmisión
@@ -51,10 +53,11 @@ Permiten obtener mayor aprovechamiento de las características de una red. Disti
 Dispositivos de interconexión para redes cableadas:
 
 - Repetidores
-- Hubs (Repetidores multipuerto)
-- Switches (Conmutadores)
-- Routers (Enrutadores)
-- Bridges (Puentes)
+- Hubs (repetidores multipuerto)
+- Switches (conmutadores)
+- Bridges (puentes)
+- Routers (enrutadores)
+
 
 También, existen dispositivos de interconexión para redes inalámbricas que veremos en otra unidad:
 
