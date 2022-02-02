@@ -1,12 +1,14 @@
 ---
 title: Dispositivos específicos de la red local
-date: 2022-01-08 17:17:00 +0100
-categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática]
+date: 2022-02-02 09:30:00 +0100
+categories: [Sistemas Microinformáticos y Redes, Redes Locales]
+tags: [gnu linux, redes locales]
 ---
 
 {:.section}
 ## Introducción
+
+Una LAN utiliza los siguientes elementos en su infraestructura:
 
 - Los **medios de trasmisión** que pueden ser cableados o inalámbricos y que conectan a los nodos de red entre sí.
 - Los **adaptadores de red** o tarjetas de **interfaz de red** que son los dispositivos que se instalan los ordenadores y periféricos para que puedan estar conectados a una red de área local.
@@ -15,8 +17,8 @@ tags: [gnu linux, comandos, terminal, bash, seguridad informática]
     - El conmutador (Switch)
     - Un encaminador (Router)
 
-{:.subsection}
-### Medios de transmisión
+{:.section}
+## Medios de transmisión
 
 Ya nos hemos visto con anterioridad pero como recordatorio: los medios de transmisión se encargan de distribuir la información por la red ya sea tras un cable o del aire. Cuando el movemos la información estamos moviendo la energía que puede ser:
 
@@ -24,8 +26,8 @@ Ya nos hemos visto con anterioridad pero como recordatorio: los medios de transm
 - En forma de energía lumínica cuando el material conduce la luz, la fibra óptica.
 - En forma de energía electromagnética no guiada cuando usamos el espacio radioeléctrico, por ejemplo las ondas de radio.
 
-{:.subsection}
-### Adaptadores de red
+{:.section}
+## Adaptadores de red
 
 Si queremos que nuestro equipo esté conectado con otros equipos de una red local es necesario que cuente con adaptador de red.
 
@@ -41,8 +43,8 @@ La elección de un adaptador u otro determinada los parámetros de cada uno de e
 - La velocidad máxima operación.
 - El tipo de acceso que proporciona.
 
-{:.subsection}
-### Dispositivos de interconexión de redes cableadas
+{:.section}
+## Dispositivos de interconexión de redes cableadas
 
 Permiten obtener mayor aprovechamiento de las características de una red. Distinguiremos entre redes cableadas y redes inalámbricas ya que los dispositivos son distintos.
 
@@ -60,8 +62,8 @@ También, existen dispositivos de interconexión para redes inalámbricas que ve
 - Puntos de acceso
 - Puentes inalámbricos
 
-{:.subsubsection}
-#### Repetidores (capa 1)
+{:.subsection}
+### Repetidores (capa 1)
 
 Si las distancias entre estaciones pertenecientes a una red son demasiado elevadas, la señal enviada entre ambas va perdiendo calidad.
 
@@ -69,8 +71,8 @@ Por ello es necesario utilizar dispositivos que regeneren dicha señal a su esta
 
 Estos dispositivos también amplifican el ruido y esto puede hacer que se pierda la señal original.
 
-{:.subsubsection}
-#### Hubs (capa 1)
+{:.subsection}
+### Hubs (capa 1)
 
 Los concentradores o hubs son repetidores multipuerto.
 
@@ -80,8 +82,8 @@ Este tipo de conexiones conforma una topología en estrella.
 
 También son llamados repetidores multipuerto.
 
-{:.subsubsection}
-#### Bridges (capa 2)
+{:.subsection}
+### Bridges (capa 2)
 
 Es un componente que interconecta redes con distintas topologías y protocolos de nivel 2.
 
@@ -89,8 +91,8 @@ Su misión principal es la adaptación de la información de una red a otra, es 
 
 Un puente o bridge conecta segmentos de red formando una sola subred (permite conexión entre equipos sin necesidad de routers). Funciona a través de una tabla de direcciones MAC detectadas en cada segmento al que está conectado. Cuando detecta que un nodo de uno de los segmentos está intentando transmitir datos a un nodo del otro, el bridge copia la trama para el otro segmento de red, teniendo la capacidad de desechar la trama (filtrado) en caso de no tener dicho segmento de red como destino. Para conocer por dónde enviar cada trama que le llega (encaminamiento) incluye un mecanismo de aprendizaje automático (auto aprendizaje) por lo que no necesitan configuración manual.
 
-{:.subsubsection}
-#### Switches (capa 2)
+{:.subsection}
+### Switches (capa 2)
 
 Un switch es un dispositivo de nivel 2 que viene a reducir los problemas de los concentradores o hubs, ya que estos sí analizan las tramas a nivel 2 para saber quien es el destinatario de la información.
 
@@ -98,15 +100,15 @@ Gracias a ello, una vez tienen la tabla de encaminamiento elaborada reducen el n
 
 Hoy en día existen switches de capa 3.
 
-{:.subsubsection}
-#### Bridges vs switches
+{:.subsection}
+### Bridges vs switches
 
 Un Bridge o Puente de red conecta dos redes de área local. Un Switch o Conmutador de red, por otro lado, conecta varios clientes a una red. Esto es lo que debes saber sobre estos dos componentes de red.
 
 Cada Switch es un Bridge, pero los Bridges no son realmente Switches.
 
-{:.subsubsection}
-#### Routers (capa 3)
+{:.subsection}
+### Routers (capa 3)
 
 Son los responsables de adaptar los paquetes de información, en el nivel de red (3), cuando las máquinas origen y destino se encuentran en distintas redes.
 
@@ -114,7 +116,8 @@ Son dispositivos (software o hardware) configurables para encaminar paquetes ent
 
 Este encaminamiento lógico hace que el funcionamiento no sea muy rápido, ya que se debe analizar el contenido del paquete a encaminar. A pesar de esto, los enrutadores permiten gran flexibilidad en la interconexión de redes.
 
-##### Usos de los routers
+{:.subsubsection}
+#### Usos de los routers
 
 - Como cortafuegos o firewall, filtrando paquetes.
 - Como integrador de diferentes tecnologías físicas.
@@ -125,11 +128,14 @@ Este encaminamiento lógico hace que el funcionamiento no sea muy rápido, ya qu
 
 Cuando queremos realizar la instalación de una red local en un edificio se debe hacer considerando que por ocupar varias salas. Las mismas pueden estar en distintas plantas del edificio. La forma la cual hacemos el tendido del cableado viene recogido en varias normas internacionales, denominando a este problema como sistema de cableado estructurado (SCE).
 
-{:.subsection}
-### Recomendaciones en la instalación
+La instalación de cables o repartidores se conoce como precableado. El diseño se iniciará en la roseta y se seguirá hacia la sala de comunicaciones. Este diseño se descompone en tres etapas: 
 
-{:.subsubsection}
-#### Precableado horizontal
+- Pre cableado horizontal
+- Vertical
+- Campus.
+
+{:.subsection}
+### Precableado horizontal
 
 Partiendo del plano del edificio se representa los siguientes elementos: áreas de trabajo, situación de las canalizaciones que hacen llegar el cable de una zona u otro, situación de generadores de interferencias electromagnéticas por ejemplo generadores, fotocopiadoras etc.
 
@@ -148,8 +154,8 @@ En tercer lugar para que trazar la rutas entre los distribuidores y las tomas de
 - Las paredes y los pisos deben atravesarse por sitios habilitados para ello,
 - En la medida lo posible el tendido será a ras de suelo, para evitar interferencias electromagnéticas.
 
-{:.subsubsection}
-#### Precableado vertical
+{:.subsection}
+### Precableado vertical
 
 El punto de partida que superó al edificio donde se presentan los siguientes elementos:
 
@@ -160,8 +166,8 @@ En primer lugar situaremos el distribuidor del edificio y la sala principal de e
 
 Posteriormente metimos las distancias a los distribuidores de la planta, comprobamos que se cumplen las limitaciones establecidas por la norma.
 
-{:.subsubsection}
-#### Precableado de campus
+{:.subsection}
+### Precableado de campus
 
 De nuevo el punto de partida tiene que ser el plano distribución del campus (zona donde tenemos nuestras oficinas) donde ubicamos los edificios a comunicar así como los elementos que dificulten o ayuden a la distribución del tendido (carreteras, calles, cursos de agua, líneas de alta tensión, etc.).
 
@@ -169,8 +175,8 @@ En primer lugar situaremos el distribuidor en la sala principal de equipos del e
 
 A continuación se comprueban que nos encontramos en las distancias máximas.
 
-{:.subsubsection}
-#### Recomendaciones generales
+{:.subsection}
+### Recomendaciones generales
 
 A la hora de realizar un diseño de un SCE tomamos las siguientes sugerencias:
 

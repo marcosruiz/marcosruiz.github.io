@@ -34,7 +34,10 @@ Son el recurso más solicitado en la mayoría de las redes locales, los discos y
 {:.subsection}
 ### Recursos de impresión de documentos
 
-La impresión de documentos a través de la red, es otro recurso típico que realizado  mediante servidores de impresión dedicados a ello donde se parametriza: velocidad de impresión, calidad, privilegios prioridades, etc. Un ejemplo de protocolo es el IPP – Internet Printing Protocol – que usando el protocolo http se transmite la información a imprimir.
+La impresión de documentos a través de la red, es otro recurso típico que realizado  mediante servidores de impresión dedicados a ello donde se parametriza: velocidad de impresión, calidad, privilegios prioridades, etc. Ejemplos
+
+- IPP (Internet Printing Protocol) que usando el protocolo http se transmite la información a imprimir.
+- CUPS (Common Unix Printing System) que es un sistema de impresión modular para sistemas operativos de tipo Unix que permite que un computador actúe como servidor de impresión.
 
 {:.subsection}
 ### Servicio DHCP
