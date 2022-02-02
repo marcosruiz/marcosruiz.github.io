@@ -129,9 +129,11 @@ Si quieres cambiar la configuración deberás ejecutar la instrucción `setup` y
 1. Haz login como admin.
 1. Comprueba que está en estado **Conectado**.
 
+
 ## Soluciones a problemas habituales
 
 - Comprueba que la red interna tiene el modo promiscuo en permitir todo.
 - Comprueba que los equipos tienen una IP asignada y es diferente. Si no es diferente el servidor DHCP no está funcionando bien. La solución más sencilla es dar las IP de manera manual en cada cliente.
 - Comprueba que tienes conexión a Internet desde la máquina IPCOP.
 - Comprueba que tienes acceso a la configuración del router a través de 192.168.1.1:8443. Comprueba que estás conectado. Si no estas conectado desconecta y vuelve a conectar.
+- ⚠️ Precaución: Si estás usando IPCOP es recomendable que no guardes el estado de la máquina y la apagues ya que sino suele dar problemas. Este tipo de problemas se solucionan reiniciando el enrutador IPCOP.
