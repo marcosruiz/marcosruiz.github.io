@@ -23,7 +23,7 @@ Tenemos que construir una red de ordenadores a partir de la IP 199.35.20.0/24. Y
 1. Especificar cada subred, será independiente una de otra.
 1. Realizar un esquema de las misma usando Packet Tracer (usa direccionamiento estático)
     - Debes guardar ejercicio en formato .pkt
-    - Cada subred debe tener al menos dos PCs.
+    - Cada subred debe tener al menos dos PCs. Un PC contendrá la primera IP asignable a equipos (la siguiente a la del router) y el otro tendrá la última IP asignable a equipos.
 1. Explica en el documento PDF:
     1. Cómo has obtenido la máscara de subred modificada.
     1. Cómo has obtenido las subredes.
