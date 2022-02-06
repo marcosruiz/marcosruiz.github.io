@@ -2,7 +2,7 @@
 title: "(No definitiva) Práctica: OpenMediaVault"
 date: 2022-02-02 20:40:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática, seguridad activa, seguridad pasiva, openmediavault, raid5]
+tags: [gnu linux, comandos, terminal, bash, seguridad informática, seguridad activa, seguridad pasiva, openmediavault, raid5, práctica]
 ---
 
 ## Objetivo
