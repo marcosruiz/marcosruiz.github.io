@@ -147,7 +147,7 @@ Algoritmo que dado un año, nos diga si es bisiesto o no. Un año es bisiesto ba
 - Un año divisible por 4 es bisiesto y no debe ser divisible entre 100.
 - Si un año es divisible entre 100 y además es divisible entre 400, también resulta bisiesto.
 
-NOTA: este ejercicio tiene muchas formas de hacerlo.
+NOTA: Este ejercicio tiene muchas soluciones.
 
 ### Actividad 24
 El siguiente es el menú de un restaurante de bocadillos. Diseñar un algoritmo capaz de leer el número de unidades consumidas de cada alimento ordenado y calcular la cuenta total. Vamos a suponer que estos precios son fijos, es decir, que son constantes (recuerda que en PSeInt no se usa comas para separar la parte decimal de la parte entera).
