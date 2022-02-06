@@ -1,5 +1,5 @@
 ---
-title: (No definitiva) Servicio de EMAIL
+title: (No definitiva) Servicio de email
 date: 2022-02-06 19:05:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
 tags: [gnu linux, comandos, terminal, bash, servicios en red, ssh, seguridad informática, smr, teoría]
@@ -14,6 +14,9 @@ Leed sección 5.1
 ## Descripción general
 
 Leed sección 5.2
+
+![img-description](/assets/img/servicio-email/proceso-envio-email.png)
+_Proceso de envio de email_
 
 {:.section}
 ## Formato de los mensajes de correo electrónico
@@ -42,7 +45,7 @@ Leed sección 5.9
 
 Instalación:
 
-```consola
+```console
 # apt install dovecot-postfix
 ```
 
