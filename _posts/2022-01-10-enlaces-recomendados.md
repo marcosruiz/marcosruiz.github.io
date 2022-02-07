@@ -14,6 +14,8 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 - [La insólita historia de la invención del código QR](https://www.nippon.com/es/news/fnn20191214001/)
 - [Los streamers de Andorra se quedan sin internet a la vez por un ataque de denegación de servicio](https://es.gizmodo.com/los-streamers-de-andorra-se-quedan-sin-internet-a-la-ve-1848403292)
 - [Un bug en Linux de hace 12 años permite obtener acceso root en casi cualquier distro, y ya lo han explotado ](https://www.genbeta.com/linux/bug-linux-hace-12-anos-permite-obtener-acceso-root-casi-cualquier-distro-han-explotado)
+- [Una generación eternamente desconcentrada: "No puedo hacer nada durante más de quince minutos sin mirar el móvil" ](https://www.xataka.com/otros/generacion-eternamente-desconcentrada-no-puedo-hacer-nada-durante-quince-minutos-mirar-movil)
+- [¡Locura absoluta! Un minero en solitario consigue minar un Bitcoin, el cuarto caso en 2022](https://computerhoy.com/noticias/tecnologia/locura-absoluta-minero-solitario-consigue-minar-bitcoin-cuarto-caso-2022-1006033)
 
 ## Otras noticias
 
