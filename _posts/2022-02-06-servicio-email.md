@@ -1,5 +1,5 @@
 ---
-title: (Servicio de email
+title: Servicio de email
 date: 2022-02-06 19:05:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
 tags: [gnu linux, comandos, terminal, bash, servicios en red, ssh, seguridad informática, smr, teoría]
@@ -114,8 +114,6 @@ Spam es un tipo de mensaje con contenido no deseado y no solicitado por el recep
 {:.section}
 ## Servidores de correo electrónico en sistemas libres
 
-Leed sección 5.9
-
 Instalación:
 
 ```console
@@ -147,7 +145,7 @@ Porpiedades interesantes:
 - ¿Qué es MUA?
 - ¿Qué es MTA?
 - ¿Qué es MDA?
-- ¿Qué es el spam? ¿Qué tres tipos de spam existen?
+- ¿Qué es el spam?
 - ¿Qué es Thunderbird?
 
 ## Bibliografía
