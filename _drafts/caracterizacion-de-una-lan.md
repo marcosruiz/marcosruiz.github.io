@@ -1,6 +1,6 @@
 ---
 title: Caracterización de una LAN
-date: 2022-02-04 13:10:00 +0100
+date: 2022-02-07 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática]
 ---
@@ -69,29 +69,19 @@ Velocidad = información/ tiempo
 {:.question}
 ¿A qué velocidad en Mbps se transfiere un fichero de 3 MB si tarda 8 segundos en llegar?
 
-<div class="card">
-  <div class="card-header">
-    <a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
-      ¿Por qué un KB son 1024 MB?
-    </a>
-  </div>
-  <div id="collapseOne" class="collapse show">
-    <div class="card-body">
-      <ul>
-        <li>Velocidad = información/ tiempo</li>
-        <li>Velocidad = 3 MB / 8 seg</li>
-        <li>Como 1 Byte son 8 bits...</li>
-        <li>Velocidad = 3*8 Mb / 8 seg </li>
-        <li>Velocidad = 3 Mb/seg = 3 Mbps</li>
-      </ul>
-    </div>
-  </div>
-</div>
+{:.question}
+¿Por qué un KB son 1024 MB?
+
+<ul>
+  <li>Velocidad = información/ tiempo</li>
+  <li>Velocidad = 3 MB / 8 seg</li>
+  <li>Como 1 Byte son 8 bits...</li>
+  <li>Velocidad = 3*8 Mb / 8 seg </li>
+  <li>Velocidad = 3 Mb/seg = 3 Mbps</li>
+</ul>
 
 
 ## Clasificación de redes
-
-
 
 ## El modelo de referencia OSI
 
