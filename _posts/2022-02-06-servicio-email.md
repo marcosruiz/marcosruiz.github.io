@@ -10,7 +10,7 @@ tags: [gnu linux, comandos, terminal, bash, servicios en red, ssh, seguridad inf
 
 En el mundo del correo electrónico existe cierta terminologla básica que debe conocerse:
 
-- **Cuenta de correo:** una cuenta de correo nos permite enviar y recibir correos electrónic0S. Asociado a cada cuenta de correo tendremos que tener, necesariamente, un nombre de usuario y una contraseña que nos identifican como usuario legitimo de correo electrónico. Ese nombre de usuario y contraseña nos permiten enviar correos y leer los que hemos recibido. Básicamente consiste en un espacio de almacenamiento (buzón de usuario) que un determinado proveedor nos ofrece y un conjunto de facilidades asociadas a la cuenta de correo. 
+- **Cuenta de correo:** una cuenta de correo nos permite enviar y recibir correos electrónicos. Asociado a cada cuenta de correo tendremos que tener, necesariamente, un nombre de usuario y una contraseña que nos identifican como usuario legitimo de correo electrónico. Ese nombre de usuario y contraseña nos permiten enviar correos y leer los que hemos recibido. Básicamente consiste en un espacio de almacenamiento (buzón de usuario) que un determinado proveedor nos ofrece y un conjunto de facilidades asociadas a la cuenta de correo. 
 - **Buzones de correo:** se refiere al espacio de almacenamiento disponible en un servidor de correo que almacena los correos electrónicos dirigidos a una determinada dirección de email (usuario@dominio.com). El buzón de correo electrónico es similar al buzón de correo postal que tenemos en nuestras casas; el cartero depositará en el buzón todas las cartas dirigidas a nosotros y, posteriormente, nosotros con nuestra llave del buzón accederemos a este y recogeremos las cartas. Siguiendo esta analogía, la llave del buzón sería nuestro nombre de usuario y contraseña. 
 - **Alias de correo:** el alias de correo es una dirección de email (usuario@dominio.com) que no tiene un buzón as0ciado sino que lo que se hace es que todo el correo dirigido a esa dirección será reenviado a un conjunto de direcciones de correo que sí tienen buzón. El uso típico de los alias es el de tener una dirección genérica (comercial@empresa.es) Trente a una personal (menganito@empresa.es) en los casos en los que interese.
 
@@ -22,12 +22,18 @@ En el mundo del correo electrónico existe cierta terminologla básica que debe 
 - **MIME:** Describe el mecanismo mediante el cual se pueden enviar ficheros adjuntos y mensajes de texto internacional en un email.
 
 - **MUA**: (Mail User Agent, Agente de Usuario de Correo), es el sistema que se encarga de recibir y enviar emails usando los protocolos STMP (para el envío) y POP3 o IMAP (para la recepción). Ejemplos: Gmail, Yahoo, Outlook, Thunderbird, etc.
-- **MTA**: (Mail Transfer Agent, Agente de Transferencia de Correo), es el sistema que se encarga de tomar el email de un MUA o de otro MTA y entregarlo a otro MTA o a un MDA, en caso de que el email pertenezca al dominio propio del MTA. Ejemplos de MTA son postfix, qmail, exim, cyrus y courier.
-- **MDA**: (Mail Delivery Agent, Agente de Entrega de Correo), es el sistema que se encarga de la recpeción del email por parte de un MTA, y lo almacena de la forma que tenga configurada. Los MDA pueden almacenar en disco, base de datos o llamar a otro programa para hacer el procesado de emails (p.ej: listas de correo, sistemas de control de incidencias, etc.). Ejemplos de MDA son procmail, maildrop... cyrus y courier implementan también sus propios MDA.
-- **MAA**: (Mail Access Agent, Agente de Acceso de Correo), es el sistema que se encarga del acceso al correo almacenado. Sería como la oficina de correos, y por ello su protocolo más usado es POP3 (Post-Office Protocol version 3). Se encarga de hacer accesible lo buzones a equipos remotos. Ejemplos de MAA son dovecot, uw, qpopper... cyrus y courier implementan también sus propios MAA.
+- **MTA**: (Mail Transfer Agent, Agente de Transferencia de Correo), es el sistema que se encarga de tomar el email de un MUA o de otro MTA y entregarlo a otro MTA o a un MDA, en caso de que el email pertenezca al dominio propio del MTA. Ejemplo: Postfix.
+- **MDA**: (Mail Delivery Agent, Agente de Entrega de Correo), es el sistema que se encarga de la recpeción del email por parte de un MTA, y lo almacena de la forma que tenga configurada. Los MDA pueden almacenar en disco, base de datos o llamar a otro programa para hacer el procesado de emails (p.ej: listas de correo, sistemas de control de incidencias, etc.). Ejemplo: Dovecot.
 
 ![img-description](/assets/img/servicio-email/proceso-envio-email.png)
 _Proceso de envio de email_
+
+Funcionamiento de un servidor de correo:
+
+1. Para enviar un correo electrónico usamos un MUA que lo transfiere al servidor de correo electrónico (MTA) utilizando el protocolo SMTP.
+2. El MTA recibe el correo y lo envía al MTA del destinatario utilizando el protocolo SMTP.
+3. El MTA del destinatario almacena el correo en el buzón correspondiente, función que en algunos casos realiza un programa específico que se denomina MDA.
+4. El mensaje de correo permanece en el buzón hasta que el usuario que actúa comno destinatario, utiliza su MUA y accede a su buzón a través de alguno de los distintos mecanismos posibles, siendo los más habituales los protocolos POP o IMAP.
 
 {:.section}
 ## Formato de los mensajes de correo electrónico
@@ -53,6 +59,7 @@ Un saludo.
 {:.section}
 ## Protocolos de servicio de descarga de correo electrónico (POP/IMAP)
 
+{:.subsection}
 ### POP
 
 POP3 (Post Office Protocol versión 3) es un protocolo de correo entrante unidireccional que descarga una copia de los mensajes desde un servidor de correo electrónico a una máquina local. Una vez que el protocolo de correos completa el proceso, elimina los datos originales de la bandeja de entrada del servidor.
@@ -67,6 +74,7 @@ Puerto POP3 por defecto para establecer una conexión con un servidor de correo 
 
 Puerto 995 – Puerto SSL/TLS, también conocido como POP3S
 
+{:.subsection}
 ### IMAP
 
 A diferencia de POP3, IMAP (Internet Message Access Protocol) es un protocolo de correo entrante bidireccional que sólo descarga los encabezados del correo electrónico en lugar de su contenido completo.
