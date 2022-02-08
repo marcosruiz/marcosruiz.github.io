@@ -19,7 +19,6 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 ![img-description](/assets/img/instalacion-y-configuracion-de-los-equipos-de-red/clasesIPv4RedHost.png)
 _Clases IPv4_
 
-
 - 0.X.X.X y 127.X.X.X están reservadas para test.
 - 127.0.0.1 está reservada para el host local.
 - Las direcciones cuya parte de Número de host es todo 0 o todo 1 están reservadas.
