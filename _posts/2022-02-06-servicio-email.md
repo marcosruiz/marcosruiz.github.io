@@ -2,13 +2,13 @@
 title: Servicio de email
 date: 2022-02-06 19:05:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
-tags: [gnu linux, comandos, terminal, bash, servicios en red, ssh, seguridad informática, smr, teoría]
+tags: [gnu linux, comandos, terminal, bash, servicios en red, ssh, seguridad informática, smr, teoría, email, correo electrónico, smtp, imap, pop3, mime]
 ---
 
 {:.section}
 ## Cuentas de correo, alias y buzones
 
-En el mundo del correo electrónico existe cierta terminologla básica que debe conocerse:
+En el mundo del correo electrónico existe cierta terminología básica que debe conocerse:
 
 - **Cuenta de correo:** una cuenta de correo nos permite enviar y recibir correos electrónicos. Asociado a cada cuenta de correo tendremos que tener, necesariamente, un nombre de usuario y una contraseña que nos identifican como usuario legitimo de correo electrónico. Ese nombre de usuario y contraseña nos permiten enviar correos y leer los que hemos recibido. Básicamente consiste en un espacio de almacenamiento (buzón de usuario) que un determinado proveedor nos ofrece y un conjunto de facilidades asociadas a la cuenta de correo. 
 - **Buzones de correo:** se refiere al espacio de almacenamiento disponible en un servidor de correo que almacena los correos electrónicos dirigidos a una determinada dirección de email (usuario@dominio.com). El buzón de correo electrónico es similar al buzón de correo postal que tenemos en nuestras casas; el cartero depositará en el buzón todas las cartas dirigidas a nosotros y, posteriormente, nosotros con nuestra llave del buzón accederemos a este y recogeremos las cartas. Siguiendo esta analogía, la llave del buzón sería nuestro nombre de usuario y contraseña. 

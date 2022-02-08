@@ -1,8 +1,8 @@
 ---
 title: Caracterización de una LAN
 date: 2022-02-07 12:00:00 +0100
-categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática]
+categories: [Sistemas Microinformáticos y Redes, Redes Locales]
+tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 ---
 
 ## Introducción
@@ -82,6 +82,14 @@ Velocidad = información/ tiempo
 
 
 ## Clasificación de redes
+
+### Por área de distribución: PAN, LAN, MAN y WAN.
+### Por medio de transmisión: Guiadas y no guiadas.
+### Por relación funcional: P2P, Cliente-Servidor.
+### Por tecnología: P2P, Broadcast.
+### Por topología física: Estrella, anillo, bus, árbol, malla, totalmente conexa, mixta.
+### Por direccionalidad: Simplex, half-duplex, full-duplex.
+
 
 ## El modelo de referencia OSI
 
