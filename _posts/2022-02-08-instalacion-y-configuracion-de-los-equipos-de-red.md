@@ -14,7 +14,7 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 ## TCP/IP: Capa de red o capa de Internet.
 ### Direcciones IP, IPv4 e IPv6
 ### Protocolo IP
-### Clases IP: A, B, C, D, E
+### Clases IP
 
 ![img-description](/assets/img/instalacion-y-configuracion-de-los-equipos-de-red/clasesIPv4RedHost.png)
 _Clases IPv4_
