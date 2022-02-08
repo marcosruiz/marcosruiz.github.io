@@ -18,8 +18,6 @@ Cifra un documento de prueba con la herramienta `gpg`.
 
 Puedes utilizar le explicación del libro de las páginas 167 y 168.
 
-
-
 ## Entrega y presentación
 
 La entrega de esta práctica debe ser un documento PDF con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.pdf". Por ejemplo, en mi caso el nombre del documento PDF sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.pdf".

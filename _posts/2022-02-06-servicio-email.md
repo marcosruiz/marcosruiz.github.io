@@ -33,7 +33,7 @@ Funcionamiento de un servidor de correo:
 1. Para enviar un correo electrónico usamos un MUA que lo transfiere al servidor de correo electrónico (MTA) utilizando el protocolo SMTP.
 2. El MTA recibe el correo y lo envía al MTA del destinatario utilizando el protocolo SMTP.
 3. El MTA del destinatario almacena el correo en el buzón correspondiente, función que en algunos casos realiza un programa específico que se denomina MDA.
-4. El mensaje de correo permanece en el buzón hasta que el usuario que actúa comno destinatario, utiliza su MUA y accede a su buzón a través de alguno de los distintos mecanismos posibles, siendo los más habituales los protocolos POP o IMAP.
+4. El mensaje de correo permanece en el buzón hasta que el usuario que actúa como destinatario, utiliza su MUA y accede a su buzón a través de alguno de los distintos mecanismos posibles, siendo los más habituales los protocolos POP o IMAP.
 
 {:.section}
 ## Formato de los mensajes de correo electrónico
@@ -41,12 +41,12 @@ Funcionamiento de un servidor de correo:
 A continuación se muestra un ejemplo de email sencillo:
 
 ```
-Delivered-To: ...@gmail.com
+Delivered-To: amunozf@chabacier.es
 Received: by 2002:a2e:2151:0:0:0:0:0 with SMTP id h78-v6csp482083ljh;
         Wed, 24 Oct 2018 04:46:03 -0700 (PDT)
-Received: from email ([217.111.X.X])
-        by mx.google.com with SMTP id m15-v6si1661584edp.114.2018.10.24.04.45.18
-        for <...@gmail.com>;
+Received: from smtp.chabacier.es ([217.111.X.X])
+        by mx.chabacier.es with SMTP id m15-v6si1661584edp.114.2018.10.24.04.45.18
+        for <mruizg@chabacier.es>;
         Wed, 24 Oct 2018 04:46:02 -0700 (PDT)
 Date: Wed, 24 Oct 2018 04:46:02 -0700 (PDT)
 Message-Id: <5bd05b7a.1c69fb81.3cefc.5b19SMTPIN_ADDED_MISSING@mx.google.com>
@@ -57,10 +57,10 @@ Un saludo.
 ```
 
 {:.section}
-## Protocolos de servicio de descarga de correo electrónico (POP/IMAP)
+## Protocolos de servicio de descarga de correo electrónico
 
 {:.subsection}
-### POP
+### POP3
 
 POP3 (Post Office Protocol versión 3) es un protocolo de correo entrante unidireccional que descarga una copia de los mensajes desde un servidor de correo electrónico a una máquina local. Una vez que el protocolo de correos completa el proceso, elimina los datos originales de la bandeja de entrada del servidor.
 
@@ -70,9 +70,7 @@ En general, recomendamos esta configuración para las personas que sólo utiliza
 
 Ten en cuenta que este protocolo no puede sincronizar por defecto el contenido de tu bandeja de entrada sin conexión con su contraparte en línea. Así que si el dispositivo que almacena los mensajes se pierde o se rompe, podrías perder todos los que hayas guardado.
 
-Puerto POP3 por defecto para establecer una conexión con un servidor de correo electrónico:
-
-Puerto 995 – Puerto SSL/TLS, también conocido como POP3S
+Puerto POP3 por defecto para establecer una conexión con un servidor de correo electrónico es 995 (Puerto SSL/TLS, también conocido como POP3S).
 
 {:.subsection}
 ### IMAP
@@ -85,9 +83,7 @@ Esta configuración se recomienda para aquellos que quieran interactuar con sus 
 
 Sin embargo, es necesario tener una conexión estable a Internet para poder acceder a todos los correos almacenados en el servidor IMAP. El límite de espacio de almacenamiento de la cuenta de correo electrónico también puede suponer algunos problemas para tus mensajes, sobre todo si lo utilizas con mucha frecuencia.
 
-Puerto IMAP por defecto que utiliza la conexión IMAP:
-
-Puerto 993 – Puerto SSL/TLS, también conocido como IMAPS
+Puerto IMAP por defecto que utiliza la conexión IMAP es 993 (Puerto SSL/TLS, también conocido como IMAPS).
 
 {:.section}
 ## Protocolo SMTP
@@ -98,9 +94,7 @@ El Protocolo simple de transferencia de correo (SMTP) se utiliza para enviar cor
 
 Además de enviar correos, este protocolo también actúa como protección para filtrar qué mensaje pasa. Regula el límite de cuántos mensajes puede enviar una cuenta en un periodo de tiempo.
 
-Puerto SMTP por defecto utilizado por este protocolo:
-
-Puerto 465 – Puerto SSL/TLS, también conocido como SMTPS
+Puerto SMTP por defecto utilizado por este protocolo es 465 (Puerto SSL/TLS, también conocido como SMTPS)
 
 {:.section}
 ## Extensiones MIME
@@ -117,7 +111,7 @@ Prácticamente todos los mensajes de correo electrónico escritos por personas e
 {:.section}
 ## Spam
 
-Spam es un tipo de mensaje con contenido no deseado y no solicitado por el receptor. Es común que estos mensajes también contengan contenido ilícito yendo desde la venta de fármacos, drogas, productos fraudulentos o proposiciones comerciales fradulentas o sexuales. 
+Spam es un tipo de mensaje con contenido no deseado y no solicitado por el receptor. Es común que estos mensajes también contengan contenido ilícito yendo desde la venta de fármacos, drogas, productos fraudulentos o proposiciones comerciales fraudulentas o sexuales. 
 
 {:.section}
 ## Servidores de correo electrónico en sistemas libres
@@ -130,14 +124,14 @@ Instalación:
 
 El archivo de configuración principal es /etc/postfix/main.cf.
 
-Porpiedades interesantes:
+Propiedades interesantes:
 
 - **luser_relay**: indica la dirección "catch-all", es decir, una dirección que recibirá todo el correo dirigido a usuarios desconocidos. Si no se especifica, el correo dirigido a usuarios desconocidos se rechazará. 
 - **message_size_limit**: indica el tamaño máximo de cada mensaje en bytes. Si no se indica nada, el tamaño máximo será 10240000 bytes. 
-- **mydomain**: indica el dominio principal del servidor. Si no se indica nada se toma el dominio del parámetro «myhostname. 
-- **mydestination**: especifica el conjunto de dominios que se van a considerar locales. Es decir, en este ejemplo, todo lo que vaya dirigido a usuario@mi-empresa-sa.com, usuario@jaime-desktop, usuario@localhost.localdomain o usuario@localhost será tratado de forma idéntica y entragado a «usuario» en este servidor. Esto nos permite crear alias de dominio. OJ0, no los confundamos con los alias de usuario que son dis tintos y que se configuran en el fichero /etc/aliases. 
-- **myhostname**: indica el nombre completo del servidor y es la cadena que se usa cuando el servidor envía al cliente el mensaje inicial en el diálo go SMTP En este caso, hemos tenido que modificarlo manualmente. 
-- **mynetworks**: son la lista de direcclones IP a las que se les permite hacer relay» sin autentificarse. Es decir, que se les permite enviar un correo a un usuario no local sin tener que autenticarse. En caso de ser imprescindible, debe quedar limitado a nuestra red de área local. Por ejemplo, 192.168.254.0/24 
+- **mydomain**: indica el dominio principal del servidor. Si no se indica nada se toma el dominio del parámetro "myhostname". 
+- **mydestination**: especifica el conjunto de dominios que se van a considerar locales. Es decir, en este ejemplo, todo lo que vaya dirigido a usuario@mi-empresa-sa.com, usuario@jaime-desktop, usuario@localhost.localdomain o usuario@localhost será tratado de forma idéntica y entregado a «usuario» en este servidor. Esto nos permite crear alias de dominio. OJO, no los confundamos con los alias de usuario que son dis tintos y que se configuran en el fichero /etc/aliases. 
+- **myhostname**: indica el nombre completo del servidor y es la cadena que se usa cuando el servidor envía al cliente el mensaje inicial en el diálogo SMTP En este caso, hemos tenido que modificarlo manualmente. 
+- **mynetworks**: son la lista de direcciones IP a las que se les permite hacer relay» sin autentificarse. Es decir, que se les permite enviar un correo a un usuario no local sin tener que autenticarse. En caso de ser imprescindible, debe quedar limitado a nuestra red de área local. Por ejemplo, 192.168.254.0/24.
 - **proxy_interfeces**: esta opción se usa si nuestro ordenador está detrás de un router NAT o de un proxy. Sirve para indicar la dirección IP pública del servidor.
 
 ## Preguntas que debes saber contestar tras esta unidad
