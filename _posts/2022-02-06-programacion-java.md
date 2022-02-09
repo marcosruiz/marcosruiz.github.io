@@ -176,6 +176,36 @@ if(/*condición*/) {
 - Default opcional
 - Si queremos que para un determinado valor se ejecuten las instrucciones de un apartado case y sólo las de ese apartado, entonces habrá que finalizar ese case con un break.
 
+```java
+switch(/* expresión */) {
+   case valor1 :
+      /* Instrucciones */
+      break; // break sirve para salir del switch
+   case valor2 :
+      /* Instrucciones */
+      break; // break sirve para salir del switch
+   default : 
+      /* Instrucciones */
+}
+```
+
+Por ejemplo:
+
+```java
+/* existe una variable i de tipo int que no sabemos lo que vale */
+switch(i) {
+   case 0 :
+      /* Si vale 0 entraremos aquí */
+      break; // Salimos del switch
+   case 1 :
+      /* Si vale 1 entraremos aquí */
+      break; // Salimos del switch
+   default : 
+      /* Si vale cualquier otro valor entraremos aquí */
+}
+```
+
+
 {:.subsection}
 ### while
 
@@ -212,8 +242,10 @@ for (/* expresiónInicial */; /* condición */; /* expresiónEnCadaIteración */
 }
 ```
 
+El siguiente ejemplo mostrará por pantalla 10 veces la cadena de carácteres "Hola!". En la primera iteración i valdrá 0, en la segunda i valdrá 1, en la tercera i valdrá 2 y así sucesivamente hasta que i valga 10, momento en el cual se comprobará la condición i\<10 y devolverá falso saliendo del bucle.
+
 ```java
-for (int i = 0; i++; i<10){
+for (int i = 0; i<10; i++){
     System.out.println("Hola!");
 }
 ```

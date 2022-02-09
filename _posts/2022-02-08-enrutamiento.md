@@ -1,5 +1,5 @@
 ---
-title: ¿Cómo funciona el enrutamiento de paquetes?
+title: ¿Qué es y cómo funciona el enrutamiento?
 date: 2022-02-08 13:30:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, smr, teoría]
