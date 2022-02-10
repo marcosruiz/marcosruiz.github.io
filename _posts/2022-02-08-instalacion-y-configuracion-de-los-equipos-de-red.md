@@ -13,28 +13,12 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 ## Estructura TCP/IP
 ## TCP/IP: Capa de red o capa de Internet.
 ### Direcciones IP, IPv4 e IPv6
-### Protocolo IP
-### Clases IP
 
-![img-description](/assets/img/instalacion-y-configuracion-de-los-equipos-de-red/clasesIPv4RedHost.png)
-_Clases IPv4_
+### Protocolo IPv4 y máscaras de red
 
-- 0.X.X.X y 127.X.X.X están reservadas para test.
-- 127.0.0.1 está reservada para el host local.
-- Las direcciones cuya parte de Número de host es todo 0 o todo 1 están reservadas.
-    - Todo ceros: para referirnos a la red en sí misma.
-    - Todo unos: es la dirección broadcast.
+Leer el artículo [Direcciones IPv4](/posts/direcciones-ipv4/).
 
-![img-description](/assets/img/instalacion-y-configuracion-de-los-equipos-de-red/clasesIPv4Rangos.png)
-_Clases IPv4 (públicas y privadas)_
-
-#### IPv4 privadas
-
-- Clase A: 10.0.0.0 a 10.255.255.255
-- Clase B: 172.16.0.0 a 172.31.255.255
-- Clase C: 192.168.0.0 a 192.168.255.255
-
-### Subredes y máscaras de red
+### Subredes
 
 Leer el artículo [¿Qué son las subredes?](/posts/subredes/).
 
