@@ -11,7 +11,7 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 
 - UD 1 - Caracterización de una LAN
 - UD 2 - Instalación física de una red
-- UD 3 - Instalación-configuración de los equipos de red
+- UD 3 - Instalación y configuración de los equipos de red
     - [Binario](/posts/binario/)
     - [Direcciones IPv4](/posts/direcciones-ipv4/)
     - [¿Qué son las subredes?](/posts/subredes/)
