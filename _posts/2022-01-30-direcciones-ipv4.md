@@ -29,19 +29,21 @@ Para que IP funcione, es necesario que los equipos de una red tengan una direcci
 - También se puede representar en formato binario separados por puntos en bloques de 8 bits: 11000000.10101000.00000000.01001011.
 
 {:.section}
-## Máscaras de subred
+## Máscaras de red/subred
 
 Las direcciones IP de forma similar a lo que ocurre con los números de teléfono, están organizadas jerárquicamente. La parte más a la izquierda de la dirección IP es lo que se llama el identificador de red, y la parte más a la derecha es el identificador de equipo dentro de esa red. 
 
-Ejemplo: 192.168.0.75 (equipo número 75 de la red cuyo identificador es 192.168.0) 
+Por ejemplo: 192.168.0.75 (equipo número 75 de la red cuyo identificador es 192.168.0) 
 
 Todos los equipos que formen parte de la misma red deben tener el mismo identificador de red, pero distintos identificadores de equipo. 
 
-La cantidad de octetos destinados al identificador de red y, por tanto, al de equipo, es una cantidad variable que depende de la máscara de subred: un número-patrón similar a la IP en estructura y que nos indica qué parte de la lP es identificador de red y qué parte es identificador de equipo.
+La cantidad de octetos destinados al identificador de red y, por tanto, al de equipo, es una cantidad variable que depende de la máscara de red/subred: Un número-patrón similar a la IP en estructura y que nos indica qué parte de la IP es identificador de red y qué parte es identificador de equipo. 
 
-En esta unidad trabajaremos sólo con redes con clase, es decir, los octetos de la máscara sólo van a ser 0 ó 255. En este caso, los octetos de la IP que se correspondan con aquellos octetos de la máscara que lleven el valor 255 formarán el identificador de red, y los que lleven el valor formarán el identificador de equipo. 
+Se puede trabajar de dos maneras:
 
-Ejemplos de uso de máscaras de subred:
+- Con redes con clase, es decir, los octetos de la máscara sólo van a ser 0 ó 255. En este caso, los octetos de la IP que se correspondan con aquellos octetos de la máscara que lleven el valor 255 formarán el identificador de red, y los que lleven el valor 0 formarán el identificador de equipo. 
+
+Ejemplos de uso de máscaras de red:
 
 | IP | Clase | Máscara |
 |---|---|
@@ -49,7 +51,7 @@ Ejemplos de uso de máscaras de subred:
 | 172.16.35.107 | B | 255.255.0.0 |
 | 216.157.2.1 | C | 255.255.255.0 |
 
-Trabajaremos con redes sin clase (es decir, con máscaras de subred de longitud variable o VLSM) más adelante, en una unidad específica para ello.
+- Con redes sin clase (es decir, con máscaras de red de longitud variable o VLSM), se verá más adelante.
 
 {:.section}
 ## Tipos de notaciones 
