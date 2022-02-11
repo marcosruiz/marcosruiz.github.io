@@ -5,6 +5,7 @@ categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática, smr, seguridad activa, teoría, bios, grub, uefi, vpn, ssh, dmz, vlan, tcp wrapper, ids]
 ---
 
+{:.section}
 ## ¿Qué es la BIOS?
 
 Se trata de las siglas de Basic Input Output System (en castellano, sistema básico de entrada/salida) y se refiere a un firmware almacenado en un dispositivo de memoria no volátil instalado sobre la placa base del ordenador. Tradicionalmente las BIOS han estado guardadas en una memoria ROM que, a diferencia de las memorias RAM habituales, no se elimina al apagar el PC y, por lo tanto, está de nuevo disponible al volver a encenderlo. Tan pronto como el usuario enciende cualquier PC de 64 u 86 bits, la BIOS se arranca automáticamente. Al contrario que los sistemas operativos, no tiene que instalarse, sino que ya está integrada en el hardware del ordenador.
@@ -25,6 +26,7 @@ Los elementos básicos de la BIOS apenas han cambiado desde la década de 1980, 
 
 La UEFI cuenta con una interfaz gráfica de usuario, se puede utilizar con el ratón o el teclado y puede acceder a los componentes de red e Internet incluso sin iniciar el sistema operativo. Una de las características que más la diferencian de la BIOS es que la UEFI utiliza un gestor de arranque seguro (en inglés, secure bootloader), es decir, que evita que se inicien sistemas operativos no autorizados y software no deseado y, por lo tanto, aumenta la protección contra los ataques cibernéticos.
 
+{:.section}
 ## ¿Qué es el GRUB?
 
 GNU GRUB (GNU GRand Unified Bootloader) es un cargador de arranque múltiple, desarrollado por el proyecto GNU que nos permite elegir qué Sistema Operativo arrancar de los instalados.
@@ -45,15 +47,18 @@ GRUB 2 es una reescritura de GRUB que comparte muchas características con su ve
 - Los archivos de imagen que componen GRUB se han reorganizado; La etapa 1, la etapa 1.5 y la etapa 2 ya no existen. En su lugar GRUB 2 dispone de una variedad de imágenes de arranque (boot.img, diskboot.img, cdboot.img, pxeboot.img, lnxboot.img, kernel.img) para iniciar GRUB de varias formas, una imagen del núcleo (core.img) y un conjunto de módulos que se combinan con la imagen del núcleo (*.mod).6​
 - GRUB 2 introduce muchas instalaciones en módulos cargados dinámicamente, lo que permite que la imagen del núcleo sea más pequeña y que se construya de formas más flexibles
 
+{:.section}
 ## ¿Qué es un IDS?
 
 Leer el artículo [¿Qué es un IDS?](https://www.clavei.es/blog/que-es-un-ids-o-intrusion-detection-system/).
 
+{:.section}
 ## ¿Qué es un UTM?
 
 Leer el artículo [UTM, un firewall que ha ido al gimnasio](https://www.incibe.es/protege-tu-empresa/blog/utm-firewall-ha-ido-al-gimnasio).
 
-## ¿Qué es una DMZ?
+{:.section}
+## ¿Qué es una DMZ o red perimetral?
 
 Leer el artículo [DMZ: utiliza la zona desmilitarizada y protege tu red interna](https://www.ionos.es/digitalguide/servidores/seguridad/en-que-consiste-una-zona-desmilitarizada-dmz/).
 
@@ -61,14 +66,7 @@ Leer el artículo [DMZ: utiliza la zona desmilitarizada y protege tu red interna
 
 El término zona desmilitarizada (DMZ, por sus siglas en inglés), aplicado a la seguridad informática procede probablemente de la franja de terreno neutral que separa a los países inmersos en un conflicto bélico. Es una reminiscencia de la Guerra de Corea, aún vigente y en tregua desde 1953. Paradójicamente, a pesar de que esta zona desmilitarizada es terreno neutral, es una de las más peligrosas del planeta, pues la franja no pertenece formalmente a ningún país, y cualquier inmersión en ella causará fuego de ambos bandos. 
 
-### Red Perimetral
-
-En el caso de un enrutador de uso doméstico, el DMZ perimetral se refiere a la dirección IP que tiene una computadora para la que un enrutador deje todos los puertos abiertos, excepto aquellos que estén explícitamente definidos en la sección NAT del enrutador. Es configurable en varios enrutadores y se puede habilitar y deshabilitar.
-
-Con ello se persigue conseguir superar limitaciones para conectarse con cierto tipo de programas, aunque es un riesgo muy grande de seguridad que conviene tener solventado instalando un cortafuegos por software en el ordenador que tiene dicha ip en modo DMZ.
-
-Para evitar riesgos es mejor no habilitar esta opción y usar las tablas NAT del enrutador y abrir únicamente los puertos que son necesarios. 
-
+{:.section}
 ## ¿Qué es una VPN?
 
 Una red privada virtual (RPV) (en inglés, Virtual Private Network, VPN) es una tecnología de red de ordenadores que permite una extensión segura de la red de área local (LAN) sobre una red pública o no controlada como Internet. Permite que el ordenador en la red envíe y reciba datos sobre redes compartidas o públicas como si fuera una red privada, con toda la funcionalidad, seguridad y políticas de gestión de una red privada. Esto se realiza estableciendo una conexión virtual punto a punto mediante el uso de conexiones dedicadas, cifrado o la combinación de ambos métodos.
@@ -117,10 +115,12 @@ Un ejemplo clásico es un servidor con información sensible, como las nóminas 
 
 Otro ejemplo es la conexión a redes Wi-Fi haciendo uso de túneles cifrados IPSec o SSL que además de pasar por los métodos de autenticación tradicionales (WEP, WPA, direcciones MAC, etc.) agregan las credenciales de seguridad del túnel VPN creado en la LAN interna o externa. 
 
+{:.section}
 ## ¿Qué es un TCP Wrapper?
 
 Leer el artículo [TCP Wrappers: qué son y cómo se utilizan en Linux](https://juncotic.com/tcp-wrappers-se-utilizan-linux/).
 
+{:.section}
 ## ¿Qué es SSH?
 
 Leer el artículo [Servicio SSH](/posts/servicio-ssh/).
@@ -153,6 +153,7 @@ Leer el artículo [Servicio SSH](/posts/servicio-ssh/).
 - ¿En qué consiste la técnica Stak space de eliminación de datos del SO?
 - ¿Cómo se llama al proceso que identifica y recupera archivos eliminados?
 - ¿Cuándo debe realizarse un análisis forense?
+- ¿Es lo mismo DMZ que red perimetral?
 
 ## Bibliografía
 
@@ -160,6 +161,6 @@ Leer el artículo [Servicio SSH](/posts/servicio-ssh/).
 - [GNU GRUB (Wikipedia)](https://es.wikipedia.org/wiki/GNU_GRUB)
 - [¿Qué es un IDS?](https://www.clavei.es/blog/que-es-un-ids-o-intrusion-detection-system/)
 - [Zona desmilitarizada (informática) (Wikipedia)](https://es.wikipedia.org/wiki/Zona_desmilitarizada_(inform%C3%A1tica))
-[Red privada virtual (Wikipedia)](https://es.wikipedia.org/wiki/Red_privada_virtual)
+- [Red privada virtual (Wikipedia)](https://es.wikipedia.org/wiki/Red_privada_virtual)
 - [¿Cómo funciona el SSH?](https://www.hostinger.es/tutoriales/que-es-ssh)
 - [Secure Shell (Wikipedia)](https://es.wikipedia.org/wiki/Secure_Shell)
