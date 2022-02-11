@@ -180,7 +180,7 @@ Las ventajas de utilizar un intérprete son:
 
 - Un intérprete permite utilizar algunas funciones y operadores potentes que usualmente son imposible tratar por medio de compiladores. Los lenguajes que incluyen este tipo de operadores y que, por tanto, exigen un intérprete, se llaman interpretativos. Los lenguajes compilativos, que permiten el uso de un compilador, prescinden de este tipo de operadores.
 
-{:question}
+{:.question}
 ¿Qué significa depurar un código?
 
 Las desventajas de utilizar un intérprete son:
