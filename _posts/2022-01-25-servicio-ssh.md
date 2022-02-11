@@ -131,7 +131,7 @@ Por ejemplo:
 $ scp /home/mruizg/Documentos/prueba.txt smr@192.168.1.2:/home/smr/Documentos/prueba.txt
 ```
 
-{.:pregunta}
+{:.question}
 ¿Qué diferencias hay entre SCP y SFTP?
 
 ## Terminal en modo gráfico
