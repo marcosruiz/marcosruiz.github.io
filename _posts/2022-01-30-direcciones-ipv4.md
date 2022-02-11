@@ -80,17 +80,49 @@ Todo el espacio de direcciones IPy4 está inicialmente dividido en diferentes cl
 | D | 1110 | No aplicable | No aplicable | No aplicable | No aplicable | 224-239 | No aplicable |
 | E | 1111 | No aplicable | No aplicable | No aplicable | No aplicable | 240-255 | No aplicable |
 
-{:.question}
-¿Cuántas redes de clase A hay en total?
+<div class="card mb-2">
+  <div class="card-header">
+    <a data-toggle="collapse" data-target="#preguntaRedesClaseA">¿Cuántas redes de clase A hay en total?</a>
+  </div>
+  <div class="collapse card-body" id="preguntaRedesClaseA">
+    <p class="card-text">2<sup>7</sup></p>
+  </div>
+</div>
 
-{:.question}
-¿Cuántas redes de clase B hay en total?
+<div class="card mb-2">
+  <div class="card-header">
+    <a data-toggle="collapse" data-target="#preguntaRedesClaseB">¿Cuántas redes de clase B hay en total?</a>
+  </div>
+  <div class="collapse card-body" id="preguntaRedesClaseB">
+    <p class="card-text">2<sup>14</sup></p>
+  </div>
+</div>
 
-{:.question}
-¿Cuántas redes de clase C hay en total?
+<div class="card mb-2">
+  <div class="card-header">
+    <a data-toggle="collapse" data-target="#preguntaRedesClaseC">¿Cuántas redes de clase C hay en total?</a>
+  </div>
+  <div class="collapse card-body" id="preguntaRedesClaseC">
+    <p class="card-text">2<sup>21</sup></p>
+  </div>
+</div>
 
-{:.question}
-¿Podemos calcular los valores del primer octeto de una red de clase A, B o C? ¿Cómo?
+<div class="card mb-2">
+  <div class="card-header">
+    <a data-toggle="collapse" data-target="#preguntaRango">¿Podemos calcular los valores del primer octeto de una red de clase A, B o C? ¿Cómo?</a>
+  </div>
+  <div class="collapse card-body" id="preguntaRango">
+    <p class="card-text">
+      Si. Por ejemplo, en el caso de las redes de clase A sabemos que el primer bit del primer octeto SIEMPRE es 0, así que podremos jugar con los 7 bits restantes. Con estos bits con los que podemos jugar les damos su valor mínimo y máximo, es decir, todo ceros y todo unos.
+    </p>
+    <ul>
+      <li>Valor mínimo: 0 0000000 = 0</li>
+      <li>Valor máximo: 0 1111111 = 127</li>
+    </ul>
+    <p class="card-text">Con esto obtenemos que el rango de direcciones IP de las redes de clase A es [0-127].</p>
+  </div>
+</div>
+
 
 {:.section}
 ## Direcciones IPv4 reservadas

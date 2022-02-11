@@ -5,12 +5,16 @@ categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, smr, teoría]
 ---
 
+## Aviso
+
+En la Sección 6.7 del libro está muy bien explicado.
+
 {:.section}
 ## ¿Qué es un router?
 
 Un router (también llamado enrutador o encaminador) es un equipo que conecta entre sí dos o más redes distintas.
 
-La función principal de un router es encaminar elegir el camino adecuado, según diferentes criterios, para que los datagramasIP (paquetes en protocolos orientados a la conexión) lleguen a su destino. 
+La función principal de un router es encaminar elegir el camino adecuado, según diferentes criterios, para que los datagramas IP (paquetes en protocolos orientados a la conexión) lleguen a su destino. 
 
 Cuando un equipo intenta enviar paquetes a una IP exterior, llegan al router, que determinará la interfaz por la que deberán salir para llegar a su destino.
 
@@ -24,6 +28,9 @@ Hay 15 LAN convencionales + 4 redes formadas por pares de routers conectados ent
 ![img-description](/assets/img/enrutamiento/cuantas-redes-solucion.png)
 
 Cada una de las redes que hay tras un router o entre dos routers se les llama dominios de difusión (o dominios broadcast), y tienen distintas puertas de enlace. Cuando se envía un paquete a una dirección de difusión (broadcast) perteneciente a otro dominio de difusión, por regla general, el router descarta ese paquete. 
+
+{:.question}
+¿Qué es un dominio de difusión?
 
 Esto se debe a una cuestión de seguridad: los routers no dejan que una red que no es la propia se inunde (flood) de paquetes de difusión, provocando caídas de servicio en esa red o bajando drásticamente su rendimiento. 
 
@@ -97,10 +104,12 @@ El enrutamiento dinámico consiste en configurar algún protocolo de enrutamient
 Los protocolos de enrutamiento pueden ser:
 
 - **Vector-distancia**: Es un algoritmo que se basa en calcular el número de routers que traspasa cada datagrama hasta llegar a su destino. Esto determina la métrica de la tabla de enrutamiento. Los protocolos más empleados son:
-    - **RIP v1:** bastante eficiente, pero sólo funciona en redes con clase.
-    - **RIP v2:** menos eficiente que RIP v1, pero válido en redes sin clase.
+    - **RIP v1 (Routing Information Protocol):** bastante eficiente, pero sólo funciona en redes con clase.
+    - **RIP v2 (Routing Information Protocol):** menos eficiente que RIP v1, pero válido en redes sin clase.
+    - **BGP (Border Gateway Protocol)**
 - **Estado de enlace** →  cada router comunica a qué distancia se halla respecto de sus routers vecinos y la velocidad de conexión que tiene con ellos. Con esta información, los routers pueden construir un mapa virtual de la red global y calcular el camino óptimo para cada datagrama. Los protocolos más empleados son:
-    - **OSPF**
+    - **OSPF (Open Shortest Path First)**
+    - **IS-IS (Intermediate System to Intermediate System)**
 
 En el enrutamiento dinámico las tablas de enrutamiento se actualizan automáticamente. Entre otros parámetros, varían las métricas, lo que ocasiona que los datagramas puedan ir por rutas distintas hacia un mismo destino.
 
@@ -126,11 +135,11 @@ dirección IP del interfaz del router correspondiente.
 {:.subsection}
 ### Caso 2: Dos redes, cada una con su propio router
 
-- Asignaremos IP a los adaptadores de los routers. Para este caso hemosconsiderado que las interfaces Fa0/0 serán las correspondientes a las LAN, ylas interfaces Fa0/1 para la conexión entre routers.
-- Activaremos los adaptadores (como siempre, los NIC de los routers Ciscoestán desactivados por defecto).
-- Configuraremos en las estaciones la puerta de enlace predeterminada con ladirección IP del router correspondiente en su interfaz LAN (la interfaz Fa0/0).
-- Tendremos tres dominios de difusión: el 10.0.0.0/8 (red de portátiles), el172.16.0.0/16 (red de sobremesas) y el 192.168.0.0/24 (red entre los dosrouters).
-- Tendremos que configurar también el encaminamiento que vamos a usar.Veremos un ejemplo de encaminamiento dinámicoy otro de encaminamientoestático.
+- Asignaremos IP a los adaptadores de los routers. Para este caso hemos considerado que las interfaces Fa0/0 serán las correspondientes a las LAN, y las interfaces Fa0/1 para la conexión entre routers.
+- Activaremos los adaptadores (como siempre, los NIC de los routers Cisco están desactivados por defecto).
+- Configuraremos en las estaciones la puerta de enlace predeterminada con la dirección IP del router correspondiente en su interfaz LAN (la interfaz Fa0/0).
+- Tendremos tres dominios de difusión: el 10.0.0.0/8 (red de portátiles), el172.16.0.0/16 (red de sobremesas) y el 192.168.0.0/24 (red entre los dos routers).
+- Tendremos que configurar también el encaminamiento que vamos a usar.Veremos un ejemplo de encaminamiento dinámico y otro de encaminamiento estático.
 
 ![img-description](/assets/img/enrutamiento/caso2.png)
 
@@ -139,7 +148,8 @@ dirección IP del interfaz del router correspondiente.
 
 - Pulsar sobre el router a configurar.
 - En el apartado Enrutamiento - RIP, indicar las direcciones de subred de los dominios de difusión con los que está conectado el router.
-- Desde ese momento, el router aplicaráun algoritmo de encaminamiento para descubrir el camino que deben seguir los paquetes.
+- Desde ese momento, el router aplicará un algoritmo de encaminamiento para descubrir el camino que deben seguir los paquetes.
+
 
 ![img-description](/assets/img/enrutamiento/caso2-encaminamiento-dinamico.png)
 
