@@ -61,6 +61,9 @@ Posteriormente cambiamos la máscara de la redes de clase C a 255.255.0.0. ¿Qu�
 
 Utilizar un router para conectar dos redes de clase C públicas entre sí a través de un router. En cada red debe haber al menos dos ordenadores que tengan las direcciones IP límite.
 
+![img-description](/assets/img/practica-introduccion-packet-tracer/dosRedesDosRouter.png)
+_Dos redes y un router: Distribución de redes_
+
 Pasos a realizar:
 
 1. Insertamos los elementos que vamos a utilizar (ordenadores y switches).
