@@ -9,6 +9,8 @@ tags: [gnu linux, comandos, terminal, bash, servicios en red, ssh, seguridad inf
 
 El objetivo de esta práctica es aprender a instalar y configurar un servidor de correo electrónico POSTFIX.
 
+Duración: 10 horas.
+
 ## Actividades
 
 A continuación se listan las actividades que se deben realizar para esta práctica. 
