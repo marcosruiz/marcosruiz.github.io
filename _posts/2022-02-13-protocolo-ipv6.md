@@ -7,7 +7,7 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 
 ## IPv4 vs IPv6
 
-El protocolo IPv4 está formado por direcciones IP de 32 bits por lo que da un total de 2^32= 4 294 967 296 que no cubría todas las posibles conexiones de dispositivos a nivel mundial. Teniendo en cuenta que muchos usuarios se conectan con varios dispositivos necesitan una gran cantidad de IP.
+El protocolo IPv4 está formado por direcciones IP de 32 bits por lo que da un total de 2<sup>32</sup>= 4.294.967.296 que no cubría todas las posibles conexiones de dispositivos a nivel mundial. Teniendo en cuenta que muchos usuarios se conectan con varios dispositivos necesitan una gran cantidad de IP.
 
 En febrero de 2011 la IANA (Internet Assigned Numbers Authority) asignó el último bloque de 33 millones de direcciones a la APNIC, que es la encargada de proporcionar direcciones en Asia. Precisamente, la entrada de este mercado, que posee una gran cantidad de densidad de población, es lo que ha precipitado el final de IPv4 y el uso de IPv6.
 

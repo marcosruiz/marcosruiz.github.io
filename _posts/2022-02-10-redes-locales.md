@@ -36,6 +36,9 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 
 ## Evaluación 3
 
-- UD 7 - Redes mixtas integradas
+- UD 7 - [Redes mixtas integradas](/posts/redes-mixtas-integradas/)
+    - [Redes inalámbricas](/posts/redes-inalambricas/)
+    - [Protocolo IPv6](/posts/protocolo-ipv6/)
+    - [VPN](/posts/vpn/)
 - UD 8 - Resolución de incidencias de una red de área local
 - UD 9 - Cumplimiento de las normas de prevención de riesgos laborales y protección medioambiental

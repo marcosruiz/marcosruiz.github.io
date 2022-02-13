@@ -15,5 +15,5 @@ Leer artículo [Protocolo IPv6](/posts/protocolo-ipv6).
 
 ## VPN
 
-Leer el artículo [VPN](/posts/vpn.md).
+Leer el artículo [VPN](/posts/vpn).
 
