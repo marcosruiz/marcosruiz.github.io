@@ -183,4 +183,4 @@ _Desde este router se puede llegar a la red 10.50.0.0/16 a través de la interfa
 
 ## Bibliografía
 
-- [MC Educativa](http://mceducativa.blogspot.com/2015/03/apuntes-para-el-modulo-redes-locales.html)
+- [UT4: REDES INALÁMBRICAS](http://mceducativa.blogspot.com/2015/03/apuntes-para-el-modulo-redes-locales.html)
