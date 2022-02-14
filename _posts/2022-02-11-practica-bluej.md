@@ -15,6 +15,8 @@ El objetivo de esta práctica es aprender a programar usando el paradigma de pro
 - Atributos y métodos
 - Sintaxis de Java
 
+Duración: 3 horas.
+
 {:.activity}
 ### Hola mundo
 
