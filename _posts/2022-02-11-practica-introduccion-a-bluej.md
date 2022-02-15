@@ -1,5 +1,5 @@
 ---
-title: "Práctica: BlueJ"
+title: "Práctica: Introducción a BlueJ"
 date: 2022-02-11 11:50:00 +0100
 categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
 tags: [tic ii, práctica, programación, bluej]
@@ -62,6 +62,27 @@ Y las siguientes acciones.
 - Disparar bala a un vaquero.
 
 Crea un método principal en la que un vaquero se enfrente a dos indios hasta que un bando gane.
+
+![img-description](/assets/img/practica-introduccion-a-bluej/diagramaDeClases.png)
+_Diagrama de clases_
+
+Ejemplo de ejecución:
+
+```plaintext
+Vaquero Thomas: Hellow ladies!
+Indio Apache: Hau!
+Indio Pies Negros: Hau!
+Vaquero Thomas: Por el imperio britanicow!
+Indio Apache: Auch!
+Indio Apache: Tengo 18 vidas
+Indio Pies Negros: Por mi tribu!
+Vaquero Thomas: Auch!
+Vaquero Thomas: Tengow 14 vidas
+Indio Apache: Por mi tribu!
+Vaquero Thomas: Auch!
+Vaquero Thomas: Tengow 13 vidas
+...
+```
 
 ## Entrega y presentación
 
