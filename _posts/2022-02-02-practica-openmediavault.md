@@ -1,5 +1,5 @@
 ---
-title: "(No definitiva) Práctica: OpenMediaVault"
+title: "Práctica: OpenMediaVault"
 date: 2022-02-02 20:40:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática, seguridad activa, seguridad pasiva, openmediavault, raid5, práctica]
@@ -31,6 +31,11 @@ Sigue los pasos de artículo [Tutorial: Instalación y configuración de OpenMed
 Desde una máquina virtual Zorin OS Lite conectate al cliente web de OpenMediaVault. Las máquinas deben estar conectadas a través del router/cortafuegos IPCOP.
 
 {:.activity}
+### Crear backup de la máquina virtual OpenMediaVault
+
+Haz una clonación completa del servidor OpenMediaVault en el estado actual para actividades futuras.
+
+{:.activity}
 ### Configurar FTPS
 
 Configura el servicio FTP usando TLS/SSL.
@@ -48,7 +53,12 @@ Crea una carpeta compartida llamada public y compártela para que cualquiera pue
 {:.activity}
 ### Copias de seguridad
 
-Añade y monta un disco de 100MB y programa copias de seguridad diarias de la carpeta compartida.
+Añade y monta un disco de 100MB y programa copias de seguridad cada 10 minutos (para hacer pruebas puedes bajarlo a menos) de la carpeta compartida.
+
+{:.activity}
+### (Opcional) Copias de seguridad remota
+
+Utilizando rsync hacer copias de seguridad de manera remota usando otro servidor OpenMediaVault encriptando la comunicación a través de clave pública.
 
 {:.activity}
 ## Entrega y presentación
