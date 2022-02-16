@@ -172,9 +172,9 @@ Realiza un reloj digital que nunca pare. También debes hacer que espere un segu
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un documento ZIP con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del documento ZIP sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.zip". 
+La entrega de esta práctica debe ser un documento ZIP con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>\_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del documento ZIP sería "RuizGarcía\_Marcos\_Práctica\<NúmeroDeLaPráctica\>.zip". 
 
-En la raíz del documento ZIP debe haber una carpeta llamada "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>" donde estén todas las actividades. Cada actividad debe tener un nombre con el siguiente formato "actividad_\<númeroDeLaActividad\>_\<nombreDeUsuario\>.psc". Por ejemplo, en mi caso el nombre de la primera actividad sería "actividad_1_mruizg.psc" ya que mi correo del centro es "mruizg@chabacier.es".
+En la raíz del documento ZIP debe haber una carpeta llamada "\<Apellidos\>\_\<Nombre\>\_Práctica\<NúmeroDeLaPráctica\>" donde estén todas las actividades. Cada actividad debe tener un nombre con el siguiente formato "actividad_\<númeroDeLaActividad\>\_\<nombreDeUsuario\>.psc". Por ejemplo, en mi caso el nombre de la primera actividad sería "actividad\_1\_mruizg.psc" ya que mi correo del centro es "mruizg@chabacier.es".
 
 ## Bibliografía
 

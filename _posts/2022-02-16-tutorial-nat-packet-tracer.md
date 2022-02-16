@@ -2,7 +2,7 @@
 title: "Tutorial: Configurar un NAT estático en Packet Tracer"
 date: 2022-02-16 10:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
-tags: [packet tracer, servicios en red, smr, tutorial, packet tracer]
+tags: [smr, tutorial, nat, packet tracer]
 ---
 
 ## Introducción y objetivo
