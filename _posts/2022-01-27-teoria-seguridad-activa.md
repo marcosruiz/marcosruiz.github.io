@@ -69,7 +69,7 @@ El término zona desmilitarizada (DMZ, por sus siglas en inglés), aplicado a la
 {:.section}
 ## ¿Qué es una VPN?
 
-Leer el artículo [VPN](/posts/vpn.md).
+Leer el artículo [VPN](/posts/vpn).
 
 {:.section}
 ## ¿Qué es un TCP Wrapper?
