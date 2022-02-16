@@ -132,3 +132,4 @@ copy running-config startup-config
 ## Errores habituales
 
 - Cuando hacemos login en la aplicación de Packet Tracer o en la web de Cisco aparece el mensaje "Sorry, we can't find a NetAcad account associated with this Cisco account.". Para solucionar este problema lee la sección "Descargar e instalar Packet Tracer" de este artículo.
+- Si da problemas al instalar la última versión de Packet Tracer, utilizar el comando `dpkg-reconfigure`.
