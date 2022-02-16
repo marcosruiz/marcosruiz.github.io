@@ -9,7 +9,7 @@ tags: [packet tracer, redes locales, smr, práctica]
 
 El objetivo de esta práctica es familiarizarse con el uso de Packet Tracer así como aprender el funcionamiento, configuración básica de las redes TCP/IP así como aprender el funcionamiento del enrutamiento estático.
 
-Duración: - h
+Duración: 6 h
 
 ## Actividades
 

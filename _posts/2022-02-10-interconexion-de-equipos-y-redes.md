@@ -35,8 +35,15 @@ Leer el artículo [DMZ: utiliza la zona desmilitarizada y protege tu red interna
 
 En la Sección 6.9 del libro está muy bien explicado sino lee [Servidor proxy (Wikipedia)](https://es.wikipedia.org/wiki/Servidor_proxy).
 
-{:.question}
-¿Un NAT es un proxy?
+
+## Preguntas 
+
+- ¿Qué es una DMZ? ¿Para qué sirve?
+- ¿Qué es un proxy?
+- ¿Un NAT es un proxy?
+- ¿Cuál es el funcionamiento de un NAT? ¿Sabrías explicarlo con un ejemplo práctico?
+- ¿Es mejor usar dos routers de la misma marca para crear una zona DMZ o de diferente marca?
+
 
 ## Bibliogafía
 

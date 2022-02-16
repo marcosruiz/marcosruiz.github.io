@@ -172,7 +172,6 @@ _Desde este router se puede llegar a la red 10.50.0.0/16 a través de la interfa
 
 ![img-description](/assets/img/enrutamiento/caso3.png)
 
-
 {:.section}
 ## Vídeos
 

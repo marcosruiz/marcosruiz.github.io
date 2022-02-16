@@ -105,6 +105,30 @@ _Modo Realtime_
 
 Dentro del modo Realtime, se encuentra el cuadro de registro Ping log, en donde se muestran los mensajes SNMP que han sido enviados y se detalla además el resultado de dicho proceso; con base en este resultado se puede establecer cuál o cuales de los terminales de la red están inactivos, a causa de un mal direccionamiento IP, o diferencias en el tamaño de bits de los paquetes. En la siguiente figura se ilustra claramente un ejemplo de una red, en donde se ingresa a uno de los equipos (PC5) y se hace PING al equipo PC0.
 
+
+## Configuración de routers en Packet Tracer
+
+En la pestaña CLI tenemos un terminal para administrar los routers. Desde este terminal podemos escribir comandos para configurar el router. A continuación se explican unos básicos. 
+
+El siguiente comando habilita la administración del router
+
+```console
+Router>enable
+```
+
+El siguiente comando muestra la tabla de enrutamiento:
+
+```console
+Router#show ip route
+```
+
+El siguiente comando guarda la configuración actual como configuración de inicio. De esta manera no se perderá la configuración que hemos hecho aunque reiniciemos el router.
+
+```console
+copy running-config startup-config
+```
+
+
 ## Errores habituales
 
 - Cuando hacemos login en la aplicación de Packet Tracer o en la web de Cisco aparece el mensaje "Sorry, we can't find a NetAcad account associated with this Cisco account.". Para solucionar este problema lee la sección "Descargar e instalar Packet Tracer" de este artículo.

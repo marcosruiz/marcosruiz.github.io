@@ -82,7 +82,7 @@ Todo el espacio de direcciones IPy4 está inicialmente dividido en diferentes cl
 
 <div class="card mb-2">
   <div class="card-header">
-    <a data-toggle="collapse" data-target="#preguntaRedesClaseA">¿Cuántas redes de clase A hay en total?</a>
+    <a data-toggle="collapse" data-target="#preguntaRedesClaseA" class="question" href="#">¿Cuántas redes de clase A hay en total?</a>
   </div>
   <div class="collapse card-body" id="preguntaRedesClaseA">
     <p class="card-text">2<sup>7</sup></p>
@@ -91,7 +91,7 @@ Todo el espacio de direcciones IPy4 está inicialmente dividido en diferentes cl
 
 <div class="card mb-2">
   <div class="card-header">
-    <a data-toggle="collapse" data-target="#preguntaRedesClaseB">¿Cuántas redes de clase B hay en total?</a>
+    <a data-toggle="collapse" data-target="#preguntaRedesClaseB" class="question" href="#">¿Cuántas redes de clase B hay en total?</a>
   </div>
   <div class="collapse card-body" id="preguntaRedesClaseB">
     <p class="card-text">2<sup>14</sup></p>
@@ -100,7 +100,7 @@ Todo el espacio de direcciones IPy4 está inicialmente dividido en diferentes cl
 
 <div class="card mb-2">
   <div class="card-header">
-    <a data-toggle="collapse" data-target="#preguntaRedesClaseC">¿Cuántas redes de clase C hay en total?</a>
+    <a data-toggle="collapse" data-target="#preguntaRedesClaseC" class="question" href="#">¿Cuántas redes de clase C hay en total?</a>
   </div>
   <div class="collapse card-body" id="preguntaRedesClaseC">
     <p class="card-text">2<sup>21</sup></p>
@@ -109,7 +109,7 @@ Todo el espacio de direcciones IPy4 está inicialmente dividido en diferentes cl
 
 <div class="card mb-2">
   <div class="card-header">
-    <a data-toggle="collapse" data-target="#preguntaRango">¿Podemos calcular los valores del primer octeto de una red de clase A, B o C? ¿Cómo?</a>
+    <a data-toggle="collapse" data-target="#preguntaRango" class="question" href="#">¿Podemos calcular los valores del primer octeto de una red de clase A, B o C? ¿Cómo?</a>
   </div>
   <div class="collapse card-body" id="preguntaRango">
     <p class="card-text">
@@ -197,6 +197,11 @@ $ sudo /etc/init.d/networking restart
 ```
 
 En versiones de Linux actuales la configuración de la red se guarda en un archivo del directorio /etc/netplan/. El archivo es de extensión yam1, un lenguaje de marcas normalizado. NetPlan incluye netplan, una utilidad para gestionar la configuración, además de aplicaciones adicionales que sustituyen a las antiguas NetTools (ifconfig, ifup, etc.). Permite realizar una configuración de red más avanzada: crear puentes, enlaces (bonds), etc.
+
+## Preguntas
+
+- ¿Son 192.168.1.15 y 192.168.2.15 direcciones IP pertenecientes a la misma red?
+- ¿Es la red 192.168.3.0/24 una red subneteada?
 
 ## Bibliografía
 
