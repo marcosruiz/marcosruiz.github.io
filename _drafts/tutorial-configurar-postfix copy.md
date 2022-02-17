@@ -48,7 +48,6 @@ Comprobamos que el fichero resolv.conf está bien, sino reiniciamos la máquina:
 # 127.0.0.53 is the systemd-resolved stub resolver.
 # run "systemd-resolve --status" to see details about the actual nameservers.
 
-nameserver 192.168.222.2
 nameserver 127.0.0.53
 search mruizg.es
 ```

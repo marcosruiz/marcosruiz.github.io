@@ -57,10 +57,34 @@ Leer el artículo [¿Qué es un IDS?](https://www.clavei.es/blog/que-es-un-ids-o
 
 Leer el artículo [UTM, un firewall que ha ido al gimnasio](https://www.incibe.es/protege-tu-empresa/blog/utm-firewall-ha-ido-al-gimnasio).
 
+- ¿Tiene sentido poner un UTM si ya tenemos un IDS en nuestra red?
+- ¿Tiene sentido poner un UTM si ya tenemos un IPS en nuestra red?
+- ¿Tiene sentido poner un IDS o IPS si ya tenemos un UTM en nuestra red perimetral?
+
 {:.section}
-## ¿Qué es una DMZ o red perimetral?
+## ¿Qué es una DMZ?
 
 Leer el artículo [DMZ: utiliza la zona desmilitarizada y protege tu red interna](https://www.ionos.es/digitalguide/servidores/seguridad/en-que-consiste-una-zona-desmilitarizada-dmz/).
+
+- ¿Qué es una DMZ? ¿Para qué sirve?
+- ¿Qué dos tipos de DMZ existen?
+
+{:.section}
+## ¿Qué es la red perimetral?
+
+Se conoce como perímetro de la red a la “frontera” entre el exterior y los ordenadores y servidores internos. Los elementos que la componen son:
+
+- **Routers frontera**: Es un dispositivo situado entre la red interna de y las redes de otros proveedores que intercambian el tráfico con nosotros y que se encarga de dirigir el tráfico de datos de un lado a otro. El último router que controlamos antes de Internet. Primera y última línea de defensa. Filtrado inicial y final. 
+- **Cortafuegos (firewalls)**: Es una herramienta diseñada para controlar las conexiones. Este puede permitir, limitar, cifrar, descifrar, el tráfico entre equipos o redes sobre la base de un conjunto de normas y otros criterios.
+
+<div class="card mb-2">
+  <div class="card-header">
+    <a data-toggle="collapse" data-target="#preguntaDMZRedPerimetral" class="question" href="#">¿Es lo mismo una DMZ y una red perimetral?</a>
+  </div>
+  <div class="collapse card-body" id="preguntaDMZRedPerimetral">
+    <p class="card-text">No</p>
+  </div>
+</div>
 
 ### Origen del término
 
@@ -70,6 +94,10 @@ El término zona desmilitarizada (DMZ, por sus siglas en inglés), aplicado a la
 ## ¿Qué es una VPN?
 
 Leer el artículo [VPN](/posts/vpn).
+
+- ¿Qué es una VPN?
+- ¿Qué ventajas aporta una VPN?
+- En el contexto de VPN ¿Qué dos tipos de topologias existen principalemente?
 
 {:.section}
 ## ¿Qué es un TCP Wrapper?
@@ -95,10 +123,7 @@ Leer el artículo [Servicio SSH](/posts/servicio-ssh/).
 - ¿Qué significan las siglas UTM?
 - ¿Qué es una DMZ?
 - En el contexto de DMZ ¿A qué se le llama bastión?
-- En el contexto de DMZ ¿En que consiste la configuración SOHO, multi-homed, screened host y screend subnet?
-- ¿Qué es una VPN?
-- ¿Qué ventajas aporta una VPN?
-- En el contexto de VPN ¿Qué dos tipos de topologias existen principalemente?
+- En el contexto de DMZ ¿En que consiste la configuración SOHO, multi-homed, screened host y screened subnet?
 - ¿Qué es un TCP Wrapper?
 - ¿Qué es SSH? ¿Cómo funciona?
 - ¿Qué es una auditoria de seguridad?
@@ -109,7 +134,7 @@ Leer el artículo [Servicio SSH](/posts/servicio-ssh/).
 - ¿En qué consiste la técnica Stak space de eliminación de datos del SO?
 - ¿Cómo se llama al proceso que identifica y recupera archivos eliminados?
 - ¿Cuándo debe realizarse un análisis forense?
-- ¿Es lo mismo DMZ que red perimetral?
+
 
 ## Bibliografía
 
