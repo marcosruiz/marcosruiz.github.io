@@ -48,6 +48,7 @@ Comprobamos que el fichero resolv.conf está bien, sino reiniciamos la máquina:
 # 127.0.0.53 is the systemd-resolved stub resolver.
 # run "systemd-resolve --status" to see details about the actual nameservers.
 
+nameserver 192.168.222.2
 nameserver 127.0.0.53
 search mruizg.es
 ```
@@ -481,7 +482,6 @@ Feb 13 22:40:18 smr-VirtualBox postfix/qmgr[5982]: 288D1456BA: from=<>, size=290
 Feb 13 22:40:18 smr-VirtualBox postfix/qmgr[5982]: 24468456B9: removed
 Feb 13 22:40:18 smr-VirtualBox postfix/local[6335]: 288D1456BA: to=<root@mruizg.es>, relay=local, delay=0.01, delays=0/0/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
 Feb 13 22:40:18 smr-VirtualBox postfix/qmgr[5982]: 288D1456BA: removed
-
 ```
 
 ![img-description](/assets/img/tutorial-configurar-postfix/spamhaus.png)
