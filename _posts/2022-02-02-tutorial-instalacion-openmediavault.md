@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Instalación y configuración de OpenMediaVault"
+title: "Tutorial: Instalación de OpenMediaVault"
 date: 2022-02-02 19:30:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática]
@@ -162,25 +162,7 @@ Utiliza las credenciales "admin" y "openmediavault" para hacer login.
 ![img-description](/assets/img/tutorial-instalacion-openmediavault/omv-dashboard.png)
 _Dashboard web de OpenMediaVault_
 
-## Configuración de OpenMediaVault
-
-Cambia la contraseña del usuario admin.
-
-![img-description](/assets/img/tutorial-instalacion-openmediavault/omv-password.png)
-_Pasos para cambiar la contraseña al usuario admin_
-
-Habilita el servicio FTP.
-
-![img-description](/assets/img/tutorial-instalacion-openmediavault/omv-ftp.png)
-_Pasos para activar el servicio FTP_
-
-Comprueba que el servicio SSH está habilitado.
-
-![img-description](/assets/img/tutorial-instalacion-openmediavault/omv-ssh.png)
-_Servicio SSH_
-
-
-## Vídeos
+## Vídeos opcionales
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/wg3vsJDm6T8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
