@@ -1,13 +1,13 @@
 ---
-title: "Práctica: VLAN con Packet Tracer"
+title: "(En proceso) Práctica: NAT con Packet Tracer"
 date: 2022-02-16 14:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
-tags: [packet tracer, redes locales, smr, vlan, práctica]
+tags: [packet tracer, redes locales, smr, nat, práctica]
 ---
 
 ## Objetivo
 
-El objetivo de esta práctica es aprender que es una VLAN y como configurarlas utilizando la herramienta Packet Tracer.
+El objetivo de esta práctica es aprender que es un NAT y como configurarlo utilizando la herramienta Packet Tracer.
 
 ## Actividades
 
@@ -16,13 +16,7 @@ A continuación se listan las actividades que se deben realizar para esta práct
 {:.activity}
 ### Tutorial
 
-Seguir los pasos del artículo [Práctica: VLAN con Packet Tracer](/posts/practica-vlan-packet-tracer).
-
-{:.activity}
-### 
-
-{:.activity}
-### 
+Seguir los pasos del artículo [Práctica: NAT con Packet Tracer](/posts/practica-nat-packet-tracer).
 
 ## Entrega y presentación
 

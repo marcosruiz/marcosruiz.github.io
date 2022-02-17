@@ -1,13 +1,13 @@
 ---
-title: "Práctica: WLAN con Packet Tracer"
+title: "(En proceso) Práctica: VLAN con Packet Tracer"
 date: 2022-02-16 14:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
-tags: [packet tracer, redes locales, smr, wlan, práctica]
+tags: [packet tracer, redes locales, smr, vlan, práctica]
 ---
 
 ## Objetivo
 
-El objetivo de esta práctica es aprender que es una WLAN y como configurarla utilizando la herramienta Packet Tracer.
+El objetivo de esta práctica es aprender que es una VLAN y como configurarlas utilizando la herramienta Packet Tracer.
 
 ## Actividades
 
@@ -16,7 +16,13 @@ A continuación se listan las actividades que se deben realizar para esta práct
 {:.activity}
 ### Tutorial
 
-Seguir los pasos del artículo [Práctica: WLAN con Packet Tracer](/posts/practica-wlan-packet-tracer).
+Seguir los pasos del artículo [Práctica: VLAN con Packet Tracer](/posts/practica-vlan-packet-tracer).
+
+{:.activity}
+### 
+
+{:.activity}
+### 
 
 ## Entrega y presentación
 
