@@ -25,14 +25,17 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
     - [Sistemas de almacenamiento en red](/posts/teoria-sistemas-de-almacenamiento-en-red/)
 - UD 5 - [Dispositivos específicos de la red local](/posts/dispositivos-especificos-de-la-red-local/)
     - [¿Qué es una VLAN?](/posts/vlan/)
+    - [Tutorial: Configurar una VLAN con Packet Tracer](/posts/tutorial-vlan-packet-tracer)
 - UD 6 - [Interconexión de equipos y redes](/posts/interconexion-de-equipos-y-redes/)
     - [Enrutamiento o encaminamiento](/posts/enrutamiento/)
     - [NAT o enmascaramiento IP](/posts/nat/)
+    - [Tutorial: Configurar una VLAN con Packet Tracer](/posts/tutorial-nat-packet-tracer)
 
-### Práctica
+### Prácticas
 
 - [Práctica: Red estática en Packet Tracer](/posts/practica-packet-tracer-red-estatica/)
 - [Práctica: Introducción a redes con Packet Tracer](/posts/practica-introduccion-packet-tracer/)
+- [Práctica: Enrutamiento con Packet Tracer](/posts/practica-enrutamiento-con-packet-tracer)
 
 ## Evaluación 3
 
@@ -40,5 +43,13 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
     - [Redes inalámbricas](/posts/redes-inalambricas/)
     - [Protocolo IPv6](/posts/protocolo-ipv6/)
     - [VPN](/posts/vpn/)
+    - [Tutorial: Configurar una WLAN con Packet Tracer](/posts/tutorial-wlan-packet-tracer)
 - UD 8 - Resolución de incidencias de una red de área local
 - UD 9 - Cumplimiento de las normas de prevención de riesgos laborales y protección medioambiental
+
+### Prácticas
+
+- [Práctica: VLAN con Packet Tracer](/posts/practica-vlan-packet-tracer)
+- [Práctica: NAT con Packet Tracer](/posts/practica-nat-packet-tracer)
+- [Práctica: WLAN con Packet Tracer](/posts/practica-wlan-packet-tracer)
+

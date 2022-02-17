@@ -7,13 +7,16 @@ tags: [packet tracer, redes locales, smr, wlan, práctica]
 
 ## Objetivo
 
+El objetivo de esta práctica es aprender que es una WLAN y como configurarla utilizando la herramienta Packet Tracer.
+
 ## Actividades
+
+A continuación se listan las actividades que se deben realizar para esta práctica.
 
 {:.activity}
 ### Tutorial
 
-Sigue los pasos del artículo [](/posts/tutorial-wlan-packet-tracer).
-
+Seguir los pasos del artículo [Práctica: WLAN con Packet Tracer](/posts/practica-wlan-packet-tracer).
 
 ## Entrega y presentación
 

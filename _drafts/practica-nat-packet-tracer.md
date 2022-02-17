@@ -7,10 +7,16 @@ tags: [packet tracer, redes locales, smr, nat, práctica]
 
 ## Objetivo
 
+El objetivo de esta práctica es aprender que es un NAT y como configurarlo utilizando la herramienta Packet Tracer.
+
 ## Actividades
 
+A continuación se listan las actividades que se deben realizar para esta práctica.
 
+{:.activity}
+### Tutorial
 
+Seguir los pasos del artículo [Práctica: NAT con Packet Tracer](/posts/practica-nat-packet-tracer).
 
 ## Entrega y presentación
 

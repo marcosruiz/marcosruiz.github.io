@@ -7,11 +7,22 @@ tags: [packet tracer, redes locales, smr, vlan, práctica]
 
 ## Objetivo
 
-
+El objetivo de esta práctica es aprender que es una VLAN y como configurarlas utilizando la herramienta Packet Tracer.
 
 ## Actividades
 
+A continuación se listan las actividades que se deben realizar para esta práctica.
 
+{:.activity}
+### Tutorial
+
+Seguir los pasos del artículo [Práctica: VLAN con Packet Tracer](/posts/practica-vlan-packet-tracer).
+
+{:.activity}
+### 
+
+{:.activity}
+### 
 
 ## Entrega y presentación
 
