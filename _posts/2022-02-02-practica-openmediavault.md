@@ -9,7 +9,7 @@ tags: [gnu linux, comandos, terminal, bash, seguridad informática, seguridad ac
 
 El objetivo de esta práctica ser capaz de montar un servidor NAS OpenMediaVault.
 
-Duración: - h.
+Duración: 6 h.
 
 ## Actividades
 
@@ -51,6 +51,8 @@ Crea un RAID5 con tres discos de 100MB cada uno. El RAID resultante será de 200
 Crea una carpeta compartida llamada public y compártela para que cualquiera pueda entrar a través de SSH o a través de FTPS.
 
 Crea una carpeta compartida llamada "profesor\<tuUsuario\>" para que el usuario "profesor\<tuUsuario\>" pueda añadir y borrar ficheros y el usuario "alumno\<tuUsuario\>" pueda ver y descargar los ficheros de dicha carpeta. Deberá funcionar a través de SSH y FTPS.
+
+Deberás demostrar el funcionamiento conectándote al servidor a través del navegador de archivos Thunar y Filezilla.
 
 {:.activity}
 ### Copias de seguridad
