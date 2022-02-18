@@ -43,17 +43,19 @@ Configura el servicio FTP usando TLS/SSL.
 {:.activity}
 ### Crear RAID5
 
-Crea un RAID5 con tres discos de 100MB cada uno.
+Crea un RAID5 con tres discos de 100MB cada uno. El RAID resultante será de 200MB.
 
 {:.activity}
 ### Compartir una carpeta pública dentro del RAID5
 
-Crea una carpeta compartida llamada public y compártela para que cualquiera pueda entrar.
+Crea una carpeta compartida llamada public y compártela para que cualquiera pueda entrar a través de SSH o a través de FTPS.
+
+Crea una carpeta compartida llamada "profesor\<tuUsuario\>" para que el usuario "profesor\<tuUsuario\>" pueda añadir y borrar ficheros y el usuario "alumno\<tuUsuario\>" pueda ver y descargar los ficheros de dicha carpeta. Deberá funcionar a través de SSH y FTPS.
 
 {:.activity}
 ### Copias de seguridad
 
-Añade y monta un disco de 100MB y programa copias de seguridad cada 10 minutos (para hacer pruebas puedes bajarlo a menos) de la carpeta compartida.
+Añade y monta un disco de 200MB y programa copias de seguridad cada 10 minutos (para hacer pruebas puedes bajarlo a 2 minutos) de la carpeta compartida. Se recomienda usar rsync.
 
 {:.activity}
 ### (Opcional) Copias de seguridad remota

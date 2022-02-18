@@ -19,6 +19,10 @@ Habilita el servicio FTP.
 ![img-description](/assets/img/tutorial-instalacion-openmediavault/omv-ftp.png)
 _Pasos para activar el servicio FTP_
 
+## Habilitar servicio FTPS
+
+
+
 ## Habilitar servicio SSH
 
 Comprueba que el servicio SSH está habilitado.
