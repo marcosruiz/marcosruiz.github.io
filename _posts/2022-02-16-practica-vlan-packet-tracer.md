@@ -7,7 +7,10 @@ tags: [packet tracer, redes locales, smr, vlan, práctica]
 
 ## Objetivo
 
-El objetivo de esta práctica es aprender que es una VLAN y como configurarlas utilizando la herramienta Packet Tracer.
+El objetivo de esta práctica es:
+- Aprender que son las VLAN 
+- Aprender como configurar VLAN en switches utilizando la herramienta Packet Tracer.
+- Verificar la conectividad extremo a extremo.
 
 ## Actividades
 
@@ -19,7 +22,29 @@ A continuación se listan las actividades que se deben realizar para esta práct
 Seguir los pasos del artículo [Práctica: VLAN con Packet Tracer](/posts/practica-vlan-packet-tracer).
 
 {:.activity}
-### 
+### Tres VLAN y dos switches
+
+Configurar tres VLAN con dos switches como se ve en la siguiente figura:
+
+
+![img-description](/assets/img/practica-vlan-packet-tracer/tresVlanDosSwitches.png)
+_Distribución de red_
+
+Cada VLAN deberá tener el siguiente nombre:
+
+- VLAN 2: INFORMATICA
+- VLAN 3: SISTEMAS
+- VLAN 4: MECATRÓNICA
+
+Pasos para resolver la tarea:
+
+1. Configurar Switch 0
+1. Configurar Switch 1
+1. Configurar las tres VLAN en el Switch 0
+1. Configurar las tres VLAN en el Switch 1
+1. Asignar interfaces a las VLAN
+1. Verificar la implementación de las VLAN
+
 
 {:.activity}
 ### 
@@ -41,3 +66,10 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 7. El documento no debe contener faltas ortográficas.
 8. Los comandos y ficheros de configuración que hayas utilizado deben quedar reflejados en el PDF de la entrega en texto para que permitirte copiar y pegar el día del examen todos los comandos de una manera rápida.
 9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
+
+## Bibliografía
+
+- [Ejercicios resueltos con Cisco Packet Tracer parte 2: VLAN y enlaces troncales](https://parzibyte.me/blog/2018/05/22/ejercicios-resueltos-cisco-vlan-enlaces-troncales/)
+- [Configuración de VLANs en Packet Tracer](https://www.raulprietofernandez.net/blog/packet-tracer/configuracion-de-vlans-en-packet-tracer)
+- [Enrutamiento entre VLANs con Packet Tracer](https://www.raulprietofernandez.net/blog/packet-tracer/enrutamiento-entre-vlans-con-packet-tracer)
+- [Packet Tracer: Configuración de redes VLAN](https://examenredes.com/3-3-12-packet-tracer-configuracion-de-redes-vlan-respuestas/)
