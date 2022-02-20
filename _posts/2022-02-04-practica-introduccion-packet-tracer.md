@@ -34,7 +34,7 @@ Pasos a realizar:
 
 Conectar dos switches con tres ordenadores cada uno. Debe haber dos redes privadas de clase C. Tres ordenadores deben estar en una red y tres ordenadores en otra de la siguiente manera:
 
-![img-description](/assets/img/practica-introduccion-packet-tracer/dos-redes-dos-switches.png)
+![img-description](/assets/img/practica-introduccion-packet-tracer/tresRedesDosSwitches.png)
 _Dos redes y dos switches: Distribución de redes_
 
 Pasos a realizar:
@@ -51,7 +51,7 @@ Pasos a realizar:
 
 Conectar dos switches con cuatro ordenadores cada uno. Debe haber dos redes públicas de clase C y una red pública de clase B. Deben estar distribuidos de la siguiente manera:
 
-![img-description](/assets/img/practica-introduccion-packet-tracer/tres-redes-dos-switches.png)
+![img-description](/assets/img/practica-introduccion-packet-tracer/tresRedesDosSwitches.png)
 _Tres redes y dos switches: Distribución de redes. Nota: los switches pertenecen a las 3 redes aunque no estén rodeados_
 
 Posteriormente cambiamos la máscara de la redes de clase C a 255.255.0.0. ¿Qué ocurre? ¿Por qué?
@@ -100,9 +100,9 @@ Pasos a realizar:
 {:.activity}
 ### Tres redes y tres routers con enrutamiento estático
 
-Utilizar tres router para conectar tres redes de clase C públicas entre sí **a través de tres redes** de clase C públicas. En cada red debe haber al menos dos ordenadores que tengan las direcciones IP límite, un servidor y una impresora. El enrutamiento de los routers debe ser estático.
+Utilizar tres router para conectar tres redes de clase C públicas entre sí **a través de dos redes** de clase C públicas. En cada red debe haber al menos dos ordenadores que tengan las direcciones IP límite, un servidor y una impresora. El enrutamiento de los routers debe ser estático.
 
-![img-description](/assets/img/practica-introduccion-packet-tracer/tresRedestresRouters.png)
+![img-description](/assets/img/practica-introduccion-packet-tracer/tresRedesTresRouters.png)
 _Tres redes y tres routers: Distribución de redes_
 
 Pasos a realizar:

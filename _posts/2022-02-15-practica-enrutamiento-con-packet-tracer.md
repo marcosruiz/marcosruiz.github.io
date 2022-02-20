@@ -40,6 +40,14 @@ Pasos a realizar:
     - Lo hacemos en ambos routers.
 9. Verificamos que podemos comunicarnos de una red a otra.
 
+
+### Opcional: Tres redes y tres routers con enrutamiento estático
+
+Utilizar tres router para conectar tres redes de clase C públicas entre sí **a través de tres redes** de clase C públicas. En cada red debe haber al menos dos ordenadores que tengan las direcciones IP límite, un servidor y una impresora. El enrutamiento de los routers debe ser estático.
+
+![img-description](/assets/img/practica-enrutamiento-con-packet-tracer/tresRedesTresRouters.png)
+_Tres redes y tres routers: Distribución de equipos_
+
 {:.activity}
 ### Tres subredes y tres routers con enrutamiento estático
 
