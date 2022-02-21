@@ -5,12 +5,4 @@ categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
 tags: [gnu linux, comandos, terminal, bash, servicios en red, teoría]
 ---
 
-## Introducción
-
-## Estructura de una red inalámbrica
-
 Leer artículo [Redes inalámbricas](/posts/redes-inalambricas).
-
-## Seguridad en LAN inalámbricas
-
-## Dispositivos inalámbricos
