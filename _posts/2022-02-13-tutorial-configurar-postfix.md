@@ -28,6 +28,7 @@ $ sudo -i
 # apt update
 # apt install bind9
 # apt install resolvconf
+# resolvconf -u
 ```
 
 Ejecutamos la siguiente instrucción para tener permisos de administrador.

@@ -27,10 +27,9 @@ Es decir tendremos 3 Redes, con las siguientes características:
 
 Estas serán las instrucciones modelo a usar:
 
-
 ```console
 Router(config)#ip nat inside source static [IP LOCAL] [IP EXTERNA]
-Router(config)#interface [INTERFAZ] 
+Router(config)#interface [INTERFAZ]
 Router(config-if)#ip nat outside
 Router(config-if)#ip nat inside
 Router(config)#ip route 0.0.0.0 0.0.0.0 [INTERFAZ DE SALIDA]
@@ -67,6 +66,7 @@ Y por último indicamos que esta interfaz será el de NAT de salida.
 ```console
 ip nat outside
 ```
+
 Para activar la interfaz por comando:
  
 ```console
@@ -129,7 +129,7 @@ Ip route 0.0.0.0 0.0.0.0 <interfaz de salida>
 En nuestro ejemplo:
 
 ```console
-Ip route 0.0.0.0 0.0.0.0 fa0/0
+ip route 0.0.0.0 0.0.0.0 fa0/0
 ```
 
 Y finalmente grabaremos los cambios con la instrucción:

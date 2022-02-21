@@ -14,9 +14,11 @@ El objetivo de esta práctica es aprender que es un NAT y como configurarlo util
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
 {:.activity}
-### Tutorial
+### Dos redes privadas y dos routers
 
-Seguir los pasos del artículo [Práctica: NAT con Packet Tracer](/posts/practica-nat-packet-tracer).
+Seguir los pasos del artículo [Tutorial: Configurar un NAT estático en Packet Tracer](/posts/tutorial-nat-packet-tracer).
+
+
 
 ## Entrega y presentación
 
