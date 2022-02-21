@@ -3,6 +3,7 @@ title: Redes Locales
 date: 2022-02-10 23:40:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
+pin: true
 ---
 
 ## Evaluación 1

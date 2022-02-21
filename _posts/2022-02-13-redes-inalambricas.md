@@ -5,6 +5,7 @@ categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 ---
 
+{:.section}
 ## Introducción
 
 Hemos visto en el punto anterior cómo hacer una red cableada interconectando equipos, ahora vamos a ver cómo se puede hacer esto mismo con una red inalámbrica. 
@@ -13,6 +14,7 @@ En una red inalámbrica (WLAN – Wireless LAN) como su nombre indica, no se usa
 
 Las comunicaciones inalámbricas se realizan generando ondas electromagnéticas que se propagan por el medio. 
 
+{:.section}
 ## Adaptadores de red
 
 Necesitamos que: 
@@ -25,6 +27,7 @@ Necesitamos que:
 
 Estos adaptadores realizarán lo mismo que los cableados: Construcción de tramas, detección de errores, acceso al medio. 
 
+{:.section}
 ## Conexión física de los adaptadores de red
 
 Dentro de los modelos posibles de adaptadores observamos los siguientes:
@@ -57,26 +60,117 @@ _USB con antena oculta_
 
 Cómo podemos comprobar en lugar de un conector hembra para intermediar entre la tarjeta y la red cableada, lo que hace es utilizar un módulo de radio y una antena a través de la cual puedan recibirse o transmitirse ondas de radio.
 
+{:.section}
+## Estándares
+
 El estándar más extendido es el IEEE 802.11 también conocido como WiFi. Existen múltiples variantes del estándar que ofertan distintas velocidades y distancias de cobertura. A cada variante se le asigna una letra y operar con características diferentes. Como ejemplo la siguiente tabla:
 
 ![img-description](/assets/img/redes-inalambricas/estandaresWifi.png)
 _Características de los distintos estándares WiFi_
 
+{:.section}
 ## Aspectos generales de la configuración de redes inalámbricas
 
 Deberemos informar de estos aspectos:
 
-- **SSID** (Service Set Identifier o Identificador del conjunto de servicio): Es el nombre que se le da a la red, puede estar compuesta de letras y números. Podemos configurar el punto de acceso para que no publique el nombre de la red inalámbrica de modo que sólo quien conoces el SSID pueda conectarse a ella.
-- **Canal**: es la frecuencia de la señal de radio en la que va a trabajar la red. Es posible elegir un canal entre varios, ello es debido a la posibilidad de solaparse con otras redes. 
-- **Seguridad**: es el mecanismo que se utiliza para evitar que equipos autorizados puedan usar la red. Tenemos tres posibles mecanismos: 
-    - **Cifrado de la comunicación**: usar como método WPA2. 
-    - **Autenticación**: es decir que el usuario de la red debe suministrar sus credenciales (usuario y contraseña). 
-    - **Lista de acceso**: creamos una lista de aquellos equipos que pueden utilizar la red inalámbrica. 
+- SSID
+- Canal
+- Seguridad
 
-Dependiendo del sistema operativo utilizar la forma de realizar la configuración difiere un poco, en Ubuntu usamos el comando `iwconfig` para obtener detalles de la interfaz inalámbrica.
+{:.subsection}
+### SSID
 
-En Windows la manera más sencilla es hacerlo de forma automática. Pulsando sobre el icono que representa un globo terráqueo con el botón derecho del ratón aparecen las opciones.
+SSID (Service Set Identifier o Identificador del conjunto de servicio) es el identificador que se le da a la red, puede estar compuesta de letras y números. Podemos configurar el punto de acceso para que no publique el nombre de la red inalámbrica de modo que sólo quien conoces el SSID pueda conectarse a ella.
 
+BSSID es el identificador de un punto de acceso cuyo SSID está oculto ("not broadcasted"). A priori, Sólo se conoce su MAC.
+
+{:.subsection}
+### Canal
+
+El canal es la frecuencia de la señal de radio en la que va a trabajar la red. Es posible elegir un canal entre varios, ello es debido a la posibilidad de solaparse con otras redes. 
+
+Las especificaciones 802.11b, 8yn utilizan un espectro de frecuencias que va desde los 2412 MHz hasta los 2472 MHz. Este espectro se divide en canales, cada uno de ellos con un ancho de 22 MHz. 
+
+Cuando diferentes redes operan en canales muy próximos, sus rendimientos caen debido al solapamiento de dichos canales, que provoca interferencias. 
+
+Como vemos en el gráfico inferior, existen combinaciones de canales que no se solapan entre sí. Generalmente, los dispositivos inalámbricos están configurados para operar automáticamente en los canales 1, 6 y 11.
+
+![img-description](/assets/img/redes-inalambricas/canales.webp)
+_Canales WiFi_
+
+Los estándares 802.11a y 802.11n sobre 5 Ghz utilizan un sistema de canales mas complejo de estudiar que los que trabajan con 2,4 GHz. 
+
+Cada país o región establece su lista de canales válidos en el espectro de los 5 GHz. En nuestro caso, para toda la Unión Europea se emplean canales que tienen una anchura de 20 MHz (desde el 36 hasta el 48) o de 40 MHz (desde el 52 hasta el 140). 
+
+Cuando se emplean canales de 5 GHz no existe solapamiento. Los canales están adyacentes unos a otros y no existen problemas de interferencias entre ellos.
+
+{:.subsection}
+### Seguridad
+
+Es el mecanismo que se utiliza para evitar que equipos autorizados puedan usar la red. Tenemos tres posibles mecanismos: 
+
+- Sistemas de cifrado
+- Autenticación
+- Filtrado MAC
+
+
+{:.subsubsection}
+#### Sistemas de cifrado
+
+En WPA/WPA2 la información que se intercambia entre estaciones y APs va cifrada, ofreciendo no sólo un mecanismo de control de acceso sino también un mecanismo para garantizar la privacidad de la información. Los dos sistemas de cifrados usados en WPA/WPA2 son:
+
+- **TKIP**: Cifrado basado en el intercambio de claves entre cada estación y el AP en cada sesión. Generalmente, en sistemas WPA2 ya no se incorpora la encriptación TKIP, aunque todavía se conserva por compatibilidad.
+- **AES**: más potente que TKIP, es el sistema más usado en la actualidad.
+
+{:.subsubsection}
+#### Sistemas de autenticación
+
+Es decir, que el usuario de la red debe suministrar sus credenciales (usuario y contraseña).
+
+- **WEP**: sistema de acceso con una clave de 64 Ó 128 bits (5ó 13 caracteres ASCII). Es muy compatible, pero se puede romper con facilidad. Es el único sistema que puede utilizarse en redes Ad Hoc y en adaptadores más antiguos. 
+- **WPA/WPA2**: sistemas de acceso a APs mucho más seguros que WEP. WPA2 es una mejora de WPA. Existen dos modalidades para cada una de ellas: 
+    - **WPA/WPA2 PSK** (PreShared Key) o PERSONAL: requiere una palabra de paso de 8 caracteres como minimo, la misma para todos los usuarios que quieren conectarse a la WLAN. El inconveniente es que si se revela públicamente la PSK (clave precompartida) hay que cambiarla y comunicarlo de alguna forma a todos los usuarios de la red. 
+    - **WPA/WPA2 ENTERPRISE** (o WPA/WPA2 a secas): se administran pares de nombres de usuario/contraseñas. Ofrece las siguientes ventajas: 
+        - Mayor control: se puede monitorizar quién accede, cuando, etc. 
+        - Mayor seguridad: si un usuario revela su usuario y clave, basta con eliminarlo sin que esto afecte al resto.
+
+{:.subsubsection}
+#### Filtrado MAC
+
+FILTRADO MAC: en un AP se puede configurar un sistema que permite establecer mecanismos de acceso al mismo basados en la dirección MAC (0 dirección fisica) de los adaptadores inalámbricos. Existen dos tipos de filtrado: 
+
+- LISTA DE ACCESO (o LISTA BLANCA): filtrado MAC basado en la confección de una lista de direcciones físicas cuyo acceso al AP esté permitido, mientras que el resto NO. 
+- LISTA DE PROHIBIDOS (o LISTA NEGRA): filtrado MAC basado en la confección de una lista de direcciones físicas cuyo acceso al AP esté prohibido, mientras que el resto NO. Teniendo en cuenta que existen formas de suplantar una dirección MAC mediante software, se antoja más útil el empleo de listas blancas que de listas negras.
+
+{:.subsubsection}
+#### Servicio RADIUS
+
+El servicio RADIUS (Remote Autenthication Dial-In User Service) permite la autenticación personalizada de usuarios para la entrada en una red. Resulta especialmente útil en redes inalámbricas con WPA/WPA2 ENTERPRISE. Las características de un servicio RADIUS para redes con WPA/WPA2 son las siguientes: 
+
+- El listado de usuarios y contraseñas se almacenan en un servidor de claves (servidor AAA o servidor RADIUS). 
+- Los clientes RADIUS serán los puntos de acceso inalámbrico de la red. 
+- El servidor RADIUS comparte con cada uno de los clientes una clave secreta (o SECRETO PRECOMPARTIDO). 
+- El puerto por defecto para RADIUS es el 1645 en equipamiento Cisco y 1812 en el resto.
+
+![img-description](/assets/img/redes-inalambricas/configuracionClienteRadiusGui.png)
+_Configuración de un cliente RADIUS a través del cliente web_
+
+![img-description](/assets/img/redes-inalambricas/configuracionServidorRadiusPacketTracer.png)
+_Configuración del servidor RADIUS en Packet Tracer_
+
+{:.subsubsection}
+#### WPS
+
+WPS (Wi-Fi Protected Setup): es un mecanismo incorporado en APs y routers inalámbricos para simplificar la conexión de estaciones inalámbricas en entornos domésticos o de pequeña oficina (o SOHO: Small Office, Home Office). **No añade seguridad extra**. 
+
+Existen diferentes formas de agregar dispositivos a una red Wi-Fi con WPS: 
+
+- Introduciendo un **PIN** del AP en el momento en el que una estación intenta conectarse. Es el mínimo método para ser compatible con WPS. 
+- PBC: se presiona un **botón** físico (o software) en el AP, y durante un corto espacio de tiempo (de 1 a 2 minutos), las estaciones en el alcance se pueden conectara é directamente pulsando otro botón en ellas. Poco seguro, pues una estación no permitida puede aprovechar ese tiempo para autenticarse. 
+- Si la estación y el AP son compatibles con la tecnología **NFC** (Near Field Communication, identificándose por radiofrecuencia), la mera proximidad de la estación al AP la identifica y la autentica. 
+- Introduciendo una memoria **USB** en el AP con las credenciales de la estación.
+
+{:.section}
 ## Dispositivos de interconexión de redes inalámbricas
 
 Para todas las variantes de WiFi tenemos una serie de conceptos comunes:
@@ -93,10 +187,12 @@ Para todas las variantes de WiFi tenemos una serie de conceptos comunes:
 - La movilidad, que indica la capacidad de cambiar la ubicación de los terminales.
 - Los límites de la red son difusos ya que pueden solaparse diferentes BSS.
 
+{:.subsection}
 ### Repetidores
 
-Son dispositivos que permiten extender el área de cobertura de una red inalámbrica. Conforme la señal viaja por el medio va perdiendo potencia por lo que los clientes no sepan distancia todo lo que carrillo. Los repetidores permiten que esa distancia pueda ser mayor. Estos dispositivos pueden regenerar la señal entre clientes o entre clientes y puntos de acceso. 
+Son dispositivos que permiten extender el área de cobertura de una red inalámbrica. Conforme la señal viaja por el medio va perdiendo potencia. Los repetidores permiten que esa distancia pueda ser mayor. Estos dispositivos pueden regenerar la señal entre clientes o entre clientes y puntos de acceso. 
 
+{:.subsection}
 ### Puntos de Acceso
 
 Son dispositivos que permiten conectar una red inalámbrica con la red cableada. También hacen la función de concentrador inalámbrico es decir de switch inalámbrico.
@@ -105,28 +201,42 @@ Normalmente en el mercado encontramos routers con diferentes interfaces, una de 
 
 Debemos tener en cuenta que cuantos más clientes se conecten en la red cableada a través de un punto de acceso más lento es el acceso.
 
-### Puentes Inalámbricos
+### Puentes inalámbricos
 
 Los puentes inalámbricos son elementos que permiten la interconexión de dos redes, inalámbrica con inalámbrica o inalámbrica con cableada, que pueden usar recientes arquitecturas de red o distintos protocolos. La diferencia con respecto a las cableadas es que estos puentes dan también conexión inalámbrica.
 
 Uno de los usos más comunes de los puentes inalámbricos es el de conectar dos redes cableadas mediante un enlace inalámbrico.
 
+{:.section}
 ## Topologías de red WLAN
 
 En las redes inalámbricas (WLAN, Wireless LAN) encontramos distintas configuraciones y topologías en función de cómo estén distribuidos los clientes y los puntos de acceso.
 
 Fundamentalmente hay dos configuraciones:
 
-- **Infraestructura**: es aquella en la que uno de los nodos de red que su punto de acceso. Los nodos no se comunican todos entre sí directamente mediante enlaces punto a punto, si no siempre a través del punto de acceso.
-- **Independientes o ad hoc**: cuando las estaciones se comunican directamente entre sí (punto a punto) sin usar puntos de acceso. Es una red con topología en malla, en la que los enlaces se establecen entre equipos que se encuentran en la misma área de cobertura.
+{:.subsection}
+### Infraestructura 
 
+Es aquella en la que uno de los nodos de red que su punto de acceso. Los nodos no se comunican todos entre sí directamente mediante enlaces punto a punto, si no siempre a través del punto de acceso.
+
+{:.subsection}
+### Ad hoc
+
+Todas las estaciones están conectadas entre sí (si el alcance lo permite) sin necesidad de un dispositivo intermediario de conexiones inalámbricas, formando una malla.
+
+![img-description](/assets/img/redes-inalambricas/topologiaAdHoc.png)
+_Topología Ad Hoc_
+
+Las estaciones tienden a conectarse a las estaciones más cercanas. Aunque la instalación es sencilla y barata, proporciona menor rendimiento y seguridad que una red en infraestructura.
+
+{:.section}
 ## Instalación de una red inalámbrica
 
 La instalación de una red inalámbrica no varía mucho respecto a la instalación de una por cable. Los principales pasos son los siguientes: 
 - Instalación el hardware de red: 
     - Instalación de los adaptadores de red WiFi, 
     - Instalación y configuración del punto de acceso inalámbrico. 
-    - Encender los equipos que integran la red WiFi y 
+    - Encender los equipos que integran la red WiFi.
     - Configurar el sistema operativo.
 - Instalación del software de red: 
     - Instalación de los controladores de los adaptadores de red WIFI.
@@ -136,6 +246,7 @@ La instalación de una red inalámbrica no varía mucho respecto a la instalaci�
     - Proteger la red inalámbrica, es decir, dotar de seguridad. 
 
 
+{:.section}
 ## Aplicaciones de las WLAN
 
 Las aplicaciones más extendidas en redes locales inalámbricas son:
@@ -145,4 +256,4 @@ Las aplicaciones más extendidas en redes locales inalámbricas son:
 
 ## Bibliografía
 
-- [](https://docs.google.com/presentation/d/1WtQCC0onu9bGuN6yeUlCEdbqe7srCWYqWqTmaTPPV2c/present#slide=id.i0
+- [UT4: REDES INALÁMBRICAS](https://docs.google.com/presentation/d/1WtQCC0onu9bGuN6yeUlCEdbqe7srCWYqWqTmaTPPV2c/present#slide=id.i0)
