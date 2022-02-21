@@ -117,15 +117,15 @@ Router(config-if)# ip nat inside
 Indicamos las direcciones fijas que tendrán las máquinas fuera de la red interna.
 
 ```console
-ip nat inside source static <@interna> <@externa>
+Router(config)# ip nat inside source static <@interna> <@externa>
 ```
 
 En nuestro ejemplo:
 
 ```console
-ip nat inside source static 192.168.0.2 5.5.5.5 (el servidor)
-ip nat inside source static 192.168.0.3 5.5.5.6 (la impresora)
-exit
+Router(config)# ip nat inside source static 10.0.0.2 5.5.5.5
+Router(config)# ip nat inside source static 10.0.0.3 5.5.5.6
+Router(config)# exit
 ```
 
 ### Paso 4
@@ -133,19 +133,19 @@ exit
 Indicamos el enrutamiento estático para ello usaremos esta forma especial.
 
 ```console
-ip route 0.0.0.0 0.0.0.0 <interfaz de salida>
+Router(config)# ip route 0.0.0.0 0.0.0.0 <interfaz de salida>
 ```
 
 En nuestro ejemplo:
 
 ```console
-ip route 0.0.0.0 0.0.0.0 fa0/0
+Router(config)# ip route 0.0.0.0 0.0.0.0 fa0/0
 ```
 
 Y finalmente grabaremos los cambios con la instrucción:
 
 ```console
-copy run start – 
+Router# copy run start
 ```
 
 y pulsaremos enter para aceptar el guardado. 
@@ -153,13 +153,13 @@ y pulsaremos enter para aceptar el guardado.
 Si queremos ver cómo ha quedado la tabla de NAT usaremos esta instrucción:
 
 ```console
-sh ip nat translations
+Router(config)# show ip nat translations
 ```
 
 Obteniendo algo similar a esto:
 
 ```console
-Router#sh ip nat translations 
+Router# sh ip nat translations
 Pro  Inside global     Inside local       Outside local      Outside global
 ---  5.5.5.5           10.0.0.2           ---                ---
 ---  5.5.5.6           10.0.0.3           ---                ---
@@ -172,19 +172,19 @@ Igual que como hacemos siempre, con la excepción de que configuraremos la ruta 
 Indicamos el enrutamiento estático para ello usaremos esta forma especial.
 
 ```console
-ip route 0.0.0.0 0.0.0.0 <interfaz de salida>
+Router(config)# ip route 0.0.0.0 0.0.0.0 <interfaz de salida>
 ```
 
 En nuestro ejemplo:
 
 ```console
-ip route 0.0.0.0 0.0.0.0 fa0/0
+Router(config)# ip route 0.0.0.0 0.0.0.0 fa0/0
 ```
 
 Y finalmente grabaremos los cambios con la instrucción:
 
 ```console
-copy run start
+Router# copy run start
 ```
 
 y pulsaremos enter para aceptar el guardado. 

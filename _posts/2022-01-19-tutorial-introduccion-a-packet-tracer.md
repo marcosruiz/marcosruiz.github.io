@@ -128,6 +128,10 @@ El siguiente comando guarda la configuración actual como configuración de inic
 copy running-config startup-config
 ```
 
+## Configuración de interfaz en Packet Tracer
+
+Para ver siempre las interfaces ir a Options -> Preferences -> Interface,
+y activar la opción "Always Show Port Labels in Logical Workspace". Esto nos simplificará mucho el trabajo.
 
 ## Errores habituales
 

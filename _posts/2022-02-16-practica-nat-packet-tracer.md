@@ -14,9 +14,21 @@ El objetivo de esta práctica es aprender que es un NAT y como configurarlo util
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
 {:.activity}
-### Dos redes privadas y dos routers
+### Un router y un router NAT estático
 
 Seguir los pasos del artículo [Tutorial: Configurar un NAT estático en Packet Tracer](/posts/tutorial-nat-packet-tracer).
+
+{:.question}
+¿Qué ventajas tiene utilizar una NAT estática sobre no utilizarla?
+
+
+{:.activity}
+### Dos router NAT estáticos
+
+Como se puede observar, la red 192.168.0.0/24 forma parte del rango de direcciones IPv4 privadas por lo que también se debe convertir el router de la izquierda en un router NAT con la subred pública 4.4.4.4/24.
+
+{:.activity}
+### Dos router NAT estáticos
 
 
 
