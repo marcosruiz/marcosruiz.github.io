@@ -7,7 +7,7 @@ tags: [smr, tutorial, nat, packet tracer]
 
 ## Introducción y objetivo
 
-Nuestro objetivo es crear una NAT estática con los elementos que ya conocíamos, a saber, pcs, switches, routers. Usaremos el sistema operativo de estos elementos que podemos ver en la pestaña CLI.
+Nuestro objetivo es crear una NAT estática con los elementos que ya conocíamos; PCs, switches y routers. Usaremos el sistema operativo de estos elementos que podemos ver en la pestaña CLI.
 
 En nuestro caso dejaremos con NAT estática el servidor y la impresora de la derecha, que tendrán una dirección IP interna (10.0.0.2 y 10.0.0.3) y una dirección IP externa por la que se les conocerá (5.5.5.5 y 5.5.5.6, respectivamente).
 
@@ -58,19 +58,29 @@ interface <tipo de interfaz> <numeración del interfaz>
 En nuestro ejemplo: 
 
 ```console
-interface fa 0/0
+Router(config)# interface fa 0/0
+```
+
+```console
+Router(config-if)# ip address <dirección interna> <máscara de red>
+```
+
+En nuestro caso: 
+
+```console
+Router(config-if)# ip address 1.2.3.1 255.255.255.252
 ```
 
 Y por último indicamos que esta interfaz será el de NAT de salida.
 
 ```console
-ip nat outside
+Router(config-if)# ip nat outside
 ```
 
 Para activar la interfaz por comando:
  
 ```console
-no shutdown
+Router(config-if)# no shutdown
 ```
 
 ### Paso 2
@@ -78,28 +88,28 @@ no shutdown
 Configuramos la otra interfaz que estamos usando.
 
 ```console
-interface <tipo de interfaz> <numeración del interfaz>
+Router(config)# interface <tipo de interfaz> <numeración del interfaz>
 ```
 En nuestro ejemplo: 
 
 ```console
-interface fa 0/1
+Router(config)# interface fa 0/1
 ```
 
 ```console
-ip address <dirección interna> <máscara de red>
+Router(config-if)# ip address <dirección interna> <máscara de red>
 ```
 
 En nuestro caso: 
 
 ```console
-ip address 10.0.0.1 255.255.255.0
+Router(config-if)# ip address 10.0.0.1 255.255.255.0
 ```
 
 Y por último indicamos que esta interfaz será el de nat de entrada.
 
 ```console
-ip nat inside
+Router(config-if)# ip nat inside
 ```
 
 ### Paso 3
@@ -123,7 +133,7 @@ exit
 Indicamos el enrutamiento estático para ello usaremos esta forma especial.
 
 ```console
-Ip route 0.0.0.0 0.0.0.0 <interfaz de salida>
+ip route 0.0.0.0 0.0.0.0 <interfaz de salida>
 ```
 
 En nuestro ejemplo:
