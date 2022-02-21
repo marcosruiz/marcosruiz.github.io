@@ -1,5 +1,5 @@
 ---
-title: "(En proceso) Práctica: VLAN con Packet Tracer"
+title: "Práctica: VLAN con Packet Tracer"
 date: 2022-02-16 14:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [packet tracer, redes locales, smr, vlan, práctica]
@@ -17,15 +17,14 @@ El objetivo de esta práctica es:
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
 {:.activity}
-### Tutorial
+### Tres VLAN, un switch y un router
 
-Seguir los pasos del artículo [Práctica: VLAN con Packet Tracer](/posts/practica-vlan-packet-tracer).
+Seguir los pasos del artículo [Tutorial: VLAN con Packet Tracer](/posts/tutorial-vlan-packet-tracer).
 
 {:.activity}
 ### Tres VLAN y dos switches
 
 Configurar tres VLAN con dos switches como se ve en la siguiente figura:
-
 
 ![img-description](/assets/img/practica-vlan-packet-tracer/tresVlanDosSwitches.png)
 _Distribución de red_
@@ -47,13 +46,25 @@ Pasos para resolver la tarea:
 
 
 {:.activity}
-### 
+### Tres VLAN, tres switches y un router
+
+El esquema de la red que queremos emular, es el que se ve en la imagen siguiente. Tenemos 2 oficinas o aulas con N equipos conectados en cada una de ellas (en este caso hay 2 equipos en cada oficina). En cada oficina hay un switch, y cada switch se conecta a un switch central. Por último, el switch central se conecta al router de acceso a Internet. Cada oficina está en una VLAN, y a diferencia de otros ejemplos, queremos que los equipos de una VLAN se puedan conectar con equipos de otra VLAN por el motivo que sea.
+
+El esquema de red es el siguiente:
+
+![img-description](/assets/img/practica-vlan-packet-tracer/enrutamiento-entre-vlans-001.webp)
+_Esquema de red_
+
+En al siguiente tabla se muestra el direccionamiento que se ha usado para cada uno de los equipos del esquema de red. Hay que prestar especial atención a las VLANs en las que está cada uno de los elementos del esquema:
+
+![img-description](/assets/img/practica-vlan-packet-tracer/enrutamiento-entre-vlans-002.webp)
+_Direccionamiento de red_
 
 ## Entrega y presentación
 
 La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del fichero ZIP sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.zip".
 
-En la raíz del fichero ZIP deben encontrarse el documento PDF con el nombre "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.pdf" y las actividades de Packet Tracer en formato PKT con el nombre "actividad_\<NúmeroDeActividad\>.pkt".
+En la raíz del fichero ZIP deben encontrarse el documento PDF con el nombre "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.pdf" y las actividades de Packet Tracer en formato PKT con el nombre "\<NúmeroDeActividad\>_actividad.pkt".
 
 Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 

@@ -72,3 +72,61 @@ exit
 Este proceso desde el paso 1 hasta el 4 hay que repetirlo para cada una de las VLAN que queramos configurar. 
 
 De este modo indicamos qué puertos del switch son para cada VLAN.
+
+
+![img-description](/assets/img/tutorial-vlan-packet-tracer/configuracionSwitch.png)
+_Configuración del switch_
+
+Tras ello queda por configurar el puerto que hemos reservado para la comunicación con el router.
+De nuevo mediante CLI.
+
+Indicaremos `interface fa 0/24` (el puerto que habíamos reservado).
+
+Y ahora indicaremos cómo se va a hacer la comunicación por este puerto, el modo troncal.
+
+```console
+switchport mode trunk
+exit
+```
+
+Una última instrucción será guarda en la memoria del dispositivo los cambios que hemos hecho para que se conserven. Escribiremos: `copy run start` y pulsaremos enter para aceptar el guardado.
+
+## Configuración del router
+
+Para poder conseguir que estas VLAN se puedan comunicar entre sí, necesitaremos de un router que haga posible el intercambio de información.
+
+Para ello de nuevo deberemos entrar por la pestaña CLI.
+
+```console
+enable
+config ter
+```
+
+### Paso 1
+
+`interface <tipo de puerto> <numeración del puerto>.<número de vlan>`
+En nuestro ejemplo: `interface fa 0/0.5`.
+
+### Paso 2
+
+Ahora indicaremos el tipo de encapsulamiento de datos que usará: dot1Q, según esta instrucción:
+`encapsulation dot1Q <número de vlan>`, en nuestro ejemplo: `encapsulation dot1Q 5`.
+
+### Paso 3
+Indicaremos la dirección que tendrá el router en esa VLAN, así como la máscara, según este formato de instrucción: `ip address <dirección del router> <máscara de red>`.
+
+En nuestro ejemplo:
+
+```console
+ip address 192.168.1.1 255.255.255.0
+exit
+```
+
+Los pasos 1 a 3 se repetirán para cada VLAN que tengamos que configurar, cambiando obviamente los números de VLAN y las direcciones del router para cada una de las mismas.
+
+Y finalmente grabaremos los cambios con la instrucción: `copy run start` y pulsaremos enter para aceptar el guardado. 
+
+Obteniendo algo similar a esto:
+
+![img-description](/assets/img/tutorial-vlan-packet-tracer/configuracionRouter.png)
+_Configuración del router_

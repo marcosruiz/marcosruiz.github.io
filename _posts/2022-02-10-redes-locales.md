@@ -30,7 +30,7 @@ pin: true
 - UD 6 - [Interconexión de equipos y redes](/posts/interconexion-de-equipos-y-redes/)
     - [Enrutamiento o encaminamiento](/posts/enrutamiento/)
     - [NAT o enmascaramiento IP](/posts/nat/)
-    - [Tutorial: Configurar una VLAN con Packet Tracer](/posts/tutorial-nat-packet-tracer)
+    - [Tutorial: Configurar un NAT con Packet Tracer](/posts/tutorial-nat-packet-tracer)
 
 ### Prácticas
 
