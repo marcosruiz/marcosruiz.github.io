@@ -23,12 +23,16 @@ Seguir los pasos del artículo [Tutorial: Configurar un NAT estático en Packet 
 
 
 {:.activity}
-### Dos router NAT estáticos
+### Dos routers NAT estáticos
 
 Como se puede observar, la red 192.168.0.0/24 forma parte del rango de direcciones IPv4 privadas por lo que también se debe convertir el router de la izquierda en un router NAT con la subred pública 4.4.4.4/24.
 
+{:.question}
+
+
 {:.activity}
-### Dos router NAT estáticos
+### Dos router 
+
 
 
 

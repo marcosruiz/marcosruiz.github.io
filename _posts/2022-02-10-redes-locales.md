@@ -6,6 +6,12 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 pin: true
 ---
 
+<!--<style>
+  .post h1, .post-content h2, .post-content h3, .post-content h4{
+    color: #6a040f;
+  }
+</style>-->
+
 ## Evaluación 1
 
 ### Teoría
