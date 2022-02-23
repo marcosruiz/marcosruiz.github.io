@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Instalación de OpenMediaVault"
+title: "Tutorial: Configuración de OpenMediaVault"
 date: 2022-02-17 21:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática]
