@@ -9,7 +9,7 @@ tags: [gnu linux, comandos, terminal, bash, seguridad informática]
 
 Cambia la contraseña del usuario admin.
 
-![img-description](/assets/img/tutorial-instalacion-openmediavault/omv-password.png)
+![img-description](/assets/img/tutorial-configuracion-openmediavault/omv-password.png)
 _Pasos para cambiar la contraseña al usuario admin_
 
 ## Añadir discos en VirtualBox
@@ -96,10 +96,10 @@ _Pasos para montar RAID5 en el sistema de ficheros_
 
 Comprueba que el servicio SSH está habilitado.
 
-![img-description](/assets/img/tutorial-instalacion-openmediavault/omv-ssh.png)
+![img-description](/assets/img/tutorial-configuracion-openmediavault/omv-ssh.png)
 _Servicio SSH_
 
-Comprueba que te puedes conectar desde un cliente Zorin OS que esté en la misma red local. Si no funciona es debido a que dicho usuario debe estar en el grupo ssh.
+Comprueba que te puedes conectar desde un cliente Zorin OS que esté en la misma red local. ⚠️ Dicho usuario debe estar en el grupo ssh.
 
 ![img-description](/assets/img/tutorial-configuracion-openmediavault/conexionSshDesdeCliente.png)
 _Conexión SSH a través de terminal desde cliente Zorin OS_
@@ -108,6 +108,8 @@ Si hemos creado nuestro RAID5 y lo hemos montado deberá estar montado en la rut
 
 ![img-description](/assets/img/tutorial-configuracion-openmediavault/raid14.png)
 _Conexión SSH a traves del navegador de ficheros_
+
+Como vemos se utiliza el protocolo SFTP ya que funciona sobre SSH.
 
 ![img-description](/assets/img/tutorial-configuracion-openmediavault/raid15.png)
 _Conexión SSH a traves del navegador de ficheros_
@@ -140,7 +142,7 @@ _Prueba de carpeta public desde cliente Zorin OS Lite_
 
 Habilita el servicio FTP.
 
-![img-description](/assets/img/tutorial-instalacion-openmediavault/omv-ftp.png)
+![img-description](/assets/img/tutorial-configuracion-openmediavault/omv-ftp.png)
 _Pasos para activar el servicio FTP_
 
 ## Habilitar servicio FTPS
@@ -157,6 +159,11 @@ Rellenamos los datos y pulsamos en Salvar:
 ![img-description](/assets/img/tutorial-configuracion-openmediavault/ftps3.png)
 _Pasos para crear un certificado SSL_
 
+Añadimos el certificado al servidor FTP.
+
+![img-description](/assets/img/tutorial-configuracion-openmediavault/ftps8.png)
+_Habilitar conexiones SSL en el servicio FTP_
+
 ## Añadir carpetas compartidas al servicio FTP
 
 En Servicios > FTP > Pestaña Compartidos podemos añadir carpetas compartidas (en el caso de que las tengamos) como se muestra a continuación.
@@ -172,34 +179,33 @@ _Permisos de la carpeta compartida public_
 
 ## Conexión a servidor FTPS desde cliente Zorin OS (Filezilla)
 
-A continuación se muestran los pasos para conectarse al servicio FTPS de OMV.
+A continuación se muestran los pasos para conectarse al servicio FTPS de OMV a través del cliente FTP de Filezilla.
 
-![img-description](/assets/img/tutorial-configuracion-openmediavault/fptsCliente1.png)
+![img-description](/assets/img/tutorial-configuracion-openmediavault/ftpsCliente1.png)
 _Pasos para conectarse a servidor FTPS de OMV_
 
-![img-description](/assets/img/tutorial-configuracion-openmediavault/fptsCliente2.png)
+![img-description](/assets/img/tutorial-configuracion-openmediavault/ftpsCliente2.png)
 _Pasos para conectarse a servidor FTPS de OMV_
 
-![img-description](/assets/img/tutorial-configuracion-openmediavault/fptsCliente3.png)
+![img-description](/assets/img/tutorial-configuracion-openmediavault/ftpsCliente4.png)
 _Pasos para conectarse a servidor FTPS de OMV_
 
-![img-description](/assets/img/tutorial-configuracion-openmediavault/fptsCliente4.png)
+![img-description](/assets/img/tutorial-configuracion-openmediavault/ftpsCliente5.png)
 _Pasos para conectarse a servidor FTPS de OMV_
 
-![img-description](/assets/img/tutorial-configuracion-openmediavault/fptsCliente5.png)
+![img-description](/assets/img/tutorial-configuracion-openmediavault/ftpsCliente6.png)
 _Pasos para conectarse a servidor FTPS de OMV_
 
-![img-description](/assets/img/tutorial-configuracion-openmediavault/fptsCliente6.png)
+## Conexión a servidor FTPS desde cliente Zorin OS (Gestor de archivos)
+
+A continuación se muestran los pasos para conectarse al servicio FTPS de OMV a través del cliente FTP incorporado en el gestor de archivos Thunar.
+
+![img-description](/assets/img/tutorial-configuracion-openmediavault/ftpsCliente7.png)
 _Pasos para conectarse a servidor FTPS de OMV_
 
-## Conexión a servidor FTPS desde cliente Zorin OS (Navegador de archivos)
-
-![img-description](/assets/img/tutorial-configuracion-openmediavault/fptsCliente7.png)
-_Pasos para conectarse a servidor FTPS de OMV_
-
-![img-description](/assets/img/tutorial-configuracion-openmediavault/fptsCliente8.png)
+![img-description](/assets/img/tutorial-configuracion-openmediavault/ftpsCliente8.png)
 _Pasos para conectarse a servidor FTPS de OMV_  
 
-![img-description](/assets/img/tutorial-configuracion-openmediavault/fptsCliente10.png)
+![img-description](/assets/img/tutorial-configuracion-openmediavault/ftpsCliente10.png)
 _Pasos para conectarse a servidor FTPS de OMV_
 
