@@ -23,14 +23,34 @@ Una vez estamos inscritos en el curso deberemos ver algo parecido a esto:
 ![img-description](/assets/img/tutorial-packet-tracer/curso.png)
 _Curso de NetAcad_
 
-
-Una vez tenemos una cuenta y estamos inscritos en un curso puedes ir al siguiente enlace [Download Cisco Packet Tracer](https://www.netacad.com/portal/resources/packet-tracer) y descargar Packet Tracer. Debes seleccionar el programa para el sistema operativo que tengas.
+Una vez tenemos una cuenta y estamos inscritos en un curso puedes ir al siguiente enlace [Download Cisco Packet Tracer](https://www.netacad.com/portal/resources/packet-tracer) y descargar la última versión de Packet Tracer. Debes seleccionar el programa para el sistema operativo que tengas.
 
 ![img-description](/assets/img/tutorial-packet-tracer/descargas.png)
 _Descargas de Packet Tracer_
 
-Una vez hemos descargado el .deb o el .exe hacer doble click en él e instalarlo siguiendo los pasos pertinentes.
+## Instalar Packet Tracer (Windows)
 
+Si hemos descargado el .exe para Windows hacemos doble click en él y lo instalamos siguiendo los pasos pertinentes.
+
+## Instalar Packet Tracer (Ubuntu Deb)
+
+Si hemos descargado el .deb deberemos utilizar abrir el terminal y hacer un `cd` al directorio donde esté el fichero .deb descargado. Una vez ahi ejecutamos la siguiente instrucción `sudo dpkg -i <nombreDelFicheroDeb>`. Por ejemplo: `sudo dpkg -i CiscoPacketTracer_811_Ubuntu_64bit.deb`.
+
+Si tras esto no funciona es recomendable probar el comando `sudo dpkg-reconfigure packettracer`.
+
+## Instalar Packet Tracer (Ubuntu AppImage)
+
+Si aún asi no funciona ejecutar los siguientes comandos:
+
+```console
+$ git clone https://github.com/konradmb/PacketTracer-AppImage.git
+$ cd PacketTracer-AppImage/
+$ wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
+$ chmod +x pkg2appimage
+$ ./pkg2appimage PacketTracer.yml
+```
+
+Tras esto debería haber un ejecutable dentro del directorio `out/`.
 
 ## Interfaz de usuario
 
@@ -137,3 +157,8 @@ y activar la opción "Always Show Port Labels in Logical Workspace". Esto nos si
 
 - Cuando hacemos login en la aplicación de Packet Tracer o en la web de Cisco aparece el mensaje "Sorry, we can't find a NetAcad account associated with this Cisco account.". Para solucionar este problema lee la sección "Descargar e instalar Packet Tracer" de este artículo.
 - Si da problemas al instalar la última versión de Packet Tracer, utilizar el comando `dpkg-reconfigure`.
+- Si no puedes hacer login para matricularte en un curso tendrás que probar a recuperar la cuenta.
+
+## Bibliografía
+
+- [AppImage for Cisco Packet Tracer](https://github.com/konradmb/PacketTracer-AppImage)

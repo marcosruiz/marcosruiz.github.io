@@ -32,11 +32,13 @@ pin: true
     - [Sistemas de almacenamiento en red](/posts/teoria-sistemas-de-almacenamiento-en-red/)
 - UD 5 - [Dispositivos específicos de la red local](/posts/dispositivos-especificos-de-la-red-local/)
     - [¿Qué es una VLAN?](/posts/vlan/)
-    - [Tutorial: Configurar una VLAN con Packet Tracer](/posts/tutorial-vlan-packet-tracer)
 - UD 6 - [Interconexión de equipos y redes](/posts/interconexion-de-equipos-y-redes/)
     - [Enrutamiento o encaminamiento](/posts/enrutamiento/)
     - [NAT o enmascaramiento IP](/posts/nat/)
-    - [Tutorial: Configurar un NAT con Packet Tracer](/posts/tutorial-nat-packet-tracer)
+
+### Tutoriales
+
+- [Tutorial: Introducción a Packet Tracer](/posts/tutorial-introduccion-a-packet-tracer/)
 
 ### Prácticas
 
@@ -53,6 +55,11 @@ pin: true
     - [Tutorial: Configurar una WLAN con Packet Tracer](/posts/tutorial-wlan-packet-tracer)
 - UD 8 - Resolución de incidencias de una red de área local
 - UD 9 - Cumplimiento de las normas de prevención de riesgos laborales y protección medioambiental
+
+### Tutoriales
+
+- [Tutorial: Configurar una VLAN con Packet Tracer](/posts/tutorial-vlan-packet-tracer)
+- [Tutorial: Configurar un NAT con Packet Tracer](/posts/tutorial-nat-packet-tracer)
 
 ### Prácticas
 
