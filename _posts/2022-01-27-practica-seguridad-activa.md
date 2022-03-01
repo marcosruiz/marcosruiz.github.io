@@ -21,7 +21,7 @@ A continuación se listan las actividades que se deben realizar para esta práct
 {:.activity}
 ### Habilitar contraseñas en el sistema de entrada y salida (Actividad propuesta 5.1)
 
-Habilita una contraseña en la BIOS de la máquina virtual Zorin OS. Ántes, puedes hacer pruebas en el simulador que se ofrece en [esta web](https://www.grs-software.de/sims/bios/phoenix/pages).
+Habilita una contraseña en la BIOS de la máquina virtual Zorin OS. Antes, puedes hacer pruebas en el simulador que se ofrece en [esta web](https://www.grs-software.de/sims/bios/phoenix/pages). Debes utilizar la contraseña "chabacier".
 
 {:.activity}
 ### Proteger el GRUB

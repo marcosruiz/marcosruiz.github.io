@@ -100,6 +100,8 @@ Este servidor posee una lista de direcciones IP dinámicas y las va asignando a 
 {:.subsection}
 ### Servicio DNS
 
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/7XjJqUM0dvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/VpTIvKhSUj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.section}

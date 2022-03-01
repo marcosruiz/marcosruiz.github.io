@@ -52,6 +52,9 @@ _Cabecera ICMP_
 
 ## TCP/IP: Nivel de transporte
 ### Direccionamiento y puertos
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/hmGmeGDRUAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Protocolo TCP
 ### Conexiones
 ### Establecimiento de una conexión
