@@ -52,6 +52,8 @@ GRUB 2 es una reescritura de GRUB que comparte muchas características con su ve
 
 Leer el artículo [¿Qué es un IDS?](https://www.clavei.es/blog/que-es-un-ids-o-intrusion-detection-system/).
 
+- ¿Es un IDS un firewall?
+
 {:.section}
 ## ¿Qué es un UTM?
 
@@ -60,6 +62,7 @@ Leer el artículo [UTM, un firewall que ha ido al gimnasio](https://www.incibe.e
 - ¿Tiene sentido poner un UTM si ya tenemos un IDS en nuestra red?
 - ¿Tiene sentido poner un UTM si ya tenemos un IPS en nuestra red?
 - ¿Tiene sentido poner un IDS o IPS si ya tenemos un UTM en nuestra red perimetral?
+- ¿Es un UTM un firewall?
 
 {:.section}
 ## ¿Qué es una DMZ?
@@ -70,6 +73,21 @@ Leer el artículo [DMZ: utiliza la zona desmilitarizada y protege tu red interna
 - ¿Qué dos tipos de DMZ existen?
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/8e2OY6ou3l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+- ¿Qué es un DDNS? 
+- ¿Qué diferencia hay entre un DNS y un DDNS? 
+- ¿Sabrías poner un ejemplo de servicio DDNS?
+- ¿Qué problemas puede tener un DDNS?
+- ¿Qué es un socket?
+- ¿Qué significa exactamente abrir un puerto?
+- ¿Podemos tener dos servidores FTP en el mismo puerto y misma LAN de cara a Internet si las direcciones IP privadas son diferentes?
+- ¿Cuál es el rango de los puertos bien conocidos?
+- ¿Qué ocurrirá si pongo my PlayStation en una DMZ?
+- ¿Qué es un firewall?
+- ¿Qué sería el portero de un finca en una red local?
+- ¿Cuál es el inconveniente de usar un CG-NAT?
+
 
 {:.section}
 ## ¿Qué es la red perimetral?
@@ -90,7 +108,7 @@ Se conoce como perímetro de la red a la “frontera” entre el exterior y los 
 
 ### Origen del término
 
-El término zona desmilitarizada (DMZ, por sus siglas en inglés), aplicado a la seguridad informática procede probablemente de la franja de terreno neutral que separa a los países inmersos en un conflicto bélico. Es una reminiscencia de la Guerra de Corea, aún vigente y en tregua desde 1953. Paradójicamente, a pesar de que esta zona desmilitarizada es terreno neutral, es una de las más peligrosas del planeta, pues la franja no pertenece formalmente a ningún país, y cualquier inmersión en ella causará fuego de ambos bandos. 
+El término zona desmilitarizada (DMZ, por sus siglas en inglés), aplicado a la seguridad informática procede probablemente de la franja de terreno neutral que separa a los países inmersos en un conflicto bélico. Es una reminiscencia de la Guerra de Corea, aún vigente y en tregua desde 1953. Paradójicamente, a pesar de que esta zona desmilitarizada es terreno neutral, es una de las más peligrosas del planeta, pues la franja no pertenece formalmente a ningún país, y cualquier inmersión en ella causará fuego de ambos bandos.
 
 {:.section}
 ## ¿Qué es una VPN?

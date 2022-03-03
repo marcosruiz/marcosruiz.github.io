@@ -21,17 +21,18 @@ Seguir los pasos del artículo [Tutorial: Configurar un NAT estático en Packet 
 {:.question}
 ¿Qué ventajas tiene utilizar una NAT estática sobre no utilizarla?
 
-
 {:.activity}
 ### Dos routers NAT estáticos
 
 Como se puede observar, la red 192.168.0.0/24 forma parte del rango de direcciones IPv4 privadas por lo que también se debe convertir el router de la izquierda en un router NAT con la subred pública 4.4.4.4/24.
 
 {:.question}
+¿Cuales son los rangos de las direcciones IPv4 privadas?
 
 
 {:.activity}
 ### Dos router 
+
 
 
 
