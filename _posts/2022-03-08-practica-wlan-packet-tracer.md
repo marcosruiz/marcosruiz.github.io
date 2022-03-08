@@ -1,6 +1,6 @@
 ---
-title: "(En proceso) Práctica: WLAN con Packet Tracer"
-date: 2022-02-16 14:00:00 +0100
+title: "Práctica: WLAN con Packet Tracer"
+date: 2022-03-08 14:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [packet tracer, redes locales, smr, wlan, práctica]
 ---
@@ -14,17 +14,18 @@ El objetivo de esta práctica es aprender que es una WLAN y como configurarla ut
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
 {:.activity}
-### Tutorial
+### Un router WLAN
 
-Seguir los pasos del artículo [Tutorial: WLAN con Packet Tracer](/posts/tutorial-wlan-packet-tracer).
+Con ayuda de [Tutorial: WLAN con Packet Tracer](/posts/tutorial-wlan-packet-tracer) realizar el siguiente esquema de red de manera funcional.
 
-
+![Gestión de permisos en GNU Linux](/assets/img/practica-wlan-packet-tracer/esquemaRed1.png)
+_Esquema de red_
 
 ## Entrega y presentación
 
 La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del fichero ZIP sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.zip".
 
-En la raíz del fichero ZIP deben encontrarse el documento PDF con el nombre "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.pdf" y las actividades de Packet Tracer en formato PKT con el nombre "actividad_\<NúmeroDeActividad\>.pkt".
+En la raíz del fichero ZIP deben encontrarse el documento PDF con el nombre "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.pdf" y las actividades de Packet Tracer en formato PKT con el nombre "\<NúmeroDeActividad\>_actividad.pkt".
 
 Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 
