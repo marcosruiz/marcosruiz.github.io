@@ -313,8 +313,10 @@ Guarde los últimos cambios de configuración en Empresa1 y reinicie su IOS, con
 Modificar router Empresa2 con las siguientes características y configuraciones:
 
 - Conectar una nueva interface FastEthernet, configurarle la dirección 172.18.0.129/27 y levantarla. Conectar a esta interface un nuevo host, asignándole la ip 172.18.0.130/27 y su respectiva ip de gateway.
-- Crear una red de manera virtualizada con la Loopback3, asignándole la dirección 172.18.0.161/28.
+- Crear una red de manera virtualizada con la Loopback3[^loopback], asignándole la dirección 172.18.0.161/28.
 - Desde FTPserver, comprobar con ping que saluda exitosamente al nuevo host y también a la ip de Lo3.
+
+[^loopback]: Un loopback es una interfaz lógica que permite asignar direcciones IP a un router que no están ligadas a una interfaz física.
 
 ```console
 Empresa2(config)# interface loopback 3

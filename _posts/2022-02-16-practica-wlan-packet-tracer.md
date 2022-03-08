@@ -16,7 +16,9 @@ A continuación se listan las actividades que se deben realizar para esta práct
 {:.activity}
 ### Tutorial
 
-Seguir los pasos del artículo [Práctica: WLAN con Packet Tracer](/posts/practica-wlan-packet-tracer).
+Seguir los pasos del artículo [Tutorial: WLAN con Packet Tracer](/posts/tutorial-wlan-packet-tracer).
+
+
 
 ## Entrega y presentación
 

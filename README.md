@@ -35,6 +35,11 @@ $ bundle
 
 Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#usage).
 
+- Para lanzar en local: `bundle exec jekyll serve`.
+- Para lanzar en local con los artículos pendientes: `bundle exec jekyll serve --drafts`.
+- Para lanzar en local (build parcial): `bundle exec jekyll serve --incremental`.
+- Para lanzar en local (solo los últimos 5 post): `bundle exec jekyll serve --limit_posts 5`.
+
 ## License
 
 This work is published under [MIT][mit] License.
