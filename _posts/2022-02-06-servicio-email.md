@@ -23,7 +23,10 @@ En el mundo del correo electrónico existe cierta terminología básica que debe
 
 - **MUA**: (Mail User Agent, Agente de Usuario de Correo), es el sistema que se encarga de recibir y enviar emails usando los protocolos STMP (para el envío) y POP3 o IMAP (para la recepción). Ejemplos: Gmail, Yahoo, Outlook, Thunderbird, etc.
 - **MTA**: (Mail Transfer Agent, Agente de Transferencia de Correo), es el sistema que se encarga de tomar el email de un MUA o de otro MTA y entregarlo a otro MTA o a un MDA, en caso de que el email pertenezca al dominio propio del MTA. Ejemplo: Postfix.
-- **MDA**: (Mail Delivery Agent, Agente de Entrega de Correo), es el sistema que se encarga de la recpeción del email por parte de un MTA, y lo almacena de la forma que tenga configurada. Los MDA pueden almacenar en disco, base de datos o llamar a otro programa para hacer el procesado de emails (p.ej: listas de correo, sistemas de control de incidencias, etc.). Ejemplo: Dovecot.
+- **MDA**: (Mail Delivery Agent, Agente de Entrega de Correo), es el sistema que se encarga de la recpeción del email por parte de un MTA, y lo almacena de la forma que tenga configurada. Los MDA pueden almacenar en disco, base de datos o llamar a otro programa para hacer el procesado de emails (p.ej: listas de correo, sistemas de control de incidencias, etc.). Ejemplo: Maildir o mailbox.
+
+{:.question}
+¿Qué es Dovecot?
 
 ![img-description](/assets/img/servicio-email/proceso-envio-email.png)
 _Proceso de envio de email_

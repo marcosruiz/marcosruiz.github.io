@@ -145,7 +145,7 @@ Para poder ejecutar aplicaciones gráficas en el host remoto de forma segura, ne
 
 ## Autenticación basada en clave pública
 
-Para autenticarnos utilizando una clave pública debemos activar la opción de configuración `PubkeyAuthentication` para posteriormente generar el par de claves. Recuerdo que la clave pública NUNCA se debe compartir.
+Para autenticarnos utilizando una clave pública debemos activar la opción de configuración `PubkeyAuthentication` para posteriormente generar el par de claves. Recuerdo que la clave privada NUNCA se debe compartir.
 
 En [Generar y añadir claves SSH (para acceso sin contraseña)](http://www.ubuntufacil.com/2014/01/generar-y-anadir-claves-ssh-para-acceso-sin-contrasenia/) está explicado como generar este par de claves para utilizarlas en el servicio SSH.
 
