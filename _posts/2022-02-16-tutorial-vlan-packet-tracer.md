@@ -40,7 +40,11 @@ En la línea de comando escribiremos lo siguiente:
 
 ### Paso 1
 
-Empezamos a configurar cada VLAN que necesitamos, para ello escribiremos: `vlan <númeroVlan>`, en nuestro ejemplo: `vlan 5`.
+Empezamos a configurar cada VLAN que necesitamos, para ello escribiremos: `vlan <númeroVlan>`, en nuestro ejemplo: 
+
+```console
+Switch(config)# vlan 5
+```
 
 ### Paso 2
 
@@ -48,25 +52,39 @@ Cambiará de nuevo la raíz indicando ahora: `Switch(config-vlan)#>`.
 
 Deberemos darle un nombre, para ello teclearemos `name <nombre identificativo de la vlan>`.
 
-Por ejemplo: `vlan ClaseSMR1`.
+Por ejemplo:
+
+```console
+Switch(config-vlan)# name ClaseSMR1
+```
 
 Escribiremos `exit`, para salir de esta zona de la configuración.
 
 ### Paso 3
 
-Y ahora vamos a indicar los puertos del switch que van a usar esa primera VLAN, para ello tecleamos: `interface range <tipo de puerto> <número del puerto inicio> - <número de puerto final>`.
+Y ahora vamos a indicar los puertos del switch que van a usar esa primera VLAN, para ello tecleamos: `interface range <tipo de puerto> <número del puerto inicio>-<número de puerto final>`.
 
-Ejemplo: `interface range fa 0/1-7`
+Ejemplo: 
+
+```console
+
+Switch(config)# interface range fa 0/1-7
+```
 
 ### Paso 4
 
-Hecho lo cual añadiremos en la línea de comando: `Switchport Access vlan <número de vlan>`.
+Hecho lo cual añadiremos en la línea de comando:
+
+```console
+Switch(config-if-range)# Switchport Access vlan <número de vlan>
+```
+
 
 En nuestro ejemplo:
 
 ```console
-Switchport Access vlan 5
-exit
+Switch(config-if-range)# Switchport Access vlan 5
+Switch(config-if-range)# exit
 ```
 
 Este proceso desde el paso 1 hasta el 4 hay que repetirlo para cada una de las VLAN que queramos configurar. 
@@ -85,8 +103,8 @@ Indicaremos `interface fa 0/24` (el puerto que habíamos reservado).
 Y ahora indicaremos cómo se va a hacer la comunicación por este puerto, el modo troncal.
 
 ```console
-switchport mode trunk
-exit
+Switch(config-if-range)# switchport mode trunk
+Switch(config-if-range)# exit
 ```
 
 Una última instrucción será guarda en la memoria del dispositivo los cambios que hemos hecho para que se conserven. Escribiremos: `copy run start` y pulsaremos enter para aceptar el guardado.
@@ -98,28 +116,36 @@ Para poder conseguir que estas VLAN se puedan comunicar entre sí, necesitaremos
 Para ello de nuevo deberemos entrar por la pestaña CLI.
 
 ```console
-enable
-config ter
+Router> enable
+Router# config ter
 ```
 
 ### Paso 1
 
-`interface <tipo de puerto> <numeración del puerto>.<número de vlan>`
-En nuestro ejemplo: `interface fa 0/0.5`.
+`interface <tipo de puerto> <numeración del puerto>.<número de vlan>`. En nuestro ejemplo: 
+
+```console
+Router(config)# interface fa 0/0.5
+```
 
 ### Paso 2
 
 Ahora indicaremos el tipo de encapsulamiento de datos que usará: dot1Q, según esta instrucción:
-`encapsulation dot1Q <número de vlan>`, en nuestro ejemplo: `encapsulation dot1Q 5`.
+`encapsulation dot1Q <número de vlan>`, en nuestro ejemplo:
+
+```console
+Router(config-subif)# encapsulation dot1Q 5
+```
 
 ### Paso 3
+
 Indicaremos la dirección que tendrá el router en esa VLAN, así como la máscara, según este formato de instrucción: `ip address <dirección del router> <máscara de red>`.
 
 En nuestro ejemplo:
 
 ```console
-ip address 192.168.1.1 255.255.255.0
-exit
+Router(config-subif)# ip address 192.168.1.1 255.255.255.0
+Router(config-subif)# exit
 ```
 
 Los pasos 1 a 3 se repetirán para cada VLAN que tengamos que configurar, cambiando obviamente los números de VLAN y las direcciones del router para cada una de las mismas.
