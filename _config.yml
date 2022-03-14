@@ -37,8 +37,8 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Marcos Ruiz García
-  email: marcosruizgarcia@gmail.com             # change to your email address
+  name: Marcos Ruiz
+  email: profesor.mruizg@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://github.com/marcosruiz       # change to your github homepage
@@ -89,7 +89,7 @@ disqus:
   comments: true  # boolean type, the global switch for posts comments.
   shortname: 'https-marcosruiz-github-io'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
-paginate: 10
+paginate: 20
 
 # ------------ The following options are not recommended to be modified ------------------
 
