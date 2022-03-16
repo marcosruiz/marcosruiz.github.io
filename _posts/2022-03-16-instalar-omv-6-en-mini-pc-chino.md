@@ -18,10 +18,10 @@ En mi caso he comprado un mini PC chino de la marca NiPoGi con las siguientes ca
 - Dual HDMI
 
 ![NiPoGi](/assets/img/instalar-omv-6-en-mini-pc-chino/nipogi1.jpg)
-_NiPoGi_
+_3 puertos USB laterales del mini PC NiPoGi_
 
 ![NiPoGi](/assets/img/instalar-omv-6-en-mini-pc-chino/nipogi2.jpg)
-_NiPoGi_
+_NiPoGi y dock para el SSD_
 
 
 En mi caso lo compré en [Amazon](https://amzn.to/3MSnowd) por 156,90 €.
@@ -96,18 +96,18 @@ EOF
 Instala el paquete de OMV:
 
 ```console
-export LANG=C.UTF-8
-export DEBIAN_FRONTEND=noninteractive
-export APT_LISTCHANGES_FRONTEND=none
-apt-get update
-apt-get --yes --auto-remove --show-upgraded \
+# export LANG=C.UTF-8
+# export DEBIAN_FRONTEND=noninteractive
+# export APT_LISTCHANGES_FRONTEND=none
+# apt-get update
+# apt-get --yes --auto-remove --show-upgraded \
     --allow-downgrades --allow-change-held-packages \
     --no-install-recommends \
     --option DPkg::Options::="--force-confdef" \
     --option DPkg::Options::="--force-confold" \
     install openmediavault-keyring openmediavault
 
-omv-confdbadm populate
+# omv-confdbadm populate
 ```
 
 ## Configurar OMV6
