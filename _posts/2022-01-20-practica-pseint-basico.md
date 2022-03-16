@@ -18,8 +18,7 @@ El objetivo de esta práctica es aprender a programar utilizando la herramienta 
 
 ## Actividades
 
-A continuación se listan las actividades que se deben realizar para esta práctica. Cada actividad deberá llamarse
-
+A continuación se listan las actividades que se deben realizar para esta práctica. Cada actividad deberá llamarse "actividad_\<númeroDeActividad\>".
 Si necesitas ayuda tienes los siguientes enlaces donde se explica toda la teoría:
 
 1. [Introduccion a Pseudocódigo (Incluye enlace pseint)](http://www.discoduroderoer.es/introduccion-a-pseudocodigo/)

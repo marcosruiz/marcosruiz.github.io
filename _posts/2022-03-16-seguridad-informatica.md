@@ -1,6 +1,6 @@
 ---
 title: "Seguridad Informática"
-date: 2022-02-04 12:20:00 +0100
+date: 2022-03-16 23:30:00 +0100
 categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
 tags: [tic ii, teoría, seguridad informática]
 ---
@@ -27,13 +27,13 @@ La seguridad informática es el conjunto de medidas encaminadas a proteger el ha
 ¿Qué es un zero day vulnerability?
 
 {:.question}
-¿Qué es Wordpress? ¿Es popular?
+¿Qué es WordPress? ¿Es popular?
 
 {:.question}
 ¿Quién es el experto en ciberseguridad más famoso de España?
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8iJLbYNsIYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/8iJLbYNsIYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
 ¿Qué es un ataque DoS?
