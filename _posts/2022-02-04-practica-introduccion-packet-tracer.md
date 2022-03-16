@@ -34,7 +34,7 @@ Pasos a realizar:
 
 Conectar dos switches con tres ordenadores cada uno. Debe haber dos redes privadas de clase C. Tres ordenadores deben estar en una red y tres ordenadores en otra de la siguiente manera:
 
-![img-description](/assets/img/practica-introduccion-packet-tracer/tresRedesDosSwitches.png)
+![img-description](/assets/img/practica-introduccion-packet-tracer/dosRedesDosSwitches.png)
 _Dos redes y dos switches: Distribución de redes_
 
 Pasos a realizar:

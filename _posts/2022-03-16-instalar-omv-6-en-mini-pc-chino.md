@@ -5,7 +5,7 @@ categories: [General]
 tags: [omv, open media vault, debian, gnu linux, linux]
 ---
 
-## Comprar NiPoGi
+## Comprar mini PC NiPoGi
 
 En mi caso he comprado un mini PC chino de la marca NiPoGi con las siguientes características:
 
