@@ -2,7 +2,7 @@
 title: "Práctica: Ejercicios básicos de Java"
 date: 2022-03-16 23:30:00 +0100
 categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
-tags: [tic ii, teoría, programación, bluej, java]
+tags: [tic ii, práctica, programación, bluej, java]
 ---
 
 ## Objetivo
@@ -11,7 +11,7 @@ El objetivo de esta práctica es aprender a programar usando el lenguaje de prog
 
 ## Actividades
 
-A continuación se listan las actividades que se deben realizar para esta práctica. Cada actividad deberá llamarse "actividad_\<númeroDeLaActividad\>.java".
+A continuación se listan las actividades que se deben realizar para esta práctica. Cada actividad deberá llamarse "actividad_\<númeroDeLaActividad\>.java". Está prohibido escribir el código del programa en el método `main`, es decir, tienes que hacer funciones.
 
 ### Actividad 1
 
@@ -47,7 +47,7 @@ Crea el enum Mes, que contenga como parámetros el orden(1,2,3,etc) y el numero 
 
 Estos datos pueden pedirse por separado, asi que tienes que hacer sus respectivos get. No son necesarios los setters.
 
-Create un arrays de Mes (mirate la función values), pide un numero por teclado e indica que meses tienen ese numero de dias (toda su informacion).
+Create un arrays de Mes (mirate la función values), pide un numero por teclado e indica que meses tienen ese numero de días (toda su información).
 
 Por ejemplo, si escribes un 28, este te devolverá la información de FEBRERO.
 
@@ -75,6 +75,4 @@ Debe esperar un segundo real para darle mas realismo.
 La entrega de esta práctica debe ser un documento ZIP con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del documento ZIP sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.zip". 
 
 En la raíz del documento ZIP debe haber una carpeta llamada "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>" donde estén todas las actividades. Cada actividad debe tener un nombre con el siguiente formato "actividad_\<númeroDeLaActividad\>.java". Por ejemplo, en mi caso el nombre de la primera actividad sería una carpeta llamada "actividad_1.java".
-
-
 

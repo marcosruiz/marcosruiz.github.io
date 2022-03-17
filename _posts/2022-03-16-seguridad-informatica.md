@@ -32,15 +32,30 @@ La seguridad informática es el conjunto de medidas encaminadas a proteger el ha
 {:.question}
 ¿Quién es el experto en ciberseguridad más famoso de España?
 
-
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/8iJLbYNsIYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{:.question}
+¿Qué un servidor lo mismo que un PC?
 
 {:.question}
 ¿Qué es un ataque DoS?
 
 {:.question}
+¿Qué dos tipos de ataques DoS existen?
+
+{:.question}
 ¿Qué es un ataque DDoS?
 
+{:.question}
+¿Qué es una botnet? ¿Para qué se utilizan?
+
+{:question}
+¿Qué es el malware?
+
+{:.question}
+¿Qué es un gusano?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s3LQWSkUqok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Tipos de seguridad
 
@@ -52,9 +67,9 @@ Comprende el conjunto de defensas o medidas cuyo objetivo es evitar o reducir lo
 
 #### Ejemplos
 
-- impedir el acceso a la información a usuarios no autorizados mediante introducción de nombres de usuario y contraseñas;  
-- evitar la entrada de virus instalando un antivirus; 
-- impedir, mediante encriptación, la lectura no autorizada de mensajes.
+- Impedir el acceso a la información a usuarios no autorizados mediante introducción de nombres de usuario y contraseñas;  
+- Evitar la entrada de virus instalando un antivirus; 
+- Impedir, mediante encriptación, la lectura no autorizada de mensajes.
 
 #### Recomendaciones
 
@@ -165,15 +180,20 @@ Ejemplos de contenido del correo Spam:
 A pesar de que hay leyes, como La ley LSSI (Ley de Servicios de la Sociedad de la
 Información) en España, que prohíben el spam, su difusión está muy extendida. Se calcula que el 80% de los correos que circulan en Internet son correo basura, spam.
 
-{:.question}
-¿Cómo obtienen los spammers (los que envían spam) las direcciones de correo?
 
-Mediante programas (llamados robots) que buscan y recogen de Internet la direcciones de correo que encuentran. Por eso si publicamos nuestro e-mail en una página pública de Internet, no tardará en caer en manos de algún spammer.
+<details class="card mb-2">
+  <summary class="card-header question">¿Cómo obtienen los spammers (los que envían spam) las direcciones de correo?</summary>
+  <div class="card-body">
+    Mediante programas (llamados robots) que buscan y recogen de Internet la direcciones de correo que encuentran. Por eso si publicamos nuestro e-mail en una página pública de Internet, no tardará en caer en manos de algún spammer.
+  </div>
+</details>
 
-{:.question}
-¿Cómo comprueban los spammers si han llegado los mensajes?
-
-El mensaje contiene algún elemento (típicamente imágenes diminutas y transparentes)  que, al abrirlo, hace una petición al servidor de spam; de esa forma se sabe que el mensaje ha llegado y se ha leído.
+<details class="card mb-2">
+  <summary class="card-header question">¿Cómo comprueban los spammers si han llegado los mensajes?</summary>
+  <div class="card-body">
+    El mensaje contiene algún elemento (típicamente imágenes diminutas y transparentes)  que, al abrirlo, hace una petición al servidor de spam; de esa forma se sabe que el mensaje ha llegado y se ha leído.
+  </div>
+</details>
 
 Otro sistema es el de prometer en los mensajes que enviando un mail a una dirección se dejará de recibirlos: cuando alguien contesta, significa no sólo que lo ha abierto, sino que lo ha leído.
 
