@@ -15,7 +15,8 @@
 
 <script>
 function changeGiscusTheme () {
-  const theme = document.documentElement.getAttribute('data-theme') === 'dark' ?  'dark' : 'light'
+  let modeToggle = new ModeToggle();
+  const theme = modeToggle.mode === 'dark' ?  'dark' : 'light'
   function sendMessage(message) {
     const iframe = document.querySelector('iframe.giscus-frame');
     if (!iframe) return;
@@ -28,10 +29,9 @@ function changeGiscusTheme () {
   });
 }
 
-const modeToggle = document.querySelector(".mode-toggle");
+const modeToggle = document.getElementsByClassName("mode-toggle")[0];
 
 if (typeof modeToggle !== "undefined") {
-  modeToggle.addEventListener('click', changeGiscusTheme); // not pretty for 'color-scheme'  
-  //window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', changeGiscusTheme);
+  modeToggle.addEventListener('click', changeGiscusTheme);
 }
 </script>
