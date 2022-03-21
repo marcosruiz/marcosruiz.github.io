@@ -36,7 +36,7 @@ La seguridad informática es el conjunto de medidas encaminadas a proteger el ha
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/8iJLbYNsIYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
-¿Qué un servidor lo mismo que un PC?
+¿Es lo mismo un servidor lo mismo que un PC?
 
 {:.question}
 ¿Qué es un ataque DoS?
@@ -50,8 +50,12 @@ La seguridad informática es el conjunto de medidas encaminadas a proteger el ha
 {:.question}
 ¿Qué es una botnet? ¿Para qué se utilizan?
 
-{:.question}
-¿Qué es el malware?
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es el malware?</summary>
+  <div class="card-body">
+    Malware o "software malicioso" es un término amplio que describe cualquier programa o código malicioso que es dañino para los sistemas. 
+  </div>
+</details>
 
 {:.question}
 ¿Qué es un gusano?
@@ -61,24 +65,30 @@ La seguridad informática es el conjunto de medidas encaminadas a proteger el ha
 {:.section}
 ## Tipos de seguridad
 
-Tenemos dos tipos de seguridad: Activa y Pasiva.
+Tenemos dos tipos de seguridad: 
 
-{:.section}
-## Seguridad Activa
+- Activa
+- Pasiva
 
-Comprende el conjunto de defensas o medidas cuyo objetivo es evitar o reducir los riesgos que amenazan al sistema.
+{:.question}
+¿Qué diferencia hay entre seguridad activa y pasiva?
 
-{:.section}
-## Ejemplos
+{:.subsection}
+### Seguridad Activa
 
-- Impedir el acceso a la información a usuarios no autorizados mediante introducción de nombres de usuario y contraseñas;  
-- Evitar la entrada de virus instalando un antivirus; 
+Comprende el conjunto de defensas o medidas cuyo objetivo es **evitar o reducir los riesgos que amenazan al sistema**.
+
+{:.subsubsection}
+#### Ejemplos
+
+- Impedir el acceso a la información a usuarios no autorizados mediante introducción de nombres de usuario y contraseñas.
+- Evitar la entrada de virus instalando un antivirus.
 - Impedir, mediante encriptación, la lectura no autorizada de mensajes.
 
-{:.section}
-## Recomendaciones
+{:.subsubsection}
+#### Recomendaciones
 
-- **Uso de contraseñas seguras**. Una contraseña segura es aquella que es difícil de averiguar. Se trata de poner una contraseña robusta. Una Contraseña robusta es aquella que:
+- **Uso de contraseñas seguras**: Una contraseña segura es aquella que es difícil de averiguar. Se trata de poner una contraseña robusta. Una Contraseña robusta es aquella que:
     - No puede encontrarse en un diccionario.
     - Contiene números, letras y símbolos.
     - Contiene letras mayúsculas y minúsculas.
@@ -90,101 +100,158 @@ Comprende el conjunto de defensas o medidas cuyo objetivo es evitar o reducir lo
 - **Cortafuegos (firewall)**: Sistema de defensa que controla y filtra el tráfico de entrada y salida de una red. Se configura para pedir confirmación de cualquier programa que utilice la conexión a Internet (pueden establecerse excepciones). Normalmente incluidos en los SO, aunque también existen otros de software libre o de pago.
 - **Proxy**. Software instalado en el PC que funciona como puerta de entrada; se puede configurar como cortafuegos o como limitador de páginas Web.
 
-{:.section}
-## Seguridad pasiva
+{:.subsection}
+### Seguridad pasiva
 
-Está formada por las medidas que se implantan para, una vez producido el incidente de seguridad, minimizar su repercusión y facilitar la recuperación del sistema; por ejemplo, teniendo siempre al día copias de seguridad de los datos.
+Está formada por las medidas que se implantan para, **una vez producido el incidente de seguridad, minimizar su repercusión y facilitar la recuperación del sistema**; por ejemplo, teniendo siempre al día copias de seguridad de los datos.
 
-{:.section}
-## Dispositivos físicos de protección
+{:.subsubsection}
+#### Dispositivos físicos de protección
 
-- **Sistemas de alimentación ininterrumpida (SAI)**: Protegen a los equipos frente a apagones y frente a picos o caídas de tensión. Cuando hay un apagón eléctrico, el SAI proporciona la corriente eléctrica necesaria para que dé tiempo a apagar correctamente el equipo.
-- **Dispositivos NAS** (network área storage, sistemas de almacenamiento en red): Dispositivos de almacenamiento a los que se accede a través de una red, por lo que suelen ir conectados a un router.
+Se trata de usar hardware adecuado frente a accidentes y averías.
 
-{:.section}
-## Copias de seguridad o backups
+##### SAI
+
+Los SAI (Sistemas de Alimentación Ininterrumpida) protegen a los equipos frente a apagones y frente a picos o caídas de tensión. Cuando hay un apagón eléctrico, el SAI proporciona la corriente eléctrica necesaria para que dé tiempo a apagar correctamente el equipo.
+
+![SAI](/assets/img/seguridad-informatica/sai.png)
+_Ejemplo de SAI_
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Qr58qnz9Vks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+##### NAS
+
+Los dispositivos NAS (Network Area Storage, sistemas de almacenamiento en red) son dispositivos de almacenamiento a los que se accede a través de una red, por lo que suelen ir conectados a un router.
+
+![NAS doméstico Synology](/assets/img/seguridad-informatica/nas.png)
+_NAS doméstico Synology_
+
+De manera opcional aquí tenéis un artículo de como he montado un NAS en mi casa con un mini PC chino: [Instalar OMV 6 en Debian 11 (Bullseye) en mini PC chino](/posts/instalar-omv-6-en-mini-pc-chino/).
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/-hG-fG72_24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/o1KXOn8mulE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+##### Copias de seguridad o backups
 
 Permiten restaurar sistemas o datos si es necesario. Es importante planificar en qué soporte se hacen, con qué periodicidad y de qué elementos del sistema. Las copias de seguridad son un proceso que se utiliza para salvar toda la información, es decir, un usuario, quiere guardar toda la información, o parte de la información, de la que dispone en el PC hasta este momento, realizará una copia de seguridad de tal manera, que lo almacenará en algún medio de almacenamiento como por ejemplo cinta, DVD, BluRay, discos virtuales (en Internet) o simplemente en otro Disco Duro, para posteriormente si se pierde la información, poder restaurar el sistema. 
 
 La copia de seguridad es útil por varias razones: 
 
-- Para restaurar un ordenador a un estado operacional después de un desastre (copias de seguridad del sistema)
+- Para restaurar un ordenador a un estado operacional después de un desastre (copias de seguridad del sistema).
 - Para restaurar ficheros después de que hayan sido borrados o dañados accidentalmente (copias de seguridad de datos).
 
-
-{:.section}
-## Particiones del disco duro
+##### Particiones del disco duro
 
 Particiones del disco duro. Los discos duros son dispositivos de almacenamiento de información de gran capacidad. Es fácil encontrar actualmente equipos informáticos con discos duros de 1 TB. Los discos duros pueden ser divididos en lo que se llama particiones con el objeto de separar el Sistema Operativo de los datos (el sistema operativo en una partición y los datos en otra). 
 
 Es una buena práctica informática dividir el disco duro de nuestro equipo en dos particiones: en una tendremos instalado el SO y en otra guardaremos los datos. De esta manera, si debemos reinstalar el SO, los datos no se verán afectados. 
 
-{:.question}
-¿Qué diferencia hay entre seguridad activa y pasiva?
-
 {:.section}
-## Amenazas, vulnerabilidades y riesgos
+## Vulnerabilidades, Amenazas y riesgos
 
-{:.section}
-## Amenazas
+{:.subsection}
+### Vulnerabilidades
 
-En sistemas de información se entiende por amenaza la presencia de uno o más factores de diversa índole (personas, máquinas o sucesos) que -de tener la oportunidad- atacarían al sistema produciéndole daños aprovechándose de su nivel de vulnerabilidad. Hay diferentes tipos de amenazas de las que hay que proteger al sistema, desde las físicas como cortes eléctricos, fallos del hardware o riesgos ambientales hasta los errores intencionados o no de los usuarios, la entrada de software malicioso  o el robo, destrucción o modificación de la información.
+Una vulnerabilidad (en términos de informática) es una debilidad o fallo en un sistema de información que pone en riesgo la seguridad de la información pudiendo permitir que un atacante pueda comprometer la integridad, disponibilidad o confidencialidad de la misma, por lo que es necesario encontrarlas y eliminarlas lo antes posible. Estos «agujeros» pueden tener distintos orígenes por ejemplo: fallos de diseño, errores de configuración o carencias de procedimientos.
 
-{:.section}
-## Vulnerabilidades
+{:.subsection}
+### Amenazas
 
-Son las probabilidades que existen de que una amenaza se materialice contra un activo. No todos los activos son vulnerables a las mismas amenazas. Por ejemplo, los datos son vulnerables a la acción de los hackers, mientras que una instalación eléctrica es vulnerable a un cortocircuito. Al hacer el análisis de riesgos hay que tener en cuenta la vulnerabilidad de cada activo.
+Una amenaza es toda acción que aprovecha una vulnerabilidad para atentar contra la seguridad de un sistema de información. Es decir, que podría tener un potencial efecto negativo sobre algún elemento de nuestros sistemas. Las amenazas pueden proceder de ataques (fraude, robo, virus), sucesos físicos (incendios, inundaciones) o negligencia y decisiones institucionales (mal manejo de contraseñas, no usar cifrado). Desde el punto de vista de una organización pueden ser tanto internas como externas.
 
-{:.section}
-## Riesgo
+{:.subsection}
+### Riesgo
 
-Se denomina riesgo a la posibilidad de que se materialice o no una amenaza aprovechando una vulnerabilidad. Deben aplicarse medidas para disminuirlos o anularlos.
+El riesgo es la probabilidad de que se produzca un incidente de seguridad, materializándose una amenaza y causando pérdidas o daños. Se mide asumiendo que existe una cierta vulnerabilidad frente a una determinada amenaza, como puede ser un hacker, un ataque de denegación de servicios, un virus… El riesgo depende entonces de los siguientes factores: la probabilidad de que la amenaza se materialice aprovechando una vulnerabilidad y produciendo un daño o impacto. El producto de estos factores representa el riesgo.
+
+![Vulnerabildad, amenaza y riesgo](/assets/img/seguridad-informatica/riesgo.png)
+_Vulnerabildad, amenaza y riesgo_
 
 Ejemplos de riesgos:
 
-- Abuso de recursos: que los usuario tengan excesivos privilegios como los del administrador
-- Fuga de información
-- Correo no deseado
-- Virus informático
+- Abuso de recursos: que los usuario tengan excesivos privilegios como los del administrador.
+- Fuga de información.
+- Correo no deseado.
+- Virus informático.
 - Ataques informáticos: robo de información, negación de servicio.
 
 {:.section}
 ## Software de protección de equipos informáticos
 
-{:.section}
-## Antivirus
+{:.subsection}
+### Antivirus
+
+Es una aplicación o grupo de aplicaciones dedicadas a la prevención, búsqueda, detección y eliminación de programas malignos en sistemas informáticos.
 
 Un antivirus debe cumplir con ciertos requisitos para ser considerado efectivo y eficiente:
-- Tener una constante actualización
-- Tener protección permanente
-- Tener una completa base de datos de programas malignos
-- Eliminar los virus
 
-{:.section}
-## Los cortafuegos
+- Tener una constante actualización.
+- Tener protección permanente.
+- Tener una completa base de datos de programas malignos.
+- Eliminar los virus.
+
+{:.subsection}
+### Los cortafuegos
 
 Un cortafuegos (firewall) es una parte de un sistema o una red que está diseñada para bloquear el acceso por la red no autorizado, permitiendo al mismo tiempo comunicaciones autorizadas. Por ejemplo, se puede impedir que un determinado programa tenga acceso a Internet o que no se pueda acceder por la red a un equipo.
 
 En Windows, cuando instalamos un programa nuevo que utiliza funciones de red, el firewall nos preguntará si queremos que tenga acceso a la red.
 
-En el firewall de Windows se puede configurar para que bloquee los programas que desee el administrador (opción: “Permitir un programa o una característica a través de Firewall de Windows”) 
+En el firewall de Windows se puede configurar para que bloquee los programas que desee el administrador (opción: "Permitir un programa o una característica a través de Firewall de Windows").
 
 {:.section}
-## Seguridad en Internet
+## Amenazas en Internet
 
-{:.section}
-## Ingeniería social
+{:.subsection}
+### Virus
+
+Los virus informáticos son programas que se instalan de forma inadvertida en los ordenadores, realizan su función destructiva y pueden propagarse hacia otros ordenadores.
+
+Para que nuestro ordenador se infecte o contagie con un virus, el código del virus tiene que grabarse en nuestro ordenador, la forma más sencilla de hacer esto para un virus es cuando copiamos archivos, ya que sólo tiene que ocultarse dentro del archivo que estamos copiando.
+
+Una vez el archivo del virus está en nuestro ordenador tiene que ejecutarse para poder realizar sus funciones. 
+
+Hay varias formas de ejecutarse, por ejemplo, lo podemos ejecutar nosotros mismos sin darnos cuenta al abrir un archivo adjunto del correo. 
+
+Normalmente las páginas web contienen texto, gráficos, sonido, animaciones y vídeos. El navegador sólo se leen estos elementos y se visualizan en la pantalla, por lo tanto las páginas web no pueden infectarnos ya que no suelen contener programas que se ejecuten en nuestro ordenador. Normalmente, para que una página web pueda infectar a sus visitantes ha de ser el propio dueño de dicha página el que instale los virus con intención de propagarlos.
+
+{:.subsection}
+### Troyano
+
+Es un programa aparentemente legítimo e inofensivo, pero que, al ejecutarlo, le brinda a un atacante acceso remoto al equipo infectado.
+
+{:.subsection}
+### Spyware
+
+Es un malware que recopila información de un ordenador y después transmite esta información a una entidad externa sin el conocimiento o el consentimiento del propietario del ordenador.
+
+{:.subsection}
+### Gusano
+
+Es un malware que tiene la propiedad de duplicarse a sí mismo, siendo su medio de propagación la red.
+
+{:.subsection}
+### Adware
+
+Es un software que muestra publicidad mientras se está utilizando una aplicación sin que el usuario haya consentido en la instalación de dicha publicidad.
+
+{:.subsection}
+### Ingeniería social
 
 En la informática, la ingeniería social hace referencia a todas aquellas conductas que permiten obtener información confidencial de otras personas, sin que estas se den cuenta de que la están revelando. Ejemplo: crear sitios web, en los que se ofrecen concursos o cuestionarios falsos que piden a los usuarios una contraseña. Si un usuario escribe la misma contraseña que usa en su trabajo, el hacker la utiliza para entrar en la red de su trabajo sin tener que descifrar ninguna clave.
 
 Se llama phishing a la estafa consistente en imitar la imagen de una empresa o entidad, con la intención de obtener datos del usuario que, posteriormente, se utilizarán de forma fraudulenta.
 
-La forma de phishing más habitual consiste en recibir un mensaje de correo electrónico en el que se solicitan datos, supuestamente por motivos de seguridad, mejorar el servicio, encuestas, confirmación de la identidad, etc. Ejemplo:
+La forma de phishing más habitual consiste en recibir un mensaje de correo electrónico en el que se solicitan datos, supuestamente por motivos de seguridad, mejorar el servicio, encuestas, confirmación de la identidad, etc. 
+
+![Ejemplo de phising](/assets/img/seguridad-informatica/phising.png)
+_Ejemplo de phising_
 
 Estos mensajes se diseñan para dar la sensación de que proceden de sitios de confianza, como nuestro banco. Para que parezcan más reales suelen contener enlaces que parecen que conducen al sitio web legítimo, cuando en realidad nos remiten a un sitio falso que tiene el mismo aspecto que el sitio web original. Una vez allí, el usuario introduce información personal que se transmite directamente al delincuente.
 
-{:.section}
-## Spam (correo basura)
+{:.subsection}
+### Spam (correo basura)
 
 El Spam es el envío masivo de correo electrónico que no ha sido solicitado y que busca
 un beneficio por parte del remitente.
@@ -217,7 +284,7 @@ Información) en España, que prohíben el spam, su difusión está muy extendid
 Otro sistema es el de prometer en los mensajes que enviando un mail a una dirección se dejará de recibirlos: cuando alguien contesta, significa no sólo que lo ha abierto, sino que lo ha leído.
 
 {:.section}
-## Compras
+## Compras seguras en Internet
 
 Internet también ofrece muchas posibilidades para realizar compras. Normalmente se necesita disponer de una tarjeta de crédito.
 
@@ -226,6 +293,8 @@ Conviene tomar algunas precauciones: 
 - Comprobar que se utiliza el protocolo de seguridad HTTPS en el navegador
 - Que la empresa disponga de un certificado digital: hacer doble clic en un pequeño icono, con forma de candado, que aparece al visualizar la página en el navegador.
 
+![Protocolo de seguridad HTTPS](/assets/img/seguridad-informatica/https.png)
+_Protocolo de seguridad HTTPS_
 
 {:.section}
 ## Conexión de forma segura a redes WiFi
@@ -236,7 +305,8 @@ Un muy elevado porcentaje de redes son instalados sin tener en consideración 
 
 El acceso no autorizado a un dispositivo Wi-Fi es muy peligroso para el propietario por varios motivos. El más obvio es que pueden utilizar la conexión. Pero además, accediendo al Wi-Fi se puede monitorizar y registrar toda la información que se transmite a través de él (incluyendo información personal, contraseñas...).
 
-Medidas de Seguridad en redes WIFI 
+{:.subsection}
+### Medidas de Seguridad en redes WIFI 
 
 Estas serían las medidas más importantes para proteger la intrusión en nuestra red WIFI: 
 
@@ -247,10 +317,9 @@ Estas serían las medidas más importantes para proteger la intrusión en nuestr
     - El protocolo WEP es el más simple y lo implementan prácticamente todos los dispositivos, pero ya han sido encontradas algunas vulnerabilidades que permiten saltarse su protección. 
     - En cambio, el protocolo WPA utiliza un cifrado más fuerte que hace que sea más robusto. También es posible implementar el protocolo WPA2 que es la evolución definitiva del WPA, es el más seguro.
 
-{:.section}
 ## Bibliografía
 
-
+- [Amenaza vs Vulnerabilidad, ¿sabes en qué se diferencian?](https://www.incibe.es/protege-tu-empresa/blog/amenaza-vs-vulnerabilidad-sabes-se-diferencian)
 
 
 

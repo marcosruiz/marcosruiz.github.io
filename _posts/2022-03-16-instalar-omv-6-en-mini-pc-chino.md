@@ -23,7 +23,6 @@ _3 puertos USB laterales del mini PC NiPoGi_
 ![NiPoGi](/assets/img/instalar-omv-6-en-mini-pc-chino/nipogi2.jpg)
 _NiPoGi y dock para el SSD_
 
-
 En mi caso lo compré en [Amazon](https://amzn.to/3MSnowd) por 156,90 €.
 
 ## ¿Por qué este mini PC?

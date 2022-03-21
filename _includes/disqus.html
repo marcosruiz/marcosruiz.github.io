@@ -14,7 +14,7 @@
 </script>
 
 <script>
-function changeGiscusTheme () {
+const changeGiscusTheme = function() {
   let modeToggle = new ModeToggle();
   const theme = modeToggle.mode === 'dark' ?  'dark' : 'light'
   function sendMessage(message) {
@@ -34,4 +34,5 @@ const modeToggle = document.getElementsByClassName("mode-toggle")[0];
 if (typeof modeToggle !== "undefined") {
   modeToggle.addEventListener('click', changeGiscusTheme);
 }
+
 </script>
