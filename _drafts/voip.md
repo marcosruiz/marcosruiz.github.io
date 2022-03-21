@@ -2,7 +2,7 @@
 title: "VoIP"
 date: 2022-02-04 12:20:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
-tags: [servicios en red, smr, teoría]
+tags: [servicios en red, smr, teoría, voip]
 ---
 
 ## Introducción
