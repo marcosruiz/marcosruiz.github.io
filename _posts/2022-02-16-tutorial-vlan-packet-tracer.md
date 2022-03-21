@@ -34,9 +34,9 @@ _Interfaz de línea de comandos_
 En la línea de comando escribiremos lo siguiente:
 
 - `enable` (este comando indica al SO que vamos a entrar en la zona de escritura de órdenes)
-- Veremos que cambia el texto de la raíz a `Switch#>`.
+- Veremos que cambia el texto de la raíz a `Switch#`.
 - `config ter` (este comando prepara el switch para ser configurado vía teclado).
-- Veremos que cambia de nuevo el texto de la raíz `Switch(config)#>`.
+- Veremos que cambia de nuevo el texto de la raíz `Switch(config)#`.
 
 ### Paso 1
 
@@ -48,7 +48,7 @@ Switch(config)# vlan 5
 
 ### Paso 2
 
-Cambiará de nuevo la raíz indicando ahora: `Switch(config-vlan)#>`.
+Cambiará de nuevo la raíz indicando ahora: `Switch(config-vlan)#`.
 
 Deberemos darle un nombre, para ello teclearemos `name <nombre identificativo de la vlan>`.
 
@@ -67,7 +67,6 @@ Y ahora vamos a indicar los puertos del switch que van a usar esa primera VLAN, 
 Ejemplo: 
 
 ```console
-
 Switch(config)# interface range fa 0/1-7
 ```
 
@@ -76,14 +75,14 @@ Switch(config)# interface range fa 0/1-7
 Hecho lo cual añadiremos en la línea de comando:
 
 ```console
-Switch(config-if-range)# Switchport Access vlan <número de vlan>
+Switch(config-if-range)# switchport Access vlan <número de vlan>
 ```
 
 
 En nuestro ejemplo:
 
 ```console
-Switch(config-if-range)# Switchport Access vlan 5
+Switch(config-if-range)# switchport Access vlan 5
 Switch(config-if-range)# exit
 ```
 
@@ -103,8 +102,8 @@ Indicaremos `interface fa 0/24` (el puerto que habíamos reservado).
 Y ahora indicaremos cómo se va a hacer la comunicación por este puerto, el modo troncal.
 
 ```console
-Switch(config-if-range)# switchport mode trunk
-Switch(config-if-range)# exit
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# exit
 ```
 
 Una última instrucción será guarda en la memoria del dispositivo los cambios que hemos hecho para que se conserven. Escribiremos: `copy run start` y pulsaremos enter para aceptar el guardado.
@@ -150,7 +149,13 @@ Router(config-subif)# exit
 
 Los pasos 1 a 3 se repetirán para cada VLAN que tengamos que configurar, cambiando obviamente los números de VLAN y las direcciones del router para cada una de las mismas.
 
-Y finalmente grabaremos los cambios con la instrucción: `copy run start` y pulsaremos enter para aceptar el guardado. 
+Y finalmente grabaremos los cambios con la instrucción: 
+
+```console
+Router# copy run start
+``` 
+
+Y pulsaremos enter para aceptar el guardado. 
 
 Obteniendo algo similar a esto:
 
