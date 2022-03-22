@@ -40,7 +40,7 @@ En la línea de comando escribiremos lo siguiente:
 
 ### Paso 1
 
-Empezamos a configurar cada VLAN que necesitamos, para ello escribiremos: `vlan <númeroVlan>`, en nuestro ejemplo: 
+Empezamos a configurar cada VLAN que necesitamos, para ello escribiremos: `vlan <númeroVlan>`, en nuestro ejemplo:
 
 ```console
 Switch(config)# vlan 5
@@ -75,14 +75,14 @@ Switch(config)# interface range fa 0/1-7
 Hecho lo cual añadiremos en la línea de comando:
 
 ```console
-Switch(config-if-range)# switchport Access vlan <número de vlan>
+Switch(config-if-range)# switchport access vlan <número de vlan>
 ```
 
 
 En nuestro ejemplo:
 
 ```console
-Switch(config-if-range)# switchport Access vlan 5
+Switch(config-if-range)# switchport access vlan 5
 Switch(config-if-range)# exit
 ```
 
@@ -95,9 +95,12 @@ De este modo indicamos qué puertos del switch son para cada VLAN.
 _Configuración del switch_
 
 Tras ello queda por configurar el puerto que hemos reservado para la comunicación con el router.
-De nuevo mediante CLI.
 
-Indicaremos `interface fa 0/24` (el puerto que habíamos reservado).
+De nuevo mediante CLI. Indicaremos el puerto que habíamos reservado para la comunicación con el router.
+
+```console
+Switch(config)# interface fa 0/24
+```
 
 Y ahora indicaremos cómo se va a hacer la comunicación por este puerto, el modo troncal.
 
@@ -106,7 +109,13 @@ Switch(config-if)# switchport mode trunk
 Switch(config-if)# exit
 ```
 
-Una última instrucción será guarda en la memoria del dispositivo los cambios que hemos hecho para que se conserven. Escribiremos: `copy run start` y pulsaremos enter para aceptar el guardado.
+Una última instrucción será guarda en la memoria del dispositivo los cambios que hemos hecho para que se conserven. Escribiremos:
+
+```console
+Switch# copy run start
+```
+
+Y pulsaremos Enter para aceptar el guardado con el nombre por defecto.
 
 ## Configuración del router
 
