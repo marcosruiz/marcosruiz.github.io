@@ -95,10 +95,10 @@ Comprende el conjunto de defensas o medidas cuyo objetivo es **evitar o reducir 
     - Cuanto más largo, más robusto es.
 - **Encriptación**: Para proteger la información confidencial que enviamos por la red se utilizan los métodos de encriptación o cifrado. El cifrado es la técnica que impide que los usuarios no autorizados puedan acceder al contenido de un documento. Para ello el contenido se encripta de tal manera que sólo el usuario destinatario puede leerlo, ya que sólo él es capaz de descifrarlo.
 - **Software de seguridad activa**: Hay diferentes programas que ayudan a mantener la seguridad informática activamente. Destacamos:
-- **Antivirus**: Programa que analiza las distintas unidades y dispositivos, así como el flujo de datos entrantes y salientes. Utiliza una base de datos con cadenas de caracteres características de distintos virus, por lo que es fundamental que esté actualizado. Protegen contra virus, troyanos y gusanos y algunos son antispyware e incluso filtros antispam.
-- **Antispyware**: programa cuyo objetivo es eliminar software espía 
-- **Cortafuegos (firewall)**: Sistema de defensa que controla y filtra el tráfico de entrada y salida de una red. Se configura para pedir confirmación de cualquier programa que utilice la conexión a Internet (pueden establecerse excepciones). Normalmente incluidos en los SO, aunque también existen otros de software libre o de pago.
-- **Proxy**. Software instalado en el PC que funciona como puerta de entrada; se puede configurar como cortafuegos o como limitador de páginas Web.
+    - **Antivirus**: Programa que analiza las distintas unidades y dispositivos, así como el flujo de datos entrantes y salientes. Utiliza una base de datos con cadenas de caracteres características de distintos virus, por lo que es fundamental que esté actualizado. Protegen contra virus, troyanos y gusanos y algunos son antispyware e incluso filtros antispam.
+    - **Antispyware**: programa cuyo objetivo es eliminar software espía 
+    - **Cortafuegos (firewall)**: Sistema de defensa que controla y filtra el tráfico de entrada y salida de una red. Se configura para pedir confirmación de cualquier programa que utilice la conexión a Internet (pueden establecerse excepciones). Normalmente incluidos en los SO, aunque también existen otros de software libre o de pago.
+    - **Proxy**. Software instalado en el PC que funciona como puerta de entrada; se puede configurar como cortafuegos o como limitador de páginas Web.
 
 {:.subsection}
 ### Seguridad pasiva
@@ -118,6 +118,20 @@ Los SAI (Sistemas de Alimentación Ininterrumpida) protegen a los equipos frente
 _Ejemplo de SAI_
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/Qr58qnz9Vks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{:.question}
+¿Qué es un SAI?
+
+{:.question}
+¿Qué es el factor de potencia? ¿Cuanto es mayor el factor de potencia es mejor o peor?
+
+{:.question}
+¿Cómo sabes cuanto te va a durar un SAI?
+
+(Voltaje de la batería * Número de baterías * Amperios/hora * Factor de potencia) / Multiamperios =  Tiempo en horas
+
+{:.question}
+Más de 200€ en un SAI para 10 minutos ¿No es muy poco?
 
 ##### NAS
 
