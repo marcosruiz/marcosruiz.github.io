@@ -43,7 +43,7 @@ tags: [vitalinux, zorin]
 - BlueJ
 
 {:.section}
-## Zorin OS Lite Desktop Enviroment (Xfce)
+## Zorin OS Lite Desktop Environment (Xfce)
 
 - Ubuntu 18.04 ➡ bionic
 - Ubuntu 20.04 ➡ focal
