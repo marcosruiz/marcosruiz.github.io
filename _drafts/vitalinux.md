@@ -47,6 +47,35 @@ Añadir a /etc/apt/sources.list las siguientes lo siguiente:
 - Ubuntu 18.04 ➡ bionic
 - Ubuntu 20.04 ➡ focal
 
+Contraseña por defecto: careidga
+
+```shell
+deb https://packages.zorinos.com/stable bionic main
+# deb-src https://packages.zorinos.com/stable bionic main
+
+deb https://packages.zorinos.com/patches bionic main
+# deb-src https://packages.zorinos.com/patches bionic main
+
+deb https://packages.zorinos.com/apps bionic main
+# deb-src https://packages.zorinos.com/apps bionic main
+
+deb https://packages.zorinos.com/drivers bionic main restricted
+# deb-src https://packages.zorinos.com/drivers bionic main restricted
+
+deb http://ppa.launchpad.net/zorinos/stable/ubuntu bionic main
+# deb-src http://ppa.launchpad.net/zorinos/stable/ubuntu bionic main
+
+deb http://ppa.launchpad.net/zorinos/patches/ubuntu bionic main
+# deb-src http://ppa.launchpad.net/zorinos/patches/ubuntu bionic main
+
+deb http://ppa.launchpad.net/zorinos/apps/ubuntu bionic main
+# deb-src http://ppa.launchpad.net/zorinos/apps/ubuntu bionic main
+
+deb http://ppa.launchpad.net/zorinos/drivers/ubuntu bionic main
+# deb-src http://ppa.launchpad.net/zorinos/drivers/ubuntu bionic main
+```
+{: file="/etc/apt/sources.list" }
+
 ```shell
 deb https://packages.zorinos.com/stable focal main
 # deb-src https://packages.zorinos.com/stable focal main
@@ -83,7 +112,7 @@ $ sudo gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv 40E0F448B35AB199
 $ sudo gpg --export --armor 40E0F448B35AB199 | sudo apt-key add -
 ```
 
-Instalamos Zorin OS Desktop Enviroment:
+Instalamos Zorin OS Desktop Environment:
 
 ```console
 $ sudo apt-get update
