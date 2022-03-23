@@ -50,7 +50,7 @@ tags: [vitalinux, zorin]
 
 Contraseña por defecto es "careidga".
 
-Añadir a /etc/apt/sources.list las siguientes lo siguiente:
+Añadir a /etc/apt/sources.list las siguientes líneas:
 
 ```shell
 deb https://packages.zorinos.com/stable bionic main
@@ -108,7 +108,7 @@ deb http://ppa.launchpad.net/zorinos/drivers/ubuntu focal main
 ```
 {: file="/etc/apt/sources.list" }
 
-Añadimos las claves públicas de ZorinOS:
+Añadimos las claves públicas de Zorin OS:
 
 ```console
 $ sudo gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv 30FCF8F64F71B61C
