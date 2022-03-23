@@ -150,6 +150,7 @@ Lo mejor de todo es que podemos seguir usando el Ctrl + Espacio para hacer búsq
 ![Ctrl + Espacio en Zorin DE](/assets/img/zorin-vitalinux/ctrlSpace.png)
 _Ctrl + Espacio en Zorin DE_
 
+Si quieres descargar el script haz click en [este enlace](/assets/scripts/instalarZorinOsEnVitalinux.sh).
 
 <!--
 ## Instalar Cinnamon (Xfce)
