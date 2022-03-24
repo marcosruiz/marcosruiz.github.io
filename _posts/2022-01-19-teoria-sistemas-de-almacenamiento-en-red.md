@@ -30,6 +30,13 @@ Es una solución ideal para pequeños negocios por varios motivos. El primero, p
 
 Los protocolos de comunicaciones NAS están basados en archivos. Esto significa que el cliente solicitará archivos completos al servidor para trabajar sobre él en local, así que están orientados a manipular una gran cantidad de pequeños archivos. Esta es, a la vez, su limitación más conocida: al depender de una red y de un sistema de ficheros, la velocidad de servicio estará limitada, y habrá alguna dificultad en cuestiones de escala.
 
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/o4aKcd8_vyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/o1KXOn8mulE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 {:.section}
 ## ¿Qué es un SAN o Storage Area Network?
 
@@ -62,10 +69,8 @@ Video en inglés con subtítulos en español:
 ![img-description](/assets/img/teoria-sistemas-de-almacenamiento-en-red/das-nas-san.png)
 _Imagen resumen de DAS vs NAS vs SAN_
 
-{:.section}
-## Vídeo opcional
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/o4aKcd8_vyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## Preguntas
 
