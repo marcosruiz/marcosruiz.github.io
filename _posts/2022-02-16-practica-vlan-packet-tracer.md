@@ -60,6 +60,25 @@ En al siguiente tabla se muestra el direccionamiento que se ha usado para cada u
 ![img-description](/assets/img/practica-vlan-packet-tracer/enrutamiento-entre-vlans-002.webp)
 _Direccionamiento de red_
 
+{:.activity}
+### Subredes y VLAN
+
+A partir de la red 118.0.0.0 y a partir de la topología de red calculad los siguientes elementos:
+
+- Nº de subredes útiles necesarias.
+- Nº de subredes totales necesarias.
+- Clase.
+- Máscara de (sub)red por defecto.
+- Máscara de subred adaptada (en decimal punteado).
+- Nº total de subredes.
+- Nº de subredes útiles.
+- Nº total de direcciones de host.
+- Nº de direcciones de host útiles.
+- Nº de bits prestados a la subred.
+
+![img-description](/assets/img/practica-vlan-packet-tracer/topologiaRed4Routers.png)
+_Topología de red con 4 routers_
+
 ## Entrega y presentación
 
 La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del fichero ZIP sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.zip".
