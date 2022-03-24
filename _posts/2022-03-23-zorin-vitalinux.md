@@ -48,8 +48,6 @@ tags: [vitalinux, zorin]
 - Ubuntu 18.04 ➡ bionic
 - Ubuntu 20.04 ➡ focal
 
-Contraseña por defecto es "careidga".
-
 Añadir a /etc/apt/sources.list las siguientes líneas:
 
 ```shell

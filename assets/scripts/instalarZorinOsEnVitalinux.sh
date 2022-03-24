@@ -30,4 +30,5 @@ sudo gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv 40E0F448B35AB199
 sudo gpg --export --armor 40E0F448B35AB199 | sudo apt-key add -
 sudo apt-get update
 sudo apt install -y xfce4
+sudo apt install -y xorg
 sudo apt install -y zorin-os-lite-desktop
