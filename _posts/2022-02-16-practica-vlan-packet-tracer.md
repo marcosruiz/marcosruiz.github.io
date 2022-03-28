@@ -66,73 +66,73 @@ En al siguiente tabla se muestra el direccionamiento que se ha usado para cada u
 | Switch1 | --- | --- | --- | 10 |
 | Switch2 | --- | --- | --- | 20 |
 | Switch central | --- | --- | --- | 10, 20 y 30 |
-| Router0 | 192.168.0.1 | 255.255.255.0 | --- | 10, 20 y 30 |
-| Router0 | 192.168.1.1 | 255.255.255.0 | --- | 10, 20 y 30 |
+| Router0 | 192.168.0.1 | 255.255.255.0 | --- | 30 |
+| Router0 | 192.168.1.1 | 255.255.255.0 | --- | 30 |
 
 #### Switch1
 
 ```console
 Switch>
-Switch>en
-Switch#conf t
-Switch(config)#vlan 10
-Switch(config-vlan)#name VLAN10
-Switch(config-vlan)#int r f0/1-24
-Switch(config-if-range)#switchport mode access
-Switch(config-if-range)#switchport access vlan 10
+Switch> en
+Switch# conf t
+Switch(config)# vlan 10
+Switch(config-vlan)# name VLAN10
+Switch(config-vlan)# int r f0/1-24
+Switch(config-if-range)# switchport mode access
+Switch(config-if-range)# switchport access vlan 10
 ```
 
 #### Switch2
 
 ```console
 Switch>
-Switch>en
-Switch#conf t
-Switch(config)#vlan 20
-Switch(config-vlan)#name VLAN20
-Switch(config-vlan)#int r f0/1-24
-Switch(config-if-range)#switchport mode access
-Switch(config-if-range)#switchport access vlan 20
+Switch> en
+Switch# conf t
+Switch(config)# vlan 20
+Switch(config-vlan)# name VLAN20
+Switch(config-vlan)# int r f0/1-24
+Switch(config-if-range)# switchport mode access
+Switch(config-if-range)# switchport access vlan 20
 ```
 
 #### Switch central
 
 ```console
-Switch>en
-Switch#conf t
-Switch(config)#vlan 10
-Switch(config-vlan)#name VLAN10
-Switch(config-vlan)#vlan 20
-Switch(config-vlan)#name VLAN20
-Switch(config-vlan)#vlan 30
-Switch(config-vlan)#name VLAN30
-Switch(config-vlan)#int f0/24
-Switch(config-if)#switchport mode access
-Switch(config-if)#switchport access vlan 10
-Switch(config-if)#int f0/23
-Switch(config-if)#switchport mode access
-Switch(config-if)#switchport access vlan 20
-Switch(config-if)#int f0/1
-Switch(config-if)#switchport mode trunk
-Switch(config-if)#switchport nonegotiate
-Switch(config-if)#switchport access vlan 30
+Switch> en
+Switch# conf t
+Switch(config)# vlan 10
+Switch(config-vlan)# name VLAN10
+Switch(config-vlan)# vlan 20
+Switch(config-vlan)# name VLAN20
+Switch(config-vlan)# vlan 30
+Switch(config-vlan)# name VLAN30
+Switch(config-vlan)# int f0/24
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport access vlan 10
+Switch(config-if)# int f0/23
+Switch(config-if)# switchport mode access
+Switch(config-if)# switchport access vlan 20
+Switch(config-if)# int f0/1
+Switch(config-if)# switchport mode trunk
+Switch(config-if)# switchport nonegotiate
+Switch(config-if)# switchport access vlan 30
 ```
 
 #### Router
 
 ```console
-Router#en
-Router#conf t
-Router(config)#int f0/0.10
-Router(config-subif)#encapsulation dot1Q 10
-Router(config-subif)#ip add 192.168.0.1 255.255.255.0
-Router(config-subif)#no sh
-Router(config-subif)#int f0/0.20
-Router(config-subif)#encapsulation dot1Q 20
-Router(config-subif)#ip add 192.168.1.1 255.255.255.0
-Router(config-subif)#no sh
-Router(config-subif)#int f0/0
-Router(config-if)#no sh
+Router# en
+Router# conf t
+Router(config)# int f0/0.10
+Router(config-subif)# encapsulation dot1Q 10
+Router(config-subif)# ip add 192.168.0.1 255.255.255.0
+Router(config-subif)# no sh
+Router(config-subif)# int f0/0.20
+Router(config-subif)# encapsulation dot1Q 20
+Router(config-subif)# ip add 192.168.1.1 255.255.255.0
+Router(config-subif)# no sh
+Router(config-subif)# int f0/0
+Router(config-if)# no sh
 ```
 
 {:.activity}
