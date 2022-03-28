@@ -146,6 +146,30 @@ De manera opcional aquí tenéis un artículo de como he montado un NAS en mi ca
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/o1KXOn8mulE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+{:.question}
+¿Qué es un NAS?
+
+{:.question}
+¿Qué es un RAID5? ¿Para qué sirve?
+
+{:.question}
+¿Es más rápido leer en un RAID5?
+
+{:.question}
+¿Es más rápido escribir en un RAID5?
+
+{:.question}
+¿Qué es un RAID1?
+
+{:.question}
+¿Qué es un cuello de botella?
+
+{:.question}
+¿Qué es una VPN?
+
+
+
+
 ##### Copias de seguridad o backups
 
 Permiten restaurar sistemas o datos si es necesario. Es importante planificar en qué soporte se hacen, con qué periodicidad y de qué elementos del sistema. Las copias de seguridad son un proceso que se utiliza para salvar toda la información, es decir, un usuario, quiere guardar toda la información, o parte de la información, de la que dispone en el PC hasta este momento, realizará una copia de seguridad de tal manera, que lo almacenará en algún medio de almacenamiento como por ejemplo cinta, DVD, BluRay, discos virtuales (en Internet) o simplemente en otro Disco Duro, para posteriormente si se pierde la información, poder restaurar el sistema. 

@@ -57,8 +57,18 @@ _Esquema de red_
 
 En al siguiente tabla se muestra el direccionamiento que se ha usado para cada uno de los equipos del esquema de red. Hay que prestar especial atención a las VLANs en las que está cada uno de los elementos del esquema:
 
-![img-description](/assets/img/practica-vlan-packet-tracer/enrutamiento-entre-vlans-002.webp)
-_Direccionamiento de red_
+| Equipo | IPs | Máscara de red | Gateway | VLAN |
+|:---|:---:|:---:|:---:|:---:|
+| PC0 | 192.168.0.2 | 255.255.255.0 | 192.168.0.1 | 10 |
+| PC1 | 192.168.0.3 | 255.255.255.0 | 192.168.0.1 | 10 |
+| PC2 | 192.168.1.2 | 255.255.255.0 | 192.168.1.1 | 20 |
+| PC3 | 192.168.1.3 | 255.255.255.0 | 192.168.1.1 | 20 |
+| Switch1 | --- | --- | --- | 10 |
+| Switch2 | --- | --- | --- | 20 |
+| Switch central | --- | --- | --- | 10, 20 y 30 |
+| Router0 | 192.168.0.1 | 255.255.255.0 | --- | 10, 20 y 30 |
+| Router0 | 192.168.1.1 | 255.255.255.0 | --- | 10, 20 y 30 |
+
 
 {:.activity}
 ### Subredes y VLAN
@@ -78,6 +88,7 @@ A partir de la red 118.0.0.0 y a partir de la topología de red calculad los sig
 
 ![img-description](/assets/img/practica-vlan-packet-tracer/topologiaRed4Routers.png)
 _Topología de red con 4 routers_
+
 
 ## Entrega y presentación
 
