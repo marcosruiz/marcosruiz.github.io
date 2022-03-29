@@ -1,6 +1,6 @@
 ---
 title: "Sistemas de almacenamiento en red: DAS, NAS y SAN"
-date: 2022-01-19 00:30:00 +0100
+date: 2022-03-29 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática, servicios en red, smr, asir]
 ---
@@ -34,8 +34,57 @@ Los protocolos de comunicaciones NAS están basados en archivos. Esto significa 
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/o4aKcd8_vyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/o1KXOn8mulE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{:.question}
+¿Qué significan las siglas NAS?
 
+{:.question}
+¿A qué se conecta un NAS?
+
+{:.question}
+¿Es suficiente un cable de un Gigabit Ethernet para editar vídeo 4K?
+
+{:.question}
+¿Es suficiente un cable de 10Gigabit Ethernet para editar vídeo 4K?
+
+{:.question}
+¿Qué beneficios tiene un NAS?
+
+{:.question}
+¿Qué cable es mejor que el de 10Gigabit Ethernet?
+
+{:.question}
+¿Qué marcas existen de NAS?
+
+{:.question}
+¿Qué diferencia hay entre un HDD de tu PC y un HDD para NAS?
+
+{:.question}
+¿Para qué sirve un RAID5?
+
+{:.question}
+¿Se pueden recuperar los datos de un RAID5 si alguien los borra del sistema de ficheros?
+
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué dos desventajas tiene usar un RAID5?</summary>
+  <div class="card-body">
+    <ul>
+      <li>Uso de más discos.</li>
+      <li>Escrituras más lentas.</li>
+    </ul>
+  </div>
+</details>
+
+{:.question}
+¿Para que sirve la caché de un NAS?
+
+{:.question}
+¿El RAID0 tiene redundancia de datos?
+
+{:.question}
+¿Qué ventaja tiene este NAS respecto a un servidor GNU Linux?
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/o1KXOn8mulE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.section}
 ## ¿Qué es un SAN o Storage Area Network?
