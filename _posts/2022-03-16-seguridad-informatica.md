@@ -140,35 +140,23 @@ Los dispositivos NAS (Network Area Storage, sistemas de almacenamiento en red) s
 ![NAS doméstico Synology](/assets/img/seguridad-informatica/nas.png)
 _NAS doméstico Synology_
 
-De manera opcional aquí tenéis un artículo de como he montado un NAS en mi casa con un mini PC chino: [Instalar OMV 6 en Debian 11 (Bullseye) en mini PC chino](/posts/instalar-omv-6-en-mini-pc-chino/).
-
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/-hG-fG72_24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/o1KXOn8mulE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Para entender bien el vídeo necesitarás tener claro cuales son los sistemas de almacenamiento en [RAID](/posts/raid/).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o4aKcd8_vyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
 ¿Qué es un NAS?
 
-{:.question}
-¿Qué es un RAID5? ¿Para qué sirve?
-
-{:.question}
-¿Es más rápido leer en un RAID5?
-
-{:.question}
-¿Es más rápido escribir en un RAID5?
-
-{:.question}
-¿Qué es un RAID1?
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/o1KXOn8mulE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
 ¿Qué es un cuello de botella?
 
-{:.question}
-¿Qué es una VPN?
+De manera opcional puedes leer el artículo [Sistemas de almacenamiento en red: DAS, NAS y SAN](/posts/teoria-sistemas-de-almacenamiento-en-red/). 
 
-
-
+De manera opcional aquí tenéis un artículo de como he montado un NAS en mi casa con un mini PC chino: [Instalar OMV 6 en Debian 11 (Bullseye) en mini PC chino](/posts/instalar-omv-6-en-mini-pc-chino/).
 
 ##### Copias de seguridad o backups
 
