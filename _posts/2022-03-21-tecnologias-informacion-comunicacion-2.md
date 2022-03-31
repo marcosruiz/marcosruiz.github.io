@@ -27,7 +27,7 @@ pin: true
 
 - UD3 - Programación estructurada
     - [Iniciación a la programación](/posts/iniciacion-a-la-programacion/)
-    - [Iniciación a la programación 2](/posts/iniciacion-a-la-programacion-2/)
+    
 - UD4 - [Programación orientada a objetos](/posts/poo/)
     - [Programación Java](/posts/programacion-java/)
 
@@ -42,6 +42,8 @@ pin: true
 - UD5 - [Seguridad Informática](/posts/seguridad-informatica/)
     - [RAID](/posts/raid/)
 - UD6 - Análisis, desarrollo y prueba de aplicaciones
+    - [Manual Java](/posts/manual-java/)
+        - [Iniciación a la programación 2](/posts/iniciacion-a-la-programacion-2/)
 
 ### Prácticas
 
