@@ -305,3 +305,4 @@ for(var x=0;x<nr;x++){ // Beginning of for loop with x
 ## Bibliografía
 
 - [CREATE FORMS FROM A GOOGLE SPREADSHEET](https://script.google.com/home/projects/15vFFK_qdhlTy_dpj0wRN7y7K-jZFalamHueYd3KyNeWpfcMTE3iyvbHK/edit)
+- [Script original](https://script.google.com/home/projects/15vFFK_qdhlTy_dpj0wRN7y7K-jZFalamHueYd3KyNeWpfcMTE3iyvbHK/edit)
