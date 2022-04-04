@@ -313,3 +313,16 @@ Esta técnica complementa a la anterior y los casos de prueba elegidos ejercitan
 
 ![Tabla de clases de equivalencia con valores límite](/assets/img/analisis-desarrollo-prueba-aplicaciones/tablaClasesDeEquivalenciaValoresLimite.png)
 _Tabla de clases de equivalencia con valores límite_
+
+### Pruebas con JUnit
+
+JUnit es una librería (.jar) escrita en Java para la realización de test unitarios. 
+
+Las etiquetas JUnit más usadas son las siguientes:
+
+- `@Test`: El método que tenga esta etiqueta será un test.
+- `@BeforeAll`: Este método se ejecutará antes del primer test.
+- `@AfterAll`: Este método se ejecutará después del último test.
+- `@BeforeEach`: Este método se ejecutará antes de cada test.
+- `@AfterEach`: Este método se ejecutará después de cada test.
+
