@@ -17,6 +17,10 @@ A continuación se listan las actividades que se deben realizar para esta práct
 
 Convertir una frase a mayúsculas o minúsculas, que daremos opción a que el usuario lo pida y mostraremos el resultado por pantalla.
 
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/L3Zf2q-oCko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/7dGiTkO55hY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Actividad 2
 
 Mostrar la longitud de una cadena.
@@ -28,6 +32,8 @@ Pedir dos palabras por teclado, indicar si son iguales.
 ### Actividad 4
 
 Dada una cadena, extraer la cuarta y quinta letra usando el método substring.
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/cn0n2ggXysc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Actividad 5
 
