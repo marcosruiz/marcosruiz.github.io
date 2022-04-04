@@ -24,7 +24,6 @@ En Red > Interfaces > Propiedades avanzadas añadimos 8.8.8.8 a los "Servidores 
 ![Servidores DNS](/assets/img/tutorial-configurar-omv6/dnsDir.png)
 _Servidores DNS_
 
-
 ## Instalar Docker y Portainer
 
 Abrimos PuTTy, añadimos la dirección IP y hacemos click en "Open".
@@ -129,14 +128,14 @@ services:
     image: linuxserver/duckdns
     container_name: duckdns
     environment:
-      - PUID=1000 #optional
-      - PGID=100 #optional
+      - PUID=997 # modificar si no eres yo
+      - PGID=100 # modificar si no eres yo
       - TZ=Europe/Madrid
       - SUBDOMAINS=chiricloud,chiricode,chirihop,chirinas,chiriplex
-      - TOKEN=<tuTokenDeDuckDns>
-      - LOG_FILE=false #optional
+      - TOKEN=<tuTokenDeDuckDns> # modificar
+      - LOG_FILE=false
     volumes:
-      - /srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/duckdns/config:/config #optional
+      - /srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/duckdns/config:/config # modificar si no eres yo
     restart: unless-stopped
 ```
 
@@ -182,16 +181,16 @@ services:
     image: lscr.io/linuxserver/transmission
     container_name: transmission
     environment:
-      - PUID=997
-      - PGID=100
+      - PUID=997 # modificar si no eres yo
+      - PGID=100 # modificar si no eres yo
       - TZ=Europe/Madrid
       - TRANSMISSION_WEB_HOME=/combustion-release/
       - USER=<username> # modificar
       - PASS=<password> # modificar
     volumes:
-      - /srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/transmission/config:/config
-      - /srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/downloads:/downloads
-      - /srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/transmission/watch:/watch
+      - /srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/transmission/config:/config # modificar si no eres yo
+      - /srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/downloads:/downloads # modificar si no eres yo
+      - /srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/transmission/watch:/watch # modificar si no eres yo
     ports:
       - 9091:9091
       - 51413:51413
@@ -218,10 +217,77 @@ Hacemos la prueba para añadir un torrent:
 ![Interfaz web de Transmission: Añadir torrent](/assets/img/tutorial-configurar-omv6/transmissionUploadTorrent.png)
 _Interfaz web de Transmission: Añadir torrent_
 
-![Interfaz web de Transmission: Torrent descargando](/assets/img/tutorial-configurar-omv6/transmissionUploadTorrent.png)
+![Interfaz web de Transmission: Torrent descargando](/assets/img/tutorial-configurar-omv6/descargandoTorrent.png)
 _Interfaz web de Transmission: Torrent descargando_
 
-## Montar un servicio SAMBA
+## Montar un servicio Plex
+
+Del [Official Docker container for Plex Media Server](https://github.com/plexinc/pms-docker) he obtenido la siguiente plantilla:
+
+```yaml
+version: '2'
+services:
+  plex:
+    container_name: plex
+    image: plexinc/pms-docker
+    restart: unless-stopped
+    ports:
+      - 32400:32400/tcp
+      - 3005:3005/tcp
+      - 8324:8324/tcp
+      - 32469:32469/tcp
+      - 1900:1900/udp
+      - 32410:32410/udp
+      - 32412:32412/udp
+      - 32413:32413/udp
+      - 32414:32414/udp
+    environment:
+      - TZ=<timezone>
+      - PLEX_CLAIM=<claimToken>
+      - ADVERTISE_IP=http://<hostIPAddress>:32400/
+    hostname: <hostname>
+    volumes:
+      - <path/to/plex/database>:/config
+      - <path/to/transcode/temp>:/transcode
+      - <path/to/media>:/data
+```
+
+
+Vamos a "Stacks" \> "Add stack" y en el editor web copiamos lo siguiente:
+
+```yaml
+version: '2'
+services:
+  plex:
+    container_name: plex
+    image: plexinc/pms-docker
+    restart: unless-stopped
+    ports:
+      - 32400:32400/tcp
+      - 3005:3005/tcp
+      - 8324:8324/tcp
+      - 32469:32469/tcp
+      - 1900:1900/udp
+      - 32410:32410/udp
+      - 32412:32412/udp
+      - 32413:32413/udp
+      - 32414:32414/udp
+    environment:
+      - TZ=Europe/Madrid
+      - PLEX_CLAIM=<claimToken> # modificar
+      - ADVERTISE_IP=http://192.168.1.146:32400/ # modificar si no eres yo
+      - PLEX_UID=997 # modificar si no eres yo
+      - PLEX_GID=100 # modificar si no eres yo
+    hostname: nipogi # modificar si no eres yo
+    volumes:
+      - /srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/config:/config # modificar si no eres yo
+      - /srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/transcode:/transcode # modificar si no eres yo
+      - /srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/downloads:/data # modificar si no eres yo
+```
+
+El token lo puedes obtener desde [este enlace](https://www.plex.tv/claim/).
+
+## Montar un servicio SMB/SAMBA
 
 Vamos a SMB/CIFS \> Compartidos:
 
@@ -272,6 +338,13 @@ _Botón para editar las ACL_
 
 ![Permisos para la carpeta compartida elements1](/assets/img/tutorial-configurar-omv6/permisosAcl.png
 _Permisos para la carpeta compartida elements1_
+
+## Montar copia de seguridad diaria con Rsync
+
+Vamos a Servicios \> Rsync \> Tareas y creamos una nueva. Una vez hecho debería aparecer algo como lo de la siguiente Figura:
+
+![Copia de seguridad a la 1:10 cada dia con Rsync](/assets/img/tutorial-configurar-omv6/rsync.png)
+_Copia de seguridad a la 1:10 cada dia con Rsync_
 
 ## Configurar router
 
