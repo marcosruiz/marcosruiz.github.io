@@ -145,6 +145,7 @@ services:
 Esta es la plantilla:
 
 ```yaml
+---
 version: "2.1"
 services:
   transmission:
@@ -174,18 +175,19 @@ services:
 Este es mi documento sin el usuario y contraseña:
 
 ```yaml
+---
 version: "2.1"
 services:
   transmission:
     image: lscr.io/linuxserver/transmission
     container_name: transmission
     environment:
-      - PUID=1000
+      - PUID=997
       - PGID=100
       - TZ=Europe/Madrid
       - TRANSMISSION_WEB_HOME=/combustion-release/
-      - USER=<username>
-      - PASS=<password>
+      - USER=<username> # modificar
+      - PASS=<password> # modificar
     volumes:
       - /srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/transmission/config:/config
       - /srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/downloads:/downloads
@@ -197,6 +199,15 @@ services:
     restart: unless-stopped
 ```
 
+Para obtener el PUID y el PGID deberemos conectarnos por ssh y ejecutar el siguiente comando:
+
+```console
+# id admin
+uid=997(admin) gid=100(users) groups=100(users),996(openmediavault-admin)
+```
+
+Con este texto vamos a nipogi:9000 \> local \> Stacks \> Add Stack. Le damos el nombre de "transmission" y lo copiamos.
+
 Si, en mi caso, voy a ``nipogi:9091` veré lo que hay a continuación:
 
 ![Interfaz web de Transmission](/assets/img/tutorial-configurar-omv6/transmissionWeb.png)
@@ -204,13 +215,63 @@ _Interfaz web de Transmission_
 
 Hacemos la prueba para añadir un torrent:
 
-![Interfaz web de Transmission](/assets/img/tutorial-configurar-omv6/transmissionUploadTorrent.png)
-_Interfaz web de Transmission_
+![Interfaz web de Transmission: Añadir torrent](/assets/img/tutorial-configurar-omv6/transmissionUploadTorrent.png)
+_Interfaz web de Transmission: Añadir torrent_
 
+![Interfaz web de Transmission: Torrent descargando](/assets/img/tutorial-configurar-omv6/transmissionUploadTorrent.png)
+_Interfaz web de Transmission: Torrent descargando_
+
+## Montar un servicio SAMBA
+
+Vamos a SMB/CIFS \> Compartidos:
+
+![Menú SMB/CIFS](/assets/img/tutorial-configurar-omv6/menuSmb.png)
+_Menú SMB/CIFS_
+
+Hacemos click en "Crear":
+
+![Carpetas compartidas a través de SMB/SAMBA en el explorador de archivos de Windows](/assets/img/tutorial-configurar-omv6/crearCareptaCompartidaSmb.png)
+_Botón crear carpeta compartida en SMB_
+
+Seleccionamos:
+
+- Shared folder: La carpeta compartida que queramos compartir por SMB. En mi caso, elements1.
+- Público: Invitado solamente.
+
+![Configuración de la carpeta compartida SMB](/assets/img/tutorial-configurar-omv6/nuevoDiscoCompartidoSmb.png)
+_Configuración de la carpeta compartida SMB_
+
+Una vez hecho esto podemos ir al explorador de archivos de Windows \> Red \> NIPOGI (en mi caso) \> elements1
+
+![Carpetas compartidas a través de SMB/SAMBA en el explorador de archivos de Windows](/assets/img/tutorial-configurar-omv6/carpetasCompartidasSambaEnWindows.png)
+_Carpetas compartidas a través de SMB/SAMBA en el explorador de archivos de Windows_
 
 ## Montar un servicio FTP
 
-## Montar un servicio SAMBA
+Para descargar ficheros de las carpetas compartidas podemos usar el protocolo FTP que da más posibilidades que SMB.
+
+Primero, habilitamos la carpeta compartida en Servicios \> FTP \> Compartidos \> Crear como se ve en la siguiente Figura:
+
+![Habilitar carpeta compartida a través del servicio FTP](/assets/img/tutorial-configurar-omv6/habilitarCarpetaCompartidaFtp.png)
+_Habilitar carpeta compartida a través del servicio FTP_
+
+Segundo, vamos a Almacenamiento \> Carpetas Compartidas \> Click en la carpeta compartida que hemos creado previamente y hacemos click en el botón de Privilegios como se ve a continuación:
+
+![Botón para editar los privilegios de la carpeta compartida para el servicio FTP](/assets/img/tutorial-configurar-omv6/botonPrivilegiosParaFtp.png)
+_Botón para editar los privilegios de la carpeta compartida para el servicio FTP_
+
+Damos todos los permisos a los usuarios que hemos creado para no tener ningún problema.
+
+![Privilegios para no tener problemas con el servicio FTP](/assets/img/tutorial-configurar-omv6/privilegiosUsuariosParaFtp.png)
+_Privilegios para no tener problemas con el servicio FTP_
+
+En la configuración de ACL deberemos utilizar el grupo users (PGID = 100) con todos los permisos para que todos los usuarios que pertenezcan a este grupo no tengan problemas con los permisos:
+
+![Botón para editar las ACL](/assets/img/tutorial-configurar-omv6/botonAcl.png)
+_Botón para editar las ACL_
+
+![Permisos para la carpeta compartida elements1](/assets/img/tutorial-configurar-omv6/permisosAcl.png
+_Permisos para la carpeta compartida elements1_
 
 ## Configurar router
 
@@ -241,3 +302,4 @@ _Interfaz web del router: Device info o información del dispositivo_
 ## Bibliografía
 
 - [Openmediavault 5 (OMV5) Stable Complete Install and Setup including Portainer (YouTube)](https://www.youtube.com/watch?v=M_oxzpvMPTE)
+- [⬇️ Como instalar TRANSMISSION en OPENMEDIAVAULT 5 📚 Docker (YouTube)](https://www.youtube.com/watch?v=QHYvW5E5gpk)
