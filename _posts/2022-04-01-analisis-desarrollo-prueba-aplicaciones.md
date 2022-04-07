@@ -3,7 +3,65 @@ title: Análisis, desarrollo y prueba de aplicaciones
 date: 2022-04-01 12:20:00 +0100
 categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
 tags: [tic ii, teoría, programación]
+mermaid: true
 ---
+
+{:.section}
+## Introducción
+
+La creación de un programa informático es un proceso ordenado que ha de realizarse de modo secuencial. Desde el programa más sencillo, con pocas instrucciones, hasta la programación de grandes aplicaciones que contienen miles de líneas de instrucciones, se han de seguir una serie de pasos, que constituyen las **etapas del desarrollo de software**:
+
+1. Análisis (toma de requisitos).
+1. Diseño del algoritmo.
+1. Implementación o codificación.
+1. Pruebas.
+1. Documentación.
+1. Mantenimiento.
+
+Teniendo en cuenta las anteriores etapas del desarrollo existen diferentes maneras de organizar estas fases:
+
+- Modelo de cascada
+- Modelo de espiral
+- Desarrollo iterativo e incremental
+- Desarrollo ágil
+
+{:.subsection}
+### Modelo de cascada
+
+El modelo de cascada define las etapas que deben cumplirse de forma sucesiva como se ve en el siguiente diagrama.
+
+```mermaid
+flowchart LR
+A(Análisis) --> B(Diseño)
+B(Diseño) --> C(Implementación)
+C(Implementación) --> D(Pruebas)
+D(Pruebas) --> E(Documentación)
+E(Documentación) --> F(Mantenimiento)
+```
+
+Este modelo tiene una variante llamada modelo en cascada con retroalimentación.
+
+```mermaid
+flowchart LR
+A(Análisis) --> B(Diseño)
+B(Diseño) --> C(Implementación)
+C(Implementación) --> D(Pruebas)
+D(Pruebas) --> E(Documentación)
+E(Documentación) --> F(Mantenimiento)
+F --> A
+```
+
+{:.subsection}
+### Modelo de espiral
+
+
+{:.subsection}
+### Desarrollo iterativo e incremental
+
+
+{:.subsection}
+### Desarrollo ágil
+
 
 {:.section}
 ## Pruebas
