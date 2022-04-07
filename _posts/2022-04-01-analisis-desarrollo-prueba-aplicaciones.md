@@ -11,12 +11,14 @@ mermaid: true
 
 La creación de un programa informático es un proceso ordenado que ha de realizarse de modo secuencial. Desde el programa más sencillo, con pocas instrucciones, hasta la programación de grandes aplicaciones que contienen miles de líneas de instrucciones, se han de seguir una serie de pasos, que constituyen las **etapas del desarrollo de software**:
 
-1. Análisis (toma de requisitos).
+1. Análisis (de requisitos).
 1. Diseño del algoritmo.
 1. Implementación o codificación.
 1. Pruebas.
 1. Documentación.
 1. Mantenimiento.
+
+En el el apartado Etapas del desarrollo de software del artículo [Iniciación a la programación](/posts/iniciacion-a-la-programacion/#etapas-del-desarrollo-de-software) están explicadas las fases de desarrollo del software en más detalle.
 
 Teniendo en cuenta las anteriores etapas del desarrollo existen diferentes maneras de organizar estas fases:
 
@@ -39,7 +41,20 @@ D(Pruebas) --> E(Documentación)
 E(Documentación) --> F(Mantenimiento)
 ```
 
-Este modelo tiene una variante llamada modelo en cascada con retroalimentación.
+### Crisis del software
+
+**Entre 1960 y 1990** ocurre lo que se denomina la crisis del software en la que ocurrieron casos como los siguientes:
+
+- Accidente de un F-18 (1986) por no poner un else en el if&else.
+- Muertes por el Therac-25 (1985-1987): El Therac-25 fue una máquina de radioterapia.
+- Sobrecosto, retraso y cancelación en el sistema del Bank of America (1988). 23 millones de $ + **60 millones de $ de sobrecoste**.
+  
+Debido a esto surgieron nuevos modelos de desarrollo de software.
+
+{:.subsection}
+### Modelo de cascada con retroalimentación
+
+El modelo en cascada tiene una serie de variantes con retroalimentación como las dos siguientes:
 
 ```mermaid
 flowchart LR
@@ -47,21 +62,86 @@ A(Análisis) --> B(Diseño)
 B(Diseño) --> C(Implementación)
 C(Implementación) --> D(Pruebas)
 D(Pruebas) --> E(Documentación)
+E --> A
 E(Documentación) --> F(Mantenimiento)
-F --> A
+```
+
+```mermaid
+flowchart LR
+A(Análisis) --> B(Diseño)
+B --> A
+B(Diseño) --> C(Implementación)
+C --> B
+C(Implementación) --> D(Pruebas)
+D --> C
+D(Pruebas) --> E(Documentación)
+E --> D
+E(Documentación) --> F(Mantenimiento)
+F --> E
 ```
 
 {:.subsection}
 ### Modelo de espiral
 
+La principal característica del modelo en espiral es la gestión de riesgos de forma periódica en el ciclo de desarrollo.
+
+![Modelo de espiral](/assets/img/analisis-desarrollo-prueba-aplicaciones/modeloEspiral.png)
+_Modelo de espiral_
 
 {:.subsection}
 ### Desarrollo iterativo e incremental
 
+El desarrollo iterativo recomienda la construcción de secciones reducidas de software que irán ganando en tamaño para facilitar así la detección de problemas de importancia antes de que sea demasiado tarde. Los procesos iterativos pueden ayudar a desvelar metas del diseño en el caso de clientes que no saben cómo definir lo que quieren.
 
 {:.subsection}
 ### Desarrollo ágil
 
+El desarrollo ágil de software utiliza un desarrollo iterativo como base para abogar por un punto de vista más ligero y más centrado en las personas que en el caso de las soluciones tradicionales. Los procesos ágiles utilizan retroalimentación en lugar de planificación, como principal mecanismo de control. La retroalimentación se canaliza por medio de pruebas periódicas y frecuentes versiones del software. 
+
+```mermaid
+flowchart LR
+A(Análisis mínimo) --> B(Diseño)
+B(Diseño) --> C(Desarrollo y Pruebas)
+C --> A
+```
+
+Ejemplos:
+
+- SCRUM
+  - Transparencia
+  - Inspección
+  - Adaptación
+- FDD (Feature Driven Development)
+- TDD (Test Driven Development)
+- XP (Extreme programming)
+
+
+{:.section}
+## Análisis
+
+Esta primera etapa es la esencial, pues establecerá las bases del software que comenzaremos a desarrollar.
+
+Sin entrar en grandes aspectos técnicos, se especifican detalladamente en un documento los requisitos que marca el cliente que debe tener el resultado final. La empresa encargada de desarrollarlo también deberá ayudarle a tener una visión completa del software, así como aclararle algunas dudas o ideas que pueda tener el cliente y que puedan parecer en un principio incompletas.
+
+En esta etapa, la comunicación entre la empresa y el cliente es esencial para cerrar las pautas que se deben cumplir y no dejar ningún cabo suelto. Igualmente, la creación de este documento puede ayudar a la empresa a establecer plazos de entrega o costes.
+
+Es importante resaltar que para el correcto proceso de desarrollo de software, este documento debe estar cerrado, sin implementar nuevas pautas a mitad del proceso de desarrollo que puedan retrasar el trabajo.
+
+{:.section}
+## Diseño
+
+En esta siguiente fase debemos trazar una estructura interna del software. Para ello, descomponemos y organizamos el sistema en diferentes elementos que puedan elaborarse por separado.
+
+Esto debe dar lugar a la creación de un documento en el que se describe la estructura relacional global del sistema, así como una especificación de cuál es la función de cada una de sus partes o cómo combinan entre ellas.
+
+{:.section}
+## Implementación
+
+En la etapa de implementación del proceso de desarrollo de software, traducimos el diseño anterior al código. Se programan los requisitos que se han especificado anteriormente, realizando los algoritmos necesarios.
+
+Esta es, por tanto, la primera etapa en la que comenzamos a obtener resultados “visibles”.
+
+Leer el artículo [Manual Java](/posts/manual-java/).
 
 {:.section}
 ## Pruebas
@@ -384,3 +464,7 @@ Las etiquetas JUnit más usadas son las siguientes:
 - `@BeforeEach`: Este método se ejecutará antes de cada test.
 - `@AfterEach`: Este método se ejecutará después de cada test.
 
+## Bibliografía
+
+- [Proceso para el desarrollo de software (Wikipedia)](https://es.wikipedia.org/wiki/Proceso_para_el_desarrollo_de_software)
+- [El modelo en cascada: desarrollo secuencial de software](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/)
