@@ -40,17 +40,102 @@ Si tras esto no funciona es recomendable probar el comando `sudo dpkg-reconfigur
 
 ## Instalar Packet Tracer (Ubuntu AppImage)
 
-Si aún asi no funciona ejecutar los siguientes comandos:
+Si aún asi no te funciona puedes generar un fichero AppImage que es un ejecutable que debería funcionar en cualquier distribución GNU Linux.
+
+Descargamos el programa que va a generar nuestro AppImage:
 
 ```console
-$ git clone https://github.com/konradmb/PacketTracer-AppImage.git
-$ cd PacketTracer-AppImage/
-$ wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
-$ chmod +x pkg2appimage
-$ ./pkg2appimage PacketTracer.yml
+git clone https://github.com/konradmb/PacketTracer-AppImage.git
+cd PacketTracer-AppImage/
+wget https://github.com/AppImage/pkg2appimage/raw/master/pkg2appimage
+chmod +x pkg2appimage
 ```
 
-Tras esto debería haber un ejecutable dentro del directorio `out/`.
+Copiamos el siguiente fichero en PacketTracer-AppImage/PacketTracer.yml:
+
+```yaml
+# Version: 8.1.1
+app: PacketTracer
+
+ingredients:
+  dist: jessie
+  sources:
+    - deb http://deb.debian.org/debian jessie main
+  packages:
+    - libpng12-0
+    - libssl1.0.0
+    - python3
+    - libdouble-conversion1
+    - qt-at-spi
+  script:
+    - FILENAME='CiscoPacketTracer_811_Ubuntu_64bit.deb'
+    - URL='http://cs3.calstatela.edu/~egean/cs4471/software/Cisco%20Packet%20Tracer%208.1/CiscoPacketTracer_810_Ubuntu_64bit.deb'
+    - CHECKSUM='8eae1801fb81dca8ee0bf5e0c892a386f456879e'
+    - [ -f ../"$FILENAME" ] && ln -sf ../"$FILENAME" .
+    - [ -f ../"$FILENAME" ] || wget -c "$URL"
+    - echo "$CHECKSUM $FILENAME" > checksum
+    - sha1sum -c checksum
+    - [ -f ../etc/PacketTracerSettingsFix.py ] && cp ../etc/PacketTracerSettingsFix.py .
+    - [ -f ../etc/PacketTracerSettingsFix.py ] || wget -c https://raw.githubusercontent.com/konradmb/PacketTracer-AppImage/master/etc/PacketTracerSettingsFix.py
+    - chmod +x PacketTracerSettingsFix.py
+    
+script:
+  # Fix overly restrictive permissions - we should be able do delete directory
+  - find opt/pt/saves opt/pt/templates -type d -exec chmod +w {} +
+  # Copy helper script to bin
+  - cp ../PacketTracerSettingsFix.py usr/bin/
+  # Copy .desktop file, icon and libs from extracted archive
+  - cp usr/share/applications/cisco-pt.desktop ./PacketTracer.desktop
+  - cp opt/pt/art/app.png ./PacketTracer.png
+  - mkdir -p usr/lib/x86_64-linux-gnu/
+  - mv opt/pt/bin/*.so.* usr/lib/x86_64-linux-gnu/
+  # # Remove unused binaries
+  - rm opt/pt/bin/linguist opt/pt/bin/meta
+  # Fix wrong permissions - images shouldn't be executable. Cisco still cannot into permissions, even with deb. ;)
+  - find opt/pt/help/default/images/ -type f -exec chmod -x {} +
+  - chmod -x opt/pt/art/ComponentBox/*.png
+  - chmod -x opt/pt/art/Toolbar/*.png
+  # Add wrapper
+  - cat > usr/bin/PacketTracerWrapper << EOF
+  - #!/bin/sh
+  # Fool PacketTracer into thinking that it's been already running from this directory
+  - cd ..
+  - usr/bin/python3 usr/bin/PacketTracerSettingsFix.py 8.1
+  - cd opt/pt/bin
+  - export PT8HOME="$(readlink -f ..)"
+  - QT_AUTO_SCREEN_SCALE_FACTOR=1 ./PacketTracer "$@"
+  - EOF
+  # Make it executable
+  - chmod +x usr/bin/PacketTracerWrapper
+  # Patch PT bin - change $HOME/.packettracer string to something else
+  # New file name must have the same length
+  - sed -i 's!/.packettracer!/.ptappimage00!g' opt/pt/bin/PacketTracer
+  # Change icon and executable path
+  - sed -i 's!Icon=/opt/pt/art/app.png!Icon=PacketTracer.png!' PacketTracer.desktop
+  - sed -i 's!Exec=/opt/pt/packettracer %f!Exec=PacketTracerWrapper %f!' PacketTracer.desktop
+  - echo 'Categories=Education;ComputerScience;' >> PacketTracer.desktop
+
+```
+{: file="PacketTracer.yml" }
+
+Instalamos las dependencias:
+
+```console
+sudo apt update
+sudo apt install imagemagick
+sudo apt install desktop-file-utils
+sudo apt install binutils
+```
+
+Copiamos el fichero CiscoPacketTracer_811_Ubuntu_64bit.deb junto al fichero PacketTracer.yml.
+
+Creamos el fichero AppImage:
+
+```console
+./pkg2appimage PacketTracer.yml
+```
+
+Tras esto debería haber un ejecutable (.AppImage) dentro del directorio `out/`.
 
 ## Interfaz de usuario
 
