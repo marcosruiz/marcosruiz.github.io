@@ -104,6 +104,13 @@ Switch(config)# interface fa 0/24
 
 Y ahora indicaremos cómo se va a hacer la comunicación por este puerto, el modo troncal.
 
+- El modo troncal (o **trunk mode**) nos permite utilizar múltiples VLANs a través del mismo cable. E usado normalmente para conectar switches y routers entre sí.
+- El modo de acceso (o **access mode**) solo nos permite usar una VLAN. Es usado normalmente pra conectar dispositivos como PCs, portátiles e impresoras a un switch.
+
+![Gestión de permisos en GNU Linux](/assets/img/tutorial-vlan-packet-tracer/switchportAccessModeVsTrunkMode.webp)
+_Access mode vs trunk mode_
+
+
 ```console
 Switch(config-if)# switchport mode trunk
 Switch(config-if)# exit
@@ -170,3 +177,7 @@ Obteniendo algo similar a esto:
 
 ![img-description](/assets/img/tutorial-vlan-packet-tracer/configuracionRouter.png)
 _Configuración del router_
+
+## Bibliografía
+
+- [Switchport Access Mode vs Trunk Mode](https://ipwithease.com/switchport-trunk-mode-vs-access-mode/)
