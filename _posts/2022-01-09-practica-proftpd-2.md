@@ -23,7 +23,7 @@ A continuación se listan las actividades a realizar para esta práctica.
 
 Siguiendo los pasos del siguiente vídeo:
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/MW4Wa0__S50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/MW4Wa0__S50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Instalar, configurar y probar un servidor FTP en Zorin OS Lite. Deberás explicar todos los pasos realizados haciendo las capturas necesarias que demuestren la realización de dicha instalación, configuración y prueba del servidor.
 

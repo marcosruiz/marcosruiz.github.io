@@ -10,7 +10,7 @@ tags: [tic ii, teoría, seguridad informática]
 
 La seguridad informática es el conjunto de medidas encaminadas a proteger el hardware, el software, la información y las personas. Cualquier fallo puede tener repercusiones graves de tipo económico, social o personal.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/FhP9DkdCPQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/FhP9DkdCPQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
 ¿Qué diferencia hay entre un hacker y un cracker?
@@ -33,7 +33,7 @@ La seguridad informática es el conjunto de medidas encaminadas a proteger el ha
 {:.question}
 ¿Quién es el experto en ciberseguridad más famoso de España?
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/8iJLbYNsIYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/8iJLbYNsIYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
 ¿Es lo mismo un servidor lo mismo que un PC?
@@ -60,7 +60,7 @@ La seguridad informática es el conjunto de medidas encaminadas a proteger el ha
 {:.question}
 ¿Qué es un gusano?
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/s3LQWSkUqok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/s3LQWSkUqok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.section}
 ## Tipos de seguridad
@@ -117,7 +117,7 @@ Los SAI (Sistemas de Alimentación Ininterrumpida) protegen a los equipos frente
 ![SAI](/assets/img/seguridad-informatica/sai.png)
 _Ejemplo de SAI_
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/Qr58qnz9Vks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/Qr58qnz9Vks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
 ¿Qué es un SAI?
@@ -140,16 +140,16 @@ Los dispositivos NAS (Network Area Storage, sistemas de almacenamiento en red) s
 ![NAS doméstico Synology](/assets/img/seguridad-informatica/nas.png)
 _NAS doméstico Synology_
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/-hG-fG72_24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/-hG-fG72_24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Para entender bien el vídeo necesitarás tener claro cuales son los sistemas de almacenamiento en [RAID](/posts/raid/).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o4aKcd8_vyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/o4aKcd8_vyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
 ¿Qué es un NAS?
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/o1KXOn8mulE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/o1KXOn8mulE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
 ¿Qué es un cuello de botella?

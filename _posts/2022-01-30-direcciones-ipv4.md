@@ -8,7 +8,7 @@ tags: [redes locales, subnetting, subredes, vslm]
 {:.section}
 ## Introducción
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/gVUE2IDwWA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/gVUE2IDwWA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.section}
 ## Protocolo IPv4
@@ -157,7 +157,7 @@ Se calcula de la siguiente forma (ejemplo):
 {:.subsection}
 ### Direcciones IPv4 reservadas para redes privadas
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/HeZWcZmrQUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/HeZWcZmrQUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Para evitar conflicto de IP con los equipos que ofrecen servicios en internet, existen unos rangos de direcciones reservados para los equipos de redes privadas, en las que sus equipos no forman parte de internet aunque tengan acceso a la misma a través de routers:
 

@@ -257,7 +257,7 @@ Para la obtención de la medida de la complejidad lógica emplearemos una repres
 {:.subsubsection}
 #### Pasos para la prueba del camino/ruta básico
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/O6Cg4ing5bo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/O6Cg4ing5bo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 1. Dibujar el grafo de flujo.
 1. Complejidad ciclomática.

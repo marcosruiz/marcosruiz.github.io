@@ -21,7 +21,7 @@ A continuación se listan las actividades que se deben realizar para esta práct
 
 Para la realización de las actividades deberás seguir los pasos del siguiente vídeo:
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/kWNyiZfTp4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/kWNyiZfTp4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.activity}
 ### Configuración del servidor DNS

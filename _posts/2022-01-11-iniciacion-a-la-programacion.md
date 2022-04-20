@@ -19,7 +19,7 @@ Es pues una herramienta muy poderosa.
 
 Para conseguir esto, se utilizan los lenguajes de programación, a través de los cuales se crearán los programas que contienen las instrucciones que se dan a la máquina para que ésta ejecute determinada acción.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/cONAp3Wchy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/cONAp3Wchy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 {:.section}
@@ -50,12 +50,12 @@ _Partes de un programa_
 {:.section}
 ## Clasificación de lenguajes de programación
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/gFMMmi-EYEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/gFMMmi-EYEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
 ¿Cuántos tipos de lenguajes de alto nivel existen según el vídeo? ¿Sabrías poner un ejemplo de cada uno?
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/iOQnZKJ3fls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/iOQnZKJ3fls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
 ¿Cómo es posible que el compilador de C esté escrito en C?

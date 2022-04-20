@@ -75,3 +75,8 @@ $tab-count: {{ site.tabs | size | plus: 1 }}; // plus 1 for home tab
 .card {
 	background-color: var(--highlight-bg-color); 
 }
+
+iframe[title="YouTube video player"]{
+	width:100%;
+	aspect-ratio: 16/9;
+}

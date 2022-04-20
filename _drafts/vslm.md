@@ -20,7 +20,7 @@ Si se utiliza una máscara de subred de tamaño fijo (la misma máscara de subre
 
 60 host, 120 hosts, 10 hosts, 24 hosts.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/KsMXVnqQ3sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/KsMXVnqQ3sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Bibliografía
 

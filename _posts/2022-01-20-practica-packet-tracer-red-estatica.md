@@ -31,11 +31,11 @@ Tenemos que construir una red de ordenadores a partir de la IP 199.35.20.0/24. Y
 
 Si necesitas ayuda con el cálculo de subredes puedes ver este vídeo:
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/lEKR7WtKzDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/lEKR7WtKzDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Si necesitas ayuda con la creación de subredes en Packet Tracer puedes ver este vídeo:
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/Mk8UZYTP3Xo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/Mk8UZYTP3Xo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Entrega y presentación
 

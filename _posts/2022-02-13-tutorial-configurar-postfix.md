@@ -10,11 +10,11 @@ tags: [servicios en red, smr, tutorial]
 
 Para la instalación del servidor DNS Bind9 se han seguido los pasos indicados en el siguiente vídeo:
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/hq8kWcpGUvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/hq8kWcpGUvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Para la instalación del servidor DNS Bind9 se han seguido los pasos indicados en el siguiente vídeo:
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/kWNyiZfTp4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/kWNyiZfTp4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Instalación y configuración del servidor DNS Bind9
 

@@ -9,7 +9,7 @@ tags: [gnu linux, comandos, terminal, bash, dam, smr, entornos de desarrollo, se
 
 A modo de introducción a los permisos de GNU Linux se recomienda ver el siguiente vídeo:
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/cETtDZQWLYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/cETtDZQWLYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Tipos de usuario
 

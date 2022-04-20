@@ -7,7 +7,7 @@ tags: [google, form, sheet, plantilla, automático, generación, script]
 
 ## Video explicativo de como se usa el script
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/tXxkyxmWzEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/tXxkyxmWzEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Script modificado
 

@@ -72,7 +72,7 @@ Leer el artículo [DMZ: utiliza la zona desmilitarizada y protege tu red interna
 - ¿Qué es una DMZ? ¿Para qué sirve?
 - ¿Qué dos tipos de DMZ existen?
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/8e2OY6ou3l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/8e2OY6ou3l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 - ¿Qué es un DDNS? 
