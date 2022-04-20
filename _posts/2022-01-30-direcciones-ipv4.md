@@ -161,9 +161,11 @@ Se calcula de la siguiente forma (ejemplo):
 
 Para evitar conflicto de IP con los equipos que ofrecen servicios en internet, existen unos rangos de direcciones reservados para los equipos de redes privadas, en las que sus equipos no forman parte de internet aunque tengan acceso a la misma a través de routers:
 
-| Clase A | 10.0.0.0 a 10.255.255.255 | 1 red |
-| Clase B | 172.16.0.0 a 172.31.255.255 | 16 redes |
-| Clase C | 192.168.0.0 a 192.168.255.255 | 255 redes |
+| Clase | Rango de @ privadas | Prefijo | Nº de redes |
+|---|---|---|---|
+| Clase A | 10.0.0.0 a 10.255.255.255 | 10.0.0.0/8 | 1 red |
+| Clase B | 172.16.0.0 a 172.31.255.255 | 172.16.0.0/12 | 16 redes |
+| Clase C | 192.168.0.0 a 192.168.255.255 | 192.168.0.0/16| 255 redes |
 
 {:.subsection}
 ### Direcciones IPv4 reservadas para direcciones de enlace local
