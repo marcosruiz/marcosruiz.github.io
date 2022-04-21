@@ -7,7 +7,12 @@ tags: [packet tracer, redes locales, smr, nat, práctica]
 
 ## Objetivo
 
-El objetivo de esta práctica es aprender que es un NAT y como configurarlo utilizando la herramienta Packet Tracer.
+El objetivo de esta práctica es aprender que es un NAT y como configurarlo utilizando la herramienta Packet Tracer. Puedes obtener ayuda de los siguientes enlaces donde se explica como configurar el NAT estático, el NAT dinámico y el PAT:
+
+- [Configuración de la NAT](https://ccnadesdecero.es/configuracion-nat-estatica-dinamica-pat)
+- [Configuración de NAT Estática](https://ccnadesdecero.es/configuracion-nat-estatica/)
+- [Configuración de NAT Dinámica](https://ccnadesdecero.es/configuracion-nat-dinamica/)
+- [Configuración de PAT (NAT con sobrecarga)](https://ccnadesdecero.es/configuracion-pat-nat-sobrecarga/)
 
 ## Actividades
 
@@ -16,7 +21,7 @@ A continuación se listan las actividades que se deben realizar para esta práct
 {:.activity}
 ### Un router y un router NAT estático
 
-Seguir los pasos del artículo [Tutorial: Configurar un NAT estático en Packet Tracer](/posts/tutorial-nat-packet-tracer).
+Seguir los pasos del artículo [Tutorial: Configurar un NAT estático en Packet Tracer](/posts/tutorial-nat-estatico-packet-tracer).
 
 {:.question}
 ¿Qué ventajas tiene utilizar una NAT estática sobre no utilizarla?

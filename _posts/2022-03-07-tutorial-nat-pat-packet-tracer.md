@@ -446,3 +446,4 @@ A continuación se muestra la topología final a la que se debe llegar.
 
 ![img-description](/assets/img/tutorial-nat-pat-packet-tracer/resultadoFinalParte4.png)
 _Topología final_
+
