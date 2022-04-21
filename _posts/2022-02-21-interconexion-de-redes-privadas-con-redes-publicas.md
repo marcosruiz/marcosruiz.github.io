@@ -9,4 +9,4 @@ Leer artículo [Enrutamiento o encaminamiento](/posts/enrutamiento/).
 
 Leer artículo [NAT o enmascaramiento IP](/posts/nat/).
 
-Leer artículo [Tutorial: Configurar un NAT estático en Packet Tracer](/posts/tutorial-nat-packet-tracer/).
+Leer artículo [Tutorial: Configurar un NAT estático en Packet Tracer](/posts/tutorial-nat-estatico-packet-tracer/).

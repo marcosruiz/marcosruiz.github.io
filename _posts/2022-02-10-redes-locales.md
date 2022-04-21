@@ -59,7 +59,7 @@ pin: true
 ### Tutoriales
 
 - [Tutorial: Configurar una VLAN con Packet Tracer](/posts/tutorial-vlan-packet-tracer)
-- [Tutorial: Configurar un NAT con Packet Tracer](/posts/tutorial-nat-packet-tracer)
+- [Tutorial: Configurar un NAT con Packet Tracer](/posts/tutorial-nat-estatico-packet-tracer)
 
 ### Prácticas
 
