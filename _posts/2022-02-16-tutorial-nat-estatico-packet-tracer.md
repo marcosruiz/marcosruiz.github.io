@@ -68,7 +68,7 @@ Router(config-if)# ip address <dirección interna> <máscara de red>
 En nuestro caso: 
 
 ```console
-Router(config-if)# ip address 1.2.3.1 255.255.255.252
+Router(config-if)# ip address 1.2.3.1 255.255.255.0
 ```
 
 Y por último indicamos que esta interfaz será el de NAT de salida.
