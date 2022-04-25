@@ -153,7 +153,7 @@ y pulsaremos enter para aceptar el guardado.
 Si queremos ver cómo ha quedado la tabla de NAT usaremos esta instrucción:
 
 ```console
-Router(config)# show ip nat translations
+Router# show ip nat translations
 ```
 
 Obteniendo algo similar a esto:
