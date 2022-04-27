@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: NAT y PAT en Packet Tracer"
+title: "Tutorial: NAT estático, NAT dinámico y PAT en Packet Tracer"
 date: 2022-03-07 20:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [smr, tutorial, nat, pat, packet tracer]
@@ -336,7 +336,7 @@ Loopback3              172.18.0.161    YES manual up                    up
 Ahora analice el siguiente escenario que describirá la topología de red privada del Cliente2 a implementar en los pasos restantes.
 
 - Este Cliente2, tendrá un router de borde denominado Empresa2 y usará el mismo ISP. 
-- Se expandirá su red interna mostrada en la Figura 12.1 (al inicio de este proc.) a un total de 3 redes diferentes:
+- Se expandirá su red interna mostrada en la Figura del principio a un total de 3 redes diferentes:
     - Red 1: 172.18.0.64 /26 (de FTPserver, ya configurada
     - Red 2: 172.18.0.128 /27
     - Red 3: 172.18.0.160 /28

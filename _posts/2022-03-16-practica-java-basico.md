@@ -78,7 +78,7 @@ Debe esperar un segundo real para darle mas realismo.
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un documento ZIP con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del documento ZIP sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.zip". 
+La entrega de esta práctica debe ser un documento ZIP con un nombre en el siguiente formato "\<Apellidos\>\_\<Nombre\>\_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del documento ZIP sería "RuizGarcía\_Marcos\_Práctica\<NúmeroDeLaPráctica\>.zip". 
 
-En la raíz del documento ZIP debe haber una carpeta llamada "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>" donde estén todas las actividades. Cada actividad debe tener un nombre con el siguiente formato "actividad_\<númeroDeLaActividad\>.java". Por ejemplo, en mi caso el nombre de la primera actividad sería una carpeta llamada "actividad_1.java".
+En la raíz del documento ZIP debe haber una carpeta llamada "\<Apellidos\>\_\<Nombre\>\_Práctica\<NúmeroDeLaPráctica\>" donde estén todas las actividades. Cada actividad debe tener un nombre con el siguiente formato "actividad\_\<númeroDeLaActividad\>.java". Por ejemplo, en mi caso el nombre de la primera actividad sería una carpeta llamada "actividad\_1.java".
 
