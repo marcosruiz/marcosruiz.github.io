@@ -11,6 +11,8 @@ tags: [smr, tutorial, nat, pat, packet tracer]
 - Hacer uso de un proveedor de acceso a Internet (ISP) para que los equipos de una red privada accedan a la Nube (Internet).
 - Configurar en el router de Borde de un Sistema Autónomo al proceso NAT estático, NAT dinámico y NAT dinámico con sobrecarga (PAT).
 
+Haz click [aquí](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjIkJPNwbb3AhW_7rsIHVsCCroQFnoECCMQAQ&url=http%3A%2F%2Fwww.udb.edu.sv%2Fudb_files%2Frecursos_guias%2Finformatica-tecnologico%2Fredes-de-comunicacion%2F2020%2Fi%2Fguia-9.pdf&usg=AOvVaw1jfw3cpfTQS2W2VUaod2VR) para descargar la práctica original.
+
 ## Parte 1: Preparación de la topología base
 
 {:.step}
@@ -70,12 +72,12 @@ ISP(config-if)# no shutdown
 ISP(config-if)# exit
 ISP(config)# interface s0/0
 ISP(config-if)# ip address 168.243.3.129 255.255.255.252
-ISP(config-if)# clockrate 9600
+ISP(config-if)# clock rate 9600
 ISP(config-if)# no shutdown
 ISP(config if)# exit
 ISP(config)# interface s0/1
 ISP(config-if)# ip address 168.243.3.133 255.255.255.252
-ISP(config-if)# clockrate 9600
+ISP(config-if)# clock rate 9600
 ISP(config-if)# no shutdown
 ISP(config-if)# exit
 ISP# copy running-config startup-config
@@ -446,4 +448,3 @@ A continuación se muestra la topología final a la que se debe llegar.
 
 ![img-description](/assets/img/tutorial-nat-pat-packet-tracer/resultadoFinalParte4.png)
 _Topología final_
-
