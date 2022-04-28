@@ -192,7 +192,6 @@ Normalmente un paquete está pensado como un directorio si son componentes inter
 ![Ejemplo de diagrama de paquetes](/assets/img/analisis-desarrollo-prueba-aplicaciones/ejemploDiagramaDePaquetes.png)
 _Ejemplo de diagrama de paquetes_
 
-
 {:.section}
 ## Implementación
 
