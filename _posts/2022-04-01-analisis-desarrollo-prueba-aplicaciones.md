@@ -180,6 +180,19 @@ public class Persona{
 ![Ejemplo de diagrama de clases](/assets/img/analisis-desarrollo-prueba-aplicaciones/ejemploDiagramaDeClases.png)
 _Ejemplo de diagrama de clases_
 
+{:.subsection}
+### Diagramas de paquetes
+
+Los diagramas de paquetes son diagramas que se emplean para mostrar la organización y disposición de diversos elementos de un modelo en forma de paquetes. Cada elemento está anidado dentro de un paquete, que se representa como una carpeta de archivos dentro del diagrama.
+
+Normalmente un paquete está pensado como un directorio si son componentes internos, pero podría ser también una librería[^librería]. En java las librerías se importan con la palabra clave `import`.
+
+[^librería]: Librería es un false friend de library. Realmente son bibliotecas pero el uso de librería está ampliamente extendido exceptuando ambientes académicos.
+
+![Ejemplo de diagrama de paquetes](/assets/img/analisis-desarrollo-prueba-aplicaciones/ejemploDiagramaDePaquetes.png)
+_Ejemplo de diagrama de paquetes_
+
+
 {:.section}
 ## Implementación
 
