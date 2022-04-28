@@ -107,10 +107,7 @@ C --> A
 
 Ejemplos:
 
-- SCRUM
-  - Transparencia
-  - Inspección
-  - Adaptación
+- **SCRUM**
 - FDD (Feature Driven Development)
 - TDD (Test Driven Development)
 - XP (Extreme programming)
@@ -127,12 +124,61 @@ En esta etapa, la comunicación entre la empresa y el cliente es esencial para c
 
 Es importante resaltar que para el correcto proceso de desarrollo de software, este documento debe estar cerrado, sin implementar nuevas pautas a mitad del proceso de desarrollo que puedan retrasar el trabajo.
 
+⚠️ Los diagramas no pertenecen necesariamente a una única etapa del desarrollo de software.
+
+{:.subsection}
+### Diagramas de casos de uso
+
+![Ejemplos de diagrama de casos de uso](/assets/img/analisis-desarrollo-prueba-aplicaciones/ejemploCasosDeUso.png)
+_Ejemplos de diagrama de casos de uso_
+
+{:.subsection}
+### Historias de usuario (desarrollo ágil)
+
+Una historia de usuario es una explicación general e informal de una función de software escrita desde la perspectiva del usuario final. Su propósito es articular cómo proporcionará una función de software valor al cliente.
+
+Como \<ROL\>, quiero hacer \<FUNCIONALIDAD\> con el objetivo de \<BENEFICIO\>.
+
+![Ejemplos de historias de usuario](/assets/img/analisis-desarrollo-prueba-aplicaciones/historiasDeUsuario.png)
+_Ejemplos de historias de usuario_
+
 {:.section}
 ## Diseño
 
 En esta siguiente fase debemos trazar una estructura interna del software. Para ello, descomponemos y organizamos el sistema en diferentes elementos que puedan elaborarse por separado.
 
 Esto debe dar lugar a la creación de un documento en el que se describe la estructura relacional global del sistema, así como una especificación de cuál es la función de cada una de sus partes o cómo combinan entre ellas.
+
+{:.subsection}
+### Diagramas de clases
+
+- El diagrama de clases es un diagrama puramente orientado al modelo de programación orientado a objetos.
+- Define las clases que se utilizarán cuando se pase a la fase de construcción y la manera en que se relacionan las mismas.
+- Conceptualmente, es similar al modelo Entidad-Relación (E/R).
+
+![Ejemplo de diagrama de clases](/assets/img/analisis-desarrollo-prueba-aplicaciones/relacionPersonaMascota.png)
+_Relación persona mascota_
+
+```java
+public class Persona{
+  private Mascota mascota;
+  public Persona(Mascota m){
+    mascota = m;
+  }
+}
+```
+
+```java
+public class Persona{
+  private Persona persona;
+  public Mascota(Persona p){
+    persona = p;
+  }
+}
+```
+
+![Ejemplo de diagrama de clases](/assets/img/analisis-desarrollo-prueba-aplicaciones/ejemploDiagramaDeClases.png)
+_Ejemplo de diagrama de clases_
 
 {:.section}
 ## Implementación
@@ -142,6 +188,30 @@ En la etapa de implementación del proceso de desarrollo de software, traducimos
 Esta es, por tanto, la primera etapa en la que comenzamos a obtener resultados “visibles”.
 
 Leer el artículo [Manual Java](/posts/manual-java/).
+
+{:.subsection}
+### Diagramas de flujo
+
+Un diagrama de flujo es un diagrama que describe un proceso, sistema o algoritmo informático. Se usan ampliamente en numerosos campos para documentar, estudiar, planificar, mejorar y comunicar procesos que suelen ser complejos en diagramas claros y fáciles de comprender.
+
+Son uno de los diagramas más comunes del mundo, usados por personas con y sin conocimiento técnico en una variedad de campos.
+
+![Ejemplo de diagrama de flujo](/assets/img/analisis-desarrollo-prueba-aplicaciones/ejemploDiagramaDeFlujo.svg)
+_Ejemplo de diagrama de flujo_
+
+{:.subsection}
+### Diagramas de secuencia
+
+El diagrama de secuencia muestra gráficamente los eventos que fluyen de los actores al sistema. Para su elaboración se parte de casos de uso elaborados durante la etapa de análisis. Un diagrama de secuencia tiene dos dimensiones:
+
+- La dimensión vertical: que representa el tiempo.
+- La dimensión horizontal: que representa los roles que participan en la interacción.
+
+![Ejemplo de diagrama de secuencia](/assets/img/analisis-desarrollo-prueba-aplicaciones/ejemploSecuencia1.png)
+_Ejemplo de diagrama de secuencia_
+
+![Ejemplo de diagrama de secuencia](/assets/img/analisis-desarrollo-prueba-aplicaciones/ejemploSecuencia2.png)
+_Ejemplo de diagrama de secuencia_
 
 {:.section}
 ## Pruebas
@@ -454,7 +524,7 @@ _Tabla de clases de equivalencia con valores límite_
 
 ### Pruebas con JUnit
 
-JUnit es una librería (.jar) escrita en Java para la realización de test unitarios. 
+JUnit es una librería (fichero .jar) escrita en Java para la realización de test unitarios. 
 
 Las etiquetas JUnit más usadas son las siguientes:
 
@@ -468,3 +538,4 @@ Las etiquetas JUnit más usadas son las siguientes:
 
 - [Proceso para el desarrollo de software (Wikipedia)](https://es.wikipedia.org/wiki/Proceso_para_el_desarrollo_de_software)
 - [El modelo en cascada: desarrollo secuencial de software](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/)
+- [Historias de usuario con ejemplos y plantilla](https://www.atlassian.com/es/agile/project-management/user-stories)
