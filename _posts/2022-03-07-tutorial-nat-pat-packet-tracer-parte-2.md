@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: NAT y PAT en Packet Tracer (Parte 2)"
+title: "NAT estático, NAT dinámico y PAT en Packet Tracer (Parte 2)"
 date: 2022-03-07 23:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [smr, tutorial, nat, pat, packet tracer]
