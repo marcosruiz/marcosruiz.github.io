@@ -54,3 +54,11 @@ Actualmente ambas versiones consisten en Internet. Por este motivo, se necesitan
 - **Pila dual**: esta solución implementa tanto IPv4 como IPv6 en cada nodo de la red. Cada nodo tendrá dos direcciones de red.
 - **Túneles**: permite enviar paquetes IPv6 sobre una infraestructura IPv4. Consiste en encapsular paquetes IPv6 en paquetes IPv4.
 - **Traducción**: esta solución es necesaria cuando un nodo que solo soporta IPv4 necesita comunicarse con otro que sólo soporta IPv6. Se realiza una traducción de la cabecera IPv4 a una cabecera IPv6 y viceversa. 
+
+## Memes
+
+![No sé cuando empezaré a usar IPv6, pero a estas alturas tengo demasiado miedo de preguntar](/assets/img/protocolo-ipv6/ipv6Meme.jpg)
+_No sé cuando empezaré a usar IPv6, pero a estas alturas tengo demasiado miedo de preguntar_
+
+![Traducción de direcciones privadas a públicas](/assets/img/protocolo-ipv6/memeRedes1.png)
+_Tamaño del libro de redes vs tamaño del libro de redes si solo se usara IPv6 desde el comienzo_

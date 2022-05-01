@@ -11,6 +11,10 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 ### Direccionamiento físico. Direcciones MAC.
 ### Tramas
 ## Estructura TCP/IP
+
+![Capas y Reddit](/assets/img/instalacion-y-configuracion-de-los-equipos-de-red/layersMeme.jpg)
+_Capas y Reddit_
+
 ## TCP/IP: Capa de red o capa de Internet.
 ### Direcciones IP, IPv4 e IPv6
 
@@ -32,7 +36,7 @@ Traducción de direcciones IP a direcciones MAC.
 
 Hago una petición broadcast solicitando que el equipo que tiene esta IP responda con su MAC.
 
-![img-description](/assets/img/instalacion-y-configuracion-de-los-equipos-de-red/arp.png)
+![Ejemplo de ARP](/assets/img/instalacion-y-configuracion-de-los-equipos-de-red/arp.png)
 _Ejemplo de ARP_
 
 ### Protocolo ICMP
@@ -58,5 +62,21 @@ _Cabecera ICMP_
 ### Protocolo TCP
 ### Conexiones
 ### Establecimiento de una conexión
+
+
+#### Memes
+
+![Gobierno: Para parar el covid deberemos parar todos de hacer handshaking. TCP: O.o](/assets/img/instalacion-y-configuracion-de-los-equipos-de-red/tcpVsUdpMeme5.png)
+_Gobierno: Para parar el covid deberemos parar todos de hacer handshaking. TCP: O.o_
+
 ### Cierre de una conexión
 ### Protocolo UDP
+
+#### Memes
+
+![TCP vs UDP](/assets/img/instalacion-y-configuracion-de-los-equipos-de-red/tcpVsUdpMeme.png)
+_TCP vs UDP_
+
+![TCP vs UDP](/assets/img/instalacion-y-configuracion-de-los-equipos-de-red/tcpVsUdpMeme4.jpg)
+_TCP vs UDP_
+
