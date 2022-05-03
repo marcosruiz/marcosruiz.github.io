@@ -86,7 +86,14 @@ Velocidad = información/ tiempo
 ### Por área de distribución: PAN, LAN, MAN y WAN.
 ### Por medio de transmisión: Guiadas y no guiadas.
 ### Por relación funcional: P2P, Cliente-Servidor.
-### Por tecnología: P2P, Broadcast.
+### Por tecnología: 
+
+#### P2P
+
+#### Broadcast
+
+
+
 ### Por topología física: Estrella, anillo, bus, árbol, malla, totalmente conexa, mixta.
 ### Por direccionalidad: Simplex, half-duplex, full-duplex.
 
