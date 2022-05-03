@@ -21,20 +21,20 @@ A continuación se listan las actividades que se deben realizar para esta práct
 Responde a las siguientes preguntas:
 
 1. ¿En qué sistemas operativos se puede utilizar Vi?
-    1. En GNU/Linux.
+2. En GNU/Linux.
     1. En cualquier sistema Unix.
-    1. En los sistemas Microsoft Windows.
-    1. En Mac OS.
-    1. En todos los sistemas operativos enunciados anteriormente y algunos otros.
-2. ¿Es cierto que Vim posee las mismas funcionalidades que Vi?
+    2. En los sistemas Microsoft Windows.
+    3. En Mac OS.
+    4. En todos los sistemas operativos enunciados anteriormente y algunos otros.
+3. ¿Es cierto que Vim posee las mismas funcionalidades que Vi?
     1. Si.
-    1. No.
-3. ¿Cuáles son los tres modos de funcionamiento de Vi?
-4. ¿Cuál es la secuencia de teclas que permite salir de Vi en todo momento sin salvar las modificaciones aportadas al archivo?
+    2. No.
+4. ¿Cuáles son los tres modos de funcionamiento de Vi?
+5. ¿Cuál es la secuencia de teclas que permite salir de Vi en todo momento sin salvar las modificaciones aportadas al archivo?
     1. :q , luego [Entr]
-    1. :q! , luego [Entr]
-    1. [Esc], luego :q , luego [Entr]
-    1. [Esc], luego :q! , luego [Entr]
+    2. :q! , luego [Entr]
+    3. [Esc], luego :q , luego [Entr]
+    4. [Esc], luego :q! , luego [Entr]
 
 {:.activity}
 ### Inicialización y salida de Vi
