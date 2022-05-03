@@ -4,7 +4,7 @@ date: 2022-02-13 13:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 ---
-
+{:.section}
 ## IPv4 vs IPv6
 
 El protocolo IPv4 está formado por direcciones IP de 32 bits por lo que da un total de 2<sup>32</sup>= 4.294.967.296 que no cubría todas las posibles conexiones de dispositivos a nivel mundial. Teniendo en cuenta que muchos usuarios se conectan con varios dispositivos necesitan una gran cantidad de IP.
@@ -33,6 +33,7 @@ También pueden usar la notación CIDR, es decir, después de una barra inclinad
 
 - la dirección 2010:abcd:ef12::/48 define la red que comienza en el número `2010:abcd:ef12:0000:0000:0000:0000:0000` y finaliza en el número `2010:abcd:ef12:ffff:ffff:ffff:ffff:ffff`
 
+{:.section}
 ## Direcciones IPv6 especiales
 
 Dentro de las direcciones unicast existen algunas que deben utilizarse nunca:
@@ -47,10 +48,22 @@ Las direcciones IPv6 se asignan a las organizaciones en bloques mucho mayores qu
 
 Debido al formato de número tan grande que utiliza IPv6, se asegura que prácticamente siempre haya direcciones disponibles y, por tanto, el uso de NAT se convierte en innecesario, es decir, que no se hace necesario que los routers tengan que traducir las direcciones de la red interna por otras direcciones en el exterior.
 
+{:.section}
 ## Coexistencia de IPv4 e IPv6
 
-Actualmente ambas versiones consisten en Internet. Por este motivo, se necesitan mecanismos que permitan dicha coexistencia y una migración progresiva de un protocolo al otro. En general, estos mecanismos pueden clasificarse en tres grupos: 
+Actualmente ambas versiones consisten en Internet. Por este motivo, se necesitan mecanismos que permitan dicha coexistencia y una migración progresiva de un protocolo al otro. Durante 20 años se espera que convivan ambas versiones y que la implantación de IPv6 sea paulatina. En general, estos mecanismos pueden clasificarse en tres grupos: 
 
-- **Pila dual**: esta solución implementa tanto IPv4 como IPv6 en cada nodo de la red. Cada nodo tendrá dos direcciones de red.
-- **Túneles**: permite enviar paquetes IPv6 sobre una infraestructura IPv4. Consiste en encapsular paquetes IPv6 en paquetes IPv4.
-- **Traducción**: esta solución es necesaria cuando un nodo que solo soporta IPv4 necesita comunicarse con otro que sólo soporta IPv6. Se realiza una traducción de la cabecera IPv4 a una cabecera IPv6 y viceversa. 
+{:.subsection}
+### Pila dual
+
+Esta solución implementa tanto IPv4 como IPv6 en cada nodo de la red. Cada nodo tendrá dos direcciones de red.
+
+{:.subsection}
+### Túneles
+
+Permite enviar paquetes IPv6 sobre una infraestructura IPv4. Consiste en encapsular paquetes IPv6 en paquetes IPv4.
+
+{:.subsection}
+### Traducción
+
+Esta solución es necesaria cuando un nodo que solo soporta IPv4 necesita comunicarse con otro que sólo soporta IPv6. Se realiza una traducción de la cabecera IPv4 a una cabecera IPv6 y viceversa. 
