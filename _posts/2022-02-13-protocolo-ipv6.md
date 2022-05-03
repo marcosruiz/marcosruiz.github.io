@@ -98,6 +98,8 @@ IPv6 tiene más de 10.000.000.000.000.000.000.000.000.000 veces más direcciones
 
 ### Ejercicios de acortar direcciones
 
+Rellena los siguientes huecos:
+
 |                 Completo                |                Abreviado               |
 |:---------------------------------------:|:--------------------------------------:|
 | 2340:0000:0010:0100:1000:ABCD:0101:1010 |                                        |
@@ -108,6 +110,25 @@ IPv6 tiene más de 10.000.000.000.000.000.000.000.000.000 veces más direcciones
 |                                         | 34BA:B:B::20                           |
 | FE80:0000:0000:0000:DEAD:BEFF:FEEF:CAFE |                                        |
 |                                         | FE80::FACE:BAFF:FEBE:CAFE              |
+
+<details class="card mb-2">
+  <summary class="card-header">Solución</summary>
+  <div class="card-body" markdown="1">
+
+  |                 Completo                |                Abreviado               |
+  |:---------------------------------------:|:--------------------------------------:|
+  | 2340:0000:0010:0100:1000:ABCD:0101:1010 | 2340:0:10:100:1000:ABCD:101:1010       |
+  | 30A0:ABCD:EF12:3456:0ABC:B0B0:9999:9009 | 30A0:ABCD:EF12:3456:ABC:B0B0:9999:9009 |
+  | 2222:3333:4444:5555:0000:0000:6060:0707 | 2222:3333:4444:5555::6060:707          |
+  | 3210:0000:0000:0000:0000:0000:0000:0000 | 3210::                                 |
+  | 210F:0000:0000:0000:CCCC:0000:0000:000D | 210F::CCCC:0:0:D                       |
+  | 34BA:000B:000B:0000:0000:0000:0000:0020 | 34BA:B:B::20                           |
+  | FE80:0000:0000:0000:DEAD:BEFF:FEEF:CAFE | FE80::DEAD:BEFF:FEEF:CAFE              |
+  | FE80:0000:0000:0000:FACE:BAFF:FEBE:CAFE | FE80::FACE:BAFF:FEBE:CAFE              |
+
+  </div>
+</details>
+
 
 {:.section}
 ## Direcciones IPv6 especiales
@@ -172,13 +193,15 @@ _No sé cuando empezaré a usar IPv6, pero a estas alturas tengo demasiado miedo
 
 <details class="card mb-2">
   <summary class="card-header question">¿Cuánto va a durar la transición de IPv4 a IPv6?</summary>
-  <div class="card-body">
-    Durante 20 años se espera que convivan ambas versiones y que la implantación de IPv6 sea paulatina.
-  </div>
-</details>
+  <div class="card-body" markdown="1">
+
+Durante 20 años se espera que convivan ambas versiones y que la implantación de IPv6 sea paulatina.
 
 ![Adopción de IPv6 según Google](/assets/img/protocolo-ipv6/adopcionDeIpv6SegunGoogle.jpg)
 _Adopción de IPv6 según Google_
+
+  </div>
+</details>
 
 ![Traducción de direcciones privadas a públicas](/assets/img/protocolo-ipv6/memeRedes1.png)
 _Tamaño del libro de redes vs tamaño del libro de redes si solo se usara IPv6 desde el comienzo_
