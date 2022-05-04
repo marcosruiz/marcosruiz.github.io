@@ -159,6 +159,8 @@ Esto debe dar lugar a la creación de un documento en el que se describe la estr
 ![Ejemplo de diagrama de clases](/assets/img/analisis-desarrollo-prueba-aplicaciones/relacionPersonaMascota.png)
 _Relación persona mascota_
 
+Una Persona tiene una mascota como atributo de clase:
+
 ```java
 public class Persona{
   private Mascota mascota;
@@ -168,17 +170,20 @@ public class Persona{
 }
 ```
 
+Una Mascota tiene una persona como atributo de clase:
+
 ```java
-public class Persona{
+public class Mascota{
   private Persona persona;
   public Mascota(Persona p){
     persona = p;
   }
 }
 ```
+Esto quiere decir que una Persona podrá interactuar con su Mascota en cualquier momento y viceversa.
 
 ![Ejemplo de diagrama de clases](/assets/img/analisis-desarrollo-prueba-aplicaciones/ejemploDiagramaDeClases.png)
-_Ejemplo de diagrama de clases_
+_Ejemplo de diagrama de clases complejo_
 
 {:.subsection}
 ### Diagramas de paquetes
@@ -219,11 +224,27 @@ El diagrama de secuencia muestra gráficamente los eventos que fluyen de los act
 - La dimensión vertical: que representa el tiempo.
 - La dimensión horizontal: que representa los roles que participan en la interacción.
 
-![Ejemplo de diagrama de secuencia](/assets/img/analisis-desarrollo-prueba-aplicaciones/ejemploSecuencia1.png)
-_Ejemplo de diagrama de secuencia_
+```mermaid
+sequenceDiagram
+Usuario->>Pantalla: seleccionarProducto()
+Pantalla-->>Usuario: PantallaProducto
+Usuario->>Pantalla: seleccionarComprar()
+Pantalla-->>Usuario: PantallaListaProductos
+```
+
+```mermaid
+sequenceDiagram
+Alicia->>Juán: Hola Juán, ¿Cómo estás?
+loop No estoy bien
+    Juán->>Juán: Luchar contra la hipocondría
+end
+Juán-->>Alicia: ¡Bien!
+Juán->>Alicia: ¿Y tú?
+Alicia-->>Juán: ¡Muy bien!
+```
 
 ![Ejemplo de diagrama de secuencia](/assets/img/analisis-desarrollo-prueba-aplicaciones/ejemploSecuencia2.png)
-_Ejemplo de diagrama de secuencia_
+_Ejemplo de diagrama de secuencia complejo_
 
 {:.section}
 ## Pruebas
