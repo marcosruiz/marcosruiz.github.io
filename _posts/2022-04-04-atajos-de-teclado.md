@@ -1,6 +1,6 @@
 ---
 title: Atajos de teclado
-date: 2022-04-07 18:00:00 +0100
+date: 2022-04-04 18:00:00 +0100
 categories: [General]
 tags: [atajos, shortcuts, vscode, windows, linux, terminal]
 ---
@@ -92,14 +92,11 @@ Estos atajos de teclados suelen funcionar en casi todas las aplicaciones:
 - `Ctrl + Ñ` ➡ Mostrar/ocultar consola
 - `Ctrl + B` ➡ Mostrar/ocultar barra lateral izquierda
 
-## Spotify
-
-- `Alt + Shift + B` ➡ like en Spotify.
-
-## Linux
+## Gnome GNU Linux
 
 - `Ctrl + Alt + T` ➡ Abrir la terminal.
 - `Ctrl + L` ➡ Editar la la ubicación del explorador de archivos.
+- `Windows + E` ➡ Abrir explorador de archivos.
 
 ## Terminal en Linux
 
@@ -124,6 +121,10 @@ Estos atajos de teclados suelen funcionar en casi todas las aplicaciones:
 - `w` ➡ Siguiente palabra
 - `b` ➡ Palabra anterior
 - `e` ➡ Final de la palabra
+
+## Spotify
+
+- `Alt + Shift + B` ➡ like en Spotify.
 
 
 ## Bibliografía

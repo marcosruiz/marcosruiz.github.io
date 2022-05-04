@@ -2,7 +2,7 @@
 title: Manual Java
 date: 2022-03-30 23:30:00 +0100
 categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
-tags: [tic ii, teoría, programación, java]
+tags: [tic ii, teoría, programación, poo, programación orientada a objetos, java]
 ---
 
 {:.section}
@@ -123,7 +123,7 @@ Dentro de Java podemos encontrar los siguientes tipos de variables:
 {:.subsubsection}
 #### Globales
 
-##### Estáticas (o de clase)
+##### Estáticas
 
 Son aquellas variables que están precedidas del modificador static. Esto indica que solo hay una instancia de dicha variable. Es decir, aunque tengamos N objetos de la clase, la variable estática solo se instancia una vez.
 
@@ -135,7 +135,7 @@ class Triangulo {
 
 ##### No estáticas (o de instancia)
 
-Son las variables que están definidas dentro de un objeto pero que no tienen un modificador de estáticas (static).
+Son las variables que están definidas dentro de un objeto pero que NO tienen un modificador de estáticas (static).
 
 ```java
 class Triangulo {
@@ -354,91 +354,13 @@ Existen más tipos de operadores en Java:
 - Operadores condicionales: `&&`, `||`, etc.
 - Operadores de bit.
 
-Leer el apartado "Expresiones" del artículo [Iniciación a la programación 2](/posts/iniciacion-a-la-programacion-2/#expresiones).
+Leer el artículo [Tutorial Java](/posts/tutorial-java).
 
 
 {:.section}
 ## Sentencias Control en Java
 
-Un programa en Java se ejecuta en orden desde la primera sentencia hasta la última.
-
-Si bien existen las sentencias de control de flujo las cuales permiten alterar el fujo de ejecución para tomar decisiones o repetir sentencias.
-
-Dentro de las sentencias de control de flujo tenemos las siguientes:
-
-- Sentencias de decisión
-- Sentencias de bucle
-- Sentencias de ramificación
-
-{:.section}
-## Sentencias de Decisión en Java
-
-Son sentencias que nos permiten tomar una decisión para poder ejecutar un bloque de sentencias u otro.
-
-Las sentencias de decisión son: `if-then-else` y `switch`.
-
-Mediante `if-then-else` podremos evaluar una decisión y elegir por un bloque u otro.
-
-
-```java
-if (expresion) {
-  // Bloque then
-} else {
-  // Bloque else
-}
-```
-
-Mientras que con `switch` podremos evaluar múltiples decisiones y ejecutar un bloque asociado a cada una de ellas.
-
-```java
-switch (expresion) {
-  case valor1:
-    bloque1;
-    break;
-  case valor2:
-    bloque2;
-    break;
-  case valor3:
-    bloque3;
-    break;
-  …
-  default:
-      bloque_por_defecto;
-}
-```
-
-{:.section}
-## Sentencias de Bucle en Java
-
-Las sentencias de bucle nos van a permitir ejecutar un bloque de sentencias tantas veces como queramos, o tantas veces como se cumpla una condición.
-
-En el momento que se cumpla esta condición será cuando salgamos del bucle.
-
-Las sentencias de bucle en Java son: while, do-while y for.
-
-En el caso de la sentencia while tenemos un bucle que se ejecuta mientas se cumple la condición, pero puede que no se llegue a ejecutar nunca, si no se cumple la condición la primera vez.
-
-```java
-while (expresion) {
-  bloque_sentencias;
-}
-```
-
-Por otro lado, si utilizamos do-while, lo que vamos a conseguir es que el bloque de sentencias se ejecute, al menos, una vez.
-
-```java
-do {
-  bloque_sentencias;
-} while (expresion)
-```
-
-La sentencia for nos permite escribir toda la estructura del bucle de una forma más acotada. Si bien, su cometido es el mismo.
-
-```java
-for (sentencias_inicio;expresion;incremento) {
-  bloque_sentencias;
-}
-```
+Ir al artículo [Tutorial Java](/posts/tutorial-java).
 
 {:.section}
 ## Clase String: Representando una cadena de texto
@@ -457,13 +379,17 @@ Para encontrar la clase String dentro de las librerías de Java tendremos que ir
 Para crear una cadena tenemos dos opciones:
 
 Instanciamos la clase String. Que sería una creación explicita de la clase
+
 ```java
 String sMiCadena = new String("Cadena de Texto");
 ```
+
 Crear implícitamente la cadena de texto. Es decir, simplemente le asignamos el valor al objeto.
+
 ```java
 String sMiCadena = "Cadena de Texto";
 ```
+
 En este caso, Java, creará un objeto String para tratar esta cadena.
 
 
@@ -473,10 +399,13 @@ En este caso, Java, creará un objeto String para tratar esta cadena.
 Solo nos quedará saber cómo volcar una cadena por pantalla. Esto lo haremos con la clase System.out.println que recibirá como parámetro el objeto String.
 
 Por ejemplo:
+
 ```java
 System.out.println("Mi Cadena de Texto");
 ```
+
 ó
+
 ```java
 String sMiCadena = new String("Mi Cadena de Texto");
 System.out.println(sMiCadena);
@@ -547,6 +476,12 @@ Así, por ejemplo, podríamos inicializar un array Java o una matriz Java:
 // Tenemos un array de 5 elementos.
 char array[] = {'a','b','c','d','e'};
 ```
+{:.subsection}
+### Vídeos de arrays en Java
+
+<iframe src="https://www.youtube.com/embed/UID_EKKfpcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe src="https://www.youtube.com/embed/NwztwM_xGgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.section}
 ## Bibliografía

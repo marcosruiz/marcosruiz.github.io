@@ -29,7 +29,7 @@ pin: true
     - [Iniciación a la programación](/posts/iniciacion-a-la-programacion/)
     
 - UD4 - [Programación orientada a objetos](/posts/poo/)
-    - [Programación Java](/posts/programacion-java/)
+    - [Programación Java](/posts/tutorial-java/)
 
 ### Prácticas
 
