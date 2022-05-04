@@ -15,7 +15,7 @@ Estos atajos de teclados suelen funcionar en casi todas las aplicaciones:
 - `Ctrl + V` ➡ Pegar.
 - `Ctrl + X` ➡ Cortar.
 - `Ctrl + Z` ➡ Deshacer.
-- `Ctrl + Y` ➡ Rehacer.
+- `Ctrl + Y` o `Ctrl + Shift + Z` ➡ Rehacer.
 - `Ctrl + A` ➡ Seleccionar todo.
 - `F2` ➡ Renombrar.
 - `F5` ➡ Recargar.
@@ -56,15 +56,17 @@ Estos atajos de teclados suelen funcionar en casi todas las aplicaciones:
 - `Windows + Shift + C` ➡ Selector de colores.
 - `Alt + Space` ➡ Buscador.
 
-
 ## Google Docs
 
 - `Ctrl + B` ➡ Negrita.
 - `Ctrl + U` ➡ Subrayado.
 - `Ctrl + I` ➡ Cursiva.
 - `Alt + Shift + 5` ➡ Tachar.
-- `Ctrl + Shift + V` ➡ Copiar sin formato.
-
+- `Ctrl + Shift + V` ➡ Pegar texto sin formato.
+- `Ctrl + Alt + V` ➡ Pegar formato.
+- `Ctrl + /` ➡ Muestra atajos de teclado
+- `Ctrl + \` o `Ctrl + Espacio` ➡ Limpiar formato.
+- `Ctrl + Alt + M` ➡ Insertar un comentario.
 
 ## Visual Studio code
 
@@ -74,7 +76,10 @@ Estos atajos de teclados suelen funcionar en casi todas las aplicaciones:
 - `Ctrl + H` ➡ Buscar y reemplazar.
 - `Alt + ↑` ➡ Mueve la línea actual una posición arriba.
 - `Alt + ↓` ➡ Mueve la línea actual una posición abajo.
-- `Ctrl + 2` ➡ Divide la pantalla en 2.
+- `Ctrl + 1` ➡ Te sitúa en el panel 1 (izquierdo).
+- `Ctrl + 2` ➡ Te sitúa en el panel 2 (derecho en caso de tener 2). Lo crea si no existe.
+- `Ctrl + Alt + ➡` ➡ Pestaña actual a la derecha.
+- `Ctrl + Alt + ⬅` ➡ Pestaña actual a la izquierda.
 - `Ctrl + G` ➡ Ir a una línea concreta del código.
 - `Ctrl + D` ➡ Buscar y seleccionar.
 - `Alt + Enter` ➡ Seleccionar todo lo que coincida en la búsqueda.
@@ -89,7 +94,7 @@ Estos atajos de teclados suelen funcionar en casi todas las aplicaciones:
 
 ## Spotify
 
-- `Alt + Shift + B` ➡ Like en Spotify.
+- `Alt + Shift + B` ➡ like en Spotify.
 
 ## Linux
 
@@ -109,6 +114,16 @@ Estos atajos de teclados suelen funcionar en casi todas las aplicaciones:
 - `Ctrl + Z` ➡ Forzar la detención de un programa.
 - `Ctrl + A` ➡ Ir al comienzo de la línea del terminal.
 - `Ctrl + E` ➡ Ir al final de la línea de terminal.
+
+## Vim
+
+- `j` ➡ Abajo
+- `k` ➡ Arriba
+- `h` ➡ Izquierda
+- `l` ➡ Derecha
+- `w` ➡ Siguiente palabra
+- `b` ➡ Palabra anterior
+- `e` ➡ Final de la palabra
 
 
 ## Bibliografía
