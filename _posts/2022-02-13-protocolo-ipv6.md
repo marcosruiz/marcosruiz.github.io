@@ -27,9 +27,9 @@ Antes de nada debemos aprender a pasar de binario a hexadecimal y de hexadecimal
 
 Los valores alfanuméricos en hexadecimal son 16: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
 
-| Hex | Binary | Hex | Binary |
+| Hexadecimal | Binario | Hexadecimal | Binario |
 |:---:|:------:|:---:|:------:|
-|     | 0000   | 8   | 1000   |
+| 0   | 0000   | 8   | 1000   |
 | 1   | 0001   | 9   | 1001   |
 | 2   | 0010   | A   | 1010   |
 | 3   | 0011   | B   | 1011   |
@@ -73,23 +73,55 @@ _Encabezado IPv6_
 
 Las direcciones IPv6 están formadas por 128 bits. Para facilitar su anotación se expresan en números hexadecimales agrupados de cuatro en cuatro y cada grupo está separado por dos puntos (:). Las IPv6 se expresan con 32 números hexadecimales. 
 
-Si encontramos un grupo nulo, es decir, todo ceros, podemos comprimir la dirección colocando el  símbolo de dos puntos. Por ejemplo:
+Son 8 grupos de 4 dígitos hexadecimales y cada dígito hexadecimal son 4 bits. Es decir: 8 * 4 * 4 = 128 bits (16 Bytes). Las direcciones IPv6 son cuatro veces más largas que las direcciones IPv4.
+
+Ejemplo de IPv6:
 
 ```mermaid
 graph TD;
-abcd:ac50:11bf:0000:f3e4:a1b2:0000:1220:61de-->abcd:ac50:11bf::f3e4:a1b2::1220:61de;
+2001:0db8:3c4d:0015:0000:0000:1a2f:1a2b
 ```
 
-Los ceros iniciales de un grupo también se pueden omitir. Por ejemplo:
+{:.section}
+## Acortar direcciones IPv6
+
+Las reglas de abreviación de direcciones IPv6 te permiten acortar estos números.
+
+Sólo dos reglas básicas te permiten a ti, o cualquier computadora, acortar o abreviar una dirección IPv6:
+
+{:.subsection}
+### Paso 1: Elimina los ceros iniciales
+
+Dentro de cada cuarteto de cuatro dígitos hexadecimales, elimina los 0 iniciales (los 0 en el lado izquierdo del cuarteto). (Nota: en este paso, un cuarteto de 0000 dejará un solo 0).
 
 ```mermaid
 graph TD;
-abcd:ac50:01bf:0000:f3e4:01b2:0000:1220:61de-->abcd:ac50:1bf::f3e4:1b2::1220:61de;
+0000:0000:0001:0000:0000:0000:0056-->FE00:0:0:1:0:0:0:56;
+
+2001:0002:0003:0003:0006:0005:0006:0007-->2001:2:3:3:6:5:6:7;
 ```
 
-Las direcciones IPv6 también separan en parte de red y parte de host. 
+{:.subsection}
+### Paso 2: Elimina cuartetos de ceros
 
-También pueden usar la notación prefija, es decir, después de una barra inclinada se especifican los bits que pertenecen al prefijo de red. Por ejemplo: la dirección `2010:abcd:ef12::/48` define la red que comienza en el número `2010:abcd:ef12:0000:0000:0000:0000:0000` y finaliza en el número `2010:abcd:ef12:ffff:ffff:ffff:ffff:ffff`.
+Busca cualquier cadena de dos o más cuartetos consecutivos con todos los hexadecimales en cero y reemplaza ese conjunto de cuartetos con dos puntos dobles (::). El :: significa «dos o más cuartetos de todos 0». Sin embargo, puede usar :: solo una vez en una sola dirección porque, de lo contrario, es posible que no se comprenda cuál es la dirección IPv6 exacta.
+
+```mermaid
+graph TD;
+0000:0000:0001:0000:0000:0000:0056-->FE00:0:0:1:0:0:0:56;
+FE00:0:0:1:0:0:0:56-->FE00:0:0:1::56;
+```
+
+Los ceros iniciales o finales de un grupo también se pueden omitir. Por ejemplo:
+
+```mermaid
+graph TD;
+2001:0db8:3c4d:0015:0000:d234:3eee:0000-->2001:db8:3c4d:15:0:d234:3eee:0;
+2001:db8:3c4d:15:0:d234:3eee:0-->2001:db8:3c4d:15:0:d234:3eee::;
+```
+
+{:.subsection}
+### Preguntas de expandir y acortar direcciones IPv6
 
 <details class="card mb-2">
   <summary class="card-header question">¿Existe la dirección IPv6 9999::9999?</summary>
@@ -120,8 +152,12 @@ También pueden usar la notación prefija, es decir, después de una barra incli
   </div>
 </details>
 
-{:.subsection}
-### Ejercicios de expandir y acortar direcciones IPv6
+<details class="card mb-2">
+  <summary class="card-header question">¿Existe la dirección IPv6 FE00::?</summary>
+  <div class="card-body">
+    Si.
+  </div>
+</details>
 
 {:.question}
 Rellena los siguientes huecos:
@@ -155,8 +191,12 @@ Rellena los siguientes huecos:
   </div>
 </details>
 
-{.section}
+{:.section}
 ## Máscara o prefijo IPv6
+
+Las direcciones IPv6 también separan en parte de red y parte de host. 
+
+También pueden usar la **notación prefija**, es decir, después de una barra inclinada se especifican los bits que pertenecen al prefijo de red. Por ejemplo: la dirección `2010:abcd:ef12::/48` define la red que comienza en el número `2010:abcd:ef12:0000:0000:0000:0000:0000` y finaliza en el número `2010:abcd:ef12:ffff:ffff:ffff:ffff:ffff`.
 
 IPv6 utiliza un concepto de máscara, llamado **longitud de prefijo**, similar a las máscaras de subred IPv4.
 
@@ -326,3 +366,5 @@ _Tamaño del libro de redes vs tamaño del libro de redes si solo se usara IPv6 
 - [Llevamos años escuchando que las IPv4 se han acabado y que IPv6 es el futuro, pero todavía no ha cambiado nada (o eso parece)](https://www.xataka.com/otros/llevamos-anos-escuchando-que-ipv4-se-han-acabado-que-ipv6-futuro-todavia-no-ha-cambiado-nada-eso-parece)
 - [Transición IPv4 --> IPv6](http://redesdecomputadores.umh.es/ipv6/Transici%C3%B3n.html)
 - [Qué es IPv6](https://ccnadesdecero.com/curso/ipv6/)
+- [Direcciones IPv6 – Convenciones y Formatos](https://ccnadesdecero.com/curso/ipv6-formatos-acortar-expandir/)
+- [Tipos de Direcciones IPv6](https://ccnadesdecero.com/curso/tipos-de-direcciones-ipv6/)

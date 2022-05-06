@@ -1,11 +1,13 @@
 ---
 title: Resolución de incidencias de una red de área local
-date: 2022-02-11 01:00:00 +0100
+date: 2022-05-05 01:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
-tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
+tags: [redes locales, teoría]
 ---
 
-## Condiciones físicas y ambientales de la instalación
+Leed Unidad 7 del libro: Resolución de incidencias de una red de área local.
+
+<!-- ## Condiciones físicas y ambientales de la instalación
 
 ## Estrategias y parámetros de rendimiento
 
@@ -15,4 +17,4 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 
 ## Herramientas de diagnóstico
 
-## Documentación de la red
+## Documentación de la red-->

@@ -53,8 +53,8 @@ pin: true
     - [Protocolo IPv6](/posts/protocolo-ipv6/)
     - [VPN](/posts/vpn/)
     - [Tutorial: Configurar una WLAN con Packet Tracer](/posts/tutorial-wlan-packet-tracer)
-- UD 8 - Resolución de incidencias de una red de área local
-- UD 9 - Cumplimiento de las normas de prevención de riesgos laborales y protección medioambiental
+- UD 8 - Resolución de incidencias de una red de área local ➡️ UNIDAD 7 DEL LIBRO!!!
+- UD 9 - Cumplimiento de las normas de prevención de riesgos laborales y protección medioambiental ➡️ UNIDAD 8 DEL LIBRO!!!
 
 ### Tutoriales
 
