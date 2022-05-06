@@ -230,9 +230,25 @@ En el firewall de Windows se puede configurar para que bloquee los programas que
 ## Amenazas en Internet
 
 {:.subsection}
-### Virus
+### Malware
 
-Los virus informáticos son programas que se instalan de forma inadvertida en los ordenadores, realizan su función destructiva y pueden propagarse hacia otros ordenadores.
+Malware es un término general para referirse a cualquier tipo de “malicious software” (software malicioso) diseñado para infiltrarse en su dispositivo sin su conocimiento. Hay muchos tipos de malware y cada uno busca sus objetivos de un modo diferente.
+
+```mermaid
+graph TD;
+Malware-->Virus;
+Malware-->Troyano;
+Malware-->Spyware;
+Malware-->Gusano;
+Malware-->Adware;
+Malware-->Ransomware (falta);
+Malware-->Botnets (falta);
+```
+
+{:.subsubsection}
+#### Virus
+
+Los virus informáticos son programas que se instalan de forma inadvertida en los ordenadores, realizan su **función destructiva** y pueden propagarse hacia otros ordenadores.
 
 Para que nuestro ordenador se infecte o contagie con un virus, el código del virus tiene que grabarse en nuestro ordenador, la forma más sencilla de hacer esto para un virus es cuando copiamos archivos, ya que sólo tiene que ocultarse dentro del archivo que estamos copiando.
 
@@ -240,32 +256,37 @@ Una vez el archivo del virus está en nuestro ordenador tiene que ejecutarse par
 
 Hay varias formas de ejecutarse, por ejemplo, lo podemos ejecutar nosotros mismos sin darnos cuenta al abrir un archivo adjunto del correo. 
 
-Normalmente las páginas web contienen texto, gráficos, sonido, animaciones y vídeos. El navegador sólo se leen estos elementos y se visualizan en la pantalla, por lo tanto las páginas web no pueden infectarnos ya que no suelen contener programas que se ejecuten en nuestro ordenador. Normalmente, para que una página web pueda infectar a sus visitantes ha de ser el propio dueño de dicha página el que instale los virus con intención de propagarlos.
+Normalmente las páginas web contienen texto, gráficos, sonido, animaciones y vídeos. El navegador sólo se leen estos elementos y se visualizan en la pantalla, por lo tanto **las páginas web no pueden infectarnos** ya que no suelen contener programas que se ejecuten en nuestro ordenador.
 
-{:.subsection}
-### Troyano
+{:.subsubsection}
+#### Troyano
 
-Es un programa aparentemente legítimo e inofensivo, pero que, al ejecutarlo, le brinda a un atacante acceso remoto al equipo infectado.
+Es un programa aparentemente legítimo e inofensivo, pero que, al ejecutarlo, le brinda a un atacante acceso remoto al equipo infectado. A diferencia de un virus, un troyano no tiene una función destructiva ni se replica a si mismo.
 
-{:.subsection}
-### Spyware
+{:.subsubsection}
+#### Spyware
 
 Es un malware que recopila información de un ordenador y después transmite esta información a una entidad externa sin el conocimiento o el consentimiento del propietario del ordenador.
 
-{:.subsection}
-### Gusano
+{:.subsubsection}
+#### Gusano
 
 Es un malware que tiene la propiedad de duplicarse a sí mismo, siendo su medio de propagación la red.
 
-{:.subsection}
-### Adware
+A diferencia de los virus necesitan un anfitrión o la interacción humana para propagarse, los gusanos informáticos pueden propagarse muy rápidamente sin la ayuda de estos. Los gusanos son programas autosuficientes que no dependen de la intervención humana para desencadenarse y/o autopropagarse.
+
+![A diferencia de los virus, los gusanos se replican y propagan sin la ayuda de una acción humana](/assets/img/seguridad-informatica/virusVsWorm.svg)
+_A diferencia de los virus, los gusanos se replican y propagan sin la ayuda de una acción humana_
+
+{:.subsubsection}
+#### Adware
 
 Es un software que muestra publicidad mientras se está utilizando una aplicación sin que el usuario haya consentido en la instalación de dicha publicidad.
 
 {:.subsection}
-### Ingeniería social
+### Phising o ingenieria social
 
-En la informática, la ingeniería social hace referencia a todas aquellas conductas que permiten obtener información confidencial de otras personas, sin que estas se den cuenta de que la están revelando. Ejemplo: crear sitios web, en los que se ofrecen concursos o cuestionarios falsos que piden a los usuarios una contraseña. Si un usuario escribe la misma contraseña que usa en su trabajo, el hacker la utiliza para entrar en la red de su trabajo sin tener que descifrar ninguna clave.
+En la informática, el phising o ingeniería social hace referencia a todas aquellas conductas que permiten obtener información confidencial de otras personas, sin que estas se den cuenta de que la están revelando. Ejemplo: crear sitios web, en los que se ofrecen concursos o cuestionarios falsos que piden a los usuarios una contraseña. Si un usuario escribe la misma contraseña que usa en su trabajo, el hacker la utiliza para entrar en la red de su trabajo sin tener que descifrar ninguna clave.
 
 Se llama phishing a la estafa consistente en imitar la imagen de una empresa o entidad, con la intención de obtener datos del usuario que, posteriormente, se utilizarán de forma fraudulenta.
 
@@ -277,7 +298,7 @@ _Ejemplo de phising_
 Estos mensajes se diseñan para dar la sensación de que proceden de sitios de confianza, como nuestro banco. Para que parezcan más reales suelen contener enlaces que parecen que conducen al sitio web legítimo, cuando en realidad nos remiten a un sitio falso que tiene el mismo aspecto que el sitio web original. Una vez allí, el usuario introduce información personal que se transmite directamente al delincuente.
 
 {:.subsection}
-### Spam (correo basura)
+### Spam o correo basura
 
 El Spam es el envío masivo de correo electrónico que no ha sido solicitado y que busca
 un beneficio por parte del remitente.
@@ -346,7 +367,7 @@ Estas serían las medidas más importantes para proteger la intrusión en nuestr
 ## Bibliografía
 
 - [Amenaza vs Vulnerabilidad, ¿sabes en qué se diferencian?](https://www.incibe.es/protege-tu-empresa/blog/amenaza-vs-vulnerabilidad-sabes-se-diferencian)
-
-
+- [Diferencia entre un virus y un troyano](https://einatec.com/diferencia-entre-un-virus-y-un-troyano/)
+- [Gusanos frente a virus: ¿en qué se diferencian? ¿Importa?](https://www.avast.com/es-es/c-worm-vs-virus)
 
 

@@ -5,9 +5,7 @@ categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, teoría]
 ---
 
-Leed Unidad 7 del libro: Resolución de incidencias de una red de área local.
-
-<!-- ## Condiciones físicas y ambientales de la instalación
+## Condiciones físicas y ambientales de la instalación
 
 ## Estrategias y parámetros de rendimiento
 
@@ -17,4 +15,4 @@ Leed Unidad 7 del libro: Resolución de incidencias de una red de área local.
 
 ## Herramientas de diagnóstico
 
-## Documentación de la red-->
+## Documentación de la red
