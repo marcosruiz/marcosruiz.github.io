@@ -11,8 +11,6 @@ tags: [smr, tutorial, nat, pat, packet tracer]
 - Hacer uso de un proveedor de acceso a Internet (ISP) para que los equipos de una red privada accedan a la Nube (Internet).
 - Configurar en el router de Borde de un Sistema Autónomo al proceso NAT estático, NAT dinámico y NAT dinámico con sobrecarga (PAT).
 
-Haz click [aquí](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjIkJPNwbb3AhW_7rsIHVsCCroQFnoECCMQAQ&url=http%3A%2F%2Fwww.udb.edu.sv%2Fudb_files%2Frecursos_guias%2Finformatica-tecnologico%2Fredes-de-comunicacion%2F2020%2Fi%2Fguia-9.pdf&usg=AOvVaw1jfw3cpfTQS2W2VUaod2VR) para descargar la práctica original.
-
 ## Parte 1: Preparación de la topología base
 
 {:.step}
@@ -296,10 +294,10 @@ Empresa1# show ip nat translation
 Veamos que sucede cuando las traducciones requeridas exceden el número de direcciones públicas que comprenden el pool. Hacer los siguientes cambios en la red local de Empresa1:
 
 - Expanda la red, agregando 3 PCs más. Asignarles las direcciones IP 192.168.1.4, 192.168.1.5 y 192.168.1.6, respectivamente.
-- Desde host 192.168.1.4, haga ping a la ip 10.0.0.2.
-- Desde host 192.168.1.5, haga ping a la ip 10.0.0.2.
+- Desde host 192.168.1.4, haga `ping` a la ip 10.0.0.2.
+- Desde host 192.168.1.5, haga `ping` a la ip 10.0.0.2.
 - Revise las traducciones nat en Empresa1. Notará que por cada ip privada de los host anteriores, se crea un a nueva traducción para acceder a redes externas.
-- Desde el host con ip 192.168.1.6; haga ping a: 10.0.0.2. En este último caso podrá notar que el comando `ping` no tiene éxito. Esto se debe a que el pool de direcciones públicas (de 199.6.13.10 hasta 199.6.13.11) se ha agotado.
+- Desde el host con ip 192.168.1.6; haga `ping` a: 10.0.0.2. En este último caso podrá notar que el comando `ping` no tiene éxito. Esto se debe a que el pool de direcciones públicas (de 199.6.13.10 hasta 199.6.13.11) se ha agotado.
 - Espere unos 10 segundos, para intentar nuevamente la comunicación desde el host 192.168.1.6 hacia la ip 10.0.0.2. La prueba deberá ser exitosa, debido a que el router Empresa1 retiro la asignación de la ip publica a uno de los primeros host que accedieron a Internet y que ya no la volvieron a utilizar.
 
 {:.step}
@@ -477,5 +475,9 @@ A continuación se muestra la topología final a la que se debe llegar.
 ![img-description](/assets/img/tutorial-nat-pat-packet-tracer/resultadoFinalParte4.png)
 _Topología final_
 
-<!--![img-description](/assets/img/tutorial-nat-pat-packet-tracer/resultadoFinalParte4Detallada.png)
-_Topología final detallada_-->
+![img-description](/assets/img/tutorial-nat-pat-packet-tracer/resultadoFinalParte4Detallada.png)
+_Topología final detallada_
+
+## Bibliografía
+
+- [GUIA DE LABORATORIO #9](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjIkJPNwbb3AhW_7rsIHVsCCroQFnoECCMQAQ&url=http%3A%2F%2Fwww.udb.edu.sv%2Fudb_files%2Frecursos_guias%2Finformatica-tecnologico%2Fredes-de-comunicacion%2F2020%2Fi%2Fguia-9.pdf&usg=AOvVaw1jfw3cpfTQS2W2VUaod2VR)
