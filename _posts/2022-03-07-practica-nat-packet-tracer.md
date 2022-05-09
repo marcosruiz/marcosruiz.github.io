@@ -32,7 +32,7 @@ Seguir los pasos del artículo [Tutorial: Configurar un NAT estático en Packet 
 {:.activity}
 ### Tres router 
 
-Seguir los pasos del artículo [Tutorial: NAT y PAT en Packet Tracer](/posts/tutorial-nat-pat-packet-tracer).
+Seguir los pasos del artículo [Tutorial: NAT estático, NAT dinámico y PAT en Packet Tracer](/posts/tutorial-nat-pat-packet-tracer).
 
 ## Entrega y presentación
 

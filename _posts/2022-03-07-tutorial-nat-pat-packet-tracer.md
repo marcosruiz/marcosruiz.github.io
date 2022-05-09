@@ -23,7 +23,11 @@ Implementar ahí la siguiente topología:
 ![img-description](/assets/img/tutorial-nat-pat-packet-tracer/tresRoutersEstáticoDinamicoSobrecargado.png)
 _Topología base_
 
-NOTA: En esta configuración ambas interfaces seriales d el router ISP usarán cables DCE.
+NOTA: En esta configuración ambas interfaces seriales del router ISP usarán cables DCE.
+
+NOTA: En esta práctica se usan subredes VLSM explicadas en el artículo [VLSM](/posts/vlsm/). Este tipo de subredes pueden tener máscaras de red diferentes unas de otras.
+
+NOTA: Los comandos en el CLI de los nodos de red se pueden acortar. Por ejemplo, el comando `configure terminal` es el mismo que `configure ter` y que `configure t`.
 
 {:.step}
 ### Paso
@@ -88,9 +92,11 @@ ISP# copy running-config startup-config
 
 Configure las estaciones de trabajo y los servidores con el siguiente direccionamiento IP:
 
-- PC11: Dirección IP: 192.168.1.2, máscara de subred: 255.255.255.0, gateway: 192.168.1.1
-- FTPserver: Dirección IP: 172.18.0.66, máscara de subred: 255.255.255.192, gateway: 172.18.0.65
-- WebServer: Dirección IP: 10.0.0.2, máscara de subred: 255.255.255.0, gateway: 10.0.0.1
+| | Dirección IP | Máscara de subred | Gateway |
+|---|---|---|---|
+| PC11 | 192.168.1.2 | 255.255.255.0 | 192.168.1.1 |
+| FTPserver | 172.18.0.66 | 255.255.255.192 | 172.18.0.65 |
+| WebServer | 10.0.0.2 | 255.255.255.0 | 10.0.0.1 |
 
 {:.step}
 ### Paso
@@ -98,33 +104,35 @@ Configure las estaciones de trabajo y los servidores con el siguiente direcciona
 Comprobación de direccionamiento IP
 
 - Visualice la tabla de enrutamiento de los enrutadores Empresa1 y Empresa2, ejecutando al comando `show ip route`.
-- Verificar la tabla de enrutamiento del enrutador ISP. Observe que debido al carácter de redes privadas que tienen las redes de sus 2 clientes (Empresa1 y Empresa2), la red 192.168.1.0/24 y el conjunto de redes 172.18.0.0 /20 no deben aparecer en la tabla de ISP.
+- Verificar la tabla de enrutamiento del enrutador ISP. Observe que debido al carácter de redes privadas que tienen las redes de sus 2 clientes (Empresa1 y Empresa2), la red 192.168.1.0/24 y el conjunto de redes 172.18.0.0/20 no deben aparecer en la tabla de ISP.
 
 {:.step}
 ### Paso
 
-Realizar las siguientes pruebas con la herramienta PING desde las estaciones de trabajo y el web server (se anotan a continuación de cada prueba el resultado que debería obtenerse, compárelo con sus propios resultados:
+Realizar las siguientes pruebas con el comando `ping` (usando el Command Prompt del Desktop de cada PC) desde las estaciones de trabajo y el web server. 
+
+Se anotan a continuación de cada prueba el resultado que debería obtenerse, compárelo con sus propios resultados:
 
 | Ping desde | hacia | resultado |
 |---|---|---|
-| PC11 | 192.168.1.1 | prueba exitosa. |
-| FTPserver | 172.18.0.65 | prueba exitosa. |
-| PC11 | 10.0.0.2 | host de destino inaccesible. |
-| FTPserver | 10.0.0.2 | host de destino inaccesible. |
-| WebServer | 10.0.0.1 | prueba exitosa. |
-| WebServer | 168.243.3.129 | prueba exitosa. |
-| WebServer | 168.243.3.133 | prueba exitosa. |
-| WebServer | 192.168.1.2 | host de destino inaccesible. |
-| WebServer | 192.168.2.2 | host de destino inaccesible. |
+| PC11 | 192.168.1.1 | prueba exitosa ✅ |
+| FTPserver | 172.18.0.65 | prueba exitosa ✅ |
+| PC11 | 10.0.0.2 | host de destino inaccesible ❌ |
+| FTPserver | 10.0.0.2 | host de destino inaccesible ❌ |
+| WebServer | 10.0.0.1 | prueba exitosa ✅ |
+| WebServer | 168.243.3.129 | prueba exitosa ✅ |
+| WebServer | 168.243.3.133 | prueba exitosa ✅ |
+| WebServer | 192.168.1.2 | host de destino inaccesible ❌ |
+| WebServer | 192.168.2.2 | host de destino inaccesible ❌ |
 
-Nuevamente se hace la aclaración. Los fallos al realizar las pruebas Ping entre las estaciones de trabajo y el servidor, y viceversa, son un comportamiento normal, ya que el enrutador ISP desconoce la existencia de las redes locales privadas de Empresa1 y Empresa2. La comunicación entre estas redes se logrará usando NAT o PAT.
+Nuevamente se hace la aclaración. Los fallos al realizar las pruebas `ping` entre las estaciones de trabajo y el servidor, y viceversa, son un **comportamiento normal**, ya que el **enrutador ISP desconoce la existencia de las redes locales privadas de Empresa1 y Empresa2**. La comunicación entre estas redes se logrará usando NAT o PAT.
 
 ## Parte 2: Configuración de NAT estático en enrutador Empresa1
 
 {:.step}
 ### Paso
 
-Asignación de una red IP pública para realizar el proceso de traducción. Las direcciones de carácter público (Globales) para su cliente 1 que configurara el proveedor en su equipo ISP serán las IP host contenidas en la red: 199.6.13.8/29. 
+Asignación de una red IP pública para realizar el proceso de traducción. Las direcciones de carácter público (globales) para su cliente 1 (Empresa1) que configurara el proveedor en su equipo ISP serán las IP host contenidas en la red: 199.6.13.8/29. 
 
 Estas IP globales serán configuradas en los siguientes pasos.
 
@@ -146,10 +154,12 @@ Configure una ruta estática por defecto en el enrutador Empresa1:
 Empresa1(config)# ip route 0.0.0.0 0.0.0.0 serial 0/0
 ```
 
+Este comando crea una entrada en la tabla de enrutamiento del enrutador Empresa1. Este comando define la puerta de enlace predeterminada de el enrutador Empresa1, es decir, TODOS los mensajes que vayan a una dirección IP destino que no conozca los enviará por la interfaz serial 0/0. Un enrutador SOLO conoce las redes a las qu está directamente conectado, es decir, las que aparecen con letra C en la tabla de enrutamiento cuando ejecutamos el comando `show ip route`.
+
 {:.step}
 ### Paso
 
-Ejecute el siguiente código para configurar NAT estático en Empresa1, que permitirá que la dirección privada de PC11 se traduzca a la 1er ip global (199.6.13.9) del rango asignado por ISP para este Cliente 1. Además, se definen aquí a las interfaces de entrada y de salida para el proceso de traducción NAT:
+Ejecute el siguiente código para configurar NAT estático en Empresa1, que permitirá que la dirección privada de PC11 se traduzca a la primera IP global (199.6.13.9) del rango asignado por ISP para este Cliente 1 (Empresa1). Además, se definen aquí a las interfaces de entrada y de salida para el proceso de traducción NAT:
 
 ```console
 Empresa1# configure terminal
@@ -175,22 +185,24 @@ Realizar las siguientes pruebas y evaluar sus resultados.
 
 | Ping desde | hacia | resultado |
 |---|---|---|
-| PC11 | dirección del WebServer (10.0.0.2) | prueba exitosa |
-| WebServer | ip privada de PC1 (192.168.1.2) | host de destino inaccesible |
-| WebServer | ip publica asignada a PC1 (199.6.13.9) | prueba exitosa |
+| PC11 | dirección del WebServer (10.0.0.2) | prueba exitosa ✅ |
+| WebServer | ip privada de PC1 (192.168.1.2) | host de destino inaccesible ❌ |
+| WebServer | ip publica asignada a PC1 (199.6.13.9) | prueba exitosa ✅ |
 
-Tal como se ve en las pruebas anteriores, con el uso de NAT ya no es posible hacer
-ping directamente a direcciones locales (este es uno de los objetivos de la práctica), por lo que, si desea acceder a la
-PC11 de sde Internet, deberá hacer referencia a su dirección pública asignada con NAT.
+Tal como se ve en las pruebas anteriores, con el uso de NAT ya no es posible hacer `ping` directamente a direcciones locales (este es uno de los objetivos de la práctica), por lo que, si desea acceder a la PC11 desde Internet, deberá hacer referencia a su dirección pública asignada con NAT.
 
 {:.step}
 ### Paso
 
-Finalmente, desde el enrutador Empresa1, revise el estado de la traducción de direcciones IPs privadas publicas, ejecutando al comando: 
+Finalmente, desde el enrutador Empresa1, revise el estado de la traducción de direcciones IPs privadas publicas, ejecutando el comando: 
 
 ```console
 Empresa1# show ip nat translation
 ```
+
+### Paso
+
+Guarda este esquema de red y haz capturas del funcionamiento de la red en el estado actual.
 
 ## Parte 3: Configuración de traducciones dinámicas en enrutador Empresa1
 
@@ -211,7 +223,7 @@ Notará que aun es imposible acceder a redes externas desde otra dirección loca
 
 Si se mantiene este esquema de traducción estática de direcciones, se haría necesario crear una traducción para cada dirección privada de manera manual e individual. 
 
-Para solventar esta situación, activaremos una traducción basada en un grupo de direcciones públicas, que serán asignadas dinámicamente por orden de llegada con respecto a las direcciones privadas.
+Para solventar esta situación, activaremos una traducción basada en un grupo de direcciones públicas (pool), que serán asignadas dinámicamente por orden de llegada con respecto a las direcciones privadas.
 
 {:.step}
 ### Paso
@@ -243,13 +255,15 @@ Empresa1(config)# do write
 {:.step}
 ### Paso
 
-Crear la lista de acceso estándar 1 a continuación, que permite comparar las direcciones de origen (privadas), para decidir si luego estas serán traducidas a direcciones públicas (globales). En esta demostración, incluiremos en el derecho a ser traducidas a toda la red 192.168.1.0/24.
+Crear la lista de acceso estándar 1 a continuación, que permite comparar las direcciones de origen (privadas), para decidir si luego estas serán traducidas a direcciones públicas (globales). En esta demostración, incluiremos en el derecho a ser traducidas a todas las direcciones IP de la red 192.168.1.0/24.
 
 ```console
 Empresa1# configure terminal
 Empresa1(config)# access-list 1 permit 192.168.1.0 0.0.0.255
 Empresa1(config)# CTRL+Z
 ```
+
+En el comando `access-list` usamos máscaras de red inversas que se obtienen cambiando los unos por ceros y viceversa.
 
 {:.step}
 ### Paso
@@ -270,7 +284,7 @@ No es necesario volver a definir el sentido de la traducción (inside/outside), 
 {:.step}
 ### Paso
 
-Haga una prueba Ping desde PC 12 hacia la ip 10.0.0.2. En este caso la traducción se llevará a cabo correctamente y se obtendrá una respuesta exitosa. Revise de nuevo el estado de las traducciones usando el comando:
+Haga una prueba con el comando `ping` desde PC12 hacia la ip 10.0.0.2. En este caso la traducción se llevará a cabo correctamente y se obtendrá una respuesta exitosa. Revise de nuevo el estado de las traducciones usando el comando:
 
 ```console
 Empresa1# show ip nat translation
@@ -281,11 +295,11 @@ Empresa1# show ip nat translation
 
 Veamos que sucede cuando las traducciones requeridas exceden el número de direcciones públicas que comprenden el pool. Hacer los siguientes cambios en la red local de Empresa1:
 
-- Expanda la red, agregando 3 PC mas, para conectarlas al Hub. Asignarles las IPs 192.168.1.4, 192.168.1.5 y 192.168.1.6, respectivamente.
+- Expanda la red, agregando 3 PCs más. Asignarles las direcciones IP 192.168.1.4, 192.168.1.5 y 192.168.1.6, respectivamente.
 - Desde host 192.168.1.4, haga ping a la ip 10.0.0.2.
 - Desde host 192.168.1.5, haga ping a la ip 10.0.0.2.
 - Revise las traducciones nat en Empresa1. Notará que por cada ip privada de los host anteriores, se crea un a nueva traducción para acceder a redes externas.
-- Desde el host con ip 192.168.1.6; haga ping a: 10.0.0.2. En este último caso podrá notar que la prueba Ping no tiene éxito. Esto se debe a que el pool de direcciones públicas (de 199.6.13.10 hasta 199.6.13.11) se ha agotado.
+- Desde el host con ip 192.168.1.6; haga ping a: 10.0.0.2. En este último caso podrá notar que el comando `ping` no tiene éxito. Esto se debe a que el pool de direcciones públicas (de 199.6.13.10 hasta 199.6.13.11) se ha agotado.
 - Espere unos 10 segundos, para intentar nuevamente la comunicación desde el host 192.168.1.6 hacia la ip 10.0.0.2. La prueba deberá ser exitosa, debido a que el router Empresa1 retiro la asignación de la ip publica a uno de los primeros host que accedieron a Internet y que ya no la volvieron a utilizar.
 
 {:.step}
@@ -300,12 +314,12 @@ Empresa1# clear ip nat translation *
 {:.step}
 ### Paso
 
-Ejecute nuevamente la prueba ping desde la PC que dio resultado no exitoso en el paso anterior. Ahora si se tendrá éxito. Revise el estado de las traducciones, para confirmar que las anteriores fueron eliminadas y ahora solo queda la ip publica que se utilizo para el host de esta prueba.
+Ejecute nuevamente el comando `ping` desde la PC que dio resultado no exitoso en el paso anterior. Ahora si se tendrá éxito. Revise el estado de las traducciones, para confirmar que las anteriores fueron eliminadas y ahora solo queda la ip publica que se utilizo para el host de esta prueba.
 
 {:.step}
 ### Paso
 
-Guarde los últimos cambios de configuración en Empresa1 y reinicie su IOS, con el comando `reload`.
+Guarde los últimos cambios de configuración en Empresa1 y reinicie su IOS (Internetwork Operating System), con el comando `reload`.
 
 ## Parte 4: Configuración de NAT Sobrecargado en enrutador Empresa2
 
@@ -316,7 +330,7 @@ Modificar router Empresa2 con las siguientes características y configuraciones:
 
 - Conectar una nueva interface FastEthernet, configurarle la dirección 172.18.0.129/27 y levantarla. Conectar a esta interface un nuevo host, asignándole la ip 172.18.0.130/27 y su respectiva ip de gateway.
 - Crear una red de manera virtualizada con la Loopback3[^loopback], asignándole la dirección 172.18.0.161/28.
-- Desde FTPserver, comprobar con ping que saluda exitosamente al nuevo host y también a la ip de Lo3.
+- Desde FTPserver, comprobar con `ping` que saluda exitosamente al nuevo host y también a la ip de Lo3.
 
 [^loopback]: Un loopback es una interfaz lógica que permite asignar direcciones IP a un router que no están ligadas a una interfaz física.
 
@@ -339,12 +353,12 @@ Ahora analice el siguiente escenario que describirá la topología de red privad
 
 - Este Cliente2, tendrá un router de borde denominado Empresa2 y usará el mismo ISP. 
 - Se expandirá su red interna mostrada en la Figura del principio a un total de 3 redes diferentes:
-    - Red 1: 172.18.0.64 /26 (de FTPserver, ya configurada
-    - Red 2: 172.18.0.128 /27
-    - Red 3: 172.18.0.160 /28
+    - Red 1: 172.18.0.64/26 (de FTPserver, ya configurada)
+    - Red 2: 172.18.0.128/27
+    - Red 3: 172.18.0.160/28
 - El server FTPserver debe ser alcanzado desde el exterior (Internet).
-- El host de la red 3, implementado en la Lo 3, virtualizara a un Server, el cual deberá ser visto desde Internet.
-- Solamente la mitad superior del rango d e ip de los host de la red 2 tendrán acceso a Internet. Al resto de host se les permitirá solamente comunicación interna con el resto de redes privadas del mismo cliente.
+- El host de la red 3, implementado en la Lo 3, virtualizará a un Server, el cual deberá ser visto desde Internet.
+- Solamente la mitad superior del rango de ip de los host de la red 2 tendrán acceso a Internet. Al resto de host se les permitirá solamente comunicación interna con el resto de redes privadas del mismo cliente.
 - Este cliente ha comprado de su ISP solamente 3 direcciones públicas (100.0.0.33/28 100.0.0.34/28 y 100.0.0.35/28).
 
 {:.step}
@@ -384,7 +398,7 @@ Observe como la Lo 3 se convierte en una interface de entrada de NAT.
 {:.step}
 ### Paso
 
-Configure una ruta por defecto en Empresa2, que utilice la interface de salida Serial 0/1 con la que se conecta al ISP.
+Configure una ruta por defecto en Empresa2, que utilice la interface de salida Serial 0/1 con la que se conecta al ISP. Es decir, debes configurar la tabla de enrutamiento del enrutador Empresa2 como ya se hizo con el enrutador de Empresa1.
 
 {:.step}
 ### Paso
@@ -396,17 +410,21 @@ ISP(config)# ip route 100.0.0.32 255.255.255.252 168.243.3.134
 ISP(config)# ip route 100.0.0.35 255.255.255.255 168.243.3.134
 ```
 
-{:.step}
-### Paso
-
-Haga pruebas de ping desde WebServer dirigidos a la ip pública (100.0.0.33) asignada al FTPserver. La prueba debe ser exitosa.
-
-De igual forma, desde host PC11, ejecute ping dirigido a la ip pública (100.0.0.34) asignada p ara laLo3. La prueba también debe ser satisfactoria.
+La dirección IP 100.0.0.35 pertenece a la red 100.0.0.32/30 pero se trata de un mensaje broadcast por lo que el enrutador no lo propagaría. Debido a esto, es necesaria la segunda línea. De todos modos, no estoy 100% seguro de esto.
 
 {:.step}
 ### Paso
 
-Hasta este momento, ya solo queda disponible una ip publica (100.0.0.35) adquirida al proveedorISP, y con ella debe darse acceso a Internet a solamente a la mitad superior de ip’s de la Red2( 18.0.128/27).Este rango de ip que tendrán Internet incluye desde la ip 172.18.0.144 hasta la 172.18.0.158.Veamos cómo es posible solventar este problema usando PAT.
+Haga pruebas de `ping` desde WebServer dirigidos a la ip pública (100.0.0.33) asignada al FTPserver. La prueba debe ser exitosa.
+
+De igual forma, desde host PC11, ejecute el comando `ping` dirigido a la ip pública (100.0.0.34) asignada para la Lo3. La prueba también debe ser satisfactoria.
+
+{:.step}
+### Paso
+
+Hasta este momento, ya solo queda disponible una ip publica (100.0.0.35) adquirida al proveedor ISP, y con ella debe darse acceso a Internet a solamente a la mitad superior de las direcciones IP de la Red2 (172.18.0.128/27). 
+
+Este rango de ip que tendrán Internet incluye desde la ip 172.18.0.144 hasta la 172.18.0.158. Veamos cómo es posible solventar este problema usando PAT.
 
 {:.step}
 ### Paso
@@ -420,7 +438,7 @@ Empresa2(config)# ip nat pool cliente2 100.0.0.35 100.0.0.35 netmask 255.255.255
 ```
 
 Crea la ACL 2 para determinar las redes que tendrán acceso al proceso NAT y alcanzar así Internet.
-En este caso, solo se aceptaran ip de la mitad superior del rango de ip’s de la Red 2.
+En este caso, solo se aceptarán IPs de la mitad superior del rango de IPs de la Red 2.
 
 ```console
 Empresa2(config)# access-list 2 permit 172.18.0.144 0.0.0.15
@@ -436,15 +454,28 @@ Empresa2(config)# ip nat inside source list 2 pool cliente2 overload
 {:.step}
 ### Paso
 
-Desde la PC de la Red 2 ejecute un ping hacia la ip 10.0.0.2; resultado: falla, porque su ip actual 172.18.0.130/27) no tiene acceso a Internet. Cambiar su ip asignada a 172.18.0.153/27 y repetir la prueba de comunicación. Esta vez si se le permitirá acceder a Internet.
+Desde el PC de la Red 2 ejecute un `ping` hacia la ip 10.0.0.2; resultado: falla, porque su ip actual (172.18.0.130/27) no tiene acceso a Internet. 
+
+Cambiar su ip asignada a 172.18.0.153/27 y repetir la prueba de comunicación. Esta vez si se le permitirá acceder a Internet.
 
 {:.step}
 ### Paso
 
-Notara que al usar la sobrecarga en la traducción de direcciones de forma dinámica, ya no hay mayores problemas si nuestro pool de direcciones públicas es más pequeño que el número real de direcciones privadas a traducir.
+Notará que al usar la sobrecarga en la traducción de direcciones de forma dinámica, ya no hay mayores problemas si nuestro pool de direcciones públicas es más pequeño que el número real de direcciones privadas a traducir.
 
+Añade un PC más a la red 2 y haz dos `ping` al mismo tiempo con ambos PCs. Debería funcionar.
+
+Es importante resaltar que aunque la red 10.0.0.0/24 forma parte del rango de direcciones privadas. En esta práctica funciona como una red pública ya que el enrutador ISP no tiene la funcionalidad de NAT configurada.
+
+{:.step}
+### Paso
+
+Guarda el fichero en formato .pkt y haz capturas que demuestren el correcto funcionamiento de la Parte 3 de este tutorial.
 
 A continuación se muestra la topología final a la que se debe llegar.
 
 ![img-description](/assets/img/tutorial-nat-pat-packet-tracer/resultadoFinalParte4.png)
 _Topología final_
+
+<!--![img-description](/assets/img/tutorial-nat-pat-packet-tracer/resultadoFinalParte4Detallada.png)
+_Topología final detallada_-->
