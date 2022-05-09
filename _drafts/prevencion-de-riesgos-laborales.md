@@ -24,12 +24,12 @@ Ya desde la Constitución Española en su artículo 40.2 se indica a los poderes
 
 Así en el artículo 4º de la LPRL se realizan las siguientes definiciones que usaremos en esta unidad:
 
-- Prevención: el conjunto de actividades destinadas a evitar o disminuir los riesgos al trabajo.
-- Riesgo laboral: que es la posibilidad de que un trabajador sufra un daño.
-- Daños derivados del trabajo: enfermedades, patologías y lesiones motivadas por el trabajo.
-- Riesgo laboral grave e inminente: aquel riesgo con posibilidad inmediata de realización con consecuencias graves para la salud.
-- Equipo de trabajo: cualquier dispositivo usado en el trabajo.
-- Condición de trabajo: características del trabajo que puedan ocasionar riesgos para la salud.
+- **Prevención**: el conjunto de actividades destinadas a evitar o disminuir los riesgos al trabajo.
+- **Riesgo laboral**: que es la posibilidad de que un trabajador sufra un daño.
+- **Daños derivados del trabajo**: enfermedades, patologías y lesiones motivadas por el trabajo.
+- **Riesgo laboral grave e inminente**: aquel riesgo con posibilidad inmediata de realización con consecuencias graves para la salud.
+- **Equipo de trabajo**: cualquier dispositivo usado en el trabajo.
+- **Condición de trabajo**: características del trabajo que puedan ocasionar riesgos para la salud.
 
 El artículo 8º nos habla del [Instituto Nacional de Seguridad e Higiene en el Trabajo (INSST)](https://www.insst.es/), que es el órgano científico técnico especializado de la administración General del estado para garantizar las condiciones de seguridad y salud.
 
@@ -275,7 +275,7 @@ Para la espalda:
 A la hora de elegir un software con el que trabajar y que requieran pantallas de visualización, el empresario debía tener en cuenta los siguientes factores:
 
 - Programa tiene que estar adaptado a la tarea que debe realizarse.
-- El programa debe ser fácil de utilizar y con capacidad de adaptación al nivel de conocimientos y de experiencia del usuario..
+- El programa debe ser fácil de utilizar y con capacidad de adaptación al nivel de conocimientos y de experiencia del usuario.
 - El sistema deberá mostrar información en un formato y a un ritmo adecuado para los operadores.
 - Deberá aplicarse los principios de ergonomía.
 
@@ -317,6 +317,7 @@ Esto se debe a que el reglamento indica que se deben cumplir los siguientes punt
 ## Cumplimiento de la normativa de protección medioambiental
 
 El Programa Medioambiental Europeo, aprobado en el año 2013, indicaba una serie de pautas para los estados miembros. Entre estas medidas podemos destacar:
+
 - La integración de las políticas medioambientales en el resto de las políticas.
 - Favorecer el trabajo conjunto entre empresas y consumidores para hacer una producción y un consumo más sostenible.
 - Prestar una mayor atención al cambio climático, a la naturaleza y biodiversidad, el medio ambiente y la salud, la utilización sostenible de los recursos naturales y la gestión de los residuos.
