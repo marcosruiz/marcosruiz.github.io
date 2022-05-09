@@ -5,6 +5,10 @@ categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 ---
 
+## Diapositivas
+
+<iframe title="slides" src="https://docs.google.com/presentation/d/e/2PACX-1vQmMQscE7BwqTDO9vgsC8Hvy9lje2aUTFjF0VmAMf4QVb4oFalfrh0wUebc9iscHho8PaiVenyDoCd3/embed?start=false&loop=false&delayms=10000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 ## Introducción
 ## Nivel de enlace en las redes locales
 ### MAC y LLC

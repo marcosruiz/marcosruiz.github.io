@@ -1,5 +1,5 @@
 ---
-title: Caracterización de una LAN
+title: (No definitiva) Caracterización de una LAN
 date: 2022-05-06 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
