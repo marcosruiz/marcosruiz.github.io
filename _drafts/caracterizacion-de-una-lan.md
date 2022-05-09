@@ -1,9 +1,13 @@
 ---
 title: Caracterización de una LAN
-date: 2022-02-07 12:00:00 +0100
+date: 2022-05-06 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 ---
+
+## Diapositivas
+
+<iframe title="slides" src="https://docs.google.com/presentation/d/e/2PACX-1vTr9UXXd5ILoWRA5u1iEeFZE_T4S-vNrWKBnulqLCkjoUw766RC0ETZRgHtPQHt-H23EiYdy2EG02TV/embed?start=false&loop=false&delayms=10000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## Introducción
 
@@ -109,3 +113,4 @@ Velocidad = información/ tiempo
 ## OSI vs TCP/IP
 
 ## Computación en la nube, interred y estándares
+
