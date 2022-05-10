@@ -8,7 +8,7 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 {:.section}
 ## Introducción
 
-De qué vamos a hablar en este tema: en primer lugar vamos a conocer las distintas normas que existen en cuestión de prevención de riesgos laborales y también de protección medioambiental. Es por ello queremos echar un vistazo a la Legislación española y también a legislación que viene de la Unión Europea, que son las normas jurídicas que nos indican que debemos cumplir.
+¿De qué vamos a hablar en este tema? En primer lugar vamos a conocer las distintas normas que existen en cuestión de prevención de riesgos laborales y también de protección medioambiental. Es por ello queremos echar un vistazo a la legislación española y también a legislación que viene de la Unión Europea, que son las normas jurídicas que nos indican qué debemos cumplir.
 
 Una vez visto el marco, veremos cómo se aplica y en qué nos afecta como futuros trabajadores del ámbito de las telecomunicaciones.
 
@@ -24,12 +24,12 @@ Ya desde la Constitución Española en su artículo 40.2 se indica a los poderes
 
 Así en el artículo 4º de la LPRL se realizan las siguientes definiciones que usaremos en esta unidad:
 
-- **Prevención**: el conjunto de actividades destinadas a evitar o disminuir los riesgos al trabajo.
-- **Riesgo laboral**: que es la posibilidad de que un trabajador sufra un daño.
-- **Daños derivados del trabajo**: enfermedades, patologías y lesiones motivadas por el trabajo.
-- **Riesgo laboral grave e inminente**: aquel riesgo con posibilidad inmediata de realización con consecuencias graves para la salud.
-- **Equipo de trabajo**: cualquier dispositivo usado en el trabajo.
-- **Condición de trabajo**: características del trabajo que puedan ocasionar riesgos para la salud.
+- **Prevención**: El conjunto de actividades destinadas a evitar o disminuir los riesgos al trabajo.
+- **Riesgo laboral**: Que es la posibilidad de que un trabajador sufra un daño.
+- **Daños derivados del trabajo**: Enfermedades, patologías y lesiones motivadas por el trabajo.
+- **Riesgo laboral grave e inminente**: Aquel riesgo con posibilidad inmediata de realización con consecuencias graves para la salud.
+- **Equipo de trabajo**: Cualquier dispositivo usado en el trabajo.
+- **Condición de trabajo**: Características del trabajo que puedan ocasionar riesgos para la salud.
 
 El artículo 8º nos habla del [Instituto Nacional de Seguridad e Higiene en el Trabajo (INSST)](https://www.insst.es/), que es el órgano científico técnico especializado de la administración General del estado para garantizar las condiciones de seguridad y salud.
 
@@ -47,10 +47,10 @@ En el artículo 16º habla de las obligaciones del empresario, entre las que deb
 El artículo 23º especifica que todas esas tareas deben ser documentadas siguiendo las especificaciones dadas, cumpliendo los siguientes aspectos:
 
 - El empresario debe elaborar y conservar la siguiente documentación:
-    - Una evaluación de riesgos,
-    - Medidas de protección y prevención adoptadas,
-    - Resultados de los controles de seguridad,
-    - Resultados de los controles de la salud de los trabajadores,
+    - Una evaluación de riesgos.
+    - Medidas de protección y prevención adoptadas.
+    - Resultados de los controles de seguridad.
+    - Resultados de los controles de la salud de los trabajadores.
     - Informe de la relación de accidentes de trabajo y enfermedades profesionales que hayan motivado una incapacidad laboral superior a un día.
 - El empresario debe remitir a la autoridad laboral dicha información y los daños para salud de los trabajadores que se hubiesen producido.
 - Debe remitir también esta información a las autoridades sanitarias.
@@ -58,12 +58,13 @@ El artículo 23º especifica que todas esas tareas deben ser documentadas siguie
 {:.subsection}
 ### Reglamento de servicios de prevención
 
-Este reglamento se aprobó en 1997 y constituye la [legislación laboral](https://www.boe.es/buscar/act.php?id=BOE-A-1997-1853). En el mismo se contemplan aspectos que hacen posible la prevención de los centros laborales desde la perspectiva de: ser una actividad integrada en el conjunto de actuaciones de la empresa y en todos los niveles jerárquicos de la misma. A partir de una planificación que incluya la técnica la organización y las condiciones de trabajo.
+Este reglamento se aprobó en 1997 y constituye la [legislación laboral](https://www.boe.es/buscar/act.php?id=BOE-A-1997-1853). En el mismo se contemplan aspectos que hacen posible la prevención de los centros laborales desde la perspectiva de: ser una actividad integrada en el conjunto de actuaciones de la empresa y en todos los niveles jerárquicos de la misma. A partir de una planificación que incluya la técnica, la organización y las condiciones de trabajo.
 
 Se aborda elaboración de los riesgos, esta evaluación es punto de partida de la planificación de la actividad preventiva que sea necesaria. Dicha planificación se hace a partir de una serie de modelos habitación definidos por esta ley. El escoger un modelo u otro se hace en función del tamaño de la empresa y de los riesgos o peligrosidad de las actividades desarrolladas en la misma.
 
 {:.section}
 ## Identificación de riesgos
+
 Según la normativa se deben evitar los riesgos que entrañan daños en el trabajador. Pero si no es posible evitarlos éstos deben ser identificados y también los puestos de trabajo asociados a los mismos.
 
 Un trabajador encargado de tareas relacionadas con la instalación de redes de ordenadores está expuesto a los siguientes riesgos laborales:
@@ -78,7 +79,8 @@ Vamos a tratar cada uno de ellos de forma individualizada.
 ### Riesgos derivados de las instalaciones eléctricas
 
 Dada la gran cantidad dispositivos electrónicos que necesitan ser conectados a la red de suministro eléctrico es preciso conocer los riesgos que conlleva.
-Los riesgos más probables son las descargas eléctricas producidas por contactos directos e indirectos.  Los daños que puedan ocasionar estas descargas pueden ser:
+
+Los riesgos más probables son las descargas eléctricas producidas por contactos directos e indirectos. Los daños que puedan ocasionar estas descargas pueden ser:
 
 - Paro respiratorio. 
 - Fibrilación ventricular.
@@ -107,12 +109,12 @@ Entendemos contacto directo cuando una persona toca directamente un conductor ac
 {:.subsubsection}
 #### Riesgo por contacto indirecto
 
-Entendemos contacto indirecto cuando una persona a tocar la carcasa metálica de un equipo y el suelo. Normalmente los equipos tienen conectada la carcasa metálica a la referencia de tierra. RO sucede en cuando la carcasa metálica se conecta accidentalmente a una línea de tensión en lugar de tierra. 
+Entendemos contacto indirecto cuando una persona a tocar la carcasa metálica de un equipo y el suelo. Normalmente los equipos tienen conectada la carcasa metálica a la referencia de tierra. Esto sucede en cuando la carcasa metálica se conecta accidentalmente a una línea de tensión en lugar de tierra. 
 
 {:.subsubsection}
 #### Riesgo por quemadura
 
-Un dispositivo alimentado por la red eléctrica de forma continuada experimenta un aumento en su temperatura En algunas ocasiones la temperatura puede ser tan elevada que pueden producirse daños por quemaduras e incluso incendios.
+Un dispositivo alimentado por la red eléctrica de forma continuada experimenta un aumento en su temperatura. En algunas ocasiones la temperatura puede ser tan elevada que pueden producirse daños por quemaduras e incluso incendios.
 
 {:.subsubsection}
 #### Riesgo por fuego
@@ -124,7 +126,8 @@ Además de calentamiento también existe el riesgo de fuego cuando se producen m
 
 Este riesgo puede darse por dos causas diferentes:
 
-Por un lado a los dispositivos eléctricos poseen cables y pistas por los cuales circulan intensidades eléctricas. Estas pistas pueden constituir un sistema de radiación de ondas electromagnéticas, es decir, pueden comportarse como antenas.
+Por un lado, a los dispositivos eléctricos poseen cables y pistas por los cuales circulan intensidades eléctricas. Estas pistas pueden constituir un sistema de radiación de ondas electromagnéticas, es decir, pueden comportarse como antenas.
+
 Es un efecto no deseado y se conoce como interferencias electromagnéticas. Aunque por lo general no conllevan daños significativos sobre las personas sí que pueden afectar a dispositivos electrónicos como marcapasos, que afecten de forma indirecta a la salud de los trabajadores. 
 
 Por otro lado las comunicaciones inalámbricas utilizan la propagación de ondas electromagnéticas en el medio aéreo como fundamento para las comunicaciones. Deben garantizar que la potencia de la señal emitida no daña las personas que se encuentran en las cercanías de estos dispositivos.
@@ -137,12 +140,13 @@ Así dependiendo de la energía y su frecuencia podemos calificar estas ondas en
 ### Riesgos derivados de la utilización de equipos que incluyen pantallas de visualización
 
 El uso de pantallas de visualización así como teclados y ratones implica que las personas mantengan una determinada postura durante un tiempo largo. 
+
 Estos aspectos se hayan contemplados por el [Real Decreto 488/1997](https://www.boe.es/buscar/pdf/1997/BOE-A-1997-8671-consolidado.pdf), que habla sobre las disposiciones mínimas de seguridad y salud relativas al trabajo con equipos que incluyen pantallas de visualización.
 
 Así en el artículo 2 se define:
 
-- Qué es una pantalla de visualización, 
-- Cómo es el puesto de trabajo, y 
+- Qué es una pantalla de visualización.
+- Cómo es el puesto de trabajo.
 - Quién es un trabajador de este tipo: una persona que habitualmente y durante una parte significativa de su tiempo usa un equipo con pantalla de visualización.
 
 {:.section}
@@ -164,15 +168,18 @@ Siendo:
 Cada uno de los parámetros tiene una codificación. 
 
 ![img-description](/assets/img/prevencion-de-riesgos-laborales/consecuencias.png)
+_Especificación de las consecuencias según el método de índices Fine_
 
 ![img-description](/assets/img/prevencion-de-riesgos-laborales/exposicion.png)
+_Especificación de la exposición según el método de índices Fine_
 
 ![img-description](/assets/img/prevencion-de-riesgos-laborales/probabilidad.png)
+_Especificación de la probabilidad según el método de índices Fine_
 
 Dando como resultado:
 
 ![img-description](/assets/img/prevencion-de-riesgos-laborales/resultadoRiesgo.png)
-
+_Cálculo del factor de riesgo según el método de índices de Fine_
 
 {:.section}
 ## Prevención de riesgos laborales en los procesos de montaje de redes de ordenadores
@@ -221,7 +228,7 @@ Los riesgos pueden provenir de dos fuentes distintas: por un lado las interferen
 
 Para los primeros hay una serie de normas que se deben cumplir según el [Real Decreto 444/94](https://www.boe.es/eli/es/rd/1994/03/11/444), donde se habla de los límites de emisiones y cómo deben emitir.
 
-Para los segundos – las comunicaciones inalámbricas – existen diversos estándares y regulaciones de seguridad de exposición a radiaciones. Estos estándares limita la potencia de misión en los dispositivos trasmisores. 
+Para los segundos – las comunicaciones inalámbricas – existen diversos estándares y regulaciones de seguridad de exposición a radiaciones. Estos estándares limita la potencia de misión en los dispositivos transmisores. 
 
 
 {:.subsection}
@@ -232,9 +239,19 @@ Dentro del anexo del Real Decreto 488/1997, que nos habla de las disposiciones m
 {:.subsubsection}
 #### Referidos al equipo de trabajo
 
+
 ##### Especificaciones para la pantalla.
 
 Caracteres de pantalla bien definidos, imagen estable, la posibilidad de ajustar la luminosidad y el contraste, pantalla orientable e inclinable a voluntad, el ángulo de línea de visión no superior a 40°.
+
+![img-description](/assets/img/prevencion-de-riesgos-laborales/elementosMesaDeTrabajo.png)
+_Elementos de la mesa de trabajo_
+
+![img-description](/assets/img/prevencion-de-riesgos-laborales/anguloLineaVision.png)
+_Ángulo de la línea de visión_
+
+![img-description](/assets/img/prevencion-de-riesgos-laborales/anguloVision.png)
+_Ángulo de visión_
 
 ##### Especificaciones del teclado.
 
@@ -258,16 +275,27 @@ Para la espalda:
 
 ![img-description](/assets/img/prevencion-de-riesgos-laborales/ejerciciosEspalda.png)
 
+Para las manos y la muñeca:
+
+![img-description](/assets/img/prevencion-de-riesgos-laborales/posicionManosTunelCarpiano.png)
+_Posición correcta de mano y muñeca para evitar el síndrome del túnel carpiano derivado de un mal uso del teclado o del ratón_
+
+![img-description](/assets/img/prevencion-de-riesgos-laborales/ejerciciosMuneca.png)
+_Ejercicios para ejercitar la muñeca_
+
+![img-description](/assets/img/prevencion-de-riesgos-laborales/movimientosDedos.png)
+_Movimientos de los dedos_
+
 {:.subsubsection}
 #### Referidos al entorno de trabajo
 
 - **Especificaciones sobre espacio de trabajo**. El puesto trabajo deberá tener una dimensión suficiente y estará condicionado de tal manera que haya el espacio suficiente para permitir los cambios de postura y movimientos de trabajo.
-- **Especificaciones de la iluminación**. La iluminación General y la especial deberá garantizar unos niveles adecuados a iluminación y una relaciones adecuadas de luminosidad entre la pantalla es su entorno. Además el acontecimiento del lugar y del puesto de trabajo debe evitar deslumbramientos y reflejos molestos en la pantalla u otras partes del equipo.
+- **Especificaciones de la iluminación**. La iluminación general y la especial deberá garantizar unos niveles adecuados a iluminación y una relaciones adecuadas de luminosidad entre la pantalla es su entorno. Además el acontecimiento del lugar y del puesto de trabajo debe evitar deslumbramientos y reflejos molestos en la pantalla u otras partes del equipo.
 - **Especificaciones relativas a reflejos y deslumbramientos**. Los puestos de trabajo deben instalarse de tal forma que las fuentes de luz no provoquen deslumbramientos directos ni produzcan reflejos molestos en la pantalla. De igual modo las ventanas deberán ir equipadas con un dispositivo de cobertura adecuada y regulable que atenúe la luz del día.
 - **Especificaciones relativas al ruido**. El ruido producido por los equipos debe tenerse en cuenta a la hora de diseñar el puesto de trabajo de modo que no perturbe la atención ni la palabra.
 - **Especificaciones relativas al calor**. Los equipos instalados no deberán producir calor adicional que ocasione molestias.
 - **Especificaciones relativas a las emisiones**. Toda radiación que no sea de la parte visible el espectro electromagnético deberá reducirse a niveles insignificantes.
-- **Especificaciones relativas a la humedad**. Deberán crearse mantenerse uno menos aceptable
+- **Especificaciones relativas a la humedad**. Deberán crearse mantenerse una humedad aceptable.
 
 {:.subsubsection}
 #### Referidos a la interconexión ordenador/persona
@@ -296,9 +324,9 @@ Dos factores influyen en la elección:
 
 Los equipos se clasifican sea con tres categorías:
 
-1. **Categoría 1**: son los EPI destinados a proteger contra riesgos mínimos. Por ejemplo: guantes de jardinería, cascos ligeros, gafas de sol, etc. Un
-2. **Categoría 2**: aquellos destinados a proteger contra riesgos de grado medio o elevado, pero sin consecuencias mortales o irreversibles.
-3. **Categoría 3**: engloba a los equipos de protección encargados de proteger contra riesgos con consecuencias mortales ocurre reversibles, por ejemplo: equipos de protección respiratoria que proteja contra aerosoles sólidos y líquidos, equipos de intervención en ambientes fríos, etc.
+1. **Categoría 1**: Son los EPI destinados a proteger contra riesgos mínimos. Por ejemplo: guantes de jardinería, cascos ligeros, gafas de sol, etc.
+2. **Categoría 2**: Aquellos destinados a proteger contra riesgos de grado medio o elevado, pero sin consecuencias mortales o irreversibles.
+3. **Categoría 3**: Engloba a los equipos de protección encargados de proteger contra riesgos con consecuencias mortales ocurre reversibles, por ejemplo: Equipos de protección respiratoria que proteja contra aerosoles sólidos y líquidos, equipos de intervención en ambientes fríos, etc.
 
 {:.section}
 ## Cumplimiento de la normativa de prevención
@@ -307,11 +335,41 @@ En el Real Decreto 39/1997 se aprobó el Reglamento de los Servicios de Prevenci
 
 Esto se debe a que el reglamento indica que se deben cumplir los siguientes puntos:
 
-- **El plan de prevención de riesgos laborales**. Este documento escrito que describe la actividad preventiva la empresa debe incluir: la estructura organizativa, las responsabilidades, las funciones, las prácticas, los procedimientos, los procesos y los recursos necesarios para realizar la acción preventiva de riesgos en la empresa. Usando como instrumentos para la gestión y la planificación: la evaluación de riesgo inicial y sus actualizaciones, la planificación de la actividad preventiva.
-- La **organización de los recursos necesarios** para el desarrollo de las  actividades preventivas. El desarrollo de actividades preventivas esté obligado cumplimiento por parte del empresario ya bien porque asuma de forma personal la actividad preventiva, porque designe trabajadores para que desarrollen esta actividad, mediante un servicio de prevención propio o un servicio de prevención ajeno.
-- **Auditorías**. Estas evaluaciones externas son obligatorias y deben repetirse cada cinco años o cuando lo requiera la Autoridad Laboral, quedando excluidas aquellas empresas que tengan un servicio de prevención ajeno y empresas de 6 trabajadores que no están incluidas en el anexo 1 del Real Decreto. 
-- **Capacidades o aptitudes**. A la hora de realizar la evaluación de riesgos y desarrollar activa preventiva estas funciones se clasifican tres grupos: de nivel básico, de nivel intermedio, de nivel superior. Especificando las funciones de cada uno de estos grupos.
-- **Colaboración con Sistema Nacional de Salud**. Los servicios de prevención colaborarán con servicios de atención primaria de salud y de asistencia especializada así como con las administraciones sanitarias competentes en la actividad de salud laboral que se planifique..
+**El plan de prevención de riesgos laborales**. Este documento escrito que describe la actividad preventiva la empresa debe incluir:
+
+- La estructura organizativa.
+- Las responsabilidades.
+- Las funciones.
+- Las prácticas.
+- Los procedimientos.
+- Los procesos.
+- Los recursos necesarios para realizar la acción preventiva de riesgos en la empresa. 
+
+Usando como instrumentos para la gestión y la planificación: 
+
+ - La evaluación de riesgo inicial y sus actualizaciones.
+ - La planificación de la actividad preventiva.
+
+
+{:.subsection}
+### Organización de los recursos necesarios para el desarrollo de las actividades preventivas
+
+El desarrollo de actividades preventivas será de obligado cumplimiento por parte del empresario ya bien porque asuma de forma personal la actividad preventiva o porque designe trabajadores para que desarrollen esta actividad, mediante un servicio de prevención propio o un servicio de prevención ajeno.
+
+{:.subsection}
+### Auditorías
+
+Estas evaluaciones externas son obligatorias y deben repetirse cada cinco años o cuando lo requiera la Autoridad Laboral, quedando excluidas aquellas empresas que tengan un servicio de prevención ajeno y empresas de 6 trabajadores que no están incluidas en el anexo 1 del Real Decreto. 
+
+{:.subsection}
+### Capacidades o aptitudes
+
+A la hora de realizar la evaluación de riesgos y desarrollar activa preventiva estas funciones se clasifican tres grupos: de nivel básico, de nivel intermedio, de nivel superior. Especificando las funciones de cada uno de estos grupos.
+
+{:.subsection}
+### Colaboración con Sistema Nacional de Salud
+
+Los servicios de prevención colaborarán con servicios de atención primaria de salud y de asistencia especializada así como con las administraciones sanitarias competentes en la actividad de salud laboral que se planifique.
 
 {:.section}
 ## Cumplimiento de la normativa de protección medioambiental
@@ -322,7 +380,7 @@ El Programa Medioambiental Europeo, aprobado en el año 2013, indicaba una serie
 - Favorecer el trabajo conjunto entre empresas y consumidores para hacer una producción y un consumo más sostenible.
 - Prestar una mayor atención al cambio climático, a la naturaleza y biodiversidad, el medio ambiente y la salud, la utilización sostenible de los recursos naturales y la gestión de los residuos.
 
-En resumen la creación de una política medioambiental de obligado cumplimiento en los estados. Promoviendo la creación de sistemas de gestión medioambiental dentro de una empresa. Para ello la empresa deberá superar las siguientes etapas:
+En resumen, la creación de una política medioambiental de obligado cumplimiento en los estados. Promoviendo la creación de sistemas de gestión medioambiental dentro de una empresa. Para ello la empresa deberá superar las siguientes etapas:
 
 - Realización de un análisis medioambiental.
 - Llevar a cabo una auditoría medioambiental.
@@ -332,3 +390,5 @@ En resumen la creación de una política medioambiental de obligado cumplimiento
 
 Englobándose todo esto en un proceso de mejora continua. ([Ver norma ISO 14000](https://es.wikipedia.org/wiki/ISO_14000)).
 
+![img-description](/assets/img/prevencion-de-riesgos-laborales/modeloGestionAmbiental.png)
+_Modelo de sistema de gestión ambiental_
