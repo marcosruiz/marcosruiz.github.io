@@ -256,7 +256,14 @@ Pruebas... ¿para qué?
 - Evitar problemas en producción graves. ¿Qué es un problema grave?
 - Aumentar la fiabilidad y robustez de un software.
 - Generar seguridad cuando tocamos ciertas partes del código.
-- Aumentar el coste en la creación de un software.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Las pruebas aumentan el coste en la creación de un software?</summary>
+  <div class="card-body">
+    Depende.
+  </div>
+</details>
+
 
 {:.subsection}
 ### Tipos de pruebas

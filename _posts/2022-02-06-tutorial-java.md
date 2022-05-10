@@ -443,14 +443,6 @@ Las sentencias de bucle en Java son: while, do-while y for.
 
 En el caso de la sentencia while tenemos un bucle que se ejecuta mientas se cumple la condición, pero puede que no se llegue a ejecutar nunca, si no se cumple la condición la primera vez.
 
-
-{:.subsection}
-### Sentencias de ramificación
-
-Las sentencias de ramificación son aquellas que nos permiten romper con la ejecución lineal de un programa.
-
-No es necesario conocerlas a este nivel.
-
 {:.subsubsection}
 #### while
 
@@ -496,6 +488,14 @@ for (int i = 0; i<10; i++){
     System.out.println("Hola!");
 }
 ```
+
+{:.subsection}
+### Sentencias de ramificación
+
+Las sentencias de ramificación son aquellas que nos permiten romper con la ejecución lineal de un programa.
+
+No es necesario conocerlas a este nivel.
+
 
 {:.subsubsection}
 #### Videos de bucles en Java

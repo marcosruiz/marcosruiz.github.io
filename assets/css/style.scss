@@ -85,3 +85,12 @@ iframe[title="slides"]{
 	width:100%;
 	aspect-ratio: 16/10;
 }
+
+img {
+	background-clip: content-box;
+	background-color: white;
+}
+
+img.mfp-img {
+	padding: 10px 0 40px;
+}
