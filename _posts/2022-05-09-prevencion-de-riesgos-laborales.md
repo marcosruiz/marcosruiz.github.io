@@ -1,6 +1,6 @@
 ---
 title: Cumplimiento de las normas de prevención de riesgos laborales y protección medioambiental
-date: 2022-02-11 01:00:00 +0100
+date: 2022-05-09 10:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 ---
@@ -141,9 +141,9 @@ Estos aspectos se hayan contemplados por el [Real Decreto 488/1997](https://www.
 
 Así en el artículo 2 se define:
 
-- qué es una pantalla de visualización, 
-- cómo es el puesto de trabajo, y 
-- quién es un trabajador de este tipo: una persona que habitualmente y durante una parte significativa de su tiempo usa un equipo con pantalla de visualización.
+- Qué es una pantalla de visualización, 
+- Cómo es el puesto de trabajo, y 
+- Quién es un trabajador de este tipo: una persona que habitualmente y durante una parte significativa de su tiempo usa un equipo con pantalla de visualización.
 
 {:.section}
 ## Determinación de las medidas de prevención de riesgos laborales
