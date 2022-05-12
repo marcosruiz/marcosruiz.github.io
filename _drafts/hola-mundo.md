@@ -34,14 +34,14 @@ Mucho texto
 Hola de nuevo viejo.
 
 ![img-description](https://pbs.twimg.com/profile_images/1438905642262175753/kesiMZxW_400x400.jpg)
-_Breve descripción de la imágen_
+_Breve descripción de la imagen_
 
 ### Subtítulo
 
 A continuación se muestra una imagen con pie de foto.
 
 ![img-description](https://pbs.twimg.com/profile_images/1438905642262175753/kesiMZxW_400x400.jpg)
-_Breve descripción de la imágen_
+_Breve descripción de la imagen_
 
 ![img-description](https://pbs.twimg.com/profile_images/1438905642262175753/kesiMZxW_400x400.jpg)
-_Breve descripción de la imágen_
+_Breve descripción de la imagen_

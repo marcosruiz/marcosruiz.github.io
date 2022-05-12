@@ -25,6 +25,7 @@ tags: [vitalinux, zorin]
 - Docker
 - Inkscape
 - Gimp
+- Inkscape
 - net-tools
 - traceroute
 - gedit
@@ -35,7 +36,6 @@ tags: [vitalinux, zorin]
 - IntelliJ IDEA Community
 - Atom
 - Draw.io/Diagrams.net
-- Postman
 
 ### TIC II
 
