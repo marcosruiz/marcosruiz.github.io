@@ -21,11 +21,14 @@ Implementar ahí la siguiente topología:
 ![img-description](/assets/img/tutorial-nat-pat-packet-tracer/tresRoutersEstáticoDinamicoSobrecargado.png)
 _Topología base_
 
-NOTA: En esta configuración ambas interfaces seriales del router ISP usarán cables DCE.
+> En esta configuración ambas interfaces seriales del router ISP usarán cables DCE.
+{:.prompt-info}
 
-NOTA: En esta práctica se usan subredes VLSM explicadas en el artículo [VLSM](/posts/vlsm/). Este tipo de subredes pueden tener máscaras de red diferentes unas de otras.
+> En esta práctica se usan subredes VLSM explicadas en el artículo [VLSM](/posts/vlsm/). Este tipo de subredes pueden tener máscaras de red diferentes unas de otras.
+{:.prompt-info}
 
-NOTA: Los comandos en el CLI de los nodos de red se pueden acortar. Por ejemplo, el comando `configure terminal` es el mismo que `configure ter` y que `configure t`.
+> Los comandos en el CLI de los nodos de red se pueden acortar. Por ejemplo, el comando `configure terminal` es el mismo que `configure ter` y que `configure t`.
+{:.prompt-info}
 
 {:.step}
 ### Paso
@@ -463,7 +466,7 @@ Notará que al usar la sobrecarga en la traducción de direcciones de forma din�
 
 Añade un PC más a la red 2 y haz dos `ping` al mismo tiempo con ambos PCs. Debería funcionar.
 
-Es importante resaltar que aunque la red 10.0.0.0/24 forma parte del rango de direcciones privadas. En esta práctica funciona como una red pública ya que el enrutador ISP no tiene la funcionalidad de NAT configurada.
+Es importante resaltar que aunque **la red 10.0.0.0/24 forma parte del rango de direcciones privadas en esta práctica funciona como una red pública** ya que el enrutador ISP no tiene la funcionalidad de NAT configurada.
 
 {:.step}
 ### Paso
