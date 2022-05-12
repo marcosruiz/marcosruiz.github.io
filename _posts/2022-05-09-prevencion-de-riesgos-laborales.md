@@ -5,8 +5,6 @@ categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 ---
 
-Probando, probando...
-
 {:.section}
 ## Introducción
 
