@@ -475,11 +475,8 @@ Guarda el fichero en formato .pkt y haz capturas que demuestren el correcto func
 
 A continuación se muestra la topología final a la que se debe llegar.
 
-![img-description](/assets/img/tutorial-nat-pat-packet-tracer/resultadoFinalParte4.png)
-_Topología final_
-
 ![img-description](/assets/img/tutorial-nat-pat-packet-tracer/resultadoFinalParte4Detallada.png)
-_Topología final detallada_
+_Topología final_
 
 ## Bibliografía
 
