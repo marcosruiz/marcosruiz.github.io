@@ -5,6 +5,51 @@ categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 ---
 
+<details class="card mb-2">
+  <summary class="card-header">Tabla de contenidos</summary>
+  <div class="card-body" markdown="1">
+
+- [1. Introducción](#1-introducción)
+- [2. Legislación](#2-legislación)
+  - [2.1. Ley de prevención de riesgos laborales (LPRL)](#21-ley-de-prevención-de-riesgos-laborales-lprl)
+  - [2.2. Reglamento de servicios de prevención](#22-reglamento-de-servicios-de-prevención)
+- [3. Identificación de riesgos](#3-identificación-de-riesgos)
+  - [3.1. Riesgos derivados de las instalaciones eléctricas](#31-riesgos-derivados-de-las-instalaciones-eléctricas)
+    - [3.1.1. Riesgo por contacto directo](#311-riesgo-por-contacto-directo)
+    - [3.1.2. Riesgo por contacto indirecto](#312-riesgo-por-contacto-indirecto)
+    - [3.1.3. Riesgo por quemadura](#313-riesgo-por-quemadura)
+    - [3.1.4. Riesgo por fuego](#314-riesgo-por-fuego)
+  - [3.2. Riesgos derivados de la exposición a ondas de radiofrecuencia](#32-riesgos-derivados-de-la-exposición-a-ondas-de-radiofrecuencia)
+  - [3.3. Riesgos derivados de la utilización de equipos que incluyen pantallas de visualización](#33-riesgos-derivados-de-la-utilización-de-equipos-que-incluyen-pantallas-de-visualización)
+- [4. Determinación de las medidas de prevención de riesgos laborales](#4-determinación-de-las-medidas-de-prevención-de-riesgos-laborales)
+- [5. Prevención de riesgos laborales en los procesos de montaje de redes de ordenadores](#5-prevención-de-riesgos-laborales-en-los-procesos-de-montaje-de-redes-de-ordenadores)
+  - [5.1. Prevención de los riesgos derivados de las instalaciones eléctricas](#51-prevención-de-los-riesgos-derivados-de-las-instalaciones-eléctricas)
+    - [5.1.1. Prevención de riesgo por contacto directo.](#511-prevención-de-riesgo-por-contacto-directo)
+    - [5.1.2. Prevención de riesgo por contacto indirecto](#512-prevención-de-riesgo-por-contacto-indirecto)
+    - [5.1.3. Prevención de riesgo por fuego](#513-prevención-de-riesgo-por-fuego)
+    - [5.1.4. Prevención de riesgo por deficiencia en la calidad del aire inhalado](#514-prevención-de-riesgo-por-deficiencia-en-la-calidad-del-aire-inhalado)
+  - [5.2. Prevención de los riesgos derivados de la exposición a ondas de radiofrecuencia](#52-prevención-de-los-riesgos-derivados-de-la-exposición-a-ondas-de-radiofrecuencia)
+  - [5.3. Prevención de los riesgos derivados de la utilización de pantallas de visualización](#53-prevención-de-los-riesgos-derivados-de-la-utilización-de-pantallas-de-visualización)
+    - [5.3.1. Referidos al equipo de trabajo](#531-referidos-al-equipo-de-trabajo)
+      - [5.3.1.1. Especificaciones para la pantalla.](#5311-especificaciones-para-la-pantalla)
+      - [5.3.1.2. Especificaciones del teclado.](#5312-especificaciones-del-teclado)
+      - [5.3.1.3. Especificaciones de la mesa de trabajo.](#5313-especificaciones-de-la-mesa-de-trabajo)
+      - [5.3.1.4. Especificaciones del asiento de trabajo.](#5314-especificaciones-del-asiento-de-trabajo)
+      - [5.3.1.5. Recomendaciones de ejercicios para evitar lesiones musculares o de la vista.](#5315-recomendaciones-de-ejercicios-para-evitar-lesiones-musculares-o-de-la-vista)
+    - [5.3.2. Referidos al entorno de trabajo](#532-referidos-al-entorno-de-trabajo)
+    - [5.3.3. Referidos a la interconexión ordenador/persona](#533-referidos-a-la-interconexión-ordenadorpersona)
+- [6. Equipos de protección individual](#6-equipos-de-protección-individual)
+- [7. Cumplimiento de la normativa de prevención](#7-cumplimiento-de-la-normativa-de-prevención)
+  - [7.1. Organización de los recursos necesarios para el desarrollo de las actividades preventivas](#71-organización-de-los-recursos-necesarios-para-el-desarrollo-de-las-actividades-preventivas)
+  - [7.2. Auditorías](#72-auditorías)
+  - [7.3. Capacidades o aptitudes](#73-capacidades-o-aptitudes)
+  - [7.4. Colaboración con Sistema Nacional de Salud](#74-colaboración-con-sistema-nacional-de-salud)
+- [8. Cumplimiento de la normativa de protección medioambiental](#8-cumplimiento-de-la-normativa-de-protección-medioambiental)
+
+&#8205; 
+
+  </div>
+</details>
 
 ## 1. Introducción
 

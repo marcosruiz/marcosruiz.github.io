@@ -5,6 +5,46 @@ categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
 tags: [tic ii, teoría, programación]
 ---
 
+
+<details class="card mb-2">
+  <summary class="card-header">Tabla de contenidos</summary>
+  <div class="card-body" markdown="1">
+
+- [1. Introducción](#1-introducción)
+- [2. Tipos de pruebas](#2-tipos-de-pruebas)
+  - [2.1. Pruebas de caja blanca](#21-pruebas-de-caja-blanca)
+  - [2.2. Pruebas de caja negra o de comportamiento](#22-pruebas-de-caja-negra-o-de-comportamiento)
+- [3. Estrategia de las pruebas de software](#3-estrategia-de-las-pruebas-de-software)
+  - [3.1. Pruebas de unidad o unitarias](#31-pruebas-de-unidad-o-unitarias)
+  - [3.2. Pruebas de integración](#32-pruebas-de-integración)
+  - [3.3. Pruebas de validación](#33-pruebas-de-validación)
+  - [3.4. Pruebas de sistema](#34-pruebas-de-sistema)
+- [4. Prueba del camino/ruta básico](#4-prueba-del-caminoruta-básico)
+  - [4.1. Pasos para la prueba del camino/ruta básico](#41-pasos-para-la-prueba-del-caminoruta-básico)
+    - [4.1.1. Dibujar el grafo de flujo](#411-dibujar-el-grafo-de-flujo)
+    - [4.1.2. Complejidad ciclomática](#412-complejidad-ciclomática)
+    - [4.1.3. Obtención de caminos independientes](#413-obtención-de-caminos-independientes)
+    - [4.1.4. Obtención de los casos de prueba](#414-obtención-de-los-casos-de-prueba)
+  - [4.2. Ejemplo prueba del camino/ruta básico](#42-ejemplo-prueba-del-caminoruta-básico)
+    - [4.2.1. Dibujar el grafo de flujo](#421-dibujar-el-grafo-de-flujo)
+    - [4.2.2. Complejidad ciclomática](#422-complejidad-ciclomática)
+    - [4.2.3. Caminos independientes](#423-caminos-independientes)
+- [5. Partición o clases de equivalencia](#5-partición-o-clases-de-equivalencia)
+  - [5.1. Ejemplo 1](#51-ejemplo-1)
+  - [5.2. Clases de equivalencia](#52-clases-de-equivalencia)
+  - [5.3. Ejemplo 2](#53-ejemplo-2)
+- [6. Análisis de Valores Límite](#6-análisis-de-valores-límite)
+  - [6.1. Reglas de AVL](#61-reglas-de-avl)
+  - [6.2. Ejemplo 2](#62-ejemplo-2)
+- [7. Pruebas con JUnit](#7-pruebas-con-junit)
+- [Bibliografía](#bibliografía)
+
+&#8205; 
+
+  </div>
+</details>
+
+
 ## 1. Introducción
 
 Pruebas... ¿para qué?
