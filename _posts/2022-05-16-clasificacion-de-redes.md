@@ -36,6 +36,9 @@ En los últimos años a surgido la necesidad de conectar dispositivos muy cercan
 - El medio de transmisión suele ser el inalámbrico.
 - Los costes de la red deben ser pequeños o nulos.
 
+{:.question}
+Nombrad cuatro ejemplos de PAN
+
 ### 2.2. LAN
 
 Una red de área local (LAN, Local Area Network) es un conjunto de elementos físicos y lógicos que proporcionan interconexión entre dispositivos en un área privada y restringida. La red de área local tiene las siguientes características:
@@ -60,6 +63,8 @@ Una red de área extensa (WAN, Wide Area Network) es una red que intercomunica e
 
 Internet es un ejemplo de WAN de alcance mundial que utiliza multitud de protocolos de comunicación, equipamientos de diversos fabricantes y posibilidad de diferentes líneas de transmisión.
 
+{:.question}
+¿Por qué diferenciamos entre MAN y WAN?
 
 ## 3. Por medio de transmisión
 
@@ -119,9 +124,18 @@ En una red en anillo cada estación está conectada a la siguiente y la última 
 
 ![img-description](redAnillo.png){: w="250" }
 
+{:.question}
+¿Qué ocurre si cortamos el cable que une dos nodos?
+
+{:.question}
+¿Cuál es la principal ventaja de una red en anillo?
+
 ### 6.3. Red en anillo doble
 
 ![img-description](redAnilloDoble.png){: w="250" }
+
+{:.question}
+¿Qué ocurre si cortamos el cable que une dos nodos?
 
 ### 6.4. Red en bus
 
