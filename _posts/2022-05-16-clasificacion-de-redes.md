@@ -132,6 +132,8 @@ En una red en anillo cada estación está conectada a la siguiente y la última 
 
 ### 6.3. Red en anillo doble
 
+En una red en anillo cada estación está conectada a la siguiente y la última está conectada a la primera de manera doble.
+
 ![img-description](redAnilloDoble.png){: w="250" }
 
 {:.question}
