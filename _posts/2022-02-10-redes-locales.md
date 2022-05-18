@@ -17,9 +17,9 @@ pin: true
 ### Teoría
 
 - UD 1 - Caracterización de una LAN
+  - [Binario](/posts/binario/)
 - UD 2 - Instalación física de una red
 - UD 3 - [Instalación y configuración de los equipos de red](/posts/instalacion-y-configuracion-de-los-equipos-de-red/)
-    - [Binario](/posts/binario/)
     - [Direcciones IPv4](/posts/direcciones-ipv4/)
     - [¿Qué son las subredes?](/posts/subredes/)
     - [Actividad resuelta de subredes](/posts/actividad-resuelta-subredes/)
@@ -51,19 +51,20 @@ pin: true
 - UD 7 - [Redes mixtas integradas](/posts/redes-mixtas-integradas/)
     - [Redes inalámbricas](/posts/redes-inalambricas/)
     - [Protocolo IPv6](/posts/protocolo-ipv6/)
-    - [VPN](/posts/vpn/)
-    - [Tutorial: Configurar una WLAN con Packet Tracer](/posts/tutorial-wlan-packet-tracer)
 - UD 8 - Resolución de incidencias de una red de área local ➡️ UNIDAD 7 DEL LIBRO!!!
 - UD 9 - [Cumplimiento de las normas de prevención de riesgos laborales y protección medioambiental](/posts/prevencion-de-riesgos-laborales)
 
 ### Tutoriales
 
 - [Tutorial: Configurar una VLAN con Packet Tracer](/posts/tutorial-vlan-packet-tracer)
-- [Tutorial: Configurar un NAT con Packet Tracer](/posts/tutorial-nat-estatico-packet-tracer)
+- [Tutorial: Configurar un NAT estático en Packet Tracer](/posts/tutorial-nat-estatico-packet-tracer/)
+- [Tutorial: NAT estático, NAT dinámico y PAT en Packet Tracer](/posts/tutorial-nat-pat-packet-tracer/)
+- [Tutorial: Configurar una WLAN con Packet Tracer](/posts/tutorial-wlan-packet-tracer)
 
 ### Prácticas
 
 - [Práctica: VLAN con Packet Tracer](/posts/practica-vlan-packet-tracer)
 - [Práctica: NAT con Packet Tracer](/posts/practica-nat-packet-tracer)
 - [Práctica: WLAN con Packet Tracer](/posts/practica-wlan-packet-tracer)
+- [Práctica: Servicio DHCP, DNS, HTTP y PAT en Packet Tracer](/posts/practica-servicio-dhcp-dns-http-pat-packet-tracer/)
 

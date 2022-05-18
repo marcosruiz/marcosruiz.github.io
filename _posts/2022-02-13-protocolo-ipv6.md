@@ -9,43 +9,7 @@ mermaid: true
 {:.section}
 ## Antes de nada...
 
-Antes de nada debemos aprender a pasar de binario a hexadecimal y de hexadecimal a binario.
-
-{:.subsection}
-### Binario a hexadecimal
-
-<iframe src="https://www.youtube.com/embed/uQaLpYDCkAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-{:.question}
-¿Qué significa (111)<sub>2</sub>?
-
-{:.question}
-¿Es posible este número :(2)<sub>2</sub>?
-
-{:.subsection}
-### Hexadecimal a binario
-
-Los valores alfanuméricos en hexadecimal son 16: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
-
-| Hexadecimal | Binario | Hexadecimal | Binario |
-|:---:|:------:|:---:|:------:|
-| 0   | 0000   | 8   | 1000   |
-| 1   | 0001   | 9   | 1001   |
-| 2   | 0010   | A   | 1010   |
-| 3   | 0011   | B   | 1011   |
-| 4   | 0100   | C   | 1100   |
-| 5   | 0101   | D   | 1101   |
-| 6   | 0110   | E   | 1110   |
-| 7   | 0111   | F   | 1111   |
-
-
-<iframe src="https://www.youtube.com/embed/Wx9X14aVfMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-{:.question}
-¿Cuáles son todos los símbolos del hexadecimal?
-
-{:.question}
-¿Cuanto es (10)<sub>16</sub> en base 10? ¿Y (10)<sub>16</sub> en decimal? ¿Y (FF)<sub>16</sub> en decimal? ¿Y (GG)<sub>16</sub> en decimal?
+Antes de nada debemos aprender a pasar de binario a hexadecimal y de hexadecimal a binario. Esto se explicó en el artículo [Binario](/posts/binario).
 
 {:.section}
 ## ¿Qué es IPv6?
