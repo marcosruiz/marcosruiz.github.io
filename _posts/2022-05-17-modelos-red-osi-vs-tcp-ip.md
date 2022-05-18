@@ -368,7 +368,7 @@ _Protocolos de la arquitectura TCP/IP_
 1. **Red**, también llamada capa de Internet, se ocupa de los paquetes y conecta redes independientes para transportar los paquetes a través de los límites de la red. Los protocolos de la capa de red son el IP y el Protocolo de mensajes de control de Internet (ICMP), que se utilizan para informar errores.
 1. **Física**: consiste en protocolos que operan solo en un enlace: el componente de red que interconecta nodos o hosts en la red. Los protocolos en esta capa incluyen Ethernet para redes de área local (LAN) y el Protocolo de resolución de direcciones (ARP).
 
-[img-description](modeloCapasTcp.png)
+![img-description](modeloCapasTcp.png)
 _Envío de mensajes con el modelo TCP/IP_
 
 ## 4. OSI vs TCP/IP
