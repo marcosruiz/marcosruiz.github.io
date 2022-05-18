@@ -349,7 +349,6 @@ TCP/IP utiliza el modelo de comunicación cliente/servidor en el que un usuario 
 ![img-description](comunicacionClienteServidor.png)
 _Comunicación cliente/servidor_
 
-
 Colectivamente, el conjunto de protocolos TCP/IP se clasifica como sin estado, lo que significa que cada solicitud de cliente se considera nueva porque no está relacionada con solicitudes anteriores. Estar sin estado libera rutas de red para que puedan usarse de forma continua.
 
 La capa de transporte en sí, sin embargo, tiene estado. Transmite un solo mensaje, y su conexión permanece en su lugar hasta que todos los paquetes en un mensaje hayan sido recibidos y reensamblados en el destino.
@@ -383,21 +382,27 @@ _Comparación del modelo OSI con el modelo TCP/IP_
 <details class="card mb-2">
   <summary class="card-header question">¿Qué modelo es mejor, el modelo OSI o TCP/IP? </summary>
   <div class="card-body" markdown="1">
-    Ambos modelos tienen sus propias ventajas y desventajas. Si alguien se centra en la documentación debería preferir el modelo OSI sobre el modelo TCP / IP. Pero, si alguien se centra más en la implementación, confiabilidad y seguridad de la red, debería preferir el modelo TCP/IP.
+
+Ambos modelos tienen sus propias ventajas y desventajas. Si alguien se centra en la documentación debería preferir el modelo OSI sobre el modelo TCP / IP. Pero, si alguien se centra más en la implementación, confiabilidad y seguridad de la red, debería preferir el modelo TCP/IP.
+
   </div>
 </details>
 
 <details class="card mb-2">
   <summary class="card-header question">¿Por qué es importante el modelo OSI si no se usa comercialmente?</summary>
   <div class="card-body" markdown="1">
-    El modelo OSI ha definido la terminología común utilizada en las discusiones y documentación de redes. Esto permite desarmar un proceso de comunicaciones muy complejo y evaluar sus componentes.
+
+El modelo OSI ha definido la terminología común utilizada en las discusiones y documentación de redes. Esto permite desarmar un proceso de comunicaciones muy complejo y evaluar sus componentes.
+
   </div>
 </details>
 
 <details class="card mb-2">
   <summary class="card-header question">¿Por qué el modelo TCP/IP reemplazó el modelo OSI?</summary>
   <div class="card-body" markdown="1">
-    El modelo OSI tiene una clasificación más amplia de siete protocolos en su pila. Esto hace que los problemas de depuración sean mucho más fáciles. TCP/IP es la versión simplificada del modelo OSI en el que se basa Internet. La principal ventaja es la interoperabilidad e independencia de TCP/IP entre diferentes tipos de computadoras. Por lo tanto, TCP/IP se mantiene como estándar de la industria.
+
+El modelo OSI tiene una clasificación más amplia de siete protocolos en su pila. Esto hace que los problemas de depuración sean mucho más fáciles. TCP/IP es la versión simplificada del modelo OSI en el que se basa Internet. La principal ventaja es la interoperabilidad e independencia de TCP/IP entre diferentes tipos de computadoras. Por lo tanto, TCP/IP se mantiene como estándar de la industria.
+
   </div>
 </details>
 
