@@ -27,6 +27,10 @@ Existen varias formas de clasificar las redes:
 ![img-description](tiposDeRedesDeComputadorasPorArea.jpg)
 _Clasificación de redes por área de distribución_
 
+{:.question}
+¿Qué es la WAN?
+
+
 ### 2.1. PAN
 
 En los últimos años a surgido la necesidad de conectar dispositivos muy cercanos entre sí. Esto ha llevado a desarrollar las redes de área personal o PAN (Personal Area Network). Las características de estas redes son:
@@ -71,9 +75,10 @@ Internet es un ejemplo de WAN de alcance mundial que utiliza multitud de protoco
 ### 3.1. Medios guiados
 
 Usan cables para transmitir sus señales. Como por ejemplo:
-  - Cable coaxial
-  - Par trenzado
-  - Fibra óptica
+
+- Cable coaxial
+- Par trenzado
+- Fibra óptica
 
 
 ### 3.2. Medios no guiados
@@ -98,6 +103,9 @@ Usan antenas para transmitir señales. Como por ejemplo:
 - **Redes privilegiadas (Cliente-Servidor):** Al menos uno de los ordenadores es un servidor. El resto de ordenadores solicitan los servicios a estos servidores los cuales están especializados para cumplir alguna función. ➡ Fácil de controlar ya que la administración de servicios está centralizada en los servidores.
   - Cliente: es un equipo que se aprovecha de los servicios que le brinda otro equipo llamado servidor
   - Servidor: es un equipo que brinda servicios a otros equipos. Ejemplo: un servidor de archivos FTP.
+
+![img-description](comunicacionClienteServidor.png)
+_Comunicación cliente/servidor_
 
 ## 5. Por tecnología
 

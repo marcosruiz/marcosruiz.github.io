@@ -1,11 +1,45 @@
 ---
-title: "Modelo OSI"
-date: 2022-04-19 9:00:00 +0100
+title: "Modelos de red: OSI vs TCP/IP"
+date: 2022-05-17 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [packet tracer, redes locales, smr, teoría]
+img_path: /assets/img/modelos-red-osi-vs-tcp-ip/
 ---
 
-## 1. Introducción
+## 1. Arquitecturas de red
+
+Una arquitectura es un conjunto o familia de protocolos.
+Existen las siguientes arquitecturas de red:
+
+- NetWare
+- NetBios
+- AppleTalk
+- **TCP/IP**
+
+### 1.1. ¿Qué es un protocolo?
+
+Un protocolo es un conjunto de reglas perfectamente organizadas y convenidas de mutuo acuerdo entre los participantes en una comunicación.
+
+Los fabricantes que se ajustan a estas normativas tienen la seguridad de ser compatibles entre sí.
+
+### 1.2. ¿Qué es una arquitectura de red?
+
+Una arquitectura de red es un conjunto organizado de capas y protocolos que la red utiliza para producir sus comunicaciones entre nodos.
+
+Si todos los fabricantes siguen la misma arquitectura sus dispositivos serán interoperables.
+
+{:.question}
+¿Qué diferencia hay entre un protocolo y una arquitectura?
+
+### 1.3. ¿Qué es una capa?
+
+Con el fin de simplificar la complejidad de cualquier red, los diseñadores han estructurado los servicios que proveen en una serie de niveles o capas.
+
+Cada capa se construye sobre su predecesora. La misión de cada capa es proveer servicios a las capas superiores. De este modo las capas superiores solo deben usar los servicios de su capa inmediatamente inferior. 
+
+Es decir, cada capa solo se comunica con sus capas adyacentes. A las normas de intercomunicación entre capas se les llama interfaz.
+
+## 2. Modelo OSI
 
 El modelo OSI (Open Systems Interconnection o Interconexión de Sistemas Abiertos) es un modelo de red de la pila de protocolos de red OSI/ISO. Con este modelo, diferentes dispositivos de red pueden comunicarse entre sí. 
 
@@ -25,15 +59,7 @@ _Concepto de encapsulación_
 
 <iframe src="https://www.youtube.com/embed/ODY4q4_3Acc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 2. Pero... ¿Qué es una capa?
-
-Con el fin de simplificar la complejidad de cualquier red, los diseñadores han estructurado los servicios que proveen en una serie de niveles o capas.
-
-Cada capa se construye sobre su predecesora. La misión de cada capa es proveer servicios a las capas superiores. De este modo las capas superiores solo deben usar los servicios de su capa inmediatamente inferior. 
-
-Es decir, cada capa solo se comunica con sus capas adyacentes. A las normas de intercomunicación entre capas se les llama interfaz.
-
-## 3. Capas del Modelo OSI
+### 2.1. Capas del Modelo OSI
 
 Las capas del modelo de referencia OSI representan una estructura vertical en la que todas las funciones de red se dividen en siete capas. Cabe destacar que cada una de estas capas corresponde a operaciones, equipos y protocolos estrictamente descritos.
 
@@ -59,7 +85,7 @@ La primera capa es la más cercana al medio físico de transmisión mientras que
 | 2 | Capa de enlace de datos | Proporciona direccionamiento físico y procedimientos de acceso a medios  | 
 | 1 | Capa física | Define todas las especificaciones eléctricas y físicas de los dispositivos |
 
-### 3.1. Capa física
+#### 2.1.1. Capa física
 
 La capa física se encarga de definir las características mecánicas, eléctricas, funcionales y de procedimiento para poder establecer y liberar conexiones entre dos equipos de la red.
 
@@ -82,7 +108,7 @@ Funciones a nivel de capa física:
 - Equipos que operan en la capa física: Repetidor, Hub Ethernet, Módem.
 - Ejemplos de interfaces de red pertenecientes a la capa física: conectores RS-232C, RJ-11, RJ-45, AUI, VNC.
 
-### 3.2. Capa de enlace de datos
+#### 2.1.2. Capa de enlace de datos
 
 La siguiente estación que visitará la información recordará a la aduana. A saber, se comparará la dirección IP para comprobar su compatibilidad con el medio de transmisión. También identifica y corrige las deficiencias del sistema. Para facilitar más operaciones, los bits se agrupan en **tramas**.
 
@@ -100,7 +126,7 @@ En el caso de la LAN, la capa de enlace de datos se divide en dos subcapas:
 - **LLC** (Logical Link Control) o Control Lógico de Enlace: Este subnivel se encarga de del control de errores, la formación de tramas, el control del diálogo entre emisor y receptor y el direccionamiento de la subcapa MAC.
 - **MAC** (Media Access Control) o Control de Acceso al Medio: Este subnivel se encarga de averiguar si el canal de comunicación está libre para realizar una transmisión. Esta subcapa se encarga del reparto de recursos de transmisión entre los nodos de la red. Las características de este nivel dependen del tipo de red.
 
-### 3.3. Capa de red
+#### 2.1.3. Capa de red
 
 La principal función de este nivel es del encaminamiento, es decir, el cómo elegir la ruta más adecuada para que el **paquete** llegue a su destino. 
 
@@ -137,7 +163,7 @@ Tipos de protocolos de capa de red:
 - Protocolos de enrutamiento: RIP, OSPF;
 - Protocolos de resolución de direcciones: ARP.
 
-### 3.4. Capa de transporte
+#### 2.1.4. Capa de transporte
 
 La capa de transporte lleva a cabo las comunicaciones entre ordenadores. En esta capa ya no tenemos en cuenta los puntos intermedios que hay entre emisor y receptor.
 
@@ -161,7 +187,7 @@ Funciones de la capa de transporte:
 - A partir de este nivel, los protocolos se implementan mediante herramientas de software en los nodos finales de la red, componentes de sus sistemas operativos de red;
 - Ejemplos: TCP , UDP.
 
-### 3.5. Capa de sesión
+#### 2.1.5. Capa de sesión
 
 Una sesión es un conjunto de interacciones en red centradas en una única tarea.
 
@@ -179,7 +205,7 @@ Funciones a nivel de capa de sesión:
 - Mantenimiento de la sesión durante los períodos de inactividad de la aplicación.
 - La sincronización de la transmisión se garantiza colocando puntos de control en el flujo de datos a partir de los cuales se reanuda el proceso en caso de fallos.
 
-### 3.6. Capa de presentación
+#### 2.1.6. Capa de presentación
 
 Para describir esta capa, se utiliza la traducción automática en la red de diferentes idiomas. Por ejemplo, marcas un número de teléfono, hablas en español, la red traduce automáticamente al francés, transmite la información a España y la persona de allí coge el teléfono y escucha tu pregunta en español. Es una tarea que aún no se ha llevado a cabo.
 
@@ -195,7 +221,7 @@ Funciones del nivel de capa de presentación:
 
 Ejemplo: el protocolo SSL (proporciona mensajería secreta para los protocolos de la capa de aplicación TCP/IP).
 
-### 3.7. Capa de aplicación
+#### 2.1.7. Capa de aplicación
 
 En esta capa se definen los protocolos que utilizan las aplicaciones y procesos que usen los usuarios.
 
@@ -219,13 +245,14 @@ Funciones del nivel de capa de aplicación:
 - Proporciona información sobre errores a las aplicaciones;
 - Ejemplos: HTTP, POP3, SNMP, FTP.
 
-## 4. Cabeceras asociadas a cada capa OSI
+### 2.2. Cabeceras asociadas a cada capa OSI
 
 Cuando un usuario necesita transmitir datos a un destino, el sistema de red añade información de control (cabeceras) para cada uno de los servicios que utilizará la red para transmitir dichos datos.
 
 Cada capa maneja una unidad de datos que coincide con la información que le pasa la capa inmediatamente superior.
 
 ![img-description](cabecerasOsi2.png)
+_Cabeceras de las capas del modelo de referencia OSI_
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué significa AH, PH, SH, TH NH, NT ?</summary>
@@ -261,7 +288,7 @@ Las normas ISO utilizan un término genérico, Unidad de Datos de Protocolo (PDU
 {:.question}
 ¿Qué es un segmento?
 
-## 6. Entidades
+### 2.3. Entidades
 
 Una entidad es cualquier elemento del sistema, perteneciente a alguna de las capas del modelo OSI, que interviene activamente en la comunicación.
 
@@ -269,7 +296,7 @@ Las entidades que comparten el mismo protocolo se les llama entidades par.
 
 Por ejemplo: Un cliente web y un servidor web usan el protocolo HTTP, por lo tanto son entidades pares de la capa de aplicación.
 
-## 5. Conclusiones sobre el modelo OSI
+### 2.4. Conclusiones sobre el modelo OSI
 
 Las siete capas del modelo de referencia OSI pueden clasificarse en uno de los dos grupos en términos de funcionalidad:
 
@@ -282,45 +309,27 @@ Las siete capas del modelo de referencia OSI pueden clasificarse en uno de los d
 <details class="card mb-2">
   <summary class="card-header question">¿Qué significa OSI? </summary>
   <div class="card-body" markdown="1">
-    OSI significa Interconexión de Sistemas Abiertos (OSI, por sus siglas en inglés)
+
+OSI significa Interconexión de Sistemas Abiertos (OSI, por sus siglas en inglés)
+
   </div>
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Qué son las capas del modelo OSI? </summary>
+  <summary class="card-header question">¿Cuáles son las capas del modelo OSI? </summary>
   <div class="card-body" markdown="1">
-    Las capas son: Capa 1: física; Capa 2: enlace de datos; Capa 3: Red; Capa 4 — Transporte; Capa 5 — Sesión; Capa 6 — Presentación; Capa 7: Aplicación. Las capas ayudan a los profesionales de la red a visualizar lo que está sucediendo dentro de sus redes y pueden ayudar a los administradores de red a reducir los problemas.
+
+Las capas son: Capa 1: física; Capa 2: enlace de datos; Capa 3: Red; Capa 4 — Transporte; Capa 5 — Sesión; Capa 6 — Presentación; Capa 7: Aplicación. Las capas ayudan a los profesionales de la red a visualizar lo que está sucediendo dentro de sus redes y pueden ayudar a los administradores de red a reducir los problemas.
+
   </div>
 </details>
 
-## 7. Arquitecturas de red
-
-Una arquitectura es un conjunto o familia de protocolos.
-Existen las siguientes arquitecturas de red:
-
-- NetWare
-- NetBeui
-- AppleTalk
-- **TCP/IP**
-
-### ¿Qué es un protocolo?
-
-Un protocolo es un conjunto de reglas perfectamente organizadas y convenidas de mutuo acuerdo entre los participantes en una comunicación.
-
-Los fabricantes que se ajustan a estas normativas tienen la seguridad de ser compatibles entre sí.
-
-### ¿Qué es una arquitectura de red?
-
-Una arquitectura de red es un conjunto organizado de capas y protocolos que la red utiliza para producir sus comunicaciones entre nodos.
-
-Si todos los fabricantes siguen la misma arquitectura sus dispositivos serán interoperables.
-
-{:.question}
-¿Qué diferencia hay entre un protocolo y una arquitectura?
-
-## 8. Arquitectura TCP/IP
+## 3. Modelo TCP/IP
 
 TCP/IP, o Protocolo de control de transmisión/Protocolo de Internet, es un conjunto de protocolos de comunicación que se utilizan para interconectar dispositivos de red en Internet. TCP/IP también se puede utilizar como protocolo de comunicaciones en una red privada (una intranet o una extranet).
+
+{:.question}
+¿Qué es una intranet?
 
 El conjunto completo de protocolos de Internet, un conjunto de reglas y procedimientos, se conoce comúnmente como TCP/IP, aunque otros están incluidos en el conjunto.
 
@@ -331,9 +340,15 @@ Los dos protocolos principales en el conjunto de protocolos de Internet cumplen 
 - **TCP** define cómo las aplicaciones pueden crear canales de comunicación a través de una red. También gestiona cómo se ensambla un mensaje en paquetes más pequeños antes de que se transmitan por Internet y se vuelvan a ensamblar en el orden correcto en la dirección de destino.
 - **IP** define cómo direccionar y enrutar cada paquete para asegurarse de que llegue al destino correcto. Cada computadora de puerta de enlace en la red verifica esta dirección IP para determinar dónde reenviar el mensaje.
 
-## ¿Cómo funciona TCP/IP?
+<iframe src="https://www.youtube.com/embed/JQDCL17sARA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### 3.1. ¿Cómo funciona TCP/IP?
 
 TCP/IP utiliza el modelo de comunicación cliente/servidor en el que un usuario o máquina (un cliente) recibe un servicio (como enviar una página web) por otra computadora (un servidor) en la red.
+
+![img-description](comunicacionClienteServidor.png)
+_Comunicación cliente/servidor_
+
 
 Colectivamente, el conjunto de protocolos TCP/IP se clasifica como sin estado, lo que significa que cada solicitud de cliente se considera nueva porque no está relacionada con solicitudes anteriores. Estar sin estado libera rutas de red para que puedan usarse de forma continua.
 
@@ -341,24 +356,29 @@ La capa de transporte en sí, sin embargo, tiene estado. Transmite un solo mensa
 
 El modelo TCP/IP difiere ligeramente del modelo de interconexión de sistemas abierto (OSI) de siete capas diseñado después, que define cómo las aplicaciones pueden comunicarse a través de una red.
 
-## Capas del modelo TCP/IP
+### 3.2. Capas del modelo TCP/IP
 
 La funcionalidad TCP/IP se divide en cuatro capas, cada una de las cuales incluye protocolos específicos.
 
 ![img-description](arquitecturaTcpIp.png)
+_Protocolos de la arquitectura TCP/IP_
 
 1. **Aplicación**: proporciona aplicaciones con intercambio de datos estandarizado. Sus protocolos incluyen el Protocolo de transferencia de hipertexto (HTTP), el Protocolo de transferencia de archivos (FTP), el Protocolo de oficina de correo 3 (POP3), el Protocolo simple de transferencia de correo (SMTP) y el Protocolo simple de administración de red (SNMP).
 1. **Transporte**: es responsable de mantener las comunicaciones de extremo a extremo a través de la red. TCP maneja las comunicaciones entre hosts y proporciona control de flujo, multiplexación y confiabilidad. Los protocolos de transporte incluyen TCP y User Datagram Protocol (UDP), que a veces se usa en lugar de TCP para fines especiales.
 1. **Red**, también llamada capa de Internet, se ocupa de los paquetes y conecta redes independientes para transportar los paquetes a través de los límites de la red. Los protocolos de la capa de red son el IP y el Protocolo de mensajes de control de Internet (ICMP), que se utilizan para informar errores.
 1. **Física**: consiste en protocolos que operan solo en un enlace: el componente de red que interconecta nodos o hosts en la red. Los protocolos en esta capa incluyen Ethernet para redes de área local (LAN) y el Protocolo de resolución de direcciones (ARP).
 
-## 10. OSI vs TCP/IP
+[img-description](modeloCapasTcp.png)
+_Envío de mensajes con el modelo TCP/IP_
+
+## 4. OSI vs TCP/IP
 
 El modelo OSI es un modelo teórico porque en el mundo no se usa ninguna versión real de la pila OSI. El modelo OSI es útil principalmente como una forma de entender los diferentes tipos de trabajo que deben realizarse en comunicaciones de red exitosas, y como un marco de referencia común para las discusiones sobre problemas y funciones de la red.
 
 <iframe src="https://www.youtube.com/embed/iNh-62Mf0O4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ![img-description](osiVsTcpIp.png)
+_Comparación del modelo OSI con el modelo TCP/IP_
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué modelo es mejor, el modelo OSI o TCP/IP? </summary>
@@ -384,7 +404,7 @@ El modelo OSI es un modelo teórico porque en el mundo no se usa ninguna versió
 {:.question}
 ¿Cuál es la diferencia entre el modelo TCP/IP y el modelo OSI?
 
-## 11. Bibliografía
+## Bibliografía
 
 - [Modelo OSI (Wikipedia)](https://es.wikipedia.org/wiki/Modelo_OSI)
 - [Qué es el Modelo OSI: Capas y Explicación](https://ccnadesdecero.es/que-es-modelo-osi/)
