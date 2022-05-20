@@ -118,9 +118,6 @@ Velocidad = información/ tiempo
   </div>
 </details>
 
-{:.question}
-
-
 <details class="card mb-2">
   <summary class="card-header question">¿Por qué un KiloByte son 1024 Bytes?</summary>
   <div class="card-body" markdown="1">
