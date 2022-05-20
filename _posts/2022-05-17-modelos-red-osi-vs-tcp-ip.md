@@ -246,7 +246,7 @@ Cuando un usuario necesita transmitir datos a un destino, el sistema de red aña
 
 Cada capa maneja una unidad de datos que coincide con la información que le pasa la capa inmediatamente superior.
 
-![img-description](cabecerasOsi2.png)
+![img-description](cabecerasOsi3.png)
 _Cabeceras de las capas del modelo de referencia OSI_
 
 <details class="card mb-2">
