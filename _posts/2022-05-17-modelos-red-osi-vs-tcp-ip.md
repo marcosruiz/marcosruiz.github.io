@@ -314,7 +314,17 @@ OSI significa Interconexión de Sistemas Abiertos (OSI, por sus siglas en inglé
   <summary class="card-header question">¿Cuáles son las capas del modelo OSI? </summary>
   <div class="card-body" markdown="1">
 
-Las capas son: Capa 1: física; Capa 2: enlace de datos; Capa 3: Red; Capa 4 — Transporte; Capa 5 — Sesión; Capa 6 — Presentación; Capa 7: Aplicación. Las capas ayudan a los profesionales de la red a visualizar lo que está sucediendo dentro de sus redes y pueden ayudar a los administradores de red a reducir los problemas.
+Las capas son: 
+
+- Capa 1: Física.
+- Capa 2: Enlace de datos.
+- Capa 3: Red.
+- Capa 4: Transporte.
+- Capa 5: Sesión.
+- Capa 6: Presentación.
+- Capa 7: Aplicación. 
+
+Las capas ayudan a los profesionales de la red a visualizar lo que está sucediendo dentro de sus redes y pueden ayudar a los administradores de red a reducir los problemas.
 
   </div>
 </details>

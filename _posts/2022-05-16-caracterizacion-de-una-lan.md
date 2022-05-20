@@ -119,7 +119,25 @@ Velocidad = información/ tiempo
 </details>
 
 {:.question}
-¿Por qué un KB son 1024 MB?
+
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Por qué un KiloByte son 1024 Bytes?</summary>
+  <div class="card-body" markdown="1">
+
+Trabajando con un sistema binario puede resultar natural utilizar potencias de dos por lo que se hizo una aproximación al sistema internacional de medida utilizando base 2.
+    
+> 2<sup>10</sup> bytes = 1024 bytes = 1 Kilobyte
+
+Aunque técnicamente deberíamos utilizar la palabra kibi en lugar de Kilo ya que Kilo significa 1000.
+
+> 2<sup>10</sup> bytes = 1024 bytes = 1 kibibyte ✅
+
+Esta última nomenclatura ha sido adoptada por Ubuntu y por Apple pero no por Microsoft.
+
+  </div>
+</details>
+
 
 ## 8. Clasificación de redes
 
@@ -179,3 +197,7 @@ Son aquellos que son definidos por convenio, alianza o pacto entre proveedores, 
 
 {:.question}
 ¿Qué es un estándar de facto?
+
+## Bibliografía
+
+- [¿1KByte = 1000 Bytes o 1KByte = 1024 Bytes?](https://platzi.com/tutoriales/1277-redes/4929-1kbyte-1000-bytes-o-1kbyte-1024-bytes/)
