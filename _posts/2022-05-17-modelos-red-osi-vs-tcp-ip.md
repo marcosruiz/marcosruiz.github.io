@@ -6,9 +6,12 @@ tags: [packet tracer, redes locales, smr, teoría]
 img_path: /assets/img/modelos-red-osi-vs-tcp-ip/
 ---
 
-## 1. Arquitecturas de red
+## 1. ¿Qué es un modelo o arquitectura de red?
 
-Una arquitectura es un conjunto o familia de protocolos.
+Un **modelo o arquitectura de red** es un conjunto organizado de capas y protocolos que la red utiliza para producir sus comunicaciones entre nodos.
+
+Si todos los fabricantes siguen la misma arquitectura sus dispositivos serán compatibles entre sí.
+
 Existen las siguientes arquitecturas de red:
 
 - NetWare
@@ -16,17 +19,9 @@ Existen las siguientes arquitecturas de red:
 - AppleTalk
 - **TCP/IP**
 
-### 1.1. ¿Qué es un protocolo?
+### 1.2. ¿Qué es un protocolo?
 
-Un protocolo es un conjunto de reglas perfectamente organizadas y convenidas de mutuo acuerdo entre los participantes en una comunicación.
-
-Los fabricantes que se ajustan a estas normativas tienen la seguridad de ser compatibles entre sí.
-
-### 1.2. ¿Qué es una arquitectura de red?
-
-Una arquitectura de red es un conjunto organizado de capas y protocolos que la red utiliza para producir sus comunicaciones entre nodos.
-
-Si todos los fabricantes siguen la misma arquitectura sus dispositivos serán interoperables.
+Un **protocolo** es un conjunto de reglas perfectamente organizadas y convenidas de mutuo acuerdo entre los participantes en una comunicación.
 
 {:.question}
 ¿Qué diferencia hay entre un protocolo y una arquitectura?
@@ -409,7 +404,7 @@ El modelo OSI tiene una clasificación más amplia de siete protocolos en su pil
 {:.question}
 ¿Cuál es la diferencia entre el modelo TCP/IP y el modelo OSI?
 
-## Bibliografía
+## 5. Bibliografía
 
 - [Modelo OSI (Wikipedia)](https://es.wikipedia.org/wiki/Modelo_OSI)
 - [Qué es el Modelo OSI: Capas y Explicación](https://ccnadesdecero.es/que-es-modelo-osi/)
