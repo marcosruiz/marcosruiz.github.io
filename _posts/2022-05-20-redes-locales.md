@@ -7,7 +7,7 @@ pin: true
 ---
 
 <style>
-  .post h1, .post-content h2, .post-content h3, .post-content h4{
+  .post h1, .post-content h2, .post-content h3, .post-content h4, a{
     color: var(--redes-locales-color);
   }
 </style>

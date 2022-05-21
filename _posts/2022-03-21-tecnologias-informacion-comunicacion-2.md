@@ -6,7 +6,7 @@ tags: [tic ii]
 ---
 
 <style>
-  .post h1, .post-content h2, .post-content h3, .post-content h4{
+  .post h1, .post-content h2, .post-content h3, .post-content h4, a{
     color: var(--tic-ii-color);
   }
 </style>
