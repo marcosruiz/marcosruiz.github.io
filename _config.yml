@@ -95,14 +95,14 @@ comments:
     shortname:    # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: marcosruiz/marcosruiz.github.io        # <gh-username>/<repo>
+    repo:        # <gh-username>/<repo>
     issue_term:   # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo:             # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
+    repo: marcosruiz/marcosruiz.github.io            # <gh-username>/<repo>
+    repo_id: R_kgDOGm1dzA
+    category: General
+    category_id: DIC_kwDOGm1dzM4CAjhb
     mapping:          # optional, default to 'pathname'
     input_position:   # optional, default to 'bottom'
     lang:             # optional, default to the value of `site.lang`

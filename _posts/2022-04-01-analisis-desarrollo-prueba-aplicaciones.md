@@ -79,21 +79,12 @@ E(Documentación) --> F(Mantenimiento)
 F --> E
 ```
 
-
-### 1.4. Modelo de espiral
-
-La principal característica del modelo en espiral es la gestión de riesgos de forma periódica en el ciclo de desarrollo.
-
-![Modelo de espiral](/assets/img/analisis-desarrollo-prueba-aplicaciones/modeloEspiral.png)
-_Modelo de espiral_
-
-
-### 1.5. Desarrollo iterativo e incremental
+### 1.4. Desarrollo iterativo e incremental
 
 El desarrollo iterativo recomienda la construcción de secciones reducidas de software que irán ganando en tamaño para facilitar así la detección de problemas de importancia antes de que sea demasiado tarde. Los procesos iterativos pueden ayudar a desvelar metas del diseño en el caso de clientes que no saben cómo definir lo que quieren.
 
 
-### 1.6. Desarrollo ágil
+### 1.5. Desarrollo ágil
 
 El desarrollo ágil de software utiliza un desarrollo iterativo como base para abogar por un punto de vista más ligero y más centrado en las personas que en el caso de las soluciones tradicionales. Los procesos ágiles utilizan retroalimentación en lugar de planificación, como principal mecanismo de control. La retroalimentación se canaliza por medio de pruebas periódicas y frecuentes versiones del software. 
 
@@ -249,7 +240,7 @@ _Ejemplo de diagrama de secuencia complejo_
 
 Leer el artículo [Prueba de aplicaciones](/posts/prueba-de-aplicaciones/).
 
-## Bibliografía
+## 6. Bibliografía
 
 - [Proceso para el desarrollo de software (Wikipedia)](https://es.wikipedia.org/wiki/Proceso_para_el_desarrollo_de_software)
 - [El modelo en cascada: desarrollo secuencial de software](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/)

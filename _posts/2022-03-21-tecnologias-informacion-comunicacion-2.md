@@ -3,7 +3,6 @@ title: Tecnologías de la Información y Comunicación II
 date: 2022-03-21 21:20:00 +0100
 categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
 tags: [tic ii]
-pin: true
 ---
 
 ## Evaluación 1
