@@ -27,24 +27,26 @@ pin: true
 
 - UD3 - Programación estructurada
     - [Iniciación a la programación](/posts/iniciacion-a-la-programacion/)
-    
+    - [Iniciación a la programación 2](/posts/iniciacion-a-la-programacion-2/)
 - UD4 - [Programación orientada a objetos](/posts/poo/)
-    - [Programación Java](/posts/tutorial-java/)
+    
 
 ### Prácticas
 
 - [Práctica: PSeInt básico](/posts/practica-pseint-basico/)
 - [Práctica: Introducción a BlueJ](/posts/practica-introduccion-a-bluej/)
 
-
 ## Evaluación 3
 
 - UD5 - [Seguridad Informática](/posts/seguridad-informatica/)
     - [RAID](/posts/raid/)
-- UD6 - Análisis, desarrollo y prueba de aplicaciones
+- UD6 - [Análisis, desarrollo y prueba de aplicaciones](/posts/analisis-desarrollo-prueba-aplicaciones/)
+    - [Tutorial Java](/posts/tutorial-java/)
     - [Manual Java](/posts/manual-java/)
-        - [Iniciación a la programación 2](/posts/iniciacion-a-la-programacion-2/)
+    - [Prueba de aplicaciones](/posts/prueba-de-aplicaciones/)
 
 ### Prácticas
 
 - [Práctica: Ejercicios básicos de Java](/posts/practica-java-basico/)
+- [Práctica: Testing con BlueJ](/posts/practica-testing-con-bluej/)
+- [Práctica: Ejercicios básicos de Java 2](/posts/practica-ejercicios-basicos-java-2/)

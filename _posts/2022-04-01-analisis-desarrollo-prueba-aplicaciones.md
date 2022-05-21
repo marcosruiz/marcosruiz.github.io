@@ -253,4 +253,4 @@ Leer el artículo [Prueba de aplicaciones](/posts/prueba-de-aplicaciones/).
 
 - [Proceso para el desarrollo de software (Wikipedia)](https://es.wikipedia.org/wiki/Proceso_para_el_desarrollo_de_software)
 - [El modelo en cascada: desarrollo secuencial de software](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/el-modelo-en-cascada/)
-- [Historias de usuario con ejemplos y plantilla](https://www.atlassian.com/es/agile/project-management/user-stories)
+- [Historias de usuario con ejemplos y plantilla](https://www.atlassian.com/es/agile/project-management/user-stories)p
