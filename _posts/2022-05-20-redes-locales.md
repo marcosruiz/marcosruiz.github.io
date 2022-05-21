@@ -1,16 +1,16 @@
 ---
 title: Redes Locales
-date: 2022-02-10 23:40:00 +0100
+date: 2022-05-20 23:40:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales]
 pin: true
 ---
 
-<!--<style>
+<style>
   .post h1, .post-content h2, .post-content h3, .post-content h4{
-    color: #6a040f;
+    color: var(--redes-locales-color);
   }
-</style>-->
+</style>
 
 ## Evaluación 1
 

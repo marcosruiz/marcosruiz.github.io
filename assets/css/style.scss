@@ -94,3 +94,17 @@ img {
 img.mfp-img {
 	padding: 5px 0 40px !important; 
 }
+
+html:not([data-mode]), html [data-mode="light"] {
+	--redes-locales-color: #6A040F;
+	--tic-ii-color: #B34A00;
+	--servicios-en-red-color: #344E41;
+	--seguridad-informatica-color: #001D3D;
+}
+
+html[data-mode="dark"] {
+	--redes-locales-color: #D7031A;
+	--tic-ii-color: #FFF6C9;
+	--servicios-en-red-color: #DAD7CD;
+	--seguridad-informatica-color: #FFF8D6;
+}

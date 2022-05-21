@@ -70,15 +70,15 @@ Dado que el modelo OSI de siete capas consiste en una estructura jerárquica est
 
 La primera capa es la más cercana al medio físico de transmisión mientras que la séptima capa es la más cercana a las aplicaciones de usuario.
 
-| #| Nombre | Responsabilidad | 
-|---|---|---| 
-| 7 | Capa de aplicación | Responsable de los servicios de red para las aplicaciones | 
-| 6 | Capa de presentación | Transforma el formato de los datos y proporciona una interfaz estándar para la capa de aplicación | 
-| 5 | Capa de sesión | Establece, administra y finaliza las conexiones entre las aplicaciones locales y las remotas  | 
-| 4 | Capa de transporte | Proporciona transporte confiable y control del flujo a través de la red  | 
-| 3 | Capa de red | Responsable del direccionamiento lógico y el dominio del enrutamiento | 
-| 2 | Capa de enlace de datos | Proporciona direccionamiento físico y procedimientos de acceso a medios  | 
-| 1 | Capa física | Define todas las especificaciones eléctricas y físicas de los dispositivos |
+| # |          Nombre         |                                          Responsabilidad                                          |
+|-:|:-----------------------|:-------------------------------------------------------------------------------------------------|
+| 7 | Capa de aplicación      | Responsable de los servicios de red para las aplicaciones                                         |
+| 6 | Capa de presentación    | Transforma el formato de los datos y proporciona una interfaz estándar para la capa de aplicación |
+| 5 | Capa de sesión          | Establece, administra y finaliza las conexiones entre las aplicaciones locales y las remotas      |
+| 4 | Capa de transporte      | Proporciona transporte confiable y control del flujo a través de la red                           |
+| 3 | Capa de red             | Responsable del direccionamiento lógico y el dominio del enrutamiento                             |
+| 2 | Capa de enlace de datos | Proporciona direccionamiento físico y procedimientos de acceso a medios                           |
+| 1 | Capa física             | Define todas las especificaciones eléctricas y físicas de los dispositivos                        |
 
 #### 2.1.1. Capa física
 

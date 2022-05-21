@@ -5,6 +5,12 @@ categories: [Bachillerato, Tecnologías de la Información y Comunicación II]
 tags: [tic ii]
 ---
 
+<style>
+  .post h1, .post-content h2, .post-content h3, .post-content h4{
+    color: var(--tic-ii-color);
+  }
+</style>
+
 ## Evaluación 1
 
 ### Teoría
