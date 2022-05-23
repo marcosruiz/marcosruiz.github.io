@@ -20,7 +20,7 @@ pin: true
   - [Binario](/posts/binario/)
   - [Clasificación de redes](/posts/clasificacion-de-redes/)
   - [Modelos de red: OSI vs TCP/IP](/posts/modelos-red-osi-vs-tcp-ip/)
-- UD 2 - Instalación física de una red
+- UD 2 - [Instalación física de una red](/posts/instalacion-fisica-de-una-red/)
 - UD 3 - [Instalación y configuración de los equipos de red](/posts/instalacion-y-configuracion-de-los-equipos-de-red/)
     - [Direcciones IPv4](/posts/direcciones-ipv4/)
     - [¿Qué son las subredes?](/posts/subredes/)
