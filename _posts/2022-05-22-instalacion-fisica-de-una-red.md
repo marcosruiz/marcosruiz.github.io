@@ -77,8 +77,15 @@ img_path: /assets/img/instalacion-fisica-de-una-red/
 ## 1. Introducción
 ## 2. Aspectos básicos en la transmisión de datos
 ### 2.1. Tipos de transmisión
+
+
 #### 2.1.1. Banda base
+
+El término banda base se refiere a la banda de frecuencias producida por un transductor, tal como un micrófono, un manipulador telegráfico u otro dispositivo generador de señales que no es necesario adaptarlo al medio por el que se va a transmitir.
+
 #### 2.1.2. Banda ancha
+
+Banda ancha significa que lleva más de una señal y cada una de ellas se transmite en diferentes canales, hasta su número máximo de canal. 
 
 {:.question}
 ¿Cuál es la diferencia entre banda base y banda ancha?
@@ -334,11 +341,11 @@ Un conector es un dispositivo que sirve para unir circuitos eléctricos.
 
 Frecuentemente, los conectores de una misma familia se duplican en forma de «macho» o «hembra», que deben acoplarse mecánicamente en la instalación.
 
-- RJ11, RJ12, RJ45: Estos conectores se suelen utilizar con cables UTP, STP.
-- AUI, DB15: Utilizados en la formación de topologías en estrella con cables de pares, o para la conexión de transceptores a las estaciones
-- BNC: Se utiliza con cable coaxial fino, típico de Ethernet. Mantiene la estructura coaxial del cable en cada conexión.
-- T coaxial: Es el modo natural de conectar una estación en un bus de cable coaxial.
-- DB25 y DB9: Son conectores utilizados para transmisiones serie.
+- **RJ11, RJ12, RJ45**: Estos conectores se suelen utilizar con cables UTP, STP.
+- **AUI, DB15**: Utilizados en la formación de topologías en estrella con cables de pares, o para la conexión de transceptores a las estaciones
+- **BNC**: Se utiliza con cable coaxial fino, típico de Ethernet. Mantiene la estructura coaxial del cable en cada conexión.
+- **T coaxial**: Es el modo natural de conectar una estación en un bus de cable coaxial.
+- **DB25 y DB9**: Son conectores utilizados para transmisiones serie.
 
 
 ![img-description](rj11.png){: w="200"}
