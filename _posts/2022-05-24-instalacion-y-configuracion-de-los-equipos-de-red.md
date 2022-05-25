@@ -15,7 +15,7 @@ img_path: /assets/img/instalacion-y-configuracion-de-los-equipos-de-red/
 - [3. Capa de enlace en las redes locales](#3-capa-de-enlace-en-las-redes-locales)
   - [3.1. MAC](#31-mac)
     - [3.1.1. Trama MAC](#311-trama-mac)
-    - [3.1.2. Direccionamiento físico. Direcciones MAC.](#312-direccionamiento-físico-direcciones-mac)
+    - [3.1.2. Direcciones MAC](#312-direcciones-mac)
   - [3.2. LLC](#32-llc)
     - [3.2.1. Formato de mensaje LLC](#321-formato-de-mensaje-llc)
 - [4. Capa de red o capa de Internet](#4-capa-de-red-o-capa-de-internet)
@@ -83,18 +83,20 @@ La capa de enlace de datos se divide en dos subniveles:
 ![img-description](subnivelesCapaEnlace.png)
 _Subniveles de la capa de enlace_
 
+<iframe src="https://www.youtube.com/embed/y3A9QBJBbCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### 3.1. MAC
 
 El subnivel MAC es el más cercano al nivel físico. Sus funciones son:
 
-- Empaquetar los datos en tramas la información que le llega del subnivel LLC, junto con la información de direccionamiento y detección de errores.
-- Desempaquetar tramas.
-- El control de acceso al medio.
+- **Empaquetar los datos en tramas** la información que le llega del subnivel LLC, junto con la información de direccionamiento y detección de errores.
+- **Desempaquetar tramas**.
+- El **control de acceso al medio** cuando hay un medio compartido.
 
 Tipos de control de acceso al medio:
 
-- Distribuidos
-- Centralizados
+- **Distribuidos**: Los nodos cooperan en igualdad.
+- **Centralizados**: Existe un nodo centralizado que organiza el acceso al medio.
 
 Dependiendo de la topología de red podemos clasificar los mecanismos de control de acceso al medio de la siguiente forma:
 
@@ -133,6 +135,8 @@ Dependiendo de la topología de red podemos clasificar los mecanismos de control
 
 #### 3.1.1. Trama MAC
 
+Depende de la topología de red en la que nos encontramos.
+
 ![img-description](ethernetY8023.png)
 _Trama MAC_
 
@@ -157,7 +161,7 @@ _Trama MAC_
 {:.question}
 ¿Por qué existen dos tipos tramas: Ethernet e IEEE 802.3?
 
-#### 3.1.2. Direccionamiento físico. Direcciones MAC.
+#### 3.1.2. Direcciones MAC
 
 Cada tarjeta de red posee un identificador único grabado en su memoria ROM.
 
@@ -175,7 +179,7 @@ Por ejemplo: 00:00:0D:1A:12:35
   <summary class="card-header question">¿Qué es CSMA/CD?</summary>
   <div class="card-body" markdown="1">
 
-CSMA/CD (Carrier Sense Multiple Access/Collision Detection): Acceso múltiple por detección de portadora con detección de colisiones.
+El estándar IEEE 802.3 especifica el método de control del medio (MAC) denominado CSMA/CD por las siglas en ingles de acceso múltiple con detección de portadora y detección de colisiones (carrier sense multiple access with collision detection).
 
   </div>
 </details>
@@ -188,9 +192,9 @@ Si el límite máximo de un cable Ethernet es de 100m. ¿Puede ser esta distanci
 
 LLC (“Logical Link Control”) o Control de enlace lógico es el encargado de la transmisión de tramas entre máquinas conectadas sin nodos intermedios entre ellas. Sus funciones son:
 
-- Proporcionar al nivel de red una interfaz uniforme, es decir, independiente del tipo de red.
-- Control de errores, es decir, comprobación y reenvío de tramas.
-- Control de flujo, es decir, el mecanismo para controlar la velocidad de transmisión de datos.
+- **Proporcionar al nivel de red una interfaz uniforme**, es decir, independiente de la topología de red.
+- **Control de errores**, es decir, comprobación y reenvío de tramas.
+- **Control de flujo**, es decir, el mecanismo para controlar la velocidad de transmisión de datos.
 
 LLC ofrece al nivel de red tres tipos de servicio al nivel de red:
 
@@ -203,9 +207,9 @@ LLC ofrece al nivel de red tres tipos de servicio al nivel de red:
 
 #### 3.2.1. Formato de mensaje LLC
 
-- DSAP (Destination Service Action Point): Identifica al receptor al que va dirigido el mensaje.
-- SSAP (Source Service Action Point): Identifica al emisor del mensaje.
-- Control: Indica el tipo de servicio utilizado.
+- **DSAP** (Destination Service Action Point): Identifica al receptor al que va dirigido el mensaje.
+- **SSAP** (Source Service Action Point): Identifica al emisor del mensaje.
+- **Control**: Indica el tipo de servicio utilizado.
 Paquete de red: Datos del nivel de red.
 
 ![img-description](mensajeLlc.png)
@@ -365,10 +369,10 @@ _Formato del segmento TCP_
 
 ### 5.3. Protocolo UDP
 
-![img-description](.png)
+![img-description](formatoUdp.png)
 _Formato del segmento UDP_
 
-- Puerto UDP origen. 16 bits que identifican el pueto de la máquina origen.
+- Puerto UDP origen. 16 bits que identifican el puerto de la máquina origen.
 - Puerto UDP destino. 16 bits que identifican el puerto de la máquina destino.
 - Longitud del mensaje UDP. 16 bits que indican la longitud en bytes del mensaje UDP incluyendo la cabecera. La longitud mínima es de 8 bytes.
 - Checksum. Campo opcional de 16 bits que porta la suma de comprobación de errores del mensaje.

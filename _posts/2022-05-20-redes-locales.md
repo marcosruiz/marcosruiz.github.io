@@ -16,12 +16,13 @@ pin: true
 
 ### Teoría
 
+- [Binario](/posts/binario/)
+
 - UD 1 - [Caracterización de una LAN](/posts/caracterizacion-de-una-lan/)
-  - [Binario](/posts/binario/)
   - [Clasificación de redes](/posts/clasificacion-de-redes/)
   - [Modelos de red: OSI vs TCP/IP](/posts/modelos-red-osi-vs-tcp-ip/)
-- UD 2 - [Instalación física de una red](/posts/instalacion-fisica-de-una-red/)
-- UD 3 - [Instalación y configuración de los equipos de red](/posts/instalacion-y-configuracion-de-los-equipos-de-red/)
+- UD 2 - [Instalación física de una red](/posts/instalacion-fisica-de-una-red/) ➡️ CAPA FÍSICA
+- UD 3 - [Instalación y configuración de los equipos de red](/posts/instalacion-y-configuracion-de-los-equipos-de-red/) ➡️ CAPA DE ENLACE DE DATOS, DE RED Y DE TRANSPORTE
     - [Direcciones IPv4](/posts/direcciones-ipv4/)
     - [¿Qué son las subredes?](/posts/subredes/)
     - [Actividad resuelta de subredes](/posts/actividad-resuelta-subredes/)
@@ -30,7 +31,7 @@ pin: true
 
 ### Teoría
 
-- UD 4 - [Despliegue y mantenimiento de los servicios de red](/posts/despliegue-mantenimiento-de-los-servicios-de-red/)
+- UD 4 - [Despliegue y mantenimiento de los servicios de red](/posts/despliegue-mantenimiento-de-los-servicios-de-red/) ➡️ CAPA DE APLICACIÓN
     - [Sistemas de almacenamiento en red](/posts/teoria-sistemas-de-almacenamiento-en-red/)
 - UD 5 - [Dispositivos específicos de la red local](/posts/dispositivos-especificos-de-la-red-local/)
     - [¿Qué es una VLAN?](/posts/vlan/)
