@@ -375,6 +375,9 @@ _Protocolos de la arquitectura TCP/IP_
 ![img-description](modeloCapasTcp.png)
 _Envío de mensajes con el modelo TCP/IP_
 
+![Capas y Reddit](/assets/img/instalacion-y-configuracion-de-los-equipos-de-red/layersMeme.jpg)
+_Capas y Reddit_
+
 ## 4. OSI vs TCP/IP
 
 El modelo OSI es un modelo teórico porque en el mundo no se usa ninguna versión real de la pila OSI. El modelo OSI es útil principalmente como una forma de entender los diferentes tipos de trabajo que deben realizarse en comunicaciones de red exitosas, y como un marco de referencia común para las discusiones sobre problemas y funciones de la red.
@@ -413,6 +416,16 @@ El modelo OSI tiene una clasificación más amplia de siete protocolos en su pil
 
 {:.question}
 ¿Cuál es la diferencia entre el modelo TCP/IP y el modelo OSI?
+
+{:.question}
+¿Cuándo encapsulamos? 
+
+{:.question}
+¿Cuándo desencapsulamos?
+
+{:.question}
+La capa de Internet, ¿a quién ofrece servicio?
+
 
 ## 5. Bibliografía
 

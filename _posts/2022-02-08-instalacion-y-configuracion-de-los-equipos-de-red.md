@@ -13,10 +13,11 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 - [Introducción](#introducción)
 - [Estructura TCP/IP](#estructura-tcpip)
 - [Capa de enlace en las redes locales](#capa-de-enlace-en-las-redes-locales)
-  - [MAC y LLC](#mac-y-llc)
+  - [MAC](#mac)
+  - [LLC](#llc)
   - [Direccionamiento físico. Direcciones MAC.](#direccionamiento-físico-direcciones-mac)
   - [Tramas](#tramas)
-- [Capa de red o capa de Internet.](#capa-de-red-o-capa-de-internet)
+- [Capa de red o capa de Internet](#capa-de-red-o-capa-de-internet)
   - [Direcciones IP, IPv4 e IPv6](#direcciones-ip-ipv4-e-ipv6)
   - [Protocolo IPv4 y máscaras de red](#protocolo-ipv4-y-máscaras-de-red)
   - [Subredes](#subredes)
@@ -57,11 +58,14 @@ Uno de los organismos más importante que se encarga de regular estas normas es 
 
 ## Estructura TCP/IP
 
+Leer del apartado [Modelo TCP/IP](/posts/modelos-red-osi-vs-tcp-ip/#3-modelo-tcpip) en adelante.
+
+**A modo de resumen...**
+
 - Las aplicaciones de los usuarios se comunican con el nivel de aplicación. En esta capa nos encontramos: SMTP, FTP, HTTP, etc.
 - Los protocolos del nivel de aplicación se comunican con los del nivel de transporte: TCP y UDP.
 - El protocolo del nivel de Internet IP añade información de direccionamiento de los paquetes que le llegan del nivel de transporte.
 - El nivel de acceso a la red toma los paquetes que recibe del nivel de Internet. Esta capa recibe los paquetes, que pasan a llamarse tramas. Los protocolos que se usan en esta capa dependerá de la topología de red. Aunque la más popular es Ethernet (LLC + MAC).
-
 
 ![img-description](osiVsTcpIp.png)
 _Modelo OSI vs Arquitectura TCP/IP_
@@ -69,19 +73,95 @@ _Modelo OSI vs Arquitectura TCP/IP_
 ![img-description](arquitecturaTcpIp.png)
 _Arquitectura TCP/IP_
 
-![Capas y Reddit](/assets/img/instalacion-y-configuracion-de-los-equipos-de-red/layersMeme.jpg)
-_Capas y Reddit_
-
-
 ## Capa de enlace en las redes locales
 
-### MAC y LLC
+La capa de enlace de datos se divide en dos subniveles:
+
+- MAC
+- LLC
+
+![img-description](subnivelesCapaEnlace.png)
+_Subniveles de la capa de enlace_
+
+### MAC
+
+El subnivel MAC es el más cercano al nivel físico. Sus funciones son:
+
+- Empaquetar los datos en tramas la información que le llega del subnivel LLC, junto con la información de direccionamiento y detección de errores.
+- Desempaquetar tramas.
+- El control de acceso al medio.
+
+Tipos de control de acceso al medio:
+
+- Distribuidos
+- Centralizados
+
+Dependiendo de la topología de red podemos clasificar los mecanismos de control de acceso al medio de la siguiente forma:
+
+- **Rotación circular**: El turno va pasando de una estación a la siguiente.
+  - Distribuida
+  - Centralizada
+- **Reserva**: El tiempo se divide en intervalos, ranuras o slots.
+  - Distribuida
+  - Centralizada
+- **Contienda**: Las estaciones compiten para acceder al medio.
+  - Distribuida
+
+{:.question}
+¿Sabrías poner un ejemplo de control de acceso al medio que todos puedan entender?
+
+{:.question}
+¿Ventajas e inconvenientes de sistemas distribuidos?
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Ventajas e inconvenientes de control de acceso centralizado?</summary>
+  <div class="card-body" markdown="1">
+
+👍 Ventajas:
+- Realizar un control de acceso al medio más avanzado.
+- Resolución de conflictos más sencilla.
+- El software de las estaciones es sencillo.
+
+👎 Inconvenientes:
+- Nodo central que puede ser un cuello de botella.
+- Fallo del nodo central hará que nada funcione.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+
+  </div>
+</details>
+
+### LLC
+
+LLC (“Logical Link Control”) o Control de enlace lógico es el encargado de la transmisión de tramas entre máquinas conectadas sin nodos intermedios entre ellas. Sus funciones son:
+
+- Proporcionar al nivel de red una interfaz uniforme, es decir, independiente del tipo de red.
+- Control de errores, es decir, comprobación y reenvío de tramas.
+- Control de flujo, es decir, el mecanismo para controlar la velocidad de transmisión de datos.
+
+LLC ofrece al nivel de red tres tipos de servicio al nivel de red:
+
+- Servicio no orientado a conexión sin confirmación.
+- Servicio orientado a conexión.
+- Servicio no orientado a conexión con confirmación.
+
 
 ### Direccionamiento físico. Direcciones MAC.
 
+Cada tarjeta de red posee un identificador único grabado en su memoria ROM.
+
+Sería algo equivalente a un DNI.
+
+La dirección MAC está formada por 6 bytes representados por 12 dígitos hexadecimales.
+
+Por ejemplo: 00:00:0D:1A:12:35
+
+{:.question}    
+¿Qué es una memoria ROM?
+
 ### Tramas
 
-## Capa de red o capa de Internet.
+## Capa de red o capa de Internet
 
 ### Direcciones IP, IPv4 e IPv6
 
