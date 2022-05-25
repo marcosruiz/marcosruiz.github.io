@@ -67,7 +67,7 @@ Leer del apartado [Modelo TCP/IP](/posts/modelos-red-osi-vs-tcp-ip/#3-modelo-tcp
 - El protocolo del nivel de Internet IP añade información de direccionamiento de los paquetes que le llegan del nivel de transporte.
 - El nivel de acceso a la red toma los paquetes que recibe del nivel de Internet. Esta capa recibe los paquetes, que pasan a llamarse tramas. Los protocolos que se usan en esta capa dependerá de la topología de red. Aunque la más popular es Ethernet (LLC + MAC).
 
-![img-description](osiVsTcpIp.png)
+![img-description](osiVsTcpIp.png){: w="300"}
 _Modelo OSI vs Arquitectura TCP/IP_
 
 ![img-description](arquitecturaTcpIp.png)
@@ -250,7 +250,7 @@ IP proporciona a TCP dos servicios:
 - Envío
 - Entrega
 
-![img-description](serviciosIP.png)
+![img-description](serviciosIP.png){: w="300"}
 _Servicios IP_
 
 ![img-description](formatoIPv4.png)
@@ -372,11 +372,11 @@ _Formato del segmento TCP_
 ![img-description](formatoUdp.png)
 _Formato del segmento UDP_
 
-- Puerto UDP origen. 16 bits que identifican el puerto de la máquina origen.
-- Puerto UDP destino. 16 bits que identifican el puerto de la máquina destino.
-- Longitud del mensaje UDP. 16 bits que indican la longitud en bytes del mensaje UDP incluyendo la cabecera. La longitud mínima es de 8 bytes.
-- Checksum. Campo opcional de 16 bits que porta la suma de comprobación de errores del mensaje.
-- Datos. Información que envía la aplicación.
+- **Puerto UDP origen**. 16 bits que identifican el puerto de la máquina origen.
+- **Puerto UDP destino**. 16 bits que identifican el puerto de la máquina destino.
+- **Longitud del mensaje UDP**. 16 bits que indican la longitud en bytes del mensaje UDP incluyendo la cabecera. La longitud mínima es de 8 bytes.
+- **Checksum**. Campo opcional de 16 bits que porta la suma de comprobación de errores del mensaje.
+- **Datos**. Información que envía la aplicación.
 
 ### 5.4. TCP vs UDP
 
