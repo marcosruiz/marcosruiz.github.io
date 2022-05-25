@@ -75,20 +75,50 @@ img_path: /assets/img/instalacion-fisica-de-una-red/
 
 
 ## 1. Introducción
+
+En esta unidad vamos a detallar los diversos medios de transmisión que pueden usarse para transportar la información, así como los distintos espacios y equipos que componen un sistema de cableado en red local.
+
 ## 2. Aspectos básicos en la transmisión de datos
+
+El medio de transmisión es el elemento que conecta dos elementos participantes en una comunicación. Por ejemplo, un cable o el espacio radioeléctrico. La posición del medio de transporte en el modelo OSI está ubicada en la **capa física**.
+
+
 ### 2.1. Tipos de transmisión
 
+Existen dos tipos de transmisión:
+
+- Banda base
+- Banda ancha
 
 #### 2.1.1. Banda base
 
 El término banda base se refiere a la banda de frecuencias producida por un transductor, tal como un micrófono, un manipulador telegráfico u otro dispositivo generador de señales que no es necesario adaptarlo al medio por el que se va a transmitir.
 
+Esta técnica no necesita módems.
+
 #### 2.1.2. Banda ancha
 
-Banda ancha significa que lleva más de una señal y cada una de ellas se transmite en diferentes canales, hasta su número máximo de canal. 
+Banda ancha significa que lleva más de una señal y cada una de ellas se transmite en diferentes canales, hasta su número máximo de canal. La señal original sufre una serie de variaciones en su amplitud, frecuencia y/o fase, se dice que la señal se modula.
 
 {:.question}
 ¿Cuál es la diferencia entre banda base y banda ancha?
+
+<details class="card mb-2">
+  <summary class="card-header">Sabías que...</summary>
+  <div class="card-body" markdown="1">
+    
+La televisión y la radio FM son dos medios de comunicación que utilizan la técnica de transmisión en banda ancha. Los canales son enviados por el mismo medio (en este caso el aire) siendo transportados cada uno por una onda portadora (cada una de ellas a una frecuencia distinta). 
+
+Imaginemos dos cadenas musicales. Una de ellas se emite en la frecuencia portadora de 89.2 MHz y la otra en la frecuencia portadora de 97.1 MHz. Ambas cadenas comparten el medio, pero tienen adquiridos los derechos de emitir por una frecuencia sin que nadie más pueda hacerlo. De esta forma podemos seleccionar qué cadena escuchar. Se dice entonces que sintonizamos un canal especifico. 
+
+La asignación de un canal específico tiene un coste asociado y la realiza la Secretaria General de Telecomunicaciones. 
+
+Por otro lado, un claro ejemplo de comunicación en banda base es el que se realiza mediante la emisión de voz a través de ondas acústicas mediante un hilo tensado. 
+
+En este caso el medio es un medio guiado, sobre el cual se transmite una onda de presión (acústica). Esta presión, puesto que el cable está tensado, viaja por el hilo. La información transmitida es la voz que no sufre ningún tipo de modulación, por lo cual utiliza todos los recursos del medio para su transporte.
+
+  </div>
+</details>
 
 ### 2.2. Limitaciones o perturbaciones en la transmisión
 
@@ -334,7 +364,12 @@ Gran influencia negativa de los fenómenos meteorológicos. Elevado coste de los
 La elección de un buen sistema de cableado es de vital importancia en las instalaciones reales en las que se producirá el fenómeno de la comunicación. La inversión estimada para cables en una instalación es inferior al 10% del coste total. Sin embargo, está comprobado que el 70% de los fallos producidos en una red se deben a defectos del cableado. Por tanto, merece la pena no escatimar en el gasto que deba producirse en los medios de transmisión.
 
 ### 4.1. Espacios
+
 ### 4.2. Cuartos de comunicaciones
+
+![img-description](cuartoComunicaciones.jpg){: w="200"}
+_Cuartos de comunicaciones_
+
 ### 4.3. Conectores y tomas de red
 
 Un conector es un dispositivo que sirve para unir circuitos eléctricos.
@@ -392,8 +427,33 @@ _ST (Straight Tip)_
 ¿Qué diferencias hay entre SC y ST?
 
 ### 4.4. Armarios de comunicaciones y paneles de parcheo
+
+![img-description](armarioDeComunicaciones.jpg){: w="300"}
+_Armario de comunicaciones_
+
+![img-description](panelDeParcheo.jpg){: w="300"}
+_Panel de parcheo_
+
+<iframe src="https://www.youtube.com/embed/9oZIBcPEo7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### 4.5. Canalizaciones
+
+![img-description](canalizaciones.png)
+_Canalizaciones de una zona de trabajo_
+
+1. Montaje sobre falso techo.
+2. Montaje bajo falso techo.
+3. Bandejas para cables.
+4. Canaletas de pared para el tendido de cables.
+5. Canaletas en el techo para el tendido de cables.
+6. Canaletas para rodapiés.
+7. Canaletas para repisas de ventanas.
+8. Canaletas para dinteles de ventanas.
+
 ### 4.6. Herramientas
+
+Las principales herramientas en el manejo de cables de área local son las siguientes.
+
 #### 4.6.1. Cortadores y peladores de cables
 
 ![img-description](pelacables.jpg){: w="200"}
@@ -418,11 +478,13 @@ _Tester RJ45_
 
 ### 4.7. Creación de cables
 
+Para la creación de cables existen los estándares T568A y T568B.
+
 #### 4.7.1. Cable de red directo
 
 Un cable de red directo es un tipo de cable de par trenzado que se usa en las redes de área local para conectar un ordenador a un núcleo de red como por ejemplo un enrutador.
 
-En un cable directo, los colores de cada par de cable coinciden. Para el cable de red directo se aplica solo un estándar de cableado:ambos extremos del cable deben tener la misma dirección: T568A a T568A o T568B a T568B.
+En un cable directo, los colores de cada par de cable coinciden. Para el cable de red directo se aplica solo un estándar de cableado: ambos extremos del cable deben tener la misma dirección: 568A a T568A o T568B a T568B.
 
 ![img-description](cableRedDirecto.png)
 _Cable de red directo_
@@ -442,6 +504,11 @@ _Cable de red cruzado_
 
 ### 4.8. Recomendaciones de la instalación del cableado
 
+- **Subsistema troncal (vertical) o backbone**: porta el tráfico a cada planta, y se suele realizar con soportes de gran ancho de banda, como fibra óptica.
+- **Subsistema horizontal**: soporta el tráfico de una planta, puede realizarse con cable de menor ancho de banda como UTP-6.
+- **Subsistema administrativo**: conecta el vertical con el horizontal. Suelen ubicarse en cuartos de comunicaciones que contienen los armarios o rack de pared y contienen los paneles de conexión, los concentradores y conmutadores de cada planta. De este modo, es fácil llevar a cabo tareas de mantenimiento en la red.
+- **Subsistema de puesto de trabajo**: cable que une rosetas con conectores RJ11, RJ45, etc., con la tarjeta de red del equipo. A estos cables se les denomina latiguillos.
+- La distribución vertical se conecta con la red pública de comunicaciones, o con el **subsistema de campus**, en el cuadro de entrada de servicios.
 
 ### 4.9. Otros elementos
 
