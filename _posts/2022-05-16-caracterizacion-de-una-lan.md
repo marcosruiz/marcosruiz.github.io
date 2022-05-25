@@ -6,6 +6,38 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 img_path: /assets/img/caracterizacion-de-una-lan/
 ---
 
+<details class="card mb-2">
+  <summary class="card-header">Índice</summary>
+  <div class="card-body" markdown="1">
+
+- [1. Introducción](#1-introducción)
+- [2. Sistemas de comunicación](#2-sistemas-de-comunicación)
+- [3. Elementos de la red](#3-elementos-de-la-red)
+  - [3.1. Cableado](#31-cableado)
+  - [3.2. Dispositivos específicos de red](#32-dispositivos-específicos-de-red)
+  - [3.3. Nodos de la red](#33-nodos-de-la-red)
+  - [3.4. Software de la red](#34-software-de-la-red)
+- [4. Ventajas de usar una red de ordenadores](#4-ventajas-de-usar-una-red-de-ordenadores)
+- [5. Componentes de una red de ordenadores](#5-componentes-de-una-red-de-ordenadores)
+- [6. Binario](#6-binario)
+- [7. Velocidad de transmisión](#7-velocidad-de-transmisión)
+  - [7.1. ¿Qué unidades de velocidad existen?](#71-qué-unidades-de-velocidad-existen)
+- [8. Clasificación de redes](#8-clasificación-de-redes)
+- [9. Modelos de red: OSI vs TCP/IP](#9-modelos-de-red-osi-vs-tcpip)
+- [10. Computación en la nube, interred y estándares](#10-computación-en-la-nube-interred-y-estándares)
+  - [10.1. Computación en la nube](#101-computación-en-la-nube)
+  - [10.2. Interred](#102-interred)
+  - [10.3. Estándares](#103-estándares)
+    - [10.3.1. Estándares de facto (o hecho)](#1031-estándares-de-facto-o-hecho)
+    - [10.3.2. Estándares de iure (o jure)](#1032-estándares-de-iure-o-jure)
+    - [10.3.3. Estándares de acuerdo](#1033-estándares-de-acuerdo)
+- [Bibliografía](#bibliografía)
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+
+  </div>
+</details>
+
 ## 1. Introducción
 
 Los ordenadores son máquinas especializadas en procesar información de acuerdo con las instrucciones recogidas en un programa. Sin embargo, no siempre la información se produce o se almacena en el lugar donde se procesa. Esto añade la necesidad de transportar los datos desde su lugar de origen o almacenamiento hasta el de su proceso, originando una comunicación.
