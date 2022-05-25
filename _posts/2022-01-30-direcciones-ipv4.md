@@ -123,6 +123,21 @@ Todo el espacio de direcciones IPy4 está inicialmente dividido en diferentes cl
   </div>
 </div>
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué clase de red es Internet? ¿A, B, C, D o E?</summary>
+  <div class="card-body" markdown="1">
+
+Internet es la red de redes, es decir, es un conjunto de redes de todos los tipos.
+
+  </div>
+</details>
+
+{:.question}
+¿Por qué existen clases IP?
+
+{:.question}
+¿A qué clase de red pertenece la IP 190.214.35.45?
+
 
 {:.section}
 ## Direcciones IPv4 reservadas
@@ -200,10 +215,15 @@ $ sudo /etc/init.d/networking restart
 
 En versiones de Linux actuales la configuración de la red se guarda en un archivo del directorio /etc/netplan/. El archivo es de extensión yam1, un lenguaje de marcas normalizado. NetPlan incluye netplan, una utilidad para gestionar la configuración, además de aplicaciones adicionales que sustituyen a las antiguas NetTools (ifconfig, ifup, etc.). Permite realizar una configuración de red más avanzada: crear puentes, enlaces (bonds), etc.
 
-## Preguntas
+{:.question}
+¿Son 192.168.1.15 y 192.168.2.15 direcciones IP pertenecientes a la misma red?
 
-- ¿Son 192.168.1.15 y 192.168.2.15 direcciones IP pertenecientes a la misma red?
-- ¿Es la red 192.168.3.0/24 una red subneteada?
+{:.question}
+¿Es la red 192.168.3.0/24 una red subneteada?
+
+{:.question}
+¿Cómo se configura el adaptador de red en Ubuntu?
+
 
 ## Bibliografía
 
