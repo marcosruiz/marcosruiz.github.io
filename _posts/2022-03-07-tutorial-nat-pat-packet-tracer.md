@@ -198,9 +198,10 @@ Tal como se ve en las pruebas anteriores, con el uso de NAT ya no es posible hac
 Finalmente, desde el enrutador Empresa1, revise el estado de la traducción de direcciones IPs privadas publicas, ejecutando el comando: 
 
 ```console
-Empresa1# show ip nat translation
+Empresa1# show ip nat translations
 ```
 
+{:.step}
 ### Paso
 
 Guarda este esquema de red y haz capturas del funcionamiento de la red en el estado actual.
@@ -261,7 +262,6 @@ Crear la lista de acceso estándar 1 a continuación, que permite comparar las d
 ```console
 Empresa1# configure terminal
 Empresa1(config)# access-list 1 permit 192.168.1.0 0.0.0.255
-Empresa1(config)# CTRL+Z
 ```
 
 En el comando `access-list` usamos máscaras de red inversas que se obtienen cambiando los unos por ceros y viceversa.

@@ -67,7 +67,7 @@ Y ahora vamos a indicar los puertos del switch que van a usar esa primera VLAN, 
 Ejemplo: 
 
 ```console
-Switch(config)# interface range fa 0/1-7
+Switch(config-vlan)# interface range fa 0/1-7
 ```
 
 ### Paso 4
