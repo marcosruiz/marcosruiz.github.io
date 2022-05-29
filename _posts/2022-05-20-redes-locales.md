@@ -71,3 +71,34 @@ pin: true
 - [Práctica: WLAN con Packet Tracer](/posts/practica-wlan-packet-tracer)
 - [Práctica: Servicio DHCP, DNS, HTTP y PAT en Packet Tracer](/posts/practica-servicio-dhcp-dns-http-pat-packet-tracer/)
 
+## Cosas a mejorar...
+
+Para el próximo curso se organizará el temario de la siguiente manera:
+
+- EV1 
+  - Binario
+  - Clasificación de redes
+  - Modelo OSI y TCP/IP
+  - Capa física
+  - Capa de enlace: STP
+  - Capa de red: IPv4
+  - Subredes
+- EV2 
+  - Dispositivos de interconexión
+  - Enrutamiento: estático y dinámico
+  - WLAN
+  - VLAN
+- EV3 
+  - Capa de transporte
+  - NAT estático, dinámico y PAT
+  - IPv6
+  - Capa de aplicación: Servicios DHCP, DNS, HTTP y FTP
+  - Resolución de incidencias: Ping, Traceroute, Wireshark
+  - (Opcional) Cumplimiento de las normas de prevención
+
+Qué NO dar... (a mi modo de ver esto es temario de 2º)
+
+- VPN
+- Proxies
+- DMZ
+- Comandos del SO
