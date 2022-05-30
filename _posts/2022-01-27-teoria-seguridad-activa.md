@@ -97,14 +97,14 @@ Se conoce como perímetro de la red a la “frontera” entre el exterior y los 
 - **Routers frontera**: Es un dispositivo situado entre la red interna de y las redes de otros proveedores que intercambian el tráfico con nosotros y que se encarga de dirigir el tráfico de datos de un lado a otro. El último router que controlamos antes de Internet. Primera y última línea de defensa. Filtrado inicial y final. 
 - **Cortafuegos (firewalls)**: Es una herramienta diseñada para controlar las conexiones. Este puede permitir, limitar, cifrar, descifrar, el tráfico entre equipos o redes sobre la base de un conjunto de normas y otros criterios.
 
-<div class="card mb-2">
-  <div class="card-header">
-    <a data-toggle="collapse" data-target="#preguntaDMZRedPerimetral" class="question" href="#">¿Es lo mismo una DMZ y una red perimetral?</a>
+<details class="card mb-2">
+  <summary class="card-header question">¿Es lo mismo una DMZ y una red perimetral?</summary>
+  <div class="card-body" markdown="1">
+
+No
+
   </div>
-  <div class="collapse card-body" id="preguntaDMZRedPerimetral">
-    <p class="card-text">No</p>
-  </div>
-</div>
+</details>
 
 ### Origen del término
 
