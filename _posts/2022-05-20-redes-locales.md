@@ -96,9 +96,9 @@ Para el próximo curso se organizará el temario de la siguiente manera:
   - Resolución de incidencias: Ping, Traceroute, Wireshark
   - (Opcional) Cumplimiento de las normas de prevención
 
-Qué NO dar... (a mi modo de ver esto es temario de 2º)
+Qué NO dar...
 
-- VPN
-- Proxies
-- DMZ
-- Comandos del SO
+- VPN ➡️ Esto se da en Seguridad Informática
+- Proxies ➡️ Esto se da en Seguridad Informática o Servicios en Red
+- DMZ ➡️ Esto se da en Seguridad Informática
+- Comandos del SO ➡️ Esto se da en Sistemas Operativos Monopuesto
