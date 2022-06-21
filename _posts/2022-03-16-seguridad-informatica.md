@@ -298,6 +298,8 @@ _Ejemplo de phising_
 
 Estos mensajes se diseñan para dar la sensación de que proceden de sitios de confianza, como nuestro banco. Para que parezcan más reales suelen contener enlaces que parecen que conducen al sitio web legítimo, cuando en realidad nos remiten a un sitio falso que tiene el mismo aspecto que el sitio web original. Una vez allí, el usuario introduce información personal que se transmite directamente al delincuente.
 
+<iframe src="https://www.youtube.com/embed/SWzHgjtsx98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 {:.subsection}
 ### Spam o correo basura
 
