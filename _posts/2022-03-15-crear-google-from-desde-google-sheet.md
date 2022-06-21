@@ -12,6 +12,8 @@ tags: [google, form, sheet, plantilla, automático, generación, script]
 ## Script modificado
 
 ```javascript
+var IS_REQUIRED = false;
+
 function onOpen() {
   var menu = SpreadsheetApp.getUi().createMenu('Forms');
   menu.addItem('CREATE TEMPLATE', 'createTemplate').addToUi();
@@ -119,7 +121,7 @@ for(var x=0;x<nr;x++){ // Beginning of for loop with x
           for (var w = 0; w < its.length; w += 1){ var ite = its[w]; if (ite.getTitle() === "CHOICE"){ var q = ite.asMultipleChoiceItem().duplicate(); }}
         } else { var q = f.addMultipleChoiceItem(); }
         
-        q.setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(true);
+        q.setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(IS_REQUIRED);
         
         if (d[x][3] !== '') {q.setPoints(d[x][3])}
         
@@ -148,7 +150,7 @@ for(var x=0;x<nr;x++){ // Beginning of for loop with x
           for (var w = 0; w < its.length; w += 1){ var ite = its[w]; if (ite.getTitle() === "LIST"){ var q = ite.asListItem().duplicate(); }}
         } else { var q = f.addListItem(); }
         
-        q.setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(true);
+        q.setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(IS_REQUIRED);
         
         if (d[x][3] !== '') {q.setPoints(d[x][3])}
   
@@ -177,7 +179,7 @@ for(var x=0;x<nr;x++){ // Beginning of for loop with x
           for (var w = 0; w < its.length; w += 1){ var ite = its[w]; if (ite.getTitle() === "CHECKBOX"){ var q = ite.asCheckboxItem().duplicate(); }}
         } else { var q = f.addCheckboxItem(); }
         
-        q.setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(true);
+        q.setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(IS_REQUIRED);
        
        if (d[x][3] !== '') {q.setPoints(d[x][3])}
         
@@ -212,7 +214,7 @@ for(var x=0;x<nr;x++){ // Beginning of for loop with x
         for (q=0; q<op[0].length; q++){ 
           if (op[0][q] !== '') {arr2.push(op[0][q]);} 
         }
-        f.addGridItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(true).setRows(arr1).setColumns(arr2);
+        f.addGridItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(IS_REQUIRED).setRows(arr1).setColumns(arr2);
     }
     
     else if (i =='CHECKGRID') {
@@ -228,16 +230,16 @@ for(var x=0;x<nr;x++){ // Beginning of for loop with x
         for (q=0; q<op[0].length; q++){ 
           if (op[0][q] !== '') {arr2.push(op[0][q]);} 
         }
-        f.addCheckboxGridItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(true).setRows(arr1).setColumns(arr2);
+        f.addCheckboxGridItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(IS_REQUIRED).setRows(arr1).setColumns(arr2);
     }
     
     else if (i =='TEXT') {
-        var q = f.addTextItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(true);
+        var q = f.addTextItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(IS_REQUIRED);
         if (d[x][3] !== '') {q.setPoints(d[x][3])}
     }
     
     else if (i =='PARAGRAPH') {
-        var q = f.addParagraphTextItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(true);
+        var q = f.addParagraphTextItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(IS_REQUIRED);
         if (d[x][3] !== '') {q.setPoints(d[x][3])}
     }
       
@@ -264,17 +266,17 @@ for(var x=0;x<nr;x++){ // Beginning of for loop with x
     }
          
     else if (i =='SCALE') {
-        var q = f.addScaleItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(true).setLabels(d[x][6], d[x][7]).setBounds(d[x][4], d[x][5]);
+        var q = f.addScaleItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(IS_REQUIRED).setLabels(d[x][6], d[x][7]).setBounds(d[x][4], d[x][5]);
         if (d[x][3] !== '') {q.setPoints(d[x][3])}
     } 
     
     else if (i =='TIME') {
-        var q = f.addTimeItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(true);
+        var q = f.addTimeItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(IS_REQUIRED);
         if (d[x][3] !== '') {q.setPoints(d[x][3])}
     }
    
     else if (i =='DATE') {
-        var q = f.addDateItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(true);
+        var q = f.addDateItem().setTitle(d[x][1]).setHelpText(d[x][2]).setRequired(IS_REQUIRED);
         if (d[x][3] !== '') {q.setPoints(d[x][3])}
     }
     
@@ -282,7 +284,7 @@ for(var x=0;x<nr;x++){ // Beginning of for loop with x
         var item = f.addMultipleChoiceItem();
         var goSubmit = item.createChoice('YES', FormApp.PageNavigationType.SUBMIT);
         var goRestart = item.createChoice('NO', FormApp.PageNavigationType.RESTART);     
-          item.setRequired(true);
+          item.setRequired(IS_REQUIRED);
           item.setTitle(d[x][1]);
           item.setHelpText(d[x][2]);
           item.setChoices([goSubmit,goRestart]);   
