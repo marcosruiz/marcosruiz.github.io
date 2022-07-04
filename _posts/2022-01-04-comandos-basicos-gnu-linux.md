@@ -257,7 +257,7 @@ $ rm -R patata
 {:.section}
 ### chmod
 
-Nota: en el artículo [Permisos GNU Linux](https://marcosruiz.github.io/post/permisos-gnu-linux) se explica de manera detallada.
+Nota: en el artículo [Permisos GNU Linux](/posts/permisos-gnu-linux) se explica de manera detallada.
 
 Chmod (CHange MODe) es un comando que sirve para cambiar permisos (lectura, escritura y ejecución) de archivos y directorios. 
 Su sintaxis es la siguiente: `chmod <permisos> <ficheroACambiarPermisos>`.

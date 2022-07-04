@@ -283,5 +283,3 @@ Cuando una función es “llamada”, se ejecuta el código en su interior, y un
 ![img-description](/assets/img/iniciacion-a-la-programacion-2/funciones.png)
 
 ## Bibliografía
-
-- [¿Es correcto usar la voz caracter para referirse al 'signo de escritura o imprenta'?](https://www.academia.org.mx/espin/respuestas/item/caracter)

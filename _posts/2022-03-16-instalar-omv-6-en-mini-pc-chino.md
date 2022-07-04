@@ -123,4 +123,3 @@ En esta pantalla introducimos el usuario admin con contraseña openmediavault y 
 - [Install OMV6 on Debian 11 (Bullseye)](https://forum.openmediavault.org/index.php?thread/39490-install-omv6-on-debian-11-bullseye/)
 - [Setting up User Accounts and Connecting to Share](https://ubuntu.com/tutorials/install-and-configure-samba#4-setting-up-user-accounts-and-connecting-to-share)
 - [Installation on Debian](https://openmediavault.readthedocs.io/en/5.x/installation/on_debian.html)
-- [Debian minimal install guide step by step](https://www.pcsuggest.com/debian-minimal-install-guide/)
