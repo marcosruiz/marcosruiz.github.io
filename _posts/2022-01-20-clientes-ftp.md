@@ -2,7 +2,7 @@
 title: Los dos clientes FTP que debes conocer
 date: 2022-01-20 08:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
-tags: [gnu linux, comandos, terminal, bash, smr, servicios en red, ftp, teoría, filezilla, comandos, linux]
+tags: [ftp, cliente, gnu linux, comandos, terminal, bash, smr, servicios en red, teoría, filezilla, linux, gratis, windows, mac, osx, consola]
 ---
 
 {:.section}
@@ -15,10 +15,14 @@ Existen numerosos clientes FTP con los que conectarnos a un servidor FTP, en est
 - Ftp, el cliente FTP de terminal o línea de comandos de GNU Linux.
 - Filezilla, el cliente FTP libre con interfaz gráfica más popular.
 
+Ambos clientes FTP son software libre y por lo tanto gratuitos.
+
 {:.section}
 ## Ftp (línea de comandos)
 
-Ftp es un cliente FTP de terminal o línea de comandos que viene preinstalado en casi todas las distribuciones GNU Linux.
+Ftp es un cliente FTP de terminal[^terminal] que viene preinstalado en casi todas las distribuciones GNU Linux.
+
+[^terminal]: línea de comandos o consola.
 
 {:.subsection}
 ### Login y cierre de sesión
@@ -90,7 +94,7 @@ A continuación se explican los más útiles:
 {:.section}
 ## Filezilla
 
-FileZilla es el cliente FTP libre y de código abierto con interfaz gráfica más popular del mercado. Soporta los protocolos FTP, SFTP y FTP sobre SSL/TLS (FTPS).
+[FileZilla](https://filezilla-project.org/) es el cliente FTP libre y de código abierto con interfaz gráfica más popular del mercado. Soporta los protocolos FTP, SFTP y FTP sobre SSL/TLS (FTPS). Esta aplicación esta disponible gratis para GNU Linux, Windows y MAC.
 
 ![img-description](/assets/img/clientes-ftp/filezilla.png)
 _Cliente FTP Filezilla_
