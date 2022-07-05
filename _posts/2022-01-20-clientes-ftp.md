@@ -1,12 +1,26 @@
 ---
-title: Clientes FTP
+title: Los dos clientes FTP que debes conocer
 date: 2022-01-20 08:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
-tags: [gnu linux, comandos, terminal, bash, smr, servicios en red, ftp, teoría, filezilla]
+tags: [gnu linux, comandos, terminal, bash, smr, servicios en red, ftp, teoría, filezilla, comandos, linux]
 ---
 
-## Línea de comandos
+{:.section}
+## Introducción
 
+FTP (File Transfer Protocol) es un protocolo es un protocolo de red para la transferencia de archivos entre sistemas conectados a una red TCP, basado en la arquitectura cliente-servidor.
+
+Existen numerosos clientes FTP con los que conectarnos a un servidor FTP, en este artículo nos vamos a centrar en los dos que debe conocer todo administrador de redes:
+
+- Ftp, el cliente FTP de terminal o línea de comandos de GNU Linux.
+- Filezilla, el cliente FTP libre con interfaz gráfica más popular.
+
+{:.section}
+## Ftp (línea de comandos)
+
+Ftp es un cliente FTP de terminal o línea de comandos que viene preinstalado en casi todas las distribuciones GNU Linux.
+
+{:.subsection}
 ### Login y cierre de sesión
 
 Para conectarnos a cualquier servidor FTP desde linea de comandos en GNU Linux deberemos ejecutar la instrucción `ftp [<host> [<puerto>]]`[^ftp]. A continuación se muestra un ejemplo de conexión al servidor VsFTPD desde el propio servidor con el usuario mruizg.
@@ -36,9 +50,10 @@ ftp> exit
 $
 ```
 
+{:.subsection}
 ### Comandos del cliente FTP
 
-Una vez estamos conectados al servidor FTP podemos ejecutar una serie de comandos que se pueden ver si ejecutamos la siguiente instrucción:
+Una vez estamos conectados al servidor FTP podemos ejecutar una serie de comandos que se pueden ver si ejecutamos el comando `help`:
 
 ```console
 ftp> help
@@ -72,9 +87,10 @@ A continuación se explican los más útiles:
 - `put`: Subir fichero
 - `get`: Descargar fichero
 
+{:.section}
 ## Filezilla
 
-FileZilla es una aplicación FTP libre y de código abierto que consta de un cliente y un servidor. Soporta los protocolos FTP, SFTP y FTP sobre SSL/TLS (FTPS).
+FileZilla es el cliente FTP libre y de código abierto con interfaz gráfica más popular del mercado. Soporta los protocolos FTP, SFTP y FTP sobre SSL/TLS (FTPS).
 
 ![img-description](/assets/img/clientes-ftp/filezilla.png)
 _Cliente FTP Filezilla_
