@@ -10,6 +10,12 @@ tags: [seguridad informática, smr, teoría]
 
 La seguridad de la información es el conjunto de medidas y procedimientos, tanto humanos como técnicos, que permiten proteger la integridad, confidencialidad y disponibilidad de la información.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UBh1XPQuVlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FhP9DkdCPQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/84bO7CUn_xU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## 2. Pilares básicos de la seguridad informática
 
 Los tres pilares de la seguridad informática son:
@@ -76,7 +82,26 @@ Los elementos de autenticación más usados:
 
 ### 3.2. No repudio
 
-Asegura que ninguna de las partes involucradas en el manejo de cierta información puede negar su participación.
+El no repudio o irrenunciabilidad provee garantía al receptor de una comunicación en cuanto que el mensaje fue originado por el emisor y no por alguien que se hizo pasar por este. Además, previene que el remitente o emisor del mensaje afirme que él no envió el mensaje.
+
+En resumen, el no repudio en seguridad de la información es la capacidad de demostrar o probar la participación de las partes (origen y destino, emisor y receptor, remitente y destinatario), mediante su identificación, en una comunicación o en la realización de una determinada acción.
+
+Para garantizar el no repudio en seguridad informática se necesitan establecer los siguientes mecanismos:
+
+- **Identificación**: mecanismo o proceso que provee la capacidad de identificar a un usuario de un sistema.
+- **Autenticación**: permite verificar la identidad o asegurar que un usuario es quien dice ser. 
+
+Se suele aplicar a:
+
+1. Contratos formales establecidos de manera telemática.
+1. Comunicación entre dos partes.
+1. Transferencia de datos.
+1. Acciones de los usuarios en un sistema informático.
+
+#### Tipos de no repudio
+
+- **En origen**: consiste en garantizar que una persona envió un determinado mensaje. El remitente no puede negar que lo mandó, ya que el destinatario dispone de pruebas del envío.
+- **En destino**: avala que alguien recibió un determinado mensaje. En este caso, el destinatario no podrá rebatir que no lo recibió porque el remitente cuenta con pruebas de la recepción.
 
 ### 3.3. Trazabilidad
 
@@ -106,14 +131,21 @@ Si. Según la RAE son sinónimos.
 
 ## 4. Tipos de seguridad
 
-### 4.1. En función de lo que se quiere proteger
+En función de lo que se quiere proteger existe:
+
+- Seguridad física
+- Seguridad lógica
+
+En función del momento en el que tiene lugar la protección existe:
+
+- Seguridad activa
+- Seguridad pasiva
 
 #### 4.1.1. Seguridad física
 
 Protección de la organización frente a accesos no autorizados y ataques físicos a los equipos e instalaciones. 
 
 Por ejemplo: Un portero en la puerta
-
 
 #### 4.1.2. Seguridad lógica
 
@@ -123,31 +155,34 @@ Mecanismos y barreras que protegen la información de un sistema informático. P
 - Otorgar privilegios mínimos a los usuarios.
 - Controlar que información entra y sale del sistema de información.
 
-### 4.2. En función del momento en el que tiene lugar la protección
+#### 4.2.2. Seguridad activa
+
+La seguridad activa se encarga de  evitar que los sistemas informáticos sufran algún daño.Para ello se usan contraseñas para proteger el equipo y  los datos que  contiene. Consiste en realizar, entre otras, las siguientes acciones:
+
+1. Emplear contraseñas seguras:  Para que una contraseña sea segura, debe contener más de ocho caracteres, mezclando letras mayúsculas y minúsculas, números y otros caracteres. No se deben emplear como contraseñas la fecha de nacimiento o el nombre de la mascota. 
+1. Encriptar los datos importantes:  O lo que es lo mismo, cifrar los datos para que sólo puedan ser leídos si se conoce la clave de cifrado. La encriptación se hace con programas especiales. 
+1. Usar software de seguridad: como antivirus, antiespías, cortafuegos.
 
 #### 4.2.1. Seguridad pasiva
 
-Está formada por las medidas que se implantan para, una vez producido el incidente de seguridad, minimizar su repercusión y facilitar la recuperación del sistema.
+El objetivo de las técnicas de seguridad pasiva es minimizar los efectos o desastres causados por un accidente, un usuario o un malware a los sistemas informáticos. Las prácticas de seguridad pasiva más recomendables son: 
 
-Por ejemplo: Copias de seguridad.
+1. El uso de hardware adecuado frente a accidentes y averías (refrigeración del sistema, conexiones eléctricas adecuadas, dispositivos SAI...)
+1. La realización de copias de seguridad de los datos y del sistema operativo en más de un soporte y en distintas ubicaciones físicas. 
+1. Creación de particiones lógicas en el disco duro para poder almacenar archivos y copias  de seguridad (back-up) en una unidad distinta a la del sistema operativo. 
 
-#### 4.2.2. Seguridad activa
-
-Comprende el conjunto de defensas o medidas cuyo objetivo es evitar o reducir los riesgos que amenazan al sistema.
-
-Por ejemplo: Uso de contraseñas.
 
 ## 5. Terminología de la seguridad informática
 
 En el mundo de la seguridad informática, es habitual manejar los siguientes términos:
 
-- Activo
-- Vulnerabilidad
-- Amenaza
-- Ataque
-- Riesgo
-- Impacto
-- Desastre
+1. Activo
+1. Vulnerabilidad
+1. Amenaza
+1. Ataque
+1. Riesgo
+1. Impacto
+1. Desastre
 
 ### 5.1. Activo
 
@@ -199,39 +234,29 @@ Un ataque informático pasa por las siguientes fases:
 ![Las 7 fases de un ciberataque](/assets/img/conceptos-basicos-seguridad-informatica/fasesAtaqueInformatico.jpg)
 _Las 7 fases de un ciberataque_
 
-
-#### Reconocimiento
+#### 5.4.1. Reconocimiento
 Obtención en fuentes abiertas de cualquier tipo de información de la organización y su infraestructura con el objetivo de crear un perfil.
 
-#### Preparación
+#### 5.4.2. Preparación
 Creación de herramientas de explotación para atacar las vulnerabilidades potenciales. Un exploit podrá integrar un payload que realizará acciones a posteriori (Backdoor). 
 
-#### Distribución
+#### 5.4.3. Distribución
 Instalación del exploit mediante diferentes técnicas: USB, descarga en correo de engaño, …
 
-#### Explotación
+#### 5.4.4. Explotación
 Hay que asegurar que el exploit ha funcionado y no se ha detectado por las herramientas de las organización.
 
-#### Instalación
+#### 5.4.5. Instalación
 Instalación de accesos persistentes a múltiples sistemas de la organización.
 
-#### Comando y control
+#### 5.4.6. Comando y control
 Control de los sistemas infectados desde un servidor centralizado en internet. Todo este sistema debe estar cifrado y encapsulado de manera que no sea detectado. 
 
-#### Acciones sobre los objetivos
+#### 5.4.7. Acciones sobre los objetivos
 En caso de haber llegado a este punto sin haber sido detectado, el atacante puede llevar a cabo sus acciones: exfiltrar información para venderla, cifrar información y pedir un rescate, ..
-
 
 Leed artículo [Las 7 fases de un ciberataque. ¿Las conoces?](https://www.incibe.es/protege-tu-empresa/blog/las-7-fases-ciberataque-las-conoces).
 
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué es un ataque de ingeniería social?</summary>
-  <div class="card-body" markdown="1">
-
-La ingeniería social es la práctica de utilizar técnicas psicológicas para manipular el comportamiento. La ingeniería social se produce aprovechando el error humano y animando a las víctimas a actuar en contra de sus intereses. En el ámbito de la seguridad de la información, la definición de ingeniería social se refiere a conseguir que las personas divulguen datos privados en línea, como datos de acceso o información financiera.
-
-  </div>
-</details>
 
 ### 5.5. Riesgo
 
@@ -263,7 +288,7 @@ Los ataques por denegación de servicio distribuidos (DDoS) son un arma de ciber
   </div>
 </details>
 
-### Atacantes
+## 5.8. Atacantes
 
 Existen los siguientes atacantes:
 
@@ -273,7 +298,7 @@ Existen los siguientes atacantes:
 - Estados
 - Crimen organizado
 
-#### Script Kiddies
+### 5.8.1. Script Kiddies
 
 Conocimientos básicos, no pueden llevar a cabo un ataque por sí mismo. Sin embargo: 
 
@@ -282,7 +307,7 @@ Conocimientos básicos, no pueden llevar a cabo un ataque por sí mismo. Sin emb
 
 Aunque parezcan inofensivos por su falta de conocimiento, pueden causar mucho daño. 
 
-#### Hacktivistas
+### 5.8.2. Hacktivistas
 
 Individuos o grupos que dan soporte a organismos sociales y políticos de cualquier tipo.
 
@@ -290,7 +315,7 @@ Si la agenda lo requiere, usarán su conocimiento para causar daño a algún tip
 
 Si bien algunas acciones tienen objetivos nobles y buscan un beneficio social, se trata de acciones ilegales y el hacktivista puede llegar a tener responsabilidad legal.
 
-#### Insiders
+### 5.8.3. Insiders
 
 Está demostrado que es mucho más difícil atacar una organización desde fuera que desde dentro de la red. 
 
@@ -300,7 +325,7 @@ También se puede dar el caso de empleados que por diferentes razones intentan l
 
 Un insider puede causar mucho más daño que un atacante externo, al tener acceso directo a la red interna. 
 
-#### Estados
+### 5.8.4. Estados
 
 El ciberespacio es desde hace año uno de los espacios de la guerra. Al fin y al cabo, los servicios esenciales de los países dependen de las infraestructuras tecnológicas para su funcionamiento.
 
@@ -312,7 +337,7 @@ Estos especialistas también pueden llevar a cabo acciones de inteligencia (obte
 
 En el contexto de guerra híbrida, los ciberataques y las técnicas de desestabilización pueden ser más dañinas que las propias acciones militares. 
 
-#### Crimen organizado
+### 5.8.5. Crimen organizado
 
 El ciberespacio es el lugar donde los cibercriminales han migrado sus actividades. Cada grupo tiene sus especializaciones: investigación y reconocimiento de víctimas, accesos a las empresas, desarrollo de software malicioso, exfiltración de datos, extorsión, ....
 
@@ -320,21 +345,21 @@ Ejemplos de actividades maliciosas: venta de datos robados, indisponibilidad de 
 
 A través de ataques como el RANSOMWARE, el crimen organizado en internet genera más dinero que la venta ilegal de armas, las drogas o la prostitución juntas.
 
-### Motivaciones
+### 5.9. Motivaciones
 
-#### TIEMPO
+#### 5.9.1. Tiempo
 
 Desde la concepción del ataque y las primeras investigaciones, hasta la materialización de los objetivos. La ventana puede ser de pocos días a varios meses o incluso años.
 
-#### RECURSOS
+#### 5.9.2. Recursos
 
 Si bien los actores con conocimientos avanzados pueden ejecutar manualmente sus acciones, se necesitan los recursos adecuados para llevar a cabo muchos tipos de ataque. Tener a disposición herramientas específicas puede automatizar el trabajo y optimizar el tiempo.
 
-#### PRESUPUESTO
+#### 5.9.3. Presupuesto
 
 Contar con un presupuesto permite adquirir las herramientas más adecuadas para el objetivo de las acciones.
 
-#### VALOR
+#### 5.9.4. Valor
 
 Se trata del equilibrio entre el beneficio (lo que se puede obtener tras la materialización del ataque) y el esfuerzo (cuánto tiempo y dinero ha costado llevarlo a cabo). Son factores que se deben valorar para decidir si merece la pena llevar a cabo el ataque.
 
@@ -346,8 +371,10 @@ Preguntas sobre los cibercriminales...
 
 {:.question}
 ¿Cuáles son sus motivaciones? ¿Qué esperan hacer tras realizar los ataques?
+
 {:.question}
 ¿Dónde están?
+
 {:.question}
 ¿Qué tácticas usan?
 
@@ -355,10 +382,13 @@ Preguntas sobre la víctima...
 
 {:.question}
 ¿Por qué la atacan?
+
 {:.question}
 ¿Qué ocurriría si la atacaran?
+
 {:.question}
 ¿Qué vulnerabilidades se ven en el vídeo?
+
 {:.question}
 En general, ¿qué tipo de empresa puede ser atacada?
 
@@ -366,6 +396,7 @@ Preguntas sobre la empresa de ciberseguridad...
 
 {:.question}
 ¿Qué tipo de actividades lleva a cabo?
+
 {:.question}
 ¿Por qué dicen que la seguridad no es sólo un problema de tecnología?
 
@@ -376,3 +407,5 @@ Preguntas sobre la empresa de ciberseguridad...
 - [Identificación y autenticación](https://www.ibm.com/docs/es/ibm-mq/7.5?topic=ssfksj-7-5-0-com-ibm-mq-sec-doc-q009740--htm)
 - [Diferencias entre amenaza, vulnerabilidad y riesgo](https://www.ambit-bst.com/blog/diferencias-entre-amenaza-vulnerabilidad-y-riesgo)
 - [Las 7 fases de un ciberataque. ¿Las conoces?](https://www.incibe.es/protege-tu-empresa/blog/las-7-fases-ciberataque-las-conoces)
+- [No repudio, ¿qué significa en seguridad informática?](https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/#:~:text=En%20resumen%2C%20el%20no%20repudio,realizaci%C3%B3n%20de%20una%20determinada%20acci%C3%B3n.)
+- [¿Qué es un keylogger?](https://latam.kaspersky.com/resource-center/definitions/keylogger)
