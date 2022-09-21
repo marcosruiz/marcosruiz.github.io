@@ -19,6 +19,27 @@ En este artículo se va a tratar la historia la web así como su funcionamiento 
 
 Leer artículo [Historia de Internet: cómo nació y cuál fue su evolución](https://marketing4ecommerce.net/historia-de-internet/)
 
+{:.question}
+¿Cómo se llamaba el primer satélite artificial lanzado al espacio?
+
+{:.question}
+¿En que se basa la teoría de conmutación de paquetes?
+
+{:.question}
+¿Qué unía la red ARPANET?
+
+{:.question}
+¿Que dos ciudades se unieron por primera vez?
+
+{:.question}
+¿Cuál es el país con mayor penetración de internet?
+
+{:.question}
+¿Cuál es el sitio web más visitado del mundo?
+
+{:.question}
+¿Cuál fue la primera red social de la historia?
+
 Leer artículo [Historia de Internet](https://www.mastermarketing-valencia.com/marketing-digital/blog/internet-historia-evolucion/#Los_origenes_de_internet_ARPA) hasta la sección "Evolución de Internet en cifras" incluida.
 
 Leer artículo [Historia de internet](https://www.fib.upc.edu/retro-informatica/historia/internet.html) hasta la sección "WWW" incluida.
