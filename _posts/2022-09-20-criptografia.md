@@ -5,7 +5,13 @@ categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr, teoría]
 ---
 
-## 1. Introducción
+## 1. Introducción ¿Por qué cifrar?
+
+## Criptografía vs criptoanálisis
+
+## Historia de la criptografía
+
+## Tipos de cifrado
 
 ## 2. Cifrado César
 
