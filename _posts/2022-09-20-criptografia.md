@@ -1,10 +1,9 @@
 ---
 title: "Criptografía"
-date: 2022-09-18 9:00:00 +0100
+date: 2022-09-20 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr, teoría]
 ---
-
 
 ## 1. Introducción
 
@@ -16,7 +15,6 @@ Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situad
 
 ![Cifrado César](/assets/img/criptografia/cifradoCesar.png)
 _Cifrado César_
-
 
 {:.question}
 ¿Cuál es el texto encriptado de “seguridad informática” con un desplazamiento = 5?
@@ -42,6 +40,8 @@ _Clave del cifrado de Polibio_
 {:.question}
 Establece el tablero de Polibio correspondiente al alfabeto desordenado por medio de la palabra clave “murcielago”. Encripta después la frase: “IES Chabacier”.
 
+![Clave del cifrado de Polibio](/assets/img/criptografia/cifradoPolibioMurcielago.png)
+_Clave del cifrado de Polibio: Murcielago_
 
 ## 4. Cifrado de Vigenère
 
@@ -58,21 +58,22 @@ _Tabla de Vigenère_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wDpqrasDmxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+{:.question}
 ¿Qué problemas tiene el cifrado simétrico?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EQsHGbp3TGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-{.question}
+{:.question}
 ¿Qué ventajas tiene el cifrado simétrico?
 
-{.question}
+{:.question}
 ¿Qué ventajas tiene el cifrado asimétrico?
 
-{.question}
+{:.question}
 ¿Se puede combinar el cifrado simétrico y asimétrico para obtener lo mejor de los dos mundos?
 
-{.question}
+{:.question}
 ¿Por qué en el cifrado simétrico hay más llaves que cifrado asimétrico?
 
 
@@ -113,14 +114,11 @@ _Tabla de Vigenère_
 
 La firma electrónica es un conjunto de datos electrónicos que acompañan o que están asociados a un documento electrónico y cuyas funciones básicas son:
 
-- Identificar al firmante de manera inequívoca.
-- Asegurar la integridad del documento firmado. Asegura que el documento firmado es exactamente el mismo que el original y que no ha sufrido alteración o manipulación.
-- Asegurar el no repudio del documento firmado. Los datos que utiliza el firmante para realizar la firma son únicos y exclusivos y, por tanto, posteriormente, no puede decir que no ha firmado el documento.
+- **Identificar al firmante de manera inequívoca**.
+- **Asegurar la integridad del documento firmado**. Asegura que el documento firmado es exactamente el mismo que el original y que no ha sufrido alteración o manipulación.
+- **Asegurar el no repudio del documento firmado**. Los datos que utiliza el firmante para realizar la firma son únicos y exclusivos y, por tanto, posteriormente, no puede decir que no ha firmado el documento.
 
 Generalmente, la ley equipara la firma electrónica a la firma manuscrita.
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JRYUxqghPG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 8.1. Proceso básico de firma electrónica
 
@@ -130,6 +128,8 @@ El proceso básico que se sigue para la firma electrónica es el siguiente:
 1. La aplicación o dispositivo digital utilizados para la firma realiza un resumen del documento. El resumen de un documento de gran tamaño puede llegar a ser tan solo de unas líneas. Este resumen es único y cualquier modificación del documento implica también una modificación del resumen.
 1. La aplicación utiliza la clave privada para codificar el resumen.
 1. La aplicación crea otro documento electrónico que contiene ese resumen codificado. Este nuevo documento es la firma electrónica.
+
+## 9. Firma digital
 
 <details class="card mb-2">
   <summary class="card-header question">¿Es lo mismo firma electrónica que firma digital?</summary>
@@ -145,7 +145,15 @@ _Firma electrónica vs firma digital_
   </div>
 </details>
 
-## 9. PKI
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JRYUxqghPG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+![Proceso de firma digital](/assets/img/criptografia/procesoFirmaDigital1.png)
+_Proceso de firma digital_
+
+![Proceso de firma digital](/assets/img/criptografia/procesoFirmaDigital2.png)
+_Proceso de firma digital_
+
+## 10. PKI
 
 PKI (Public Key Infraestructure o Infraestructura de clave pública) es un conjunto de roles, políticas, hardware, software y procedimientos necesarios para crear, administrar, distribuir, usar, almacenar y revocar certificados digitales y administrar el cifrado de clave pública.
 
@@ -156,8 +164,16 @@ Se asegura:
 - **Identificación**: Mecanismo o proceso que provee la capacidad de identificar a un usuario de un sistema.
 - **Autenticación**: Permite verificar la identidad o asegurar que un usuario es quien dice ser.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ysfBTecjGIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### 10.1. Elementos básicos de una PKI
 
+![Elementos básicos de una PKI](/assets/img/criptografia/elementosBasicosDePki.png)
+_Elementos básicos de una PKI_
+
+- **CA**: Autoridad de Certificación
+- **VA**: Autoridad de Validación
+- **RA**: Autoridad de Registro
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ysfBTecjGIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
 ¿Qué es un hash? ¿Para qué se usa?
@@ -178,10 +194,8 @@ Se asegura:
 ¿Qué información hay en el fichero /etc/shadow? ¿Qué es el salt o salto y para qué sirve?
 
 
-## 10. Bibliografía
+## 11. Bibliografía
 
 - [Cifrado César](https://www.dcode.fr/caesar-cipher)
 - [Cifrado de Vigenere](https://www.dcode.fr/cifrado-vigenere)
-
-
 
