@@ -24,10 +24,10 @@ Los tres pilares de la seguridad informática son:
 - Integridad (Integrity)
 - Disponibilidad (Availability)
 
-![Triada CID](/assets/img/conceptos-basicos-seguridad-informatica/triadaCid.png)
+![Triada CID](/assets/img/conceptos-basicos-seguridad-informatica/triadaCid.png){: width="400px"}
 _Triada CID_
 
-![Triada CIA](/assets/img/conceptos-basicos-seguridad-informatica/triadaCia.png)
+![Triada CIA](/assets/img/conceptos-basicos-seguridad-informatica/triadaCia.png){: width="400px"}
 _Triada CIA_
 
 ### 2.1. Confidencialidad
@@ -67,9 +67,9 @@ Otros tres pilares complementarios son:
 
 Garantiza que el usuario es quien dice ser.
 
-- Algo que se sabe
-- Algo que se es
-- Algo que se tiene
+- Algo que se sabe 🧠
+- Algo que se es 👀
+- Algo que se tiene 💳
 
 Los elementos de autenticación más usados:
 
@@ -98,7 +98,7 @@ Se suele aplicar a:
 1. Transferencia de datos.
 1. Acciones de los usuarios en un sistema informático.
 
-#### Tipos de no repudio
+#### 3.2.1. Tipos de no repudio
 
 - **En origen**: consiste en garantizar que una persona envió un determinado mensaje. El remitente no puede negar que lo mandó, ya que el destinatario dispone de pruebas del envío.
 - **En destino**: avala que alguien recibió un determinado mensaje. En este caso, el destinatario no podrá rebatir que no lo recibió porque el remitente cuenta con pruebas de la recepción.
@@ -141,13 +141,13 @@ En función del momento en el que tiene lugar la protección existe:
 - Seguridad activa
 - Seguridad pasiva
 
-#### 4.1.1. Seguridad física
+#### 4.0.1. Seguridad física
 
 Protección de la organización frente a accesos no autorizados y ataques físicos a los equipos e instalaciones. 
 
 Por ejemplo: Un portero en la puerta
 
-#### 4.1.2. Seguridad lógica
+#### 4.0.2. Seguridad lógica
 
 Mecanismos y barreras que protegen la información de un sistema informático. Por ejemplo:
 
@@ -155,7 +155,7 @@ Mecanismos y barreras que protegen la información de un sistema informático. P
 - Otorgar privilegios mínimos a los usuarios.
 - Controlar que información entra y sale del sistema de información.
 
-#### 4.2.2. Seguridad activa
+#### 4.0.3. Seguridad activa
 
 La seguridad activa se encarga de  evitar que los sistemas informáticos sufran algún daño.Para ello se usan contraseñas para proteger el equipo y  los datos que  contiene. Consiste en realizar, entre otras, las siguientes acciones:
 
@@ -163,7 +163,7 @@ La seguridad activa se encarga de  evitar que los sistemas informáticos sufran 
 1. Encriptar los datos importantes:  O lo que es lo mismo, cifrar los datos para que sólo puedan ser leídos si se conoce la clave de cifrado. La encriptación se hace con programas especiales. 
 1. Usar software de seguridad: como antivirus, antiespías, cortafuegos.
 
-#### 4.2.1. Seguridad pasiva
+#### 4.0.4. Seguridad pasiva
 
 El objetivo de las técnicas de seguridad pasiva es minimizar los efectos o desastres causados por un accidente, un usuario o un malware a los sistemas informáticos. Las prácticas de seguridad pasiva más recomendables son: 
 
@@ -183,6 +183,13 @@ En el mundo de la seguridad informática, es habitual manejar los siguientes té
 1. Riesgo
 1. Impacto
 1. Desastre
+
+En el siguiente vídeo se explican los conceptos de activo, vulnerabilidad, amenaza y riesgo.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5PvTdbUVFXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{:.question}
+¿Cuál es la diferencia entre riesgo y amenaza?
 
 ### 5.1. Activo
 
@@ -260,11 +267,12 @@ Leed artículo [Las 7 fases de un ciberataque. ¿Las conoces?](https://www.incib
 
 ### 5.5. Riesgo
 
+> "un escenario que describe un evento y sus consecuencias, estimado en términos de impacto y probabilidad. GT29.WP248: Guías sobre las evaluaciones de Impacto en Protección de Datos.
+
 Se denomina riesgo a la **posibilidad de que un sistema sufra un incidente de seguridad y que una amenaza se materialice causando una serie de daños**. Para medir el riesgo de un sistema informático se debe asumir que existe una vulnerabilidad ante una amenaza. El riesgo es, por lo tanto, **la probabilidad de que la amenaza se materialice aprovechando una vulnerabilidad existente**.
 
 ![Ecuación del riesgo](/assets/img/conceptos-basicos-seguridad-informatica/ecuacionDelRiesgo.jpg)
 _Ecuación del riesgo_
-
 
 ### 5.6. Impacto
 
@@ -288,26 +296,59 @@ Los ataques por denegación de servicio distribuidos (DDoS) son un arma de ciber
   </div>
 </details>
 
-## 5.8. Atacantes
+## 6. Atacantes
 
 Existen los siguientes atacantes:
 
+- Hackers
+- Hackers éticos, white hat o sneaker
+- Crackers o black hats
+- Grey hats
+- Pherakers
 - Script Kiddies
 - Hacktivistas
 - Insiders
 - Estados
 - Crimen organizado
 
-### 5.8.1. Script Kiddies
+### Hackers
+
+Persona con grandes conocimientos de informática que se dedica a detectar fallos de seguridad en sistemas informáticos.
+
+### Hackers éticos, white hat o sneaker
+
+Hacker que busca comprobar posibles intrusiones.
+
+### Crackers o black hats
+
+Hacker con objetivos maliciosos.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Cuál es la diferencia entre los white hats y los black hats?</summary>
+  <div class="card-body" markdown="1">
+
+La diferencia entre los buenos hackers, también llamados hackers de sombrero blanco (white hat hacker) o hackers éticos y los hackers malos (black hat hackers) o crackers, es que los primeros tienen autorización expresa de revisar, probar, desentrañar y modificar los sistemas informáticos con la finalidad de detectar vulnerabilidades y posteriormente desarrollar y aplicar medidas de seguridad, parches o mejoras; en cambio, los segundos irrumpen en dichos sistemas con la intención de robar o destruir información, sabotear, cometer fraudes y generar caos actuando de manera ilegal e irresponsable.
+
+  </div>
+</details>
+
+### Grey hats
+
+Hacker entre white hat y black hat. Son personas que realizan ambos tipos de “sombrero”, tanto negro como blanco. Buscan vulnerabilidad en el sistema con o sin el permiso de los propietarios y si encuentran un fallo, se comunican con el propietario y piden un precio a cambio de la solución del problema y si no acceden el se encarga de hacer pública la vulnerabilidad, la cual le daría problemas a la empresa.
+
+### 6.1. Script Kiddies, crashers, lamers o packet monkeys
 
 Conocimientos básicos, no pueden llevar a cabo un ataque por sí mismo. Sin embargo: 
 
 - Tienen a su disposición herramientas que pueden causar daño.
 - Pueden seguir las instrucciones de hackers más avanzados.
 
-Aunque parezcan inofensivos por su falta de conocimiento, pueden causar mucho daño. 
+Aunque parezcan inofensivos por su falta de conocimiento, pueden causar mucho daño.
 
-### 5.8.2. Hacktivistas
+{:.question}
+¿Qué es un script?
+
+### 6.2. Hacktivistas
 
 Individuos o grupos que dan soporte a organismos sociales y políticos de cualquier tipo.
 
@@ -315,7 +356,7 @@ Si la agenda lo requiere, usarán su conocimiento para causar daño a algún tip
 
 Si bien algunas acciones tienen objetivos nobles y buscan un beneficio social, se trata de acciones ilegales y el hacktivista puede llegar a tener responsabilidad legal.
 
-### 5.8.3. Insiders
+### 6.3. Insiders
 
 Está demostrado que es mucho más difícil atacar una organización desde fuera que desde dentro de la red. 
 
@@ -325,7 +366,7 @@ También se puede dar el caso de empleados que por diferentes razones intentan l
 
 Un insider puede causar mucho más daño que un atacante externo, al tener acceso directo a la red interna. 
 
-### 5.8.4. Estados
+### 6.4. Estados
 
 El ciberespacio es desde hace año uno de los espacios de la guerra. Al fin y al cabo, los servicios esenciales de los países dependen de las infraestructuras tecnológicas para su funcionamiento.
 
@@ -337,7 +378,7 @@ Estos especialistas también pueden llevar a cabo acciones de inteligencia (obte
 
 En el contexto de guerra híbrida, los ciberataques y las técnicas de desestabilización pueden ser más dañinas que las propias acciones militares. 
 
-### 5.8.5. Crimen organizado
+### 6.5. Crimen organizado
 
 El ciberespacio es el lugar donde los cibercriminales han migrado sus actividades. Cada grupo tiene sus especializaciones: investigación y reconocimiento de víctimas, accesos a las empresas, desarrollo de software malicioso, exfiltración de datos, extorsión, ....
 
@@ -345,25 +386,25 @@ Ejemplos de actividades maliciosas: venta de datos robados, indisponibilidad de 
 
 A través de ataques como el RANSOMWARE, el crimen organizado en internet genera más dinero que la venta ilegal de armas, las drogas o la prostitución juntas.
 
-### 5.9. Motivaciones
+### 6.6. Motivaciones
 
-#### 5.9.1. Tiempo
+#### 6.6.1. Tiempo
 
 Desde la concepción del ataque y las primeras investigaciones, hasta la materialización de los objetivos. La ventana puede ser de pocos días a varios meses o incluso años.
 
-#### 5.9.2. Recursos
+#### 6.6.2. Recursos
 
 Si bien los actores con conocimientos avanzados pueden ejecutar manualmente sus acciones, se necesitan los recursos adecuados para llevar a cabo muchos tipos de ataque. Tener a disposición herramientas específicas puede automatizar el trabajo y optimizar el tiempo.
 
-#### 5.9.3. Presupuesto
+#### 6.6.3. Presupuesto
 
 Contar con un presupuesto permite adquirir las herramientas más adecuadas para el objetivo de las acciones.
 
-#### 5.9.4. Valor
+#### 6.6.4. Valor
 
 Se trata del equilibrio entre el beneficio (lo que se puede obtener tras la materialización del ataque) y el esfuerzo (cuánto tiempo y dinero ha costado llevarlo a cabo). Son factores que se deben valorar para decidir si merece la pena llevar a cabo el ataque.
 
-## 6. Vídeo
+## 7. Vídeo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_1ni_tjjVDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -401,7 +442,7 @@ Preguntas sobre la empresa de ciberseguridad...
 ¿Por qué dicen que la seguridad no es sólo un problema de tecnología?
 
 
-## 7. Bibliografía
+## 8. Bibliografía
 
 - [Ingeniería social y cómo protegerse](https://www.avast.com/es-es/c-social-engineering)
 - [Identificación y autenticación](https://www.ibm.com/docs/es/ibm-mq/7.5?topic=ssfksj-7-5-0-com-ibm-mq-sec-doc-q009740--htm)
@@ -409,3 +450,4 @@ Preguntas sobre la empresa de ciberseguridad...
 - [Las 7 fases de un ciberataque. ¿Las conoces?](https://www.incibe.es/protege-tu-empresa/blog/las-7-fases-ciberataque-las-conoces)
 - [No repudio, ¿qué significa en seguridad informática?](https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/#:~:text=En%20resumen%2C%20el%20no%20repudio,realizaci%C3%B3n%20de%20una%20determinada%20acci%C3%B3n.)
 - [¿Qué es un keylogger?](https://latam.kaspersky.com/resource-center/definitions/keylogger)
+- [Red Team, Blue Team y Purple Team, ¿cuáles son sus funciones y diferencias?](https://www.unir.net/ingenieria/revista/red-blue-purple-team-ciberseguridad/)
