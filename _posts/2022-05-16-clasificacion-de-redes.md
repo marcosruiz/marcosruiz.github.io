@@ -52,6 +52,12 @@ Una red de área local (LAN, Local Area Network) es un conjunto de elementos fí
 - Debe ser privada, es decir, perteneciente a una misma organización.
 - La tasa de error debe ser muy baja.
 
+Tecnologías LAN:
+
+- Ethernet
+- Token Ring
+- FDDI
+
 ### 2.3. MAN
 
 Una red metropolitana es una red de distribución de datos para un área geográfica en el entorno de una ciudad. Este tipo de redes es apropiado, por ejemplo, para la distribución de televisión por cable en el ámbito de una población.
@@ -66,6 +72,14 @@ Una red de área extensa (WAN, Wide Area Network) es una red que intercomunica e
 - Las líneas son compartidas por muchos usuarios.
 
 Internet es un ejemplo de WAN de alcance mundial que utiliza multitud de protocolos de comunicación, equipamientos de diversos fabricantes y posibilidad de diferentes líneas de transmisión.
+
+Tecnologías WAN:
+
+- Modems
+- RDSI
+- DSL
+- Frame Relay
+- Series de portadoras
 
 {:.question}
 ¿Por qué diferenciamos entre MAN y WAN?

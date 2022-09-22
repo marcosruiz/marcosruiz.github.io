@@ -116,6 +116,8 @@ Leer el artículo [Binario](/posts/binario).
 
 ## 7. Velocidad de transmisión
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K6aEiwbcl7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Se trata de relacionar la cantidad de información que se transfiere con el tiempo que tarda en ser transferida.
 
 Velocidad = información/ tiempo
@@ -149,6 +151,37 @@ Velocidad = información/ tiempo
     </ul>
   </div>
 </details>
+
+{:.question}
+¿A cuántos Mbps se transfiere 1 GB en  4 minutos y 16 segundos?
+
+{:.question}
+¿En cuánto tiempo se transferirá un archivo de 22 MB a una velocidad de 11 Mbps?
+
+{:.question}
+¿Calcula la velocidad de transmisión en Mbps los siguientes supuestos:
+
+1. Un fichero de 4 MB tarda en llegar 20 segundos.
+2. Un archivo de 4096 KB tarda en llegar 2 segundos.
+3. Un correo electrónico de 10 MB tarda en llegar 1 minuto.
+
+{:.question}
+Tenemos un archivo que pesa 120 Megabytes. Nuestra conexión es capaz de bajar archivos a una velocidad de 2048 kilobits por segundo (2 Mbps). ¿Cuánto tiempo tardaremos en descargarnos el archivo?
+
+{:.question}
+En una red local la velocidad de transferencia es de 100 Mbps. ¿Cuánto tardarás en enviar un
+fichero de 2 GB a otro equipo de la red, suponiendo que se dan unas condiciones óptimas de
+transferencia? 
+
+{:.question}
+¿Cuánto tardaría un módem de 55 600 bps en "descargar" un archivo de 1MB? 
+
+{:.question}
+¿Cuanto tarda un módem de 55600 bps en descargar 2,8 MB?
+
+{:.question}
+Si la velocidad fuese de 3 Mbps ¿Cuanto tiempo tarda en descargar 1 MB?
+
 
 <details class="card mb-2">
   <summary class="card-header question">¿Por qué un KiloByte son 1024 Bytes?</summary>
