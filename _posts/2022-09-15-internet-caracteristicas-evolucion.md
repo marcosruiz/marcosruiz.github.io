@@ -76,15 +76,57 @@ No. WEB = INTERNET + HTTP
   </div>
 </details>
 
-## 4. La web 1.0, 2.0 y 3.0
+## 4. La web 1.0
 
-Leer artículo [¿Qué es la Web 3.0?](https://www.ceupe.com/blog/que-es-la-web-3-0.html).
+La web primitiva, la del siglo 20, era aquella que se caracteriza principalmente por ser unidireccional y realizada sobre contenidos estáticos. Las primeras páginas que vimos en Internet publicaban contenidos de texto que, una vez publicados, no se actualizaban salvo que el "webmaster" modificase dichos contenidos y volviese a subir la web de nuevo a internet.
 
-## 5. La web 4.0
+La web 1.0 tenía un carácter principalmente divulgativo, y empezaron a colgarse de internet documentos e información principalmente cultural. Poco a poco las empresas empezaron a tomar parte y las primeras webs de empresa surgieron, con diseños muy pobres (no había herramientas, ni tecnología, ni conexión suficiente como para hacerlo mejor) y contenidos que rápidamente quedaban anticuados al ser complejo actualizarlos.
 
-Leer el artículo [Web 4.0](https://www.paradigmadigital.com/dev/web-4-0/).
+## 5. La web 2.0
 
-## 6. Arquitectura cliente-servidor
+La web 2.0 se asiento a mediados de la primera década de este siglo. Sustentada bajo unas conexiones a internet evolucionadas (ya teníamos ADSL), y mejores herramientas para desarrollar web, mejores servidores, etc., la web 2.0, también denominada "la red social", llena Internet de blogs, wikis, foros y finalmente, redes sociales. El objetivo de la web 2.0 es la compartición del conocimiento, es la web colaborativa y ha sido uno de los atractivos principales para atraer a usuarios (basta ver los usuarios de facebook que, hasta facebook, no tocaban un ordenador).
+
+{:.question}
+¿La web de Homer Simpson es 1.0 o 2.0?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P5MWN3TQeY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## 6. Web 3.0
+
+La web 3.0 es:
+
+- Web semántica
+- Experiencia de navegación personalizada a través de:
+  - Analizar el historial de cada usuario
+  - Analizar datos de conducta web de cada usuario
+  - Desarrollar tecnologías 3.0 como la Inteligencia Artificial.
+  - Crear una base de datos global.
+  - Analizar la geolocalización del usuario.
+  - Etc.
+
+Leer artículo [¿En qué consiste la web semántica?](https://www.ionos.es/digitalguide/online-marketing/marketing-para-motores-de-busqueda/web-semantica/).
+
+{:.question}
+¿Qué diferencia existe entre la web semántica y sintáctica? ¿Sabrías poner un ejemplo?
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Cuál fue el motivo del éxito de Google?</summary>
+  <div class="card-body" markdown="1">
+    
+La respuesta del éxito actual de Google es sencilla: fue el primer buscador, como tal, que se tomó en serio su trabajo. 
+
+Google nació a finales de los años 90, como la tesis doctoral de Larry Page y Sergey Brin. En 1998 se estrenó en Internet y desde entonces se ha consagrado como el principal motor de búsqueda en el mundo.
+
+Su principal innovación fue tener en cuenta la autoridad de las páginas, ganada a través de enlaces. Google desarrolló un sistema para cuantificar esta autoridad, y lo llamó “PageRank”.
+
+Aunque hay que agregar que, a consecuencia de la gran importancia que Google otorgaba a los enlaces, muchos -si no es que todos- sitios web han estado creando enlaces no orgánicos durante años, consiguiendo más autoridad de la que correspondería de forma natural.
+
+Por ello, y para intentar combatir este problema, las más reciente actualizaciones del algoritmo de Google se han centrado en otras métricas, como señales sociales, interacción del usuario y calidad de los contenidos, entre otras.
+
+  </div>
+</details>
+
+## 8. Arquitectura cliente-servidor
 
 La web tiene una arquitectura cliente-servidor.
 
@@ -113,9 +155,9 @@ _Arquitectura cliente-servidor con NAT_
 {:.question}
 ¿Qué significan las siglas NAT?
 
-## 7. Direcciones de Internet
+## 9. Direcciones de Internet
 
-### 7.1. Direcciones IP
+### 9.1. Direcciones IP
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gVUE2IDwWA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -154,7 +196,7 @@ _Arquitectura cliente-servidor con NAT_
 {:.question}
 ¿Por qué existen las IPs privadas? ¿No podrían ser todas públicas y así ahorrarnos el paso de traducción?
 
-### 7.2. URLs
+### 9.2. URLs
 
 Todo recurso de Internet debe tener una dirección accesible desde cualquier ordenador del mundo. A esa dirección se le llama URLs (Uniform Resource Locator).
 
@@ -190,8 +232,13 @@ _Comunicación cliente-servidor DNS básica_
   </div>
 </details>
 
-## 8. HTML
+## 10. HTML
 
 Leer artículo [HTML](/posts/html/).
 
-## 9. Bibliografía
+## 11. Bibliografía
+
+- [¿Por qué Google es el buscador más utilizado en todo el mundo?](http://eidos.com.mx/blog/por-que-google-es-el-buscador-mas-utilizado-en-todo-el-mundo/#:~:text=La%20respuesta%20del%20%C3%A9xito%20actual,m%C3%A1s%20r%C3%A1pida%20y%20precisa%20posible.)
+- [¿En qué consiste la web semántica?
+](https://www.ionos.es/digitalguide/online-marketing/marketing-para-motores-de-busqueda/web-semantica/#:~:text=La%20web%20sem%C3%A1ntica%20a%C3%B1ade%20informaci%C3%B3n,pueden%20tener%20el%20mismo%20significado).)
+- [¿Qué es la Web 3.0?](https://www.ceupe.com/blog/que-es-la-web-3-0.html)
