@@ -136,7 +136,7 @@ Existen 2 formas de codificar los caracteres.
 - La primera y más fácil de recordar es mediante el nombre HTML: `&nombre`;
 - Si no hay más remedio entonces usamos el código HTML: `&#numero`;
 
-Podéis usar el recurso [https://www.ascii.cl/htmlcodes.htm](www.ascii.cl)
+Podéis usar el recurso (falta)
 {: .prompt-info }
 
 {:.activity}
