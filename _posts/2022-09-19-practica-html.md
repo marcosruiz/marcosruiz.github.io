@@ -225,7 +225,7 @@ A partir de la imagen que podrás descargar a continuación genera un mapa de im
 - El área verde azul claro está delimitada por los puntos 128,140 y 215,161. Cuando se pulsa envía al usuario a https://marcosruiz.github.io/posts/manual-java/.
 
 ![img-description](/assets/img/practica-html/letra-f.jpg)
-_Lista html anidada con un subnivel y un subsubnivel_
+_Letra F_
 
 {:.activity}
 ### Mapas de imágenes II
@@ -237,7 +237,7 @@ A partir de la imagen que podrás descargar a continuación genera un mapa de im
 - El área negro delimitado por los puntos 128,144 y 211,156 envía al usuario a https://marcosruiz.github.io/posts/manual-java/ cuando se pulsa. En su interior tiene un área definido por los puntos 128,144 y 211,156 que es inerte cuando es pulsado, generando un hueco.
 
 ![img-description](/assets/img/practica-html/letra-F-ejercicio-avanzado.jpg)
-_Lista html anidada con un subnivel y un subsubnivel_
+_Letra F_
 
 {:.activity}
 ### Creación de tablas I
@@ -296,7 +296,7 @@ Para que se vea bonita la tabla añade dentro del <head> del documento html este
 </style>
 ```
 
-![img-description](/assets/img/practica-html/letra-F-ejercicio-avanzado.jpg)
+![img-description](/assets/img/practica-html/enunciado-tabla-html.jpg)
 _Tabla con `colspan` y `rowspan`_
 
 
