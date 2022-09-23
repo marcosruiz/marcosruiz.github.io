@@ -133,6 +133,11 @@ _Comunicación cliente/servidor_
 
 La topología de red es la propiedad que indica la forma física de la red, es decir, el modo en que se disponen los equipos y el sistema de cableado que los interconecta.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W1M_-lETphg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/04jfARpozAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ### 6.1. Red en estrella
 
 En una red en estrella las estaciones están conectadas directamente a un punto central y todas las comunicaciones se han de hacer necesariamente a través de éste.
@@ -145,6 +150,8 @@ En una red en estrella las estaciones están conectadas directamente a un punto 
 En una red en anillo cada estación está conectada a la siguiente y la última está conectada a la primera.
 
 ![img-description](redAnillo.png){: w="250" }
+
+![img-description](redAnillo2.png){: w="250" }
 
 {:.question}
 ¿Qué ocurre si cortamos el cable que une dos nodos?
@@ -211,3 +218,8 @@ El método o protocolo de envío de información es bidireccional pero no simult
 Los dos equipos involucrados en la comunicación lo pueden hacer de forma simultánea, transmitir y recibir. Por ejemplo: el teléfono.
 
 ![img-description](redFullDuplex.png){: w="250" }
+
+
+## 8. Bibliografía
+
+- [Token, Token Ring – qué es, definición y para qué sirven](https://www.profesionalreview.com/2020/02/21/token-token-ring-que-es/)

@@ -1,5 +1,5 @@
 ---
-title: "Práctica 01: HTML"
+title: "Práctica: HTML"
 date: 2022-09-21 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
 tags: [aplicaciones web, smr, práctica]
