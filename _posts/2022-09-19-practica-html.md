@@ -123,6 +123,14 @@ Conclusiones
 <Ir a https://www.chiquitoipsum.com/ y copiar un párrafo del lorem fistrum.>
 ```
 
+El resultado deberá ser algo parecido a esto:
+
+![img-description](/assets/img/practica-html/portada.png)
+_Portada con tabla de contenidos_
+
+![img-description](/assets/img/practica-html/pagina1.png)
+_Primera página_
+
 {:.activity}
 ### Códigos y nombres HTML
 
