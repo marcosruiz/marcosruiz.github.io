@@ -40,7 +40,7 @@ Clasifica los siguientes elementos como hardware (de usuario o de red), software
 
 ¿A qué velocidad en Mbps se transfiere un fichero de 3 MB si tarda 8 segundos en llegar?
 
-> La teoría la puedes encontrar en el apartado [Velocidad de transmisión](/posts/caracterizacion-de-una-lan/#7-velocidad-de-transmisión).
+> La teoría la puedes encontrar en el apartado Velocidad de transmisión del artículo [Caracterización de una LAN](/posts/caracterizacion-de-una-lan/).
 {:.prompt-info}
 
 ### 3.3. Actividad
