@@ -234,7 +234,7 @@ A partir de la imagen que podrás descargar a continuación genera un mapa de im
 
 - El área negro delimitado por los puntos 95,44 y 128,257 envía al usuario a https://marcosruiz.github.io/posts/atajos-de-teclado/ cuando se pulsa. En su interior tiene un área definido por los puntos 104,56 y 117,244 que es inerte cuando es pulsado, generando un hueco.
 - El área negro delimitado por los puntos 128,44 y 235,74 envía al usuario a https://marcosruiz.github.io/posts/comandos-basicos-gnu-linux/ cuando se pulsa. En su interior tiene un área definido por los puntos 128,56 y 226,65 que es inerte cuando es pulsado, generando un hueco.
-- El área negro delimitado por los puntos 128,144 y 211,156 envía al usuario a https://marcosruiz.github.io/posts/manual-java/ cuando se pulsa. En su interior tiene un área definido por los puntos 128,144 y 211,156 que es inerte cuando es pulsado, generando un hueco.
+- El área negro delimitado por los puntos 128,138 y 220,165 envía al usuario a https://marcosruiz.github.io/posts/manual-java/ cuando se pulsa. En su interior tiene un área definido por los puntos 128,144 y 211,156 que es inerte cuando es pulsado, generando un hueco.
 
 ![img-description](/assets/img/practica-html/letra-F-ejercicio-avanzado.jpg)
 _Letra F_
