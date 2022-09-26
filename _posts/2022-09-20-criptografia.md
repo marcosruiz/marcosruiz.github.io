@@ -12,7 +12,7 @@ La **información** (datos) es poder y **tiene un gran valor**. Por ejemplo: dis
 Esta información, habitualmente hay que compartirla entre determinados miembros de la organización y dicha información puede ser transferida en algún soporte (disco SSD, un papel, correo electrónico...)
 
 {:.question}
-¿Qué ha ocurrido con Rockstar hace una semana?
+¿Qué ha ocurrido con GTA VI hace una semana?
 
 El **emisor**, envía por tanto un **mensaje** a un **receptor** a través de un **canal** de comunicación (correo postal, correo web, archivo de texto…)
 
@@ -185,6 +185,9 @@ _Clave de Francmason_
 ![Ejemplo de Francmason](/assets/img/criptografia/ejemploFrancmason.png)
 _Ejemplo de Francmason_
 
+{:.question}
+Escribir "IES Tiempos Modernos" con el cifrado de Francmason. 
+
 ## Tipos de cifrado
 
 Existen 2 tipos de cifrados:
@@ -301,7 +304,35 @@ TODO
   </div>
 </details>
 
+## Criptografía moderna
+
+Con la criptografía moderna se intenta garantizar las siguientes propiedades deseables en la comunicación de información de forma segura (a estas propiedades se las conoce como funciones o servicios de seguridad):
+
+1. **Confidencialidad**: solamente los usuarios autorizados tienen acceso a la información.
+2. **Integridad de la información**: garantía ofrecida a los usuarios de que la información original no será alterada, ni intencional ni accidentalmente.
+3. **Autenticación de usuario**: es un proceso que permite al sistema verificar si el usuario que pretende acceder o hacer uso del sistema es quien dice ser.
+4. **Autenticación de remitente**: es el proceso que permite a un usuario certificar que el mensaje recibido fue de hecho enviado por el remitente y no por un suplantador.
+5. **Autenticación del destinatario**: es el proceso que permite garantizar la identidad del usuario destinatario.
+6. **No repudio en origen**: que cuando se reciba un mensaje, el remitente no pueda negar haber enviado dicho mensaje.
+7. **No repudio en destino**: que cuando se envía un mensaje, el destinatario no pueda negar haberlo recibido cuando le llegue.
+8. **Autenticación de actualidad (no replay)**: consiste en probar que el mensaje es actual, y que no se trata de un mensaje antiguo reenviado.
+
+Ahora toca adentrarse en los métodos criptográficos modernos como la criptografía. Entre ellos tenemos:
+ 
+- Criptografía simétrica
+- Criptografía asimétrica 
+- Funciones hash o de resumen (que no cumplen estrictamente la función de confidencialidad para la que está destinada la criptografía, puesto que es un cifrado irreversible)
+
+
 ## 5. Cifrado simétrico y asimétrico
+
+Los más utilizados actualmente son: 
+
+- DES
+- 3DES
+- AES
+- Blowfish
+- IDEA
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wDpqrasDmxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
