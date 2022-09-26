@@ -169,8 +169,6 @@ La topología de Bus se basa en un cable central, el cual lleva la información 
 
 ![img-description](redBus.png){: w="250" }
 
-![img-description](redBusConTerminador.png){: w="250" }
-
 ![img-description](terminador.jpg){: w="250" }
 
 <details class="card mb-2">
