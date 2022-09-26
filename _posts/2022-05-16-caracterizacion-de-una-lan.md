@@ -44,8 +44,6 @@ Los ordenadores son máquinas especializadas en procesar información de acuerdo
 
 A través del cableado de la red se pueden **transmitir** señales eléctricas adecuadas a la naturaleza del cable, pero la red no solo debe entregar esta señal en su destino, sino que además debe garantizar que la información que originó el emisor llega al receptor de forma íntegra durante todo el recorrido.
 
-{:.question}
-
 
 <details class="card mb-2">
   <summary class="card-header question">¿Es lo mismo transmisión que comunicación?</summary>
@@ -91,8 +89,9 @@ Estos elementos son:
 Los elementos básicos de la red son:
 
 - Cableado
+- Dispositivos específicos de red
 - Nodos de la red
-- 
+- Software de la red
 
 ### 3.1. Cableado
 
@@ -127,8 +126,8 @@ Son máquinas especializadas en una o varias funciones de red. Entre estos dispo
 
 Cada nodo posee una al menos una **interfaz de red** que es soportada mediante una tarjeta de red. Es decir, un dispositivo físico sobre el que pueda interactuar el software de la red.
 
-![imgDescription](/assets/img/caracterizacion-de-una-lan/nic.jpg)
-_ NIC (network interface card) _
+![NIC (Network Interface Card)](nic.jpg)
+_NIC (Network Interface Card)_
 
 {:.question}
 ¿Qué es una interfaz de red?
