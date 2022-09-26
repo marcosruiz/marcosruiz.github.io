@@ -82,7 +82,10 @@ Son máquinas especializadas en una o varias funciones de red. Entre estos dispo
 
 ### 3.3. Nodos de la red
 
-Cada nodo posee una al menos una interfaz de red que es soportada mediante una tarjeta de red. Es decir, un dispositivo físico sobre el que pueda interactuar el software de la red.
+Cada nodo posee una al menos una **interfaz de red** que es soportada mediante una tarjeta de red. Es decir, un dispositivo físico sobre el que pueda interactuar el software de la red.
+
+{:.question}
+¿Qué es una interfaz de red?
 
 ### 3.4. Software de la red
 
@@ -90,13 +93,13 @@ Todos los dispositivos activos de la red debe ejecutar operaciones informáticas
 
 ## 4. Ventajas de usar una red de ordenadores
 
-1. Mayor facilidad en la comunicación entre usuarios
-1. Reducción en el presupuesto para software
-1. Reducción en el presupuesto para hardware
-1. Posibilidad de organizar grupos de trabajo
-1. Mejoras en la administración de los equipos y programas
-1. Mejoras en la integridad de los datos
-1. Mayor seguridad para acceder a la información
+1. Mayor facilidad en la comunicación entre usuarios.
+1. Reducción en el presupuesto para software.
+1. Reducción en el presupuesto para hardware.
+1. Posibilidad de organizar grupos de trabajo.
+1. Mejoras en la administración de los equipos y programas.
+1. Mejoras en la integridad de los datos.
+1. Mayor seguridad para acceder a la información.
 
 ## 5. Componentes de una red de ordenadores
 
