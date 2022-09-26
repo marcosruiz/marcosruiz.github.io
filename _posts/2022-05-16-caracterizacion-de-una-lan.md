@@ -45,7 +45,37 @@ Los ordenadores son máquinas especializadas en procesar información de acuerdo
 A través del cableado de la red se pueden **transmitir** señales eléctricas adecuadas a la naturaleza del cable, pero la red no solo debe entregar esta señal en su destino, sino que además debe garantizar que la información que originó el emisor llega al receptor de forma íntegra durante todo el recorrido.
 
 {:.question}
-¿Es lo mismo transmisión que comunicación?
+
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Es lo mismo transmisión que comunicación?</summary>
+  <div class="card-body" markdown="1">
+
+No
+
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es una red de área local?</summary>
+  <div class="card-body" markdown="1">
+
+Una red de área local (LAN) es un sistema informático que permite la conexión entre los ordenadores que se encuentran físicamente próximos entre sí. Sus **características** son:
+
+- Tecnología Broadcast (difusión) con el medio de transmisión compartido.
+- Capacidad de transmisión comprendida entre 1 Mbps y 1 Gbps.
+- Extensión máxima no superior a 3 km (una FDDI puede llegar a 200 km)
+- Uso de un medio de comunicación privado
+- La simplicidad del medio de transmisión que utiliza (Cable coaxial, Cables telefónicos y Fibra óptica)
+- La facilidad con que se pueden efectuar cambios en el Hardware y el Software
+- Gran variedad y número de dispositivos conectados
+- Posibilidad de conexión con otras redes
+- Limitante de 100 m, puede llegar a mas si se usan Repetidores.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 
 ## 2. Sistemas de comunicación
 
@@ -58,16 +88,25 @@ Estos elementos son:
 
 ## 3. Elementos de la red
 
+Los elementos básicos de la red son:
+
+- Cableado
+- Nodos de la red
+- 
+
 ### 3.1. Cableado
 
 Es el elemento más específico de la red. En el caso de las redes inalámbricas no existe ya que se sustituye por antenas.
 
 El cableado puede ser:
 
-- Cobre
-  - Ethernet
-  - Coaxial
+- Cable de cobre
+  - Cable telefónico
+  - Cable coaxial
+  - Cable UTP, STP, etc.
 - Fibra óptica
+  - Mononodo
+  - Multinodo
 
 Cada tipo de cableado lleva su propio conector.
 
@@ -76,20 +115,37 @@ Cada tipo de cableado lleva su propio conector.
 Son máquinas especializadas en una o varias funciones de red. Entre estos dispositivos están:
 
 - **Modem** o modulador: para realizar conexiones remotas mediante líneas telefónicas, concentradores y repetidores para regenerar la señal eléctrica en distintos segmentos de red.
-- **Switch** o conmutador: para el intercambio selectivo de tramas de datos entre diferentes segmentos de red.
-- **Router** o enrutador: para transportar paquetes entre redes.
-- **Bridge** o pasarela: como pueden ser cortafuegos, antivirus, etc.
+- **Cablemodem**: parecido al modem pero envia datos a través del cable coaxial. Está pensado para transportar señales de televisión.
+- **Switch o conmutador**: para el intercambio selectivo de tramas de datos entre diferentes segmentos de red.
+- **Router o enrutador**: para transportar paquetes entre redes.
+- **Bridge o puente/pasarela**: como pueden ser cortafuegos, antivirus, etc.
+- **Repetidor**: Se utiliza para regenerar la señal eléctrica de transmisión, ya que esta va perdiendo calidad en función de la distancia de la conexión.
+- **Hub o concentrador**: Lo mismo que el repetidor pero multipuerto/multiinterfaz.
+- **Firewall o cortafuegos**: Dispositivo encargado de gestionar la seguridad de la red.
 
 ### 3.3. Nodos de la red
 
 Cada nodo posee una al menos una **interfaz de red** que es soportada mediante una tarjeta de red. Es decir, un dispositivo físico sobre el que pueda interactuar el software de la red.
+
+![imgDescription](/assets/img/caracterizacion-de-una-lan/nic.jpg)
+_ NIC (network interface card) _
 
 {:.question}
 ¿Qué es una interfaz de red?
 
 ### 3.4. Software de la red
 
-Todos los dispositivos activos de la red debe ejecutar operaciones informáticas avanzadas para cumplir con los protocolos de red por lo que deben tener un software de red.
+Todos los dispositivos activos de la red debe ejecutar operaciones informáticas avanzadas para cumplir con los **protocolos** de red por lo que deben tener un software de red.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es un protocolo?</summary>
+  <div class="card-body" markdown="1">
+
+Los protocolos de red son un **conjunto de reglas** que gobiernan la comunicación entre dispositivos que están conectados a una red. Dichas reglas se constituyen de instrucciones que permiten a los dispositivos identificarse y conectarse entre sí, además de aplicar reglas de formateo, para que los mensajes viajen de la forma adecuada de principio a fin. Dichas reglas de formateo determinan si los datos son recibidos correctamente o si son rechazados o ha habido algún tipo de problema en la transferencia de la información.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 ## 4. Ventajas de usar una red de ordenadores
 
@@ -274,3 +330,4 @@ Son aquellos que son definidos por convenio, alianza o pacto entre proveedores, 
 ## 11. Bibliografía
 
 - [¿1KByte = 1000 Bytes o 1KByte = 1024 Bytes?](https://platzi.com/tutoriales/1277-redes/4929-1kbyte-1000-bytes-o-1kbyte-1024-bytes/)
+- [Red de área local (LAN)](https://www.ecured.cu/Red_de_%C3%A1rea_local_(LAN)#Caracter.C3.ADsticas_importantes)

@@ -38,7 +38,7 @@ Ejemplo
 ```
 
 ![imgDescription](/assets/img/ejemplo/ejemplo.png)
-_imgDescription_
+_ imgDescription _
 
 ## Introducción
 
