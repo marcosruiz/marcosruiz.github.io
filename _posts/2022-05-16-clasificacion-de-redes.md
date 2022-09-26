@@ -13,7 +13,7 @@ Existen varias formas de clasificar las redes:
 - Por área de distribución: PAN, LAN, MAN y WAN
 - Por medio de transmisión: Guiadas y no guiadas
 - Por relación funcional: P2P, Cliente-Servidor
-- Por tecnología: P2P, Broadcast
+- Por tecnología: PPP, Broadcast
 - Por topología física: Estrella, anillo, bus, árbol, malla, totalmente conexa, mixta.
 - Por direccionalidad: Simplex, half-duplex, full-duplex.
 
@@ -171,6 +171,7 @@ La topología de Bus se basa en un cable central, el cual lleva la información 
 
 ![img-description](redBusConTerminador.png){: w="250" }
 
+![img-description](terminador.jpg){: w="250" }
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué significa CSMA/CD?</summary>
