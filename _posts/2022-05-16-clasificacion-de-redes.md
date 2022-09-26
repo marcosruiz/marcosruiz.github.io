@@ -178,9 +178,30 @@ La topología de Bus se basa en un cable central, el cual lleva la información 
 
 Carrier Sense Multiple Access with Collision Detection, es decir, acceso múltiple con escucha de portadora y **detección** de colisiones.
 
+La operación se suele comparar con el comportamiento de un grupo de personas que conversan de manera respetuosa: para que se puedan comunicar adecuadamente, es necesario que no todos los participantes hablen a la vez, sino uno tras otro, de manera que todos puedan comprender plenamente las contribuciones de los demás a la conversación. De forma natural, en una conversación de este tipo nos comportamos conforme a un protocolo: cuando otra persona está hablando, nosotros solamente escuchamos.
+
+Una vez que el interlocutor ha terminado su contribución por el momento, aguardamos un tiempo antes de empezar a hablar para asegurarnos de que este u otro interlocutor no va a iniciar una nueva contribución. Si accidentalmente empezamos a hablar al mismo tiempo que otra persona, dejamos de intentarlo y aguardamos de nuevo antes de volver a empezar otra vez.
+
+El protocolo CSMA/CD se basa también en un procedimiento muy similar. Primero, la estación examina el medio de transmisión. Mientras el medio esté ocupado, la estación sigue examinándolo. Solo cuando el medio se queda libre, la estación envía un paquete de datos durante un cierto tiempo (conocido como “espacio entre tramas”). Mientras tanto, el transmisor continúa examinando el medio para detectar colisiones. Si ninguna otra estación ha intentado enviar sus datos a través del medio compartido antes del final de la transmisión, es decir, cuando no se produce ninguna colisión, la transmisión se realiza correctamente.
+
+En cambio, cuando se detecta una colisión, la estación que la detecta interrumpe de inmediato la transmisión y en su lugar envía una señal de interferencia (señal JAM), que informa a todas las estaciones de la red de dicha colisión. La estación espera un tiempo aleatorio (Backoff) y vuelve a intentar la transmisión. El Backoff debe ser aleatorio para que no se produzca de inmediato una segunda colisión. Puesto que las dos estaciones seleccionan un valor aleatorio, la probabilidad de que ambas estaciones inicien un intento de transmisión al mismo tiempo es baja.
+
+Se cuenta el número de intentos de retransmisión. Si los siguientes intentos siguen fallando y se alcanza el número máximo de intentos(16), la estación notifica el error a la capa de red superior e interrumpe la transmisión de forma permanente. Puesto que es muy poco probable que una estación alcance el número máximo de intentos durante un proceso normal, si esto ocurre se interpreta que se ha producido un error en el sistema.
+
+Su uso está especialmente extendido en redes Ethernet.
+
   </div>
 </details>
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es un dominio de colisión?
+</summary>
+  <div class="card-body" markdown="1">
+
+Un dominio de colisión es un segmento físico de una red en el que las estaciones comparten un medio de transmisión.
+
+  </div>
+</details>
 #### 6.1.1. Ventajas
 
 - Fácil de implementar y expandir.
@@ -232,7 +253,7 @@ Es un tipo de topología de red simple, en donde las estaciones de trabajo o com
 ![img-description](tokenRing.png){: w="250" }
 _Token Ring_
 
-![img-description](mau.png){: w="250" }
+![img-description](mau.jpg)
 _MAU (Multistation Access Units) de Token Ring_
 
 <details class="card mb-2">
