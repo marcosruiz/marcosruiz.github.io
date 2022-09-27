@@ -71,8 +71,8 @@ Estos atajos de teclados suelen funcionar en casi todas las aplicaciones:
 ## Visual Studio code
 
 - `Ctrl + P` ➡ Buscar archivos por nombre.
-- `Ctrl + Shift + P` ➡ Acciones.
-- `Ctrl + Shift + F` ➡ Buscar en todo el proyecto.
+- `Ctrl + Shift + P` ➡ Acciones. Por ejemplo, transformar un texto a mayúsculas o minúsuclas.
+- `Ctrl + Shift + F` ➡ Buscar en todo el proyecto. Puedes usar expresiones regulares. Puedes practicar el uso de estas expresiones regulares [aquí](https://regex101.com/).
 - `Ctrl + H` ➡ Buscar y reemplazar.
 - `Alt + ↑` ➡ Mueve la línea actual una posición arriba.
 - `Alt + ↓` ➡ Mueve la línea actual una posición abajo.
@@ -91,6 +91,26 @@ Estos atajos de teclados suelen funcionar en casi todas las aplicaciones:
 - `Shift + Alt + F` ➡ Dar formato al documento.
 - `Ctrl + Ñ` ➡ Mostrar/ocultar consola
 - `Ctrl + B` ➡ Mostrar/ocultar barra lateral izquierda
+
+## Tips Visual Studio Code
+
+Si usas el click de la rueda del ratón puedes seleccionar en vertical.
+
+Si escribes `html:5` y le das al Enter generas una estructura básica de html.
+
+Si escribes `ul>li*5` y le das al Enter se te generará el siguiente código:
+
+```html
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+```
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sdbl-LpIoQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Gnome GNU Linux
 
