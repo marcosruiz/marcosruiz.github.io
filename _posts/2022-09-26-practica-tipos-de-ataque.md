@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Tipos de ataques"
-date: 2022-01-26 08:00:00 +0100
+date: 2022-09-26 08:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática, seguridad activa, smr]
 ---
@@ -15,7 +15,7 @@ Duración: 3 horas.
 
 La entrega de esta práctica debe ser un documento PDF (siempre que sea posible) con un nombre en el siguiente formato: “<Apellidos>_<Nombre>_P01.pdf”. Por ejemplo, en mi caso el nombre del documento PDF sería “RuizGarcía_Marcos_P01.pdf”.
 
-## Actividad
+## 3. Actividad
 
 Existen los siguientes tipos de ataques informáticos:
 
@@ -38,7 +38,7 @@ En grupos de 3 personas elegid uno (o dos) de estos tipos de ataque y realizad u
 3. Una noticia relacionada con el tipo de ataque elegido.
 4. Cómo nos podemos proteger de este tipo de ataques.
 
-## Evaluación
+## 4. Evaluación
 
 La evaluación se llevará a cabo a través de una rúbrica disponible en Aeducar.
 
