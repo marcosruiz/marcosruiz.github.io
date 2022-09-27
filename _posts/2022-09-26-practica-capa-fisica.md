@@ -7,17 +7,13 @@ tags: [redes locales, smr, práctica]
 
 ## 1. Introducción
 
-El objetivo de esta práctica es aprender a:
-
-- Cambiar unidades en las velocidades de transferencia.
-- Clasificar redes por diferentes criterios.
-- Conocer estándares y protocolos de red.
+El objetivo de esta práctica es aprender a utilizar las etiquetas HTML.
 
 Duración: - horas.
 
 ## 2. Entrega
 
-La entrega de esta práctica debe ser en formato físico manuscrito. Asegúrate de que el documento cumple con los siguientes parámetros:
+La entrega de esta práctica debe ser en formato físico. Asegúrate de que el documento cumple con los siguientes parámetros:
 
 1. Debe contener una portada con título, nombre de la asignatura, curso, autor y fecha de realización.
 1. Debe tener cada página numerada.
@@ -92,6 +88,8 @@ Clasifica las siguientes redes por el área de distribución:
 3. La red de un hogar.
 4. La red entre dos móviles por bluetooth.
 
+¿De qué tipo es la transmisión en la emisión de un programa de radio?
+
 ### 3.12. Actividad
 
 ¿En qué frecuencias trabajan las redes WiFi?
@@ -104,30 +102,14 @@ Clasifica las siguientes redes por el área de distribución:
 
 ¿Qué topología tiene la red local de clase? ¿Por qué?
 
+### 3.15. Actividad
+
+¿Qué diferencias existen entre un adaptador cableado y uno inalámbrico?
+
 ### 3.16. Actividad
 
-Explica cómo se cumple el modelo cliente-servidor en el caso de que un usuario de Internet accede a un sitio web.
+¿Cuándo utilizarías cables de pares UTP y cuando STP? ¿Qué ventajas e inconvenientes tendría sustituir un cable STP por fibra óptica?
 
-### 3.18. Actividad
+### 3.17. Actividad
 
-Piensa y escribe un ejemplo de cada tipo de direccionalidad de los datos.
-
-### 3.19. Actividad
-
-Razona si la red Internet es una interred.
-
-### 3.20. Actividad
-
-HTML es un estándar para el formato de páginas web ¿De qué tipo? Justifica tu respuesta.
-
-### 3.21. Actividad
-
-¿Qué organismo de estandarización se encarga de las redes locales wireless?
-
-### 3.22. Actividad
-
-¿Qué ocurriría en cada una de las topologías estudiadas si se rompiera un enlace (cable) de red?
-
-### 3.23. Actividad
-
-¿De qué se encarga el grupo IEEE 802.15?
+Enumera algunos elementos positivos y otros negativos de utilizar sistemas inalámbricos para las comunicaciones en redes de ordenadores.
