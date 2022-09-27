@@ -13,7 +13,7 @@ Duración: 3 horas.
 
 ## 2. Entrega
 
-La entrega de esta práctica debe ser un documento PDF (siempre que sea posible) con un nombre en el siguiente formato: “<Apellidos>_<Nombre>_P01.pdf”. Por ejemplo, en mi caso el nombre del documento PDF sería “RuizGarcía_Marcos_P01.pdf”.
+La entrega de esta práctica debe ser un documento PDF (siempre que sea posible) con un nombre en el siguiente formato: “\<Apellidos\>_\<Nombre\>_P01.pdf”. Por ejemplo, en mi caso el nombre del documento PDF sería “RuizGarcía_Marcos_P01.pdf”.
 
 ## 3. Actividad
 
