@@ -1,9 +1,9 @@
 ---
-title: Caracterización de una LAN
+title: Introducción a las redes locales
 date: 2022-05-16 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
-img_path: /assets/img/caracterizacion-de-una-lan/
+img_path: /assets/img/introduccion-redes-locales/
 ---
 
 <details class="card mb-2">
@@ -12,29 +12,28 @@ img_path: /assets/img/caracterizacion-de-una-lan/
 
 - [1. Introducción](#1-introducción)
 - [2. Sistemas de comunicación](#2-sistemas-de-comunicación)
-- [3. Elementos de la red](#3-elementos-de-la-red)
-  - [3.1. Cableado](#31-cableado)
-  - [3.2. Dispositivos específicos de red](#32-dispositivos-específicos-de-red)
-  - [3.3. Nodos de la red](#33-nodos-de-la-red)
-  - [3.4. Software de la red](#34-software-de-la-red)
-- [4. Ventajas de usar una red de ordenadores](#4-ventajas-de-usar-una-red-de-ordenadores)
-- [5. Componentes de una red de ordenadores](#5-componentes-de-una-red-de-ordenadores)
-- [6. Binario](#6-binario)
-- [7. Velocidad de transmisión](#7-velocidad-de-transmisión)
-  - [7.1. ¿Qué unidades de velocidad existen?](#71-qué-unidades-de-velocidad-existen)
-- [8. Clasificación de redes](#8-clasificación-de-redes)
-- [9. Modelos de red: OSI vs TCP/IP](#9-modelos-de-red-osi-vs-tcpip)
-- [10. Computación en la nube, interred y estándares](#10-computación-en-la-nube-interred-y-estándares)
-  - [10.1. Computación en la nube](#101-computación-en-la-nube)
-  - [10.2. Interred](#102-interred)
-  - [10.3. Estándares](#103-estándares)
-    - [10.3.1. Estándares de facto (o hecho)](#1031-estándares-de-facto-o-hecho)
-    - [10.3.2. Estándares de iure (o jure)](#1032-estándares-de-iure-o-jure)
-    - [10.3.3. Estándares de acuerdo](#1033-estándares-de-acuerdo)
-- [11. Bibliografía](#11-bibliografía)
+- [3. Ventajas de usar una red de ordenadores](#3-ventajas-de-usar-una-red-de-ordenadores)
+- [4. Componentes de una red de ordenadores](#4-componentes-de-una-red-de-ordenadores)
+  - [4.1. Cableado (Hardware)](#41-cableado-hardware)
+  - [4.2. Dispositivos de usuario final (Hardware)](#42-dispositivos-de-usuario-final-hardware)
+  - [4.3. Dispositivos específicos de red (Hardware)](#43-dispositivos-específicos-de-red-hardware)
+  - [4.4. Software de la red y protocolos](#44-software-de-la-red-y-protocolos)
+- [5. Binario](#5-binario)
+- [6. Velocidad de transmisión](#6-velocidad-de-transmisión)
+  - [6.1. ¿Qué unidades de velocidad existen?](#61-qué-unidades-de-velocidad-existen)
+- [7. Clasificación de redes](#7-clasificación-de-redes)
+- [8. Modelos de red: OSI vs TCP/IP](#8-modelos-de-red-osi-vs-tcpip)
+- [9. Computación en la nube, interred y estándares](#9-computación-en-la-nube-interred-y-estándares)
+  - [9.1. Computación en la nube](#91-computación-en-la-nube)
+  - [9.2. Interred](#92-interred)
+  - [9.3. Estándares](#93-estándares)
+    - [9.3.1. Estándares de facto (o hecho)](#931-estándares-de-facto-o-hecho)
+    - [9.3.2. Estándares de iure (o jure)](#932-estándares-de-iure-o-jure)
+    - [9.3.3. Estándares de acuerdo](#933-estándares-de-acuerdo)
+    - [9.3.4. IEEE 802](#934-ieee-802)
+- [10. Bibliografía](#10-bibliografía)
 
 <!-- Comentario para que no se descuajeringue la cosa -->
-
   </div>
 </details>
 
@@ -54,26 +53,6 @@ No
   </div>
 </details>
 
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué es una red de área local?</summary>
-  <div class="card-body" markdown="1">
-
-Una red de área local (LAN) es un sistema informático que permite la conexión entre los ordenadores que se encuentran físicamente próximos entre sí. Sus **características** son:
-
-- Tecnología Broadcast (difusión) con el medio de transmisión compartido.
-- Capacidad de transmisión comprendida entre 1 Mbps y 1 Gbps.
-- Extensión máxima no superior a 3 km (una FDDI puede llegar a 200 km)
-- Uso de un medio de comunicación privado
-- La simplicidad del medio de transmisión que utiliza (Cable coaxial, Cables telefónicos y Fibra óptica)
-- La facilidad con que se pueden efectuar cambios en el Hardware y el Software
-- Gran variedad y número de dispositivos conectados
-- Posibilidad de conexión con otras redes
-- Limitante de 100 m, puede llegar a mas si se usan Repetidores.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
 
 ## 2. Sistemas de comunicación
 
@@ -84,16 +63,46 @@ Estos elementos son:
 - **La señal:** es el fenómeno físico que porta la información sobre el canal de transmisión (Ejemplo: ondas sonoras, señales eléctricas, etc.)
 - **El receptor:** es el destinatario de la información.
 
-## 3. Elementos de la red
+## 3. Ventajas de usar una red de ordenadores
 
-Los elementos básicos de la red son:
+1. Mayor facilidad en la comunicación entre usuarios.
+1. Reducción en el presupuesto para software.
+1. Reducción en el presupuesto para hardware.
+1. Posibilidad de organizar grupos de trabajo.
+1. Mejoras en la administración de los equipos y programas.
+1. Mejoras en la integridad de los datos.
+1. Mayor seguridad para acceder a la información.
 
-- Cableado
-- Dispositivos específicos de red
-- Nodos de la red
-- Software de la red
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es una red de área local?</summary>
+  <div class="card-body" markdown="1">
 
-### 3.1. Cableado
+Una red de área local (LAN) es un sistema informático que permite la conexión entre los ordenadores que se encuentran físicamente próximos entre sí. Sus **características** son:
+
+- Tecnología Broadcast (difusión) con el medio de transmisión compartido.
+- Capacidad de transmisión comprendida entre 1 Mbps y 1 Gbps.
+- Extensión máxima no superior a 3 km (una FDDI puede llegar a 200 km).
+- Uso de un medio de comunicación privado.
+- La simplicidad del medio de transmisión que utiliza (Cable coaxial, Cables telefónicos y Fibra óptica).
+- La facilidad con que se pueden efectuar cambios en el Hardware y el Software.
+- Gran variedad y número de dispositivos conectados.
+- Posibilidad de conexión con otras redes.
+- Limitante de 100m, puede llegar a mas si se usan Repetidores.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+## 4. Componentes de una red de ordenadores
+
+Para poder formar una red de ordenadores se requieren varios elementos: 
+
+- Cableado (Hardware)
+- Dispositivos de usuario final (Hardware)
+- Dispositivos de red (Hardware)
+- Software de la red y protocolos
+
+### 4.1. Cableado (Hardware)
 
 Es el elemento más específico de la red. En el caso de las redes inalámbricas no existe ya que se sustituye por antenas.
 
@@ -107,11 +116,26 @@ El cableado puede ser:
   - Mononodo
   - Multinodo
 
+> Lo veremos en detalle en la capa física
+{:.prompt-info}
+
 Cada tipo de cableado lleva su propio conector.
 
-### 3.2. Dispositivos específicos de red
+### 4.2. Dispositivos de usuario final (Hardware)
 
-Son máquinas especializadas en una o varias funciones de red. Entre estos dispositivos están:
+Son los ordenadores, impresoras, escáneres, y demás elementos que brindan servicios directamente al usuario.
+
+Cada nodo posee una al menos una **interfaz de red** que es soportada mediante una tarjeta de red. Es decir, un dispositivo físico sobre el que pueda interactuar el software de la red.
+
+![NIC (Network Interface Card)](nic.jpg)
+_NIC (Network Interface Card)_
+
+{:.question}
+¿Qué es una interfaz de red?
+
+### 4.3. Dispositivos específicos de red (Hardware)
+
+Son todos aquellos que conectan entre sí a los dispositivos de usuario final, posibilitando su intercomunicación. Son máquinas especializadas en una o varias funciones de red. Entre estos dispositivos están:
 
 - **Modem** o modulador: para realizar conexiones remotas mediante líneas telefónicas, concentradores y repetidores para regenerar la señal eléctrica en distintos segmentos de red.
 - **Cablemodem**: parecido al modem pero envia datos a través del cable coaxial. Está pensado para transportar señales de televisión.
@@ -122,55 +146,37 @@ Son máquinas especializadas en una o varias funciones de red. Entre estos dispo
 - **Hub o concentrador**: Lo mismo que el repetidor pero multipuerto/multiinterfaz.
 - **Firewall o cortafuegos**: Dispositivo encargado de gestionar la seguridad de la red.
 
-### 3.3. Nodos de la red
-
-Cada nodo posee una al menos una **interfaz de red** que es soportada mediante una tarjeta de red. Es decir, un dispositivo físico sobre el que pueda interactuar el software de la red.
-
-![NIC (Network Interface Card)](nic.jpg)
-_NIC (Network Interface Card)_
-
-{:.question}
-¿Qué es una interfaz de red?
-
-### 3.4. Software de la red
-
-Todos los dispositivos activos de la red debe ejecutar operaciones informáticas avanzadas para cumplir con los **protocolos** de red por lo que deben tener un software de red.
-
 <details class="card mb-2">
-  <summary class="card-header question">¿Qué es un protocolo?</summary>
+  <summary class="card-header question">¿Es lo mismo un conmutador y un interruptor on/off?</summary>
   <div class="card-body" markdown="1">
 
-Los protocolos de red son un **conjunto de reglas** que gobiernan la comunicación entre dispositivos que están conectados a una red. Dichas reglas se constituyen de instrucciones que permiten a los dispositivos identificarse y conectarse entre sí, además de aplicar reglas de formateo, para que los mensajes viajen de la forma adecuada de principio a fin. Dichas reglas de formateo determinan si los datos son recibidos correctamente o si son rechazados o ha habido algún tipo de problema en la transferencia de la información.
+No.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
 
-## 4. Ventajas de usar una red de ordenadores
 
-1. Mayor facilidad en la comunicación entre usuarios.
-1. Reducción en el presupuesto para software.
-1. Reducción en el presupuesto para hardware.
-1. Posibilidad de organizar grupos de trabajo.
-1. Mejoras en la administración de los equipos y programas.
-1. Mejoras en la integridad de los datos.
-1. Mayor seguridad para acceder a la información.
+### 4.4. Software de la red y protocolos
 
-## 5. Componentes de una red de ordenadores
+Todos los dispositivos activos de la red debe ejecutar operaciones informáticas avanzadas para cumplir con los **protocolos** de red por lo que deben tener un software de red.
+Es decir, es el conjunto de programas y ficheros de configuración que permiten la comunicación entre elementos de una red. Los podemos dividir en dos.
 
-Para poder formar una red de ordenadores se requieren varios elementos: 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es un protocolo?</summary>
+  <div class="card-body" markdown="1">
 
-- **Hardware:**
-    - **Dispositivos de usuario final:** son los ordenadores, impresoras, escáneres, y demás elementos que brindan servicios directamente al usuario.
-    - **Dispositivos de red:** son todos aquellos que conectan entre sí a los dispositivos de usuario final, posibilitando su intercomunicación.
-- **Software:** Es el conjunto de programas y ficheros de configuración que permiten la comunicación entre elementos de una red. Los podemos dividir en dos.
-- **Protocolos:** Son un conjunto de reglas que se establecen entre el transmisor y receptor de un proceso de comunicación que permite asegurar la transmisión de datos entre los dos extremos. Ejemplo: protocolo IP (dicta las reglas para las direcciones IP).
+Son un conjunto de reglas que se establecen entre el transmisor y receptor de un proceso de comunicación que permite asegurar la transmisión de datos entre los dos extremos. Ejemplo: protocolo IP (dicta las reglas para las direcciones IP).
 
-## 6. Binario
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+## 5. Binario
 
 Leer el artículo [Binario](/posts/binario).
 
-## 7. Velocidad de transmisión
+## 6. Velocidad de transmisión
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/K6aEiwbcl7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -237,7 +243,7 @@ Esta última nomenclatura ha sido adoptada por Ubuntu y por Apple pero no por Mi
 </details>
 
 
-### 7.1. ¿Qué unidades de velocidad existen?
+### 6.1. ¿Qué unidades de velocidad existen?
 
 - bps = b/s ➡ bits por segundo
 - Bps = B/s ➡ Bytes por segundo
@@ -267,17 +273,17 @@ Esta última nomenclatura ha sido adoptada por Ubuntu y por Apple pero no por Mi
 {:.question}
 ¿A cuántos Mbps se transfiere 1 GB en  4 minutos y 16 segundos?
 
-## 8. Clasificación de redes
+## 7. Clasificación de redes
 
 Leer artículo [Clasificación de redes](/posts/clasificacion-de-redes/).
 
-## 9. Modelos de red: OSI vs TCP/IP
+## 8. Modelos de red: OSI vs TCP/IP
 
 Leer artículo [Modelos de red: OSI vs TCP/IP](/posts/modelos-red-osi-vs-tcp-ip).
 
-## 10. Computación en la nube, interred y estándares
+## 9. Computación en la nube, interred y estándares
 
-### 10.1. Computación en la nube
+### 9.1. Computación en la nube
 
 La computación en la nube (cloud computing) es un nuevo modelo de utilización de los servicios informáticos de modo que se brinda como servicio deslocalizado. 
 
@@ -293,12 +299,11 @@ Nombrad tres ventajas de la computación en la nube
 ¿Conoces alguna alternativa a OneDrive/ Dropbox que puedas instalar en tu casa?
 
 
-### 10.2. Interred
+### 9.2. Interred
 
 Un conjunto de redes conectadas se le denomina interred. Lo más habitual es encontrar un conjunto de LANs conectadas mediante una WAN. No obstante, el término interred representa la interconexión de varias redes diferentes. Por tanto, una interred puede estar formada únicamente por dos LANs conectadas sin necesidad de WAN.
 
-
-### 10.3. Estándares
+### 9.3. Estándares
 
 Los estándares son unas guías para los fabricantes, vendedores, agencias de gobierno y otros proveedores de servicios, para asegurar el tipo de interconectividad necesario en los mercados actuales y en las comunicaciones internacionales.
 
@@ -308,25 +313,43 @@ Se pueden clasificar en 3 categorías:
 - Estándares de iure (o jure)
 - Estándares de acuerdo
 
-#### 10.3.1. Estándares de facto (o hecho)
+#### 9.3.1. Estándares de facto (o hecho)
 
 Son estándares que no han sido aprobados por una organización reconocida pero han sido aceptados como estándares debido a su amplio uso. Hay dos tipos:
 
 - Estándares propietarios o cerrados. 🔒
 - Estándares no propietarios o abiertos. 🔓
 
-#### 10.3.2. Estándares de iure (o jure)
+#### 9.3.2. Estándares de iure (o jure)
 
 Son aquellos que han sido legislados por un organismo oficialmente reconocido. 
 
-#### 10.3.3. Estándares de acuerdo
+#### 9.3.3. Estándares de acuerdo
 
 Son aquellos que son definidos por convenio, alianza o pacto entre proveedores, usuarios o manufactureros.
 
 {:.question}
 ¿Qué es un estándar de facto?
 
-## 11. Bibliografía
+#### 9.3.4. IEEE 802
+
+IEEE 802 del Institute of Electrical and Electronics Engineers (máz conocido por sus siglas, IEEE). Se identifica también con las siglas LMSC (LAN/MAN Standards Committee). Su misión se centra en desarrollar estándares de redes de área local (LAN) y redes de área metropolitana (MAN), **principalmente en las dos capas inferiores del modelo OSI**.
+
+IEEE 802 fue un proyecto creado en febrero de 1980 paralelamente al diseño del Modelo OSI. Se desarrolló con el fin de crear estándares para que diferentes tipos de tecnologías pudieran integrarse y trabajar juntas. El proyecto 802 define aspectos relacionados con el cableado físico y la transmisión de datos.
+
+Los grupos de trabajo de trabajo del IEEE 802 son:
+
+- 802.1d 	Spanning Tree Protocol
+- IEEE 802.2 	Control de enlace lógico (LLC)
+- IEEE 802.3 	CSMA / CD (ETHERNET)
+- IEEE 802.3ab 	Gigabit Ethernet sobre 4 pares de cable UTP Cat5e o superior
+- IEEE 802.3ae 	10 Gigabit Ethernet
+- IEEE 802.5 	Token ring LAN (topología en anillo)
+- IEEE 802.11 	Redes inalámbricas WLAN. (Wi-Fi)
+- IEEE 802.16 	Redes de acceso metropolitanas sin hilos de banda ancha (WIMAX)
+
+## 10. Bibliografía
 
 - [¿1KByte = 1000 Bytes o 1KByte = 1024 Bytes?](https://platzi.com/tutoriales/1277-redes/4929-1kbyte-1000-bytes-o-1kbyte-1024-bytes/)
 - [Red de área local (LAN)](https://www.ecured.cu/Red_de_%C3%A1rea_local_(LAN)#Caracter.C3.ADsticas_importantes)
+- [IEEE 802 (Wikipedia)](https://es.wikipedia.org/wiki/IEEE_802)
