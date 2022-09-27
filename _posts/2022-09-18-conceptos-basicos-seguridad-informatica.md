@@ -3,6 +3,7 @@ title: "Conceptos básicos de seguridad informática"
 date: 2022-09-18 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr, teoría]
+img_path: /assets/img/conceptos-basicos-seguridad-informatica/
 ---
 
 
@@ -24,10 +25,10 @@ Los tres pilares de la seguridad informática son:
 - Integridad (Integrity)
 - Disponibilidad (Availability)
 
-![Triada CID](/assets/img/conceptos-basicos-seguridad-informatica/triadaCid.png){: width="400px"}
+![Triada CID](triadaCid.png){: width="400px"}
 _Triada CID_
 
-![Triada CIA](/assets/img/conceptos-basicos-seguridad-informatica/triadaCia.png){: width="400px"}
+![Triada CIA](triadaCia.png){: width="400px"}
 _Triada CIA_
 
 ### 2.1. Confidencialidad
@@ -230,40 +231,87 @@ Un ataque es una acción que trata de aprovechar una vulnerabilidad de un sistem
 
 Un ataque informático pasa por las siguientes fases:
 
-- Reconocimiento
-- Preparación
-- Distribución
-- Explotación
-- Instalación
-- Comando y control
-- Acciones sobre los objetivos
+1. Reconocimiento
+1. Preparación
+1. Distribución
+1. Explotación
+1. Instalación
+1. Comando y control
+1. Acciones sobre los objetivos
 
-![Las 7 fases de un ciberataque](/assets/img/conceptos-basicos-seguridad-informatica/fasesAtaqueInformatico.jpg)
+![Las 7 fases de un ciberataque](fasesAtaqueInformatico.jpg)
 _Las 7 fases de un ciberataque_
 
-#### 5.4.1. Reconocimiento
-Obtención en fuentes abiertas de cualquier tipo de información de la organización y su infraestructura con el objetivo de crear un perfil.
+![Menú de Kali](kaliMenu.jpg)
+_Menú de Kali_
 
-#### 5.4.2. Preparación
-Creación de herramientas de explotación para atacar las vulnerabilidades potenciales. Un exploit podrá integrar un payload que realizará acciones a posteriori (Backdoor). 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es Kali?</summary>
+  <div class="card-body" markdown="1">
 
-#### 5.4.3. Distribución
-Instalación del exploit mediante diferentes técnicas: USB, descarga en correo de engaño, …
+Kali Linux es una distribución GNU Linux que contiene un conjunto de herramientas que facilitan las diferentes actividades de hacking y pentesting.
 
-#### 5.4.4. Explotación
-Hay que asegurar que el exploit ha funcionado y no se ha detectado por las herramientas de las organización.
+  </div>
+</details>
 
-#### 5.4.5. Instalación
-Instalación de accesos persistentes a múltiples sistemas de la organización.
-
-#### 5.4.6. Comando y control
-Control de los sistemas infectados desde un servidor centralizado en internet. Todo este sistema debe estar cifrado y encapsulado de manera que no sea detectado. 
-
-#### 5.4.7. Acciones sobre los objetivos
-En caso de haber llegado a este punto sin haber sido detectado, el atacante puede llevar a cabo sus acciones: exfiltrar información para venderla, cifrar información y pedir un rescate, ..
+{:.question}
+¿Qué es una distribución GNU Linux?
 
 Leed artículo [Las 7 fases de un ciberataque. ¿Las conoces?](https://www.incibe.es/protege-tu-empresa/blog/las-7-fases-ciberataque-las-conoces).
 
+#### 5.4.1. Reconocimiento
+
+Obtención en fuentes abiertas de cualquier tipo de información de la organización y su infraestructura con el objetivo de crear un perfil.
+
+#### 5.4.2. Preparación
+
+Creación de herramientas de explotación para atacar las vulnerabilidades potenciales. Un exploit podrá integrar un payload que realizará acciones a posteriori (Backdoor). 
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es un exploit?</summary>
+  <div class="card-body" markdown="1">
+
+Cualquier elemento (código, herramienta,…) que puede sacar partido de una vulnerabilidad. Cuando un agente malicioso ha identificado una vulnerabilidad, desarrollará o buscará un exploit para intentar acceder al sistema, o realizar acciones en él (dejarlo indisponible, sacar información, modificar información…).
+
+  </div>
+</details>
+
+#### 5.4.3. Distribución
+
+Instalación del exploit mediante diferentes técnicas: USB, descarga en correo de engaño, …
+
+#### 5.4.4. Explotación
+
+Hay que asegurar que el exploit ha funcionado y no se ha detectado por las herramientas de las organización.
+
+#### 5.4.5. Instalación
+
+Instalación de accesos persistentes a múltiples sistemas de la organización.
+
+#### 5.4.6. Comando y control
+
+Control de los sistemas infectados desde un servidor centralizado en internet. Todo este sistema debe estar cifrado y encapsulado de manera que no sea detectado. 
+
+#### 5.4.7. Acciones sobre los objetivos
+
+En caso de haber llegado a este punto sin haber sido detectado, el atacante puede llevar a cabo sus acciones: exfiltrar información para venderla, cifrar información y pedir un rescate, ..
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es MITRE ATT&CK?</summary>
+  <div class="card-body" markdown="1">
+
+[MITRE ATT&CK](https://attack.mitre.org/) es una colección de técnicas usadas por los atacantes durante un ataque. Las técnicas están agrupadas en 12 tácticas.
+
+La información identificada y actualizada, debe ser usada para proteger la organización.
+
+MITRE proporciona la siguiente información:
+
+- Página de los grupos atacantes. Para cada uno de ellos se identifica las tácticas usadas, sus herramientas más habituales, referencias, …
+- Navegador MITRE ATT&CK.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 ### 5.5. Riesgo
 
@@ -271,7 +319,7 @@ Leed artículo [Las 7 fases de un ciberataque. ¿Las conoces?](https://www.incib
 
 Se denomina riesgo a la **posibilidad de que un sistema sufra un incidente de seguridad y que una amenaza se materialice causando una serie de daños**. Para medir el riesgo de un sistema informático se debe asumir que existe una vulnerabilidad ante una amenaza. El riesgo es, por lo tanto, **la probabilidad de que la amenaza se materialice aprovechando una vulnerabilidad existente**.
 
-![Ecuación del riesgo](/assets/img/conceptos-basicos-seguridad-informatica/ecuacionDelRiesgo.jpg)
+![Ecuación del riesgo](ecuacionDelRiesgo.jpg)
 _Ecuación del riesgo_
 
 ### 5.6. Impacto
@@ -332,6 +380,15 @@ La diferencia entre los buenos hackers, también llamados hackers de sombrero bl
   </div>
 </details>
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es un zero day?</summary>
+  <div class="card-body" markdown="1">
+
+Se trata de vulnerabilidades de sistemas que todavía no son conocidas por el público, ni siquiera por el propio fabricante, y para las cuales no existe todavía una solución de seguridad. Pueden ser muy valiosos para los hackers (bug bounty).
+
+  </div>
+</details>
+
 ### Grey hats
 
 Hacker entre white hat y black hat. Son personas que realizan ambos tipos de “sombrero”, tanto negro como blanco. Buscan vulnerabilidad en el sistema con o sin el permiso de los propietarios y si encuentran un fallo, se comunican con el propietario y piden un precio a cambio de la solución del problema y si no acceden el se encarga de hacer pública la vulnerabilidad, la cual le daría problemas a la empresa.
@@ -385,24 +442,6 @@ El ciberespacio es el lugar donde los cibercriminales han migrado sus actividade
 Ejemplos de actividades maliciosas: venta de datos robados, indisponibilidad de los servicios, extorsión, … 
 
 A través de ataques como el RANSOMWARE, el crimen organizado en internet genera más dinero que la venta ilegal de armas, las drogas o la prostitución juntas.
-
-### 6.6. Motivaciones
-
-#### 6.6.1. Tiempo
-
-Desde la concepción del ataque y las primeras investigaciones, hasta la materialización de los objetivos. La ventana puede ser de pocos días a varios meses o incluso años.
-
-#### 6.6.2. Recursos
-
-Si bien los actores con conocimientos avanzados pueden ejecutar manualmente sus acciones, se necesitan los recursos adecuados para llevar a cabo muchos tipos de ataque. Tener a disposición herramientas específicas puede automatizar el trabajo y optimizar el tiempo.
-
-#### 6.6.3. Presupuesto
-
-Contar con un presupuesto permite adquirir las herramientas más adecuadas para el objetivo de las acciones.
-
-#### 6.6.4. Valor
-
-Se trata del equilibrio entre el beneficio (lo que se puede obtener tras la materialización del ataque) y el esfuerzo (cuánto tiempo y dinero ha costado llevarlo a cabo). Son factores que se deben valorar para decidir si merece la pena llevar a cabo el ataque.
 
 ## 7. Vídeo
 

@@ -30,7 +30,7 @@ Es imposible asegurar que nunca conseguirán el mensaje (o documento) que contie
 En esta tarea nos ayudará la criptografía.
 
 
-## Criptografía vs criptoanálisis
+## 2. Criptografía vs criptoanálisis
 
 La palabra Criptografía proviene del griego "kryptos" que significa oculto, y "graphia", que significa escritura.
 
@@ -53,7 +53,7 @@ La criptografía no engloba a las técnicas que se usan para romper dichos códi
 Principio de Kerckhoffs: La efectividad del sistema no debe depender de que su diseño permanezca en secreto. 
 
 
-## Historia de la criptografía
+## 3. Historia de la criptografía
 
 El uso de la criptografía se remonta a casi la época en la que comenzó la escritura.
 
@@ -80,7 +80,7 @@ El método de la escitala era extremadamente sencillo, como también lo era el q
 {:.question}
 Desencripta el texto "Q QER UQULOZEUE FA E MERS TESAUTEJOGEENORORNGR ZTGO DAEO PE " si tengo un cilindro hexagonal.
 
-## 2. Cifrado César
+## 4. Cifrado César
 
 El cifrado César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. 
 
@@ -100,27 +100,27 @@ Jp uwtuóxnyt ij pfx htunfx ij xjlzwnifi jx pf wjhzujwfhnór ij ifytx
 </details>
 
 
-### Ventajas
+### 4.1. Ventajas
 
 1. Uno de los métodos más fáciles de usar en criptografía y puede proporcionar una seguridad mínima a la información.
 1. Uso de solo una clave todo el proceso (Desplazamiento).
 1. Uno de los mejores métodos para usar si el sistema no puede usar ninguna técnica de codificación complicada
 1. Requiere pocos recursos informáticos.
 
-### Desventajas
+### 4.2. Desventajas
 
 1. Uso de estructura simple
 1. Solo puede proporcionar seguridad mínima a la información
 1. La frecuencia del patrón de letras proporciona una gran pista para descifrar el mensaje completo.
 
-## Rot13
+## 5. Rot13
 
 El ROT13 no está pensado para los casos en los que el secreto tiene alguna importancia.
 
 El efecto real del ROT13 es simplemente asegurarse de que el lector de un mensaje tenga que descifrarlo conscientemente, lo que normalmente suele implicar ejecutar el comando en cuestión en el software que lee el mensaje. En lugar de proteger un mensaje confidencial de los lectores no autorizados, el ROT13 salvaguarda a los lectores autorizados del material que pueden no querer leer involuntariamente, como los spoilers en una crítica de un libro o una película.
 
 
-## 3. Cifrado de Polibio 
+## 6. Cifrado de Polibio 
 
 Se trata de un algoritmo trivial, donde cada letra del alfabeto es reemplazada por las coordenadas de su posición en un cuadrado.
 
@@ -171,7 +171,7 @@ _Clave del cifrado de Polibio: Murcielago_
   </div>
 </details>
 
-## Cifrado de Francmason
+## 7. Cifrado de Francmason
 
 El cifrado francmasón es un cifrado por sustitución simple que cambia las letras por símbolos basándose en un diagrama. 
 
@@ -188,13 +188,13 @@ _Ejemplo de Francmason_
 {:.question}
 Escribir "IES Tiempos Modernos" con el cifrado de Francmason. 
 
-## Tipos de cifrado
+## 8. Tipos de cifrado
 
 Existen 2 tipos de cifrados:
 - Monoalfabéticos
 - Polialfabéticos
 
-### Cifrados monoalfabéticos
+### 8.1. Cifrados monoalfabéticos
 
 Un sistema de cifrado es monoalfabético cuando cada carácter se sustituye siempre por un determinado carácter del alfabeto del texto cifrado.
 
@@ -248,7 +248,7 @@ Todos los vistos hasta ahora: César, ROT13, Polibio y Francmason
 {:.question}
 ¿Cuáles de los algoritmos vistos tiene un cifrado polialfabético? ¿Qué quiere decir esto?
 
-### Cifrados polialfabéticos 
+### 8.2. Cifrados polialfabéticos 
 
 Como ya se vio en el apartado dedicado a los criptosistemas monoalfabéticos, su principal debilidad es que el texto cifrado mantiene la misma distribución de frecuencia de caracteres que tiene el texto claro original, 
 
@@ -261,7 +261,7 @@ En los cifrados polialfabéticos la sustitución aplicada a cada caracter varía
 En realidad corresponde a una aplicación cíclica de n cifrados de sustitución monoalfabeto.
 
 
-## 4. Cifrado de Vigenère
+## 9. Cifrado de Vigenère
 
 Si por ejemplo se quiere cifrar el mensaje “Dieu protège la France” con la clave LOUIS se procede de la siguiente forma. 
 
@@ -304,7 +304,7 @@ TODO
   </div>
 </details>
 
-## Criptografía moderna
+## 10. Criptografía moderna
 
 Con la criptografía moderna se intenta garantizar las siguientes propiedades deseables en la comunicación de información de forma segura (a estas propiedades se las conoce como funciones o servicios de seguridad):
 
@@ -324,7 +324,7 @@ Ahora toca adentrarse en los métodos criptográficos modernos como la criptogr
 - Funciones hash o de resumen (que no cumplen estrictamente la función de confidencialidad para la que está destinada la criptografía, puesto que es un cifrado irreversible)
 
 
-## 5. Cifrado simétrico y asimétrico
+## 11. Cifrado simétrico y asimétrico
 
 Los más utilizados actualmente son: 
 
@@ -355,7 +355,7 @@ Los más utilizados actualmente son:
 ¿Por qué en el cifrado simétrico hay más llaves que cifrado asimétrico?
 
 
-## 6. Cifrado simétrico
+## 12. Cifrado simétrico
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SlSmI18T2Ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -373,7 +373,7 @@ Los más utilizados actualmente son:
 ¿Por qué existe el cifrado por bloque y cifrado por flujo?
 
 
-## 7. Cifrado asimétrico
+## 13. Cifrado asimétrico
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SIIqLgqRMCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -388,7 +388,7 @@ Los más utilizados actualmente son:
 ¿Con que firmamos si queremos autenticación?
 
 
-## 8. Firma electrónica
+## 14. Firma electrónica
 
 La firma electrónica es un conjunto de datos electrónicos que acompañan o que están asociados a un documento electrónico y cuyas funciones básicas son:
 
@@ -398,7 +398,7 @@ La firma electrónica es un conjunto de datos electrónicos que acompañan o que
 
 Generalmente, la ley equipara la firma electrónica a la firma manuscrita.
 
-### 8.1. Proceso básico de firma electrónica
+### 14.1. Proceso básico de firma electrónica
 
 El proceso básico que se sigue para la firma electrónica es el siguiente:
 
@@ -407,7 +407,7 @@ El proceso básico que se sigue para la firma electrónica es el siguiente:
 1. La aplicación utiliza la clave privada para codificar el resumen.
 1. La aplicación crea otro documento electrónico que contiene ese resumen codificado. Este nuevo documento es la firma electrónica.
 
-## 9. Firma digital
+## 15. Firma digital
 
 <details class="card mb-2">
   <summary class="card-header question">¿Es lo mismo firma electrónica que firma digital?</summary>
@@ -431,7 +431,7 @@ _Proceso de firma digital_
 ![Proceso de firma digital](/assets/img/criptografia/procesoFirmaDigital2.png)
 _Proceso de firma digital_
 
-## 10. PKI
+## 16. PKI
 
 PKI (Public Key Infraestructure o Infraestructura de clave pública) es un conjunto de roles, políticas, hardware, software y procedimientos necesarios para crear, administrar, distribuir, usar, almacenar y revocar certificados digitales y administrar el cifrado de clave pública.
 
@@ -442,7 +442,7 @@ Se asegura:
 - **Identificación**: Mecanismo o proceso que provee la capacidad de identificar a un usuario de un sistema.
 - **Autenticación**: Permite verificar la identidad o asegurar que un usuario es quien dice ser.
 
-### 10.1. Elementos básicos de una PKI
+### 16.1. Elementos básicos de una PKI
 
 ![Elementos básicos de una PKI](/assets/img/criptografia/elementosBasicosDePki.png)
 _Elementos básicos de una PKI_
@@ -472,7 +472,7 @@ _Elementos básicos de una PKI_
 ¿Qué información hay en el fichero /etc/shadow? ¿Qué es el salt o salto y para qué sirve?
 
 
-## 11. Bibliografía
+## 17. Bibliografía
 
 - [Cifrado César](https://www.dcode.fr/caesar-cipher)
 - [Cifrado de Vigenere](https://www.dcode.fr/cifrado-vigenere)

@@ -21,12 +21,13 @@ La entrega de esta práctica debe ser en formato físico manuscrito. Asegúrate 
 
 1. Debe contener una portada con título, nombre de la asignatura, curso, autor y fecha de realización.
 1. Debe tener cada página numerada.
-2. Cada actividad.
+2. Las actividades deberán estar numeradas y ordenadas de manera que se ignore el "3.". Por ejemplo, la sección "3.1. Actividad" será "1. Actividad" o "Actividad 1" en la entrega del alumno.
 3. Sin faltas ortográficas.
+4. Se valorará la limpieza y presentación.
 
 ## 3. Actividades
 
-A continuación se listan las actividades que se deben realizar. Las actividades deberán estar numeradas de manera que se ignore el "3.". Por ejemplo, la sección "3.1. Actividad" será "1. Actividad" o "Actividad 1" en la entrega del alumno.
+A continuación se listan las actividades que se deben realizar.
 
 ### 3.1. Actividad
 
@@ -104,30 +105,30 @@ Clasifica las siguientes redes por el área de distribución:
 
 ¿Qué topología tiene la red local de clase? ¿Por qué?
 
-### 3.16. Actividad
+### 3.15. Actividad
 
 Explica cómo se cumple el modelo cliente-servidor en el caso de que un usuario de Internet accede a un sitio web.
 
-### 3.18. Actividad
+### 3.16. Actividad
 
 Piensa y escribe un ejemplo de cada tipo de direccionalidad de los datos.
 
-### 3.19. Actividad
+### 3.17. Actividad
 
 Razona si la red Internet es una interred.
 
-### 3.20. Actividad
+### 3.18. Actividad
 
 HTML es un estándar para el formato de páginas web ¿De qué tipo? Justifica tu respuesta.
 
-### 3.21. Actividad
+### 3.19. Actividad
 
 ¿Qué organismo de estandarización se encarga de las redes locales wireless?
 
-### 3.22. Actividad
+### 3.20. Actividad
 
 ¿Qué ocurriría en cada una de las topologías estudiadas si se rompiera un enlace (cable) de red?
 
-### 3.23. Actividad
+### 3.21. Actividad
 
 ¿De qué se encarga el grupo IEEE 802.15?
