@@ -263,6 +263,8 @@ Esta última nomenclatura ha sido adoptada por Ubuntu y por Apple pero no por Mi
 - Velocidad = 3.072 KB * 1.024 B / 8 seg
 - Velocidad = 3.145.728 B / 8 seg
 - Velocidad = 3.145.728 * 8 b / 8 seg
+- Velocidad = 3.145.728 b / seg
+- Velocidad = 3.145,728 Kb / seg
 - Velocidad = 3,145728 Mb / seg 
 - Velocidad = 3,145728 Mbps
   
