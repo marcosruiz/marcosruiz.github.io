@@ -95,3 +95,19 @@ Busca un cifrado polialfabético que no hayamos visto en clase y explícalo.
 
 Cifra el mensaje “IES Tiempos Modernos” con la clave CPU usando el cifrado de Vigenère.
 
+### 3.15. Actividad
+
+Ver el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FhP9DkdCPQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+y responder a las siguientes preguntas:
+
+1. ¿Qué diferencia hay entre un hacker y un cracker?
+1. ¿Qué diferencia hay entre los hackers white hat, grey hat y black hat?
+1. ¿Qué es un exploit?
+1. ¿En qué consiste la inyección SQL?
+1. ¿Qué es un zero day vulnerability?
+1. ¿Qué es WordPress? ¿Es popular?
+1. ¿Quién es el experto en ciberseguridad más famoso de España?
+
