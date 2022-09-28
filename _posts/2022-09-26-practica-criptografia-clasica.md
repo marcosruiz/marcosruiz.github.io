@@ -32,9 +32,6 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
 10. Para las actividades a mano se deberá hacer una foto a la resolución del ejercicio y añadirla al PDF. 
 
-> ¡Aeducar tiene un límite de 2 MB para subir las tareas!
-{:.prompt-warning}
-
 ## 3. Actividades
 
 A continuación se listan las actividades que se deben realizar.
@@ -57,7 +54,7 @@ Desencripta el texto "Q QER UQULOZEUE FA E MERS TESAUTEJOGEENORORNGR ZTGO DAEO P
 
 ### 3.5. Actividad (a mano)
 
-¿Cuál es el texto encriptado de “IES Tiempos Modernos” con un desplazamiento = 7 con el alfabeto español (27 letras)?
+¿Cuál es el texto encriptado de "IES Tiempos Modernos" con un desplazamiento = 7 con el alfabeto español (27 letras)?
 
 ### 3.6. Actividad
 
@@ -69,7 +66,7 @@ Desencripta el texto "Q QER UQULOZEUE FA E MERS TESAUTEJOGEENORORNGR ZTGO DAEO P
 
 ### 3.8. Actividad (a mano)
 
-Escribir el texto “IES Tiempos Modernos” cifrado con el cifrado de Francmason.
+Escribir el texto "IES Tiempos Modernos" cifrado con el cifrado de Francmason.
 
 ### 3.9. Actividad
 
@@ -93,7 +90,7 @@ Busca un cifrado polialfabético que no hayamos visto en clase y explícalo.
 
 ### 3.14. Actividad (a mano)
 
-Cifra el mensaje “IES Tiempos Modernos” con la clave CPU usando el cifrado de Vigenère.
+Cifra el mensaje "IES Tiempos Modernos" con la clave CPU usando el cifrado de Vigenère.
 
 ### 3.15. Actividad
 

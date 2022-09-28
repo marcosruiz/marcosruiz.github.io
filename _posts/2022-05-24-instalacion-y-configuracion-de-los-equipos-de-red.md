@@ -190,7 +190,7 @@ Si el límite máximo de un cable Ethernet es de 100m. ¿Puede ser esta distanci
 
 ### 3.2. LLC
 
-LLC (“Logical Link Control”) o Control de enlace lógico es el encargado de la transmisión de tramas entre máquinas conectadas sin nodos intermedios entre ellas. Sus funciones son:
+LLC ("Logical Link Control") o Control de enlace lógico es el encargado de la transmisión de tramas entre máquinas conectadas sin nodos intermedios entre ellas. Sus funciones son:
 
 - **Proporcionar al nivel de red una interfaz uniforme**, es decir, independiente de la topología de red.
 - **Control de errores**, es decir, comprobación y reenvío de tramas.

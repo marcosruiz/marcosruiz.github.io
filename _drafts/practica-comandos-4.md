@@ -90,7 +90,7 @@ Duración estimada : 10 minutos
 10. Borre todos los caracteres situados desde el cursor hasta el final de línea.
 11. Sin utilizar las teclas de dirección del teclado, desplace el cursor seis caracteres hacia la izquierda.
 12. Borre todos los caracteres situados desde el inicio de línea hasta el cursor.
-13. Pegue al final de línea el texto que acaba de ”cortar”.
+13. Pegue al final de línea el texto que acaba de "cortar".
 14. Borre la totalidad de la línea.
 15. Copie la última línea del archivo y péguela al inicio del archivo.
 16. Anule el último comando. ¿Es posible anular también los comandos anteriores?

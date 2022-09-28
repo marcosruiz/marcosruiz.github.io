@@ -85,9 +85,9 @@ Cada lenguaje tiene un determinado número de palabras reservadas dependiendo de
 
 Las variables en programación son como un contenedor para diferentes tipos de datos. Para cada variable, se necesita especificar qué tipo de datos contendrá, cuál es el nombre de la variable y qué valor se le asigna.
 
-Podemos pensar en ellas como en botes. Digamos que tenemos dos botes, uno para galletas y otro para palabras, estos son los tipos de datos. Ahora hay que darle un nombre a cada bote; cookieJar (bote de galletas) y jarOfWord (bote de palabras). Ahora se decide qué poner en cada bote. En el cookieJar ponemos una galleta de chocolate y en el jarOfWord ponemos la palabra “programa”. Así, cada bote tiene un valor.
+Podemos pensar en ellas como en botes. Digamos que tenemos dos botes, uno para galletas y otro para palabras, estos son los tipos de datos. Ahora hay que darle un nombre a cada bote; cookieJar (bote de galletas) y jarOfWord (bote de palabras). Ahora se decide qué poner en cada bote. En el cookieJar ponemos una galleta de chocolate y en el jarOfWord ponemos la palabra "programa". Así, cada bote tiene un valor.
 
-Se puede cambiar el contenido de los botes, su valor, en cualquier momento, pero siempre y cuando sea del mismo tipo. Por ejemplo, puede cambiarse la galleta de chocolate por otra de mantequilla y “programa” por “spaceinvader”.
+Se puede cambiar el contenido de los botes, su valor, en cualquier momento, pero siempre y cuando sea del mismo tipo. Por ejemplo, puede cambiarse la galleta de chocolate por otra de mantequilla y "programa" por "spaceinvader".
 
 ![img-description](/assets/img/iniciacion-a-la-programacion-2/jar.png)
 
@@ -108,7 +108,7 @@ Podríamos clasificar las variables según distintos criterios:
 - **Variables alfanuméricas:**
     - Variables para datos de tipo carácter (tipo char); almacenan un único carácter (letra, signo o número)
     - Variables para datos de tipo cadena (tipo string); almacenan un conjunto de carácteres.
-- **Variables booleanas o lógicas:** Pueden almacenar sólo valores de lógica binaria (dos estados, “true” o “false”).
+- **Variables booleanas o lógicas:** Pueden almacenar sólo valores de lógica binaria (dos estados, "true" o "false").
 
 {:.subsection}
 ### Variables según su ámbito de utilización
@@ -240,7 +240,7 @@ Así, muchos tipos de sentencias incorporan expresiones aritméticas o lógicas 
 
 Las sentencias son los elementos básicos en que se divide el código de un programa de un determinado lenguaje de programación. Son las instrucciones u órdenes que se le dan al programa para realizar una tarea específica (mostrar un mensaje en la pantalla, declarar una variable, inicializarla, llamar a una función, etc.).
 
-Las sentencias acaban con “;”, este carácter separa una sentencia de la siguiente. Podemos decir que cualquier instrucción acabada en “;”, forma una sentencia.
+Las sentencias acaban con ";", este carácter separa una sentencia de la siguiente. Podemos decir que cualquier instrucción acabada en ";", forma una sentencia.
 
 Normalmente, las sentencias se ponen unas debajo de otras, aunque sentencias cortas pueden colocarse en una misma línea. Son ejemplos de sentencias:
 
@@ -278,7 +278,7 @@ Una función es un conjunto de líneas de código que realizan una tarea determi
 
 Una función tiene tres componentes importantes: los parámetros o valores que recibe la función como entrada, el código de la función con las operaciones a realizar y el resultado (o valor de retorno), que es el valor final que entrega la función. En esencia, una función es un mini programa. Sus tres componentes son análogos a la entrada, el proceso y la salida de un programa.
 
-Cuando una función es “llamada”, se ejecuta el código en su interior, y una vez que ésta finalice, el programa regresa al punto desde el cual la función fue llamada.
+Cuando una función es "llamada", se ejecuta el código en su interior, y una vez que ésta finalice, el programa regresa al punto desde el cual la función fue llamada.
 
 ![img-description](/assets/img/iniciacion-a-la-programacion-2/funciones.png)
 

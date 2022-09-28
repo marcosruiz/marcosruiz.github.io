@@ -181,7 +181,7 @@ La operación se suele comparar con el comportamiento de un grupo de personas qu
 
 Una vez que el interlocutor ha terminado su contribución por el momento, aguardamos un tiempo antes de empezar a hablar para asegurarnos de que este u otro interlocutor no va a iniciar una nueva contribución. Si accidentalmente empezamos a hablar al mismo tiempo que otra persona, dejamos de intentarlo y aguardamos de nuevo antes de volver a empezar otra vez.
 
-El protocolo CSMA/CD se basa también en un procedimiento muy similar. Primero, la estación examina el medio de transmisión. Mientras el medio esté ocupado, la estación sigue examinándolo. Solo cuando el medio se queda libre, la estación envía un paquete de datos durante un cierto tiempo (conocido como “espacio entre tramas”). Mientras tanto, el transmisor continúa examinando el medio para detectar colisiones. Si ninguna otra estación ha intentado enviar sus datos a través del medio compartido antes del final de la transmisión, es decir, cuando no se produce ninguna colisión, la transmisión se realiza correctamente.
+El protocolo CSMA/CD se basa también en un procedimiento muy similar. Primero, la estación examina el medio de transmisión. Mientras el medio esté ocupado, la estación sigue examinándolo. Solo cuando el medio se queda libre, la estación envía un paquete de datos durante un cierto tiempo (conocido como "espacio entre tramas"). Mientras tanto, el transmisor continúa examinando el medio para detectar colisiones. Si ninguna otra estación ha intentado enviar sus datos a través del medio compartido antes del final de la transmisión, es decir, cuando no se produce ninguna colisión, la transmisión se realiza correctamente.
 
 En cambio, cuando se detecta una colisión, la estación que la detecta interrumpe de inmediato la transmisión y en su lugar envía una señal de interferencia (señal JAM), que informa a todas las estaciones de la red de dicha colisión. La estación espera un tiempo aleatorio (Backoff) y vuelve a intentar la transmisión. El Backoff debe ser aleatorio para que no se produzca de inmediato una segunda colisión. Puesto que las dos estaciones seleccionan un valor aleatorio, la probabilidad de que ambas estaciones inicien un intento de transmisión al mismo tiempo es baja.
 
@@ -309,7 +309,7 @@ Por tanto, cada nodo debe recibir, enviar y retransmitir datos.
 
 ![img-description](redMalla.png){: w="250" }
 
-La red de Internet se basa en una topología de malla (en la red de área amplia “WAN”, garantiza la estabilidad en caso de falla de un nodo).
+La red de Internet se basa en una topología de malla (en la red de área amplia "WAN", garantiza la estabilidad en caso de falla de un nodo).
 
 ### 6.6. Red en malla totalmente conexa
 

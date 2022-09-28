@@ -46,7 +46,7 @@ t1.area(); // Área 3.0
 t2.area(); // Área 14.0
 ```
 
-De momento no te preocupes por entender el código del todo, pero verás que hemos definido una clase triángulo la cual tiene dos propiedades base y altura. Estas propiedades las hemos definido como “private” lo cual hace que no puedan ser visibles desde fuera.
+De momento no te preocupes por entender el código del todo, pero verás que hemos definido una clase triángulo la cual tiene dos propiedades base y altura. Estas propiedades las hemos definido como "private" lo cual hace que no puedan ser visibles desde fuera.
 
 ```java
 private long base;
@@ -255,7 +255,7 @@ Para los caracteres utilizaremos comillas simples para delimitarlos, mientras qu
 
 ```java
 char variableChar = ‘a’;
-String variableString = “cadena”;
+String variableString = "cadena";
 ```
 
 {:.section}
@@ -367,7 +367,7 @@ Ir al artículo [Tutorial Java](/posts/tutorial-java).
 
 Una cadena de texto no deja de ser más que la sucesión de un conjunto de caracteres alfanuméricos, signos de puntuación y espacios en blanco con más o menos sentido.
 
-Podemos encontrarnos desde la archiconocida cadena “Hola Mundo” y la no menos “Mi primera cadena de texto”, pasando por las cadenas de texto personalizadas “Víctor”, “Víctor Cuervo”, las cadenas de depuración “¿Aquí?”, “Paso 1”, “Paso 2”,… hasta las inclasificables “asdf”.
+Podemos encontrarnos desde la archiconocida cadena "Hola Mundo" y la no menos "Mi primera cadena de texto", pasando por las cadenas de texto personalizadas "Víctor", "Víctor Cuervo", las cadenas de depuración "¿Aquí?", "Paso 1", "Paso 2",… hasta las inclasificables "asdf".
 
 Todas ellas serán representadas en java con la clase String y StringBuffer. Aunque de momento nos centraremos en la primera.
 

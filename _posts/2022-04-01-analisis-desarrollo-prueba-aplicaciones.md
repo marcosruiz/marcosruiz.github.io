@@ -192,7 +192,7 @@ _Ejemplo de diagrama de paquetes_
 
 En la etapa de implementación del proceso de desarrollo de software, traducimos el diseño anterior al código. Se programan los requisitos que se han especificado anteriormente, realizando los algoritmos necesarios.
 
-Esta es, por tanto, la primera etapa en la que comenzamos a obtener resultados “visibles”.
+Esta es, por tanto, la primera etapa en la que comenzamos a obtener resultados "visibles".
 
 Leer el artículo [Manual Java](/posts/manual-java/).
 

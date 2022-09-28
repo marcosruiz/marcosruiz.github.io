@@ -20,7 +20,7 @@ El canal de comunicación puede estar acechado por terceras personas, con la int
 
 Actualmente, todas nuestras conversaciones (telefonía móvil y fija, Skype, Whatsapp, correos electrónicos…) usan redes compartidas con otros usuarios y que son administradas por empresas que no son la nuestra.
 
-Incluso dentro de nuestra organización podemos tener empleados “traidores”.
+Incluso dentro de nuestra organización podemos tener empleados "traidores".
 
 {:.question}
 ¿Cómo se llaman estos traidores?
@@ -72,7 +72,7 @@ El sistema de encriptación funcionaba de la siguiente manera:
 3. Se desenrollaba la cinta y el mensaje quedaba escrito con las letras desordenadas.
 4. La persona que recibía un mensaje, para leerlo, sólo necesitaba tener un palo del mismo diámetro y volver a enrollar la cinta.
 
-El método de la escitala era extremadamente sencillo, como también lo era el que utilizó Julio César y que veremos en el siguiente apartado.
+El método de la escítala era extremadamente sencillo, como también lo era el que utilizó Julio César y que veremos en el siguiente apartado.
 
 {:.question}
 ¿Cómo quedaría el cifrado del texto "send more troops to southern flank and…" con un número de giros de banda de 10?
@@ -91,7 +91,7 @@ _Cifrado César_
 
 
 <details class="card mb-2">
-  <summary class="card-header question">Sin ordenador, ¿Cuál es el texto encriptado de “El propósito de las copias de seguridad es la recuperación de datos” con un desplazamiento = 5 con el alfabeto español (27 letras)?</summary>
+  <summary class="card-header question">Sin ordenador, ¿Cuál es el texto encriptado de "El propósito de las copias de seguridad es la recuperación de datos" con un desplazamiento = 5 con el alfabeto español (27 letras)?</summary>
   <div class="card-body" markdown="1">
 
 Jp uwtuóxnyt ij pfx htunfx ij xjlzwnifi jx pf wjhzujwfhnór ij ifytx
@@ -162,7 +162,7 @@ _Clave del cifrado de Polibio_
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question">Establece el tablero de Polibio correspondiente al alfabeto desordenado por medio de la palabra clave “murcielago”. Encripta después la frase: “IES Tiempos Modernos”.</summary>
+  <summary class="card-header question">Establece el tablero de Polibio correspondiente al alfabeto desordenado por medio de la palabra clave "murcielago". Encripta después la frase: "IES Tiempos Modernos".</summary>
   <div class="card-body" markdown="1">
 
 ![Clave del cifrado de Polibio: Murcielago](/assets/img/criptografia/cifradoPolibioMurcielago.png)
@@ -171,19 +171,22 @@ _Clave del cifrado de Polibio: Murcielago_
   </div>
 </details>
 
-## 7. Cifrado de Francmason
+## 7. Cifrado de Francmasón
 
-El cifrado francmasón es un cifrado por sustitución simple que cambia las letras por símbolos basándose en un diagrama. 
+El cifrado Francmasón es un cifrado por sustitución simple que cambia las letras por símbolos basándose en un diagrama.
 
 Sin embargo, el uso de símbolos no impide el criptoanálisis (Criptoanálisis es idéntico al de otros métodos de cifrado por substitución simple).
 
 El método fue desarrollado por los francmasones a principios de los años 1700 para mantener registros y para la correspondencia.
 
-![Clave de Francmason](/assets/img/criptografia/cifradoFrancmason.png)
-_Clave de Francmason_
+![Clave de Francmasón](/assets/img/criptografia/cifradoFrancmason.png)
+_Clave de Francmasón_
 
-![Ejemplo de Francmason](/assets/img/criptografia/ejemploFrancmason.png)
-_Ejemplo de Francmason_
+![Ejemplo de Francmasón](/assets/img/criptografia/ejemploFrancmason.png)
+_Ejemplo de Francmasón_
+
+{:.question}
+¿Quienes son los francmasones/masones? ¿Qué es una logia?
 
 {:.question}
 Escribir "IES Tiempos Modernos" con el cifrado de Francmason. 
@@ -200,7 +203,7 @@ Un sistema de cifrado es monoalfabético cuando cada carácter se sustituye siem
 
 La clave de un cifrado monoalfabético es el alfabeto de cifrado. Para un alfabeto de 26 letras, el número de claves (alfabetos) distintas es 26! 
 
-26! = 4.0329146112661E+26 = 403291461126605635584000000. 
+26! = 4,0329146112661E+26 = 403.291.461.126.605.635.584.000.000. 
 
 Descifrar un mensaje ensayando todas las posibles claves, lo que se conoce como ataque por fuerza bruta, es una tarea poco menos que imposible.
 
@@ -263,7 +266,7 @@ En realidad corresponde a una aplicación cíclica de n cifrados de sustitución
 
 ## 9. Cifrado de Vigenère
 
-Si por ejemplo se quiere cifrar el mensaje “Dieu protège la France” con la clave LOUIS se procede de la siguiente forma. 
+Si por ejemplo se quiere cifrar el mensaje "Dieu protège la France" con la clave LOUIS se procede de la siguiente forma. 
 
 Se escribe el texto y la clave debajo repetida tantas veces como haga falta:
 
@@ -272,11 +275,11 @@ _Ejemplo de Vigenère con clave Louis_
 
 Ahora, cada letra se cifra con el alfabeto que empieza por la letra que tiene debajo:
 
-- d en el alfabeto L se corresponde con la O.
-- i en el alfabeto O se corresponde con la W.
-- e en el alfabeto U se corresponde con la Y.
-- u en el alfabeto I se corresponde con la C.
-- p en el alfabeto S se corresponde con la H.
+- D en el alfabeto L se corresponde con la O.
+- I en el alfabeto O se corresponde con la W.
+- E en el alfabeto U se corresponde con la Y.
+- U en el alfabeto I se corresponde con la C.
+- P en el alfabeto S se corresponde con la H.
 
 <details class="card mb-2">
   <summary class="card-header">Solución</summary>
@@ -295,7 +298,7 @@ _Ejemplo de cifrado de Vigenère sin tabla_
 _Tabla de Vigenère_
 
 <details class="card mb-2">
-  <summary class="card-header question">Cifra el mensaje “IES Tiempos Modernos” con la clave CPU usando el cifrado de Vigenère. </summary>
+  <summary class="card-header question">Cifra el mensaje "IES Tiempos Modernos" con la clave CPU usando el cifrado de Vigenère. </summary>
   <div class="card-body" markdown="1">
 
 TODO

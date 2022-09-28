@@ -391,7 +391,7 @@ Se trata de vulnerabilidades de sistemas que todavía no son conocidas por el p�
 
 ### Grey hats
 
-Hacker entre white hat y black hat. Son personas que realizan ambos tipos de “sombrero”, tanto negro como blanco. Buscan vulnerabilidad en el sistema con o sin el permiso de los propietarios y si encuentran un fallo, se comunican con el propietario y piden un precio a cambio de la solución del problema y si no acceden el se encarga de hacer pública la vulnerabilidad, la cual le daría problemas a la empresa.
+Hacker entre white hat y black hat. Son personas que realizan ambos tipos de "sombrero", tanto negro como blanco. Buscan vulnerabilidad en el sistema con o sin el permiso de los propietarios y si encuentran un fallo, se comunican con el propietario y piden un precio a cambio de la solución del problema y si no acceden el se encarga de hacer pública la vulnerabilidad, la cual le daría problemas a la empresa.
 
 ### 6.1. Script Kiddies, crashers, lamers o packet monkeys
 

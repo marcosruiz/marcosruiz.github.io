@@ -92,7 +92,7 @@ Leer el artículo [DMZ: utiliza la zona desmilitarizada y protege tu red interna
 {:.section}
 ## ¿Qué es la red perimetral?
 
-Se conoce como perímetro de la red a la “frontera” entre el exterior y los ordenadores y servidores internos. Los elementos que la componen son:
+Se conoce como perímetro de la red a la "frontera" entre el exterior y los ordenadores y servidores internos. Los elementos que la componen son:
 
 - **Routers frontera**: Es un dispositivo situado entre la red interna de y las redes de otros proveedores que intercambian el tráfico con nosotros y que se encarga de dirigir el tráfico de datos de un lado a otro. El último router que controlamos antes de Internet. Primera y última línea de defensa. Filtrado inicial y final. 
 - **Cortafuegos (firewalls)**: Es una herramienta diseñada para controlar las conexiones. Este puede permitir, limitar, cifrar, descifrar, el tráfico entre equipos o redes sobre la base de un conjunto de normas y otros criterios.

@@ -117,7 +117,7 @@ La respuesta del éxito actual de Google es sencilla: fue el primer buscador, co
 
 Google nació a finales de los años 90, como la tesis doctoral de Larry Page y Sergey Brin. En 1998 se estrenó en Internet y desde entonces se ha consagrado como el principal motor de búsqueda en el mundo.
 
-Su principal innovación fue tener en cuenta la autoridad de las páginas, ganada a través de enlaces. Google desarrolló un sistema para cuantificar esta autoridad, y lo llamó “PageRank”.
+Su principal innovación fue tener en cuenta la autoridad de las páginas, ganada a través de enlaces. Google desarrolló un sistema para cuantificar esta autoridad, y lo llamó "PageRank".
 
 Aunque hay que agregar que, a consecuencia de la gran importancia que Google otorgaba a los enlaces, muchos -si no es que todos- sitios web han estado creando enlaces no orgánicos durante años, consiguiendo más autoridad de la que correspondería de forma natural.
 

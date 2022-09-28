@@ -521,11 +521,11 @@ Resolviendo detallesorballo.com (detallesorballo.com)... 82.98.155.205
 Conectando con detallesorballo.com (detallesorballo.com)[82.98.155.205]:443... conectado.
 Petición HTTP enviada, esperando respuesta... 200 OK
 Longitud: 17247 (17K) [image/jpeg]
-Guardando como: “imagen-de-prueba-320x240-1.jpg”
+Guardando como: "imagen-de-prueba-320x240-1.jpg"
 
 imagen-de-prueba-320x240-1.jpg                              100%[=========================================================================================================================================>]  16,84K  --.-KB/s    en 0s      
 
-2022-01-06 16:16:07 (126 MB/s) - “imagen-de-prueba-320x240-1.jpg” guardado [17247/17247]
+2022-01-06 16:16:07 (126 MB/s) - "imagen-de-prueba-320x240-1.jpg" guardado [17247/17247]
 $ ls
 el_quijote.txt  imagen-de-prueba-320x240-1.jpg
 ```

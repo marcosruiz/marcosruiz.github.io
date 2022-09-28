@@ -159,7 +159,7 @@ _Caja blanca_
 
 Los casos de prueba obtenidos del conjunto básico garantizan que durante la prueba **se ejecuta por lo menos una vez cada sentencia del programa**.
 
-Para la obtención de la medida de la complejidad lógica emplearemos una representación de flujo de control denominada “grafo de flujo” o “grafo del programa”.
+Para la obtención de la medida de la complejidad lógica emplearemos una representación de flujo de control denominada "grafo de flujo" o "grafo del programa".
 
 
 ### 4.1. Pasos para la prueba del camino/ruta básico

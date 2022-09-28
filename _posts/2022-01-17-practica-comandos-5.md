@@ -38,7 +38,7 @@ A continuación se listan las actividades que se deben realizar para esta práct
 
 Duración estimada: 5 minutos
 
-1. Conéctese a la segunda consola virtual texto como el usuario "\<tuNombreDeUsuario\>", otra con “\<tuNombreDeUsuario\>2” y otra con el usuario "root".
+1. Conéctese a la segunda consola virtual texto como el usuario "\<tuNombreDeUsuario\>", otra con "\<tuNombreDeUsuario\>2" y otra con el usuario "root".
 2. Visualice su nombre de conexión y su UID. Proceda del mismo modo para las cuentas "\<tuNombreDeUsuario\>2" y root. Utilice el comando `id`.
 3. Visualice los grupos a los que pertenece. Proceda del mismo modo para las cuentas "\<tuNombreDeUsuario\>2" y root. Utilice el comando `groups`.
 
