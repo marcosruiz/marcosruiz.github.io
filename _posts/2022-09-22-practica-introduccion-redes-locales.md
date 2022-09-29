@@ -132,3 +132,7 @@ HTML es un estándar para el formato de páginas web ¿De qué tipo? Justifica t
 ### 3.21. Actividad
 
 ¿De qué se encarga el grupo IEEE 802.15?
+
+### 3.22. Actividad
+
+En una topología en malla completa, el número de enlaces es elevado. Para 3 nodos hacen falta 3 enlaces, para 4 nodos hacen falta 6 enlaces, para 5 nodos hacen falta 10 enlaces. ¿Cuántos enlaces son necesarios si tenemos 8 nodos?
