@@ -74,7 +74,7 @@ Escribir el texto "IES Tiempos Modernos" cifrado con el cifrado de Francmason.
 
 ### 3.10. Actividad
 
-Realiza un análisis de criptofrecuencia con un texto cualquiera con Cryptool. Haz una o varias capturas.
+Realiza un análisis de criptofrecuencia con un texto cualquiera en español con la aplicación [Cryptool 2](https://www.cryptool.org/en/ct2/downloads). Haz una o varias capturas.
 
 ### 3.11. Actividad
 
@@ -108,3 +108,30 @@ y responder a las siguientes preguntas:
 1. ¿Qué es WordPress? ¿Es popular?
 1. ¿Quién es el experto en ciberseguridad más famoso de España?
 
+### 3.16. Actividad
+
+Ver el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8iJLbYNsIYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+y responder a las siguientes preguntas:
+
+1. ¿Es lo mismo un servidor lo mismo que un PC?
+2. ¿Qué es un ataque DoS?
+3. ¿Qué es un ataque DDoS?
+4. ¿Qué es una botnet? ¿Para qué se utilizan?
+5. ¿Por qué funcionó Mirai?
+6. ¿Que hacia el software de Mirai para no ser detectado?
+7. ¿Qué es el IoT?
+8. ¿Para qué crearon Mirai?
+9. ¿Cómo encontraron a los creadores de Mirai?
+
+### 3.17. Actividad
+
+Usa la herramienta Cryptool 2 para encriptar el texto de una canción en español con los siguientes cifrados (cada alumno debe usar una canción diferente):
+
+- Cifrado con la escítala y desencríptalo con un ataque de fuerza bruta.
+- Cifrado César con desplazamiento 15 y desencríptalo con fuerza bruta y con un análisis de frecuencia.
+- Cifrado de Polibio (ADFGVX Cipher) y desencríptalo con un ataque de diccionario.
+
+Haz capturas que demuestren la realización de la actividad.

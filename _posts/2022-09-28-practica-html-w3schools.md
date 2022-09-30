@@ -46,4 +46,11 @@ Realiza los ejercicios del siguiente enlace https://www.w3schools.com/html/exerc
 
 Asegúrate de que se te añaden en tu apartado de "My learning" cuando lleves dos o tres ejercicios hechos.
 
-Haz una o varias capturas cuando completes los TODOS los ejercicios, de manera que quede demostrado que con tu cuenta has realizado todos los ejercicios y tienes la estrella correspondiente.
+Haz una o varias capturas cuando completes los 88 los ejercicios, de manera que quede demostrado que con tu cuenta has realizado todos los ejercicios y tienes la estrella correspondiente. Algo como lo que se muestra a continuación.
+
+![Ejercicios HTML finalizados](ejerciciosHtmlFinalizados.png)
+_Ejercicios HTML finalizados_
+
+### Voluntario: Cuestionario
+
+Tras la realización de los ejercicios estás preparado para realizar el [HTML Quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML) donde puedes poner a prueba tus nuevos conocimientos.
