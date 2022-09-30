@@ -44,6 +44,6 @@ Ir al apartado [My learning](https://my-learning.w3schools.com/) y haz una captu
 
 Realiza los ejercicios del siguiente enlace https://www.w3schools.com/html/exercise.asp. 
 
-Asegúrate de que se te añaden en tu apartado de “My learning” cuando lleves dos o tres ejercicios hechos.
+Asegúrate de que se te añaden en tu apartado de "My learning" cuando lleves dos o tres ejercicios hechos.
 
-Haz una o varias capturas cuando completes los 88 ejercicios, de manera que quede demostrado que con tu cuenta has realizado todos los ejercicios y tienes la estrella correspondiente.
+Haz una o varias capturas cuando completes los TODOS los ejercicios, de manera que quede demostrado que con tu cuenta has realizado todos los ejercicios y tienes la estrella correspondiente.
