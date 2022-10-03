@@ -83,4 +83,30 @@ Comenta cuales son los medios físicos más comunes para transmitir información
 ### 3.11. Actividad
 ¿Qué diferencias existen entre un adaptador cableado y uno inalámbrico?
 
+### 3.12. Actividad
 
+¿Cuál es la diferencia entre banda base y banda ancha? ¿Funciona Ethernet por banda base o por banda ancha?
+
+### 3.13. Actividad
+
+¿El protocolo Ethernet (IEEE 802.3) funciona sobre el medio físico de la fibra óptica?
+
+### 3.14. Actividad
+
+¿Qué diferencias y similitudes hay entre el protocolo Ethernet y el protocolo IEEE 802.3?
+
+### 3.15. Actividad
+
+¿Qué es el IEEE y cual es su objetivo?
+
+### 3.16. Actividad
+
+Dos razones por lo que se trenzan los pares trenzados
+
+### 3.17. Actividad
+
+¿Por qué el cable de fibra óptica de vuestra casa puede girar esquinas de 90º?
+
+### 3.18. Actividad
+
+Explica por que es necesario utilizar un cable cruzado cuando conectamos directamente un PC con otro.

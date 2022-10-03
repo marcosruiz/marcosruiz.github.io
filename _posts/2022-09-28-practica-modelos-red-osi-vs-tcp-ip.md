@@ -107,7 +107,7 @@ _Cabeceras de las capas del modelo de referencia OSI_
 
 ### 3.8. Actividad
 
-Si nos fijamos en la imagen siguiente, ¿Dónde tiene lugar la encapsulación (enpaquetamiento)? ¿y la desencapsulación (desempaquetamiento)?
+Si nos fijamos en la imagen siguiente, ¿Dónde tiene lugar la encapsulación (empaquetamiento)? ¿y la desencapsulación (desempaquetamiento)?
 
 ![img-description](envioYRecepcion.png)
 _Envío y recepción de datos a través de las capas del modelo OSI_

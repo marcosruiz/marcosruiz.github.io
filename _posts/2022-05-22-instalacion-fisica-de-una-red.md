@@ -67,6 +67,7 @@ img_path: /assets/img/instalacion-fisica-de-una-red/
     - [4.9.4. Canaleta](#494-canaleta)
     - [4.9.5. Placas de conectores y rosetas](#495-placas-de-conectores-y-rosetas)
     - [4.9.6. Herramientas utilizadas en la conectorización](#496-herramientas-utilizadas-en-la-conectorización)
+- [Bibliografía](#bibliografía)
 
 <!-- Este comentario está para que no se rompa el div -->
 
@@ -119,6 +120,12 @@ En este caso el medio es un medio guiado, sobre el cual se transmite una onda de
 
   </div>
 </details>
+
+{:.question}
+¿Funciona Ethernet (IEEE 802.3) por banda base o por banda ancha?
+
+{:.question}
+¿Qué tipo de onda se transmite por un cable de cobre de Ethernet? ¿Onda cuadrada o senoidal?
 
 ### 2.2. Limitaciones o perturbaciones en la transmisión
 
@@ -501,7 +508,6 @@ _Cable de red cruzado_
 {:.question}
 ¿Qué sentido tiene cruzar los cables en el cable de red?
 
-
 ### 4.8. Recomendaciones de la instalación del cableado
 
 - **Subsistema troncal (vertical) o backbone**: porta el tráfico a cada planta, y se suele realizar con soportes de gran ancho de banda, como fibra óptica.
@@ -561,3 +567,8 @@ _Bridas_
 
 ![img-description](etiquetasIdentificativas.png){: w="300"}
 _Etiquetas identificativas_
+
+## Bibliografía
+
+- [¿Qué es Ethernet (IEEE 802.3)?](https://www.ionos.es/digitalguide/servidores/know-how/ethernet-ieee-8023/)
+- [Banda base](https://es.wikipedia.org/wiki/Banda_base)

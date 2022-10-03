@@ -440,3 +440,4 @@ La capa de Internet, ¿a quién ofrece servicio?
 - [Qué es el Modelo OSI: Capas y Explicación](https://ccnadesdecero.es/que-es-modelo-osi/)
 - [TCP/IP](https://ccnadesdecero.es/que-es-tcp-ip/)
 - [¿Cuál es la diferencia entre el modelo TCP/IP y el modelo OSI?](https://ccnadesdecero.es/diferencias-modelo-tcp-ip-y-modelo-osi/)
+- [Breve historia de cómo TCP/IP se impuso a OSI, o una de las históricas batallas informática](https://www.javiergarzas.com/2013/09/tcpip-se-impuso-a-osi-2.html)
