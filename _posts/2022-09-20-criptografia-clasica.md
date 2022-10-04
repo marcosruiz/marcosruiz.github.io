@@ -1,8 +1,9 @@
 ---
-title: "Criptografía"
+title: "Criptografía clásica"
 date: 2022-09-20 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr, teoría]
+img_path: /assets/img/criptografia-clasica/
 ---
 
 ## 1. Introducción ¿Por qué cifrar?
@@ -62,7 +63,7 @@ Gobernantes y militares ya la usaron en los primeros estados como Egito, Babilon
 Los espartanos utilizaron allá por el 400 a.c., la escítala, que puede considerarse como el primer sistema de criptografía por transposición (Ocultar el significado real de un texto mediante la alteración del orden de los signos que lo conforman).
 
 
-![Escítala](/assets/img/criptografia/escitala.png)
+![Escítala](escitala.png)
 _Escítala_
 
 El sistema de encriptación funcionaba de la siguiente manera:
@@ -86,7 +87,7 @@ El cifrado César, también conocido como cifrado por desplazamiento, código de
 
 Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
 
-![Cifrado César](/assets/img/criptografia/cifradoCesar.png)
+![Cifrado César](cifradoCesar.png)
 _Cifrado César_
 
 
@@ -126,7 +127,7 @@ Se trata de un algoritmo trivial, donde cada letra del alfabeto es reemplazada p
 
 De esta manera, la codificación consiste en indicar la fila y columna que ocupa cada letra, de forma sucesiva, en el cuadrado. Por ejemplo, la w está en la línea 5 y en la columna 2, y por lo tanto, le corresponde el 52.
 
-![Clave del cifrado de Polibio](/assets/img/criptografia/cifradoPolibio.png)
+![Clave del cifrado de Polibio](cifradoPolibio.png)
 _Clave del cifrado de Polibio_
 
 <details class="card mb-2">
@@ -155,7 +156,7 @@ También puede utilizarse la tabla de Polibio para convertir en números un alfa
   <summary class="card-header question">¿Cómo quedaría la tabla de Polibio si usamos la palabra "MUESCA" para cifrar?</summary>
   <div class="card-body" markdown="1">
 
-![Clave del cifrado de Polibio](/assets/img/criptografia/polibioMuesca.png)
+![Clave del cifrado de Polibio](polibioMuesca.png)
 _Clave del cifrado de Polibio_
 
   </div>
@@ -165,7 +166,7 @@ _Clave del cifrado de Polibio_
   <summary class="card-header question">Establece el tablero de Polibio correspondiente al alfabeto desordenado por medio de la palabra clave "murcielago". Encripta después la frase: "IES Tiempos Modernos".</summary>
   <div class="card-body" markdown="1">
 
-![Clave del cifrado de Polibio: Murcielago](/assets/img/criptografia/cifradoPolibioMurcielago.png)
+![Clave del cifrado de Polibio: Murcielago](cifradoPolibioMurcielago.png)
 _Clave del cifrado de Polibio: Murcielago_
 
   </div>
@@ -179,10 +180,10 @@ Sin embargo, el uso de símbolos no impide el criptoanálisis (Criptoanálisis e
 
 El método fue desarrollado por los francmasones a principios de los años 1700 para mantener registros y para la correspondencia.
 
-![Clave de Francmasón](/assets/img/criptografia/cifradoFrancmason.png)
+![Clave de Francmasón](cifradoFrancmason.png)
 _Clave de Francmasón_
 
-![Ejemplo de Francmasón](/assets/img/criptografia/ejemploFrancmason.png)
+![Ejemplo de Francmasón](ejemploFrancmason.png)
 _Ejemplo de Francmasón_
 
 {:.question}
@@ -263,14 +264,70 @@ En los cifrados polialfabéticos la sustitución aplicada a cada caracter varía
 
 En realidad corresponde a una aplicación cíclica de n cifrados de sustitución monoalfabeto.
 
+## 9. Cifrado de Della Porta
 
-## 9. Cifrado de Vigenère
+Giovanni Battista Della Porta es un famoso científico italiano. En el ámbito de la criptografía su obra más importante data del 1563 y es De Furtivis Literarum Notis.
+
+Estudia los cifrados clásicos y su criptoanálisis, expone también un nuevo método de cifrado. 
+
+La característica principal de este método es la utilización de distintos alfabetos y de una palabra clave. 
+
+El cifrado de Porta original emplea 11 alfabetos distintos. 
+
+La palabra clave nos permite conocer en todo momento cual es el alfabeto que debemos emplear (En el caso del idioma español se deben utilizar 13 alfabetos distintos puesto que utilizamos 26 letras. Se construyen de modo análogo al que utilizó nuestro personaje para el latín).
+
+### 9.1. Funcionamiento
+
+Supongamos que la palabra clave es PORTA. 
+
+Si queremos cifrar cualquier mensaje la primera letra del mensaje está asociada a la letra clave P, la segunda a la O... la sexta vuelve a estar asociada a la P.
+
+Cada alfabeto tiene dos letras que le dan nombre. 
+
+Si la letra clave es P, utilizamos para cifrar el alfabeto que tiene la letra P en su nombre (en nuestro caso es el séptimo alfabeto). Cada letra de la primera fila la sustituimos por la letra que tiene debajo en dicho alfabeto. 
+
+Si la letra que queremos codificar se encuentra en la segunda línea la sustituimos por la letra que se encuentra encima. 
+
+![Tabla de Della Porta](dellaPorta.png)
+_Tabla de Della Porta_
+
+<details class="card mb-2">
+  <summary class="card-header question">Cifra el texto "siemprepapinuncaimpampi" usando la clave "PORTA" </summary>
+  <div class="card-body" markdown="1">
+
+TODO
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+
+## 10. Cifrado de Alberti
+
+Leon Battista Alberti fue uno de los ejemplos de "homo universalis" del Renacimiento. Fue poeta, compositor, pintor, pero sobre todo es conocido como arquitecto. 
+
+En el mundo de la criptografía su aportación más importante es De Componendis Cyphris, escrito en 1466. Es el libro sobre criptografía más antiguo que se conoce en el mundo occidental. Analiza en este libro los cifrados monoalfabéticos explicando el análisis de frecuencias. 
+
+Históricamente es el primero en proponer los cifrados polialfabéticos. 
+
+Aparte de esto, propone un nuevo método de cifrado de su invención que utiliza el ahora conocido como disco de Alberti.
+
+![Disco de Alberti](discoAlberti.png)
+_Disco de Alberti_
+
+## 11. Cifrado de Vigenère
+
+La tabla consiste en los alfabetos escritos 26 veces en diferentes filas, cada alfabeto desplazado cíclicamente a la izquierda en comparación con el alfabeto anterior, correspondiente a los 26 posibles Cifrados César.
+
+En diferentes puntos del proceso de encriptación, el cifrado usa un alfabeto diferente en cada una de las filas. El alfabeto utilizado en cada punto depende de una palabra clave repetitiva.
+
+El descifrado se realiza yendo a la fila de la tabla correspondiente a la clave, encontrando la posición de la letra del texto cifrado en esta fila y luego usando la etiqueta de la columna como texto sin formato.
 
 Si por ejemplo se quiere cifrar el mensaje "Dieu protège la France" con la clave LOUIS se procede de la siguiente forma. 
 
 Se escribe el texto y la clave debajo repetida tantas veces como haga falta:
 
-![Ejemplo de Vigenère con clave Louis](/assets/img/criptografia/louis.png)
+![Ejemplo de Vigenère con clave Louis](louis.png)
 _Ejemplo de Vigenère con clave Louis_
 
 Ahora, cada letra se cifra con el alfabeto que empieza por la letra que tiene debajo:
@@ -291,191 +348,24 @@ El texto cifrado es: OWYCH CCNMY PZUNJ LBWM
 </details>
 
 
-![Ejemplo de cifrado de Vigenère sin tabla](/assets/img/criptografia/cifradoVigenereSinTabla.png)
+![Ejemplo de cifrado de Vigenère sin tabla](cifradoVigenereSinTabla.png)
 _Ejemplo de cifrado de Vigenère sin tabla_
 
-![Tabla de Vigenère](/assets/img/criptografia/cifradoVigenereConTabla.png)
+![Tabla de Vigenère](cifradoVigenereConTabla.png)
 _Tabla de Vigenère_
 
 <details class="card mb-2">
   <summary class="card-header question">Cifra el mensaje "IES Tiempos Modernos" con la clave CPU usando el cifrado de Vigenère. </summary>
   <div class="card-body" markdown="1">
 
-TODO
+KTM Vxyoeiu Biftlpdm
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
 
-## 10. Criptografía moderna
 
-Con la criptografía moderna se intenta garantizar las siguientes propiedades deseables en la comunicación de información de forma segura (a estas propiedades se las conoce como funciones o servicios de seguridad):
-
-1. **Confidencialidad**: solamente los usuarios autorizados tienen acceso a la información.
-2. **Integridad de la información**: garantía ofrecida a los usuarios de que la información original no será alterada, ni intencional ni accidentalmente.
-3. **Autenticación de usuario**: es un proceso que permite al sistema verificar si el usuario que pretende acceder o hacer uso del sistema es quien dice ser.
-4. **Autenticación de remitente**: es el proceso que permite a un usuario certificar que el mensaje recibido fue de hecho enviado por el remitente y no por un suplantador.
-5. **Autenticación del destinatario**: es el proceso que permite garantizar la identidad del usuario destinatario.
-6. **No repudio en origen**: que cuando se reciba un mensaje, el remitente no pueda negar haber enviado dicho mensaje.
-7. **No repudio en destino**: que cuando se envía un mensaje, el destinatario no pueda negar haberlo recibido cuando le llegue.
-8. **Autenticación de actualidad (no replay)**: consiste en probar que el mensaje es actual, y que no se trata de un mensaje antiguo reenviado.
-
-Ahora toca adentrarse en los métodos criptográficos modernos como la criptografía. Entre ellos tenemos:
- 
-- Criptografía simétrica
-- Criptografía asimétrica 
-- Funciones hash o de resumen (que no cumplen estrictamente la función de confidencialidad para la que está destinada la criptografía, puesto que es un cifrado irreversible)
-
-
-## 11. Cifrado simétrico y asimétrico
-
-Los más utilizados actualmente son: 
-
-- DES
-- 3DES
-- AES
-- Blowfish
-- IDEA
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wDpqrasDmxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-{:.question}
-¿Qué problemas tiene el cifrado simétrico?
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EQsHGbp3TGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-{:.question}
-¿Qué ventajas tiene el cifrado simétrico?
-
-{:.question}
-¿Qué ventajas tiene el cifrado asimétrico?
-
-{:.question}
-¿Se puede combinar el cifrado simétrico y asimétrico para obtener lo mejor de los dos mundos?
-
-{:.question}
-¿Por qué en el cifrado simétrico hay más llaves que cifrado asimétrico?
-
-
-## 12. Cifrado simétrico
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SlSmI18T2Ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-{:.question}
-¿Un ejemplo de cifrado simétrico?
-
-{:.question}
-¿Qué ventajas tiene el cifrado simétrico?
-
-{:.question}
-¿Qué es un ataque man in the middle?
-
-{:.question}
-¿Por qué existe el cifrado por bloque y cifrado por flujo?
-
-
-## 13. Cifrado asimétrico
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SIIqLgqRMCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-{:.question}
-¿Qué desventajas tiene el cifrado asimétrico?
-
-{:.question}
-¿Con que firmamos si queremos confidencialidad?
-
-{:.question}
-¿Con que firmamos si queremos autenticación?
-
-
-## 14. Firma electrónica
-
-La firma electrónica es un conjunto de datos electrónicos que acompañan o que están asociados a un documento electrónico y cuyas funciones básicas son:
-
-- **Identificar al firmante de manera inequívoca**.
-- **Asegurar la integridad del documento firmado**. Asegura que el documento firmado es exactamente el mismo que el original y que no ha sufrido alteración o manipulación.
-- **Asegurar el no repudio del documento firmado**. Los datos que utiliza el firmante para realizar la firma son únicos y exclusivos y, por tanto, posteriormente, no puede decir que no ha firmado el documento.
-
-Generalmente, la ley equipara la firma electrónica a la firma manuscrita.
-
-### 14.1. Proceso básico de firma electrónica
-
-El proceso básico que se sigue para la firma electrónica es el siguiente:
-
-1. El usuario dispone de un documento electrónico (una hoja de cálculo, un pdf, una imagen, incluso un formulario en una página web) y de un certificado que le pertenece y le identifica.
-1. La aplicación o dispositivo digital utilizados para la firma realiza un resumen del documento. El resumen de un documento de gran tamaño puede llegar a ser tan solo de unas líneas. Este resumen es único y cualquier modificación del documento implica también una modificación del resumen.
-1. La aplicación utiliza la clave privada para codificar el resumen.
-1. La aplicación crea otro documento electrónico que contiene ese resumen codificado. Este nuevo documento es la firma electrónica.
-
-## 15. Firma digital
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Es lo mismo firma electrónica que firma digital?</summary>
-  <div class="card-body" markdown="1">
-
-La **firma electrónica** es por tanto un conjunto de datos electrónicos que acompañan a una determinada información también en formato electrónico. Realizar una firma electrónica quiere decir que una persona física verifica una acción o procedimiento mediante un medio electrónico, dejando un registro de la fecha y hora de la misma.
-
-Una **firma digital** es una implementación técnica específica de algunas firmas electrónicas mediante la aplicación de algoritmos criptográficos. Por tanto, se refieren a la tecnología de cifrado / descifrado en la que se basan algunas firmas electrónicas como la avanzada
-
-![Firma electrónica vs firma digital](/assets/img/criptografia/firmaElectronicaVsFirmaDigital.png)
-_Firma electrónica vs firma digital_
-
-  </div>
-</details>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JRYUxqghPG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-![Proceso de firma digital](/assets/img/criptografia/procesoFirmaDigital1.png)
-_Proceso de firma digital_
-
-![Proceso de firma digital](/assets/img/criptografia/procesoFirmaDigital2.png)
-_Proceso de firma digital_
-
-## 16. PKI
-
-PKI (Public Key Infraestructure o Infraestructura de clave pública) es un conjunto de roles, políticas, hardware, software y procedimientos necesarios para crear, administrar, distribuir, usar, almacenar y revocar certificados digitales y administrar el cifrado de clave pública.
-
-Se asegura:
-
-- **Integridad**: El mensaje no ha sido cambiado.
-- **No repudio**: La capacidad de demostrar o probar la participación de las partes
-- **Identificación**: Mecanismo o proceso que provee la capacidad de identificar a un usuario de un sistema.
-- **Autenticación**: Permite verificar la identidad o asegurar que un usuario es quien dice ser.
-
-### 16.1. Elementos básicos de una PKI
-
-![Elementos básicos de una PKI](/assets/img/criptografia/elementosBasicosDePki.png)
-_Elementos básicos de una PKI_
-
-- **CA**: Autoridad de Certificación
-- **VA**: Autoridad de Validación
-- **RA**: Autoridad de Registro
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ysfBTecjGIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-{:.question}
-¿Qué es un hash? ¿Para qué se usa?
-
-{:.question}
-¿Qué es la integridad?
-
-{:.question}
-¿Se puede usar cifrado simétrico para realizar una firma electrónica?
-
-{:.question}
-¿Qué es el no repudio?
-
-{:.question}
-¿Es lo mismo cifrar que aplicar una función hash?
-
-{:.question}
-¿Qué información hay en el fichero /etc/shadow? ¿Qué es el salt o salto y para qué sirve?
-
-
-## 17. Bibliografía
+## 12. Bibliografía
 
 - [Cifrado César](https://www.dcode.fr/caesar-cipher)
 - [Cifrado de Vigenere](https://www.dcode.fr/cifrado-vigenere)
