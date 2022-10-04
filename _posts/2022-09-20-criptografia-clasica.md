@@ -315,6 +315,21 @@ Aparte de esto, propone un nuevo método de cifrado de su invención que utiliza
 ![Disco de Alberti](discoAlberti.png)
 _Disco de Alberti_
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KpZhXou7D8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Ahora tomamos en el disco pequeño una letra clave, por ejemplo la k. Esta letra la alínea con una cualquiera de las letras exteriores, por ejemplo con la B, e informa de esta letra al receptor del mensaje
+
+... Usando este punto de partida, cada letra del mensaje representará a la letra fija que hay sobre ella. 
+
+Despues de escribir tres o cuatro letras, puedo cambiar la posición de la letra clave de modo que la k esté, por ejemplo, sobre la D. Despues en mi mensaje escribo una D mayúscula y, a partir de este punto, k ya no significará B y si D, y todas la letras del disco fijo tienen nuevas identidades.
+
+El método de cifrado de Alberti presenta una clara ventaja: no es posible atacarlo con el análisis de frecuencias. 
+
+Pero aun así tiene inconvenientes graves: Para poder desencriptar el mensaje el receptor necesita un disco exactamente igual al que sirvió para crear el cifrado. 
+
+Otro problema, es que si alguien posee un disco igual al que creó el criptograma, lo descifraría con facilidad. La seguridad de este cifrado depende de mantener secretos los discos. En la actualidad esto se considera una falta grave de cualquier método de cifrado.
+
+
 ## 11. Cifrado de Vigenère
 
 La tabla consiste en los alfabetos escritos 26 veces en diferentes filas, cada alfabeto desplazado cíclicamente a la izquierda en comparación con el alfabeto anterior, correspondiente a los 26 posibles Cifrados César.

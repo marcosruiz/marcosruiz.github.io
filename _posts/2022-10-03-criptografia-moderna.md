@@ -27,14 +27,6 @@ Ahora toca adentrarse en los métodos criptográficos modernos como la criptogr
 
 ## 2. Cifrado simétrico y asimétrico
 
-Los más utilizados actualmente son: 
-
-- DES
-- 3DES
-- AES
-- Blowfish
-- IDEA
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wDpqrasDmxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
@@ -56,13 +48,35 @@ Los más utilizados actualmente son:
 
 ## 3. Cifrado simétrico
 
+La criptografía simétrica solo utiliza una clave para cifrar y descifrar el mensaje.
+
+Esta clave la tienen que conocer el emisor y el receptor previamente 
+
+La comunicación de las claves entre ambos sujetos es el punto débil del sistema, ya que resulta más fácil interceptar una clave que se ha transmitido sin seguridad (diciéndola en alto, mandándola por correo electrónico u ordinario o haciendo una llamada telefónica).
+
+Los procesos de cifrar y descifrar resultan bastante eficientes (tardan poco tiempo en realizarse). Por esta razón, todos los algoritmos desde la antigüedad hasta los años 70, eran simétricos.
+
+Los más utilizados actualmente son: 
+
+- DES
+- 3DES
+- AES
+- Blowfish
+- IDEA
+
+![Criptografía simétrica](criptografiaSimetrica.png)
+_Criptografía simétrica_
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SlSmI18T2Ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
 ¿Un ejemplo de cifrado simétrico?
 
 {:.question}
-¿Qué ventajas tiene el cifrado simétrico?
+¿Qué ventajas/desventajas tiene el cifrado simétrico?
+
+{:.question}
+¿Podemos usar el mismo canal por el que nos comunicamos para enviar la clave?
 
 {:.question}
 ¿Qué es un ataque man in the middle?
@@ -70,8 +84,94 @@ Los más utilizados actualmente son:
 {:.question}
 ¿Por qué existe el cifrado por bloque y cifrado por flujo?
 
+### Problemas de la criptografía simétrica
+
+1. **Circulación de claves**: no podemos utilizar el mismo canal inseguro por el que enviamos el mensaje. Hay que utilizar un segundo canal de comunicación, que también habría que proteger.
+2. **Gestión de claves almacenadas**: si en una empresa hay 10 trabajadores y todos tienen conversaciones privadas con todos, cada uno deberá establecer 9 contraseñas distintas y encontrar 9 canales seguros para actualizarlas. En total hay 81 claves (9 por usuario x 9 usuarios) y 81 canales. 
+
+{:.question}
+¿Cuántas claves son necesarias si nos queremos comunicar 11 personas entre nosotros?
+
+### Algoritmos de cifrado simétrico
+
+En criptografía simétrica existen 2 modos de cifrado:
+
+- **Cifrado en bloques**: La información a cifrar se divide en bloques de longitud fija (por ejemplo 64 o 128 bits), y luego se aplica el algoritmo de cifrado a cada bloque utilizando una clave secreta. Ejemplos: DES, 3DES, AES.
+- **Cifrado de flujo**: Convierten el texto en claro en texto cifrado bit a bit. El cifrado de flujo se utiliza mucho en las telecomunicaciones. Por ejemplo, en una conversación de telefonía móvil la voz se digitaliza (es decir, se convierte a un flujo de bits) y se envía cifrada por la red de comunicaciones. Con el fin de no entorpecer la conversación, el proceso de cifrado debería ser lo bastante rápido como para no añadir retraso a la comunicación. Por ello, conviene que la operación de cifrado sea rápida. Ejemplo: RC4.
+
+1. Los cifrados de bloque cifran bloques de varios bytes a la vez, mientras que los cifrados de flujo lo hacen byte a byte.
+1. Los algoritmos de flujo son por su modo de funcionamiento más rápidos que los de bloque, además de tener una menor complejidad a nivel de hardware.
+1. Los algoritmos de cifrado de bloque suelen requerir de más memoria para funcionar, puesto que trabajan con bloques de datos mayores que los de flujo. 
+1. Los algoritmos de cifrado de bloque son más susceptibles a la existencia de ruidos en la transmisión, lo que implica que si se interrumpe la transmisión de datos es imposible recuperarlos, mientras que los algoritmos de cifrado de flujo sí se pueden recuperar (ya que los datos son encriptados individualmente byte a byte).
+
+#### DES
+
+El Standard de Encriptación de Datos (DES - Data Encryption Standard) es un algoritmo desarrollado a mediados de los 70s. 
+
+Se convirtió en un standard por el US National Institute of Standards and Technology (NIST), y fue adoptado por varios gobiernos en todo el mundo.
+
+DES es un cifrado en bloque (con una longitud de 64 bits por bloque). Usa llaves de 56 bits. 
+
+Esto lo hace susceptible a una búsqueda exhaustiva de la llave con computadoras modernas y hardware de propósitos especiales. 
+
+Aunque el algoritmo DES era computacionalmente seguro, esto ha dejado de ser cierto, ya que con hardware específico es posible realizar ataques por fuerza bruta que descubran una clave en pocos días. El problema principal es que el tamaño de la clave (56 bits) es demasiado pequeño para la potencia de cálculo actual.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XwUOwqSHzyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5R6iTmawrR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+#### 3DES
+
+Surge en 1999 como una versión mejorada de DES. 
+
+Cuando se descubrió que una clave de 56 bits (utilizada en el DES) no era suficiente para evitar un ataque de fuerza bruta, el 3DES fue elegido para agrandar la clave sin la necesidad de cambiar el algoritmo de cifrado.
+
+Realiza tres veces el cifrado DES utilizando tres claves diferentes y sin relación entre ellas. Podría decirse que el Triple-DES es más fuerte que el DES simple, sin embargo, es bastante más lento comparado a algunos nuevos cifrados en bloque.
+Sigue siendo utilizado pero cada vez más está siendo sustituido por el algoritmo AES que ha demostrado ser muy robusto y más rápido.
+
+![3DES](3des.jpg)
+_3DES_
+
+#### AES
+
+AES (Advanced Encryption Standard o Estándar de Encriptación Avanzada) es un algoritmo de clave simétrica que remplazará el 3DES.
+
+En Junio del 2003 el Gobierno de EEUU anunció que AES es lo suficientemente seguro para proteger la información clasificada hasta el nivel ALTO SECRETO (nivel más alto de seguridad y que se definen como información que pudiera causar "daños excepcionalmente graves" a la seguridad nacional en caso de ser divulgada al público).
+
+El algoritmo AES posibilita tres fortalezas de clave de cifrado (contraseña de 128, 192, o 256 bits):
+
+Cada tamaño de la clave de cifrado hace que el algoritmo se comporte ligeramente diferente
+
+El aumento de tamaño de clave no sólo ofrece un mayor número de bits con el que se pueden cifrar los datos, sino también aumentar la complejidad del algoritmo de cifrado.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/am3EKUke_F0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YIzssu8jGTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Tiempo que necesitarían los superordenadores (de alrededor de 10 PFLOPS) para descrifrar las diferentes variantes del cifrado AES
+
+![Tiempo de descifrado de AES](aesTiempoDescifrado.webp)
+_Tiempo de descifrado de AES_
+
+#### RC4
 
 ## 4. Cifrado asimétrico
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q8K311s7EiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Años 70: los criptógrafos Diffie y Hellman publicaron sus investigaciones sobre criptografía asimétrica. Su algoritmo de cifrado utiliza 2 claves matemáticas relacionadas de manera que lo que cifras con una solo lo puedes descifrar con otra. 
+
+La criptografía asimétrica se basa en el uso de dos claves:
+
+- La pública, que se podrá difundir sin ningún problema a todas las personas que necesiten mandarte algo cifrado
+- La privada, que no debe de ser revelada nunca.
+
+Una VENTAJA respecto a la criptografía simétrica, ahora el emisor no necesita conocer y proteger una clave propia.
+
+Es el receptor el que tiene el par de claves. Elige una de ellas (llamada pública) para comunicarla al emisor por si quiere enviarle algo cifrado. Pero ya no le hace falta buscar canales protegidos para eviarla porque aunque un tercer individuo la conozca, todo el que cifre con esa clave no podrá descifrarlo luego.
+
+Lo que se cifra con la clave publica, solo puede descifrarse con la clave privada 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SIIqLgqRMCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -84,6 +184,20 @@ Los más utilizados actualmente son:
 {:.question}
 ¿Con que firmamos si queremos autenticación?
 
+### Ventajas criptografía asimétrica
+
+La criptografía asimétrica resuelve los 2 problemas de la clave simétrica.
+
+1. No necesitamos canales seguros para comunicar la clave: Podemos adjuntar la clave pública en nuestros correos, añadirla al perfil de nuestras redes sociales, en un blog… La información que nos envíen estará cifrada y solo nosotros podremos acceder a ella.
+1. No hay desbordamiento en el tratamiento de claves y canales. Si somos 9 empleados, solo necesitamos 9 claves y un canal.
+
+### Desventajas criptografía asimétrica
+
+Sin embargo, los algoritmos públicos presentan ciertos problemas.
+
+1. Poco eficientes: tardan bastante en aplicar las claves a los documentos a cifrar (Necesitan que las claves sean muy largas para asegurar la independencia matemática entre ellas). Este es el principal inconveniente de este tipo de criptografía
+2. Hay que proteger la clave privada: no bastará con dejarla en un fichero de una carpeta del disco. Las claves privadas se guardarán en un fichero (llamado keyring o llavero) y este fichero estará cifrado mediante cifrado simétrico. Es decir, para poder usar la clave privada, hay que introducir una clave que descifra el llavero y permite leerla.
+3. La necesidad de una Autoridad de Certificación (CA) en el proceso.
 
 ## 5. Firma electrónica
 
