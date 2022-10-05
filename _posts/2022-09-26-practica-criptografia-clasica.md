@@ -50,11 +50,11 @@ A continuación se listan las actividades que se deben realizar.
 
 ### 3.4. Actividad (a mano)
 
-Desencripta el texto "Q QER UQULOZEUE FA E MERS TESAUTEJOGEENORORNGR ZTGO DAEO PE" si tengo una escítala hexagonal.
+Desencripta el texto "Q   PEUQQER EUULOZ EE FAS  MERUTTESAEEEJOGRNNOROTGGR ZEOO DA" si tengo una escítala hexagonal.
 
 ### 3.5. Actividad (a mano)
 
-¿Cuál es el texto encriptado de "IES Tiempos Modernos" con un desplazamiento = 7 con el alfabeto español (27 letras)?
+¿Cuál es el texto encriptado con el encriptado Cesar de "IES Tiempos Modernos" con un desplazamiento = 7 con el alfabeto español (27 letras)?
 
 ### 3.6. Actividad
 
@@ -128,7 +128,7 @@ y responder a las siguientes preguntas:
 
 ### 3.17. Actividad
 
-Usa la herramienta Cryptool 2 para encriptar el texto de una canción en español con los siguientes cifrados (cada alumno debe usar una canción diferente):
+Usa la herramienta Cryptool 2 para encriptar el texto de una canción (o de una estrofa según creas conveniente) en español con los siguientes cifrados (cada alumno debe usar una canción diferente):
 
 - Cifrado con la escítala y desencríptalo con un ataque de fuerza bruta.
 - Cifrado César con desplazamiento 15 y desencríptalo con fuerza bruta y con un análisis de frecuencia.

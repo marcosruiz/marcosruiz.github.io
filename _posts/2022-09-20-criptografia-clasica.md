@@ -79,7 +79,7 @@ El método de la escítala era extremadamente sencillo, como también lo era el 
 ¿Cómo quedaría el cifrado del texto "send more troops to southern flank and…" con un número de giros de banda de 10?
 
 {:.question}
-Desencripta el texto "Q QER UQULOZEUE FA E MERS TESAUTEJOGEENORORNGR ZTGO DAEO PE " si tengo un cilindro hexagonal.
+Desencripta el texto "Q   PEUQQER EUULOZ EE FAS  MERUTTESAEEEJOGRNNOROTGGR ZEOO DA" si tengo un cilindro hexagonal.
 
 ## 4. Cifrado César
 
