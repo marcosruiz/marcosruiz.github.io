@@ -143,7 +143,14 @@ Se caracteriza por transmitir datos por un sólo canal de comunicación que comp
 - **Multicast**: Comunicación establecida entre un transmisor y varios receptores.
 - **Broadcast**: Comunicación establecida entre un transmisor y todos los elementos de la red.
 
-Típicamente es la tecnología usada en redes LAN.
+- Típicamente es la tecnología usada en redes LAN.
+- Fundamentalmente empleada en redes locales (LAN).
+- El software es más simple puesto que no necesita emplear algoritmos de routing y el control de errores es de extremo a extremo. -
+- Para que la estación reciba el mensaje, debe reconocer su dirección en el campo de destino. 
+- Un único medio de transmisión debe soportar todos los mensajes de la red, por lo que son necesarias líneas de alta velocidad (>1 Mbps) Los principales retrasos son debidos a las esperas para ganar el acceso al medio. 
+- El medio de transmisión puede ser totalmente pasivo y por ello más fiable. 
+- Se necesitaría duplicar las líneas en caso de que se quiera asegurar la funcionalidad ante fallos. 
+- Los costes de cableado de la red son menores. Sólo es necesario una tarjeta de interface por estación.
 
 ### 5.2. Red Point-To-Point (PPP)
 
@@ -151,7 +158,15 @@ Es aquella en la que existe multitud de conexiones entre parejas individuales de
 
 Para poder transmitir los paquetes de una máquina a otra a veces es necesario que estos pasen por máquinas intermedias, siendo obligado en tales casos un trazado de rutas mediante routers.
 
-Típicamente es la tecnología usada en redes WAN.
+- Típicamente es la tecnología usada en redes WAN. 
+- Los algoritmos de routing pueden llegar a ser muy complejos. Se necesitan dos niveles de control de errores: entre nodos intermedios y entre extremos. 
+- La información se recibe. Una vez leído el mensaje se procesa si va dirigido a la estación, o se reenvia si tiene un destino diferente. 
+- Varias lineas de comunicación pueden funcionar en paralelo, por lo que pueden usarse lineas de baja velocidad (2-50 kbps) 
+- Los principales retardos son debidos a la retransmisión del mensaje entre varios nodos intermedios. 
+- El medio de transmisión incluye nodos intermedios por lo que es menos fiable 
+- La redundancia es inherente siempre que el número de conexiones de cada nodo sea mayor de dos. 
+- Los costes de cableado son superiores, y la estación requiere al menos dos tarjetas de interfaces. 
+
 
 ## 6. Por topología física
 

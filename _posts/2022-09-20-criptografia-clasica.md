@@ -408,3 +408,4 @@ Con el alfabeto castellano el resultado es "KTN Vxyñfju Bjftmoen".
 - [Cifrado César](https://www.dcode.fr/caesar-cipher)
 - [Cifrado de Vigenere](https://www.dcode.fr/cifrado-vigenere)
 - [Principios de Kerckhoffs (Wikipedia)](https://es.wikipedia.org/wiki/Principios_de_Kerckhoffs)
+- [Cifrado de Vigenère (Wikipedia)](https://es.wikipedia.org/wiki/Cifrado_de_Vigen%C3%A8re)
