@@ -332,6 +332,8 @@ Otro problema, es que si alguien posee un disco igual al que creó el criptogram
 
 ## 11. Cifrado de Vigenère
 
+### Con tabla
+
 La tabla consiste en los alfabetos escritos 26 veces en diferentes filas, cada alfabeto desplazado cíclicamente a la izquierda en comparación con el alfabeto anterior, correspondiente a los 26 posibles Cifrados César.
 
 En diferentes puntos del proceso de encriptación, el cifrado usa un alfabeto diferente en cada una de las filas. El alfabeto utilizado en cada punto depende de una palabra clave repetitiva.
@@ -362,6 +364,25 @@ El texto cifrado es: OWYCH CCNMY PZUNJ LBWM
   </div>
 </details>
 
+### Sin tabla
+
+En términos matemáticos, puede expresarse la función de cifrado como:
+
+E(X<sub>i</sub>) = (X<sub>i</sub>+K<sub>i</sub>) mod L
+
+Donde X<sub>i</sub> es la letra en la posición i del texto a cifrar, K<sub>i</sub> es el carácter de la clave correspondiente a X<sub>i</sub>, pues se encuentran en la misma posición, y L es el tamaño del alfabeto. En este caso L=27.
+
+Para descifrar realizamos la operación inversa:
+
+Cuando (C<sub>i</sub> - K<sub>i</sub>) >= 0:
+
+D(C<sub>i</sub>)=(C<sub>i</sub>-K<sub>i</sub>) mod L
+
+Cuando (C<sub>i</sub> - K<sub>i</sub>) < 0:
+
+D(C<sub>i</sub>)=(C<sub>i</sub>-K<sub>i</sub>+L) mod L
+
+Donde C<sub>i</sub> es el carácter en la posición i del texto cifrado, K<sub>i</sub> viene siendo el carácter de la clave correspondiente a C<sub>i</sub>, y L el tamaño del alfabeto.
 
 ![Ejemplo de cifrado de Vigenère sin tabla](cifradoVigenereSinTabla.png)
 _Ejemplo de cifrado de Vigenère sin tabla_
@@ -373,7 +394,9 @@ _Tabla de Vigenère_
   <summary class="card-header question">Cifra el mensaje "IES Tiempos Modernos" con la clave CPU usando el cifrado de Vigenère. </summary>
   <div class="card-body" markdown="1">
 
-KTM Vxyoeiu Biftlpdm
+Con el alfabeto inglés el resultado es "KTM Vxyoeiu Biftlpdm".
+
+Con el alfabeto castellano el resultado es "KTN Vxyñfju Bjftmoen".
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
