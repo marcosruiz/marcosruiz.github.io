@@ -368,7 +368,7 @@ El texto cifrado es: OWYCH CCNMY PZUNJ LBWM
 
 En términos matemáticos, puede expresarse la función de cifrado como:
 
-E(X<sub>i</sub>) = (X<sub>i</sub>+K<sub>i</sub>) mod L
+> E(X<sub>i</sub>) = (X<sub>i</sub>+K<sub>i</sub>) mod L
 
 Donde X<sub>i</sub> es la letra en la posición i del texto a cifrar, K<sub>i</sub> es el carácter de la clave correspondiente a X<sub>i</sub>, pues se encuentran en la misma posición, y L es el tamaño del alfabeto. En este caso L=27.
 
@@ -376,11 +376,11 @@ Para descifrar realizamos la operación inversa:
 
 Cuando (C<sub>i</sub> - K<sub>i</sub>) >= 0:
 
-D(C<sub>i</sub>)=(C<sub>i</sub>-K<sub>i</sub>) mod L
+> D(C<sub>i</sub>)=(C<sub>i</sub>-K<sub>i</sub>) mod L
 
 Cuando (C<sub>i</sub> - K<sub>i</sub>) < 0:
 
-D(C<sub>i</sub>)=(C<sub>i</sub>-K<sub>i</sub>+L) mod L
+> D(C<sub>i</sub>)=(C<sub>i</sub>-K<sub>i</sub>+L) mod L
 
 Donde C<sub>i</sub> es el carácter en la posición i del texto cifrado, K<sub>i</sub> viene siendo el carácter de la clave correspondiente a C<sub>i</sub>, y L el tamaño del alfabeto.
 

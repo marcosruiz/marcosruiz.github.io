@@ -61,11 +61,12 @@ Los más utilizados actualmente son:
 - DES
 - 3DES
 - AES
+- RC4
 - Blowfish
 - IDEA
 
-![Criptografía simétrica](criptografiaSimetrica.png)
-_Criptografía simétrica_
+![Proceso de cifrado simétrico](criptografiaSimetrica.png)
+_Proceso de cifrado simétrico_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SlSmI18T2Ns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -116,11 +117,6 @@ Esto lo hace susceptible a una búsqueda exhaustiva de la llave con computadoras
 
 Aunque el algoritmo DES era computacionalmente seguro, esto ha dejado de ser cierto, ya que con hardware específico es posible realizar ataques por fuerza bruta que descubran una clave en pocos días. El problema principal es que el tamaño de la clave (56 bits) es demasiado pequeño para la potencia de cálculo actual.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XwUOwqSHzyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5R6iTmawrR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 #### 3DES
 
 Surge en 1999 como una versión mejorada de DES. 
@@ -145,16 +141,21 @@ Cada tamaño de la clave de cifrado hace que el algoritmo se comporte ligerament
 
 El aumento de tamaño de clave no sólo ofrece un mayor número de bits con el que se pueden cifrar los datos, sino también aumentar la complejidad del algoritmo de cifrado.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/am3EKUke_F0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YIzssu8jGTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Tiempo que necesitarían los superordenadores (de alrededor de 10 PFLOPS) para descrifrar las diferentes variantes del cifrado AES
 
 ![Tiempo de descifrado de AES](aesTiempoDescifrado.webp)
 _Tiempo de descifrado de AES_
 
 #### RC4
+
+El RC4 es un algoritmo de cifrado de flujo diseñado por Ron Rivest para RSA Data Security. 
+
+Es un algoritmo de tamaño de clave variable con operaciones a nivel de byte. 
+
+Es un algoritmo de ejecución rápida en software.
+
+El algoritmo se emplea para encriptación de ficheros y para encriptar la comunicación en protocolos como el SSL (TLS).
+
 
 ## 4. Cifrado asimétrico
 
@@ -174,6 +175,12 @@ Es el receptor el que tiene el par de claves. Elige una de ellas (llamada públi
 Lo que se cifra con la clave publica, solo puede descifrarse con la clave privada 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SIIqLgqRMCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+![Proceso de cifrado asimétrico](criptografiaAsimetrica.png)
+_Proceso de cifrado asimétrico_
+
+![Concepto del intercambio de claves secretas detrás del Diffie–Hellman](intercambioDeSecreto.png)
+_Concepto del intercambio de claves secretas detrás del Diffie–Hellman_
 
 {:.question}
 ¿Qué desventajas tiene el cifrado asimétrico?
@@ -236,10 +243,7 @@ _Firma electrónica vs firma digital_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JRYUxqghPG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-![Proceso de firma digital](procesoFirmaDigital1.png)
-_Proceso de firma digital_
-
-![Proceso de firma digital](procesoFirmaDigital2.png)
+![Proceso de firma digital](procesoFirmaDigital.png)
 _Proceso de firma digital_
 
 ## Certificado digital
