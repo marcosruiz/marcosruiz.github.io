@@ -90,7 +90,7 @@ Rellena la siguiente tabla retomando las características del las 3 capas primer
 
 | Capa | Bloques de información | Direccionamiento | Función principal |
 |---|---|---|---|
-| Física | No hay | | |
+| Física | | No hay | |
 | Enlace | | | |
 | Red | | | |
 
