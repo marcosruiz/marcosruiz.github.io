@@ -409,3 +409,4 @@ Con el alfabeto castellano el resultado es "KTN Vxyñfju Bjftmoen".
 - [Cifrado de Vigenere](https://www.dcode.fr/cifrado-vigenere)
 - [Principios de Kerckhoffs (Wikipedia)](https://es.wikipedia.org/wiki/Principios_de_Kerckhoffs)
 - [Cifrado de Vigenère (Wikipedia)](https://es.wikipedia.org/wiki/Cifrado_de_Vigen%C3%A8re)
+- [Time-table / time-travel through cryptography and cryptanalysis](https://www.cryptool.org/en/education/history)

@@ -131,7 +131,8 @@ y responder a las siguientes preguntas:
 Usa la herramienta Cryptool 2 para encriptar el texto de una canción (o de una estrofa según creas conveniente) en español con los siguientes cifrados (cada alumno debe usar una canción diferente):
 
 - Cifrado con la escítala y desencríptalo con un ataque de fuerza bruta.
-- Cifrado César con desplazamiento 15 y desencríptalo con fuerza bruta y con un análisis de frecuencia.
-- Cifrado de Polibio (ADFGVX Cipher) y desencríptalo con un ataque de diccionario.
+- Cifrado César con desplazamiento 15 y desencríptalo con fuerza bruta y con un análisis de frecuencia. En este caso, usa el alfabeto inglés.
+- Cifrado de ADFGVX Cipher. ¿Cuál es la diferencia entre el cifrado ADFGVX y el cifrado de Polibio?.
+- Cifrado de Vigenère y descifralo con el analizador Vigenère. Debes usar como clave el nombre de tu email del centro.
 
 Haz capturas que demuestren la realización de la actividad.

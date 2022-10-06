@@ -389,3 +389,4 @@ Los dos equipos involucrados en la comunicación lo pueden hacer de forma simult
 - [TOPOLIGÍAS DE RED](https://www.areatecnologia.com/informatica/topologias-de-red.html#Red_en_Bus)
 - [Tipos de redes según su relación funcional](https://lasredesinformaticasenlaactualidad.home.blog/tipos-de-redes-segun-su-relacion-funcional/)
 - [CSMA/CD: protocolo de transmisión anticolisiones](https://www.ionos.es/digitalguide/servidores/know-how/csmacd/)
+- [1.5 Tipos de Redes](http://hera.cnice.mec.es/redes2/contenido/mod1/Intro_Tipos.htm)
