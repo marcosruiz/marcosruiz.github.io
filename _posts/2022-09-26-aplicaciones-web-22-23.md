@@ -18,3 +18,7 @@ pin: true
 ## Enlaces increibles 🔥
 
 - [freeCodeCamp](https://www.freecodecamp.org/)
+
+## Carpeta compartida de la asignatura
+
+La carpeta compartida de la asignatura es `\\ORDAI2PROF\Users\mruiz\Documents\CompartidaAW`.

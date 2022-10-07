@@ -21,3 +21,7 @@ pin: true
 
 - [Hack The Box](https://www.hackthebox.com/)
 - [Try Hack Me](https://tryhackme.com/)
+
+## Carpeta compartida de la asignatura
+
+La carpeta compartida de la asignatura es `\\ORDAI2PROF\Users\mruiz\Documents\CompartidaSI`.
