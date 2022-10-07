@@ -43,7 +43,8 @@ Tras la instalación se deben instalar todas las actualizaciones pendientes.
 
 ### Instalar las Guest Additions
 
-⚠️ Para realizar este paso es necesario actualizar el sistema operativo completamente ya que pueden desinstalarse las Guest Additions al actualizar el sistema.
+> Para realizar este paso es necesario actualizar el sistema operativo completamente ya que pueden desinstalarse las Guest Additions al actualizar el sistema.
+{:.prompt-warning}
 
 Las Guest Additions son un conjunto de paquetes de software que permiten al SO (Sistema Operativo) ser consciente de que está en una máquina virtual lo que permite que el SO adapte su resolución a la ventana donde está.
 
