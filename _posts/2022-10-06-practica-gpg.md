@@ -217,7 +217,7 @@ gpg --list-key
 ```
 
 > 📷 Muestra capturas de pantalla en las que se vea en la máquina cliente (usuario profesor) que se ha llevado a cabo la importación de la clave pública.
-> {:.prompt-info}
+{:.prompt-info}
 
 #### Paso 7
 
@@ -263,7 +263,7 @@ Nos pide que introduzcamos la contraseña, y efectivamente podremos ver el conte
 Descárgate también el archivo mensaje.cifrado que yo te proporciono en Aeducar (y que cifré con la clave pública marcos.publica) y desencríptalo. Para ello, tendrás que importarte en tu máquina servidor la clave privada (marcos.privada) que yo te proporciono. La clave de acceso al anillo de claves es Aneto3404. 
 
 > 📷 Pon capturas de pantalla de dicho proceso y el contenido del archivo que te proporciono desencriptado.
-> {:.prompt-info}
+{:.prompt-info}
 
 ## 4. Bibliografía
 
