@@ -37,7 +37,7 @@ Para crear la máquina virtual se deben seguir los siguientes pasos:
 6. Crear disco duro virtual con un tamaño de 30 GB.
 4. Instalar Zorin OS
 
-A la hora de instalar Zorin OS debemos crearlo con un usuario llamado como vuestro email del centro (sin el "@chabacier.es") y con contraseña "chabacier". En mi caso mi usuario será "mruizg".
+A la hora de instalar Zorin OS debemos crearlo con un usuario llamado como vuestro email del centro (sin el "@\<nombreDeCentro\>.\<extensión\>") y con contraseña "\<nombreDeCentro\>". En mi caso, mi cuenta es "mruizg@chabacier.es" por lo tanto mi usuario será "mruizg" y mi contraseña "chabacier".
 
 Tras la instalación se deben instalar todas las actualizaciones pendientes.
 
