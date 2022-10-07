@@ -1,9 +1,9 @@
 ---
-title: "Práctica: HTML en W3Schools"
-date: 2022-09-28 9:00:00 +0100
+title: "Práctica: HTML en freeCodeCamp"
+date: 2022-10-06 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
 tags: [aplicaciones web, smr, práctica]
-img_path: /assets/img/practica-html-w3schools/
+img_path: /assets/img/practica-html-freecodecamp/
 ---
 
 ## Objetivo y duración
@@ -32,29 +32,24 @@ La entrega de esta práctica debe ser un fichero PDF con un nombre en el siguien
 {:.activity}
 ### Crear cuenta
 
-Crea una cuenta con el correo de la escuela en [W3Schools](https://www.w3schools.com/) y asegúrate de hacer login antes de empezar con la siguiente actividad.
+Crea una cuenta con el correo de la escuela en [freeCodeCamp](https://www.freecodecamp.org/) y asegúrate de hacer login antes de empezar con la siguiente actividad.
 
 {:.activity}
-### Captura perfil vacío
+### Hacer público todo tu perfil
 
-Ir al apartado [My learning](https://my-learning.w3schools.com/) y haz una captura de pantalla con el perfil vacío.
-
-{:.activity}
-### Captura perfil con la tarea
-
-Realiza los ejercicios del siguiente enlace https://www.w3schools.com/html/exercise.asp. 
-
-Asegúrate de que se te añaden en tu apartado de "My learning" cuando lleves dos o tres ejercicios hechos.
-
-Haz una o varias capturas cuando completes los 88 los ejercicios, de manera que quede demostrado que con tu cuenta has realizado todos los ejercicios y tienes la estrella correspondiente. Algo como lo que se muestra a continuación.
-
-![Ejercicios HTML finalizados](ejerciciosHtmlFinalizados.png)
-_Ejercicios HTML finalizados_
+En [Account Settings](https://www.freecodecamp.org/settings) poner todas las opciones en público.
 
 {:.activity}
-### Voluntario: Cuestionario
+### Hacer el curso Responsive Web Design
 
-Tras la realización de los ejercicios estás preparado para realizar el [HTML Quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML) donde puedes poner a prueba tus nuevos conocimientos.
+Ir al curso [(New) Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/).
+
+Haz una captura de tu perfil público y añade el enlace de tu perfil. En mi caso este es [mi perfil](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b).
+
+{:.activity}
+### Voluntario: Traduce un apartado del tutorial
+
+Investiga y traduce al español un apartado del tutorial que has realizado.
 
 {:.activity}
 ### Test
