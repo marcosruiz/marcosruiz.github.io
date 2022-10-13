@@ -209,6 +209,12 @@ Aunque en la práctica sólo se utilice la dirección 127.0.0.1/32 para localhos
 {:.section}
 ## Configuración IP en GNU Linux
 
+Para conocer cual es nuestra dirección IP en GNU Linux debemos usar el siguiente comando:
+
+```console
+$ ifconfig
+```
+
 Tradicionalmente, la configuración de red en GNU Linux se guarda en el archivo /etc/network/interfaces. Una vez hemos modificado este fichero de configuración deberemos reiniciar el servicio llamado networking de la siguiente manera:
 
 ```console
@@ -221,7 +227,7 @@ o
 $ sudo /etc/init.d/networking restart
 ```
 
-En versiones de Linux actuales la configuración de la red se guarda en un archivo del directorio /etc/netplan/. El archivo es de extensión yam1, un lenguaje de marcas normalizado. NetPlan incluye netplan, una utilidad para gestionar la configuración, además de aplicaciones adicionales que sustituyen a las antiguas NetTools (ifconfig, ifup, etc.). Permite realizar una configuración de red más avanzada: crear puentes, enlaces (bonds), etc.
+En versiones de Linux actuales la configuración de la red se guarda en un archivo del directorio /etc/netplan/. El archivo es de extensión yaml, un lenguaje de marcas normalizado. NetPlan incluye netplan, una utilidad para gestionar la configuración, además de aplicaciones adicionales que sustituyen a las antiguas NetTools (ifconfig, ifup, etc.). Permite realizar una configuración de red más avanzada: crear puentes, enlaces (bonds), etc.
 
 {:.question}
 ¿Son 192.168.1.15 y 192.168.2.15 direcciones IP pertenecientes a la misma red?
