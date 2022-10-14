@@ -37,19 +37,29 @@ Crea una cuenta con el correo de la escuela en [freeCodeCamp](https://www.freeco
 {:.activity}
 ### Hacer público todo tu perfil
 
-En [Account Settings](https://www.freecodecamp.org/settings) poner todas las opciones en público.
+En [Ajustes de cuenta](https://www.freecodecamp.org/espanol/settings) añade los datos correspondientes a "Nombre", "Ubicación" y "Acerca de mí" de manera similar a como he hecho yo. Posteriormente deberás guardar los cambios.
+
+![img-description](ajustesNombreCuenta.png)
+_Ajustes principales de cuenta_
+
+Además, deberás poner todas las opciones en público y guardar los cambios.
+
+![img-description](ajustesPrivacidadCuenta.png)
+_Ajustes de privacidad_
 
 {:.activity}
-### Hacer el curso Responsive Web Design
+### Hacer el curso Diseño Web Responsivo
 
-Ir al curso [(New) Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/).
+Ir al curso [(Nuevo) Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
 
 Haz una captura de tu perfil público y añade el enlace de tu perfil. En mi caso este es [mi perfil](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b).
 
 {:.activity}
 ### Voluntario: Traduce un apartado del tutorial
 
-Investiga y traduce al español un apartado del tutorial que has realizado.
+Investiga y traduce al español un apartado del tutorial que has realizado haciendo que aparezca dicha traducción en la página web.
+
+Una vez terminado el curso deberás tener 70 puntos en total en tu cuenta.
 
 {:.activity}
 ### Test

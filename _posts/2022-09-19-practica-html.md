@@ -3,6 +3,7 @@ title: "Práctica: HTML"
 date: 2022-09-21 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
 tags: [aplicaciones web, smr, práctica]
+img_path: /assets/img/practica-html/
 ---
 
 ## Introducción
@@ -37,7 +38,7 @@ A continuación se te presenta un documento web con algunos errores de sintaxis 
         <meta name="description" content="Ejercicio HTML - Corrige los errores">
     <body>
     </head>
-        <title>Corrige los errores que encuenres en el documento</title>
+        <title>Corrige los errores que encuentres en el documento</title>
         
     <h1>Aprender HTML es muy divertido</h1>
     
@@ -71,7 +72,7 @@ Berners-Lee trabajó en el CERN desde junio hasta diciembre de 1980. Durante ese
 
 Haz que tenga un formato según la siguiente imagen:
 
-![img-description](/assets/img/practica-html/biografia-tim-berners-lee.jpg)
+![img-description](biografia-tim-berners-lee.jpg)
 _Biografía de Tim Berners-Lee en HTML_
 
 
@@ -95,7 +96,7 @@ Biografía de Vinton Cerf Cuando solo tenía 25 años trabajó en el motor de co
 
 Haz que tenga un formato según la siguiente imagen:
 
-![img-description](/assets/img/practica-html/solucion-ejercicio-vinton-cerf.jpg)
+![img-description](solucion-ejercicio-vinton-cerf.jpg)
 _Biografía de Vinton Cerf en HTML_
 
 {:.activity}
@@ -125,10 +126,10 @@ Conclusiones
 
 El resultado deberá ser algo parecido a esto:
 
-![img-description](/assets/img/practica-html/portada.png)
+![img-description](portada.png)
 _Portada con tabla de contenidos_
 
-![img-description](/assets/img/practica-html/pagina1.png)
+![img-description](pagina1.png)
 _Primera página_
 
 {:.activity}
@@ -155,7 +156,7 @@ Existen 2 formas de codificar los caracteres.
 
 Escribe en un documento web el siguiente texto teniendo en cuenta que se usan los encabezados h1 a h6.
 
-![img-description](/assets/img/practica-html/enunciado-ejercicio-html-caracteres-escapados.jpg)
+![img-description](enunciado-ejercicio-html-caracteres-escapados.jpg)
 _Encabezados con carácteres escapados_
 
 
@@ -169,7 +170,7 @@ Observaciones:
 - El ejercicio está resuelto sin el uso de CSS.
 - Todas las líneas están resueltas mediante un título `<h3>`.
 
-![img-description](/assets/img/practica-html/ejemplo-uso-nombres-html.jpg)
+![img-description](ejemplo-uso-nombres-html.jpg)
 _Encabezados con espacios_
 
 {:.activity}
@@ -190,10 +191,10 @@ Crea una lista de definiciones para los siguientes términos relacionadas con la
 
 Escribe con html las listas según las siguientes imágenes.
 
-![img-description](/assets/img/practica-html/ejercicio-html-listas-ordenadas.jpg)
+![img-description](ejercicio-html-listas-ordenadas.jpg)
 _Listas ordenadas_
 
-![img-description](/assets/img/practica-html/ejercicio-html-listas-NO-ordenadas.jpg)
+![img-description](ejercicio-html-listas-NO-ordenadas.jpg)
 _Listas NO ordenadas_
 
 {:.activity}
@@ -201,17 +202,17 @@ _Listas NO ordenadas_
 
 Transcribe la siguiente imagen en lenguaje html.
 
-![img-description](/assets/img/practica-html/ejercicio-listas-anidadas-01.jpg)
+![img-description](ejercicio-listas-anidadas-01.jpg)
 _Lista anidada 1_
 
 Transcribe la siguiente imagen en lenguaje html.
 
-![img-description](/assets/img/practica-html/ejercicio-listas-anidadas-02.jpg)
+![img-description](ejercicio-listas-anidadas-02.jpg)
 _Lista anidada 2_
 
 Transcribe la siguiente imagen en lenguaje html.
 
-![img-description](/assets/img/practica-html/ejercicio-listas-anidadas-03.jpg)
+![img-description](ejercicio-listas-anidadas-03.jpg)
 _Lista anidada 3_
 
 {:.activity}
@@ -219,7 +220,7 @@ _Lista anidada 3_
 
 Anida correctamente la lista no ordenada que se muestra en la imagen.
 
-![img-description](/assets/img/practica-html/ejemplo-listas-anidadas.jpg)
+![img-description](ejemplo-listas-anidadas.jpg)
 _Lista html anidada con un subnivel y un subsubnivel_
 
 
@@ -232,7 +233,7 @@ A partir de la imagen que podrás descargar a continuación genera un mapa de im
 - El área verde oscuro está delimitada por los puntos 126,95 y 215,117. Cuando se pulsa envía al usuario a https://marcosruiz.github.io/posts/comandos-basicos-gnu-linux/.
 - El área verde azul claro está delimitada por los puntos 128,140 y 215,161. Cuando se pulsa envía al usuario a https://marcosruiz.github.io/posts/manual-java/.
 
-![img-description](/assets/img/practica-html/letra-f.jpg)
+![img-description](letra-f.jpg)
 _Letra F_
 
 {:.activity}
@@ -244,7 +245,7 @@ A partir de la imagen que podrás descargar a continuación genera un mapa de im
 - El área negro delimitado por los puntos 128,44 y 235,74 envía al usuario a https://marcosruiz.github.io/posts/comandos-basicos-gnu-linux/ cuando se pulsa. En su interior tiene un área definido por los puntos 128,56 y 226,65 que es inerte cuando es pulsado, generando un hueco.
 - El área negro delimitado por los puntos 128,138 y 220,165 envía al usuario a https://marcosruiz.github.io/posts/manual-java/ cuando se pulsa. En su interior tiene un área definido por los puntos 128,144 y 211,156 que es inerte cuando es pulsado, generando un hueco.
 
-![img-description](/assets/img/practica-html/letra-F-ejercicio-avanzado.jpg)
+![img-description](letra-F-ejercicio-avanzado.jpg)
 _Letra F_
 
 {:.activity}
@@ -280,7 +281,7 @@ Dado el siguiente documento html se desea conseguir el resultado de la imagen ad
 </html>
 ```
 
-![img-description](/assets/img/practica-html/ejercicio-tablas.jpg)
+![img-description](ejercicio-tablas.jpg)
 _Tabla fácil_
 
 {:.activity}
@@ -304,7 +305,7 @@ Para que se vea bonita la tabla añade dentro del <head> del documento html este
 </style>
 ```
 
-![img-description](/assets/img/practica-html/enunciado-tabla-html.jpg)
+![img-description](enunciado-tabla-html.jpg)
 _Tabla con `colspan` y `rowspan`_
 
 
@@ -319,11 +320,14 @@ Escribe el html de un formulario web según las especificaciones descritas a con
 - Nombre. El campo debe aceptar un máximo de 30 caracteres.
 - Apellidos. El campo debe aceptar un máximo de 30 caracteres.
 - Email. Campo de relleno obligado.
-- Asunto a elegir una opción entre pedir presupuesto, solicitar cita previa, otros. Deben mostrarse las 3 opciones en un cajetín según la imagen (usa el atributo size).
-- Cómo nos a escogido a elegir una o más opciones entre un amigo, googleando, buzoneo, otros. Siendo la elección simple o múltiple.
-- Un mensaje. Debe tener una longitud máxima de 300 caracteres
-- Aceptación de cláusula rgpd. De obligada selección antes de enviar el currículum.
+- Asunto a elegir una opción entre pedir presupuesto, solicitar cita previa, otros. Deben mostrarse las 3 opciones en un cajetín según la imagen (usa el atributo `size`).
+- Cómo nos a escogido a elegir una o más opciones entre un amigo, googleando, buzoneo, otros.
+- Un mensaje. Debe tener una longitud máxima de 300 caracteres.
+- Aceptación de cláusula RGPD. De obligada selección antes de enviar el currículum.
+- Botón de envío.
 
+![img-description](resultadoFinalFormulario.png)
+_Resultado final del formulario_
 
 {:.activity}
 ### Audio y vídeo
@@ -339,6 +343,9 @@ Puedes encontrar archivos de audio mp3 en [Audio Archive](https://archive.org/de
 A continuación reproduce exactamente el mismo ejercicio pero en este caso reproductores de vídeo.
 
 Puedes encontrar archivos de vídeo mp4 en [Moving Image Archive](https://archive.org/details/movies).
+
+> Para encontrar audios y vídeos cortos podeis buscar la palabra "sample"
+{prompt-info}
 
 ## Bibliografía
 
