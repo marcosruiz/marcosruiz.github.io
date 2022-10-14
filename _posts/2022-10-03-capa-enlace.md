@@ -184,8 +184,8 @@ Leer artículo [Diferencia entre TDM y FDM](https://es.gadget-info.com/differenc
 
 ### 5.2. Basados en toma de turnos
 
-- **Polling**: Protocolo de sondeo
-- **Token passing**: Protocolo de paso de testigo
+- **Polling**: Protocolo de sondeo.
+- **Token passing**: Protocolo de paso de testigo.
 
 ### 5.3. Basados en el acceso aleatorio
 
