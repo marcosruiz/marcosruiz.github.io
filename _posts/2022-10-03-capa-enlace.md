@@ -129,7 +129,7 @@ Dependiendo de la topología de red podemos clasificar los mecanismos de control
 
 ### 3.2. LLC
 
-LLC ("Logical Link Control") o Control de enlace lógico es el encargado de la transmisión de tramas entre máquinas conectadas sin nodos intermedios entre ellas. Sus funciones son:
+LLC ("Logical Link Control") o Control de enlace lógico es el encargado de multiplexar protocolos sobre un mismo enlace, al control de flujo y a la retransmisión de tramas en caso de error. Sus funciones son:
 
 - **Proporcionar al nivel de red una interfaz uniforme**, es decir, independiente de la topología de red.
 - **Control de errores**, es decir, comprobación y reenvío de tramas.
@@ -205,14 +205,19 @@ Leer artículo [Diferencia entre TDM y FDM](https://es.gadget-info.com/differenc
 
 ### 5.3. Basados en el acceso aleatorio
 
+Son los siguientes:
+
 - Aloha
 - CSMA
 - CSMA/CD
 - CSMA/CA
 
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué significa CSMA/CD?</summary>
-  <div class="card-body" markdown="1">
+## 6. Aloha
+
+Este método permite que un dispositivo emita directamente cuando lo necesita. En este caso el receptor debe confirmar al emisor haber recibido la trama. Si la confirmación no se recibe al cabo de un tiempo predefinido (timeout), ya sea porque se ha perdido la trama o bien porque se ha producido una colisión, entonces la estación emisora, tras esperar un tiempo aleatorio lo vuelve a intentar.
+
+
+## 7. CSMA/CD
 
 Carrier Sense Multiple Access with Collision Detection, es decir, acceso múltiple con escucha de portadora y **detección** de colisiones.
 
@@ -228,8 +233,15 @@ Se cuenta el número de intentos de retransmisión. Si los siguientes intentos s
 
 Su uso está especialmente extendido en redes Ethernet.
 
-  </div>
-</details>
+## 8. CSMA/CA
+
+Con las siglas CSMA se describe un proceso fundamental para regular la comunicación de los integrantes de una red que usan un mismo medio de transmisión estructurado de forma descentralizada. Comprende tres variantes distintas en función del medio de transmisión: CSMA/CA, CSMA/CD y CSMA/CR. Mientras la primera se usa principalmente en redes inalámbricas, CSMA/CD se creó para Ethernet. CSMA/CR se emplea con el protocolo de comunicación Controller Area Networks (CAN), usado principalmente en máquinas y coches.
+
+Para poder entender realmente en qué consiste el protocolo Carrier Sense Multiple Access with Collision Avoidance (acceso múltiple por detección de portadora y prevención de colisiones) es necesario analizar cada una de sus partes:
+
+- **Carrier Sense** (CA): la idea principal es que los miembros de una red solo pueden enviar datos a través de ella cuando el medio de transmisión no esté ocupado. Para que esto sea posible en todo momento se está realizando un reconocimiento de la red para comprobar el estado del canal (detección de portadora). Solo cuando esté libre, se pueden enviar los datos.
+- **Multiple Access** (MA): distintos nodos comparten el mismo medio de transmisión. Por eso es determinante que se atengan a un mismo protocolo para que la comunicación fluya.
+- **Collision Avoidance** (CA): para prevenir colisiones se recurre a una compleja organización del tiempo que permite evitar que dos o más miembros de una red comiencen la transmisión a la vez. Eso sí, en el caso de que los datos se superpongan, se reconoce el problema en la transmisión y se inicia de nuevo el envío.
 
 {:.question}
 ¿Sabrías poner un ejemplo de control de acceso al medio que todos puedan entender?
@@ -255,7 +267,7 @@ Su uso está especialmente extendido en redes Ethernet.
   </div>
 </details>
 
-## 6. Conmutación de tramas
+## 9. Conmutación de tramas
 
 La conmutación de tramas consiste en utilizar una topología física en estrella en el que un switch o conmutador redirige el tráfico al enlace concreto en el que se encuentra el destinatario.
 
@@ -271,9 +283,9 @@ Un dominio de colisión es un segmento físico de una red en el que las estacion
 {:.question}
 ¿Qué es un dominio de difusión?
 
-## 7. Protocolos de enlace
+## 10. Protocolos de enlace
 
-### 7.1. LAN cableadas
+### 10.1. LAN cableadas
 
 - Ethernet DIX
 - IEEE 802.3
@@ -284,7 +296,7 @@ Un dominio de colisión es un segmento físico de una red en el que las estacion
 {:.question}
 ¿Qué significan las siglas IEEE?
 
-### 7.2. LAN inalámbricas
+### 10.2. LAN inalámbricas
 
 - Wifi y la familia de estándares IEEE 802.11
 - Bluetooth y los estándares IEEE 802.15
@@ -292,7 +304,7 @@ Un dominio de colisión es un segmento físico de una red en el que las estacion
 {:.question}
 ¿En que frecuencias trabaja el Bluetooth? ¿Son más altas o mas bajas que las del Wifi?
 
-## 8. Trama Ethernet II
+## 11. Trama Ethernet II
 
 ![img-description](ethernetY8023.png)
 _Formato de una trama Ethernet II_
@@ -347,10 +359,12 @@ En este caso, STP elegirá los caminos 2 y 3 para asegurar sus comunicaciones y 
 
 Por tanto, STP ha sido capaz de utilizar la redundancia física de la topología de la red, impidiendo que se tomen bucles lógicos que causen tormentas de broadcast.-->
 
-## 9. Bibliografía
+## 12. Bibliografía
 
 - [¿Cómo Funciona un Switch?](https://ccnadesdecero.com/curso/como-funciona-un-swtich/)
 - [Qué es Ethernet y cómo funciona el estándar IEEE](https://ccnadesdecero.com/curso/estandar-ethernet-ieee/)
 - [STP: ¿Qué es y Para qué Sirve?](https://ccnadesdecero.com/curso/stp/)
 - [STP: ¿Cómo Funciona?](https://ccnadesdecero.com/curso/como-funciona-stp/)
 - [4.2.2 Métodos de Acceso al Medio](http://cidecame.uaeh.edu.mx/lcc/mapa/PROYECTO/libro27/422_mtodos_de_acceso_al_medio.html)
+- [CSMA/CD: protocolo de transmisión anticolisiones](https://www.ionos.es/digitalguide/servidores/know-how/csmacd/)
+- [CSMA/CA: definición y mecánica del protocolo](https://www.ionos.es/digitalguide/servidores/know-how/csmaca-protocolo-de-acceso-al-medio-para-redes-inalambricas/)
