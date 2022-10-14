@@ -10,7 +10,7 @@ img_path: /assets/img/practica-html-freecodecamp/
 
 El objetivo de esta práctica es aprender a escribir HTML de forma correcta para el desempeño correcto del dichos documentos.
 
-Duración: 4 h
+Duración: 3 h
 
 ## Entrega y presentación
 
