@@ -125,7 +125,10 @@ En este caso el medio es un medio guiado, sobre el cual se transmite una onda de
 ¿Funciona Ethernet (IEEE 802.3) por banda base o por banda ancha?
 
 {:.question}
-¿Qué tipo de onda se transmite por un cable de cobre de Ethernet? ¿Onda cuadrada o senoidal?
+¿Qué diferencia existe entre las señales analógicas o digitales?
+
+{:.question}
+¿Qué tipo de señales se transmiten por un cable de cobre de Ethernet? ¿Señales analógicas o digitales?
 
 ### 2.2. Limitaciones o perturbaciones en la transmisión
 

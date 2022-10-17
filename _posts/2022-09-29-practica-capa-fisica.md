@@ -14,7 +14,7 @@ El objetivo de esta práctica es conocer:
 - Los medios de transmisión guiados y no guiados más apropiados para cada situación.
 - Cómo se diseña e implanta un SCE.
 
-Duración: - horas.
+Duración: 3 horas.
 
 ## 2. Entrega y presentación
 
@@ -38,27 +38,33 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 A continuación se listan las actividades que se deben realizar.
 
 ### 3.1. Actividad
-¿En qué frecuencias trabajan las redes WiFi?
-
-### 3.2. Actividad
 ¿Cuándo utilizarías cables de pares UTP y cuando STP? ¿Qué ventajas e inconvenientes tendría sustituir un cable STP por fibra óptica?
 
-### 3.3. Actividad
+### 3.2. Actividad
 Enumera algunos elementos positivos y otros negativos de utilizar sistemas inalámbricos para las comunicaciones en redes de ordenadores.
 
-### 3.4. Actividad
+### 3.3. Actividad
 Describe los factores que generan problemas en la radiación de las señales inalámbricas.
 
+### 3.4. Actividad
+
+¿Cuál es el nombre técnico del estándar Ethernet?
+
 ### 3.5. Actividad
-¿Qué es una “U” en un armario de comunicaciones?
+
+¿Qué significan las siglas PoE? Explica la utilidad de usar PoE.
 
 ### 3.6. Actividad
-¿Cuál es el código de colores para la conectorización de un conector RJ45 según la norma T568B?
+¿Qué es una "U" en un armario de comunicaciones?
 
 ### 3.7. Actividad
-Cita los elementos que organizan una instalación construida con cableado estructurado.
+¿Cuál es el código de colores para la conectorización de un conector RJ45 según la norma T568B?
 
 ### 3.8. Actividad
+
+¿Qué es un SCE? Cita los elementos que organizan una instalación SCE.
+
+### 3.9. Actividad
 Declara como verdaderas o falsas las afirmaciones siguientes:
 
 1. El cableado vertical o de backbone siempre se tiende desde las plantas superiores a las inferiores o viceversa.
@@ -68,7 +74,7 @@ Declara como verdaderas o falsas las afirmaciones siguientes:
 5. Un cable UTP no puede superar los 100 metros de extremos a extremo.
 6. La máxima distancia permitida para un cable UTP es de 90 m sin contar los latiguillos de conexión en los extremos.
 
-### 3.9. Actividad
+### 3.10. Actividad
 Declara como verdaderas o falsas las afirmaciones siguientes:
 1. El acceso al CPD debe ser siempre restringido.
 2. Deben certificarse todos los cables tendidos, pero no los latiguillos de red.
@@ -77,23 +83,21 @@ Declara como verdaderas o falsas las afirmaciones siguientes:
 5. Los cables deben llegar al CPD por falso suelo o por falso techo.
 6. Los equipos del CPD deben estar protegidos contra subidas de tensión.
 
-### 3.10. Actividad
-Comenta cuales son los medios físicos más comunes para transmitir información.
-
 ### 3.11. Actividad
-¿Qué diferencias existen entre un adaptador cableado y uno inalámbrico?
+
+Comenta cuales son los medios físicos más comunes para transmitir información.
 
 ### 3.12. Actividad
 
-¿Cuál es la diferencia entre banda base y banda ancha? ¿Funciona Ethernet por banda base o por banda ancha?
+¿Qué diferencias existen entre un adaptador cableado y uno inalámbrico?
 
 ### 3.13. Actividad
 
-¿El protocolo Ethernet (IEEE 802.3) funciona sobre el medio físico de la fibra óptica?
+¿Cuál es la diferencia entre banda base y banda ancha? ¿Funciona Ethernet por banda base o por banda ancha? ¿Qué tiene que ver esto con el modem?
 
 ### 3.14. Actividad
 
-¿Qué diferencias y similitudes hay entre el protocolo Ethernet y el protocolo IEEE 802.3?
+¿El protocolo Ethernet (IEEE 802.3) funciona sobre el medio físico de la fibra óptica?
 
 ### 3.15. Actividad
 
@@ -101,7 +105,7 @@ Comenta cuales son los medios físicos más comunes para transmitir información
 
 ### 3.16. Actividad
 
-Dos razones por lo que se trenzan los pares trenzados
+Nombra dos razones por lo que se trenzan los pares trenzados
 
 ### 3.17. Actividad
 
@@ -110,3 +114,34 @@ Dos razones por lo que se trenzan los pares trenzados
 ### 3.18. Actividad
 
 Explica por que es necesario utilizar un cable cruzado cuando conectamos directamente un PC con otro.
+
+### 3.19. Actividad
+
+¿El uso de mayores frecuencias de transmisión implica mayor tasa de bits? ¿Por qué?
+
+### 3.20. Actividad
+
+¿Si el 5G usa frecuencias de microondas porque no es perjudicial para nuestra salud?
+
+### 3.21. Actividad
+¿Qué es un rack? 
+
+### 3.22. Actividad
+
+¿Qué es un panel de parcheo? ¿Dónde suele estar ubicado? ¿Cuál es su utilidad?
+
+### 3.23. Actividad
+
+Explica por qué es más sencillo detectar y corregir un fallo en una red de área local (LAN) en comparación con las redes de área amplia (WAN).
+
+### 3.24. Actividad
+
+¿Qué nodos son considerados son nodos de red?
+
+### 3.25. Actividad
+
+¿En qué frecuencias trabajan las redes WiFi?
+
+### 3.26. Actividad
+
+Si quiero montar una red Gigabit en el centro, ¿De qué categoría debe ser el cable que debería usar?
