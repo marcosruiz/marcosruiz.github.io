@@ -260,7 +260,7 @@ Nos pide que introduzcamos la contraseña, y efectivamente podremos ver el conte
 > 📷 Realiza una captura de pantalla en la que se vea cómo has procedido para desencriptar el archivo en el usuario "\<usuario\>2".
 {:.prompt-info}
 
-Descárgate también el archivo mensaje.cifrado que yo te proporciono en Aeducar (y que cifré con la clave pública marcos.publica) y desencríptalo. Para ello, tendrás que importarte en tu máquina servidor la clave privada (marcos.privada) que yo te proporciono. La clave de acceso al anillo de claves es Aneto3404. 
+Descárgate también el archivo mensaje.cifrado que yo te proporciono en Aeducar (y que cifré con la clave pública marcos.publica) y desencríptalo. Para ello, tendrás que importarte en tu máquina servidor la clave privada (marcos.privada) que yo te proporciono. La clave de acceso al anillo de claves es "Aneto3404". 
 
 > 📷 Pon capturas de pantalla de dicho proceso y el contenido del archivo que te proporciono desencriptado.
 {:.prompt-info}
