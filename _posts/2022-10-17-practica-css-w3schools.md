@@ -3,7 +3,7 @@ title: "Práctica: CSS en W3Schools"
 date: 2022-10-17 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
 tags: [aplicaciones web, smr, práctica]
-img_path: /assets/img/practica-html-w3schools/
+img_path: /assets/img/practica-css-w3schools/
 ---
 
 ## Objetivo y duración
@@ -14,7 +14,7 @@ Duración: 4 h
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un fichero PDF con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_P\<NúmeroDeLaPráctica\>.pdf". Por ejemplo, en mi caso el nombre del fichero PDF sería "RuizGarcía_Marcos_P02.pdf".
+La entrega de esta práctica debe ser un fichero PDF con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_P\<NúmeroDeLaPráctica\>.pdf". Por ejemplo, en mi caso el nombre del fichero PDF sería "RuizGarcía_Marcos_P04.pdf".
 
 1. Debe contener una portada con título, nombre de la asignatura, curso, autor y fecha de realización.
 2. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.

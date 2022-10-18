@@ -42,7 +42,7 @@ Ir al apartado [My learning](https://my-learning.w3schools.com/) y haz una captu
 {:.activity}
 ### Captura perfil con la tarea
 
-Realiza los ejercicios del siguiente enlace https://www.w3schools.com/html/exercise.asp. 
+Realiza los ejercicios de [este enlace](https://www.w3schools.com/html/exercise.asp). 
 
 Asegúrate de que se te añaden en tu apartado de "My learning" cuando lleves dos o tres ejercicios hechos.
 
