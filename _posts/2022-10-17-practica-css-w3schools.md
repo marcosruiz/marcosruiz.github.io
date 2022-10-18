@@ -37,11 +37,11 @@ Ir al apartado [My learning](https://my-learning.w3schools.com/) y haz una captu
 {:.activity}
 ### Captura perfil con la tarea
 
-Realiza los ejercicios del siguiente enlace https://www.w3schools.com/css/exercise.asp. 
+Realiza los ejercicios de [este enlace](https://www.w3schools.com/css/exercise.asp). 
 
 Asegúrate de que se te añaden en tu apartado de "My learning" cuando lleves dos o tres ejercicios hechos.
 
-Haz una o varias capturas cuando completes los 88 los ejercicios, de manera que quede demostrado que con tu cuenta has realizado todos los ejercicios y tienes la estrella correspondiente.
+Haz una o varias capturas cuando completes los 138 ejercicios, de manera que quede demostrado que con tu cuenta has realizado todos los ejercicios y tienes la estrella correspondiente.
 
 {:.activity}
 ### Voluntario: Cuestionario

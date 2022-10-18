@@ -110,7 +110,7 @@ Siendo n el número de nodos.
 En criptografía simétrica existen 2 modos de cifrado:
 
 - **Cifrado en bloques**: La información a cifrar se divide en bloques de longitud fija (por ejemplo 64 o 128 bits), y luego se aplica el algoritmo de cifrado a cada bloque utilizando una clave secreta. Ejemplos: DES, 3DES, AES.
-- **Cifrado de flujo**: Convierten el texto en claro en texto cifrado bit a bit. El cifrado de flujo se utiliza mucho en las telecomunicaciones. Por ejemplo, en una conversación de telefonía móvil la voz se digitaliza (es decir, se convierte a un flujo de bits) y se envía cifrada por la red de comunicaciones. Con el fin de no entorpecer la conversación, el proceso de cifrado debería ser lo bastante rápido como para no añadir retraso a la comunicación. Por ello, conviene que la operación de cifrado sea rápida. Ejemplo: RC4.
+- **Cifrado de flujo**: Convierten el texto en claro en texto cifrado byte a byte. El cifrado de flujo se utiliza mucho en las telecomunicaciones. Por ejemplo, en una conversación de telefonía móvil la voz se digitaliza (es decir, se convierte a un flujo de bits) y se envía cifrada por la red de comunicaciones. Con el fin de no entorpecer la conversación, el proceso de cifrado debería ser lo bastante rápido como para no añadir retraso a la comunicación. Por ello, conviene que la operación de cifrado sea rápida. Ejemplo: RC4.
 
 1. Los cifrados de bloque cifran bloques de varios bytes a la vez, mientras que los cifrados de flujo lo hacen byte a byte.
 1. Los algoritmos de flujo son por su modo de funcionamiento más rápidos que los de bloque, además de tener una menor complejidad a nivel de hardware.
