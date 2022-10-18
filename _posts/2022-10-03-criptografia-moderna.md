@@ -46,6 +46,8 @@ Ahora toca adentrarse en los métodos criptográficos modernos como la criptogr
 {:.question}
 ¿Por qué en el cifrado simétrico hay más llaves que cifrado asimétrico?
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5BYhdr5n3es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## 3. Cifrado simétrico
 
 La criptografía simétrica solo utiliza una clave para cifrar y descifrar el mensaje.
@@ -208,6 +210,8 @@ _Concepto del intercambio de claves secretas detrás del Diffie–Hellman_
 {:.question}
 ¿Con que firmamos si queremos autenticación?
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/apn1BN6XMVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### 4.1. Ventajas criptografía asimétrica
 
 La criptografía asimétrica resuelve los 2 problemas de la clave simétrica.
@@ -258,6 +262,11 @@ Son los siguientes:
 {:.question}
 ¿Es lo mismo cifrar que aplicar una función hash?
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FRBIc0udwv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lP_pbygY3PA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/it9suW1HN3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 6. Bibliografía
 
