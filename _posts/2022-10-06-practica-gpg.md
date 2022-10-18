@@ -265,7 +265,7 @@ Descárgate también el archivo mensaje.cifrado que yo te proporciono en Aeducar
 > 📷 Pon capturas de pantalla de dicho proceso y el contenido del archivo que te proporciono desencriptado.
 {:.prompt-info}
 
-## 4. Bibliografía
+## Bibliografía
 
 - [Cifrado asimétrico con gpg](https://fp.josedomingo.org/seguridadgm/u07/gpg2.html)
 - [Integridad, firmas y autenticación](https://fp.josedomingo.org/seguridadgm/u07/gpg3.html)
