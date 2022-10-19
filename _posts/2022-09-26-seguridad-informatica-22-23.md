@@ -24,4 +24,6 @@ pin: true
 
 ## Carpeta compartida de la asignatura
 
-La carpeta compartida de la asignatura es `\\ORDAI2PROF\Users\mruiz\Documents\CompartidaSI`.
+La carpeta compartida de la asignatura es `\\ORDAI2PROF\Compartida_SI_22_23`.
+
+El usuario es "alumno2" y la contraseña la misma de vuestros equipos.
