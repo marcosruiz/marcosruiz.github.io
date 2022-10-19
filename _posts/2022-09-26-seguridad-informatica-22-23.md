@@ -15,7 +15,7 @@ pin: true
 
 - P01 - [Práctica: Tipos de ataques](/posts/practica-tipos-de-ataque/)
 - P02 - [Práctica: Criptografía clásica](/posts/practica-criptografia-clasica/)
-- P03 - Práctica: Criptografía moderna
+- P03 - [Práctica: GPG](/posts/practica-gpg/)
 
 ## Enlaces increibles 🔥
 

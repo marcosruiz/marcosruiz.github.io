@@ -45,5 +45,3 @@ A continuación se listan las actividades que se deben realizar.
 
 ¿Qué diferencias existen entre las normas IEEE 802.3 y Ethernet-DIX?
 
-### 3.4. Actividad
-¿En qué frecuencias trabajan las redes WiFi?
