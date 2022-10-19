@@ -10,9 +10,13 @@ pin: true
 
 - UD1 - [Internet, características y evolución](/posts/internet-caracteristicas-evolucion/)
 - UD2 - [HTML](/posts/html/)
+- UD3 - [CSS](/posts/css/)
 
 
 - P01 - [Práctica: HTML](/posts/practica-html/)
+- P02 - [Práctica: HTML en W3Schools](/posts/practica-html-w3schools/)
+- P03 - [Práctica: HTML en freeCodeCamp](/posts/practica-html-freeCodeCamp/)
+- P04 - [Práctica: CSS en W3Schools](/posts/practica-css-w3schools/)
 
 
 ## Enlaces increibles 🔥

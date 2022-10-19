@@ -97,6 +97,9 @@ Clasifica las siguientes redes por el área de distribución:
 
 ¿En qué frecuencias trabajan las redes WiFi?
 
+> Esta pregunta debería estar en capa física
+{:.prompt-warning}
+
 ### 3.13. Actividad
 
 ¿De qué tipos es la transmisión en la emisión de un programa de radio? ¿En qué frecuencias trabajan las ondas de radio? ¿Son mayores frecuencias o menores que las redes WiFi? ¿A qué crees que se debe esto?

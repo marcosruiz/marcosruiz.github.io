@@ -144,4 +144,4 @@ Explica por qué es más sencillo detectar y corregir un fallo en una red de ár
 
 ### 3.26. Actividad
 
-Si quiero montar una red Gigabit en el centro, ¿De qué categoría debe ser el cable que debería usar?
+Si quiero montar una red Gigabit en el centro educativo, ¿De qué categoría debe ser el cable que debería usar?
