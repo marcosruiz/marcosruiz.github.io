@@ -371,7 +371,7 @@ Gran influencia negativa de los fenómenos meteorológicos. Elevado coste de los
 
 ## 4. Despliegue del cableado
 
-La elección de un buen sistema de cableado es de vital importancia en las instalaciones reales en las que se producirá el fenómeno de la comunicación. La inversión estimada para cables en una instalación es inferior al 10% del coste total. Sin embargo, está comprobado que el 70% de los fallos producidos en una red se deben a defectos del cableado. Por tanto, merece la pena no escatimar en el gasto que deba producirse en los medios de transmisión.
+La elección de un buen sistema de cableado es de vital importancia en las instalaciones reales en las que se producirá el fenómeno de la comunicación. **La inversión estimada para cables en una instalación es inferior al 10% del coste total. Sin embargo, está comprobado que el 70% de los fallos producidos en una red se deben a defectos del cableado.** Por tanto, merece la pena no escatimar en el gasto que deba producirse en los medios de transmisión.
 
 ### 4.1. Espacios
 
@@ -422,6 +422,9 @@ _DB9_
 
 {:.question}
 ¿Para qué se utiliza cada RJ?
+
+{:.question}
+¿Es el conector DB9 el mismo que el de los conectores VGA?
 
 #### 4.3.1. Conectores para fibra óptica
 
