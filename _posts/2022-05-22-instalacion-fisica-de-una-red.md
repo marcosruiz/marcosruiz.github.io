@@ -447,7 +447,7 @@ _Armario de comunicaciones_
 ![img-description](panelDeParcheo.jpg){: w="300"}
 _Panel de parcheo_
 
-<iframe src="https://www.youtube.com/embed/9oZIBcPEo7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XlIlfLreEvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 4.5. Canalizaciones
 
@@ -493,14 +493,20 @@ _Tester RJ45_
 
 Para la creación de cables existen los estándares T568A y T568B.
 
+![img-description](t568a.webp){: w="200"}
+_T568A_
+
+![img-description](t568b.webp){: w="200"}
+_T568B_
+
 #### 4.7.1. Cable de red directo
 
 Un cable de red directo es un tipo de cable de par trenzado que se usa en las redes de área local para conectar un ordenador a un núcleo de red como por ejemplo un enrutador.
 
-En un cable directo, los colores de cada par de cable coinciden. Para el cable de red directo se aplica solo un estándar de cableado: ambos extremos del cable deben tener la misma dirección: 568A a T568A o T568B a T568B.
+En un cable directo, los colores de cada par de cable coinciden. Para el cable de red directo se aplica solo un estándar de cableado: ambos extremos del cable deben tener la misma dirección: T568A a T568A o T568B a T568B.
 
 ![img-description](cableRedDirecto.png)
-_Cable de red directo_
+_Cable de red directo (T568B a T568B)_
 
 #### 4.7.2. Cable de red cruzado
 
@@ -509,7 +515,7 @@ Un cable de red cruzado es un tipo de cable Ethernet que se utiliza para conecta
 El cableado interno de los cables de red cruzados invierte las señales de transmisión y recepción. Este tipo de cable se usa con más frecuencia para conectar dos dispositivos del mismo tipo: por ejemplo, dos ordenadores (a través del controlador de interfaz de red) o dos switches entre sí.
 
 ![img-description](cableRedCruzado.png)
-_Cable de red cruzado_
+_Cable de red cruzado (T568A a T568B)_
 
 {:.question}
 ¿Qué sentido tiene cruzar los cables en el cable de red?
@@ -578,3 +584,4 @@ _Etiquetas identificativas_
 
 - [¿Qué es Ethernet (IEEE 802.3)?](https://www.ionos.es/digitalguide/servidores/know-how/ethernet-ieee-8023/)
 - [Banda base](https://es.wikipedia.org/wiki/Banda_base)
+- [T568A y T568B: dos estándares de cable de red RJ45](https://community.fs.com/es/blog/t568a-vs-t568b-difference-between-straight-through-and-crossover-cable.html)
