@@ -276,7 +276,7 @@ Nos pide que introduzcamos la contraseña, y efectivamente podremos ver el conte
 > 📷 Realiza una captura de pantalla en la que se vea cómo has procedido para desencriptar el archivo en el usuario "\<usuario\>2".
 {:.prompt-info}
 
-Descárgate también el archivo [mensajeAsimetricoMrug.cifrado](/assets/img/practica-gpg/mensajeAsimetricoMrug.cifrado) y desencríptalo. Para ello, tendrás que importarte en tu máquina servidor la clave privada [mrug.public.key](/assets/img/practica-gpg/mrug.public.key) que yo te proporciono. La clave de acceso al anillo de claves "Aneto".
+Descárgate también el archivo [mensajeAsimetricoMrug.cifrado](/assets/img/practica-gpg/mensajeAsimetricoMrug.cifrado) y desencríptalo. Para ello, tendrás que importarte en tu máquina servidor la clave privada [mrug.private.key](/assets/img/practica-gpg/mrug.private.key) que yo te proporciono. La clave de acceso al anillo de claves "Aneto".
 
 > 📷 Pon capturas de pantalla de dicho proceso y el contenido del archivo que te proporciono desencriptado.
 {:.prompt-info}
