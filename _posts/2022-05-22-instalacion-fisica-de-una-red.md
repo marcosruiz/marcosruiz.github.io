@@ -59,6 +59,7 @@ img_path: /assets/img/instalacion-fisica-de-una-red/
   - [4.7. Creación de cables](#47-creación-de-cables)
     - [4.7.1. Cable de red directo](#471-cable-de-red-directo)
     - [4.7.2. Cable de red cruzado](#472-cable-de-red-cruzado)
+    - [4.7.3. Cable de consola](#473-cable-de-consola)
   - [4.8. Recomendaciones de la instalación del cableado](#48-recomendaciones-de-la-instalación-del-cableado)
   - [4.9. Otros elementos](#49-otros-elementos)
     - [4.9.1. Balums o transceptores](#491-balums-o-transceptores)
@@ -67,7 +68,7 @@ img_path: /assets/img/instalacion-fisica-de-una-red/
     - [4.9.4. Canaleta](#494-canaleta)
     - [4.9.5. Placas de conectores y rosetas](#495-placas-de-conectores-y-rosetas)
     - [4.9.6. Herramientas utilizadas en la conectorización](#496-herramientas-utilizadas-en-la-conectorización)
-- [Bibliografía](#bibliografía)
+- [5. Bibliografía](#5-bibliografía)
 
 <!-- Este comentario está para que no se rompa el div -->
 
@@ -520,6 +521,10 @@ _Cable de red cruzado (T568A a T568B)_
 {:.question}
 ¿Qué sentido tiene cruzar los cables en el cable de red?
 
+#### 4.7.3. Cable de consola
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WMmdX26ti9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### 4.8. Recomendaciones de la instalación del cableado
 
 - **Subsistema troncal (vertical) o backbone**: porta el tráfico a cada planta, y se suele realizar con soportes de gran ancho de banda, como fibra óptica.
@@ -580,7 +585,7 @@ _Bridas_
 ![img-description](etiquetasIdentificativas.png){: w="300"}
 _Etiquetas identificativas_
 
-## Bibliografía
+## 5. Bibliografía
 
 - [¿Qué es Ethernet (IEEE 802.3)?](https://www.ionos.es/digitalguide/servidores/know-how/ethernet-ieee-8023/)
 - [Banda base](https://es.wikipedia.org/wiki/Banda_base)
