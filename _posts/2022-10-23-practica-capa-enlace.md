@@ -79,14 +79,14 @@ Identifica lo siguiente en el cable de pares de red de tu equipo:
 1. Norma de conexionado 568-A o 568-B.
 
 > Esto debería estar en la práctica de la capa física
-{:.prompt-info}
+{:.prompt-warning}
 
 ### 3.10. Actividad
 
 ¿Qué hilos de los cables Ethernet se usan para la transmisión de datos y con que direccionalidad? En base a esto, ¿este tipo de comunicación es simplex, half-duplex o full-duplex?
 
 > Esto debería estar en la práctica de la capa física
-{:.prompt-info}
+{:.prompt-warning}
 
 ### 3.11. Actividad
 
