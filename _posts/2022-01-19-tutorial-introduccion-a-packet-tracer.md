@@ -30,6 +30,8 @@ _Descargas de Packet Tracer_
 
 ## Instalar Packet Tracer (Windows)
 
+Haz click en [este enlace](https://www.filehorse.com/es/descargar-cisco-packet-tracer-32/27899/descargar/) y descarga Packet Tracer 6.2.
+
 Si hemos descargado el .exe para Windows hacemos doble click en él y lo instalamos siguiendo los pasos pertinentes.
 
 ## Instalar Packet Tracer (Ubuntu Deb)
@@ -149,7 +151,7 @@ A continuación se describirá brevemente cada uno de los modos de operación de
 
 ### Modo Topology
 
-En el Modo Topology, se realizan tres tareas principales, la primera de ellas es el diseño de la red mediante la creación y organización de los dispositivos; por consiguiente en este modo de operación se dispone de un área de trabajo y de un panel de herramientas en donde se encuentran los elementos de red disponibles en Packet Tracer.
+En el **Modo Topology**, se realizan tres tareas principales, la primera de ellas es el diseño de la red mediante la creación y organización de los dispositivos; por consiguiente en este modo de operación se dispone de un área de trabajo y de un panel de herramientas en donde se encuentran los elementos de red disponibles en Packet Tracer.
 
 ![img-description](/assets/img/tutorial-packet-tracer/secciones.png)
 _Modo Topology_
@@ -160,11 +162,12 @@ En la figura se identifican claramente 4 secciones:
 - **Sección 2**: Corresponde al área de trabajo, sobre la cual se realiza el dibujo del esquema topológico de la red. 
 - **Sección 3**: Sección correspondiente al grupo de elementos disponibles para la implementación de cualquier esquema topológico, el cual incluye: Routers, Switches, Cables para conexión, dispositivos terminales (PCs, impresoras, Servidores), Dispositivos Inalámbricos, entre otros. 
 - **Sección 4**: Lista el conjunto de elementos que hacen parte del dispositivo seleccionado en la sección 3. A continuación se ilustran el conjunto de elementos que hacen parte de cada grupo de dispositivos.
-    - Routers: Series 1800, 2600, 2800, Genéricos
-    - Switches: Series 2950,2960, Genérico, Bridge
-    - Dispositivos Inalámbricos: Access-Point, Router Inalámbrico
-    - Tipos de conexiones disponibles: Cable Serial, consola, directo, cruzado, fibra óptica, teléfono, entre otras.
-    - Dispositivos terminales: PC, Servidores, Impresoras, Teléfonos IP
+    - **Routers**: Series 1800, 2600, 2800, Genéricos.
+    - **Switches**: Series 2950,2960, Genérico, Bridge.
+    - **Dispositivos** Inalámbricos: Access-Point, Router Inalámbrico.
+    - **Tipos de conexiones disponibles**: Cable Serial, consola, directo, cruzado, fibra óptica, teléfono, entre otras.
+    - **Dispositivos terminales**: PC, Servidores, Impresoras, Teléfonos IP.
+    - **Dispositivos Adicionales**: PC con tarjeta inalámbrica.
 
 ![img-description](/assets/img/tutorial-packet-tracer/routers.png)
 _Routers_
@@ -181,6 +184,9 @@ _Tipos de conexiones disponibles_
 ![img-description](/assets/img/tutorial-packet-tracer/end-devices.png)
 _Dispositivos terminales_
 
+![img-description](/assets/img/tutorial-packet-tracer/custom-made-devices.png)
+_Dispositivos Adicionales_
+
 La herramienta está diseñada para orientar al estudiante en su manipulación adecuada. Dentro del modo de operación topology, existe una herramienta que permite hacer de forma automática, las conexiones entre los dispositivos de la red, ésta opción se activa cuando se selecciona el Simple Mode (modo simple) y esta selección hace que el programa sea el que elija tipo de enlace, de acuerdo con la conexión que se va a realizar.
 
 Cuando se desactiva el Simple Mode, el usuario debe seleccionar el enlace y los puertos de los dispositivos por los cuales se efectuará dicha conexión.
@@ -189,7 +195,7 @@ Adicionalmente, re recomienda que en las primeras experiencias con el programa, 
 
 ### Modo Simulation
 
-En el Modo Simulation, se crean y se programan los paquetes que se van a transmitir por la red que previamente se ha modelado.
+En el **Modo Simulation**, se crean y se programan los paquetes que se van a transmitir por la red que previamente se ha modelado.
 
 ![img-description](/assets/img/tutorial-packet-tracer/modo-simulacion.png)
 _Modo Simulation_
@@ -203,7 +209,7 @@ _Modo Simulación con ventana describiendo el proceso de transmisión de paquete
 
 ### Modo Realtime
 
-Y finalmente el Modo Realtime, está diseñado para enviar pings o mensajes SNMP, con el objetivo de reconocer los dispositivos de la red que están activos, y comprobar que se puedan transmitir paquetes de un hosts a otro(s) en la red.
+Y finalmente el **Modo Realtime**, está diseñado para enviar pings o mensajes SNMP, con el objetivo de reconocer los dispositivos de la red que están activos, y comprobar que se puedan transmitir paquetes de un hosts a otro(s) en la red.
 
 ![img-description](/assets/img/tutorial-packet-tracer/modo-operacion-tiempo-real.png)
 _Modo Realtime_
@@ -230,7 +236,7 @@ Router#show ip route
 El siguiente comando guarda la configuración actual como configuración de inicio. De esta manera no se perderá la configuración que hemos hecho aunque reiniciemos el router.
 
 ```console
-copy running-config startup-config
+Router#copy running-config startup-config
 ```
 
 ## Configuración de interfaz en Packet Tracer

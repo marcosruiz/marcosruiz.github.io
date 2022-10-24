@@ -2,7 +2,7 @@
 title: "Modelos de red: OSI vs TCP/IP"
 date: 2022-05-17 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
-tags: [packet tracer, redes locales, smr, teoría]
+tags: [redes locales, smr, teoría]
 img_path: /assets/img/modelos-red-osi-vs-tcp-ip/
 ---
 

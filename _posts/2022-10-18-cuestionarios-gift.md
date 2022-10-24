@@ -38,7 +38,7 @@ A continuación se ponen plantillas para copiar y pegar de forma rápida
 }
 ```
 
-### Pregunta respuesta numerica
+### Pregunta respuesta numérica
 
 ```
 [markdown]Pregunta {#5}
