@@ -180,7 +180,9 @@ El algoritmo se emplea para encriptación de ficheros y para encriptar la comuni
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q8K311s7EiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Años 70: los criptógrafos Diffie y Hellman publicaron sus investigaciones sobre criptografía asimétrica. Su algoritmo de cifrado utiliza 2 claves matemáticas relacionadas de manera que lo que cifras con una solo lo puedes descifrar con otra. 
+Años 70: los criptógrafos Diffie y Hellman publicaron sus investigaciones sobre criptografía asimétrica. Su algoritmo de cifrado utiliza 2 claves matemáticas relacionadas de manera que lo que cifras con una solo lo puedes descifrar con otra.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vZToAM4kwjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 La criptografía asimétrica se basa en el uso de dos claves:
 
@@ -231,6 +233,7 @@ Sin embargo, los algoritmos públicos presentan ciertos problemas.
 
 Existen varios:
 
+- Diffie 
 - RSA
 - DSAA
 - ElGamal
@@ -267,6 +270,37 @@ Son los siguientes:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lP_pbygY3PA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/it9suW1HN3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## PKI
+
+PKI (Public Key Infraestructure o Infraestructura de clave pública) es un conjunto de roles, políticas, hardware, software y procedimientos necesarios para crear, administrar, distribuir, usar, almacenar y revocar certificados digitales y administrar el cifrado de clave pública.
+
+Se asegura:
+
+- **Integridad**: El mensaje no ha sido cambiado.
+- **No repudio**: La capacidad de demostrar o probar la participación de las partes
+- **Identificación**: Mecanismo o proceso que provee la capacidad de identificar a un usuario de un sistema.
+- **Autenticación**: Permite verificar la identidad o asegurar que un usuario es quien dice ser.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ysfBTecjGIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{:.question}
+¿Se puede usar cifrado simétrico para realizar una firma electrónica?
+
+{:.question}
+¿Qué es el no repudio?
+
+{:.question}
+¿Qué información hay en el fichero /etc/shadow? ¿Qué es el salt o salto y para qué sirve?
+
+### Nuevos interlocutores
+
+- CA: Autoridad de Certificación
+- RA: Autoridad de Registro
+- VA: Autoridad de Validación
+- Repositorios 
+
+
 
 ## 6. Bibliografía
 

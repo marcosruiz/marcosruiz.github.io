@@ -281,6 +281,9 @@ Descárgate también el archivo [mensajeAsimetricoMrug.cifrado](/assets/img/prac
 > 📷 Pon capturas de pantalla de dicho proceso y el contenido del archivo que te proporciono desencriptado.
 {:.prompt-info}
 
+{:.question}
+¿Qué es el fingerprint?
+
 ## Bibliografía
 
 - [Cifrado asimétrico con gpg](https://fp.josedomingo.org/seguridadgm/u07/gpg2.html)
