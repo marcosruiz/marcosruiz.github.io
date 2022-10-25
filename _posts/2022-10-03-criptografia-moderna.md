@@ -175,7 +175,6 @@ Es un algoritmo de ejecución rápida en software.
 
 El algoritmo se emplea para encriptación de ficheros y para encriptar la comunicación en protocolos como el SSL (TLS).
 
-
 ## 4. Cifrado asimétrico
 
 Años 70: los criptógrafos Diffie y Hellman publicaron sus investigaciones sobre criptografía asimétrica. Su algoritmo de cifrado utiliza 2 claves matemáticas relacionadas de manera que lo que cifras con una solo lo puedes descifrar con otra.
@@ -231,7 +230,7 @@ Existen varios:
 - DSA
 - ElGamal
 
-#### Diffie-Hellman
+#### 4.3.1. Diffie-Hellman
 
 La criptografía asimétrica vio su nacimiento en 1976, cuando Ralph Merkel, Whitfield Diffie y Martin Hellman crearon el primer sistema público de criptografía asimétrica. Aunque no era exactamente asimétrico, el algoritmo  Diffie-Hellman supuso un primera paso importantísimo en el desarrollo de esta técnica, que pronto vio llegar más aportaciones de otros investigadores.
 
@@ -242,27 +241,53 @@ _Concepto del intercambio de claves secretas detrás del Diffie–Hellman_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q8K311s7EiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### 4.3.1. RSA
+#### 4.3.2. RSA
 
 Es un sistema criptográfico de clave pública desarrollado en 1977. Es el primer y más utilizado algoritmo de este tipo y es válido tanto para cifrar como para firmar digitalmente.
+
+En este caso se usan dos pares de claves privadas y públicas.
+
+Es el algoritmo de esta clase más importante y extendido.
+
+Utiliza la exponenciación modular para cifrar y descifrar y basa su seguridad en la complejidad del problema de la factorización de enteros grandes.
+
+Las claves pública y privada se calculan a partir de un número que se obtiene como producto de dos primos grandes. Un atacante que quiera recuperar un texto claro a partir del criptograma y de la clave pública, tiene que enfrentarse a dicho problema de factorización.
+
+{:.question}
+¿En qué consiste factorizar?
 
 Garantiza no solo la confidencialidad de la comunicación entre dos partes, cifrando en origen el mensaje que se va a transmitir por un canal inseguro y descifrándolo en recepción.
 
 También proporciona otros servicios o funciones de seguridad de la información, como son la autenticación de origen , la integridad o el no-repudio (mediante la firma digital).
 
-En este caso se usan dos pares de claves privadas y públicas.
-
-#### DSA
+#### 4.3.3. DSA
 
 DSA es un estándar del Gobierno Federal de los Estados Unidos de América o FIPS para firmas digitales.
 
-#### ElGamal
+#### 4.3.4. ElGamal
 
 El procedimiento de cifrado/descifrado ElGamal se refiere a un esquema de cifrado basado en el problema matemático del logaritmo discreto. Es un algoritmo de criptografía asimétrica basado en la idea de Diffie-Hellman y que funciona de una forma parecida a este algoritmo discreto. El algoritmo de ElGamal puede ser utilizado tanto para generar firmas digitales como para cifrar o descifrar.
 
-## 5. Hash
+## 5. Criptografía híbrida
 
-Leer el artículo [¿Qué Es Un Hash Y Cómo Funciona?](https://latam.kaspersky.com/blog/que-es-un-hash-y-como-funciona/2806/)
+El cifrado asimétrico no puede ser usado para cifrar todos los paquetes de intercambiados en una red local porque el bajo rendimiento del algoritmo ralentizaría el tráfico. 
+
+En su lugar se adopta un esquema híbrido (se usa criptografía asimétrica y criptografía simétrica).
+
+1. La criptografía asimétrica se usa para el inicio de la sesión (Hay que generar un canal seguro donde acordar la clave simétrica aleatoria que se utilizará para cifrar la conversación)
+2. La criptografía simétrica se usará durante la transmisión, utilizando la clave simétrica acordada durante el inicio de la sesión.
+
+La clave simétrica se suele cambiar cada cierto tiempo (minutos) para dificultar más el espionaje de la conversación.
+
+![Comunicación a través de criptografía híbrida](criptografiaHibrida.png)
+_Comunicación a través de criptografía híbrida_
+
+![Proceso híbrido del protocolo SSH](esquemaHibridoCifradoSsh.png)
+_Esquema híbrido del protocolo SSH_
+
+## 6. Hash
+
+Un hash es un algoritmo matemático que transforma un bloque arbitrario de datos en una nueva serie de caracteres de longitud fija. 
 
 Son los siguientes:
 
@@ -271,6 +296,29 @@ Son los siguientes:
 - SHA-256
 - MD5
 - RIPE-MD
+
+Leer el artículo [¿Qué Es Un Hash Y Cómo Funciona?](https://latam.kaspersky.com/blog/que-es-un-hash-y-como-funciona/2806/)
+
+### 6.1. Características de los hash
+
+1. Los hashes producidos, a pesar de que son palabras parecidas, son totalmente distintos.
+1. Ambos tienen 40 caracteres de longitud: ya sean 5 caracteres los que metamos o todos los caracteres de esta presentación, la función hash hace un resumen de 40 caracteres.
+1. Son unidireccionales: no es posible, a partir del valor resumen, calcular los datos originales.
+1. No es necesario una clave para obtener el hash.
+1. No existen 2 entradas que produzcan el mismo hash.
+
+
+![Ejemplos de la aplicación de un algoritmo hash](ejemplosHash.png)
+_Ejemplos de la aplicación de un algoritmo hash_
+
+### 6.2. Aplicación de los hash
+
+- Almacenamiento de contraseñas: se guarda el hash que produce la contraseña pero no la contraseña.
+- Integridad de los mensajes (como ya vimos en el tema y práctica anterior).
+- Firma digital de documentos.
+- Sumas de verificación para programas: En este caso, los algoritmos generan un valor resumen a partir del código fuente que permite comprobar, por ejemplo, que la versión del programa que se ha descargado es idéntica al original y no un software malicioso.
+
+En [esta web](https://emn178.github.io/online-tools/sha256.html).
 
 {:.question}
 ¿Donde podemos ver los hashes de las contraseñas en un sistema GNU Linux?
@@ -287,19 +335,76 @@ Son los siguientes:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/it9suW1HN3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Criptografía híbrida
+### 6.3. Como obtener un hash
+
+En GNU Linux:
+
+```console
+$ md5sum <fichero del que quiero obtener el hash>
+```
+
+En Windows:
+
+```console
+$ winmd5 <fichero del que quiero obtener el hash>
+```
+
+## 7. Firma digital
+
+- La primera utilidad de la criptografía es **ocultar el mensaje** o encriptarlo, es decir, garantizar la confidencialidad de la comunicación.
+- La segunda es conseguir **determinar la autenticidad del emisor**. ¿Cómo podría estar seguro un general romano de que el mensaje con las órdenes venía de otro general romano y no del algún enemigo? Si el enemigo conocía el algoritmo de cifrado y la clave actual, podía intentar engañarle mediante un mensaje falso pero correctamente cifrado.
+- La tercera utilidad es **asegurar el no repudio** del documento firmado (firma).
+
+### 7.1. Proceso de firma digital
+
+![Firma electrónica vs firma digital](firmaElectronicaVsFirmaDigital.png)
+_Firma electrónica vs firma digital_
+
+![Proceso de firma digital](procesoFirmaDigital.png)
+_Proceso de firma digital_
+
+#### 7.1.1. Paso 1
+
+El emisor aplica al documento una función de resumen (Función hash). 
+
+El resultado de esa función es un lista de caracteres (resumen), que la función garantiza que solo se puede haber obtenido con el documento original
+
+El algoritmo de la función hash no necesita una clave externa como los algoritmos de cifrado
+
+#### 7.1.2. Paso 2
+
+Ahora el emisor cifra ese resumen con su clave privada y lo envía al destinatario junto con el documento original. 
+
+#### 7.1.3. Paso 3
+
+En el destino se hacen 2 operaciones:
+
+1. Aplicar la misma función hash al documento para obtener su resumen.
+2. Descifrar el resumen recibido, utilizando la clave publica del emisor.
+
+Si ambos resúmenes coinciden, el destino puede estar seguro que el emisor del documento es el mismo que el dueño de la clave pública.
+
+Por supuesto, si queremos que el documento original no pueda ser interceptado en la transmisión (emisor -> receptor), deberemos cifrarlo.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ysfBTecjGIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### SSH
+## 8. PKI
 
+Hasta de ahora hemos aprendido:
 
+- Enviar documentos a un destinatario de manera que solo él podría leerlos (cifrado)
+- Identificar al firmante
+- Asegurar la integridad del documento firmado y asegurar el no repudio del documento firmado (firma)
 
-## PKI
+En todos los casos necesitaríamos una comprobación extra sobre la clave pública: comprobar que la huella de la clave importada coincide con la huella de la clave original (Para asegurarnos de que vamos a comunicarnos con la persona correcta - AUTENTIFICACIÓN).
 
-PKI (Public Key Infraestructure o Infraestructura de clave pública) es un conjunto de roles, políticas, hardware, software y procedimientos necesarios para crear, administrar, distribuir, usar, almacenar y revocar certificados digitales y administrar el cifrado de clave pública.
+Comprobación de la huella con gpg:
 
-Se asegura:
+```console
+$ gpg --fingerprint
+```
+
+Con el PKI se asegura:
 
 - **Integridad**: El mensaje no ha sido cambiado.
 - **No repudio**: La capacidad de demostrar o probar la participación de las partes
@@ -315,15 +420,29 @@ Se asegura:
 {:.question}
 ¿Qué información hay en el fichero /etc/shadow? ¿Qué es el salt o salto y para qué sirve?
 
-### Nuevos interlocutores
+### 8.1. Nuevos interlocutores
 
-- CA: Autoridad de Certificación
-- RA: Autoridad de Registro
-- VA: Autoridad de Validación
-- Repositorios 
+- **Autoridad de Certificación (CA)**: su misión es emitir certificados. Hasta ahora los generábamos nosotros mismos.
+- **Autoridad de Registro (RA)**: es la responsable de asegurar que el solicitante del certificado es quien dice ser.
+- **Autoridad de Validación (VA)**: es la responsable de comprobar la validez de los certificados digitales emitidos. Suele coincidir con la CA.
 
-## 6. Bibliografía
+![Interlocutores PKI](pki.jpg)
+_Interlocutores PKI_
+
+### 8.2. Funcionamiento PKI
+
+1. Durante el inicio de la sesión, el SERVIDOR envía su clave publica al CLIENTE. El CLIENTE, antes de iniciar el diálogo, DESCONFIA (necesita comprobar que el servidor es quien dice ser).
+1. El SERVIDOR lo ha supuesto y ha enviado, junto con su clave pública, la firma digital de esa clave. Esa firma digital ha sido realizada por una CA oficial (utilizando la clave privada de esa CA)
+1. El CLIENTE puede verificar la firma recibida utilizando la clave pública de la CA. Si la firma es correcta, la clave pública del SERVIDOR también lo es y podemos iniciar una sesión segura con toda confianza.
+
+Por lo tanto, para que funcione la autentificación de clave publica mediante PKI, se necesitan 2 pasos previos:
+
+- El SERVIDOR ha conseguido que una CA firme su clave publica (Por ejemplo, Verisign, FNMT…)
+- El CLIENTE dispone de la clave pública de esa CA dentro de su llavero de claves asimétricas.
+
+## 9. Bibliografía
 
 - [Función hash](https://es.wikipedia.org/wiki/Funci%C3%B3n_hash)
 - [5 - Criptografía](https://sites.google.com/site/seguridadinformaticaisidro/5---criptografia)
 - [Qué es la criptografía asimétrica y cómo funciona](https://protecciondatos-lopd.com/empresas/criptografia-asimetrica/)
+- [¿Qué es la infraestructura de clave pública (PKI)?](https://www.entrust.com/es/resources/certificate-solutions/learn/what-is-pki)
