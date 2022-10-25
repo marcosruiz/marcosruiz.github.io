@@ -178,11 +178,7 @@ El algoritmo se emplea para encriptación de ficheros y para encriptar la comuni
 
 ## 4. Cifrado asimétrico
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Q8K311s7EiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Años 70: los criptógrafos Diffie y Hellman publicaron sus investigaciones sobre criptografía asimétrica. Su algoritmo de cifrado utiliza 2 claves matemáticas relacionadas de manera que lo que cifras con una solo lo puedes descifrar con otra.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vZToAM4kwjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 La criptografía asimétrica se basa en el uso de dos claves:
 
@@ -199,9 +195,6 @@ Lo que se cifra con la clave publica, solo puede descifrarse con la clave privad
 
 ![Proceso de cifrado asimétrico](criptografiaAsimetrica.png)
 _Proceso de cifrado asimétrico_
-
-![Concepto del intercambio de claves secretas detrás del Diffie–Hellman](intercambioDeSecreto.png)
-_Concepto del intercambio de claves secretas detrás del Diffie–Hellman_
 
 {:.question}
 ¿Qué desventajas tiene el cifrado asimétrico?
@@ -233,16 +226,39 @@ Sin embargo, los algoritmos públicos presentan ciertos problemas.
 
 Existen varios:
 
-- Diffie 
+- Diffie-Hellman
 - RSA
-- DSAA
+- DSA
 - ElGamal
 
+#### Diffie-Hellman
+
+La criptografía asimétrica vio su nacimiento en 1976, cuando Ralph Merkel, Whitfield Diffie y Martin Hellman crearon el primer sistema público de criptografía asimétrica. Aunque no era exactamente asimétrico, el algoritmo  Diffie-Hellman supuso un primera paso importantísimo en el desarrollo de esta técnica, que pronto vio llegar más aportaciones de otros investigadores.
+
+![Concepto del intercambio de claves secretas detrás del Diffie–Hellman](intercambioDeSecreto.png)
+_Concepto del intercambio de claves secretas detrás del Diffie–Hellman_
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vZToAM4kwjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q8K311s7EiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 #### 4.3.1. RSA
+
+Es un sistema criptográfico de clave pública desarrollado en 1977. Es el primer y más utilizado algoritmo de este tipo y es válido tanto para cifrar como para firmar digitalmente.
 
 Garantiza no solo la confidencialidad de la comunicación entre dos partes, cifrando en origen el mensaje que se va a transmitir por un canal inseguro y descifrándolo en recepción.
 
 También proporciona otros servicios o funciones de seguridad de la información, como son la autenticación de origen , la integridad o el no-repudio (mediante la firma digital).
+
+En este caso se usan dos pares de claves privadas y públicas.
+
+#### DSA
+
+DSA es un estándar del Gobierno Federal de los Estados Unidos de América o FIPS para firmas digitales.
+
+#### ElGamal
+
+El procedimiento de cifrado/descifrado ElGamal se refiere a un esquema de cifrado basado en el problema matemático del logaritmo discreto. Es un algoritmo de criptografía asimétrica basado en la idea de Diffie-Hellman y que funciona de una forma parecida a este algoritmo discreto. El algoritmo de ElGamal puede ser utilizado tanto para generar firmas digitales como para cifrar o descifrar.
 
 ## 5. Hash
 
@@ -271,6 +287,14 @@ Son los siguientes:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/it9suW1HN3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Criptografía híbrida
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ysfBTecjGIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### SSH
+
+
+
 ## PKI
 
 PKI (Public Key Infraestructure o Infraestructura de clave pública) es un conjunto de roles, políticas, hardware, software y procedimientos necesarios para crear, administrar, distribuir, usar, almacenar y revocar certificados digitales y administrar el cifrado de clave pública.
@@ -281,8 +305,6 @@ Se asegura:
 - **No repudio**: La capacidad de demostrar o probar la participación de las partes
 - **Identificación**: Mecanismo o proceso que provee la capacidad de identificar a un usuario de un sistema.
 - **Autenticación**: Permite verificar la identidad o asegurar que un usuario es quien dice ser.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ysfBTecjGIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
 ¿Se puede usar cifrado simétrico para realizar una firma electrónica?
@@ -300,8 +322,8 @@ Se asegura:
 - VA: Autoridad de Validación
 - Repositorios 
 
-
-
 ## 6. Bibliografía
 
 - [Función hash](https://es.wikipedia.org/wiki/Funci%C3%B3n_hash)
+- [5 - Criptografía](https://sites.google.com/site/seguridadinformaticaisidro/5---criptografia)
+- [Qué es la criptografía asimétrica y cómo funciona](https://protecciondatos-lopd.com/empresas/criptografia-asimetrica/)
