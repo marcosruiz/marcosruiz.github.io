@@ -32,15 +32,18 @@ img_path: /assets/img/criptografia-moderna/
   - [6.1. Características de los hash](#61-características-de-los-hash)
   - [6.2. Aplicación de los hash](#62-aplicación-de-los-hash)
   - [6.3. Como obtener un hash](#63-como-obtener-un-hash)
-- [7. Firma digital](#7-firma-digital)
-  - [7.1. Proceso de firma digital](#71-proceso-de-firma-digital)
-    - [7.1.1. Paso 1](#711-paso-1)
-    - [7.1.2. Paso 2](#712-paso-2)
-    - [7.1.3. Paso 3](#713-paso-3)
-- [8. PKI](#8-pki)
-  - [8.1. Nuevos interlocutores](#81-nuevos-interlocutores)
-  - [8.2. Funcionamiento PKI](#82-funcionamiento-pki)
-- [9. Bibliografía](#9-bibliografía)
+- [7. Firma electrónica](#7-firma-electrónica)
+  - [7.1. Proceso básico de firma electrónica](#71-proceso-básico-de-firma-electrónica)
+- [8. Firma digital](#8-firma-digital)
+  - [8.1. Proceso de firma digital](#81-proceso-de-firma-digital)
+    - [8.1.1. Paso 1](#811-paso-1)
+    - [8.1.2. Paso 2](#812-paso-2)
+    - [8.1.3. Paso 3](#813-paso-3)
+- [9. Certificado digital de clave pública](#9-certificado-digital-de-clave-pública)
+- [10. PKI (Public Key Infraestructure)](#10-pki-public-key-infraestructure)
+  - [10.1. Nuevos interlocutores](#101-nuevos-interlocutores)
+  - [10.2. Funcionamiento PKI](#102-funcionamiento-pki)
+- [11. Bibliografía](#11-bibliografía)
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -377,8 +380,6 @@ En [esta web](https://emn178.github.io/online-tools/sha256.html).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lP_pbygY3PA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/it9suW1HN3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 {:.question}
 ¿Qué información hay en el fichero /etc/shadow? 
 
@@ -407,16 +408,67 @@ En Windows:
 $ winmd5 <fichero del que quiero obtener el hash>
 ```
 
-## 7. Firma digital
+## 7. Firma electrónica
+
+La firma electrónica es un conjunto de datos electrónicos que acompañan o que están asociados a un documento electrónico y cuyas funciones básicas son:
+
+- **Identificar al firmante de manera inequívoca**.
+- **Asegurar la integridad del documento firmado**. Asegura que el documento firmado es exactamente el mismo que el original y que no ha sufrido alteración o manipulación.
+- **Asegurar el no repudio del documento firmado**. Los datos que utiliza el firmante para realizar la firma son únicos y exclusivos y, por tanto, posteriormente, no puede decir que no ha firmado el documento.
+
+Generalmente, la ley equipara la firma electrónica a la firma manuscrita.
+
+Podemos precisar varios tipos:
+
+- Firma electrónica **simple**: contempla los datos electrónicos empleados por la persona firmante. Es la que posee un menor nivel de seguridad. Por ejemplo: firma digitalizada.
+- Firma electrónica **avanzada**: permite, además de conocer a la persona firmante, saber si se han efectuado cambios posteriormente. Por ejemplo: firma digital.
+- Firma electrónica **cualificada**: se trata de una firma electrónica avanzada que ha sido generada por un dispositivo capacitado para la creación de firmas electrónicas. Por ejemplo: firma digital.
+
+### 7.1. Proceso básico de firma electrónica
+
+El proceso básico que se sigue para la firma electrónica es el siguiente:
+
+1. El usuario dispone de un documento electrónico (una hoja de cálculo, un pdf, una imagen, incluso un formulario en una página web) y de un certificado que le pertenece y le identifica.
+1. La aplicación o dispositivo digital utilizados para la firma realiza un resumen del documento. El resumen de un documento de gran tamaño puede llegar a ser tan solo de unas líneas. Este resumen es único y cualquier modificación del documento implica también una modificación del resumen.
+1. La aplicación utiliza la clave privada para codificar el resumen.
+1. La aplicación crea otro documento electrónico que contiene ese resumen codificado. Este nuevo documento es la firma electrónica.
+
+## 8. Firma digital
 
 - La primera utilidad de la criptografía es **ocultar el mensaje** o encriptarlo, es decir, garantizar la confidencialidad de la comunicación.
 - La segunda es conseguir **determinar la autenticidad del emisor**. ¿Cómo podría estar seguro un general romano de que el mensaje con las órdenes venía de otro general romano y no del algún enemigo? Si el enemigo conocía el algoritmo de cifrado y la clave actual, podía intentar engañarle mediante un mensaje falso pero correctamente cifrado.
 - La tercera utilidad es **asegurar el no repudio** del documento firmado (firma).
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Es lo mismo firma electrónica que firma digital?</summary>
+  <div class="card-body" markdown="1">
+
+La **firma electrónica** es por tanto un conjunto de datos electrónicos que acompañan a una determinada información también en formato electrónico. Realizar una firma electrónica quiere decir que una persona física verifica una acción o procedimiento mediante un medio electrónico, dejando un registro de la fecha y hora de la misma.
+
+Una **firma digital** es una implementación técnica específica de algunas firmas electrónicas mediante la aplicación de algoritmos criptográficos. Por tanto, se refieren a la tecnología de cifrado / descifrado en la que se basan algunas firmas electrónicas como la avanzada y cualificada.
+
 ![Firma electrónica vs firma digital](firmaElectronicaVsFirmaDigital.png)
 _Firma electrónica vs firma digital_
 
-### 7.1. Proceso de firma digital
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es la firma digitalizada?</summary>
+  <div class="card-body" markdown="1">
+
+La firma digitalizada es la conversión del trazo de una firma en una imagen. Para obtener tu propia firma digitalizada tienes que realizarla sobre un papel y escanearla. O bien realizarla mediante algún tipo de hardware, como pueden ser los pads de firma, que te permiten guardar la imagen de tu firma en el ordenador - en formato .jpg o .png - y utilizarla cada vez que la necesites.
+
+La firma digitalizada se considera firma electrónica simple, con lo cual es legal. Pero no ofrecen ninguna garantía respecto a la identidad del firmante (que es una característica de las firmas simples).
+
+Además, las firmas digitalizadas se pueden falsificar muy fácilmente. Con lo que resulta paradójico que este tipo de firmas sea de las más utilizadas por la mayoría de las personas para firmar, y dar su consentimiento, en muchos documentos y contratos.
+
+  </div>
+</details>
+
+### 8.1. Proceso de firma digital
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JRYUxqghPG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ![Proceso de firma digital](procesoFirmaDigital.png)
 _Proceso de firma digital_
@@ -424,7 +476,7 @@ _Proceso de firma digital_
 ![Proceso de firma digital](firmaDigital.png)
 _Proceso de firma digital_
 
-#### 7.1.1. Paso 1
+#### 8.1.1. Paso 1
 
 El emisor aplica al documento una función de resumen (Función hash). 
 
@@ -432,11 +484,11 @@ El resultado de esa función es un lista de caracteres (resumen), que la funció
 
 El algoritmo de la función hash no necesita una clave externa como los algoritmos de cifrado
 
-#### 7.1.2. Paso 2
+#### 8.1.2. Paso 2
 
 Ahora el emisor cifra ese resumen con su clave privada y lo envía al destinatario junto con el documento original. 
 
-#### 7.1.3. Paso 3
+#### 8.1.3. Paso 3
 
 En el destino se hacen 2 operaciones:
 
@@ -449,7 +501,23 @@ Por supuesto, si queremos que el documento original no pueda ser interceptado en
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ysfBTecjGIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 8. PKI
+## 9. Certificado digital de clave pública
+
+Es, principalmente, un documento digital que contiene nuestros datos identificativos que están autentificados por un organismo oficial. El certificado digital es un documento que confirma nuestra identidad en internet como Persona Física y es obligatorio para poder consultar y realizar trámites con la Administración Pública.
+
+![Certificado digital](certificadoDigital.png)
+_Certificado digital_
+
+![Captura de pantalla de un certificado digital](screenshotCertificadoDigital.png)
+_Captura de pantalla de un certificado digital_
+
+{:.question}
+¿Se puede validar un certificado sin conexión a Internet?
+
+{:.question}
+¿Qué es una lista de revocación de certificados?
+
+## 10. PKI (Public Key Infraestructure)
 
 Hasta de ahora hemos aprendido...
 
@@ -474,13 +542,15 @@ Con el PKI se asegura:
 - **Identificación**: Mecanismo o proceso que provee la capacidad de identificar a un usuario de un sistema.
 - **Autenticación**: Permite verificar la identidad o asegurar que un usuario es quien dice ser.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J2ToaJoHWII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 {:.question}
 ¿Se puede usar cifrado simétrico para realizar una firma electrónica?
 
 {:.question}
 ¿Qué es el no repudio?
 
-### 8.1. Nuevos interlocutores
+### 10.1. Nuevos interlocutores
 
 - **Autoridad de Certificación (CA)**: su misión es emitir certificados. Hasta ahora los generábamos nosotros mismos.
 - **Autoridad de Registro (RA)**: es la responsable de asegurar que el solicitante del certificado es quien dice ser.
@@ -489,7 +559,7 @@ Con el PKI se asegura:
 ![Interlocutores PKI](pki.jpg)
 _Interlocutores PKI_
 
-### 8.2. Funcionamiento PKI
+### 10.2. Funcionamiento PKI
 
 1. Durante el inicio de la sesión, el SERVIDOR envía su clave publica al CLIENTE. El CLIENTE, antes de iniciar el diálogo, DESCONFIA (necesita comprobar que el servidor es quien dice ser).
 1. El SERVIDOR lo ha supuesto y ha enviado, junto con su clave pública, la firma digital de esa clave. Esa firma digital ha sido realizada por una CA oficial (utilizando la clave privada de esa CA)
@@ -500,9 +570,12 @@ Por lo tanto, para que funcione la autentificación de clave publica mediante PK
 - El SERVIDOR ha conseguido que una CA firme su clave publica (Por ejemplo, Verisign, FNMT…)
 - El CLIENTE dispone de la clave pública de esa CA dentro de su llavero de claves asimétricas.
 
-## 9. Bibliografía
+## 11. Bibliografía
 
 - [Función hash](https://es.wikipedia.org/wiki/Funci%C3%B3n_hash)
 - [5 - Criptografía](https://sites.google.com/site/seguridadinformaticaisidro/5---criptografia)
 - [Qué es la criptografía asimétrica y cómo funciona](https://protecciondatos-lopd.com/empresas/criptografia-asimetrica/)
 - [¿Qué es la infraestructura de clave pública (PKI)?](https://www.entrust.com/es/resources/certificate-solutions/learn/what-is-pki)
+- [¿Qué diferencia una firma electrónica de una digital?](https://www.santander.com/es/stories/firma-electronica-vs-firma-digital)
+- [Diferencias entre la firma electrónica, la firma digital y la firma digitalizada](https://blog.signaturit.com/es/en-que-se-diferencian-la-firma-electronica-la-firma-digital-y-la-firma-digitalizada)
+- [Certificado de clave pública (Wikipedia)](https://es.wikipedia.org/wiki/Certificado_de_clave_pública)
