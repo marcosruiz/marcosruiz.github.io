@@ -25,7 +25,7 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 6. Cada imagen debe tener un pie de foto la cual tenga el siguiente formato: "Figura \<número\>: \<BreveDescripciónDeLaFigura\>".
 7. El documento no debe contener faltas ortográficas.
 8. Los comandos y ficheros de configuración que hayas utilizado deben quedar reflejados en el PDF de la entrega en texto para permitirte copiar y pegar el día del examen todos los comandos de una manera rápida.
-9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
+9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$sudo apt install neofetch`.
 10. Para las actividades a mano se deberá hacer una foto a la resolución del ejercicio y añadirla al PDF. 
 
 ## Actividades
@@ -47,7 +47,7 @@ Al utilizar la criptografía simétrica la clave para encriptar/desencriptar inf
 Deberás instalar la herramienta gpg en nuestro Zorin.
 
 ```console
-$ sudo apt install gpg
+$sudo apt install gpg
 ```
 
 #### Paso 2
@@ -62,8 +62,8 @@ A continuación crearás dos usuarios. Dichos usuarios serán "\<usuario\>" y "\
 El usuario "\<usuario\>" creará un directorio, llamado "cifrado" donde vamos a trabajar. En él crearás un fichero de prueba llamado mensaje.txt (Para crear dicho fichero podemos utilizar la herramienta fortune, que ofrece aleatoriamente refranes, chistes, etc…)
 
 ```console
-$ sudo apt install fortune
-$ fortune > mensaje.txt
+$sudo apt install fortune
+$fortune > mensaje.txt
 ```
 
 {:.question}
@@ -71,18 +71,18 @@ $ fortune > mensaje.txt
 
 #### Paso 4
 
-Para cifrar con clave simétrica puedes consultar el [siguiente artículo](https://www.genbeta.com/desarrollo/manual-de-gpg-cifra-y-envia-datos-de-forma-segura) en su sección de cifrado simétrico. Gpg ofrece por defecto un método de cifrado (si no indicamos ninguna opción) de cifrado como ficheros binarios. Para resolverlo tenemos el parámetro `–a` que genera un fichero cifrado pero compuesto por caracteres ASCII
+Para cifrar con clave simétrica puedes consultar el [siguiente artículo](https://www.genbeta.com/desarrollo/manual-de-gpg-cifra-y-envia-datos-de-forma-segura) en su sección de cifrado simétrico. Gpg ofrece por defecto un método de cifrado (si no indicamos ninguna opción) de cifrado como ficheros binarios. Para resolverlo tenemos el parámetro `-a` que genera un fichero cifrado pero compuesto por caracteres ASCII
 
 Archivo binario:
 
 ```console
-$ gpg --symmetric mensaje.txt
+$gpg --symmetric mensaje.txt
 ```
 
 Caracteres ASCII:
 
 ```console
-$ gpg --symmetric –a mensaje.txt
+$gpg --symmetric -a mensaje.txt
 ```
 
 En caso de cifrar un mensaje en modo binario, obtendremos un fichero con la extensión .gpg. Si ciframos el fichero con caracteres ASCII no tendrá la extensión .gpg sino .asc. Cifra el fichero tanto de manera binaria como ASCII para probar los dos modos de cifrado.
@@ -95,10 +95,10 @@ En caso de cifrar un mensaje en modo binario, obtendremos un fichero con la exte
 Una vez hayas cifrado el archivo puedes borrar el que aparece sin cifrar y los encriptados los subes a la nube. Ahora iniciarás sesión con el usuario "\<usuario\>2" y desencriptas dichos archivos conociendo la clave y mediante el siguiente comando.
 
 ```console
-$ gpg --decrypt mensaje.asc
+$gpg --decrypt mensaje.asc
 ```
 
-> 📷 Realiza capturas de pantalla en la máquina cliente mostrando como has desencriptado los mensajes y cuál es su contenido.
+> 📷 Realiza capturas de pantalla en el "\<usuario\>" mostrando como has desencriptado los mensajes y cuál es su contenido.
 {:.prompt-info}
 
 #### Paso 6: Uso de otro algoritmo de cifrado
@@ -106,7 +106,7 @@ $ gpg --decrypt mensaje.asc
 Para consultar los algoritmos disponibles, puedes ejecutar el siguiente comando:
 
 ```console
-$ gpg --version 
+$gpg --version 
 ```
 
 Puedes probar con alguno de los siguientes algoritmos (Cypher: 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH, CAMELLIA128, CAMELLIA192, CAMELLIA256)
@@ -115,10 +115,10 @@ Por defecto gpg usa el algoritmo de cifrado AES256. Podemos cambiar el algoritmo
 
 #### Paso 7
 
-Si quieres ejecutar varios algoritmos de encriptación y no quieres que cada vez que ejecutes el comando se machaque el archivo .gpg o .asc correspondiente, puedes usar la opción `–o` y a continuación indicar el nombre del archivo que vas a querer crear (si pones como extensión del archivo el nombre del algoritmo que has usado para encriptar te será sencillo poder distinguir los distintos archivos que usan diferentes algoritmos de encriptación), por ejemplo:
+Si quieres ejecutar varios algoritmos de encriptación y no quieres que cada vez que ejecutes el comando se machaque el archivo .gpg o .asc correspondiente, puedes usar la opción `-o` y a continuación indicar el nombre del archivo que vas a querer crear (si pones como extensión del archivo el nombre del algoritmo que has usado para encriptar te será sencillo poder distinguir los distintos archivos que usan diferentes algoritmos de encriptación), por ejemplo:
 
-- `gpg --symmetric –a –o mensaje.3des mensaje.txt` cuando encriptes con 3DES.
-- `gpg --symmetric –a –o mensaje.twofish mensaje.txt` cuando encriptes con twofish.
+- `gpg --symmetric -a -o mensaje.3des mensaje.txt` cuando encriptes con 3DES.
+- `gpg --symmetric -a -o mensaje.twofish mensaje.txt` cuando encriptes con twofish.
 
 #### Paso 8
 
@@ -141,10 +141,10 @@ La herramienta gpg sirve tanto para el cifrado simétrico como asimétrico.
 
 #### Paso 1
 
-En esta ocasión, el usuario "\<usuario\>", generará un par de claves de criptografía asimétrica, es decir, la clave pública y la clave privada. Este proceso se detalla en artículo [Cifrado asimétrico con GPG en Linux – Tutorial con ejemplos](https://parzibyte.me/blog/2019/06/05/cifrado-asimetrico-gpg-linux-tutorial-ejemplos/). Para generar las claves, procederemos con el siguiente comando:
+En esta ocasión, el usuario "\<usuario\>", generará un par de claves de criptografía asimétrica, es decir, la clave pública y la clave privada. Este proceso se detalla en artículo [Cifrado asimétrico con GPG en Linux - Tutorial con ejemplos](https://parzibyte.me/blog/2019/06/05/cifrado-asimetrico-gpg-linux-tutorial-ejemplos/). Para generar las claves, procederemos con el siguiente comando:
 
 ```console
-$ gpg --full-generate-key
+$gpg --full-generate-key
 ```
 
 Se nos pedirá que elijamos entre varios algoritmos de clave pública:
@@ -174,7 +174,7 @@ sub   elg2048 2022-10-21 [E]
 Para ver las listas de claves generadas, tenemos el comando:
 
 ```console
-$ gpg --list-keys
+$gpg --list-keys
 ```
 
 > 📷 Realiza la generación de claves para el usuario "\<usuario\>" de la manera que se te ha indicado anteriormente. Realiza capturas de pantalla donde se vea como se ha llevado el proceso de generación de claves. Además, genera un par de claves para un usuario "\<usuario\>3". A continuación, investiga como borrar las claves (pública y privada) de "\<usuario\>3". Haz una captura de pantalla donde se vea el proceso de generación y borrado. Si tienes alguna duda puedes consultar el artículo [Chuleta de comandos para GPG](https://elbauldelprogramador.com/chuleta-de-comandos-para-gpg/).
@@ -189,31 +189,31 @@ Una vez que hemos acabado el proceso de generar las claves (pública y privada),
 Para exportar la clave pública, deberás ejecutar el siguiente comando: 
 
 ```console
-$ gpg –a  --export  –o  <fichero_donde_guardaras_la_clave_publica>  <usuario>
+$gpg -a  --export  -o  <fichero_donde_guardaras_la_clave_publica>  <usuario>
 ```
 
 Por ejemplo:
 
 ```console
-$ gpg --export  –o  mrug.public.key  mrug
+$gpg --export  -o  mrug.public.key  mrug
 ```
 
-También existe la posibilidad, como se indica en el artículo [Cifrado asimétrico con GPG en Linux – Tutorial con ejemplos](https://parzibyte.me/blog/2019/06/05/cifrado-asimetrico-gpg-linux-tutorial-ejemplos/) de hacerlo indicando la dirección de correo asociada a un usuario y en vez de usar la opción `-o`, redirigiendo a un fichero con `>`.
+También existe la posibilidad, como se indica en el artículo [Cifrado asimétrico con GPG en Linux - Tutorial con ejemplos](https://parzibyte.me/blog/2019/06/05/cifrado-asimetrico-gpg-linux-tutorial-ejemplos/) de hacerlo indicando la dirección de correo asociada a un usuario y en vez de usar la opción `-o`, redirigiendo a un fichero con `>`.
 
 ```console
-$ gpg --export -a mrug@tiempos.org > mrug.public.key
+$gpg --export -a mrug@tiempos.org > mrug.public.key
 ```
 
 Ejemplo exportación clave pública:
 
 ```console
-$ gpg --export –a mrug@tiempos.org > mrug.public.key 
+$gpg --export -a mrug@tiempos.org > mrug.public.key 
 ```
 
 Ejemplo exportación clave privada:
 
 ```console
-$ gpg -a --export-secret-key mrug@tiempos.org > mrug.private.key
+$gpg -a --export-secret-key mrug@tiempos.org > mrug.private.key
 ```
 
 > 📷 Realiza una captura de pantalla en la que se vea cómo has procedido para exportar el archivo de la clave pública. Incluye también una captura de pantalla donde se vea el contenido de dicha clave pública.
@@ -224,13 +224,13 @@ $ gpg -a --export-secret-key mrug@tiempos.org > mrug.private.key
 Importar la clave pública en otro usuario resulta muy sencillo. Abrimos sesión con ese usuario y ejecutamos el siguiente comando:
 
 ```console
-$ gpg --import mrug.public.key
+$gpg --import mrug.public.key
 ```
 
 Podemos comprobar de nuevo, las claves disponibles en el llavero mediante el comando:
 
 ```console
-$ gpg --list-key
+$gpg --list-key
 ```
 
 > 📷 Muestra capturas de pantalla en las que se vea el usuario "\<usuario\>2" que se ha llevado a cabo la importación de la clave pública.
@@ -243,19 +243,19 @@ Cifrar con la clave pública. Cuando ya hayamos importado en el usuario "\<usuar
 Vamos a crear un archivo para cifrar usando la herramienta fortune:
 
 ```console
-$ fortune > mensaje.txt
+$fortune > mensaje.txt
 ```
 
 Una vez que tenemos el archivo a cifrar, procederemos de la siguiente manera:
 
 ```console
-$ gpg -v -a -o mensaje.cifrado --encrypt --recipient mrug@tiempos.org mensaje.txt
+$gpg -v -a -o mensaje.cifrado --encrypt --recipient mrug@tiempos.org mensaje.txt
 ```
 
 - `-v` (Verbose) es para obtener información adicional 
-- Las opciones `-a` y `-o` ya las conocemos: Archivo ASCII y el contenido encriptado lo dejaremos en un archivo mediante `–o` (En concreto, ese archivo será mensaje.cifrado)
+- Las opciones `-a` y `-o` ya las conocemos: Archivo ASCII y el contenido encriptado lo dejaremos en un archivo mediante `-o` (En concreto, ese archivo será mensaje.cifrado)
 - `--encrypt` indica que queremos cifrado asimétrico
-- `--recipient` indica el identificador de clave pública que vamos a usar (mrug@iestiemposmodernos.com)
+- `--recipient` indica el identificador de clave pública que vamos a usar (mrug@tiempos.org)
 - Finalmente, nombre del fichero que se encripta (mensaje.txt)
 
 Antes de ejecutar el comando, Nos da una advertencia: ¡¡Cualquiera podría haber cambiado el archivo .pub antes de que se hubiera hecho el import de la clave!!
@@ -268,7 +268,7 @@ Antes de ejecutar el comando, Nos da una advertencia: ¡¡Cualquiera podría hab
 Una vez que el mensaje ha sido encriptado, podríamos transmitirlo por la red tranquilamente (en un correo electrónico, mediante ftp o como quisiéramos). Almacena el mensaje en tu drive. Vuelve a tu usuario "\<usuario\>" y descarga dicho archivo encriptado. Cuando recibamos el archivo cifrado (texto.cifrado), para desencriptarlo únicamente tenemos que ejecutar el siguiente comando y saber la clave de acceso al anillo de claves. Ahí está nuestra clave privada que nos permitirá abrirlo.
 
 ```console
-$ gpg --decrypt mensaje.cifrado
+$gpg --decrypt mensaje.cifrado
 ```
 
 Nos pide que introduzcamos la contraseña, y efectivamente podremos ver el contenido del archivo.
@@ -276,7 +276,7 @@ Nos pide que introduzcamos la contraseña, y efectivamente podremos ver el conte
 > 📷 Realiza una captura de pantalla en la que se vea cómo has procedido para desencriptar el archivo en el usuario "\<usuario\>2".
 {:.prompt-info}
 
-Descárgate también el archivo [mensajeAsimetricoMrug.cifrado](/assets/img/practica-gpg/mensajeAsimetricoMrug.cifrado) y desencríptalo. Para ello, tendrás que importarte en tu máquina servidor la clave privada [mrug.private.key](/assets/img/practica-gpg/mrug.private.key) que yo te proporciono. La clave de acceso al anillo de claves "Aneto".
+Descárgate también el archivo [mensajeAsimetricoMrug.cifrado](/assets/img/practica-gpg/mensajeAsimetricoMrug.cifrado) y desencríptalo. Para ello, tendrás que importarte en tu usuario "\<usuario\>" la clave privada [mrug.private.key](/assets/img/practica-gpg/mrug.private.key) que yo te proporciono. La clave de acceso al anillo de claves "Aneto".
 
 > 📷 Pon capturas de pantalla de dicho proceso y el contenido del archivo que te proporciono desencriptado.
 {:.prompt-info}
