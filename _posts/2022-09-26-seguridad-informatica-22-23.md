@@ -16,6 +16,16 @@ pin: true
 - P01 - [Práctica: Tipos de ataques](/posts/practica-tipos-de-ataque/)
 - P02 - [Práctica: Criptografía clásica](/posts/practica-criptografia-clasica/)
 - P03 - [Práctica: GPG](/posts/practica-gpg/)
+- P04 - [Práctica: Firma digital con GPG](/posts/practica-firma-digital-gpg/)
+
+## Evaluación 2
+
+- UD5 - Seguridad Activa: Sistemas Operativos
+- UD6 - Seguridad Activa: Acceso a redes
+- UD7 - Seguridad Activa: Control de redes
+- UD8 - Ataques y contramedidas
+- UD9 - Normativa sobre seguridad y protección de datos
+
 
 ## Enlaces increibles 🔥
 
