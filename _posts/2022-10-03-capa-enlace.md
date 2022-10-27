@@ -148,6 +148,9 @@ La dirección MAC está formada por 6 bytes representados por 12 dígitos hexade
 
 Por ejemplo: 00:00:0D:1A:12:35
 
+{:.question}
+¿A cuantos bits equivale un dígito hexadecimal?
+
 {:.question}    
 ¿Qué es una memoria ROM?
 
@@ -184,8 +187,21 @@ Leer artículo [Diferencia entre TDM y FDM](https://es.gadget-info.com/differenc
 
 ### 5.2. Basados en toma de turnos
 
-- **Polling**: Protocolo de sondeo.
-- **Token passing**: Protocolo de paso de testigo.
+#### 5.2.1. Polling: Protocolo de sondeo.
+
+En esta técnica no hay ningún nodo maestro, pero si una trama especial de pequeño tamaño llamada testigo (token) que va siendo intercambiada entre los nodos según un orden preestablecido.
+
+Un nodo puede transmitir cuando tiene la trama testigo y, mientras no la tenga, deberá esperar.
+
+Este método de acceso al medio a sido ampliamente utilizado en las redes con topología en anillo.
+
+#### 5.2.2. Token passing: Protocolo de paso de testigo.
+
+En esta técnica no hay ningún nodo maestro, pero si una trama especial de pequeño tamaño llamada testigo (token) que va siendo intercambiada entre los nodos según un orden preestablecido.
+
+Un nodo puede transmitir cuando tiene la trama testigo y, mientras no la tenga, deberá esperar.
+
+Este método de acceso al medio a sido ampliamente utilizado en las redes con topología en anillo.
 
 ### 5.3. Basados en el acceso aleatorio
 
@@ -196,12 +212,12 @@ Son los siguientes:
 - CSMA/CD
 - CSMA/CA
 
-## 6. Aloha
+#### 5.3.1. Aloha
 
 Este método permite que un dispositivo emita directamente cuando lo necesita. En este caso el receptor debe confirmar al emisor haber recibido la trama. Si la confirmación no se recibe al cabo de un tiempo predefinido (timeout), ya sea porque se ha perdido la trama o bien porque se ha producido una colisión, entonces la estación emisora, tras esperar un tiempo aleatorio lo vuelve a intentar.
 
 
-## 7. CSMA/CD
+#### 5.3.2. CSMA/CD
 
 Carrier Sense Multiple Access with Collision Detection, es decir, acceso múltiple con escucha de portadora y **detección** de colisiones.
 
@@ -217,7 +233,7 @@ Se cuenta el número de intentos de retransmisión. Si los siguientes intentos s
 
 Su uso está especialmente extendido en redes Ethernet.
 
-## 8. CSMA/CA
+#### 5.3.3. CSMA/CA
 
 Con las siglas CSMA se describe un proceso fundamental para regular la comunicación de los integrantes de una red que usan un mismo medio de transmisión estructurado de forma descentralizada. Comprende tres variantes distintas en función del medio de transmisión: CSMA/CA, CSMA/CD y CSMA/CR. Mientras la primera se usa principalmente en redes inalámbricas, CSMA/CD se creó para Ethernet. CSMA/CR se emplea con el protocolo de comunicación Controller Area Networks (CAN), usado principalmente en máquinas y coches.
 
@@ -251,7 +267,7 @@ Para poder entender realmente en qué consiste el protocolo Carrier Sense Multip
   </div>
 </details>
 
-## 9. Conmutación de tramas
+## 6. Conmutación de tramas
 
 La conmutación de tramas consiste en utilizar una topología física en estrella en el que un switch o conmutador redirige el tráfico al enlace concreto en el que se encuentra el destinatario.
 
@@ -267,9 +283,9 @@ Un dominio de colisión es un segmento físico de una red en el que las estacion
 {:.question}
 ¿Qué es un dominio de difusión?
 
-## 10. Protocolos de enlace
+## 7. Protocolos de enlace
 
-### 10.1. LAN cableadas
+### 7.1. LAN cableadas
 
 - Ethernet DIX
 - IEEE 802.3
@@ -280,7 +296,7 @@ Un dominio de colisión es un segmento físico de una red en el que las estacion
 {:.question}
 ¿Qué significan las siglas IEEE?
 
-### 10.2. LAN inalámbricas
+### 7.2. LAN inalámbricas
 
 - Wifi y la familia de estándares IEEE 802.11
 - Bluetooth y los estándares IEEE 802.15
@@ -288,7 +304,7 @@ Un dominio de colisión es un segmento físico de una red en el que las estacion
 {:.question}
 ¿En que frecuencias trabaja el Bluetooth? ¿Son más altas o mas bajas que las del Wifi?
 
-## 11. Trama Ethernet II
+## 8. Trama Ethernet II
 
 ![img-description](ethernetY8023.png)
 _Formato de una trama Ethernet II_
@@ -317,7 +333,7 @@ _Formato de una trama Ethernet II_
 {:.question}
 ¿Qué método de acceso al medio usa Ethernet II? ¿CSMA/CD o CSMA/CA?
 
-## 12. Bibliografía
+## 9. Bibliografía
 
 - [¿Cómo Funciona un Switch?](https://ccnadesdecero.com/curso/como-funciona-un-swtich/)
 - [Qué es Ethernet y cómo funciona el estándar IEEE](https://ccnadesdecero.com/curso/estandar-ethernet-ieee/)
@@ -327,3 +343,4 @@ _Formato de una trama Ethernet II_
 - [CSMA/CD: protocolo de transmisión anticolisiones](https://www.ionos.es/digitalguide/servidores/know-how/csmacd/)
 - [CSMA/CA: definición y mecánica del protocolo](https://www.ionos.es/digitalguide/servidores/know-how/csmaca-protocolo-de-acceso-al-medio-para-redes-inalambricas/)
 - [El protocolo ALOHA (Wikipedia)](https://es.wikipedia.org/wiki/ALOHAnet#El_protocolo_ALOHA)
+- [Tema 3: Subnivel de Control de acceso al medio (MAC)](http://www4.ujaen.es/~mdmolina/rrcc/Tema3MAC.pdf)
