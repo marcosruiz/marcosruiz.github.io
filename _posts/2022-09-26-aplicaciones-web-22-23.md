@@ -18,6 +18,8 @@ pin: true
 - P02 - [Práctica: HTML en W3Schools](/posts/practica-html-w3schools/)
 - P03 - [Práctica: HTML en freeCodeCamp](/posts/practica-html-freeCodeCamp/)
 - P04 - [Práctica: CSS en W3Schools](/posts/practica-css-w3schools/)
+- P05 - [Práctica: CSS responsivo](/posts/practica-css-responsivo/)
+- P06 - Práctica: Portfolio en HTML y CSS
 
 ## Evaluación 2
 

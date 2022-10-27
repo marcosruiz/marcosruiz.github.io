@@ -50,7 +50,7 @@ Ir a [https://codepip.com/](https://codepip.com/) y registrarnos con el email de
 > 📷 Haz una captura de tu perfil vacío.
 {:.prompt-info}
 
-![Apartado "Edit Profile" del profesor](editarPerfil.png)
+![Apartado "Edit Profile" del profesor](editarPerfil.png){: width="400px"}
 _Apartado "Edit Profile" del profesor_
 
 > Indica la URL de tu perfil público.
