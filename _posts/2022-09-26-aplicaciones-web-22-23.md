@@ -11,6 +11,7 @@ pin: true
 - UD1 - [Internet, características y evolución](/posts/internet-caracteristicas-evolucion/)
 - UD2 - [HTML](/posts/html/)
 - UD3 - [CSS](/posts/css/)
+- UD4 - Gestores de contenidos
 
 
 - P01 - [Práctica: HTML](/posts/practica-html/)
@@ -18,6 +19,13 @@ pin: true
 - P03 - [Práctica: HTML en freeCodeCamp](/posts/practica-html-freeCodeCamp/)
 - P04 - [Práctica: CSS en W3Schools](/posts/practica-css-w3schools/)
 
+## Evaluación 2
+
+- UD5 - Sistemas de gestión de aprendizaje a distancia
+- UD6 - Lenguaje JavaScript
+- UD7 - Servicio de gestión de archivos web
+- UD8 - Aplicaciones ofimáticas web
+- UD9 - Aplicaciones web de escritorio
 
 ## Enlaces increibles 🔥
 
