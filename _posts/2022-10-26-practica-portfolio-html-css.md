@@ -14,7 +14,7 @@ Duración: 7 h
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un documento ZIP con un nombre en el siguiente formato: "<Apellidos>_<Nombre>_P<NúmeroDeLaPráctica>.zip". Por ejemplo, en mi caso el nombre del documento ZIP sería "RuizGarcía_Marcos_P0X.pdf". En la raíz del fichero ZIP deben estar directamente los ficheros HTML y CSS.
+La entrega de esta práctica debe ser un documento ZIP con un nombre en el siguiente formato: "<Apellidos>_<Nombre>_P<NúmeroDeLaPráctica>.zip". Por ejemplo, en mi caso el nombre del documento ZIP sería "RuizGarcía_Marcos_P06.pdf". En la raíz del fichero ZIP deben estar directamente los ficheros HTML y CSS.
 
 ## Actividades
 
