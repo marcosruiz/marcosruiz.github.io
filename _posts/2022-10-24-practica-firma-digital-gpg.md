@@ -6,13 +6,13 @@ tags: [seguridad informática, smr, práctica]
 img_path: /assets/img/practica-firma-digital-gpg/
 ---
 
-## 1. Objetivo y duración
+## Objetivo y duración
 
 El objetivo de esta práctica es conocer:
 
 Duración: - horas.
 
-## 2. Entrega y presentación
+## Entrega y presentación
 
 La entrega de esta práctica debe ser un fichero PDF con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_P\<NúmeroDeLaPráctica\>.pdf". Por ejemplo, en mi caso el nombre del fichero PDF sería "RuizGarcía_Marcos_P03.pdf".
 
@@ -29,7 +29,7 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$sudo apt install neofetch`.
 10. Para las actividades a mano se deberá hacer una foto a la resolución del ejercicio y añadirla al PDF. 
 
-## 3. Actividades
+## Actividades
 
 A continuación se listan las actividades que se deben realizar. Te recuerdo que cada vez que se haga referencia a "\<usuario\>" este deberá ser sustituido por tu nombre de usuario específico, en mi caso será "mrug" debido a que mi correo es mrug@tiempos.org.
 
