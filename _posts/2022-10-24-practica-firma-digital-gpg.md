@@ -130,7 +130,7 @@ $gpg --list-keys
 
 #### Paso 11
 
-Ahora por fin podemos confirmar que la clave pública del usuario "\<usuario\>" es auténtica. Utilizaremos el parámetro `--sign-key` y el identificador de la clave.
+Ahora por fin podemos confirmar que la clave pública del usuario "\<usuario\>" es auténtica. Desde el usuario "\<usuario\>2", utilizaremos el parámetro `--sign-key` y el identificador de la clave.
 
 ```console
 $gpg --sign-key <usuario>@tiempos.org
@@ -145,7 +145,7 @@ Para que el "\<usuario\>" nos puede cifrar el fichero firmado, deberemos seguir 
 Exportar la clave pública del "\<usuario\>2":
 
 ```console
-$gpg -a --export <usuario>2.public.key <usuario>2@tiempos.org
+$gpg -a --export <usuario>2@tiempos.org > <usuario>2.public.key
 ```
 
 Importarla en el "\<usuario\>":
@@ -161,8 +161,8 @@ En la sesión del "\<usuario\>", podemos usar la opción `--list-keys` para cons
 En la sesión del "\<usuario\>", generaríamos un nuevo fichero (contrato2.txt), lo cifraremos para que solo el "\<usuario\>2" pueda recuperarlo y lo firmaremos para que sepa que es nuestro. Primero firmaremos la clave pública del "\<usuario\>2" para evitar mensajes de error. Después ejecutaremos `--sign` y `--encript`.
 
 ```console
-$gpg --sign-key <usuario>
-$gpg -a --sign --encrypt --recipient <usuario> contrato2.txt
+$gpg --sign-key <usuario>2
+$gpg -a --sign --encrypt --recipient <usuario>2 contrato2.txt > contrato2.txt.asc
 ```
 
 #### Paso 14
@@ -178,8 +178,8 @@ $cat contrato2.txt
 Si no tuviéramos la clave privada de "\<usuario\>2", no podríamos descifrar ni por tanto, recuperar el archivo y comprobar la firma. Borra nuestras propias claves con los parámetros `--delete-secrte-key` y `--delete-key`. Comprueba que ya no funciona ni descifrar ni verificar. El mensaje de error indicará que el fichero fue cifrado con una clave que ya no tenemos.
 
 ```console
-$gpg --delete-secret-key <usuario>@tiempos.org
-$gpg --delete-key <usuario>@tiempos.org
+$gpg --delete-secret-key <usuario>2@tiempos.org
+$gpg --delete-key <usuario>2@tiempos.org
 $gpg --list-key
 $gpg --decrypt contrato2.txt.asc
 $gpg --verify contrato2.txt.asc
