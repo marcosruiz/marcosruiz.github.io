@@ -299,7 +299,7 @@ Un dominio de colisión es un segmento físico de una red en el que las estacion
 - **Ethernet DIX-II**: La versión del protocolo Ethernet DIX compatible con el estándar IEEE 802.3.
 - **Ethernet II**: La versión más reciente del estándar IEEE 802.3 donde pueden coexistir IEEE 802.3 y Ethernet DIX-II.
 - **Token Ring y el estándar IEEE 802.5**: Topología física en estrella, sin embargo, internamente funciona como un anillo. El protocolo es del tipo paso del testigo.
-- FDDI: Protocolo de acceso al medio de doble anillo de fibra óptica.
+- **FDDI**: Protocolo de acceso al medio de doble anillo de fibra óptica.
 
 {:.question}
 ¿Qué significan las siglas IEEE?

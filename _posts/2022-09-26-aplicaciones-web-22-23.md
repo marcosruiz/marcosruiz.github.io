@@ -11,7 +11,7 @@ pin: true
 - UD1 - [Internet, características y evolución](/posts/internet-caracteristicas-evolucion/)
 - UD2 - [HTML](/posts/html/)
 - UD3 - [CSS](/posts/css/)
-- UD4 - Gestores de contenidos
+- UD4 - [Gestores de contenidos](/posts/gestores-contenido/)
 
 
 - P01 - [Práctica: HTML](/posts/practica-html/)
@@ -20,6 +20,7 @@ pin: true
 - P04 - [Práctica: CSS en W3Schools](/posts/practica-css-w3schools/)
 - P05 - [Práctica: CSS responsivo](/posts/practica-css-responsivo/)
 - P06 - [Práctica: Portfolio con HTML y CSS](/posts/practica-portfolio-html-css)
+- P07 - [Práctica: Wordpress](/posts/practica-wordpress)
 
 ## Evaluación 2
 
