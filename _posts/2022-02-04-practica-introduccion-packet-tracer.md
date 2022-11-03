@@ -3,6 +3,7 @@ title: "Práctica: Introducción a redes con Packet Tracer"
 date: 2022-02-04 09:30:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [packet tracer, redes locales, smr, práctica]
+img_path: /assets/img/practica-introduccion-packet-tracer/
 ---
 
 ## Objetivo
@@ -52,7 +53,7 @@ Pasos a realizar:
 
 Conectar dos switches con tres ordenadores cada uno. Debe haber dos redes privadas de clase C. Tres ordenadores deben estar en una red y tres ordenadores en otra de la siguiente manera:
 
-![img-description](/assets/img/practica-introduccion-packet-tracer/dosRedesDosSwitches.png)
+![img-description](dosRedesDosSwitches.png)
 _Dos redes y dos switches: Distribución de redes_
 
 Pasos a realizar:
@@ -69,7 +70,7 @@ Pasos a realizar:
 
 Conectar dos switches con cuatro ordenadores cada uno. Debe haber dos redes públicas de clase C y una red pública de clase B. Deben estar distribuidos de la siguiente manera:
 
-![img-description](/assets/img/practica-introduccion-packet-tracer/tresRedesDosSwitches.png)
+![img-description](tresRedesDosSwitches.png)
 _Tres redes y dos switches: Distribución de redes. Nota: los switches pertenecen a las 3 redes aunque no estén rodeados_
 
 Posteriormente cambiamos la máscara de la redes de clase C a 255.255.0.0. ¿Qué ocurre? ¿Por qué?
@@ -79,7 +80,7 @@ Posteriormente cambiamos la máscara de la redes de clase C a 255.255.0.0. ¿Qu�
 
 Utilizar un router para conectar dos redes de clase C públicas entre sí a través de un router. En cada red debe haber al menos dos ordenadores que tengan las direcciones IP límite.
 
-![img-description](/assets/img/practica-introduccion-packet-tracer/dosRedesUnRouter.png)
+![img-description](dosRedesUnRouter.png)
 _Dos redes y un router: Distribución de redes_
 
 Pasos a realizar:
@@ -97,7 +98,7 @@ Pasos a realizar:
 
 Utilizar dos router para conectar dos redes de clase C públicas entre sí a través de una red pública de clase A. En cada red debe haber al menos dos ordenadores que tengan las direcciones IP límite, un servidor y una impresora. El enrutamiento de los routers debe ser estático.
 
-![img-description](/assets/img/practica-introduccion-packet-tracer/dosRedesDosRouter.png)
+![img-description](dosRedesDosRouter.png)
 _Dos redes y dos router: Distribución de redes_
 
 Pasos a realizar:
@@ -120,7 +121,7 @@ Pasos a realizar:
 
 Utilizar tres router para conectar tres redes de clase C públicas entre sí **a través de dos redes** de clase C públicas. En cada red debe haber al menos dos ordenadores que tengan las direcciones IP límite, un servidor y una impresora. El enrutamiento de los routers debe ser estático.
 
-![img-description](/assets/img/practica-introduccion-packet-tracer/tresRedesTresRouters.png)
+![img-description](tresRedestresRouters.png)
 _Tres redes y tres routers: Distribución de redes_
 
 Pasos a realizar:
