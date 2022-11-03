@@ -1,6 +1,6 @@
 ---
 title: "Seguridad pasiva"
-date: 2022-10-03 9:00:00 +0100
+date: 2022-11-02 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr, teoría]
 img_path: /assets/img/seguridad-pasiva/
@@ -33,7 +33,6 @@ _Servidor tipo blade_
 [Comprobar la temperatura de CPU en Linux](https://protegermipc.net/2021/02/08/comprobar-la-temperatura-de-cpu-en-ubuntu-linux/)
 
 [Psensor, el interfaz gráfica para lm-sensors](https://ubunlog.com/psensor-interfaz-lm-sensors/#Configura_lm-sensors)
-
 
 ### Centro de respaldo
 
