@@ -172,9 +172,9 @@ De la misma manera, hay diferentes formas de regular la colocación de tramas en
 
 ### 5.1. Basados en particionado de canal
 
-- **TDM**: Multiplexación por división de tiempo
-- **FDM**: Multiplexación por división de frecuencia
-- **CDMA**: Acceso múltiple por división de código ➡ No es necesario conocerlo
+- **TDM**: Multiplexación por división de tiempo.
+- **FDM**: Multiplexación por división de frecuencia.
+- **CDMA**: Acceso múltiple por división de código ➡ No es necesario conocerlo.
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué significa multiplexar?</summary>
@@ -189,11 +189,13 @@ Leer artículo [Diferencia entre TDM y FDM](https://es.gadget-info.com/differenc
 
 #### 5.2.1. Polling: Protocolo de sondeo.
 
-En esta técnica no hay ningún nodo maestro, pero si una trama especial de pequeño tamaño llamada testigo (token) que va siendo intercambiada entre los nodos según un orden preestablecido.
+Se designa un nodo como maestro y se encargará de dirigir los turnos.
 
-Un nodo puede transmitir cuando tiene la trama testigo y, mientras no la tenga, deberá esperar.
+Para que un nodo pueda transmitir debe recibir permiso del nodo central a través de un mensaje de sondeo. Este permiso va pasando continuamente de estación en estación.
 
-Este método de acceso al medio a sido ampliamente utilizado en las redes con topología en anillo.
+Cada estación puede transmitir cuando recibe el permiso y encuentra el medio libre.
+
+Al finalizar su transmisión el nodo maestro pasa el permiso a la estación siguiente y asi sucesivamente.
 
 #### 5.2.2. Token passing: Protocolo de paso de testigo.
 
@@ -216,8 +218,13 @@ Son los siguientes:
 
 Este método permite que un dispositivo emita directamente cuando lo necesita. En este caso el receptor debe confirmar al emisor haber recibido la trama. Si la confirmación no se recibe al cabo de un tiempo predefinido (timeout), ya sea porque se ha perdido la trama o bien porque se ha producido una colisión, entonces la estación emisora, tras esperar un tiempo aleatorio lo vuelve a intentar.
 
+#### 5.3.2. CSMA
 
-#### 5.3.2. CSMA/CD
+Según este método cuando unn dispositivo tiene datos que emitir, antes de hacerlo sondea el medio para saber si está ocupado. Si el medio esta libre, emite, y si no lo está, actuará de acuerdo a algún protocolo que determine cuando volver a intentarlo (por ejemplo, esperar un tiempo aleatorio).
+
+CSMA/CD y CSMA/CA son variaciones del CSMA.
+
+#### 5.3.3. CSMA/CD
 
 Carrier Sense Multiple Access with Collision Detection, es decir, acceso múltiple con escucha de portadora y **detección** de colisiones.
 
@@ -233,13 +240,13 @@ Se cuenta el número de intentos de retransmisión. Si los siguientes intentos s
 
 Su uso está especialmente extendido en redes Ethernet.
 
-#### 5.3.3. CSMA/CA
+#### 5.3.4. CSMA/CA
 
 Con las siglas CSMA se describe un proceso fundamental para regular la comunicación de los integrantes de una red que usan un mismo medio de transmisión estructurado de forma descentralizada. Comprende tres variantes distintas en función del medio de transmisión: CSMA/CA, CSMA/CD y CSMA/CR. Mientras la primera se usa principalmente en redes inalámbricas, CSMA/CD se creó para Ethernet. CSMA/CR se emplea con el protocolo de comunicación Controller Area Networks (CAN), usado principalmente en máquinas y coches.
 
 Para poder entender realmente en qué consiste el protocolo Carrier Sense Multiple Access with Collision Avoidance (acceso múltiple por detección de portadora y prevención de colisiones) es necesario analizar cada una de sus partes:
 
-- **Carrier Sense** (CA): la idea principal es que los miembros de una red solo pueden enviar datos a través de ella cuando el medio de transmisión no esté ocupado. Para que esto sea posible en todo momento se está realizando un reconocimiento de la red para comprobar el estado del canal (detección de portadora). Solo cuando esté libre, se pueden enviar los datos.
+- **Carrier Sense** (CS): la idea principal es que los miembros de una red solo pueden enviar datos a través de ella cuando el medio de transmisión no esté ocupado. Para que esto sea posible en todo momento se está realizando un reconocimiento de la red para comprobar el estado del canal (detección de portadora). Solo cuando esté libre, se pueden enviar los datos.
 - **Multiple Access** (MA): distintos nodos comparten el mismo medio de transmisión. Por eso es determinante que se atengan a un mismo protocolo para que la comunicación fluya.
 - **Collision Avoidance** (CA): para prevenir colisiones se recurre a una compleja organización del tiempo que permite evitar que dos o más miembros de una red comiencen la transmisión a la vez. Eso sí, en el caso de que los datos se superpongan, se reconoce el problema en la transmisión y se inicia de nuevo el envío.
 
@@ -287,11 +294,12 @@ Un dominio de colisión es un segmento físico de una red en el que las estacion
 
 ### 7.1. LAN cableadas
 
-- Ethernet DIX
-- IEEE 802.3
-- Ethernet DIX-II
-- Ethernet II
-- Token Ring y el estándar IEEE 802.5
+- **Ethernet DIX**: El protocolo Ethernet original.
+- **IEEE 802.3**: Estándares internacionales basados en el protocolo Ethernet. Utiliza CSMA/CD.
+- **Ethernet DIX-II**: La versión del protocolo Ethernet DIX compatible con el estándar IEEE 802.3.
+- **Ethernet II**: La versión más reciente del estándar IEEE 802.3 donde pueden coexistir IEEE 802.3 y Ethernet DIX-II.
+- **Token Ring y el estándar IEEE 802.5**: Topología física en estrella, sin embargo, internamente funciona como un anillo. El protocolo es del tipo paso del testigo.
+- FDDI: Protocolo de acceso al medio de doble anillo de fibra óptica.
 
 {:.question}
 ¿Qué significan las siglas IEEE?
@@ -333,7 +341,17 @@ _Formato de una trama Ethernet II_
 {:.question}
 ¿Qué método de acceso al medio usa Ethernet II? ¿CSMA/CD o CSMA/CA?
 
-## 9. Bibliografía
+## 9. Dispositivos de la capa de enlace
+
+Los dispositivos de la capa de enlace son:
+
+- Puentes / brigdes
+- Conmutadores / switches
+- Puntos de acceso inalámbricos / access points
+
+Leer el artículo [Dispositivos específicos de la red local](/posts/dispositivos-especificos-de-la-red-local/) correspondiente a estos dispostivos.
+
+## 10. Bibliografía
 
 - [¿Cómo Funciona un Switch?](https://ccnadesdecero.com/curso/como-funciona-un-swtich/)
 - [Qué es Ethernet y cómo funciona el estándar IEEE](https://ccnadesdecero.com/curso/estandar-ethernet-ieee/)
