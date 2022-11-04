@@ -68,6 +68,10 @@ Respecto a la parte de CSS el portfolio/curriculum deberá cumplir al menos con 
 9. El portfolio/currículum utiliza paddings y/o margins de manera adecuada.
 10. El portfolio/currículum contiene al menos un tooltip.
 
+Si quieres hacer que tu curriculum sea realmente responsivo puedes usar este vídeo de guía:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/El0OJ6h_2ZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 {:.activity}
 ### Presentación
 
