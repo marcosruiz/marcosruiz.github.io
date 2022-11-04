@@ -127,3 +127,5 @@ $ su profesor
 $ sudo apt-get purge virtualbox-dkms && sudo apt-get install dkms
 $ sudo /sbin/vboxconfig
 ```
+
+- Si tras actualizar aparece un mensaje de error al iniciar sobre el kernel iniciamos con una versión del kernel más vieja y seguimos los pasos de [este enlace](https://forum.zorin.com/t/how-to-set-an-older-kernel-to-default-boot/10600).

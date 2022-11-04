@@ -490,3 +490,4 @@ Preguntas sobre la empresa de ciberseguridad...
 - [No repudio, ¿qué significa en seguridad informática?](https://www.unir.net/ingenieria/revista/no-repudio-seguridad-informatica/#:~:text=En%20resumen%2C%20el%20no%20repudio,realizaci%C3%B3n%20de%20una%20determinada%20acci%C3%B3n.)
 - [¿Qué es un keylogger?](https://latam.kaspersky.com/resource-center/definitions/keylogger)
 - [Red Team, Blue Team y Purple Team, ¿cuáles son sus funciones y diferencias?](https://www.unir.net/ingenieria/revista/red-blue-purple-team-ciberseguridad/)
+- [Amenaza vs vulnerabilidad: cómo diferenciarlos](https://www.incibe.es/protege-tu-empresa/blog/amenaza-vs-vulnerabilidad-diferenciarlos)
