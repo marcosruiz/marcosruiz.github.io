@@ -15,6 +15,8 @@ img_path: /assets/img/seguridad-pasiva/
 
 ### CPD
 
+Las empresas colocan los equipo de usuario cerca del usuario, pero los servidores están todos juntos en una misma sala. Esa sala tiene carios nombres: CPD(centro de proceso de datos), centro de cálculo, datacenter, sala fía, pecera, etc. Centralizando se consigue:
+
 {:.question}
 ¿Qué es un CPD?
 
@@ -29,6 +31,8 @@ _Servidor tipo rack_
 
 ![Servidor tipo blade](blade.jpg)
 _Servidor tipo blade_
+
+
 
 [Comprobar la temperatura de CPU en Linux](https://protegermipc.net/2021/02/08/comprobar-la-temperatura-de-cpu-en-ubuntu-linux/)
 
