@@ -327,9 +327,9 @@ _Formato de una trama Ethernet II_
   - 3 bytes -> NIC: Id. Tarjeta interfaz de Red.
   - Notación (por ejemplo): F2:3E:C1:8A:B1:01
   - Dirección de difusión (broadcast) FF:FF:FF:FF:FF:FF. Este tipo de dirección se utiliza para que todos los equipos conectados en el mismo dominio de difusión recojan la trama.
-- **Lenght**: Para IEEE este campo pasó a significar Longitud de la trama. Para diferenciar a qué se refiere (si a Tipo o a Longitud) un valor en ese campo se llegó a esto:
-  - DIX Valores > 1536.
-  - IEEE Valores < 1536.
+- **Lenght / Ethertype**: Para IEEE este campo pasó a significar longitud del campo DATA de la trama. Para diferenciar a qué se refiere (si a Tipo o a Longitud) un valor en ese campo se llegó a esto:
+  - DIX Valores >= 1536.
+  - IEEE Valores <= 1500.
 - **DATA**:
   - Trama mínima de 64 bytes (512 bits -> 51,2 μs).
   - Como Tx ≥ 2Tp: Datos+Relleno ≥ 46 bytes.
@@ -340,6 +340,9 @@ _Formato de una trama Ethernet II_
 
 {:.question}
 ¿Qué método de acceso al medio usa Ethernet II? ¿CSMA/CD o CSMA/CA?
+
+{:.question}
+¿Por qué los valores DIX en el campo Lenght / Ethertype está puesto en 1536?
 
 ## 9. Dispositivos de la capa de enlace
 

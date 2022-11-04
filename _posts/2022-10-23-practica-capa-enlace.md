@@ -114,6 +114,10 @@ Si existen, pon un ejemplo válido de dirección MAC local y explica porque lo e
 
 Captura con tu PC una trama Ethernet con Wireshark y analiza e interpreta su cabecera. Si no lo tienes instalado en tu PC, descarga Wireshark de [aquí](https://www.wireshark.org/#download).
 
+- Localiza la dirección MAC origen y destino
+- Localiza el campo Length / Type e identifica si estamos usando el protocolo IEEE 802.3 o Ethernet-DIX II.
+- ¿Por qué no vemos el preámbulo? ¿Y el campo FCS?
+
 ### 3.17. Actividad
 
 ¿Cuál es la dirección MAC de broadcast? ¿Qué propósito tiene?
