@@ -120,16 +120,19 @@ Leer artículo [Potencia SAI: Así la podemos calcular con una enorme precisión
 
 ## Unidades de medida eléctricas
 
-**Corriente eléctrica** en amperios (A): cantidad de corriente eléctrica (I) que circula por un conductor. Por ejemplo, por un conductor de 1,5 mm<sup>2</sup> pueden circular hasta 11 amperios sin riesgo de calentamiento excesivo.
+**Corriente eléctrica o intensidad** en amperios (A): cantidad de corriente eléctrica (I) que circula por un conductor. Por ejemplo, por un conductor de 1,5 mm<sup>2</sup> pueden circular hasta 11 amperios sin riesgo de calentamiento excesivo.
 
-**Potencial eléctrico** en voltios (V): la magnitud que define la diferencia de potencial eléctrico entre 2 puntos es la tensión (U), cuya unidad de medida es el voltio (v). En instalaciones de baja tensión la tensión es de 230 a 400 voltios, pero en alta tensión puede llegar a 10.000v.
+**Potencial eléctrico o tensión o diferencia de potencial** en voltios (V): la magnitud que define la diferencia de potencial eléctrico entre 2 puntos es la tensión (V), cuya unidad de medida es el voltio (v). En instalaciones de baja tensión la tensión es de 230 a 400 voltios, pero en alta tensión puede llegar a 10.000v.
 
-**Potencia eléctrica** en vatios (W): la potencia eléctrica (P) se mide en vatios (W) y resulta del producto de la tensión (U) y la intensidad (I). Por ejemplo, en una instalación eléctrica doméstica si se encuentra instalado un limitador ICP de 20 amperios, la potencia contratada será de:
+**Potencia eléctrica** en vatios (W): la potencia eléctrica (P) se mide en vatios (W) y resulta del producto de la tensión (V) y la intensidad (I). Por ejemplo, en una instalación eléctrica doméstica si se encuentra instalado un limitador ICP de 20 amperios, la potencia contratada será de:
 
 > P = U x I = 230 voltios x 20 amperios = 
 > 4600 vatios = 4,6 KW.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8g2PUJB48as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+INTENSIDAD ➡️ NÚMERO DE CORREDORES
+TENSIÓN ➡️ MOTIVACIÓN DE LOS CORREDORES
 
 ## Tipos de potencia eléctrica
 
@@ -151,7 +154,9 @@ Es toda aquella energía que realiza un trabajo útil. Por ejemplo, la consumid
 
 Su fórmula es: 
 
-> P = V * I * cos(φ) donde 
+> P = V * I * cos(φ)
+
+Donde:
 
 - «P» es la potencia eléctrica cuya unidad es el vatio (W)
 - «V» es la tensión eléctrica (V)
@@ -164,7 +169,9 @@ Hablamos de una energía que realmente no realiza un trabajo útil. Este tipo 
 
 Su fórmula es: 
 
-> Q = V * I * sin(φ) donde la 
+> Q = V * I * sin(φ)
+
+Donde:
 
 - «Q» es la potencia reactiva cuya unidad son los volitamperios reactivos (VAr)
 - «V» es la tensión eléctrica (V)
@@ -178,7 +185,9 @@ Suma vectorial de las potencias activa y reactiva.
 
 La fórmula es: 
 
-> S = V * I donde 
+> S = V * I
+
+Donde:
 
 - «S» es la potencia eléctrica total cuya unidad es el voltiamperio (VA)
 - «V» es la tensión eléctrica (V)
@@ -191,7 +200,9 @@ Es la relación entre la energía suministrada (potencia aparente) y la energí
 
 Se calcula así: 
 
-> FP = P / S donde 
+> FP = P / S 
+
+Donde:
 
 - «FP» es la relación entre la potencia activa y la potencia aparente y carece de unidad). Este valor es el parámetro «φ»
 - «P» es la potencia activa (W)
@@ -207,7 +218,7 @@ Potencia aparente (se mide en voltoamperios VA): es el producto de la tensión n
 
 Potencia aparente = Tensión * Intensidad
 
-> S (voltoamperios) = U (voltios) * I (amperios)
+> S (voltoamperios) = V (voltios) * I (amperios)
 
 Por ejemplo, si un SAI suministra 200 voltios (V) y 10 amperios (A), entonces su potencia aparente será de 2.000 VA o 2 KVA (léase “kabeas”).
 
