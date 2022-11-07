@@ -302,6 +302,21 @@ _Fibra óptica_
 {:.question}
 ¿Por qué el cable de fibra óptica de vuestra casa puede girar esquinas de 90º?
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es más rápida la luz de la fibra o la corriente eléctrica del cobre?</summary>
+  <div class="card-body" markdown="1">
+
+A estas alturas, todo el mundo sabe que los cables de fibra óptica son considerablemente más rápidos que los de cobre. Pero, ¿se ha preguntado alguna vez por qué? La fibra óptica transmite la luz, mientras que el cobre conduce la electricidad.    La señal del cable de fibra óptica viaja a través del vidrio a dos tercios de la velocidad de la luz. Impresionante, ¿verdad? Pero, ¡espera un segundo! La velocidad de la electricidad que viaja a través del cobre también es rápida. De hecho, es más rápida que la fibra: hasta nueve décimas de la velocidad de la luz.
+
+El ancho de banda es la clave. Permite una mayor capacidad de transmisión de datos: puede transferir desde un mínimo de 10 Gbps hasta cantidades ilimitadas (si se tiene en cuenta lo rápido que se está desarrollando la tecnología).
+
+Para enviar las señales de luz se utilizan hilos muy finos de fibra de vidrio o plástico. La luz viaja hasta el núcleo, el centro de la fibra óptica. El núcleo está rodeado por el revestimiento, un material óptico que atrapa en el núcleo, mediante la técnica de «reflexión interna total». Un revestimiento primario protege la fibra de la humedad u otros daños. El nivel de protección se ve reforzado por el cable, que mantiene la fibra y los elementos de resistencia en su interior y está cubierto por una funda.
+    
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+
 ##### 3.1.3.1. Fibra monomodo
 
 Utiliza un núcleo estrecho que es atravesado por un láser en un único camino

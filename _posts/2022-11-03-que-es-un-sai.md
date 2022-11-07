@@ -10,7 +10,7 @@ img_path: /assets/img/que-es-un-sai/
 
 La corriente eléctrica es vital para cualquier ordenador. ¿Podemos confiar en que la empresa que nos suministra corriente eléctrica nunca nos va a fallar?
 
-Un SAI es un Sistema de Alimentación Ininterrumpida, son dispositivos que se utilizan para proporcionar protección contra problemas eléctricos y cortes de corriente también son conocidos por sus siglas en Ingles UPS (Uninterruptible Power Supply).
+Un SAI es un Sistema de Alimentación Ininterrumpida, son dispositivos que se utilizan para proporcionar protección contra problemas eléctricos y cortes de corriente también son conocidos por sus siglas en Ingles UPS (Uninterruptible Power Supply). Es decir, **un SAI es un conjunto de baterías** que alimentan una instalación eléctrica.
 
 {:.question}
 ¿Es lo mismo un SAI que un UPS?
@@ -23,27 +23,24 @@ _SAI_
 ![Conexiones SAI](conexionesSai.png)
 _Conexiones SAI_
 
-Un SAI nos protege de las siguientes anomalías de la red eléctrica:
+En el caso de corte de la corriente, los equipos conectados al SAI siguen funcionando porque consiguen la electricidad de las baterías. La capacidad de estas baterías es reducida y depende del SAI elegido y del consumo de los equipos, aunque el mínimo garantizado suele ser de 10 minutos.
 
-- Cortes, microcortes, micropicos
-- Distorsión y Ruido eléctrico
-- Sobretensiones y subtensiones
-- Variaciones en frecuencia
+Al igual que ocurría con los equipos de climatización, si el presupuesto lo permite, conviene aplicar redundancia e instalar un doble juego de equipo SAI, para estar cubiertos en caso de que una fallara. La mayoría de los servidores vienen con doble fuente de alimentación por lo que conectaríamos cada fuente a un SAI distinto.
 
-En el caso de corte de la corriente, los equipos conectados al SAI siguen funcionando porque consiguen la electricidad de las baterías.
+Cuando ocurre un corte de luz, el SAI procede de esta manera:
 
-La capacidad de estas baterías es reducida y depende del SAI elegido y del consumo de los equipos, aunque el mínimo garantizado suele ser de 10 minutos.
+- Espera unos minutos por si el corte ha sido puntual y el suministro se recupera inmediatamente por sí solo.
+- Si no es así, ejecuta una parada ordenada de los equipos conectados al SAI. Siempre es m,mejor solicitar al SO y las aplicaciones que ejecuta que perder la corriente y confiar en que no se genere ninguna inconsistencia.
+
+Conectar los equipos al SAI tiene otras ventajas:
+
+- Suelen llevar un estabilizados de corriente que quita los picos, que también pueden ser muy dañinos.
+- En algunos SAI también se incluye una entrada y salida de cable telefónico, que sirve para proteger nuestra conexión, porque las comunicaciones por línea telefónica también utilizan corriente eléctrica, luego también estamos expuesto a picos de tensión.
 
 Factor más importante a la hora de adquirir un SAI: ¿cuántos vatios consumen los equipos a proteger y cuánto tiempo necesitamos que los proteja?
 
 ![VA y precio de un SAI](vaSai.png)
 _VA y precio de un SAI_
-
-Al igual que con los equipos de climatización, si el presupuesto lo permite, conviene aplicar redundancia e instalar un doble juego de equipos SAI.
-
-Estaremos cubiertos en caso de que uno de los SAI falle.
-
-La mayoría de los servidores vienen con doble fuente de alimentación por lo que conectaríamos cada fuente a un SAI distinto.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qr58qnz9Vks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -52,6 +49,9 @@ La mayoría de los servidores vienen con doble fuente de alimentación por lo qu
 
 {:.question}
 ¿Qué capacidad voy a necesitar?
+
+{:.question}
+¿Qué rango de precios tienen los SAI?
 
 ## Partes de un SAI
 
@@ -108,33 +108,25 @@ Debido a su alta fiabilidad, la tecnología On-Line ocupa el sector profesional 
 
 **Aplicaciones SAI Online**: servidores, clusters de equipos, y en general instalaciones informáticas críticas o imprescindible (redes de datos, servidores ,telecomunicaciones, industria…).
 
-> ¡Ten cuidado! Las impresoras laser no deben formar parte de los equipos protegidos en un SAI. Utilizan resistencias de alto consumo para calentar el rodillo tóner. Este elevado consumo instantáneo, generando ruido a los otros equipos protegidos, que esperaban que el SAI les librara de estos problemas.
+> **¡Ten cuidado!** Las impresoras laser no deben formar parte de los equipos protegidos en un SAI. Utilizan resistencias de alto consumo para calentar el rodillo tóner. Este elevado consumo instantáneo, generando ruido a los otros equipos protegidos, que esperaban que el SAI les librara de estos problemas.
 {:.prompt-warning}
 
-## Calcular potencia de un SAI
+## Antes de nada... Unidades de medida eléctricas
 
+- **Corriente eléctrica o intensidad** en amperios (A): cantidad de corriente eléctrica (I) que circula por un conductor. Por ejemplo, por un conductor de 1,5 mm<sup>2</sup> pueden circular hasta 11 amperios sin riesgo de calentamiento excesivo.
+- **Potencial eléctrico o tensión o diferencia de potencial** en voltios (V): la magnitud que define la diferencia de potencial eléctrico entre 2 puntos es la tensión (V), cuya unidad de medida es el voltio (v). En instalaciones de baja tensión la tensión es de 230 a 400 voltios, pero en alta tensión puede llegar a 10.000v.
+- **Potencia eléctrica** en vatios (W): la potencia eléctrica (P) se mide en vatios (W) y resulta del producto de la tensión (V) y la intensidad (I). Por ejemplo, en una instalación eléctrica doméstica si se encuentra instalado un limitador ICP de 20 amperios, la potencia contratada será de:
 
-Leer artículo [Potencia SAI: Así la podemos calcular con una enorme precisión](https://www.profesionalreview.com/2021/08/28/como-calcular-potencia-sai/)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xjZJdI8DviY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Unidades de medida eléctricas
-
-**Corriente eléctrica o intensidad** en amperios (A): cantidad de corriente eléctrica (I) que circula por un conductor. Por ejemplo, por un conductor de 1,5 mm<sup>2</sup> pueden circular hasta 11 amperios sin riesgo de calentamiento excesivo.
-
-**Potencial eléctrico o tensión o diferencia de potencial** en voltios (V): la magnitud que define la diferencia de potencial eléctrico entre 2 puntos es la tensión (V), cuya unidad de medida es el voltio (v). En instalaciones de baja tensión la tensión es de 230 a 400 voltios, pero en alta tensión puede llegar a 10.000v.
-
-**Potencia eléctrica** en vatios (W): la potencia eléctrica (P) se mide en vatios (W) y resulta del producto de la tensión (V) y la intensidad (I). Por ejemplo, en una instalación eléctrica doméstica si se encuentra instalado un limitador ICP de 20 amperios, la potencia contratada será de:
-
-> P = U x I = 230 voltios x 20 amperios = 
-> 4600 vatios = 4,6 KW.
+> P = V x I = 230 voltios x 20 amperios = 4600 vatios = 4,6 KW.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8g2PUJB48as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kHdqToHKvQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 INTENSIDAD ➡️ NÚMERO DE CORREDORES
 TENSIÓN ➡️ MOTIVACIÓN DE LOS CORREDORES
 
-## Tipos de potencia eléctrica
+### Tipos de potencia eléctrica
 
 Lo primero que debemos tener en cuenta es que la potencia que suelen marcas los SAI es diferente de la potencia que consume un ordenador. 
 
@@ -148,7 +140,7 @@ Para ello antes debemos saber los siguientes conceptos sobre la potencia eléct
 ![Tipos de potencia eléctrica](cervezaPotenciaElectrica.jpg)
 _Tipos de potencia eléctrica_
 
-### Potencia activa (eficaz o eléctrica)
+#### Potencia activa (eficaz o eléctrica)
 
 Es toda aquella energía que realiza un trabajo útil. Por ejemplo, la consumida por una bombilla para iluminar. 
 
@@ -163,7 +155,7 @@ Donde:
 - «I» es la corriente eléctrica (A)
 - «cos(φ)» es el factor de potencia y no tiene unidad.
 
-### Potencia reactiva
+#### Potencia reactiva
 
 Hablamos de una energía que realmente no realiza un trabajo útil. Este tipo de energía aparece en instalaciones donde existen una gran cantidad de bobinas (normalmente motores). 
 
@@ -179,7 +171,7 @@ Donde:
 - «sin(φ)» es la inversa del factor de potencia y no tiene unidad.
 
 
-### Potencia aparente
+#### Potencia aparente
 
 Suma vectorial de las potencias activa y reactiva. 
 
@@ -194,7 +186,7 @@ Donde:
 - «I» es la corriente eléctrica (A)
 
 
-### Factor de potencia
+#### Factor de potencia
 
 Es la relación entre la energía suministrada (potencia aparente) y la energía realmente consumida (potencia activa). 
 
@@ -208,6 +200,12 @@ Donde:
 - «P» es la potencia activa (W)
 - «S» es la potencia aparente (VA)
 
+## Calcular potencia de un SAI
+
+Leer artículo [Potencia SAI: Así la podemos calcular con una enorme precisión](https://www.profesionalreview.com/2021/08/28/como-calcular-potencia-sai/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xjZJdI8DviY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Capacidad del SAI
 
 La autonomía de un SAI es el tiempo, medido en minutos, durante el cual el SAI puede alimentar a las cargas que se conectan a su salida en ausencia de suministro externo.
@@ -216,8 +214,7 @@ Este parámetro dependerá de la carga (a mayor carga, menor será el tiempo que
 
 Potencia aparente (se mide en voltoamperios VA): es el producto de la tensión nominal (voltaje V) por la intensidad (amperaje A) nominal máximas.
 
-Potencia aparente = Tensión * Intensidad
-
+> Potencia aparente = Tensión * Intensidad
 > S (voltoamperios) = V (voltios) * I (amperios)
 
 Por ejemplo, si un SAI suministra 200 voltios (V) y 10 amperios (A), entonces su potencia aparente será de 2.000 VA o 2 KVA (léase “kabeas”).
@@ -240,4 +237,4 @@ Otras veces podrás encontrar que para calcular la potencia aparente, no se divi
 
 ## Bibliografía
 
-- [Freguntas y respuestas comunes a SAIs](https://www.newsai.es/fqa.htm)
+- [Preguntas y respuestas comunes a SAIs](https://www.newsai.es/fqa.htm)

@@ -22,6 +22,8 @@ La seguridad informática es el conjunto de medidas encaminadas a proteger el ha
 {:.question}
 ¿Qué es un exploit?
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wrLVuetgTWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 {:.question}
 ¿En qué consiste la inyección SQL?
 
