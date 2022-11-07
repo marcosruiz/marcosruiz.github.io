@@ -3,7 +3,7 @@ title: "Práctica: SAI"
 date: 2022-11-03 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr, práctica]
-img_path: /assets/img/practica-firma-digital-gpg/
+img_path: /assets/img/practica-sai/
 ---
 
 ## Objetivo y duración
@@ -27,7 +27,7 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 7. El documento no debe contener faltas ortográficas.
 8. Los comandos y ficheros de configuración que hayas utilizado deben quedar reflejados en el PDF de la entrega en texto para permitirte copiar y pegar el día del examen todos los comandos de una manera rápida.
 9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$sudo apt install neofetch`.
-10. Para las actividades a mano se deberá hacer una foto a la resolución del ejercicio y añadirla al PDF. 
+10. Para las actividades a mano se deberá hacer una foto a la resolución del ejercicio y añadirla al PDF.
 
 ## Actividades
 
@@ -37,7 +37,7 @@ A continuación se listan las actividades que se deben realizar.
 
 Supongamos que un sistema informático consume  5 amperios a 220 voltios.
 
-Determina la potencia aparente y la potencia en voltoamperios informáticos que debería tener el SAI que necesitaríamos adquirir. 
+Determina la potencia aparente y la potencia activa que debería tener el SAI que necesitaríamos adquirir.
 
 ### Actividad 2
 
@@ -47,7 +47,7 @@ Calcular los VoltAmperios informáticios (Vapc) que necesita el SAI.
 
 ### Actividad 3
 
-La empresa Scripting S.L. necesita comprar un sistema de  alimentación ininterrumpida. El responsable de la  empresa nos indica que disponen de 2 PCs de escritorio con sus monitores, 2 portátiles HP, 1 impresora láser y 1 router inalámbrico (Contamos con la siguiente tabla). Determina los VApc que necesita el SAI a adquirir.
+La empresa Scripting S.L. necesita comprar un sistema de alimentación ininterrumpida. El responsable de la  empresa nos indica que disponen de 2 PCs de escritorio con sus monitores, 2 portátiles HP, 1 impresora láser y 1 router inalámbrico (Contamos con la siguiente tabla). Determina los VApc que necesita el SAI a adquirir.
 
 | DISPOSITIVO | CONSUMO | 
 |---|---|
@@ -61,7 +61,7 @@ La empresa Scripting S.L. necesita comprar un sistema de  alimentación ininter
 
 ¿A cuantos equipos de 250W cada uno podría dar servicio de forma adecuada un SAI de 6000VA?
 
-Ten en cuenta que se ha seguido la recomendación de comprar un SAI que es un 30% más potente que la potencia necesitada (Potencia aparente)
+Ten en cuenta que se ha seguido la recomendación de comprar un SAI que es un 30% más potente que la potencia necesitada (Potencia aparente).
 
 ### Actividad 5
 
@@ -77,19 +77,16 @@ Es necesario indicar que se recomienda dejar un margen de potencia sin usar en e
 
 ### Actividad 6
 
-Un equipo informático domestico está compuesto por un ordenador de 200 W de consumo, un monitor (50w), un router (10w) y una impresora de 10w. 
+Un equipo informático domestico está compuesto por un ordenador de 200W de consumo, un monitor (50W), un router (10W) y una impresora de 10W. 
 
 Queremos instalar un SAI que proteja toda esa instalación y vamos a una tienda donde nos enseñan un modelo de 300 VA por 78€ y otro de 500 VA por 118€. Ambos tienen un factor de potencia del 60%
 
 ¿Cuál deberíamos elegir?
 
-¿Cuanto tiempo de autonomía nos ofrece el SAI elegido con la carga que necesitan nuestros dispositivos suponiendo que es el [siguiente](https://www.profesionalreview.com/2021/08/28/como-calcular-potencia-sai/)? En la pág. 9 puedes encontrar información de la batería.
+¿Cuanto tiempo de autonomía nos ofrece el SAI elegido con la carga que necesitan nuestros dispositivos suponiendo que es el [siguiente](/assets/img/practica-sai/actividad6Sai.pdf)? En la pág. 9 puedes encontrar información de la batería. ¿Cuál es el factor de potencia de este SAI?
 
 ![Precio SAI](salicruSai.png)
 _Precio SAI_
-
-![Especificaciones SAI](salicruSaiEspecificaciones.png)
-_Especificaciones SAI_
 
 ### Actividad 7
 
@@ -102,8 +99,26 @@ Encuentra un SAI, justificando tu respuesta, para un equipo que tiene una fuente
 Nos han asignado la tarea de decidir qué SAI se adapta mejor a nuestras necesidades, teniendo en cuenta que necesitamos ofrecer la posibilidad de conectar dispositivos que consuman 800 W en total. Los SAI que estamos estudiando son los siguientes:
 
 ![SAI 1, 2 y 3](actividad8.png)
-_ SAI 1, 2 y 3 _
+_SAI 1, 2 y 3_
 
 1. Indica el SAI que no se adapta nuestra necesidad de potencia máxima. Razona la respuesta.
 2. Para una carga media de 400 W, necesito un tiempo de autonomía de como mínimo 8 minutos. ¿Qué SAI me da esas prestaciones? Razona la respuesta.
 3. Para una carga media de 200 W, ¿qué tiempo de autonomía me da cada SAI?
+
+### Actividad 9
+
+Tenemos un SAI de 700VA, dos baterías, una tensión de batería de 9V y 5Ah. Suponemos además una eficiencia del 95%. ¿Cuánto tiempo?
+
+### Actividad 10
+
+¿Cuántos VA deberá tener como mínimo una SAI adecuada para dar servicio a 17
+PCs (70W cada uno), 15 monitores (30W cada uno) y 2 routers (0,3A cada uno)?
+
+### Actividad 11
+
+Instala Lm-sensors y Psensors para comprobar la temperatura de tu máquina virtual Zorin OS Lite.
+
+Puedes usar el artículo [Comprobar la temperatura de CPU en Linux](https://protegermipc.net/2021/02/08/comprobar-la-temperatura-de-cpu-en-ubuntu-linux/) y el artículo [Psensor, el interfaz gráfica para lm-sensors](https://ubunlog.com/psensor-interfaz-lm-sensors/#Configura_lm-sensors) como guía.
+
+> 📷 Haz una captura de pantalla donde se demuestre la realización de esta actividad.0
+{:.prompt-info}

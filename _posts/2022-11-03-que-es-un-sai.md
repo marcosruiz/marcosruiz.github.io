@@ -80,10 +80,12 @@ Solamente empezará a funcionar cuando detecte un fallo de corriente eléctrica 
 
 Estos SAIs necesitan un tiempo de conmutación (normalmente 2-10 ms) para pasar a modo baterías, es preciso tener este dato en cuenta a la hora de conectar dispositivos sensibles que pudieran verse afectados en el proceso de conmutación. 
 
-Es importate indicar que este tipo de SAIs son solo recomendables para las zonas que disponen de una red estable (Al no realizar ningún filtrado de la corriente, solo protegen ante un corte de suministro eléctrico).
+Es importante indicar que este tipo de SAIs son solo recomendables para las zonas que disponen de una red estable (Al no realizar ningún filtrado de la corriente, solo protegen ante un corte de suministro eléctrico).
 
 **Aplicaciones Sai Off-Line**: Dispositivos poco sensibles como ordenadores personales de gama baja, televisores, monitores, router, etc... es recomendable utilizar este tipo de SAIs en zonas con pocas anomalías eléctricas y buena calidad de red.
 
+{:.question}
+¿Qué es un trigger?
 
 ### Protección media / Interactivo (Nivel 5)
 
@@ -121,10 +123,18 @@ Debido a su alta fiabilidad, la tecnología On-Line ocupa el sector profesional 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8g2PUJB48as" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kHdqToHKvQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué analogía usa Alberto HRom sobre la Intensidad y la Tensión?</summary>
+  <div class="card-body" markdown="1">
 
-INTENSIDAD ➡️ NÚMERO DE CORREDORES
-TENSIÓN ➡️ MOTIVACIÓN DE LOS CORREDORES
+- I ➡ INTENSIDAD (en Amperios) ➡ NÚMERO DE CORREDORES ➡ Lo que nos mata
+- U ➡ TENSIÓN / DIFERENCIA DE POTENCIAL (en Voltios) ➡ MOTIVACIÓN DE LOS CORREDORES / PREMIO ➡ Lo peligroso
+    
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kHdqToHKvQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Tipos de potencia eléctrica
 
@@ -140,18 +150,24 @@ Para ello antes debemos saber los siguientes conceptos sobre la potencia eléct
 ![Tipos de potencia eléctrica](cervezaPotenciaElectrica.jpg)
 _Tipos de potencia eléctrica_
 
+![Relación de los tipos de potencia eléctrica](relacionPotencias.jpg)
+_Relación de los tipos de potencia eléctrica_
+
+> Recuerda que Potencia aparente > Potencia activa
+{:.prompt-info}
+
 #### Potencia activa (eficaz o eléctrica)
 
 Es toda aquella energía que realiza un trabajo útil. Por ejemplo, la consumida por una bombilla para iluminar. 
 
 Su fórmula es: 
 
-> P = V * I * cos(φ)
+> P = U * I * cos(φ)
 
 Donde:
 
 - «P» es la potencia eléctrica cuya unidad es el vatio (W)
-- «V» es la tensión eléctrica (V)
+- «U» es la tensión eléctrica (V)
 - «I» es la corriente eléctrica (A)
 - «cos(φ)» es el factor de potencia y no tiene unidad.
 
@@ -161,12 +177,12 @@ Hablamos de una energía que realmente no realiza un trabajo útil. Este tipo 
 
 Su fórmula es: 
 
-> Q = V * I * sin(φ)
+> Q = U * I * sin(φ)
 
 Donde:
 
 - «Q» es la potencia reactiva cuya unidad son los volitamperios reactivos (VAr)
-- «V» es la tensión eléctrica (V)
+- «U» es la tensión eléctrica (V)
 - «I» es la corriente eléctrica (A)
 - «sin(φ)» es la inversa del factor de potencia y no tiene unidad.
 
@@ -177,12 +193,12 @@ Suma vectorial de las potencias activa y reactiva.
 
 La fórmula es: 
 
-> S = V * I
+> S = U * I
 
 Donde:
 
 - «S» es la potencia eléctrica total cuya unidad es el voltiamperio (VA)
-- «V» es la tensión eléctrica (V)
+- «U» es la tensión eléctrica (V)
 - «I» es la corriente eléctrica (A)
 
 
@@ -200,11 +216,23 @@ Donde:
 - «P» es la potencia activa (W)
 - «S» es la potencia aparente (VA)
 
-## Calcular potencia de un SAI
+## Calcular potencia y autonomía de un SAI
 
 Leer artículo [Potencia SAI: Así la podemos calcular con una enorme precisión](https://www.profesionalreview.com/2021/08/28/como-calcular-potencia-sai/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xjZJdI8DviY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> T = [(N*U*Ah*Ef)/S]*60
+
+Donde:
+
+- T: Es el tiempo de autonomía total que tendrá el SAI
+- N: Es el número de baterías del SAI, normalmente el fabricante indica este parámetro
+- V: Es la tensión que ofrecen las baterías
+- Ah: Son los amperios/hora (Ah) de la batería
+- Ef: Es la eficiencia de las baterías. Normalmente es entre el 98-90%, aunque normalmente para el cálculo de la autonomía se toma el 95%, que es un término medio
+- S: Es la potencia aparente del SAI
+- 60: Representa una hora en minutos y sirve para convertir el resultado en una unidad de medida fácilmente manejable
 
 ## Capacidad del SAI
 
@@ -215,20 +243,20 @@ Este parámetro dependerá de la carga (a mayor carga, menor será el tiempo que
 Potencia aparente (se mide en voltoamperios VA): es el producto de la tensión nominal (voltaje V) por la intensidad (amperaje A) nominal máximas.
 
 > Potencia aparente = Tensión * Intensidad
-> S (voltoamperios) = V (voltios) * I (amperios)
+> S (voltoamperios) = U (voltios) * I (amperios)
 
 Por ejemplo, si un SAI suministra 200 voltios (V) y 10 amperios (A), entonces su potencia aparente será de 2.000 VA o 2 KVA (léase “kabeas”).
 
 Potencia eficaz (activa o eléctrica): El vatio (W), es la unidad de potencia eficaz, es decir, la realmente consumida (y la que facturan los distribuidores de energía eléctrica).
 
-Suele tomarse que la potencia eficaz (vatios) es la potencia aparente (VA) multiplicado por 0,75.
+Suele tomarse que la potencia eficaz (vatios) es la potencia aparente (VA) multiplicado por 0,7.
 
-> Potencia eficaz = Potencia aparente * 0,75
-> P = S * 0,75
+> Potencia eficaz = Potencia aparente * 0,7
+> P = S * 0,7
 
 Respecto a la a fórmula que acabas de observar...
 
-Si buscas ejercicios por internet, alguna veces encontrarás que el valor de 0,75 puede ser 0,7.
+Si buscas ejercicios por internet, alguna veces encontrarás que el factor de potencia varía de 0,5 a 0,8.
 
 Otras veces podrás encontrar que para calcular la potencia aparente, no se divide por 0,7 sino que se puede multiplicar por 1,43, es decir:
 

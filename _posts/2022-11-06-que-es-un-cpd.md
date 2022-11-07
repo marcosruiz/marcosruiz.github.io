@@ -15,8 +15,8 @@ En el diseño, planificación e implantación de un centro de procesos de datos 
 {:.question}
 ¿Qué es un CPD?
 
-![Protección fisica del CPD](proteccionFisicaCpd.jpg)
-_Protección fisica del CPD_
+![Protección física del CPD](proteccionFisicaCpd.png)
+_Protección física del CPD_
 
 ## Ubicación de un CPD
 
@@ -111,3 +111,4 @@ El sistema de monitorización permite controlar parámetros críticos y fundamen
 ## Bibliografía
 
 - [SEGURIDAD PASIVA: EQUIPOS](http://aleogao.blogspot.com/2016/11/seguridad-pasiva-equipos.html)
+- [CPD: qué es un centro de procesamiento de datos y cómo funciona](https://www.xataka.com/pro/cpd-que-centro-procesamiento-datos-como-funciona)
