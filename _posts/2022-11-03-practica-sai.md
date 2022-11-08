@@ -35,9 +35,12 @@ A continuación se listan las actividades que se deben realizar.
 
 ### Actividad 1
 
-Supongamos que un sistema informático consume  5 amperios a 220 voltios.
+Supongamos que un sistema informático consume 5 amperios a 220 voltios.
 
-Determina la potencia aparente y la potencia activa que debería tener el SAI que necesitaríamos adquirir.
+Determina la potencia aparente, los voltiamperios informáticos (Vapc) y la potencia activa que debería tener el SAI que necesitaríamos adquirir suponiendo un factor de potencia de 0,7.
+
+> Vapc (voltiamperios informáticos) = S * 1,6
+{:.prompt-info}
 
 ### Actividad 2
 
@@ -53,7 +56,7 @@ La empresa Scripting S.L. necesita comprar un sistema de alimentación ininterr
 |---|---|
 | PC escritorio | 75 W | 
 | Portátil | 32 W | 
-| Impresora | laser	180 W | 
+| Impresora láser | 180 W | 
 | Router | 0,1 A | 
 | Monitor | 30 W | 
 
@@ -67,11 +70,13 @@ Ten en cuenta que se ha seguido la recomendación de comprar un SAI que es un 30
 
 Calcula los VA de un SAI que debe tener conectados a tomas de batería los siguientes equipos: 
 
-- 3 torres de 180 w c/u
-- 2 monitores LED de 10 w c/u 
-- 1 router de 0 A
+- 3 torres de 180 w c/u[^cu]
+- 2 monitores LED de 10 w c/u
+- 1 router de 0,2 A
 - 2 switches de 0,1 A
 - 1 impresora de 200 VA
+
+[^cu] cada unidad.
 
 Es necesario indicar que se recomienda dejar un margen de potencia sin usar en el SAI, por lo que se recomienda que el consumo de todos los equipos conectados no sobrepase el 70% de la capacidad total del SAI.
 

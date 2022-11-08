@@ -222,7 +222,7 @@ Leer artículo [Potencia SAI: Así la podemos calcular con una enorme precisión
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xjZJdI8DviY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> T = [(N*U*Ah*Ef)/S]*60
+> T = [(N * U * Ah * Ef) / S] * 60
 
 Donde:
 
