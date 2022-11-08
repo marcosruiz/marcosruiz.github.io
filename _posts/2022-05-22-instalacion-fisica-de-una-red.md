@@ -511,11 +511,8 @@ _Tester RJ45_
 
 Para la creación de cables existen los estándares T568A y T568B.
 
-![img-description](t568a.webp){: w="200"}
-_T568A_
-
-![img-description](t568b.webp){: w="200"}
-_T568B_
+![img-description](t568a.webp)
+_T568A y T568B_
 
 #### 4.7.1. Cable de red directo
 

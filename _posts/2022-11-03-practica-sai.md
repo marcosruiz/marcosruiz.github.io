@@ -67,10 +67,10 @@ Ten en cuenta que se ha seguido la recomendación de comprar un SAI que es un 30
 
 Calcula los VA de un SAI que debe tener conectados a tomas de batería los siguientes equipos: 
 
-- 3 torres de 180 w c/u 
+- 3 torres de 180 w c/u
 - 2 monitores LED de 10 w c/u 
-- 1 router de 0,2 A 
-- 2 switches de 0,1 A 
+- 1 router de 0 A
+- 2 switches de 0,1 A
 - 1 impresora de 200 VA
 
 Es necesario indicar que se recomienda dejar un margen de potencia sin usar en el SAI, por lo que se recomienda que el consumo de todos los equipos conectados no sobrepase el 70% de la capacidad total del SAI.
@@ -120,5 +120,5 @@ Instala Lm-sensors y Psensors para comprobar la temperatura de tu máquina virtu
 
 Puedes usar el artículo [Comprobar la temperatura de CPU en Linux](https://protegermipc.net/2021/02/08/comprobar-la-temperatura-de-cpu-en-ubuntu-linux/) y el artículo [Psensor, el interfaz gráfica para lm-sensors](https://ubunlog.com/psensor-interfaz-lm-sensors/#Configura_lm-sensors) como guía.
 
-> 📷 Haz una captura de pantalla donde se demuestre la realización de esta actividad.0
+> 📷 Haz una captura de pantalla donde se demuestre la realización de esta actividad.
 {:.prompt-info}
