@@ -169,7 +169,7 @@ Donde:
 - «P» es la potencia eléctrica cuya unidad es el vatio (W)
 - «U» es la tensión eléctrica (V)
 - «I» es la corriente eléctrica (A)
-- «cos(φ)» es el factor de potencia y no tiene unidad.
+- «cos(φ)» es el factor de potencia (FP) y no tiene unidad.
 
 #### Potencia reactiva
 
