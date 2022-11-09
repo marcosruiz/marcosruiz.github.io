@@ -76,7 +76,7 @@ Calcula los VA de un SAI que debe tener conectados a tomas de batería los sigui
 - 2 switches de 0,1 A
 - 1 impresora de 200 VA
 
-[^cu] cada unidad.
+[^cu]: cada unidad.
 
 Es necesario indicar que se recomienda dejar un margen de potencia sin usar en el SAI, por lo que se recomienda que el consumo de todos los equipos conectados no sobrepase el 70% de la capacidad total del SAI.
 
