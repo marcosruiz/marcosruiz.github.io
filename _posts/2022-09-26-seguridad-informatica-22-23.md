@@ -10,13 +10,14 @@ pin: true
 
 - UD1 - [Conceptos básicos de seguridad informática](/posts/conceptos-basicos-seguridad-informatica/)
 - UD2 - [Criptografía clásica](/posts/criptografia-clasica/) y [Criptografía moderna](/posts/criptografia-moderna/)
-- UD3 - Seguridad Pasiva Equipos
-- UD4 - Seguridad Pasiva Almacenamiento
+- UD3 - [Seguridad Pasiva Equipos](/posts/seguridad-pasiva/#equipos) ➡ Sección Equipos
+- UD4 - [Seguridad Pasiva Almacenamiento](/posts/seguridad-pasiva/#almacenamiento) ➡ Sección Almacenamiento
 
 - P01 - [Práctica: Tipos de ataques](/posts/practica-tipos-de-ataque/)
 - P02 - [Práctica: Criptografía clásica](/posts/practica-criptografia-clasica/)
 - P03 - [Práctica: GPG](/posts/practica-gpg/)
 - P04 - [Práctica: Firma digital con GPG](/posts/practica-firma-digital-gpg/)
+- P05 - [Práctica: SAI](/posts/practica-sai/)
 
 ## Evaluación 2
 
