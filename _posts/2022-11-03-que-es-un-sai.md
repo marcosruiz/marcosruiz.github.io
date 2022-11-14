@@ -151,7 +151,7 @@ Para ello antes debemos saber los siguientes conceptos sobre la potencia eléct
 ![Tipos de potencia eléctrica](cervezaPotenciaElectrica.jpg)
 _Tipos de potencia eléctrica_
 
-![Relación de los tipos de potencia eléctrica](relacionPotencias.jpg)
+![Relación de los tipos de potencia eléctrica](relacionPotencias.png)
 _Relación de los tipos de potencia eléctrica_
 
 > Recuerda que Potencia aparente > Potencia activa
