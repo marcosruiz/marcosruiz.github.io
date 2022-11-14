@@ -72,7 +72,7 @@ Berners-Lee trabajó en el CERN desde junio hasta diciembre de 1980. Durante ese
 
 Haz que tenga un formato según la siguiente imagen:
 
-![img-description](biografia-tim-berners-lee.jpg)
+![Biografía de Tim Berners-Lee en HTML](biografia-tim-berners-lee.jpg)
 _Biografía de Tim Berners-Lee en HTML_
 
 
@@ -96,7 +96,7 @@ Biografía de Vinton Cerf Cuando solo tenía 25 años trabajó en el motor de co
 
 Haz que tenga un formato según la siguiente imagen:
 
-![img-description](solucion-ejercicio-vinton-cerf.jpg)
+![Biografía de Vinton Cerf en HTML](solucion-ejercicio-vinton-cerf.jpg)
 _Biografía de Vinton Cerf en HTML_
 
 {:.activity}
@@ -126,10 +126,10 @@ Conclusiones
 
 El resultado deberá ser algo parecido a esto:
 
-![img-description](portada.png)
+![Portada con tabla de contenidos](portada.png)
 _Portada con tabla de contenidos_
 
-![img-description](pagina1.png)
+![Primera página](pagina1.png)
 _Primera página_
 
 {:.activity}
@@ -156,7 +156,7 @@ Existen 2 formas de codificar los caracteres.
 
 Escribe en un documento web el siguiente texto teniendo en cuenta que se usan los encabezados h1 a h6.
 
-![img-description](enunciado-ejercicio-html-caracteres-escapados.jpg)
+![Encabezados con carácteres escapados](enunciado-ejercicio-html-caracteres-escapados.jpg)
 _Encabezados con carácteres escapados_
 
 
@@ -170,7 +170,7 @@ Observaciones:
 - El ejercicio está resuelto sin el uso de CSS.
 - Todas las líneas están resueltas mediante un título `<h3>`.
 
-![img-description](ejemplo-uso-nombres-html.jpg)
+![Encabezados con espacios](ejemplo-uso-nombres-html.jpg)
 _Encabezados con espacios_
 
 {:.activity}
@@ -191,10 +191,10 @@ Crea una lista de definiciones para los siguientes términos relacionadas con la
 
 Escribe con html las listas según las siguientes imágenes.
 
-![img-description](ejercicio-html-listas-ordenadas.jpg)
+![Listas ordenadas](ejercicio-html-listas-ordenadas.jpg)
 _Listas ordenadas_
 
-![img-description](ejercicio-html-listas-NO-ordenadas.jpg)
+![Listas NO ordenadas](ejercicio-html-listas-NO-ordenadas.jpg)
 _Listas NO ordenadas_
 
 {:.activity}
@@ -202,17 +202,17 @@ _Listas NO ordenadas_
 
 Transcribe la siguiente imagen en lenguaje html.
 
-![img-description](ejercicio-listas-anidadas-01.jpg)
+![Lista anidada 1](ejercicio-listas-anidadas-01.jpg)
 _Lista anidada 1_
 
 Transcribe la siguiente imagen en lenguaje html.
 
-![img-description](ejercicio-listas-anidadas-02.jpg)
+![Lista anidada 2](ejercicio-listas-anidadas-02.jpg)
 _Lista anidada 2_
 
 Transcribe la siguiente imagen en lenguaje html.
 
-![img-description](ejercicio-listas-anidadas-03.jpg)
+![Lista anidada 3](ejercicio-listas-anidadas-03.jpg)
 _Lista anidada 3_
 
 {:.activity}
@@ -220,7 +220,7 @@ _Lista anidada 3_
 
 Anida correctamente la lista no ordenada que se muestra en la imagen.
 
-![img-description](ejemplo-listas-anidadas.jpg)
+![Lista html anidada con un subnivel y un subsubnivel](ejemplo-listas-anidadas.jpg)
 _Lista html anidada con un subnivel y un subsubnivel_
 
 
@@ -233,7 +233,7 @@ A partir de la imagen que podrás descargar a continuación genera un mapa de im
 - El área verde oscuro está delimitada por los puntos 126,95 y 215,117. Cuando se pulsa envía al usuario a https://marcosruiz.github.io/posts/comandos-basicos-gnu-linux/.
 - El área verde azul claro está delimitada por los puntos 128,140 y 215,161. Cuando se pulsa envía al usuario a https://marcosruiz.github.io/posts/manual-java/.
 
-![img-description](letra-f.jpg)
+![Letra F](letra-f.jpg)
 _Letra F_
 
 {:.activity}
@@ -245,7 +245,7 @@ A partir de la imagen que podrás descargar a continuación genera un mapa de im
 - El área negro delimitado por los puntos 128,44 y 235,74 envía al usuario a https://marcosruiz.github.io/posts/comandos-basicos-gnu-linux/ cuando se pulsa. En su interior tiene un área definido por los puntos 128,56 y 226,65 que es inerte cuando es pulsado, generando un hueco.
 - El área negro delimitado por los puntos 128,138 y 220,165 envía al usuario a https://marcosruiz.github.io/posts/manual-java/ cuando se pulsa. En su interior tiene un área definido por los puntos 128,144 y 211,156 que es inerte cuando es pulsado, generando un hueco.
 
-![img-description](letra-F-ejercicio-avanzado.jpg)
+![Letra F](letra-F-ejercicio-avanzado.jpg)
 _Letra F_
 
 {:.activity}
@@ -281,7 +281,7 @@ Dado el siguiente documento html se desea conseguir el resultado de la imagen ad
 </html>
 ```
 
-![img-description](ejercicio-tablas.jpg)
+![Tabla fácil](ejercicio-tablas.jpg)
 _Tabla fácil_
 
 {:.activity}
@@ -305,7 +305,7 @@ Para que se vea bonita la tabla añade dentro del <head> del documento html este
 </style>
 ```
 
-![img-description](enunciado-tabla-html.jpg)
+![Tabla con colspan y rowspan](enunciado-tabla-html.jpg)
 _Tabla con `colspan` y `rowspan`_
 
 
@@ -326,7 +326,7 @@ Escribe el html de un formulario web según las especificaciones descritas a con
 - Aceptación de cláusula RGPD. De obligada selección antes de enviar el currículum.
 - Botón de envío.
 
-![img-description](resultadoFinalFormulario.png)
+![Resultado final del formulario](resultadoFinalFormulario.png)
 _Resultado final del formulario_
 
 {:.activity}

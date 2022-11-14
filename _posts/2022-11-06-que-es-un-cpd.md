@@ -43,6 +43,18 @@ _Servidor tipo rack_
 ![Servidor tipo blade](blade.jpg)
 _Servidor tipo blade_
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué significan las siglas ToR (Top of Rack)?</summary>
+  <div class="card-body" markdown="1">
+
+La arquitectura Top of Rack también recibe el nombre de diseño In-Rack y consiste en colocar el switch de acceso a la red en la parte superior del rack de servidores y conectarlo directamente a los servidores. Este diseño instala 1 o 2 switches Ethernet directamente en el interior del rack, consecuentemente, los cables de cobre permanecen en el mismo rack y el volúmen de cableado de cobre entre racks disminuye notablemente. En la arquitectura ToR, el rack está conectado a la red del centro de datos mediante un switch Ethernet, a menudo se emplea un cable de fibra para establecer el enlace. Este cable de fibra enlaza el área de agregación común directamente con el rack.
+
+En este enfoque, cada rack de la red del centro de datos es una entidad independiente que facilita su gestión. Cualquier cambio, actualización o avería en el rack suele afectar sólo a ese rack. Como esta arquitectura requiere una cantidad menor de cables, permite optar por cables de mejor calidad y mayor ancho de banda ateniéndose al mismo presupuesto. Para obtener más información sobre el switch ToR, recomendamos: Switches ToR y ToRs populares en arquitecturas de centros de datos.
+    
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 ## Protección
 
 La información es vital para la empresa: si los servidores se paran, la empresa se para. Sucede en todos los sectores: en una empresa de telefonía, en una compañía aérea, en unos grandes almacenes...
@@ -164,7 +176,26 @@ El sistema de monitorización permite controlar parámetros críticos y fundamen
 {:.question}
 ¿Qué es un fichero de logs?
 
+## CPDs en la nube
+
+La base de la tecnología de centros de datos en la nube se basa en la contratación de no solo los servicios requeridos, sino también de la infraestructura tecnológica necesaria para proveer dichos servicios.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Sabrías nombrar algún servicio CPD en la nube?</summary>
+  <div class="card-body" markdown="1">
+
+- Microsoft SCCM
+- Soluciones Azure
+- Amazon Web Services
+- Google Cloud Platform
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+
 ## Bibliografía
 
 - [SEGURIDAD PASIVA: EQUIPOS](http://aleogao.blogspot.com/2016/11/seguridad-pasiva-equipos.html)
 - [CPD: qué es un centro de procesamiento de datos y cómo funciona](https://www.xataka.com/pro/cpd-que-centro-procesamiento-datos-como-funciona)
+- [Top of Rack y End of Row: ¿Qué diferencia hay?](https://community.fs.com/es/blog/tor-vs-eor-data-center-architecture-design.html)
