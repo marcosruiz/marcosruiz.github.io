@@ -3,11 +3,8 @@ title: Enrutamiento o encaminamiento
 date: 2022-02-08 13:30:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, smr, teoría]
+img_path: /assets/img/enrutamiento/
 ---
-
-## Aviso
-
-En la Sección 6.7 del libro está muy bien explicado.
 
 {:.section}
 ## ¿Qué es un router?
@@ -21,11 +18,13 @@ Cuando un equipo intenta enviar paquetes a una IP exterior, llegan al router, qu
 {:.question}
 ¿Cuántas redes ves a continuación?
 
-![img-description](/assets/img/enrutamiento/cuantas-redes.png)
+![img-description](cuantas-redes.png)
+_¿Cuántas redes ves a continuación?_
 
 Hay 15 LAN convencionales + 4 redes formadas por pares de routers conectados entre sí.
 
-![img-description](/assets/img/enrutamiento/cuantas-redes-solucion.png)
+![img-description](cuantas-redes-solucion.png)
+_¿Cuántas redes ves a continuación? Solución_
 
 Cada una de las redes que hay tras un router o entre dos routers se les llama dominios de difusión (o dominios broadcast), y tienen distintas puertas de enlace. Cuando se envía un paquete a una dirección de difusión (broadcast) perteneciente a otro dominio de difusión, por regla general, el router descarta ese paquete. 
 
@@ -91,7 +90,7 @@ Las características principales del enrutamiento estático son las siguientes:
 
 En GNU Linux, podemos utilizar el comando `netstat` para consultar la tabla de encaminamiento del router al que la máquina está conectado.
 
-![img-description](/assets/img/enrutamiento/netstat.png)
+![Tabla de enrutamiento en GNU Linux](netstat.png)
 _Ejemplo de ejecución de netstat en GNU Linux para consultar la tabla de encaminamiento del router al que la máquina está conectado_
 
 {:.subsection}
@@ -130,7 +129,8 @@ Las características del enrutamiento dinámico son:
 - Configuraremos en las estaciones la puerta de enlace predeterminada con la
 dirección IP del interfaz del router correspondiente.
 
-![img-description](/assets/img/enrutamiento/caso1.png)
+![Dos redes LAN unidas por un router](caso1.png)
+_Dos redes LAN unidas por un router_
 
 {:.subsection}
 ### Caso 2: Dos redes, cada una con su propio router
@@ -141,7 +141,8 @@ dirección IP del interfaz del router correspondiente.
 - Tendremos tres dominios de difusión: el 10.0.0.0/8 (red de portátiles), el172.16.0.0/16 (red de sobremesas) y el 192.168.0.0/24 (red entre los dos routers).
 - Tendremos que configurar también el encaminamiento que vamos a usar.Veremos un ejemplo de encaminamiento dinámico y otro de encaminamiento estático.
 
-![img-description](/assets/img/enrutamiento/caso2.png)
+![Dos redes, cada una con su propio router](caso2.png)
+_Dos redes, cada una con su propio router_
 
 {:.subsubsection}
 #### Encaminamiento dinámico con RIPv1
@@ -150,8 +151,8 @@ dirección IP del interfaz del router correspondiente.
 - En el apartado Enrutamiento - RIP, indicar las direcciones de subred de los dominios de difusión con los que está conectado el router.
 - Desde ese momento, el router aplicará un algoritmo de encaminamiento para descubrir el camino que deben seguir los paquetes.
 
-
-![img-description](/assets/img/enrutamiento/caso2-encaminamiento-dinamico.png)
+![Encaminamiento dinámico con RIPv1](caso2-encaminamiento-dinamico.png)
+_Encaminamiento dinámico con RIPv1_
 
 {:.subsubsection}
 #### Encaminamiento estático
@@ -160,7 +161,7 @@ dirección IP del interfaz del router correspondiente.
 - En el apartado Enrutamiento - Estática, indicar las direcciones de subred de aquellas subredes a las que se puede acceder desde los routers inmediatamente conectados al actual, y a través de qué IP se llega a esas subredes.
 - Quedará definida esta ruta estática en la tabla de encaminamiento del router, sin necesidad de aplicar algoritmo alguno.
 
-![img-description](/assets/img/enrutamiento/caso2-encaminamiento-estatico.png)
+![Desde este router se puede llegar a la red 10.50.0.0/16 a través de la interfaz del router cuya IP es 192.168.0.200](caso2-encaminamiento-estatico.png)
 _Desde este router se puede llegar a la red 10.50.0.0/16 a través de la interfaz del router cuya IP es 192.168.0.200_
 
 {:.subsection}
@@ -170,7 +171,8 @@ _Desde este router se puede llegar a la red 10.50.0.0/16 a través de la interfa
 - Importantísimo: la velocidad de las comunicaciones serie va controlada con un reloj. Para que la comunicación se produzca, los dos routers tendrán que ir configurados a la misma velocidad de reloj.
 - Las interfaces que suelen emplearse en comunicaciones serie con routers Cisco son los interfaces DTE V.35. Conectores DB-60 en los routers y Winchester en el otro extremo.
 
-![img-description](/assets/img/enrutamiento/caso3.png)
+![Routers unidos con conexiones serie](caso3.png)
+_Routers unidos con conexiones serie_
 
 {:.section}
 ## Vídeos
