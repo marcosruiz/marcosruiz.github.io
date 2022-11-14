@@ -14,7 +14,7 @@ Duración: 7 h
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un documento PDF con un nombre en el siguiente formato: "<Apellidos>_<Nombre>_P<NúmeroDeLaPráctica>.zip". Por ejemplo, en mi caso el nombre del documento PDF sería "RuizGarcía_Marcos_P07.pdf".
+La entrega de esta práctica debe ser un documento PDF con un nombre en el siguiente formato: "\<Apellidos\>_\<Nombre\>_P\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del documento PDF sería "RuizGarcía_Marcos_P07.pdf".
 
 1. Debe contener una portada con título, nombre de la asignatura, curso, autor y fecha de realización.
 2. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.

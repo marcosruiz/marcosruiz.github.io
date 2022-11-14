@@ -4,6 +4,7 @@ date: 2022-11-03 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr, teoría]
 img_path: /assets/img/que-es-un-sai/
+math: true
 ---
 
 ## ¿Qué es un SAI?
@@ -150,7 +151,7 @@ Para ello antes debemos saber los siguientes conceptos sobre la potencia eléct
 ![Tipos de potencia eléctrica](cervezaPotenciaElectrica.jpg)
 _Tipos de potencia eléctrica_
 
-![Relación de los tipos de potencia eléctrica](relacionPotencias.jpg)
+![Relación de los tipos de potencia eléctrica](relacionPotencias.png)
 _Relación de los tipos de potencia eléctrica_
 
 > Recuerda que Potencia aparente > Potencia activa
@@ -162,7 +163,7 @@ Es toda aquella energía que realiza un trabajo útil. Por ejemplo, la consumid
 
 Su fórmula es: 
 
-> P = U * I * cos(φ)
+$$P = U * I * \cos{\phi}$$
 
 Donde:
 
@@ -177,7 +178,7 @@ Hablamos de una energía que realmente no realiza un trabajo útil. Este tipo 
 
 Su fórmula es: 
 
-> Q = U * I * sin(φ)
+$$Q = U * I * \sin{\phi}$$
 
 Donde:
 
@@ -193,7 +194,7 @@ Suma vectorial de las potencias activa y reactiva.
 
 La fórmula es: 
 
-> S = U * I
+$$S = U * I$$
 
 Donde:
 
@@ -208,7 +209,8 @@ Es la relación entre la energía suministrada (potencia aparente) y la energí
 
 Se calcula así: 
 
-> FP = P / S 
+$$FP = \frac{P}{S}$$
+
 
 Donde:
 
@@ -216,34 +218,34 @@ Donde:
 - «P» es la potencia activa (W)
 - «S» es la potencia aparente (VA)
 
-## Calcular potencia y autonomía de un SAI
+## Calcular autonomía de un SAI
 
-Leer artículo [Potencia SAI: Así la podemos calcular con una enorme precisión](https://www.profesionalreview.com/2021/08/28/como-calcular-potencia-sai/)
+Para calcular la autonomía de un sai solo se necesita la siguiente fórmula:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xjZJdI8DviY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-> T = [(N * U * Ah * Ef) / S] * 60
+$$T = \frac{N * U * Ah * Ef}{S} * 60$$
 
 Donde:
 
-- T: Es el tiempo de autonomía total que tendrá el SAI
+- T: Es el tiempo de autonomía total que tendrá el SAI.
 - N: Es el número de baterías del SAI, normalmente el fabricante indica este parámetro
 - V: Es la tensión que ofrecen las baterías
 - Ah: Son los amperios/hora (Ah) de la batería
 - Ef: Es la eficiencia de las baterías. Normalmente es entre el 98-90%, aunque normalmente para el cálculo de la autonomía se toma el 95%, que es un término medio
 - S: Es la potencia aparente del SAI
-- 60: Representa una hora en minutos y sirve para convertir el resultado en una unidad de medida fácilmente manejable
+- 60: Representa una hora en minutos y sirve para convertir el resultado en una unidad de medida fácilmente manejable, los minutos.
 
-## Capacidad del SAI
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xjZJdI8DviY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Leer artículo [Potencia SAI: Así la podemos calcular con una enorme precisión](https://www.profesionalreview.com/2021/08/28/como-calcular-potencia-sai/)
 
 La autonomía de un SAI es el tiempo, medido en minutos, durante el cual el SAI puede alimentar a las cargas que se conectan a su salida en ausencia de suministro externo.
 
-Este parámetro dependerá de la carga (a mayor carga, menor será el tiempo que durará el suministro desde las baterías). Esta es la razón por la que suele estandarizarse la carga (cuando el SAI tiene conectada el 50% de la potencia máxima que aguanta)
+Este parámetro dependerá de la carga (a mayor carga, menor será el tiempo que durará el suministro desde las baterías). Esta es la razón por la que suele estandarizarse la carga (cuando el SAI tiene conectada el 50% de la potencia máxima que aguanta).
 
 Potencia aparente (se mide en voltoamperios VA): es el producto de la tensión nominal (voltaje V) por la intensidad (amperaje A) nominal máximas.
 
-> Potencia aparente = Tensión * Intensidad
-> S (voltoamperios) = U (voltios) * I (amperios)
+> S (Potencia aparente) = U (Tensión) * I (Intensidad)
+> S (VoltoAmperios) = U (Voltios) * I (Amperios)
 
 Por ejemplo, si un SAI suministra 200 voltios (V) y 10 amperios (A), entonces su potencia aparente será de 2.000 VA o 2 KVA (léase “kabeas”).
 
@@ -251,14 +253,13 @@ Potencia eficaz (activa o eléctrica): El vatio (W), es la unidad de potencia ef
 
 Suele tomarse que la potencia eficaz (vatios) es la potencia aparente (VA) multiplicado por 0,7.
 
-> Potencia eficaz = Potencia aparente * 0,7
+> P (Potencia eficaz) = U (Potencia aparente) * 0,7
 > P = S * 0,7
 
-Respecto a la a fórmula que acabas de observar...
+Respecto a la a fórmula que acabas de observar:
 
-Si buscas ejercicios por internet, alguna veces encontrarás que el factor de potencia varía de 0,5 a 0,8.
-
-Otras veces podrás encontrar que para calcular la potencia aparente, no se divide por 0,7 sino que se puede multiplicar por 1,43, es decir:
+- Si buscas ejercicios por internet, alguna veces encontrarás que el factor de potencia varía de 0,5 a 0,8.
+- Otras veces podrás encontrar que para calcular la potencia aparente, no se divide por 0,7 sino que se puede multiplicar por 1,43, es decir:
 
 > S = P * 1,43; (VA = W * 1,43)
 > S = P / 0,7; (VA = W / 0,7)
