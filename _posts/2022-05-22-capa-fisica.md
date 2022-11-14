@@ -1,9 +1,9 @@
 ---
-title: Instalación física de una red
+title: Capa física
 date: 2022-05-22 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
-img_path: /assets/img/instalacion-fisica-de-una-red/
+img_path: /assets/img/capa-fisica/
 ---
 
 <details class="card mb-2">
@@ -146,14 +146,14 @@ La atenuación es la disminución paulatina de la amplitud de la señal de onda.
 
 Depende de la distancia recorrida: a mayor distancia la atenuación es mayor.
 
-![img-description](atenuacion.png){: w="300"}
+![Atenuación](atenuacion.png){: w="300"}
 _Atenuación_
 
 #### 2.2.2. Interferencia electromagnética
 
 El medio de transmisión puede ser afectado por ondas electromagnéticas emitidas por equipos eléctricos o por comunicaciones inalámbricas. Estas perturbaciones afectan a las comunicaciones basadas en señales electromagnéticas (cables de par trenzado coaxial), no así a las ópticas.
 
-![img-description](interferenciaElectromagnetica.png){: w="200"}
+![Interferencia electromagnética](interferenciaElectromagnetica.png){: w="200"}
 _Interferencia electromagnética_
 
 #### 2.2.3. Diafonía o crosstalk
