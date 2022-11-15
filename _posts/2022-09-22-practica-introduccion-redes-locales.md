@@ -66,7 +66,7 @@ Clasifica los siguientes elementos como hardware (de usuario o de red), software
 
 ### 3.6. Actividad
 
-Tenemos un archivo que pesa 120 Megabytes. Nuestra conexión es capaz de bajar archivos a una velocidad de 2048 kilobits por segundo (2 Mbps). ¿Cuánto tiempo tardaremos en descargarnos el archivo?
+Tenemos un archivo que pesa 120 Megabytes. Nuestra conexión es capaz de bajar archivos a una velocidad de 2048 kilobits por segundo. ¿Cuánto tiempo tardaremos en descargarnos el archivo?
 
 ### 3.7. Actividad
 
@@ -74,7 +74,7 @@ En una red local la velocidad de transferencia es de 100 Mbps. ¿Cuánto tardar�
 
 ### 3.8. Actividad
 
-¿Cuánto tardaría un módem de 55 600 bps en "descargar" un archivo de 1MB? 
+¿Cuánto tardaría un módem de 55600 bps en "descargar" un archivo de 1MB? 
 
 ### 3.9. Actividad
 
@@ -102,7 +102,7 @@ Clasifica las siguientes redes por el área de distribución:
 
 ### 3.13. Actividad
 
-¿De qué tipos es la transmisión en la emisión de un programa de radio? ¿En qué frecuencias trabajan las ondas de radio? ¿Son mayores frecuencias o menores que las redes WiFi? ¿A qué crees que se debe esto?
+¿De qué tipo es la transmisión en la emisión de un programa de radio? ¿En qué frecuencias trabajan las ondas de radio? ¿Son mayores frecuencias o menores que las redes WiFi? ¿A qué crees que se debe esto?
 
 ### 3.14. Actividad
 
