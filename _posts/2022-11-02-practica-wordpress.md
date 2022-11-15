@@ -34,7 +34,7 @@ A continuación se listan las actividades que se deben realizar. Recuerda que el
 {:.activity}
 ### Instalar máquina virtual de Ubuntu Server
 
-Descarga de [la sección de descargas de Ubuntu](https://ubuntu.com/download/server) e instala en una máquina virtual Ubuntu Server.
+Puedes seguir los pasos de mi artículo [Tutorial: Instalar Wordpress en Ubuntu Server 22.04](/posts/tutorial-wordpress/).
 
 > 📷 Haz una captura para demostrar la realización de esta actividad.
 {:.prompt-info}
@@ -61,7 +61,7 @@ Para conectarte desde tu máquina Windows yo recomiendo el programa "PowerShell"
 {:.activity}
 ### Instalar Wordpress en la máquina virtual
 
-Puedes instalar WordPress. Puedes seguir los pasos del artículo [Cómo instalar WordPress en Ubuntu 18.04 usando el Stack de LAMP](https://www.hostinger.es/tutoriales/instalar-wordpress-ubuntu).
+Puedes seguir los pasos de mi artículo [Tutorial: Instalar Wordpress en Ubuntu Server 22.04](/posts/tutorial-wordpress/).
 
 > 📷 Haz una captura del escritorio de administración de Wordpress.
 {:.prompt-info}
