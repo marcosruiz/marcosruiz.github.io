@@ -102,3 +102,11 @@ _Conexión SSH desde Windows a una máquina virtual_
 
 Estoy [usando este tutorial](https://comoinstalar.me/como-instalar-wordpress-en-ubuntu-22-04-lts/)
 
+Desde el host deberíais ser capaces de acceder a la dirección IP de vuestra máquina virtual. En mi caso yo he accedido a `http://192.168.249.3/wordpress/` para instalar Wordpress siguiendo los pasos.
+
+![imgDescription](wp01.png)
+
+![imgDescription](wp02.png)
+
+![imgDescription](wp03.png)
+
