@@ -184,7 +184,7 @@ Si no tuviéramos la clave privada de "\<usuario\>2", no podríamos descifrar ni
 ```console
 $gpg --delete-secret-key <usuario>2@tiempos.org
 $gpg --delete-key <usuario>2@tiempos.org
-$gpg --list-key
+$gpg --list-keys
 $gpg --decrypt contrato2.txt.asc
 $gpg --verify contrato2.txt.asc
 ```
