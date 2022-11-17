@@ -27,6 +27,10 @@ La entrega de esta práctica debe ser un documento PDF con un nombre en el sigui
 9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
 10. Para las actividades a mano se deberá hacer una foto a la resolución del ejercicio y añadirla al PDF.
 
+## Evaluación
+
+La realización de la práctica valdrá un 50% y el test sobre la misma el otro 50%.
+
 ## Actividades
 
 A continuación se listan las actividades que se deben realizar. Recuerda que el HTML solo marca la estructura y contenido del documento y CSS la parte estilística y visual.
