@@ -50,7 +50,23 @@ Una manera de trabajar cómodamente con servidores es utilizar SSH.
 
 Primero deberás habilitar otro adaptador en la Configuración de tu máquina virtual del tipo "Adaptador sólo-anfitrión". Si quieres saber más de los tipos de adaptadores puedes leer el artículo [Diferencias entre nat, red nat, adaptador puente, internal y solo anfitrión en Virtualbox](https://danitic.wordpress.com/2018/10/24/diferencias-entre-nat-red-nat-adaptador-puente-internal-y-solo-anfitrion-en-virtualbox/).
 
-Resulta muy fácil instalar un servidor SSHH como se puede ver en el artículo [Servicio SSH](/posts/servicio-ssh/). 
+Resulta muy fácil instalar un servidor SSH, simplemente es:
+
+```console
+$sudo apt install ssh
+```
+
+Y para comprobar si el servicio está funcionando:
+
+```console
+$sudo service ssh status
+```
+
+o 
+
+```console
+$sudo /etc/init.d/ssh status
+```
 
 Tras ello deberás ser capaz de conectarte desde un cliente SSH de tu host al servidor de la máquina virtual.
 
