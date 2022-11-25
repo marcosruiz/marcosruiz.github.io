@@ -38,4 +38,4 @@ pin: true
 
 La carpeta compartida de la asignatura es `\\ORDAI2PROF\Compartida_AW_22_23`.
 
-El usuario es "alumno2" y la contraseña la misma de vuestros equipos.
+El usuario es "alumno" y la contraseña es "alumno".
