@@ -29,6 +29,10 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$sudo apt install neofetch`.
 10. Para las actividades a mano se deberá hacer una foto a la resolución del ejercicio y añadirla al PDF. 
 
+## Evaluación
+
+La realización de la práctica valdrá un 50% y el test sobre la misma el otro 50%.
+
 ## Actividades
 
 A continuación se listan las actividades que se deben realizar. Te recuerdo que cada vez que se haga referencia a "\<usuario\>" este deberá ser sustituido por tu nombre de usuario específico, en mi caso será "mrug" debido a que mi correo es mrug@tiempos.org.
@@ -180,7 +184,7 @@ Si no tuviéramos la clave privada de "\<usuario\>2", no podríamos descifrar ni
 ```console
 $gpg --delete-secret-key <usuario>2@tiempos.org
 $gpg --delete-key <usuario>2@tiempos.org
-$gpg --list-key
+$gpg --list-keys
 $gpg --decrypt contrato2.txt.asc
 $gpg --verify contrato2.txt.asc
 ```

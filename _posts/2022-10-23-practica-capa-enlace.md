@@ -29,11 +29,15 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
 10. Para las actividades a mano se deberá hacer una foto a la resolución del ejercicio y añadirla al PDF. 
 
-## 3. Actividades
+## 3. Evaluación
+
+La realización de la práctica valdrá un 50% y el test sobre la misma el otro 50%.
+
+## 4. Actividades
 
 A continuación se listan las actividades que se deben realizar.
 
-### 3.1. Actividad
+### 4.1. Actividad
 
 ¿Qué técnica de control de acceso al medio implementarías en las siguientes situaciones? Debes responder cuál es el protocolo que debemos seguir en caso de que todos queramos participar a la vez.
 
@@ -42,35 +46,35 @@ A continuación se listan las actividades que se deben realizar.
 3. Un examen oral a todos los alumnos de una clase.
 4. Usar la impresora conectada a la red.
 
-### 3.2. Actividad
+### 4.2. Actividad
 
 ¿Dónde se realiza el control de acceso al medio?
 
-### 3.3. Actividad
+### 4.3. Actividad
 
 ¿Cómo se realiza el control de acceso al medio? Es decir, ¿cuáles son los protocolos que gestionan el control de acceso a un medio de comunicación como podría ser un cable en bus?
 
-### 3.4. Actividad
+### 4.4. Actividad
 
 En una topología en malla completa, el número de enlaces es elevado. Para 3 nodos hacen falta 3 enlaces, para 4 nodos hacen falta 6 enlaces, para 5 nodos hacen falta 10 enlaces. ¿Cuántos enlaces son necesarios si tenemos 8 nodos? ¿Cuál es la fórmula que nos resuelve esta  operación?
 
-### 3.5. Actividad
+### 4.5. Actividad
 
 ¿Qué diferencias existen entre las normas IEE 802.3 y Ethernet-DIX?
 
-### 3.6. Actividad
+### 4.6. Actividad
 
 La trama Ethernet posee un campo para la detección de errores. Describe qué datos se protegen mediante este campo y explica donde y como se genera y se comprueba.
 
-### 3.7. Actividad
+### 4.7. Actividad
 
 ¿De qué se encarga el grupo IEEE 802.15?
 
-### 3.8. Actividad
+### 4.8. Actividad
 
 ¿Se puede falsificar una dirección MAC? Investiga las posibles motivaciones para falsificar la dirección MAC.
 
-### 3.9. Actividad
+### 4.9. Actividad
 
 Identifica lo siguiente en el cable de pares de red de tu equipo:
 
@@ -81,36 +85,36 @@ Identifica lo siguiente en el cable de pares de red de tu equipo:
 > Esto debería estar en la práctica de la capa física
 {:.prompt-warning}
 
-### 3.10. Actividad
+### 4.10. Actividad
 
 ¿Qué hilos de los cables Ethernet se usan para la transmisión de datos y con que direccionalidad? En base a esto, ¿este tipo de comunicación es simplex, half-duplex o full-duplex?
 
 > Esto debería estar en la práctica de la capa física
 {:.prompt-warning}
 
-### 3.11. Actividad
+### 4.11. Actividad
 
 ¿Cuáles son los dispositivos de la capa de enlace?
 
-### 3.12. Actividad
+### 4.12. Actividad
 
 Investiga sobre que subcapas y servicios suelen incorporar los protocolos del nivel de enlace de datos que gestionan la transmisión a través de un enlace inalámbrico en contraposición con uno de cableado de cobre de pares trenzados. Justifica tu respuesta.
 
-### 3.13. Actividad
+### 4.13. Actividad
 
 ¿Qué información se puede extraer de la dirección MAC de un dispositivo?
 
-### 3.14. Actividad
+### 4.14. Actividad
 
 Averigua la dirección MAC de tu PC que usas para conectarte a Internet.
 
-### 3.15. Actividad
+### 4.15. Actividad
 
 ¿Existen las direcciones MAC locales? 
 
 Si existen, pon un ejemplo válido de dirección MAC local y explica porque lo es y cambia tu dirección MAC por una local.
 
-### 3.16. Actividad
+### 4.16. Actividad
 
 Captura con tu PC una trama Ethernet con Wireshark y analiza e interpreta su cabecera. Si no lo tienes instalado en tu PC, descarga Wireshark de [aquí](https://www.wireshark.org/#download).
 
@@ -118,28 +122,28 @@ Captura con tu PC una trama Ethernet con Wireshark y analiza e interpreta su cab
 - Localiza el campo Length / Type e identifica si estamos usando el protocolo IEEE 802.3 o Ethernet-DIX II.
 - ¿Por qué no vemos el preámbulo? ¿Y el campo FCS?
 
-### 3.17. Actividad
+### 4.17. Actividad
 
 ¿Cuál es la dirección MAC de broadcast? ¿Qué propósito tiene?
 
-### 3.18. Actividad
+### 4.18. Actividad
 
 Instala Packet Tracer 6.2 y lee el artículo [Tutorial: Introducción a Packet Tracer](/posts/tutorial-introduccion-a-packet-tracer) para conocer la interfaz de usuario de este programa.
 
-### 3.19. Actividad: Primera aplicación con Packet Tracer
+### 4.19. Actividad: Primera aplicación con Packet Tracer
 
 Utilizando la herramienta de simulación PACKET TRACER, se desea implementar la siguiente estructura de red.
 
 ![imgDescription](paso0.png)
 _Estructura de red_
 
-#### Paso 1
+#### 4.19.1. Paso 1
 
 Ingresar a la herramienta Packet Tracer y seleccionar la referencia de Switch 2950-24 el cual se encuentra en el menú Switches, tal como se ilustra en la figura.
 
 ![imgDescription](paso1.png)
 
-#### Paso 2
+#### 4.19.2. Paso 2
 
 En el menú End Devices, seleccionar la opción PC-PT y dibujar el primer PC, tal como se indica en la figura. 
 
@@ -151,7 +155,7 @@ Repetir el paso anterior dos veces, completando con ello los tres Pcs requeridos
 ![imgDescription](paso2-2.png)
 _Seleccionando PC-PT dos veces más_
 
-#### Paso 3
+#### 4.19.3. Paso 3
 
 En la opción Connections del menú de elementos, escoger la opción Copper Straight trhough, la cual corresponde a un cable de conexión directa requerido en éste caso para conectar un Pc a un Switch. 
 
@@ -160,7 +164,7 @@ Hecho esto, se debe seleccionar el primer PC, hacer click con el botón derecho 
 ![imgDescription](paso3.png)
 _Estableciendo conexiones_
 
-### Paso 4
+### 4.20. Paso 4
 
 Después de seleccionar la opción Fastethernet en el primer Pc, arrastrar el Mouse hasta el Switch, hacer clic sobre él y seleccionar el puerto sobre el cual se desea conectar el Pc1, en nuestro caso corresponde al puerto Fastethernet 0/1.
 
@@ -175,7 +179,7 @@ _Conexión establecida con un PC y un switch_
 ![imgDescription](paso4-3.png)
 _Conexión establecida con tres PCs y un switch_
 
-#### Paso 5
+#### 4.20.1. Paso 5
 
 Después de realizar cada una de las conexiones, se deben configurar cada una de las direcciones IP según los criterios de diseño. Para ello, se selecciona el primer PC y se hace doble clic sobre él. Apareciendo el formulario que se ilustra en la siguiente figura, el cual corresponde a la apariencia física de un computador.
 
@@ -204,7 +208,7 @@ _Interfaz gráfica del PC1: Opción IP Configuration_
 ![imgDescription](paso5-5.png)
 _Interfaz gráfica del PC2: Opción IP Configuration_
 
-#### Paso 6
+#### 4.20.2. Paso 6
 
 Si se desea verificar la configuración de un computador en particular, simplemente se selecciona el Host, se escoge la opción Desktop, seleccionamos la opción Command prompt, la cual visualiza un ambiente semejante al observado en el sistema operativo DOS. Allí escribimos `IPCONFIG` y pulsamos enter. 
 
@@ -223,7 +227,7 @@ _Comando `ipconfig /all` en Command Prompt_
 
 En donde se evidencia no solo los parámetros mencionados anteriormente, sino que además incluye la dirección física del equipo conocida como MAC y la dirección del servidor de dominio DNS.
 
-#### Paso 7
+#### 4.20.3. Paso 7
 
 Para verificar que existe una comunicación entre los diferentes equipos que hacen parte de la red, simplemente se selecciona uno de ellos; en éste caso en particular se seleccionó el PC2 con el fin de establecer comunicación con el equipo que posee la dirección IP 192.168.1.2. 
 
@@ -240,7 +244,7 @@ _Comando `ping` finalizado en Command Prompt_
 > 📷 Haz capturas con el sistema funcionando. Para ello se deberán ver que se envían varios mensajes con el código Successful.
 {:.prompt-info}
 
-## Bibliografía
+## 5. Bibliografía
 
 - [Uso del Packet Tracer y Aplicaciones
 Resueltas](https://vochoa84.files.wordpress.com/2010/08/tutorial-uso-packet-tracer-y-aplicaciones-resueltas-corpocides.pdf)
