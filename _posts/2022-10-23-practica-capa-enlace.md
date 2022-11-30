@@ -31,6 +31,7 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 
 ## 3. Evaluación
 
+
 La realización de la práctica valdrá un 50% y el test sobre la misma el otro 50%.
 
 ## 4. Actividades
@@ -72,7 +73,7 @@ La trama Ethernet posee un campo para la detección de errores. Describe qué da
 
 ### 4.8. Actividad
 
-¿Se puede falsificar una dirección MAC? Investiga las posibles motivaciones para falsificar la dirección MAC.
+¿Se puede falsificar una dirección MAC? ¿Cómo se llama esta falsificación en inglés? Investiga las posibles motivaciones para falsificar la dirección MAC.
 
 ### 4.9. Actividad
 
@@ -110,9 +111,7 @@ Averigua la dirección MAC de tu PC que usas para conectarte a Internet.
 
 ### 4.15. Actividad
 
-¿Existen las direcciones MAC locales? 
-
-Si existen, pon un ejemplo válido de dirección MAC local y explica porque lo es y cambia tu dirección MAC por una local.
+¿Qué son las direcciones MAC localmente administradas? Instala una máquina virtual de Zorin OS Lite y cambia tu dirección MAC por una local dentro de la máquina virtual.
 
 ### 4.16. Actividad
 
