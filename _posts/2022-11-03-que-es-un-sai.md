@@ -154,7 +154,7 @@ _Tipos de potencia eléctrica_
 ![Relación de los tipos de potencia eléctrica](relacionPotencias.png)
 _Relación de los tipos de potencia eléctrica_
 
-> Recuerda que Potencia aparente > Potencia activa
+> Recuerda que Potencia aparente >= Potencia activa.
 {:.prompt-info}
 
 #### Potencia activa (eficaz o eléctrica)

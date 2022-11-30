@@ -4,6 +4,7 @@ date: 2022-10-03 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr, teoría]
 img_path: /assets/img/criptografia-moderna/
+math: true
 ---
 
 <details class="card mb-2">
@@ -111,11 +112,17 @@ _Proceso de cifrado simétrico_
   <summary class="card-header question">¿Cuántas claves son necesarias si nos queremos comunicar 9 personas entre nosotros?</summary>
   <div class="card-body" markdown="1">
 
-> C(n,2) = n*(n-1)/2.
+El problema se puede simplificar a cuantas aristas tiene un grafo completo. Un grafo es completo si existen aristas uniendo todos los pares posibles de vértices. Es decir, todo par de vértices debe tener una arista e que los une. 
+
+$${n(n-1)}/2$$
 
 Siendo n el número de nodos.
 
-> C(9,2) = (9*(9-1))/2 = 36
+En este caso n=9 por lo que...
+
+$${9(9-1)}/2 = 36$$
+
+tenemos 36 aristas, que es lo mismo que 36 claves/llaves.
 
   </div>
 </details>
