@@ -11,11 +11,15 @@ tags: [packet tracer, redes locales, smr, teoría]
 Ejemplo
 
 <details class="card mb-2">
-  <summary class="card-header question"></summary>
+  <summary class="card-header question" markdown="1">
+
+
+
+  </summary>
   <div class="card-body" markdown="1">
 
 
-    
+
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>

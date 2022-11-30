@@ -33,6 +33,8 @@ pin: true
 ## Enlaces increibles 🔥
 
 - [freeCodeCamp](https://www.freecodecamp.org/)
+- [Lenguaje HTML](https://lenguajehtml.com/)
+- [Lenguaje CSS](https://lenguajecss.com/)
 
 ## Carpeta compartida de la asignatura
 
