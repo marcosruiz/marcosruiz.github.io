@@ -1,5 +1,5 @@
 ---
-title: "Práctica: RAID"
+title: "Práctica: RAID por software"
 date: 2022-12-01 09:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, seguridad pasiva, raid]
@@ -7,13 +7,13 @@ tags: [seguridad informática, seguridad pasiva, raid]
 
 ## Objetivo
 
-El objetivo de esta práctica va a ser aprenderá a usar la herramienta gpg de Linux para el cifrado y descifrado de información mediante las técnicas de criptografía simétrica y asimétrica.
+El objetivo de esta práctica va a ser aprender a configurar y montar discos RAID en GNU Linux por terminal. Concretamente RAID0, RAID1, RAID1+0 y RAID5.
 
-Duración: 2 horas
+Duración: 4 horas
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un fichero PDF con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_P\<NúmeroDeLaPrácticaCon2Dígitos\>.pdf". Por ejemplo, en mi caso el nombre del fichero PDF sería "RuizGarcía_Marcos_P03.pdf".
+La entrega de esta práctica debe ser un fichero PDF con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_P\<NúmeroDeLaPrácticaCon2Dígitos\>.pdf". Por ejemplo, en mi caso el nombre del fichero PDF sería "RuizGarcía_Marcos_P0X.pdf".
 
 Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 
@@ -37,14 +37,14 @@ La realización de la práctica valdrá un 50% y el test sobre la misma el otro 
 A continuación se listan las actividades que se deben realizar. Debes documentar cada paso que realices para llevar a cabo está instalación y configuración de cada actividad. Debes realizar capturas de pantalla que demuestren la autoría de la práctica.
 
 {:.activity}
-### Ubuntu server 22.04
+### Máquina virtual con Ubuntu Server 22.04
 
-Instala Ubuntu Server en una máquina virtual.
+Instala Ubuntu Server en una máquina virtual. Puedes leer el artículo [Tutorial: Instalar Ubuntu Server 22.04](/posts/tutorial-ubuntu-server-22-04) para llevar esta actividad a cabo.
 
 > 📷 Haz una captura para demostrar la realización de este apartado.
 {:.prompt-info}
 
-Añade al menos 5 discos virtuales de 100MB cada uno para la realización de las siguientes actividades.
+Añade al menos 5 discos virtuales de **100MB** cada uno para la realización de las siguientes actividades.
 
 > 📷 Haz una captura para demostrar la realización de este apartado.
 {:.prompt-info}
@@ -57,10 +57,10 @@ Posteriormente haz una instantánea para poder volver atrás en caso de necesida
 {:.activity}
 ### RAID 0
 
-Configura un sistema de matriz de discos redundante RAID0 en una máquina Ubuntu Server con dos discos. Crea un fichero con tu nombre de usuario en dicho RAID.
+Configura un sistema de matriz de discos redundante RAID0 en una máquina Ubuntu Server con dos o tres discos. Crea un fichero con tu nombre de usuario en dicho RAID.
 
 {:.question}
-¿Cuántos discos necesitaremos como mínimo? ¿Y cómo máximo?
+¿Cuántos discos necesitaremos como mínimo? ¿Y cómo máximo cuantos podríamos poner?
 
 > 📷 Haz una captura para demostrar la realización de esta actividad.
 {:.prompt-info}
@@ -70,11 +70,99 @@ Configura un sistema de matriz de discos redundante RAID0 en una máquina Ubuntu
 
 Configura un sistema de matriz de discos redundante RAID1 en una máquina Ubuntu Server con dos discos. Crea un fichero con tu nombre de usuario en dicho RAID.
 
+#### Pasos para montar un RAID1
+
+A continuación os muestro los pasos que he seguido yo para hacer esta actividad.
+
+Se obtiene información sobre los diferentes discos que el sistema reconoce y que están debidamente montados:
+
+```console
+$fdisk -l	
+```
+
+Creamos la tabla de particionamiento:
+
+```console
+$fdisk /dev/sdb	
+```
+
+Copiamos la tabla de particiones en sdc:
+
+```console
+$sfdisk /dev/sdb | sfdisk /dev/sdc	
+```
+
+Formateamos las particiones del disco con el formato ext4:
+
+```console
+$mkfs -t ext4 /dev/sdb1	
+```
+
+Formateamos las particiones del disco con el formato ext4:
+
+```console
+$mkfs -t ext4 /dev/sdc1	
+```
+
+Instalamos mdadm:
+
+```console
+$apt install mdadm initramfs-tools	
+```
+
+Activamos el módulo linear:
+
+```console
+$modprobe linear	
+```
+
+Activamos el módulo multipart:
+
+```console
+$modprobe multipart	
+```
+
+Activamos el módulo raid1:
+
+```console
+$modprobe raid1	
+```
+Creamos la tabla de particionamiento:
+
+```console
+$fdisk /dev/sdc	
+```
+Creamos el nodo para el sistema raid1:
+
+```console
+$mknod /deb/md0 b 9 0	
+```
+Creamos la lista de unidades que van a intervenir en el raid1:
+
+```console
+$mdadm --create /dev/md0 --level=raid1 --raid-devices=2 /dev/sdb1 /dev/sdc1	
+```
+
+Añadimos un nuevo disco al raid1 y se deja a la espera:
+
+```console
+$mdadm --manage /dev/md0 --add /dev/sdf
+```
+
+Lo añadimos al sistema raid1:
+
+```console
+$mdadm --grow /dev/md0 --raid-disk=4 --backup-file=/backupdelraid
+```
+
+> Deberíamos hacer una copia de seguridad antes para evitar perder información.
+{:.prompt-warning}
+
 > 📷 Haz una captura para demostrar la realización de este apartado.
 {:.prompt-info}
 
 {:.question}
-¿Cuántos discos necesitaremos como mínimo? ¿Y cómo máximo?
+¿Cuántos discos necesitaremos como mínimo?  ¿Y cómo máximo cuantos podríamos poner?
 
 Crea un fichero de texto con la herramienta `fortune`.
 
