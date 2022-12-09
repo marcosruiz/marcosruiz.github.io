@@ -27,6 +27,8 @@ pin: true
 - UD8 - Ataques y contramedidas
 - UD9 - Normativa sobre seguridad y protección de datos
 
+- P06 - [Práctica: RAID por software])(/posts/practica-raid/)
+
 
 ## Enlaces increibles 🔥
 
