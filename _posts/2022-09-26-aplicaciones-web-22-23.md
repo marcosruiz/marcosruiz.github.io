@@ -35,6 +35,7 @@ pin: true
 - [freeCodeCamp](https://www.freecodecamp.org/)
 - [Lenguaje HTML](https://lenguajehtml.com/)
 - [Lenguaje CSS](https://lenguajecss.com/)
+- [Lenguaje JS](https://lenguajejs.com/)
 
 ## Carpeta compartida de la asignatura
 
