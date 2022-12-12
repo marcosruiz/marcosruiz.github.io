@@ -35,7 +35,7 @@ La realización de la práctica valdrá un 50% y el test sobre la misma el otro 
 
 A continuación se listan las actividades que se deben realizar.
 
-Tienes a tu disposición mi artículo [Tutorial: Instalar Moodle en Ubuntu Server 22.04](/posts/tutorial-mooodle/) que te servirá de apoyo para la realización de esta práctica.
+Tienes a tu disposición mi artículo [Tutorial: Instalar Moodle en Ubuntu Server 22.04](/posts/tutorial-moodle/) que te servirá de apoyo para la realización de esta práctica.
 
 {:.activity}
 ### Crear máquina virtual e instalar Ubuntu Server 22.04 con un servidor SSH
