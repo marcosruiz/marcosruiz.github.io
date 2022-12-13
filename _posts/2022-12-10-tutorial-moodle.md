@@ -116,9 +116,14 @@ Y vamos a la dirección web "\<túIP\>/info.php", en mi caso, "http://192.168.56
 _Sitio web con Apache, PHP y MariaDB funcionando_
 
 
-## Instalar Moodle 4
+## Instalar Moodle 4.1
 
-Siguiendo los pasos de la [documentación oficial de Moodle](https://comoinstalar.me/como-instalar-moodle-en-ubuntu-20-04-lts/) podemos instalar Moodle. Otra opción es seguir mis pasos.
+Siguiendo los pasos de la [documentación oficial de Moodle](https://comoinstalar.me/como-instalar-moodle-en-ubuntu-20-04-lts/) podemos instalar Moodle. El enlace proporcionado usa Ubuntu 20.04 por lo que la versión por defecto de PHP también cambia:
+
+- Ubuntu 20.04 ➡️ PHP 7.4
+- Ubuntu 22.04 ➡️ PHP 8.1
+
+Otra opción es seguir mis pasos.
 
 ### Descargamos y copiamos el código de Moodle
 
@@ -128,108 +133,255 @@ Seguramente ya lo tendrás instalado pero necesitaremos tener instalado el progr
 $sudo apt install git
 ```
 
-Descargamos el código fuente de Moodle 4:
+Descargamos el código fuente de Moodle 4.1 de la web oficial:
 
 ```console
-$wget https://download.moodle.org/download.php/direct/stable400/moodle-latest-400.tgz
+$wget https://download.moodle.org/download.php/direct/stable401/moodle-4.1.tgz
 ```
 
 Si hacemos `ls` deberemos ver el fichero comprimido que acabamos de descargar:
 
 ```console
 $ ls
-moodle-latest-400.tgz
+moodle-4.1.tgz
+```
+Descomprimiremos el paquete que acabamos de descargar directamente en la ubicación que nos interese:
+
+```console
+$sudo tar xf moodle-4.1.tgz -C /var/www/html/
 ```
 
+Como Moodle necesita escribir en su propio directorio de instalación, cambiamos el propietario de este directorio al usuario con el que corre el servicio web en Ubuntu 22.04 (www-data):
 
+```console
+$sudo chown -R www-data: /var/www/html/moodle/
+```
+
+Necesitamos también un directorio para datos de Moodle, que crearemos fuera del alcance de la navegación web:
 
 
 ```console
-$sudo tar xf moodle-latest-400.tgz -C /var/www/html/
+$sudo mkdir /var/www/moodledata
 ```
 
-
+Cambiamos el propietario de este directorio al usuario con el que corre el servicio web en Ubuntu 22.04 (www-data) para que Moodle pueda escribir:
 
 ```console
-sudo chown -R www-data: /var/www/html/moodle/
+$sudo chown www-data: /var/www/moodledata/
 ```
 
+### Base de datos MariaDB/MySQL
 
+Usaremos el cliente de consola mysql y el usuario con el que administremos:
 
 ```console
-sudo mkdir /var/www/moodledata
+$sudo mysql
 ```
 
+Creamos la base de datos:
 
 ```console
-sudo chown www-data: /var/www/moodledata/
+>create database moodle charset utf8mb4 collate utf8mb4_unicode_ci;
 ```
 
-
+En MariaDB o MySQL 5 creamos el usuario de la siguiente forma:
 
 ```console
-sudo mysql
+>create user moodle@localhost identified by 'tiempos';
 ```
 
-
+Otorgamos los permisos necesarios al usuario sobre la base:
 
 ```console
-create database moodle charset utf8mb4 collate utf8mb4_unicode_ci;
+>grant all privileges on moodle.* to moodle@localhost;
 ```
 
+Y cerramos la conexión:
 
 ```console
-create user moodle@localhost identified by 'tiempos';
+>exit
 ```
 
+### PHP 8.1
 
-
-```console
-grant all privileges on moodle.* to moodle@localhost;
-```
-
-
-
-```console
-exit
-```
-
+Moodle requiere la presencia en Ubuntu 22.04 LTS de ciertas extensiones que instalaremos desde los repositorios de la distribución, por lo que actualizaremos la información de los mismos:
 
 ```console
 $sudo apt update
 ```
 
+Ya podemos instalar los paquetes necesarios.
 
+Si se trata de la versión nativa de PHP para Ubuntu 22.04:
 
 ```console
 $sudo apt install -y php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip
 ```
 
-
-
-```console
-$sudo apt install -y php-pgsql
-```
-
-
+También editaremos el archivo php.ini para realizar algún ajuste:
 
 ```console
-sudo nano /etc/php/8.1/apache2/php.ini
+$sudo nano /etc/php/8.1/apache2/php.ini
 ```
+
+Buscamos la directiva max_input_vars, que está comentada:
 
 ```plaintext
 ;max_input_vars = 1000
 ```
+
+Suprimimos el carácter ; al inicio de línea y cambiamos el valor por el que requiere Moodle:
 
 
 ```plaintext
 max_input_vars = 5000
 ```
 
+Hecho esto, podemos guardar y cerrar el archivo.
+
+Al usar Apache y su módulo de PHP será necesario recargar la configuración del servicio web:
+
 ```console
 $sudo systemctl reload apache2
 ```
 
+### Instalador web de Moodle 4.1
+
 Vamos a "\<túIP\>/moodle/install.php", en mi caso "http://192.168.56.102/moodle/install.php" y deberemos ver lo siguiente:
 
-Falta imagen
+![Inicio web para configurar Moodle 4.1](capturaConfiguracionWebMoodle.png)
+_Inicio web para configurar Moodle 4.1_
+
+Seleccionamos el idioma:
+
+![imgDescription](confMoodle01.png)
+
+Añadimos los directorios:
+
+![imgDescription](confMoodle02.png)
+
+Indicamos que vamos a usar MariaDB:
+
+![imgDescription](confMoodle03.png)
+
+Añadimos información de la base de datos MariaDB:
+
+![imgDescription](confMoodle04.png)
+
+Aceptamos el Copyright:
+
+![imgDescription](confMoodle05.png)
+
+Vemos las comprobaciones y continuamos:
+
+![imgDescription](confMoodle06.png)
+
+Esperamos a que finalice la instalación:
+
+![imgDescription](confMoodle07.png)
+
+Creamos el usuario de Moodle que va a ser el administrador:
+
+![imgDescription](confMoodle08.png)
+
+Le ponemos nombre a nuestro Moodle:
+
+![imgDescription](confMoodle09.png)
+
+Añadimos un correo de soporte:
+
+![imgDescription](confMoodle10.png)
+
+Entramos en la Bienvenida:
+
+![imgDescription](confMoodle11.png)
+
+En Administración del sitio, Usuarios, Cuentas podremos crear y administrar los usuarios que creemos:
+
+![imgDescription](confMoodle12.png)
+
+
+### Post instalación
+
+#### Mantenimiento en segundo plano
+
+Moodle necesita realizar tareas de mantenimiento de la plataforma en segundo plano, utilizando el servicio Cron de Ubuntu 22.04. Para ello crearemos una nueva tarea programada:
+
+```console
+$sudo nano /etc/cron.d/moodle
+```
+
+La configuración constará de la siguiente línea:
+
+```console
+*/1 * * * * www-data /usr/bin/php /var/www/html/moodle/admin/cli/cron.php
+```
+
+#### Ghostscript
+
+Instalaremos Ghostscript para el soporte PDF en Moodle:
+
+```console
+$sudo apt install -y ghostscript
+```
+
+#### Unoconv (no necesario)
+
+Para poder realizar la conversión de formatos de archivo procedentes de distintas aplicaciones de ofimática una solución puede ser utilizar Unoconv como complemento de Moodle. Por tanto instalaremos el paquete unoconv:
+
+```console
+$sudo apt install -y unoconv
+```
+
+Unoconv se instala como herramienta de línea de comandos, pero no como servicio, así que crearemos un archivo de configuración para Systemd:
+
+```console
+$sudo nano /etc/systemd/system/unoconv.service
+```
+
+Con el siguiente contenido:
+
+```plaintext
+[Unit]
+Description=Unoconv listener para Ubuntu 22.04 LTS
+After=network.target remote-fs.target nss-lookup.target
+[Service]
+Type=fork
+Environment="UNO_PATH=/usr/lib/libreoffice/program"
+ExecStart=/usr/bin/unoconv --listener
+[Install]
+WantedBy=multi-user.target
+```
+
+Una vez guardado y cerrado el archivo, disponemos del servicio unoconv o unoconv.service que podemos habilitar para su inicio automático junto a Ubuntu 22.04:
+
+```console
+$sudo systemctl enable unoconv
+```
+
+Para no esperar al siguiente inicio del sistema, podemos iniciar el servidor Unoconv por primera vez:
+
+```console
+$sudo systemctl start unoconv
+```
+
+Se puede comprobar el estado del servicio con la opción status de systemctl:
+
+```console
+$systemctl status unoconv
+```
+
+![Estado de unoconv en la consola](postInst01.png)
+_Estado de unoconv en la consola_
+
+
+```console
+$sudo mkdir /var/www/.cache
+```
+
+
+```console
+$sudo chown www-data: /var/www/.cache/
+```
+
+Es el momento de acceder al área personal de Moodle para comprobar si Unoconv funciona.

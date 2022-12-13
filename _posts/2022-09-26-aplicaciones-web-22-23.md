@@ -24,11 +24,13 @@ pin: true
 
 ## Evaluación 2
 
-- UD5 - Sistemas de gestión de aprendizaje a distancia
-- UD6 - Lenguaje JavaScript
+- UD5 - [Sistemas de gestión de aprendizaje a distancia](/posts/sistemas-gestion-aprendizaje-distancia)
+- UD6 - [JavaScript](/posts/javascript/)
 - UD7 - Servicio de gestión de archivos web
 - UD8 - Aplicaciones ofimáticas web
 - UD9 - Aplicaciones web de escritorio
+
+- P08 - [Práctica: Moodle](/posts/practica-moodle/)
 
 ## Enlaces increibles 🔥
 

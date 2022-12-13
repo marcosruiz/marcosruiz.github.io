@@ -42,7 +42,7 @@ Tienes a tu disposición mi artículo [Tutorial: Instalar Moodle en Ubuntu Serve
 
 Crea una máquina virtual e instala Ubuntu Server 22.04 con un servidor SSH para poder controlarlo desde un cliente SSH "remoto" similar a como se haría en la realidad.
 
-> 📷 Haz una captura para demostrar la realización de esta actividad.
+> 📷 Haz una captura para demostrar que la actividad ha sido realizada satisfactoriamente por tí.
 {:.prompt-info}
 
 {:.activity}
@@ -51,17 +51,25 @@ Crea una máquina virtual e instala Ubuntu Server 22.04 con un servidor SSH para
 Para instalar Moodle primero se debe instalar la pila LAMP, es decir, Linux (Ubuntu 22.04 en nuestro caso), Apache, MySQL y PHP.
 
 {:.activity}
-### Instalar Moodle 3.5 en la máquina virtual
+### Instalar Moodle 4.1 en la máquina virtual
 
-Instala y configura Moodle 3.5.
+Instala y configura Moodle 4.1.
 
-> 📷 Haz una captura para demostrar la realización de esta actividad.
+> 📷 Haz varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por tí.
 {:.prompt-info}
 
 {:.activity}
 ### Crea un curso
 
-Crea un curso con al menos un usuario con rol de alumno y un usuario con rol de profesor. El alumno deberá tener tú nombre y el profesor el mío. Es recomendable que añadas más de un alumno y más de un profesor.
+Crea un curso con al menos un usuario con rol de alumno y un usuario con rol de profesor. El alumno deberá tener tú nombre y el profesor el mío. Deberás hacer login con el usuario profesor y el usuario alumno y ambos deberán estar matriculados en el mismo curso. Se valorará positivamente que añadas más de un alumno y más de un profesor.
 
-> 📷 Haz una captura para demostrar la realización de esta actividad.
+> 📷 Haz varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por tí.
+{:.prompt-info}
+
+{:.activity}
+### Crea una actividad
+
+Crea una actividad Cuestionario como profesor en tu nuevo curso con una sola pregunta tipo test. Haz que la haga al menos un alumno.
+
+> 📷 Haz varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por tí.
 {:.prompt-info}
