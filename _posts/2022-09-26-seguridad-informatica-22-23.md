@@ -32,8 +32,11 @@ pin: true
 
 ## Enlaces increibles 🔥
 
+- [Portswigger](https://portswigger.net/web-security/learning-path)
 - [Hack The Box](https://www.hackthebox.com/)
-- [Try Hack Me](https://tryhackme.com/)
+- [HackMyVM](https://hackmyvm.eu/)
+- [VulnHub](https://www.vulnhub.com/)
+- [Try Hack Me](https://tryhackme.com/) (S4vitar no la recomienda porque se comparte VPN entre usuarios)
 
 ## Carpeta compartida de la asignatura
 
