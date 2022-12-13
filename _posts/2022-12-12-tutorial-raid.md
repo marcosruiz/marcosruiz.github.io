@@ -148,7 +148,13 @@ $sudo mdadm --add /dev/md0 /dev/sdd1
 Apagamos para comprobar que el montado es persistente:
 
 ```console
-$sudo shutdown -h now
+$sudo reboot
+```
+
+Para probar que estamos usando el RAID y está montado:
+
+```console
+$df
 ```
 
 ## RAID 1
@@ -161,9 +167,6 @@ $sudo mdadm --create /dev/md0 --level=1 --raid-devices=3 /dev/sdd1 /dev/sde1
 
 ## RAID 1+0
 
-```console
-$
-```
 
 ```console
 $
