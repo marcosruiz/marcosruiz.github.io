@@ -19,7 +19,7 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 - [R E I S U B, la secuencia de escape para emergencias en sistemas Linux](https://www.genbeta.com/linux/r-e-i-s-u-b-o-la-secuencia-de-escape-para-emergencias-en-sistemas-linux)
 - [Ya hay detectores de texto artificial: los profesores podrán saber cuando los deberes se han hecho con IA](https://www.xataka.com/robotica-e-ia/profesores-chatgpt-empieza-batalla-crear-detector-textos-que-evite-trampas-deberes)
 - [El próximo gran avance en la fabricación de chips está en las manos de una sola empresa, y llegará en 2025](https://www.xataka.com/investigacion/proximo-gran-avance-fabricacion-chips-esta-manos-sola-empresa-llegara-2025?fbclid=IwAR3VPAGTbl2FrsB3CeEo-OQvP96xeglqRDxg1ig7smuehdY2U_un5Z9lw1g)
-- 
+- [ChatGPT: qué es, cómo usarlo y qué puedes hacer con este chat de inteligencia artificial GPT-3](https://www.xataka.com/basics/chatgpt-que-como-usarlo-que-puedes-hacer-este-chat-inteligencia-artificial)
 
 ## Otras noticias
 
