@@ -16,6 +16,10 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 - [Un bug en Linux de hace 12 años permite obtener acceso root en casi cualquier distro, y ya lo han explotado ](https://www.genbeta.com/linux/bug-linux-hace-12-anos-permite-obtener-acceso-root-casi-cualquier-distro-han-explotado)
 - [Una generación eternamente desconcentrada: "No puedo hacer nada durante más de quince minutos sin mirar el móvil" ](https://www.xataka.com/otros/generacion-eternamente-desconcentrada-no-puedo-hacer-nada-durante-quince-minutos-mirar-movil)
 - [¡Locura absoluta! Un minero en solitario consigue minar un Bitcoin, el cuarto caso en 2022](https://computerhoy.com/noticias/tecnologia/locura-absoluta-minero-solitario-consigue-minar-bitcoin-cuarto-caso-2022-1006033)
+- [R E I S U B, la secuencia de escape para emergencias en sistemas Linux](https://www.genbeta.com/linux/r-e-i-s-u-b-o-la-secuencia-de-escape-para-emergencias-en-sistemas-linux)
+- [Ya hay detectores de texto artificial: los profesores podrán saber cuando los deberes se han hecho con IA](https://www.xataka.com/robotica-e-ia/profesores-chatgpt-empieza-batalla-crear-detector-textos-que-evite-trampas-deberes)
+- [El próximo gran avance en la fabricación de chips está en las manos de una sola empresa, y llegará en 2025](https://www.xataka.com/investigacion/proximo-gran-avance-fabricacion-chips-esta-manos-sola-empresa-llegara-2025?fbclid=IwAR3VPAGTbl2FrsB3CeEo-OQvP96xeglqRDxg1ig7smuehdY2U_un5Z9lw1g)
+- 
 
 ## Otras noticias
 
@@ -42,6 +46,7 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 - [Fazt Code](https://www.youtube.com/c/FaztCode)
 - [DiscoDurodeRoer](https://www.youtube.com/c/DiscoDurodeRoer)
 - [midudev](https://www.youtube.com/c/midudev)
+- [Linkfy](https://www.youtube.com/@Linkfydev)
 
 ## Vídeos para DAM/ DAW en inglés
 
@@ -63,7 +68,14 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 
 - [Pelado Nerd](https://www.youtube.com/c/PeladoNerd)
 - [NASeros](https://www.youtube.com/user/naseros)
+- [Ciberseguridad Para Todos - David Pereira](https://www.youtube.com/c/DavidPereira)
+- [s4vitar](https://www.youtube.com/@s4vitar)
 - [Contando Bits](https://www.youtube.com/c/ContandoBits)
+
+## Vídeos para SMR / ASIR en inglés
+
+- [David Bombal](https://www.youtube.com/c/DavidBombal)
+- [NetworkChuck](https://www.youtube.com/c/NetworkChuck)
 
 ## Vídeos sobre tecnología en español
 
@@ -120,3 +132,9 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 - [Cinecom.net](https://www.youtube.com/c/CinecomNetMedia)
 - [Kurzgesagt – In a Nutshell](https://www.youtube.com/c/inanutshell)
 - [The School of Life](URLhttps://www.youtube.com/c/theschooloflifetv)
+
+## Juegos
+
+- [JKLM](https://jklm.fun/)
+- [La palabra del día](https://lapalabradeldia.com/)
+- [Kahoot!](https://kahoot.com/)

@@ -167,6 +167,9 @@ $sudo mdadm --create /dev/md0 --level=1 --raid-devices=3 /dev/sdd1 /dev/sde1
 
 ## RAID 1+0
 
+```console
+$sudo mdadm --create /dev/md0 --level=1 --raid-devices=3 /dev/sdf1 /dev/sdg1 /dev/sdh1 /dev/sdi1
+```
 
 ```console
 $
