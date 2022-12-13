@@ -3,6 +3,7 @@ title: "Práctica: RAID por software"
 date: 2022-12-01 09:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, seguridad pasiva, raid]
+img_path: /assets/img/practica-raid/
 ---
 
 ## Objetivo
@@ -77,70 +78,70 @@ A continuación os muestro los pasos que he seguido yo para hacer esta actividad
 Se obtiene información sobre los diferentes discos que el sistema reconoce y que están debidamente montados:
 
 ```console
-$fdisk -l	
+$fdisk -l
 ```
 
 Creamos la tabla de particionamiento:
 
 ```console
-$fdisk /dev/sdb	
+$fdisk /dev/sdb
 ```
 
 Copiamos la tabla de particiones en sdc:
 
 ```console
-$sfdisk /dev/sdb | sfdisk /dev/sdc	
+$sfdisk /dev/sdb | sfdisk /dev/sdc
 ```
 
 Formateamos las particiones del disco con el formato ext4:
 
 ```console
-$mkfs -t ext4 /dev/sdb1	
+$mkfs -t ext4 /dev/sdb1
 ```
 
 Formateamos las particiones del disco con el formato ext4:
 
 ```console
-$mkfs -t ext4 /dev/sdc1	
+$mkfs -t ext4 /dev/sdc1
 ```
 
 Instalamos mdadm:
 
 ```console
-$apt install mdadm initramfs-tools	
+$apt install mdadm initramfs-tools
 ```
 
 Activamos el módulo linear:
 
 ```console
-$modprobe linear	
+$modprobe linear
 ```
 
 Activamos el módulo multipart:
 
 ```console
-$modprobe multipart	
+$modprobe multipart
 ```
 
 Activamos el módulo raid1:
 
 ```console
-$modprobe raid1	
+$modprobe raid1
 ```
 Creamos la tabla de particionamiento:
 
 ```console
-$fdisk /dev/sdc	
+$fdisk /dev/sdc
 ```
 Creamos el nodo para el sistema raid1:
 
 ```console
-$mknod /deb/md0 b 9 0	
+$mknod /deb/md0 b 9 0
 ```
 Creamos la lista de unidades que van a intervenir en el raid1:
 
 ```console
-$mdadm --create /dev/md0 --level=raid1 --raid-devices=2 /dev/sdb1 /dev/sdc1	
+$mdadm --create /dev/md0 --level=raid1 --raid-devices=2 /dev/sdb1 /dev/sdc1
 ```
 
 Añadimos un nuevo disco al raid1 y se deja a la espera:
