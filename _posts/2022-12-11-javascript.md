@@ -161,8 +161,6 @@ Usando la función `typeOf()`.
 
 Leer [Variables y constantes](https://lenguajejs.com/javascript/fundamentos/variables/).
 
-{:.question}
-
 
 <details class="card mb-2">
   <summary class="card-header question" markdown="1">
