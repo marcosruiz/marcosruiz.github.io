@@ -157,7 +157,7 @@ Para probar que estamos usando el RAID y está montado:
 $df
 ```
 
-## RAID 1
+## RAID 1 (Por hacer)
 
 Se crearán dos discos y se usarán para el nuevo RAID. A diferencia de la solución para un RAID1, se activará el módulo raid5 con modprobe raid5 y se usará el nivel 5 en el comando:
 
@@ -165,7 +165,24 @@ Se crearán dos discos y se usarán para el nuevo RAID. A diferencia de la soluc
 $sudo mdadm --create /dev/md0 --level=1 --raid-devices=3 /dev/sdd1 /dev/sde1
 ```
 
-## RAID 1+0
+## Añadir un disco más al RAID1
+
+Añadimos un nuevo disco al raid1 y se deja a la espera:
+
+```console
+$mdadm --manage /dev/md0 --add /dev/sdf
+```
+
+Lo añadimos al sistema raid1:
+
+```console
+$mdadm --grow /dev/md0 --raid-disk=4 --backup-file=/backupdelraid
+```
+
+> Deberíamos hacer una copia de seguridad antes para evitar perder información.
+{:.prompt-warning}
+
+## RAID 1+0 (Por hacer)
 
 ```console
 $sudo mdadm --create /dev/md0 --level=1 --raid-devices=3 /dev/sdf1 /dev/sdg1 /dev/sdh1 /dev/sdi1
@@ -204,14 +221,13 @@ $
 ```
 
 
-## RAID 5
+## RAID 5 (Por hacer)
 
 Se crearán tres discos y se usarán para el nuevo RAID. A diferencia de la solución para un RAID1, se activará el módulo raid5 con modprobe raid5 y se usará el nivel 5 en el comando:
 
 ```console
 $sudo mdadm --create /dev/md0 --level=5 --raid-devices=3 /dev/sdd1 /dev/sde1 /dev/sdf1
 ```
-
 
 ## Bibliografía
 
