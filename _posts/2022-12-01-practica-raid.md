@@ -60,6 +60,8 @@ Posteriormente haz una instantánea para poder volver atrás en caso de necesida
 
 Configura un sistema de matriz de discos redundante RAID0 en una máquina Ubuntu Server con dos o tres discos. Crea un fichero con tu nombre de usuario en dicho RAID.
 
+Puedes usar el artículo [Tutorial: RAID](/posts/tutorial-raid) como referencia.
+
 {:.question}
 ¿Cuántos discos necesitaremos como mínimo? ¿Y cómo máximo cuantos podríamos poner?
 

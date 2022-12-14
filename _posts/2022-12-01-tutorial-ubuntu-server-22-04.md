@@ -116,11 +116,11 @@ Encendemos de nuevo la máquina virtual y configuramos la nueva interfaz.
 Comandos utilizados:
 
 ```console
-sudo ip a 
+$sudo ip a 
 ```
 
 ```console
-sudo nano /etc/netplan/00-installer-config.yaml
+$sudo nano /etc/netplan/00-installer-config.yaml
 ```
 
 Tras esto deberíamos ser capaces de conectarnos usando el servicio SSH desde el host.

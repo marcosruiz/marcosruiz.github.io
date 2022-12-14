@@ -13,6 +13,7 @@ tags: []
 - [MiniTool Partition Wizard 10](https://www.partitionwizard.com/what-is-new-in-v10.html)
 - [DRBL](https://drbl.org/)
 - [Ninite](https://ninite.com/): Para instalar varios programas a la vez.
+- [Clonezilla: Recuperar una imagen del equipo paso a paso](http://somebooks.es/clonezilla-recuperar-una-imagen-del-equipo-paso-paso/)
 
 ## Programas que deben instalarse en los PCs de los alumnos
 
@@ -35,6 +36,8 @@ tags: []
 | Subsistema Ubuntu | ❌ | ✅ |
 | [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) | ✅ | ✅ |
 | WPS Office | ✅ | ✅ |
+| Vagrant | ✅ | ✅ |
+| CristalDiskInfo | ❌ | ✅ |
 
 ## Programas para mi
 
