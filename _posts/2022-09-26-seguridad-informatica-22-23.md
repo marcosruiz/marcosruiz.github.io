@@ -28,7 +28,14 @@ pin: true
 - UD9 - Normativa sobre seguridad y protección de datos
 
 - P06 - [Práctica: RAID por software](/posts/practica-raid/)
+- P07 - Práctica: Copias de seguridad con UrBackup  (Seguridad pasiva)
+- P08 - Práctica: OpenMediaVault y gestión de usuarios (Seguridad pasiva y activa)
+- Práctica: Servidor Radius (Seguridad activa)
+- Práctica: Ataque de fuerza bruta con Kali Linux
+- Práctica: PenTesting en HackTheBox
 
+- Práctica: Clonación de imágenes con Clonezilla (Seguridad pasiva)
+- Práctica: Clonación de imágenes con FOG PROJECT (Seguridad pasiva)
 
 ## Enlaces increibles 🔥
 
