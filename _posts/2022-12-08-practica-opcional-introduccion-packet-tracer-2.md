@@ -38,7 +38,7 @@ Las primeras 6 actividades son las mismas que en el artículo [Práctica: Introd
 
 - A ➡️ B
 - B ➡️ C
-- C ➡️ D
+- C ➡️ A
 
 Además se ha añadido una actividad extra.
 
