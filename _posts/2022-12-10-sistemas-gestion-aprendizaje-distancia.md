@@ -6,33 +6,16 @@ tags: [aplicaciones web, smr, teoría]
 img_path: /assets/img/sistemas-gestion-aprendizaje-distancia/
 ---
 
-## ¿Qué es un LMS?
-
-Un sistema de gestión de aprendizaje (SGA; en inglés, learning management system o LMS) es un software instalado en un servidor web que se emplea para administrar, distribuir y controlar las actividades de formación no presencial (o educación en línea) de una institución u organización. Permitiendo fundamentalmente, una asincronía espacio-temporal entre los agentes implicados (estudiante y docente en línea) y en menor medida, una sincronía temporal.
-
-Las principales funciones del sistema de gestión de aprendizaje son: 
-
-- Integrar y presentar de forma coordinada y estructurada los diferentes módulos.
-- Permitir y administrar el acceso a través de navegadores e incluso, aplicaciones web.
-- Gestionar usuarios, recursos así como materiales y actividades de formación utilizando también, servicios de la web 1.0 y 2.0.
-- Gestionar servicios de comunicación como foros de discusión, videoconferencias, entre otros.
-- Hacer seguimiento del proceso de aprendizaje, realizar evaluaciones y generar informes. 
- 
-Un sistema de gestión de aprendizaje, generalmente, no incluye posibilidades de autoría (crear sus propios contenidos), sino que se focaliza en gestionar contenidos creados por fuentes externas o diferentes. La labor de crear los contenidos para los cursos se desarrolla mediante plug-in instalado en un servidor y ejecutado como complemento de un LMS o mediante un Learning Content Management System (LCMS).
-
-Se puede entender como la situación virtual de enseñanza-aprendizaje, cuyo objetivo principal no es otro que mejorar la experiencia de enseñanza-aprendizaje a distancia.​ La plataforma LMS es diseñada y desarrollada para llevar el entorno educativo presencial al entorno virtual de aprendizaje, con la consecuencia de una enseñanza virtual y transformando así el proceso de enseñanza-aprendizaje.
-
-Las herramientas y funciones varían en función del software. La mayoría permiten gestionar, administrar, organizar, coordinar, diseñar e impartir programas de aprendizaje,4​ teniendo en cuenta las necesidades específicas de cada organización.
-
-<details class="card mb-2">
-  <summary class="card-header question" markdown="1">
-
-¿Qué es el e-learning?
-
-  </summary>
-  <div class="card-body" markdown="1">
+## ¿Qué es el e-learning?
 
 E-learning proviene del inglés y significa electronic learning. Este concepto hace referencia a todas las actividades formativas que se dan exclusivamente a través de un dispositivo conectado a la red, lo que se suele llamar como aprendizaje electrónico, teleformación, formación online o aprendizaje virtual. 
+
+Asimismo, el e-learning también se asocia a veces de manera errónea con el uso de ordenadores o dispositivos móviles dentro de la clase. De esta manera, también se habla de las metodologías de b-learning y m-learning que, si bien no son exactamente lo mismo que el e-learning, están relacionadas:
+
+- **B-learning** o blended learning: se trata de un aprendizaje bimodal o híbrido, esto es, la mezcla de formación telemática con docencia en las aulas.
+- **M-learning**: es una metodología de aprendizaje virtual que se da únicamente por medio de dispositivos móviles. Para ello, se utilizan diferentes formatos, desde vídeos, teleconferencias, diapositivas, textos hasta aplicaciones o plataformas online que contienen la información gamificada, es decir, en las que se aprende jugando.
+
+### Beneficios del e-learning
 
 Lo cierto es que esta nueva modalidad de aprendizaje presenta una serie de beneficios. Entre ellos se encuentran los siguientes:
 
@@ -40,40 +23,106 @@ Lo cierto es que esta nueva modalidad de aprendizaje presenta una serie de benef
 - **Automotivación**: este entorno de aprendizaje más confortable que proporciona la flexibilidad en el aprendizaje, junto con la gran oferta académica online que hay disponible para seguir aprendiendo, mejorando y perfeccionando los conocimientos y las habilidades durante toda la vida, animan al alumnado a participar de forma activa en su proceso de aprendizaje y favorecen una mayor retención de la información. A su vez, esto contribuye a reducir las tasas de abandono escolar temprano y al desarrollo de habilidades no cognitivas como el sentido de la responsabilidad, el desempeño, el pensamiento crítico, la colaboración o la creatividad.
 - **Eliminación de barreras geográficas**: otro beneficio del e-learning es la deslocalización a la hora de recibir una enseñanza de calidad, ya que estudiantes de cualquier país pueden acceder al curso deseado, esté cerca de sus casas o en la otra punta del mundo.
 
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
+## ¿Qué es un LMS?
 
+LMS (Learning Management System o sistema de gestión de aprendizaje) es un software diseñado para administrar y distribuir la formación a distancia. 
 
-## Comparación de LMS y CMS
+En otras palabras, es el sitio (infraestructura tecnológica) en el que podemos gestionar e impartir la enseñanza online. 
 
-Los LMS (sistema de gestión de aprendizaje o learning management systems) son sistemas de gestión del aprendizaje a distancia cuya función es administrar, distribuir, monitorear, evaluar y apoyar las diferentes actividades del proceso de aprendizaje en línea.​ Los LMS hacen de intermediario entre el alumno y el profesor, facilitan el seguimiento del proceso de aprendizaje de cada alumno, y ofrecen herramientas de comunicación como pueden ser foros, chats o incluso videoconferencias.
+A la hora de valorar un LMS has de reconocer funcionalidades tan valiosas como las siguientes:
 
-Los CMS (gestor de contenidos o content management system) en un inicio estaban orientados a crear páginas web de inicio de distinto tipo: portal de contenidos, tipo publicación en línea, tipo blog, etc… Un CMS es una interfaz que controla una o varias bases de datos donde se aloja el contenido del sitio, por lo que su función es crear y administrar contenidos de páginas web.
+- Disposición de contenidos: poner al alcance de los alumnos el material audiovisual del curso y las herramientas de comunicación e interacción que necesita para su formación.
+- Registro de usuarios: capacidad de inscribir a todos los actores que intervienen en el proceso formativo.
+- Seguimiento de alumnos: monitorear la evolución de los estudiantes (puntuación, tiempo dedicado, etc.).
+- Evaluación de progresos: medir la evolución de los alumnos con las herramientas que necesita el profesor para controlar si asimilan el material.
+- Generación de informes automáticos: ahondar en el comportamiento del estudiante en el transcurso del curso.
 
-El uso inapropiado de LMS en la literatura se asocia habitualmente quizás a las aplicaciones de computadoras que identificaríamos como sistemas de gestión de contenidos (CMS). Estos sistemas se utilizan principalmente para el aprendizaje en línea o semipresencial, el apoyo para la implementación de los materiales de los cursos en línea, la asociación de estudiantes con cursos, el seguimiento del rendimiento de los estudiantes, el almacenamiento de envíos de los estudiantes y la mediación de la comunicación entre los estudiantes, así como con su instructor. Parte de esta misma funcionalidad se puede ver dentro del LMS, por lo que es comprensible la confusión que podría existir sobre las diferencias entre los dos tipos de sistemas. Sin embargo, el carácter sistémico de un LMS no limita su funcionalidad a la de un CMS.
+Un LMS es una buena opción, tanto para empresas que apoyen la formación interna de sus empleados, como para instituciones educativas.
 
-## Beneficios clave de un LMS
+## ¿Qué es un LCMS?
 
-Al incorporar en una institución u organización educativa un LMS, se encuentra una gran amplitud de beneficios. De manera general los beneficios que ofrece un LMS son:
+Antes de explicar la diferencia entre LMS y LCMS debemos dedicarle unas palabras al CMS.
 
-- Disminuye los límites del tiempo y la rigidez del espacio de formación.
-- Fomenta la autoformación permanente y flexible.
-- Facilita el acceso a la información y centraliza la comunicación asíncrona.
-- Posibilita disponer de una gran variedad de recursos o materiales de calidad a muy bajo coste las 24 horas del día.
-- Permite la actualización y distribución inmediata de recursos o materiales.
-- Favorece el seguimiento del progreso del estudiante y el docente en línea.
-- Evalúa el aprendizaje de forma continua y analiza la efectividad del curso en línea.
-- Disminuye el tiempo invertido en el proceso de enseñanza-aprendizaje.
-- Apoya la formación presencial e incluso, promueve la educación en línea y el aprendizaje semipresencial.
-- Fomenta el surgimiento de comunidades de autoconocimiento.
+En primer lugar, tienes que saber que LCMS viene de la combinación entre LMS y CMS. 
 
-## ¿Qué LMS existen?
+CMS es un sistema de gestión de contenidos. ‘Contenidos’ es la palabra clave.
 
-- Edmodo
-- Docebo
-- Moodle
-- Blackboard
+Y cuando hablamos de contenidos, lo hacemos en general, sin referirnos a material docente.
+
+Se trata de una interfaz que controla las bases de datos en donde se aloja el contenido de tu web. Sirve para que cualquier usuario pueda gestionarlo y administrarlo de forma dinámica y sin necesidad de tener conocimientos de programación web (publicar, editar, borrar…).
+
+Un ejemplo de CMS es WordPress.
+
+LCMS (Learning Content Management System) es un sistema de gestión de contenidos de aprendizaje. En la propia definición ‘contenidos de aprendizaje’ ya encuentras alguna respuesta.
+
+Es la combinación de las dos anteriores. Cuenta con la capacidad de la gestión de los cursos online del LMS y con la de almacenamiento y generación del material educativo del CMS.
+
+Un LCMS funciona como un LMS, ya que es capaz de gestionar cualquier acción formativa al completo (administración, distribución, evaluación…).
+
+## ¿Qué diferencia existe entre un LMS y un CMS?
+
+Son plataformas para fines distintos.
+
+El propósito del LMS es educativo. Se utiliza para e-learning y permite la administración y gestión global de una acción formativa, cosa que no ocurre con el CMS, al no tener las características del aprendizaje electrónico.
+
+Por otra parte, los CMS permiten crear contenidos, algo que no todas las plataformas LMS pueden hacer.
+
+## ¿Qué diferencia existe entre un LCMS y un LMS?
+
+Siendo muy teóricos, diríamos que existen algunas diferencias muy visibles entre un LCMS y LMS. 
+
+Es cierto que, con el tiempo, se ha popularizado la forma de llamar a los LCMS por el término LMS, que es el más ‘coloquial’.
+
+Inicialmente, y esta sería la diferencia principal, un LMS se usaba para gestionar todas las tareas de un mismo contexto de formación virtual. 
+
+El LMCS se empleaba, también, para producir y almacenar los contenidos educativos digitales.
+
+Aunque muchos LMS ya son LCMS, es bueno desglosar las diferencias que puedes encontrar en algunos.
+
+Un sistema de gestión de aprendizaje o LMS:
+
+- Se centra en la gestión global del curso
+- Está dirigido a responsables de formación y a coordinadores didácticos
+- Incorpora contenidos y es capaz de difundir los materiales
+- Permite la comunicación entre profesores y estudiantes
+- Sirve al docente para monitorizar el seguimiento del alumno
+- Analiza los resultados de la formación
+
+Por su parte, un sistema de gestión de contenidos de aprendizaje o LCMS:
+
+- Se centra en la producción de contenidos docentes
+- Está formulado para facilitar el trabajo a los diseñadores instruccionales y a profesionales con experiencia docente
+- Realiza funciones de gestión de procesos de creación, optimización y reutilización de contenido
+- Crea, almacena y entrega el contenido en forma de objetos de aprendizaje (OA)
+- Ahora que has podido observar la diferencia entre LMS y LCMS, descubre qué puede aportarte cada plataforma.
+
+En definitiva, **LCMS = LMS + CMS**.
+
+## Beneficios clave de un LCMS
+
+Con respecto a lo que concierne a las ventajas y desventajas del LCMS, la forma en la que se utilicen estos recursos digitales será clave para aprovechar al máximo todos los beneficios que pueden aportar en pro de un proceso de enseñanza aprendizaje en el que se fomenten el trabajo colaborativo, la creatividad o el pensamiento crítico.
+
+Algunos de los beneficios de las LCMS son los siguientes:
+
+- Fomentan el aprendizaje colaborativo.
+- Motivan a los estudiantes hacia el aprendizaje autónomo.
+- Los alumnos pueden acceder a estos entornos virtuales a cualquier hora del día.
+- Se suelen ofrecer diferentes tipos de objetos de aprendizaje en variados formatos audiovisuales.
+- Los objetos de aprendizaje son diseñados en función de diferentes ritmos de aprendizaje.
+- Los docentes pueden utilizar estos recursos educativos para reforzar los contenidos de los programas de estudios y enfocarse más en las demandas educativas de cada uno de sus estudiantes de una forma personalizada. 
+
+## ¿Qué LCMS existen?
+
+| Plataforma | Tipo de software |
+|---|---|
+| Google Classroom | Comercial y gratuito |
+| Moodle | Libre |
+| Blackboard | Comercial y de pago |
+| LearnPress, plugin de Wordpress | Libre |
+| Canvas | Comercial y de pago |
+| Chamilo | Libre |
+| Docebo | Comercial y de pago |
+| Edmodo, cerró el 22/11/22 | Comercial |
 
 {:.question}
 ¿Cuáles de estos LMS son libres y cuáles comerciales?
@@ -83,3 +132,4 @@ Al incorporar en una institución u organización educativa un LMS, se encuentra
 -[Sistema de gestión de aprendizaje (Wikipedia)](https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_aprendizaje)
 - [¿Qué es un LMS y por qué es esencial para el aprendizaje corporativo?](https://www.ispring.es/blog/what-is-lms)
 - [¿Qué es el e-learning y cómo está transformando la educación?](https://www.becas-santander.com/es/blog/e-learning.html)
+- [Diferencia entre LMS y LCMS](https://www.evolmind.com/blog/diferencias-lms-lcms/)

@@ -26,9 +26,9 @@ pin: true
 
 - UD5 - [Sistemas de gestión de aprendizaje a distancia](/posts/sistemas-gestion-aprendizaje-distancia)
 - UD6 - [JavaScript](/posts/javascript/)
-- UD7 - Servicio de gestión de archivos web
-- UD8 - Aplicaciones ofimáticas web
-- UD9 - Aplicaciones web de escritorio
+- UD7 - [Servicio de gestión de archivos web](/posts/servicios-gestion-archivos-web)
+- UD8 - [Aplicaciones ofimáticas web](/posts/aplicaciones-ofimaticas-web)
+- UD9 - [Aplicaciones web de escritorio](/posts/aplicaciones-web-escritorio)
 
 - P08 - [Práctica: Moodle](/posts/practica-moodle/)
 

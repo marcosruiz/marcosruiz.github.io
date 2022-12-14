@@ -294,8 +294,24 @@ Por ejemplo: aunque se esté trabajando desde un ordenador personal, el espacio 
 {:.question}
 Nombrad tres ventajas de la computación en la nube
 
-{:.question}
+<details class="card mb-2">
+  <summary class="card-header question" markdown="1">
+
 ¿Os podéis crear una nube en vuestra propia casa?
+
+  </summary>
+  <div class="card-body" markdown="1">
+
+Si. Existen varias formas:
+
+- Con un PC o portatil viejo se puede montar un servidor FTP o de Nextcloud.
+- Comprando un NAS
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+
 
 {:.question}
 ¿Conoces alguna alternativa a OneDrive/ Dropbox que puedas instalar en tu casa?

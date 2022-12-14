@@ -132,9 +132,15 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 - [Cinecom.net](https://www.youtube.com/c/CinecomNetMedia)
 - [Kurzgesagt – In a Nutshell](https://www.youtube.com/c/inanutshell)
 - [The School of Life](URLhttps://www.youtube.com/c/theschooloflifetv)
+- [colinfurze](https://www.youtube.com/@colinfurze/videos)
 
 ## Juegos
 
 - [JKLM](https://jklm.fun/)
 - [La palabra del día](https://lapalabradeldia.com/)
 - [Kahoot!](https://kahoot.com/)
+- [skribbl.io](https://skribbl.io/)
+- [TrivialOnline](https://trivialonline.es/)
+- [Agar.io](https://agar.io/#ffa)
+- [slither.io](http://slither.io/)
+- [curvefever](https://curvefever.pro/)
