@@ -110,7 +110,7 @@ $cat /proc/mdstat
 o
 
 ```console
-watch -n1 cat /proc/mdstat
+$watch -n1 cat /proc/mdstat
 ```
 
 Comprobamos el estado del RAID:
@@ -119,6 +119,9 @@ Comprobamos el estado del RAID:
 $sudo mdadm -E /dev/sd[b-c]1
 $sudo mdadm --detail /dev/md0
 ```
+
+> El comando `mdadm -E /dev/sd[b-c]1` hace lo mismo que `mdadm -E /dev/sdb1 /dev/sdc1` pero utilizando una expresión regular.
+{:.prompt-info}
 
 Creamos el sistema de ficheros:
 
@@ -148,6 +151,12 @@ Guardamos la configuración del RAID en `/etc/mdadm/mdadm.conf`{: .filepath} sie
 
 ```console
 #mdadm --detail --scan --verbose >> /etc/mdadm/mdadm.conf
+```
+
+Actualizamos para evitar que we nos actualize el nombre del RAID en siguientes inicios:
+
+```console
+$sudo update-initramfs -u
 ```
 
 Apagamos para comprobar que el montado es persistente:
