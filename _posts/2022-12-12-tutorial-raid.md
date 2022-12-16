@@ -10,6 +10,14 @@ img_path: /assets/img/tutorial-raid/
 
 En este artículo se va a explicar como montar un RAID 0, RAID 1, RAID 5.
 
+Para montar un RAID hay que hacer 3 cosas:
+
+1. Conectar los discos que vayamos a usar e iniciar la máquina.
+1. Resetear los RAID existentes (opcional).
+1. Crear el RAID/ARRAY.
+1. Asignar un sistema de ficheros (FAT, NTFS, EXT4, etc.) al RAID y montarlo.
+1. Hacer persistentes los cambios haciendo que en el inicio del sistema se cree el RAID  y se monte correctamente.
+
 ## Crear y añadir discos a la máquina virtual
 
 En la máquina deseada, hacemos click en "Configuración":
@@ -244,42 +252,104 @@ $mdadm --grow /dev/md0 --raid-disk=4 --backup-file=/backupdelraid
 > Deberíamos hacer una copia de seguridad antes para evitar perder información.
 {:.prompt-warning}
 
-## RAID 1+0 (Por hacer)
+## RAID 1+0
+
+Una vez tenemos 4 nuevos discos conectados iniciamos le sistema. Una vez hemos hecho login con nuestro usuario (del grupo sudoers), nos logeamos como root:
 
 ```console
-#mdadm --create /dev/md0 --level=raid10 --raid-devices=4 /dev/sde1 /dev/sdf1 /dev/sdg1 /dev/sdh1
+$sudo su
 ```
 
-```console
-#mdadm --detail --scan --verbose >> /etc/mdadm/mdadm.conf
-```
+### Creamos el RAID
+
+Copiamos la configuración del disco sdb al resto de discos:
 
 ```console
-$
+#sfdisk -d /dev/sdb | sfdisk /dev/sde
+#sfdisk -d /dev/sdb | sfdisk /dev/sdf
+#sfdisk -d /dev/sdb | sfdisk /dev/sdg
+#sfdisk -d /dev/sdb | sfdisk /dev/sdh
 ```
 
-```console
-$
-```
+Creamos el RAID, en mi caso le he puesto el identificador md10:
 
 ```console
-$
+#mdadm --create /dev/md10 --level=raid10 --raid-devices=4 /dev/sde1 /dev/sdf1 /dev/sdg1 /dev/sdh1
 ```
 
-```console
-$
-```
+Comprobamos el estado del RAID 1+0 y todos los discos por los que está compuesto el mismo:
 
 ```console
-$
+#cat /proc/mdstat
+#mdadm -E /dev/sd[e-h]1
+#mdadm --detail /dev/md10
 ```
 
-```console
-$
-```
+### Asignamos el sistema de ficheros al RAID y montamos
+
+Creamos el sistema de ficheros
 
 ```console
-$
+#mkfs.ext4 -F /dev/md10
+```
+
+Creamos la carpeta donde vamos a montar el RAID:
+
+
+```console
+#mkdir -p /mnt/raid10
+```
+
+Montamos el RAID en la ruta creada:
+
+```console
+#mount /dev/md10 /mnt/raid10
+```
+
+Comprobamos el espacio disponible:
+
+```console
+#df -h -x devtmpfs -x tmpfs
+```
+
+### Hacemos persistentes los cambios
+
+Guardamos la configuración del RAID:
+
+```console
+#mdadm --detail --scan | sudo tee -a /etc/mdadm/mdadm.conf
+```
+
+> Comprobar que en el fichero `/etc/mdadm/mdadm.conf`{: .filepath} no hay nada duplicado.
+{:.prompt-warning}
+
+```console
+#update-initramfs -u
+```
+
+Hacemos que se monte en el inicio del sistema:
+
+```console
+#echo '/dev/md10 /mnt/raid10 ext4 defaults,nofail,discard 0 0' | sudo tee -a /etc/fstab
+```
+
+> Comprobar que en el fichero `/etc/fstab`{: .filepath} no hay nada duplicado.
+{:.prompt-warning}
+
+Reiniciamos:
+
+```console
+#reboot
+```
+
+Comprobamos que todo está bien:
+
+```console
+$sudo df -h -x devtmpfs -x tmpfs
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv  9,8G  4,3G  5,0G  47% /
+/dev/sda2                          1,8G  247M  1,4G  15% /boot
+/dev/md10                          166M   24K  153M   1% /mnt/raid10
 ```
 
 
