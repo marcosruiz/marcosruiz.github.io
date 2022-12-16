@@ -38,6 +38,7 @@ tags: []
 | WPS Office | ✅ | ✅ |
 | Vagrant | ✅ | ✅ |
 | CristalDiskInfo | ❌ | ✅ |
+| Safe Exam Browser | ❌ | ✅ |
 
 ## Programas para mi
 

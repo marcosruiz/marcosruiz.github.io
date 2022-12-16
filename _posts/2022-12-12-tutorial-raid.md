@@ -173,7 +173,7 @@ Apagamos para comprobar que el montado es persistente:
 $sudo reboot
 ```
 
-> Al reiniciar, a veces se cambia el nombre del RAID de md0 a md127 por una razón que desconozco. Por lo que habrá que volver a cambiar el fichero `/etc/fstab`{: .filepath} y el fichero `/etc/mdadm/mdadm.conf`{: .filepath} para que haga referencia al nuevo nombre.
+> Al reiniciar, a veces se cambia el nombre del RAID de md0 a md127. Por lo que habrá que volver a cambiar el fichero `/etc/fstab`{: .filepath} y el fichero `/etc/mdadm/mdadm.conf`{: .filepath} para que haga referencia al nuevo nombre.
 {:.prompt-warning}
 
 Para probar que estamos usando el RAID y está montado correctamente:
@@ -352,6 +352,79 @@ Filesystem                         Size  Used Avail Use% Mounted on
 /dev/md10                          166M   24K  153M   1% /mnt/raid10
 ```
 
+### Eliminar el RAID
+
+>Este proceso destruirá el RAID y cualquier dato escrito en él. Asegurate de que estás trabajando con el RAID correcto y que has copiado todos los datos que necesites preservar. 
+{:.prompt-warning}
+
+Listamos los RAIDs que tenemos mirando el contenido del fichero `/proc/mdstat`:
+
+```console
+$cat /proc/mdstat
+Personalities : [raid0] [raid10] [linear] [multipath] [raid1] [raid6] [raid5] [raid4]
+md10 : active raid10 sdh1[3] sdg1[2] sdf1[1] sde1[0]
+      198656 blocks super 1.2 512K chunks 2 near-copies [4/4] [UUUU]
+
+unused devices: <none>
+```
+
+Desmontamos el RAID del sistema de ficheros:
+
+```console
+$sudo umount /dev/md10
+```
+
+Paramos y eliminamos el RAID:
+
+```console
+$sudo mdadm --stop /dev/md10
+```
+
+Averiguamos que discos son los que forman parte del RAID:
+
+
+> Ten en cuenta que los nombres de los discos `/dev/sd<letra>` pueden cambiar cada vez que reinicias por lo que deberías asegurarte de que seleccionas los dispositivos correctos.
+{:.promt-warning}
+
+```console
+$lsblk -o NAME,SIZE,FSTYPE,TYPE,MOUNTPOINT
+NAME                       SIZE FSTYPE            TYPE   MOUNTPOINT
+sde                        100M                   disk
+└─sde1                      99M linux_raid_member part
+  └─md10                   194M ext4              raid10 /mnt/raid10
+sdf                        100M                   disk
+└─sdf1                      99M linux_raid_member part
+  └─md10                   194M ext4              raid10 /mnt/raid10
+sdg                        100M                   disk
+└─sdg1                      99M linux_raid_member part
+  └─md10                   194M ext4              raid10 /mnt/raid10
+sdh                        100M                   disk
+└─sdh1                      99M linux_raid_member part
+  └─md10                   194M ext4              raid10 /mnt/raid10
+sr0                       1024M                   rom
+```
+
+Y quitamos la metainforamción de los discos:
+
+```console
+$sudo mdadm --zero-superblock /dev/sde
+$sudo mdadm --zero-superblock /dev/sdf
+$sudo mdadm --zero-superblock /dev/sdg
+$sudo mdadm --zero-superblock /dev/sdh
+```
+
+Elimina o comenta toda referencia que haya del raid en `/etc/fstab`.
+
+
+```console
+$sudo nano /etc/fstab
+```
+
+Actualiza el `initramfs ` de nuevo para que el sistema de ficheros no intente montar el RAID al inicio.
+
+```console
+$sudo update-initramfs -u
+```
 
 ## RAID 5 (Por hacer)
 
