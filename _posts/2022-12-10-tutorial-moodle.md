@@ -12,7 +12,7 @@ Antes de nada debes tener un Ubuntu Server 22.04 instalado. Puedes seguir los pa
 
 ## Instalar la pila LAMP
 
-Instala la pila LAMP (Apache, MySQL y PHP). Puedes seguir los pasos del artículo [Cómo instalar la pila LAMP en Ubuntu 22.04 LTS](https://comoinstalar.me/como-instalar-la-pila-lamp-en-ubuntu-22-04-lts/) o puedes seguir mis pasos.
+Instala la pila LAMP (Apache, MySQL y PHP) siguiendo mis pasos.
 
 ### Instalamos dependencias
 
@@ -49,7 +49,7 @@ Comprobamos que versión tenemos:
 $php --version
 ```
 
-En mi caso:
+En mi caso, tengo la versión 8.1 y tu deberás tener la misma:
 
 ```console
 PHP 8.1.2-1ubuntu2.9 (cli) (built: Oct 19 2022 14:58:09) (NTS)
@@ -118,12 +118,7 @@ _Sitio web con Apache, PHP y MariaDB funcionando_
 
 ## Instalar Moodle 4.1
 
-Siguiendo los pasos de la [documentación oficial de Moodle](https://comoinstalar.me/como-instalar-moodle-en-ubuntu-20-04-lts/) podemos instalar Moodle. El enlace proporcionado usa Ubuntu 20.04 por lo que la versión por defecto de PHP también cambia:
-
-- Ubuntu 20.04 ➡️ PHP 7.4
-- Ubuntu 22.04 ➡️ PHP 8.1
-
-Otra opción es seguir mis pasos.
+Para instalar Moodle 4.1 deberás seguir los siguientes pasos.
 
 ### Descargamos y copiamos el código de Moodle
 
@@ -385,3 +380,10 @@ $sudo chown www-data: /var/www/.cache/
 ```
 
 Es el momento de acceder al área personal de Moodle para comprobar si Unoconv funciona.
+
+## Bibliografía
+
+- [Cómo instalar la pila LAMP en Ubuntu 22.04 LTS](https://comoinstalar.me/como-instalar-la-pila-lamp-en-ubuntu-22-04-lts/)
+- [Cómo instalar Moodle en Ubuntu 20.04 LTS](https://comoinstalar.me/como-instalar-moodle-en-ubuntu-20-04-lts/) ➡️ El enlace proporcionado usa Ubuntu 20.04 por lo que la versión por defecto de PHP también cambiará:
+  - Ubuntu 20.04 ➡️ PHP 7.4
+  - Ubuntu 22.04 ➡️ PHP 8.1

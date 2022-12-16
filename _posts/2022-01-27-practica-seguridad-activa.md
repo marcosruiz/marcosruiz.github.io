@@ -72,7 +72,7 @@ Indica las reglas TCP Wrappers que se deberían incluir en el fichero /etc/hosts
 
 En un servicio SSH instala y configura fail2ban. 
 
-Puedes seguir el artículo [Instalar configurar y usar fail2ban para evitar ataques de fuerza bruta](https://geekland.eu/instalar-configurar-y-usar-fail2ban-para-evitar-ataques-de-fuerza-bruta/)  de manual.
+Puedes seguir el artículo [Instalar configurar y usar fail2ban para evitar ataques de fuerza bruta](https://geekland.eu/instalar-configurar-y-usar-fail2ban-para-evitar-ataques-de-fuerza-bruta/) de manual.
 
 ## Entrega y presentación
 
