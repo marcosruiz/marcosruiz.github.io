@@ -48,6 +48,17 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 - [midudev](https://www.youtube.com/c/midudev)
 - [Linkfy](https://www.youtube.com/@Linkfydev)
 
+## Enlaces para DAM/ DAW en español
+
+- [Roadmap.sh](https://roadmap.sh/)
+- [freeCodeCamp](https://www.freecodecamp.org/)
+- [Lenguaje HTML](https://lenguajehtml.com/)
+- [Lenguaje CSS](https://lenguajecss.com/)
+- [Lenguaje JS](https://lenguajejs.com/)
+- [Códigos HTTP con gatos](https://http.cat/)
+- [Truco para estudiar más rápido viendo videos | Tips](https://www.youtube.com/shorts/RUePCBaXKfs)
+
+
 ## Vídeos para DAM/ DAW en inglés
 
 - [Andreas Spiess](https://www.youtube.com/c/AndreasSpiess)

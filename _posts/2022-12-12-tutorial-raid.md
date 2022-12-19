@@ -188,7 +188,7 @@ o de un RAID en específico:
 $sudo mdadm --detail /dev/md0
 ```
 
-### Hacer que falle un disco en el RAID0
+### Hacer que falle un disco en el RAID 0
 
 Para hacer que una partición falle podemos desconectarlo directamente o podemos ejecutar el siguiente comando:
 
@@ -216,7 +216,7 @@ $sudo mdadm --manage /dev/md0 --add /dev/sdb1
 > Deberíamos hacer una copia de seguridad antes para evitar perder información.
 {:.prompt-warning}
 
-### Hacer crecer el RAID0
+### Hacer crecer el RAID 0
 
 Si queremos incorporar discos al RAID solo tenemos que hacer lo siguiente:
 
@@ -260,7 +260,7 @@ Una vez tenemos 4 nuevos discos conectados iniciamos le sistema. Una vez hemos h
 $sudo su
 ```
 
-### Creamos el RAID
+### Creamos el RAID 1+0
 
 Copiamos la configuración del disco sdb al resto de discos:
 
@@ -285,7 +285,7 @@ Comprobamos el estado del RAID 1+0 y todos los discos por los que está compuest
 #mdadm --detail /dev/md10
 ```
 
-### Asignamos el sistema de ficheros al RAID y montamos
+### Asignamos el sistema de ficheros al RAID 1+0 y montamos
 
 Creamos el sistema de ficheros
 
@@ -352,12 +352,12 @@ Filesystem                         Size  Used Avail Use% Mounted on
 /dev/md10                          166M   24K  153M   1% /mnt/raid10
 ```
 
-### Eliminar el RAID
+### Eliminar el RAID 1+0
 
->Este proceso destruirá el RAID y cualquier dato escrito en él. Asegurate de que estás trabajando con el RAID correcto y que has copiado todos los datos que necesites preservar. 
+>Este proceso destruirá el RAID y cualquier dato escrito en él. Asegúrate de que estás trabajando con el RAID correcto y que has copiado todos los datos que necesites preservar. 
 {:.prompt-warning}
 
-Listamos los RAIDs que tenemos mirando el contenido del fichero `/proc/mdstat`:
+Listamos los RAIDs que tenemos mirando el contenido del fichero `/proc/mdstat`{: .filepath}:
 
 ```console
 $cat /proc/mdstat
@@ -380,11 +380,17 @@ Paramos y eliminamos el RAID:
 $sudo mdadm --stop /dev/md10
 ```
 
+Eliminamos la configuración e inicio del ARRAY:
+
+```console
+$sudo nano /etc/mdadm/mdadm.conf
+```
+
 Averiguamos que discos son los que forman parte del RAID:
 
 
-> Ten en cuenta que los nombres de los discos `/dev/sd<letra>` pueden cambiar cada vez que reinicias por lo que deberías asegurarte de que seleccionas los dispositivos correctos.
-{:.promt-warning}
+> Ten en cuenta que los nombres de los discos `/dev/sd<letra>`{: .filepath} pueden cambiar cada vez que reinicias por lo que deberías asegurarte de que seleccionas los dispositivos correctos.
+{:.prompt-warning}
 
 ```console
 $lsblk -o NAME,SIZE,FSTYPE,TYPE,MOUNTPOINT
@@ -407,24 +413,58 @@ sr0                       1024M                   rom
 Y quitamos la metainforamción de los discos:
 
 ```console
-$sudo mdadm --zero-superblock /dev/sde
-$sudo mdadm --zero-superblock /dev/sdf
-$sudo mdadm --zero-superblock /dev/sdg
-$sudo mdadm --zero-superblock /dev/sdh
+$sudo mdadm --zero-superblock /dev/sde1
+$sudo mdadm --zero-superblock /dev/sdf1
+$sudo mdadm --zero-superblock /dev/sdg1
+$sudo mdadm --zero-superblock /dev/sdh1
 ```
 
-Elimina o comenta toda referencia que haya del raid en `/etc/fstab`.
+Elimina o comenta toda referencia que haya del raid en `/etc/fstab`{: .filepath}.
 
 
 ```console
 $sudo nano /etc/fstab
 ```
 
-Actualiza el `initramfs ` de nuevo para que el sistema de ficheros no intente montar el RAID al inicio.
+Actualiza el `initramfs` de nuevo para que el sistema de ficheros no intente montar el RAID al inicio:
 
 ```console
 $sudo update-initramfs -u
 ```
+
+Reiniciamos con `sudo reboot` y comprobamos que todo está limpio:
+
+```console
+$lsblk -o NAME,SIZE,FSTYPE,TYPE,MOUNTPOINT
+NAME                       SIZE FSTYPE      TYPE MOUNTPOINT
+loop0                      103M squashfs    loop /snap/lxd/23541
+loop1                     63,2M squashfs    loop /snap/core20/1738
+loop2                     49,6M squashfs    loop /snap/snapd/17883
+loop3                     79,9M squashfs    loop /snap/lxd/22923
+loop4                     63,2M squashfs    loop /snap/core20/1695
+sda                         20G             disk
+├─sda1                       1M             part
+├─sda2                     1,8G ext4        part /boot
+└─sda3                    18,2G LVM2_member part
+  └─ubuntu--vg-ubuntu--lv   10G ext4        lvm  /
+sdb                        100M             disk
+└─sdb1                      99M             part
+sdc                        100M             disk
+└─sdc1                      99M             part
+sdd                        100M             disk
+└─sdd1                      99M             part
+sde                        100M             disk
+└─sde1                      99M             part
+sdf                        100M             disk
+└─sdf1                      99M             part
+sdg                        100M             disk
+└─sdg1                      99M             part
+sdh                        100M             disk
+└─sdh1                      99M             part
+sr0                       1024M             rom
+```
+
+Como podemos ver no queda rastro de ningún md.
 
 ## RAID 5 (Por hacer)
 
