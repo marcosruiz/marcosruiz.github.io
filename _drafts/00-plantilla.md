@@ -3,6 +3,7 @@ title: "Plantilla"
 date: 2022-04-19 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [packet tracer, redes locales, smr, teoría]
+img_path: /assets/img/plantilla/
 ---
 
 ## Plantillas para copiar y pegar
@@ -44,7 +45,14 @@ Ejemplo
 ![imgDescription](/assets/img/ejemplo/ejemplo.png)
 _ imgDescription _
 
+![imgDescription](ejemplo.png)
+_ imgDescription _
+
+`/path/to/a/file.extend`{: .filepath}
+
 ## Introducción
 
 
 ## Bibliografía
+
+-[Writing a New Post](https://chirpy.cotes.page/posts/write-a-new-post/)

@@ -3,6 +3,7 @@ title: 30 comandos básicos de GNU Linux
 date: 2022-01-04 16:30:00 +0100
 categories: [General, GNU Linux]
 tags: [gnu linux, terminal, dam, smr, servicios en red, seguridad informática, entornos de desarrollo, redes locales]
+img_path: /assets/img/comandos-basicos-gnu-linux/
 ---
 
 ## Introducción
@@ -306,6 +307,9 @@ A continuación se muestra un ejemplo de uso donde se instala el programa neofet
 ```console
 $ sudo apt install neofetch
 ```
+
+![Meme comando sudo](comandoSudo.jpg)
+_Meme comando sudo_
 
 {:.section}
 ### su
