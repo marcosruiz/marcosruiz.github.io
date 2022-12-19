@@ -179,7 +179,7 @@ $sudo reboot
 Para probar que estamos usando el RAID y está montado correctamente:
 
 ```console
-$df
+$df -h -x devtmpfs -x tmpfs
 ```
 
 o de un RAID en específico:
@@ -216,7 +216,7 @@ $sudo mdadm --manage /dev/md0 --add /dev/sdb1
 > Deberíamos hacer una copia de seguridad antes para evitar perder información.
 {:.prompt-warning}
 
-### Hacer crecer el RAID 0
+### Hacer crecer el RAID 0 y añadir disco
 
 Si queremos incorporar discos al RAID solo tenemos que hacer lo siguiente:
 
@@ -224,33 +224,103 @@ Si queremos incorporar discos al RAID solo tenemos que hacer lo siguiente:
 $sudo mdadm --grow /dev/md0 --level=0 --raid-devices=3 --add /dev/sdd
 ```
 
-> Deberíamos hacer una copia de seguridad antes para evitar perder información.
+> Deberíamos hacer una copia de seguridad antes para evitar perder información añadiendo la opción  `--backup-file=/backupdelraid`.
 {:.prompt-warning}
 
 ## RAID 1
 
-Se crearán dos discos y se usarán para el nuevo RAID. A diferencia de la solución para un RAID1, se activará el módulo raid5 con modprobe raid5 y se usará el nivel 5 en el comando:
+Se crearán dos discos y se usarán para el nuevo RAID. A diferencia de la solución para un RAID 0, se usará el nivel 1 en el comando:
 
 ```console
-$sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdd1 /dev/sde1
+$sudo mdadm --create /dev/md1 --level=1 --raid-devices=2 /dev/sdb1 /dev/sdc1
 ```
 
-## Añadir un disco más al RAID1
+### Hacer crecer el RAID 1 y añadir disco
 
 Añadimos un nuevo disco al raid1 y se deja a la espera:
 
 ```console
-$mdadm --manage /dev/md0 --add /dev/sdf
+$sudo mdadm --manage /dev/md1 --add /dev/sdd1
 ```
 
 Lo añadimos al sistema raid1:
 
 ```console
-$mdadm --grow /dev/md0 --raid-disk=4 --backup-file=/backupdelraid
+$mdadm --grow /dev/md1 --raid-disk=3
 ```
 
-> Deberíamos hacer una copia de seguridad antes para evitar perder información.
+> Deberíamos hacer una copia de seguridad antes para evitar perder información añadiendo la opción  `--backup-file=/backupdelraid`.
 {:.prompt-warning}
+
+Comprobamos el estado del RAID 1:
+
+```console
+$sudo mdadm --detail /dev/md1
+/dev/md1:
+           Version : 1.2
+     Creation Time : Mon Dec 19 12:44:21 2022
+        Raid Level : raid1
+        Array Size : 100352 (98.00 MiB 102.76 MB)
+     Used Dev Size : 100352 (98.00 MiB 102.76 MB)
+      Raid Devices : 3
+     Total Devices : 3
+       Persistence : Superblock is persistent
+
+       Update Time : Mon Dec 19 12:52:23 2022
+             State : clean
+    Active Devices : 3
+   Working Devices : 3
+    Failed Devices : 0
+     Spare Devices : 0
+
+Consistency Policy : resync
+
+              Name : mrugserver:1  (local to host mrugserver)
+              UUID : 59c306f7:8c65734d:2136f333:cd0c3cf8
+            Events : 41
+
+    Number   Major   Minor   RaidDevice State
+       0       8       17        0      active sync   /dev/sdb1
+       1       8       33        1      active sync   /dev/sdc1
+       2       8       48        2      active sync   /dev/sdd1
+```
+
+### Pruebas con el RAID 1 de tres discos
+
+Actualmente tengo 3 discos en el RAID 1 como se puede ver en la salida del último comando del apartado anterior.
+
+Hacemos que falle la partición `sdb1` y vemos que seguimos pudiendo acceder a mrug.txt:
+
+```console
+$sudo mdadm --manage /dev/md1 --fail /dev/sdb1
+$sudo mdadm --manage /dev/md1 --remove /dev/sdb1
+$sudo mdadm --detail /dev/md1
+$cat /mnt/raid1/mrug.txt
+```
+
+Hacemos que falle la partición `sdc1` y vemos que seguimos pudiendo acceder a mrug.txt:
+
+```console
+$sudo mdadm --manage /dev/md1 --fail /dev/sdc1
+$sudo mdadm --manage /dev/md1 --remove /dev/sdc1
+$sudo mdadm --detail /dev/md1
+$cat /mnt/raid1/mrug.txt
+```
+
+Hacemos que falle la partición `sdd1` y vemos que no nos deja:
+
+```console
+$sudo mdadm --manage /dev/md1 --fail /dev/sdd1
+mdadm: set device faulty failed for /dev/sdd1:  Device or resource busy
+```
+
+Volvemos a añadir las particiones sdb1 y sdc1.
+
+```console
+$sudo mdadm --manage /dev/md1 --add /dev/sdb1
+$sudo mdadm --manage /dev/md1 --add /dev/sdc1
+```
+
 
 ## RAID 1+0
 
@@ -259,6 +329,8 @@ Una vez tenemos 4 nuevos discos conectados iniciamos le sistema. Una vez hemos h
 ```console
 $sudo su
 ```
+
+$sudo mdadm --manage /dev/md1 --fail /dev/sdb1
 
 ### Creamos el RAID 1+0
 
@@ -466,12 +538,20 @@ sr0                       1024M             rom
 
 Como podemos ver no queda rastro de ningún md.
 
-## RAID 5 (Por hacer)
+## RAID 5
 
-Se crearán tres discos y se usarán para el nuevo RAID. A diferencia de la solución para un RAID1, se activará el módulo raid5 con modprobe raid5 y se usará el nivel 5 en el comando:
+Se crearán tres discos y se usarán para el nuevo RAID. A diferencia de la solución para un RAID1 se usará el nivel 5 en el comando:
 
 ```console
 $sudo mdadm --create /dev/md0 --level=5 --raid-devices=3 /dev/sdd1 /dev/sde1 /dev/sdf1
+```
+
+## Comandos para comprobar estado del RAID
+
+```console
+$sudo mdadm --detail /dev/md<número>
+$df -h -x devtmpfs -x tmpfs
+$cat /proc/mdstat
 ```
 
 ## Bibliografía
