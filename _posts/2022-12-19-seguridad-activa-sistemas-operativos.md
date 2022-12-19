@@ -124,7 +124,120 @@ Existen 3 tipos de "nube":
 - Privada
 - Híbrida
 
+
+### Pública
+
+Una nube pública es una forma de uso de la nube en la que los recursos informáticos son propiedad de un proveedor de servicios y se comparten entre varios clientes en Internet.
+
+Se compone de uno o varios servidores en los que se dispone de los recursos contratados en cada momento. No se contratan servidores sino que se contrata recursos de servidores compartidos.
+
+#### Ventajas
+
+- Configuración Rápida
+- Uptime cercano al 100%
+- Flexible y Escalable
+- Sin mantenimiento
+- Accesibilidad desde Internet
+- Sin inversión en infraestructura
+- Sin permanencia
+- Menor coste a corto plazo
+
+#### Desventajas
+
+- Infraestructura compartida
+- Recursos compartidos
+- Sin control de seguridad
+- Dependencia de soporte ajeno
+- Mayor coste a largo plazo
+
+#### Ejemplos de proveedores
+
+- Amazon Web Services
+- Microsoft Azure
+- Google Cloud Platform
+- GoDaddy
+- OVHcloud
+- IONOS
+- SiteGround
+- DreamHost
+
+### Privada
+
+Es un modelo de cloud compunting en el que los recursos e infraestructura son propiedad de la empresa y no se comparte con terceros.
+
+Para tener una nube privada se necesita comprar una infraestructura propia para poder instalar todas las herramientas, apps, servicios, webs, etc. que necesite el cliente.
+
+#### Ventajas
+
+- Ahorro de costes a largo plazo
+- Configuración a medida
+- Accesos restringidos
+- Mayor privacidad
+- Mayor seguridad
+- Mayor rendimiento
+- No dependencia de proveedor
+
+#### Desventajas
+
+- Mayor coste inicial de compra
+- Necesario personal interno para gestión y soporte
+- Capacidad limitada a hardware
+- Mayores costes inicial de escalabilidad
+
+#### Ejemplos de proveedores
+
+- Hardware
+  - Dell, HP, Cisco, Oracle,
+  - IBM
+- Software
+  - Red Hat Linux, Debian
+  - Linux, VMware, MongoDB.
+- Soporte y Mantenimiento
+
+### Híbrida
+
+Sistema de servidores que combina servicios e infraestructura de nube privada y de nube pública interconectados entre sí con el fin de obtener las ventajas de ambos sistemas.
+
+La nube hibrida es la combinación de infraestructura privada y pública. No están en el mismo lugar, sino que se interconectan a través de software que permite gestionar el uso y acceso a ambas soluciones simultáneamente.
+
+#### Ventajas
+
+- Seguridad
+- Flexibilidad
+- Optimización de costes
+- Control de recursos
+- Control de acceso a la
+- información.
+- Mayor gestión de costes
+
+#### Desventajas
+
+- Mayor complejidad
+- Requiere inversión a corto y largo plazo.
+- Dependencia de terceros
+- Interconectividad vulnerable
+- Mayor planificación de compatibilidad, escalabilidad y gestión.
+
+#### Ejemplos de proveedores
+
+Amazon AWS Outposts
+Micrsoft Azure Stack
+Google Cloud Anthos
+Oracle Cloud at Customer
+IBM
+HP
+Dell
+Cisco
+
 ### Tipos de servicios Cloud
+
+Existen 3 + 2 servicios Cloud:
+
+1. SaaS
+2. PaaS
+3. IaaS
+4. DaaS
+5. XaaS
 
 ![SaaS vs PaaS vs IaaS](iaasVsPaasVsSaas.webp)
 _SaaS vs PaaS vs IaaS_
