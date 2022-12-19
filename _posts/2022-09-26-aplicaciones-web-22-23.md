@@ -38,6 +38,7 @@ pin: true
 - [Lenguaje HTML](https://lenguajehtml.com/)
 - [Lenguaje CSS](https://lenguajecss.com/)
 - [Lenguaje JS](https://lenguajejs.com/)
+- [Roadmap.sh](https://roadmap.sh/frontend)
 
 ## Carpeta compartida de la asignatura
 

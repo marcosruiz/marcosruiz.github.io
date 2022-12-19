@@ -2,7 +2,7 @@
 title: "Seguridad activa: Sistemas operativos"
 date: 2022-12-19 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [seguridad informática, smr, teoría]
+tags: [seguridad informática, smr, teoría, seguridad activa]
 img_path: /assets/img/seguridad-activa-sistemas-operativos/
 ---
 
@@ -50,9 +50,9 @@ Se usa principalmente en sistemas operativos GNU/Linux.
 
 GRUB 2 es una reescritura de GRUB que comparte muchas características con su versión anterior, ahora conocida como GRUB Legacy. Las más importantes diferencias entre GRUB 2 y GRUB Legacy son:
 
-- El fichero de configuración de GRUB 2 es ‘grub.cfg’ en lugar del ‘grub.conf’ o ‘menu.lst’. Se añade nueva sintaxis y muchos nuevos comandos. El fichero ‘grub.cfg’ es típicamente automáticamente generado por ‘grub2-mkconfig’ lo que facilita mucho el uso.
+- El fichero de configuración de GRUB 2 es 'grub.cfg' en lugar del 'grub.conf' o 'menu.lst'. Se añade nueva sintaxis y muchos nuevos comandos. El fichero 'grub.cfg' es típicamente automáticamente generado por 'grub2-mkconfig' lo que facilita mucho el uso.
 - Los números de partición en los nombres de los dispositivos GRUB ahora empiezan en 1, en lugar de en 0.
-- Una pequeña cantidad de almacenamiento persistente está disponible entre reinicios, usando los comandos ‘save_env’ y ‘load_env’ y la utilidad ‘grub2-editenv’. Esto no está disponible en todas las configuraciones.
+- Una pequeña cantidad de almacenamiento persistente está disponible entre reinicios, usando los comandos 'save_env' y 'load_env' y la utilidad 'grub2-editenv'. Esto no está disponible en todas las configuraciones.
 - GRUB 2 tiene formas más confiables de encontrar sus propios ficheros y los de los kernels de destino en sistemas de varios discos, y tiene comandos para buscar dispositivos usando etiquetas del sistema de archivos o identificadores únicos universales (UUID).
 - GRUB 2 soporta muchos más sistemas de ficheros, incluyendo pero no limitado a Ext4, HFS+, y NTFS.
 - GRUB 2 puede leer ficheros directamente de dispositivos LVM y RAID.
@@ -116,10 +116,20 @@ Hay varias maneras de autenticarte en un sistema operativo:
 {:.section}
 ## Cloud computing
 
-![imgDescription](iaasVsPaasVsSaas.png)
-_IaaS vs SaaS vs PaaS_
+La infraestructura que utiliza una empresa para alojar sus soluciones de software, servicios online y herramientas TIC.
 
-### SaaS
+Existen 3 tipos de "nube":
+
+- Pública
+- Privada
+- Híbrida
+
+### Tipos de servicios Cloud
+
+![SaaS vs PaaS vs IaaS](iaasVsPaasVsSaas.webp)
+_SaaS vs PaaS vs IaaS_
+
+#### SaaS
 
 Software como servicio.
 
@@ -128,7 +138,7 @@ Software como servicio.
 - Servicios que no es necesario tener instalados.
 - Es Software completo, ayuda directamente al usuario con una solución concreta.
 
-#### Ejemplos SaaS
+##### Ejemplos SaaS
 
 1. E-Mail
   - Escalable, podemos cambiar el almacenamiento.
@@ -174,7 +184,7 @@ Software como servicio.
   - Herramientas de trabajos colaborativos.
   - Ejemplos: Moodle, Chamilo, Lifter LMS, Consortium Caroline, ATutor, etc.
 
-### PaaS
+#### PaaS
 
 Plataforma como servicio.
 
@@ -182,7 +192,7 @@ Plataforma como servicio.
 - No son aplicaciones acabadas que resuelven un problema.
 - No se centra en dar una solución directa de software, sino que pone a disposición del usuario una serie de herramientas para que puedan desarrollar sus propias aplicaciones.
 
-#### Ejemplos PaaS
+##### Ejemplos PaaS
 
 1. Google App Engine
    1. Nos permite crear aplicaciones escalables para Google Cloud Platform.
@@ -200,27 +210,38 @@ Plataforma como servicio.
    2. Permite desarrollar y escalar servicios y aplicaciones web en varios lenguajes de programación.
    3.  Soporta el ciclo de vida completo de desarrollos de aplicaciones web.
 
-
-### IaaS
+#### IaaS
 
 Infraestructura como servicio
 
-Conjunto de herramientas que ofrecen los recursos imprescindibles para ejecutar los procesos de las aplicaciones y su
-almacenamiento.
+Conjunto de herramientas que ofrecen los recursos imprescindibles para ejecutar los procesos de las aplicaciones y su almacenamiento.
 
-#### Ejemplos IaaS
+##### Ejemplos IaaS
 
-Microsoft Azure
+1. Microsoft Azure
+   - Incluye servicio IaaS de Microsoft
+   - Administra la infraestructura, mientras el usuario desarrolla.
+2. Google Cloud Platform
+   - Servicio IaaS de Google.
+   - Administra la infraestructura, mientras el usuario desarrolla.
 
-Incluye servicio IaaS de Microsoft
-Administra la infraestructura, mientras el usuario desarrolla.
-Google Cloud Platform
-Servicio IaaS de Google.
-Administra la infraestructura, mientras el usuario desarrolla.
+#### DaaS
 
-#### Ejemplos XaaS
+Data as a Service
+
+Ejemplos: Facebook, Google Maps, Salesforce Data, etc.
+
+#### XaaS
+
+X as a Service
+
+Acrónimo de X como servicio
+
+Ejemplos: Analítica, Informática, Juegos, Backup, Almacenamiento
 
 ## Bibliografía
 
 - [¿Qué es la BIOS?](https://www.ionos.es/digitalguide/servidores/know-how/que-es-la-bios-de-un-ordenador/)
 - [GNU GRUB (Wikipedia)](https://es.wikipedia.org/wiki/GNU_GRUB)
+- [Fundamentos de la computación en la Nube](https://iberasync.es/en/fundamentos-de-la-computacion-en-la-nube/)
+- 
