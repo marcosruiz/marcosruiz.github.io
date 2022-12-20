@@ -5,11 +5,11 @@ categories: [General, GNU Linux]
 tags: [gnu linux, terminal, dam, smr, entornos de desarrollo, seguridad informática, servicios en red, redes locales]     # TAG names should always be lowercase
 ---
 
-## Consejos para el terminal
+## Consejos para el terminal en GNU Linux
 
 Recuerda que puedes usar el comando **clear** si el terminal está abarrotado de información con comandos pasados.
 
-Puedes hacer **click central** en el ratón para pegar lo que está seleccionado.
+En GNU Linux, puedes hacer **click central** en el ratón para pegar lo que está seleccionado.
 
 Puedes hacer **Flecha hacia arriba** para recorrer el historial de instrucciones.
 
@@ -19,7 +19,11 @@ Puedes ejecutar varios comandos en un solo comando utilizando ";" para separarlo
 
 Puedes redirigir la salida estándar (es decir, el texto que sale por terminal) utilizando el símbolo ">" seguido de un fichero que si no existe se creará al ejecutar la instrucción. Por ejemplo `echo patata > fichero.txt` guardará la palabra "patata" en el fichero "fichero.txt".
 
-## Atajos de teclado en el terminal
+## Consejos para el terminal en Windows
+
+Puedes hacer **click derecho** en el ratón para pegar lo que has copiado.
+
+## Atajos de teclado en el terminal en GNU Linux
 
 Debes conocer estos atajos de teclado:
 
@@ -32,16 +36,17 @@ Debes conocer estos atajos de teclado:
 - **CTRL + E** para ir al final de la línea de terminal.
 - **CTRL + SHIFT + C** para copiar en terminal.
 - **CTRL + SHIFT + V** para pegar en terminal.
+- **CTRL + R** para búsqueda inversa.
 
 ## Preguntas de ampliación
 
-- ¿Para qué sirve el símbolo ">>"?
+- ¿Para qué sirve el símbolo `>>`?
 - ¿Para qué sirve una pipeline o tubería?
 - ¿Cuál es el símbolo de una pipeline o tubería?
-- ¿Para qué sirve el símbolo "<"?
-- ¿Para qué sirve el símbolo "1>"?
-- ¿Para qué sirve el símbolo "2>"?
-- ¿Para qué sirve el símbolo "&"?
+- ¿Para qué sirve el símbolo `<`?
+- ¿Para qué sirve el símbolo `1>`?
+- ¿Para qué sirve el símbolo `2>`?
+- ¿Para qué sirve el símbolo `&`?
 
 ## Bibliografía
 

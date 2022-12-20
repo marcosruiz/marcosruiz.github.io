@@ -2,7 +2,7 @@
 title: Seguridad Informática 22 23
 date: 2022-09-26 23:40:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [seguridad informatica]
+tags: [seguridad informática]
 pin: true
 ---
 
@@ -21,13 +21,19 @@ pin: true
 
 ## Evaluación 2
 
-- UD5 - [Seguridad Activa: Sistemas Operativos](/posts/seguridad-activa-sistemas-operativos)
+- UD5 - [Seguridad activa de sistemas operativos](/posts/seguridad-activa-sistemas-operativos)
 - UD6 - Seguridad Activa: Acceso a redes
 - UD7 - Seguridad Activa: Control de redes
 - UD8 - Ataques y contramedidas
 - UD9 - Normativa sobre seguridad y protección de datos
 
+- [30 comandos básicos de GNU Linux](/posts/comandos-basicos-gnu-linux/)
+- [Permisos en GNU Linux](/posts/permisos-gnu-linux/)
+- [Consejos y trucos terminal en GNU Linux](/posts/trucos-terminal/)
+- [Enlaces simbólicos, enlaces duros e inodos](/posts/teoria-inodos/)
+
 - P06 - [Práctica: RAID por software](/posts/practica-raid/)
+- P07 - [Práctica: Seguridad activa de sistemas operativos](/posts/practica-seguridad-activa-sistemas-operativos/)
 - P07 - Práctica: Copias de seguridad con UrBackup  (Seguridad pasiva)
 - P08 - Práctica: OpenMediaVault y gestión de usuarios (Seguridad pasiva y activa)
 - Práctica: Servidor Radius (Seguridad activa)

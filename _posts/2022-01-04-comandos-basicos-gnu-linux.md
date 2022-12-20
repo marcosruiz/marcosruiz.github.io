@@ -278,7 +278,7 @@ Y tres tipos de permiso:
 
 Distribuidos de la siguiente manera:
 
-![Gestión de permisos en GNU Linux](/assets/img/permisos-gnu-linux/gestion-de-permisos-linux.png)
+![Gestión de permisos en GNU Linux](gestion-de-permisos-linux.png)
 _Distribución de los permisos de un fichero_
 
 Teniendo esto en cuenta, existen dos modos de uso del comando chmod: el modo octal y el modo notación simbólica. De los cuales se muestran varios ejemplos:
