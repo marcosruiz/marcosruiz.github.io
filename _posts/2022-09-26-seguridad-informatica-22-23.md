@@ -43,7 +43,7 @@ pin: true
 - Práctica: Clonación de imágenes con Clonezilla (Seguridad pasiva)
 - Práctica: Clonación de imágenes con FOG PROJECT (Seguridad pasiva)
 
-## Enlaces increibles 🔥
+## Enlaces increíbles 🔥
 
 - [Portswigger](https://portswigger.net/web-security/learning-path)
 - [Hack The Box](https://www.hackthebox.com/)

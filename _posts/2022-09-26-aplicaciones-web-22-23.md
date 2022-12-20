@@ -32,7 +32,7 @@ pin: true
 
 - P08 - [Práctica: Moodle](/posts/practica-moodle/)
 
-## Enlaces increibles 🔥
+## Enlaces increíbles 🔥
 
 - [freeCodeCamp](https://www.freecodecamp.org/)
 - [Lenguaje HTML](https://lenguajehtml.com/)
