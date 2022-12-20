@@ -22,8 +22,8 @@ pin: true
 ## Evaluación 2
 
 - UD5 - [Seguridad activa de sistemas operativos](/posts/seguridad-activa-sistemas-operativos)
-- UD6 - Seguridad Activa: Acceso a redes
-- UD7 - Seguridad Activa: Control de redes
+- UD6 - [Seguridad activa de acceso a redes](/posts/seguridad-activa-acceso-redes/)
+- UD7 - [Seguridad activa de control de redes](/posts/seguridad-activa-control-redes/)
 - UD8 - Ataques y contramedidas
 - UD9 - Normativa sobre seguridad y protección de datos
 

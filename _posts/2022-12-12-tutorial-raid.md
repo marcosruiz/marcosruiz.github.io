@@ -555,6 +555,7 @@ $sudo mdadm --create /dev/md0 --level=5 --raid-devices=3 /dev/sdd1 /dev/sde1 /de
 $sudo mdadm --detail /dev/md<número>
 $df -h -x devtmpfs -x tmpfs
 $cat /proc/mdstat
+$sudo lsblk -o NAME,SIZE,FSTYPE,TYPE,MOUNTPOINT
 ```
 
 ## Bibliografía
