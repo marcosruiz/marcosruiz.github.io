@@ -42,6 +42,12 @@ A continuación se listan las actividades que se deben realizar.
 {:.activity}
 ## Netstat
 
+## Servidor RADIUS
+
+https://howtoforge.es/como-instalar-freeradius-y-daloradius-en-ubuntu-18-04-lts/
+
+https://techexpert.tips/es/freeradius-es/instalacion-de-freeradius-en-ubuntu-linux/
+
 
 ## Bibliografía
 
