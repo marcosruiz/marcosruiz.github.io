@@ -61,6 +61,11 @@ Indica los comandos para realizar las siguientes acciones:
 - Este usuario debe cambiar la contraseña inmediatamente, tendrá validez de 30 días y se avisara un día antes de que debe volverla a cambiar. Si no la cambia, se bloqueará la cuenta en tres días.
 
 {:.activity}
+### Añade a sudors
+
+Utilizando el terminal haz que los dos usuarios creados anteriormente puedan ejecutar comandos sudo.
+
+{:.activity}
 ### Cifrado de particiones
 
 A través de línea de comandos con LUKS crea y monta en `/mnt/particionSegura` una partición cifrada. Indica los comandos utilizados en texto plano. Puedes seguir los pasos marcados en el artículo [Cifra discos, particiones y archivos con LUKS en tu servidor Linux](https://www.redeszone.net/tutoriales/seguridad/cifrar-discos-particiones-archivos-luks-linux/).
@@ -107,7 +112,22 @@ Averigua el propósito del comando para GNU Linux llamado lastlog. Indica cómo 
 Averigua el propósito del comando para máquinas GNU Linux utmpdump. Indica qué información de interés es capaz de mostrar.
 
 {:.activity}
-### ACL
+### /etc/passwd
 
+¿Qué información se encuentra en el archivo `/etc/passwd` y cómo el usuario puede modificar la que le concierne?
+
+{:.activity}
+### ACL 1
 Mira el siguiente vídeo:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7F30Aixu8HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Realiza los mismos pasos que el vídeo pero con los usuarios creados anteriormente.
+
+> 📷 Haz una o varias capturas que demuestren la realización de la actividad.
+{:.prompt-info}
+
+{:.activity}
+### (Opcional) ACL 2
+
+Sigue los pasos de este artículo [Utilización de ACLs en el sistema de archivos](https://sites.google.com/site/vaisereso/tutoriales-y-trucos/acls-en-linux).

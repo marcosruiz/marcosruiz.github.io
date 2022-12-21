@@ -220,6 +220,9 @@ El antivirus es un programa que está vigilando continuamente lo que ocurre en n
   </div>
 </details>
 
+{:.question}
+¿Cuál es el mejor antivirus?
+
 {:.section}
 ## Monitorización
 
@@ -267,6 +270,9 @@ Pero debemos tener cuidado con:
 - Si la máquina del servidor web no es nuestra, sino alquilada (hosting web), no tenemos control sobre las medidas de protección. Debemos confiar en la profesionalidad del proveedor y repasar el contrato, en especial el apartado de los niveles de servicio (SLA o Service Level Agreement). Por ejemplo, podemos exigir al proveedor que si el servidor web está caído más de dos horas al año, nos haga un descuento del 25 % en la siguiente cuota.
 - La transmisión entre el cliente web (navegador) y el servidor web. Muchas aplicaciones todavía utilizan el protocolo HTTP, donde todo viaja en texto en claro. En algún tramo de red puede estar escuchando un hacker (man in the middle) y conocer qué hacemos, incluso modificarlo para su provecho. Siempre debemos optar por usar HTTPS.
 - La máquina de un usuario conectado puede haber sido hackeada y su navegador también. Por ejemplo, se ha instalado un keylogger que envía todas las contraseñas fuera de nuestro control. En este punto es importante el antivirus.
+
+{:.question}
+¿Qué es un keylogger?
 
 {:.section}
 ## Cloud computing

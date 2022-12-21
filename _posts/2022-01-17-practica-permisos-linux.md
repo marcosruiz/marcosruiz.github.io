@@ -1,8 +1,9 @@
 ---
-title: "Práctica: Comandos GNU Linux (Parte 5)"
+title: "Práctica: Permisos en GNU Linux"
 date: 2022-01-17 21:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [gnu linux, comandos, terminal, bash, smr, seguridad informática]
+img_path: /assets/img/practica-permisos-linux
 ---
 
 ## Objetivo
@@ -10,6 +11,22 @@ tags: [gnu linux, comandos, terminal, bash, smr, seguridad informática]
 El objetivo de esta práctica ser capaz de modificar los permisos de acceso a los ficheros y a los directorios con el fin de asegurar la confidencialidad de los datos almacenados en el sistema de ficheros GNU Linux.
 
 Duración: 10 h.
+
+## Entrega y presentación
+
+La entrega de esta práctica debe ser un documento PDF con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_P\<NúmeroDeLaPrácticaConDosDígitos\>.pdf". Por ejemplo, en mi caso el nombre del documento PDF sería "RuizGarcía_Marcos_P\<NúmeroDeLaPrácticaConDosDígitos\>.pdf".
+
+Asegúrate de que el documento PDF cumple con los siguientes parámetros:
+
+1. Debe contener una portada con título, nombre de la asignatura, curso, autor y fecha de realización.
+2. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.
+3. Debe tener cada página numerada.
+4. Cada actividad debe estar numerada. 
+5. Cada actividad debe tener el enunciado en negrita y la respuesta en texto normal.
+6. Cada imagen debe tener un pie de foto la cual tenga el siguiente formato: "Figura \<número\>: \<BreveDescripciónDeLaFigura\>".
+7. El documento no debe contener faltas ortográficas.
+8. Los comandos y ficheros de configuración que hayas utilizado deben quedar reflejados en el PDF de la entrega en texto para que permitirte copiar y pegar el día del examen todos los comandos de una manera rápida.
+9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
 
 ## Actividades
 
@@ -109,22 +126,6 @@ Las cuestiones siguientes necesitan de la presencia del paquete `mtools` en el c
 2. Inserte un disquete DOS en el lector de la máquina y copie el fichero permisos. Utilice el comando `mount` con el punto de montaje predefinido por su sistema en el fichero /etc/fstab (generalmente /mnt/floppy o /media/floppy). Para insertar un disquete virtual en la máquina virtual deberá apagar la máquina virtual e ir a su configuración, hacer click en "Añadir nuevo controlador de almacenamiento", hacer click en "I82078 (disquete)", click en "Añadir unidad de disquete", click en "crear", click en "Create", click en "Seleccionar" y "Aceptar". Posteriormente deberá iniciar la máquina y hacer click en [F12] para seleccionar el dispositivo desde el que desea hacer el inicio.
 3. Suprima el fichero permisos de su directorio personal.
 4. Vuelva a copiar el fichero permisos del disquete en su directorio personal. ¿Cuáles son sus permisos? ¿Por qué?
-
-## Entrega y presentación
-
-La entrega de esta práctica debe ser un documento PDF con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.pdf". Por ejemplo, en mi caso el nombre del documento PDF sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.pdf".
-
-Asegúrate de que el documento PDF cumple con los siguientes parámetros:
-
-1. Debe contener una portada con título, nombre de la asignatura, curso, autor y fecha de realización.
-2. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.
-3. Debe tener cada página numerada.
-4. Cada actividad debe estar numerada. 
-5. Cada actividad debe tener el enunciado en negrita y la respuesta en texto normal.
-6. Cada imagen debe tener un pie de foto la cual tenga el siguiente formato: "Figura \<número\>: \<BreveDescripciónDeLaFigura\>".
-7. El documento no debe contener faltas ortográficas.
-8. Los comandos y ficheros de configuración que hayas utilizado deben quedar reflejados en el PDF de la entrega en texto para que permitirte copiar y pegar el día del examen todos los comandos de una manera rápida.
-9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
 
 ## Bibliografía
 
