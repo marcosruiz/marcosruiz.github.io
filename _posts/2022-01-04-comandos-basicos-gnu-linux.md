@@ -10,7 +10,7 @@ img_path: /assets/img/comandos-basicos-gnu-linux/
 
 En este articulo se van a explicar una serie de comandos básicos de GNU Linux que se consideran imprescindibles a la hora de trabajar con el terminal o la consola de comandos.
 
-## Pompt
+## Prompt
 
 Cuando abrimos por primera vez la terminal de GNU Linux nos aparecerá algo parecido a esto:
 

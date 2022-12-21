@@ -40,9 +40,9 @@ Entrar en la web [BIOS Simulator Center de Lenovo](https://download.lenovo.com/b
 {:.prompt-info}
 
 {:.activity}
-### Configurar el GRUB manualmente
+### Contraseña al GRUB
 
-
+En tu Zorin OS Lite, añade la contraseña "tiempos" al GRUB.
 
 {:.activity}
 ### Crear usuario profesorMrug
@@ -87,6 +87,7 @@ Define una cuota de disco de 1 GB para el grupo "profesores" y otra cuota de dis
 > 📷 Haz una captura que demuestre la realización de la actividad.
 {:.prompt-info}
 
+{:.activity}
 ### Lynis
 
 Mira el siguiente vídeo:
@@ -117,7 +118,37 @@ Averigua el propósito del comando para máquinas GNU Linux utmpdump. Indica qu�
 ¿Qué información se encuentra en el archivo `/etc/passwd` y cómo el usuario puede modificar la que le concierne?
 
 {:.activity}
+### JohnTheRipper
+
+Instala y obtén la contraseña de tu usuario con JohnTheRipper por fuerza bruta y por ataque de diccionario.
+
+#### ¿Cómo usar JohnTheRipper?
+
+Instala JohnTheRipper:
+
+```console
+#apt-get install john -y
+```
+
+Uso:
+
+```console
+#john <ficheroDeHashes>
+#john <ficheroDeHashes> --wordlist="<ficheroDiccionario>"
+#john --show <ficheroHashes>
+```
+
+Descargar diccionario de palabras en español:
+
+```console
+$curl -O http://snowball.tartarus.org/algorithms/spanish/voc.txt
+```
+
+o si no funciona puedes usar [este enlace](/assets/img/practica-seguridad-activa-sistemas-operativos/diccionario.txt) directamente.
+
+{:.activity}
 ### ACL 1
+
 Mira el siguiente vídeo:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7F30Aixu8HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -128,6 +159,43 @@ Realiza los mismos pasos que el vídeo pero con los usuarios creados anteriormen
 {:.prompt-info}
 
 {:.activity}
+### ClamAV
+
+Siguiendo los pasos del artículo [Cómo instalar ClamAV antivirus en Ubuntu 20.04 LTS](https://comoinstalar.me/como-instalar-clamav-antivirus-en-ubuntu-20-04-lts/) instala el antivirus ClamAV en tu máquina Zorin OS Lite.
+
+{:.question}
+¿Estamos libres de virus en los sistemas GNU Linux?
+
+{:.question}
+¿Qué es un daemon en GNU Linux?
+
+### RKHunter
+
+Rkhunter es una aplicación para línea de comandos que se encarga automáticamente de analizar nuestro sistema en busca de rootkits, malware, scripts maliciosos, backdoors y otro tipo de software potencialmente peligroso en nuestro sistema Linux para saber en todo momento si nuestro sistema se encuentra realmente seguro o de lo contrario estamos siendo víctimas de piratas informáticos. 
+
+Siguiendo los pasos del artículo [How to Install Rkhunter on Ubuntu 20.04](https://blog.eldernode.com/install-rkhunter-on-ubuntu/) instalar y configurar escaneos regulares. 
+
+A modo de resumen la manera de instalar, actualizar y usar rkhunter es la siguiente:
+
+```console
+$sudo apt install rkhunter -y
+$sudo rkhunter --update
+$sudo rkhunter --check
+```
+
+{:.question}
+¿Qué es un rootkit?
+
+{:.question}
+¿Qué se observa en el fichero /var/log/rkhunter.log?
+
+{:.activity}
 ### (Opcional) ACL 2
 
 Sigue los pasos de este artículo [Utilización de ACLs en el sistema de archivos](https://sites.google.com/site/vaisereso/tutoriales-y-trucos/acls-en-linux).
+
+
+
+
+## Bibliografía
+
