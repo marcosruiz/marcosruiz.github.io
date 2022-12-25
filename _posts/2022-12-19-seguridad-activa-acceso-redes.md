@@ -97,7 +97,7 @@ Las autoridades de estandarización empezaron a trabajar en un nuevo estándar. 
 {:.subsection}
 ### WPA Empresarial: RADIUS
 
-para las necesidades de seguridad de una empresa no es suficiente con la solución de clave única compartida por todos. Además de la salida de empleados, ya sabemos que es una buena práctica cambiar las claves regularmente (no sabemos cuánto tiempo llevan intentando conocerla), se puede extraviar el portátil o el móvil de un empleado y quien lo encuentre puede sacar las claves almacenadas en el dispositivo, etc.
+Para las necesidades de seguridad de una empresa no es suficiente con la solución de clave única compartida por todos. Además de la salida de empleados, ya sabemos que es una buena práctica cambiar las claves regularmente (no sabemos cuánto tiempo llevan intentando conocerla), se puede extraviar el portátil o el móvil de un empleado y quien lo encuentre puede sacar las claves almacenadas en el dispositivo, etc.
 
 El esquema de funcionamiento de WPA empresarial es el siguiente:
 
