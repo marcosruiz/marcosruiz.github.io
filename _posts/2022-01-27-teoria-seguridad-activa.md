@@ -6,23 +6,6 @@ tags: [gnu linux, comandos, terminal, bash, seguridad informática, smr, segurid
 ---
 
 {:.section}
-## ¿Qué es un IDS?
-
-Leer el artículo [¿Qué es un IDS?](https://www.clavei.es/blog/que-es-un-ids-o-intrusion-detection-system/).
-
-- ¿Es un IDS un firewall?
-
-{:.section}
-## ¿Qué es un UTM?
-
-Leer el artículo [UTM, un firewall que ha ido al gimnasio](https://www.incibe.es/protege-tu-empresa/blog/utm-firewall-ha-ido-al-gimnasio).
-
-- ¿Tiene sentido poner un UTM si ya tenemos un IDS en nuestra red?
-- ¿Tiene sentido poner un UTM si ya tenemos un IPS en nuestra red?
-- ¿Tiene sentido poner un IDS o IPS si ya tenemos un UTM en nuestra red perimetral?
-- ¿Es un UTM un firewall?
-
-{:.section}
 ## ¿Qué es una DMZ?
 
 Leer el artículo [DMZ: utiliza la zona desmilitarizada y protege tu red interna](https://www.ionos.es/digitalguide/servidores/seguridad/en-que-consiste-una-zona-desmilitarizada-dmz/).
@@ -69,41 +52,16 @@ No
 El término zona desmilitarizada (DMZ, por sus siglas en inglés), aplicado a la seguridad informática procede probablemente de la franja de terreno neutral que separa a los países inmersos en un conflicto bélico. Es una reminiscencia de la Guerra de Corea, aún vigente y en tregua desde 1953. Paradójicamente, a pesar de que esta zona desmilitarizada es terreno neutral, es una de las más peligrosas del planeta, pues la franja no pertenece formalmente a ningún país, y cualquier inmersión en ella causará fuego de ambos bandos.
 
 {:.section}
-## ¿Qué es una VPN?
-
-Leer el artículo [VPN](/posts/vpn).
-
-- ¿Qué es una VPN?
-- ¿Qué ventajas aporta una VPN?
-- En el contexto de VPN ¿Qué dos tipos de topologias existen principalemente?
-
-{:.section}
 ## ¿Qué es un TCP Wrapper?
 
 Leer el artículo [TCP Wrappers: qué son y cómo se utilizan en Linux](https://juncotic.com/tcp-wrappers-se-utilizan-linux/).
 
-{:.section}
-## ¿Qué es SSH?
-
-Leer el artículo [Servicio SSH](/posts/servicio-ssh/).
-
 ## Preguntas que debes saber contestar
 
-- ¿Qué es la BIOS?
-- ¿Qué es el GRUB?
-- ¿Qué ventajas/desventajas tiene cifrar un disco?
-- ¿Qué protocolo de seguridad de redes inalámbricas no es seguro?
-¿Qué diferencia hay entre la seguridad en la red local y la seguridad perimetral?
-- ¿Qué es un IDS?
-- En el contexto de un IDS ¿Qué es un falso positivo?
-- En el contexto de un IDS ¿Qué es un falso negativo?
-- ¿Qué son las reglas SNORT?
-- ¿Qué significan las siglas UTM?
-- ¿Qué es una DMZ?
+- ¿Qué diferencia hay entre la seguridad en la red local y la seguridad perimetral?
 - En el contexto de DMZ ¿A qué se le llama bastión?
 - En el contexto de DMZ ¿En que consiste la configuración SOHO, multi-homed, screened host y screened subnet?
 - ¿Qué es un TCP Wrapper?
-- ¿Qué es SSH? ¿Cómo funciona?
 - ¿Qué es una auditoria de seguridad?
 - ¿Qué es un test de intrusión?
 - ¿Qué es un análisis forense?
@@ -112,7 +70,6 @@ Leer el artículo [Servicio SSH](/posts/servicio-ssh/).
 - ¿En qué consiste la técnica Stak space de eliminación de datos del SO?
 - ¿Cómo se llama al proceso que identifica y recupera archivos eliminados?
 - ¿Cuándo debe realizarse un análisis forense?
-
 
 ## Bibliografía
 

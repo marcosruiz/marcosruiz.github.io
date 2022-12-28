@@ -25,11 +25,18 @@ Los grupos de puertos que hacemos en un switch gestionable para aislar un conjun
 
 Una VLAN basada en grupos de puertos no queda limitada a un switch; uno de los puertos puede estar conectado al puerto de otro switch, y, a su vez, ese puerto forma parte de otro grupo de puertos, etc.
 
+![VLAN entre dos switch](vlanEntre2Switch.png)
+_VLAN entre dos switch_
+
 Para interconectar VLAN (capa 2) generalmente utilizaremos un router (capa 3).
 
-Capa 2. En el modelo TCP/IP la capa 2 o capa de enlace tiene una visión local de la red: sabe cómo intercambiar paquetes de datos (llamados tramas) con los equipos que están en su misma red. La comunicación es directa entre origen y destino (aunque cruce uno o varios switch).
+**Capa 2**. En el modelo TCP/IP la capa 2 o capa de enlace tiene una visión local de la red: sabe cómo intercambiar paquetes de datos (llamados tramas) con los equipos que están en su misma red. La comunicación es directa entre origen y destino (aunque cruce uno o varios switch).
 
-Capa 3. La capa 3 o capa de red tiene una visión global de la red: sabe cómo hacer llegar paquetes de datos hasta equipos que no están en su misma red. La comunicación es indirecta, necesita pasar por una máquina más: el router.
+**Capa 3**. La capa 3 o capa de red tiene una visión global de la red: sabe cómo hacer llegar paquetes de datos hasta equipos que no están en su misma red. La comunicación es indirecta, necesita pasar por una máquina más: el router.
+
+
+![VLAN etiquetada](vlanEtiquetada.png)
+_VLAN etiquetada_
 
 {:.subsection}
 ### Autenticación en el puerto
@@ -44,6 +51,10 @@ Para evitarlo, los switch permiten establecer autenticación en el puerto: solo 
 Los miedos a que las comunicaciones sean escuchadas por terceros no autorizados han desaparecido en las redes cableadas, pero están plenamente justificados en redes inalámbricas o WLAN (Wireless LAN), porque de nuevo el medio de transmisión (el aire) es compartido por todos los equipos y cualquier tarjeta en modo promiscuo puede perfectamente escuchar lo que no debe.
 
 Aunque se pueden hacer redes inalámbricas entre equipos (redes ad hoc), lo más habitual son las redes de tipo infraestructura: un equipo llamado access point (AP, punto de acceso) hace de switch, de manera que los demás ordenadores se conectan a él, le envían sus paquetes y él decide cómo hacerlos llegar al destino, que puede ser enviarlo de nuevo al aire o sacarlo por el cable que le lleva al resto de la red. Salir por el cable es la configuración más habitual en las empresas, donde la WLAN se considera una extensión de la red cableada.
+
+
+![WLAN en modo infraestructura](wlanInfraestructura.png)
+_WLAN en modo infraestructura_
 
 Como ocurría con el switch en las redes cableadas, hemos de:
 
@@ -74,7 +85,7 @@ Por tanto, el AP admite varias combinaciones:
 - **Autenticación abierta y sin cifrado**: se utiliza en lugares públicos (bibliotecas, cafeterías, etc.). La intención es no molestar al usuario introduciendo claves; además, si las ponemos, habría que dar a conocer la clave mediante un cartel en el interior del establecimiento, por lo que la tendrían todos, usuarios y atacantes. En estos casos, el sistema operativo nos avisa de que vamos a conectarnos a una red sin seguridad.
 - **Autenticación abierta y transmisión cifrada**: es el esquema habitual de las primeras redes wifi.
 - **Autenticación compartida y transmisión cifrada**: es una mala combinación (en Windows 7 ni siquiera se contempla), porque la autenticación es muy vulnerable y, conocida esa clave, tendrán acceso a descifrar las comunicaciones de cualquier ordenador conectado a ese AP.
-- **Autenticación segura y transmisión cifrada**: es la mejor solución porque utiliza una clave distinta para cada cosa. La más conocida es WPA, como veremos en el siguiente apartado de esta unidad.
+- **Autenticación segura y transmisión cifrada**: es la mejor solución porque utiliza una clave distinta para cada cosa. La más conocida es WPA.
 
 {:.subsection}
 ### Cifrado: WEP. WPA, WPA2
@@ -93,6 +104,9 @@ Las autoridades de estandarización empezaron a trabajar en un nuevo estándar. 
 - Nuevos **algoritmos más seguros** (TKIP, AES), tanto por el algoritmo en sí como por el aumento de longitud de las claves, lo que dificulta los ataques.
 - **Rotación automática de claves**. Cada cierto tiempo (varios minutos) el AP y el cliente negocian una nueva clave. Por tanto, si algún atacante lograra acertar con la clave de una comunicación, solo le serviría para descifrar la información intercambiada durante ese intervalo de tiempo, pero no la anterior ni la siguiente.
 - Por primera vez **se distingue entre los ámbitos personal y empresarial**. En el ámbito personal es suficiente con el esquema habitual de una única clave que conocen todos (WPA le llama PSK [Pre-Shared Key]); en el ámbito empresarial no tiene sentido, porque si una persona abandona la empresa, habría que cambiar la clave y comunicarlo de nuevo a todos los empleados. Para resolverlo, WPA empresarial introduce un servidor RADIUS donde poder almacenar un usuario y una clave para cada empleado.
+
+{:.question}
+¿Qué protocolo de seguridad de redes inalámbricas no es seguro?
 
 {:.subsection}
 ### WPA Empresarial: RADIUS
@@ -141,7 +155,7 @@ Leer artículo [VPN](/posts/vpn/).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/har1It-lW2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-La herramienta **Nmap**, disponible para sistemas Linux y Windows, se ha convertido en la navaja suiza de los hackers de red. Además del escaneo de puertos para determinar los servicios disponibles en una máquina, podemos pedir a la herramienta que intente la conexión a cada uno de ellos. Después analiza los mensajes que generan estos servidores para identificar la versión concreta del sistema operativo y la versión concreta del software de servidor (server fingerprint) que está escuchando en cada puerto.
+La herramienta **Nmap**, disponible para sistemas GNU Linux y Windows, se ha convertido en la navaja suiza de los hackers de red. Además del escaneo de puertos para determinar los servicios disponibles en una máquina, podemos pedir a la herramienta que intente la conexión a cada uno de ellos. Después analiza los mensajes que generan estos servidores para identificar la versión concreta del sistema operativo y la versión concreta del software de servidor (server fingerprint) que está escuchando en cada puerto.
 
 Para cada puerto, la herramienta ofrece cuatro posibles estados:
 
@@ -154,6 +168,9 @@ está bloqueando el intento de conexión (router, firewall).
 cerrado.
 
 Leer artículo [Realiza escaneos de puertos con Nmap a cualquier servidor o sistema](https://www.redeszone.net/tutoriales/configuracion-puertos/nmap-escanear-puertos-comandos/).
+
+![Chuleta Nmap](nmapCheatSheet.jpg)
+_Chuleta Nmap en inglés_
 
 ## Bibliografía
 

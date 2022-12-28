@@ -1,9 +1,9 @@
 ---
-title: "Práctica: Seguridad activa de control de redes"
+title: "Práctica: Ataques y contramedidas"
 date: 2022-12-21 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr, teoría, seguridad activa]
-img_path: /assets/img/practica-seguridad-activa-control-redes/
+img_path: /assets/img/practica-ataques-contramedidas/
 ---
 
 ## Objetivo y duración
@@ -32,72 +32,30 @@ La entrega de esta práctica debe ser un documento PDF con un nombre en el sigui
 A continuación se listan las actividades que se deben realizar.
 
 {:.activity}
-### Tcpdump
+### Ataque ARP Spoofing
 
 {:.activity}
-### Wireshark
+### Ataque DNS Spoofing
 
 {:.activity}
-### Snort
+### Aircrack-ng
 
-```console
-#apt-get install snort
-#snort –i eth1
-```
-
-```
-preprocessor sfportscan: proto { all }
-memcap { 10000000 } sense _ level { low }
-include $PREPROC _ RULE _ PATH/preprocessor.rules
-```
-{: file="/etc/snort/snort.conf" }
-
-
-```
-ipvar HOME _ NET 10.0.1.0/24
-```
-{: file="/etc/snort/snort.conf" }
-
-```console
-#snort –i eth1 –c /etc/snort/snort.conf
-```
-
-```console
-#cd /var/log/snort
-#ls
-```
-
-
-```console
-#tcpdump –r
-```
-
-```
-alert tcp any any -> any any (msg:"no te conozco"; content:"hola"; classtype:shellcode-detect; sid:310; rev:1;)
-```
-{: file="/etc/snort/rules/local.rules" }
-
-
-```console
-#nc –l 1234
-```
-
-```console
-#nc 10.0.1.4 1234
-```
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ap6TGO6PyIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Realizar las tareas de [Wifi Hacking 101](https://tryhackme.com/room/wifihacking101).
 
 {:.activity}
-### UFW
+### WebGoat
 
-Seguir los pasos del artículo [Cómo configurar un firewall con UFW en Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-20-04-es) para instalar y configurar el firewall UFW.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AFp7hG-8q0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{:.activity}
-### Proxy Squid
-
-{:.activity}
-### SpamAssasin
+```console
+$sudo su
+#apt get install aircrack-ng
+#airmon-ng start wlan0
+#service network-manager stop
+#airodump-ng wlan0
+#airodump-ng --ivs --write captura --bssid 00:13:49:XX:XX:34 --channel 9 wlan0
+#aircrack-ng *.ivs
+```
 
 ## Bibliografía
 

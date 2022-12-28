@@ -42,6 +42,15 @@ Ejemplo
 
 ```
 
+```console
+#
+```
+
+```
+
+```
+{: file="" }
+
 ![imgDescription](/assets/img/ejemplo/ejemplo.png)
 _ imgDescription _
 
