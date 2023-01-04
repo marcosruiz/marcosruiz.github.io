@@ -57,7 +57,7 @@ Para finalizar, escribe una pregunta para el siguiente vídeo de Nate Gentile co
 {:.activity}
 ## Instalar Metasplotaible3
 
-Descargar e instala Metasplotaible3 en VirtualBox. 
+Descargar e instala Metasplotaible3 en VirtualBox. Cambia la distribución de teclado para que coincida con la de España.
 
 {:.activity}
 ## Instalar Kali Linux
