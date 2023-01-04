@@ -32,10 +32,47 @@ La entrega de esta práctica debe ser un documento PDF con un nombre en el sigui
 A continuación se listan las actividades que se deben realizar.
 
 {:.activity}
-## Metasplotaible
+## Antivirus
+
+Ver el siguiente vídeo en clase:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SbdO7BAsGq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Responde a las siguientes preguntas:
+
+1. ¿Dónde trabaja Marc Rivero?
+2. ¿Los virus están hechos por las empresas de antivirus? ¿Por qué?
+3. Después de ver este vídeo, ¿recomendarías a tu primo instalarse un crack para tener Photoshop de forma gratuita? ¿Por qué? En caso de que no, ¿Qué alternativa le darías?
+4. ¿Puede ser un malware de dos tipos al mismo tiempo?
+5. ¿Qué es Wannacry?
+6. ¿Es más seguro GNU Linux que Windows? ¿Cómo se acabarían más del 90% de los problemas que hay en Windows?
+7. ¿Porque Google Chrome no es detectado como virus por un antivirus?
+8. ¿Cómo podemos saber si tenemos un virus en nuestro PC?
+9. ¿Cómo se financian los antivirus gratuitos?
+
+Para finalizar, escribe una pregunta para el siguiente vídeo de Nate Gentile con Marc Rivero.
+
+> 📷 Haz una captura de pantalla de la pregunta realizada.
+
+{:.activity}
+## Instalar Metasplotaible3
+
+Descargar e instala Metasplotaible3 en VirtualBox. 
+
+{:.activity}
+## Instalar Kali Linux
+
+Descarga e instala Kali Linux en VirtualBox así como las Guest Additions para facilitarnos el trabajo de aquí en adelante. Crea un usuario que sea <\tuUsuario\> y úsalo para las capturas.
+
+{:.activity}
+## Conectar las dos máquinas en una red interna
+
+Conecta las dos máquinas a través de una red interna.
 
 {:.activity}
 ## Nmap
+
+Utiliza la herramienta nmap para descubrir la máquina Metasploitable3 desde Kali.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/apvgul-8UsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

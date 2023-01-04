@@ -25,6 +25,16 @@ Ejemplo
   </div>
 </details>
 
+<details class="card mb-2">
+  <summary class="card-header question"></summary>
+  <div class="card-body" markdown="1">
+
+
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 > 
 {:.prompt-info}
 
