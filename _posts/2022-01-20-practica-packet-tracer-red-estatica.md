@@ -64,7 +64,7 @@ Si necesitas ayuda con la creación de subredes en Packet Tracer puedes ver este
 {:.activity}
 ### Tres subredes a partir de red de tipo A
 
-Tenemos que construir una red de ordenadores a partir de la IP 23.0.0.0/24. Y queremos disponer de 8 subredes útiles.
+Tenemos que construir una red de ordenadores a partir de la IP 23.0.0.0/8. Y queremos disponer de 8 subredes útiles.
 
 Calcular:
 
