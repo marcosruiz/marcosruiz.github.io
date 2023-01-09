@@ -54,6 +54,13 @@ Si necesitas ayuda con la creación de subredes en Packet Tracer puedes ver este
 
 <iframe src="https://www.youtube.com/embed/Mk8UZYTP3Xo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+{:.question}
+¿Es 199.35.20.0 una dirección de red? ¿Por qué?
+
+{:.question}
+¿Es 199.35.20.0 una dirección pública o privada?
+
 {:.activity}
 ### Tres subredes a partir de red de tipo A
 
@@ -68,3 +75,9 @@ Calcular:
 5. Realizar un esquema de las mismas usando Packet Tracer 6.2 con al menos 3 subredes: La subred 1, la subred 4 y la subred 8.
     - Debes guardar ejercicio en formato .pkt. 
     - Cada subred debe tener al menos dos PCs. Un PC contendrá la primera @ IP asignable a equipos (la siguiente a la del router) y el otro tendrá la última @ IP asignable a equipos.
+
+{:.question}
+¿Es 23.0.0.0 una dirección de red? ¿Por qué?
+
+{:.question}
+¿Es 23.0.0.0 una dirección pública o privada?
