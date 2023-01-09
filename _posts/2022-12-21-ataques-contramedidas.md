@@ -37,7 +37,7 @@ Por desgracia, estas respuestas espontáneas son aceptadas por María y José. N
 
 Los ataques MITM son difíciles de evitar. Una primera idea es utilizar en todas las máquinas tablas ARP estáticas, renunciando al protocolo dinámico, vista su debilidad. Parece sencillo, pero supone mucho trabajo de mantenimiento: cada vez que llega una nueva máquina, o introducimos una nueva tarjeta de red en una máquina ya existente, hay que actualizar una a una todas las máquinas de la empresa (y pueden ser cientos). 
 
-Es más razonable controlar el acceso a nuestra red: si el atacante no puede conectar su equipo, no podrá lanzar paquetes maliciosos. En este punto es importante recordar las medidas que vimos en el artículo [Seguridad activa de acceso a redes](/posts/seguridad-activa-acceso-redes.md). 
+Es más razonable controlar el acceso a nuestra red: si el atacante no puede conectar su equipo, no podrá lanzar paquetes maliciosos. En este punto es importante recordar las medidas que vimos en el artículo [Seguridad activa de acceso a redes](/posts/seguridad-activa-acceso-redes). 
 
 También es interesante utilizar, siempre que sea posible, protocolos seguros con infraestructura de clave pública (PKI), como vimos en el artículo [Criptografía moderna](/posts/criptografia-moderna/). Cualquier interceptación de mensajes no será provechosa, y el atacante no tiene las claves privadas de los extremos, por lo que no puede suplantarlos. 
 
