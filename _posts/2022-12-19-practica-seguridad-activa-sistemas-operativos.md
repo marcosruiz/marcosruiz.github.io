@@ -76,6 +76,19 @@ A través de línea de comandos con LUKS crea y monta en `/mnt/particionSegura` 
 {:.question}
 ¿Con qué algoritmo cifra LUKS las particiones?
 
+{:.question}
+¿Cuáles son los sistemas de ficheros más usados en GNU Linux? ¿Y en Windows? ¿Cuáles son sus peculiaridades en comparación con el resto? Haz una pequeña comparativa entre ellos.
+
+{:.question}
+¿Es lo mismo un MB que un MiB? ¿Cuál es la diferencia? ¿Qué unidades usa GNU Linux? ¿Y Windows? ¿Y OSX?
+
+{:.question}
+¿Qué significan las siglas LVM? ¿Qué ventajas/desventajas tiene sobre usar un sistema de particiones tradicional?
+
+Mira el siguiente video para entender que es LVM:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nkJvqfYmyLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 > 📷 Haz una captura que demuestre la realización de la actividad.
 {:.prompt-info}
 
@@ -124,27 +137,45 @@ Instala y obtén la contraseña de tu usuario con JohnTheRipper por fuerza bruta
 
 #### ¿Cómo usar JohnTheRipper?
 
-Instala JohnTheRipper:
+Copia el fichero `/etc/passwd` y el fichero `/etc/shadow` en la máquina Kali:
 
 ```console
-#apt-get install john -y
+# unshadow ./passwd ./shadow > <ficheroDeHashes>
 ```
 
-Uso:
+Puedes usar John The Ripper de manera predeterminada sobre un fichero de hashes de la siguiente manera:
 
 ```console
 #john <ficheroDeHashes>
-#john <ficheroDeHashes> --wordlist="<ficheroDiccionario>"
+```
+
+<!-- 
+En mi caso he usado el siguiente comando para romper la contraseña con fuerza bruta:
+
+```console
+#john --incremental=Lower --length=7 <ficheroDeHashes>
+```
+-->
+
+Puedes investigar en el artículo [John the Ripper's cracking modes](https://www.openwall.com/john/doc/MODES.shtml) para saber que parámetros necesitarás para hacer un ataque de fuerza bruta que termine en un tiempo razonable para la contraseña "tiempos".
+
+También puedes usar John The Ripper para un ataque de diccionario de la siguiente manera:
+
+```console
+#john --wordlist="<ficheroDiccionario>" <ficheroDeHashes> 
 #john --show <ficheroHashes>
 ```
 
-Descargar diccionario de palabras en español:
+Para ello primero deberás descargar un diccionario de palabras en español:
 
 ```console
 $curl -O http://snowball.tartarus.org/algorithms/spanish/voc.txt
 ```
 
-o si no funciona puedes usar [este enlace](/assets/img/practica-seguridad-activa-sistemas-operativos/diccionario.txt) directamente.
+O si no funciona puedes usar [este enlace](/assets/img/practica-seguridad-activa-sistemas-operativos/diccionario.txt) directamente.
+
+{:.question}
+¿Cuánto tiempo tarda JohnTheRipper en romper la contraseña "tiempos" usando fuerza bruta? ¿Y usando el diccionario aportado?
 
 {:.activity}
 ### ACL 1
@@ -199,3 +230,4 @@ Sigue los pasos de este artículo [Utilización de ACLs en el sistema de archivo
 
 ## Bibliografía
 
+- [John the Ripper's cracking modes](https://www.openwall.com/john/doc/MODES.shtml)
