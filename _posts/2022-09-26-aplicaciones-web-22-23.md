@@ -31,6 +31,7 @@ pin: true
 - UD9 - [Aplicaciones web de escritorio](/posts/aplicaciones-web-escritorio)
 
 - P08 - [Práctica: Moodle](/posts/practica-moodle/)
+- P09 - [Práctica: JavaScript en freeCodeCamp](/posts/2023-01-09-practica-javascript-freeCodeCamp)
 
 ## Enlaces increíbles 🔥
 
