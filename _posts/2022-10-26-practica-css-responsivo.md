@@ -1,5 +1,5 @@
 ---
-title: "Práctica: CSS responsivo"
+title: "Práctica: CSS en freeCodeCamp y Codepip"
 date: 2022-10-26 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
 tags: [aplicaciones web, smr, práctica]
