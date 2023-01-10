@@ -42,7 +42,7 @@ Tienes a tu disposición mi artículo [Tutorial: Instalar Moodle en Ubuntu Serve
 
 Crea una máquina virtual e instala Ubuntu Server 22.04 con un servidor SSH para poder controlarlo desde un cliente SSH "remoto" similar a como se haría en la realidad.
 
-> 📷 Haz una captura para demostrar que la actividad ha sido realizada satisfactoriamente por tí.
+> 📷 Haz una captura para demostrar que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
 
 {:.activity}
@@ -55,7 +55,7 @@ Para instalar Moodle primero se debe instalar la pila LAMP, es decir, Linux (Ubu
 
 Instala y configura Moodle 4.1.
 
-> 📷 Haz varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por tí.
+> 📷 Haz varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
 
 {:.activity}
@@ -63,7 +63,7 @@ Instala y configura Moodle 4.1.
 
 Crea un curso con al menos un usuario con rol de alumno y un usuario con rol de profesor. El alumno deberá tener tú nombre y el profesor el mío. Deberás hacer login con el usuario profesor y el usuario alumno y ambos deberán estar matriculados en el mismo curso. Se valorará positivamente que añadas más de un alumno y más de un profesor.
 
-> 📷 Haz varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por tí.
+> 📷 Haz varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
 
 {:.activity}
@@ -71,5 +71,5 @@ Crea un curso con al menos un usuario con rol de alumno y un usuario con rol de 
 
 Crea una actividad Cuestionario como profesor en tu nuevo curso con una sola pregunta tipo test. Haz que la haga al menos un alumno.
 
-> 📷 Haz varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por tí.
+> 📷 Haz varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}

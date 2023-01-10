@@ -34,7 +34,7 @@ A continuación se listan las actividades que se deben realizar.
 {:.activity}
 ### Contraseña a la BIOS
 
-Entrar en la web [BIOS Simulator Center de Lenovo](https://download.lenovo.com/bsco/index.html), selecciona una BIOS/UEFI diferente al resto de tus compañeros e indica los pasos a seguir para cambiar la contraseña a dicha BIOS.
+Entrar en la web [BIOS Simulator Center de Lenovo](https://download.lenovo.com/bsco/index.html), selecciona una BIOS/UEFI diferente al resto de tus compañeros (si es posible) e indica los pasos a seguir para cambiar la contraseña a dicha BIOS.
 
 > 📷 Haz una captura por cada uno de los pasos que has realizado en la BIOS a modo de tutorial.
 {:.prompt-info}
@@ -42,33 +42,87 @@ Entrar en la web [BIOS Simulator Center de Lenovo](https://download.lenovo.com/b
 {:.activity}
 ### Contraseña al GRUB
 
-En tu Zorin OS Lite, añade la contraseña "tiempos" al GRUB.
+> No seas un mandril como yo y haz una instantánea antes de empezar esta actividad.
+{:.prompt-info}
+
+En tu Zorin OS Lite, añade la contraseña "tiempos" al GRUB siguiendo los pasos del artículo [Proteger el grub con contraseña](https://geekland.eu/proteger-el-grub-con-contrasena/). Deberemos usar nuestro usuario habitual (en  mi caso, mrug) en lugar de joan.
+
+{:.question}
+¿En que casos es recomendable proteger el GRUB?
+
+{:.question}
+¿Qué significa el símbolo `~` que se usa en el tutorial?
+
+{:.question}
+¿Qué significa `EOF`?
+
+{:.question}
+¿Cuál es la versión del GRUB que estás usando?
+
+<!-- 
+
+En entornos laborales y profesionales.
+En situaciones en los que un equipo es compartido por varias personas.
+En el caso que usemos un ordenador portátil, y no lo tengamos permanente en casa usándolo como un ordenador de sobremesa.
+En el caso que a menudo tengamos que dejar nuestro equipo informático desatendido en lugares donde transiten personas conocidas/desconocidas.
+
+-->
+
+> 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
 
 {:.activity}
 ### Crear usuario profesorMrug
 
-Indica los comandos para realizar las siguientes acciones:
+Usando los comandos useradd y passwd, realiza las siguientes acciones:
 
 - Crear una cuenta de usuario llamado "profesorMrug" perteneciente al grupo "profesores" usando el terminal. 
 - Esta cuenta de usuario debe esperar 10 días después de la inserción de una nueva contraseña para poder cambiarla; su contraseña será válida durante 60 días; se le avisará 3 días antes de que deba cambiarla; si no cambia la contraseña después de los 60 días, dispone de 7 días antes de que sea bloqueada.
 
+> Recuerda que puedes ejecutar los comandos `useradd --help` y `passwd --help` para averiguar como se usan estos programas.
+{:.prompt-info}
+
+{:.question}
+¿Qué diferencia hay entre useradd y adduser?
+
+> Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
+
+
 {:.activity}
 ### Crear usuario alumno\<tuUsuario\>
 
-Indica los comandos para realizar las siguientes acciones:
+Usando los comandos useradd y passwd, realiza las siguientes acciones:
 
 - Crear una cuenta de usuario llamado "alumno\<tuUsuario\>" perteneciente al grupo "alumnos" usando el terminal. 
 - Este usuario debe cambiar la contraseña inmediatamente, tendrá validez de 30 días y se avisara un día antes de que debe volverla a cambiar. Si no la cambia, se bloqueará la cuenta en tres días.
 
-{:.activity}
-### Añade a sudors
+> Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
 
-Utilizando el terminal haz que los dos usuarios creados anteriormente puedan ejecutar comandos sudo.
+{:.activity}
+### Haz que los usuarios puedan ejecutar el comando sudo
+
+Utilizando el terminal haz que los dos usuarios creados anteriormente puedan ejecutar el comando sudo.
+
+{:.question}
+¿De qué dos maneras se puede realizar esta tarea?
+
+> Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
+
+{:.activity}
+### Cuotas de usuarios
+
+Define una cuota de disco de 1 GB para el grupo "profesores" y otra cuota de disco de 100 MB para el grupo "alumnos". Indica los comandos utilizados en texto plano.
+
+> Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
 
 {:.activity}
 ### Cifrado de particiones
 
-A través de línea de comandos con LUKS crea y monta en `/mnt/particionSegura` una partición cifrada. Indica los comandos utilizados en texto plano. Puedes seguir los pasos marcados en el artículo [Cifra discos, particiones y archivos con LUKS en tu servidor Linux](https://www.redeszone.net/tutoriales/seguridad/cifrar-discos-particiones-archivos-luks-linux/).
+A través de línea de comandos con LUKS crea y monta en `/mnt/particionSegura\<tuUsuario\>` una partición cifrada. Indica los comandos utilizados en texto plano. Puedes seguir los pasos marcados en el artículo [Cifra discos, particiones y archivos con LUKS en tu servidor Linux](https://www.redeszone.net/tutoriales/seguridad/cifrar-discos-particiones-archivos-luks-linux/).
 
 {:.question}
 ¿Qué significan las siglas de LUKS?
@@ -88,14 +142,6 @@ A través de línea de comandos con LUKS crea y monta en `/mnt/particionSegura` 
 Mira el siguiente video para entender que es LVM:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nkJvqfYmyLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-> 📷 Haz una captura que demuestre la realización de la actividad.
-{:.prompt-info}
-
-{:.activity}
-### Cuotas de usuarios
-
-Define una cuota de disco de 1 GB para el grupo "profesores" y otra cuota de disco de 100 MB para el grupo "alumnos". Indica los comandos utilizados en texto plano.
 
 > 📷 Haz una captura que demuestre la realización de la actividad.
 {:.prompt-info}
@@ -133,66 +179,38 @@ Averigua el propósito del comando para máquinas GNU Linux utmpdump. Indica qu�
 {:.activity}
 ### JohnTheRipper
 
-Instala y obtén la contraseña de tu usuario con JohnTheRipper por fuerza bruta y por ataque de diccionario.
-
-#### ¿Cómo usar JohnTheRipper?
-
-Copia el fichero `/etc/passwd` y el fichero `/etc/shadow` en la máquina Kali:
-
-```console
-# unshadow ./passwd ./shadow > <ficheroDeHashes>
-```
-
-Puedes usar John The Ripper de manera predeterminada sobre un fichero de hashes de la siguiente manera:
-
-```console
-#john <ficheroDeHashes>
-```
-
-<!-- 
-En mi caso he usado el siguiente comando para romper la contraseña con fuerza bruta:
-
-```console
-#john --incremental=Lower --length=7 <ficheroDeHashes>
-```
--->
-
-Puedes investigar en el artículo [John the Ripper's cracking modes](https://www.openwall.com/john/doc/MODES.shtml) para saber que parámetros necesitarás para hacer un ataque de fuerza bruta que termine en un tiempo razonable para la contraseña "tiempos".
-
-También puedes usar John The Ripper para un ataque de diccionario de la siguiente manera:
-
-```console
-#john --wordlist="<ficheroDiccionario>" <ficheroDeHashes> 
-#john --show <ficheroHashes>
-```
-
-Para ello primero deberás descargar un diccionario de palabras en español:
-
-```console
-$curl -O http://snowball.tartarus.org/algorithms/spanish/voc.txt
-```
-
-O si no funciona puedes usar [este enlace](/assets/img/practica-seguridad-activa-sistemas-operativos/diccionario.txt) directamente.
+Instala y obtén la contraseña de tu usuario con JohnTheRipper por fuerza bruta y por ataque de diccionario. Tienes el artículo [John the Ripper](/posts/john-the-ripper) que te servirá de ayuda.
 
 {:.question}
-¿Cuánto tiempo tarda JohnTheRipper en romper la contraseña "tiempos" usando fuerza bruta? ¿Y usando el diccionario aportado?
+¿Cuánto tiempo tarda JohnTheRipper en romper la contraseña "tiempos" usando fuerza bruta en tu caso? ¿Y usando el diccionario aportado? ¿Qué características tiene tu máquina Kali?
+
+> 📷 Haz varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
 
 {:.activity}
-### ACL 1
+### ACL (Primer impacto)
 
-Mira el siguiente vídeo:
+Mira el siguiente vídeo y realiza los mismos pasos que el vídeo pero con tus usuarios creados anteriormente. En mi caso son mrug y mrug2.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7F30Aixu8HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Realiza los mismos pasos que el vídeo pero con los usuarios creados anteriormente.
-
-> 📷 Haz una o varias capturas que demuestren la realización de la actividad.
+> 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
+
+{:.question}
+¿Podemos mezclar las ACL con el sistema de permisos tradicional? ¿Cómo sabemos cuando estamos usando ACL?
+
+{:.question}
+Si añado los permisos 666 a un fichero, pero le indico mediante ACL que, por ejemplo, el usuario hisoka solo tiene permisos de lectura, ¿podrá el usuario hisoka escribir el fichero?
+
+> 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
+
 
 {:.activity}
 ### ClamAV
 
-Siguiendo los pasos del artículo [Cómo instalar ClamAV antivirus en Ubuntu 20.04 LTS](https://comoinstalar.me/como-instalar-clamav-antivirus-en-ubuntu-20-04-lts/) instala el antivirus ClamAV en tu máquina Zorin OS Lite.
+Siguiendo los pasos del artículo [Cómo instalar ClamAV antivirus en Ubuntu 20.04 LTS](https://comoinstalar.me/como-instalar-clamav-antivirus-en-ubuntu-20-04-lts/) instala, usa y configura el antivirus ClamAV en tu máquina Zorin OS Lite.
 
 {:.question}
 ¿Estamos libres de virus en los sistemas GNU Linux?
@@ -200,28 +218,62 @@ Siguiendo los pasos del artículo [Cómo instalar ClamAV antivirus en Ubuntu 20.
 {:.question}
 ¿Qué es un daemon en GNU Linux?
 
-### RKHunter
+{:question}
+¿Dónde se guardan los logs de la herramienta ClamAV? ¿Qué tipo de información aparece?
 
-Rkhunter es una aplicación para línea de comandos que se encarga automáticamente de analizar nuestro sistema en busca de rootkits, malware, scripts maliciosos, backdoors y otro tipo de software potencialmente peligroso en nuestro sistema Linux para saber en todo momento si nuestro sistema se encuentra realmente seguro o de lo contrario estamos siendo víctimas de piratas informáticos. 
-
-Siguiendo los pasos del artículo [How to Install Rkhunter on Ubuntu 20.04](https://blog.eldernode.com/install-rkhunter-on-ubuntu/) instalar y configurar escaneos regulares. 
-
-A modo de resumen la manera de instalar, actualizar y usar rkhunter es la siguiente:
+Una vez hecho todo lo anterior, instala la herramienta gráfica ClamTk.
 
 ```console
-$sudo apt install rkhunter -y
-$sudo rkhunter --update
-$sudo rkhunter --check
+#apt install clamtk
+```
+
+También puedes añadir la extensión al explorador de archivos Nautilus instalando el plugin clamtk-gnome de la siguiente manera:
+
+```console
+#apt install clamtk-gnome 
+```
+
+Este plugin permite escanear ficheros haciendo click derecho sobre el mismo.
+
+> 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
+
+{:.activity}
+### RKHunter
+
+Rkhunter es una aplicación para línea de comandos que se encarga automáticamente de analizar nuestro sistema en busca de rootkits, malware, scripts maliciosos, backdoors y otro tipo de software potencialmente peligroso en nuestro sistema GNU Linux para saber en todo momento si nuestro sistema se encuentra realmente seguro o de lo contrario estamos siendo víctimas de piratas informáticos. 
+
+Siguiendo los pasos del artículo [How to Install Rkhunter on Ubuntu 20.04](https://blog.eldernode.com/install-rkhunter-on-ubuntu/) instalar y configurar escaneos regulares. También puedes usar 
+
+A modo de resumen la manera de instalar, actualizar y usar Rkhunter es la siguiente:
+
+```console
+#apt install rkhunter -y
+#rkhunter --update
+#rkhunter --check
 ```
 
 {:.question}
 ¿Qué es un rootkit?
 
 {:.question}
-¿Qué se observa en el fichero /var/log/rkhunter.log?
+¿Qué se observa en el fichero `/var/log/rkhunter.log`{: .filepath}?
+
+{:.question}
+¿Qué tres programas conocemos ya para abrir ficheros en el propio terminal?
+
+<!-- Vi, vim y nano -->
+
+{:.question}
+¿Qué es CRON? ¿Dónde está el script de RkHunter que se ejecuta diariamente?
+
+<!-- En /etc/cron.daily/rkhunter -->
+
+> 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
 
 {:.activity}
-### (Opcional) ACL 2
+### (Opcional) ACL (Segundo impacto)
 
 Sigue los pasos de este artículo [Utilización de ACLs en el sistema de archivos](https://sites.google.com/site/vaisereso/tutoriales-y-trucos/acls-en-linux).
 
@@ -230,4 +282,3 @@ Sigue los pasos de este artículo [Utilización de ACLs en el sistema de archivo
 
 ## Bibliografía
 
-- [John the Ripper's cracking modes](https://www.openwall.com/john/doc/MODES.shtml)
