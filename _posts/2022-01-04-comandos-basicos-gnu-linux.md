@@ -1,5 +1,5 @@
 ---
-title: 30 comandos básicos de GNU Linux
+title: 35 comandos básicos de GNU Linux
 date: 2022-01-04 16:30:00 +0100
 categories: [General, GNU Linux]
 tags: [gnu linux, terminal, dam, smr, servicios en red, seguridad informática, entornos de desarrollo, redes locales]

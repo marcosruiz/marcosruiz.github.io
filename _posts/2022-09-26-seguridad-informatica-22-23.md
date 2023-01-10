@@ -21,8 +21,7 @@ pin: true
 
 ## Evaluación 2
 
-- [30 comandos básicos de GNU Linux](/posts/comandos-basicos-gnu-linux/)
-- [Permisos en GNU Linux](/posts/permisos-gnu-linux/)
+- [35 comandos básicos de GNU Linux](/posts/comandos-basicos-gnu-linux/)
 - UD5 - [Seguridad activa de sistemas operativos](/posts/seguridad-activa-sistemas-operativos)
 - UD6 - [Seguridad activa de acceso a redes](/posts/seguridad-activa-acceso-redes/)
 - UD7 - [Seguridad activa de control de redes](/posts/seguridad-activa-control-redes/)
@@ -31,10 +30,12 @@ pin: true
 
 
 - P06 - [Práctica: RAID por software](/posts/practica-raid/)
-- P07 - [Práctica: Permisos en GNU Linux](/posts/practica-permisos-linux)
-- P08 - [Práctica: Seguridad activa de sistemas operativos](/posts/practica-seguridad-activa-sistemas-operativos/)
-- P09 - Práctica: Copias de seguridad con UrBackup  (Seguridad pasiva)
-- P10 - Práctica: OpenMediaVault y gestión de usuarios (Seguridad pasiva y activa)
+- P07 - [Práctica: Introducción a comandos GNU Linux](/posts/practica-comandos-1)
+- P08 - [Práctica: Permisos en GNU Linux](/posts/practica-permisos-linux)
+
+- [Práctica: Seguridad activa de sistemas operativos](/posts/practica-seguridad-activa-sistemas-operativos/)
+- Práctica: Copias de seguridad con UrBackup  (Seguridad pasiva)
+- Práctica: OpenMediaVault y gestión de usuarios (Seguridad pasiva y activa)
 - Práctica: Servidor Radius (Seguridad activa)
 - Práctica: Ataque de fuerza bruta con Kali Linux
 - Práctica: PenTesting en HackTheBox
