@@ -30,7 +30,7 @@ La entrega de esta práctica debe ser un fichero PDF con un nombre en el siguien
 ## Actividades
 
 {:.activity}
-### Hacer el curso "(Nuevo) Diseño Web Responsivo"
+### JavaScript básico
 
 Ir a la certificación [Algoritmos de JavaScript y Estructuras de Datos](https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/) y hacer el curso "JavaScript básico".
 
