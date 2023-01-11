@@ -75,6 +75,26 @@ A continuación se listan todas las opciones:
 - **p**: tubería.
 - **s**: socket.
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Es lo mismo un fichero que un archivo?</summary>
+  <div class="card-body" markdown="1">
+
+Si, pero en GNU Linux los llamamos ficheros.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Es lo mismo un directorio que una carpeta?</summary>
+  <div class="card-body" markdown="1">
+
+Si, pero en GNU Linux los llamamos directorios.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 Los siguientes nueves caracteres conforman el tipo de permiso que están atribuido, se representan en el siguiente orden lectura(`r`), escritura (`w`), ejecución (`x`) de el dueño (`u`), el grupo (`g`) y el resto de usuarios (`o`) respectivamente. Cuando se encuentra el carácter `–` indica que no tiene el permiso correspondiente al lugar.
 
 ![Gestión de permisos en GNU Linux](/assets/img/permisos-gnu-linux/gestion-de-permisos-linux.png)
@@ -153,22 +173,79 @@ El comando `chmod a=rwx fichero.txt` hace lo siguiente:
 
 Umask (User MASK) es una máscara que sirve para determinar los permisos por defecto de los nuevos ficheros y directorios creados.
 
-Los valores por defecto son los siguientes:
+Los valores sobre los que se aplica la máscara de usuario:
 
 - En el caso de ficheros: 666 (rw-rw-rw-)
 - En el caso de directorios: 777 (rwxrwxrwx)
 
-La máscara de usuario se aplica a estos permisos sustrayendo algunos. Por ejemplo a partir de un umask de 022 obtendriamos los siguientes permisos:
+**La máscara de usuario se aplica a estos permisos sustrayendo algunos**. Por ejemplo a partir de un umask de 022 (----w--w-) quitaríamos los permisos de escritura del grupo y de otros. A nivel binario, la operación realizada es aplicar un NOT a la máscara y después hacer la operación lógica de AND.
 
-- Para ficheros: 666 - 022 = 644 (rw-r--r--)
-- Para directorios: 777- 022 = 755 (rwxr-xr-x)
+- **Para ficheros**: 666 AND NOT(022) = 644.
+
+```
+CASO 1: 
+
+NOT(022) = NOT(000 010 010) = 111 101 101
+
+      110 110 110 = 666 = rw-rw-rw- ⬅️ Permisos máximos de un fichero
+AND   111 101 101                   ⬅️ Máscara negada
+-----------------------------------
+      110 100 100 = 644 = rw-r--r-- ⬅️ Permisos por defecto
+
+CASO 2:
+
+NOT(011) = NOT(000 001 001) = 111 110 110
+
+      110 110 110 = 666 = rw-rw-rw- ⬅️ Permisos máximos de un fichero
+AND   111 110 110                   ⬅️ Máscara negada
+-----------------------------------
+      110 110 110 = 666 = rw-rw-rw- ⬅️ Permisos por defecto
+```
+
+> ¡No es simplemente una resta en decimal como se puede ver en el 2º caso!
+{:.prompt-warning}
+
+- **Para directorios**: 777 XNOR 022 = 755 (rwxr-xr-x)
+
+```
+NOT(022) = NOT(000 010 010) = 111 101 101
+
+      111 111 111 = 777 = rwxrwxrwx  ⬅️ Permisos máximos de un fichero
+AND   111 101 101                    ⬅️ Máscara negada
+-----------------------------------
+      111 101 101 = 755 = rwxr-xr-x  ⬅️ Permisos por defecto
+```
+
+Para saber que umask en modo octal podemos ejecutar el siguiente comando:
+
+```console
+$umask
+0002
+```
+
+Para saber que umask en modo simbólico podemos ejecutar el siguiente comando, en este caso nos da la máscara negada:
+
+```console
+$umask -S
+u=rwx,g=rx,o=rx
+```
 
 Además podemos usar el comando umask para ver o modificar dicha máscara de usuario:
 
+```console
+$umask 007
+$umask
+00007
 ```
-$ umask
-0002
-```
+
+{:.question}
+¿Cuál es la umask por defecto en Ubuntu 22.04?
+
+{:.question}
+¿Existe una máscara de usuario por cada usuario?
+
+{:.question}
+¿La máscara de usuario afecta a los permisos que podemos dar con chmod?
 
 ## Permisos especiales
 
@@ -246,3 +323,5 @@ Espero que esta información os pueda servir en algún momento. Nos vamos leyend
 - [Permisos especiales en Linux: Sticky Bit, SUID y SGID](https://www.ochobitshacenunbyte.com/2019/06/17/permisos-especiales-en-linux-sticky-bit-suid-y-sgid/)
 - [Permisos especiales: Sticky Bit, SUID, SGID](https://hvivani.com.ar/2013/09/06/permisos-especiales-sticky-bit-suid-sgid/)
 - [Sticky bit (Wikipedia)](https://es.wikipedia.org/wiki/Sticky_bit)
+- [umask (Wikipeia)](https://en.wikipedia.org/wiki/Umask)
+- [Cómo establecer permisos de archivo predeterminados](https://docs.oracle.com/cd/E19620-01/805-7644/6j76klor2/index.html)
