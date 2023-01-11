@@ -174,6 +174,21 @@ $ cat patata.txt
 Esto es el contenido del fichero patata.txt
 ```
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Puedo añadir un nuevo nombre al comando cat?</summary>
+  <div class="card-body" markdown="1">
+
+Si. La manera más fácil es añadiendo un alias en el fichero `~/.bashrc`{: .filepath}. Por ejemplo se puede añadir lo siguiente: 
+
+```shell
+alias muestraPorPantalla='/bin/cat'
+```
+{: file="~/.bashrc" }
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 {:.section}
 ### echo
 

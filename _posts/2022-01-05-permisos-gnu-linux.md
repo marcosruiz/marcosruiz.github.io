@@ -5,12 +5,14 @@ categories: [General, GNU Linux]
 tags: [gnu linux, comandos, terminal, bash, dam, smr, entornos de desarrollo, seguridad informática, servicios en red]
 ---
 
-## Vídeo introductorio
+{:.section}
+## Introducción
 
 A modo de introducción a los permisos de GNU Linux se recomienda ver el siguiente vídeo:
 
 <iframe src="https://www.youtube.com/embed/cETtDZQWLYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+{:.section}
 ## Tipos de usuario
 
 Debemos saber que existen distintos grupos de usuarios:
@@ -20,6 +22,7 @@ Debemos saber que existen distintos grupos de usuarios:
 - **Otros o Resto de usuarios** (`o` de Others): Aquí se agrupan al resto de usuarios o grupos con el cual el propietario no tiene ningún vínculo, es decir el resto de usuarios del sistema.
 - **Todos** (se representa con una `a` de All): Todos los tipos de usuario (dueño, grupo y otros) al mismo tiempo.
 
+{:.section}
 ## Tipos de permisos sobre ficheros y directorios
 
 En cada uno de los niveles de permisos se pueden asignar los siguientes permisos:
@@ -28,6 +31,7 @@ En cada uno de los niveles de permisos se pueden asignar los siguientes permisos
 - **Escritura** (se representa con una `w` de Write): En ficheros significa que se puede modificar o borrar el contenido, incluso puede modificar los permisos. En directorios significa que puede crear, eliminar ficheros y directorios dentro de ese directorio.
 - **Ejecución** (se representa con una `x` de eXecute): En ficheros significa que se puede ejecutar el contenido. En directorios significa que podemos entrar en la carpeta (comando cd).
 
+{:.section}
 ## ¿Cómo ver los permisos de un fichero?
 
 Con el comando `ls -l` se lista el contenido de un directorio y el argumento -l hace que se muestren los permisos de cada uno de los ficheros o directorios. A continuación vemos un ejemplo:
@@ -62,7 +66,22 @@ Cada columna está separada por un espacio y nos da cierta información que pued
 1. Fecha y hora de la última modificación.
 1. Nombre del fichero o directorio.
 
-#### Tipo de fichero y sus permisos
+<details class="card mb-2">
+  <summary class="card-header question" markdown="1">
+
+¿Qué otro comando es equivalente a `ls -l`?
+
+  </summary>
+  <div class="card-body" markdown="1">
+
+`ll`
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+{:.subsection}
+### Tipo de fichero y sus permisos
 
 Centrandonos en la primera columna podemos ver que el primer carácter indica el tipo de fichero.
 A continuación se listan todas las opciones:
@@ -100,6 +119,7 @@ Los siguientes nueves caracteres conforman el tipo de permiso que están atribui
 ![Gestión de permisos en GNU Linux](/assets/img/permisos-gnu-linux/gestion-de-permisos-linux.png)
 _Distribución de los permisos de un fichero_
 
+{:.section}
 ## ¿Cómo se modifican los permisos?
 
 Con el comando `chmod` podemos cambiar los permisos de un fichero o un directorio. 
@@ -111,6 +131,7 @@ Los modificadores más importantes son:
 
 Este comando se puede utilizar de dos maneras en octal o en notación simbólica, la diferencia entre ambos radica en que la notación octal se debe especificar todos los permisos de los tres niveles mientras que en la simbólica se puede modificar solo los necesarios.
 
+{:.subsection}
 ### Modo octal
 
 Este método agrupa la combinación de bits apagados o encendidos (0 1) en cada uno de los grupos generando ocho posibles combinaciones por cada uno de ellos.
@@ -142,6 +163,7 @@ A continuación se muestran una seria de ejemplos:
 - `chmod 756 fichero.txt`: Propietario (u) tiene acceso total. Grupo (g) Permite lectura y ejecución. Otros(o) permite lectura y escritura.
 - `chmod 342 fichero.txt`: Propietario (u) permite escritura y ejecución. Grupo (g) Permite lectura. Otros(o) permite escritura.
 
+{:.subsection}
 ### Modo notación simbólica
 
 En este modo solo se especifica a quien se otorga el permiso, usuario(u), grupo(g), otros(o) o todos(a), el operador más (+) agregar, menos (-) quitar, igual (=) específica un modo y los permisos otorgados.
@@ -169,6 +191,7 @@ El comando `chmod a=rwx fichero.txt` hace lo siguiente:
 
 - Asigna todos los permisos a todos los usuarios (usuario, el grupo y otros).
 
+{:.section}
 ## ¿Qué es el umask?
 
 Umask (User MASK) es una máscara que sirve para determinar los permisos por defecto de los nuevos ficheros y directorios creados.
@@ -247,10 +270,12 @@ $umask
 {:.question}
 ¿La máscara de usuario afecta a los permisos que podemos dar con chmod?
 
+{:.section}
 ## Permisos especiales
 
 Existen una serie de permisos especiales en GNU/Linux, que, aunque no son habituales, es necesarios saberlos.
 
+{:.subsection}
 ### Sicky bit
 
 Se trata de un permiso de acceso que puede ser asignado a ficheros y directorios en sistemas UNIX y similares. Aunque históricamente su fin eran otro, actualmente el sticky bit se utiliza sobre directorios.
@@ -281,6 +306,7 @@ $ rm -rf hola
 rm: cannot remove ‘hola’: Operation not permitted
 ```
 
+{:.subsection}
 ### SUID
 
 Cuando se activa el bit SUID sobre un fichero significa que el que lo ejecute va a tener los mismos permisos que el que creó el archivo. Esto es útil en algunas ocasiones, aunque hay que utilizarlo con cuidado, ya que puede acarrear problemas de seguridad.
@@ -298,6 +324,7 @@ $ ls -l hello.sh
 
 Observamos que en la última línea le quitamos el servicio de ejecución al archivo y en los permisos se reemplaza la s minúscula por la S mayúsculas.
 
+{:.subsection}
 ### SGID
 
 El bit SGID es lo mismo que SUID, pero a nivel de grupo. Esto es, todo archivo que tenga activo el SGID, al ser ejecutado, tendrás los privilegios del grupo al que pertenece.

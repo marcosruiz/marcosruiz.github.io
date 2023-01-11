@@ -3,7 +3,7 @@ title: "John the Ripper"
 date: 2023-01-01 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr, teoría, seguridad activa]
-img_path: /assets/img/normativa-seguridad-proteccion-datos/
+img_path: /assets/img/john-the-ripper/
 ---
 
 ## ¿Qué es John The Ripper?
