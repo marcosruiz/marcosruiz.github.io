@@ -13,7 +13,7 @@ E-learning proviene del inglés y significa electronic learning. Este concepto h
 Asimismo, el e-learning también se asocia a veces de manera errónea con el uso de ordenadores o dispositivos móviles dentro de la clase. De esta manera, también se habla de las metodologías de b-learning y m-learning que, si bien no son exactamente lo mismo que el e-learning, están relacionadas:
 
 - **B-learning** o blended learning: se trata de un aprendizaje bimodal o híbrido, esto es, la mezcla de formación telemática con docencia en las aulas.
-- **M-learning**: es una metodología de aprendizaje virtual que se da únicamente por medio de dispositivos móviles. Para ello, se utilizan diferentes formatos, desde vídeos, teleconferencias, diapositivas, textos hasta aplicaciones o plataformas online que contienen la información gamificada, es decir, en las que se aprende jugando.
+- **M-learning** o mobile learning: es una metodología de aprendizaje virtual que se da únicamente por medio de dispositivos móviles. Para ello, se utilizan diferentes formatos, desde vídeos, teleconferencias, diapositivas, textos hasta aplicaciones o plataformas online que contienen la información gamificada, es decir, en las que se aprende jugando.
 
 ### Beneficios del e-learning
 
@@ -31,11 +31,11 @@ En otras palabras, es el sitio (infraestructura tecnológica) en el que podemos 
 
 A la hora de valorar un LMS has de reconocer funcionalidades tan valiosas como las siguientes:
 
-- Disposición de contenidos: poner al alcance de los alumnos el material audiovisual del curso y las herramientas de comunicación e interacción que necesita para su formación.
-- Registro de usuarios: capacidad de inscribir a todos los actores que intervienen en el proceso formativo.
-- Seguimiento de alumnos: monitorear la evolución de los estudiantes (puntuación, tiempo dedicado, etc.).
-- Evaluación de progresos: medir la evolución de los alumnos con las herramientas que necesita el profesor para controlar si asimilan el material.
-- Generación de informes automáticos: ahondar en el comportamiento del estudiante en el transcurso del curso.
+- **Disposición de contenidos**: poner al alcance de los alumnos el material audiovisual del curso y las herramientas de comunicación e interacción que necesita para su formación.
+- **Registro de usuarios**: capacidad de inscribir a todos los actores que intervienen en el proceso formativo.
+- **Seguimiento de alumnos**: monitorear la evolución de los estudiantes (puntuación, tiempo dedicado, etc.).
+- **Evaluación de progresos**: medir la evolución de los alumnos con las herramientas que necesita el profesor para controlar si asimilan el material.
+- **Generación de informes automáticos**: ahondar en el comportamiento del estudiante en el transcurso del curso.
 
 Un LMS es una buena opción, tanto para empresas que apoyen la formación interna de sus empleados, como para instituciones educativas.
 
@@ -45,7 +45,7 @@ Antes de explicar la diferencia entre LMS y LCMS debemos dedicarle unas palabras
 
 En primer lugar, tienes que saber que LCMS viene de la combinación entre LMS y CMS. 
 
-CMS es un sistema de gestión de contenidos. ‘Contenidos’ es la palabra clave.
+CMS es un sistema de gestión de contenidos. "Contenidos" es la palabra clave.
 
 Y cuando hablamos de contenidos, lo hacemos en general, sin referirnos a material docente.
 
@@ -71,7 +71,7 @@ Por otra parte, los CMS permiten crear contenidos, algo que no todas las platafo
 
 Siendo muy teóricos, diríamos que existen algunas diferencias muy visibles entre un LCMS y LMS. 
 
-Es cierto que, con el tiempo, se ha popularizado la forma de llamar a los LCMS por el término LMS, que es el más ‘coloquial’.
+Es cierto que, con el tiempo, se ha popularizado la forma de llamar a los LCMS por el término LMS, que es el más "coloquial".
 
 Inicialmente, y esta sería la diferencia principal, un LMS se usaba para gestionar todas las tareas de un mismo contexto de formación virtual. 
 
@@ -123,9 +123,6 @@ Algunos de los beneficios de las LCMS son los siguientes:
 | Chamilo | Libre |
 | Docebo | Comercial y de pago |
 | Edmodo, cerró el 22/11/22 | Comercial |
-
-{:.question}
-¿Cuáles de estos LMS son libres y cuáles comerciales?
 
 ## Bibliografía
 
