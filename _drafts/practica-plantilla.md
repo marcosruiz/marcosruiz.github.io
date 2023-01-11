@@ -9,16 +9,6 @@ tags: [packet tracer, redes locales, smr, práctica]
 
 El objetivo de esta práctica es 
 
-## Actividades
-
-A continuación se listan las actividades que se deben realizar para esta práctica.
-
-{:.activity}
-### Primera actividad
-
-{:.activity}
-### Segunda actividad
-
 ## Entrega y presentación
 
 La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del fichero ZIP sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.zip".
@@ -36,5 +26,17 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 7. El documento no debe contener faltas ortográficas.
 8. Los comandos y ficheros de configuración que hayas utilizado deben quedar reflejados en el PDF de la entrega en texto para que permitirte copiar y pegar el día del examen todos los comandos de una manera rápida.
 9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
+
+## Actividades
+
+A continuación se listan las actividades que se deben realizar para esta práctica.
+
+{:.activity}
+### Primera actividad
+
+{:.activity}
+### Segunda actividad
+
+
 
 ## Bibliografía
