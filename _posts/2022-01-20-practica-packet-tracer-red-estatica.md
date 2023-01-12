@@ -11,9 +11,9 @@ El objetivo de esta práctica es que el alumno se familiarice con la herramienta
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del fichero ZIP sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.zip".
+La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguiente formato "\<Apellidos\>\_\<Nombre\>\_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del fichero ZIP sería "RuizGarcía\_Marcos\_Práctica\<NúmeroDeLaPráctica\>.zip".
 
-En la raíz del fichero ZIP deben encontrarse el documento PDF con el nombre "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.pdf" y las actividades de Packet Tracer en formato PKT con el nombre "actividad_\<NúmeroDeActividad\>.pkt".
+En la raíz del fichero ZIP deben encontrarse el documento PDF con el nombre "\<Apellidos\>\_\<Nombre\>\_Práctica\<NúmeroDeLaPráctica\>.pdf" y las actividades de Packet Tracer en formato PKT con el nombre "actividad\_\<NúmeroDeActividad\>.pkt".
 
 Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 
