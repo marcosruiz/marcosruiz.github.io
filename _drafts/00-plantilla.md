@@ -44,6 +44,9 @@ Ejemplo
 > 
 {:.prompt-error}
 
+> 
+{:.prompt-tip}
+
 ```html
 
 ```

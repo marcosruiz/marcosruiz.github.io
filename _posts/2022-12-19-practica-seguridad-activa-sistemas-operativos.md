@@ -74,16 +74,32 @@ En el caso que a menudo tengamos que dejar nuestro equipo informático desatendi
 {:.activity}
 ### Crear usuario profesorMrug
 
-Usando los comandos useradd y passwd, realiza las siguientes acciones:
+Usando los comandos `groupadd`, `useradd` y `passwd`, realiza las siguientes acciones:
 
 - Crear una cuenta de usuario llamado "profesorMrug" perteneciente al grupo "profesores" usando el terminal. 
 - Esta cuenta de usuario debe esperar 10 días después de la inserción de una nueva contraseña para poder cambiarla; su contraseña será válida durante 60 días; se le avisará 3 días antes de que deba cambiarla; si no cambia la contraseña después de los 60 días, dispone de 7 días antes de que sea bloqueada.
 
 > Recuerda que puedes ejecutar los comandos `useradd --help` y `passwd --help` para averiguar como se usan estos programas.
-{:.prompt-info}
+{:.prompt-tip}
+
+> Personalmente he seguido los pasos de el tutorial [How to Add User to Group in Linux](https://linuxize.com/post/how-to-add-user-to-group-in-linux/) para la parte de creación y asignación de grupo.
+{:.prompt-tip}
+
+<!--
+
+```console
+$sudo groupadd profesores
+$sudo useradd profesorMrug --create-home -g profesores
+$sudo passwd -n 10 -x 60 -w 3 -i 7 profesorMrug
+```
+
+ -->
 
 {:.question}
 ¿Qué diferencia hay entre useradd y adduser?
+
+{:.question}
+¿Cómo comprobamos que el usuario está realmente creado?
 
 > Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
@@ -92,7 +108,7 @@ Usando los comandos useradd y passwd, realiza las siguientes acciones:
 {:.activity}
 ### Crear usuario alumno\<tuUsuario\>
 
-Usando los comandos useradd y passwd, realiza las siguientes acciones:
+Usando los comandos `groupadd`, `useradd` y `passwd`, realiza las siguientes acciones:
 
 - Crear una cuenta de usuario llamado "alumno\<tuUsuario\>" perteneciente al grupo "alumnos" usando el terminal. 
 - Este usuario debe cambiar la contraseña inmediatamente, tendrá validez de 30 días y se avisara un día antes de que debe volverla a cambiar. Si no la cambia, se bloqueará la cuenta en tres días.
@@ -100,13 +116,45 @@ Usando los comandos useradd y passwd, realiza las siguientes acciones:
 > Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
 
+<!--
+
+```console
+$sudo groupadd alumnos
+$sudo useradd alumnoMrug --create-home -g alumnos
+$sudo passwd -n 10 -x 30 -w 3 -i 7 alumnoMrug
+```
+
+ -->
+
 {:.activity}
 ### Haz que los usuarios puedan ejecutar el comando sudo
 
-Utilizando el terminal haz que los dos usuarios creados anteriormente puedan ejecutar el comando sudo.
+Utilizando el terminal haz que los dos usuarios creados anteriormente puedan ejecutar el comando `sudo`. 
+
+> Personalmente he seguido los pasos del tutorial [How to Add User to Sudoers in Ubuntu](https://linuxize.com/post/how-to-add-user-to-sudoers-in-ubuntu/).
+{:.prompt-tip}
 
 {:.question}
 ¿De qué dos maneras se puede realizar esta tarea?
+
+<!-- 
+Se puede añadir al fichero /etc/sudoers la siguiente línea:
+
+```
+profesorMrug  ALL=(ALL) NOPASSWD:ALL
+```{: file="/etc/sudoers" }
+
+O se puede añadir al grupo sudo con el siguiente comando:
+
+```console
+$sudo usermod -a -G <groupname> <username>
+```
+
+```console
+$sudo usermod -a -G sudo profesorMrug
+```
+
+ -->
 
 > Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
@@ -116,13 +164,62 @@ Utilizando el terminal haz que los dos usuarios creados anteriormente puedan eje
 
 Define una cuota de disco de 1 GB para el grupo "profesores" y otra cuota de disco de 100 MB para el grupo "alumnos". Indica los comandos utilizados en texto plano.
 
+> Personalmente he seguido los pasos del tutorial [How To Set Filesystem Quotas on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-filesystem-quotas-on-ubuntu-20-04)
+{:.prompt-tip}
+
+<!-- 
+
+Para todo el grupo:
+
+```console
+$sudo setquota -g profesores 1G 2G 0 0 /
+$sudo setquota -g alumnos 100M 200M 0 0 /
+```
+
+Para cada usuario del grupo:
+
+```console
+$sudo setquota -g profesores 1G 2G 0 0 /
+$sudo setquota -g alumnos 100M 200M 0 0 /
+```
+
+-->
+
+{:.question}
+¿Qué dos tipos de cuotas existen y cuales son sus diferencias? ¿Cuál as usado tú para poner el límite? ¿Por qué?
+
+{:.question}
+¿Puedo dar cuotas a usuarios pertenecientes a un grupo de manera individual? En caso de que exista un comando, ¿cómo se utilizaría?
+
+<!-- 
+
+Para cada usuario del grupo deberíamos usar el comando:
+
+```console
+$edquota -p <prototypeUser> <targetUser>
+```
+
+Dónde `<prototypeUser>` es el usuario con unas cuotas ya establecidas y `<targetUser>` es el usuario al que queremos copiar dichas cuotas
+
+También se pueden aplicar caracteres comodín:
+
+```console
+$edquota -p <prototypeUser> *
+```
+
+-->
+
 > Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
+
 
 {:.activity}
 ### Cifrado de particiones
 
-A través de línea de comandos con LUKS crea y monta en `/mnt/particionSegura\<tuUsuario\>` una partición cifrada. Indica los comandos utilizados en texto plano. Puedes seguir los pasos marcados en el artículo [Cifra discos, particiones y archivos con LUKS en tu servidor Linux](https://www.redeszone.net/tutoriales/seguridad/cifrar-discos-particiones-archivos-luks-linux/).
+A través de línea de comandos con LUKS crea y monta en `/mnt/particionSegura\<tuUsuario\>` una partición cifrada. Indica los comandos utilizados en texto plano. 
+
+> Puedes seguir los pasos marcados en el artículo [Cifra discos, particiones y archivos con LUKS en tu servidor Linux](https://www.redeszone.net/tutoriales/seguridad/cifrar-discos-particiones-archivos-luks-linux/).
+{:.prompt-tip}
 
 {:.question}
 ¿Qué significan las siglas de LUKS?
@@ -165,6 +262,12 @@ Instala la herramienta Lynis en tu sistema GNU Linux e indica paso a paso la inf
 ### Lastlog
 
 Averigua el propósito del comando para GNU Linux llamado lastlog. Indica cómo sería el comando para que muestre los inicios de sesión de los últimos cinco días.
+
+<!-- 
+
+$lastlog --time 5 
+
+-->
 
 {:.activity}
 ### Utmpdump
@@ -282,3 +385,4 @@ Sigue los pasos de este artículo [Utilización de ACLs en el sistema de archivo
 
 ## Bibliografía
 
+- 
