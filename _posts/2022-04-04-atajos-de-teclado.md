@@ -113,6 +113,9 @@ Si escribes `ul>li*5` y le das al Enter se te generará el siguiente código:
 ## Extensiones Visual Studio Code
 
 - Live Preview
+- Code Runner
+- Stylelint (necesario npm)
+- ESLint (necesario npm)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sdbl-LpIoQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
