@@ -78,6 +78,9 @@ _UEFI_
 {:.question}
 ¿Qué diferencias hay entre BIOS, EFI y UEFI?
 
+{:.question}
+¿Qué es GPT? ¿Y MBR?
+
 {:.subsection}
 ### El Boot Manager
 
@@ -91,6 +94,9 @@ Se usa principalmente en sistemas operativos GNU Linux.
 
 {:.question}
 ¿Se puede fijar el orden de los dispositivos de arranque como deseemos?
+
+{:.question}
+¿Se puede poner contraseña al GRUB?
 
 {:.subsection}
 ### Cifrado de particiones
@@ -136,14 +142,27 @@ Las tarjetas son de dos tipos: sencillas (magnéticas, RFID) o complejas (chip).
 Las tarjetas con chip son más seguras pero más caras, por lo que se utilizan en ocasiones especiales. Hay dos tipos:
 
 - **Las que son simplemente un dispositivo de almacenamiento**: contiene nuestras claves para que las lea el dispositivo donde introducimos la tarjeta.
-- **Las que constituyen un dispositivo de procesamiento**: contiene nuestras claves, pero nunca salen de la tarjeta. El chip se limita a cifrar con ellas algún desafió que lanza el dispositivo por donde introducimos la tarjeta.
+- **Las que constituyen un dispositivo de procesamiento**: contiene nuestras claves, pero nunca salen de la tarjeta. El chip se limita a cifrar con ellas algún desafío que lanza el dispositivo por donde introducimos la tarjeta.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Es lo mismo RFID que NFC?</summary>
+  <div class="card-body" markdown="1">
+
+RFID es el proceso en el cual objetos son identificados de manera única usando ondas de radio y NFC es una tecnología especializada dentro de la familia de tecnologías RFID.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 {:.subsection}
 ### Biometría
 
-La seguridad del mecanismo usuario/contraseña es suficiente para la mayoría de las aplicaciones. La tarjeta es cómoda. Pero cualquiera podría sentarse en nuestro ordenador, insertar nuestra tarjeta (robada o duplicada), introducir nuestro usuario y contraseña y acceder al sistema como si fuéramos nosotros mismos. Si la información que manejamos es importante, aplicaremos la estrategia «algo que eres», para complementar el mecanismo usuario/contraseña con un control más: la biometría. 
+La seguridad del mecanismo usuario/contraseña es suficiente para la mayoría de las aplicaciones. La tarjeta es cómoda. Pero cualquiera podría sentarse en nuestro ordenador, insertar nuestra tarjeta (robada o duplicada), introducir nuestro usuario y contraseña y acceder al sistema como si fuéramos nosotros mismos. Si la información que manejamos es importante, aplicaremos la estrategia «algo que eres», para complementar el mecanismo usuario/contraseña con un control más: la biometría.
 
 La biometría consiste en identificar alguna característica física del sujeto: la huella dactilar, el ojo, la voz. La persona o personas autorizadas deben grabar primero su característica física. Con esta técnica aumentaremos la seguridad.
+
+{:.question}
+¿Conoces alguna película que se use la biometría como método de autenticación?
 
 {:.subsection}
 ### Elevación de privilegios
@@ -157,6 +176,9 @@ Pero hay determinadas situaciones (instalación de nuevos programas, modificaci�
 Una solución es salir del usuario actual y entrar como administrador, pero es más sencillo solicitar, de manera puntual, una elevación de privilegios. Consiste en pedirle al sistema ejecutar un determinado programa con permisos de administrador. Se aplica solo a ese programa y solo a esa ejecución: no afecta a las aplicaciones abiertas antes o después, ni siquiera cuando abramos ese mismo programa más adelante. 
 
 En cuanto al usuario, dependiendo de la configuración del sistema, simplemente aparecerá una ventana de confirmación o nos pedirá una nueva autenticación. 
+
+{:.question}
+¿Qué comando usamos para elevar nuestros privilegios en GNU Linux? ¿Y en Windows?
 
 {:.section}
 ## Cuotas

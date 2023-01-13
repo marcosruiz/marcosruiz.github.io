@@ -21,7 +21,7 @@ pin: true
 
 ## Evaluación 2
 
-- [35 comandos básicos de GNU Linux](/posts/comandos-basicos-gnu-linux/)
+- [35 comandos básicos de GNU Linux](/posts/comandos-basicos-gnu-linux/) con el artículo [Permisos GNU Linux](/posts/permisos-gnu-linux) dentro del mismo.
 - UD5 - [Seguridad activa de sistemas operativos](/posts/seguridad-activa-sistemas-operativos)
 - UD6 - [Seguridad activa de acceso a redes](/posts/seguridad-activa-acceso-redes/)
 - UD7 - [Seguridad activa de control de redes](/posts/seguridad-activa-control-redes/)
