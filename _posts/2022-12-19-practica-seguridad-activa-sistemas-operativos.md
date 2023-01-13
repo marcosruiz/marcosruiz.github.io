@@ -29,7 +29,7 @@ La entrega de esta práctica debe ser un documento PDF con un nombre en el sigui
 
 ## Actividades
 
-A continuación se listan las actividades que se deben realizar.
+A continuación se listan las actividades que se deben realizar. Todas las actividades se realizarán usando la máquina virtual de Zorin OS salvo que se especifique lo contrario.
 
 {:.activity}
 ### Contraseña a la BIOS
@@ -59,15 +59,6 @@ En tu Zorin OS Lite, añade la contraseña "tiempos" al GRUB siguiendo los pasos
 {:.question}
 ¿Cuál es la versión del GRUB que estás usando?
 
-<!-- 
-
-En entornos laborales y profesionales.
-En situaciones en los que un equipo es compartido por varias personas.
-En el caso que usemos un ordenador portátil, y no lo tengamos permanente en casa usándolo como un ordenador de sobremesa.
-En el caso que a menudo tengamos que dejar nuestro equipo informático desatendido en lugares donde transiten personas conocidas/desconocidas.
-
--->
-
 > 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
 
@@ -85,18 +76,8 @@ Usando los comandos `groupadd`, `useradd` y `passwd`, realiza las siguientes acc
 > Personalmente he seguido los pasos de el tutorial [How to Add User to Group in Linux](https://linuxize.com/post/how-to-add-user-to-group-in-linux/) para la parte de creación y asignación de grupo.
 {:.prompt-tip}
 
-<!--
-
-```console
-$sudo groupadd profesores
-$sudo useradd profesorMrug --create-home -g profesores
-$sudo passwd -n 10 -x 60 -w 3 -i 7 profesorMrug
-```
-
- -->
-
 {:.question}
-¿Qué diferencia hay entre useradd y adduser?
+¿Qué diferencia hay entre `useradd` y `adduser`?
 
 {:.question}
 ¿Cómo comprobamos que el usuario está realmente creado?
@@ -116,16 +97,6 @@ Usando los comandos `groupadd`, `useradd` y `passwd`, realiza las siguientes acc
 > Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
 
-<!--
-
-```console
-$sudo groupadd alumnos
-$sudo useradd alumnoMrug --create-home -g alumnos
-$sudo passwd -n 10 -x 30 -w 3 -i 7 alumnoMrug
-```
-
- -->
-
 {:.activity}
 ### Haz que los usuarios puedan ejecutar el comando sudo
 
@@ -136,25 +107,6 @@ Utilizando el terminal haz que los dos usuarios creados anteriormente puedan eje
 
 {:.question}
 ¿De qué dos maneras se puede realizar esta tarea?
-
-<!-- 
-Se puede añadir al fichero /etc/sudoers la siguiente línea:
-
-```
-profesorMrug  ALL=(ALL) NOPASSWD:ALL
-```{: file="/etc/sudoers" }
-
-O se puede añadir al grupo sudo con el siguiente comando:
-
-```console
-$sudo usermod -a -G <groupname> <username>
-```
-
-```console
-$sudo usermod -a -G sudo profesorMrug
-```
-
- -->
 
 > Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
@@ -167,47 +119,12 @@ Define una cuota de disco de 1 GB para el grupo "profesores" y otra cuota de dis
 > Personalmente he seguido los pasos del tutorial [How To Set Filesystem Quotas on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-filesystem-quotas-on-ubuntu-20-04)
 {:.prompt-tip}
 
-<!-- 
-
-Para todo el grupo:
-
-```console
-$sudo setquota -g profesores 1G 2G 0 0 /
-$sudo setquota -g alumnos 100M 200M 0 0 /
-```
-
-Para cada usuario del grupo:
-
-```console
-$sudo setquota -g profesores 1G 2G 0 0 /
-$sudo setquota -g alumnos 100M 200M 0 0 /
-```
-
--->
-
 {:.question}
-¿Qué dos tipos de cuotas existen y cuales son sus diferencias? ¿Cuál as usado tú para poner el límite? ¿Por qué?
+¿Qué dos tipos de límites en una cuota existen y cuales son sus diferencias? ¿Cuál as usado tú para poner el límite? ¿Por qué?
 
 {:.question}
 ¿Puedo dar cuotas a usuarios pertenecientes a un grupo de manera individual? En caso de que exista un comando, ¿cómo se utilizaría?
 
-<!-- 
-
-Para cada usuario del grupo deberíamos usar el comando:
-
-```console
-$edquota -p <prototypeUser> <targetUser>
-```
-
-Dónde `<prototypeUser>` es el usuario con unas cuotas ya establecidas y `<targetUser>` es el usuario al que queremos copiar dichas cuotas
-
-También se pueden aplicar caracteres comodín:
-
-```console
-$edquota -p <prototypeUser> *
-```
-
--->
 
 > Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
@@ -216,9 +133,9 @@ $edquota -p <prototypeUser> *
 {:.activity}
 ### Cifrado de particiones
 
-A través de línea de comandos con LUKS crea y monta en `/mnt/particionSegura\<tuUsuario\>` una partición cifrada. Indica los comandos utilizados en texto plano. 
+A través de línea de comandos con LUKS crea y monta en `/media/<tuUsuario>/archivosSeguros`{: .filepath} una partición cifrada de 100MB.
 
-> Puedes seguir los pasos marcados en el artículo [Cifra discos, particiones y archivos con LUKS en tu servidor Linux](https://www.redeszone.net/tutoriales/seguridad/cifrar-discos-particiones-archivos-luks-linux/).
+> Puedes seguir los pasos marcados en el apartado "Cifrar cualquier disco o partición (con pérdida de datos)" del artículo [Cifra discos, particiones y archivos con LUKS en tu servidor Linux](https://www.redeszone.net/tutoriales/seguridad/cifrar-discos-particiones-archivos-luks-linux/).
 {:.prompt-tip}
 
 {:.question}
@@ -240,39 +157,61 @@ Mira el siguiente video para entender que es LVM:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nkJvqfYmyLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-> 📷 Haz una captura que demuestre la realización de la actividad.
+> Indica los comandos utilizados en texto plano. 📷 Haz una captura que demuestre la realización de la actividad.
 {:.prompt-info}
 
 {:.activity}
 ### Lynis
 
-Mira el siguiente vídeo:
+Instala la herramienta Lynis en tu sistema Zorin OS Lite e indica paso a paso la información que muestra el programa. La herramienta se ejecutará utilizando el comando `lynis -c` o `lynis -Q` o `lynis audit system` y compara los apartados que nombra "Systems boy" en el vídeo con los tuyos.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/97tEei4HPOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+A partir del resumen final de vulnerabilidades que nos muestra Lynis, elige una vulnerabilidad diferente al resto de tus compañeros (a poder ser) y explica en que consiste dicha vulnerabilidad y como se arreglaría.
+
+{:.question}
+¿De donde has obtenido la información de cómo corregir una vulnerabilidad?
 
 {:.question}
 ¿Para qué sirve la herramienta Lynis?
 
-Instala la herramienta Lynis en tu sistema GNU Linux e indica paso a paso la información que muestra el programa. La herramienta se ejecutará utilizando el comando `lynis -c` o `lynis -Q` o `lynis audit system`.
-
 {:.question}
-¿Qué secciones muestra Lynis en su análisis?
+A rasgos generales, ¿qué secciones muestra Lynis en su análisis?
+
+{:.activity}
+### (Opcional) Lynis
+
+Instala la herramienta Lynis en un servidor con Apache y con un servidor SSH y analiza la salida de los apartados "Software: webserver", "SSH Support", "Databases" y "PHP".
 
 {:.activity}
 ### Lastlog
 
-Averigua el propósito del comando para GNU Linux llamado lastlog. Indica cómo sería el comando para que muestre los inicios de sesión de los últimos cinco días.
+Averigua el propósito del comando para GNU Linux llamado `lastlog`. Indica cómo sería el comando para que muestre los inicios de sesión de los últimos cinco días.
 
-<!-- 
+Crea un nuevo usuario, haz login con él a través de la GUI y comprueba si aparece este inicio de sesión en `lastlog` con el siguiente comando:
 
-$lastlog --time 5 
+```console
+$lastlog -u <nombreDeUsuario>
+```
 
--->
+¿Por qué ocurre esto?
+
+> Deja reflejado en texto plano los comandos utilizados y sus salidas.
+{:.prompt-info}
 
 {:.activity}
 ### Utmpdump
 
-Averigua el propósito del comando para máquinas GNU Linux utmpdump. Indica qué información de interés es capaz de mostrar.
+Averigua el propósito del comando para máquinas GNU Linux `utmpdump`. Indica qué información de interés es capaz de mostrar.
+
+{:.question}
+¿Qué relación tienen los comandos `utmpdump`, `last` y `lastb`?
+
+{:.question}
+¿Qué significan la información `tty` y `pts` que vemos en las salidas de estos programas?
+
+> Deja reflejado en texto plano los comandos utilizados y sus salidas.
+{:.prompt-info}
 
 {:.activity}
 ### /etc/passwd
@@ -282,7 +221,10 @@ Averigua el propósito del comando para máquinas GNU Linux utmpdump. Indica qu�
 {:.activity}
 ### JohnTheRipper
 
-Instala y obtén la contraseña de tu usuario con JohnTheRipper por fuerza bruta y por ataque de diccionario. Tienes el artículo [John the Ripper](/posts/john-the-ripper) que te servirá de ayuda.
+Crea e instala una máquina virtual de Kali Linux y obtén la contraseña de tu usuario con JohnTheRipper por fuerza bruta y por ataque de diccionario. 
+
+> Tienes el artículo [John the Ripper](/posts/john-the-ripper) que te servirá de ayuda.
+{:.prompt-tip}
 
 {:.question}
 ¿Cuánto tiempo tarda JohnTheRipper en romper la contraseña "tiempos" usando fuerza bruta en tu caso? ¿Y usando el diccionario aportado? ¿Qué características tiene tu máquina Kali?
@@ -293,7 +235,7 @@ Instala y obtén la contraseña de tu usuario con JohnTheRipper por fuerza bruta
 {:.activity}
 ### ACL (Primer impacto)
 
-Mira el siguiente vídeo y realiza los mismos pasos que el vídeo pero con tus usuarios creados anteriormente. En mi caso son mrug y mrug2.
+Mira el siguiente vídeo y realiza los mismos pasos que el vídeo pero con usuarios donde se te identifique y con una partición no cifrada de 100MB.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7F30Aixu8HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -346,7 +288,8 @@ Este plugin permite escanear ficheros haciendo click derecho sobre el mismo.
 
 Rkhunter es una aplicación para línea de comandos que se encarga automáticamente de analizar nuestro sistema en busca de rootkits, malware, scripts maliciosos, backdoors y otro tipo de software potencialmente peligroso en nuestro sistema GNU Linux para saber en todo momento si nuestro sistema se encuentra realmente seguro o de lo contrario estamos siendo víctimas de piratas informáticos. 
 
-Siguiendo los pasos del artículo [How to Install Rkhunter on Ubuntu 20.04](https://blog.eldernode.com/install-rkhunter-on-ubuntu/) instalar y configurar escaneos regulares. También puedes usar 
+> Personalmente he seguido los pasos del artículo [How to Install Rkhunter on Ubuntu 20.04](https://blog.eldernode.com/install-rkhunter-on-ubuntu/) para instalar y configurar escaneos regulares.
+{:.prompt-info}
 
 A modo de resumen la manera de instalar, actualizar y usar Rkhunter es la siguiente:
 
@@ -365,12 +308,8 @@ A modo de resumen la manera de instalar, actualizar y usar Rkhunter es la siguie
 {:.question}
 ¿Qué tres programas conocemos ya para abrir ficheros en el propio terminal?
 
-<!-- Vi, vim y nano -->
-
 {:.question}
 ¿Qué es CRON? ¿Dónde está el script de RkHunter que se ejecuta diariamente?
-
-<!-- En /etc/cron.daily/rkhunter -->
 
 > 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
@@ -380,9 +319,4 @@ A modo de resumen la manera de instalar, actualizar y usar Rkhunter es la siguie
 
 Sigue los pasos de este artículo [Utilización de ACLs en el sistema de archivos](https://sites.google.com/site/vaisereso/tutoriales-y-trucos/acls-en-linux).
 
-
-
-
 ## Bibliografía
-
-- 
