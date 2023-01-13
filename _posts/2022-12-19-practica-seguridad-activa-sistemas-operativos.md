@@ -29,7 +29,7 @@ La entrega de esta práctica debe ser un documento PDF con un nombre en el sigui
 
 ## Actividades
 
-A continuación se listan las actividades que se deben realizar.
+A continuación se listan las actividades que se deben realizar. Todas las actividades se realizarán usando la máquina virtual de Zorin OS salvo que se especifique lo contrario.
 
 {:.activity}
 ### Contraseña a la BIOS
@@ -133,9 +133,9 @@ Define una cuota de disco de 1 GB para el grupo "profesores" y otra cuota de dis
 {:.activity}
 ### Cifrado de particiones
 
-A través de línea de comandos con LUKS crea y monta en `/mnt/particionSegura/<tuUsuario>`{: .filepath} una partición cifrada. Indica los comandos utilizados en texto plano. 
+A través de línea de comandos con LUKS crea y monta en `/media/<tuUsuario>/archivosSeguros`{: .filepath} una partición cifrada de 100MB.
 
-> Puedes seguir los pasos marcados en el artículo [Cifra discos, particiones y archivos con LUKS en tu servidor Linux](https://www.redeszone.net/tutoriales/seguridad/cifrar-discos-particiones-archivos-luks-linux/).
+> Puedes seguir los pasos marcados en el apartado "Cifrar cualquier disco o partición (con pérdida de datos)" del artículo [Cifra discos, particiones y archivos con LUKS en tu servidor Linux](https://www.redeszone.net/tutoriales/seguridad/cifrar-discos-particiones-archivos-luks-linux/).
 {:.prompt-tip}
 
 {:.question}
@@ -157,34 +157,61 @@ Mira el siguiente video para entender que es LVM:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nkJvqfYmyLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-> 📷 Haz una captura que demuestre la realización de la actividad.
+> Indica los comandos utilizados en texto plano. 📷 Haz una captura que demuestre la realización de la actividad.
 {:.prompt-info}
 
 {:.activity}
 ### Lynis
 
-Mira el siguiente vídeo:
+Instala la herramienta Lynis en tu sistema Zorin OS Lite e indica paso a paso la información que muestra el programa. La herramienta se ejecutará utilizando el comando `lynis -c` o `lynis -Q` o `lynis audit system` y compara los apartados que nombra "Systems boy" en el vídeo con los tuyos.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/97tEei4HPOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+A partir del resumen final de vulnerabilidades que nos muestra Lynis, elige una vulnerabilidad diferente al resto de tus compañeros (a poder ser) y explica en que consiste dicha vulnerabilidad y como se arreglaría.
+
+{:.question}
+¿De donde has obtenido la información de cómo corregir una vulnerabilidad?
 
 {:.question}
 ¿Para qué sirve la herramienta Lynis?
 
-Instala la herramienta Lynis en tu sistema GNU Linux e indica paso a paso la información que muestra el programa. La herramienta se ejecutará utilizando el comando `lynis -c` o `lynis -Q` o `lynis audit system`.
-
 {:.question}
-¿Qué secciones muestra Lynis en su análisis?
+A rasgos generales, ¿qué secciones muestra Lynis en su análisis?
+
+{:.activity}
+### (Opcional) Lynis
+
+Instala la herramienta Lynis en un servidor con Apache y con un servidor SSH y analiza la salida de los apartados "Software: webserver", "SSH Support", "Databases" y "PHP".
 
 {:.activity}
 ### Lastlog
 
-Averigua el propósito del comando para GNU Linux llamado lastlog. Indica cómo sería el comando para que muestre los inicios de sesión de los últimos cinco días.
+Averigua el propósito del comando para GNU Linux llamado `lastlog`. Indica cómo sería el comando para que muestre los inicios de sesión de los últimos cinco días.
 
+Crea un nuevo usuario, haz login con él a través de la GUI y comprueba si aparece este inicio de sesión en `lastlog` con el siguiente comando:
+
+```console
+$lastlog -u <nombreDeUsuario>
+```
+
+¿Por qué ocurre esto?
+
+> Deja reflejado en texto plano los comandos utilizados y sus salidas.
+{:.prompt-info}
 
 {:.activity}
 ### Utmpdump
 
-Averigua el propósito del comando para máquinas GNU Linux utmpdump. Indica qué información de interés es capaz de mostrar.
+Averigua el propósito del comando para máquinas GNU Linux `utmpdump`. Indica qué información de interés es capaz de mostrar.
+
+{:.question}
+¿Qué relación tienen los comandos `utmpdump`, `last` y `lastb`?
+
+{:.question}
+¿Qué significan la información `tty` y `pts` que vemos en las salidas de estos programas?
+
+> Deja reflejado en texto plano los comandos utilizados y sus salidas.
+{:.prompt-info}
 
 {:.activity}
 ### /etc/passwd
@@ -194,7 +221,10 @@ Averigua el propósito del comando para máquinas GNU Linux utmpdump. Indica qu�
 {:.activity}
 ### JohnTheRipper
 
-Instala y obtén la contraseña de tu usuario con JohnTheRipper por fuerza bruta y por ataque de diccionario. Tienes el artículo [John the Ripper](/posts/john-the-ripper) que te servirá de ayuda.
+Crea e instala una máquina virtual de Kali Linux y obtén la contraseña de tu usuario con JohnTheRipper por fuerza bruta y por ataque de diccionario. 
+
+> Tienes el artículo [John the Ripper](/posts/john-the-ripper) que te servirá de ayuda.
+{:.prompt-tip}
 
 {:.question}
 ¿Cuánto tiempo tarda JohnTheRipper en romper la contraseña "tiempos" usando fuerza bruta en tu caso? ¿Y usando el diccionario aportado? ¿Qué características tiene tu máquina Kali?
@@ -205,7 +235,7 @@ Instala y obtén la contraseña de tu usuario con JohnTheRipper por fuerza bruta
 {:.activity}
 ### ACL (Primer impacto)
 
-Mira el siguiente vídeo y realiza los mismos pasos que el vídeo pero con tus usuarios creados anteriormente. En mi caso son mrug y mrug2.
+Mira el siguiente vídeo y realiza los mismos pasos que el vídeo pero con usuarios donde se te identifique y con una partición no cifrada de 100MB.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7F30Aixu8HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -258,7 +288,8 @@ Este plugin permite escanear ficheros haciendo click derecho sobre el mismo.
 
 Rkhunter es una aplicación para línea de comandos que se encarga automáticamente de analizar nuestro sistema en busca de rootkits, malware, scripts maliciosos, backdoors y otro tipo de software potencialmente peligroso en nuestro sistema GNU Linux para saber en todo momento si nuestro sistema se encuentra realmente seguro o de lo contrario estamos siendo víctimas de piratas informáticos. 
 
-Siguiendo los pasos del artículo [How to Install Rkhunter on Ubuntu 20.04](https://blog.eldernode.com/install-rkhunter-on-ubuntu/) instalar y configurar escaneos regulares. También puedes usar 
+> Personalmente he seguido los pasos del artículo [How to Install Rkhunter on Ubuntu 20.04](https://blog.eldernode.com/install-rkhunter-on-ubuntu/) para instalar y configurar escaneos regulares.
+{:.prompt-info}
 
 A modo de resumen la manera de instalar, actualizar y usar Rkhunter es la siguiente:
 
