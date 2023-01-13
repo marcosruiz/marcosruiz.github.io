@@ -59,15 +59,6 @@ En tu Zorin OS Lite, añade la contraseña "tiempos" al GRUB siguiendo los pasos
 {:.question}
 ¿Cuál es la versión del GRUB que estás usando?
 
-<!-- 
-
-En entornos laborales y profesionales.
-En situaciones en los que un equipo es compartido por varias personas.
-En el caso que usemos un ordenador portátil, y no lo tengamos permanente en casa usándolo como un ordenador de sobremesa.
-En el caso que a menudo tengamos que dejar nuestro equipo informático desatendido en lugares donde transiten personas conocidas/desconocidas.
-
--->
-
 > 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
 
@@ -85,18 +76,8 @@ Usando los comandos `groupadd`, `useradd` y `passwd`, realiza las siguientes acc
 > Personalmente he seguido los pasos de el tutorial [How to Add User to Group in Linux](https://linuxize.com/post/how-to-add-user-to-group-in-linux/) para la parte de creación y asignación de grupo.
 {:.prompt-tip}
 
-<!--
-
-```console
-$sudo groupadd profesores
-$sudo useradd profesorMrug --create-home -g profesores
-$sudo passwd -n 10 -x 60 -w 3 -i 7 profesorMrug
-```
-
- -->
-
 {:.question}
-¿Qué diferencia hay entre useradd y adduser?
+¿Qué diferencia hay entre `useradd` y `adduser`?
 
 {:.question}
 ¿Cómo comprobamos que el usuario está realmente creado?
@@ -116,16 +97,6 @@ Usando los comandos `groupadd`, `useradd` y `passwd`, realiza las siguientes acc
 > Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
 
-<!--
-
-```console
-$sudo groupadd alumnos
-$sudo useradd alumnoMrug --create-home -g alumnos
-$sudo passwd -n 10 -x 30 -w 3 -i 7 alumnoMrug
-```
-
- -->
-
 {:.activity}
 ### Haz que los usuarios puedan ejecutar el comando sudo
 
@@ -136,25 +107,6 @@ Utilizando el terminal haz que los dos usuarios creados anteriormente puedan eje
 
 {:.question}
 ¿De qué dos maneras se puede realizar esta tarea?
-
-<!-- 
-Se puede añadir al fichero /etc/sudoers la siguiente línea:
-
-```
-profesorMrug  ALL=(ALL) NOPASSWD:ALL
-```{: file="/etc/sudoers" }
-
-O se puede añadir al grupo sudo con el siguiente comando:
-
-```console
-$sudo usermod -a -G <groupname> <username>
-```
-
-```console
-$sudo usermod -a -G sudo profesorMrug
-```
-
- -->
 
 > Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
@@ -167,47 +119,12 @@ Define una cuota de disco de 1 GB para el grupo "profesores" y otra cuota de dis
 > Personalmente he seguido los pasos del tutorial [How To Set Filesystem Quotas on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-set-filesystem-quotas-on-ubuntu-20-04)
 {:.prompt-tip}
 
-<!-- 
-
-Para todo el grupo:
-
-```console
-$sudo setquota -g profesores 1G 2G 0 0 /
-$sudo setquota -g alumnos 100M 200M 0 0 /
-```
-
-Para cada usuario del grupo:
-
-```console
-$sudo setquota -g profesores 1G 2G 0 0 /
-$sudo setquota -g alumnos 100M 200M 0 0 /
-```
-
--->
-
 {:.question}
-¿Qué dos tipos de cuotas existen y cuales son sus diferencias? ¿Cuál as usado tú para poner el límite? ¿Por qué?
+¿Qué dos tipos de límites en una cuota existen y cuales son sus diferencias? ¿Cuál as usado tú para poner el límite? ¿Por qué?
 
 {:.question}
 ¿Puedo dar cuotas a usuarios pertenecientes a un grupo de manera individual? En caso de que exista un comando, ¿cómo se utilizaría?
 
-<!-- 
-
-Para cada usuario del grupo deberíamos usar el comando:
-
-```console
-$edquota -p <prototypeUser> <targetUser>
-```
-
-Dónde `<prototypeUser>` es el usuario con unas cuotas ya establecidas y `<targetUser>` es el usuario al que queremos copiar dichas cuotas
-
-También se pueden aplicar caracteres comodín:
-
-```console
-$edquota -p <prototypeUser> *
-```
-
--->
 
 > Indica los comandos utilizados en texto plano. 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
@@ -216,7 +133,7 @@ $edquota -p <prototypeUser> *
 {:.activity}
 ### Cifrado de particiones
 
-A través de línea de comandos con LUKS crea y monta en `/mnt/particionSegura\<tuUsuario\>` una partición cifrada. Indica los comandos utilizados en texto plano. 
+A través de línea de comandos con LUKS crea y monta en `/mnt/particionSegura/<tuUsuario>`{: .filepath} una partición cifrada. Indica los comandos utilizados en texto plano. 
 
 > Puedes seguir los pasos marcados en el artículo [Cifra discos, particiones y archivos con LUKS en tu servidor Linux](https://www.redeszone.net/tutoriales/seguridad/cifrar-discos-particiones-archivos-luks-linux/).
 {:.prompt-tip}
@@ -263,11 +180,6 @@ Instala la herramienta Lynis en tu sistema GNU Linux e indica paso a paso la inf
 
 Averigua el propósito del comando para GNU Linux llamado lastlog. Indica cómo sería el comando para que muestre los inicios de sesión de los últimos cinco días.
 
-<!-- 
-
-$lastlog --time 5 
-
--->
 
 {:.activity}
 ### Utmpdump
@@ -365,12 +277,8 @@ A modo de resumen la manera de instalar, actualizar y usar Rkhunter es la siguie
 {:.question}
 ¿Qué tres programas conocemos ya para abrir ficheros en el propio terminal?
 
-<!-- Vi, vim y nano -->
-
 {:.question}
 ¿Qué es CRON? ¿Dónde está el script de RkHunter que se ejecuta diariamente?
-
-<!-- En /etc/cron.daily/rkhunter -->
 
 > 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
@@ -380,9 +288,4 @@ A modo de resumen la manera de instalar, actualizar y usar Rkhunter es la siguie
 
 Sigue los pasos de este artículo [Utilización de ACLs en el sistema de archivos](https://sites.google.com/site/vaisereso/tutoriales-y-trucos/acls-en-linux).
 
-
-
-
 ## Bibliografía
-
-- 
