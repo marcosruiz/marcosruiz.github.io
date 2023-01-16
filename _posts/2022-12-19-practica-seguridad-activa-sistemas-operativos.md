@@ -14,7 +14,7 @@ Duración: 7 h
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un documento PDF con un nombre en el siguiente formato: "\<Apellidos\>_\<Nombre\>_P\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del documento PDF sería "RuizGarcía_Marcos_P07.pdf".
+La entrega de esta práctica debe ser un documento PDF con un nombre en el siguiente formato: `<Apellidos>_<Nombre>_P<NúmeroDeLaPrácticaConDosDígitos>.zip`{: .filepath}. Por ejemplo, en mi caso el nombre del documento PDF sería `RuizGarcía_Marcos_P09.pdf`{: .filepath}.
 
 1. Debe contener una portada con título, nombre de la asignatura, curso, autor y fecha de realización.
 2. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.
@@ -24,7 +24,7 @@ La entrega de esta práctica debe ser un documento PDF con un nombre en el sigui
 6. Cada imagen debe tener un pie de foto la cual tenga el siguiente formato: "Figura \<número\>: \<BreveDescripciónDeLaFigura\>".
 7. El documento no debe contener faltas ortográficas.
 8. Los comandos y ficheros de configuración que hayas utilizado deben quedar reflejados en el PDF de la entrega en texto para permitirte copiar y pegar el día del examen todos los comandos de una manera rápida.
-9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
+9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$sudo apt install neofetch`.
 10. Para las actividades a mano se deberá hacer una foto a la resolución del ejercicio y añadirla al PDF.
 
 ## Actividades
@@ -43,7 +43,7 @@ Entrar en la web [BIOS Simulator Center de Lenovo](https://download.lenovo.com/b
 ### Contraseña al GRUB
 
 > No seas un mandril como yo y haz una instantánea antes de empezar esta actividad.
-{:.prompt-info}
+{:.prompt-warning}
 
 En tu Zorin OS Lite, añade la contraseña "tiempos" al GRUB siguiendo los pasos del artículo [Proteger el grub con contraseña](https://geekland.eu/proteger-el-grub-con-contrasena/). Deberemos usar nuestro usuario habitual (en  mi caso, mrug) en lugar de joan.
 
@@ -150,14 +150,33 @@ A través de línea de comandos con LUKS crea y monta en `/media/<tuUsuario>/arc
 {:.question}
 ¿Es lo mismo un MB que un MiB? ¿Cuál es la diferencia? ¿Qué unidades usa GNU Linux? ¿Y Windows? ¿Y OSX?
 
-{:.question}
-¿Qué significan las siglas LVM? ¿Qué ventajas/desventajas tiene sobre usar un sistema de particiones tradicional?
+> Indica los comandos utilizados en texto plano. 📷 Haz una captura que demuestre la realización de la actividad.
+{:.prompt-info}
 
-Mira el siguiente video para entender que es LVM:
+{:.activity}
+### Teoría de LVM
+
+Mira el siguiente video para entender que es LVM y como se puede usar:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nkJvqfYmyLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-> Indica los comandos utilizados en texto plano. 📷 Haz una captura que demuestre la realización de la actividad.
+Y contesta a las siguientes preguntas:
+
+1. ¿Qué significan las siglas LVM? 
+1. ¿Qué 4 ventajas tiene LVM sobre usar un sistema de particiones tradicional?
+1. ¿LVM tiene alguna desventaja sobre el sistema de particiones tradicional?
+1. ¿Podemos usar LVM con un RAID y con cifrado de particiones al mismo tiempo?
+1. ¿Es posible migrar de un sistema de ficheros tradicional a un LVM?
+
+{:.activity}
+### (Opcional) Práctica de LVM
+
+Añade un disco de 100MB a la máquina virtual de Zorin OS Lite y configúralo para que utilice LVM. Posteriormente crea y añade otro disco de 100MB a la máquina virtual expande la partición lógica que usa LVM de 100MB a 200MB de capacidad.
+
+> Personalmente he usado estos dos artículos [Crear y configurar discos LVM en Ubuntu](https://blog.ragasys.es/crear-y-configurar-discos-lvm-en-ubuntu) y [Crear y configurar discos LVM en Ubuntu](https://blog.ragasys.es/ampliar-particion-lvm-agregando-un-nuevo-disco)
+{:.prompt-tip}
+
+> Indica los comandos utilizados en texto plano. 📷 Haz una captura o varias que demuestren la realización de la actividad.
 {:.prompt-info}
 
 {:.activity}
@@ -233,14 +252,11 @@ Crea e instala una máquina virtual de Kali Linux y obtén la contraseña de tu 
 {:.prompt-info}
 
 {:.activity}
-### ACL (Primer impacto)
+### Introducción a las ACLs
 
-Mira el siguiente vídeo y realiza los mismos pasos que el vídeo pero con usuarios donde se te identifique y con una partición no cifrada de 100MB.
+Mira el siguiente vídeo y realiza los mismos pasos que el vídeo pero con usuarios donde se te identifique y con una partición no cifrada de 100MB. En tu caso la carpeta donde se monte el disco deberá estar en `/media/particionAcl` y tu usuario deberá ser `secretario<tuUsuario>`.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7F30Aixu8HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-> 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
-{:.prompt-info}
 
 {:.question}
 ¿Podemos mezclar las ACL con el sistema de permisos tradicional? ¿Cómo sabemos cuando estamos usando ACL?
@@ -250,7 +266,6 @@ Si añado los permisos 666 a un fichero, pero le indico mediante ACL que, por ej
 
 > 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
-
 
 {:.activity}
 ### ClamAV
@@ -314,9 +329,3 @@ A modo de resumen la manera de instalar, actualizar y usar Rkhunter es la siguie
 > 📷 Haz una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
 
-{:.activity}
-### (Opcional) ACL (Segundo impacto)
-
-Sigue los pasos de este artículo [Utilización de ACLs en el sistema de archivos](https://sites.google.com/site/vaisereso/tutoriales-y-trucos/acls-en-linux).
-
-## Bibliografía

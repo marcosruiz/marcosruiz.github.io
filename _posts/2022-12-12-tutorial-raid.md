@@ -164,7 +164,7 @@ Guardamos la configuración del RAID en `/etc/mdadm/mdadm.conf`{: .filepath} sie
 > ¡Cuidado! Con el comando `mdadm --detail --scan --verbose >> /etc/mdadm/mdadm.conf` cargaremos toda la configuración actual en el fichero `/etc/mdadm/mdadm.conf`{: .filepath}. Si solo queremos añadir la configuración de un RAID deberemos borrar la configuración anterior o hacer `mdadm --detail --scan --verbose /dev/md<númeroDeRaid> >> /etc/mdadm/mdadm.conf`.
 {:.prompt-warning}
 
-Actualizamos para evitar que we nos actualize el nombre del RAID en siguientes inicios:
+Actualizamos para evitar que se nos actualize el nombre del RAID en siguientes inicios:
 
 ```console
 $sudo update-initramfs -u
