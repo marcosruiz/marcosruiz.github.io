@@ -72,6 +72,11 @@ $curl -O http://snowball.tartarus.org/algorithms/spanish/voc.txt
 
 O si no funciona puedes usar [este enlace](/assets/img/practica-seguridad-activa-sistemas-operativos/diccionario.txt) directamente.
 
+## ¿Cuánto tarda un hacker en romper una contraseña?
+
+![Tiempo que toma a un hacker averiguar tu contraseña mediante fuerza bruta](tiempoContrasenas.jpeg)
+_Tiempo que toma a un hacker romper tu contraseña mediante fuerza bruta_
+
 ## Bibliografía
 
 - [¿Qué es John The Ripper?](https://keepcoding.io/blog/que-es-john-the-ripper/)

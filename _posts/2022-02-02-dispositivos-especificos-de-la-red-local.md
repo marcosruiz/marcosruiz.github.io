@@ -143,6 +143,8 @@ Hoy en día también existen switches de capa 3.
 {:.question}
 ¿Qué es un dominio de difusión?
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w_CArT71qHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 #### Ejemplo de conmutación con switches
 
 Si al switch le llega una trama cuya dirección física de destino es MAC4, el conmutador buscará esa dirección entre sus tablas de direcciones, la hallará disponible en el puerto 2 y conmutará la trama para que salga por ese puerto. La trama llegará al hub que está conectado a ese Puerto segundo y el hub la transmitirá por todos sus puertos llegando a las estaciones PC4 [su destino) y PC5.
