@@ -32,8 +32,8 @@ pin: true
 - P06 - [Práctica: RAID por software](/posts/practica-raid/)
 - P07 - [Práctica: Introducción a comandos GNU Linux](/posts/practica-comandos-1)
 - P08 - [Práctica: Permisos en GNU Linux](/posts/practica-permisos-linux)
+- P09 - [Práctica: Seguridad activa de sistemas operativos](/posts/practica-seguridad-activa-sistemas-operativos/)
 
-- [Práctica: Seguridad activa de sistemas operativos](/posts/practica-seguridad-activa-sistemas-operativos/)
 - Práctica: Copias de seguridad con UrBackup  (Seguridad pasiva)
 - Práctica: OpenMediaVault y gestión de usuarios (Seguridad pasiva y activa)
 - Práctica: Servidor Radius (Seguridad activa)
