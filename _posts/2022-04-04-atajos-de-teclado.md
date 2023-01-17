@@ -3,6 +3,7 @@ title: Atajos de teclado
 date: 2022-04-04 18:00:00 +0100
 categories: [General]
 tags: [atajos, shortcuts, vscode, windows, linux, terminal]
+img_path: /assets/img/atajos-de-teclado/
 ---
 
 A continuación se muestran una serie de atajos de teclado muy útiles.
@@ -116,8 +117,22 @@ Si escribes `ul>li*5` y le das al Enter se te generará el siguiente código:
 - Code Runner
 - Stylelint (necesario npm)
 - ESLint (necesario npm)
+- Prettier (necesario npm)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sdbl-LpIoQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Configurar Stylelint y Prettier
+
+Primero necesitas instalar la última versión LTS de Node.js que encontrarás en [este enlace](https://nodejs.org/en/download/).
+
+Posteriormente, puedes seguir los pasos del siguiente tutorial para instalar tanto Stylelint como Prettier en tu proyecto.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EBlXDDzE_8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Con esto podemos conseguir un análisis de nuestro código, el cual nos puede ayudar a mejorar nuestra calidad de código ya que nos avisa de muchos de nuestros errores como se puede ver en la siguiente Figura.
+
+![Mensaje de error de Stylelint](mensajeDeErrorDeStylelint.png)
+_Mensaje de error de Stylelint_
 
 ## Gnome GNU Linux
 
