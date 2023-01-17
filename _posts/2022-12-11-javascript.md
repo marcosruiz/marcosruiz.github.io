@@ -38,12 +38,10 @@ Interpretado.
   </div>
 </details>
 
-
 Leer [La consola Javascript](https://lenguajejs.com/javascript/introduccion/consola-de-javascript/).
 
 {:.question}
 ¿Cómo se abre la consola de JavaScript en un navegador?
-
 
 Leer [¿Cómo funciona Javascript?](https://lenguajejs.com/javascript/introduccion/como-funciona/).
 
@@ -64,29 +62,52 @@ Dos. Usando la etiqueta script e incluyendo un fichero .js externo.
 {:.question}
 ¿Dónde debemos poner la etiqueta script dentro de un documento HTML?
 
-
 Leer [Conceptos básicos](https://lenguajejs.com/javascript/introduccion/conceptos-basicos/).
+
+{:.question}
+¿Cómo se inicializa una variable? ¿Y una constante?
 
 Leer [Comentarios de código](https://lenguajejs.com/javascript/introduccion/comentarios-de-codigo/).
 
+{:.question}
+¿Qué dos tipos de comentarios hay en JavaScript?
+
 Leer [Estructuras de control](https://lenguajejs.com/javascript/introduccion/estructuras-de-control/).
+
+{:.question}
+¿Para que sirven las condiciones en un lenguaje de programación como JavaScript?
 
 Leer [Bucles e iteraciones](https://lenguajejs.com/javascript/introduccion/bucles/).
 
+{:.question}
+¿Cómo se sale de un bucle?
+
+{:.question}
+¿Sabrías diferencias las tres partes de un bucle for?
+
+{:.question}
+¿Cuándo debemos usar un while y cuando un for?
+
 Leer [Operadores básicos](https://lenguajejs.com/javascript/introduccion/operadores-basicos/).
+
+{:.question}
+¿Qué hace el operador aritmético módulo?
+
+{:.question}
+¿Cómo se asigna un valor a una variable?
+
+{:.question}
+¿Cómo se incrementa en uno una variable numérica de la forma más corta posible?
 
 Leer [Indentación de código](https://lenguajejs.com/javascript/introduccion/indentacion/).
 
+{:.question}
+¿Es lo mismo indentar que tabular?
+
 Leer [Convenciones de nombres](https://lenguajejs.com/javascript/introduccion/convenciones-de-nombres/).
 
-Preguntas: 
-
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">
-
-¿Es JavaScript case sensitive?
-
-  </summary>
+  <summary class="card-header question">¿Es JavaScript case sensitive?</summary>
   <div class="card-body" markdown="1">
 
 Si.
@@ -95,16 +116,21 @@ Si.
   </div>
 </details>
 
-
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">
-
-¿Sabrías decir algún estilo de nombrado?
-
-  </summary>
+  <summary class="card-header question">¿Sabrías decir algún estilo de nombrado?</summary>
   <div class="card-body" markdown="1">
 
 camelCase, PascalCase, snake_case, kebab-case, dot.case, Húngara. Yo recomiendo usar camelCase ya que es la más usada.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Cuál es la convención de nombres más usada en JavaScript?</summary>
+  <div class="card-body" markdown="1">
+
+camelCase
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -129,7 +155,6 @@ Leer [Funciones básicas](https://lenguajejs.com/javascript/introduccion/funcion
 
 {:.question}
 ¿En qué consiste la devolución o retorno de valores?
-
 
 ## Fundamentos de JavaScript
 
@@ -158,9 +183,7 @@ Usando la función `typeOf()`.
   </div>
 </details>
 
-
 Leer [Variables y constantes](https://lenguajejs.com/javascript/fundamentos/variables/).
-
 
 <details class="card mb-2">
   <summary class="card-header question" markdown="1">
@@ -175,7 +198,6 @@ Siempre es mejor usar let desde que se creó esta palabra clave en ES6 o ECMAScr
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
-
 
 Leer [Funciones](https://lenguajejs.com/javascript/fundamentos/funciones/). No es necesario leer el apartado de "Clausuras", ni "Ámbito léxico de this".
 
@@ -205,7 +227,46 @@ Leer [Operadores avanzados](https://lenguajejs.com/javascript/fundamentos/operad
 {:.question}
 ¿Para qué sirve el operador coma?
 
+## Number
+
+[¿Qué es un Number?](https://lenguajejs.com/javascript/number/variables-numericas/)
+
+## Strings
+
+Leer [¿Qué es un String?](https://lenguajejs.com/javascript/string/variables-texto/)
+
+## Objetos
+
+Leer [¿Qué son los objetos?](https://lenguajejs.com/javascript/objetos/que-son/)
+
+Leer [Formato JSON](https://lenguajejs.com/javascript/objetos/json/)
+
+## Arrays
+
+Leer [¿Qué es un Array en Javascript?](https://lenguajejs.com/javascript/arrays/que-es/)
+
+## DOM
+
+Leer [¿Qué es el DOM?](https://lenguajejs.com/javascript/dom/que-es/)
+
+Leer [Seleccionar elementos del DOM](https://lenguajejs.com/javascript/dom/seleccionar-elementos-dom/)
+
+## Eventos
+
+Leer [¿Qué son los eventos?](https://lenguajejs.com/javascript/eventos/que-son-eventos/)
+
+## Vídeos que te pueden servir de ayuda
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q9fwkpxr3Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oqXYMnmq3c8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8GTaO9XhA5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+{:.question}
+Si has visto los 3 vídeos deja un comentario de cual te parece mejor.
 
 ## Bibliografía
 
 - [Lenguaje JS](https://lenguajejs.com/)
+- [Aprende X en Y minutos, Donde X=javascript](https://learnxinyminutes.com/docs/es-es/javascript-es/)
