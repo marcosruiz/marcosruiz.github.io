@@ -258,7 +258,7 @@ Además podemos usar el comando umask para ver o modificar dicha máscara de usu
 ```console
 $umask 007
 $umask
-00007
+0007
 ```
 
 {:.question}
@@ -268,7 +268,7 @@ $umask
 ¿Existe una máscara de usuario por cada usuario?
 
 {:.question}
-¿La máscara de usuario afecta a los permisos que podemos dar con chmod?
+¿La máscara de usuario afecta a los permisos que podemos dar con `chmod`?
 
 {:.section}
 ## Permisos especiales
@@ -280,7 +280,7 @@ Existen una serie de permisos especiales en GNU/Linux, que, aunque no son habitu
 
 Se trata de un permiso de acceso que puede ser asignado a ficheros y directorios en sistemas UNIX y similares. Aunque históricamente su fin eran otro, actualmente el sticky bit se utiliza sobre directorios.
 
-Cuando se le asigna a un directorio, significa que los elementos que hay en ese directorio solo pueden ser renombrados o borrados por su propietario o bien por root. El resto de usuarios que tengan permisos de lectura y escritura, los podrán leer y modificar, pero no borrar.
+Cuando se le asigna a un directorio, significa que los elementos que hay en ese directorio **solo pueden ser renombrados o borrados por su propietario o bien por root**. El resto de usuarios que tengan permisos de lectura y escritura, los podrán leer y modificar, pero no borrar.
 
 El sticky bit comúnmente es utilizado para /tmp.
 
@@ -294,22 +294,29 @@ chmod 1775 test
 
 Utilizando el modo de notación simbólica:
 
+- para activar sticky bit
+  
 ```console
-chmod +t /test #para activar sticky bit
-chmod -t /test #para desactivar sticky bit
+chmod +t /test
 ```
 
-Si un usuario intenta borrar un fichero de una carpeta con sticky bit, recibierá el siguiente mensaje:
+- para desactivar sticky bit
 
 ```console
-$ rm -rf hola
-rm: cannot remove ‘hola’: Operation not permitted
+chmod -t /test
+```
+
+Si un usuario intenta borrar un fichero de una carpeta con sticky bit, recibirá el siguiente mensaje:
+
+```console
+$ rm -rf hola.txt
+rm: cannot remove ‘hola.txt’: Operation not permitted
 ```
 
 {:.subsection}
 ### SUID
 
-Cuando se activa el bit SUID sobre un fichero significa que el que lo ejecute va a tener los mismos permisos que el que creó el archivo. Esto es útil en algunas ocasiones, aunque hay que utilizarlo con cuidado, ya que puede acarrear problemas de seguridad.
+Cuando se activa el bit SUID (Set User ID) sobre un fichero significa que el que lo ejecute va a tener los mismos permisos que el que creó el archivo. Esto es útil en algunas ocasiones, aunque hay que utilizarlo con cuidado, ya que puede acarrear problemas de seguridad.
 
 Para activarlo:
 
@@ -327,7 +334,7 @@ Observamos que en la última línea le quitamos el servicio de ejecución al arc
 {:.subsection}
 ### SGID
 
-El bit SGID es lo mismo que SUID, pero a nivel de grupo. Esto es, todo archivo que tenga activo el SGID, al ser ejecutado, tendrás los privilegios del grupo al que pertenece.
+El bit SGID (Set Group ID) es lo mismo que SUID, pero a nivel de grupo. Esto es, todo archivo que tenga activo el SGID, al ser ejecutado, tendrás los privilegios del grupo al que pertenece.
 
 Opción bastante útil si queremos configurar un directorio para colaborar diferentes usuarios. Si se aplica este bit al directorio, cualquier archivo creado en dicho directorio, tendrá asignado el grupo al que pertenece el directorio.
 

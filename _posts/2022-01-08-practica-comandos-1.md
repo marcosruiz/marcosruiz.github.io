@@ -30,9 +30,14 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 ## Actividades
 
 A continuación se listan las actividades que se deben realizar para esta práctica.
+
 Debes realizar todas las actividades en la máquina virtual de Zorin OS.
+
 Tras la realización de cada actividad debes realizar una captura o varias capturas de pantalla que demuestren la realización de dicha actividad.
+
 Cada captura debe tener solo la información que sea necesaria, es decir, debéis evitar que se vea la interfaz de cualquier cosa que no sea la máquina virtual de Zorin.
+
+En lugar de usar la contraseña "chabacier" puedes usar la contraseña habitual que estemos usando este curso.
 
 {:.activity}
 ### Preguntas
@@ -103,8 +108,8 @@ Duración aproximada : 8 minutos
 
 Duración aproximada : 10 minutos
 
-1. Vuelva a la segunda consola virtual (tty2) y modifique la contraseña de "\<tuNombreDeUsuario\>2". ¿Es posible? Utilice el comando `passwd`. Escoja una contraseña autorizada por el sistema (con un mínimo de seis caracteres y no basada en palabras del diccionario).
-2. Cambie su contraseña por "qdgj". ¿Es posible? ¿Por qué?
+1. Vuelva a la segunda consola virtual (tty3) y modifique la contraseña de "\<tuNombreDeUsuario\>2" sin permisos de administrador (es decir, cambia tu propia contraseña). ¿Es posible? Utilice el comando `passwd`. Escoja una contraseña autorizada por el sistema (con un mínimo de seis caracteres y no basada en palabras del diccionario).
+2. Cambie su contraseña por "qdgj". ¿Es posible? ¿Por qué? (Ya te adelanto que no es posible).
 3. Cambie su contraseña por "azertyui". ¿Es posible? ¿Por qué?
 4. Cambie de nuevo su contraseña por "gnulinux". ¿Es posible?
 5. Modifique su contraseña para que vuelva a ser "chabacier". Recuerde esta última para poderse reconectar posteriormente.
@@ -125,7 +130,7 @@ Duración aproximada: 5 minutos
 1. Borre la pantalla. Utilice el comando `clear`.
 2. Visualice la cadena de caracteres "a b" sin las comillas (letras "a" y "b" separadas por un espacio). Utilice el comando `echo`.
 3. Visualice la cadena de caracteres "a  b" sin las comillas (letras "a" y "b" separadas por dos espacios). ¿Qué observa?
-4. Visualice la cadena de caracteres "a   b" sin las comillas (letras "a" y "b" separadas por un tabulador). Puede ser necesario utilizar la secuencia de teclas [Ctrl]-V para desactivar la terminación de palabras con la tecla [Tab]; será entonces posible introducir una tabulación en la línea de comandos. 
+4. Visualice la cadena de caracteres "a   b" sin las comillas (letras "a" y "b" separadas por un tabulador). Puede ser necesario utilizar la secuencia de teclas [Ctrl]-V para desactivar la terminación de palabras con la tecla [Tab]; será entonces posible introducir una tabulación en la línea de comandos.
 
 {:.activity}
 ### Tiempo
@@ -143,7 +148,7 @@ Duración aproximada : 10 minutos
 Duración aproximada : 10 minutos
 
 1. Siempre en la segunda consola virtual texto (tty2), visualice el calendario del año 2005. ¿Ve los días del mes de enero, febrero y marzo? Utilice el comando `cal`.
-2. Desplácese verticalmente con el fin de mostrar las líneas precedentes visualizadas en el terminal.
+2. Desplácese verticalmente con el fin de mostrar las líneas precedentes visualizadas en el terminal (yo no he sido capaz de hacer scroll en un terminal virtualizado tty. Como alternativa puedes usar `tmux`).
 3. Borre la pantalla rápidamente. Utilice el atajo de teclado [Ctrl]-L.
 4. Recuerde los comandos tecleados anteriormente. Utilice el comando `history`.
 5. Recupere los últimos comandos que contengan la cadena de caracteres "ho". Utilice la secuencia de teclas [Ctrl]-R. Si pulsa más veces [Ctrl]-R una vez ha buscado una cadena de carácteres seguirá encontrando comandos cada vez más viejos.
@@ -162,4 +167,3 @@ Duración aproximada : 2 minutos
 ## Bibliografía
 
 - [Prácticas de LINUX](https://www.ediciones-eni.com/open/mediabook.aspx?idR=0a8c20d27a126debe5747e874c9710ed)
-

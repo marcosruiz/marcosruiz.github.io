@@ -75,7 +75,7 @@ O si no funciona puedes usar [este enlace](/assets/img/practica-seguridad-activa
 ## ¿Cuánto tarda un hacker en romper una contraseña?
 
 ![Tiempo que toma a un hacker averiguar tu contraseña mediante fuerza bruta](tiempoContrasenas.jpeg)
-_Tiempo que toma a un hacker romper tu contraseña mediante fuerza bruta_
+_Tiempo que toma a un hacker romperos tu contraseña mediante fuerza bruta_
 
 ## Bibliografía
 
