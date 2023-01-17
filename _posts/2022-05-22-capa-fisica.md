@@ -316,6 +316,7 @@ Para enviar las señales de luz se utilizan hilos muy finos de fibra de vidrio o
   </div>
 </details>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CdAl3cECvJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ##### 3.1.3.1. Fibra monomodo
 
