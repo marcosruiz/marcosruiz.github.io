@@ -11,11 +11,7 @@ img_path: /assets/img/css/
 Leer [¿Qué es Javascript?](https://lenguajejs.com/javascript/introduccion/que-es-javascript/).
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">
-
-¿Es JavaScript un lenguaje de programación?
-
-  </summary>
+  <summary class="card-header question">¿Es JavaScript un lenguaje de programación?</summary>
   <div class="card-body" markdown="1">
 
 Si, ya que es un mecanismo con el que podemos decirle a nuestro navegador que tareas debe realizar, en que orden y cuantas veces.
@@ -25,11 +21,7 @@ Si, ya que es un mecanismo con el que podemos decirle a nuestro navegador que ta
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">
-
-¿Es JavaScript un lenguaje compilado o interpretado?
-
-  </summary>
+  <summary class="card-header question">¿Es JavaScript un lenguaje compilado o interpretado?</summary>
   <div class="card-body" markdown="1">
 
 Interpretado.
@@ -46,11 +38,7 @@ Leer [La consola Javascript](https://lenguajejs.com/javascript/introduccion/cons
 Leer [¿Cómo funciona Javascript?](https://lenguajejs.com/javascript/introduccion/como-funciona/).
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">
-
-¿Cuántas maneras hay de incluir código JavaScript en un documento HTML?
-
-  </summary>
+  <summary class="card-header question">¿Cuántas maneras hay de incluir código JavaScript en un documento HTML?</summary>
   <div class="card-body" markdown="1">
 
 Dos. Usando la etiqueta script e incluyendo un fichero .js externo.
@@ -170,11 +158,7 @@ Leer [Tipos de datos](https://lenguajejs.com/javascript/fundamentos/tipos-de-dat
 ¿Sabrías decir algún tipo de dato de JavaScript?
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">
-
-¿Cómo puedo saber el tipo de dato de una variable?
-
-  </summary>
+  <summary class="card-header question">¿Cómo puedo saber el tipo de dato de una variable?</summary>
   <div class="card-body" markdown="1">
 
 Usando la función `typeOf()`.
@@ -186,11 +170,7 @@ Usando la función `typeOf()`.
 Leer [Variables y constantes](https://lenguajejs.com/javascript/fundamentos/variables/).
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">
-
-Para declarar variables en JavaScript, ¿es mejor usar var, let o const? ¿Desde cuándo?
-
-  </summary>
+  <summary class="card-header question">Para declarar variables en JavaScript, ¿es mejor usar var, let o const? ¿Desde cuándo?</summary>
   <div class="card-body" markdown="1">
 
 Siempre es mejor usar let desde que se creó esta palabra clave en ES6 o ECMAScript 2015.

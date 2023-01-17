@@ -115,6 +115,7 @@ Si escribes `ul>li*5` y le das al Enter se te generará el siguiente código:
 
 - Live Preview
 - Code Runner
+- Error lens
 - Stylelint (necesario npm)
 - ESLint (necesario npm)
 - Prettier (necesario npm)

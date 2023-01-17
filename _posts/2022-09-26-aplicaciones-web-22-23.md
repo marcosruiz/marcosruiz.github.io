@@ -41,6 +41,7 @@ pin: true
 - [Lenguaje JS](https://lenguajejs.com/)
 - [Roadmap.sh](https://roadmap.sh/frontend)
 - [Aprende X en Y mintuos, Donde X=javascript](https://learnxinyminutes.com/docs/es-es/javascript-es/)
+- [Consejos para usar Visual Studio Code](/posts/atajos-de-teclado/#visual-studio-code)
 
 ## Carpeta compartida de la asignatura
 
