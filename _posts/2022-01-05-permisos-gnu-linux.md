@@ -273,23 +273,32 @@ $umask
 {:.section}
 ## Permisos especiales
 
-Existen una serie de permisos especiales en GNU/Linux, que, aunque no son habituales, es necesarios saberlos.
+Existen una serie de permisos especiales en GNU/Linux, que, aunque no son habituales, es necesarios saberlos. Estos son:
+
+- Sticky bit
+- SUID
+- SGID
 
 {:.subsection}
-### Sicky bit
+### Sicky bit (1000)
 
 Se trata de un permiso de acceso que puede ser asignado a ficheros y directorios en sistemas UNIX y similares. Aunque históricamente su fin eran otro, actualmente el sticky bit se utiliza sobre directorios.
 
-Cuando se le asigna a un directorio, significa que los elementos que hay en ese directorio **solo pueden ser renombrados o borrados por su propietario o bien por root**. El resto de usuarios que tengan permisos de lectura y escritura, los podrán leer y modificar, pero no borrar.
+**Cuando se le asigna a un directorio, significa que los elementos que hay en ese directorio solo pueden ser renombrados o borrados por su propietario o bien por root. El resto de usuarios que tengan permisos de lectura y escritura, los podrán leer y modificar, pero no borrar.**
 
-El sticky bit comúnmente es utilizado para /tmp.
+El sticky bit comúnmente es utilizado para la carpeta compartida `/tmp`{: .filepath}.
+
+```console
+$ls -l /
+drwxrwxrwt  13 root root       4096 ene 19 13:09 tmp
+```
 
 Este tipo de permisos sobre un directorio se puede otorgar de varias maneras:
 
 Utilizando el modo octal:
 
 ```console
-chmod 1775 test
+$chmod 1775 test
 ```
 
 Utilizando el modo de notación simbólica:
@@ -297,13 +306,13 @@ Utilizando el modo de notación simbólica:
 - para activar sticky bit
   
 ```console
-chmod +t /test
+$chmod +t /test
 ```
 
 - para desactivar sticky bit
 
 ```console
-chmod -t /test
+$chmod -t /test
 ```
 
 Si un usuario intenta borrar un fichero de una carpeta con sticky bit, recibirá el siguiente mensaje:
@@ -313,44 +322,78 @@ $ rm -rf hola.txt
 rm: cannot remove ‘hola.txt’: Operation not permitted
 ```
 
+{:.question}
+¿Sabrías decir una carpeta del sistema en el que se use el Sticky bit?
+
 {:.subsection}
-### SUID
+### SUID (4000)
 
 Cuando se activa el bit SUID (Set User ID) sobre un fichero significa que el que lo ejecute va a tener los mismos permisos que el que creó el archivo. Esto es útil en algunas ocasiones, aunque hay que utilizarlo con cuidado, ya que puede acarrear problemas de seguridad.
 
-Para activarlo:
+El bit de SUID o setuid se activa sobre un fichero añadiéndole 4000 a la representación octal de los permisos del archivo y otorgándole además permiso de ejecución al propietario del mismo; al hacer esto, en lugar de la x en la primera terna de los permisos, aparecerá una s o una S si no hemos otorgado el permiso de ejecución correspondiente (en este caso el bit no tiene efecto):
+
+- SUID CON efecto ya que si hay permisos de ejecución:
 
 ```console
-$ chmod 4775 hello.sh
-$ ls -l hello.sh
--rwsrwxr-x 1 david david 26 Jun 11 19:02 hello.sh
-chmod -x hello.sh
-$ ls -l hello.sh
--rwSrw-r-- 1 david david 26 Jun 12 19:02 hello.sh
+marcos:~# chmod 4777 /tmp/file1
+marcos:~# ls -l /tmp/file1 
+-rwsrwxrwx   1 root     other            0 Feb  9 17:51 /tmp/file1*
 ```
 
-Observamos que en la última línea le quitamos el servicio de ejecución al archivo y en los permisos se reemplaza la s minúscula por la S mayúsculas.
+- SUID SIN efecto ya que no hay permisos de ejecución:
+
+```console
+marcos:~# chmod 4444 /tmp/file2
+marcos:~# ls -l /tmp/file2
+-r-Sr--r--   1 root     other            0 Feb  9 17:51 /tmp/file2*
+```
+
+El bit SUID activado sobre un fichero indica que todo aquél que ejecute el archivo va a tener durante la ejecución los mismos privilegios que quién lo creó; dicho de otra forma, si el administrador crea un fichero y lo setuida, todo aquel usuario que lo ejecute va a disponer, hasta que el programa finalice, de un nivel de privilegio total en el sistema. Podemos verlo con el siguiente ejemplo:
+
+```console
+david:/home/xiang# cat testsuid.c
+#include <stdio.h>
+#include <unistd.h>
+
+main(){
+  printf("UID: %d, EUID: %d\n",getuid(),geteuid());
+}
+david:/home/xiang# cc -o testsuid testsuid.c
+david:/home/xiang# chmod u+s testsuid
+david:/home/xiang# ls -l testsuid
+-rwsr-xr-x   1 root     root         4305 Feb 10 02:34 testsuid
+david:/home/xiang# su xiang
+david:~$ id
+uid=1000(xiang) gid=100(users) groups=100(users)
+david:~$ ./testsuid
+UID: 1000, EUID: 0
+```
+
+Podemos comprobar que el usuario xiang, sin ningún privilegio especial en el sistema, cuando ejecuta nuestro programa setuidado de prueba está trabajando con un EUID (Effective UID) 0, lo que le otorga todo el poder del administrador (fijémonos que éste último es el propietario del ejecutable); si en lugar de este código el ejecutable fuera una copia de un shell, el usuario xiang tendría todos los privilegios del root mientras no finalice la ejecución, es decir, hasta que no se teclee exit en la línea de órdenes.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yFm84G8u9x0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+{:.question}
+¿Sabrías decir un fichero del sistema en el que se use el SUID?
 
 {:.subsection}
-### SGID
+### SGID (2000)
 
 El bit SGID (Set Group ID) es lo mismo que SUID, pero a nivel de grupo. Esto es, todo archivo que tenga activo el SGID, al ser ejecutado, tendrás los privilegios del grupo al que pertenece.
 
 Opción bastante útil si queremos configurar un directorio para colaborar diferentes usuarios. Si se aplica este bit al directorio, cualquier archivo creado en dicho directorio, tendrá asignado el grupo al que pertenece el directorio.
 
-Por ejemplo, si un usuario que tiene permiso de escritura en el directorio crea un archivo allí, ese archivo es un miembro del mismo grupo que el directorio y no el grupo del usuario. Como hemos dicho, esto es muy útil en la creación de directorios compartidos.
+Por ejemplo, si un usuario que tiene permiso de escritura en el directorio crea un archivo allí, ese archivo es un miembro del mismo grupo que el directorio y no el grupo del usuario. Como hemos dicho, esto **es muy útil en la creación de directorios compartidos**.
 
 ```console
-chmod g+s "directorio"
+$chmod g+s "directorio"
 ```
 
 En el caso de un fichero:
 
 ```console
-chmod 2555 "fichero"
+$chmod 2555 "fichero"
 ```
-
-Espero que esta información os pueda servir en algún momento. Nos vamos leyendo.
 
 ## Bibliografía
 
