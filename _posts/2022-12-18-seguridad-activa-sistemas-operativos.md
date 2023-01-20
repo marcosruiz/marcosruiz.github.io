@@ -273,7 +273,7 @@ Lo mejor sería NO instalarlo, pero también se puede instalar en una máquina v
 
 No se puede saber a ciencia cierta. Los sistemas más populares se atacan más pero también hay más gente probándolos.
 
-Lo que si se sabe es la diferencia entre las llamadas de sistema que se realizan en un servidor Apache en GNU Linux y un servidor IIS en Windows:
+Lo que si se sabe es la diferencia entre las llamadas de sistema que se realizan en un servidor Apache en GNU Linux y un servidor IIS en Windows cuando una sola página HTML es servida a un cliente 😮.
 
 ![Grafo de llamadas de sistema Apache en GNU Linux](syscallapache.jpg)
 _Grafo de llamadas de sistema Apache en GNU Linux_
@@ -353,3 +353,4 @@ Leer [¿Qué es el cloud computing?](/posts/cloud-computing).
 - [GNU GRUB (Wikipedia)](https://es.wikipedia.org/wiki/GNU_GRUB)
 - [Fundamentos de la computación en la Nube](https://iberasync.es/en/fundamentos-de-la-computacion-en-la-nube/)
 - [SEGURIDAD ACTIVA: SISTEMA OPERATIVO Y APLICACIONES](http://aleogao.blogspot.com/2017/01/seguridad-activa-sistema-operativo-y.html)
+- [47 Apache on Linux vs IIS on Windows ](http://www.basicallytech.com/blog/archive/47/Apache-on-Linux-vs-IIS-on-Windows/)
