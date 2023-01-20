@@ -13,7 +13,6 @@ pin: true
 - UD3 - [CSS](/posts/css/)
 - UD4 - [Gestores de contenidos](/posts/gestores-contenido/)
 
-
 - P01 - [Práctica: HTML](/posts/practica-html/)
 - P02 - [Práctica: HTML en W3Schools](/posts/practica-html-w3schools/)
 - P03 - [Práctica: HTML en freeCodeCamp](/posts/practica-html-freeCodeCamp/)

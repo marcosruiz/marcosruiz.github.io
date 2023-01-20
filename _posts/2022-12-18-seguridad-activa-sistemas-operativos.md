@@ -224,6 +224,8 @@ Los virus pueden instalarse en nuestra máquina sin que lo sepamos, aprovechando
 
 El antivirus es un programa que está vigilando continuamente lo que ocurre en nuestra máquina. Concretamente, cualquier software que se intenta ejecutar (ejecutables .exe, .msi, .deb, .rpm, librerías .dll, etc.) primero pasa por el antivirus. Él lo compara con su base de datos de virus y, si lo encuentra, impide que se ejecute y avisa al usuario.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SbdO7BAsGq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <details class="card mb-2">
   <summary class="card-header question">¿Qué antivirus conoces?</summary>
   <div class="card-body" markdown="1">
@@ -242,11 +244,48 @@ El antivirus es un programa que está vigilando continuamente lo que ocurre en n
   </div>
 </details>
 
-{:.question}
-¿Cuál es el mejor antivirus?
+<details class="card mb-2">
+  <summary class="card-header question">¿Cuál es el mejor antivirus?</summary>
+  <div class="card-body" markdown="1">
+
+No existe el antivirus infalible.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 {:.question}
-¿Qué es VirusTotal?
+¿Qué es [VirusTotal](https://www.virustotal.com/gui/home/upload)?
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué deberíamos hacer si sospechamos que un programa que vamos a instalar es un virus?</summary>
+  <div class="card-body" markdown="1">
+
+Lo mejor sería NO instalarlo, pero también se puede instalar en una máquina virtual y comprobar su actividad de red y de uso de CPU.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Es más seguro GNU Linux que Windows?</summary>
+  <div class="card-body" markdown="1">
+
+No se puede saber a ciencia cierta. Los sistemas más populares se atacan más pero también hay más gente probándolos.
+
+Lo que si se sabe es la diferencia entre las llamadas de sistema que se realizan en un servidor Apache en GNU Linux y un servidor IIS en Windows:
+
+![Grafo de llamadas de sistema Apache en GNU Linux](syscallapache.jpg)
+_Grafo de llamadas de sistema Apache en GNU Linux_
+
+![Grafo de llamadas de sistema IIS en Windows](syscalliis.jpg)
+_Grafo de llamadas de sistema IIS en Windows_
+
+Lo más probable que esto sea debido a la filosofía de retrocompatibilidad de Windows.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 {:.section}
 ## Monitorización
@@ -275,9 +314,9 @@ Conviene instalar una herramienta de inventario y monitorización. El inventario
 
 La arquitectura de aplicaciones ha evolucionado con el tiempo:
 
-- En los años sesenta y setenta eran monolíticas: toda la funcionalidad, tanto la interfaz de usuario como la lógica de proceso, estaba en la misma máquina. Los usuarios utilizaban terminales «tontos» conectados al ordenador principal. La protección de una aplicación monolítica se centraba en proteger la máquina donde ejecutaban todos los programas.
-- En los años ochenta y noventa aparecen los ordenadores personales y las redes de comunicaciones dentro de las empresas. Estos dos avances permiten implementar las aplicaciones siguiendo la arquitectura cliente-servidor: la interfaz de usuario y parte de la lógica de proceso están en el ordenador del usuario, y el resto de la lógica de proceso está en un ordenador central, al que conectan los ordenadores de usuario mediante la red local. La protección se complica: ahora hay que proteger a cada cliente, el servidor y la red local de la empresa.
-- A partir de los años noventa, el éxito de Internet permite extender las aplicaciones web (que siguen el modelo cliente-servidor) a cualquier punto de conexión del planeta. Hay un par de diferencias con los años ochenta: el cliente suele ser siempre el mismo (el navegador) y la comunicación utiliza redes públicas, sobre las que la empresa tiene nulo control. La protección es más difícil que nunca.
+- En los años sesenta y setenta eran **monolíticas**: toda la funcionalidad, tanto la interfaz de usuario como la lógica de proceso, estaba en la misma máquina. Los usuarios utilizaban terminales «tontos» conectados al ordenador principal. La protección de una aplicación monolítica se centraba en proteger la máquina donde ejecutaban todos los programas.
+- En los años ochenta y noventa aparecen los ordenadores personales y las redes de comunicaciones dentro de las empresas. Estos dos avances permiten implementar las aplicaciones siguiendo la **arquitectura cliente-servidor**: la interfaz de usuario y parte de la lógica de proceso están en el ordenador del usuario, y el resto de la lógica de proceso está en un ordenador central, al que conectan los ordenadores de usuario mediante la red local. La protección se complica: ahora hay que proteger a cada cliente, el servidor y la red local de la empresa.
+- A partir de los años noventa, el éxito de Internet permite extender las **aplicaciones web** (que siguen el modelo cliente-servidor) a cualquier punto de conexión del planeta. Hay un par de diferencias con los años ochenta: el cliente suele ser siempre el mismo (el navegador) y la comunicación utiliza redes públicas, sobre las que la empresa tiene nulo control. La protección es más difícil que nunca.
 
 Nadie duda de las ventajas de implementar una aplicación mediante tecnologías web:
 

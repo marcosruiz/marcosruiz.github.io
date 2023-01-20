@@ -48,9 +48,6 @@ drwxr-xr-x 2 smr smr 4096 sep 20 10:06 Público
 drwx------ 4 smr smr 4096 dic  1 21:11 snap
 drwxr-xr-x 2 smr smr 4096 dic 21 10:35 Templates
 drwxr-xr-x 2 smr smr 4096 sep 20 10:06 Vídeos
-```
-
-```
       ⬆    ⬆  ⬆   ⬆    ⬆       ⬆          ⬆
 
     col1   2  3   4  col5     col6       col7
@@ -228,7 +225,7 @@ AND   111 110 110                   ⬅️ Máscara negada
 > ¡No es simplemente una resta en decimal como se puede ver en el 2º caso!
 {:.prompt-warning}
 
-- **Para directorios**: 777 XNOR 022 = 755 (rwxr-xr-x)
+- **Para directorios**: 777 AND NOT(022) = 755 (rwxr-xr-x)
 
 ```
 NOT(022) = NOT(000 010 010) = 111 101 101
@@ -318,7 +315,7 @@ rm: cannot remove ‘hola.txt’: Operation not permitted
 
 Cuando se activa el bit SUID (Set User ID) sobre un fichero significa que el que lo ejecute va a tener los mismos permisos que el que creó el archivo. Esto es útil en algunas ocasiones, aunque hay que utilizarlo con cuidado, ya que puede acarrear problemas de seguridad.
 
-Para activarlo:
+- Para activarlo en formato octal:
 
 ```console
 $ chmod 4775 hello.sh
@@ -327,6 +324,12 @@ $ ls -l hello.sh
 chmod -x hello.sh
 $ ls -l hello.sh
 -rwSrw-r-- 1 david david 26 Jun 12 19:02 hello.sh
+```
+
+- Para activarlo en formato simbólico:
+
+```console
+$ chmod u+s hello.sh
 ```
 
 Observamos que en la última línea le quitamos el servicio de ejecución al archivo y en los permisos se reemplaza la s minúscula por la S mayúsculas.
@@ -340,14 +343,16 @@ Opción bastante útil si queremos configurar un directorio para colaborar difer
 
 Por ejemplo, si un usuario que tiene permiso de escritura en el directorio crea un archivo allí, ese archivo es un miembro del mismo grupo que el directorio y no el grupo del usuario. Como hemos dicho, esto es muy útil en la creación de directorios compartidos.
 
+En modo simbólico:
+
 ```console
-chmod g+s "directorio"
+$ chmod g+s <directorio>
 ```
 
-En el caso de un fichero:
+En modo octal:
 
 ```console
-chmod 2555 "fichero"
+$ chmod 2555 <directorio>
 ```
 
 Espero que esta información os pueda servir en algún momento. Nos vamos leyendo.
