@@ -250,3 +250,37 @@ Si has visto los 3 vídeos deja un comentario de cual te parece mejor.
 
 - [Lenguaje JS](https://lenguajejs.com/)
 - [Aprende X en Y minutos, Donde X=javascript](https://learnxinyminutes.com/docs/es-es/javascript-es/)
+- [Basics of Javascript](https://fwhibbit.es/basics-of-javascript)
+
+## Ejercicios
+
+- [Exámenes de JavaScript](https://cibertest.com/test-examen/20/javascript)
+- [Edabit](https://edabit.com/challenges/javascript)
+- [CodeAcademy](https://www.codecademy.com/catalog/language/javascript)
+- [Eloquent Javascript](https://eloquentjavascript.net/code/#2.1)
+- [CodinGame](https://www.codingame.com/start)
+- [CodeWars](https://www.codewars.com/)
+- [Exercism](https://exercism.org/)
+- [HackerRank](https://www.hackerrank.com/)
+- [adventJS](https://adventjs.dev/es)
+- [Lista de preguntas (avanzadas) de JavaScript](https://github.com/lydiahallie/javascript-questions/blob/master/es-ES/README-ES.md)
+- [Retos](https://lenguajejs.com/retos/)
+- [Project Lovelace](https://projectlovelace.net/problems/)
+- [JavaScript Ya](https://www.tutorialesprogramacionya.com/javascriptya/)
+- [Ejercicios Logica de Programacion](https://github.com/denulemos/programming-training)
+- [JSChallenger](https://www.jschallenger.com/)
+- [Algoritmos y Estructuras de Datos en JavaScript](https://github.com/trekhleb/javascript-algorithms/blob/master/README.es-ES.md) ➡️ AVANZADO
+- [Autoevaluación](https://github.com/a0viedo/fullstack/blob/master/contenido/ejercicios/auto-evaluacion.md)
+- [Ejercicios Javascript](https://github.com/Juanma-Gutierrez/Ejercicios-Javascript-06-05-2022)
+- [Ejercicios JS DesafioLatam](https://github.com/DesafioLatam/guia-de-ejercicios-javascript/blob/master/ejercicios.md)Javascript Ejercicios_Resueltos
+- [Javascript Ejercicios_Resueltos](https://github.com/fryntiz/javascript-ejercicios-resueltos)
+- [Ejercicios de Javascript](https://github.com/maxwellnewage/javascript_ejercicios)
+- [Ejercicios de JavaScript](https://github.com/makeitrealcamp/ejercicios-javascript)
+- [makeitrealcamp js-foundation](https://github.com/makeitrealcamp/js-foundation)
+- [ejercicios-javascript](https://github.com/Ada-Online-2da-Gen/ejercicios-javascript)
+
+## Competitive programming
+
+- [Online Judge](https://onlinejudge.org/)
+- [Kattis](https://open.kattis.com/)
+- [Advent of Code](https://adventofcode.com/)
