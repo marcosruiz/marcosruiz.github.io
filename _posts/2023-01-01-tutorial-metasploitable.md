@@ -1,5 +1,5 @@
 ---
-title: "Normativa sobre seguridad y protección de datos"
+title: "Tutorial: Metasploitable 3"
 date: 2023-01-01 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr, teoría, seguridad activa]
@@ -29,6 +29,51 @@ Ir a [Install Vagrant](https://developer.hashicorp.com/vagrant/downloads) y desc
 ## Instalación de Metasploitable3
 
 Ir al [GitHub de Metasploitable3](https://github.com/rapid7/metasploitable3) y seguir las instrucciones del `README.md`{: .filepath}.
+
+Una vez instalado cargamos el teclado en español:
+
+```console
+#loadkeys es
+```
+
+Para hacer el cambio permanente:
+
+```console
+#setxkbmap es
+#dpkg-reconfigure console-setup
+```
+
+Y comprobamos que versión de SO estamos usando:
+
+```console
+#lsb_release -a
+```
+
+{:.question}
+¿Qué versión de SO te aparece a ti?
+
+### Configuración de la red interna
+
+La red interna no tiene un servidor DCHP por lo tanto debemos añadir la configuración de red a mano. En el caso de Metasploitable 3, añadimos en el fichero `/etc/network/interfaces` las siguientes líneas:
+
+```
+auto eth2
+iface eth2 inet static
+      address 192.168.1.3
+      netmask 255.255.255.0
+      gateway 192.168.1.1
+```
+{: file="/etc/network/interfaces" }
+
+## Instalación de Kali Linux
+
+### Configuración de la red interna
+
+La red interna no tiene un servidor DCHP por lo tanto debemos añadir la configuración de red a mano. Vamos al menú de inicio y escribimos "Advanced Network Configuration" y creamos una nueva conexión con las siguientes opciones:
+
+- Address: 192.168.1.2
+- Netmask: 255.255.255.0
+- Gateway: 192.168.1.1
 
 ## Bibliografía
 

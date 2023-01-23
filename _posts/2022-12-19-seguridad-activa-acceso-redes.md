@@ -153,24 +153,7 @@ Leer artículo [VPN](/posts/vpn/).
 {:.section}
 ## Servicios De Red. Nmap Y Netstat
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/har1It-lW2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-La herramienta **Nmap**, disponible para sistemas GNU Linux y Windows, se ha convertido en la navaja suiza de los hackers de red. Además del escaneo de puertos para determinar los servicios disponibles en una máquina, podemos pedir a la herramienta que intente la conexión a cada uno de ellos. Después analiza los mensajes que generan estos servidores para identificar la versión concreta del sistema operativo y la versión concreta del software de servidor (server fingerprint) que está escuchando en cada puerto.
-
-Para cada puerto, la herramienta ofrece cuatro posibles estados:
-
-- **open (abierto)**: la máquina acepta paquetes dirigidos a ese puerto, donde algún servidor
-está escuchando y los procesará adecuadamente.
-- **closed (cerrado)**: no hay ningún servidor escuchando.
-- **filtered**: Nmap no puede decir si ese puerto está abierto o cerrado porque alguien
-está bloqueando el intento de conexión (router, firewall).
-- **unfiltered**: el puerto no está bloqueado, pero no se puede concluir si está abierto o
-cerrado.
-
-Leer artículo [Realiza escaneos de puertos con Nmap a cualquier servidor o sistema](https://www.redeszone.net/tutoriales/configuracion-puertos/nmap-escanear-puertos-comandos/).
-
-![Chuleta Nmap](nmapCheatSheet.jpg)
-_Chuleta Nmap en inglés_
+Leer artículo [Tutorial: Nmap](/posts/nmap/).
 
 ## Bibliografía
 
