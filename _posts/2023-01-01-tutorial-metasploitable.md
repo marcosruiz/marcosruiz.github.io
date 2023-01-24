@@ -26,7 +26,11 @@ Metasploit es un framework con versiones de código abierto y de pago, que reún
 
 Ir a [Install Vagrant](https://developer.hashicorp.com/vagrant/downloads) y descarga instala Vagrant para tu sistema.
 
-## Instalación de Metasploitable3
+## Instalación de Metasploitable2
+
+Descargar [Metasploitable2](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/)
+
+## Instalación de Metasploitable3 con Vagrant
 
 Ir al [GitHub de Metasploitable3](https://github.com/rapid7/metasploitable3) y seguir las instrucciones del `README.md`{: .filepath}.
 
