@@ -31,6 +31,7 @@ pin: true
 
 - P08 - [Práctica: Moodle](/posts/practica-moodle/)
 - P09 - [Práctica: JavaScript en freeCodeCamp](/posts/practica-javascript-freeCodeCamp)
+- P10 - [Práctica: JavaScript en W3Schools](/posts/practica-javascript-w3schools)
 
 ## Enlaces increíbles 🔥
 
