@@ -32,15 +32,33 @@ Apagar la máquina virtual:
 $vagrant halt
 ```
 
+Ejecutar el script de aprovisionamiento:
+
+```console
+$vagrant up --provision
+```
+
+o 
+
+```console
+$vagrant provision
+```
+
 Conectar mediante SSH:
 
 ```console
 $vagrant ssh
 ```
 
+Eliminar una máquina:
+
+```console
+$vagrant destroy
+```
+
 ## VA
 
-```
+```ruby
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
@@ -61,11 +79,10 @@ Vagrant.configure("2") do |config|
     end
   end
 end
-
 ```
 {: file="Vagrantfile" }
 
-```
+```ruby
 Vagrant.configure("2") do |config|
     # Synced folder
     config.vm.synced_folder '.', '/media/vagrant'
@@ -76,6 +93,10 @@ Vagrant.configure("2") do |config|
     config.vm.network "private_network", type: "dhcp"
     # VirtualBox Internal Network
     config.vm.network "private_network", ip: "192.168.50.4", virtualbox__intnet: true
+    config.vm.provision "shell", inline: <<-SHELL
+      sed -i 's/"us"/"es"/g' /etc/default/keyboard
+      install-keymap es
+    SHELL
 end
 ```
 {: file="Vagrantfile" }
