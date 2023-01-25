@@ -33,6 +33,8 @@ pin: true
 - P09 - [Práctica: JavaScript en freeCodeCamp](/posts/practica-javascript-freeCodeCamp)
 - P10 - [Práctica: JavaScript en W3Schools](/posts/practica-javascript-w3schools)
 
+- [Práctica: Funciones en JavaScript](/posts/practica-funciones-javascript)
+
 ## Enlaces increíbles 🔥
 
 - [freeCodeCamp](https://www.freecodecamp.org/)
@@ -42,6 +44,7 @@ pin: true
 - [Roadmap.sh](https://roadmap.sh/frontend)
 - [Aprende X en Y mintuos, Donde X=javascript](https://learnxinyminutes.com/docs/es-es/javascript-es/)
 - [Consejos para usar Visual Studio Code](/posts/atajos-de-teclado/#visual-studio-code)
+- 
 
 ## Carpeta compartida de la asignatura
 

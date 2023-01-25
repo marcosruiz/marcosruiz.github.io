@@ -113,12 +113,12 @@ Si escribes `ul>li*5` y le das al Enter se te generará el siguiente código:
 
 ## Extensiones Visual Studio Code
 
-- Live Preview
-- Code Runner
-- Error lens
-- Stylelint (necesario npm)
-- ESLint (necesario npm)
-- Prettier (necesario npm)
+- Live Preview ➡ Ver un navegador integrado que se actualiza solo.
+- Code Runner ➡ Ejecutar código JavaScript.
+- Error lens ➡ Mostrar los errores en la misma línea donde se escribe.
+- Stylelint (necesario npm) ➡ Errores de estilo.
+- ESLint (necesario npm) ➡ Errores de JavaScript.
+- Prettier (necesario npm) ➡ Indenta de manera correcta.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sdbl-LpIoQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -141,7 +141,7 @@ _Mensaje de error de Stylelint_
 - `Ctrl + L` ➡ Editar la la ubicación del explorador de archivos.
 - `Windows + E` ➡ Abrir explorador de archivos.
 
-## Terminal en Linux
+## Terminal en GNU Linux
 
 - `Ctrl + Shift + C` ➡ Copiar en terminal.
 - `Ctrl + Shift + V` ➡ Pegar en terminal.
@@ -154,6 +154,15 @@ _Mensaje de error de Stylelint_
 - `Ctrl + Z` ➡ Forzar la detención de un programa.
 - `Ctrl + A` ➡ Ir al comienzo de la línea del terminal.
 - `Ctrl + E` ➡ Ir al final de la línea de terminal.
+- `Click central` del ratón ➡ Pegar lo que está seleccionado.
+
+## Terminal en Windows
+
+- `Ctrl + C` ➡ Copiar en terminal.
+- `Ctrl + V` ➡ Pegar en terminal.
+- `Click derecho` del ratón ➡ Pegar.
+- `Ctrl + Shift + T` ➡ Abrir una pestaña en el terminal.
+- `Tab` ➡ Autocompletar.
 
 ## Vim
 
