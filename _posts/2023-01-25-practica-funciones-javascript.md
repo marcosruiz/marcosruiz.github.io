@@ -15,7 +15,7 @@ Duración: 9 h
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguiente formato `<Apellidos>_<Nombre>_P<NúmeroDeLaPrácticaConDosDígitos>.zip`{: .filepath}. Por ejemplo, en mi caso el nombre del fichero ZIP sería `RuizGarcía_Marcos_P09.zip`{: .filepath}. En la raíz del documento ZIP deben aparecer las actividades correspondientes con el nombre `actividad_<NúmeroDeLaActividadConDosDígitos>.js`{: .filepath}.
+La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguiente formato `<Apellidos>_<Nombre>_P<NúmeroDeLaPrácticaConDosDígitos>.zip`{: .filepath}. Por ejemplo, en mi caso el nombre del fichero ZIP sería `RuizGarcía_Marcos_P09.zip`{: .filepath}. En la raíz del documento ZIP deben aparecer las actividades correspondientes con el nombre `actividad_<NúmeroDeLaActividadConDosDígitos>.html`{: .filepath}. Es una buena práctica escribir el código JavaScript en un fichero diferente por lo que si lo usas deberás usar el mismo formato en el nombrado pero usando la extensión correspondiente.
 
 ## Actividades
 
