@@ -14,6 +14,8 @@ tags: []
 - [DRBL](https://drbl.org/)
 - [Ninite](https://ninite.com/): Para instalar varios programas a la vez.
 - [Clonezilla: Recuperar una imagen del equipo paso a paso](http://somebooks.es/clonezilla-recuperar-una-imagen-del-equipo-paso-paso/)
+- [FOG Project](https://fogproject.org/)
+- [OpenGnsys](https://opengnsys.es/web/)
 
 ## Programas que deben instalarse en los PCs de los alumnos
 
