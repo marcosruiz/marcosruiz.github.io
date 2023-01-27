@@ -225,7 +225,7 @@ Leer [Formato JSON](https://lenguajejs.com/javascript/objetos/json/)
 
 Leer [¿Qué es un Array en Javascript?](https://lenguajejs.com/javascript/arrays/que-es/)
 
-Puedes descargar [esta chuleta sobre los métodos de las arrays en JavaScript](js-metodos-array.pdf).
+Puedes descargar [esta chuleta sobre los métodos de las arrays en JavaScript](/assets/img/javascript/js-metodos-array.pdf).
 
 ## DOM
 
@@ -296,7 +296,7 @@ Si has visto los 3 vídeos deja un comentario de cual te parece mejor.
 ## Chuletas de JavaScript en inglés
 
 - [Cheatsheets de Codecademy](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-introduction/cheatsheet)
-- [Chuleta Javascript de LenguajeJS](https://lenguajejs.com/javascript/cheatsheets/). Puedes descargarla directamente [aquí](javascript-cheatsheet-2019-lenguajejs.com.pdf)
+- [Chuleta Javascript de LenguajeJS](https://lenguajejs.com/javascript/cheatsheets/). Puedes descargarla directamente [aquí](/assets/img/javascript/javascript-cheatsheet-2019-lenguajejs.com.pdf)
 - [JavaScript Tutorial for Beginners](https://edabit.com/tutorial/javascript)
 
 ## Bibliografía

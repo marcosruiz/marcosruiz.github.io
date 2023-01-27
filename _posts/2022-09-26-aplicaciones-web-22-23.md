@@ -34,8 +34,6 @@ pin: true
 - P10 - [Práctica: JavaScript en W3Schools](/posts/practica-javascript-w3schools)
 - P11 - [Práctica: Introducción a JavaScript](/posts/practica-introduccion-javascript)
 
-- [Práctica: Funciones en JavaScript](/posts/practica-funciones-javascript)
-
 ## Enlaces increíbles 🔥
 
 - [Trabajar con Visual Studio Code](/posts/trabajar-visual-studio-code)

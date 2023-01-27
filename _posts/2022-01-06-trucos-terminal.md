@@ -81,7 +81,7 @@ Puedes leer mi artículo [35 comandos básicos de GNU Linux](https://marcosruiz.
 
 ### Chuleta de terminal en GNU Linux
 
-Puedes descargarte la [Chuleta de GNU Linux en inglés](terminal-cheatsheet-terminaldelinux.com.pdf)
+Puedes descargarte la [Chuleta de GNU Linux en inglés](/assets/img/consejos-trucos-terminal-linux/terminal-cheatsheet-terminaldelinux.com.pdf)
 
 ## Consejos para el terminal en Windows
 
