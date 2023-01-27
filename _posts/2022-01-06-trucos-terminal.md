@@ -3,7 +3,7 @@ title: Consejos y trucos para terminal/shell/consola
 date: 2022-01-06 15:20:00 +0100
 categories: [General, GNU Linux]
 tags: [gnu linux, terminal, dam, smr, entornos de desarrollo, seguridad informática, servicios en red, redes locales]     # TAG names should always be lowercase
-img_path: /assets/img/consejos-trucos-terminal-linux/
+img_path: /assets/img/consejos-trucos-terminal/
 ---
 
 ## Consejos para el terminal en GNU Linux
@@ -81,7 +81,7 @@ Puedes leer mi artículo [35 comandos básicos de GNU Linux](https://marcosruiz.
 
 ### Chuleta de terminal en GNU Linux
 
-Puedes descargarte la [Chuleta de GNU Linux en inglés](/assets/img/consejos-trucos-terminal-linux/terminal-cheatsheet-terminaldelinux.com.pdf)
+Puedes descargarte la [Chuleta de GNU Linux en inglés](/assets/img/consejos-trucos-terminal/terminal-cheatsheet-terminaldelinux.com.pdf)
 
 ## Consejos para el terminal en Windows
 
