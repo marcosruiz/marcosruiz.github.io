@@ -32,6 +32,7 @@ pin: true
 - P08 - [Práctica: Moodle](/posts/practica-moodle/)
 - P09 - [Práctica: JavaScript en freeCodeCamp](/posts/practica-javascript-freeCodeCamp)
 - P10 - [Práctica: JavaScript en W3Schools](/posts/practica-javascript-w3schools)
+- P11 - [Práctica: Introducción a JavaScript](/posts/practica-introduccion-javascript)
 
 - [Práctica: Funciones en JavaScript](/posts/practica-funciones-javascript)
 
