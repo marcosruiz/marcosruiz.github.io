@@ -3,7 +3,7 @@ title: "Práctica: Introducción a JavaScript"
 date: 2023-01-25 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
 tags: [aplicaciones web, smr, práctica, javascript]
-img_path: /assets/img/practica-funciones-javascript/
+img_path: /assets/img/practica-introduccion-javascript/
 math: true
 ---
 
