@@ -1,5 +1,5 @@
 ---
-title: "Práctica: Funciones en JavaScript"
+title: "Práctica: Introducción a JavaScript"
 date: 2023-01-25 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
 tags: [aplicaciones web, smr, práctica, javascript]
@@ -9,17 +9,29 @@ math: true
 
 ## Objetivo y duración
 
-El objetivo de esta práctica es aprender a programar con JavaScript.
+El objetivo de esta práctica es aprender a programar con JavaScript a un nivel básico.
+
+Esta práctica se recomienda realizarla **por parejas**. El trabajo en parejas (pair-programming) es una técnica muy popular con varias ventajas:
+
+- Ayuda a mantener la concentración.
+- Es una excelente oportunidad para aprender y/o enseñar.
+- Puedes conocer personas que también están aprendiendo!
+
+La idea del trabajo en parejas es que haya **una persona que dicta y otra que escribe**. Idealmente la persona que dicta sabe cómo hacer el ejercicio y la persona que escribe va aprendiendo y ayuda a corregir. 
 
 Duración: 9 h
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguiente formato `<Apellidos>_<Nombre>_P<NúmeroDeLaPrácticaConDosDígitos>.zip`{: .filepath}. Por ejemplo, en mi caso el nombre del fichero ZIP sería `RuizGarcía_Marcos_P09.zip`{: .filepath}. En la raíz del documento ZIP deben aparecer las actividades correspondientes con el nombre `actividad_<NúmeroDeLaActividadConDosDígitos>.html`{: .filepath}. Es una buena práctica escribir el código JavaScript en un fichero diferente por lo que si lo usas deberás usar el mismo formato en el nombrado pero usando la extensión correspondiente.
+La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguiente formato `<Apellidos>_<Nombre>_P<NúmeroDeLaPrácticaConDosDígitos>.zip`{: .filepath}. Por ejemplo, en mi caso el nombre del fichero ZIP sería `RuizGarcía_Marcos_P11.zip`{: .filepath}. En la raíz del documento ZIP deben aparecer las actividades correspondientes con el nombre `actividad_<NúmeroDeLaActividadConDosDígitos>.html`{: .filepath}.
 
 ## Actividades
 
-Realizar las siguientes actividades.
+Realizar las siguientes actividades. Cada actividad debe contar con un comentario donde este escrito el enunciado de la actividad.
+
+> La única manera de aprender a programar es practicar, practicar y practicar. ¡Así que a darle duro!
+> ![Látigo](whip.gif)
+{:.prompt-tip}
 
 ### Actividad 1
 
@@ -29,7 +41,7 @@ Recuerda que para pedirle al usuario que escriba una frase debes utilizar el mé
 
 ### Actividad 2
 
-Escribe un programa que le pregunte al usuario su nombre e imprima "Hola " seguido del nombre y un signo de exclamación.
+Escribe un programa que le pregunte al usuario su nombre e imprima "Hola" seguido del nombre y un signo de exclamación.
 
 Por ejemplo, si el usuario ingresa "Pedro" el programa debe imprimir en la consola "Hola Pedro!".
 
@@ -108,16 +120,16 @@ Escribe un programa que le pida al usuario su peso y altura. El programa deberá
 
 Escribe un programa que le pida al usuario ingresar un número.
 
-* Si el número es múltiplo de 3 debe imprimir en la consola "bing".
-* Si el número es múltiplo de 5 debe imprimir en la consola "bong".
-* Si el número es múltiplo tanto de 3 como de 5 debe imprimir en la consola "bingbong".
+* Si el número es múltiplo de 3 debe imprimir en la consola "fizz".
+* Si el número es múltiplo de 5 debe imprimir en la consola "buzz".
+* Si el número es múltiplo tanto de 3 como de 5 debe imprimir en la consola "fizzbuzz".
 * Si no cumple ninguna de las condiciones anteriores debe imprimir el mismo número.
 
 ### Actividad 12
 
 Escribe un programa que le pida al usuario ingresar una frase. El programa debe imprimir la frase en la consola 10 veces.
 
-**Nota:** utiliza un ciclo para imprimir la frase las 10 veces.
+**Nota:** utiliza un bucle para imprimir la frase las 10 veces.
 
 ### Actividad 13
 
@@ -169,6 +181,12 @@ Escribe un programa para la consola que le pida al usuario dos números e imprim
 Nota 1: Puedes asumir que el primer número siempre va a ser menor o igual que el segundo.
 
 Nota 2: Fíjate que se imprimen también los números en los límites, en el ejemplo el 5 y el 10.
+
+> A patir de esta actividad, todas las actividades deben hacer uso de funciones. Por ejemplo en esta actividad la función podría llamarse `imprimeRango` y podría tener dos parámetros de entrada. Otra opción sería que la función solo resuelva el problema devolviendo con un `return` una array para luego mostrarla por pantalla.
+{:.prompt-info}
+
+{:.question}
+¿Qué quiere decir que una función es idempotente?
 
 ### Actividad 17
 
@@ -243,7 +261,7 @@ Grupo 3:
   Sandra
 ```
 
-**Nota 1:** utiliza ciclos anidados para solucionar este ejercicio
+**Nota 1:** utiliza bucles anidados para solucionar este ejercicio
 **Nota 2:** agrega dos espacios al principio de cada nombre
 
 ### Actividad 21
@@ -266,7 +284,7 @@ El resultado debería ser el siguiente:
 39
 ```
 
-**Nota:** este ejercicio lo debes hacer con ciclos y sin ayuda de la función `filter` de JavaScript. Al terminarlo cambia el arreglo original para verificar que funcione con otros números.
+**Nota:** este ejercicio lo debes hacer con bucles y sin ayuda de la función `filter` de JavaScript. Al terminarlo cambia el arreglo original para verificar que funcione con otros números.
 
 ### Actividad 22
 
@@ -282,7 +300,7 @@ El resultado debería ser el siguiente:
 11
 ```
 
-**Nota:** este ejercicio lo debes hacer con ciclos y sin ayuda de la función `filter` de JavaScript. Al terminarlo, cambia el arreglo original para verificar que funcione con otras combinaciones de ceros y unos.
+**Nota:** este ejercicio lo debes hacer con bucles y sin ayuda de la función `filter` de JavaScript. Al terminarlo, cambia el arreglo original para verificar que funcione con otras combinaciones de ceros y unos.
 
 ### Actividad 23
 
@@ -770,3 +788,6 @@ console.log(max(1, 2, 3, 4)) // 4
 console.log(max(63, 85, 39, 24, 3)) // 85
 ```
 
+## Bibliografía
+
+- [makeitrealcamp/intro-javascript-sept-2022](https://github.com/makeitrealcamp/intro-javascript-sept-2022)

@@ -72,6 +72,8 @@ _ imgDescription _
 
 `/path/to/a/file.extend`{: .filepath}
 
+
+
 ## Introducción
 
 

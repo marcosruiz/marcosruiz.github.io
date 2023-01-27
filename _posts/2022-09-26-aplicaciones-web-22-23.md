@@ -37,14 +37,15 @@ pin: true
 
 ## Enlaces increíbles 🔥
 
+- [Trabajar con Visual Studio Code](/posts/trabajar-visual-studio-code)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 - [Lenguaje HTML](https://lenguajehtml.com/)
 - [Lenguaje CSS](https://lenguajecss.com/)
 - [Lenguaje JS](https://lenguajejs.com/)
 - [Roadmap.sh](https://roadmap.sh/frontend)
 - [Aprende X en Y mintuos, Donde X=javascript](https://learnxinyminutes.com/docs/es-es/javascript-es/)
-- [Consejos para usar Visual Studio Code](/posts/atajos-de-teclado/#visual-studio-code)
-- 
+- [CodinGame](https://www.codingame.com/start) ➡️ En inglés
+- [CodeAcademy](https://www.codecademy.com/catalog/language/javascript) ➡️ En inglés
 
 ## Carpeta compartida de la asignatura
 

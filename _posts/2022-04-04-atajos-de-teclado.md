@@ -1,5 +1,5 @@
 ---
-title: Atajos de teclado
+title: Atajos de teclado para Windows y GNU Linux
 date: 2022-04-04 18:00:00 +0100
 categories: [General]
 tags: [atajos, shortcuts, vscode, windows, linux, terminal]
@@ -69,116 +69,15 @@ Estos atajos de teclados suelen funcionar en casi todas las aplicaciones:
 - `Ctrl + \` o `Ctrl + Espacio` ➡ Limpiar formato.
 - `Ctrl + Alt + M` ➡ Insertar un comentario.
 
-## Visual Studio code
-
-- `Ctrl + P` ➡ Buscar archivos por nombre.
-- `Ctrl + Shift + P` ➡ Acciones. Por ejemplo, transformar un texto a mayúsculas o minúsuclas.
-- `Ctrl + Shift + F` ➡ Buscar en todo el proyecto. Puedes usar expresiones regulares. Puedes practicar el uso de estas expresiones regulares [aquí](https://regex101.com/).
-- `Ctrl + H` ➡ Buscar y reemplazar.
-- `Alt + ↑` ➡ Mueve la línea actual una posición arriba.
-- `Alt + ↓` ➡ Mueve la línea actual una posición abajo.
-- `Ctrl + 1` ➡ Te sitúa en el panel 1 (izquierdo).
-- `Ctrl + 2` ➡ Te sitúa en el panel 2 (derecho en caso de tener 2). Lo crea si no existe.
-- `Ctrl + Alt + ➡` ➡ Pestaña actual a la derecha.
-- `Ctrl + Alt + ⬅` ➡ Pestaña actual a la izquierda.
-- `Ctrl + G` ➡ Ir a una línea concreta del código.
-- `Ctrl + D` ➡ Buscar y seleccionar.
-- `Alt + Enter` ➡ Seleccionar todo lo que coincida en la búsqueda.
-- `Alt + Shift + ↑` ➡ Mueve la línea actual una posición arriba.
-- `Alt + Shift + ↓` ➡ Mueve la línea actual una posición abajo.
-- `Ctrl + Shift + K` ➡ Delete line.
-- `Ctrl + Alt + ↑` ➡ Multiplicar cursor una posición hacia arriba.
-- `Ctrl + Alt + ↓` ➡ Multiplicar cursor una posición hacia abajo.
-- `Shift + Alt + F` ➡ Dar formato al documento.
-- `Ctrl + Ñ` ➡ Mostrar/ocultar consola
-- `Ctrl + B` ➡ Mostrar/ocultar barra lateral izquierda
-
-## Tips Visual Studio Code
-
-Si usas el click de la rueda del ratón puedes seleccionar en vertical.
-
-Si escribes `html:5` y le das al Enter generas una estructura básica de html.
-
-Si escribes `ul>li*5` y le das al Enter se te generará el siguiente código:
-
-```html
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-```
-
-## Extensiones Visual Studio Code
-
-- Live Preview ➡ Ver un navegador integrado que se actualiza solo.
-- Code Runner ➡ Ejecutar código JavaScript.
-- Error lens ➡ Mostrar los errores en la misma línea donde se escribe.
-- Stylelint (necesario npm) ➡ Errores de estilo.
-- ESLint (necesario npm) ➡ Errores de JavaScript.
-- Prettier (necesario npm) ➡ Indenta de manera correcta.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sdbl-LpIoQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### Configurar Stylelint y Prettier
-
-Primero necesitas instalar la última versión LTS de Node.js que encontrarás en [este enlace](https://nodejs.org/en/download/).
-
-Posteriormente, puedes seguir los pasos del siguiente tutorial para instalar tanto Stylelint como Prettier en tu proyecto.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EBlXDDzE_8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-Con esto podemos conseguir un análisis de nuestro código, el cual nos puede ayudar a mejorar nuestra calidad de código ya que nos avisa de muchos de nuestros errores como se puede ver en la siguiente Figura.
-
-![Mensaje de error de Stylelint](mensajeDeErrorDeStylelint.png)
-_Mensaje de error de Stylelint_
-
 ## Gnome GNU Linux
 
 - `Ctrl + Alt + T` ➡ Abrir la terminal.
 - `Ctrl + L` ➡ Editar la la ubicación del explorador de archivos.
 - `Windows + E` ➡ Abrir explorador de archivos.
 
-## Terminal en GNU Linux
-
-- `Ctrl + Shift + C` ➡ Copiar en terminal.
-- `Ctrl + Shift + V` ➡ Pegar en terminal.
-- `Tab` ➡ Autocompletar.
-- `Tab + Tab` ➡ Mostrar opciones de autocompletado.
-- `Ctrl + R` ➡ Búsqueda reversa.
-- `Ctrl + Shift + T` ➡ Abrir una pestaña en el terminal.
-- `Ctrl + Shift + N` ➡ Abrir una nueva ventana de terminal.
-- `Ctrl + C` ➡ Detener de forma segura el programa que se está ejecutando.
-- `Ctrl + Z` ➡ Forzar la detención de un programa.
-- `Ctrl + A` ➡ Ir al comienzo de la línea del terminal.
-- `Ctrl + E` ➡ Ir al final de la línea de terminal.
-- `Click central` del ratón ➡ Pegar lo que está seleccionado.
-
-## Terminal en Windows
-
-- `Ctrl + C` ➡ Copiar en terminal.
-- `Ctrl + V` ➡ Pegar en terminal.
-- `Click derecho` del ratón ➡ Pegar.
-- `Ctrl + Shift + T` ➡ Abrir una pestaña en el terminal.
-- `Tab` ➡ Autocompletar.
-
-## Vim
-
-- `j` ➡ Abajo
-- `k` ➡ Arriba
-- `h` ➡ Izquierda
-- `l` ➡ Derecha
-- `w` ➡ Siguiente palabra
-- `b` ➡ Palabra anterior
-- `e` ➡ Final de la palabra
-
 ## Spotify
 
 - `Alt + Shift + B` ➡ like en Spotify.
 
-
 ## Bibliografía
 
-- [Atajos de teclado en Visual Studio Code](https://carontestudio.com/blog/atajos-de-teclado-en-visual-studio-code/).
