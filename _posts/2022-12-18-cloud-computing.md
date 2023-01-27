@@ -73,10 +73,10 @@ Para tener una nube privada se necesita comprar una infraestructura propia para 
 
 #### Desventajas
 
-- Mayor coste inicial de compra
-- Necesario personal interno para gestión y soporte
-- Capacidad limitada a hardware
-- Mayores costes inicial de escalabilidad
+- Mayor coste inicial de compra.
+- Necesario personal interno para gestión y soporte.
+- Capacidad limitada a hardware.
+- Mayores costes inicial de escalabilidad.
 
 #### Ejemplos de proveedores
 
@@ -93,24 +93,23 @@ Para tener una nube privada se necesita comprar una infraestructura propia para 
 
 Sistema de servidores que combina servicios e infraestructura de nube privada y de nube pública interconectados entre sí con el fin de obtener las ventajas de ambos sistemas.
 
-La nube hibrida es la combinación de infraestructura privada y pública. No están en el mismo lugar, sino que se interconectan a través de software que permite gestionar el uso y acceso a ambas soluciones simultáneamente.
+La nube híbrida es la combinación de infraestructura privada y pública. No están en el mismo lugar, sino que se interconectan a través de software que permite gestionar el uso y acceso a ambas soluciones simultáneamente.
 
 #### Ventajas
 
-- Seguridad
-- Flexibilidad
-- Optimización de costes
-- Control de recursos
-- Control de acceso a la
-- información.
-- Mayor gestión de costes
+- Seguridad.
+- Flexibilidad.
+- Optimización de costes.
+- Control de recursos.
+- Control de acceso a la información.
+- Mayor gestión de costes.
 
 #### Desventajas
 
-- Mayor complejidad
+- Mayor complejidad.
 - Requiere inversión a corto y largo plazo.
-- Dependencia de terceros
-- Interconectividad vulnerable
+- Dependencia de terceros.
+- Interconectividad vulnerable.
 - Mayor planificación de compatibilidad, escalabilidad y gestión.
 
 #### Ejemplos de proveedores
@@ -219,7 +218,7 @@ La Plataforma como Servicio (PaaS) se refiere a una combinación preempaquetada 
 3. Microsoft Azure
    1. Incluye servicio PaaS de Microsoft
    2. Permite desarrollar y escalar servicios y aplicaciones web en varios lenguajes de programación.
-   3.  Soporta el ciclo de vida completo de desarrollos de aplicaciones web.
+   3. Soporta el ciclo de vida completo de desarrollos de aplicaciones web.
 
 {:.subsection}
 ### IaaS
@@ -251,4 +250,4 @@ X as a Service
 
 Acrónimo de X como servicio
 
-Ejemplos: Analítica, Informática, Juegos, Backup, Almacenamiento
+Ejemplos: Analítica, Informática, Juegos, Backup, Almacenamiento.
