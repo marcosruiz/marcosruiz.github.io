@@ -30,6 +30,7 @@ La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguien
 Realizar las siguientes actividades. Cada actividad debe contar con un comentario donde este escrito el enunciado de la actividad.
 
 > La única manera de aprender a programar es practicar, practicar y practicar. ¡Así que a darle duro!
+> 
 > ![Látigo](whip.gif)
 {:.prompt-tip}
 
