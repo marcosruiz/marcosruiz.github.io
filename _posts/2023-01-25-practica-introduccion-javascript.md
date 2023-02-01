@@ -34,6 +34,38 @@ Realizar las siguientes actividades. Cada actividad debe contar con un comentari
 > ![Látigo](whip.gif)
 {:.prompt-tip}
 
+Si quieres crear la estructura de actividades más rápido puedes ejecutar el siguiente script bash:
+
+```bash
+#!/bin/bash
+
+# Hecho por Diego Pina SMR2
+
+for i in {1..51}
+do
+  twoDigits=$(printf "%02d" $i)
+
+  file_content="<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Actividad_$twoDigits</title>
+    <script src="actividad_$twoDigits.js"></script>
+</head>
+<body>
+    <h1>Actividad_$twoDigits</h1>
+</body>
+</html>"
+
+  printf "$file_content" > "actividad_$twoDigits.html"
+
+  touch "actividad_$twoDigits.js"
+
+done
+```
+
 ### Actividad 1
 
 Escribe un programa que le pida al usuario ingresar una frase y la imprima en la consola.
