@@ -14,27 +14,35 @@ A continuación se presenta una guía práctica de como usar y configurar Visual
 
 ## Atajos de teclado para Visual Studio Code
 
-- `Ctrl + P` ➡ Buscar archivos por nombre.
-- `Ctrl + Shift + P` ➡ Acciones. Por ejemplo, transformar un texto a mayúsculas o minúsuclas.
-- `Ctrl + Shift + F` ➡ Buscar en todo el proyecto. Puedes usar expresiones regulares. Puedes practicar el uso de estas expresiones regulares [aquí](https://regex101.com/).
-- `Ctrl + H` ➡ Buscar y reemplazar.
-- `Alt + ↑` ➡ Mueve la línea actual una posición arriba.
-- `Alt + ↓` ➡ Mueve la línea actual una posición abajo.
-- `Ctrl + 1` ➡ Te sitúa en el panel 1 (izquierdo).
-- `Ctrl + 2` ➡ Te sitúa en el panel 2 (derecho en caso de tener 2). Lo crea si no existe.
-- `Ctrl + Alt + ➡` ➡ Pestaña actual a la derecha.
-- `Ctrl + Alt + ⬅` ➡ Pestaña actual a la izquierda.
-- `Ctrl + G` ➡ Ir a una línea concreta del código.
-- `Ctrl + D` ➡ Buscar y seleccionar.
-- `Alt + Enter` ➡ Seleccionar todo lo que coincida en la búsqueda.
-- `Alt + Shift + ↑` ➡ Mueve la línea actual una posición arriba.
-- `Alt + Shift + ↓` ➡ Mueve la línea actual una posición abajo.
-- `Ctrl + Shift + K` ➡ Delete line.
-- `Ctrl + Alt + ↑` ➡ Multiplicar cursor una posición hacia arriba.
-- `Ctrl + Alt + ↓` ➡ Multiplicar cursor una posición hacia abajo.
-- `Shift + Alt + F` ➡ Dar formato al documento.
-- `Ctrl + Ñ` ➡ Mostrar/ocultar consola
-- `Ctrl + B` ➡ Mostrar/ocultar barra lateral izquierda
+| Atajo de teclado | Inglés | Descripción |
+|---|---|---|
+| `Ctrl + P` |  | Buscar archivos por nombre. |
+| `Ctrl + Shift + P` | Command **P**alette | Acciones. Por ejemplo, transformar un texto a mayúsculas o minúsuclas. |
+| `Ctrl + F` | **F**ind | Buscar. |
+| `Ctrl + Shift + F` | **F**ind | Buscar en todo el proyecto. Puedes usar expresiones regulares. Puedes practicar el uso de estas expresiones regulares [aquí](https://regex101.com/). |
+| `Ctrl + H` |  | Buscar y reemplazar. |
+| `Ctrl + Shift + H` |  | Buscar y reemplazar en todo el proyecto.  |
+| `Alt + ↑` |  | Mueve la línea actual una posición arriba. |
+| `Alt + ↓` |  | Mueve la línea actual una posición abajo. |
+| `Ctrl + 1` |  | Te sitúa en el panel 1 (izquierdo). |
+| `Ctrl + 2` |  | Te sitúa en el panel 2 (derecho en caso de tener 2). Lo crea si no existe. |
+| `Ctrl + Alt + ➡` |  | Pestaña actual a la derecha. |
+| `Ctrl + Alt + ⬅` |  | Pestaña actual a la izquierda. |
+| `Ctrl + G` | **G**o to line | Ir a una línea concreta del código. |
+| `Ctrl + D` |  | Buscar y seleccionar. |
+| `Alt + Enter` |  | Seleccionar todo lo que coincida en la búsqueda. |
+| `Alt + Shift + ↑` |  | Mueve la línea actual una posición arriba. |
+| `Alt + Shift + ↓` |  | Mueve la línea actual una posición abajo. |
+| `Ctrl + Shift + K` |  | Delete line. |
+| `Ctrl + Alt + ↑` |  | Multiplicar cursor una posición hacia arriba. |
+| `Ctrl + Alt + ↓` |  | Multiplicar cursor una posición hacia abajo. |
+| `Shift + Alt + F` | **F**ormat | Dar formato al documento. |
+| `Ctrl + Ñ` |  | Mostrar/ocultar consola |
+| `Ctrl + B` | Toggle Side**b**ar | Mostrar/ocultar barra lateral izquierda |
+| `Alt + Click` |  | Insertar cursor |
+| `Click central` y arrastrar |  | Seleccionar en vertical |
+
+Puedes descargar un PDF con todos los atajos de teclado en inglés [aquí](/assets/img/trabajar-visual-studio-code/keyboard-shortcuts-windows.pdf).
 
 ## Consejos para Visual Studio Code
 
@@ -86,7 +94,7 @@ _Mensaje de error de Stylelint_
 
 #### Extensiones para trabajar con Markdown
 
-
+- Markdown All in One
 
 ## Bibliografía
 
