@@ -110,7 +110,7 @@ Realizar la actividad anterior pero en lugar de usar enrutamiento estático, uti
 ¿Podemos mezclar routers con enrutamiento estático y con enrutamiento dinámico? ¿Cómo?
 
 {:.question}
-¿Qué ocurre cuando introducimos una subred en la tabla de enrutamiento?
+¿Qué ocurre cuando introducimos una subred en el enrutamiento RIP?
 
 {:.activity}
 ### Tabla de enrutamiento desde CLI
