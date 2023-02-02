@@ -50,12 +50,12 @@ Pasos a realizar:
 5. Conectamos cada switch al router que tiene asignado y le damos su dirección en la red a la que lo hemos conectado.
 6. Verificamos que las máquinas conectadas a los diferentes switches tienen puesto el GATEWAY
  con la dirección que tiene el router en cada red - normalmente x.x.x.1
-7. Conectamos los dos routers entre si, formando una nueva red entre ellos. Les asignamos una IP a cada uno dentro de esa nueva red.
+7. Conectamos los tres routers entre si, formando una nueva red entre ellos. Les asignamos una IP a cada uno dentro de esa nueva red.
 8. Para realizar el enrutamiento estático (pestaña Config -> Static) debemos indicar 3 direcciones:
     - **Network**: la red a la que queremos acceder desde este router
     - **Mask**: la máscara de red que tiene la red a la que queremos acceder desde el router
     - **Next Hop**: la IP por la que vamos a ir a esa red, es la IP que tiene asignada el otro router.
-    - Lo hacemos en ambos routers.
+    - Lo hacemos en todos los routers.
 9. Verificamos que podemos comunicarnos de una red a otra.
 
 > 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
@@ -84,7 +84,16 @@ _Tres redes y tres routers: Distribución de equipos_
 {:.activity}
 ### Tres subredes, una red y cuatro routers con enrutamiento estático
 
-Sobre la actividad anterior, añadir una nueva red de tipo C privada que se conecte con uno, dos o tres routers más. Puedes usar tantas redes de tipo C como necesites para conectar la nueva red al resto de subredes.
+Sobre la actividad anterior, añadir una nueva red de tipo C privada junto a un nuevo router y hacer que este router se conecte con uno, dos o tres routers más (a elección). Puedes usar tantas redes de tipo C como necesites para conectar la nueva red al resto de subredes. A continuación se muestran las tres posibles topologías.
+
+![Tres subredes, una red y cuatro routers con enrutamiento estático 1](/assets/img/practica-enrutamiento-con-packet-tracer/tresSubredesUnaRedCuatroRouters1.png)
+_Tres subredes, una red y cuatro routers con enrutamiento estático 1_
+
+![Tres subredes, una red y cuatro routers con enrutamiento estático 2](/assets/img/practica-enrutamiento-con-packet-tracer/tresSubredesUnaRedCuatroRouters2.png)
+_Tres subredes, una red y cuatro routers con enrutamiento estático 2_
+
+![Tres subredes, una red y cuatro routers con enrutamiento estático 3](/assets/img/practica-enrutamiento-con-packet-tracer/tresSubredesUnaRedCuatroRouters3.png)
+_Tres subredes, una red y cuatro routers con enrutamiento estático 3_
 
 > 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
 {:.prompt-info}
@@ -99,6 +108,9 @@ Realizar la actividad anterior pero en lugar de usar enrutamiento estático, uti
 
 {:.question}
 ¿Podemos mezclar routers con enrutamiento estático y con enrutamiento dinámico? ¿Cómo?
+
+{:.question}
+¿Qué ocurre cuando introducimos una subred en la tabla de enrutamiento?
 
 {:.activity}
 ### Tabla de enrutamiento desde CLI
