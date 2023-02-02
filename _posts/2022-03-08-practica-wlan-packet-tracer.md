@@ -9,23 +9,11 @@ tags: [packet tracer, redes locales, smr, wlan, práctica]
 
 El objetivo de esta práctica es aprender que es una WLAN y como configurarla utilizando la herramienta Packet Tracer.
 
-## Actividades
-
-A continuación se listan las actividades que se deben realizar para esta práctica.
-
-{:.activity}
-### Un router WLAN
-
-Con ayuda de [Tutorial: WLAN con Packet Tracer](/posts/tutorial-wlan-packet-tracer) realizar el siguiente esquema de red de manera funcional.
-
-![Gestión de permisos en GNU Linux](/assets/img/practica-wlan-packet-tracer/esquemaRed1.png)
-_Esquema de red_
-
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguiente formato "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del fichero ZIP sería "RuizGarcía_Marcos_Práctica\<NúmeroDeLaPráctica\>.zip".
+La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguiente formato `<Apellidos>_<Nombre>_P<NúmeroDeLaPrácticaConDosDígitos>.zip`{: .filepath}. Por ejemplo, en mi caso el nombre del fichero ZIP sería `RuizGarcía_Marcos_P09.zip`{: .filepath}.
 
-En la raíz del fichero ZIP deben encontrarse el documento PDF con el nombre "\<Apellidos\>_\<Nombre\>_Práctica\<NúmeroDeLaPráctica\>.pdf" y las actividades de Packet Tracer en formato PKT con el nombre "\<NúmeroDeActividad\>_actividad.pkt".
+En la raíz del fichero ZIP deben encontrarse el documento PDF con el nombre `<Apellidos>_<Nombre>_P<NúmeroDeLaPrácticaConDosDígitos>.pdf`{: .filepath} y las actividades de Packet Tracer en formato PKT con el nombre `<NúmeroDeActividad>.pkt`{: .filepath}.
 
 Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 
@@ -38,3 +26,33 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 7. El documento no debe contener faltas ortográficas.
 8. Los comandos y ficheros de configuración que hayas utilizado deben quedar reflejados en el PDF de la entrega en texto para que permitirte copiar y pegar el día del examen todos los comandos de una manera rápida.
 9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
+
+## Actividades
+
+A continuación se listan las actividades que se deben realizar para esta práctica.
+
+{:.activity}
+### Un router WRT300N
+
+Con ayuda de [Tutorial: WLAN con Packet Tracer](/posts/tutorial-wlan-packet-tracer) realizar el siguiente esquema de red de manera funcional.
+
+![Gestión de permisos en GNU Linux](/assets/img/practica-wlan-packet-tracer/esquemaRed1.png)
+_Esquema de red_
+
+{:.question}
+¿Qué diferencias hay entre un Router-PT Generic y el router WRT300N?
+
+> 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
+{:.prompt-info}
+
+
+{:.activity}
+### Tres router WRT300N
+
+Añade dos routers WRT300N más a la topología anterior utilizando redes de tipo C. Deberás usar redes tipo C privadas para la parte "interna" y redes tipo C públicas para la parte "externa".
+
+{:.question}
+¿Puedo usar la misma dirección tipo C privada en las tres partes "internas" sin que haya conflictos? ¿Por qué?
+
+> 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
+{:.prompt-info}
