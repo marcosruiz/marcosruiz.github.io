@@ -208,7 +208,10 @@ Son dispositivos que permiten extender el área de cobertura de una red inalámb
 
 Son dispositivos que permiten conectar una red inalámbrica con la red cableada. También hacen la función de concentrador inalámbrico es decir de switch inalámbrico.
 
-Normalmente en el mercado encontramos routers con diferentes interfaces, una de ellas es la interfaz inalámbrica que hace de punto de acceso a todos los clientes inalámbricos. Ejemplo: el router de nuestra compañía telefónica.
+{:.question}
+¿Qué es un concentrador?
+
+Normalmente en el mercado encontramos routers con diferentes interfaces, una de ellas es la interfaz inalámbrica que hace de punto de acceso a todos los clientes inalámbricos. Ejemplo: El router de nuestra compañía telefónica.
 
 Debemos tener en cuenta que cuantos más clientes se conecten en la red cableada a través de un punto de acceso más lento es el acceso.
 
