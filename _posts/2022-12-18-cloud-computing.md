@@ -24,6 +24,7 @@ Una nube pública es una forma de uso de la nube en la que los recursos informá
 
 Se compone de uno o varios servidores en los que se dispone de los recursos contratados en cada momento. No se contratan servidores sino que se contrata recursos de servidores compartidos.
 
+{:.subsubsection}
 #### Ventajas
 
 - Configuración Rápida
@@ -35,6 +36,17 @@ Se compone de uno o varios servidores en los que se dispone de los recursos cont
 - Sin permanencia
 - Menor coste a corto plazo
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es el uptime o disponibilidad?</summary>
+  <div class="card-body" markdown="1">
+
+El tiempo de disponibilidad es el periodo de funcionamiento ininterrumpido que experimenta un servicio de hosting. Lo ideal es que fuera del 100%, es decir, con un tiempo de inactividad igual a cero, pero en el mundo real esto es extremadamente difícil de conseguir.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+{:.subsubsection}
 #### Desventajas
 
 - Infraestructura compartida
@@ -43,6 +55,7 @@ Se compone de uno o varios servidores en los que se dispone de los recursos cont
 - Dependencia de soporte ajeno
 - Mayor coste a largo plazo
 
+{:.subsubsection}
 #### Ejemplos de proveedores
 
 - Amazon Web Services
@@ -57,10 +70,11 @@ Se compone de uno o varios servidores en los que se dispone de los recursos cont
 {:.subsection}
 ### Privada
 
-Es un modelo de cloud compunting en el que los recursos e infraestructura son propiedad de la empresa y no se comparte con terceros.
+Es un modelo de cloud computing en el que los recursos e infraestructura son propiedad de la empresa y no se comparte con terceros.
 
-Para tener una nube privada se necesita comprar una infraestructura propia para poder instalar todas las herramientas, apps, servicios, webs, etc. que necesite el cliente.
+Para tener una nube privada se necesita comprar una infraestructura propia para poder instalar todas las herramientas, apps, servicios, webs... que necesite el cliente.
 
+{:.subsubsection}
 #### Ventajas
 
 - Ahorro de costes a largo plazo
@@ -71,22 +85,20 @@ Para tener una nube privada se necesita comprar una infraestructura propia para 
 - Mayor rendimiento
 - No dependencia de proveedor
 
+{:.subsubsection}
 #### Desventajas
 
 - Mayor coste inicial de compra.
 - Necesario personal interno para gestión y soporte.
 - Capacidad limitada a hardware.
-- Mayores costes inicial de escalabilidad.
+- Mayores costes iniciales y de escalabilidad.
 
+{:.subsubsection}
 #### Ejemplos de proveedores
 
-- Hardware
-  - Dell, HP, Cisco, Oracle,
-  - IBM
-- Software
-  - Red Hat Linux, Debian
-  - Linux, VMware, MongoDB.
-- Soporte y Mantenimiento
+- Hardware: Dell, HP, Cisco, Oracle, IBM.
+- Software: Red Hat Linux, Debian,Linux, VMware, MongoDB.
+- Soporte y Mantenimiento.
 
 {:.subsection}
 ### Híbrida
@@ -95,6 +107,7 @@ Sistema de servidores que combina servicios e infraestructura de nube privada y 
 
 La nube híbrida es la combinación de infraestructura privada y pública. No están en el mismo lugar, sino que se interconectan a través de software que permite gestionar el uso y acceso a ambas soluciones simultáneamente.
 
+{:.subsubsection}
 #### Ventajas
 
 - Seguridad.
@@ -104,6 +117,7 @@ La nube híbrida es la combinación de infraestructura privada y pública. No es
 - Control de acceso a la información.
 - Mayor gestión de costes.
 
+{:.subsubsection}
 #### Desventajas
 
 - Mayor complejidad.
@@ -128,11 +142,11 @@ La nube híbrida es la combinación de infraestructura privada y pública. No es
 
 Existen 3 + 2 servicios Cloud:
 
-1. SaaS
-2. PaaS
-3. IaaS
-4. DaaS
-5. XaaS
+1. **SaaS**
+1. **PaaS**
+1. **IaaS**
+1. DaaS
+1. XaaS
 
 ![SaaS vs PaaS vs IaaS](iaasVsPaasVsSaas.webp)
 _SaaS vs PaaS vs IaaS_
@@ -140,58 +154,58 @@ _SaaS vs PaaS vs IaaS_
 {:.subsection}
 ### SaaS
 
-El software como servicio (SaaS) es un modelo de distribución y de licencias usado para entregar aplicaciones de software a través de Internet, es decir, como un servicio. 
+El software como servicio (SaaS) es un modelo de distribución y de licencias usado para entregar aplicaciones de software a través de Internet, es decir, como un servicio.
 
 - Es el más usado.
 - Lo usamos a diario en múltiples dispositivos.
 - Servicios que no es necesario tener instalados.
-- Es Software completo, ayuda directamente al usuario con una solución concreta.
+- Es software completo, ayuda directamente al usuario con una solución concreta.
 
 #### Ejemplos SaaS
 
 1. E-Mail
-  - Escalable, podemos cambiar el almacenamiento.
-  - Nos ofrece servicios adicionales.
-  - Es más seguro al no estar en nuestros ordenadores.
-  - Reduce costes al usuario.
-  - No hay que instalar nada, desde un navegador tenemos acceso.
-  - Ejemplos: Gmail, Outlook, etc.
+    - Escalable, podemos cambiar el almacenamiento.
+    - Nos ofrece servicios adicionales.
+    - Es más seguro al no estar en nuestros ordenadores.
+    - Reduce costes al usuario.
+    - No hay que instalar nada, tenemos acceso desde un navegador.
+    - Ejemplos: Gmail, Outlook, etc.
 1. Redes Sociales
-  - 100% Cloud.
-  - Conexión permanente.
-  - Acceso desde cualquier dispositivo.
-  - Acceso desde cualquier lugar.
-  - Ejemplos: Facebook, Twitter, LinkedIn, Instagram, etc.
+    - 100% Cloud.
+    - Conexión permanente.
+    - Acceso desde cualquier dispositivo.
+    - Acceso desde cualquier lugar.
+    - Ejemplos: Facebook, Twitter, LinkedIn, Instagram, etc.
 1. Música en la nube
-  - 100% Cloud.
-  - Conexión permanente.
-  - Acceso desde cualquier dispositivo.
-  - Acceso desde cualquier lugar.
-  - A demanda.
-  - Ejemplos: Spotify, Apple Music, YouTube Music, Amazon Music, Tidal, etc.
+    - 100% Cloud.
+    - Conexión permanente.
+    - Acceso desde cualquier dispositivo.
+    - Acceso desde cualquier lugar.
+    - A demanda.
+    - Ejemplos: Spotify, Apple Music, YouTube Music, Amazon Music, Tidal, etc.
 1. Video en la nube
-  - 100% Cloud.
-  - Conexión permanente.
-  - Acceso desde cualquier dispositivo.
-  - Acceso desde cualquier lugar.
-  - A demanda.
-  - Ejemplos: Disney+, prime video, Netflix, HBO NOW, YouTubeTV, hulu, etc.
+    - 100% Cloud.
+    - Conexión permanente.
+    - Acceso desde cualquier dispositivo.
+    - Acceso desde cualquier lugar.
+    - A demanda.
+    - Ejemplos: Disney+, prime video, Netflix, HBO NOW, YouTubeTV, hulu, etc.
 1. Trabajo en línea y oficina virtual
-  - 100% Cloud.
-  - Conexión permanente.
-  - Acceso desde cualquier dispositivo.
-  - Acceso desde cualquier lugar.
-  - Herramientas ofimáticas.
-  - Herramientas de trabajos colaborativos.
-  - Ejemplos: Office 365, Google Workspace, Trello, Dropbox, Slack, Zoom, etc.
+    - 100% Cloud.
+    - Conexión permanente.
+    - Acceso desde cualquier dispositivo.
+    - Acceso desde cualquier lugar.
+    - Herramientas ofimáticas.
+    - Herramientas de trabajos colaborativos.
+    - Ejemplos: Office 365, Google Workspace, Trello, Dropbox, Slack, Zoom, etc.
 1. Formación
-  - 100% Cloud.
-  - Conexión permanente.
-  - Acceso desde cualquier dispositivo.
-  - Acceso desde cualquier lugar.
-  - Herramientas de estudio para los alumnos.
-  - Herramientas de trabajos colaborativos.
-  - Ejemplos: Moodle, Chamilo, Lifter LMS, Consortium Caroline, ATutor, etc.
+    - 100% Cloud.
+    - Conexión permanente.
+    - Acceso desde cualquier dispositivo.
+    - Acceso desde cualquier lugar.
+    - Herramientas de estudio para los alumnos.
+    - Herramientas de trabajos colaborativos.
+    - Ejemplos: Moodle, Chamilo, Lifter LMS, Consortium Caroline, ATutor, etc.
 
 {:.subsection}
 ### PaaS
@@ -202,35 +216,34 @@ La Plataforma como Servicio (PaaS) se refiere a una combinación preempaquetada 
 - No son aplicaciones acabadas que resuelven un problema.
 - No se centra en dar una solución directa de software, sino que pone a disposición del usuario una serie de herramientas para que puedan desarrollar sus propias aplicaciones.
 
+{:.subsubsection}
 #### Ejemplos PaaS
 
-1. Google App Engine
+1. **Google App Engine**
    1. Nos permite crear aplicaciones escalables para Google Cloud Platform.
-   2. Se pueden crear y alojar aplicaciones web dentro
-   3. de la plataforma de Google, sin necesidad de servidor.
-   4. El desarrollador de la aplicación no tiene que preocuparse de la gestión de la infraestructura.
-   5. Centrándose solo en el desarrollo de la APP.
-2. AWS Elastic Beanstalk
-   1. Servicio PaaS de AWS (Amazon)
+   2. Se pueden crear y alojar aplicaciones web dentro de la plataforma de Google, sin necesidad de servidor.
+   3. El desarrollador de la aplicación no tiene que preocuparse de la gestión de la infraestructura centrándose solo en el desarrollo de la APP.
+1. **AWS Elastic Beanstalk**
+   1. Servicio PaaS de AWS (Amazon).
    2. Permite desarrollar y escalar servicios y aplicaciones web en varios lenguajes de programación.
-   3. Una vez se carga el código, el servicio se encarga autmática de la implementación, capacidad,
-   4. equilibrio, escalado y monitorización de la aplicación.
-3. Microsoft Azure
-   1. Incluye servicio PaaS de Microsoft
+   3. Una vez se carga el código, el servicio se encarga automáticamente de la implementación, capacidad, equilibrio, escalado y monitorización de la aplicación.
+1. **Microsoft Azure**
+   1. Incluye servicio PaaS de Microsoft.
    2. Permite desarrollar y escalar servicios y aplicaciones web en varios lenguajes de programación.
    3. Soporta el ciclo de vida completo de desarrollos de aplicaciones web.
 
 {:.subsection}
 ### IaaS
 
-La infraestructura como servicio (IaaS) es un tipo de servicio de informática en la nube que ofrece recursos esenciales de proceso, almacenamiento y redes a petición que son de pago por uso. IaaS es uno de los cuatro tipos de servicios en la nube, junto con el software como servicio (SaaS), la plataforma como servicio (PaaS) y la tecnología sin servidor.
+La infraestructura como servicio (IaaS) es un tipo de servicio de informática en la nube que ofrece recursos esenciales de proceso, almacenamiento y redes a petición (y son de pago por uso). IaaS es uno de los cuatro tipos de servicios en la nube, junto con el software como servicio (SaaS), la plataforma como servicio (PaaS) y la tecnología sin servidor (serverless).
 
-Conjunto de herramientas que ofrecen los recursos imprescindibles para ejecutar los procesos de las aplicaciones y su almacenamiento.
+El IaaS es el conjunto de herramientas que ofrecen los recursos imprescindibles para ejecutar los procesos de las aplicaciones y su almacenamiento.
 
+{:.subsubsection}
 #### Ejemplos IaaS
 
 1. Microsoft Azure
-   - Incluye servicio IaaS de Microsoft
+   - Incluye servicio IaaS de Microsoft.
    - Administra la infraestructura, mientras el usuario desarrolla.
 2. Google Cloud Platform
    - Servicio IaaS de Google.
@@ -242,6 +255,9 @@ Conjunto de herramientas que ofrecen los recursos imprescindibles para ejecutar 
 Data as a Service (DaaS) es una estrategia de gestión de datos que tiene como objetivo aprovechar los datos como un activo empresarial para una mayor agilidad empresarial. Es parte de las ofertas "como servicio" que se han vuelto cada vez más populares desde la expansión de Internet en la década de 1990, que comenzó con la introducción del software como servicio (SaaS). De manera similar a otros modelos "como servicio", DaaS proporciona una forma de administrar las cantidades masivas de datos que las organizaciones generan todos los días y entrega esa información valiosa en toda la empresa para la toma de decisiones basadas en datos.
 
 Ejemplos: Facebook, Google Maps, Salesforce Data, etc.
+
+{:.question}
+¿Qué es Salesforce?
 
 {:.subsection}
 ### XaaS

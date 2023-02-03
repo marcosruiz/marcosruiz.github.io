@@ -135,7 +135,6 @@ Si el número es igual a 10 debe imprimir "El número es igual a 10".
 
 ### Actividad 10
 
-
 El índice de masa corporal (IMC), o BMI por sus siglas en inglés, es un valor que determina la cantidad de grasa de una persona.
 
 El BMI se calcula con la siguiente formula:
