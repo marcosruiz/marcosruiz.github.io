@@ -50,7 +50,7 @@ _Esquema de red con un router WRT300N_
 ¿Qué diferencias hay entre un Router-PT Generic y el router WRT300N?
 
 {:.question}
-¿Puedo enviar un mensaje al PC?
+¿Puedo enviar un mensaje del PC4 al PC2? ¿Y del PC2 al PC4? ¿Por qué?
 
 > 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
 {:.prompt-info}
@@ -65,6 +65,12 @@ _Esquema de red con tres routers WRT300N_
 
 {:.question}
 ¿Puedo usar la misma dirección tipo C privada en las tres partes "internas" sin que haya conflictos? ¿Por qué?
+
+{:.question}
+¿Puedo enviar un mensaje del PC7 al PC6? Compruébalo en el modo simulación.
+
+{:.question}
+¿Es correcto que el PC6 se conecte al Wireless Router0 mediante cable directo?
 
 > 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
 {:.prompt-info}
