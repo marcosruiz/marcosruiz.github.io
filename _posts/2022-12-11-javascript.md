@@ -255,6 +255,8 @@ Si has visto los 3 vídeos deja un comentario de cual te parece mejor.
 - [DesafioLatam/guia-de-ejercicios-javascript](https://github.com/DesafioLatam/guia-de-ejercicios-javascript/blob/master/ejercicios.md)
 - [Exámenes de JavaScript](https://cibertest.com/test-examen/20/javascript)
 - [mouredev/Weekly-Challenge-2022-Kotlin](https://github.com/mouredev/Weekly-Challenge-2022-Kotlin)
+- [Lista de preguntas (avanzadas) de JavaScript](https://github.com/lydiahallie/javascript-questions/blob/master/es-ES/README-ES.md) ➡️ Preguntas rebuscadas de JS
+- [Reto #1 - Bingo (ManzDev)](https://lenguajejs.com/retos/nivel-medio/bingo/)
 
 ## Ejercicios en inglés
 
@@ -265,13 +267,14 @@ Si has visto los 3 vídeos deja un comentario de cual te parece mejor.
 - [JavaScript Exercises](https://www.w3schools.com/js/js_exercises.asp)
 - [CodinGame](https://www.codingame.com/start) ➡️ Para aprender jugando
 - [CodeWars](https://www.codewars.com/) ➡️ Para aprender jugando
+- [Exercism](https://exercism.org/) ➡️ Ejercicios guiados de JS
+
+## Enlaces apartados
+
+- [HackerRank](https://www.hackerrank.com/) ➡️ Ejercicios guiados de todo menos JS
 
 ## Enlaces pendientes de mirar
 
-- [Exercism](https://exercism.org/)
-- [HackerRank](https://www.hackerrank.com/)
-- [Lista de preguntas (avanzadas) de JavaScript](https://github.com/lydiahallie/javascript-questions/blob/master/es-ES/README-ES.md)
-- [Retos](https://lenguajejs.com/retos/)
 - [Project Lovelace](https://projectlovelace.net/problems/)
 - [JavaScript Ya](https://www.tutorialesprogramacionya.com/javascriptya/)
 - [Ejercicios Logica de Programacion](https://github.com/denulemos/programming-training)

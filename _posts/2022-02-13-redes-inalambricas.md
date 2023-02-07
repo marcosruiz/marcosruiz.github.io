@@ -247,8 +247,16 @@ _Topología Ad Hoc_
 
 Las estaciones tienden a conectarse a las estaciones más cercanas. Aunque la instalación es sencilla y barata, proporciona menor rendimiento y seguridad que una red en infraestructura.
 
-{:.question}
-¿Qué significa hacer las cosas ad hoc?
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué significa "ad hoc" en español?</summary>
+  <div class="card-body" markdown="1">
+
+"Ad hoc" significa improvisado o improvisado, por lo que una red inalámbrica ad hoc es un tipo de red improvisada de dispositivo a dispositivo a demanda.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 
 {:.question}
 ¿Qué es Wifi Mesh? ¿Es un sistema ad hoc?

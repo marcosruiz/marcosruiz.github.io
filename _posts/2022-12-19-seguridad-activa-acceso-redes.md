@@ -58,11 +58,11 @@ _WLAN en modo infraestructura_
 
 Como ocurría con el switch en las redes cableadas, hemos de:
 
-- Proteger el access point físicamente. La protección física es más complicada que en el caso del switch, porque el AP tiene que estar cerca de los usuarios para que puedan captar la señal inalámbrica, mientras que para conectar la toma de red de la mesa con el switch podemos utilizar cable de varias decenas de metros.
-- Proteger el access point lógicamente (usuario/contraseña).
-- Controlar qué clientes pueden conectarse a él (autenticación).
-- Podemos separar dos grupos de usuarios, haciendo que el mismo AP emita varias SSID distintas, con autenticaciones distintas. Estas distintas SSID suelen tener asociada una VLAN etiquetada.
-- Sobre todo, hay que encriptar la transmisión entre el ordenador y el AP. Así, aunque alguien capture nuestras comunicaciones, no podrá sacar nada en claro.
+- **Proteger el access point físicamente**. La protección física es más complicada que en el caso del switch, porque el AP tiene que estar cerca de los usuarios para que puedan captar la señal inalámbrica, mientras que para conectar la toma de red de la mesa con el switch podemos utilizar cable de varias decenas de metros.
+- **Proteger el access point lógicamente** (usuario/contraseña).
+- **Controlar qué clientes pueden conectarse a él** (autenticación).
+- Podemos **separar dos grupos de usuarios**, haciendo que el mismo AP emita varias SSID distintas, con autenticaciones distintas. Estas distintas SSID suelen tener asociada una VLAN etiquetada.
+- Sobre todo, hay que **encriptar la transmisión** entre el ordenador y el AP. Así, aunque alguien capture nuestras comunicaciones, no podrá sacar nada en claro.
 
 {:.subsection}
 ### Asociación Y Transmisión
@@ -92,9 +92,9 @@ Por tanto, el AP admite varias combinaciones:
 
 La necesidad de encriptar las comunicaciones inalámbricas apareció desde el primer momento. Había que dar a los usuarios la confianza de que su información viajaba segura. El primer estándar se llamó WEP (Wireline Equivalent Privacy, privacidad equivalente al cable), intentando compensar las dos realidades:
 
-- En redes cableadas es difícil el acceso al cable, pero si alguien lo consigue, puede
+- En **redes cableadas** es difícil el acceso al cable, pero si alguien lo consigue, puede
 capturar cualquier comunicación que pase por ahí.
-- En redes inalámbricas cualquiera puede capturar las comunicaciones, pero, como
+- En **redes inalámbricas** cualquiera puede capturar las comunicaciones, pero, como
 van cifradas, no le servirá de nada.
 
 Sin embargo, en poco tiempo se encontraron debilidades al algoritmo de cifrado utilizado en WEP. Capturando cierto número de tramas, en poco tiempo (cada vez menos, con el aumento de la capacidad de proceso de los ordenadores personales) cualquiera podía obtener la clave WEP.
@@ -115,7 +115,7 @@ Para las necesidades de seguridad de una empresa no es suficiente con la soluci�
 
 El esquema de funcionamiento de WPA empresarial es el siguiente:
 
--  Dentro de la LAN de la empresa hay un ordenador que ejecuta un software servidor RADIUS. En este servidor hay una base de datos de usuarios y contraseñas, y el servidor admite preguntas sobre ellos.
+- Dentro de la LAN de la empresa hay un ordenador que ejecuta un software servidor RADIUS. En este servidor hay una base de datos de usuarios y contraseñas, y el servidor admite preguntas sobre ellos.
 - Los AP de la empresa tienen conexión con ese ordenador.
 - Los AP ejecutan un software cliente RADIUS. Este software es capaz de formular las preguntas y analizar las respuestas.
 - El servidor RADIUS tiene la lista de las direcciones IP de los AP que le pueden preguntar. Además de estar en la lista, el AP necesita que le configuremos una contraseña definida en el servidor (una dirección IP es fácilmente falsificable).
@@ -127,8 +127,8 @@ Entonces los hackers concentraron su trabajo en la clave PSK de la fase de asoci
 
 Utilizaron la fuerza bruta de dos formas:
 
-- Probando contraseñas una tras otra. Las contraseñas serían todas las combinaciones posibles de letras y números, o una selección mediante un diccionario. Por desgracia, los AP no suelen tener un control del número de intentos fallidos, como sí ocurre en otros sistemas de autenticación.
-- Si consiguieran capturar las tramas de inicio de conexión de un cliente, podrían aplicar un ataque de diccionario sobre la información de esas tramas. Si no queremos esperar a que aparezca un cliente nuevo, podemos forzar la desconexión de alguno.
+- **Probando contraseñas una tras otra**. Las contraseñas serían todas las combinaciones posibles de letras y números, o una selección mediante un diccionario. Por desgracia, los AP no suelen tener un control del número de intentos fallidos, como sí ocurre en otros sistemas de autenticación.
+- Si consiguieran **capturar las tramas de inicio de conexión de un cliente**, podrían aplicar un ataque de diccionario sobre la información de esas tramas. Si no queremos esperar a que aparezca un cliente nuevo, podemos forzar la desconexión de alguno.
 
 {:.section}
 ## VPN
