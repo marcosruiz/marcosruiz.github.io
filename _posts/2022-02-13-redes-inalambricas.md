@@ -235,7 +235,7 @@ Fundamentalmente hay dos configuraciones:
 {:.subsection}
 ### Infraestructura
 
-Es aquella en la que uno de los nodos de red que su punto de acceso. Los nodos no se comunican todos entre sí directamente mediante enlaces punto a punto, si no siempre a través del punto de acceso.
+Es aquella en la que uno de los nodos de red se comunican con su punto de acceso. Los nodos no se comunican todos entre sí directamente mediante enlaces punto a punto, si no siempre a través del punto de acceso.
 
 {:.subsection}
 ### Ad hoc
