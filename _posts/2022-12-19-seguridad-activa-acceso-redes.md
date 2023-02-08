@@ -105,8 +105,26 @@ Las autoridades de estandarización empezaron a trabajar en un nuevo estándar. 
 - **Rotación automática de claves**. Cada cierto tiempo (varios minutos) el AP y el cliente negocian una nueva clave. Por tanto, si algún atacante lograra acertar con la clave de una comunicación, solo le serviría para descifrar la información intercambiada durante ese intervalo de tiempo, pero no la anterior ni la siguiente.
 - Por primera vez **se distingue entre los ámbitos personal y empresarial**. En el ámbito personal es suficiente con el esquema habitual de una única clave que conocen todos (WPA le llama PSK [Pre-Shared Key]); en el ámbito empresarial no tiene sentido, porque si una persona abandona la empresa, habría que cambiar la clave y comunicarlo de nuevo a todos los empleados. Para resolverlo, WPA empresarial introduce un servidor RADIUS donde poder almacenar un usuario y una clave para cada empleado.
 
-{:.question}
-¿Qué protocolo de seguridad de redes inalámbricas no es seguro?
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué sistema de cifrado de seguridad de redes inalámbricas no es seguro?</summary>
+  <div class="card-body" markdown="1">
+
+WEP
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Es WEP inseguro por su sistema de cifrado?</summary>
+  <div class="card-body" markdown="1">
+
+No
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 {:.subsection}
 ### WPA Empresarial: RADIUS
@@ -148,7 +166,10 @@ El responsable de conseguir esta transparencia es el software de la VPN. En el o
 
 El software VPN en el cliente suele llevar una opción para que las conexiones a Internet se hagan directamente en la conexión del usuario, sin tener que pasar por el túnel y salir por la conexión a Internet de la empresa. Es decir, el túnel se usa solo para comunicaciones internas.
 
-Leer artículo [VPN](/posts/vpn/).
+Leer artículo [¿Qué es una VPN?](/posts/vpn/).
+
+> Es fácil confundir Proxies con VPNs, por lo que en el artículo [Seguridad activa de control de redes](/posts/seguridad-activa-control-redes/) se explican sus similitudes y diferencias.
+{:.prompt-tip}
 
 {:.section}
 ## Servicios De Red. Nmap Y Netstat
