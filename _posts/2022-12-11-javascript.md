@@ -248,13 +248,30 @@ Leer [Funciones](https://lenguajejs.com/javascript/fundamentos/funciones/). No e
 ¿Cuántas maneras existen de declarar una función? ¿Hay alguna no recomendada?
 
 {:.question}
-¿Qué es una función anónima? ¿Cómo ejecutamos una función que no tiene nombre?
+ ¿Cómo ejecutamos una función que no tiene nombre?
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es una función anónima?</summary>
+  <div class="card-body" markdown="1">
+
+Leer [apartado Funciones anónimas de Funciones](https://lenguajejs.com/javascript/fundamentos/funciones/#funciones-an%C3%B3nimas)
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 {:.question}
 ¿Qué es un callback?
 
-{:.question}
-¿Qué es una función autoejecutable?
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es una función autoejecutable?</summary>
+  <div class="card-body" markdown="1">
+
+Leer [apartado Funciones autoejecutables de Funciones](https://lenguajejs.com/javascript/fundamentos/funciones/#funciones-autoejecutables).
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es una arrow function? ¿Es igual a una función tradicional?</summary>
@@ -266,9 +283,9 @@ A continuación te muestro como pasar de una función anónima a una función fl
 
 ```javascript
 // Función tradicional
-function (a){
+(function (a){
   return a + 100;
-}
+})
 
 // Desglose de la función flecha
 
