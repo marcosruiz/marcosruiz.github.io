@@ -151,25 +151,7 @@ Utilizaron la fuerza bruta de dos formas:
 {:.section}
 ## VPN
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2Dao6N0jWEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1ISXmbcZAm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-El objetivo final de la VPN es que el empleado (más bien, su ordenador) no note si está en la empresa o fuera de ella. En ambos casos recibe una configuración IP privada (direcciones 10.X.X.X, por ejemplo), por lo que no necesita cambiar nada en la configuración de sus aplicaciones (correo, intranet, etc.).
-
-El responsable de conseguir esta transparencia es el software de la VPN. En el ordenador del empleado hay que instalar un software cliente VPN. Este software instala un driver de red, de manera que para el sistema operativo es una tarjeta más. Ese driver se encarga de contactar con una máquina de la empresa, donde ejecuta un software servidor VPN que gestiona la conexión, para introducir los paquetes en la LAN. La gestión consiste en:
-
-- **Autentificar al cliente VPN**. No podemos dejar que entre cualquiera, por lo que se utiliza el típico usuario/contraseña, tarjetas inteligentes, etc.
-- **Establecer un túnel** a través de Internet. El driver de la VPN en el cliente le ofrece una dirección privada de la LAN de la empresa (la 10.0.1.45, por ejemplo), pero cualquier paquete que intente salir por esa tarjeta es encapsulado dentro de otro paquete. Este segundo paquete viaja por Internet desde la IP pública del empleado hasta la IP pública del servidor VPN en la empresa. Una vez allí, se extrae el paquete y se inyecta en la LAN. Para que alguien de la LAN envíe un paquete a la 10.0.1.45 el proceso es similar.
-- **Proteger el túnel**. Como estamos atravesando Internet, hay que encriptar las comunicaciones (sobre todo si somos una empresa). Los paquetes encapsulados irán cifrados.
-- **Liberar el túnel**. El cliente o el servidor pueden interrumpir la conexión cuando lo consideren necesario.
-
-El software VPN en el cliente suele llevar una opción para que las conexiones a Internet se hagan directamente en la conexión del usuario, sin tener que pasar por el túnel y salir por la conexión a Internet de la empresa. Es decir, el túnel se usa solo para comunicaciones internas.
-
 Leer artículo [¿Qué es una VPN?](/posts/vpn/).
-
-> Es fácil confundir Proxies con VPNs, por lo que en el artículo [Seguridad activa de control de redes](/posts/seguridad-activa-control-redes/) se explican sus similitudes y diferencias.
-{:.prompt-tip}
 
 {:.section}
 ## Servicios De Red. Nmap Y Netstat
