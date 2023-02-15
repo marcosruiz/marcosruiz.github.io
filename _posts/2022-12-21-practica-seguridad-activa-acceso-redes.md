@@ -32,9 +32,9 @@ La entrega de esta práctica debe ser un documento PDF con un nombre en el sigui
 A continuación se listan las actividades que se deben realizar.
 
 {:.activity}
-## Antivirus
+## Vídeo sobre antivirus
 
-Ver el siguiente vídeo en clase:
+Ver el siguiente vídeo:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SbdO7BAsGq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -53,6 +53,7 @@ Responde a las siguientes preguntas:
 Para finalizar, escribe una pregunta para el siguiente vídeo de Nate Gentile con Marc Rivero.
 
 > 📷 Haz una captura de pantalla de la pregunta realizada.
+{:.prompt-info}
 
 {:.activity}
 ## Instalar Metasplotaible3
@@ -62,7 +63,7 @@ Descargar e instala Metasplotaible3 en VirtualBox. Cambia la distribución de te
 {:.activity}
 ## Instalar Kali Linux
 
-Descarga e instala Kali Linux en VirtualBox así como las Guest Additions para facilitarnos el trabajo de aquí en adelante. Crea un usuario que sea <\tuUsuario\> y úsalo para las capturas.
+Descarga e instala Kali Linux en VirtualBox así como las Guest Additions para facilitarnos el trabajo de aquí en adelante. Crea un usuario que sea `<tuUsuario>` y úsalo para las capturas.
 
 {:.activity}
 ## Conectar las dos máquinas en una red interna
@@ -79,12 +80,42 @@ Utiliza la herramienta nmap para descubrir la máquina Metasploitable3 desde Kal
 {:.activity}
 ## Netstat
 
-## Servidor RADIUS
+## (Opcional) Servidor RADIUS
 
 https://howtoforge.es/como-instalar-freeradius-y-daloradius-en-ubuntu-18-04-lts/
 
 https://techexpert.tips/es/freeradius-es/instalacion-de-freeradius-en-ubuntu-linux/
 
+## Video sobre usos de las VPN
+
+Ver el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2Dao6N0jWEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Responde a las siguientes preguntas:
+
+1. ¿Cuál es el principal uso de una VPN a nivel profesional?
+2. ¿Todo el mundo que teletrabaja requiere una VPN?
+3. ¿Es recomendable usar una VPN si estamos usando una red de un aeropuerto?
+4. ¿Se puede evitar la censura de páginas web que visitamos usando una VPN?
+5. ¿Se puede usar una VPN para acceder a contenido (de Netflix, por ejemplo) que solo esta disponible en otro país?
+6. ¿Cuál es la principal desventaja de usar una VPN?
+
+## Vídeo sobre protocolos VPN
+
+Ver el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1ISXmbcZAm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Responde a las siguientes preguntas:
+
+1. ¿Qué protocolos VPN existen en el mercado?
+2. ¿Cuál es el protocolo VPN más popular?
+3. De todas las opciones VPN del mercado (ExpressVPN, Surfshark, NordVPN, CyberGhost, ProtonVPN, Windscribe, IPVanish, Mullvad, Hide.me, TunnelBear, etc.) ¿que protocolos usa cada una de ellas?
+
+## Servidor OpenVPN
+
+Instala un servidor OpenVPN
 
 ## Bibliografía
 

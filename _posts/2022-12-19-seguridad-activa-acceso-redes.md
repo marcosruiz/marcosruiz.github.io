@@ -34,7 +34,6 @@ Para interconectar VLAN (capa 2) generalmente utilizaremos un router (capa 3).
 
 **Capa 3**. La capa 3 o capa de red tiene una visión global de la red: sabe cómo hacer llegar paquetes de datos hasta equipos que no están en su misma red. La comunicación es indirecta, necesita pasar por una máquina más: el router.
 
-
 ![VLAN etiquetada](vlanEtiquetada.png)
 _VLAN etiquetada_
 
@@ -157,6 +156,8 @@ Leer artículo [¿Qué es una VPN?](/posts/vpn/).
 ## Servicios De Red. Nmap Y Netstat
 
 Leer artículo [Tutorial: Nmap](/posts/nmap/).
+
+Leer artículo [Introducción a netstat: ¿qué es netstat y cómo funciona?](https://www.ionos.es/digitalguide/servidores/herramientas/una-introduccion-a-netstat/).
 
 ## Bibliografía
 
