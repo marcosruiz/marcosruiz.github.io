@@ -32,7 +32,7 @@ La entrega de esta práctica debe ser un documento PDF con un nombre en el sigui
 A continuación se listan las actividades que se deben realizar.
 
 {:.activity}
-## Vídeo sobre antivirus
+### Vídeo sobre antivirus
 
 Ver el siguiente vídeo:
 
@@ -56,37 +56,7 @@ Para finalizar, escribe una pregunta para el siguiente vídeo de Nate Gentile co
 {:.prompt-info}
 
 {:.activity}
-## Instalar Metasplotaible3
-
-Descargar e instala Metasplotaible3 en VirtualBox. Cambia la distribución de teclado para que coincida con la de España.
-
-{:.activity}
-## Instalar Kali Linux
-
-Descarga e instala Kali Linux en VirtualBox así como las Guest Additions para facilitarnos el trabajo de aquí en adelante. Crea un usuario que sea `<tuUsuario>` y úsalo para las capturas.
-
-{:.activity}
-## Conectar las dos máquinas en una red interna
-
-Conecta las dos máquinas a través de una red interna.
-
-{:.activity}
-## Nmap
-
-Utiliza la herramienta nmap para descubrir la máquina Metasploitable3 desde Kali.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/apvgul-8UsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-{:.activity}
-## Netstat
-
-## (Opcional) Servidor RADIUS
-
-https://howtoforge.es/como-instalar-freeradius-y-daloradius-en-ubuntu-18-04-lts/
-
-https://techexpert.tips/es/freeradius-es/instalacion-de-freeradius-en-ubuntu-linux/
-
-## Video sobre usos de las VPN
+### Video sobre usos de las VPN
 
 Ver el siguiente vídeo:
 
@@ -101,7 +71,8 @@ Responde a las siguientes preguntas:
 5. ¿Se puede usar una VPN para acceder a contenido (de Netflix, por ejemplo) que solo esta disponible en otro país?
 6. ¿Cuál es la principal desventaja de usar una VPN?
 
-## Vídeo sobre protocolos VPN
+{:.activity}
+### Vídeo sobre protocolos VPN
 
 Ver el siguiente vídeo:
 
@@ -113,7 +84,52 @@ Responde a las siguientes preguntas:
 2. ¿Cuál es el protocolo VPN más popular?
 3. De todas las opciones VPN del mercado (ExpressVPN, Surfshark, NordVPN, CyberGhost, ProtonVPN, Windscribe, IPVanish, Mullvad, Hide.me, TunnelBear, etc.) ¿que protocolos usa cada una de ellas?
 
-## Servidor OpenVPN
+{:.activity}
+### Instalar Metasplotaible2
+
+Descargar e instala Metasplotaible2 en VirtualBox. Cambia la distribución de teclado para que coincida con la de España.
+
+{:.activity}
+### Instalar Kali Linux
+
+Descarga e instala Kali Linux en VirtualBox así como las Guest Additions para facilitarnos el trabajo de aquí en adelante. Crea un usuario que sea `<tuUsuario>` y úsalo para las capturas.
+
+{:.activity}
+### Conectar las dos máquinas en una red interna
+
+Conecta las dos máquinas a través de una red interna añadiendo una nueva interfaz.
+
+{:.activity}
+### Nmap
+
+Utiliza la herramienta nmap para descubrir la máquina Metasploitable2 desde Kali y toda la información que consideres relevante.
+
+> Necesitarás leer el artículo [Tutorial: Nmap](/posts/tutorial-nmap/).
+{:.prompt-tip}
+
+{:.activity}
+### Nessus
+
+Haz un análisis 
+
+> Necesitarás leer el artículo [Tutorial: Nessus](/posts/tutorial-nessus/).
+{:.prompt-tip}
+
+{:.activity}
+### Metasploit
+
+> Necesitarás leer el artículo [Tutorial: Metasploit](/posts/tutorial-metasploit/).
+{:.prompt-tip}
+
+{:.activity}
+### (Opcional) Servidor RADIUS
+
+https://howtoforge.es/como-instalar-freeradius-y-daloradius-en-ubuntu-18-04-lts/
+
+https://techexpert.tips/es/freeradius-es/instalacion-de-freeradius-en-ubuntu-linux/
+
+
+### (Opcional) Servidor OpenVPN
 
 Instala un servidor OpenVPN
 

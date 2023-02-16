@@ -19,7 +19,7 @@ Algunas de las pruebas de vulnerabilidades de Nessus pueden causar que los servi
 
 Leer [¿Cómo instalar Nessus en Kali Linux?](https://keepcoding.io/blog/como-instalar-nessus-en-kali-linux/).
 
-## Arranque de nesus
+## Arranque de Nessus
 
 
 ```console

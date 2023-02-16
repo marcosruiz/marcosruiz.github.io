@@ -124,6 +124,8 @@ Escaneo TCP Connect (fiable, pero ruidoso):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6-E6b1CX1Cc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/apvgul-8UsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Escaneos de puertos con nmap
 
 Para realizar un análisis de puertos abiertos típico (TCP SYN Scanner). Por ejemplo:

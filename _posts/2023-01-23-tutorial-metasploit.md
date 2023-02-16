@@ -37,7 +37,7 @@ _Diagrama de una arquitectura típica de Metasploit_
 
 ### Detección de vulnerabilidades
 
-En esta fase, se realizará un escáner de puertos, utilizando la herramienta ya conocida nmap, con la que buscaremos servicios instalados en esta máquina, así como las versiones de estos servicios. Leer el artículo [Tutorial: Nmap](/posts/nmap).
+En esta fase, se realizará un escáner de puertos, utilizando la herramienta ya conocida nmap, con la que buscaremos servicios instalados en esta máquina, así como las versiones de estos servicios. Leer el artículo [Tutorial: Nmap](/posts/tutorial-nmap).
 
 Otra opción, es utilizar nmap solo para la detección de equipos de una red y posteriormente hacer el análisis de vulnerabilidades con Nessus. Leer el artículo [Tutorial: Nessus](/posts/tutorial-nessus)
 
@@ -49,8 +49,6 @@ Iniciamos metasploit desde linea de comandos con el comando:
 ```console
 $msfconsole
 ```
-
-
 
 ## Bibliografía
 

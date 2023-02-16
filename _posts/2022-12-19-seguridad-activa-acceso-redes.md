@@ -155,7 +155,7 @@ Leer artículo [¿Qué es una VPN?](/posts/vpn/).
 {:.section}
 ## Servicios De Red. Nmap Y Netstat
 
-Leer artículo [Tutorial: Nmap](/posts/nmap/).
+Leer artículo [Tutorial: Nmap](/posts/tutorial-nmap/).
 
 Leer artículo [Introducción a netstat: ¿qué es netstat y cómo funciona?](https://www.ionos.es/digitalguide/servidores/herramientas/una-introduccion-a-netstat/).
 
