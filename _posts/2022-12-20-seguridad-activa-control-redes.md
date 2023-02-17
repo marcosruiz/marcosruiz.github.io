@@ -117,8 +117,14 @@ _Seguridad por capas_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kH6oP6JUnHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{:.question}
-¿Qué es un firewall? ¿Para qué se utiliza?
+Preguntas sobre el video:
+
+- ¿Existen los firewall hardware?
+- ¿Qué es un firewall?
+- ¿Sabrías poner un ejemplo de un firewall físico en la vida real?
+- ¿Dónde se pone el firewall firewall?
+- ¿Un firewall nos puede proteger de nuestra propia red?
+- ¿Cuantos tipos de firewall nos comenta Alberto Lopez TECH TIPS? 4
 
 {:.subsection}
 ### ¿Qué hace un firewall?

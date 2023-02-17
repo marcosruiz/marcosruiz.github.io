@@ -41,6 +41,7 @@ Descarga la última versión estable de [OpenMediaVault](https://www.openmediava
 
 {:.question}
 ¿Qué nos información nos aporta este hash?
+
 {:.activity}
 ### Instalar OpenMediaVault
 
@@ -89,4 +90,3 @@ Utilizando rsync hacer copias de seguridad de manera remota usando otro servidor
 ### Restaura tu sistema
 
 Restaura tu carpeta compartida a un estado anterior, deberán verse los cambios en la carpeta.
-
