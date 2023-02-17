@@ -35,6 +35,16 @@ A continuación se listan las actividades que se deben realizar para esta práct
 - Hacer una o varias capturas que demuestren la realización satisfactoria de la actividad. Siempre que sea posible se deberá ver el nombre de usuario que identifique al autor de la práctica.
 
 {:.activity}
+### Instalar IPCOP
+
+Seguir los pasos del artículo [Tutorial: Instalar y configurar IPCOP](/posts/tutorial-instalar-ipcop). El objetivo final es que el router IPCOP.
+
+{:.activity}
+### Instalar Zorin OS
+
+Si aún no tienes tu máquina Zorin OS Lite, seguir los pasos del artículo[Instalar Zorin OS Lite en Virtual Box](/posts/instalar-zorin-lite-os).
+
+{:.activity}
 ### Instalar OpenMediaVault
 
 Descarga la última versión estable de [OpenMediaVault](https://www.openmediavault.org/) y comprueba su hash.
