@@ -5,6 +5,14 @@ categories: [Sistemas Microinformáticos y Redes]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática, servicios en red, smr]
 ---
 
+## Avisos importantes
+
+> Cada vez que se especifique la contraseña "chabacier" se deberá usar la contraseña de tu centro educativo. Por ejemplo si estudias en el IES Tiempos Modernos, deberás poner "tiempos".
+{:.prompt-warning}
+
+> Si estás usando IPCOP es recomendable que no guardes el estado de la máquina y la apagues ya que sino suele dar problemas. Este tipo de problemas se solucionan reiniciando el enrutador IPCOP.
+{:.prompt-warning}
+
 ## Crear máquina IPCOP en Virtual Box
 
 1. Haz click en **Siguiente**.
@@ -40,10 +48,10 @@ tags: [gnu linux, comandos, terminal, bash, seguridad informática, servicios en
 1. En el menú izquierdo haz click en **Red**.
 1. Click en la pestaña **Adaptador 1**.
     - ✅ Habilitar adaptador de red
-    - Conectado a: Red interna 
+    - Conectado a: Red interna
     - Nombre: intnet
     - Click en **▶ Avanzadas**
-    - Tipo de adaptador: Intel PRO/1000 MT
+    - Tipo de adaptador: Intel PRO/1000 MT Desktop
     - Modo promiscuo: Permitir todo
     - ✅ Cable conectado
 1. Click en la pestaña **Adaptador 2**.
@@ -129,11 +137,9 @@ Si quieres cambiar la configuración deberás ejecutar la instrucción `setup` y
 1. Haz login como admin.
 1. Comprueba que está en estado **Conectado**.
 
-
 ## Soluciones a problemas habituales
 
 - Comprueba que la red interna tiene el modo promiscuo en permitir todo.
 - Comprueba que los equipos tienen una IP asignada y es diferente. Si no es diferente el servidor DHCP no está funcionando bien. La solución más sencilla es dar las IP de manera manual en cada cliente.
 - Comprueba que tienes conexión a Internet desde la máquina IPCOP.
 - Comprueba que tienes acceso a la configuración del router a través de 192.168.1.1:8443. Comprueba que estás conectado. Si no estas conectado desconecta y vuelve a conectar.
-- ⚠️ Precaución: Si estás usando IPCOP es recomendable que no guardes el estado de la máquina y la apagues ya que sino suele dar problemas. Este tipo de problemas se solucionan reiniciando el enrutador IPCOP.

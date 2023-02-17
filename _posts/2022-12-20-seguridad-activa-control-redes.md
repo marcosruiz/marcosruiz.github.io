@@ -28,7 +28,6 @@ Como hemos señalado con anterioridad, la monitorización del tráfico es relati
 ![Espionaje utilizando HUB temporal](espionajeHubTemporal.png)
 _Espionaje utilizando HUB temporal_
 
-
 {:.subsection}
 ### Tcpdump
 

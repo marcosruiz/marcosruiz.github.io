@@ -20,7 +20,7 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 1. Debe contener una portada con título, nombre de la asignatura, curso, autor y fecha de realización.
 2. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.
 3. Debe tener cada página numerada.
-4. Cada actividad debe estar numerada. 
+4. Cada actividad debe estar numerada.
 5. Cada actividad debe tener el enunciado en negrita y la respuesta en texto normal.
 6. Cada imagen debe tener un pie de foto la cual tenga el siguiente formato: "Figura \<número\>: \<BreveDescripciónDeLaFigura\>".
 7. El documento no debe contener faltas ortográficas.

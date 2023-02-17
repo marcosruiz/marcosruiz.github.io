@@ -15,13 +15,13 @@ El objetivo de este documento es instalar y realizar la configuración inicial d
 
 A continuación se listan los pasos que se deben realizar para llevar a cabo una instalación adecuada para el uso en clase.
 
-### Descargar Zorin OS Lite 
+### Descargar Zorin OS Lite
 
 Ir a [este enlace](https://zorin.com/os/download/) y descargar Zorin OS Lite 15.3. Como resultado debes tener un fichero ISO.
 
 ### ¿Por qué Zorin OS Lite?
 
-Porque es un sistema operativo ligero (ya que usa XFCE) basado en Ubuntu con una interfaz similar a la de Windows 7 por lo que se hace fácil de manejar por la mayoría de usuarios. 
+Porque es un sistema operativo ligero (ya que usa XFCE) basado en Ubuntu con una interfaz similar a la de Windows 7 por lo que se hace fácil de manejar por la mayoría de usuarios.
 
 Al estar basado en Ubuntu tanto sus programas como sus ficheros de configuración serán iguales.
 
