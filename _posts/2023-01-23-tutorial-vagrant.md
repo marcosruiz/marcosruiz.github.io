@@ -38,7 +38,7 @@ Ejecutar el script de aprovisionamiento:
 $vagrant up --provision
 ```
 
-o 
+o
 
 ```console
 $vagrant provision
@@ -103,7 +103,6 @@ end
 
 ## Guest additions
 
-
 Si estamos en Windows:
 
 ```console
@@ -115,7 +114,6 @@ Instalamos el plugin:
 ```console
 $vagrant plugin install vagrant-vbguest
 ```
-
 
 Comprobamos que está instalado:
 

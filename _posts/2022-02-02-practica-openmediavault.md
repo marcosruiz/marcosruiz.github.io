@@ -44,7 +44,7 @@ Descarga la última versión estable de [OpenMediaVault](https://www.openmediava
 {:.activity}
 ### Instalar OpenMediaVault
 
-Sigue los pasos de artículo [Tutorial: Instalación y configuración de OpenMediaVault](/posts/tutorial-instalacion-openmediavault). En mi caso estoy instalando la versión de OpenMediaVault 5 en lugar de la 6, pero los pasos son iguales o muy similares.
+Sigue los pasos de artículo [Tutorial: Instalación y configuración de OpenMediaVault](/posts/tutorial-instalacion-openmediavault) en una máquina virtual de Virtual Box. En mi caso estoy instalando la versión de OpenMediaVault 5 en lugar de la 6, pero los pasos son iguales o muy similares.
 
 {:.activity}
 ### Conectarte desde el cliente web
