@@ -45,7 +45,7 @@ _Captura con router GNU Linux_
 {:.question}
 ¿Qué es un sniffer? ¿Sabrías poner algún ejemplo?
 
-{:.question
+{:.question}
 ¿Qué diferencia hay entre Tcpdump y WireShark?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gF_8mjClj34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
