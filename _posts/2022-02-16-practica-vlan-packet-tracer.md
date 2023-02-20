@@ -8,9 +8,11 @@ tags: [packet tracer, redes locales, smr, vlan, práctica]
 ## Objetivo
 
 El objetivo de esta práctica es:
-- Aprender que son las VLAN 
-- Aprender como configurar VLAN en switches utilizando la herramienta Packet Tracer.
+
+- Aprender que son las VLAN.
+- Aprender como configurar VLAN en switches utilizando la herramienta Packet Tracer 6.2.
 - Verificar la conectividad extremo a extremo.
+- Aprender a enrutar paquetes entre VLANs.
 
 ## Entrega y presentación
 
@@ -32,7 +34,7 @@ Asegúrate de que el documento PDF cumple con los siguientes parámetros:
 
 ## Actividades
 
-A continuación se listan las actividades que se deben realizar para esta práctica.
+A continuación se listan las actividades que se deben realizar para esta práctica. Cada actividad debe tener al menos una captura del sistema funcionando para demostrar la realización de dicha actividad. Además deberás indicar los pasos que has seguido junto con los comandos de terminal en texto plano como se indica en el apartado anterior.
 
 {:.activity}
 ### Tres VLAN, un switch y un router
