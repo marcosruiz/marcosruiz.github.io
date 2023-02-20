@@ -298,15 +298,15 @@ _Distribución de los permisos de un fichero_
 
 Teniendo esto en cuenta, existen dos modos de uso del comando chmod: el modo octal y el modo notación simbólica. De los cuales se muestran varios ejemplos:
 
-#{:.section}
-### Modo octal
+{:.subsection}
+#### Modo octal
 
 - `chmod 777 patata.txt` añade todos los permisos al fichero patata.txt.
 - `chmod 000 patata.txt` quita todos los permisos al fichero patata.txt.
 - `chmod 755 patata.txt` añade todos los permisos al dueño del fichero patata.txt y permisos de lectura y ejecución para el grupo y para el resto de usuarios. 
 
-#{:.section}
-### Modo notación simbólica
+{:.subsection}
+#### Modo notación simbólica
 
 - `chmod u+x patata.txt` añade permisos de ejecución al usuario propietario del fichero patata.txt.
 - `chmod a=rwx patata.txt` pone los permisos de lectura escritura y ejecución a todos los usuarios sobre el fichero patata.txt.
