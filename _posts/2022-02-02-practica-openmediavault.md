@@ -3,6 +3,7 @@ title: "Práctica: OpenMediaVault y gestión de usuarios"
 date: 2022-02-02 20:40:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [gnu linux, comandos, terminal, bash, seguridad informática, seguridad activa, seguridad pasiva, openmediavault, raid5, práctica]
+img_path: /assets/img/practica-openmediavault/
 ---
 
 ## Objetivo
@@ -33,6 +34,11 @@ A continuación se listan las actividades que se deben realizar para esta práct
 
 - Indicar los pasos que has seguido para llevar a cabo la realización de la actividad.
 - Hacer una o varias capturas que demuestren la realización satisfactoria de la actividad. Siempre que sea posible se deberá ver el nombre de usuario que identifique al autor de la práctica.
+
+El escenario de la práctica será el siguiente:
+
+![Esquema de red de la práctica](esquemaRed.png)
+_Esquema de red de la práctica_
 
 {:.activity}
 ### Instalar IPCOP

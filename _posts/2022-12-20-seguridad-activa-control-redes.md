@@ -23,7 +23,11 @@ Como hemos señalado con anterioridad, la monitorización del tráfico es relati
 
 - Conseguir el control sobre algunos de los extremos de la conexión para poder utilizar alguna de las herramientas que veremos (tcpdump y wireshark).
 - Interceptar la conexión misma desde algún equipo de red por donde pasen los paquetes intercambiados. Si este equipo tiene cierta inteligencia, seguramente incorporará funcionalidades avanzadas, como el port mirroring; incluso puede ser un router GNU Linux, con lo que tendremos a nuestro alcance todas las herramientas que veremos para los extremos.
-- Como último recurso podríamos conectar de manera temporal un hub en el puerto que queremos vigilar, pero este supone desplazamientos de personal y equipos que no siempre están disponibles.
+
+![Captura con router GNU Linux](capturaRouterLinux.png)
+_Captura con router GNU Linux_
+
+- Como último recurso podríamos **conectar de manera temporal un hub** en el puerto que queremos vigilar, pero este supone desplazamientos de personal y equipos que no siempre están disponibles.
 
 ![Espionaje utilizando HUB temporal](espionajeHubTemporal.png)
 _Espionaje utilizando HUB temporal_
@@ -33,13 +37,13 @@ _Espionaje utilizando HUB temporal_
 
 Tcpdump es una herramienta sencilla disponible en GNU Linux que permite hacer un volcado de todo el tráfico que llega a una tarjeta de red. Captura todo el tráfico, no solo el tráfico TCP, como aparece en su nombre. Los paquetes leídos se muestran en pantalla o se pueden almacenar en un fichero del disco para ser tratados posteriormente por esta misma herramienta u otra más avanzada. Se necesitan privilegios para ejecutar, porque necesitamos poner la tarjeta en modo promiscuo para que acepte todos los paquetes, no solo los destinados a su MAC.
 
-![Captura con router GNU Linux](capturaRouterLinux.png)
-_Captura con router GNU Linux_
-
 {:.subsection}
 ### WireShark
 
 [WireShark](https://www.wireshark.org/) es la herramienta más extendida en Windows para realizar capturas de tráfico y analizar los resultados. Es una evolución de una herramienta anterior llamada Ethereal. Para la captura de paquetes utiliza la librería `pcap`, que también aparece en otros sniffer, como `tcpdump`. La interfaz de usuario es muy potente, así como el número de protocolos que es capaz de analizar.
+
+![Interfaz de Wireshark](wireshark.png)
+_Interfaz de Wireshark_
 
 {:.question}
 ¿Qué es un sniffer? ¿Sabrías poner algún ejemplo?
