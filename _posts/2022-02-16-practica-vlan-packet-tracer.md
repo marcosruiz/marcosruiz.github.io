@@ -64,15 +64,20 @@ Pasos para resolver la tarea:
 1. Asignar interfaces a las VLAN
 1. Verificar la implementación de las VLAN
 
+{:.question}
+¿Se puede configurar el modo troncal desde la interfaz gráfica?
+
+{:.question}
+¿Se podría hacer esta actividad sin usar el modo troncal?
 
 {:.activity}
-### Tres VLAN, tres switches y un router
+### Dos VLAN, tres switches y un router
 
 El esquema de la red que queremos emular, es el que se ve en la imagen siguiente. Tenemos 2 oficinas o aulas con N equipos conectados en cada una de ellas (en este caso hay 2 equipos en cada oficina). En cada oficina hay un switch, y cada switch se conecta a un switch central. Por último, el switch central se conecta al router de acceso a Internet. Cada oficina está en una VLAN, y a diferencia de otros ejemplos, queremos que los equipos de una VLAN se puedan conectar con equipos de otra VLAN por el motivo que sea.
 
 El esquema de red es el siguiente:
 
-![img-description](/assets/img/practica-vlan-packet-tracer/enrutamiento-entre-vlans-001.webp)
+![img-description](/assets/img/practica-vlan-packet-tracer/enrutamientoEntreVlans.png)
 _Esquema de red_
 
 En al siguiente tabla se muestra el direccionamiento que se ha usado para cada uno de los equipos del esquema de red. Hay que prestar especial atención a las VLANs en las que está cada uno de los elementos del esquema:
@@ -85,9 +90,9 @@ En al siguiente tabla se muestra el direccionamiento que se ha usado para cada u
 | PC3 | 192.168.1.3 | 255.255.255.0 | 192.168.1.1 | 20 |
 | Switch1 | --- | --- | --- | 10 |
 | Switch2 | --- | --- | --- | 20 |
-| Switch central | --- | --- | --- | 10, 20 y 30 |
-| Router0 | 192.168.0.1 | 255.255.255.0 | --- | 30 |
-| Router0 | 192.168.1.1 | 255.255.255.0 | --- | 30 |
+| Switch central | --- | --- | --- | 10 y 20 |
+| Router0 | 192.168.0.1 | 255.255.255.0 | --- | 10 y 20 |
+| Router0 | 192.168.1.1 | 255.255.255.0 | --- | 10 y 20 |
 
 #### Switch1
 
@@ -101,6 +106,18 @@ Switch(config-vlan)# int r f0/1-24
 Switch(config-if-range)# switchport mode access
 Switch(config-if-range)# switchport access vlan 10
 ```
+
+{:.question}
+¿Se pueden acortar los comandos en el CLI del switch? ¿Cuándo?
+
+{:.question}
+¿Qué significa y para que sirve el comando `en`?
+
+{:.question}
+¿Qué significa y para que sirve el comando `conf t`?
+
+{:.question}
+¿Qué significa y para que sirve el comando `int r f0/1-24`?
 
 #### Switch2
 
@@ -124,8 +141,6 @@ Switch(config)# vlan 10
 Switch(config-vlan)# name VLAN10
 Switch(config-vlan)# vlan 20
 Switch(config-vlan)# name VLAN20
-Switch(config-vlan)# vlan 30
-Switch(config-vlan)# name VLAN30
 Switch(config-vlan)# int f0/24
 Switch(config-if)# switchport mode access
 Switch(config-if)# switchport access vlan 10
@@ -135,7 +150,6 @@ Switch(config-if)# switchport access vlan 20
 Switch(config-if)# int f0/1
 Switch(config-if)# switchport mode trunk
 Switch(config-if)# switchport nonegotiate
-Switch(config-if)# switchport access vlan 30
 ```
 
 #### Router
@@ -154,6 +168,9 @@ Router(config-subif)# no sh
 Router(config-subif)# int f0/0
 Router(config-if)# no sh
 ```
+
+{:.question}
+¿Qué significa y para que sirve el comando `no sh`?
 
 {:.activity}
 ### Subredes y VLAN
