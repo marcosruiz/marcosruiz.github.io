@@ -31,7 +31,7 @@ Realizar las siguientes actividades. **Cada actividad debe contar con un comenta
 {:.activity}
 ### If and else
 
-Crear un programa donde se introduzcan los tres ángulos internos de un triángulo y se determine si el triángulo es válido o no.
+Crear un programa donde se introduzcan los tres ángulos internos de un triángulo y se determine si el triángulo es válido o no. Un triángulo será valido si la suma de sus 3 ángulos internos suman exactamente 180.
 
 {:.activity}
 ### (Opcional) If and else
@@ -46,12 +46,27 @@ Determinar si un año dado es bisiesto.
 {:.activity}
 ### (Opcional) Bucles
 
-Mostrar todos los números de 1 a N aumentando de 2 en 2 donde n lo ingresa el usuario en un prompt.
+Mostrar todos los números de 1 a N aumentando de 2 en 2 donde N lo ingresa el usuario en un prompt. Por ejemplo:
+
+```plaintext
+Introduce un número:
+> 4
+1
+3
+```
 
 {:.activity}
 ### (Opcional) Bucles
 
-Mostrar todos los números de N a 1 disminuyendo de 1 en 1 donde n lo ingresa el usuario en un prompt.
+Mostrar todos los números de N a 1 disminuyendo de 1 en 1 donde N lo ingresa el usuario en un prompt.
+
+```plaintext
+Introduce un número:
+> 4
+3
+2
+1
+```
 
 {:.activity}
 ### Bucles
@@ -77,7 +92,7 @@ Introduce un número para obtener su tabla de multiplicar:
 {:.activity}
 ### (Opcional) Bucles
 
-Pedir al usuario que ingrese un número en un prompt, hacer la suma de todos los dígitos, validar que el número ingresado no contenga letras.
+Pedir al usuario que ingrese un número en un prompt, hacer la suma de todos los dígitos. Deberás validar que el número ingresado no contenga letras.
 
 {:.activity}
 ### Bucles
@@ -92,7 +107,7 @@ Encontrar todos los divisores de un número.
 {:.activity}
 ### (Opcional) Bucles
 
-Determinar si un número ingresado por el usuario en un loop es primo o no, validar que el número ingresado sea mayor o igual a dos.
+Determinar si un número ingresado por el usuario en un loop infinito es primo o no. Deberás validar que el número ingresado sea mayor o igual a dos.
 
 {:.activity}
 ### (Opcional) Bucles
