@@ -101,9 +101,7 @@ Dibujar los siguientes patrones ocupando document.write, para rellenar los espac
 
 Cuadrado lleno:
 
-Cuadrado lleno:
-
-```
+```plaintext
 *****
 *****
 *****
@@ -113,7 +111,7 @@ Cuadrado lleno:
 
 Cuadrado hueco:
 
-```
+```plaintext
 *****
 *   *
 *   *
@@ -123,7 +121,7 @@ Cuadrado hueco:
 
 Tablero de Ajedrez:
 
-```
+```plaintext
 * * * * * * * *
  * * * * * * * 
 * * * * * * * *
@@ -136,7 +134,7 @@ Tablero de Ajedrez:
 
 Cuadrado hueco:
 
-```
+```plaintext
 *****
 *   *
 *   *
@@ -146,7 +144,7 @@ Cuadrado hueco:
 
 Piramide Izquierda:
 
-```
+```plaintext
 *     
 **    
 ***   
@@ -156,7 +154,7 @@ Piramide Izquierda:
 
 Pirámide centrada
 
-```
+```plaintext
 *
 ***
 *****
@@ -166,7 +164,7 @@ Pirámide centrada
 
 Pirámide invertida
 
-```
+```plaintext
 *********
 *******
 *****
@@ -177,7 +175,7 @@ Pirámide invertida
 
 Diamante:
 
-```
+```plaintext
 *
 ***
 *****
@@ -187,7 +185,6 @@ Diamante:
 *****
 ***
 *
-
 ```
 
 {:.activity}
@@ -320,9 +317,8 @@ console.log(split(arr)); // [[1,2,3,4], [5,6,7,8]]
 
 Recorrer un array de arrays para mostrarlo como una matriz, ejemplo [[1,1],[2,2]] se mostraría de la siguiente forma:
 
-|     1  |     1  |
-|--------|--------|
-| **2**  |  **2** |
+| 1 | 1 |
+| 2 | 2 |
 
 {:.activity}
 ### Matrices
@@ -359,17 +355,15 @@ Devolver la suma de todos los elementos en la diagonal de la matriz.
 
 Mostrar la transpuesta de una matriz, o sea dado:
 
-|   1   |     2 |     3 |
-|-------|-------|-------|
-| **4** | **5** | **6** |
-| **7** | **8** | **9** |
+| 1 | 2 | 3 |
+| 4 | 5 | 6 |
+| 7 | 8 | 9 |
 
 Debería quedar como:
 
-|   1   |     4 |     7 |
-|-------|-------|-------|
-| **2** | **5** | **8** |
-| **3** | **6** | **9** |
+| 1 | 4 | 7 |
+| 2 | 5 | 8 |
+| 3 | 6 | 9 |
 
 {:.activity}
 ### Funciones y arrays
@@ -432,3 +426,7 @@ Crea un formulario para guardar nombres de personas en el localstorage y muéstr
 
 En la lista anterior añade un botón para poder eliminar elementos del localstorage y mostrar la nueva lista de nombres.
 
+## Bibliografía
+
+- [DesafioLatam/guia-de-ejercicios-javascript](https://github.com/DesafioLatam/guia-de-ejercicios-javascript/blob/master/ejercicios.md)
+- [30 Ejercicios de Programación para Practicar y Aprender JavaScript Desde Cero (para principiantes) 📒](https://www.youtube.com/watch?v=PescFjv1UXM)

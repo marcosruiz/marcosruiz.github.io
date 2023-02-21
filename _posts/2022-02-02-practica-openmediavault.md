@@ -51,7 +51,7 @@ Seguir los pasos del artículo [Tutorial: Instalar y configurar IPCOP](/posts/tu
 Si aún no tienes tu máquina Zorin OS Lite, seguir los pasos del artículo[Instalar Zorin OS Lite en Virtual Box](/posts/instalar-zorin-lite-os).
 
 {:.activity}
-### Instalar OpenMediaVault
+### Descargar OpenMediaVault
 
 Descarga la última versión estable de [OpenMediaVault](https://www.openmediavault.org/) y comprueba su hash.
 

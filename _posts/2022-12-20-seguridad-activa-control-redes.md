@@ -14,9 +14,9 @@ Para delimitar quien puede usar nuestra red necesitaremos espiarnos a nosotros m
 Vamos a procesar el trafico de nuestra red mediante dos tipos de técnicas:
 
 - La **monitorización** del tráfico. Trabaja a **alto nivel**: se limita a tomar medidas agregadas, los llamados contadores.
-    - Resulta **fácil de activar** en toda la red dado que son los propios equipos los que facilitan esta información sobre sus interfaces.
-    - Genera relativamente poca información para transmitir y procesar.
-    - Es suficiente para conocer la disponibilidad de la red o el tipo de tráfico que transita.
+  - Resulta **fácil de activar** en toda la red dado que son los propios equipos los que   facilitan esta información sobre sus interfaces.
+  - Genera relativamente poca información para transmitir y procesar.
+  - Es suficiente para conocer la disponibilidad de la red o el tipo de tráfico que transita.
 - El **análisis** del tráfico. Trabaja a **bajo nivel**: captura todos los paquetes que transitan por una interfaz (los conocidos sniffer de red). Los paquetes solo son leídos, no interceptados: el paquete contiene su camino. El procesamiento d estos paquetes leídos permite generar medidas agregadas, pero sobre todo interesa analizar las conversaciones entre los equipos, comprobando que se ajustan al comportamiento esperado en el protocolo estándar (analizador de protocolos). Aunque esta información es mucho más rica que los simples contadores, la captura es muy costosa de activar en toda la red, por que se dispara la cantidad de información que hay que transmitir y procesar; por este motivo, solo se utiliza en situaciones concretas que no se pueden abordar con el estudio de contadores como es la detección de ataques.
 
 Como hemos señalado con anterioridad, la monitorización del tráfico es relativamente fácil de activar en una red, porque los equipos suelen estar preparados para facilitarnos la información sobre sus contadores y basta con pregúntales periódicamente. En cambio, la captura de conversaciones es más compleja de activar. Las opciones son:
@@ -82,6 +82,15 @@ Los problemas de los IDS son dos:
 - **Falsos positivos**. Las reglas no son perfectas y puede que estemos alertando sobre comunicaciones que son perfectamente legales. Conviene probar muy bien una regla antes de meterla en un IPS.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6-asM2Bh2yE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+- ¿Qué significan las siglas IDS?
+- ¿Qué significan las siglas IPS?
+- ¿Qué es mejor un IDS o un IPS a nivel de seguridad?
+- ¿Es un IDS un sistema pasivo o activo? ¿Y un IPS?
+- ¿Dónde se deberia poner un IDS o un IPS?
+- ¿Qué es un UTM?
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es Snort?</summary>
@@ -285,7 +294,6 @@ Cuando se detecta un correo spam, tenemos varias opciones:
 El software SpamAssasin es uno de los software antispam más extendidos por su eficacia y la amplia variedad de filtros que puede llegar a aplicar para determinar si un correo es spam. Los filtros se especifican mediante reglas. Si un mensaje cumple una regla, se le asigna una puntuación. Cuando un mensaje supera un determinado umbral (por defecto, 5, aunque lo podemos cambiar), se considera que es spam.
 
 SpamAssasin, además, utiliza técnicas de inteligencia artificial (redes neuronales) para reducir el número de falsos positivos (correo spam que no lo es) y falsos negativos (correo spam que no ha sido detectado como tal).
-
 
 ## Bibliografía
 

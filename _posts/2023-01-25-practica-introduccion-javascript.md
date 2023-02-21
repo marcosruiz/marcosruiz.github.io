@@ -19,7 +19,7 @@ Esta práctica se recomienda realizarla **por parejas**. El trabajo en parejas (
 
 La idea del trabajo en parejas es que haya **una persona que dicta y otra que escribe**. Idealmente la persona que dicta sabe cómo hacer el ejercicio y la persona que escribe va aprendiendo y ayuda a corregir. 
 
-Duración: 9 h
+Duración: 12 h
 
 ## Entrega y presentación
 
@@ -30,7 +30,7 @@ La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguien
 Realizar las siguientes actividades. Cada actividad debe contar con un comentario donde este escrito el enunciado de la actividad.
 
 > La única manera de aprender a programar es practicar, practicar y practicar. ¡Así que a darle duro!
-> 
+>
 > ![Látigo](whip.gif)
 {:.prompt-tip}
 
