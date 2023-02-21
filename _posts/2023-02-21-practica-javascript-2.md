@@ -301,7 +301,7 @@ Crear una función que reciba un array y que cree uno nuevo con todos los elemen
 Crear una función que permite aplanar un array dado, Ejemplo: 
 
 ````javascript
-const = [[1,2,3],[4,5,6],[7,8,9]];
+const arr = [[1,2,3],[4,5,6],[7,8,9]];
 console.log(aplanar(arr)); // [1,2,3,4,5,6,7,8,9]
 ```
 
@@ -311,7 +311,7 @@ console.log(aplanar(arr)); // [1,2,3,4,5,6,7,8,9]
 Crear una función que divida un array en dos partes con la misma cantidad de elementos (o una diferencia de máximo un elemento) y devuelva un array que contenga al grupo1 y al grupo2
 
 ```javascript
-const = [1,2,3,4,5,6,7,8];
+const arr = [1,2,3,4,5,6,7,8];
 console.log(split(arr)); // [[1,2,3,4], [5,6,7,8]]
 ```
 
