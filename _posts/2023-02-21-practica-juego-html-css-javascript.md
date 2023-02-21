@@ -48,7 +48,7 @@ Desarrolla el juego del ahorcado.
 En [este enlace](https://lapalabradeldia.com/) tienes un ejemplo de juego junto a sus reglas.
 
 {:.activity}
-### La palabra del día
+### Wordle o la palabra del día
 
 Desarrolla el juego de la palabra del dia con palabras relacionadas con aplicaciones web.
 
@@ -84,3 +84,8 @@ Desarrolla un pequeño juego del Bingo con un solo cartón.
 1. Cuando se tachen todos los números el juego finaliza.
 
 Si necesitas más información, puedes ver un vídeo de como debería comportarse el juego [en este enlace](https://lenguajejs.com/retos/nivel-medio/bingo), aunque debes tener en cuenta que nuestra versión es con un solo cartón.
+
+{:.activity}
+### Otro juego
+
+Si quieres hacer otro juego en HTML, CSS y JavaScript deberá ser aprobado por el profesor.

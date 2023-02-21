@@ -1,10 +1,9 @@
 ---
-title: "Práctica: Introducción a JavaScript"
+title: "Práctica: Ejercicios de JavaScript de Mouredev"
 date: 2023-02-21 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
 tags: [aplicaciones web, smr, práctica, javascript]
 img_path: /assets/img/practica-introduccion-javascript/
-math: true
 ---
 
 ## Objetivo y duración
@@ -58,6 +57,7 @@ Escribe una función que reciba dos palabras (String) y retorne verdadero o fals
 Dificultad: MEDIA
 
 Escribe un programa que se encargue de comprobar si un número es o no primo.
+
 Hecho esto, imprime los números primos entre 1 y 100.
 
 ### (Opcional) ASPECT RATIO DE UNA IMAGEN

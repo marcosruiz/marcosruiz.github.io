@@ -1,10 +1,9 @@
 ---
-title: "Práctica: Introducción a JavaScript"
+title: "Práctica: Ejercicios de JavaScript de Victor Robles"
 date: 2023-02-21 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
 tags: [aplicaciones web, smr, práctica, javascript]
 img_path: /assets/img/practica-introduccion-javascript/
-math: true
 ---
 
 ## Objetivo y duración
@@ -17,7 +16,7 @@ Esta práctica se recomienda realizarla **por parejas**. El trabajo en parejas (
 - Es una excelente oportunidad para aprender y/o enseñar.
 - Puedes conocer personas que también están aprendiendo!
 
-La idea del trabajo en parejas es que haya **una persona que dicta y otra que escribe**. Idealmente la persona que dicta sabe cómo hacer el ejercicio y la persona que escribe va aprendiendo y ayuda a corregir. 
+La idea del trabajo en parejas es que haya **una persona que dicta y otra que escribe**. Idealmente la persona que dicta sabe cómo hacer el ejercicio y la persona que escribe va aprendiendo y ayuda a corregir.
 
 Duración: 9 h
 
@@ -101,10 +100,10 @@ Búsqueda de un valor introducido por el usuario, que nos diga si lo encuentra y
 
 Ejercicio con DOM y eventos:
 
-1. Formulario campos: Nombre, Apellidos y edad
-2. Botón de enviar el formulario: eventos submit
-3. Mostrar datos por pantalla
-4. Validación del formulario para que no metan datos vacíos
+1. Formulario campos: Nombre, Apellidos y edad.
+2. Botón de enviar el formulario: eventos submit.
+3. Mostrar datos por pantalla.
+4. Validación del formulario para que no metan datos vacíos.
 
 ### Actividad 17
 
@@ -128,6 +127,7 @@ Existen muchas APIs públicas como son:
 - [JSON placeholder](https://jsonplaceholder.typicode.com/)
 
 > Recomiendo utilizar la API de Marvel o la PokéAPI.
+{:.prompt-tip}
 
 ### Actividad 20
 
@@ -146,6 +146,8 @@ Hacer que al listado de artículos anterior se le puedan añadir más artículos
 Hacer que al listado anterior se le puedan eliminar artículos.
 
 ### Actividad 23
+
+
 
 ### Actividad 24
 
