@@ -3,22 +3,14 @@ title: "Práctica: Ejercicios de JavaScript de Victor Robles"
 date: 2023-02-21 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
 tags: [aplicaciones web, smr, práctica, javascript]
-img_path: /assets/img/practica-introduccion-javascript/
+img_path: /assets/img/practica-javascript-victor-robles/
 ---
 
 ## Objetivo y duración
 
-El objetivo de esta práctica es aprender a programar con JavaScript a un nivel básico.
+El objetivo de esta práctica es aprender a programar con JavaScript.
 
-Esta práctica se recomienda realizarla **por parejas**. El trabajo en parejas (pair-programming) es una técnica muy popular con varias ventajas:
-
-- Ayuda a mantener la concentración.
-- Es una excelente oportunidad para aprender y/o enseñar.
-- Puedes conocer personas que también están aprendiendo!
-
-La idea del trabajo en parejas es que haya **una persona que dicta y otra que escribe**. Idealmente la persona que dicta sabe cómo hacer el ejercicio y la persona que escribe va aprendiendo y ayuda a corregir.
-
-Duración: 9 h
+Duración: 20 h
 
 ## Entrega y presentación
 
@@ -67,10 +59,10 @@ Tabla de multiplicar de un numero introducido por pantalla.
 
 Calculadora:
 
-- Pida dos números por pantalla
-- Si metemos uno mal que nos los vuelva a pedir
-- En el cuerpo de la pagina, en una alerta y por la consola el resultado de sumar, restar, multiplicar y dividir esas dos cifras
-- Refactoriza el código para encapsularlo todo en funciones reutilizables
+- Pida dos números por pantalla.
+- Si metemos uno mal que nos los vuelva a pedir.
+- En el cuerpo de la pagina, en una alerta y por la consola el resultado de sumar, restar, multiplicar y dividir esas dos cifras.
+- Refactoriza el código para encapsularlo todo en funciones reutilizables.
 
 ### Actividad 10
 
@@ -135,70 +127,39 @@ Muestra la fecha de hoy y un numero aleatorio del 1 al 120 en la consola del nav
 
 ### Actividad 21
 
-Muestra un listado de artículos (comida, zapatillas, etc.) almacenado en un json y muéstralo dinámicamente.
+Maqueta una web parecida a esta:
+
+![Maquetación objetivo](maquetacionWeb.png)
+_Maquetación objetivo_
 
 ### Actividad 22
 
-Hacer que al listado de artículos anterior se le puedan añadir más artículos a través de un formulario web.
+Haz un slider de imagenes funcional (busca librerías externas).
 
 ### Actividad 23
 
-Hacer que al listado anterior se le puedan eliminar artículos.
-
-### Actividad 23
-
-
+Muestra un listado de articulos almacenado en un json y muéstralo dinámicamente.
 
 ### Actividad 24
 
+Haz un cambiador de temas (cambiar colores y fondos de la web al hacer click en los botones flotantes laterales).
+
 ### Actividad 25
+
+Al final de la web habrá un botón para subir al principio de la web haciendo una animación en el scroll automático y suavizado.
 
 ### Actividad 26
 
+Hacer un formulario que nos permita guardar en el locaistorage el nombre y los apellidos del usuario que este en la weby en el caso de que exista la "sesion mostrarla.
+
 ### Actividad 27
+
+Sección "Sobre mi" en la que habrá un acordeón.
 
 ### Actividad 28
 
+Sección "Reloj" en la que habrá un reloj dinámico con javascript (o usando el objeto date de js o librería externa)
+
 ### Actividad 29
 
-### Actividad 30
-
-### Actividad 31
-
-### Actividad 32
-
-### Actividad 33
-
-### Actividad 34
-
-### Actividad 35
-
-### Actividad 36
-
-### Actividad 37
-
-### Actividad 38
-
-### Actividad 39
-
-### Actividad 40
-
-### Actividad 41
-
-### Actividad 42
-
-### Actividad 43
-
-### Actividad 44
-
-### Actividad 45
-
-### Actividad 46
-
-### Actividad 47
-
-### Actividad 48
-
-### Actividad 49
-
-### Actividad 50
+Sección de contacto con formulario y validación.
