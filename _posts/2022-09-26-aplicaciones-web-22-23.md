@@ -33,6 +33,9 @@ pin: true
 - P09 - [Práctica: JavaScript en freeCodeCamp](/posts/practica-javascript-freeCodeCamp)
 - P10 - [Práctica: JavaScript en W3Schools](/posts/practica-javascript-w3schools)
 - P11 - [Práctica: Introducción a JavaScript](/posts/practica-introduccion-javascript)
+- P12 - [Práctica: Introducción a JavaScript 2](/posts/practica-introduccion-javascript-2)
+
+- PO01 - [Práctica: Práctica: Juego con HTML, CSS y JavaScript](/posts/practica-juego-html-css-javascript)
 
 ## Enlaces increíbles 🔥
 
