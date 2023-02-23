@@ -47,7 +47,8 @@ Hola soy <Nombre> <Apellidos>, alumno de Aplicaciones Web en el IES Tiempos Mode
 
 Y haz click en el botón "SAVE CHANGES".
 
-https://app.hackthebox.com/users/1223840
+> Copia el enlace a tu perfil, en mi caso este es [mi perfil publico](https://app.hackthebox.com/users/1223840).
+{:.prompt-info}
 
 > 📷 Haz una captura de tu perfil vacío.
 {:.prompt-info}
