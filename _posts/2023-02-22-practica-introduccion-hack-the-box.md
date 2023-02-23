@@ -10,11 +10,11 @@ img_path: /assets/img/practica-introduccion-hack-the-box/
 
 El objetivo de esta práctica es aprender a realizar tareas catalogadas como muy fáciles en Hack The Box.
 
-Duración: 7 h
+Duración: - h
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un documento PDF con un nombre en el siguiente formato: "\<Apellidos\>_\<Nombre\>_P\<NúmeroDeLaPrácticaConDosDígitos\>.pdf". Por ejemplo, en mi caso el nombre del documento PDF sería "RuizGarcía_Marcos_P\<NúmeroDeLaPrácticaConDosDígitos\>.pdf".
+La entrega de esta práctica debe ser un documento PDF con un nombre en el siguiente formato: `<Apellidos>_<Nombre>_PO<NúmeroDeLaPrácticaConDosDígitos>.pdf`{: .filepath}. Por ejemplo, en mi caso el nombre del documento PDF sería `RuizGarcía_Marcos_PO01.pdf`{: .filepath}.
 
 1. Debe contener una portada con título, nombre de la asignatura, curso, autor y fecha de realización.
 2. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.
@@ -34,24 +34,35 @@ A continuación se listan las actividades que se deben realizar.
 {:.activity}
 ### Crear cuenta en Hack The Box
 
-Crea una cuenta en Hack The Box con el email del instituto. Añade en el apartado PROF
+Haz click en [este enlace](https://academy.hackthebox.com/register) para registrate en Hack The Box con el email del centro educativo. Posteriormente deberás verificar tu cuenta.
 
 {:.activity}
 ### Perfil público en Hack The Box
 
+Haz click en "My Profile", pestaña "PROFILE SETTINGS", subpestaña "PUBLIC INFORMATION" y escribe la siguiente información:
+
+```plaintext
+Hola soy <Nombre> <Apellidos>, alumno de Aplicaciones Web en el IES Tiempos Modernos, en el curso 22 23.
+```
+
+Y haz click en el botón "SAVE CHANGES".
+
+https://app.hackthebox.com/users/1223840
+
+> 📷 Haz una captura de tu perfil vacío.
+{:.prompt-info}
+
 {:.activity}
-### Meow
+### Realiza las actividades
 
+Haz click en [este enlace](https://app.hackthebox.com/starting-point) y realiza las siguientes actividades:
 
-{:.activity}
-### Fawn
+Haz las actividades de:
 
+- Meow
+- Fawn
+- Dancing
+- Redeemer
 
-
-{:.activity}
-### Dancing
-
-
-
-## Bibliografía
-
+> 📷 Haz una captura de tu perfil con las actividades completadas.
+{:.prompt-info}
