@@ -83,6 +83,7 @@ En mi caso, he usado los siguientes comandos:
 #apt update
 #apt install openvpn3
 ```
+
 {:.activity}
 ### Conecta a la VPN
 
