@@ -47,11 +47,42 @@ Hola soy <Nombre> <Apellidos>, alumno de Aplicaciones Web en el IES Tiempos Mode
 
 Y haz click en el botón "SAVE CHANGES".
 
-> Copia el enlace a tu perfil, en mi caso este es [mi perfil publico](https://app.hackthebox.com/users/1223840).
+> Copia el enlace a tu perfil, en mi caso este es [mi perfil publico](https://app.hackthebox.com/users/1223840). Para obtener tu perfil público necesitaras saber tu ID de usuario, en mi caso es 1223840.
 {:.prompt-info}
 
 > 📷 Haz una captura de tu perfil vacío.
 {:.prompt-info}
+
+{:.activity}
+### Crea e instala Kali Linux
+
+Crea e instala Kali Linux con tu usuario habitual y la contraseña "tiempos".
+
+> 📷 Haz una captura de pantalla donde se vea tu usuario de Kali Linux y la web de HackTheBox como se ve a continuación.
+{:.prompt-info}
+
+{:.activity}
+### Instala OpenVPN en Kali Linux
+
+Haz [click aquí](https://openvpn.net/openvpn-client-for-linux/) y descarga OpenVPN 3 para Linux. En mi caso estoy instalando la versión de Kali Linux 2022.4 (usar comando `lsb_release -a`) por lo que mi release name es `jammy`.
+
+En mi caso, he usado los siguientes comandos:
+
+```console
+#apt install apt-transport-https
+#curl -fsSL https://swupdate.openvpn.net/repos/openvpn-repo-pkg-key.pub | gpg --dearmor > /etc/apt/trusted.gpg.d/openvpn-repo-pkg-keyring.gpg
+#curl -fsSL https://swupdate.openvpn.net/community/openvpn3/repos/openvpn3-jammy.list >/etc/apt/sources.list.d/openvpn3.list
+#apt update
+#apt install openvpn3
+```
+{:.activity}
+### Conecta a la VPN
+
+En mi caso, he utilizado el siguiente comando una vez descargado el fichero OVPN:
+
+```console
+$sudo openvpn starting_point_marcosruiz.ovpn
+```
 
 {:.activity}
 ### Realiza las actividades
@@ -65,5 +96,9 @@ Haz las actividades de:
 - Dancing
 - Redeemer
 
-> 📷 Haz una captura de tu perfil con las actividades completadas.
+Todas las actividades tienen una guía en PDF que te enseña paso a paso como completar la dicha actividad. Para descargarlo deberás hacer click en el botón que dice "OPEN Walkthrough".
+
+
+
+> 📷 Haz una captura con las actividades completadas donde se vea tu nombre de usuario.
 {:.prompt-info}
