@@ -45,8 +45,8 @@ Haz click en "My Profile", pestaña "PROFILE SETTINGS", subpestaña "PUBLIC INFO
 Hola soy <Nombre> <Apellidos>, alumno de Aplicaciones Web en el IES Tiempos Modernos, en el curso 22 23.
 ```
 
-![Apartado descripción perfil](descripcionPerfil.png)
-_Apartado descripción perfil_
+![Apartado de descripción en el perfil](descripcionPerfil.png)
+_Apartado de descripción en el perfil_
 
 
 Y haz click en el botón "SAVE CHANGES".
@@ -86,7 +86,25 @@ En mi caso, he usado los siguientes comandos:
 {:.activity}
 ### Conecta a la VPN
 
-En mi caso, he utilizado el siguiente comando una vez descargado el fichero OVPN:
+Hacemos click en "CONNECT TO HTB":
+
+![Click en botón "CONNECT TO HTB"](02.png)
+_Click en botón "CONNECT TO HTB"_
+
+Hacemos click en "OpenVPN":
+
+![Click en botón "OpenVPN"](03.png)
+_Click en botón "OpenVPN"_
+
+Hacemos click en "DOWNLOAD VPN":
+
+![Click en botón "DOWNLOAD VPN"](04.png)
+_Click en botón "DOWNLOAD VPN"_
+
+![Descarga del fichero OVPN completada](05.png)
+_Descarga del fichero OVPN completada_
+
+En mi caso, ejecuto el siguiente comando una vez descargado el fichero OVPN:
 
 ```console
 $sudo openvpn starting_point_marcosruiz.ovpn
@@ -97,6 +115,14 @@ _Comando para conectar a la VPN_
 
 ![Conectado a la VPN](08.png)
 _Conectado a la VPN_
+
+Hacemos click en "SPAWN MACHINE" para iniciar la máquina que queremos hackear:
+
+![imgDescription](09.png)
+_Click en botón "SPAWN MACHINE"_
+
+![imgDescription](10.png)
+_Creando instancia de máquina a hackear_
 
 {:.activity}
 ### Realiza las actividades
@@ -112,16 +138,19 @@ Haz las actividades de:
 
 Todas las actividades tienen una guía en PDF que te enseña paso a paso como completar la dicha actividad. Para descargarlo deberás hacer click en el botón que dice "OPEN Walkthrough".
 
-
 ![Botón "OPEN Walkthrough"](11.png)
 _Botón "OPEN Walkthrough"_
 
+> Aunque todo está en inglés, los comandos son universales.
+{:.prompt-tip}
 
-![Guía de hackeo](12.png)
-_Guía de hackeo_
+![Guía de hackeo paso a paso](12.png)
+_Guía de hackeo paso a paso_
 
 > 📷 Haz una captura con las actividades completadas donde se vea tu nombre de usuario como se ve a continuación.
 {:.prompt-info}
 
 ![Roadmap completado](roadmapHtb.png)
 _Roadmap completado_
+
+

@@ -36,6 +36,8 @@ pin: true
 - P09 - [Práctica: Seguridad activa de sistemas operativos](/posts/practica-seguridad-activa-sistemas-operativos/)
 - P10 - [Práctica: OpenMediaVault y gestión de usuarios](/posts/practica-openmediavault) (Seguridad pasiva y activa)
 
+- PO01 - [Práctica: Introducción a Hack the Box](/posts/practica-introduccion-hack-the-box)
+
 - Práctica: Copias de seguridad con UrBackup  (Seguridad pasiva)
 - Práctica: Servidor Radius (Seguridad activa)
 - Práctica: Ataque de fuerza bruta con Kali Linux
