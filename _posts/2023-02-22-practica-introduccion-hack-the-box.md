@@ -45,6 +45,10 @@ Haz click en "My Profile", pestaña "PROFILE SETTINGS", subpestaña "PUBLIC INFO
 Hola soy <Nombre> <Apellidos>, alumno de Aplicaciones Web en el IES Tiempos Modernos, en el curso 22 23.
 ```
 
+![Apartado descripción perfil](descripcionPerfil.png)
+_Apartado descripción perfil_
+
+
 Y haz click en el botón "SAVE CHANGES".
 
 > Copia el enlace a tu perfil, en mi caso este es [mi perfil publico](https://app.hackthebox.com/users/1223840). Para obtener tu perfil público necesitaras saber tu ID de usuario, en mi caso es 1223840.
@@ -60,6 +64,10 @@ Crea e instala Kali Linux con tu usuario habitual y la contraseña "tiempos".
 
 > 📷 Haz una captura de pantalla donde se vea tu usuario de Kali Linux y la web de HackTheBox como se ve a continuación.
 {:.prompt-info}
+
+![Cuenta HackTheBox en Kali Linux](01.png)
+_Cuenta HackTheBox en Kali Linux_
+
 
 {:.activity}
 ### Instala OpenVPN en Kali Linux
@@ -84,6 +92,12 @@ En mi caso, he utilizado el siguiente comando una vez descargado el fichero OVPN
 $sudo openvpn starting_point_marcosruiz.ovpn
 ```
 
+![Comando para conectar a la VPN](07.png)
+_Comando para conectar a la VPN_
+
+![Conectado a la VPN](08.png)
+_Conectado a la VPN_
+
 {:.activity}
 ### Realiza las actividades
 
@@ -99,6 +113,15 @@ Haz las actividades de:
 Todas las actividades tienen una guía en PDF que te enseña paso a paso como completar la dicha actividad. Para descargarlo deberás hacer click en el botón que dice "OPEN Walkthrough".
 
 
+![Botón "OPEN Walkthrough"](11.png)
+_Botón "OPEN Walkthrough"_
 
-> 📷 Haz una captura con las actividades completadas donde se vea tu nombre de usuario.
+
+![Guía de hackeo](12.png)
+_Guía de hackeo_
+
+> 📷 Haz una captura con las actividades completadas donde se vea tu nombre de usuario como se ve a continuación.
 {:.prompt-info}
+
+![Roadmap completado](roadmapHtb.png)
+_Roadmap completado_
