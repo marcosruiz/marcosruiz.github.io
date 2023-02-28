@@ -418,7 +418,7 @@ Utilizando `getElementById` e `innerHTML` transformar el emoji en un smiley.
 {:.activity}
 ### DOM
 
-Utilizando `getElementById()` e `innerHTML` transformar el emoji en un smiley cuando se haga click en él
+Utilizando `getElementById()` e `innerHTML` transformar el emoji en un smiley cuando se haga click en él.
 
 ```html
 <button type="button" id="demo"> :( </button>
@@ -426,6 +426,9 @@ Utilizando `getElementById()` e `innerHTML` transformar el emoji en un smiley cu
 
 {:.activity}
 ### DOM
+
+> Este ejercicio es el mismo que el anterior.
+{:.prompt-info}
 
 Sobre el ejercicio anterior haz que solo se transforme el emoji si hacemos click en él.
 
