@@ -86,23 +86,42 @@ Crea un RAID5 con tres discos de 100MB cada uno. El RAID resultante será de 200
 {:.activity}
 ### Compartir una carpeta pública dentro del RAID5
 
-Crea una carpeta compartida llamada public y compártela para que cualquiera pueda entrar a través de SSH o a través de FTPS.
+Crea una carpeta compartida llamada public y compártela para que cualquiera pueda entrar a través de SSH y a través de FTPS.
 
 Crea una carpeta compartida llamada "profesor\<tuUsuario\>" para que el usuario "profesor\<tuUsuario\>" pueda añadir y borrar ficheros y el usuario "alumno\<tuUsuario\>" pueda ver y descargar los ficheros de dicha carpeta. Deberá funcionar a través de SSH y FTPS. Podrás usar tanto el sistema de permisos tradicional como ACL.
 
 Deberás demostrar el funcionamiento conectándote al servidor a través del navegador de archivos Thunar y Filezilla.
 
 {:.activity}
-### Copias de seguridad
+### Copias de seguridad con Rsync
 
-Añade y monta un disco de 200MB y programa copias de seguridad cada 10 minutos (para hacer pruebas puedes bajarlo a 2 minutos) de la carpeta compartida. Se recomienda usar rsync.
-
-{:.activity}
-### (Opcional) Copias de seguridad remota
-
-Utilizando rsync hacer copias de seguridad de manera remota usando otro servidor OpenMediaVault encriptando la comunicación a través de clave pública.
+Añade y monta un disco de 200MB y programa copias de seguridad cada 10 minutos (para hacer pruebas puedes bajarlo a 2 minutos) de la carpeta compartida.
 
 {:.activity}
-### Restaura tu sistema
+### (Opcional) Copias de seguridad remota con Rsync
+
+Utilizando rsync hacer copias de seguridad con Rsync de manera remota usando otro servidor OpenMediaVault encriptando la comunicación a través de clave pública.
+
+{:.activity}
+### (Opcional) Copias de seguridad con UrBackup
+
+Añade y monta un disco de 200MB y programa copias de seguridad con UrBackup cada 10 minutos (para hacer pruebas puedes bajarlo a 2 minutos) de la carpeta compartida.
+
+Puedes seguir el siguiente video (en inglés):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NaBeioAznlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué ventajas aporta UrBackup sobre Rsync?</summary>
+  <div class="card-body" markdown="1">
+
+La respuesta está en el artículo [Tutorial: Instalación de UrBackup](/posts/tutorial-instalacion-urbackup/).
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+{:.activity}
+### (Opcional) Copias de seguridad con UrBackup
 
 Restaura tu carpeta compartida a un estado anterior, deberán verse los cambios en la carpeta.
