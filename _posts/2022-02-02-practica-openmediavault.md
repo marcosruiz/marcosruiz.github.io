@@ -61,7 +61,7 @@ Descarga la última versión estable de [OpenMediaVault](https://www.openmediava
 {:.activity}
 ### Instalar OpenMediaVault
 
-Sigue los pasos de artículo [Tutorial: Instalación y configuración de OpenMediaVault](/posts/tutorial-instalacion-openmediavault) en una máquina virtual de Virtual Box. En mi caso estoy instalando la versión de OpenMediaVault 5 en lugar de la 6, pero los pasos son iguales o muy similares.
+Sigue los pasos de los artículos [Tutorial: Instalación de OpenMediaVault](/posts/tutorial-instalacion-openmediavault) y [Tutorial: Configuración de OpenMediaVault](https://marcosruiz.github.io/posts/tutorial-configuracion-openmediavault/) en una máquina virtual de Virtual Box. En mi caso estoy instalando la versión de OpenMediaVault 5 en lugar de la 6, pero los pasos son iguales o muy similares.
 
 {:.activity}
 ### Conectarte desde el cliente web
@@ -98,7 +98,7 @@ Deberás demostrar el funcionamiento conectándote al servidor a través del nav
 Añade y monta un disco de 200MB y programa copias de seguridad cada 10 minutos (para hacer pruebas puedes bajarlo a 2 minutos) de la carpeta compartida. Se recomienda usar rsync.
 
 {:.activity}
-### Copias de seguridad remota
+### (Opcional) Copias de seguridad remota
 
 Utilizando rsync hacer copias de seguridad de manera remota usando otro servidor OpenMediaVault encriptando la comunicación a través de clave pública.
 
