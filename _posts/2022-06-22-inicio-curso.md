@@ -16,6 +16,7 @@ tags: []
 - [Clonezilla: Recuperar una imagen del equipo paso a paso](http://somebooks.es/clonezilla-recuperar-una-imagen-del-equipo-paso-paso/)
 - [FOG Project](https://fogproject.org/)
 - [OpenGnsys](https://opengnsys.es/web/)
+- [Calendarios en blanco para Diario de profesor](https://www.wincalendar.com/es/Calendario-En-Blanco-2023-Gratis)
 
 ## Programas que deben instalarse en los PCs de los alumnos
 
