@@ -26,7 +26,7 @@ Programa que pida dos números y que nos diga cual es el mayor, el menor o si so
 
 ### Actividad 2
 
-Al programa anterior, si los numeros no son un número o son menores o iguales a cero, nos los vuelva a pedir.
+Al programa anterior, si los números no son un número o son menores o iguales a cero, nos los vuelva a pedir.
 
 ### Actividad 3
 
@@ -38,7 +38,7 @@ Hacer un programa que muestre todos los números entre dos números introducidos
 
 ### Actividad 5
 
-Mostrar todos los números impares que hay entre dos numeros introducidos por el usuario.
+Mostrar todos los números impares que hay entre dos números introducidos por el usuario.
 
 ### Actividad 6
 
