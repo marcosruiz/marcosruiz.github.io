@@ -481,7 +481,6 @@ Si has visto los 3 vídeos deja un comentario de cual te parece mejor.
 - [Algoritmos y Estructuras de Datos en JavaScript](https://github.com/trekhleb/javascript-algorithms/blob/master/README.es-ES.md) ➡️ AVANZADO
 - [DesafioLatam/guia-de-ejercicios-javascript](https://github.com/DesafioLatam/guia-de-ejercicios-javascript/blob/master/ejercicios.md)
 - [Exámenes de JavaScript](https://cibertest.com/test-examen/20/javascript)
-- [mouredev/Weekly-Challenge-2022-Kotlin](https://github.com/mouredev/Weekly-Challenge-2022-Kotlin)
 - [Lista de preguntas (avanzadas) de JavaScript](https://github.com/lydiahallie/javascript-questions/blob/master/es-ES/README-ES.md) ➡️ Preguntas rebuscadas de JS
 - [Reto #1 - Bingo (ManzDev)](https://lenguajejs.com/retos/nivel-medio/bingo/)
 - [JavaScript Ya](https://www.tutorialesprogramacionya.com/javascriptya/) ➡️ 111 Ejercicios guiados de JS y con solución.

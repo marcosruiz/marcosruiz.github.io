@@ -134,11 +134,11 @@ _Maquetación objetivo_
 
 ### Actividad 22
 
-Haz un slider de imagenes funcional (busca librerías externas).
+Haz un slider de imágenes funcional (busca librerías externas).
 
 ### Actividad 23
 
-Muestra un listado de articulos almacenado en un json y muéstralo dinámicamente.
+Muestra un listado de artículos almacenado en un json y muéstralo dinámicamente.
 
 ### Actividad 24
 
@@ -150,7 +150,7 @@ Al final de la web habrá un botón para subir al principio de la web haciendo u
 
 ### Actividad 26
 
-Hacer un formulario que nos permita guardar en el locaistorage el nombre y los apellidos del usuario que este en la weby en el caso de que exista la "sesion mostrarla.
+Hacer un formulario que nos permita guardar en el localstorage el nombre y los apellidos del usuario que este en la web en el caso de que exista la sesión mostrarla.
 
 ### Actividad 27
 

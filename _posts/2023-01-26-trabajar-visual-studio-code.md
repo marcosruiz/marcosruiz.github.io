@@ -96,6 +96,15 @@ _Mensaje de error de Stylelint_
 
 - Markdown All in One
 
+## Fuentes para programar
+
+- Cascadia Code
+- JetBrins Mono
+- Fira Code
+- Victor Mono
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JYFH0nE-UjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Bibliografía
 
 - [Atajos de teclado en Visual Studio Code](https://carontestudio.com/blog/atajos-de-teclado-en-visual-studio-code/).
