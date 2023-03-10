@@ -55,7 +55,7 @@ Una vez abierto el directorio haremos click derecho y seleccionaremos la opción
 mruizg@mruizg-VirtualBox:/media/mruizg/VBox_GAs_6.1.22$
 ```
 
-Deberemos escribir:
+Deberemos escribir lo siguiente:
 
 ```console
 #chmod a+x VBoxLinuxAdditions.run
