@@ -55,13 +55,15 @@ Una vez abierto el directorio haremos click derecho y seleccionaremos la opción
 mruizg@mruizg-VirtualBox:/media/mruizg/VBox_GAs_6.1.22$
 ```
 
-Primero debemos instalar los programas make, gcc y perl de la siguiente manera:
+Deberemos escribir:
 
 ```console
-$ sudo apt install make gcc perl
+#chmod a+x VBoxLinuxAdditions.run
+#./VBoxLinuxAdditions.run
+#reboot
 ```
 
-Deberemos escribir `./autorun.sh` para ejecutar el script de instalación y posteriormente reiniciar a máquina virtual desde el menú de inicio. Una vez reiniciada la máquina debes redimensionar la ventana para que se adapte la resolución.
+Para ejecutar el script de instalación y posteriormente reiniciar a máquina virtual desde el menú de inicio. Una vez reiniciada la máquina debes redimensionar la ventana para que se adapte la resolución.
 
 ### Crear una instantánea
 
