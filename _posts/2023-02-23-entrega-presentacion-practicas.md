@@ -1,8 +1,8 @@
 ---
 title: "Entrega y presentación de prácticas"
 date: 2023-02-21 9:00:00 +0100
-categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [seguridad informática, smr, teoría, seguridad activa, hack the box]
+categories: [Sistemas Microinformáticos y Redes]
+tags: [práctica]
 img_path: /assets/img/entrega-presentacion-practicas/
 ---
 

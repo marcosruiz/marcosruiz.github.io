@@ -2,7 +2,7 @@
 title: "Práctica: Juego con HTML, CSS y JavaScript"
 date: 2023-02-21 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
-tags: [aplicaciones web, smr, práctica, javascript]
+tags: [aplicaciones web, smr, práctica, javascript, css, html]
 img_path: /assets/img/practica-juego-html-css-javascript/
 math: true
 ---

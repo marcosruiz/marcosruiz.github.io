@@ -2,7 +2,7 @@
 title: "Práctica: JavaScript en W3Schools"
 date: 2023-01-19 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
-tags: [aplicaciones web, smr, práctica]
+tags: [aplicaciones web, smr, práctica, javascript]
 img_path: /assets/img/practica-js-w3schools/
 ---
 
