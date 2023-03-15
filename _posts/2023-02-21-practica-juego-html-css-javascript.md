@@ -13,7 +13,7 @@ El objetivo de esta práctica es aprender a programar con JavaScript a un nivel 
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un fichero ZIP con un nombre en el siguiente formato `<Apellidos>_<Nombre>_P<NúmeroDeLaPrácticaConDosDígitos>.zip`{: .filepath}. Por ejemplo, en mi caso el nombre del fichero ZIP sería `RuizGarcía_Marcos_P11.zip`{: .filepath}.
+La entrega será en formato ZIP. Leer [Entrega y presentación de prácticas](/posts/entrega-presentacion-practicas/).
 
 ## Actividades
 
