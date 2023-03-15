@@ -66,7 +66,3 @@ La carpeta compartida de la asignatura es `\\ORDAI2PROF\Compartida_SI_22_23`.
 El usuario es "alumno" y la contraseña es "alumno".
 
 ## Consejos para el próximo curso
-
-- Prácticas ➡️ Estas prácticas son de apto/no apto y son obligatorias para poder presentarse al examen. No es necesario contestar a las preguntas.
-- Prácticas Voluntarias (PV) ➡️ Estas prácticas no puntúan.
-- Toda la nota es la del examen.

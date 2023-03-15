@@ -57,3 +57,4 @@ El usuario es "alumno" y la contraseña es "alumno".
 
 ## Consejos para el próximo curso
 
+- Empezar a programar desde el principio con muchos ejemplos en clase para que se entienda.
