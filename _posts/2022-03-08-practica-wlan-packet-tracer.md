@@ -1,5 +1,5 @@
 ---
-title: "Práctica: WLAN con Packet Tracer"
+title: "Práctica: WLAN en Packet Tracer"
 date: 2022-03-08 14:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [packet tracer, redes locales, smr, wlan, práctica]

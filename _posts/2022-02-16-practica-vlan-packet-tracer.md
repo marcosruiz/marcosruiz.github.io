@@ -1,5 +1,5 @@
 ---
-title: "Práctica: VLAN con Packet Tracer"
+title: "Práctica: VLAN en Packet Tracer"
 date: 2022-02-16 14:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [packet tracer, redes locales, smr, vlan, práctica]
