@@ -22,7 +22,7 @@ En todas las prácticas, cada vez que se haga mención a `<tuUsuario>` deberás 
 
 ## Entrega y presentación en formato PDF
 
-Si la entrega de la práctica debe ser un documento PDF con un nombre en el siguiente formato: `<tuUsuario>_P<Número de la práctica con dos dígitos>.pdf`{: .filepath}. Por ejemplo, en mi caso el nombre del documento PDF sería `mruizg_p01.pdf`{: .filepath}.
+Si la entrega de la práctica debe ser un documento PDF con un nombre en el siguiente formato: `<tuUsuario>_p<Número de la práctica con dos dígitos>.pdf`{: .filepath}. Por ejemplo, en mi caso el nombre del documento PDF sería `mruizg_p01.pdf`{: .filepath}.
 
 1. Debe contener una portada con título, nombre de la asignatura, curso, autor y fecha de realización.
 1. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.
@@ -41,7 +41,7 @@ Además:
 
 ## Entrega y presentación en formato ZIP
 
-Si la entrega de la práctica debe ser un documento ZIP con un nombre en el siguiente formato: `<tuUsuario>_P<Número de la práctica con dos dígitos>.zip`{: .filepath}. Por ejemplo, en mi caso el nombre del documento ZIP sería `mruizg_p01.zip`{: .filepath}.
+Si la entrega de la práctica debe ser un documento ZIP con un nombre en el siguiente formato: `<tuUsuario>_p<Número de la práctica con dos dígitos>.zip`{: .filepath}. Por ejemplo, en mi caso el nombre del documento ZIP sería `mruizg_p01.zip`{: .filepath}.
 
 En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que se pida) con el nombre `<tuUsuario>_p<Número de la práctica con dos dígitos>.pdf`{: .filepath} y las actividades en el formato que corresponda:
 
@@ -49,4 +49,3 @@ En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que
 - Las actividades de HTML deberán estar en formato HTML con el nombre `<tuUsuario>_a<Número de la actividad con dos dígitos>.html`{: .filepath}. Por ejemplo: `mruizg_a01.html`{: .filepath}.
 - Las actividades de JavaScript deberán estar en formato JS con el nombre `<tuUsuario>_a<Número de la actividad con dos dígitos>.js`{: .filepath}. Por ejemplo: `mruizg_a01.js`{: .filepath}.
 - Las actividades con otro tipo de extensión deberán estar en formato correspondiente `<tuUsuario>_a<Número de la actividad con dos dígitos>.<extensión>`. Por ejemplo: `mruizg_a01.jar`{: .filepath}.
-
