@@ -3,6 +3,7 @@ title: Instalar Zorin OS Lite en Virtual Box
 date: 2022-01-07 15:00:00 +0100
 categories: [General, GNU Linux]
 tags: [gnu linux, dam, smr, entornos de desarrollo, seguridad informática, servicios en red, redes locales, virtual box, zorin, ubuntu, tutorial]
+img_path: /assets/img/instalar-zorin-lite-os/
 ---
 
 
@@ -87,7 +88,56 @@ Haciendo click en Máquina > Configuración > General > Avanzado podemos cambiar
 - Compartir portapapeles: Bidireccional
 - Arrastrar y soltar: Bidireccional
 
-Tanto el compartir portapapeles como el arrastrar y soltar solo funciona si la máquina host y la máquina virtual son GNU Linux. En caso de no tener disponible el estás dos opciones se recomienda tener una carpeta compartida entre la máquina host y la máquina virtual.
+Tanto el compartir portapapeles como el arrastrar y soltar solo funciona si la máquina host y la máquina virtual guest son GNU Linux. En caso de no tener disponible el estás dos opciones se recomienda tener una carpeta compartida entre la máquina host y la máquina virtual.
+
+### Crear carpeta compartida
+
+Para crear y montar una carpeta compartida tendrás que ir a la máquina instalada, Configuración, Carpetas compartidas y añadir la carpeta como se ve en las siguientes figuras.
+
+![Editar carpetas compartidas de la configuración de Virtual Box](editarCarpetaCompartida.png)
+_Editar carpetas compartidas de la configuración de Virtual Box_
+
+![Carpetas compartidas de la configuración de Virtual Box](carpetasCompartidas.png)
+_Carpetas compartidas de la configuración de Virtual Box_
+
+Añadimos permisos a nuestro usuario:
+
+```console
+$sudo adduser <nombre de usuario> vboxsf
+```
+
+Y reiniciamos:
+
+```console
+$sudo reboot
+```
+
+Con esto ya deberiamos ver la carpeta compartida en la máquina virtual:
+
+![Directorio workspace montado en la máquina virtual](carpetasCompartidas.png)
+_Directorio workspace montado en la máquina virtual_
+
+Si tienes algún problema con la carpeta compartida puedes instalar las guest additions de este modo:
+
+```console
+$sudo add-apt-repository multiverse
+$sudo apt update
+$sudo apt install virtualbox-guest-utils virtualbox-guest-x11
+$sudo reboot
+```
+
+Una vez reiniciamos, comprobamos que las guest additions están instaladas en nuestro sistema:
+
+```console
+$lsmod  | grep vbox
+vboxvideo              36864  0
+drm_ttm_helper         16384  1 vboxvideo
+vboxsf                 77824  0
+vboxguest             401408  7 vboxsf
+ttm                    86016  3 vmwgfx,vboxvideo,drm_ttm_helper
+drm_kms_helper        307200  2 vmwgfx,vboxvideo
+drm                   606208  8 vmwgfx,drm_kms_helper,vboxvideo,drm_ttm_helper,ttm
+```
 
 ### Mejora de rendimiento
 
