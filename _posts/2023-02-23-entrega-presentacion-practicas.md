@@ -48,4 +48,4 @@ En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que
 - Las actividades de Packet Tracer deberán estar en formato PKT con el nombre `<tuUsuario>_a<Número de la actividad con dos dígitos>.pkt`{: .filepath}. Por ejemplo: `mruizg_a01.pkt`{: .filepath}.
 - Las actividades de HTML deberán estar en formato HTML con el nombre `<tuUsuario>_a<Número de la actividad con dos dígitos>.html`{: .filepath}. Por ejemplo: `mruizg_a01.html`{: .filepath}.
 - Las actividades de JavaScript deberán estar en formato JS con el nombre `<tuUsuario>_a<Número de la actividad con dos dígitos>.js`{: .filepath}. Por ejemplo: `mruizg_a01.js`{: .filepath}.
-- Las actividades con otro tipo de extensión deberán estar en formato correspondiente `<tuUsuario>_a<Número de la actividad con dos dígitos>.<extensión>`. Por ejemplo: `mruizg_a01.jar`{: .filepath}.
+- Las actividades con otro tipo de extensión deberán estar en formato correspondiente `<tuUsuario>_a<Número de la actividad con dos dígitos>.<extensión>`{: .filepath}. Por ejemplo: `mruizg_a01.jar`{: .filepath}.
