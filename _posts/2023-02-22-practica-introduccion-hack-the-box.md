@@ -1,6 +1,6 @@
 ---
 title: "Práctica: Introducción a Hack the Box"
-date: 2023-02-21 9:00:00 +0100
+date: 2023-02-22 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr, práctica, seguridad activa, hack the box]
 img_path: /assets/img/practica-introduccion-hack-the-box/

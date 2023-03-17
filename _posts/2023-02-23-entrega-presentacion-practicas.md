@@ -1,7 +1,7 @@
 ---
 title: "Entrega y presentación de prácticas"
-date: 2023-02-21 9:00:00 +0100
-categories: [Sistemas Microinformáticos y Redes]
+date: 2023-02-23 9:00:00 +0100
+categories: [General]
 tags: [práctica]
 img_path: /assets/img/entrega-presentacion-practicas/
 ---

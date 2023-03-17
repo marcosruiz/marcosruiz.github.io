@@ -78,8 +78,24 @@ _Socket_
 ![img-description](formatoTcp.png)
 _Formato del segmento TCP_
 
-{:.question}
-¿Cual es el objetivo de cada campo? (Pag 136)
+<details class="card mb-2">
+  <summary class="card-header question">¿Cual es el objetivo de cada campo?</summary>
+  <div class="card-body" markdown="1">
+
+- **Puerto Origen** (16 bits): Identifica el puerto emisor.
+- **Puerto de Destino** (16 bits): Identifica el puerto receptor.
+- **Número de secuencia** (32 bits): Identifica el byte del flujo de datos enviado por el emisor TCP al receptor TCP.
+- **Número de reconocimiento o acuse de recibo** (32 bits): Contiene el valor del siguiente número de secuencia que el emisor del segmento espera recibir.
+- **Offset o Longitud de cabecera** (4 bits): Especifica el tamaño de la cabecera en palabras de 32 bits.
+- **Reservado** (3 bits): Para uso futuro.
+- **Bits de Bandera o Flag** (9 bits): Nueve banderas de 1 bit para distintos propósitos.
+- **Ventana** (16 bits): Tamaño de ventana que especifica el número máximo de bytes que pueden ser metidos en el buffer de recepción.
+- **Suma de control o verificación** (16 bits): Checksum utilizado para la comprobación de errores tanto en la cabecera como en los datos.
+- **Urgente** (16 bits): Cantidad de bytes desde el número de secuencia que indica el lugar donde acaban los datos urgentes.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 {:.section}
 ## Protocolo UDP
@@ -120,26 +136,36 @@ El encabezado UDP es mucho más simple que el encabezado TCP porque solo tiene c
 ![img-description](formatoUdp.png)
 _Formato del segmento UDP_
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Cuál es el objetivo de cada campo?</summary>
+  <div class="card-body" markdown="1">
+
 - **Puerto UDP origen**. Un campo de 16 bits utilizado para identificar la aplicación de origen por número de puerto.
 - **Puerto UDP destino**. Un campo de 16 bits utilizado para identificar la aplicación de destino por número de puerto.
 - **Longitud del mensaje UDP**. 16 bits que indican la longitud en bytes del mensaje UDP incluyendo la cabecera. La longitud mínima es de 8 bytes.
 - **Checksum**. Un campo de 16 bits utilizado para la verificación de errores del encabezado y los datos del datagrama.
 - **Datos**. Información viene de la capa de aplicación.
 
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 {:.section}
 ## TCP vs UDP
 
-Leer artículo [Diferencia entre TCP y UDP](https://ccnadesdecero.com/curso/tcp-vs-udp/).
+UDP necesita menos bytes en la cabecera por lo que utiliza menos ancho de banda y necesita menos consumo procesamiento.
+
+TCP en cambio consume más ancho de banda que UDP, pero permite la retransmisión y evita congestión.
 
 {:.section}
 ## Direccionamiento y puertos
 
 <iframe src="https://www.youtube.com/embed/hmGmeGDRUAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- Puerto reservado: el 0
-- Puertos bien conocidos: del 1 al 1023
-- Puertos registrados: del 1024 al 49151
-- Puertos efímeros: del 49152 al 65535
+- Puerto reservado: el 0.
+- Puertos bien conocidos: del 1 al 1023.
+- Puertos registrados: del 1024 al 49151.
+- Puertos efímeros: del 49152 al 65535.
 
 ## Resumen final
 
