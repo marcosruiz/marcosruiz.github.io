@@ -191,8 +191,6 @@ TCP en cambio consume más ancho de banda que UDP, pero permite la retransmisió
 {:.question}
 En la vida real ¿que ejemplo hay equivalente a TCP? ¿Y UDP?
 
-## Resumen final
-
 <details class="card mb-2">
   <summary class="card-header">Spoiler</summary>
   <div class="card-body" markdown="1">

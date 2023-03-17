@@ -4,6 +4,7 @@ date: 2022-02-13 13:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 mermaid: true
+img_path: /assets/img/protocolo-ipv6/
 ---
 
 {:.section}
@@ -29,7 +30,7 @@ En febrero de 2011 la IANA (Internet Assigned Numbers Authority) **asignó el ú
 
 IPv6 tiene más de 10.000.000.000.000.000.000.000.000.000 veces más direcciones que IPv4.
 
-![Encabezado IPv6](/assets/img/protocolo-ipv6/ipv6.webp)
+![Encabezado IPv6](ipv6.webp)
 _Encabezado IPv6_
 
 {:.section}
@@ -241,7 +242,7 @@ Rellena los siguientes huecos:
 - **Anycast**: Identifica a una o más interfaces. Por ejemplo, los servidores que admiten la misma función pueden utilizar la misma dirección IP de unidifusión. Los paquetes enviados a esa dirección IP se reenvían al servidor más cercano según sea  el mejor destino desde el punto de vista de la topología de la red. Las direcciones Anycast son usadas para el balanceo de carga.
 - **Multicast**: Representan a un grupo dinámico de hosts. Los paquetes enviados a esta dirección son reenviados por varias interfaces. Las direcciones de Múlticas en IPv6 tienen un propósito similar que en IPv4.
 
-![Tipos de direcciones IPv6](/assets/img/protocolo-ipv6/unicast-anycast-multicast.webp)
+![Tipos de direcciones IPv6](unicast-anycast-multicast.webp)
 _Tipos de direccionamiento IPv6: Unicast, Anycast y Multicast_
 
 IPv6 usa también direcciones IP públicas como lo hacia IPv4, éstas son las global unicast.
@@ -276,7 +277,7 @@ Esta solución implementa tanto IPv4 como IPv6 en cada nodo de la red. Cada nodo
 Es fácil de desplegar y extensamente soportado.
 El principal problema es que la topología de red requiere dos tablas de encaminamiento y dos procesos de encaminamiento. Cada nodo en la red necesita tener actualizadas las dos pilas.
 
-![Pila dual](/assets/img/protocolo-ipv6/dualStack.png)
+![Pila dual](dualStack.png)
 _Pila dual_
 
 {:.subsection}
@@ -284,7 +285,7 @@ _Pila dual_
 
 Permite conectar redes IPv6 a través de redes IPv4. Consiste en encapsular paquetes IPv6 en paquetes IPv4. Estos túneles trabajan encapsulando los paquetes IPv6 en paquetes IPv4.
 
-![Túnel IPv4 sobre IPv6](/assets/img/protocolo-ipv6/tunel.png)
+![Túnel IPv4 sobre IPv6](tunel.png)
 _Túnel IPv4 sobre IPv6_
 
 {:.subsection}
@@ -302,13 +303,8 @@ Esta solución es necesaria cuando un nodo que solo soporta IPv4 necesita comuni
 - **Con estado**: NAT-PT (Network Address Translation - Protocol Translation), TCP-UDP Relay, Socks-based Gateway.
 - **Sin estado**: Bump-in-the-Stack, Bump-in-the-API.
 
-![NAT-PT](/assets/img/protocolo-ipv6/natPt.png)
+![NAT-PT](natPt.png)
 _NAT-PT_
-
-## Memes
-
-![No sé cuando empezaré a usar IPv6, pero a estas alturas tengo demasiado miedo de preguntar](/assets/img/protocolo-ipv6/ipv6Meme.jpg)
-_No sé cuando empezaré a usar IPv6, pero a estas alturas tengo demasiado miedo de preguntar_
 
 <details class="card mb-2">
   <summary class="card-header question">¿Cuánto va a durar la transición de IPv4 a IPv6?</summary>
@@ -316,14 +312,25 @@ _No sé cuando empezaré a usar IPv6, pero a estas alturas tengo demasiado miedo
 
 Durante 20 años se espera que convivan ambas versiones y que la implantación de IPv6 sea paulatina.
 
-![Adopción de IPv6 según Google](/assets/img/protocolo-ipv6/adopcionDeIpv6SegunGoogle.jpg)
+![Adopción de IPv6 según Google](adopcionDeIpv6SegunGoogle.jpg)
 _Adopción de IPv6 según Google_
 
   </div>
 </details>
 
-![Traducción de direcciones privadas a públicas](/assets/img/protocolo-ipv6/memeRedes1.png)
+<details class="card mb-2">
+  <summary class="card-header">Spoiler</summary>
+  <div class="card-body" markdown="1">
+
+![No sé cuando empezaré a usar IPv6, pero a estas alturas tengo demasiado miedo de preguntar](ipv6Meme.jpg)
+_No sé cuando empezaré a usar IPv6, pero a estas alturas tengo demasiado miedo de preguntar_
+
+![Traducción de direcciones privadas a públicas](memeRedes1.png)
 _Tamaño del libro de redes vs tamaño del libro de redes si solo se usara IPv6 desde el comienzo_
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 ## Bibliografía
 
