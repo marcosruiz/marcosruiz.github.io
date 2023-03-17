@@ -56,18 +56,18 @@ La gestión del ancho de banda es una solución importante para solucionar probl
 
 Los comandos más comunes para la resolución de incidencias de red en GNU/Linux son:
 
+1. `ip`: Proporciona información y control sobre las interfaces de red y las conexiones de red de bajo nivel.
+1. `ifconfig`: Muestra la configuración de red para una interfaz de red específica.
 1. `ping`: Permite comprobar la conectividad y latencia de un servidor o dispositivo de red.
 1. `traceroute`: Muestra las rutas que toma el tráfico en la red y proporciona información sobre cualquier congestión en el camino.
 1. `netstat`: Muestra estadísticas y datos de conexión para los servicios activos en la red.
-1. `nmap`: Realiza una exploración de puertos en un servidor para comprobar qué servicios están activos.
-5. `tcpdump`: Permite capturar tráfico de red en tiempo real y analizarlo para encontrar problemas o errores.
 1. `nslookup`: Permite hacer consultas y diagnosticar problemas de nombres de dominio.
+1. `nmap`: Realiza una exploración de puertos en un servidor para comprobar qué servicios están activos.
+1. `tcpdump`: Permite capturar tráfico de red en tiempo real y analizarlo para encontrar problemas o errores.
 1. `dig`: Muestra información del sistema de nombres de dominio (DNS) y permite hacer consultas avanzadas en la resolución de nombres de dominio.
-1. `ifconfig`: Muestra la configuración de red para una interfaz de red específica.
 1. `route`: Muestra las rutas de red existentes y permite agregar o eliminar rutas.
-1. `ip`: Proporciona información y control sobre las interfaces de red y las conexiones de red de bajo nivel.
 
-## Comandos Windows
+## Comandos Windows y Packet Tracer
 
 Los comandos más comunes para la resolución de incidencias de red en Windows son:
 
