@@ -21,7 +21,7 @@ La capa de transporte incluye dos protocolos:
 - Protocolo de Datagramas de Usuario: User Datagram Protocol (UDP)
 
 {:.section}
-## Responsabilidades de la Capa de transporte
+## Responsabilidades de la capa de transporte
 
 La capa de transporte tiene muchas responsabilidades:
 
@@ -30,6 +30,45 @@ La capa de transporte tiene muchas responsabilidades:
 - Agregar información de encabezado.
 - Identificando las aplicaciones.
 - Multiplexación de conversación.
+
+{:.section}
+## ¿Qué es un puerto? ¿Qué es un socket?
+
+Los puertos juegan un papel básico en una conexión de red porque es el sistema por el que se identifican las aplicaciones o servicios que participan en ella. Cuando establecemos una conexión, a las aplicaciones implicadas en ella se les asigna un número entre 0 y 65535 y es el identificador que va a diferenciar esa aplicación en concreto del resto de las aplicaciones del equipo. Eso es lo que llamamos puerto.
+
+Ya sabemos que en una conexión de internet enviamos la información troceada en paquetes y que en esos paquetes debemos indicar la IP origen y destino para poder localizar ambos equipos en la red. Además de las IPs de origen y destino en el paquete también deberemos incluir la información de puerto origen y destino. De esta manera además de localizar los equipos involucrados en la conexión seremos capaces de identificar las aplicaciones en concreto que participan en ella.
+
+![Conexión y sockets](socket.png)
+_Conexión y sockets_
+
+Al conjunto IP - Puerto es lo que llamamos socket y se escribe poniendo primero IP seguido de dos puntos y a continuación el puerto. Por ejemplo un socket tendría esta forma: 145.34.210.89:4578
+
+Por lo tanto la conexión se establece entre 2 sockets y queda identificada de manera única porque los sockets implicados en dicha conexión son únicos. No existe ninguna otra conexión que tenga esos dos mismos sockets. Puede haber otras conexiones con uno de los 2 sockets, pero nunca los 2.
+
+<iframe src="https://www.youtube.com/embed/-7DiO35rbN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{:.question}
+¿Qué es un socket?
+
+{:.question}
+¿Qué es una conexión?
+
+{:.section}
+## Tipos de puertos
+
+En un equipo informático tenemos distintos tipos de puerto dependiendo de su número y de su función:
+
+- **Puerto reservado**: El 0.
+- **Puertos bien conocidos**: Del 1 al 1023. Son aquellos que están reservados para los protocolos , programas y servicios establecidos universalmente y conocidos por todos. Este rango de puertos está reservado para el sistema operativo y sólo puede asignarlo en usuario con privilegios elevados como un superusuario (root). Esto es porque son servicios bastante críticos y si un usuario cualquiera pudiera abrirlos podría generar problemas de seguridad.
+  - Dentro de los puertos bien conocidos estarían el servidor web (80), servidor web seguro (443), SSH (22), DNS (53), FTP (21), ...
+- **Puertos registrados**: Del 1024 al 49151. Estos puertos están asignados por la IANA y van desde el 1024 hasta el 49151. Los puertos registrados son los que utilizan las aplicaciones cuando queremos conectarnos a ellas. Dentro de este grupo estarían todos los servicios y aplicaciones que podemos instalar en un equipo. Aquí estarían comprendidos los juegos, aplicaciones de mensajería, voz sobre IP (VoIP),...
+  - Por ejemplo en los puertos registrados tenemos: Plex (32400), SIP (5060), VNC (5900), Zerotier (9993), Battlefield (14567), ...
+- **Puertos efímeros**: Del 49152 al 65535. Son unos puertos temporales de usar y tirar que el sistema operativo asigna a las aplicaciones cuando los necesitan. Una vez que la conexión ha terminado ese puerto queda libre y puede ser reutilizado nuevamente por cualquier otra aplicación.
+
+<iframe src="https://www.youtube.com/embed/hmGmeGDRUAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{:.question}
+¿Qué tipos de puertos existen?
 
 {:.section}
 ## Protocolo TCP
@@ -63,14 +102,6 @@ Además de admitir las funciones básicas de segmentación y reensamblado de dat
 1. **Garantiza una entrega confiable**: por muchas razones, es posible que un segmento se corrompa o se pierda por completo, ya que se transmite a través de la red. TCP asegura que cada segmento que envía la fuente llega al destino.
 1. **Proporciona entrega en el mismo orden**: dado que las redes pueden proporcionar múltiples rutas que pueden tener diferentes velocidades de transmisión, los datos pueden llegar en el orden incorrecto. Al numerar y secuenciar los segmentos, TCP garantiza que los segmentos se vuelvan a ensamblar en el orden correcto.
 1. **Admite control de flujo**: los hosts de red tienen recursos limitados (es decir, memoria y potencia de procesamiento). Cuando TCP es consciente de que estos recursos están sobrecargados, puede solicitar que la aplicación de envío reduzca la velocidad del flujo de datos. Esto se hace mediante TCP que regula la cantidad de datos que transmite la fuente. El control de flujo puede evitar la necesidad de retransmitir los datos cuando los recursos del host receptor se ven desbordados.
-
-{:.subsection}
-### Conexiones o sockets
-
-<iframe src="https://www.youtube.com/embed/-7DiO35rbN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-![img-description](socket.png)
-_Socket_
 
 {:.subsection}
 ### Formato del segmento TCP
@@ -157,15 +188,8 @@ UDP necesita menos bytes en la cabecera por lo que utiliza menos ancho de banda 
 
 TCP en cambio consume más ancho de banda que UDP, pero permite la retransmisión y evita congestión.
 
-{:.section}
-## Direccionamiento y puertos
-
-<iframe src="https://www.youtube.com/embed/hmGmeGDRUAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-- Puerto reservado: el 0.
-- Puertos bien conocidos: del 1 al 1023.
-- Puertos registrados: del 1024 al 49151.
-- Puertos efímeros: del 49152 al 65535.
+{:.question}
+En la vida real ¿que ejemplo hay equivalente a TCP? ¿Y UDP?
 
 ## Resumen final
 
@@ -173,15 +197,15 @@ TCP en cambio consume más ancho de banda que UDP, pero permite la retransmisió
   <summary class="card-header">Spoiler</summary>
   <div class="card-body" markdown="1">
 
-![Gobierno: Para parar el covid deberemos parar todos de hacer handshaking. TCP: O.o](tcpVsUdpMeme5.jpg)
-_Gobierno: Para parar el covid deberemos parar todos de hacer handshaking. TCP: O.o_
-
 ![TCP vs UDP](tcpVsUdpMeme.png)
 _TCP vs UDP_
 
 ![TCP vs UDP](tcpVsUdpMeme4.jpg)
 _TCP vs UDP_
-    
+
+![Gobierno: Para parar el covid deberemos parar todos de hacer handshaking. TCP: O.o](tcpVsUdpMeme5.jpg)
+_Gobierno: Para parar el covid deberemos parar todos de hacer handshaking. TCP: O.o_
+
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
@@ -195,3 +219,5 @@ _TCP vs UDP_
 - [Protocolo TCP](https://ccnadesdecero.com/curso/tcp/)
 - [Protocolo UDP](https://ccnadesdecero.com/curso/udp/)
 - [Diferencia entre TCP y UDP](https://ccnadesdecero.com/curso/tcp-vs-udp/)
+- [Tipos de puerto. Curso de redes desde 0 | Cap 6 | 2020](https://naseros.com/2020/06/05/tipos-de-puerto-puerto-bien-comocido-asignado-y-efimero/)
+- [Que es un puerto y un socket. Curso de redes desde 0. | Cap 5 | 2020](https://naseros.com/2020/05/29/que-es-un-puerto-y-un-socket/)
