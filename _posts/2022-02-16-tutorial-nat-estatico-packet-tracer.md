@@ -17,7 +17,7 @@ Para esta primera práctica usaremos este modelo:
 _Modelo router (a la izquierda) y router NAT (a la derecha)_
 
 Es decir tendremos 3 Redes, con las siguientes características:
- 
+
 | RED |	DIRECCIÓN DE RED |
 |---|---|
 | LOCAL IZDA | 192.168.0.0/24 | 
@@ -55,32 +55,32 @@ Configuramos las interfaces que salen del router derecho, el de la NAT, indicán
 interface <tipo de interfaz> <numeración del interfaz>
 ```
 
-En nuestro ejemplo: 
+En nuestro ejemplo:
 
 ```console
-Router(config)# interface fa 0/0
+Router(config)#interface fa 0/0
 ```
 
 ```console
-Router(config-if)# ip address <dirección interna> <máscara de red>
+Router(config-if)#ip address <dirección interna> <máscara de red>
 ```
 
-En nuestro caso: 
+En nuestro caso:
 
 ```console
-Router(config-if)# ip address 1.2.3.1 255.255.255.0
+Router(config-if)#ip address 1.2.3.1 255.255.255.0
 ```
 
 Y por último indicamos que esta interfaz será el de NAT de salida.
 
 ```console
-Router(config-if)# ip nat outside
+Router(config-if)#ip nat outside
 ```
 
 Para activar la interfaz por comando:
- 
+
 ```console
-Router(config-if)# no shutdown
+Router(config-if)#no shutdown
 ```
 
 ### Paso 2
@@ -88,28 +88,29 @@ Router(config-if)# no shutdown
 Configuramos la otra interfaz que estamos usando.
 
 ```console
-Router(config)# interface <tipo de interfaz> <numeración del interfaz>
-```
-En nuestro ejemplo: 
-
-```console
-Router(config)# interface fa 0/1
+Router(config)#interface <tipo de interfaz> <numeración del interfaz>
 ```
 
+En nuestro ejemplo:
+
 ```console
-Router(config-if)# ip address <dirección interna> <máscara de red>
+Router(config)#interface fa 0/1
 ```
 
-En nuestro caso: 
+```console
+Router(config-if)#ip address <dirección interna> <máscara de red>
+```
+
+En nuestro caso:
 
 ```console
-Router(config-if)# ip address 10.0.0.1 255.255.255.0
+Router(config-if)#ip address 10.0.0.1 255.255.255.0
 ```
 
 Y por último indicamos que esta interfaz será el de nat de entrada.
 
 ```console
-Router(config-if)# ip nat inside
+Router(config-if)#ip nat inside
 ```
 
 ### Paso 3
@@ -117,15 +118,15 @@ Router(config-if)# ip nat inside
 Indicamos las direcciones fijas que tendrán las máquinas fuera de la red interna.
 
 ```console
-Router(config)# ip nat inside source static <@interna> <@externa>
+Router(config)#ip nat inside source static <@interna> <@externa>
 ```
 
 En nuestro ejemplo:
 
 ```console
-Router(config)# ip nat inside source static 10.0.0.2 5.5.5.5
-Router(config)# ip nat inside source static 10.0.0.3 5.5.5.6
-Router(config)# exit
+Router(config)#ip nat inside source static 10.0.0.2 5.5.5.5
+Router(config)#ip nat inside source static 10.0.0.3 5.5.5.6
+Router(config)#exit
 ```
 
 ### Paso 4
@@ -133,33 +134,33 @@ Router(config)# exit
 Indicamos el enrutamiento estático para ello usaremos esta forma especial.
 
 ```console
-Router(config)# ip route 0.0.0.0 0.0.0.0 <interfaz de salida>
+Router(config)#ip route 0.0.0.0 0.0.0.0 <interfaz de salida>
 ```
 
 En nuestro ejemplo:
 
 ```console
-Router(config)# ip route 0.0.0.0 0.0.0.0 fa0/0
+Router(config)#ip route 0.0.0.0 0.0.0.0 fa0/0
 ```
 
 Y finalmente grabaremos los cambios con la instrucción:
 
 ```console
-Router# copy run start
+Router#copy run start
 ```
 
-y pulsaremos enter para aceptar el guardado. 
+y pulsaremos enter para aceptar el guardado.
 
 Si queremos ver cómo ha quedado la tabla de NAT usaremos esta instrucción:
 
 ```console
-Router# show ip nat translations
+Router#show ip nat translations
 ```
 
 Obteniendo algo similar a esto:
 
 ```console
-Router# sh ip nat translations
+Router#sh ip nat translations
 Pro  Inside global     Inside local       Outside local      Outside global
 ---  5.5.5.5           10.0.0.2           ---                ---
 ---  5.5.5.6           10.0.0.3           ---                ---
@@ -172,20 +173,19 @@ Igual que como hacemos siempre, con la excepción de que configuraremos la ruta 
 Indicamos el enrutamiento estático para ello usaremos esta forma especial.
 
 ```console
-Router(config)# ip route 0.0.0.0 0.0.0.0 <interfaz de salida>
+Router(config)#ip route 0.0.0.0 0.0.0.0 <interfaz de salida>
 ```
 
 En nuestro ejemplo:
 
 ```console
-Router(config)# ip route 0.0.0.0 0.0.0.0 fa0/0
+Router(config)#ip route 0.0.0.0 0.0.0.0 fa0/0
 ```
 
 Y finalmente grabaremos los cambios con la instrucción:
 
 ```console
-Router# copy run start
+Router#copy run start
 ```
 
-y pulsaremos enter para aceptar el guardado. 
-
+y pulsaremos enter para aceptar el guardado.

@@ -38,54 +38,54 @@ Proceda a realizar la configuración de cada router indicada a continuación.
 Configuración para Empresa1 :
 
 ```console
-Router# configure terminal
-Router(config)# hostname Empresa1
-Empresa1(config)# interface f0/0
-Empresa1(config-if)# ip address 192.168.1.1 255.255.255.0
-Empresa1(config-if)# no shutdown
-Empresa1(config-if)# exit
-Empresa1(config)# interface s0/0
-Empresa1(config-if)# ip address 168.243.3.130 255.255.255.252
-Empresa1(config-if}# no shutdown
-Empresa1{config-if)# exit
+Router#configure terminal
+Router(config)#hostname Empresa1
+Empresa1(config)#interface f0/0
+Empresa1(config-if)#ip address 192.168.1.1 255.255.255.0
+Empresa1(config-if)#no shutdown
+Empresa1(config-if)#exit
+Empresa1(config)#interface s0/0
+Empresa1(config-if)#ip address 168.243.3.130 255.255.255.252
+Empresa1(config-if}#no shutdown
+Empresa1{config-if)#exit
 ```
 
 Configuración para Empresa2:
 
 ```console
-Router# configure terminal
-Router(config)# hostname Empresa2
-Empresa2(config)# interface f0/0
-Empresa2(config-if)# ip address 172.18.0.65 255.255.255.192
-Empresa2(config-if)# no shutdown
-Empresa2(config-if)# exit
-Empresa2(config)# interface s0/0
-Empresa2(config-if)# ip address 168.243.3.134 255.255.255.252
-Empresa2(config-if)# no shutdown
-Empresa2(config-if)# exit
-Empresa2# copy running-config startup-config
+Router#configure terminal
+Router(config)#hostname Empresa2
+Empresa2(config)#interface f0/0
+Empresa2(config-if)#ip address 172.18.0.65 255.255.255.192
+Empresa2(config-if)#no shutdown
+Empresa2(config-if)#exit
+Empresa2(config)#interface s0/0
+Empresa2(config-if)#ip address 168.243.3.134 255.255.255.252
+Empresa2(config-if)#no shutdown
+Empresa2(config-if)#exit
+Empresa2#copy running-config startup-config
 ```
 
 Configuración para ISP:
 
 ```console
-Router# configure terminal
-Router(config)# hostname ISP
-ISP(config)# interface f0/0
-ISP(config-if)# ip address 10.0.0.1 255.255.255.0
-ISP(config-if)# no shutdown
-ISP(config-if)# exit
-ISP(config)# interface s0/0
-ISP(config-if)# ip address 168.243.3.129 255.255.255.252
-ISP(config-if)# clock rate 9600
-ISP(config-if)# no shutdown
-ISP(config if)# exit
-ISP(config)# interface s0/1
-ISP(config-if)# ip address 168.243.3.133 255.255.255.252
-ISP(config-if)# clock rate 9600
-ISP(config-if)# no shutdown
-ISP(config-if)# exit
-ISP# copy running-config startup-config
+Router#configure terminal
+Router(config)#hostname ISP
+ISP(config)#interface f0/0
+ISP(config-if)#ip address 10.0.0.1 255.255.255.0
+ISP(config-if)#no shutdown
+ISP(config-if)#exit
+ISP(config)#interface s0/0
+ISP(config-if)#ip address 168.243.3.129 255.255.255.252
+ISP(config-if)#clock rate 9600
+ISP(config-if)#no shutdown
+ISP(config if)#exit
+ISP(config)#interface s0/1
+ISP(config-if)#ip address 168.243.3.133 255.255.255.252
+ISP(config-if)#clock rate 9600
+ISP(config-if)#no shutdown
+ISP(config-if)#exit
+ISP#copy running-config startup-config
 ```
 
 {:.step}
@@ -152,7 +152,7 @@ ISP(config)# ip route 199.6.13.8 255.255.255.248 168.243.3.130
 Configure una ruta estática por defecto en el enrutador Empresa1: 
 
 ```console
-Empresa1(config)# ip route 0.0.0.0 0.0.0.0 serial 0/0
+Empresa1(config)#ip route 0.0.0.0 0.0.0.0 serial 0/0
 ```
 
 Este comando crea una entrada en la tabla de enrutamiento del enrutador Empresa1. Este comando define la puerta de enlace predeterminada de el enrutador Empresa1, es decir, TODOS los mensajes que vayan a una dirección IP destino que no conozca los enviará por la interfaz serial 0/0. Un enrutador SOLO conoce las redes a las qu está directamente conectado, es decir, las que aparecen con letra C en la tabla de enrutamiento cuando ejecutamos el comando `show ip route`.
@@ -163,15 +163,15 @@ Este comando crea una entrada en la tabla de enrutamiento del enrutador Empresa1
 Ejecute el siguiente código para configurar NAT estático en Empresa1, que permitirá que la dirección privada de PC11 se traduzca a la primera IP global (199.6.13.9) del rango asignado por ISP para este Cliente 1 (Empresa1). Además, se definen aquí a las interfaces de entrada y de salida para el proceso de traducción NAT:
 
 ```console
-Empresa1# configure terminal
-Empresa1(config)# ip nat inside source static 192.168.1.2 199.6.13.9
-Empresa1(config)# interface f0/0
-Empresa1(config-if)# ip nat inside
-Empresa1(config-if)# exit
-Empresa1(config)# interface s0/0
-Empresa1(config-if)# ip nat outside
-Empresa1(config-if)# exit
-Empresa1(config)# do write
+Empresa1#configure terminal
+Empresa1(config)#ip nat inside source static 192.168.1.2 199.6.13.9
+Empresa1(config)#interface f0/0
+Empresa1(config-if)#ip nat inside
+Empresa1(config-if)#exit
+Empresa1(config)#interface s0/0
+Empresa1(config-if)#ip nat outside
+Empresa1(config-if)#exit
+Empresa1(config)#do write
 ```
 
 Con los comandos anteriores se logra que cada vez que un paquete de la ip local de host PC1
@@ -198,7 +198,7 @@ Tal como se ve en las pruebas anteriores, con el uso de NAT ya no es posible hac
 Finalmente, desde el enrutador Empresa1, revise el estado de la traducción de direcciones IPs privadas publicas, ejecutando el comando: 
 
 ```console
-Empresa1# show ip nat translations
+Empresa1#show ip nat translations
 ```
 
 ## Parte 3: Configuración de traducciones dinámicas en enrutador Empresa1
@@ -228,8 +228,8 @@ Para solventar esta situación, activaremos una traducción basada en un grupo d
 Elimine las traducciones desarrolladas por NAT y luego vuelva a ver los procesos de traducción de IPs:
 
 ```console
-Empresa1# clear ip nat translation *
-Empresa1# show ip nat translations
+Empresa1#clear ip nat translation *
+Empresa1#show ip nat translations
 Pro  Inside global     Inside local       Outside local      Outside global
 ---  199.6.13.9        192.168.1.2        ---                ---
 ```
@@ -244,9 +244,9 @@ Cree el siguiente pool[^pool] (grupo1), que reservara las próximas 2 de las dir
 [^pool]: Asociación de personas o entidades con un fin común.
 
 ```console
-Empresa1# configure terminal
-Empresa1(config)# ip nat pool grupo1 199.6.13.10 199.6.13.11 netmask 255.255.255.248
-Empresa1(config)# do write
+Empresa1#configure terminal
+Empresa1(config)#ip nat pool grupo1 199.6.13.10 199.6.13.11 netmask 255.255.255.248
+Empresa1(config)#do write
 ```
 
 {:.step}
@@ -255,8 +255,8 @@ Empresa1(config)# do write
 Crear la lista de acceso estándar 1 a continuación, que permite comparar las direcciones de origen (privadas), para decidir si luego estas serán traducidas a direcciones públicas (globales). En esta demostración, incluiremos en el derecho a ser traducidas a todas las direcciones IP de la red 192.168.1.0/24.
 
 ```console
-Empresa1# configure terminal
-Empresa1(config)# access-list 1 permit 192.168.1.0 0.0.0.255
+Empresa1#configure terminal
+Empresa1(config)#access-list 1 permit 192.168.1.0 0.0.0.255
 ```
 
 En el comando `access-list` usamos máscaras de red inversas que se obtienen cambiando los unos por ceros y viceversa.
@@ -272,7 +272,7 @@ La lista de acceso anterior NO SE DEBE APLICAR a ninguna interface del router. R
 Ahora se configurará la traducción dinámica con base en el pool y la lista de acceso creada previamente.
 
 ```console
-Empresa1(config)# ip nat inside source list 1 pool grupo1
+Empresa1(config)#ip nat inside source list 1 pool grupo1
 ```
 
 No es necesario volver a definir el sentido de la traducción (inside/outside), ya que si recuerda eso ya se ha configurado en la traducción estática y no debe cambiarse (f0/0 inside; s0/0 outside).
@@ -283,7 +283,7 @@ No es necesario volver a definir el sentido de la traducción (inside/outside), 
 Haga una prueba con el comando `ping` desde PC12 hacia la ip 10.0.0.2. En este caso la traducción se llevará a cabo correctamente y se obtendrá una respuesta exitosa. Revise de nuevo el estado de las traducciones usando el comando:
 
 ```console
-Empresa1# show ip nat translation
+Empresa1#show ip nat translation
 ```
 
 {:.step}
@@ -304,7 +304,7 @@ Veamos que sucede cuando las traducciones requeridas exceden el número de direc
 Limpie las traducciones nat en Empresa1 con el comando siguiente:
 
 ```console
-Empresa1# clear ip nat translation *
+Empresa1#clear ip nat translation *
 ```
 
 {:.step}
@@ -331,10 +331,10 @@ Modificar router Empresa2 con las siguientes características y configuraciones:
 [^loopback]: Un loopback es una interfaz lógica que permite asignar direcciones IP a un router que no están ligadas a una interfaz física.
 
 ```console
-Empresa2(config)# interface loopback 3
-Empresa2(config-if)# ip add 172.18.0.161 255.255.255.240
-Empresa2(config-if)# no shutdown
-Empresa2# show ip inter br
+Empresa2(config)#interface loopback 3
+Empresa2(config-if)#ip add 172.18.0.161 255.255.255.240
+Empresa2(config-if)#no shutdown
+Empresa2#show ip inter br
 Interface              IP-Address      OK? Method Status                Protocol 
 FastEthernet0/0        172.18.0.65     YES manual up                    up 
 FastEthernet1/0        172.18.0.129    YES manual up                    up 
@@ -349,9 +349,9 @@ Ahora analice el siguiente escenario que describirá la topología de red privad
 
 - Este Cliente2, tendrá un router de borde denominado Empresa2 y usará el mismo ISP. 
 - Se expandirá su red interna mostrada en la Figura del principio a un total de 3 redes diferentes:
-    - Red 1: 172.18.0.64/26 (de FTPserver, ya configurada)
-    - Red 2: 172.18.0.128/27
-    - Red 3: 172.18.0.160/28
+  - Red 1: 172.18.0.64/26 (de FTPserver, ya configurada)
+  - Red 2: 172.18.0.128/27
+  - Red 3: 172.18.0.160/28
 - El server FTPserver debe ser alcanzado desde el exterior (Internet).
 - El host de la red 3, implementado en la Lo 3, virtualizará a un Server, el cual deberá ser visto desde Internet.
 - Solamente la mitad superior del rango de ip de los host de la red 2 tendrán acceso a Internet. Al resto de host se les permitirá solamente comunicación interna con el resto de redes privadas del mismo cliente.
@@ -365,28 +365,28 @@ Según el escenario anterior, las condiciones se vuelven muy críticas, ya que l
 {:.step}
 ### Paso
 
-Para iniciar la solución, a continuación, se describe la configuración de NAT estático en Empresa2, que asigna la primera ip publica (100.0.0.33/28) al FTPserver, para que este pueda tener acceso hacia/desde Internet. 
+Para iniciar la solución, a continuación, se describe la configuración de NAT estático en Empresa2, que asigna la primera ip publica (100.0.0.33/28) al FTPserver, para que este pueda tener acceso hacia/desde Internet.
 
-Y de igual manera, se asigna la segunda ip publica (100.0.0.34/28) al server virtualizado con la Lo3. 
+Y de igual manera, se asigna la segunda ip publica (100.0.0.34/28) al server virtualizado con la Lo3.
 
 Y se definen las interfaces de entrada (direcciones privadas) de NAT y la interface de salida (direcciones públicas).
 
 ```console
-Empresa2(config)# ip nat inside source static 172.18.0.66 100.0.0.33
-Empresa2(config)# ip nat inside source static 172.18.0.161 100.0.0.34
-Empresa2(config)# interface fastEthernet 0/0
-Empresa2(config-if)# ip nat inside
-Empresa2(config-if)# exit
-Empresa2(config)# interface fastEthernet 1/0
-Empresa2(config-if)# ip nat inside
-Empresa2(config-if)# exit
-Empresa2(config)# interface Lo 3
-Empresa2(config-if)# ip nat inside
-Empresa2(config-if)# exit
-Empresa2(config)# inter serial 0/1
-Empresa2(config-if)# ip nat outside
-Empresa2(config-if)# do write
-Empresa2(config-if)# exit
+Empresa2(config)#ip nat inside source static 172.18.0.66 100.0.0.33
+Empresa2(config)#ip nat inside source static 172.18.0.161 100.0.0.34
+Empresa2(config)#interface fastEthernet 0/0
+Empresa2(config-if)#ip nat inside
+Empresa2(config-if)#exit
+Empresa2(config)#interface fastEthernet 1/0
+Empresa2(config-if)#ip nat inside
+Empresa2(config-if)#exit
+Empresa2(config)#interface Lo 3
+Empresa2(config-if)#ip nat inside
+Empresa2(config-if)#exit
+Empresa2(config)#inter serial 0/1
+Empresa2(config-if)#ip nat outside
+Empresa2(config-if)#do write
+Empresa2(config-if)#exit
 ```
 
 Observe como la Lo 3 se convierte en una interface de entrada de NAT.
@@ -402,8 +402,8 @@ Configure una ruta por defecto en Empresa2, que utilice la interface de salida S
 En ISP, configure la manera de cómo este dispositivo deberá alcanzar la red privada de su cliente 2, referenciando con rutas estáticas a solamente las 3 ip publicas que este proveedor le vendió.
 
 ```console
-ISP(config)# ip route 100.0.0.32 255.255.255.252 168.243.3.134
-ISP(config)# ip route 100.0.0.35 255.255.255.255 168.243.3.134
+ISP(config)#ip route 100.0.0.32 255.255.255.252 168.243.3.134
+ISP(config)#ip route 100.0.0.35 255.255.255.255 168.243.3.134
 ```
 
 La dirección IP 100.0.0.35 pertenece a la red 100.0.0.32/30 pero se trata de un mensaje broadcast por lo que el enrutador no lo propagaría. Debido a esto, es necesaria la segunda línea. De todos modos, no estoy 100% seguro de esto.
@@ -430,21 +430,21 @@ Ejecute la siguiente configuración de PAT (NAT Overloaded) en Empresa2. Analice
 Configura una pila, formada por una "única dirección" 100.0.0.35 como inicio y final del rango de ip publicas aun disponibles para NAT.
 
 ```console
-Empresa2(config)# ip nat pool cliente2 100.0.0.35 100.0.0.35 netmask 255.255.255.240
+Empresa2(config)#ip nat pool cliente2 100.0.0.35 100.0.0.35 netmask 255.255.255.240
 ```
 
 Crea la ACL 2 para determinar las redes que tendrán acceso al proceso NAT y alcanzar así Internet.
 En este caso, solo se aceptarán IPs de la mitad superior del rango de IPs de la Red 2.
 
 ```console
-Empresa2(config)# access-list 2 permit 172.18.0.144 0.0.0.15
-Empresa2(config)# access-list 2 deny any
+Empresa2(config)#access-list 2 permit 172.18.0.144 0.0.0.15
+Empresa2(config)#access-list 2 deny any
 ```
 
 Crea a NAT de manera sobrecargada (overload), utilizando la pila de direcciones públicas cliente2 y como filtro a la ACL 2.
 
 ```console
-Empresa2(config)# ip nat inside source list 2 pool cliente2 overload
+Empresa2(config)#ip nat inside source list 2 pool cliente2 overload
 ```
 
 {:.step}
