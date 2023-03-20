@@ -25,33 +25,41 @@ La capa de transporte incluye dos protocolos:
 
 La capa de transporte tiene muchas responsabilidades:
 
-- Seguimiento de conversaciones individuales.
-- Segmentación de datos y reensamblado de segmentos.
+- Seguir conversaciones individuales.
+- Segmentar datos en segmentos y reensamblar los segmentos.
 - Agregar información de encabezado.
-- Identificando las aplicaciones.
-- Multiplexación de conversación.
+- **Identificar las aplicaciones que se conectan a la red.**
+- Multiplexar conversaciones.
 
 {:.section}
 ## ¿Qué es un puerto? ¿Qué es un socket?
 
-Los puertos juegan un papel básico en una conexión de red porque es el sistema por el que se identifican las aplicaciones o servicios que participan en ella. Cuando establecemos una conexión, a las aplicaciones implicadas en ella se les asigna un número entre 0 y 65535 y es el identificador que va a diferenciar esa aplicación en concreto del resto de las aplicaciones del equipo. Eso es lo que llamamos puerto.
+Los puertos juegan un papel básico en una conexión de red porque es el sistema por el que se identifican las aplicaciones o servicios que participan en ella. Cuando establecemos una conexión, a las aplicaciones implicadas en ella se les asigna un número entre 0 y 65535. Este número es el identificador que va a diferenciar esa aplicación en concreto del resto de las aplicaciones del equipo. Eso es lo que llamamos puerto.
 
-Ya sabemos que en una conexión de internet enviamos la información troceada en paquetes y que en esos paquetes debemos indicar la IP origen y destino para poder localizar ambos equipos en la red. Además de las IPs de origen y destino en el paquete también deberemos incluir la información de puerto origen y destino. De esta manera además de localizar los equipos involucrados en la conexión seremos capaces de identificar las aplicaciones en concreto que participan en ella.
+Ya sabemos que en una conexión de internet enviamos la información troceada en paquetes y que en esos paquetes debemos indicar la IP origen y destino para poder localizar ambos equipos en la red. Además de las IPs de origen y destino en el paquete también deberemos incluir la información de puerto origen y destino. De esta manera además de localizar los equipos involucrados en la conexión **seremos capaces de identificar las aplicaciones en concreto** que participan en ella.
 
 ![Conexión y sockets](socket.png)
 _Conexión y sockets_
 
-Al conjunto IP - Puerto es lo que llamamos socket y se escribe poniendo primero IP seguido de dos puntos y a continuación el puerto. Por ejemplo un socket tendría esta forma: 145.34.210.89:4578
+Al conjunto IP - Puerto es lo que llamamos socket y se escribe poniendo primero IP seguido de dos puntos y a continuación el puerto. Por ejemplo un socket tendría esta forma: 145.34.210.89:4578.
 
-Por lo tanto la conexión se establece entre 2 sockets y queda identificada de manera única porque los sockets implicados en dicha conexión son únicos. No existe ninguna otra conexión que tenga esos dos mismos sockets. Puede haber otras conexiones con uno de los 2 sockets, pero nunca los 2.
+Por lo tanto, la conexión se establece entre 2 sockets y queda identificada de manera única porque los sockets implicados en dicha conexión son únicos. No existe ninguna otra conexión que tenga esos dos mismos sockets. Puede haber otras conexiones con uno de los 2 sockets, pero nunca los 2.
 
 <iframe src="https://www.youtube.com/embed/-7DiO35rbN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{:.question}
-¿Qué es un socket?
+Preguntas sobre el vídeo:
 
-{:.question}
-¿Qué es una conexión?
+- ¿Qué analogía pone de ejemplo en el vídeo sobre los puertos?
+- ¿Cuál es el rango de puertos? ¿Por qué?
+- ¿Qué puerto usan por defecto los servidores web?
+- ¿Puedo tener dos servidores web en el mismo host físico?
+- ¿Un cliente web a que puerto destino envía los mensajes por defecto?
+- ¿Qué es un socket?
+- ¿Qué es una conexión?
+- En la arquitectura cliente-servidor ¿qué es un cliente?
+- ¿Qué analogía usa en el vídeo sobre la arquitectura cliente-servidor?
+- ¿Cada navegador tiene un número de puerto diferente?
+- ¿Cada pestaña de cada navegador tiene un número de puerto diferente?
 
 {:.section}
 ## Tipos de puertos
@@ -59,8 +67,8 @@ Por lo tanto la conexión se establece entre 2 sockets y queda identificada de m
 En un equipo informático tenemos distintos tipos de puerto dependiendo de su número y de su función:
 
 - **Puerto reservado**: El 0.
-- **Puertos bien conocidos**: Del 1 al 1023. Son aquellos que están reservados para los protocolos , programas y servicios establecidos universalmente y conocidos por todos. Este rango de puertos está reservado para el sistema operativo y sólo puede asignarlo en usuario con privilegios elevados como un superusuario (root). Esto es porque son servicios bastante críticos y si un usuario cualquiera pudiera abrirlos podría generar problemas de seguridad.
-  - Dentro de los puertos bien conocidos estarían el servidor web (80), servidor web seguro (443), SSH (22), DNS (53), FTP (21), ...
+- **Puertos bien conocidos**: Del 1 al 1023. Son aquellos que están reservados para los protocolos, programas y servicios establecidos universalmente y conocidos por todos. Este rango de puertos está reservado para el sistema operativo y sólo puede asignarlo el usuario con privilegios elevados como un superusuario (root). Esto es porque son servicios bastante críticos y si un usuario cualquiera pudiera abrirlos podría generar problemas de seguridad.
+  - Dentro de los puertos bien conocidos estarían el servidor web (80 - HTTP), servidor web seguro (443 - HTTPS), SSH (22), DNS (53), FTP (21), ...
 - **Puertos registrados**: Del 1024 al 49151. Estos puertos están asignados por la IANA y van desde el 1024 hasta el 49151. Los puertos registrados son los que utilizan las aplicaciones cuando queremos conectarnos a ellas. Dentro de este grupo estarían todos los servicios y aplicaciones que podemos instalar en un equipo. Aquí estarían comprendidos los juegos, aplicaciones de mensajería, voz sobre IP (VoIP),...
   - Por ejemplo en los puertos registrados tenemos: Plex (32400), SIP (5060), VNC (5900), Zerotier (9993), Battlefield (14567), ...
 - **Puertos efímeros**: Del 49152 al 65535. Son unos puertos temporales de usar y tirar que el sistema operativo asigna a las aplicaciones cuando los necesitan. Una vez que la conexión ha terminado ese puerto queda libre y puede ser reutilizado nuevamente por cualquier otra aplicación.
