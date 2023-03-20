@@ -22,13 +22,13 @@ Implementar ahí la siguiente topología:
 _Topología base_
 
 > En esta configuración ambas interfaces seriales del router ISP usarán cables DCE.
-{:.prompt-info}
+{:.prompt-tip}
 
 > En esta práctica se usan subredes VLSM explicadas en el artículo [VLSM](/posts/vlsm/). Este tipo de subredes pueden tener máscaras de red diferentes unas de otras.
-{:.prompt-info}
+{:.prompt-tip}
 
 > Los comandos en el CLI de los nodos de red se pueden acortar. Por ejemplo, el comando `configure terminal` es el mismo que `configure ter` y que `configure t`.
-{:.prompt-info}
+{:.prompt-tip}
 
 {:.step}
 ### Paso
@@ -200,11 +200,6 @@ Finalmente, desde el enrutador Empresa1, revise el estado de la traducción de d
 ```console
 Empresa1# show ip nat translations
 ```
-
-{:.step}
-### Paso
-
-Guarda este esquema de red y haz capturas del funcionamiento de la red en el estado actual.
 
 ## Parte 3: Configuración de traducciones dinámicas en enrutador Empresa1
 
@@ -467,11 +462,6 @@ Notará que al usar la sobrecarga en la traducción de direcciones de forma din�
 Añade un PC más a la red 2 y haz dos `ping` al mismo tiempo con ambos PCs. Debería funcionar.
 
 Es importante resaltar que aunque **la red 10.0.0.0/24 forma parte del rango de direcciones privadas en esta práctica funciona como una red pública** ya que el enrutador ISP no tiene la funcionalidad de NAT configurada.
-
-{:.step}
-### Paso
-
-Guarda el fichero en formato .pkt y haz capturas que demuestren el correcto funcionamiento de la Parte 3 de este tutorial.
 
 A continuación se muestra la topología final a la que se debe llegar.
 

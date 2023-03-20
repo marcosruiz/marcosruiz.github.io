@@ -23,6 +23,16 @@ La entrega será en formato ZIP. Leer [Entrega y presentación de prácticas](/p
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
 {:.activity}
+### Un router NAT estático
+
+Seguir los pasos del siguiente vídeo para configurar un router NAT estático:
+
+<iframe src="https://www.youtube.com/embed/dV9jK4g1uyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
+{:.prompt-info}
+
+{:.activity}
 ### Un router y un router NAT estático
 
 Seguir los pasos del artículo [Tutorial: Configurar un NAT estático en Packet Tracer](/posts/tutorial-nat-estatico-packet-tracer).
@@ -33,7 +43,36 @@ Seguir los pasos del artículo [Tutorial: Configurar un NAT estático en Packet 
 {:.question}
 ¿Cuales son los rangos de las direcciones IPv4 privadas?
 
+> 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
+{:.prompt-info}
+
+{:.activity}
+### Un router NAT dinámico
+
+Seguir los pasos del siguiente vídeo para configurar un router NAT dinámico:
+
+<iframe src="https://www.youtube.com/embed/rge-SwOx6Dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
+{:.prompt-info}
+
+{:.activity}
+### Un router PAT
+
+Seguir los pasos del siguiente vídeo para configurar un router PAT:
+
+<iframe src="https://www.youtube.com/embed/I6MLqzfy6BI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
+{:.prompt-info}
+
 {:.activity}
 ### Tres router
 
 Seguir los pasos del artículo [Tutorial: NAT estático, NAT dinámico y PAT en Packet Tracer](/posts/tutorial-nat-pat-packet-tracer).
+
+> Al finalizar cada parte del tutorial deberás guardar un fichero .pkt en el estado correspondiente del tutorial.
+{:.prompt-info}
+
+> 📷 Al finalizar cada parte del tutorial, haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
+{:.prompt-info}
