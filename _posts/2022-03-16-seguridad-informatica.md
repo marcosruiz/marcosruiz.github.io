@@ -256,8 +256,7 @@ Estos mensajes se diseñan para dar la sensación de que proceden de sitios de c
 {:.subsection}
 ### Spam o correo basura
 
-El Spam es el envío masivo de correo electrónico que no ha sido solicitado y que busca
-un beneficio por parte del remitente.
+El Spam es el envío masivo de correo electrónico que no ha sido solicitado y que busca un beneficio por parte del remitente.
 
 Ejemplos de contenido del correo Spam:
 
@@ -266,8 +265,7 @@ Ejemplos de contenido del correo Spam:
 - Ofertas de trabajo con suculentos dividendos.
 - Descuentos para suscripciones a páginas pornográficas o de apuestas.
 
-A pesar de que hay leyes, como La ley LSSI (Ley de Servicios de la Sociedad de la
-Información) en España, que prohíben el spam, su difusión está muy extendida. Se calcula que el 80% de los correos que circulan en Internet son correo basura, spam.
+A pesar de que hay leyes, como La ley LSSI (Ley de Servicios de la Sociedad de la Información) en España, que prohíben el spam, su difusión está muy extendida. Se calcula que el 80% de los correos que circulan en Internet son correo basura, spam.
 
 
 <details class="card mb-2">
