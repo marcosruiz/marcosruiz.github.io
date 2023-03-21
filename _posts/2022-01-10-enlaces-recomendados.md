@@ -150,11 +150,13 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 ## Juegos
 
 - [JKLM](https://jklm.fun/)
-- [La palabra del día](https://lapalabradeldia.com/)
-- [Kahoot!](https://kahoot.com/)
+- [La palabra del día (Wordle)](https://lapalabradeldia.com/)
 - [skribbl.io](https://skribbl.io/)
 - [TrivialOnline](https://trivialonline.es/)
 - [Agar.io](https://agar.io/#ffa)
 - [slither.io](http://slither.io/)
 - [curvefever](https://curvefever.pro/)
 - [1v1.LOL](https://1v1.lol/)
+- [Quizizz](https://quizizz.com)
+- [Kahoot!](https://kahoot.com/) ➡️ Sólo permite 10 participantes
+- [2048](https://juego2048.es/)
