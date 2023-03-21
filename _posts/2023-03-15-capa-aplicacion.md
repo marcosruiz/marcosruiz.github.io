@@ -43,38 +43,100 @@ Este servidor posee una lista de direcciones IP dinámicas y las va asignando a 
 {:.subsubsection}
 #### Ventajas de utilizar el servicio DHCP
 
-👍 Las IPs libres se van asignando secuencialmente a cada cliente cuando estos arrancan y lo solicitan, sin necesidad de intervención por parte del administrador.
-
-👍 Se centraliza la información de manera que no puede haber IPs duplicadas o erróneas si el servidor está bien configurado.
-
-👍 Se ahorra tiempo y esfuerzo de administración.
-
-👍 El servidor DHCP puede facilitar a un cliente TODA la información que necesita para funcionar.
-
-👍 El servidor DHCP puede procesar a la vez múltiples solicitudes de clientes.
+- 👍 Las IPs libres se van asignando secuencialmente a cada cliente cuando estos arrancan y lo solicitan, sin necesidad de intervención por parte del administrador.
+- 👍 Se centraliza la información de manera que no puede haber IPs duplicadas o erróneas si el servidor está bien configurado.
+- 👍 Se ahorra tiempo y esfuerzo de administración.
+- 👍 El servidor DHCP puede facilitar a un cliente TODA la información que necesita para funcionar.
+- 👍 El servidor DHCP puede procesar a la vez múltiples solicitudes de clientes.
 
 {:.subsubsection}
 #### Desventajas de utilizar el servicio DHCP
 
-👎 Mayor esfuerzo inicial si las IPs han de ser reservadas para cada equipo en el servidor ya que se debe conocer la MAC o nombre de cada equipo.
-
-👎 Cuando existe una falla en el servidor DHCP, los dispositivos renovarán su dirección IP, interrumpiendo la conexión e impidiendo su funcionamiento.
+- 👎 Mayor esfuerzo inicial si las IPs han de ser reservadas para cada equipo en el servidor ya que se debe conocer la MAC o nombre de cada equipo.
+- 👎 Cuando existe una falla en el servidor DHCP, los dispositivos renovarán su dirección IP, interrumpiendo la conexión e impidiendo su funcionamiento.
 
 {:.subsection}
 ### Servicio DNS
 
-Existen otros protocolos específicos de capa de aplicación diseñados para facilitar la obtención de direcciones para dispositivos de red. Estos servicios son esenciales porque llevaría mucho tiempo recordar direcciones IP en lugar de direcciones URL o configurar manualmente todos los dispositivos de una red mediana a grande. El primer tema de este módulo le dio una visión general de estos protocolos. En este tema se detallan los servicios de direccionamiento IP, DNS y DHCP.
+Para conectarnos a un equipo que está fuera de nuestra red debemos conocer su IP pública. En el paquete que genera el ordenador se debe incluir la dirección de destino. Funciona como un servicio de paquetería o de correos.
 
-En las redes de datos, los dispositivos están etiquetados con direcciones IP numéricas para enviar y recibir datos a través de redes. Los nombres de dominio se crearon para convertir la dirección numérica en un nombre simple y reconocible.
+El formato de esta IP es una ristra de números (IPv4), o de números y letras (IPv6). Para los humanos es muy complicado memorizar estas direcciones. Para nosotros es más fácil acordarnos de palabras, y por eso es más sencillo recordar la palabra Google, Apple, Amazon, Facebook,... que no sus direcciones públicas.
 
-En Internet, los nombres de dominio totalmente cualificado (FQDN), como <http://www.cisco.com>, son mucho más fácil que la gente recuerde que 198.133.219.25, que es la dirección numérica real para este servidor. Si Cisco decide cambiar la dirección numérica de  www.cisco.com, es transparente para el usuario porque el nombre de dominio sigue siendo el mismo. La nueva dirección simplemente está vinculada al nombre de dominio existente y se mantiene la conectividad.
+DNS es el acrónimo de Domain Name Server o servidor de nombre de dominios en español. Básicamente es un servidor con un listado con la equivalencia entre el nombre de una web o un servicio y su IP pública.
 
-El protocolo DNS define un servicio automatizado que hace coincidir los nombres de los recursos con la dirección de red numérica requerida. Incluye el formato para consultas, respuestas y datos. Las comunicaciones del protocolo DNS utilizan un único formato llamado mensaje. Este formato de mensaje se utiliza para todo tipo de consultas de clientes y respuestas de servidores, mensajes de error y la transferencia de información de registros de recursos entre servidores.
+Cuando nosotros queremos acceder a una web, antes de crear el paquete preguntamos a un servidor de nombre de dominios cual es la IP pública de esa web, y una vez que nos responde creamos el paquete con la petición a dicha dirección.
+
+La dirección del servidor DNS se puede configurar en el ordenador, smartphone, smartTV, tablet,... o en el router. Si lo configuramos en el router todos los equipos que se conectan a él utilizaran este DNS por defecto. Si configuramos un DNS distinto en el ordenador, éste tendrá preferencia sobre el del router y será el que utilizará.
+
+{:.question}
+¿Qué ocurre si una web cambia su dirección IP pública?
+
+<details class="card mb-2">
+  <summary class="card-header question">Qué es un DNS</summary>
+  <div class="card-body" markdown="1">
+
+Explicado de una manera muy rápida, un DNS es un servidor que se encarga de traducir el nombre de una dirección de internet  a una IP. Cuando nosotros tecleamos en el navegador la dirección de una página web, el navegador no sabe a dónde tiene que ir porque en internet las direcciones son un conjunto de números que es la IP del servidor donde está alojada esa web.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+{:.question}
+¿Se usa el servicio DNS para más casos que el de las páginas web?
+
+{:.subsubsection}
+#### DNS por defecto
+
+Todos los proveedores de Internet tienen su propio servidor DNS y es el que viene por defecto en el router que nos suministran. Si no tocas nada en la configuración, ése será el DNS por defecto.
+
+También existen muchos servidores DNS públicos que podemos utilizar. Los más famosos son:
+
+- Google: 8.8.8.8
+- Cloudflare: 1.1.1.1
+- Quadnine: 9.9.9.9
+- OpenDNS: 208.67.222.222
+
+Estos podemos ponerlos en el router o en cada equipo dependiendo de lo que nos interese. Lo más habitual es poner el que nos guste en el router y así no tenemos que cambiarlo en cada equipo de la red.
 
 <iframe src="https://www.youtube.com/embed/7XjJqUM0dvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Preguntas sobre el vídeo:
+
+
+#### Configuración del DNS
+
+La configuración del DNS de una red no es algo trivial porque influye en los tiempos de carga de una web. Incluso gracias a los DNS podemos realizar un control parental y bloquear la publicidad de todos los dispositivos de la red.
+
+El lado negativo es que a través de la manipulación de los DNS que tengamos configurados pueden engañarnos modificándolos para obtener nuestras credenciales al acceder a una web o servicio en nuestro nombre. También puede tener implicaciones negativas en nuestra privacidad.
+
+Son tan importantes que incluso los gobiernos pueden tener cierto control sobre sus ciudadanos mediante la manipulación de los DNS de un país.
+
+Aunque el DNS púbico más usado y famoso es el de Google (8.8.8.8), hay otros como los de Cloudflare (1.1.1.1), Quad9 (9.9.9.9), OpenDNS y los propios DNS de la operadora (ISP) que deberemos tener en cuenta.
+
+Este es el primer vídeo de una serie en la que trataré de explicarte cómo qué es y cómo funciona un DNS, te enseñaré a configurarlos y a elegir el más adecuado para tu red, realizaremos controles parentales, bloquearemos publicidad, ...
+
 <iframe src="https://www.youtube.com/embed/VpTIvKhSUj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+
+## Conclusión
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Cómo funciona Internet?</summary>
+  <div class="card-body" markdown="1">
+
+<iframe src="https://www.youtube.com/embed/T5ERzSRNaKw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 
 ## Bibliografía
 
 - [Aplicación, Presentación y Sesión](https://ccnadesdecero.es/capa-aplicacion-introduccion/)
+- [Que es un DNS y para qué sirve. Curso de redes desde 0. | Cap 4 | 2020](https://naseros.com/2020/05/28/que-es-un-dns-y-para-que-sirve-curso-de-redes-desde-0-cap-4-2020/)
+- [Qué es y cómo funciona un DNS. Importancia de los DNS](https://naseros.com/2019/02/03/que-es-y-como-funciona-un-dns/)

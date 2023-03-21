@@ -310,7 +310,7 @@ A estas alturas, todo el mundo sabe que los cables de fibra óptica son consider
 
 El ancho de banda es la clave. Permite una mayor capacidad de transmisión de datos: puede transferir desde un mínimo de 10 Gbps hasta cantidades ilimitadas (si se tiene en cuenta lo rápido que se está desarrollando la tecnología).
 
-Para enviar las señales de luz se utilizan hilos muy finos de fibra de vidrio o plástico. La luz viaja hasta el núcleo, el centro de la fibra óptica. El núcleo está rodeado por el revestimiento, un material óptico que atrapa en el núcleo, mediante la técnica de «reflexión interna total». Un revestimiento primario protege la fibra de la humedad u otros daños. El nivel de protección se ve reforzado por el cable, que mantiene la fibra y los elementos de resistencia en su interior y está cubierto por una funda.
+Para enviar las señales de luz se utilizan hilos muy finos de fibra de vidrio o plástico. La luz viaja hasta el núcleo, el centro de la fibra óptica. El núcleo está rodeado por el revestimiento, un material óptico que atrapa en el núcleo, mediante la técnica de "reflexión interna total". Un revestimiento primario protege la fibra de la humedad u otros daños. El nivel de protección se ve reforzado por el cable, que mantiene la fibra y los elementos de resistencia en su interior y está cubierto por una funda.
     
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -401,7 +401,7 @@ _Cuartos de comunicaciones_
 
 Un conector es un dispositivo que sirve para unir circuitos eléctricos.
 
-Frecuentemente, los conectores de una misma familia se duplican en forma de «macho» o «hembra», que deben acoplarse mecánicamente en la instalación.
+Frecuentemente, los conectores de una misma familia se duplican en forma de "macho" o "hembra", que deben acoplarse mecánicamente en la instalación.
 
 - **RJ11, RJ12, RJ45**: Estos conectores se suelen utilizar con cables UTP, STP.
 - **AUI, DB15**: Utilizados en la formación de topologías en estrella con cables de pares, o para la conexión de transceptores a las estaciones

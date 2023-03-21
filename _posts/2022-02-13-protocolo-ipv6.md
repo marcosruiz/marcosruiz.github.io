@@ -69,7 +69,7 @@ graph TD;
 {:.subsection}
 ### Paso 2: Elimina cuartetos de ceros
 
-Busca cualquier cadena de dos o más cuartetos consecutivos con todos los hexadecimales en cero y reemplaza ese conjunto de cuartetos con dos puntos dobles (::). El :: significa «dos o más cuartetos de todos 0». Sin embargo, puede usar :: solo una vez en una sola dirección porque, de lo contrario, es posible que no se comprenda cuál es la dirección IPv6 exacta.
+Busca cualquier cadena de dos o más cuartetos consecutivos con todos los hexadecimales en cero y reemplaza ese conjunto de cuartetos con dos puntos dobles (::). El :: significa "dos o más cuartetos de todos 0". Sin embargo, puede usar :: solo una vez en una sola dirección porque, de lo contrario, es posible que no se comprenda cuál es la dirección IPv6 exacta.
 
 ```mermaid
 graph TD;

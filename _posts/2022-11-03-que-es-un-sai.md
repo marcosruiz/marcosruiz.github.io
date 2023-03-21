@@ -167,10 +167,10 @@ $$P = U * I * \cos{\phi}$$
 
 Donde:
 
-- «P» es la potencia eléctrica cuya unidad es el vatio (W)
-- «U» es la tensión eléctrica (V)
-- «I» es la corriente eléctrica (A)
-- «cos(φ)» es el factor de potencia (FP) y no tiene unidad.
+- "P" es la potencia eléctrica cuya unidad es el vatio (W)
+- "U" es la tensión eléctrica (V)
+- "I" es la corriente eléctrica (A)
+- "cos(φ)" es el factor de potencia (FP) y no tiene unidad.
 
 #### Potencia reactiva
 
@@ -182,10 +182,10 @@ $$Q = U * I * \sin{\phi}$$
 
 Donde:
 
-- «Q» es la potencia reactiva cuya unidad son los volitamperios reactivos (VAr)
-- «U» es la tensión eléctrica (V)
-- «I» es la corriente eléctrica (A)
-- «sin(φ)» es la inversa del factor de potencia y no tiene unidad.
+- "Q" es la potencia reactiva cuya unidad son los volitamperios reactivos (VAr)
+- "U" es la tensión eléctrica (V)
+- "I" es la corriente eléctrica (A)
+- "sin(φ)" es la inversa del factor de potencia y no tiene unidad.
 
 
 #### Potencia aparente
@@ -198,9 +198,9 @@ $$S = U * I$$
 
 Donde:
 
-- «S» es la potencia eléctrica total cuya unidad es el voltiamperio (VA)
-- «U» es la tensión eléctrica (V)
-- «I» es la corriente eléctrica (A)
+- "S" es la potencia eléctrica total cuya unidad es el voltiamperio (VA)
+- "U" es la tensión eléctrica (V)
+- "I" es la corriente eléctrica (A)
 
 
 #### Factor de potencia
@@ -214,9 +214,9 @@ $$FP = \frac{P}{S}$$
 
 Donde:
 
-- «FP» es la relación entre la potencia activa y la potencia aparente y carece de unidad). Este valor es el parámetro «φ»
-- «P» es la potencia activa (W)
-- «S» es la potencia aparente (VA)
+- "FP" es la relación entre la potencia activa y la potencia aparente y carece de unidad). Este valor es el parámetro "φ"
+- "P" es la potencia activa (W)
+- "S" es la potencia aparente (VA)
 
 ## Calcular autonomía de un SAI
 

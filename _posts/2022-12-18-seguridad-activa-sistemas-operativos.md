@@ -9,7 +9,7 @@ img_path: /assets/img/seguridad-activa-sistemas-operativos/
 {:.section}
 ## Carrera de obstáculos
 
-Por muchas medidas de control de acceso que pongamos, un hacker puede sentarse delante de un equipo de nuestra empresa. O directamente robar un portátil a uno de nuestros directivos. Vamos a intentar ponérselo difícil para que su «trabajo» sea una carrera de obstáculos y, seguramente, ante alguna barrera, desista.
+Por muchas medidas de control de acceso que pongamos, un hacker puede sentarse delante de un equipo de nuestra empresa. O directamente robar un portátil a uno de nuestros directivos. Vamos a intentar ponérselo difícil para que su "trabajo" sea una carrera de obstáculos y, seguramente, ante alguna barrera, desista.
 
 {:.subsection}
 ### La Caja Del Ordenador
@@ -157,7 +157,7 @@ RFID es el proceso en el cual objetos son identificados de manera única usando 
 {:.subsection}
 ### Biometría
 
-La seguridad del mecanismo usuario/contraseña es suficiente para la mayoría de las aplicaciones. La tarjeta es cómoda. Pero cualquiera podría sentarse en nuestro ordenador, insertar nuestra tarjeta (robada o duplicada), introducir nuestro usuario y contraseña y acceder al sistema como si fuéramos nosotros mismos. Si la información que manejamos es importante, aplicaremos la estrategia «algo que eres», para complementar el mecanismo usuario/contraseña con un control más: la biometría.
+La seguridad del mecanismo usuario/contraseña es suficiente para la mayoría de las aplicaciones. La tarjeta es cómoda. Pero cualquiera podría sentarse en nuestro ordenador, insertar nuestra tarjeta (robada o duplicada), introducir nuestro usuario y contraseña y acceder al sistema como si fuéramos nosotros mismos. Si la información que manejamos es importante, aplicaremos la estrategia "algo que eres", para complementar el mecanismo usuario/contraseña con un control más: la biometría.
 
 La biometría consiste en identificar alguna característica física del sujeto: la huella dactilar, el ojo, la voz. La persona o personas autorizadas deben grabar primero su característica física. Con esta técnica aumentaremos la seguridad.
 
@@ -314,7 +314,7 @@ Conviene instalar una herramienta de inventario y monitorización. El inventario
 
 La arquitectura de aplicaciones ha evolucionado con el tiempo:
 
-- En los años sesenta y setenta eran **monolíticas**: toda la funcionalidad, tanto la interfaz de usuario como la lógica de proceso, estaba en la misma máquina. Los usuarios utilizaban terminales «tontos» conectados al ordenador principal. La protección de una aplicación monolítica se centraba en proteger la máquina donde ejecutaban todos los programas.
+- En los años sesenta y setenta eran **monolíticas**: toda la funcionalidad, tanto la interfaz de usuario como la lógica de proceso, estaba en la misma máquina. Los usuarios utilizaban terminales "tontos" conectados al ordenador principal. La protección de una aplicación monolítica se centraba en proteger la máquina donde ejecutaban todos los programas.
 - En los años ochenta y noventa aparecen los ordenadores personales y las redes de comunicaciones dentro de las empresas. Estos dos avances permiten implementar las aplicaciones siguiendo la **arquitectura cliente-servidor**: la interfaz de usuario y parte de la lógica de proceso están en el ordenador del usuario, y el resto de la lógica de proceso está en un ordenador central, al que conectan los ordenadores de usuario mediante la red local. La protección se complica: ahora hay que proteger a cada cliente, el servidor y la red local de la empresa.
 - A partir de los años noventa, el éxito de Internet permite extender las **aplicaciones web** (que siguen el modelo cliente-servidor) a cualquier punto de conexión del planeta. Hay un par de diferencias con los años ochenta: el cliente suele ser siempre el mismo (el navegador) y la comunicación utiliza redes públicas, sobre las que la empresa tiene nulo control. La protección es más difícil que nunca.
 

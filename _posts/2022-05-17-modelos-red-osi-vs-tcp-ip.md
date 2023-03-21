@@ -97,7 +97,7 @@ Por ejemplo, hay un canal de comunicación (CW), un mensaje a enviar, un emisor 
 Funciones a nivel de capa física:
 
 - Este nivel estandariza los tipos de conectores y la asignación de pines;
-- Se define la forma de representar «0» y «1»;
+- Se define la forma de representar "0" y "1";
 - Es la interfaz entre el medio de red y el dispositivo de red (transmite señales eléctricas u ópticas al cable o a la radio, las recibe y las convierte en bits de datos);
 - Las funciones de la capa física se implementan en todos los dispositivos conectados a la red;
 - Equipos que operan en la capa física: Repetidor, Hub Ethernet, Módem.
@@ -133,7 +133,7 @@ Tanto emisor como receptor deben usar el mismo protocolo para entenderse.
 
 La etapa es similar al proceso de distribución de información. Por ejemplo, todos los usuarios se dividen en grupos y los paquetes de datos se distribuyen según direcciones IP de 32 bits. Es a través del trabajo de los routers en este punto que se eliminan todas las diferencias de la red. Esto es lo que se conoce como enrutamiento lógico.
 
-La tarea principal es crear redes basadas en diferentes tecnologías de red: Ethernet, Wi-Fi o MPLS. La capa de red es la «columna vertebral» de Internet.
+La tarea principal es crear redes basadas en diferentes tecnologías de red: Ethernet, Wi-Fi o MPLS. La capa de red es la "columna vertebral" de Internet.
 
 Funciones a nivel de capa de red:
 
@@ -267,7 +267,7 @@ _Cabeceras de las capas del modelo de referencia OSI_
   <summary class="card-header question">¿Qué significa PDU?</summary>
   <div class="card-body" markdown="1">
 
-Además del término «datos» (data) que se utiliza en el modelo OSI en las capas de aplicación, presentación y sesión, se utilizan otros términos en otras capas del modelo OSI para que sea posible identificar inmediatamente en qué capa del modelo OSI tiene lugar el procesamiento.
+Además del término "datos" (data) que se utiliza en el modelo OSI en las capas de aplicación, presentación y sesión, se utilizan otros términos en otras capas del modelo OSI para que sea posible identificar inmediatamente en qué capa del modelo OSI tiene lugar el procesamiento.
 
 Las normas ISO utilizan un término genérico, Unidad de Datos de Protocolo (PDU, Protocol Data Unit), para referirse a la porción de datos que es manejada por los protocolos en varias capas del Modelo de Referencia OSI. A menudo se utilizan nombres especiales, como **trama**, **paquete** o **segmento**, para denotar bloques de datos a determinados niveles.
 
