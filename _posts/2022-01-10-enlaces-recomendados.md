@@ -157,3 +157,4 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 - [Agar.io](https://agar.io/#ffa)
 - [slither.io](http://slither.io/)
 - [curvefever](https://curvefever.pro/)
+- [1v1.LOL](https://1v1.lol/)
