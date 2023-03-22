@@ -75,8 +75,18 @@ En un equipo informático tenemos distintos tipos de puerto dependiendo de su n�
 
 <iframe src="https://www.youtube.com/embed/hmGmeGDRUAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{:.question}
-¿Qué tipos de puertos existen?
+Preguntas sobre el vídeo:
+
+- ¿Cuántos tipos de puertos existen según Macjosan?
+- ¿Quién puede asignar los puertos bien conocidos? ¿Por qué?
+- ¿Quién asigna los puertos registrados? ¿Son de obligatorio cumplimiento?
+- ¿Todos los sistemas operativos usan el mismo rango de puertos efímeros?
+- ¿Qué puerto conocido se usa cuando nos conectamos a un servidor web? ¿Quién tiene abierto ese puerto: el cliente o el servidor?
+- ¿Qué ejemplo pone Macjosan de uso de puertos efímeros?
+- ¿Cada pestaña del navegador tiene un puerto diferente? ¿Qué tipo de puerto es? ¿Por qué?
+- ¿Qué ocurre si tenemos dos sevicios iguales en el mismo host?
+- ¿Podemos tener dos servidores web en hosts distintos en nuestra casa que usen el mismo puerto?
+
 
 {:.section}
 ## Protocolo TCP
