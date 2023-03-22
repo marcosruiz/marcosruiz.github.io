@@ -247,7 +247,7 @@ Potencia aparente (se mide en voltoamperios VA): es el producto de la tensión n
 > S (Potencia aparente) = U (Tensión) * I (Intensidad)
 > S (VoltoAmperios) = U (Voltios) * I (Amperios)
 
-Por ejemplo, si un SAI suministra 200 voltios (V) y 10 amperios (A), entonces su potencia aparente será de 2.000 VA o 2 KVA (léase “kabeas”).
+Por ejemplo, si un SAI suministra 200 voltios (V) y 10 amperios (A), entonces su potencia aparente será de 2.000 VA o 2 KVA (léase "kabeas").
 
 Potencia eficaz (activa o eléctrica): El vatio (W), es la unidad de potencia eficaz, es decir, la realmente consumida (y la que facturan los distribuidores de energía eléctrica).
 

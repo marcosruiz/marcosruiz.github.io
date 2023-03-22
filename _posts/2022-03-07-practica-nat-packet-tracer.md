@@ -41,7 +41,7 @@ Seguir los pasos del artículo [Tutorial: Configurar un NAT estático en Packet 
 ¿Qué ventajas tiene utilizar una NAT estática sobre no utilizarla?
 
 {:.question}
-¿Cuales son los rangos de las direcciones IPv4 privadas?
+¿Cuáles son los rangos de las direcciones IPv4 privadas?
 
 > 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
 {:.prompt-info}
