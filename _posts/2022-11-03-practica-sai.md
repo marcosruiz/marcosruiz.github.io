@@ -99,7 +99,7 @@ _Precio SAI_
 
 ### Actividad 7
 
-Encuentra un SAI, justificando tu respuesta, para un equipo que tiene una fuente de alimentación ATX de 450W (80 PLUS) y un monitor de 17”, que consume 75W, teniendo en cuenta que se quiere dimensionar para que el consumo de equipos alcance el 75% de la potencia suministrada por el SAI.
+Encuentra un SAI, justificando tu respuesta, para un equipo que tiene una fuente de alimentación ATX de 450W (80 PLUS) y un monitor de 17", que consume 75W, teniendo en cuenta que se quiere dimensionar para que el consumo de equipos alcance el 75% de la potencia suministrada por el SAI.
 
 ¿Cuanto tiempo de autonomía nos ofrece el SAI elegido con la carga que necesitan nuestros dispositivos?
 
