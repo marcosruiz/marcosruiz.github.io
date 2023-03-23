@@ -87,7 +87,6 @@ Preguntas sobre el vídeo:
 - ¿Qué ocurre si tenemos dos sevicios iguales en el mismo host?
 - ¿Podemos tener dos servidores web en hosts distintos en nuestra casa que usen el mismo puerto?
 
-
 {:.section}
 ## Protocolo TCP
 
@@ -124,7 +123,7 @@ Además de admitir las funciones básicas de segmentación y reensamblado de dat
 {:.subsection}
 ### Formato del segmento TCP
 
-![img-description](formatoTcp.png)
+![Formato del segmento TCP](formatoTcp.png)
 _Formato del segmento TCP_
 
 <details class="card mb-2">
@@ -235,5 +234,5 @@ _Gobierno: Para parar el covid deberemos parar todos de hacer handshaking. TCP: 
 - [Protocolo TCP](https://ccnadesdecero.com/curso/tcp/)
 - [Protocolo UDP](https://ccnadesdecero.com/curso/udp/)
 - [Diferencia entre TCP y UDP](https://ccnadesdecero.com/curso/tcp-vs-udp/)
-- [Tipos de puerto. Curso de redes desde 0 | Cap 6 | 2020](https://naseros.com/2020/06/05/tipos-de-puerto-puerto-bien-comocido-asignado-y-efimero/)
-- [Que es un puerto y un socket. Curso de redes desde 0. | Cap 5 | 2020](https://naseros.com/2020/05/29/que-es-un-puerto-y-un-socket/)
+- [Que es un puerto y un socket. Curso de redes desde 0. Cap 5. 2020](https://naseros.com/2020/05/29/que-es-un-puerto-y-un-socket/)
+- [Tipos de puerto. Curso de redes desde 0. Cap 6. 2020](https://naseros.com/2020/06/05/tipos-de-puerto-puerto-bien-comocido-asignado-y-efimero/)
