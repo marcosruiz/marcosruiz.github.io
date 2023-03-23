@@ -29,6 +29,19 @@ Seguir los pasos del siguiente vídeo para configurar un router NAT estático:
 
 <iframe src="https://www.youtube.com/embed/dV9jK4g1uyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<!--
+```console
+Router>en
+Router#config ter
+Router#show ip nat translations
+Router(config)#ip nat inside source static 192.168.0.2 210.0.0.1
+Router(config)#inter fa0/0
+Router(config)#ip nat outside
+Router(config)#inter fa0/1
+Router(config)#ip nat inside
+```
+-->
+
 > 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
 {:.prompt-info}
 
