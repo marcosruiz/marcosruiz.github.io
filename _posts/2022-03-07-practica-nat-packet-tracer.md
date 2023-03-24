@@ -29,18 +29,70 @@ Seguir los pasos del siguiente vídeo para configurar un router NAT estático:
 
 <iframe src="https://www.youtube.com/embed/dV9jK4g1uyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<!--
+Preguntas sobre el vídeo:
+
+- ¿Para que usa el symbolo `?` en el CLI?
+- ¿Podemos asignar una dirección IP externa diferente a la del router? ¿Qué problema puede tener hacer esto?
+
+<details class="card mb-2">
+  <summary class="card-header">Pasos a seguir</summary>
+  <div class="card-body" markdown="1">
+
+- Asignamos direccioness IP a todos los hosts.
+- Definimos la parte inside y outside del router.
+
 ```console
 Router>en
-Router#config ter
-Router#show ip nat translations
-Router(config)#ip nat inside source static 192.168.0.2 210.0.0.1
-Router(config)#inter fa0/0
-Router(config)#ip nat outside
-Router(config)#inter fa0/1
-Router(config)#ip nat inside
+Router#config terminal
+Router(config)#interface fa 0/0
+Router(config-if)#ip nat outside
+Router(config)#exit
+Router(config)#interface fa 0/1
+Router(config-if)#ip nat inside
 ```
--->
+
+- Comprobamos que no podemos hacer ping desde la parte inside a la parte outside.
+- Comprobamos que el inside y outside están bien.
+
+```console
+Router#show ip nat statistics
+```
+
+
+- Comprobamos que las traducciones están vacías.
+
+```console
+Router#show ip nat translations
+```
+
+- Añadimos la primera traducción.
+
+
+```console
+Router(config)#ip nat inside source static 192.168.0.2 210.0.0.1
+```
+
+- Comprobamos que hay una traducción.
+
+```console
+Router#show ip nat translations
+```
+
+- Hacemos ping hacia el exterior. Sólo debería poder tener acceso al equipo exterior un host de la parte interna.
+- Añadimos la segunda traducción.
+- Opcionalmente podemos hacer que las direcciones IP privadas de tipo C no salgan de la zona inside.
+
+```console
+Router(config)#access-list 1 deny 192.168.0.0 0.0.255.255
+Router(config)#access-list 1 permit any
+Router(config)#interface fa 0/0
+Router(config-if)#ip access-group 1 out
+```
+
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 > 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
 {:.prompt-info}

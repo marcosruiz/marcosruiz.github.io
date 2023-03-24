@@ -28,11 +28,11 @@ Es decir tendremos 3 Redes, con las siguientes características:
 Estas serán las instrucciones modelo a usar:
 
 ```console
-Router(config)#ip nat inside source static [IP LOCAL] [IP EXTERNA]
-Router(config)#interface [INTERFAZ]
+Router(config)#ip nat inside source static <IP LOCAL> <IP EXTERNA>
+Router(config)#interface <INTERFAZ>
 Router(config-if)#ip nat outside
 Router(config-if)#ip nat inside
-Router(config)#ip route 0.0.0.0 0.0.0.0 [INTERFAZ DE SALIDA]
+Router(config)#ip route 0.0.0.0 0.0.0.0 <INTERFAZ DE SALIDA>
 ```
 
 ## Configuración del router NAT
@@ -107,7 +107,7 @@ En nuestro caso:
 Router(config-if)#ip address 10.0.0.1 255.255.255.0
 ```
 
-Y por último indicamos que esta interfaz será el de nat de entrada.
+Y por último indicamos que esta interfaz será el de nat inside (red interna).
 
 ```console
 Router(config-if)#ip nat inside
@@ -118,7 +118,7 @@ Router(config-if)#ip nat inside
 Indicamos las direcciones fijas que tendrán las máquinas fuera de la red interna.
 
 ```console
-Router(config)#ip nat inside source static <@interna> <@externa>
+Router(config)#ip nat inside source static <@ IP interna> <@ IP externa>
 ```
 
 En nuestro ejemplo:
@@ -149,7 +149,7 @@ Y finalmente grabaremos los cambios con la instrucción:
 Router#copy run start
 ```
 
-y pulsaremos enter para aceptar el guardado.
+Y pulsaremos enter para aceptar el guardado.
 
 Si queremos ver cómo ha quedado la tabla de NAT usaremos esta instrucción:
 
