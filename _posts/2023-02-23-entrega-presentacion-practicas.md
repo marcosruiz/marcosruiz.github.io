@@ -20,6 +20,9 @@ En mi caso, como yo me llamo Marcos Ruiz García mi usuario será: mruizg.
 
 En todas las prácticas, cada vez que se haga mención a `<tuUsuario>` deberás sustituirlo por tu usuario.
 
+> Siempre que sea posible deberás usar tu nombre de usuario para que no haya ninguna duda sobre la autoría de las prácticas.
+{:.prompt-warning}
+
 ## Entrega y presentación en formato PDF
 
 Si la entrega de la práctica debe ser un documento PDF con un nombre en el siguiente formato: `<tuUsuario>_p<Número de la práctica con dos dígitos>.pdf`{: .filepath}. Por ejemplo, en mi caso el nombre del documento PDF sería `mruizg_p01.pdf`{: .filepath}.
@@ -49,3 +52,9 @@ En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que
 - Las actividades de HTML deberán estar en formato HTML con el nombre `<tuUsuario>_a<Número de la actividad con dos dígitos>.html`{: .filepath}. Por ejemplo: `mruizg_a01.html`{: .filepath}.
 - Las actividades de JavaScript deberán estar en formato JS con el nombre `<tuUsuario>_a<Número de la actividad con dos dígitos>.js`{: .filepath}. Por ejemplo: `mruizg_a01.js`{: .filepath}.
 - Las actividades con otro tipo de extensión deberán estar en formato correspondiente `<tuUsuario>_a<Número de la actividad con dos dígitos>.<extensión>`{: .filepath}. Por ejemplo: `mruizg_a01.jar`{: .filepath}.
+
+## Entrega y presentación grupal
+
+Si la entrega se realiza por parejas el formato que se debe seguir será: `<usuario del primer alumno>_<usuario del segundo alumno>_p<número de la práctica con dos dígitos>.<extensión>`{: .filepath}. Si la entrega es de más se irán añadiendo usuarios seperándolos con el símbolo `_`{: .filepath}.
+
+TODOS los integrantes del grupo deberán realizar la entrega de la práctica.

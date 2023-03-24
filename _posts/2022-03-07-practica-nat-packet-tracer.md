@@ -16,7 +16,7 @@ El objetivo de esta práctica es aprender que es un NAT y como configurarlo util
 
 ## Entrega y presentación
 
-La entrega será en formato ZIP. Leer [Entrega y presentación de prácticas](/posts/entrega-presentacion-practicas/).
+La entrega será en formato ZIP. La práctica puede ser realizada **por parejas**. Leer [Entrega y presentación de prácticas](/posts/entrega-presentacion-practicas/).
 
 ## Actividades
 
@@ -33,6 +33,7 @@ Preguntas sobre el vídeo:
 
 - ¿Para que usa el symbolo `?` en el CLI?
 - ¿Podemos asignar una dirección IP externa diferente a la del router? ¿Qué problema puede tener hacer esto?
+- Cuando realizamos los pasos que nos indica, ¿obtenemos un resultado diferente al enviar mensajes entre hosts? ¿Cuándo?
 
 <details class="card mb-2">
   <summary class="card-header">Pasos a seguir</summary>
@@ -58,7 +59,6 @@ Router(config-if)#ip nat inside
 Router#show ip nat statistics
 ```
 
-
 - Comprobamos que las traducciones están vacías.
 
 ```console
@@ -67,9 +67,8 @@ Router#show ip nat translations
 
 - Añadimos la primera traducción.
 
-
 ```console
-Router(config)#ip nat inside source static 192.168.0.2 210.0.0.1
+Router(config)#ip nat inside source static 192.168.0.2 210.0.0.3
 ```
 
 - Comprobamos que hay una traducción.
@@ -80,7 +79,7 @@ Router#show ip nat translations
 
 - Hacemos ping hacia el exterior. Sólo debería poder tener acceso al equipo exterior un host de la parte interna.
 - Añadimos la segunda traducción.
-- Opcionalmente podemos hacer que las direcciones IP privadas de tipo C no salgan de la zona inside.
+- Opcionalmente podemos hacer que las direcciones IP privadas de tipo C no salgan de la zona inside utilizando una ACL (Access Control List).
 
 ```console
 Router(config)#access-list 1 deny 192.168.0.0 0.0.255.255
@@ -88,7 +87,6 @@ Router(config)#access-list 1 permit any
 Router(config)#interface fa 0/0
 Router(config-if)#ip access-group 1 out
 ```
-
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
