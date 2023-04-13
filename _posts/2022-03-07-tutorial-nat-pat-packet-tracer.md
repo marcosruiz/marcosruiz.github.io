@@ -104,7 +104,7 @@ Configure las estaciones de trabajo y los servidores con el siguiente direcciona
 
 Comprobación de direccionamiento IP
 
-- Visualice la tabla de enrutamiento de los enrutadores Empresa1 y Empresa2, ejecutando al comando `show ip route`.
+- Visualice la tabla de enrutamiento de los enrutadores Empresa1 y Empresa2, ejecutando el comando `show ip route`.
 - Verificar la tabla de enrutamiento del enrutador ISP. Observe que debido al carácter de redes privadas que tienen las redes de sus 2 clientes (Empresa1 y Empresa2), la red 192.168.1.0/24 y el conjunto de redes 172.18.0.0/20 no deben aparecer en la tabla de ISP.
 
 {:.step}
@@ -155,7 +155,7 @@ Configure una ruta estática por defecto en el enrutador Empresa1:
 Empresa1(config)#ip route 0.0.0.0 0.0.0.0 serial 0/0
 ```
 
-Este comando crea una entrada en la tabla de enrutamiento del enrutador Empresa1. Este comando define la puerta de enlace predeterminada de el enrutador Empresa1, es decir, TODOS los mensajes que vayan a una dirección IP destino que no conozca los enviará por la interfaz serial 0/0. Un enrutador SOLO conoce las redes a las qu está directamente conectado, es decir, las que aparecen con letra C en la tabla de enrutamiento cuando ejecutamos el comando `show ip route`.
+Este comando crea una entrada en la tabla de enrutamiento del enrutador Empresa1. Este comando define la puerta de enlace predeterminada de el enrutador Empresa1, es decir, TODOS los mensajes que vayan a una dirección IP destino que no conozca los enviará por la interfaz serial 0/0. Un enrutador SOLO conoce las redes a las que está directamente conectado, es decir, las que aparecen con letra C en la tabla de enrutamiento cuando ejecutamos el comando `show ip route`.
 
 {:.step}
 ### Paso
