@@ -21,9 +21,6 @@ Implementar ahí la siguiente topología:
 ![img-description](/assets/img/tutorial-nat-pat-packet-tracer/tresRoutersEstáticoDinamicoSobrecargado.png)
 _Topología base_
 
-> En esta configuración ambas interfaces seriales del router ISP usarán cables DCE.
-{:.prompt-tip}
-
 > En esta práctica se usan subredes VLSM explicadas en el artículo [VLSM](/posts/vlsm/). Este tipo de subredes pueden tener máscaras de red diferentes unas de otras.
 {:.prompt-tip}
 
@@ -35,7 +32,7 @@ _Topología base_
 
 Proceda a realizar la configuración de cada router indicada a continuación.
 
-Configuración para Empresa1 :
+Configuración para Empresa1:
 
 ```console
 Router#configure terminal
@@ -110,7 +107,7 @@ Comprobación de direccionamiento IP
 {:.step}
 ### Paso
 
-Realizar las siguientes pruebas con el comando `ping` (usando el Command Prompt del Desktop de cada PC) desde las estaciones de trabajo y el web server. 
+Realizar las siguientes pruebas con el comando `ping` (usando el Command Prompt del Desktop de cada PC) desde las estaciones de trabajo y el web server.
 
 Se anotan a continuación de cada prueba el resultado que debería obtenerse, compárelo con sus propios resultados:
 
@@ -133,7 +130,7 @@ Nuevamente se hace la aclaración. Los fallos al realizar las pruebas `ping` ent
 {:.step}
 ### Paso
 
-Asignación de una red IP pública para realizar el proceso de traducción. Las direcciones de carácter público (globales) para su cliente 1 (Empresa1) que configurara el proveedor en su equipo ISP serán las IP host contenidas en la red: 199.6.13.8/29. 
+Asignación de una red IP pública para realizar el proceso de traducción. Las direcciones de carácter público (globales) para su cliente 1 (Empresa1) que configurara el proveedor en su equipo ISP serán las IP host contenidas en la red: 199.6.13.8/29.
 
 Estas IP globales serán configuradas en los siguientes pasos.
 
@@ -149,7 +146,7 @@ ISP(config)# ip route 199.6.13.8 255.255.255.248 168.243.3.130
 {:.step}
 ### Paso
 
-Configure una ruta estática por defecto en el enrutador Empresa1: 
+Configure una ruta estática por defecto en el enrutador Empresa1:
 
 ```console
 Empresa1(config)#ip route 0.0.0.0 0.0.0.0 serial 0/0
@@ -234,7 +231,7 @@ Pro  Inside global     Inside local       Outside local      Outside global
 ---  199.6.13.9        192.168.1.2        ---                ---
 ```
 
-El comando `clear ip nat translation *` elimina el contenido actual de la tabla de traducción NAT. Al ejecutar el comando `show` de la última línea podrá verificar que la traducción anterior aun existe, porque esta traducción ha sido definida de manera estática. 
+El comando `clear ip nat translation *` elimina el contenido actual de la tabla de traducción NAT. Al ejecutar el comando `show` de la última línea podrá verificar que la traducción anterior aun existe, porque esta traducción ha sido definida de manera estática.
 
 {:.step}
 ### Paso
@@ -383,7 +380,7 @@ Empresa2(config-if)#exit
 Empresa2(config)#interface Lo 3
 Empresa2(config-if)#ip nat inside
 Empresa2(config-if)#exit
-Empresa2(config)#inter serial 0/1
+Empresa2(config)#interface serial 0/1
 Empresa2(config-if)#ip nat outside
 Empresa2(config-if)#do write
 Empresa2(config-if)#exit
@@ -396,6 +393,10 @@ Observe como la Lo 3 se convierte en una interface de entrada de NAT.
 
 Configure una ruta por defecto en Empresa2, que utilice la interface de salida Serial 0/1 con la que se conecta al ISP. Es decir, debes configurar la tabla de enrutamiento del enrutador Empresa2 como ya se hizo con el enrutador de Empresa1.
 
+```console
+Empresa2(config)#ip route 0.0.0.0 0.0.0.0 serial 0/1
+```
+
 {:.step}
 ### Paso
 
@@ -403,10 +404,9 @@ En ISP, configure la manera de cómo este dispositivo deberá alcanzar la red pr
 
 ```console
 ISP(config)#ip route 100.0.0.32 255.255.255.252 168.243.3.134
-ISP(config)#ip route 100.0.0.35 255.255.255.255 168.243.3.134
 ```
 
-La dirección IP 100.0.0.35 pertenece a la red 100.0.0.32/30 pero se trata de un mensaje broadcast por lo que el enrutador no lo propagaría. Debido a esto, es necesaria la segunda línea. De todos modos, no estoy 100% seguro de esto.
+El rango de direcciones 100.0.0.32/30 (máscara de 255.255.255.252) abarca desde la dirección IP 100.0.0.32 a la dirección 100.0.0.35. Esta es una manera de indicar rangos de direcciones IP
 
 {:.step}
 ### Paso
@@ -418,14 +418,14 @@ De igual forma, desde host PC11, ejecute el comando `ping` dirigido a la ip púb
 {:.step}
 ### Paso
 
-Hasta este momento, ya solo queda disponible una ip publica (100.0.0.35) adquirida al proveedor ISP, y con ella debe darse acceso a Internet a solamente a la mitad superior de las direcciones IP de la Red2 (172.18.0.128/27). 
+Hasta este momento, ya solo queda disponible una ip publica (100.0.0.35) adquirida al proveedor ISP, y con ella debe darse acceso a Internet a solamente a la mitad superior de las direcciones IP de la Red2 (172.18.0.128/27).
 
 Este rango de ip que tendrán Internet incluye desde la ip 172.18.0.144 hasta la 172.18.0.158. Veamos cómo es posible solventar este problema usando PAT.
 
 {:.step}
 ### Paso
 
-Ejecute la siguiente configuración de PAT (NAT Overloaded) en Empresa2. Analice los comentarios previos en cada bloque. 
+Ejecute la siguiente configuración de PAT (NAT Overloaded) en Empresa2. Analice los comentarios previos en cada bloque.
 
 Configura una pila, formada por una "única dirección" 100.0.0.35 como inicio y final del rango de ip publicas aun disponibles para NAT.
 
@@ -433,13 +433,25 @@ Configura una pila, formada por una "única dirección" 100.0.0.35 como inicio y
 Empresa2(config)#ip nat pool cliente2 100.0.0.35 100.0.0.35 netmask 255.255.255.240
 ```
 
-Crea la ACL 2 para determinar las redes que tendrán acceso al proceso NAT y alcanzar así Internet.
-En este caso, solo se aceptarán IPs de la mitad superior del rango de IPs de la Red 2.
+Crea la ACL 2 para determinar las redes que tendrán acceso al proceso NAT y alcanzar así Internet. En este caso, solo se aceptarán IPs de la mitad superior del rango de IPs de la Red 2.
 
 ```console
 Empresa2(config)#access-list 2 permit 172.18.0.144 0.0.0.15
 Empresa2(config)#access-list 2 deny any
 ```
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Cómo se entiende esto?
+</summary>
+  <div class="card-body" markdown="1">
+
+La máscara inversa de 255.255.255.240 (/28) es 0.0.0.15. Te recuerdo que estábamos usando la subred 172.18.0.128/27 (255.255.255.224).
+
+Por asi decirlo, estamos "creando" dos subredes sobre la subred original y diciéndole al router que la segunda subred (subred 172.18.0.144/28) la permita y el resto (subred 172.18.0.128/28) no.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 Crea a NAT de manera sobrecargada (overload), utilizando la pila de direcciones públicas cliente2 y como filtro a la ACL 2.
 
@@ -450,7 +462,7 @@ Empresa2(config)#ip nat inside source list 2 pool cliente2 overload
 {:.step}
 ### Paso
 
-Desde el PC de la Red 2 ejecute un `ping` hacia la ip 10.0.0.2; resultado: falla, porque su ip actual (172.18.0.130/27) no tiene acceso a Internet. 
+Desde el PC de la Red 2 ejecute un `ping` hacia la ip 10.0.0.2; resultado: falla, porque su ip actual (172.18.0.130/27) no tiene acceso a Internet.
 
 Cambiar su ip asignada a 172.18.0.153/27 y repetir la prueba de comunicación. Esta vez si se le permitirá acceder a Internet.
 
