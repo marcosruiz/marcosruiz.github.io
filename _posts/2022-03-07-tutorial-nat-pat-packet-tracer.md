@@ -325,7 +325,7 @@ Modificar router Empresa2 con las siguientes características y configuraciones:
 - Crear una red de manera virtualizada con la Loopback3[^loopback], asignándole la dirección 172.18.0.161/28.
 - Desde FTPserver, comprobar con `ping` que saluda exitosamente al nuevo host y también a la ip de Lo3.
 
-[^loopback]: Un loopback es una interfaz lógica que permite asignar direcciones IP a un router que no están ligadas a una interfaz física.
+[^loopback]: Un loopback es una interfaz lógica que permite asignar direcciones IP a un router que no están ligadas a una interfaz física. De esa forma sabes que siempre podrás administrar el router en esa IP, aunque se caiga la interfaz física desde la que te conectabas habitualmente al router (y siempre que tengas conectada otra interfaz física, claro).
 
 ```console
 Empresa2(config)#interface loopback 3
