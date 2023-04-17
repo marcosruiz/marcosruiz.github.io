@@ -59,7 +59,7 @@ Seguir los pasos del siguiente vídeo para configurar un router NAT dinámico:
 
 <iframe src="https://www.youtube.com/embed/rge-SwOx6Dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
+> 📷 Haz una o varias capturas del escritorio al completo para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la topología junto al envío de mensajes.
 {:.prompt-info}
 
 {:.activity}

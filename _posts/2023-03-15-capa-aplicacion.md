@@ -100,8 +100,6 @@ Estos podemos ponerlos en el router o en cada equipo dependiendo de lo que nos i
 
 <iframe src="https://www.youtube.com/embed/7XjJqUM0dvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Preguntas sobre el vídeo:
-
 
 #### Configuración del DNS
 
@@ -117,9 +115,6 @@ Este es el primer vídeo de una serie en la que trataré de explicarte cómo qu�
 
 <iframe src="https://www.youtube.com/embed/VpTIvKhSUj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Preguntas sobre el vídeo:
-
-
 ## Conclusión
 
 <details class="card mb-2">
@@ -127,8 +122,6 @@ Preguntas sobre el vídeo:
   <div class="card-body" markdown="1">
 
 <iframe src="https://www.youtube.com/embed/T5ERzSRNaKw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Preguntas sobre el vídeo:
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
