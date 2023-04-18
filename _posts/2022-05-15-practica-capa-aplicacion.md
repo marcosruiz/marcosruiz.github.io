@@ -21,18 +21,22 @@ A continuación se listan las actividades que se deben realizar para esta práct
 {:.activity}
 ### Vídeo sobre DNS de Academia de Redes IP
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gAstDaSaaWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-{:.activity}
-### Vídeo sobre DNS de NASeros
-
 Mira el siguiente vídeo:
 
-<iframe src="https://www.youtube.com/embed/7XjJqUM0dvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gAstDaSaaWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Y responde a las siguientes preguntas sobre el mismo:
 
-- 
+1. ¿Qué significan las siglas DNS?
+1. ¿Quién nos dice la dirección IP de google.es?
+1. ¿Qué relaciona la BBDD del servidor DNS?
+1. ¿La petición DNS se realiza antes o después de la petición a google.es?
+1. ¿De dónde saca la dirección IP del servidor DNS el PC?
+1. ¿Qué dirección DNS usa en el ejemplo del vídeo?
+1. ¿A que capa pertenece el 3-Way-Handshake?
+1. ¿En los servidores DNS se almacenan únicamente direcciones de páginas web?
+1. ¿A que capa pertenece el protocolo DNS? ¿Por qué?
+1. ¿Por qué DNS funciona normalmente sobre UDP?
 
 {:.activity}
 ### Vídeo sobre DNS de NASeros
@@ -43,7 +47,37 @@ Mira el siguiente vídeo:
 
 Y responde a las siguientes preguntas sobre el mismo:
 
-- 
+1. ¿Por qué existe el protocolo DNS?
+1. ¿Cuándo se hace la petición DNS? ¿Antes o después de la petición HTTP?
+1. ¿En que influye mucho un servidor DNS?
+1. ¿Supone un problema de privacidad el uso de servidores DNS? ¿Por qué?
+1. ¿Qué es el DNS spoofing?
+1. ¿Se puede usar un DNS como control parental?
+1. ¿Cuál es el mejor servidor DNS?
+1. ¿Qué comando utilizarías para elegir el mejor servidor DNS?
+1. ¿De qué varía el precio de un nombre de dominio disponible?
+
+{:.activity}
+### Precio dominio
+
+Visita una o varias webs donde puedas comprar un dominio de `<tuUsuario>`y averigüa cuanto te costaría anualmente.
+
+> 📷 Haz una captura del escritorio al completo dónde se vea la web con los precios del nombre que hayas buscado.
+{:.prompt-info}
+
+{:.activity}
+### Vídeo sobre DNS de NASeros
+
+Mira el siguiente vídeo:
+
+<iframe src="https://www.youtube.com/embed/7XjJqUM0dvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Y responde a las siguientes preguntas sobre el mismo:
+
+1. ¿El servidor de NASeros tiene una dirección IP pública estática o dinámica? ¿Por qué?
+1. ¿Por qué crees que cada operadora tiene un servidor DNS propio?
+1. ¿Qué 3 direcciones DNS pone de ejemplo MacJosan?
+1. ¿Podemos usar el servidor DNS para bloquear contenido de una web? ¿Y publicidad?
 
 {:.activity}
 ### Vídeo sobre DHCP de Academia de Redes IP
@@ -54,7 +88,7 @@ Mira el siguiente vídeo:
 
 Y responde a las siguientes preguntas sobre el mismo:
 
-- 
+1. TODO
 
 {:.activity}
 ### Vídeo sobre cómo funciona Internet de Antonio Sarosi
@@ -65,7 +99,7 @@ Mira el siguiente vídeo:
 
 Y responde a las siguientes preguntas sobre el mismo:
 
-- 
+1. TODO
 
 {:.activity}
 ### Servicio DNS, DHCP y HTTP
