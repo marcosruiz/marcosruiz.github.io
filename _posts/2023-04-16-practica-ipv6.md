@@ -27,10 +27,21 @@ Mira el siguiente vídeo:
 
 Y responde a las siguientes preguntas sobre el mismo:
 
+1. ¿Por qué existe IPv6?
+1. ¿Es necesario el uso de NATs en IPv6?
+1. ¿Por qué se sigue usando IPv4?
+1. ¿Cuál es el porcentaje de adopción de IPv4 en España según MacJosan?
+1. ¿Qué países son líderes en la implantación de IPv6? ¿Por qué?
+
 {:.activity}
-### Actividad
+### Dos redes y un router
 
+Sigue los pasos del siguiente vídeo:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/K9GgC5EX2io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+> Indica los comandos que has utilizado en texto plano. 📷 Haz una captura del escritorio al completo para demostrar que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
 
 {:.activity}
 ### Actividad
