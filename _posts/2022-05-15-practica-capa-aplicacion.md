@@ -88,7 +88,13 @@ Mira el siguiente vídeo:
 
 Y responde a las siguientes preguntas sobre el mismo:
 
-1. TODO
+1. ¿Qué significan las siglas DHCP?
+1. ¿Cuál es la principal ventaja de usar DHCP?
+1. ¿En que casos NO es útil usar DHCP?
+1. ¿Funciona el servicio DHCP sobre redes WiFi?
+1. ¿El router doméstico tiene incorporado un servidor DHCP?
+1. ¿Qué tipo de mensaje es DHCPDiscover? ¿Por qué?
+1. ¿Puedo configurar el DNS por defecto de un equipo con DHCP?
 
 {:.activity}
 ### Vídeo sobre cómo funciona Internet de Antonio Sarosi
@@ -99,7 +105,17 @@ Mira el siguiente vídeo:
 
 Y responde a las siguientes preguntas sobre el mismo:
 
-1. TODO
+1. ¿Las direcciones IP privadas son únicas dentro de nuestra red?
+1. ¿Para qué sirve la máscara de red según Antonio Sarosi?
+1. ¿Cuántas redes hay en la topología que se muestra en el vídeo?
+1. ¿Qué tecnologías (de las que hemos dado en clase) usa la topología de Antonio Sarosi?
+1. ¿Qué pone en el contenido de web.com?
+1. ¿Qué hace el comando `ip address`?
+1. ¿Qué hace el comando `ip link set dev enp1s0 up`?
+1. ¿Cuál es el comando que se usa en GNU Linux para asignar una puerta de enlace predeterminada en nuestro equipo?
+1. ¿Por qué no funciona el comando `ping www.google.com`?ç
+1. ¿Qué es un puerto según Antonio Sarosi?
+1. ¿A qué hace referencia la dirección IP 127.0.0.1?
 
 {:.activity}
 ### Servicio DNS, DHCP y HTTP
@@ -135,6 +151,9 @@ _Topolgía final de la actividad_
 
 > 📷 Haz una o varias capturas del escritorio al completo para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Recuerda que también deberá verse la hora y el dia en la barra de inicio.
 {:.prompt-info}
+
+{:.question}
+¿Tiene el router WRT300N un servidor DHCP incorporado?
 
 {:.activity}
 ### (Opcional) PAT con router genérico
