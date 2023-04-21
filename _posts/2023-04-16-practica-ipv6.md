@@ -108,23 +108,112 @@ Lee el artículo [División de Subredes de una Red IPv6](https://ccnadesdecero.e
 {:.activity}
 ### Enrutamiento estático con IPv6
 
+Implementa la siguiente topología de red usando redes IPv6 y enrutamiento estático:
 
+![imgDescription](topologiaEnrutamientoDinamico2.png)
+_Topología objetivo_
+
+#### Añadimos direcciones IPv6
+
+Añadimos las direcciones IPv6 a los equipos finales a través de la interfaz gráfica.
+
+Configuramos las interfaces de R1:
+
+```console
+Router(config)#interface fastEthernet 0/0
+Router(config-if)#ipv6 address 2001:DB8:CAFE:1::1/64
+Router(config-if)#no shutdown
+Router(config)#interface serial 0/0/0
+Router(config-if)#ipv6 address 2001:DB8:CAFE:A001::1/64
+Router(config-if)#no shutdown
+```
+
+Comprobamos si IPv6 está activo en las interfaces:
+
+```console
+Router#show ipv6 interface
+```
+
+O comprobamos como está el fichero de configuración actual:
+
+```console
+Router#show running-config
+```
+
+Hacemos lo mismo con las interfaces de R2 y R3.
+
+> Un vez configuradas las direcciones IPv6 de todos los dispositivos te recomiendo guardar una copia de este PKT para la siguiente actividad.
+{:.prompt-tip}
+
+#### Indicamos las tablas de enrutamiento IPv6
+
+Para enseñar a un router las redes que no conoce utilizamos el siguiente comando:
+
+```console
+Router(config)#ipv6 route <Red destino>/<máscara de subred> <Next Hop>
+```
+
+En el caso del router R1 sería así:
+
+```console
+Router(config)#ipv6 unicast-routing
+Router(config)#ipv6 route 2001:db8:CAFE:2::/64 2001:DB8:CAFE:A001::2
+Router(config)#ipv6 route 2001:DB8:CAFE:3::/64 2001:DB8:CAFE:A001::2
+```
+
+Comprobamos que se ha añadido a la tabla de enrutamiento:
+
+```console
+Router#show ipv6 route
+```
+
+Hacemos lo mismo con R2 y R3.
 
 {:.activity}
 ### Enrutamiento dinámico con IPv6
 
 Implementa la siguiente topología de red usando redes IPv6 y enrutamiento dinámico:
 
-![imgDescription](topologiaEnrutamientoDinamico.png)
+![imgDescription](topologiaEnrutamientoDinamico2.png)
 _Topología objetivo_
 
+Configuramos las interfaces como en la actividad anterior.
+
+Para configurar el enrutamiento dinámico primero debemos indicar que vamos a usar enrutamiento IPv6:
+
 ```console
-ipv6 unicast-routing
-ipv6 router rip RIP-AS
-interface gigabitethernet 0/0
-no shutdown
-exit
-interface serial 0/0/0
-ipv6 rip RIP-AS enable
-no shutdown
+Router(config)#ipv6 unicast-routing
 ```
+
+Seleccionamos la interfaz y activamos el IPv6:
+
+```console
+Router(config)#interface <interfaz>
+Router(config-if)#ipv6 enable
+```
+
+```console
+Router(config-if)#ipv6 rip <identificador> enable
+```
+
+En este caso, configuramos el enrutamiento dinámico de R1 de la siguiente manera:
+
+```console
+Router(config)#ipv6 unicast-routing
+
+Router(config)#interface fastEthernet 0/0
+Router(config-if)#ipv6 enable
+Router(config-if)#ipv6 rip RED_PATATA enable
+
+Router(config)#interface serial 0/0/0
+Router(config-if)#ipv6 enable
+Router(config-if)#ipv6 rip RED_PATATA enable
+```
+
+Comprobamos que se ha añadido a la tabla de enrutamiento:
+
+```console
+Router#show ipv6 route
+```
+
+Hacemos lo mismo con R2 y R3.
