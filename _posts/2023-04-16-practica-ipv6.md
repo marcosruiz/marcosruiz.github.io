@@ -203,11 +203,11 @@ Router(config)#ipv6 unicast-routing
 
 Router(config)#interface fastEthernet 0/0
 Router(config-if)#ipv6 enable
-Router(config-if)#ipv6 rip RED_PATATA enable
+Router(config-if)#ipv6 rip RED_MRUIZG enable
 
 Router(config)#interface serial 0/0/0
 Router(config-if)#ipv6 enable
-Router(config-if)#ipv6 rip RED_PATATA enable
+Router(config-if)#ipv6 rip RED_MRUIZG enable
 ```
 
 Comprobamos que se ha añadido a la tabla de enrutamiento:
