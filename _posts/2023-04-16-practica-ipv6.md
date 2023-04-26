@@ -18,6 +18,9 @@ La entrega será en formato ZIP. La práctica puede ser realizada **por parejas*
 
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
+> Recuerda, cada vez que aparezca mi código de usuario "mruizg" deberás sustituirlo por el tuyo.
+{:.prompt-warning}
+
 {:.activity}
 ### Vídeo de IPv6 de NASeros
 
@@ -69,14 +72,14 @@ Sigue los pasos del siguiente vídeo:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/K9GgC5EX2io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-> Indica los comandos que has utilizado en texto plano. 📷 Haz una captura del escritorio al completo para demostrar que la actividad ha sido realizada satisfactoriamente por ti.
-{:.prompt-info}
-
 {:.question}
 ¿Cuál es la parte de red y la parte de host de las dos redes IPv6 utilizadas en el vídeo?
 
 {:.question}
 Entra en modo simulación y haz un `ping` desde el terminal a la dirección `FF02::1` y `FF02::2` y observa que ocurre pulsando en el botón "Capture / Forward". ¿Qué ocurre? ¿Por qué?. En el artículo [Direcciones Multicast IPv6](https://ccnadesdecero.es/direcciones-multicast-ipv6/) encontrarás la respuesta.
+
+> Indica los comandos que has utilizado en texto plano. 📷 Haz una captura del escritorio al completo para demostrar que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
 
 {:.activity}
 ### Artículo de división de subredes de una red IPv6
@@ -92,7 +95,7 @@ Lee el artículo [División de Subredes de una Red IPv6](https://ccnadesdecero.e
    1. Prefijo de routing global
    1. ID de subred
    1. ID de interfaz
-1. Dado un prefijo de enrutamiento global /48 y un prefijo /64, ¿cuál es la parte de subred de la siguiente dirección: 2001:db8:cafe: 1111:2222:3333:4444:5555
+1. Dado un prefijo de enrutamiento global /48 y un prefijo /64, ¿cuál es la parte de subred de la siguiente dirección: 2001:db8:cafe:1111:2222:3333:4444:5555
    1. cafe
    1. 1111
    1. 2222
@@ -112,6 +115,9 @@ Implementa la siguiente topología de red usando redes IPv6 y enrutamiento está
 
 ![imgDescription](topologiaEnrutamientoDinamico2.png)
 _Topología objetivo_
+
+> Indica los comandos que has utilizado en texto plano. 📷 Haz una captura del escritorio al completo para demostrar que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
 
 #### Añadimos direcciones IPv6
 
@@ -177,6 +183,9 @@ Implementa la siguiente topología de red usando redes IPv6 y enrutamiento diná
 ![imgDescription](topologiaEnrutamientoDinamico2.png)
 _Topología objetivo_
 
+> Indica los comandos que has utilizado en texto plano. 📷 Haz una captura del escritorio al completo para demostrar que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
+
 Configuramos las interfaces como en la actividad anterior.
 
 Para configurar el enrutamiento dinámico primero debemos indicar que vamos a usar enrutamiento IPv6:
@@ -217,3 +226,30 @@ Router#show ipv6 route
 ```
 
 Hacemos lo mismo con R2 y R3.
+
+> 📷 Haz una captura con las actividades completadas donde se vea tu nombre de usuario como se ve a continuación.
+{:.prompt-info}
+
+{:.activity}
+### (Opcional) Tunelización IPv4 IPv6
+
+Implementa la siguiente topología de red:
+
+![imgDescription](topologiaTunelizacion.png)
+_Topología con 4 redes IPv6 (+1 para el túnel) y 2 redes IPv4_
+
+Para ello puedes seguir los pasos del siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5mWMjAIPA8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Las redes que debes usar son las siguientes:
+
+- RED: 2001:DB8:A:1::/64
+- RED: 2001:DB8:B:1::/64
+- RED: 192.168.1.0. MR: 255.255.255.252
+- RED: 192.168.1.4. MR: 255.255.255.252
+- RED: 2001:DB8:B:2::/64
+- RED: 2001:DB8:A:2::/64
+
+> Indica los comandos que has utilizado en texto plano. 📷 Haz una captura del escritorio al completo para demostrar que la actividad ha sido realizada satisfactoriamente por ti.
+{:.prompt-info}
