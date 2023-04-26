@@ -18,7 +18,7 @@ La entrega será en formato ZIP. La práctica puede ser realizada **por parejas*
 
 A continuación se listan las actividades que se deben realizar para esta práctica.
 
-> Recuerda, cada vez que aparezca mi código de usuario "mruizg" deberás sustituirlo por el tuyo.
+> ¡Recuerda! Cada vez que aparezca mi código de usuario "mruizg" deberás sustituirlo por el tuyo.
 {:.prompt-warning}
 
 {:.activity}
@@ -186,6 +186,8 @@ _Topología objetivo_
 > Indica los comandos que has utilizado en texto plano. 📷 Haz una captura del escritorio al completo para demostrar que la actividad ha sido realizada satisfactoriamente por ti.
 {:.prompt-info}
 
+#### Pasos a seguir para completar la actividad
+
 Configuramos las interfaces como en la actividad anterior.
 
 Para configurar el enrutamiento dinámico primero debemos indicar que vamos a usar enrutamiento IPv6:
@@ -226,9 +228,6 @@ Router#show ipv6 route
 ```
 
 Hacemos lo mismo con R2 y R3.
-
-> 📷 Haz una captura con las actividades completadas donde se vea tu nombre de usuario como se ve a continuación.
-{:.prompt-info}
 
 {:.activity}
 ### (Opcional) Tunelización IPv4 IPv6
