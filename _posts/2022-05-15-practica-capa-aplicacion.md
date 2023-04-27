@@ -30,7 +30,7 @@ Y responde a las siguientes preguntas sobre el mismo:
 1. ¿Qué significan las siglas DNS?
 1. ¿Quién nos dice la dirección IP de google.es?
 1. ¿Qué relaciona la BBDD del servidor DNS?
-1. ¿La petición DNS se realiza antes o después de la petición a google.es?
+1. ¿La petición DNS se realiza antes o después de la petición al servidor web de google.es?
 1. ¿De dónde saca la dirección IP del servidor DNS el PC?
 1. ¿Qué dirección DNS usa en el ejemplo del vídeo?
 1. ¿A que capa pertenece el 3-Way-Handshake?

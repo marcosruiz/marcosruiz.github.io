@@ -61,7 +61,7 @@ Dentro de cada cuarteto de cuatro dígitos hexadecimales, elimina los 0 iniciale
 
 ```mermaid
 graph TD;
-0000:0000:0001:0000:0000:0000:0056-->FE00:0:0:1:0:0:0:56;
+FE00:0000:0000:0001:0000:0000:0000:0056-->FE00:0:0:1:0:0:0:56;
 
 2001:0002:0003:0003:0006:0005:0006:0007-->2001:2:3:3:6:5:6:7;
 ```
@@ -73,7 +73,7 @@ Busca cualquier cadena de dos o más cuartetos consecutivos con todos los hexade
 
 ```mermaid
 graph TD;
-0000:0000:0001:0000:0000:0000:0056-->FE00:0:0:1:0:0:0:56;
+FE00:0000:0000:0001:0000:0000:0000:0056-->FE00:0:0:1:0:0:0:56;
 FE00:0:0:1:0:0:0:56-->FE00:0:0:1::56;
 ```
 
@@ -167,7 +167,7 @@ IPv6 utiliza un concepto de máscara, llamado **longitud de prefijo**, similar a
 
 La longitud del prefijo IPv6 se escribe como /, seguida de un número decimal. La longitud del prefijo define **cuántos bits de la dirección IPv6 corresponden al prefijo IPv6**, que es básicamente el mismo concepto que el ID de subred IPv4.
 
-{.subsection}
+{:.subsection}
 ### Ejercicios para Encontrar la Longitud del Prefijo IPv6
 
 {:.question}
