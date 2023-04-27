@@ -36,7 +36,7 @@ _Encabezado IPv6_
 {:.section}
 ## Formato de IPv6
 
-Las direcciones IPv6 están formadas por 128 bits. Para facilitar su anotación se expresan en números hexadecimales agrupados de cuatro en cuatro y cada grupo está separado por dos puntos (:). Las IPv6 se expresan con 32 números hexadecimales. 
+Las direcciones IPv6 están formadas por 128 bits. Para facilitar su anotación se expresan en números hexadecimales agrupados de cuatro en cuatro y cada grupo está separado por dos puntos (:). Las IPv6 se expresan con 32 números hexadecimales.
 
 Son 8 grupos de 4 dígitos hexadecimales y cada dígito hexadecimal son 4 bits. Es decir: 8 * 4 * 4 = 128 bits (16 Bytes). Las direcciones IPv6 son cuatro veces más largas que las direcciones IPv4.
 
@@ -108,7 +108,6 @@ graph TD;
     No.
   </div>
 </details>
-
 
 <details class="card mb-2">
   <summary class="card-header question">¿Existe la dirección IPv6 FE00::1::56?</summary>
@@ -216,7 +215,6 @@ Rellena los siguientes huecos:
 | 3124::DEAD:CAFE:FF:FE00:1/60      |  |
 | 2BCD::FACE:1:BEFF:FEBE:CAFE/56    |  |
 
-
 <details class="card mb-2">
   <summary class="card-header">Solución</summary>
   <div class="card-body" markdown="1">
@@ -268,7 +266,7 @@ Debido al formato de número tan grande que utiliza IPv6, se asegura que prácti
 {:.section}
 ## Coexistencia de IPv4 e IPv6
 
-Actualmente ambas versiones consisten en Internet. Por este motivo, se necesitan mecanismos que permitan dicha coexistencia y una migración progresiva de un protocolo al otro. En general, estos mecanismos pueden clasificarse en tres grupos: 
+Actualmente ambas versiones consisten en Internet. Por este motivo, se necesitan mecanismos que permitan dicha coexistencia y una migración progresiva de un protocolo al otro. En general, estos mecanismos pueden clasificarse en tres grupos:
 
 {:.subsection}
 ### Pila dual
