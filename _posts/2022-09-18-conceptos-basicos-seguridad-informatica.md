@@ -142,13 +142,13 @@ En función del momento en el que tiene lugar la protección existe:
 - Seguridad activa
 - Seguridad pasiva
 
-#### 4.0.1. Seguridad física
+### 4.1. Seguridad física
 
 Protección de la organización frente a accesos no autorizados y ataques físicos a los equipos e instalaciones. 
 
 Por ejemplo: Un portero en la puerta
 
-#### 4.0.2. Seguridad lógica
+### 4.2. Seguridad lógica
 
 Mecanismos y barreras que protegen la información de un sistema informático. Por ejemplo:
 
@@ -156,7 +156,7 @@ Mecanismos y barreras que protegen la información de un sistema informático. P
 - Otorgar privilegios mínimos a los usuarios.
 - Controlar que información entra y sale del sistema de información.
 
-#### 4.0.3. Seguridad activa
+### 4.3. Seguridad activa
 
 La seguridad activa se encarga de  evitar que los sistemas informáticos sufran algún daño.Para ello se usan contraseñas para proteger el equipo y  los datos que  contiene. Consiste en realizar, entre otras, las siguientes acciones:
 
@@ -164,7 +164,7 @@ La seguridad activa se encarga de  evitar que los sistemas informáticos sufran 
 1. Encriptar los datos importantes:  O lo que es lo mismo, cifrar los datos para que sólo puedan ser leídos si se conoce la clave de cifrado. La encriptación se hace con programas especiales. 
 1. Usar software de seguridad: como antivirus, antiespías, cortafuegos.
 
-#### 4.0.4. Seguridad pasiva
+### 4.4. Seguridad pasiva
 
 El objetivo de las técnicas de seguridad pasiva es minimizar los efectos o desastres causados por un accidente, un usuario o un malware a los sistemas informáticos. Las prácticas de seguridad pasiva más recomendables son: 
 
@@ -359,15 +359,15 @@ Existen los siguientes atacantes:
 - Estados
 - Crimen organizado
 
-### Hackers
+### 6.1. Hackers
 
 Persona con grandes conocimientos de informática que se dedica a detectar fallos de seguridad en sistemas informáticos.
 
-### Hackers éticos, white hat o sneaker
+### 6.2. Hackers éticos, white hat o sneaker
 
 Hacker que busca comprobar posibles intrusiones.
 
-### Crackers o black hats
+### 6.3. Crackers o black hats
 
 Hacker con objetivos maliciosos.
 
@@ -389,11 +389,11 @@ Se trata de vulnerabilidades de sistemas que todavía no son conocidas por el p�
   </div>
 </details>
 
-### Grey hats
+### 6.4. Grey hats
 
 Hacker entre white hat y black hat. Son personas que realizan ambos tipos de "sombrero", tanto negro como blanco. Buscan vulnerabilidad en el sistema con o sin el permiso de los propietarios y si encuentran un fallo, se comunican con el propietario y piden un precio a cambio de la solución del problema y si no acceden el se encarga de hacer pública la vulnerabilidad, la cual le daría problemas a la empresa.
 
-### 6.1. Script Kiddies, crashers, lamers o packet monkeys
+### 6.5. Script Kiddies, crashers, lamers o packet monkeys
 
 Conocimientos básicos, no pueden llevar a cabo un ataque por sí mismo. Sin embargo: 
 
@@ -405,7 +405,7 @@ Aunque parezcan inofensivos por su falta de conocimiento, pueden causar mucho da
 {:.question}
 ¿Qué es un script?
 
-### 6.2. Hacktivistas
+### 6.6. Hacktivistas
 
 Individuos o grupos que dan soporte a organismos sociales y políticos de cualquier tipo.
 
@@ -413,7 +413,7 @@ Si la agenda lo requiere, usarán su conocimiento para causar daño a algún tip
 
 Si bien algunas acciones tienen objetivos nobles y buscan un beneficio social, se trata de acciones ilegales y el hacktivista puede llegar a tener responsabilidad legal.
 
-### 6.3. Insiders
+### 6.7. Insiders
 
 Está demostrado que es mucho más difícil atacar una organización desde fuera que desde dentro de la red. 
 
@@ -423,7 +423,7 @@ También se puede dar el caso de empleados que por diferentes razones intentan l
 
 Un insider puede causar mucho más daño que un atacante externo, al tener acceso directo a la red interna. 
 
-### 6.4. Estados
+### 6.8. Estados
 
 El ciberespacio es desde hace año uno de los espacios de la guerra. Al fin y al cabo, los servicios esenciales de los países dependen de las infraestructuras tecnológicas para su funcionamiento.
 
@@ -435,7 +435,7 @@ Estos especialistas también pueden llevar a cabo acciones de inteligencia (obte
 
 En el contexto de guerra híbrida, los ciberataques y las técnicas de desestabilización pueden ser más dañinas que las propias acciones militares. 
 
-### 6.5. Crimen organizado
+### 6.9. Crimen organizado
 
 El ciberespacio es el lugar donde los cibercriminales han migrado sus actividades. Cada grupo tiene sus especializaciones: investigación y reconocimiento de víctimas, accesos a las empresas, desarrollo de software malicioso, exfiltración de datos, extorsión, ....
 
