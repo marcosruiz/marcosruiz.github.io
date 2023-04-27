@@ -39,7 +39,7 @@ Y responde a las siguientes preguntas sobre el mismo:
 1. ¿Por qué DNS funciona normalmente sobre UDP?
 
 {:.activity}
-### Vídeo sobre DNS de NASeros
+### Vídeo sobre DNS de NASeros 1
 
 Mira el siguiente vídeo:
 
@@ -60,13 +60,13 @@ Y responde a las siguientes preguntas sobre el mismo:
 {:.activity}
 ### Precio dominio
 
-Visita una o varias webs donde puedas comprar un dominio de `<tuUsuario>`y averigüa cuanto te costaría anualmente.
+Visita dos o más webs donde puedas comprar un dominio de `<tuUsuario>` y averigüa cuanto te costaría anualmente durante los 5 primeros años. Explica cual de las opciones escogerías y por qué.
 
-> 📷 Haz una captura del escritorio al completo dónde se vea la web con los precios del nombre que hayas buscado.
+> 📷 Haz una o varias capturas del escritorio al completo dónde se vean la webs con los precios del nombre que hayas buscado.
 {:.prompt-info}
 
 {:.activity}
-### Vídeo sobre DNS de NASeros
+### Vídeo sobre DNS de NASeros 2
 
 Mira el siguiente vídeo:
 
@@ -113,47 +113,55 @@ Y responde a las siguientes preguntas sobre el mismo:
 1. ¿Qué hace el comando `ip address`?
 1. ¿Qué hace el comando `ip link set dev enp1s0 up`?
 1. ¿Cuál es el comando que se usa en GNU Linux para asignar una puerta de enlace predeterminada en nuestro equipo?
-1. ¿Por qué no funciona el comando `ping www.google.com`?ç
+1. ¿Por qué no funciona el comando `ping www.google.com`?
 1. ¿Qué es un puerto según Antonio Sarosi?
 1. ¿A qué hace referencia la dirección IP 127.0.0.1?
 
 {:.activity}
 ### Servicio DNS, DHCP y HTTP
 
-Realiza una topología de red similar a la de la siguiente figura donde deberemos de ser capaces de navegar a la web que contiene el HTTPServer desde cualquier PC haciendo uso del servidor DNS.
+Realiza una topología de red SIMILAR PERO NO IGUAL a la de la siguiente figura donde deberemos de ser capaces de navegar a la web que contiene el HTTPServer desde cualquier PC haciendo uso del servidor DNS.
 
-![img-description](topologiaDhcpDnsHttp.png)
-_Topolgía final de la actividad_
+Es OBLIGATORIO que la topología NO sea la misma. Deberás tener en cuenta que deberá tener al menos la misma cantidad de routers, switches, PCs y servidores. Estos componentes deberán estar distribuidos de manera que haya al menos 2 o más routers entre un PC y el DNSServer; 2 o más routers entre un PC y el HTTPServer; y 2 o más routers entre el HTTPServer y el DNSServer.
 
-> Es OBLIGATORIO que la topología NO sea la misma. Deberás tener en cuenta que deberá tener al menos la misma cantidad de routers, switches, PCs y servidores. Estos componentes deberán estar distribuidos de manera que haya al menos 3 routers entre un PC y el DNSServer; 3 routers entre un PC y el HTTPServer; y 2 routers entre el HTTPServer y el DNSServer.
-{: .prompt-info }
+Explica todos los mensajes que se intercambian entre el cliente y los servidores cuando el cliente intenta acceder a la página web del servidor llamado HTTPServer.
 
 La página web deberá de ser accesible usando el navegador de cualquier PC a través de la url `http://<tuUsuario>.com`.
+
+![img-description](topologiaDhcpDnsHttp.png)
+_Topología final de la actividad_
 
 ![img-description](navegacionWeb.png)
 _Prueba de funcionamiento_
 
 > Nótese que en la topología actual las redes privadas (192.168.1.0, 192.168.2.0, 192.168.3.0, 192.168.4.0 y 192.168.5.0) se comportan como una red pública ya que no se ha configurado ningún router en modo NAT. Si queremos usar redes privadas como redes privadas, la manera más sencilla es utilizar el router WRT300N o el Home Router y asignarles una IP pública a cada uno.
-{:.prompt-info}
-
-Explica todos los mensajes que se intercambian entre el cliente y los servidores cuando el cliente intenta acceder a la página web del servidor llamado HTTPServer.
+{:.prompt-tip}
 
 > 📷 Haz una o varias capturas del escritorio al completo para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Recuerda que también deberá verse la hora y el dia en la barra de inicio.
 {:.prompt-info}
 
 {:.activity}
-### PAT con router WRT300N
+### Añadir routers WRT300N
 
-Haz que las redes privadas sean realmente redes privadas usando el router WRT300N o Home Router en cada una de las redes locales (192.168.1.0, 192.168.2.0, 192.168.3.0, 192.168.4.0 y 192.168.5.0). Haz las capturas necesarias para demostrar el funcionamiento de todo.
+Haz que las redes privadas sean realmente redes privadas usando el router WRT300N o Home Router en cada una de las redes locales (192.168.1.0, 192.168.2.0, 192.168.3.0, 192.168.4.0 y 192.168.5.0). Para que esto sea más evidente deberás usar siempre la red privada 192.168.1.0/24.
 
 ![img-description](topologiaDhcpDnsHttpConPat.png)
-_Topolgía final de la actividad_
+_Topología final de la actividad_
 
 > 📷 Haz una o varias capturas del escritorio al completo para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Recuerda que también deberá verse la hora y el dia en la barra de inicio.
 {:.prompt-info}
 
 {:.question}
+¿Tiene el router WRT300N un servidor DNS incorporado?
+
+{:.question}
 ¿Tiene el router WRT300N un servidor DHCP incorporado?
+
+{:.question}
+¿El router WRT300N tiene un NAT incorporado? Si es así, ¿de qué tipo? ¿Cómo lo puedes comprobar?
+
+{:.question}
+¿Por qué crees que por defecto el router WRT300N empieza asignando direcciones IP a partir de la 192.168.1.100 en lugar de la 192.168.1.2?
 
 {:.activity}
 ### (Opcional) PAT con router genérico
