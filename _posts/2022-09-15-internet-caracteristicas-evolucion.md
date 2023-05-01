@@ -175,26 +175,15 @@ _Arquitectura cliente-servidor con NAT_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HeZWcZmrQUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{:.question}
-¿Cómo sabe el router a qué dispositivo de la LAN a la que va el paquete de respuesta?
+Preguntas sobre el vídeo:
 
-{:.question}
-¿El router analiza la dirección MAC para realizar el trabajo del NAT satisfactoriamente?
-
-{:.question}
-¿Qué es el NAT? ¿En qué dispositivo suele estar?
-
-{:.question}
-¿Cuál es la IP de la puerta de enlace?
-
-{:.question}
-¿Cuál es el rango de direcciones IP? ¿Cómo se puede calcular?
-
-{:.question}
-¿Es lo mismo la puerta enlace que el gateway? ¿Qué le(s) corresponde(n)?
-
-{:.question}
-¿Por qué existen las IPs privadas? ¿No podrían ser todas públicas y así ahorrarnos el paso de traducción?
+- ¿Cómo sabe el router a qué dispositivo de la LAN a la que va el paquete de respuesta?
+- ¿El router analiza la dirección MAC para realizar el trabajo del NAT satisfactoriamente?
+- ¿Qué es el NAT? ¿En qué dispositivo suele estar?
+- ¿Cuál es la IP de la puerta de enlace?
+- ¿Cuál es el rango de direcciones IP? ¿Cómo se puede calcular?
+- ¿Es lo mismo la puerta enlace que el gateway? ¿Qué le(s) corresponde(n)?
+- ¿Por qué existen las IPs privadas? ¿No podrían ser todas públicas y así ahorrarnos el paso de traducción?
 
 ### 9.2. URLs
 
