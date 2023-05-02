@@ -126,7 +126,7 @@ Algunos de los beneficios de las LCMS son los siguientes:
 
 ## Bibliografía
 
--[Sistema de gestión de aprendizaje (Wikipedia)](https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_aprendizaje)
+- [Sistema de gestión de aprendizaje (Wikipedia)](https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_aprendizaje)
 - [¿Qué es un LMS y por qué es esencial para el aprendizaje corporativo?](https://www.ispring.es/blog/what-is-lms)
 - [¿Qué es el e-learning y cómo está transformando la educación?](https://www.becas-santander.com/es/blog/e-learning.html)
 - [Diferencia entre LMS y LCMS](https://www.evolmind.com/blog/diferencias-lms-lcms/)
