@@ -8,7 +8,7 @@ img_path: /assets/img/sistemas-gestion-aprendizaje-distancia/
 
 ## ¿Qué es el e-learning?
 
-E-learning proviene del inglés y significa electronic learning. Este concepto hace referencia a todas las actividades formativas que se dan exclusivamente a través de un dispositivo conectado a la red, lo que se suele llamar como aprendizaje electrónico, teleformación, formación online o aprendizaje virtual. 
+E-learning proviene del inglés y significa electronic learning. Este concepto hace referencia a todas las actividades formativas que se dan exclusivamente a través de un dispositivo conectado a la red, lo que se suele llamar como aprendizaje electrónico, teleformación, formación online o aprendizaje virtual.
 
 Asimismo, el e-learning también se asocia a veces de manera errónea con el uso de ordenadores o dispositivos móviles dentro de la clase. De esta manera, también se habla de las metodologías de b-learning y m-learning que, si bien no son exactamente lo mismo que el e-learning, están relacionadas:
 
@@ -25,7 +25,7 @@ Lo cierto es que esta nueva modalidad de aprendizaje presenta una serie de benef
 
 ## ¿Qué es un LMS?
 
-LMS (Learning Management System o sistema de gestión de aprendizaje) es un software diseñado para administrar y distribuir la formación a distancia. 
+LMS (Learning Management System o sistema de gestión de aprendizaje) es un software diseñado para administrar y distribuir la formación a distancia.
 
 En otras palabras, es el sitio (infraestructura tecnológica) en el que podemos gestionar e impartir la enseñanza online. 
 
@@ -53,7 +53,7 @@ Se trata de una interfaz que controla las bases de datos en donde se aloja el co
 
 Un ejemplo de CMS es WordPress.
 
-LCMS (Learning Content Management System) es un sistema de gestión de contenidos de aprendizaje. En la propia definición ‘contenidos de aprendizaje’ ya encuentras alguna respuesta.
+LCMS (Learning Content Management System) es un sistema de gestión de contenidos de aprendizaje. En la propia definición "contenidos de aprendizaje" ya encuentras alguna respuesta.
 
 Es la combinación de las dos anteriores. Cuenta con la capacidad de la gestión de los cursos online del LMS y con la de almacenamiento y generación del material educativo del CMS.
 
@@ -73,7 +73,7 @@ Siendo muy teóricos, diríamos que existen algunas diferencias muy visibles ent
 
 Es cierto que, con el tiempo, se ha popularizado la forma de llamar a los LCMS por el término LMS, que es el más "coloquial".
 
-Inicialmente, y esta sería la diferencia principal, un LMS se usaba para gestionar todas las tareas de un mismo contexto de formación virtual. 
+Inicialmente, y esta sería la diferencia principal, un LMS se usaba para gestionar todas las tareas de un mismo contexto de formación virtual.
 
 El LMCS se empleaba, también, para producir y almacenar los contenidos educativos digitales.
 
@@ -109,7 +109,7 @@ Algunos de los beneficios de las LCMS son los siguientes:
 - Los alumnos pueden acceder a estos entornos virtuales a cualquier hora del día.
 - Se suelen ofrecer diferentes tipos de objetos de aprendizaje en variados formatos audiovisuales.
 - Los objetos de aprendizaje son diseñados en función de diferentes ritmos de aprendizaje.
-- Los docentes pueden utilizar estos recursos educativos para reforzar los contenidos de los programas de estudios y enfocarse más en las demandas educativas de cada uno de sus estudiantes de una forma personalizada. 
+- Los docentes pueden utilizar estos recursos educativos para reforzar los contenidos de los programas de estudios y enfocarse más en las demandas educativas de cada uno de sus estudiantes de una forma personalizada.
 
 ## ¿Qué LCMS existen?
 
