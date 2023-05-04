@@ -33,7 +33,7 @@ Y responde a las siguientes preguntas sobre el mismo:
 1. ¿Por qué existe IPv6?
 1. ¿Es necesario el uso de NATs en IPv6?
 1. ¿Por qué se sigue usando IPv4?
-1. ¿Cuál es el porcentaje de adopción de IPv4 en España según MacJosan?
+1. ¿Cuál es el porcentaje de adopción de IPv6 en España según MacJosan?
 1. ¿Qué países son líderes en la implantación de IPv6? ¿Por qué?
 
 {:.activity}

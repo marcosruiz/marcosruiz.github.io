@@ -27,13 +27,19 @@ RA2. Instala gestores de contenidos, identificando sus aplicaciones y configurá
 1. Se han realizado pruebas de funcionamiento. ✅
 1. Se han realizado copias de seguridad de los contenidos del gestor. ✅
 
+## Métodología
+
+- ABP
+- Role Playing
+- AC
+
 ## Entrega y presentación
 
 La entrega será en formato ZIP. La práctica puede ser realizada **por parejas**. Leer [Entrega y presentación de prácticas](/posts/entrega-presentacion-practicas/).
 
 ## Actividades
 
-Acabas de volver de tus vacaciones en Costa de Marfil donde has coincidido con el antigüo delantero del Chelsea, Didier Drogba. ¡No solo eso! Te has hecho su colega y hasta te invitó a pasar una tarde en su yate privado. Estás deseando contárselo a todos tus compañeros pero el tirano de tu jefe te ha dejado trabajo para ayer. "¡Que estrés! ¡A ver cuando me jubilo!" piensas. Pero pronto te das cuenta que te quedan mínimo 40 años de arduo pero cómodo trabajo, ya que tu culo está sobre una silla gaming desde que tu jefe accedió a comprar sillas nuevas. Pensándolo bien no estás nada mal y lo de ser tu propio jefe no es tan idílico como lo pintan los anuncios de YouTube. Así que con algo más de ánimo te dispones a ver que es lo que tu jefe quiere que hagas. Se ve que ha conseguido venderle a una universidad un Moodle por mucho dinero. Esta gente de la universidad será muy lista pero por lo visto no sabe que Moodle tiene licencia GPL (GNU General Public License ) y os sale por la friolera de 0€. Dinero fácil para tu jefe, la verdad es que tiene un don para vender.
+Acabas de volver de tus vacaciones en Costa de Marfil donde has coincidido con el antigüo delantero del Chelsea, Didier Drogba. ¡No solo eso! Te has hecho su colega y hasta te invitó a pasar una tarde en su yate privado. Estás deseando contárselo a todos tus compañeros pero el tirano de tu jefe te ha dejado trabajo para ayer. "¡Que estrés! ¡A ver cuando me jubilo!" piensas. Pero pronto te das cuenta que te quedan mínimo 40 años de arduo trabajo, bueno más bien cómodo trabajo ya que tus posaderas están sobre una silla gaming desde que tu jefe accedió a comprar sillas nuevas a todos los empleados. Pensándolo bien no estás nada mal y lo de ser tu propio jefe no es tan idílico como lo pintan los anuncios de YouTube. Así que con algo más de ánimo te dispones a ver que es lo que tu jefe quiere que hagas. Se ve que ha conseguido venderle a una universidad un Moodle por mucho dinero. Esta gente de la universidad será muy lista pero por lo visto no sabe que Moodle tiene licencia GPL (GNU General Public License ) y os sale por la friolera de 0€. Dinero fácil para tu jefe, la verdad es que tiene un don para vender.
 
 Por otro lado tu jefe ha encontrado el artículo [Tutorial: Instalar Moodle en Ubuntu Server 22.04](/posts/tutorial-moodle/) que te servirá para hacer tu trabajo. "¡Bastante crack mi jefe!" dices para tus adentros. Sin embargo tu jefe te ha pedido que hagas un documento donde expliques todo lo que vas a realizar. Tu jefe no es tonto y sabe que si no dejas buena documentación el dia que tú no estés va a tener problemas para mantener esta instalación/instancia de Moodle.
 
@@ -100,7 +106,7 @@ Realiza una copia de seguridad, elimina el curso y restáuralo.
 {:.activity}
 ### Instala módulos
 
-Instala los siguientes 3 módulos:
+Instala, configura y demuestra que funcionan los siguientes 3 módulos:
 
 - Ghostscript
 - Unoconv
@@ -110,5 +116,6 @@ Instala los siguientes 3 módulos:
 ¿Qué hace cada uno de estos 3 módulos?
 
 {:.activity}
-### 
+### Configura el menú
 
+Configura el menú lateral de la derecha para que contenga tres bloques que consideres que van a impresionar a los profesores de la universidad y añádelos a tu curso de prueba.
