@@ -44,7 +44,7 @@ Además, tu jefe ha encontrado el artículo [Tutorial: Instalar Moodle en Ubuntu
 
 Así que con algo más de motivación te dispones a instalar y configurar el Moodle más bacano que pueda existir para dejar impresionados al jurado del concurso.
 
-A continuación se muestran las actividades que te ha dejado tu jefe para realizar. Recuerda que el concurso exige que hagas una presentación de 10 minutos para vender el producto y muestres el sistema funcionando en tiempo real.
+A continuación se muestran las actividades que te ha dejado tu jefe para realizar. Recuerda que el concurso exige que hagas una presentación de 5 minutos para vender el producto y mostrar el sistema funcionando en tiempo real.
 
 {:.activity}
 ### Crear máquina virtual e instalar Ubuntu Server 22.04 con un servidor SSH
