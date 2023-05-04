@@ -8,9 +8,9 @@ img_path: /assets/img/practica-moodle/
 
 ## Objetivo y duración
 
-El objetivo de esta práctica es aprender a instalar y configurar Moodle de manera manual.
+El objetivo de esta práctica es aprender a instalar, configurar y personalizar Moodle 4.1.
 
-Duración: 7 h
+Duración: 10 horas de trabajo por parejas + 2 horas de presentaciones.
 
 ## Resultados de aprendizaje y criterios de evaluación
 
@@ -27,23 +27,24 @@ RA2. Instala gestores de contenidos, identificando sus aplicaciones y configurá
 1. Se han realizado pruebas de funcionamiento. ✅
 1. Se han realizado copias de seguridad de los contenidos del gestor. ✅
 
-## Métodología
+## Métodologías activas
 
-- ABP
-- Role Playing
-- AC
-
-## Entrega y presentación
-
-La entrega será en formato ZIP. La práctica puede ser realizada **por parejas**. Leer [Entrega y presentación de prácticas](/posts/entrega-presentacion-practicas/).
+- Aprendizaje Basado en Problemas.
+- Aprendizaje Cooperativo.
 
 ## Actividades
 
-Acabas de volver de tus vacaciones en Costa de Marfil donde has coincidido con el antigüo delantero del Chelsea, Didier Drogba. ¡No solo eso! Te has hecho su colega y hasta te invitó a pasar una tarde en su yate privado. Estás deseando contárselo a todos tus compañeros pero el tirano de tu jefe te ha dejado trabajo para ayer. "¡Que estrés! ¡A ver cuando me jubilo!" piensas. Pero pronto te das cuenta que te quedan mínimo 40 años de arduo trabajo, bueno más bien cómodo trabajo ya que tus posaderas están sobre una silla gaming desde que tu jefe accedió a comprar sillas nuevas a todos los empleados. Pensándolo bien no estás nada mal y lo de ser tu propio jefe no es tan idílico como lo pintan los anuncios de YouTube. Así que con algo más de ánimo te dispones a ver que es lo que tu jefe quiere que hagas. Se ve que ha conseguido venderle a una universidad un Moodle por mucho dinero. Esta gente de la universidad será muy lista pero por lo visto no sabe que Moodle tiene licencia GPL (GNU General Public License ) y os sale por la friolera de 0€. Dinero fácil para tu jefe, la verdad es que tiene un don para vender.
+En las noticias sale el gobernante de Canarias diciendo "¡La ley de protección de datos debe cumplirse y a saber que puede llegar Google o el gobierno de EEUU con los datos de nuestros alumnes canaries!". Parece ser que el gobierno de Canarias va ha prohibir a todos los docentes de sus centros educativos públicos usar la GSuite, incluido Google Classroom.
 
-Por otro lado tu jefe ha encontrado el artículo [Tutorial: Instalar Moodle en Ubuntu Server 22.04](/posts/tutorial-moodle/) que te servirá para hacer tu trabajo. "¡Bastante crack mi jefe!" dices para tus adentros. Sin embargo tu jefe te ha pedido que hagas un documento donde expliques todo lo que vas a realizar. Tu jefe no es tonto y sabe que si no dejas buena documentación el dia que tú no estés va a tener problemas para mantener esta instalación/instancia de Moodle.
+Debido a esto, el gobernante de Canarias ha sacado a concurso público la instalación y mantenimiento de un sistema de gestión del aprendizaje para que sus docentes tengan una herramienta con la que comunicarse y evaluar a sus alumnos ahora que les ha prohibido usar la GSuite. Parece ser que le corre mucha prisa y hay que tener un servidor de prueba totalmente operativo junto con una presentación donde se muestre lo genial que es la solución propuesta en un plazo de 10 horas laborales.
 
-A continuación se listan las actividades que te ha mandado tu jefe realizar. Recuerda que tras la realización de cada actividad deberás hacer una o varias capturas que demuestren que la actividad ha sido realizada satisfactoriamente por ti.
+Tu jefe ha visto que hay mucho dinero en juego y le ha parecido una buena idea presentarse al concurso público. Eso sí, todo el trabajo lo vas a hacer tú junto a otro compañero, que para eso os paga. De todos modos si ganáis el concurso tendréis que viajar tanto tu compañero como tú a Canarias a montar los servidores. "Nada mal" piensas.
+
+Además, tu jefe ha encontrado el artículo [Tutorial: Instalar Moodle en Ubuntu Server 22.04](/posts/tutorial-moodle/) que te servirá para hacer tu trabajo más fácil. "¡Bastante crack mi jefe!" dices para tus adentros.
+
+Así que con algo más de motivación te dispones a instalar y configurar el Moodle más bacano que pueda existir para dejar impresionados al jurado del concurso.
+
+A continuación se muestran las actividades que te ha dejado tu jefe para realizar. Recuerda que el concurso exige que hagas una presentación de 10 minutos para vender el producto y muestres el sistema funcionando en tiempo real.
 
 {:.activity}
 ### Crear máquina virtual e instalar Ubuntu Server 22.04 con un servidor SSH
@@ -55,23 +56,22 @@ Crea una máquina virtual e instala Ubuntu Server 22.04 con un servidor SSH para
 
 Para instalar Moodle primero se debe instalar la pila LAMP, es decir, Linux (Ubuntu 22.04 en nuestro caso), Apache, MySQL y PHP.
 
-{:.question}
-¿Cuáles son los requerimientos en cuanto a versiones de sistemas operativos y pila LAMP para instalar Moodle 4.1?
+En la presentación, deberás especificar cuáles son los requerimientos en cuanto a versiones de sistemas operativos y pila LAMP para instalar Moodle 4.1.
 
 {:.activity}
 ### Instalar Moodle 4.1 en la máquina virtual
 
-Instala y configura Moodle 4.1.
+Instala y configura Moodle 4.1. Tu jefe cree que con la elección de esta versión tendréis más posibilidades de ganar.
 
 {:.activity}
-### Crea un curso
+### Crea un curso de prueba
 
-Crea un curso con al menos un usuario con rol de alumno y un usuario con rol de profesor. El alumno deberá tener `alumno<tuUsuario>` como nombre y el profesor `profesor<tuUsuario>`. Deberás hacer login con el usuario alumno y el usuario profesor y ambos deberán estar matriculados en el mismo curso, cada uno con su respectivo rol. Se valorará positivamente que añadas más de un alumno y más de un profesor.
+Crea un curso llamado `tuUsuario` con al menos un usuario con rol de alumno y un usuario con rol de profesor. El alumno deberá tener `alumno<tuUsuario>` como nombre y el profesor `profesor<tuUsuario>`. Deberás hacer login con el usuario alumno y el usuario profesor y ambos deberán estar matriculados en el mismo curso, cada uno con su respectivo rol. Se valorará positivamente que añadas más de un alumno y más de un profesor.
 
 {:.activity}
 ### Crea una actividad
 
-Crea una actividad de tipo Cuestionario como profesor en tu nuevo curso con una sola pregunta tipo test. Haz que la haga al menos un alumno. Hay que asegurarse que algo tan básico le funciona a la primera a la universidad.
+Crea una actividad de tipo Cuestionario como profesor en tu nuevo curso con una sola pregunta tipo test. Haz que la haga al menos un alumno. Hay que asegurarse que algo tan básico funciona a la primera en la presentación.
 
 {:.activity}
 ### Aplica un tema
@@ -81,7 +81,7 @@ Aplica un tema a la instalación de Moodle para que parezca que no es como todos
 {:.activity}
 ### Crea un foro
 
-Habilita un foro donde solo pueda publicar el profesor y los alumnos no puedan publicar pero si puedan comentar en el foro. Hay que asegurarse que algo tan básico le funciona a la primera a la universidad.
+Habilita un foro donde solo pueda publicar el profesor y los alumnos no puedan publicar pero si puedan comentar en el foro. Hay que asegurarse que algo tan básico le funciona a la primera en la presentación.
 
 {:.activity}
 ### Comprueba las actualizaciones
@@ -110,12 +110,11 @@ Instala, configura y demuestra que funcionan los siguientes 3 módulos:
 
 - Ghostscript
 - Unoconv
-- Uno a tu elección que creas que puede ser útil para la universidad
+- Uno a tu elección que creas que puede ser útil para los docentes canarios
 
-{:.question}
-¿Qué hace cada uno de estos 3 módulos?
+En la presentación deberás explicar que hace cada uno de estos 3 módulos.
 
 {:.activity}
 ### Configura el menú
 
-Configura el menú lateral de la derecha para que contenga tres bloques que consideres que van a impresionar a los profesores de la universidad y añádelos a tu curso de prueba.
+Configura el menú lateral de la derecha para que contenga tres bloques que consideres que van a impresionar al jurado del concurso público y añádelos a tu curso de prueba.
