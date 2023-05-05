@@ -6,11 +6,9 @@ tags: [aplicaciones web, smr, práctica]
 img_path: /assets/img/practica-moodle/
 ---
 
-## Objetivo y duración
-
-El objetivo de esta práctica es aprender a instalar, configurar y personalizar Moodle 4.1.
-
-Duración: 10 horas de trabajo por parejas + 2 horas de presentaciones.
+<details class="card mb-2">
+  <summary class="card-header">Para el profesor</summary>
+  <div class="card-body" markdown="1">
 
 ## Resultados de aprendizaje y criterios de evaluación
 
@@ -31,6 +29,17 @@ RA2. Instala gestores de contenidos, identificando sus aplicaciones y configurá
 
 - Aprendizaje Basado en Problemas.
 - Aprendizaje Cooperativo.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+## Objetivo y duración
+
+El objetivo de esta práctica es aprender a instalar, configurar y personalizar Moodle 4.1.
+
+Duración: 10 horas de trabajo por parejas + 2 horas de presentaciones.
+
 
 ## Actividades
 
