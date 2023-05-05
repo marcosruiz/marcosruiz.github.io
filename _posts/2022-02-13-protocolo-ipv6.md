@@ -28,7 +28,7 @@ En febrero de 2011 la IANA (Internet Assigned Numbers Authority) **asignó el ú
 | IPv4 utiliza una dirección de 32 bits	| IPv6 aumenta la dirección a 128 bits. |
 | 4.294.967.296 direcciones, (2<sup>32</sup>) | 340.282.366.920.938.463.463.374.607.431.768.211.456 direcciones, (2<sup>128</sup>) |
 
-IPv6 tiene más de 10.000.000.000.000.000.000.000.000.000 veces más direcciones que IPv4.
+IPv6 tiene más de trescientos cuarenta sextillones de direcciones, es decir, IPv6 tiene más de 10.000.000.000.000.000.000.000.000.000 veces más direcciones que IPv4.
 
 ![Encabezado IPv6](ipv6.webp)
 _Encabezado IPv6_
@@ -38,7 +38,7 @@ _Encabezado IPv6_
 
 Las direcciones IPv6 están formadas por 128 bits. Para facilitar su anotación se expresan en números hexadecimales agrupados de cuatro en cuatro y cada grupo está separado por dos puntos (:). Las IPv6 se expresan con 32 números hexadecimales.
 
-Son 8 grupos de 4 dígitos hexadecimales y cada dígito hexadecimal son 4 bits. Es decir: 8 * 4 * 4 = 128 bits (16 Bytes). Las direcciones IPv6 son cuatro veces más largas que las direcciones IPv4.
+Son 8 grupos de 4 dígitos hexadecimales y cada dígito hexadecimal son 4 bits. Es decir: 8 * 4 * 4 = 128 bits (16 Bytes). En definitiva, las direcciones IPv6 son cuatro veces más largas que las direcciones IPv4.
 
 Ejemplo de IPv6:
 
@@ -69,7 +69,7 @@ FE00:0000:0000:0001:0000:0000:0000:0056-->FE00:0:0:1:0:0:0:56;
 {:.subsection}
 ### Paso 2: Elimina cuartetos de ceros
 
-Busca cualquier cadena de dos o más cuartetos consecutivos con todos los hexadecimales en cero y reemplaza ese conjunto de cuartetos con dos puntos dobles (::). El :: significa "dos o más cuartetos de todos 0". Sin embargo, puede usar :: solo una vez en una sola dirección porque, de lo contrario, es posible que no se comprenda cuál es la dirección IPv6 exacta.
+Busca cualquier cadena de dos o más cuartetos consecutivos con todos los hexadecimales en cero y reemplaza ese conjunto de cuartetos con dos puntos dobles (::). El :: significa "dos o más cuartetos de todos 0". Sin embargo, solo se puede usar :: una vez en una sola dirección porque, de lo contrario, es posible que no se comprenda cuál es la dirección IPv6 exacta.
 
 ```mermaid
 graph TD;
@@ -158,7 +158,7 @@ Rellena los siguientes huecos:
 {:.section}
 ## Máscara o prefijo IPv6
 
-Las direcciones IPv6 también separan en parte de red y parte de host. 
+Las direcciones IPv6 también separan en parte de red y parte de host.
 
 También pueden usar la **notación prefija**, es decir, después de una barra inclinada se especifican los bits que pertenecen al prefijo de red. Por ejemplo: la dirección `2010:abcd:ef12::/48` define la red que comienza en el número `2010:abcd:ef12:0000:0000:0000:0000:0000` y finaliza en el número `2010:abcd:ef12:ffff:ffff:ffff:ffff:ffff`.
 
@@ -266,7 +266,11 @@ Debido al formato de número tan grande que utiliza IPv6, se asegura que prácti
 {:.section}
 ## Coexistencia de IPv4 e IPv6
 
-Actualmente ambas versiones consisten en Internet. Por este motivo, se necesitan mecanismos que permitan dicha coexistencia y una migración progresiva de un protocolo al otro. En general, estos mecanismos pueden clasificarse en tres grupos:
+Actualmente ambas versiones coexisten en Internet. Por este motivo, se necesitan mecanismos que permitan dicha coexistencia y una migración progresiva de un protocolo al otro. En general, estos mecanismos pueden clasificarse en tres grupos:
+
+- Pila dual
+- Túneles
+- Traducción
 
 {:.subsection}
 ### Pila dual

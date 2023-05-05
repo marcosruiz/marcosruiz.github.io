@@ -49,7 +49,7 @@ Comprobamos que versión tenemos:
 $php --version
 ```
 
-En mi caso, tengo la versión 8.1 y tu deberás tener la misma:
+En mi caso, tengo la versión 8.1 y tú deberás tener la misma:
 
 ```console
 PHP 8.1.2-1ubuntu2.9 (cli) (built: Oct 19 2022 14:58:09) (NTS)
