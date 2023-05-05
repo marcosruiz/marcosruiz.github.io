@@ -40,7 +40,6 @@ El objetivo de esta práctica es aprender a instalar, configurar y personalizar 
 
 Duración: 10 horas de trabajo por parejas + 2 horas de presentaciones.
 
-
 ## Actividades
 
 En las noticias sale el gobernante de Canarias diciendo "¡La ley de protección de datos debe cumplirse y a saber que puede llegar Google o el gobierno de EEUU con los datos de nuestros alumnes canaries!". Parece ser que el gobierno de Canarias va ha prohibir a todos los docentes de sus centros educativos públicos usar la GSuite, incluido Google Classroom.
@@ -51,7 +50,7 @@ Tu jefe ha visto que hay mucho dinero en juego y le ha parecido una buena idea p
 
 Además, tu jefe ha encontrado el artículo [Tutorial: Instalar Moodle en Ubuntu Server 22.04](/posts/tutorial-moodle/) que te servirá para hacer tu trabajo más fácil. "¡Bastante crack mi jefe!" dices para tus adentros.
 
-Así que con algo más de motivación te dispones a instalar y configurar el Moodle más bacano que pueda existir para dejar impresionados al jurado del concurso.
+Así que con algo más de motivación te dispones a instalar y configurar el Moodle más bacano que pueda existir para dejar impresionados al jurado del concurso, que esperemos que no esté comprado.
 
 A continuación se muestran las actividades que te ha dejado tu jefe para realizar. Recuerda que el concurso exige que hagas una presentación de 5 minutos para vender el producto y mostrar el sistema funcionando en tiempo real.
 
@@ -85,7 +84,7 @@ Crea una actividad de tipo Cuestionario como profesor en tu nuevo curso con una 
 {:.activity}
 ### Aplica un tema
 
-Aplica un tema a la instalación de Moodle para que parezca que no es como todos los demás.
+Aplica un tema a la instalación de Moodle para que parezca que no es como todos los demás. Haz click [aquí](https://moodle.org/plugins/) para ir a ver los plugins oficiales de Moodle.
 
 {:.activity}
 ### Crea un foro
@@ -104,8 +103,8 @@ Haz que las contraseñas de los usuarios cumplan con los siguientes requisitos:
 
 - Al menos una mayúscula
 - Al menos una minúscula
-- Al menos un símbolo
-- Al menos 8 carácteres
+- Al menos un caracter no alfanumérico
+- Al menos 10 carácteres en total
 
 {:.activity}
 ### Realiza una copia de seguridad
