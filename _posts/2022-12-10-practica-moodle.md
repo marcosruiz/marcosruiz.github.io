@@ -134,4 +134,11 @@ Como profesor, configura el cajón de bloques (barra lateral derecha) del curso 
 {:.activity}
 ### (Opcional) Realiza una copia de seguridad
 
-Realiza una copia de seguridad remota y periódica de todo Moodle.
+Realiza una copia de seguridad remota y periódica de todo Moodle. Para ello puedes usar herramientas como:
+
+- Bacula
+- Rsync
+- Filezilla
+- Cron
+- Scripts hechos por tí
+
