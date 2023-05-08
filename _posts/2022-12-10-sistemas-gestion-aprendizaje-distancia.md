@@ -69,32 +69,11 @@ Por otra parte, los CMS permiten crear contenidos, algo que no todas las platafo
 
 ## ¿Qué diferencia existe entre un LCMS y un LMS?
 
-Siendo muy teóricos, diríamos que existen algunas diferencias muy visibles entre un LCMS y LMS. 
+Ahora que ya conoces la definición de estos dos términos, seguro que podrías mencionar su principal diferencia.
 
-Es cierto que, con el tiempo, se ha popularizado la forma de llamar a los LCMS por el término LMS, que es el más "coloquial".
+Los LMS permiten extraer datos de la formación (tiempo de conexión, resultados de la evaluación, participación, etc.) y gestionar todo el proceso formativo, mientras que los LCMS permiten la creación y alojamiento de los contenidos pedagógicos.
 
-Inicialmente, y esta sería la diferencia principal, un LMS se usaba para gestionar todas las tareas de un mismo contexto de formación virtual.
-
-El LMCS se empleaba, también, para producir y almacenar los contenidos educativos digitales.
-
-Aunque muchos LMS ya son LCMS, es bueno desglosar las diferencias que puedes encontrar en algunos.
-
-Un sistema de gestión de aprendizaje o LMS:
-
-- Se centra en la gestión global del curso
-- Está dirigido a responsables de formación y a coordinadores didácticos
-- Incorpora contenidos y es capaz de difundir los materiales
-- Permite la comunicación entre profesores y estudiantes
-- Sirve al docente para monitorizar el seguimiento del alumno
-- Analiza los resultados de la formación
-
-Por su parte, un sistema de gestión de contenidos de aprendizaje o LCMS:
-
-- Se centra en la producción de contenidos docentes
-- Está formulado para facilitar el trabajo a los diseñadores instruccionales y a profesionales con experiencia docente
-- Realiza funciones de gestión de procesos de creación, optimización y reutilización de contenido
-- Crea, almacena y entrega el contenido en forma de objetos de aprendizaje (OA)
-- Ahora que has podido observar la diferencia entre LMS y LCMS, descubre qué puede aportarte cada plataforma.
+Se considera que los LCMS son una evolución de los LMS. De este modo, Moodle se podría considerar un LMS de código abierto y también un LCMS, puesto que también se podrían generar desde su sistema contenidos formativos. Lo mismo pasaría con otras herramientas de gestión del aprendizaje como Claroline, Chamilo o Dokeos.
 
 En definitiva, **LCMS = LMS + CMS**.
 
@@ -130,3 +109,4 @@ Algunos de los beneficios de las LCMS son los siguientes:
 - [¿Qué es un LMS y por qué es esencial para el aprendizaje corporativo?](https://www.ispring.es/blog/what-is-lms)
 - [¿Qué es el e-learning y cómo está transformando la educación?](https://www.becas-santander.com/es/blog/e-learning.html)
 - [Diferencia entre LMS y LCMS](https://www.evolmind.com/blog/diferencias-lms-lcms/)
+- [Diferencias entre LMS, LCMS y CMS](https://www.ideaspropiaseditorial.com/blog/diferencias-entre-lms-lcms-y-cms/)
