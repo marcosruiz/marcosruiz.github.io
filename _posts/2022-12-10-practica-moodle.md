@@ -101,28 +101,37 @@ Comprueba si hay pendientes actualizaciones de seguridad e instálalas si las ha
 
 Haz que las contraseñas de los usuarios cumplan con los siguientes requisitos:
 
-- Al menos una mayúscula
-- Al menos una minúscula
+- Al menos dos mayúsculas
+- Al menos dos minúsculas
 - Al menos un caracter no alfanumérico
 - Al menos 10 carácteres en total
+
+Y demuestra que funciona.
 
 {:.activity}
 ### Realiza una copia de seguridad
 
-Realiza una copia de seguridad, elimina el curso y restáuralo.
+Realiza una copia de seguridad de todo Moodle, elimina el curso que has creado y restáuralo. Para ello puedes seguir la documentación oficial de Moodle [Respaldo del sitio](https://docs.moodle.org/all/es/Respaldo_del_sitio).
 
 {:.activity}
-### Instala módulos
+### Instala servicios
 
-Instala, configura y demuestra que funcionan los siguientes 3 módulos:
+Instala, configura y demuestra que funcionan los siguientes servicios:
 
 - Ghostscript
 - Unoconv
-- Uno a tu elección que creas que puede ser útil para los docentes canarios
-
-En la presentación deberás explicar que hace cada uno de estos 3 módulos.
 
 {:.activity}
-### Configura el menú
+### Instala un plugin de Moodle
 
-Configura el menú lateral de la derecha para que contenga tres bloques que consideres que van a impresionar al jurado del concurso público y añádelos a tu curso de prueba.
+Instala, configura y demuestra que funciona al menos un plugin a vuestra elección. En la presentación deberás justificar su utilidad para los docentes canarios.
+
+{:.activity}
+### Configura el cajón de bloques
+
+Como profesor, configura el cajón de bloques (barra lateral derecha) del curso para que contenga un bloque que consideres que pueden ser útil para el profesorado o para el alumnado canario.
+
+{:.activity}
+### (Opcional) Realiza una copia de seguridad
+
+Realiza una copia de seguridad remota y periódica de todo Moodle.
