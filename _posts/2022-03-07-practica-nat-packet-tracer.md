@@ -31,7 +31,7 @@ Seguir los pasos del siguiente vídeo para configurar un router NAT estático:
 
 Preguntas sobre el vídeo:
 
-- ¿Para que usa el symbolo `?` en el CLI?
+- ¿Para que usa el símbolo `?` en el CLI?
 - ¿Podemos asignar una dirección IP externa diferente a la del router? ¿Qué problema puede tener hacer esto?
 - Cuando realizamos los pasos que nos indica, ¿obtenemos un resultado diferente al enviar mensajes entre hosts? ¿Cuándo?
 

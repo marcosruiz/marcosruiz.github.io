@@ -37,7 +37,7 @@ _Distribución de red_
 
 Cada VLAN deberá tener el siguiente nombre:
 
-- VLAN 2: INFORMATICA
+- VLAN 2: INFORMÁTICA
 - VLAN 3: SISTEMAS
 - VLAN 4: MECATRÓNICA
 
