@@ -125,3 +125,17 @@ Leer [¿Qué son las cookies de sesión?](https://www.ionos.es/digitalguide/host
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
+
+### ¿Cómo rechazo automáticamente las cookies?
+
+#### En Mozilla Firefox
+
+Escribes `about:config` en la barra de direcciones.
+
+Buscas `cookiebanners.service.mode` y pones su valor a 2.
+
+Buscas `cookiebanners.service.mode.privateBrowsing`  y pones su valor a 2.
+
+#### En Brave
+
+Cuando inicias por primera vez aparece un pop up preguntándonte si quieres autorechazar todos los banners de cookies.

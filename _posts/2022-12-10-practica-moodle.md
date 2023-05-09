@@ -141,4 +141,3 @@ Realiza una copia de seguridad remota y periódica de todo Moodle. Para ello pue
 - Filezilla
 - Cron
 - Scripts hechos por tí
-
