@@ -37,7 +37,7 @@ _Distribución de red_
 
 Cada VLAN deberá tener el siguiente nombre:
 
-- VLAN 2: INFORMATICA
+- VLAN 2: INFORMÁTICA
 - VLAN 3: SISTEMAS
 - VLAN 4: MECATRÓNICA
 
@@ -159,7 +159,7 @@ Router(config-if)# no sh
 ¿Qué significa y para que sirve el comando `no sh`?
 
 {:.activity}
-### Subredes y VLAN
+### Subredes, enrutamiento y VLANs
 
 A partir de la red 118.0.0.0 y a partir de la topología de red calculad los siguientes elementos:
 
@@ -173,6 +173,8 @@ A partir de la red 118.0.0.0 y a partir de la topología de red calculad los sig
 - Nº total de direcciones de host.
 - Nº de direcciones de host útiles.
 - Nº de bits prestados a la subred.
+
+Implementa la siguiente topología de red donde todas las redes azules se puedan comunicar entre sí haciendo uso de las subredes calculadas anteriormente, enrutamiento y VLANs.
 
 ![img-description](/assets/img/practica-vlan-packet-tracer/topologiaRed4Routers.png)
 _Topología de red con 4 routers_
