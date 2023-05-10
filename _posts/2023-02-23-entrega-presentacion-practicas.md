@@ -27,7 +27,7 @@ En todas las prácticas, cada vez que se haga mención a `<tuUsuario>` deberás 
 
 Si la entrega de la práctica debe ser un documento PDF con un nombre en el siguiente formato: `<tuUsuario>_p<Número de la práctica con dos dígitos>.pdf`{: .filepath}. Por ejemplo, en mi caso el nombre del documento PDF sería `mruizg_p01.pdf`{: .filepath}.
 
-1. Debe contener una portada con título, nombre de la asignatura, curso, autor y fecha de realización.
+1. Debe contener una portada con título, nombre de la asignatura, curso, autor(es) y fecha de realización.
 1. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.
 1. Debe tener cada página numerada.
 1. Las actividades deberán estar numeradas y ordenadas correctamente. Por ejemplo: `1. Actividad`, `Actividad 1`, `1. <Título de la actividad>` o `Actividad 1: <Título de la actividad>` en la entrega del alumno.
@@ -52,6 +52,14 @@ En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que
 - Las actividades de HTML deberán estar en formato HTML con el nombre `<tuUsuario>_a<Número de la actividad con dos dígitos>.html`{: .filepath}. Por ejemplo: `mruizg_a01.html`{: .filepath}.
 - Las actividades de JavaScript deberán estar en formato JS con el nombre `<tuUsuario>_a<Número de la actividad con dos dígitos>.js`{: .filepath}. Por ejemplo: `mruizg_a01.js`{: .filepath}.
 - Las actividades con otro tipo de extensión deberán estar en formato correspondiente `<tuUsuario>_a<Número de la actividad con dos dígitos>.<extensión>`{: .filepath}. Por ejemplo: `mruizg_a01.jar`{: .filepath}.
+
+## Entrega y presentación en formato presentación
+
+Si la entrega de la práctica debe ser un documento PDF con un nombre en el siguiente formato: `<tuUsuario>_p<Número de la práctica con dos dígitos>.pdf`{: .filepath}. Por ejemplo, en mi caso el nombre del documento PDF sería `mruizg_p01.pdf`{: .filepath}.
+
+En caso de que no se pueda trasladar la presentación desarrollada a formato PDF se deberá entregar un documento PDF con un número de capturas adecuado y un enlace web público con la presentación real.
+
+El documento PDF SIEMPRE debe contener una portada con título, nombre de la asignatura, curso, autor(es) y fecha de realización.
 
 ## Entrega y presentación grupal
 

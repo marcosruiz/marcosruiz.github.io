@@ -132,7 +132,7 @@ Instala, configura y demuestra que funciona al menos un plugin a vuestra elecci�
 Como profesor, configura el cajón de bloques (barra lateral derecha) del curso para que contenga un bloque que consideres que pueden ser útil para el profesorado o para el alumnado canario.
 
 {:.activity}
-### (Opcional) Realiza una copia de seguridad
+### (Opcional) Realiza una copia de seguridad remota
 
 Realiza una copia de seguridad remota y periódica de todo Moodle. Para ello puedes usar herramientas como:
 
