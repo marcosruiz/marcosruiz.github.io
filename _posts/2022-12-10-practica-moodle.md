@@ -31,12 +31,12 @@ Así que con algo más de motivación te dispones a instalar y configurar el Moo
 A continuación se muestran las actividades que te ha dejado tu jefe para realizar. Recuerda que el concurso exige que hagas una presentación de 5 minutos para vender el producto y mostrar el sistema funcionando en tiempo real.
 
 {:.activity}
-### Crea máquina virtual e instalar Ubuntu Server 22.04 con un servidor SSH
+### Crea una máquina virtual e instala Ubuntu Server 22.04 con un servidor SSH
 
 Crea una máquina virtual e instala Ubuntu Server 22.04 con un servidor SSH para poder controlarlo desde un cliente SSH "remoto" similar a como se haría en la realidad.
 
 {:.activity}
-### Instala pila LAMP
+### Instala la pila LAMP
 
 Para instalar Moodle primero se debe instalar la pila LAMP, es decir, Linux (Ubuntu 22.04 en nuestro caso), Apache, MySQL y PHP.
 
@@ -71,7 +71,7 @@ Instala, configura y demuestra que funcionan los siguientes servicios:
 - Unoconv
 
 {:.activity}
-### Instala un plugin de Moodle
+### Instala plugins de Moodle
 
 Instala, configura y demuestra que funcionan los siguientes plugins de Moodle:
 
@@ -81,9 +81,9 @@ Instala, configura y demuestra que funcionan los siguientes plugins de Moodle:
 Haz click [aquí](https://moodle.org/plugins/) para ir a ver los plugins oficiales de Moodle.
 
 {:.activity}
-### Crea un contenido H5P
+### Crea contenido H5P
 
-Crea un contenido H5P en tu nuevo curso, elige el que más te guste.
+Crea uno o varios contenidos H5P en tu nuevo curso, elige el que más te guste.
 
 Exporta la actividad, bórrala y vuélvela a importar.
 
