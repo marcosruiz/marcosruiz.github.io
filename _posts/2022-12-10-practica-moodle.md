@@ -6,39 +6,15 @@ tags: [aplicaciones web, smr, práctica]
 img_path: /assets/img/practica-moodle/
 ---
 
-<details class="card mb-2">
-  <summary class="card-header">Para el profesor</summary>
-  <div class="card-body" markdown="1">
-
-## Resultados de aprendizaje y criterios de evaluación
-
-RA2. Instala gestores de contenidos, identificando sus aplicaciones y configurándolos según requerimientos.
-
-1. Se han identificado los requerimientos necesarios para instalar gestores de contenidos. ✅
-1. Se han gestionado usuarios con roles diferentes. ✅
-1. Se ha personalizado la interfaz del gestor de contenidos. ✅
-1. Se han realizado pruebas de funcionamiento. ✅
-1. Se han realizado tareas de actualización del gestor de contenidos, especialmente las de seguridad. ✅
-1. Se han instalado y configurado los módulos y menús necesarios. ✅
-1. Se han activado y configurado los mecanismos de seguridad proporcionados por el propio gestor de contenidos. ✅
-1. Se han habilitado foros y establecido reglas de acceso. ✅
-1. Se han realizado pruebas de funcionamiento. ✅
-1. Se han realizado copias de seguridad de los contenidos del gestor. ✅
-
-## Métodologías activas
-
-- Aprendizaje Basado en Problemas.
-- Aprendizaje Cooperativo.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
 ## Objetivo y duración
 
-El objetivo de esta práctica es aprender a instalar, configurar y personalizar Moodle 4.1.
+El objetivo de esta práctica es aprender a instalar gestores de contenidos, identificando sus aplicaciones y configurándolos según requerimientos.
 
-Duración: 10 horas de trabajo por parejas + 2 horas de presentaciones.
+Duración: 10 sesiones de trabajo por parejas + 2 horas de presentaciones.
+
+## Entrega y presentación
+
+La entrega será en formato PDF. Leer [Entrega y presentación de prácticas](/posts/entrega-presentacion-practicas/).
 
 ## Actividades
 
