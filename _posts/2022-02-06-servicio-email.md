@@ -14,6 +14,8 @@ En el mundo del correo electrónico existe cierta terminología básica que debe
 - **Buzones de correo:** se refiere al espacio de almacenamiento disponible en un servidor de correo que almacena los correos electrónicos dirigidos a una determinada dirección de email (usuario@dominio.com). El buzón de correo electrónico es similar al buzón de correo postal que tenemos en nuestras casas; el cartero depositará en el buzón todas las cartas dirigidas a nosotros y, posteriormente, nosotros con nuestra llave del buzón accederemos a este y recogeremos las cartas. Siguiendo esta analogía, la llave del buzón sería nuestro nombre de usuario y contraseña. 
 - **Alias de correo:** el alias de correo es una dirección de email (usuario@dominio.com) que no tiene un buzón as0ciado sino que lo que se hace es que todo el correo dirigido a esa dirección será reenviado a un conjunto de direcciones de correo que sí tienen buzón. El uso típico de los alias es el de tener una dirección genérica (comercial@empresa.es) Trente a una personal (menganito@empresa.es) en los casos en los que interese.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0xxli9Qf4_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 {:.section}
 ## Descripción general
 

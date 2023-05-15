@@ -12,6 +12,8 @@ Cuando la topología global de la red se hace compleja es posible que se formen 
 
 Por un lado, hay una necesidad de bucles para que haya redundancia pero, por otro lado, hay que impedir que se produzcan tormentas de broadcast. Para conseguir esto la IEEE ha propuesto un protocolo que impide los bucles en un nivel lógico, evitando las tormentas de broadcast, pero que reconfigura la red cuando algún segmento talla para utilizar las ventajas de la redundancia de segmentos físicos. Se trata del protocolo IEEE 802.1D o STP (Spanning Tree Protocol, Protocolo de árbol de expansión).
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hPSBDwwNSxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ### 4.1. Ejemplo de STP
 
 En la siguiente Figura se puede ver la representación gráfica de una red conmutada con tres Switches con caminos redundantes que será útil para estudiar el modo de operación básica de SIP. Efectivamente, para que una trama con origen en PCI legue a PC3, caben dos caminos: el camino más sencillo consiste en enviar la trama por el camino 2 hacia el conmutador C y él se encargará de conducirla hacia su destino en PC3. El segundo camino tiene un mayor coste y consiste en transmitir la trama por el camino hacia el conmutador B y que este redirija la trama por el camino 3 hacia el conmutador C que es quien tiene la conexión física con el destino PC3.
