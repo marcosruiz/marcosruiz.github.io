@@ -28,11 +28,11 @@ Es decir tendremos 3 Redes, con las siguientes características:
 Estas serán las instrucciones modelo a usar:
 
 ```console
-Router(config)#ip nat inside source static <IP LOCAL> <IP EXTERNA>
-Router(config)#interface <INTERFAZ>
+Router(config)#ip nat inside source static <dirección IP local> <dirección IP externa>
+Router(config)#interface <interfaz>
 Router(config-if)#ip nat outside
 Router(config-if)#ip nat inside
-Router(config)#ip route 0.0.0.0 0.0.0.0 <INTERFAZ DE SALIDA>
+Router(config)#ip route 0.0.0.0 0.0.0.0 <interfaz de salida>
 ```
 
 ## Configuración del router NAT
