@@ -61,6 +61,14 @@ Preguntas sobre el vídeo:
 - ¿Cada navegador tiene un número de puerto diferente?
 - ¿Cada pestaña de cada navegador tiene un número de puerto diferente?
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7f9NzvvPo9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+- ¿Qué tres lenguajes de programación usa en el vídeo?
+- ¿Qué es una entrada? ¿Qué es una salida?
+- ¿Qué principal ventaja tienen los sockets respecto a las tuberías?
+
 {:.section}
 ## Tipos de puertos
 
