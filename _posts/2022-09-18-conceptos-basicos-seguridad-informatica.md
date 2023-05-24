@@ -160,7 +160,7 @@ Mecanismos y barreras que protegen la información de un sistema informático. P
 
 La seguridad activa se encarga de  evitar que los sistemas informáticos sufran algún daño.Para ello se usan contraseñas para proteger el equipo y  los datos que  contiene. Consiste en realizar, entre otras, las siguientes acciones:
 
-1. Emplear contraseñas seguras:  Para que una contraseña sea segura, debe contener más de ocho caracteres, mezclando letras mayúsculas y minúsculas, números y otros caracteres. No se deben emplear como contraseñas la fecha de nacimiento o el nombre de la mascota. 
+1. Emplear contraseñas seguras:  Para que una contraseña sea segura, debe contener más de ocho caracteres, mezclando letras mayúsculas y minúsculas, números y otros caracteres. No se deben emplear como contraseñas la fecha de nacimiento o el nombre de la mascota.
 1. Encriptar los datos importantes:  O lo que es lo mismo, cifrar los datos para que sólo puedan ser leídos si se conoce la clave de cifrado. La encriptación se hace con programas especiales. 
 1. Usar software de seguridad: como antivirus, antiespías, cortafuegos.
 

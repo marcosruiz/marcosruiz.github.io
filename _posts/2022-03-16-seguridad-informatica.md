@@ -103,6 +103,8 @@ Comprende el conjunto de defensas o medidas cuyo objetivo es **evitar o reducir 
     - **Cortafuegos (firewall)**: Sistema de defensa que controla y filtra el tráfico de entrada y salida de una red. Se configura para pedir confirmación de cualquier programa que utilice la conexión a Internet (pueden establecerse excepciones). Normalmente incluidos en los SO, aunque también existen otros de software libre o de pago.
     - **Proxy**. Software instalado en el PC que funciona como puerta de entrada; se puede configurar como cortafuegos o como limitador de páginas Web.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AWr3l9vlExY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 {:.subsection}
 ### Seguridad pasiva
 
