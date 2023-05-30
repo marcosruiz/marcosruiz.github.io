@@ -17,6 +17,7 @@ tags: []
 - [FOG Project](https://fogproject.org/)
 - [OpenGnsys](https://opengnsys.es/web/)
 - [Calendarios en blanco para Diario de profesor](https://www.wincalendar.com/es/Calendario-En-Blanco-2023-Gratis)
+- [FreeIPA](https://www.freeipa.org/page/Main_Page)
 
 ## Programas que deben instalarse en los PCs de los alumnos
 
@@ -46,5 +47,24 @@ tags: []
 ## Programas para mi
 
 - [PDFsam Basic](https://pdfsam.org/es/download-pdfsam-basic/)
+
+## Extensiones para navegador
+
+De seguridad:
+
+- Bitwarden
+- Copyfish Free OCR Software
+- uBlock Origin
+- Firefox Relay
+- Nervenschoner
+
+Otros:
+
+- Keepa
+- Pinned WhatsApp Web
+
+## Webs para bloquear
+
+- <https://1v1.lol/>
 
 ## Bibliografía
