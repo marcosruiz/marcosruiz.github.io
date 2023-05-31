@@ -1,5 +1,5 @@
 ---
-title: "Modelos de red: OSI vs TCP/IP"
+title: "Modelos OSI vs Arquitectura TCP/IP"
 date: 2022-05-17 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, smr, teoría]
@@ -7,9 +7,9 @@ img_path: /assets/img/modelos-red-osi-vs-tcp-ip/
 ---
 
 {:.section}
-## ¿Qué es un modelo o arquitectura de red?
+## ¿Qué es un arquitectura de red?
 
-Un **modelo o arquitectura de red** es un conjunto organizado de capas y protocolos que la red utiliza para producir sus comunicaciones entre nodos.
+Una **arquitectura de red** es un conjunto organizado de capas y protocolos que la red utiliza para producir sus comunicaciones entre nodos.
 
 Si todos los fabricantes siguen la misma arquitectura sus dispositivos serán compatibles entre sí.
 
@@ -38,7 +38,7 @@ Cada capa se construye sobre su predecesora. La misión de cada capa es proveer 
 Es decir, cada capa solo se comunica con sus capas adyacentes. A las normas de intercomunicación entre capas se les llama interfaz.
 
 {:.section}
-## Modelo OSI
+## Modelo de referencia OSI
 
 El modelo OSI (Open Systems Interconnection o Interconexión de Sistemas Abiertos) es un modelo de red de la pila de protocolos de red OSI/ISO. Con este modelo, diferentes dispositivos de red pueden comunicarse entre sí. 
 
@@ -59,7 +59,7 @@ _Concepto de encapsulación_
 <iframe src="https://www.youtube.com/embed/ODY4q4_3Acc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.subsection}
-### Capas del Modelo OSI
+### Capas del modelo OSI
 
 Las capas del modelo de referencia OSI representan una estructura vertical en la que todas las funciones de red se dividen en siete capas. Cabe destacar que cada una de estas capas corresponde a operaciones, equipos y protocolos estrictamente descritos.
 
@@ -90,25 +90,35 @@ La primera capa es la más cercana al medio físico de transmisión mientras que
 
 La capa física se encarga de definir las características mecánicas, eléctricas, funcionales y de procedimiento para poder establecer y liberar conexiones entre dos equipos de la red.
 
-Esta capa es comparativamente más sencilla que las demás, porque aparte de los unos y los ceros no tiene ningún otro sistema de medida, no analiza la información y, por tanto, es el más bajo de los niveles. Es el principal responsable de la transmisión de información. La PDU (Protocol Data Unit, Unidad de datos del protocolo) de esta capa se denomina **bit**.
+Esta capa es comparativamente más sencilla que las demás, porque aparte de los unos y los ceros no tiene ningún otro sistema de medida, no analiza la información y, por tanto, es el más bajo de los niveles. Es el principal responsable de la transmisión de información. La PDU (Protocol Data Unit) de esta capa se denomina **bit**.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué significa PDU?</summary>
+  <div class="card-body" markdown="1">
+
+Además del término "datos" (data) que se utiliza en el modelo OSI en las capas de aplicación, presentación y sesión, se utilizan otros términos en otras capas del modelo OSI para que sea posible identificar inmediatamente en qué capa del modelo OSI tiene lugar el procesamiento.
+
+Las normas ISO utilizan un término genérico, Unidad de Datos de Protocolo (PDU, Protocol Data Unit), para referirse a la porción de datos que es manejada por los protocolos en varias capas del Modelo de Referencia OSI. A menudo se utilizan nombres especiales, como **trama**, **paquete** o **segmento**, para denotar bloques de datos a determinados niveles.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 El objetivo principal de la capa física es representar el cero y el uno como señales y transmitirlas a través del medio de transmisión de datos (un cable, el aire, etc.).
 
-Por ejemplo, hay un canal de comunicación, un mensaje a enviar, un emisor y un receptor correspondientes. La capa física tiene sus propias características:
-
-- El **ancho de banda**, medido en bps (bits por segundo), es decir, la cantidad de datos que podemos transmitir por unidad de tiempo.
-- **Latencia**, el tiempo que tarda un mensaje en llegar al emisor y al receptor.
-- **Tasa de error**, si los errores son frecuentes, los protocolos deben proporcionar corrección de errores. Si se producen con poca frecuencia, pueden corregirse a un nivel superior, por ejemplo, la capa de transporte.
-
 Funciones de la capa física:
 
-- Conectores: Este nivel estandariza los tipos de conectores y la asignación de pines;
-- Codificación: Se define la forma de representar "0" y "1";
-- Sincronización.
-- Es la interfaz entre el medio de red y el dispositivo de red (transmite señales eléctricas u ópticas al cable o a la radio, las recibe y las convierte en bits de datos);
-- Las funciones de la capa física se implementan en todos los dispositivos conectados a la red;
+- **Codificación de datos**: La capa física convierte los bits de datos que se van a enviar en señales físicas adecuadas para ser transmitidas a través del medio de comunicación. Esto implica la conversión de los bits en formas de onda eléctricas, ópticas o electromagnéticas que pueden ser transmitidas y recibidas por los dispositivos de red. En definitiva, se define la forma de representar "0" y "1".
+- **Transmisión y recepción de señales**: La capa física se encarga de enviar las señales físicas a través del medio de comunicación y de recibir las señales entrantes para su posterior procesamiento. Esto implica la administración de la velocidad de transmisión, la modulación y demodulación de las señales y la sincronización adecuada entre el transmisor y el receptor.
+- **Características eléctricas y mecánicas**: La capa física define las características eléctricas, mecánicas y funcionales de los conectores, cables y otros componentes físicos utilizados para la transmisión de datos. Esto incluye especificar:
+  - Los tipos de conectores y cables.
+  - Las tasas de transferencia de datos.
+  - Las distancias máximas de transmisión.
+  - Los niveles de voltaje requeridos para la correcta comunicación entre dispositivos.
 
-Equipos que operan en la capa física: Repetidor, Hub, Ethernet, Módem.
+Las funciones de la capa física se implementan en todos los dispositivos conectados a la red;
+
+Los equipos que operan en la capa física son: Repetidor, Hub, Ethernet, Módem.
 
 Ejemplos de interfaces de red pertenecientes a la capa física: conectores RS-232C, RJ-11, RJ-45, AUI, VNC.
 
@@ -119,10 +129,12 @@ Esta capa se encarga de la transferencia de datos confiable entre nodos adyacent
 
 Funciones a nivel de enlace de datos:
 
-- Los bits cero y uno de la capa física se organizan en tramas. Una trama es un trozo de datos que tiene un valor lógico independiente;
-- **Control del acceso al medio** compartido de transmisión;
-- Tratamiento de los errores de transmisión de datos;
-- **Control de flujo** ante la congestión: Define la estructura de los enlaces entre los nodos y la forma en que se dirigen;
+- **Encapsulación y desencapsulación**: El nivel de enlace de datos toma los paquetes de datos de la capa de red y los divide en tramas más pequeñas, agregando encabezado y posiblemente cola para crear la estructura de la trama. Al recibir las tramas entrantes, la capa de enlace de datos las desencapsula, extrayendo los datos y verificando la integridad de la trama.
+- **Control del acceso al medio**: El nivel de enlace de datos se encarga de gestionar el acceso al medio compartido por múltiples dispositivos. Utiliza técnicas como el control de acceso al medio (MAC) para asegurar que solo un dispositivo pueda transmitir a la vez y evitar colisiones.
+- **Detección y corrección de errores**: El nivel de enlace de datos verifica la integridad de las tramas mediante el uso de técnicas de detección de errores, como el checksum. Si se detectan errores en una trama, se puede solicitar una retransmisión para garantizar la entrega confiable de los datos.
+- **Control de flujo**: El nivel de enlace de datos también controla el flujo de datos entre dos nodos adyacentes. Esto evita que un nodo sobrecargue al receptor enviando datos a una velocidad superior a la que puede procesar. El control de flujo asegura una transferencia de datos suave y evita la pérdida de datos debido a la congestión.
+- **Dirección física**: Cada dispositivo en una red tiene una dirección física única conocida como dirección MAC. El nivel de enlace de datos asigna y maneja las direcciones MAC para garantizar que las tramas sean entregadas al destinatario correcto en la red.
+- **Fragmentación y reensamblaje de tramas**: Si los datos de la capa de red son más grandes que el tamaño máximo permitido de la trama, el nivel de enlace de datos se encarga de dividir los datos en tramas más pequeñas y etiquetarlas para su posterior reensamblaje en el destino.
 
 Equipos que operan en la capa de enlace de datos: Switches, Bridges (puentes de red);
 
@@ -162,11 +174,18 @@ La tarea principal es crear redes basadas en diferentes tecnologías de red: Eth
 
 Funciones a nivel de capa de red:
 
-- Determina la ruta de transmisión de datos.
-- Define la ruta más corta.
-- Conmutación de paquetes.
-- Enrutamiento o encaminamiento.
-- Control de fallos y la congestión de la red.
+- **Enrutamiento**: La función principal de la capa de red es determinar la ruta óptima para enviar los paquetes de datos desde el origen hasta el destino a través de una red. Utiliza algoritmos de enrutamiento para tomar decisiones sobre la selección de rutas, ya sea mediante enrutamiento estático (configurado manualmente) o mediante enrutamiento dinámico (utilizando protocolos de enrutamiento como OSPF o RIP).
+- **Fragmentación y reensamblaje de paquetes**: Si los datos de la capa de transporte son más grandes que el tamaño máximo permitido por la capa de red para los paquetes, la capa de red se encarga de dividirlos en fragmentos más pequeños llamados paquetes. Estos paquetes se transmiten por separado a través de la red y, en el destino, se vuelven a ensamblar para reconstruir los datos originales.
+- **Dirección lógica**: La capa de red asigna direcciones lógicas únicas a los dispositivos de la red, conocidas como direcciones IP. Estas direcciones IP permiten identificar y localizar de manera única tanto los sistemas finales (hosts) como los enrutadores en la red.
+- **Encapsulación y desencapsulación**: La capa de red toma los paquetes de datos de la capa de transporte y los envuelve en un encabezado de capa de red, agregando información de direccionamiento y control necesaria para el enrutamiento y la entrega de los paquetes. Al llegar al destino, la capa de red en el receptor extrae el encabezado de capa de red y entrega los datos a la capa de transporte correspondiente.
+- **Control de congestión**: La capa de red también puede realizar funciones de control de congestión para evitar la congestión en la red. Supervisa el estado de la red y toma medidas para evitar que se produzcan cuellos de botella y garantizar un flujo de datos equilibrado.
+- **Detección de errores**: La capa de red puede realizar detección básica de errores en los paquetes de datos mediante técnicas como el checksum. Si se detectan errores, los paquetes pueden ser descartados o solicitada una retransmisión, según el protocolo utilizado.
+
+{:.question}
+¿Qué es un cuello de botella?
+
+{:.question}
+¿Qué es el checksum?
 
 {:.question}
 ¿Qué significa conmutar? ¿Qué diferencia hay entre la conmutación de paquetes y la conmutación de circuitos?
@@ -199,16 +218,15 @@ La capa de transporte se caracteriza por la comunicación directa entre un orden
 
 Esta capa proporciona una conexión de extremo a extremo entre dos aplicaciones de dos hosts que se comunican. La capa de transporte es independiente de la red y permite ocultar los detalles de la comunicación de la red a los desarrolladores de aplicaciones.
 
+A partir de este nivel, los protocolos se implementan mediante herramientas de software en los nodos finales de la red, componentes de sus sistemas operativos de red.
+
 Funciones de la capa de transporte:
 
-- Proporciona mecanismos para la segmentación y el reensamblaje de datos.
-- Control de flujo.
-  - Detectar y remover paquetes duplicados.
-  - Coordinar el reenvío de un paquete si este no ha llegado correctamente a su destino.
-- Detección de errores.
-- Permite a las aplicaciones (o a las capas de aplicación y de sesión) transmitir datos con el grado de fiabilidad requerido.
-- Los protocolos están diseñados para la comunicación punto a punto.
-- A partir de este nivel, los protocolos se implementan mediante herramientas de software en los nodos finales de la red, componentes de sus sistemas operativos de red.
+- **Segmentación y desegmentación**: La capa de transporte divide los datos provenientes de la capa de sesión o de la capa de aplicación en segmentos más pequeños para su posterior transmisión. Al recibir los segmentos en el destino, la capa de transporte los reensambla en la secuencia correcta para entregar los datos completos a la capa superior.
+- **Identificación y multiplexación de aplicaciones**: La capa de transporte utiliza los puertos de origen y destino para identificar las aplicaciones que se están comunicando en los sistemas finales. La multiplexación permite que múltiples aplicaciones se comuniquen a través de un solo canal de comunicación, utilizando diferentes números de puerto para diferenciar las comunicaciones.
+- **Control de flujo**: La capa de transporte controla el flujo de datos entre los sistemas finales para asegurar una transferencia equilibrada y evitar que un sistema receptor se sature con una cantidad excesiva de datos. Esto implica el uso de técnicas como ventanas de recepción y confirmaciones de acuse de recibo para regular el flujo de datos.
+- **Control de errores**: La capa de transporte implementa mecanismos de detección y corrección de errores para garantizar la integridad de los datos transmitidos. Esto puede incluir la utilización de sumas de comprobación (checksums) para detectar errores y, en algunos casos, la retransmisión de segmentos perdidos o dañados.
+- **Control de conexión**: Dependiendo del protocolo de transporte utilizado, la capa de transporte puede establecer, mantener y finalizar conexiones lógicas entre las aplicaciones de origen y destino. Esto puede involucrar un proceso de establecimiento de conexión, intercambio de parámetros de control y liberación de la conexión una vez que se completa la comunicación.
 
 Ejemplos: TCP, UDP, ATM.
 
@@ -226,12 +244,11 @@ La capa de sesión determina si la transmisión de información entre 2 procesos
 
 Funciones a nivel de capa de sesión:
 
-- Establecimiento/terminación de la sesión. Por ejemplo: FTP-Resume.
-- Mantenimiento de la sesión, lo que permite que las aplicaciones se comuniquen entre sí durante un período de tiempo prolongado.
-- Mantenimiento de la sesión durante los períodos de inactividad de la aplicación.
-- Definir el derecho a transferir datos.
-- Transferencia ordenada de datos.
-- La **sincronización** de la transmisión se garantiza colocando puntos de control en el flujo de datos a partir de los cuales se reanuda el proceso en caso de fallos.
+- **Establecimiento y terminación de sesiones**: La capa de sesión se encarga de establecer y terminar sesiones de comunicación entre aplicaciones en sistemas finales. Esto implica la negociación de parámetros y acuerdos entre las aplicaciones antes de iniciar la comunicación y finalizar la sesión adecuadamente una vez que se completa.
+- **Sincronización**: La capa de sesión puede proporcionar mecanismos de sincronización para asegurar que los datos se transmitan y reciban en el orden correcto y que ambas aplicaciones estén al tanto del progreso de la comunicación.
+- **Control de diálogo**: La capa de sesión puede permitir el control del diálogo entre las aplicaciones, lo que implica el establecimiento de un turno de habla y el control de quién tiene el derecho de transmitir en un momento dado. Esto evita conflictos y garantiza una comunicación ordenada. Por ejemplo a través del control de un token.
+- **Manejo de interrupciones y recuperación**: La capa de sesión puede manejar interrupciones o fallas en la comunicación y proporcionar mecanismos para recuperar y reanudar la sesión correctamente después de una interrupción. La transmisión se garantiza colocando puntos de control en el flujo de datos a partir de los cuales se reanuda el proceso en caso de fallos.
+- **Mantenimiento y administración de la sesión**: La capa de sesión se encarga de mantener y administrar la sesión durante toda la comunicación. Esto puede incluir el monitoreo del estado de la sesión, la gestión de cambios o actualizaciones en los parámetros de comunicación y el manejo de eventos y excepciones que pueden ocurrir durante la sesión.
 
 {:.subsubsection}
 #### Capa de presentación
@@ -244,11 +261,10 @@ Los protocolos de la capa de aplicación utilizan TSL/SSL y se distinguen por la
 
 Funciones del nivel de capa de presentación:
 
-- Es responsable de la conversión del protocolo y de la **codificación/decodificación** de los datos. Convierte las peticiones de las aplicaciones recibidas de la capa de aplicación en un formato para su transmisión por la red, y convierte los datos recibidos de la red en un formato comprensible para las aplicaciones.
-- **Conversión de formatos de datos**. Por ejemplo de un HTML a un XML.
-- **Comprimir/descomprimir** los datos.
-- **Cifrar/descifrar** los datos. Por ejemplo: El protocolo SSL proporciona cifrado para los protocolos de la capa de aplicación.
-- Redirigir las peticiones a otro recurso de la red si no se pueden procesar localmente.
+- **Codificación y compresión de datos**: La capa de presentación se encarga de la codificación y compresión de los datos para garantizar su eficiencia en la transmisión y almacenamiento. Esto puede incluir técnicas de compresión de datos para reducir el tamaño de los datos y técnicas de codificación para convertir los datos en un formato adecuado para la transmisión.
+- **Encriptación**: La capa de presentación puede proporcionar servicios de encriptación y seguridad para garantizar la confidencialidad y la integridad de los datos transmitidos. Esto implica el uso de algoritmos criptográficos para cifrar y descifrar los datos, así como la autenticación y el control de acceso para garantizar que solo los destinatarios autorizados puedan acceder a los datos.
+- **Conversión de formato de datos**: La capa de presentación permite la conversión de formatos de datos incompatibles entre las aplicaciones que se comunican. Esto puede implicar la traducción de estructuras de datos, codificaciones de caracteres, representaciones de números, etc., para asegurar que los datos sean comprensibles y utilizable por las aplicaciones receptoras.
+- **Representación y sintaxis**: La capa de presentación se encarga de la representación y sintaxis de los datos. Esto puede incluir el manejo de diferencias en el orden de los bytes (byte ordering), la conversión de tipos de datos y la interpretación de las estructuras de datos.
 
 {:.question}
 ¿Tendría sentido desarrollar la forma de comprimir y descomprimir en cada aplicación de forma independiente?
@@ -268,16 +284,9 @@ Esto es esencial para que las aplicaciones en red, como la web, el correo electr
 
 Esencialmente, se trata de un conjunto de especificaciones que permiten a un usuario acceder a páginas para encontrar la información que necesita. En pocas palabras, el trabajo de una aplicación es proporcionar acceso a los servicios de red. El contenido de esta capa es muy variado.
 
-Funciones del nivel de capa de aplicación:
+La capa de aplicación utiliza una variedad de protocolos de aplicación para permitir la comunicación entre las aplicaciones de usuario y los servicios de red.
 
-- Es un conjunto de protocolos diversos a través de los cuales los usuarios de la red acceden a recursos compartidos y organizan el trabajo en colaboración.
-- Identificación de los usuarios por su nombre de usuario, dirección de correo electrónico, contraseñas, firmas electrónicas.
-- Permite la interacción entre la red y el usuario.
-- Permite a las aplicaciones de usuario acceder a los servicios de red, como el gestor de consultas de la base de datos, el acceso a los archivos o el reenvío de correo electrónico.
-- Es responsable de la transmisión de la información de servicio.
-- Proporciona información sobre errores a las aplicaciones.
-
-Ejemplos: HTTP, POP3, SNMP, FTP.
+Ejemplos: SMTP, POP3, IMAP, HTTP, SNMP, FTP.
 
 {:.subsection}
 ### Cabeceras asociadas a cada capa OSI
@@ -300,17 +309,6 @@ _Cabeceras de las capas del modelo de referencia OSI_
       <li>NH (Network Header): Cabecera de red</li>
       <li>DH/DT (Data link Header/ Data link Tail): Cabecera de enlace de datos</li>
     </ul>
-  </div>
-</details>
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué significa PDU?</summary>
-  <div class="card-body" markdown="1">
-
-Además del término "datos" (data) que se utiliza en el modelo OSI en las capas de aplicación, presentación y sesión, se utilizan otros términos en otras capas del modelo OSI para que sea posible identificar inmediatamente en qué capa del modelo OSI tiene lugar el procesamiento.
-
-Las normas ISO utilizan un término genérico, Unidad de Datos de Protocolo (PDU, Protocol Data Unit), para referirse a la porción de datos que es manejada por los protocolos en varias capas del Modelo de Referencia OSI. A menudo se utilizan nombres especiales, como **trama**, **paquete** o **segmento**, para denotar bloques de datos a determinados niveles.
-
   </div>
 </details>
 
