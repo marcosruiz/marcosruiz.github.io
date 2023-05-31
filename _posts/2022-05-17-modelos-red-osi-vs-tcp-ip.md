@@ -360,13 +360,20 @@ Las siete capas del modelo de referencia OSI pueden clasificarse en uno de los d
   <summary class="card-header question">¿Qué significa OSI? </summary>
   <div class="card-body" markdown="1">
 
-OSI significa Interconexión de Sistemas Abiertos (OSI, por sus siglas en inglés)
+OSI significa Open Systems Interconnection o Interconexión de Sistemas Abiertos en español.
 
   </div>
 </details>
 
-{:.question}
-¿Quién desarrolló el modelo OSI?
+<details class="card mb-2">
+  <summary class="card-header question">¿Quién desarrolló el modelo OSI?</summary>
+  <div class="card-body" markdown="1">
+
+ISO (International Organization for Standardization)
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 <details class="card mb-2">
   <summary class="card-header question">¿Cuáles son las capas del modelo OSI? </summary>
@@ -388,9 +395,9 @@ Las capas ayudan a los profesionales de la red a visualizar lo que está sucedie
 </details>
 
 {:.section}
-## Modelo TCP/IP
+## Modelo TCP IP
 
-TCP/IP, o Protocolo de Control de Transmisión/ Protocolo de Internet, es un conjunto de protocolos de comunicación que se utilizan para interconectar dispositivos de red en Internet. TCP/IP también se puede utilizar como protocolo de comunicaciones en una red privada (es decir, una intranet).
+TCP/IP (Protocolo de Control de Transmisión/Protocolo de Internet) es un conjunto de protocolos de comunicación que se utilizan para interconectar dispositivos de red en Internet. TCP/IP también se puede utilizar como protocolo de comunicaciones en una red privada, o lo que es lo mismo, una intranet.
 
 {:.question}
 ¿Qué es una intranet?
@@ -490,17 +497,8 @@ El modelo OSI ha definido la terminología común utilizada en las discusiones y
   </div>
 </details>
 
-<details class="card mb-2">
-  <summary class="card-header question">¿Por qué el modelo TCP/IP reemplazó el modelo OSI?</summary>
-  <div class="card-body" markdown="1">
-
-El modelo OSI tiene una clasificación más amplia de siete protocolos en su pila. Esto hace que los problemas de depuración sean mucho más fáciles. TCP/IP es una versión simplificada del modelo OSI en el que se basa Internet. La principal ventaja es la interoperabilidad e independencia de TCP/IP entre diferentes tipos de computadoras. Por lo tanto, TCP/IP se mantiene como estándar de la industria.
-
-  </div>
-</details>
-
 {:.question}
-¿Cuál es la diferencia entre el modelo TCP/IP y el modelo OSI?
+¿Qué diferencias hay entre la arquitectura TCP/IP y el modelo OSI?
 
 {:.question}
 La capa de Internet, ¿a quién ofrece servicio?
