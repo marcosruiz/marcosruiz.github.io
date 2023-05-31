@@ -6,7 +6,8 @@ tags: [redes locales, smr, teoría]
 img_path: /assets/img/modelos-red-osi-vs-tcp-ip/
 ---
 
-## 1. ¿Qué es un modelo o arquitectura de red?
+{:.section}
+## ¿Qué es un modelo o arquitectura de red?
 
 Un **modelo o arquitectura de red** es un conjunto organizado de capas y protocolos que la red utiliza para producir sus comunicaciones entre nodos.
 
@@ -19,14 +20,16 @@ Existen las siguientes arquitecturas de red:
 - AppleTalk
 - **TCP/IP**
 
-### 1.2. ¿Qué es un protocolo?
+{:.subsection}
+### ¿Qué es un protocolo?
 
 Un **protocolo** es un conjunto de reglas perfectamente organizadas y convenidas de mutuo acuerdo entre los participantes en una comunicación.
 
 {:.question}
 ¿Qué diferencia hay entre un protocolo y una arquitectura?
 
-### 1.3. ¿Qué es una capa?
+{:.subsection}
+### ¿Qué es una capa?
 
 Con el fin de simplificar la complejidad de cualquier red, los diseñadores han estructurado los servicios que proveen en una serie de niveles o capas.
 
@@ -34,7 +37,8 @@ Cada capa se construye sobre su predecesora. La misión de cada capa es proveer 
 
 Es decir, cada capa solo se comunica con sus capas adyacentes. A las normas de intercomunicación entre capas se les llama interfaz.
 
-## 2. Modelo OSI
+{:.section}
+## Modelo OSI
 
 El modelo OSI (Open Systems Interconnection o Interconexión de Sistemas Abiertos) es un modelo de red de la pila de protocolos de red OSI/ISO. Con este modelo, diferentes dispositivos de red pueden comunicarse entre sí. 
 
@@ -54,7 +58,8 @@ _Concepto de encapsulación_
 
 <iframe src="https://www.youtube.com/embed/ODY4q4_3Acc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### 2.1. Capas del Modelo OSI
+{:.subsection}
+### Capas del Modelo OSI
 
 Las capas del modelo de referencia OSI representan una estructura vertical en la que todas las funciones de red se dividen en siete capas. Cabe destacar que cada una de estas capas corresponde a operaciones, equipos y protocolos estrictamente descritos.
 
@@ -80,50 +85,70 @@ La primera capa es la más cercana al medio físico de transmisión mientras que
 | 2 | Capa de enlace de datos | Proporciona direccionamiento físico y procedimientos de acceso a medios                           |
 | 1 | Capa física             | Define todas las especificaciones eléctricas y físicas de los dispositivos                        |
 
-#### 2.1.1. Capa física
+{:.subsubsection}
+#### Capa física
 
 La capa física se encarga de definir las características mecánicas, eléctricas, funcionales y de procedimiento para poder establecer y liberar conexiones entre dos equipos de la red.
 
-Esta etapa es comparativamente más sencilla que las demás, porque aparte de los unos y los ceros no tiene ningún otro sistema de medida, no analiza la información y, por tanto, es el más bajo de los niveles. Es el principal responsable de la transmisión de información. El principal parámetro de la carga es el **bit**.
+Esta capa es comparativamente más sencilla que las demás, porque aparte de los unos y los ceros no tiene ningún otro sistema de medida, no analiza la información y, por tanto, es el más bajo de los niveles. Es el principal responsable de la transmisión de información. La PDU (Protocol Data Unit, Unidad de datos del protocolo) de esta capa se denomina **bit**.
 
-El objetivo principal de la capa física es representar el cero y el uno como señales, transmitidas a través del medio de transmisión de datos.
+El objetivo principal de la capa física es representar el cero y el uno como señales y transmitirlas a través del medio de transmisión de datos (un cable, el aire, etc.).
 
-Por ejemplo, hay un canal de comunicación (CW), un mensaje a enviar, un emisor y un receptor correspondientes. La capa física tiene sus propias características:
+Por ejemplo, hay un canal de comunicación, un mensaje a enviar, un emisor y un receptor correspondientes. La capa física tiene sus propias características:
 
-- El **ancho de banda**, medido en bps, es decir, la cantidad de datos que podemos transmitir por unidad de tiempo.
+- El **ancho de banda**, medido en bps (bits por segundo), es decir, la cantidad de datos que podemos transmitir por unidad de tiempo.
 - **Latencia**, el tiempo que tarda un mensaje en llegar al emisor y al receptor.
 - **Tasa de error**, si los errores son frecuentes, los protocolos deben proporcionar corrección de errores. Si se producen con poca frecuencia, pueden corregirse a un nivel superior, por ejemplo, la capa de transporte.
 
-Funciones a nivel de capa física:
+Funciones de la capa física:
 
-- Este nivel estandariza los tipos de conectores y la asignación de pines;
-- Se define la forma de representar "0" y "1";
+- Conectores: Este nivel estandariza los tipos de conectores y la asignación de pines;
+- Codificación: Se define la forma de representar "0" y "1";
+- Sincronización.
 - Es la interfaz entre el medio de red y el dispositivo de red (transmite señales eléctricas u ópticas al cable o a la radio, las recibe y las convierte en bits de datos);
 - Las funciones de la capa física se implementan en todos los dispositivos conectados a la red;
-- Equipos que operan en la capa física: Repetidor, Hub Ethernet, Módem.
-- Ejemplos de interfaces de red pertenecientes a la capa física: conectores RS-232C, RJ-11, RJ-45, AUI, VNC.
 
-#### 2.1.2. Capa de enlace de datos
+Equipos que operan en la capa física: Repetidor, Hub, Ethernet, Módem.
 
-La siguiente estación que visitará la información recordará a la aduana. A saber, se comparará la dirección IP para comprobar su compatibilidad con el medio de transmisión. También identifica y corrige las deficiencias del sistema. Para facilitar más operaciones, los bits se agrupan en **tramas**.
+Ejemplos de interfaces de red pertenecientes a la capa física: conectores RS-232C, RJ-11, RJ-45, AUI, VNC.
+
+{:.subsubsection}
+#### Capa de enlace de datos
+
+Esta capa se encarga de la transferencia de datos confiable entre nodos adyacentes en una red. Se ocupa de dividir los datos en tramas y proporcionar mecanismos para la detección y corrección de errores, así como para el control del flujo y el acceso al medio compartido. La PDU de esta capa se denomina **trama**.
 
 Funciones a nivel de enlace de datos:
 
 - Los bits cero y uno de la capa física se organizan en tramas. Una trama es un trozo de datos que tiene un valor lógico independiente;
-Organización del acceso al medio de transmisión;
+- **Control del acceso al medio** compartido de transmisión;
 - Tratamiento de los errores de transmisión de datos;
-- Define la estructura de los enlaces entre los nodos y la forma en que se dirigen;
-- Equipos que operan en la capa de enlace de datos: Switches, Bridges (puentes de red);
-- Ejemplos de protocolos de capa de enlace: Ethernet, Token Ring, FDDI, Bluetooth, Wi-Fi, Wi-Max, X.25, FrameRelay, ATM.
+- **Control de flujo** ante la congestión: Define la estructura de los enlaces entre los nodos y la forma en que se dirigen;
+
+Equipos que operan en la capa de enlace de datos: Switches, Bridges (puentes de red);
+
+Ejemplos de protocolos de capa de enlace: Ethernet, Token Ring, FDDI, Bluetooth, Wi-Fi, Wi-Max, X.25, FrameRelay, ATM.
 
 En el caso de la LAN, la capa de enlace de datos se divide en dos subcapas:
 
 - **LLC** (Logical Link Control) o Control Lógico de Enlace: Este subnivel se encarga de del control de errores, la formación de tramas, el control del diálogo entre emisor y receptor y el direccionamiento de la subcapa MAC.
 - **MAC** (Media Access Control) o Control de Acceso al Medio: Este subnivel se encarga de averiguar si el canal de comunicación está libre para realizar una transmisión. Esta subcapa se encarga del reparto de recursos de transmisión entre los nodos de la red. Las características de este nivel dependen del tipo de red.
 
-#### 2.1.3. Capa de red
+{:.subsubsection}
+#### Capa de red
 
-La principal función de este nivel es del encaminamiento, es decir, el cómo elegir la ruta más adecuada para que el **paquete** llegue a su destino. 
+La capa de red es responsable de establecer rutas y gestionar el envío de paquetes de datos a través de una red. Se encarga de la selección de rutas, el enrutamiento de paquetes y la fragmentación y reensamblaje de los mismos si es necesario. También puede proporcionar funciones de control de congestión.
+
+La PDU de esta capa se denomina **paquete** o **datagrama**.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿A qué se refiere el término datagrama?</summary>
+  <div class="card-body" markdown="1">
+
+Un datagrama de red es una unidad de datos que contiene información de encabezado, que incluye la dirección IP de origen y destino, y el propio contenido de los datos. Estos datagramas son enrutados individualmente a través de la red de forma independiente, y pueden seguir diferentes rutas para llegar a su destino. No hay garantía de que todos los datagramas lleguen en orden o que todos ellos lleguen a su destino.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 Cada destino está identificado unívocamente en la subred por una dirección lógica.
 
@@ -137,70 +162,79 @@ La tarea principal es crear redes basadas en diferentes tecnologías de red: Eth
 
 Funciones a nivel de capa de red:
 
-- Determina la ruta de transmisión de datos;
-- Define la ruta más corta;
-- Conmutación;
-- Enrutamiento;
+- Determina la ruta de transmisión de datos.
+- Define la ruta más corta.
+- Conmutación de paquetes.
+- Enrutamiento o encaminamiento.
 - Control de fallos y la congestión de la red.
+
+{:.question}
+¿Qué significa conmutar? ¿Qué diferencia hay entre la conmutación de paquetes y la conmutación de circuitos?
 
 Resuelve los problemas:
 
-- Transmisión de mensajes a través de enlaces con una estructura no estándar;
-- Conciliación de las diferentes tecnologías;
-- Facilitar el direccionamiento en grandes redes;
-- Creando barreras al tráfico no deseado entre redes.
+- Transmisión de mensajes a través de enlaces con una estructura no estándar.
+- Conciliación de las diferentes tecnologías.
+- Facilitar el direccionamiento en grandes redes.
+- Crear barreras al tráfico no deseado entre redes a través de firewalls.
 
 Equipo de la capa de red: un router.
 
 Tipos de protocolos de capa de red:
 
-- Protocolos de red (propagación de paquetes a través de la red: IP , ICMP);
-- Protocolos de enrutamiento: RIP, OSPF;
+- Protocolos de red (propagación de paquetes a través de la red: IP , ICMP).
+- Protocolos de enrutamiento: RIP, OSPF.
 - Protocolos de resolución de direcciones: ARP.
 
-#### 2.1.4. Capa de transporte
+{:.subsubsection}
+#### Capa de transporte
 
-La capa de transporte lleva a cabo las comunicaciones entre ordenadores. En esta capa ya no tenemos en cuenta los puntos intermedios que hay entre emisor y receptor.
+Esta capa se encarga de la entrega de datos de extremo a extremo (o punto a punto) de manera confiable y eficiente. Es decir, en esta capa ya no tenemos en cuenta los puntos intermedios que hay entre emisor y receptor. La capa de transporte lleva a cabo las comunicaciones entre un programa emisor y otro receptor. En esta capa solo se tienen en cuenta la fuente, el destino y el tipo de servicio solicitado.
 
-La capa de transporte lleva a cabo las comunicaciones entre un programa emisor y otro receptor.
-
-En esta capa solo se tienen en cuenta la fuente, el destino y el tipo de servicio solicitado.
+La PDU de la capa de transporte se denomina **segmento** (en general) o **datagrama** (en caso de UDP).
 
 Tenemos la siguiente tarea, un ordenador que está conectado a una red compleja recibe un paquete, hay muchas aplicaciones de red que se ejecutan en el ordenador (navegador web, Skype, correo), necesitamos entender qué aplicación necesita enviar este paquete. La interacción entre las aplicaciones de la red es gestionada por la capa de transporte.
 
 La capa de transporte se caracteriza por la comunicación directa entre un ordenador y la capa de transporte del otro ordenador, y el resto de las capas se comunican a través de los enlaces de la cadena.
 
-Esta capa proporciona una conexión de extremo a extremo entre dos hosts que se comunican. La capa de transporte es independiente de la red y permite ocultar los detalles de la comunicación de la red a los desarrolladores de aplicaciones.
-
-Los puertos utilizados para el direccionamiento en la capa de transporte son números del 1 al 65535. Los puertos se escriben así: 192.168.1.3:80 (dirección IP y puerto).
+Esta capa proporciona una conexión de extremo a extremo entre dos aplicaciones de dos hosts que se comunican. La capa de transporte es independiente de la red y permite ocultar los detalles de la comunicación de la red a los desarrolladores de aplicaciones.
 
 Funciones de la capa de transporte:
 
-- Permite a las aplicaciones (o a las capas de aplicación y de sesión) transmitir datos con el grado de fiabilidad requerido, compensando las deficiencias de fiabilidad de las capas inferiores;
-- Multiplexación y demultiplexación, es decir, recogida y desmontaje de paquetes;
-- Los protocolos están diseñados para la comunicación punto a punto;
-- A partir de este nivel, los protocolos se implementan mediante herramientas de software en los nodos finales de la red, componentes de sus sistemas operativos de red;
-- Ejemplos: TCP , UDP.
+- Proporciona mecanismos para la segmentación y el reensamblaje de datos.
+- Control de flujo.
+  - Detectar y remover paquetes duplicados.
+  - Coordinar el reenvío de un paquete si este no ha llegado correctamente a su destino.
+- Detección de errores.
+- Permite a las aplicaciones (o a las capas de aplicación y de sesión) transmitir datos con el grado de fiabilidad requerido.
+- Los protocolos están diseñados para la comunicación punto a punto.
+- A partir de este nivel, los protocolos se implementan mediante herramientas de software en los nodos finales de la red, componentes de sus sistemas operativos de red.
 
-#### 2.1.5. Capa de sesión
+Ejemplos: TCP, UDP, ATM.
+
+{:.question}
+¿Qué es un puerto?
+
+{:.subsubsection}
+#### Capa de sesión
 
 Una sesión es un conjunto de interacciones en red centradas en una única tarea.
 
 La creación de redes se ha vuelto más compleja y no consiste en simples preguntas y respuestas como antes. Por ejemplo, al cargar una página web para mostrarla en un navegador, primero hay que cargar el texto de la página web en sí (.html), el archivo de estilo (.css) que describe los elementos de diseño de la página web, la carga de imágenes. Por lo tanto, para completar la tarea, para cargar una página web, es necesario implementar varias operaciones de red separadas.
 
-Basado en la sesión determina si la transmisión de información entre 2 procesos de aplicación será semidúplex (transmitir y recibir datos por turnos); o dúplex (transmitir y recibir información al mismo tiempo).
+La capa de sesión determina si la transmisión de información entre 2 procesos de aplicación será semidúplex (transmitir y recibir datos por turnos); o full-dúplex (transmitir y recibir información al mismo tiempo).
 
 Funciones a nivel de capa de sesión:
 
-- Mantenimiento de la sesión, lo que permite que las aplicaciones se comuniquen entre sí durante un período de tiempo prolongado;
-- Establecimiento/terminación de la sesión;
-- Intercambio de información;
-- Sincronización de tareas;
-- Definir el derecho a transferir datos;
+- Establecimiento/terminación de la sesión. Por ejemplo: FTP-Resume.
+- Mantenimiento de la sesión, lo que permite que las aplicaciones se comuniquen entre sí durante un período de tiempo prolongado.
 - Mantenimiento de la sesión durante los períodos de inactividad de la aplicación.
-- La sincronización de la transmisión se garantiza colocando puntos de control en el flujo de datos a partir de los cuales se reanuda el proceso en caso de fallos.
+- Definir el derecho a transferir datos.
+- Transferencia ordenada de datos.
+- La **sincronización** de la transmisión se garantiza colocando puntos de control en el flujo de datos a partir de los cuales se reanuda el proceso en caso de fallos.
 
-#### 2.1.6. Capa de presentación
+{:.subsubsection}
+#### Capa de presentación
 
 Para describir esta capa, se utiliza la traducción automática en la red de diferentes idiomas. Por ejemplo, marcas un número de teléfono, hablas en español, la red traduce automáticamente al francés, transmite la información a España y la persona de allí coge el teléfono y escucha tu pregunta en español. Es una tarea que aún no se ha llevado a cabo.
 
@@ -210,37 +244,43 @@ Los protocolos de la capa de aplicación utilizan TSL/SSL y se distinguen por la
 
 Funciones del nivel de capa de presentación:
 
-- Es responsable de la conversión del protocolo y de la codificación/decodificación de los datos. Convierte las peticiones de las aplicaciones recibidas de la capa de aplicación en un formato para su transmisión por la red, y convierte los datos recibidos de la red en un formato comprensible para las aplicaciones;
-- Comprimir/descomprimir o codificar/decodificar los datos;
+- Es responsable de la conversión del protocolo y de la **codificación/decodificación** de los datos. Convierte las peticiones de las aplicaciones recibidas de la capa de aplicación en un formato para su transmisión por la red, y convierte los datos recibidos de la red en un formato comprensible para las aplicaciones.
+- **Conversión de formatos de datos**. Por ejemplo de un HTML a un XML.
+- **Comprimir/descomprimir** los datos.
+- **Cifrar/descifrar** los datos. Por ejemplo: El protocolo SSL proporciona cifrado para los protocolos de la capa de aplicación.
 - Redirigir las peticiones a otro recurso de la red si no se pueden procesar localmente.
 
-Ejemplo: el protocolo SSL (proporciona mensajería secreta para los protocolos de la capa de aplicación TCP/IP).
+{:.question}
+¿Tendría sentido desarrollar la forma de comprimir y descomprimir en cada aplicación de forma independiente?
 
-#### 2.1.7. Capa de aplicación
+{:.subsubsection}
+#### Capa de aplicación
 
 En esta capa se definen los protocolos que utilizan las aplicaciones y procesos que usen los usuarios.
 
 La capa de aplicación puede tener las siguientes funciones:
 
 - Establecer mecanismos de comunicación coherentes para los procesos (local vs distribuido).
-- Aquí se entiende por aplicación a un modo específico de comunicarse: correo electrónico, descarga de ficheros, consulta de una página web, etc.
+- Aquí es donde los programas de usuario interactúan con la red, utilizando protocolos de aplicación.
 - Cada forma de comunicación da paso a uno o varios protocolos: SMTP, POP, IMAP, HTTP, FTP, etc.
 
-Esto es esencial para que las aplicaciones en red, como la web, el correo electrónico, Skype, etc., se comuniquen entre sí.
+Esto es esencial para que las aplicaciones en red, como la web, el correo electrónico, Skype, etc. se comuniquen entre sí.
 
 Esencialmente, se trata de un conjunto de especificaciones que permiten a un usuario acceder a páginas para encontrar la información que necesita. En pocas palabras, el trabajo de una aplicación es proporcionar acceso a los servicios de red. El contenido de esta capa es muy variado.
 
 Funciones del nivel de capa de aplicación:
 
-- Es un conjunto de protocolos diversos a través de los cuales los usuarios de la red acceden a recursos compartidos y organizan el trabajo en colaboración;
-- Identificación de los usuarios por su nombre de usuario, dirección de correo electrónico, contraseñas, firmas electrónicas;
-- Permite la interacción entre la red y el usuario;
-- Permite a las aplicaciones de usuario acceder a los servicios de red, como el gestor de consultas de la base de datos, el acceso a los archivos o el reenvío de correo electrónico;
-- Es responsable de la transmisión de la información de servicio;
-- Proporciona información sobre errores a las aplicaciones;
-- Ejemplos: HTTP, POP3, SNMP, FTP.
+- Es un conjunto de protocolos diversos a través de los cuales los usuarios de la red acceden a recursos compartidos y organizan el trabajo en colaboración.
+- Identificación de los usuarios por su nombre de usuario, dirección de correo electrónico, contraseñas, firmas electrónicas.
+- Permite la interacción entre la red y el usuario.
+- Permite a las aplicaciones de usuario acceder a los servicios de red, como el gestor de consultas de la base de datos, el acceso a los archivos o el reenvío de correo electrónico.
+- Es responsable de la transmisión de la información de servicio.
+- Proporciona información sobre errores a las aplicaciones.
 
-### 2.2. Cabeceras asociadas a cada capa OSI
+Ejemplos: HTTP, POP3, SNMP, FTP.
+
+{:.subsection}
+### Cabeceras asociadas a cada capa OSI
 
 Cuando un usuario necesita transmitir datos a un destino, el sistema de red añade información de control (cabeceras) para cada uno de los servicios que utilizará la red para transmitir dichos datos.
 
@@ -281,17 +321,34 @@ Las normas ISO utilizan un término genérico, Unidad de Datos de Protocolo (PDU
 ¿Qué es un paquete?
 
 {:.question}
+¿Qué es un datagrama?
+
+{:.question}
 ¿Qué es un segmento?
 
-### 2.3. Entidades
+{:.subsection}
+### Entidades
 
 Una entidad es cualquier elemento del sistema, perteneciente a alguna de las capas del modelo OSI, que interviene activamente en la comunicación.
 
-Las entidades que comparten el mismo protocolo se les llama entidades par.
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es una entidad par?</summary>
+  <div class="card-body" markdown="1">
+
+El término entidad par se refiere a una entidad o dispositivo que se encuentra en el mismo nivel o capa dentro del modelo OSI. En otras palabras, una entidad par es un par de dispositivos que se comunican directamente entre sí en el mismo nivel del modelo de capas.
+
+El concepto de entidad par es útil para comprender cómo se organiza y se distribuye la comunicación en el modelo de capas de red, y cómo diferentes dispositivos en la misma capa se conectan y colaboran para garantizar una comunicación efectiva y confiable en una red.
+
+En resumen, las entidades que comparten el mismo protocolo se les llama entidades par.
 
 Por ejemplo: Un cliente web y un servidor web usan el protocolo HTTP, por lo tanto son entidades pares de la capa de aplicación.
 
-### 2.4. Conclusiones sobre el modelo OSI
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+{:.subsection}
+### Conclusiones sobre el modelo OSI
 
 Las siete capas del modelo de referencia OSI pueden clasificarse en uno de los dos grupos en términos de funcionalidad:
 
@@ -310,11 +367,14 @@ OSI significa Interconexión de Sistemas Abiertos (OSI, por sus siglas en inglé
   </div>
 </details>
 
+{:.question}
+¿Quién desarrolló el modelo OSI?
+
 <details class="card mb-2">
   <summary class="card-header question">¿Cuáles son las capas del modelo OSI? </summary>
   <div class="card-body" markdown="1">
 
-Las capas son: 
+Las capas son:
 
 - Capa 1: Física.
 - Capa 2: Enlace de datos.
@@ -322,16 +382,17 @@ Las capas son:
 - Capa 4: Transporte.
 - Capa 5: Sesión.
 - Capa 6: Presentación.
-- Capa 7: Aplicación. 
+- Capa 7: Aplicación.
 
 Las capas ayudan a los profesionales de la red a visualizar lo que está sucediendo dentro de sus redes y pueden ayudar a los administradores de red a reducir los problemas.
 
   </div>
 </details>
 
-## 3. Modelo TCP/IP
+{:.section}
+## Modelo TCP/IP
 
-TCP/IP, o Protocolo de control de transmisión/Protocolo de Internet, es un conjunto de protocolos de comunicación que se utilizan para interconectar dispositivos de red en Internet. TCP/IP también se puede utilizar como protocolo de comunicaciones en una red privada (una intranet o una extranet).
+TCP/IP, o Protocolo de Control de Transmisión/ Protocolo de Internet, es un conjunto de protocolos de comunicación que se utilizan para interconectar dispositivos de red en Internet. TCP/IP también se puede utilizar como protocolo de comunicaciones en una red privada (es decir, una intranet).
 
 {:.question}
 ¿Qué es una intranet?
@@ -347,30 +408,32 @@ Los dos protocolos principales en el conjunto de protocolos de Internet cumplen 
 
 <iframe src="https://www.youtube.com/embed/JQDCL17sARA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### 3.1. ¿Cómo funciona TCP/IP?
+{:.subsection}
+### ¿Cómo funciona TCP/IP?
 
 TCP/IP utiliza el modelo de comunicación cliente/servidor en el que un usuario o máquina (un cliente) recibe un servicio (como enviar una página web) por otra computadora (un servidor) en la red.
 
 ![img-description](comunicacionClienteServidor.png)
 _Comunicación cliente/servidor_
 
-Colectivamente, el conjunto de protocolos TCP/IP se clasifica como sin estado, lo que significa que cada solicitud de cliente se considera nueva porque no está relacionada con solicitudes anteriores. Estar sin estado libera rutas de red para que puedan usarse de forma continua.
+Colectivamente, el conjunto de protocolos TCP/IP se clasifica como sin estado, lo que significa que cada solicitud de cliente se considera nueva porque no está relacionada con solicitudes anteriores. Estar sin estado libera rutas de red (no como con la línea telefónica) para que puedan usarse de forma continua.
 
 La capa de transporte en sí, sin embargo, tiene estado. Transmite un solo mensaje, y su conexión permanece en su lugar hasta que todos los paquetes en un mensaje hayan sido recibidos y reensamblados en el destino.
 
 El modelo TCP/IP difiere ligeramente del modelo de interconexión de sistemas abierto (OSI) de siete capas diseñado después, que define cómo las aplicaciones pueden comunicarse a través de una red.
 
-### 3.2. Capas del modelo TCP/IP
+{:.subsection}
+### Capas del modelo TCP/IP
 
 La funcionalidad TCP/IP se divide en cuatro capas, cada una de las cuales incluye protocolos específicos.
 
 ![img-description](arquitecturaTcpIp.png)
 _Protocolos de la arquitectura TCP/IP_
 
-1. **Aplicación**: proporciona aplicaciones con intercambio de datos estandarizado. Sus protocolos incluyen el Protocolo de transferencia de hipertexto (HTTP), el Protocolo de transferencia de archivos (FTP), el Protocolo de oficina de correo 3 (POP3), el Protocolo simple de transferencia de correo (SMTP) y el Protocolo simple de administración de red (SNMP).
-1. **Transporte**: es responsable de mantener las comunicaciones de extremo a extremo a través de la red. TCP maneja las comunicaciones entre hosts y proporciona control de flujo, multiplexación y confiabilidad. Los protocolos de transporte incluyen TCP y User Datagram Protocol (UDP), que a veces se usa en lugar de TCP para fines especiales.
-1. **Red**, también llamada capa de Internet, se ocupa de los paquetes y conecta redes independientes para transportar los paquetes a través de los límites de la red. Los protocolos de la capa de red son el IP y el Protocolo de mensajes de control de Internet (ICMP), que se utilizan para informar errores.
-1. **Física**: consiste en protocolos que operan solo en un enlace: el componente de red que interconecta nodos o hosts en la red. Los protocolos en esta capa incluyen Ethernet para redes de área local (LAN) y el Protocolo de resolución de direcciones (ARP).
+- **Capa de aplicación o capa 7**: proporciona aplicaciones con intercambio de datos estandarizado. Sus protocolos incluyen el Protocolo de transferencia de hipertexto (HTTP), el Protocolo de transferencia de archivos (FTP), el Protocolo de oficina de correo 3 (POP3), el Protocolo simple de transferencia de correo (SMTP) y el Protocolo simple de administración de red (SNMP).
+- **Capa de transporte o capa 4**: es responsable de mantener las comunicaciones de extremo a extremo a través de la red. TCP maneja las comunicaciones entre hosts y proporciona control de flujo, multiplexación y confiabilidad. Los protocolos de transporte incluyen TCP y User Datagram Protocol (UDP), que a veces se usa en lugar de TCP para fines especiales.
+- **Capa de Internet o capa 3**: se ocupa de los paquetes y conecta redes independientes para transportar los paquetes a través de los límites de la red. Los protocolos de la capa de red son el IP y el Protocolo de mensajes de control de Internet (ICMP), que se utilizan para informar errores.
+- **Capa de interfaz de red o capas 1 y 2**: consiste en protocolos que operan solo en un enlace: el componente de red que interconecta nodos o hosts en la red. Los protocolos en esta capa incluyen Ethernet para redes de área local (LAN) y el Protocolo de resolución de direcciones (ARP).
 
 ![Envío de mensajes con el modelo TCP/IP](modeloCapasTcp.png)
 _Envío de mensajes con el modelo TCP/IP_
@@ -386,14 +449,25 @@ _Capas y Reddit_
 </details>
 
 {:.question}
-¿Cuándo encapsulamos? 
+¿Cuándo encapsulamos?
 
 {:.question}
 ¿Cuándo desencapsulamos?
 
-## 4. OSI vs TCP/IP
+{:.section}
+## OSI vs TCP/IP
 
-El modelo OSI es un modelo teórico porque en el mundo no se usa ninguna versión real de la pila OSI. El modelo OSI es útil principalmente como una forma de entender los diferentes tipos de trabajo que deben realizarse en comunicaciones de red exitosas, y como un marco de referencia común para las discusiones sobre problemas y funciones de la red.
+El modelo OSI es un modelo teórico porque en el mundo no se usa ninguna versión real de la pila OSI.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Por qué es útil e modelo OSI?</summary>
+  <div class="card-body" markdown="1">
+
+El modelo OSI es útil principalmente como una forma de entender los diferentes tipos de trabajo que deben realizarse en comunicaciones de red exitosas, y como un marco de referencia común para las discusiones sobre problemas y funciones de la red.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 <iframe src="https://www.youtube.com/embed/iNh-62Mf0O4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -404,7 +478,7 @@ _Comparación del modelo OSI con el modelo TCP/IP_
   <summary class="card-header question">¿Qué modelo es mejor, el modelo OSI o TCP/IP? </summary>
   <div class="card-body" markdown="1">
 
-Ambos modelos tienen sus propias ventajas y desventajas. Si alguien se centra en la documentación debería preferir el modelo OSI sobre el modelo TCP / IP. Pero, si alguien se centra más en la implementación, confiabilidad y seguridad de la red, debería preferir el modelo TCP/IP.
+Ambos modelos tienen sus propias ventajas y desventajas. Si alguien se centra en la documentación debería preferir el modelo OSI sobre el modelo TCP/IP. Pero, si alguien se centra más en la implementación, confiabilidad y seguridad de la red, debería preferir el modelo TCP/IP.
 
   </div>
 </details>
@@ -422,7 +496,7 @@ El modelo OSI ha definido la terminología común utilizada en las discusiones y
   <summary class="card-header question">¿Por qué el modelo TCP/IP reemplazó el modelo OSI?</summary>
   <div class="card-body" markdown="1">
 
-El modelo OSI tiene una clasificación más amplia de siete protocolos en su pila. Esto hace que los problemas de depuración sean mucho más fáciles. TCP/IP es la versión simplificada del modelo OSI en el que se basa Internet. La principal ventaja es la interoperabilidad e independencia de TCP/IP entre diferentes tipos de computadoras. Por lo tanto, TCP/IP se mantiene como estándar de la industria.
+El modelo OSI tiene una clasificación más amplia de siete protocolos en su pila. Esto hace que los problemas de depuración sean mucho más fáciles. TCP/IP es una versión simplificada del modelo OSI en el que se basa Internet. La principal ventaja es la interoperabilidad e independencia de TCP/IP entre diferentes tipos de computadoras. Por lo tanto, TCP/IP se mantiene como estándar de la industria.
 
   </div>
 </details>
@@ -433,8 +507,17 @@ El modelo OSI tiene una clasificación más amplia de siete protocolos en su pil
 {:.question}
 La capa de Internet, ¿a quién ofrece servicio?
 
+<details class="card mb-2">
+  <summary class="card-header question"><¿Es el modelo OSI una arquitectura de red?/summary>
+  <div class="card-body" markdown="1">
 
-## 5. Bibliografía
+No, ya que no define protocolos específicos en cada una de sus capas.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+## Bibliografía
 
 - [Modelo OSI (Wikipedia)](https://es.wikipedia.org/wiki/Modelo_OSI)
 - [Qué es el Modelo OSI: Capas y Explicación](https://ccnadesdecero.es/que-es-modelo-osi/)
