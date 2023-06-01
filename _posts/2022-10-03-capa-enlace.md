@@ -69,7 +69,6 @@ PPP y de difusión.
   </div>
 </details>
 
-
 <details class="card mb-2">
   <summary class="card-header question">¿Cuándo hay un enlace lógico y no físico?</summary>
   <div class="card-body" markdown="1">
@@ -317,10 +316,11 @@ Un dominio de colisión es un segmento físico de una red en el que las estacion
 {:.subsection}
 ### LAN cableadas
 
-- **Ethernet DIX**: El protocolo Ethernet original.
+- **Ethernet o Ethernet DIX**: El protocolo Ethernet original.
+- **Ethernet II o Ethernet DIX-II**: La versión del protocolo Ethernet DIX compatible con el estándar IEEE 802.3.
 - **IEEE 802.3**: Estándares internacionales basados en el protocolo Ethernet. Utiliza CSMA/CD.
-- **Ethernet DIX-II**: La versión del protocolo Ethernet DIX compatible con el estándar IEEE 802.3.
-- **Ethernet II**: La versión más reciente del estándar IEEE 802.3 donde pueden coexistir IEEE 802.3 y Ethernet DIX-II.
+- **IEEE 802.3u**: Fast Ethernet
+- **IEEE 802.3bp**: Gigabit Ethernet
 - **Token Ring y el estándar IEEE 802.5**: Topología física en estrella, sin embargo, internamente funciona como un anillo. El protocolo es del tipo paso del testigo.
 - **FDDI**: Protocolo de acceso al medio de doble anillo de fibra óptica.
 
@@ -347,7 +347,7 @@ _Formato de una trama Ethernet II_
 
 - **Preamble**: Sincronización bit "10101010" (x7).
 - **SOF**: Delimitador de comienzo de trama "10101011".
-- **Destination/source address**: 
+- **Destination/source address**:
   - 3 bytes -> OUI: Identificador organización.
   - En OUI hay 2 bits interesantes:
   - El bit de Unicast (si es 0) o Multicast (si es 1)
@@ -356,7 +356,7 @@ _Formato de una trama Ethernet II_
   - Notación (por ejemplo): F2:3E:C1:8A:B1:01
   - Dirección de difusión (broadcast) FF:FF:FF:FF:FF:FF. Este tipo de dirección se utiliza para que todos los equipos conectados en el mismo dominio de difusión recojan la trama.
 - **Lenght / Ethertype**: Para IEEE este campo pasó a significar longitud del campo DATA de la trama. Para diferenciar a qué se refiere (si a Tipo o a Longitud) un valor en ese campo se llegó a esto:
-  - DIX Valores >= 1536.
+  - DIX Valores ≥ 1536.
   - IEEE Valores <= 1500.
 - **DATA**:
   - Trama mínima de 64 bytes (512 bits -> 51,2 μs).
@@ -364,7 +364,20 @@ _Formato de una trama Ethernet II_
 - **FCS**: Secuencia de chequeo de trama.
 
 {:.question}
+¿Se pueden enviar tramas Ethernet sin ningún dato?
+
+{:.question}
 ¿Por qué existen dos tipos tramas: DIX-II e IEEE 802.3?
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Es lo mismo IEEE 802.3 que 802.3?</summary>
+  <div class="card-body" markdown="1">
+
+Si.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 {:.question}
 ¿Qué método de acceso al medio usa Ethernet II? ¿CSMA/CD o CSMA/CA?
@@ -398,4 +411,3 @@ Leer el artículo [Dispositivos específicos de la red local](/posts/dispositivo
 - <https://www.sapalomera.cat/moodlecf/RS/1/course/module4/4.3.1.2/4.3.1.2.html>
 - <https://www.sapalomera.cat/moodlecf/RS/1/course/module5/5.1.1.1/5.1.1.1.html>
 - <https://www.ingenieriasystems.com/2016/12/Subcapas-LLC-y-MAC-CCNA1-V5-CISCO-C5.html>
-

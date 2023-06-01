@@ -355,7 +355,7 @@ Las siete capas del modelo de referencia OSI pueden clasificarse en uno de los d
 - Un grupo en el que las capas están principalmente orientadas a la aplicación. Capas de sesión, presentación y aplicación: están orientadas a la aplicación y son en gran medida independientes del equipo de red específico utilizado en la red informática, es decir, independientes de la red.
 
 {:.question}
-¿Existe la capa 8?
+¿Qué es un error de capa 8?
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué significa OSI? </summary>
