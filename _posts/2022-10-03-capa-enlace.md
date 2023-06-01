@@ -340,10 +340,10 @@ _Tecnologías Ethernet en el modelo OSI_
 ¿En que frecuencias trabaja el Bluetooth? ¿Son más altas o mas bajas que las del Wifi?
 
 {:.section}
-## Trama Ethernet II
+## Tramas Ethernet
 
 ![img-description](ethernetY8023.png)
-_Formato de una trama Ethernet II_
+_Formato de tramas Ethernet_
 
 - **Preamble**: Sincronización bit "10101010" (x7).
 - **SOF**: Delimitador de comienzo de trama "10101011".
@@ -380,7 +380,7 @@ Si.
 </details>
 
 {:.question}
-¿Qué método de acceso al medio usa Ethernet II? ¿CSMA/CD o CSMA/CA?
+¿Qué método de acceso al medio usa Ethernet DIX-II? ¿CSMA/CD o CSMA/CA?
 
 {:.question}
 ¿Por qué los valores DIX en el campo Lenght / Ethertype está puesto en 1536?
@@ -394,7 +394,7 @@ Los dispositivos de la capa de enlace son:
 - Conmutadores / switches
 - Puntos de acceso inalámbricos / access points
 
-Leer el artículo [Dispositivos específicos de la red local](/posts/dispositivos-especificos-de-la-red-local/) correspondiente a estos dispostivos.
+Leer el artículo [Dispositivos específicos de la red local](/posts/dispositivos-especificos-de-la-red-local/) correspondiente a estos dispositivos.
 
 {:.section}
 ## Bibliografía
