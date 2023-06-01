@@ -1,5 +1,5 @@
 ---
-title: "Modelos OSI vs Arquitectura TCP/IP"
+title: "Modelos OSI vs arquitectura TCP/IP"
 date: 2022-05-17 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, smr, teoría]
@@ -299,16 +299,17 @@ Cada capa maneja una unidad de datos que coincide con la información que le pas
 _Cabeceras de las capas del modelo de referencia OSI_
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Qué significa AH, PH, SH, TH NH, NT ?</summary>
-  <div class="card-body">
-    <ul>
-      <li>AH (Application Header): Cabecera de aplicación</li>
-      <li>PH (Presentation Header): Cabecera de presentación</li>
-      <li>SH (Session Header): Cabecera de sesión</li>
-      <li>TH (Transport Header): Cabecera de transporte</li>
-      <li>NH (Network Header): Cabecera de red</li>
-      <li>DH/DT (Data link Header/ Data link Tail): Cabecera de enlace de datos</li>
-    </ul>
+  <summary class="card-header question">¿Qué significa AH, PH, SH, TH NH, NT?</summary>
+  <div class="card-body" markdown="1">
+
+- AH (Application Header): Cabecera de aplicación
+- PH (Presentation Header): Cabecera de presentación
+- SH (Session Header): Cabecera de sesión
+- TH (Transport Header): Cabecera de transporte
+- NH (Network Header): Cabecera de red
+- DH/DT (Data link Header/ Data link Tail): Cabecera de enlace de datos
+
+<!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
 
@@ -435,11 +436,6 @@ La funcionalidad TCP/IP se divide en cuatro capas, cada una de las cuales incluy
 ![img-description](arquitecturaTcpIp.png)
 _Protocolos de la arquitectura TCP/IP_
 
-- **Capa de aplicación o capa 7**: proporciona aplicaciones con intercambio de datos estandarizado. Sus protocolos incluyen el Protocolo de transferencia de hipertexto (HTTP), el Protocolo de transferencia de archivos (FTP), el Protocolo de oficina de correo 3 (POP3), el Protocolo simple de transferencia de correo (SMTP) y el Protocolo simple de administración de red (SNMP).
-- **Capa de transporte o capa 4**: es responsable de mantener las comunicaciones de extremo a extremo a través de la red. TCP maneja las comunicaciones entre hosts y proporciona control de flujo, multiplexación y confiabilidad. Los protocolos de transporte incluyen TCP y User Datagram Protocol (UDP), que a veces se usa en lugar de TCP para fines especiales.
-- **Capa de Internet o capa 3**: se ocupa de los paquetes y conecta redes independientes para transportar los paquetes a través de los límites de la red. Los protocolos de la capa de red son el IP y el Protocolo de mensajes de control de Internet (ICMP), que se utilizan para informar errores.
-- **Capa de interfaz de red o capas 1 y 2**: consiste en protocolos que operan solo en un enlace: el componente de red que interconecta nodos o hosts en la red. Los protocolos en esta capa incluyen Ethernet para redes de área local (LAN) y el Protocolo de resolución de direcciones (ARP).
-
 ![Envío de mensajes con el modelo TCP/IP](modeloCapasTcp.png)
 _Envío de mensajes con el modelo TCP/IP_
 
@@ -458,6 +454,26 @@ _Capas y Reddit_
 
 {:.question}
 ¿Cuándo desencapsulamos?
+
+{:.subsubsection}
+#### Capa de aplicación
+
+La capa de aplicación o capa 7 proporciona aplicaciones con intercambio de datos estandarizado. Sus protocolos incluyen el Protocolo de transferencia de hipertexto (HTTP), el Protocolo de transferencia de archivos (FTP), el Protocolo de oficina de correo 3 (POP3), el Protocolo simple de transferencia de correo (SMTP) y el Protocolo simple de administración de red (SNMP).
+
+{:.subsubsection}
+#### Capa de transporte
+
+La capa de transporte o capa 4 es responsable de mantener las comunicaciones de extremo a extremo a través de la red. TCP maneja las comunicaciones entre hosts y proporciona control de flujo, multiplexación y confiabilidad. Los protocolos de transporte incluyen TCP y User Datagram Protocol (UDP), que a veces se usa en lugar de TCP para fines especiales.
+
+{:.subsubsection}
+#### Capa de Internet
+
+La capa de Internet o capa 3 se ocupa de los paquetes y conecta redes independientes para transportar los paquetes a través de los límites de la red. Los protocolos de la capa de red son el IP y el Protocolo de mensajes de control de Internet (ICMP), que se utilizan para informar errores.
+
+{:.subsubsection}
+#### Capa de interfaz de red
+
+La capa de interfaz de red o capas 1 y 2 consiste en protocolos que operan solo en un enlace: el componente de red que interconecta nodos o hosts en la red. Los protocolos en esta capa incluyen Ethernet para redes de área local (LAN) y el Protocolo de resolución de direcciones (ARP).
 
 {:.section}
 ## OSI vs TCP/IP
@@ -512,6 +528,9 @@ No, ya que no define protocolos específicos en cada una de sus capas.
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
+
+{:.question}
+A día de hoy ¿se usa la arquitectura TCP/IP o el modelo OSI?
 
 ## Bibliografía
 

@@ -99,8 +99,8 @@ Leer el artículo [Capa de enlace de datos](https://es.wikipedia.org/wiki/Capa_d
 
 La capa de enlace de datos se divide en dos subniveles:
 
-- MAC
-- LLC
+- MAC (Media Access Control)
+- LLC (Logical Link Control)
 
 ![img-description](llcYMac.png)
 _Subniveles de la capa de enlace_
@@ -110,7 +110,7 @@ _Subniveles de la capa de enlace_
 {:.subsection}
 ### MAC
 
-El subnivel MAC es el **más cercano al nivel físico**. Se trata de la subcapa inferior, que define los procesos de acceso al medio que realiza el hardware. Proporciona el direccionamiento de la capa de enlace de datos y la delimitación de los datos de acuerdo con los requisitos de señalización física del medio y con el tipo de protocolo de capa de enlace de datos en uso. Sus funciones son:
+El subnivel MAC (Media Access Control, en español, control de acceso al medio) es el **más cercano al nivel físico**. Se trata de la subcapa inferior, que define los procesos de acceso al medio que realiza el hardware. Proporciona el direccionamiento de la capa de enlace de datos y la delimitación de los datos de acuerdo con los requisitos de señalización física del medio y con el tipo de protocolo de capa de enlace de datos en uso. Sus funciones son:
 
 - **Empaquetar los datos en tramas** la información que le llega del subnivel LLC, junto con la información de direccionamiento y detección de errores.
 - **Desempaquetar tramas**.
@@ -119,7 +119,7 @@ El subnivel MAC es el **más cercano al nivel físico**. Se trata de la subcapa 
 {:.subsection}
 ### LLC
 
-LLC ("Logical Link Control") o Control de enlace lógico es el encargado de multiplexar protocolos sobre un mismo enlace, al control de flujo y a la retransmisión de tramas en caso de error. Sus funciones son:
+LLC (Logical Link Control, en español, control de enlace lógico) es el encargado de multiplexar protocolos sobre un mismo enlace, al control de flujo y a la retransmisión de tramas en caso de error. Sus funciones son:
 
 - **Proporcionar al nivel de red una interfaz uniforme**, es decir, independiente de la topología de red. Es importante destacar que la subcapa LLC es independiente de la tecnología de acceso al medio físico utilizada en Ethernet. Esto significa que la subcapa LLC es la misma para diferentes variantes de Ethernet, como Ethernet de cobre, Ethernet óptico y Wi-Fi. Por lo tanto, la subcapa LLC proporciona una interfaz uniforme y consistente para el intercambio de datos a nivel lógico en la red Ethernet.
 - **Control de errores**, es decir, comprobación y reenvío de tramas.
