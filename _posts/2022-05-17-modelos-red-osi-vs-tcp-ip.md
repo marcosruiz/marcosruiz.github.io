@@ -1,5 +1,5 @@
 ---
-title: "Modelos OSI vs arquitectura TCP/IP"
+title: "Modelo OSI vs arquitectura TCP/IP"
 date: 2022-05-17 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, smr, teoría]
@@ -456,14 +456,9 @@ _Capas y Reddit_
 ¿Cuándo desencapsulamos?
 
 {:.subsubsection}
-#### Capa de aplicación
+#### Capa de acceso a la red
 
-La capa de aplicación o capa 7 proporciona aplicaciones con intercambio de datos estandarizado. Sus protocolos incluyen el Protocolo de transferencia de hipertexto (HTTP), el Protocolo de transferencia de archivos (FTP), el Protocolo de oficina de correo 3 (POP3), el Protocolo simple de transferencia de correo (SMTP) y el Protocolo simple de administración de red (SNMP).
-
-{:.subsubsection}
-#### Capa de transporte
-
-La capa de transporte o capa 4 es responsable de mantener las comunicaciones de extremo a extremo a través de la red. TCP maneja las comunicaciones entre hosts y proporciona control de flujo, multiplexación y confiabilidad. Los protocolos de transporte incluyen TCP y User Datagram Protocol (UDP), que a veces se usa en lugar de TCP para fines especiales.
+La capa de acceso a la red o capas 1 y 2 consiste en protocolos que operan solo en un enlace: el componente de red que interconecta nodos o hosts en la red. Los protocolos en esta capa incluyen Ethernet para redes de área local (LAN) y el Protocolo de resolución de direcciones (ARP).
 
 {:.subsubsection}
 #### Capa de Internet
@@ -471,9 +466,14 @@ La capa de transporte o capa 4 es responsable de mantener las comunicaciones de 
 La capa de Internet o capa 3 se ocupa de los paquetes y conecta redes independientes para transportar los paquetes a través de los límites de la red. Los protocolos de la capa de red son el IP y el Protocolo de mensajes de control de Internet (ICMP), que se utilizan para informar errores.
 
 {:.subsubsection}
-#### Capa de interfaz de red
+#### Capa de transporte
 
-La capa de interfaz de red o capas 1 y 2 consiste en protocolos que operan solo en un enlace: el componente de red que interconecta nodos o hosts en la red. Los protocolos en esta capa incluyen Ethernet para redes de área local (LAN) y el Protocolo de resolución de direcciones (ARP).
+La capa de transporte o capa 4 es responsable de mantener las comunicaciones de extremo a extremo a través de la red. TCP maneja las comunicaciones entre hosts y proporciona control de flujo, multiplexación y confiabilidad. Los protocolos de transporte incluyen TCP y User Datagram Protocol (UDP), que a veces se usa en lugar de TCP para fines especiales.
+
+{:.subsubsection}
+#### Capa de aplicación
+
+La capa de aplicación o capa 7 proporciona aplicaciones con intercambio de datos estandarizado. Sus protocolos incluyen el Protocolo de transferencia de hipertexto (HTTP), el Protocolo de transferencia de archivos (FTP), el Protocolo de oficina de correo 3 (POP3), el Protocolo simple de transferencia de correo (SMTP) y el Protocolo simple de administración de red (SNMP).
 
 {:.section}
 ## OSI vs TCP/IP
