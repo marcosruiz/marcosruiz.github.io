@@ -48,8 +48,8 @@ La descomposición es un método científico que utiliza la división de una tar
 
 Enfoque por niveles:
 
-- Todos los módulos se dividen en grupos separados y se ordenan por niveles, creando así una jerarquía;
-- Los módulos de un nivel sólo envían peticiones a los módulos del nivel subyacente inmediatamente adyacente para realizar sus tareas;
+- Todos los módulos se dividen en grupos separados y se ordenan por niveles, creando así una jerarquía.
+- Los módulos de un nivel sólo envían peticiones a los módulos del nivel subyacente inmediatamente adyacente para realizar sus tareas.
 - Se activa el principio de encapsulación: un nivel proporciona un servicio, ocultando los detalles de su implementación a otros niveles.
 - A la Organización Internacional de Normalización (International Standards Organization, ISO, fundada en 1946) se le encomendó la tarea de crear un modelo universal, que definiera y distinguiera claramente los diferentes niveles de interacción de los sistemas, con niveles nombrados y dando a cada nivel su tarea específica. Este modelo se denominó modelo de Interconexión de Sistemas Abiertos (OSI) o modelo ISO/OSI.
 
@@ -116,7 +116,7 @@ Funciones de la capa física:
   - Las distancias máximas de transmisión.
   - Los niveles de voltaje requeridos para la correcta comunicación entre dispositivos.
 
-Las funciones de la capa física se implementan en todos los dispositivos conectados a la red;
+Las funciones de la capa física se implementan en todos los dispositivos conectados a la red.
 
 Los equipos que operan en la capa física son: Repetidor, Hub, Ethernet, Módem.
 
@@ -136,7 +136,7 @@ Funciones a nivel de enlace de datos:
 - **Dirección física**: Cada dispositivo en una red tiene una dirección física única conocida como dirección MAC. El nivel de enlace de datos asigna y maneja las direcciones MAC para garantizar que las tramas sean entregadas al destinatario correcto en la red.
 - **Fragmentación y reensamblaje de tramas**: Si los datos de la capa de red son más grandes que el tamaño máximo permitido de la trama, el nivel de enlace de datos se encarga de dividir los datos en tramas más pequeñas y etiquetarlas para su posterior reensamblaje en el destino.
 
-Equipos que operan en la capa de enlace de datos: Switches, Bridges (puentes de red);
+Equipos que operan en la capa de enlace de datos: Switches, Bridges (puentes de red).
 
 Ejemplos de protocolos de capa de enlace: Ethernet, Token Ring, FDDI, Bluetooth, Wi-Fi, Wi-Max, X.25, FrameRelay, ATM.
 
