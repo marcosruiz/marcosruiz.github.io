@@ -395,7 +395,7 @@ Las capas ayudan a los profesionales de la red a visualizar lo que está sucedie
 </details>
 
 {:.section}
-## Modelo TCP IP
+## Arquitectura TCP/IP
 
 TCP/IP (Protocolo de Control de Transmisión/Protocolo de Internet) es un conjunto de protocolos de comunicación que se utilizan para interconectar dispositivos de red en Internet. TCP/IP también se puede utilizar como protocolo de comunicaciones en una red privada, o lo que es lo mismo, una intranet.
 
@@ -504,7 +504,7 @@ El modelo OSI ha definido la terminología común utilizada en las discusiones y
 La capa de Internet, ¿a quién ofrece servicio?
 
 <details class="card mb-2">
-  <summary class="card-header question"><¿Es el modelo OSI una arquitectura de red?/summary>
+  <summary class="card-header question"><¿Es el modelo OSI una arquitectura de red?</summary>
   <div class="card-body" markdown="1">
 
 No, ya que no define protocolos específicos en cada una de sus capas.
