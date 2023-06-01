@@ -16,6 +16,7 @@ Los protocolos rigen todos los aspectos de las comunicaciones entre dispositivos
 
 Uno de los organismos más importante que se encarga de regular estas normas es el IEEE.
 
+{:.section}
 ## 2. Resumen de TCP/IP
 
 Leer del apartado [Modelo TCP/IP](/posts/modelos-red-osi-vs-tcp-ip/#3-modelo-tcpip) en adelante.
@@ -33,9 +34,11 @@ _Modelo OSI vs Arquitectura TCP/IP_
 ![img-description](arquitecturaTcpIp.png)
 _Arquitectura TCP/IP_
 
+{:.section}
 ## 3. Capa de enlace en las redes locales -->
 
-## 1. Introducción
+{:.section}
+## Introducción
 
 Los elementos de la capa de enlace son:
 
@@ -78,8 +81,8 @@ Por ejemplo, cuando tenemos dos PCs conectados a través de un switch.
   </div>
 </details>
 
-
-## 2. Servicios de la capa de enlace de datos
+{:.section}
+## Servicios de la capa de enlace de datos
 
 - Segmentación y Agrupación
 - Sincronización de octeto y carácter
@@ -91,31 +94,34 @@ Por ejemplo, cuando tenemos dos PCs conectados a través de un switch.
 
 Leer el artículo [Capa de enlace de datos](https://es.wikipedia.org/wiki/Capa_de_enlace_de_datos) de la Wikipedia.
 
-## 3. Subcapas MAC y LLC
+{:.section}
+## Subcapas MAC y LLC
 
 La capa de enlace de datos se divide en dos subniveles:
 
 - MAC
 - LLC
 
-![img-description](subnivelesCapaEnlace.png)
+![img-description](llcYMac.png)
 _Subniveles de la capa de enlace_
 
 <iframe src="https://www.youtube.com/embed/y3A9QBJBbCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### 3.1. MAC
+{:.subsection}
+### MAC
 
-El subnivel MAC es el **más cercano al nivel físico**. Sus funciones son:
+El subnivel MAC es el **más cercano al nivel físico**. Se trata de la subcapa inferior, que define los procesos de acceso al medio que realiza el hardware. Proporciona el direccionamiento de la capa de enlace de datos y la delimitación de los datos de acuerdo con los requisitos de señalización física del medio y con el tipo de protocolo de capa de enlace de datos en uso. Sus funciones son:
 
 - **Empaquetar los datos en tramas** la información que le llega del subnivel LLC, junto con la información de direccionamiento y detección de errores.
 - **Desempaquetar tramas**.
 - El **control de acceso al medio** cuando hay un medio compartido.
 
-### 3.2. LLC
+{:.subsection}
+### LLC
 
 LLC ("Logical Link Control") o Control de enlace lógico es el encargado de multiplexar protocolos sobre un mismo enlace, al control de flujo y a la retransmisión de tramas en caso de error. Sus funciones son:
 
-- **Proporcionar al nivel de red una interfaz uniforme**, es decir, independiente de la topología de red.
+- **Proporcionar al nivel de red una interfaz uniforme**, es decir, independiente de la topología de red. Es importante destacar que la subcapa LLC es independiente de la tecnología de acceso al medio físico utilizada en Ethernet. Esto significa que la subcapa LLC es la misma para diferentes variantes de Ethernet, como Ethernet de cobre, Ethernet óptico y Wi-Fi. Por lo tanto, la subcapa LLC proporciona una interfaz uniforme y consistente para el intercambio de datos a nivel lógico en la red Ethernet.
 - **Control de errores**, es decir, comprobación y reenvío de tramas.
 - **Control de flujo**, es decir, el mecanismo para controlar la velocidad de transmisión de datos.
 
@@ -125,10 +131,13 @@ LLC ofrece al nivel de red tres tipos de servicio al nivel de red:
 - Servicio orientado a conexión.
 - Servicio no orientado a conexión con confirmación.
 
+El LLC se implementa en software, y su implementación no depende del hardware. En una PC, el LLC se puede considerar el controlador de la NIC. El controlador de la NIC es un programa que interactúa directamente con el hardware de la NIC para transmitir los datos entre la subcapa MAC y los medios físicos.
+
 {:.question}
 ¿Cuándo se usa el no orientado a conexión?
 
-#### 3.2.1. Formato de mensaje LLC
+{:.subsubsection}
+#### Formato de mensaje LLC
 
 - **DSAP** (Destination Service Action Point): Identifica al receptor al que va dirigido el mensaje.
 - **SSAP** (Source Service Action Point): Identifica al emisor del mensaje.
@@ -138,7 +147,8 @@ Paquete de red: Datos del nivel de red.
 ![img-description](mensajeLlc.png)
 _Formato de mensaje LLC_
 
-## 4. Direcciones físicas MAC
+{:.section}
+## Direcciones físicas MAC
 
 Cada tarjeta de red posee un identificador único grabado en su memoria ROM.
 
@@ -159,7 +169,8 @@ Leer artículo [¿Qué es la dirección MAC?](https://ccnadesdecero.com/curso/di
 {:.question}
 Si el límite máximo de un cable Ethernet es de 100m. ¿Puede ser esta distancia aumentada si usamos un hub? ¿Y si usamos un switch?
 
-## 5. Métodos de acceso al medio
+{:.section}
+## Métodos de acceso al medio
 
 Entre las diferentes implementaciones de los protocolos de la capa de enlace de datos, hay diferentes métodos de control de acceso a los medios. Estas técnicas de control de acceso al medio definen si los nodos comparten los medios y de qué manera lo hacen.
 
@@ -170,7 +181,8 @@ De la misma manera, hay diferentes formas de regular la colocación de tramas en
 - **Compartir medios**: Cómo los nodos comparten los medios.
 - **Topología**: Cómo la conexión entre los nodos se muestra a la capa de enlace de datos.
 
-### 5.1. Basados en particionado de canal
+{:.subsection}
+### Basados en particionado de canal
 
 - **TDM**: Multiplexación por división de tiempo.
 - **FDM**: Multiplexación por división de frecuencia.
@@ -185,9 +197,11 @@ Leer artículo [Diferencia entre TDM y FDM](https://es.gadget-info.com/differenc
   </div>
 </details>
 
-### 5.2. Basados en toma de turnos
+{:.subsection}
+### Basados en toma de turnos
 
-#### 5.2.1. Polling: Protocolo de sondeo.
+{:.subsubsection}
+#### Polling: Protocolo de sondeo.
 
 Se designa un nodo como maestro y se encargará de dirigir los turnos.
 
@@ -197,7 +211,8 @@ Cada estación puede transmitir cuando recibe el permiso y encuentra el medio li
 
 Al finalizar su transmisión el nodo maestro pasa el permiso a la estación siguiente y asi sucesivamente.
 
-#### 5.2.2. Token passing: Protocolo de paso de testigo.
+{:.subsubsection}
+#### Token passing: Protocolo de paso de testigo.
 
 En esta técnica no hay ningún nodo maestro, pero si una trama especial de pequeño tamaño llamada testigo (token) que va siendo intercambiada entre los nodos según un orden preestablecido.
 
@@ -205,7 +220,8 @@ Un nodo puede transmitir cuando tiene la trama testigo y, mientras no la tenga, 
 
 Este método de acceso al medio a sido ampliamente utilizado en las redes con topología en anillo.
 
-### 5.3. Basados en el acceso aleatorio
+{:.subsection}
+### Basados en el acceso aleatorio
 
 Son los siguientes:
 
@@ -214,17 +230,20 @@ Son los siguientes:
 - CSMA/CD
 - CSMA/CA
 
-#### 5.3.1. Aloha
+{:.subsubsection}
+#### Aloha
 
 Este método permite que un dispositivo emita directamente cuando lo necesita. En este caso el receptor debe confirmar al emisor haber recibido la trama. Si la confirmación no se recibe al cabo de un tiempo predefinido (timeout), ya sea porque se ha perdido la trama o bien porque se ha producido una colisión, entonces la estación emisora, tras esperar un tiempo aleatorio lo vuelve a intentar.
 
-#### 5.3.2. CSMA
+{:.subsubsection}
+#### CSMA
 
 Según este método cuando unn dispositivo tiene datos que emitir, antes de hacerlo sondea el medio para saber si está ocupado. Si el medio esta libre, emite, y si no lo está, actuará de acuerdo a algún protocolo que determine cuando volver a intentarlo (por ejemplo, esperar un tiempo aleatorio).
 
 CSMA/CD y CSMA/CA son variaciones del CSMA.
 
-#### 5.3.3. CSMA/CD
+{:.subsubsection}
+#### CSMA/CD
 
 Carrier Sense Multiple Access with Collision Detection, es decir, acceso múltiple con escucha de portadora y **detección** de colisiones.
 
@@ -240,7 +259,8 @@ Se cuenta el número de intentos de retransmisión. Si los siguientes intentos s
 
 Su uso está especialmente extendido en redes Ethernet.
 
-#### 5.3.4. CSMA/CA
+{:.subsubsection}
+#### CSMA/CA
 
 Con las siglas CSMA se describe un proceso fundamental para regular la comunicación de los integrantes de una red que usan un mismo medio de transmisión estructurado de forma descentralizada. Comprende tres variantes distintas en función del medio de transmisión: CSMA/CA, CSMA/CD y CSMA/CR. Mientras la primera se usa principalmente en redes inalámbricas, CSMA/CD se creó para Ethernet. CSMA/CR se emplea con el protocolo de comunicación Controller Area Networks (CAN), usado principalmente en máquinas y coches.
 
@@ -274,7 +294,8 @@ Para poder entender realmente en qué consiste el protocolo Carrier Sense Multip
   </div>
 </details>
 
-## 6. Conmutación de tramas
+{:.section}
+## Conmutación de tramas
 
 La conmutación de tramas consiste en utilizar una topología física en estrella en el que un switch o conmutador redirige el tráfico al enlace concreto en el que se encuentra el destinatario.
 
@@ -290,9 +311,11 @@ Un dominio de colisión es un segmento físico de una red en el que las estacion
 {:.question}
 ¿Qué es un dominio de difusión?
 
-## 7. Protocolos de enlace
+{:.section}
+## Protocolos de enlace
 
-### 7.1. LAN cableadas
+{:.subsection}
+### LAN cableadas
 
 - **Ethernet DIX**: El protocolo Ethernet original.
 - **IEEE 802.3**: Estándares internacionales basados en el protocolo Ethernet. Utiliza CSMA/CD.
@@ -301,10 +324,14 @@ Un dominio de colisión es un segmento físico de una red en el que las estacion
 - **Token Ring y el estándar IEEE 802.5**: Topología física en estrella, sin embargo, internamente funciona como un anillo. El protocolo es del tipo paso del testigo.
 - **FDDI**: Protocolo de acceso al medio de doble anillo de fibra óptica.
 
+![img-description](ethernetEntreCapas.png)
+_Tecnologías Ethernet en el modelo OSI_
+
 {:.question}
 ¿Qué significan las siglas IEEE?
 
-### 7.2. LAN inalámbricas
+{:.subsection}
+### LAN inalámbricas
 
 - Wifi y la familia de estándares IEEE 802.11
 - Bluetooth y los estándares IEEE 802.15
@@ -312,7 +339,8 @@ Un dominio de colisión es un segmento físico de una red en el que las estacion
 {:.question}
 ¿En que frecuencias trabaja el Bluetooth? ¿Son más altas o mas bajas que las del Wifi?
 
-## 8. Trama Ethernet II
+{:.section}
+## Trama Ethernet II
 
 ![img-description](ethernetY8023.png)
 _Formato de una trama Ethernet II_
@@ -344,7 +372,8 @@ _Formato de una trama Ethernet II_
 {:.question}
 ¿Por qué los valores DIX en el campo Lenght / Ethertype está puesto en 1536?
 
-## 9. Dispositivos de la capa de enlace
+{:.section}
+## Dispositivos de la capa de enlace
 
 Los dispositivos de la capa de enlace son:
 
@@ -354,14 +383,19 @@ Los dispositivos de la capa de enlace son:
 
 Leer el artículo [Dispositivos específicos de la red local](/posts/dispositivos-especificos-de-la-red-local/) correspondiente a estos dispostivos.
 
-## 10. Bibliografía
+{:.section}
+## Bibliografía
 
-- [¿Cómo Funciona un Switch?](https://ccnadesdecero.com/curso/como-funciona-un-swtich/)
-- [Qué es Ethernet y cómo funciona el estándar IEEE](https://ccnadesdecero.com/curso/estandar-ethernet-ieee/)
-- [STP: ¿Qué es y Para qué Sirve?](https://ccnadesdecero.com/curso/stp/)
-- [STP: ¿Cómo Funciona?](https://ccnadesdecero.com/curso/como-funciona-stp/)
-- [4.2.2 Métodos de Acceso al Medio](http://cidecame.uaeh.edu.mx/lcc/mapa/PROYECTO/libro27/422_mtodos_de_acceso_al_medio.html)
-- [CSMA/CD: protocolo de transmisión anticolisiones](https://www.ionos.es/digitalguide/servidores/know-how/csmacd/)
-- [CSMA/CA: definición y mecánica del protocolo](https://www.ionos.es/digitalguide/servidores/know-how/csmaca-protocolo-de-acceso-al-medio-para-redes-inalambricas/)
-- [El protocolo ALOHA (Wikipedia)](https://es.wikipedia.org/wiki/ALOHAnet#El_protocolo_ALOHA)
-- [Tema 3: Subnivel de Control de acceso al medio (MAC)](http://www4.ujaen.es/~mdmolina/rrcc/Tema3MAC.pdf)
+- <https://ccnadesdecero.com/curso/como-funciona-un-swtich/>
+- <https://ccnadesdecero.com/curso/estandar-ethernet-ieee/>
+- <https://ccnadesdecero.com/curso/stp/>
+- <https://ccnadesdecero.com/curso/como-funciona-stp/>
+- <http://cidecame.uaeh.edu.mx/lcc/mapa/PROYECTO/libro27/422_mtodos_de_acceso_al_medio.html>
+- <https://www.ionos.es/digitalguide/servidores/know-how/csmacd/>
+- <https://www.ionos.es/digitalguide/servidores/know-how/csmaca-protocolo-de-acceso-al-medio-para-redes-inalambricas/>
+- <https://es.wikipedia.org/wiki/ALOHAnet#El_protocolo_ALOHA>
+- <http://www4.ujaen.es/~mdmolina/rrcc/Tema3MAC.pdf>
+- <https://www.sapalomera.cat/moodlecf/RS/1/course/module4/4.3.1.2/4.3.1.2.html>
+- <https://www.sapalomera.cat/moodlecf/RS/1/course/module5/5.1.1.1/5.1.1.1.html>
+- <https://www.ingenieriasystems.com/2016/12/Subcapas-LLC-y-MAC-CCNA1-V5-CISCO-C5.html>
+
