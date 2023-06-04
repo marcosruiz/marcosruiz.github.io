@@ -59,8 +59,8 @@ Ejemplos de uso de máscaras de red:
 Las direcciones con sus máscaras de subred se pueden expresar de varias formas. Usando el mismo ejemplo para las tres formas, tenemos:
 
 - **Notación decimal punteada:** Cuatro octetos decimales acompañando a la dirección IP: 172.16.3.45/255.255.255.0 
-- **Notación binaria:** Octetos binarios separados por puntos (no suele usarse para representar, pero sí para hacer cálculos con ela): 10101100.00010000.00000011.00101101/11111111.11111111.11111111.00000000 
-- **Notación prefija:** Un número decimal que indica el número de "unos" que tendría la máscara de subred si la expresáramos en binario: 172.16.3.45/24.
+- **Notación binaria:** Octetos binarios separados por puntos (no suele usarse para representar, pero sí para hacer cálculos con ella): 10101100.00010000.00000011.00101101/11111111.11111111.11111111.00000000 
+- **Notación prefija:** Un número decimal que indica el número de "unos" que tendría la máscara de subred si la expresáramos en binario: 172.16.3.4 5/24.
 
 {:.section}
 ## Clases
@@ -204,7 +204,7 @@ Existe un rango de direcciones reservado para hacer referencia al propio equipo 
 
 127.0.0.0 - 127.255.255.255
 
-Aunque en la práctica sólo se utilice la dirección 127.0.0.1/32 para localhost.
+Aunque en la práctica sólo se utiliza la dirección 127.0.0.1/32 para localhost.
 
 {:.section}
 ## Configuración IP en GNU Linux

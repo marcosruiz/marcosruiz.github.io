@@ -237,14 +237,14 @@ Este método permite que un dispositivo emita directamente cuando lo necesita. E
 {:.subsubsection}
 #### CSMA
 
-Según este método cuando unn dispositivo tiene datos que emitir, antes de hacerlo sondea el medio para saber si está ocupado. Si el medio esta libre, emite, y si no lo está, actuará de acuerdo a algún protocolo que determine cuando volver a intentarlo (por ejemplo, esperar un tiempo aleatorio).
+CSMA (Carrier Sense Multiple Access) es un protocolo que establece que cuando un dispositivo tiene datos que emitir, antes de hacerlo sondea el medio para saber si está ocupado. Si el medio esta libre, emite, y si no lo está, actuará de acuerdo a algún protocolo que determine cuando volver a intentarlo (por ejemplo, esperar un tiempo aleatorio).
 
 CSMA/CD y CSMA/CA son variaciones del CSMA.
 
 {:.subsubsection}
 #### CSMA/CD
 
-Carrier Sense Multiple Access with Collision Detection, es decir, acceso múltiple con escucha de portadora y **detección** de colisiones.
+CSMA/CD (Carrier Sense Multiple Access with Collision Detection), es decir, acceso múltiple con escucha de portadora y **detección** de colisiones.
 
 La operación se suele comparar con el comportamiento de un grupo de personas que conversan de manera respetuosa: para que se puedan comunicar adecuadamente, es necesario que no todos los participantes hablen a la vez, sino uno tras otro, de manera que todos puedan comprender plenamente las contribuciones de los demás a la conversación. De forma natural, en una conversación de este tipo nos comportamos conforme a un protocolo: cuando otra persona está hablando, nosotros solamente escuchamos.
 
@@ -256,7 +256,7 @@ En cambio, cuando se detecta una colisión, la estación que la detecta interrum
 
 Se cuenta el número de intentos de retransmisión. Si los siguientes intentos siguen fallando y se alcanza el número máximo de intentos(16), la estación notifica el error a la capa de red superior e interrumpe la transmisión de forma permanente. Puesto que es muy poco probable que una estación alcance el número máximo de intentos durante un proceso normal, si esto ocurre se interpreta que se ha producido un error en el sistema.
 
-Su uso está especialmente extendido en redes Ethernet.
+Su uso está especialmente extendido en **redes Ethernet**.
 
 {:.subsubsection}
 #### CSMA/CA
