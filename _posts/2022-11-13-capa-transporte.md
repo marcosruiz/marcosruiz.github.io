@@ -233,6 +233,28 @@ _Gobierno: Para parar el covid deberemos parar todos de hacer handshaking. TCP: 
   </div>
 </details>
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Se puede considerar TCP un protocolo de la capa de sesión?</summary>
+  <div class="card-body" markdown="1">
+
+El TCP es un protocolo de la capa de transporte dentro del Modelo OSI porque se encarga de la segmentación y el reensamblado de los datos, así como del control de flujo y la confiabilidad en la entrega. Estas funciones se relacionan directamente con el transporte de datos entre sistemas finales.
+
+Sin embargo, el TCP también realiza algunas funciones que tradicionalmente se atribuyen a la capa de sesión, como el establecimiento, mantenimiento y cierre de sesiones de comunicación. Durante el proceso de conexión, el TCP realiza un "handshake" para establecer una conexión confiable entre dos sistemas finales. Esta conexión persistente se mantiene a lo largo de la comunicación y se cierra adecuadamente al finalizar la sesión.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">UDP casi no añade funcionalidad sobre el protocolo IP, ¿no debería por ello ser considerado un protocolo de la capa de red?</summary>
+  <div class="card-body" markdown="1">
+
+Una de las razones por las que UDP sigue siendo considerado un protocolo de transporte a pesar de no agregar funcionalidades extra sobre IP es que proporciona una interfaz estándar y un mecanismo de transporte básico para muchas aplicaciones.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 ## Bibliografía
 
 - [Protocolo de datagramas de usuario (Wikipedia)](https://es.wikipedia.org/wiki/Protocolo_de_datagramas_de_usuario)
