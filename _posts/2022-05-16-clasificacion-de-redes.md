@@ -6,7 +6,8 @@ tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
 img_path: /assets/img/clasificacion-de-redes/
 ---
 
-## 1. Introducción
+{:.section}
+## Introducción
 
 Existen varias formas de clasificar las redes:
 
@@ -17,7 +18,8 @@ Existen varias formas de clasificar las redes:
 - Por topología física: Estrella, anillo, bus, árbol, malla, totalmente conexa, mixta.
 - Por direccionalidad: Simplex, half-duplex, full-duplex.
 
-## 2. Por área de distribución
+{:.section}
+## Por área de distribución
 
 - **PAN (Personal Area Network)** es una red de ordenadores usada para la comunicación entre los dispositivos de la computadora cerca de una persona.
 - **LAN (Local Area Network)** es una red que se limita a un área especial relativamente pequeña tal como un cuarto, un solo edificio, una nave.
@@ -31,7 +33,8 @@ _Clasificación de redes por área de distribución_
 ¿Qué es la WAN?
 
 
-### 2.1. PAN
+{:.subsection}
+### PAN
 
 En los últimos años a surgido la necesidad de conectar dispositivos muy cercanos entre sí. Esto ha llevado a desarrollar las redes de área personal o PAN (Personal Area Network). Las características de estas redes son:
 
@@ -43,7 +46,8 @@ En los últimos años a surgido la necesidad de conectar dispositivos muy cercan
 {:.question}
 Nombrad cuatro ejemplos de PAN
 
-### 2.2. LAN
+{:.subsection}
+### LAN
 
 Una red de área local (LAN, Local Area Network) es un conjunto de elementos físicos y lógicos que proporcionan interconexión entre dispositivos en un área privada y restringida. La red de área local tiene las siguientes características:
 
@@ -58,11 +62,13 @@ Tecnologías LAN:
 - Token Ring
 - FDDI
 
-### 2.3. MAN
+{:.subsection}
+### MAN
 
 Una red metropolitana es una red de distribución de datos para un área geográfica en el entorno de una ciudad. Este tipo de redes es apropiado, por ejemplo, para la distribución de televisión por cable en el ámbito de una población.
 
-### 2.4. WAN
+{:.subsection}
+### WAN
 
 Una red de área extensa (WAN, Wide Area Network) es una red que intercomunica equipos en un área geográfica muy amplia. Este tipo de redes tienen las siguientes características:
 
@@ -83,9 +89,11 @@ Tecnologías WAN:
 {:.question}
 ¿Qué redes son más rápidas: LAN, MAN o WAN?
 
-## 3. Por medio de transmisión
+{:.section}
+## Por medio de transmisión
 
-### 3.1. Medios guiados
+{:.subsection}
+### Medios guiados
 
 Usan cables para transmitir sus señales. Como por ejemplo:
 
@@ -94,7 +102,8 @@ Usan cables para transmitir sus señales. Como por ejemplo:
 - Fibra óptica
 
 
-### 3.2. Medios no guiados
+{:.subsection}
+### Medios no guiados
 
 Usan antenas para transmitir señales. Como por ejemplo:
 
@@ -110,9 +119,11 @@ Usan antenas para transmitir señales. Como por ejemplo:
 |  | Normalmente, menor velocidad de conexión. |
 
 
-## 4. Por relación funcional
+{:.section}
+## Por relación funcional
 
-### 4.1. Redes entre iguales (Peer-to-Peer o P2P)
+{:.subsection}
+### Redes entre iguales (Peer-to-Peer o P2P)
 
 Una red peer-to-peer (P2P) o red de pares, es una red de computadoras en la que todos o algunas propiedades funcionan sin clientes ni servidores fijos, sino que son serie de nodos con un comportamiento igual entre sí. De allí su nombre red de pares o iguales.
 
@@ -122,7 +133,8 @@ La particularidad de que mediante este sistema se pueda compartir e intercambiar
 
 Estas redes peer-to-peer aprovechan, administran y optimizan el uso del ancho de banda de los restantes usuarios de la red a través de la conectividad que se da entre ellos, obteniendo así conexiones y transferencias con más rendimiento que con métodos convencionales.
 
-### 4.2. Redes privilegiadas (Cliente-Servidor)
+{:.subsection}
+### Redes privilegiadas (Cliente-Servidor)
 
 Es aquella red de comunicaciones en la que todos los clientes están conectados a un servidor, en el que se centralizan los diversos recursos y aplicaciones con que se cuenta; y que los pone a disposición de los clientes cada vez que estos son solicitados.
 
@@ -133,9 +145,11 @@ La principal característica es que en este tipo de redes los roles están bien 
 ![img-description](comunicacionClienteServidor.png)
 _Comunicación cliente/servidor_
 
-## 5. Por tecnología
+{:.section}
+## Por tecnología
 
-### 5.1. Red Broadcast
+{:.subsection}
+### Red Broadcast
 
 Se caracteriza por transmitir datos por un sólo canal de comunicación que comparten todas las máquinas de la red.
 
@@ -152,7 +166,8 @@ Se caracteriza por transmitir datos por un sólo canal de comunicación que comp
 - Se necesitaría duplicar las líneas en caso de que se quiera asegurar la funcionalidad ante fallos. 
 - Los costes de cableado de la red son menores. Sólo es necesario una tarjeta de interface por estación.
 
-### 5.2. Red Point-To-Point (PPP)
+{:.subsection}
+### Red Point-To-Point (PPP)
 
 Es aquella en la que existe multitud de conexiones entre parejas individuales de máquinas.
 
@@ -168,7 +183,8 @@ Para poder transmitir los paquetes de una máquina a otra a veces es necesario q
 - Los costes de cableado son superiores, y la estación requiere al menos dos tarjetas de interfaces. 
 
 
-## 6. Por topología física
+{:.section}
+## Por topología física
 
 La topología de red es la propiedad que indica la **forma física de la red**, es decir, el modo en que se disponen los equipos y el sistema de cableado que los interconecta.
 
@@ -176,7 +192,8 @@ La topología de red es la propiedad que indica la **forma física de la red**, 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/04jfARpozAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### 6.1. Red en bus
+{:.subsection}
+### Red en bus
 
 La red en bus se caracteriza por tener un único canal de comunicaciones.
 
@@ -187,26 +204,30 @@ La topología de Bus se basa en un cable central, el cual lleva la información 
 ![img-description](terminador.jpg){: w="250" }
 
 
-#### 6.1.1. Ventajas
+{:.subsubsection}
+#### Ventajas
 
 - Fácil de implementar y expandir.
 - Tiene uno de los costos de red más bajos.
 - Si un PC falla, la comunicación se mantiene.
 
-#### 6.1.2. Desventajas
+{:.subsubsection}
+#### Desventajas
 
 - Si el bus falla, la comunicación falla.
 - Baja seguridad de los datos que transitan por la red.
 - Longitud de cable y número de estaciones limitadas
 - El rendimiento se deteriora con la adición de estaciones.
 
-### 6.2. Red en estrella
+{:.subsection}
+### Red en estrella
 
 En una red en estrella las estaciones están conectadas directamente a un punto central y todas las comunicaciones se han de hacer necesariamente a través de éste.
 
 ![img-description](redEstrella.png){: w="250" }
 
-#### 6.2.1. Ventajas
+{:.subsubsection}
+#### Ventajas
 
 - Fácil adición de posiciones.
 - Fácil localización de fallos.
@@ -214,14 +235,16 @@ En una red en estrella las estaciones están conectadas directamente a un punto 
 - Posible simplicidad del equipo a nivel de nodo: es el hub o switch el que es inteligente.
 - Posible evolución jerárquica del material. Puede moverse fácilmente un dispositivo en la red.
 
-#### 6.2.2. Desventajas
+{:.subsubsection}
+#### Desventajas
 
 - Más cara que una red de topología de bus (compra del switch y tantos cables como nodos)
 - Si el switch está defectuoso, toda la red está inactiva.
 - Uso de múltiples routers switch para poder comunicarse entre diferentes redes o computadoras.
 
 
-### 6.3. Red en anillo
+{:.subsection}
+### Red en anillo
 
 En una red en anillo cada estación está conectada a la siguiente y la última está conectada a la primera.
 
@@ -261,7 +284,8 @@ Carrier Sense Multiple Access with Collision Avoidance, es decir, acceso múltip
 </details>
 
 
-#### 6.3.1. Ventajas
+{:.subsubsection}
+#### Ventajas
 
 - Se reduce la cantidad de cable necesaria.
 - El protocolo es sencillo, evita la gestión de colisiones.
@@ -269,14 +293,16 @@ Carrier Sense Multiple Access with Collision Avoidance, es decir, acceso múltip
 - Funciona mejor que una topología de bus con una gran carga de red.
 - Es bastante fácil de instalar y reconfigurar, ya que agregar o quitar hardware solo requiere mover dos conexiones.
 
-#### 6.3.2. Desventajas
+{:.subsubsection}
+#### Desventajas
 
 - La retirada o el fallo de un ordenador activo paraliza el tráfico de la red.
 - El retraso de la comunicación es directamente proporcional al número de nodos de la red.
 - Mover, agregar y modificar máquinas conectadas puede afectar la red.
 
 
-### 6.4. Red en anillo doble
+{:.subsection}
+### Red en anillo doble
 
 Una topología en anillo doble consta de dos anillos concéntricos, donde cada Host de la red está conectado a ambos anillos, aunque los dos anillos no están conectados directamente entre sí. Es análoga a la topología de anillo, con la diferencia de que, para incrementar la confiabilidad y flexibilidad de la red, hay un segundo anillo redundante que conecta los mismos dispositivos. La topología de anillo doble actúa como si fueran dos anillos independientes, de los cuales se usa solamente uno por vez.
 
@@ -287,7 +313,8 @@ Una topología en anillo doble consta de dos anillos concéntricos, donde cada H
 ¿Qué ocurre si cortamos el cable que une dos nodos?
 
 
-### 6.5. Red en malla
+{:.subsection}
+### Red en malla
 
 La red en malla es una topología de red que califica las redes (cableadas o no) en las que todos los ordenadores están conectados entre pares sin una jerarquía central, formando así una estructura en forma de red.
 
@@ -297,7 +324,8 @@ Por tanto, cada nodo debe recibir, enviar y retransmitir datos.
 
 La red de Internet se basa en una topología de malla (en la red de área amplia "WAN", garantiza la estabilidad en caso de falla de un nodo).
 
-### 6.6. Red en malla totalmente conexa
+{:.subsection}
+### Red en malla totalmente conexa
 
 Como la red en malla pero totalmente conectada.
 
@@ -307,53 +335,62 @@ Las redes diseñadas con dicha topología suelen ser muy caras de configurar, pe
 
 Este tipo de topologías existentes se ve principalmente en aplicaciones militares.
 
-### 6.7. Red en árbol
+{:.subsection}
+### Red en árbol
 
 En una red en árbol los nodos están colocados en forma de árbol. Desde una visión topológica, la conexión en árbol es parecida a una serie de redes en estrella interconectadas salvo en que no tiene un nodo central.
 
 ![img-description](redArbol.png){: w="250" }
 
-### 6.8. Red mixta o hibrida
+{:.subsection}
+### Red mixta o hibrida
 
 En una red mixta se da cualquier combinación de las anteriores por lo que hereda las ventajas y desventajas de las topologías incluidas.
 
 ![img-description](redMixta.png){: w="250" }
 
-#### 6.8.1. Ventajas
+{:.subsubsection}
+#### Ventajas
 
 - Fiable ya que la detección de errores y la resolución de problemas son fáciles.
 - Eficaz.
 - Escalable, ya que podemos conectar otras redes informáticas con las redes existentes con diferentes topologías.
 - Flexible.
 
-#### 6.8.2. Desventajas
+{:.subsubsection}
+#### Desventajas
 
 - La detección de fallas es difícil.
 - La instalación es difícil.
 - El diseño es complejo, por lo que el mantenimiento es elevado y, por tanto, caro.
 
-## 7. Por direccionalidad
+{:.section}
+## Por direccionalidad
 
-### 7.1. Simplex
+{:.subsection}
+### Simplex
 
 Un equipo terminal de datos transmite y otro recibe. Por ejemplo: la radio o la televisión.
 
 ![img-description](redSimplex.png){: w="250" }
 
-### 7.2. Half-duplex
+{:.subsection}
+### Half-duplex
 
 El método o protocolo de envío de información es bidireccional pero no simultáneo bidireccional, sólo un equipo transmite a la vez. Por ejemplo: los Walkie-talkies.
 
 ![img-description](redHalfDuplex.png){: w="250" }
 
-### 7.3. Full-duplex
+{:.subsection}
+### Full-duplex
 
 Los dos equipos involucrados en la comunicación lo pueden hacer de forma simultánea, transmitir y recibir. Por ejemplo: el teléfono.
 
 ![img-description](redFullDuplex.png){: w="250" }
 
 
-## 8. Bibliografía
+{:.section}
+## Bibliografía
 
 - [Token, Token Ring – qué es, definición y para qué sirven](https://www.profesionalreview.com/2020/02/21/token-token-ring-que-es/)
 - [ANÁLISIS DE TRÁFICO DE UNA RED LOCAL UNIVERSITARIA](https://www.redalyc.org/pdf/784/78411787002.pdf)
