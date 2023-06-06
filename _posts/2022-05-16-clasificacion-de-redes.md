@@ -2,7 +2,7 @@
 title: Clasificación de redes
 date: 2022-05-16 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
-tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
+tags: [redes locales, teoría, smr]
 img_path: /assets/img/clasificacion-de-redes/
 ---
 
