@@ -18,14 +18,14 @@ El usuario que debes usar siempre en las prácticas debe cumplir con el siguient
 
 En mi caso, como yo me llamo Marcos Ruiz García mi usuario será: mruizg.
 
-En todas las prácticas, cada vez que se haga mención a `<tuUsuario>` deberás sustituirlo por tu usuario.
+En todas las prácticas, cada vez que se haga mención a `<tu usuario>` deberás sustituirlo por tu usuario.
 
 > Siempre que sea posible deberás usar tu nombre de usuario para que no haya ninguna duda sobre la autoría de las prácticas.
 {:.prompt-warning}
 
 ## Entrega y presentación en formato PDF
 
-Si la entrega de la práctica debe ser un documento PDF con un nombre en el siguiente formato: `<tuUsuario>_p<Número de la práctica con dos dígitos>.pdf`{: .filepath}. Por ejemplo, en mi caso el nombre del documento PDF sería `mruizg_p01.pdf`{: .filepath}.
+Si la entrega de la práctica debe ser un documento PDF con un nombre en el siguiente formato: `<tu usuario>_p<Número de la práctica con dos dígitos>.pdf`{: .filepath}. Por ejemplo, en mi caso el nombre del documento PDF sería `mruizg_p01.pdf`{: .filepath}.
 
 1. Debe contener una portada con título, nombre de la asignatura, curso, autor(es) y fecha de realización.
 1. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.
@@ -44,18 +44,18 @@ Además:
 
 ## Entrega y presentación en formato ZIP
 
-Si la entrega de la práctica debe ser un documento ZIP con un nombre en el siguiente formato: `<tuUsuario>_p<Número de la práctica con dos dígitos>.zip`{: .filepath}. Por ejemplo, en mi caso el nombre del documento ZIP sería `mruizg_p01.zip`{: .filepath}.
+Si la entrega de la práctica debe ser un documento ZIP con un nombre en el siguiente formato: `<tu usuario>_p<Número de la práctica con dos dígitos>.zip`{: .filepath}. Por ejemplo, en mi caso el nombre del documento ZIP sería `mruizg_p01.zip`{: .filepath}.
 
-En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que se pida) con el nombre `<tuUsuario>_p<Número de la práctica con dos dígitos>.pdf`{: .filepath} y las actividades en el formato que corresponda:
+En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que se pida) con el nombre `<tu usuario>_p<Número de la práctica con dos dígitos>.pdf`{: .filepath} y las actividades en el formato que corresponda:
 
-- Las actividades de Packet Tracer deberán estar en formato PKT con el nombre `<tuUsuario>_a<Número de la actividad con dos dígitos>.pkt`{: .filepath}. Por ejemplo: `mruizg_a01.pkt`{: .filepath}.
-- Las actividades de HTML deberán estar en formato HTML con el nombre `<tuUsuario>_a<Número de la actividad con dos dígitos>.html`{: .filepath}. Por ejemplo: `mruizg_a01.html`{: .filepath}.
-- Las actividades de JavaScript deberán estar en formato JS con el nombre `<tuUsuario>_a<Número de la actividad con dos dígitos>.js`{: .filepath}. Por ejemplo: `mruizg_a01.js`{: .filepath}.
-- Las actividades con otro tipo de extensión deberán estar en formato correspondiente `<tuUsuario>_a<Número de la actividad con dos dígitos>.<extensión>`{: .filepath}. Por ejemplo: `mruizg_a01.jar`{: .filepath}.
+- Las actividades de Packet Tracer deberán estar en formato PKT con el nombre `<tu usuario>_a<Número de la actividad con dos dígitos>.pkt`{: .filepath}. Por ejemplo: `mruizg_a01.pkt`{: .filepath}.
+- Las actividades de HTML deberán estar en formato HTML con el nombre `<tu usuario>_a<Número de la actividad con dos dígitos>.html`{: .filepath}. Por ejemplo: `mruizg_a01.html`{: .filepath}.
+- Las actividades de JavaScript deberán estar en formato JS con el nombre `<tu usuario>_a<Número de la actividad con dos dígitos>.js`{: .filepath}. Por ejemplo: `mruizg_a01.js`{: .filepath}.
+- Las actividades con otro tipo de extensión deberán estar en formato correspondiente `<tu usuario>_a<Número de la actividad con dos dígitos>.<extensión>`{: .filepath}. Por ejemplo: `mruizg_a01.jar`{: .filepath}.
 
 ## Entrega y presentación en formato presentación
 
-Si la entrega de la práctica debe ser un documento PDF con un nombre en el siguiente formato: `<tuUsuario>_p<Número de la práctica con dos dígitos>.pdf`{: .filepath}. Por ejemplo, en mi caso el nombre del documento PDF sería `mruizg_p01.pdf`{: .filepath}.
+Si la entrega de la práctica debe ser un documento PDF con un nombre en el siguiente formato: `<tu usuario>_p<Número de la práctica con dos dígitos>.pdf`{: .filepath}. Por ejemplo, en mi caso el nombre del documento PDF sería `mruizg_p01.pdf`{: .filepath}.
 
 En caso de que no se pueda trasladar la presentación desarrollada a formato PDF se deberá entregar un documento PDF con un número de capturas adecuado y un enlace web público con la presentación real.
 

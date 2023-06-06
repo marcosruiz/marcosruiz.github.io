@@ -37,7 +37,8 @@ En el navegador deberás escribir `http://localhost:8069` para acceder la interf
 Iniciar el módulo con los archivos `__init__.py`{: .filepath} y `__odoo__.py`{: .filepath} y crear un objeto que tenga los siguientes campos:
 
 - Nombre de la película, campo requerido
-- Descripción - Sinopsis
+- Descripción
+- Sinopsis
 - Fecha de lanzamiento
 - Fecha de adquisición
 - Duración
@@ -108,8 +109,8 @@ Añadir a la clase película los siguientes campos:
 
 Controles:
 
-- Debe comprobase si hay copias disponibles cuando se insica la película.
-- No permitir el cambio de datos si la pelicula esta devuelta
+- Debe comprobase si hay copias disponibles cuando se indica la película.
+- No permitir el cambio de datos si la película esta devuelta
 
 Botones:
 
@@ -120,8 +121,8 @@ Botones:
 
 Crear vistas para el alquiler:
 
-- Vista arbol-lista resumen
-- Vista formulario. Los botones deben visualizarse según su estado. Si esta en borrador solo se puede inciar el alquiler, si esta alquilado solo se puede devolver o cambiar a borrador. Si esta devuelto no se puede utilizar botones.
+- Vista árbol-lista resumen
+- Vista formulario. Los botones deben visualizarse según su estado. Si esta en borrador solo se puede iniciar el alquiler, si esta alquilado solo se puede devolver o cambiar a borrador. Si esta devuelto no se puede utilizar botones.
 - Vista búsqueda
 - Vista pivote que muestre una tabla con las películas y la medida del precio total
 - Vista Calendario que utilice las fechas de inicio y final del alquiler
@@ -141,4 +142,4 @@ Crear una acción que nos permita devolver varias películas a la vez.
 Creación de dos informes:
 
 - Informe del alquiler
-- Ficha de la pelíqula
+- Ficha de la película

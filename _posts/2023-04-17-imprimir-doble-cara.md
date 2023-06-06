@@ -2,7 +2,7 @@
 title: "Imprimir a doble cara"
 date: 2023-04-17 12:20:00 +0100
 categories: [General]
-tags: [dam, práctica]
+tags: [imprimir]
 img_path: /assets/img/imprimir-doble-cara/
 ---
 

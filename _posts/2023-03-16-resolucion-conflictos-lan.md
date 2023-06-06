@@ -2,7 +2,7 @@
 title: Resolución de conflictos en una red local
 date: 2023-03-16 13:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
-tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
+tags: [gnu linux, windows, comandos, terminal, bash, redes locales, teoría]
 img_path: /assets/img/resolucion-conflictos-lan/
 ---
 

@@ -2,7 +2,7 @@
 title: Trabajar con Visual Studio Code
 date: 2023-01-26 09:00:00 +0100
 categories: [General]
-tags: [atajos, shortcuts, vscode, windows, linux, terminal]
+tags: [atajos, shortcuts, vscode, windows, linux, terminal, aplicaciones web]
 img_path: /assets/img/trabajar-visual-studio-code/
 ---
 

@@ -2,7 +2,7 @@
 title: "JavaScript"
 date: 2022-12-11 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
-tags: [aplicaciones web, smr, teoría, css]
+tags: [aplicaciones web, smr, teoría, javascript]
 img_path: /assets/img/javascript/
 ---
 

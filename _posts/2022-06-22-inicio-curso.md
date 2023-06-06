@@ -18,6 +18,7 @@ tags: []
 - [OpenGnsys](https://opengnsys.es/web/)
 - [Calendarios en blanco para Diario de profesor](https://www.wincalendar.com/es/Calendario-En-Blanco-2023-Gratis)
 - [FreeIPA](https://www.freeipa.org/page/Main_Page)
+- [VNC Viewer de RealVNC](https://www.realvnc.com/es/connect/download/viewer/)
 
 ## Programas que deben instalarse en los PCs de los alumnos
 

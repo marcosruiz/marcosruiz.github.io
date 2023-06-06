@@ -2,7 +2,7 @@
 title: "Práctica: Criptografía clásica"
 date: 2022-09-26 8:30:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática, seguridad activa, smr]
+tags: [seguridad informática, seguridad activa, smr]
 ---
 
 ## 1. Objetivo

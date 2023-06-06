@@ -2,7 +2,7 @@
 title: "Práctica: Ataques y contramedidas"
 date: 2022-12-21 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [seguridad informática, smr, teoría, seguridad activa]
+tags: [seguridad informática, smr, práctica, seguridad activa]
 img_path: /assets/img/practica-ataques-contramedidas/
 ---
 

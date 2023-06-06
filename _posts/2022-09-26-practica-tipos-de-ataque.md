@@ -2,7 +2,7 @@
 title: "Práctica: Tipos de ataques"
 date: 2022-09-26 08:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática, seguridad activa, smr]
+tags: [seguridad informática, seguridad activa, smr]
 ---
 
 ## 1. Objetivo
@@ -13,7 +13,7 @@ Duración: 3 horas.
 
 ## 2. Entrega
 
-La entrega de esta práctica debe ser un documento PDF (siempre que sea posible) con un nombre en el siguiente formato: "\<Apellidos\>_\<Nombre\>_P01.pdf". Por ejemplo, en mi caso el nombre del documento PDF sería "RuizGarcía_Marcos_P01.pdf".
+La entrega de esta práctica debe ser en formato presentación.
 
 ## 3. Actividad
 

@@ -2,7 +2,7 @@
 title: "Práctica: Portfolio con HTML y CSS"
 date: 2022-10-26 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
-tags: [aplicaciones web, smr, práctica]
+tags: [aplicaciones web, smr, práctica, html, css]
 img_path: /assets/img/practica-portfolio-html-css/
 ---
 

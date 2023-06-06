@@ -2,7 +2,7 @@
 title: "Práctica: RAID por software"
 date: 2022-12-01 09:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
-tags: [seguridad informática, seguridad pasiva, raid]
+tags: [seguridad informática, seguridad pasiva, raid, smr]
 img_path: /assets/img/practica-raid/
 ---
 
