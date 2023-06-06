@@ -1,6 +1,6 @@
 ---
 title: "Patinete Xiaomi m365"
-date: 2022-05-15 12:20:00 +0100
+date: 2023-05-05 12:20:00 +0100
 categories: [General]
 tags: [m365]
 img_path: /assets/img/patinete-xiaomi-m365/
@@ -8,7 +8,7 @@ img_path: /assets/img/patinete-xiaomi-m365/
 
 ## Cambiar la rueda trasera
 
-![Neumático m365 con cámara trasera](neumaticoConCamaraTrasera.png)
+![Neumático m365 con cámara trasera](neumaticoConCamaraTrasera.jpg)
 _Neumático m365 con cámara trasera_
 
 ## Cambiar la rueda delantera
@@ -22,10 +22,10 @@ Material para cambiar la rueda delantera:
 - Rueda de 8.5 x 2
 - Cámara de 8.5 x 2
 
-![imgDescription](desmontadoresDeNeumaticos.png)
+![Palancas/desmontadores de acero para neumáticos de coche/motocicleta](desmontadoresDeNeumaticos.jpg)
 _Palancas/desmontadores de acero para neumáticos de coche/motocicleta_
 
-![Neumático m365 con cámara delantera](neumaticoConCamaraDelantera.png)
+![Neumático m365 con cámara delantera](neumaticoConCamaraDelantera.jpg)
 _Neumático m365 con cámara delantera_
 
 Importante seguir los pasos de este vídeo, las ruedas nuevas sean macizas, tubeless o con cámara cuesta mucho ponerlas en su sitio y no querrás romper el cable de tu patinete.
@@ -50,7 +50,7 @@ Si quieres evitar pinchazos puedes usar liquido antipinchazos directamente en la
 
 Para ello necesitarás la siguiente herramienta:
 
-![Destornillador de núcleo de válvula de neumatico universal](destornilladorDeValvulas.png)
+![Destornillador de núcleo de válvula de neumatico universal](destornilladorDeValvulas.webp)
 _Destornillador de núcleo de válvula de neumatico universal_
 
 No sobrehinchar las ruedas, esto hará que el desgaste de la rueda no sea uniforme terminando con su vida útil antes de lo previsto. A continuación indico las presiones recomendadas:
