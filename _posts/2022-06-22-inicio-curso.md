@@ -56,8 +56,8 @@ De seguridad:
 - Bitwarden
 - Copyfish Free OCR Software
 - uBlock Origin
-- Firefox Relay
-- Nervenschoner
+- Firefox Relay: Genera alias para emails.
+- Nervenschoner: Rechaza automáticamente las cookies y elimina los banners.
 
 Otros:
 
