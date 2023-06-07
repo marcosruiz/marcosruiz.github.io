@@ -2,7 +2,7 @@
 title: "Sistemas de almacenamiento en red: DAS, NAS y SAN"
 date: 2022-03-29 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
-tags: [seguridad informática, servicios en red, smr]
+tags: [seguridad informática, servicios en red, smr, teoría]
 ---
 
 {:.section}

@@ -73,4 +73,4 @@ Los elementos que necesitaremos son:
 {:.section}
 ## Sistemas de almacenamiento en red
 
-Lee el artículo [Sistemas de almacenamiento en red](/posts/teoria-sistemas-de-almacenamiento-en-red/).
+Lee el artículo [Sistemas de almacenamiento en red](/posts/sistemas-de-almacenamiento-en-red/).

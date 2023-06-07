@@ -159,7 +159,7 @@ Para entender bien el vídeo necesitarás tener claro cuales son los sistemas de
 {:.question}
 ¿Qué es un cuello de botella?
 
-De manera opcional puedes leer el artículo [Sistemas de almacenamiento en red: DAS, NAS y SAN](/posts/teoria-sistemas-de-almacenamiento-en-red/). 
+De manera opcional puedes leer el artículo [Sistemas de almacenamiento en red: DAS, NAS y SAN](/posts/sistemas-de-almacenamiento-en-red/).
 
 De manera opcional aquí tenéis un artículo de como he montado un NAS en mi casa con un mini PC chino: [Instalar OMV 6 en Debian 11 (Bullseye) en mini PC chino](/posts/instalar-omv-6-en-mini-pc-chino/).
 

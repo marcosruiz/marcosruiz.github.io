@@ -15,9 +15,8 @@ Leer el artículo [DMZ: utiliza la zona desmilitarizada y protege tu red interna
 
 <iframe src="https://www.youtube.com/embed/8e2OY6ou3l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-- ¿Qué es un DDNS? 
-- ¿Qué diferencia hay entre un DNS y un DDNS? 
+- ¿Qué es un DDNS?
+- ¿Qué diferencia hay entre un DNS y un DDNS?
 - ¿Sabrías poner un ejemplo de servicio DDNS?
 - ¿Qué problemas puede tener un DDNS?
 - ¿Qué es un socket?

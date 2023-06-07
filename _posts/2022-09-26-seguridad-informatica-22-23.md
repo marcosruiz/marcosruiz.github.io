@@ -49,7 +49,7 @@ pin: true
 ## Teoría extra
 
 - [Consejos y trucos terminal en GNU Linux](/posts/trucos-terminal/)
-- [Enlaces simbólicos, enlaces duros e inodos](/posts/teoria-inodos/)
+- [Enlaces simbólicos, enlaces duros e inodos](/posts/inodos/)
 
 ## Enlaces increíbles 🔥
 
