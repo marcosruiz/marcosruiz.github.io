@@ -5,17 +5,17 @@ categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, seguridad activa, smr]
 ---
 
-## 1. Objetivo
+## Objetivo
 
 El objetivo de esta práctica es desarrollar la capacidad de investigación, colaborativa y comunicativa de los alumnos a través de los diferentes tipos de ataques informáticos.
 
 Duración: 3 horas.
 
-## 2. Entrega
+## Entrega
 
-La entrega de esta práctica debe ser en formato presentación.
+La entrega será en formato presentación. Leer [Entrega y presentación de prácticas](/posts/entrega-presentacion-practicas/).
 
-## 3. Actividad
+## Actividad
 
 Existen los siguientes tipos de ataques informáticos:
 
@@ -38,8 +38,6 @@ En grupos de 3 personas elegid uno (o dos) de estos tipos de ataque y realizad u
 3. Una noticia relacionada con el tipo de ataque elegido.
 4. Cómo nos podemos proteger de este tipo de ataques.
 
-## 4. Evaluación
+## Evaluación
 
 La evaluación se llevará a cabo a través de una rúbrica disponible en Aeducar.
-
-
