@@ -2,7 +2,7 @@
 title: Redes inalámbricas
 date: 2022-02-13 01:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
-tags: [gnu linux, comandos, terminal, bash, redes locales, teoría, servicios en red]
+tags: [redes locales, teoría, servicios en red, smr]
 ---
 
 {:.section}

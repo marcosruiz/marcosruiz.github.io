@@ -2,7 +2,7 @@
 title: Protocolo IPv6
 date: 2022-02-13 13:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
-tags: [gnu linux, comandos, terminal, bash, redes locales, teoría]
+tags: [redes locales, teoría, smr]
 mermaid: true
 img_path: /assets/img/protocolo-ipv6/
 ---

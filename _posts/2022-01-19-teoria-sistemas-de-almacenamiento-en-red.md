@@ -2,7 +2,7 @@
 title: "Sistemas de almacenamiento en red: DAS, NAS y SAN"
 date: 2022-03-29 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
-tags: [gnu linux, comandos, terminal, bash, seguridad informática, servicios en red, smr, asir]
+tags: [seguridad informática, servicios en red, smr]
 ---
 
 {:.section}
@@ -64,7 +64,6 @@ Los protocolos de comunicaciones NAS están basados en archivos. Esto significa 
 {:.question}
 ¿Se pueden recuperar los datos de un RAID5 si alguien los borra del sistema de ficheros?
 
-
 <details class="card mb-2">
   <summary class="card-header question">¿Qué dos desventajas tiene usar un RAID5?</summary>
   <div class="card-body">
@@ -117,7 +116,6 @@ Video en inglés con subtítulos en español:
 
 ![img-description](/assets/img/teoria-sistemas-de-almacenamiento-en-red/das-nas-san.png)
 _Imagen resumen de DAS vs NAS vs SAN_
-
 
 ## Preguntas
 

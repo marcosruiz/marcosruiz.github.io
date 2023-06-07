@@ -2,7 +2,7 @@
 title: Servicio de email
 date: 2022-02-06 19:05:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
-tags: [gnu linux, comandos, terminal, bash, servicios en red, ssh, seguridad informática, smr, teoría, email, correo electrónico, smtp, imap, pop3, mime]
+tags: [servicios en red, ssh, seguridad informática, smr, teoría, email, correo electrónico, smtp, imap, pop3, mime]
 ---
 
 {:.section}

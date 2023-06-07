@@ -2,7 +2,7 @@
 title: Interconexión de redes privadas con redes públicas
 date: 2022-02-21 02:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en Red]
-tags: [gnu linux, comandos, terminal, bash, servicios en red, teoría]
+tags: [servicios en red, teoríam smr]
 ---
 
 Leer artículo [Enrutamiento o encaminamiento](/posts/enrutamiento/).
