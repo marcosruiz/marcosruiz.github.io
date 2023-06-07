@@ -29,7 +29,6 @@ A continuación se listan las actividades que se deben realizar.
 ¿Que diferencias hay entre la criptografía y el criptoanálisis?
 
 {:.activity}
-
 ### Responde
 
 ¿Es lo mismo cifrar que encrpitar? Explica la diferencia.
