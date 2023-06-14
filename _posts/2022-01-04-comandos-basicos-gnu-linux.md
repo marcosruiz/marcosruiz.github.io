@@ -17,6 +17,7 @@ Cuando abrimos por primera vez la terminal de GNU Linux nos aparecerá algo pare
 ```console
 usuario@máquina:~$
 ```
+
 o a esto en caso de ser superusuario:
 
 ```console
@@ -39,19 +40,18 @@ A continuación explicaré que significa cada parte:
 Los comandos en GNU Linux son case sensitive, es decir, se diferencia entre mayúsculas y minúsculas. TODOS los comandos se escriben en minúsculas.
 
 {:.section}
-{:.section}
 ### man
 
 Man (MANual) es un comando que sirve para aprender como se usa cualquier comando aún sin conexión a Internet. 
-Su sintaxis es la siguiente: `man <comando>`. 
+Su sintaxis es la siguiente: `man <comando>`.
 
-Por ejemplo el comando `man tail` nos mostrará por terminal una descripción del comando tail así como un listado con todos los argumentos que podemos utilizar junto a su significado. 
+Por ejemplo el comando `man tail` nos mostrará por terminal una descripción del comando tail así como un listado con todos los argumentos que podemos utilizar junto a su significado.
 Una vez estamos en el manual podemos salir de este pulsando la tecla "q".
 
 {:.section}
 ### more
 
-More es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante. 
+More es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante.
 Su sintaxis es la siguiente: `more <fichero>`.
 
 Por ejemplo `more el_quijote.txt` nos mostrará el contenido paginado de el_quijote.txt.
@@ -61,7 +61,7 @@ Por ejemplo `more el_quijote.txt` nos mostrará el contenido paginado de el_quij
 {:.section}
 ### less
 
-Less es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante **y hacia atrás**. 
+Less es un comando que sirve para mostrar por pantalla el contenido de un fichero de texto paginando el contenido del mismo y permitiendo ir hacia adelante **y hacia atrás**.
 Su sintaxis es la siguiente: `less <fichero>`.
 
 Por ejemplo `less el_quijote.txt` nos mostrará el contenido paginado de el_quijote.txt.
@@ -69,7 +69,7 @@ Por ejemplo `less el_quijote.txt` nos mostrará el contenido paginado de el_quij
 {:.section}
 ### pwd
 
-Pwd (Print Working Directory) es un comando que sirve para saber en qué directorio estás. 
+Pwd (Print Working Directory) es un comando que sirve para saber en qué directorio estás.
 Su sintaxis es la siguiente : `pwd`. A continuación, se muestra un ejemplo de uso:
 
 ```console
@@ -80,10 +80,11 @@ $ pwd
 {:.section}
 ### ls
 
-Ls (LiSt) es un comando que sirve para ver los directorios y archivos del directorio actual. 
+Ls (LiSt) es un comando que sirve para ver los directorios y archivos del directorio actual.
 Su sintaxis es la siguiente : `ls <directorioAListar>`.
 
 Atributos opcionales:
+
 - **-l** muestra todos los detalles de los ficheros incluido los permisos.
 - **-a** muestra los ficheros y directorios ocultos. En linux los ficheros y directorios ocultos son los que empiezan por ".".
 
@@ -111,13 +112,13 @@ drwxr-xr-x 2 smr smr 4096 sep 20 10:06 Vídeos
 {:.section}
 ### clear
 
-Clear es un comando que sirve para dejar vacío el terminal actual. 
+Clear es un comando que sirve para dejar vacío el terminal actual.
 Su sintaxis es la siguiente : `clear`.
 
 {:.section}
 ### cd
 
-Cd (Change Directory) es un comando que sirve para moverte por los directorios del sistema. 
+Cd (Change Directory) es un comando que sirve para moverte por los directorios del sistema.
 Su sintaxis es la siguiente : `cd <directorioAMoverse>`.
 
 Existen dos tipos de rutas:
@@ -131,17 +132,17 @@ Existen dos tipos de rutas:
  A continuación se muestran varios ejemplos de uso:
 
 ```console
-$ cd /
-$ cd ./patata/
-$ cd ../patata/
-$ cd ~/patata/
+$cd /
+$cd ./patata/
+$cd ../patata/
+$cd ~/patata/
 ```
 
 {:.section}
 ### mkdir
 
-Mkdir (MaKe DIRectory) es un comando que sirve para crear un nuevo directorio. 
-Su sintaxis es la siguiente : `mkdir <directorioACrear>`. 
+Mkdir (MaKe DIRectory) es un comando que sirve para crear un nuevo directorio.
+Su sintaxis es la siguiente : `mkdir <directorioACrear>`.
 
 A continuación, se muestra un ejemplo de uso:
 
@@ -152,20 +153,20 @@ $ mkdir patata
 {:.section}
 ### touch
 
-Touch es un comando que sirve para crear un nuevo fichero. 
-Su sintaxis es la siguiente : `touch <ficheroACrear>`. 
+Touch es un comando que sirve para crear un nuevo fichero.
+Su sintaxis es la siguiente : `touch <ficheroACrear>`.
 
 A continuación, se muestra un ejemplo de uso:
 
 ```console
-$ touch patata.txt
+$touch patata.txt
 ```
 
 {:.section}
 ### cat
 
 Cat (conCATenate) es un comando que sirve para ver el contenido de un archivo. 
-Su sintaxis es la siguiente : `cat <ficheroAVer>`. 
+Su sintaxis es la siguiente : `cat <ficheroAVer>`.
 
 A continuación, se muestra un ejemplo de uso:
 
@@ -178,7 +179,7 @@ Esto es el contenido del fichero patata.txt
   <summary class="card-header question">¿Puedo añadir un nuevo nombre al comando cat?</summary>
   <div class="card-body" markdown="1">
 
-Si. La manera más fácil es añadiendo un alias en el fichero `~/.bashrc`{: .filepath}. Por ejemplo se puede añadir lo siguiente: 
+Si. La manera más fácil es añadiendo un alias en el fichero `~/.bashrc`{: .filepath}. Por ejemplo se puede añadir lo siguiente:
 
 ```shell
 alias muestraPorPantalla='/bin/cat'
@@ -192,8 +193,8 @@ alias muestraPorPantalla='/bin/cat'
 {:.section}
 ### echo
 
-Echo es un comando que sirve para imprimir/mostrar por pantalla/terminal. 
-Su sintaxis es la siguiente: `echo <textoAImprimir>`. 
+Echo es un comando que sirve para imprimir/mostrar por pantalla/terminal.
+Su sintaxis es la siguiente: `echo <textoAImprimir>`.
 
 A continuación, se muestra un ejemplo de uso:
 
@@ -205,7 +206,7 @@ Hola mundo!
 {:.section}
 ### rm
 
-Rm (ReMove) es un comando que sirve para eliminar directorios vacíos o ficheros. 
+Rm (ReMove) es un comando que sirve para eliminar directorios vacíos o ficheros.
 Su sintaxis es la siguiente: `rm <ficheroAEliminar>`.
 
 Atributos opcionales:
@@ -215,26 +216,26 @@ Atributos opcionales:
 A continuación, se muestra un ejemplo de uso:
 
 ```console
-$ rm patata.txt
-$ rm -R patata
+$rm patata.txt
+$rm -R patata
 ```
 
 {:.section}
 ### rmdir
 
 Rmdir (ReMove DIRectory) es un comando que sirve para elimina ficheros, pero solo ficheros vacíos. 
-Su sintaxis es la siguiente: `rmdir <directorioAEliminar>`. 
+Su sintaxis es la siguiente: `rmdir <directorioAEliminar>`.
 
 A continuación, se muestra un ejemplo de uso:
 
 ```console
-$ rmdir patata
+$rmdir patata
 ```
 
 {:.section}
 ### cp
 
-Cp (CoPy) es un comando que sirve para copiar archivos. 
+Cp (CoPy) es un comando que sirve para copiar archivos.
 Su sintaxis es la siguiente: `cp <ficheroOrigen> <ficheroDestino>`.
 
 Atributos opcionales:
@@ -244,8 +245,8 @@ Atributos opcionales:
 A continuación, se muestra un ejemplo de uso:
 
 ```console
-$ rm patata.txt
-$ rm -R patata
+$rm patata.txt
+$rm -R patata
 ```
 
 {:.section}
@@ -261,13 +262,13 @@ Atributos opcionales:
 A continuación se muestra un ejemplo de uso donde se elimina el fichero patata.txt:
 
 ```console
-$ rm patata.txt
+$rm patata.txt
 ```
 
 A continuación se muestra otro ejemplo donde se elimina el directorio patata y tod lo que haya en su interior.
 
 ```console
-$ rm -R patata
+$rm -R patata
 ```
 
 {:.section}
@@ -275,7 +276,7 @@ $ rm -R patata
 
 Nota: en el artículo [Permisos GNU Linux](/posts/permisos-gnu-linux) se explica de manera detallada.
 
-Chmod (CHange MODe) es un comando que sirve para cambiar permisos (lectura, escritura y ejecución) de archivos y directorios. 
+Chmod (CHange MODe) es un comando que sirve para cambiar permisos (lectura, escritura y ejecución) de archivos y directorios.
 Su sintaxis es la siguiente: `chmod <permisos> <ficheroACambiarPermisos>`.
 
 A modo de resumen, se debe saber que existen distintos tipos de usuarios:
@@ -283,7 +284,7 @@ A modo de resumen, se debe saber que existen distintos tipos de usuarios:
 - **u** (user): usuario dueño del fichero
 - **g** (group): grupo de usuarios del dueño del fichero
 - **o** (other): todos los otros usuarios
-- **a** (all): todos los tipos de usuario (dueño, grupo y otros) 
+- **a** (all): todos los tipos de usuario (dueño, grupo y otros)
 
 Y tres tipos de permiso:
 
@@ -303,7 +304,7 @@ Teniendo esto en cuenta, existen dos modos de uso del comando chmod: el modo oct
 
 - `chmod 777 patata.txt` añade todos los permisos al fichero patata.txt.
 - `chmod 000 patata.txt` quita todos los permisos al fichero patata.txt.
-- `chmod 755 patata.txt` añade todos los permisos al dueño del fichero patata.txt y permisos de lectura y ejecución para el grupo y para el resto de usuarios. 
+- `chmod 755 patata.txt` añade todos los permisos al dueño del fichero patata.txt y permisos de lectura y ejecución para el grupo y para el resto de usuarios.
 
 {:.subsection}
 #### Modo notación simbólica
@@ -314,13 +315,13 @@ Teniendo esto en cuenta, existen dos modos de uso del comando chmod: el modo oct
 {:.section}
 ### sudo
 
-Sudo (Super User DO) es un comando que sirve para ejecutar un comando como administrador. 
-Su sintaxis es la siguiente: `sudo <comando>`. 
+Sudo (Super User DO) es un comando que sirve para ejecutar un comando como administrador.
+Su sintaxis es la siguiente: `sudo <comando>`.
 
 A continuación se muestra un ejemplo de uso donde se instala el programa neofetch:
 
 ```console
-$ sudo apt install neofetch
+$sudo apt install neofetch
 ```
 
 ![Meme comando sudo](comandoSudo.jpg)
@@ -339,6 +340,7 @@ Ejemplo donde cambiamos al superusuario o root:
 usuario@máquina:/home/usuario$ sudo su
 root@máquina:/home/usuario# 
 ```
+
 Ejemplo donde cambiamos al usuario otroUsuario:
 
 ```console
@@ -349,14 +351,14 @@ otroUsuario@máquina:/home/usuario$
 {:.section}
 ### exit
 
-Exit es un comando que sirve para cerrar sesión. 
+Exit es un comando que sirve para cerrar sesión.
 Su sintaxis es la siguiente: `exit`.
 
 {:.section}
 ### history
 
 History es un comando que sirve para mostrar el histórico de comandos que se han realizado. 
-Su sintaxis es la siguiente: `history`. 
+Su sintaxis es la siguiente: `history`.
 
 A continuación se muestra un ejemplo de uso:
 
@@ -373,8 +375,8 @@ $ history
 {:.section}
 ### head
 
-Head es un comando que sirve para mostrar el principio de un fichero. 
-Su sintaxis es la siguiente: `head -<numeroDeLíneas>`. 
+Head es un comando que sirve para mostrar el principio de un fichero.
+Su sintaxis es la siguiente: `head -<numeroDeLíneas>`.
 
 A continuación se muestra un ejemplo de uso donde se muestran las 5 primeras lineas de el_quijote.txt:
 
@@ -390,8 +392,8 @@ CAPÍTULO 1: Que trata de la condición y ejercicio del famoso hidalgo D. Quij
 {:.section}
 ### tail
 
-Tail es un comando que sirve para mostrar el final de un fichero. 
-Su sintaxis es la siguiente: `tail -<numeroDeLíneas>`. 
+Tail es un comando que sirve para mostrar el final de un fichero.
+Su sintaxis es la siguiente: `tail -<numeroDeLíneas>`.
 
 A continuación se muestra un ejemplo de uso donde se muestran las 5 ultimas lineas de el_quijote.txt:
 
@@ -407,11 +409,12 @@ Forse altri canterà con miglior plettro. FINIS
 {:.section}
 ### locate
 
-Locate es un comando que sirve para localizar un archivo. 
-Su sintaxis es la siguiente: `locate <nombreDelFichero>`. 
-En el `<nombreDelFichero>` se puede usar el carácter comodín "*" que representa cero uno o más caracteres. 
+Locate es un comando que sirve para localizar un archivo.
+Su sintaxis es la siguiente: `locate <nombreDelFichero>`.
+En el `<nombreDelFichero>` se puede usar el carácter comodín "*" que representa cero uno o más caracteres.
 
 Argumentos opcionales:
+
 - **-i** (ignore case) sirve para que no se haga distinción entre mayúsculas y minúsculas.
 
 Ejemplos:
@@ -427,8 +430,8 @@ $ locate -i documentos
 {:.section}
 ### find
 
-Find es un comando que sirve para buscar archivos y directorios dentro de un directorio. 
-Su sintaxis es la siguiente: `locate <directorioDondeBuscar>`. 
+Find es un comando que sirve para buscar archivos y directorios dentro de un directorio.
+Su sintaxis es la siguiente: `locate <directorioDondeBuscar>`.
 
 Los argumentos son los siguientes:
 
@@ -450,7 +453,7 @@ $ find . -name el_quijote.txt
 {:.section}
 ### grep
 
-Grep es un comando que sirve para buscar en un documento de texto dado. 
+Grep es un comando que sirve para buscar en un documento de texto dado.
 Su sintaxis es la siguiente: `grep <cadenaABuscar> <ficheroDondeBuscar>`.
 
 Ejemplo:
@@ -463,7 +466,7 @@ de los miembros gigantes que está a su derecha mano, es el nunca medroso Brand
 {:.section}
 ### diff
 
-Diff es un comando que compara el contenido de dos archivos línea por línea. Después de analizar los archivos, genera las líneas que no coinciden. Los programadores a menudo usan este comando cuando necesitan hacer modificaciones al programa en lugar de reescribir todo el código fuente. 
+Diff es un comando que compara el contenido de dos archivos línea por línea. Después de analizar los archivos, genera las líneas que no coinciden. Los programadores a menudo usan este comando cuando necesitan hacer modificaciones al programa en lugar de reescribir todo el código fuente.
 Su sintaxis es la siguiente: `grep <fichero1> <fichero2>`.
 
 La forma más simple de usar este comando es `diff fichero1.txt fichero2.txt`.
@@ -472,18 +475,18 @@ La forma más simple de usar este comando es `diff fichero1.txt fichero2.txt`.
 ### chown
 
 Chown (CHange OWNer) es un comando que sirve para cambiar o transferir la propiedad de un archivo a otro usuario. 
-Su sintaxis es la siguiente: `chown <usuario> <fichero>`. 
+Su sintaxis es la siguiente: `chown <usuario> <fichero>`.
 
 El siguiente ejemplo pone al usuario "marcos" como propietario del fichero "fichero.txt".
 
 ```console
-$ chown marcos fichero.txt
+$chown marcos fichero.txt
 ```
 
 {:.section}
 ### whoami
 
-Whoami (WHO AM I?) es un comando que sirve para saber quien soy yo, es decir, para saber el usuario con el que estoy logeado en la terminal correspondiente. 
+Whoami (WHO AM I?) es un comando que sirve para saber quien soy yo, es decir, para saber el usuario con el que estoy logeado en la terminal correspondiente.
 Su sintaxis es la siguiente: `whoami`.
 
 Ejemplo:
@@ -496,8 +499,8 @@ smr
 {:.section}
 ### neofetch
 
-Neofetch es un comando que sirve para mostrar información detallada sobre tu sistema Linux, como el nombre de la máquina, el sistema operativo, el núcleo, etc. de una manera bonita. 
-Su sintaxis es la siguiente: `neofetch`. 
+Neofetch es un comando que sirve para mostrar información detallada sobre tu sistema Linux, como el nombre de la máquina, el sistema operativo, el núcleo, etc. de una manera bonita.
+Su sintaxis es la siguiente: `neofetch`.
 Este programa es necesario instalarlo previamente con la instrucción `sudo apt install neofetch`.
 
 Ejemplo:
@@ -528,8 +531,8 @@ ssssssssssssso/-`      `-/osssssssssssss   Resolution: 1920x902
 {:.section}
 ### wget
 
-Wget (Web Get) es un comando que sirve para descargar archivos de Internet. 
-Su sintaxis es la siguiente: `wget <url>`. 
+Wget (Web Get) es un comando que sirve para descargar archivos de Internet.
+Su sintaxis es la siguiente: `wget <url>`.
 
 En el siguiente ejemplo nos descargamos una imagen de prueba para posteriormente comprobar que efectivamente la nueva imagen está ahí.
 
@@ -553,7 +556,7 @@ el_quijote.txt  imagen-de-prueba-320x240-1.jpg
 ### curl
 
 Curl (Client URL) es un comando que sirve para descargar archivos desde una ubicación remota.
-Su sintaxis es la siguiente: `curl <url>`. 
+Su sintaxis es la siguiente: `curl <url>`.
 
 Atributos opcionales:
 
@@ -593,10 +596,9 @@ $ curl --cookie Mycookies.txt https://www. samplewebsite.com
 {:.section}
 ### top
 
-Top (Table Of Processes) es un comando que nos da información acerca del uso de la cpu, de la memoria, de los procesos en ejecución, etc en tiempo real. 
+Top (Table Of Processes) es un comando que nos da información acerca del uso de la cpu, de la memoria, de los procesos en ejecución, etc en tiempo real.
 Nos puede ayudar a monitorizar nuestro servidor dedicado si notamos que algo no funciona bien.
-Su sintaxis es la siguiente: `top`. 
-
+Su sintaxis es la siguiente: `top`.
 
 ```console
 $ top
@@ -623,7 +625,6 @@ KiB Intercambio:  1459804 total,  1459804 libre,        0 usado.  6409468 dispon
 
 Ifconfig es un comando que sirve para mostrar la configuración vigente de las interfaces de red activas, con detalles como la dirección MAC o el tráfico que ha circulado por las mismas hasta el momento. Las interfaces de red en Linux se suelen denominar eth (eth0, eth1, etc.).
 Su sintaxis es la siguiente: `ìfconfig`.
-
 
 Ejemplo:
 
