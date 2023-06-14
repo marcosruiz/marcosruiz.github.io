@@ -2,7 +2,7 @@
 title: Configurar pad programable
 date: 2022-01-08 17:17:00 +0100
 categories: [General]
-tags: [pad, configuración]
+tags: [pad, configuración, macropad, aliexpress]
 img_path: /assets/img/configurar-pad-programable/
 ---
 
