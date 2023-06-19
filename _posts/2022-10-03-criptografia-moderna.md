@@ -26,13 +26,13 @@ Con la **criptografía moderna** se intenta garantizar las siguientes propiedade
 
 La criptografía simétrica solo utiliza una clave para cifrar y descifrar el mensaje.
 
-Esta clave la tienen que conocer el emisor y el receptor previamente 
+Esta clave la tienen que conocer el emisor y el receptor previamente.
 
 La comunicación de las claves entre ambos sujetos es el punto débil del sistema, ya que resulta más fácil interceptar una clave que se ha transmitido sin seguridad (diciéndola en alto, mandándola por correo electrónico u ordinario o haciendo una llamada telefónica).
 
 Los procesos de cifrar y descifrar resultan bastante **eficientes** (tardan poco tiempo en realizarse). Por esta razón, todos los algoritmos desde la antigüedad hasta los años 70, eran simétricos.
 
-Los más utilizados actualmente son: 
+Los más utilizados actualmente son:
 
 - DES
 - 3DES
@@ -71,7 +71,7 @@ _Proceso de cifrado simétrico_
   <summary class="card-header question">¿Cuántas claves son necesarias si nos queremos comunicar 9 personas entre nosotros?</summary>
   <div class="card-body" markdown="1">
 
-El problema se puede simplificar a cuantas aristas tiene un grafo completo. Un grafo es completo si existen aristas uniendo todos los pares posibles de vértices. Es decir, todo par de vértices debe tener una arista e que los une. 
+El problema se puede simplificar a cuantas aristas tiene un grafo completo. Un grafo es completo si existen aristas uniendo todos los pares posibles de vértices. Es decir, todo par de vértices debe tener una arista e que los une.
 
 $${n(n-1)}/2$$
 
@@ -96,7 +96,7 @@ En criptografía simétrica existen 2 modos de cifrado:
 
 1. Los cifrados de bloque cifran bloques de varios bytes a la vez, mientras que los cifrados de flujo lo hacen byte a byte.
 1. Los algoritmos de flujo son por su modo de funcionamiento más rápidos que los de bloque, además de tener una menor complejidad a nivel de hardware.
-1. Los algoritmos de cifrado de bloque suelen requerir de más memoria para funcionar, puesto que trabajan con bloques de datos mayores que los de flujo. 
+1. Los algoritmos de cifrado de bloque suelen requerir de más memoria para funcionar, puesto que trabajan con bloques de datos mayores que los de flujo.
 1. Los algoritmos de cifrado de bloque son más susceptibles a la existencia de ruidos en la transmisión, lo que implica que si se interrumpe la transmisión de datos es imposible recuperarlos, mientras que los algoritmos de cifrado de flujo sí se pueden recuperar (ya que los datos son encriptados individualmente byte a byte).
 
 A continuación vamos a describir algunos algoritmos de simétrico:
@@ -109,24 +109,24 @@ A continuación vamos a describir algunos algoritmos de simétrico:
 {:.subsubsection}
 #### DES
 
-El Standard de Encriptación de Datos (DES - Data Encryption Standard) es un algoritmo desarrollado a mediados de los 70s. 
+El Standard de Encriptación de Datos (DES - Data Encryption Standard) es un algoritmo desarrollado a mediados de los 70s.
 
 Se convirtió en un standard por el US National Institute of Standards and Technology (NIST), y fue adoptado por varios gobiernos en todo el mundo.
 
 DES es un cifrado en bloque (con una longitud de 64 bits por bloque). Usa llaves de 56 bits. 
 
-Esto lo hace susceptible a una búsqueda exhaustiva de la llave con computadoras modernas y hardware de propósitos especiales. 
+Esto lo hace susceptible a una búsqueda exhaustiva de la llave con computadoras modernas y hardware de propósitos especiales.
 
 Aunque el algoritmo DES era computacionalmente seguro, esto ha dejado de ser cierto, ya que con hardware específico es posible realizar ataques por fuerza bruta que descubran una clave en pocos días. El problema principal es que el tamaño de la clave (56 bits) es demasiado pequeño para la potencia de cálculo actual.
 
 {:.subsubsection}
 #### 3DES
 
-Surge en 1999 como una versión mejorada de DES. 
+Surge en 1999 como una versión mejorada de DES.
 
 Cuando se descubrió que una clave de 56 bits (utilizada en el DES) no era suficiente para evitar un ataque de fuerza bruta, el 3DES fue elegido para agrandar la clave sin la necesidad de cambiar el algoritmo de cifrado.
 
-Realiza tres veces el cifrado DES utilizando tres claves diferentes y sin relación entre ellas. Podría decirse que el Triple-DES es más fuerte que el DES simple, sin embargo, es bastante más lento comparado a algunos nuevos cifrados en bloque.
+Realiza tres veces el cifrado DES utilizando tres claves diferentes y sin relación entre ellas. Podría decirse que el Triple-DES es más fuerte que el DES simple, sin embargo, es bastante más lento comparado a algunos nuevos cifrados en bloque.
 Sigue siendo utilizado pero cada vez más está siendo sustituido por el algoritmo AES que ha demostrado ser muy robusto y más rápido.
 
 ![3DES](3des.jpg)
@@ -153,9 +153,9 @@ _Tiempo de descifrado de AES_
 {:.subsubsection}
 #### RC4
 
-El RC4 es un algoritmo de cifrado de flujo diseñado por Ronald Rivest para RSA Data Security. 
+El RC4 es un algoritmo de cifrado de flujo diseñado por Ronald Rivest para RSA Data Security.
 
-Es un algoritmo de tamaño de clave variable con operaciones a nivel de byte. 
+Es un algoritmo de tamaño de clave variable con operaciones a nivel de byte.
 
 Es un algoritmo de ejecución rápida en software.
 
@@ -295,7 +295,7 @@ Aún más resumido...
 {:.section}
 ## Criptografía híbrida
 
-El cifrado asimétrico no puede ser usado para cifrar todos los paquetes de intercambiados en una red local porque el bajo rendimiento del algoritmo ralentizaría el tráfico. 
+El cifrado asimétrico no puede ser usado para cifrar todos los paquetes de intercambiados en una red local porque el bajo rendimiento del algoritmo ralentizaría el tráfico.
 
 En su lugar se adopta un esquema híbrido (se usa criptografía asimétrica y criptografía simétrica).
 
@@ -313,7 +313,7 @@ _Esquema híbrido del protocolo SSH_
 {:.section}
 ## Hash
 
-Un hash es un algoritmo matemático que transforma un bloque arbitrario de datos en una nueva serie de caracteres de longitud fija. 
+Un hash es un algoritmo matemático que transforma un bloque arbitrario de datos en una nueva serie de caracteres de longitud fija.
 
 ![Función hash](funcionHash.png)
 _Función hash_
@@ -336,7 +336,6 @@ Leer el artículo [¿Qué Es Un Hash Y Cómo Funciona?](https://latam.kaspersky.
 1. Son unidireccionales: no es posible, a partir del valor resumen, calcular los datos originales.
 1. No es necesario una clave para obtener el hash.
 1. No existen 2 entradas que produzcan el mismo hash.
-
 
 ![Ejemplos de la aplicación de un algoritmo hash](ejemplosHash.png)
 _Ejemplos de la aplicación de un algoritmo hash_
@@ -365,7 +364,7 @@ En [esta web](https://emn178.github.io/online-tools/sha256.html).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lP_pbygY3PA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 {:.question}
-¿Qué información hay en el fichero /etc/shadow? 
+¿Qué información hay en el fichero /etc/shadow?
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es el salting de contraseñas? ¿Qué ventajas tiene echar sal a la contraseña?</summary>
@@ -373,7 +372,7 @@ En [esta web](https://emn178.github.io/online-tools/sha256.html).
 
 ![Salting de contraseñas](saltingHashPassword.webp)
 _Salting de contraseñas_
-    
+
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
@@ -384,13 +383,13 @@ _Salting de contraseñas_
 En GNU Linux:
 
 ```console
-$ md5sum <fichero del que quiero obtener el hash>
+$md5sum <fichero del que quiero obtener el hash>
 ```
 
 En Windows:
 
 ```console
-$ winmd5 <fichero del que quiero obtener el hash>
+$winmd5 <fichero del que quiero obtener el hash>
 ```
 
 {:.section}
@@ -477,7 +476,7 @@ El algoritmo de la función hash no necesita una clave externa como los algoritm
 {:.subsubsection}
 #### Paso 2
 
-Ahora el emisor cifra ese resumen con su clave privada y lo envía al destinatario junto con el documento original. 
+Ahora el emisor cifra ese resumen con su clave privada y lo envía al destinatario junto con el documento original.
 
 {:.subsubsection}
 #### Paso 3
@@ -524,10 +523,10 @@ En todos los casos necesitaríamos una comprobación extra sobre la clave públi
 Comprobación de la huella con gpg:
 
 ```console
-$ gpg --fingerprint
+$gpg --fingerprint
 ```
 
-La PKI o Public Key Infrastructure es la tecnología tras los certificados digitales. Al igual que un permiso de conducir o un pasaporte, un certificado digital demuestra su identidad y le otorga ciertos permisos. Un certificado digital permite que su propietario cifre, firme y autentique. Por tanto, PKI es la tecnología que le permite cifrar datos, firmar documentos y autenticarse mediante certificados. 
+La PKI o Public Key Infrastructure es la tecnología tras los certificados digitales. Al igual que un permiso de conducir o un pasaporte, un certificado digital demuestra su identidad y le otorga ciertos permisos. Un certificado digital permite que su propietario cifre, firme y autentique. Por tanto, PKI es la tecnología que le permite cifrar datos, firmar documentos y autenticarse mediante certificados.
 
 Con el PKI se asegura:
 

@@ -27,22 +27,20 @@ Incluso dentro de nuestra organización podemos tener empleados "traidores".
 {:.question}
 ¿Cómo se llaman estos traidores?
 
-Es imposible asegurar que nunca conseguirán el mensaje (o documento) que contiene la información. Nuestro objetivo es que aunque lo tengan y lo puedan leer, no entiendan nada porque esté cifrado. 
+Es imposible asegurar que nunca conseguirán el mensaje (o documento) que contiene la información. Nuestro objetivo es que aunque lo tengan y lo puedan leer, no entiendan nada porque esté cifrado.
 
 En esta tarea nos ayudará la criptografía.
-
 
 {:.section}
 ## Criptografía vs criptoanálisis
 
 La palabra Criptografía proviene del griego "kryptos" que significa oculto, y "graphia", que significa escritura.
 
-Su definición según el diccionario es "Arte de escribir con clave secreta o de un modo enigmático". 
+Su definición según el diccionario es "Arte de escribir con clave secreta o de un modo enigmático".
 
-La Criptografía es un conjunto de técnicas, que originalmente tratan sobre la protección o el ocultamiento de la información frente a observadores no autorizados. 
+La Criptografía es un conjunto de técnicas, que originalmente tratan sobre la protección o el ocultamiento de la información frente a observadores no autorizados.
 
 Una definición más moderna de la criptografía es: Disciplina que estudia los principios, métodos y medios de transformar los datos para ocultar su significado, garantizar su integridad, establecer su autenticidad y prevenir su repudio
-
 
 <details class="card mb-2">
   <summary class="card-header question">¿Que es el criptoanálisis?</summary>
@@ -53,8 +51,7 @@ La criptografía no engloba a las técnicas que se usan para romper dichos códi
   </div>
 </details>
 
-Principio de Kerckhoffs: La efectividad del sistema no debe depender de que su diseño permanezca en secreto. 
-
+Principio de Kerckhoffs: La efectividad del sistema no debe depender de que su diseño permanezca en secreto.
 
 {:.section}
 ## Historia de la criptografía
@@ -64,7 +61,6 @@ El uso de la criptografía se remonta a casi la época en la que comenzó la esc
 Gobernantes y militares ya la usaron en los primeros estados como Egito, Babilonia o el Imperio Romano
 
 Los espartanos utilizaron allá por el 400 a.c., la escítala, que puede considerarse como el primer sistema de criptografía por transposición (Ocultar el significado real de un texto mediante la alteración del orden de los signos que lo conforman).
-
 
 ![Escítala](escitala.png)
 _Escítala_
@@ -87,13 +83,12 @@ Desencripta el texto "Q   PEUQQER EUULOZ EE FAS  MERUTTESAEEEJOGRNNOROTGGR ZEOO 
 {:.section}
 ## Cifrado César
 
-El cifrado César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. 
+El cifrado César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto.
 
 Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
 
 ![Cifrado César](cifradoCesar.png)
 _Cifrado César_
-
 
 <details class="card mb-2">
   <summary class="card-header question">Sin ordenador, ¿Cuál es el texto encriptado de "El propósito de las copias de seguridad es la recuperación de datos" con un desplazamiento = 5 con el alfabeto español (27 letras)?</summary>
@@ -103,7 +98,6 @@ Jp uwtuóxnyt ij pfx htunfx ij xjlzwnifi jx pf wjhzujwfhnór ij ifytx
 
   </div>
 </details>
-
 
 {:.subsection}
 ### Ventajas
@@ -127,9 +121,8 @@ El ROT13 no está pensado para los casos en los que el secreto tiene alguna im
 
 El efecto real del ROT13 es simplemente asegurarse de que el lector de un mensaje tenga que descifrarlo conscientemente, lo que normalmente suele implicar ejecutar el comando en cuestión en el software que lee el mensaje. En lugar de proteger un mensaje confidencial de los lectores no autorizados, el ROT13 salvaguarda a los lectores autorizados del material que pueden no querer leer involuntariamente, como los spoilers en una crítica de un libro o una película.
 
-
 {:.section}
-## Cifrado de Polibio 
+## Cifrado de Polibio
 
 Se trata de un algoritmo trivial, donde cada letra del alfabeto es reemplazada por las coordenadas de su posición en un cuadrado.
 
@@ -158,7 +151,7 @@ _Clave del cifrado de Polibio_
 
 Polibio aparece en los libros de Criptografía como el inventor de un procedimiento para escribir las letras como pares de números.
 
-También puede utilizarse la tabla de Polibio para convertir en números un alfabeto desordenado previamente por medio de una palabra clave. 
+También puede utilizarse la tabla de Polibio para convertir en números un alfabeto desordenado previamente por medio de una palabra clave.
 
 <details class="card mb-2">
   <summary class="card-header question">¿Cómo quedaría la tabla de Polibio si usamos la palabra "MUESCA" para cifrar?</summary>
@@ -213,13 +206,13 @@ Existen 2 tipos de cifrados:
 
 Un sistema de cifrado es monoalfabético cuando cada carácter se sustituye siempre por un determinado carácter del alfabeto del texto cifrado.
 
-La clave de un cifrado monoalfabético es el alfabeto de cifrado. Para un alfabeto de 26 letras, el número de claves (alfabetos) distintas es 26! 
+La clave de un cifrado monoalfabético es el alfabeto de cifrado. Para un alfabeto de 26 letras, el número de claves (alfabetos) distintas es 26!
 
-26! = 4,0329146112661E+26 = 403.291.461.126.605.635.584.000.000. 
+26! = 4,0329146112661E+26 = 403.291.461.126.605.635.584.000.000.
 
 Descifrar un mensaje ensayando todas las posibles claves, lo que se conoce como ataque por fuerza bruta, es una tarea poco menos que imposible.
 
-Supongamos que se tarda un segundo en comprobar cada clave. Se tardaría en agotar todas las claves, unos 4·1026 segundos. Este tiempo es aproximadamente 1,3·1019 años, unos mil millones de veces más grande que la edad del sol. 
+Supongamos que se tarda un segundo en comprobar cada clave. Se tardaría en agotar todas las claves, unos 4·1026 segundos. Este tiempo es aproximadamente 1,3·1019 años, unos mil millones de veces más grande que la edad del sol.
 
 ¡Ni con la ayuda de los ordenadores más potentes podríamos descifrar el mensaje por medio del ataque por fuerza bruta!
 
@@ -229,7 +222,7 @@ Supongamos que se tarda un segundo en comprobar cada clave. Se tardaría en agot
 
 En absoluto. No sólo se puede sino que es bastante sencillo y la debilidad de estos procedimientos de cifrado es conocida desde hace más de quinientos años.
 
-Cada lengua manifiesta preferencias de algunas letras sobre otras. Por ejemplo en español, en un texto suficientemente largo, se encuentra que: 
+Cada lengua manifiesta preferencias de algunas letras sobre otras. Por ejemplo en español, en un texto suficientemente largo, se encuentra que:
 
 Las vocales ocupan alrededor del 47% del texto
 
@@ -249,7 +242,6 @@ Las vocales pueden ir precedidas o seguidas por prácticamente cualquier otra le
 {:.question}
 Realiza un análisis de criptofrecuencia con un texto cualquiera con Cryptool.
 
-
 <details class="card mb-2">
   <summary class="card-header question">¿Qué cifrados monoalfabéticos hemos visto?</summary>
   <div class="card-body" markdown="1">
@@ -264,15 +256,15 @@ Todos los vistos hasta ahora: César, ROT13, Polibio y Francmason
 ¿Cuáles de los algoritmos vistos tiene un cifrado polialfabético? ¿Qué quiere decir esto?
 
 {:.subsection}
-### Cifrados polialfabéticos 
+### Cifrados polialfabéticos
 
-Como ya se vio en el apartado dedicado a los criptosistemas monoalfabéticos, su principal debilidad es que el texto cifrado mantiene la misma distribución de frecuencia de caracteres que tiene el texto claro original, 
+Como ya se vio en el apartado dedicado a los criptosistemas monoalfabéticos, su principal debilidad es que el texto cifrado mantiene la misma distribución de frecuencia de caracteres que tiene el texto claro original.
 
-Consecuencia: los cifrados monoalfabeto sean criptoanalizables por métodos estadísticos sencillos. 
+Consecuencia: los cifrados monoalfabeto sean criptoanalizables por métodos estadísticos sencillos.
 
-Una posible mejora de los cifrados por sustitución es intentar métodos que destruyan esa correspondencia de frecuencias entre el mensaje en claro y el criptograma. 
+Una posible mejora de los cifrados por sustitución es intentar métodos que destruyan esa correspondencia de frecuencias entre el mensaje en claro y el criptograma.
 
-En los cifrados polialfabéticos la sustitución aplicada a cada caracter varía en función de la posición que ocupe este dentro del texto claro. 
+En los cifrados polialfabéticos la sustitución aplicada a cada caracter varía en función de la posición que ocupe este dentro del texto claro.
 
 En realidad corresponde a una aplicación cíclica de n cifrados de sustitución monoalfabeto.
 
@@ -281,26 +273,26 @@ En realidad corresponde a una aplicación cíclica de n cifrados de sustitución
 
 Giovanni Battista Della Porta es un famoso científico italiano. En el ámbito de la criptografía su obra más importante data del 1563 y es De Furtivis Literarum Notis.
 
-Estudia los cifrados clásicos y su criptoanálisis, expone también un nuevo método de cifrado. 
+Estudia los cifrados clásicos y su criptoanálisis, expone también un nuevo método de cifrado.
 
-La característica principal de este método es la utilización de distintos alfabetos y de una palabra clave. 
+La característica principal de este método es la utilización de distintos alfabetos y de una palabra clave.
 
-El cifrado de Porta original emplea 11 alfabetos distintos. 
+El cifrado de Porta original emplea 11 alfabetos distintos.
 
 La palabra clave nos permite conocer en todo momento cual es el alfabeto que debemos emplear (En el caso del idioma español se deben utilizar 13 alfabetos distintos puesto que utilizamos 26 letras. Se construyen de modo análogo al que utilizó nuestro personaje para el latín).
 
 {:.subsection}
 ### Funcionamiento
 
-Supongamos que la palabra clave es PORTA. 
+Supongamos que la palabra clave es PORTA.
 
 Si queremos cifrar cualquier mensaje la primera letra del mensaje está asociada a la letra clave P, la segunda a la O... la sexta vuelve a estar asociada a la P.
 
-Cada alfabeto tiene dos letras que le dan nombre. 
+Cada alfabeto tiene dos letras que le dan nombre.
 
-Si la letra clave es P, utilizamos para cifrar el alfabeto que tiene la letra P en su nombre (en nuestro caso es el séptimo alfabeto). Cada letra de la primera fila la sustituimos por la letra que tiene debajo en dicho alfabeto. 
+Si la letra clave es P, utilizamos para cifrar el alfabeto que tiene la letra P en su nombre (en nuestro caso es el séptimo alfabeto). Cada letra de la primera fila la sustituimos por la letra que tiene debajo en dicho alfabeto.
 
-Si la letra que queremos codificar se encuentra en la segunda línea la sustituimos por la letra que se encuentra encima. 
+Si la letra que queremos codificar se encuentra en la segunda línea la sustituimos por la letra que se encuentra encima.
 
 ![Tabla de Della Porta](dellaPorta.png)
 _Tabla de Della Porta_
@@ -315,15 +307,14 @@ TODO
   </div>
 </details>
 
-
 {:.section}
 ## Cifrado de Alberti
 
-Leon Battista Alberti fue uno de los ejemplos de "homo universalis" del Renacimiento. Fue poeta, compositor, pintor, pero sobre todo es conocido como arquitecto. 
+Leon Battista Alberti fue uno de los ejemplos de "homo universalis" del Renacimiento. Fue poeta, compositor, pintor, pero sobre todo es conocido como arquitecto.
 
-En el mundo de la criptografía su aportación más importante es De Componendis Cyphris, escrito en 1466. Es el libro sobre criptografía más antiguo que se conoce en el mundo occidental. Analiza en este libro los cifrados monoalfabéticos explicando el análisis de frecuencias. 
+En el mundo de la criptografía su aportación más importante es De Componendis Cyphris, escrito en 1466. Es el libro sobre criptografía más antiguo que se conoce en el mundo occidental. Analiza en este libro los cifrados monoalfabéticos explicando el análisis de frecuencias.
 
-Históricamente es el primero en proponer los cifrados polialfabéticos. 
+Históricamente es el primero en proponer los cifrados polialfabéticos.
 
 Aparte de esto, propone un nuevo método de cifrado de su invención que utiliza el ahora conocido como disco de Alberti.
 
@@ -332,18 +323,17 @@ _Disco de Alberti_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KpZhXou7D8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Ahora tomamos en el disco pequeño una letra clave, por ejemplo la k. Esta letra la alínea con una cualquiera de las letras exteriores, por ejemplo con la B, e informa de esta letra al receptor del mensaje
+Ahora tomamos en el disco pequeño una letra clave, por ejemplo la k. Esta letra la alinea con una cualquiera de las letras exteriores, por ejemplo con la B, e informa de esta letra al receptor del mensaje
 
-... Usando este punto de partida, cada letra del mensaje representará a la letra fija que hay sobre ella. 
+... Usando este punto de partida, cada letra del mensaje representará a la letra fija que hay sobre ella.
 
 Despues de escribir tres o cuatro letras, puedo cambiar la posición de la letra clave de modo que la k esté, por ejemplo, sobre la D. Despues en mi mensaje escribo una D mayúscula y, a partir de este punto, k ya no significará B y si D, y todas la letras del disco fijo tienen nuevas identidades.
 
-El método de cifrado de Alberti presenta una clara ventaja: no es posible atacarlo con el análisis de frecuencias. 
+El método de cifrado de Alberti presenta una clara ventaja: no es posible atacarlo con el análisis de frecuencias.
 
-Pero aun así tiene inconvenientes graves: Para poder desencriptar el mensaje el receptor necesita un disco exactamente igual al que sirvió para crear el cifrado. 
+Pero aun así tiene inconvenientes graves: Para poder desencriptar el mensaje el receptor necesita un disco exactamente igual al que sirvió para crear el cifrado.
 
 Otro problema, es que si alguien posee un disco igual al que creó el criptograma, lo descifraría con facilidad. La seguridad de este cifrado depende de mantener secretos los discos. En la actualidad esto se considera una falta grave de cualquier método de cifrado.
-
 
 {:.section}
 ## Cifrado de Vigenère
@@ -357,7 +347,7 @@ En diferentes puntos del proceso de encriptación, el cifrado usa un alfabeto di
 
 El descifrado se realiza yendo a la fila de la tabla correspondiente a la clave, encontrando la posición de la letra del texto cifrado en esta fila y luego usando la etiqueta de la columna como texto sin formato.
 
-Si por ejemplo se quiere cifrar el mensaje "Dieu protège la France" con la clave LOUIS se procede de la siguiente forma. 
+Si por ejemplo se quiere cifrar el mensaje "Dieu protège la France" con la clave LOUIS se procede de la siguiente forma.
 
 Se escribe el texto y la clave debajo repetida tantas veces como haga falta:
 
@@ -419,7 +409,6 @@ Con el alfabeto castellano el resultado es "KTN Vxyñfju Bjftmoen".
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
-
 
 {:.section}
 ## Bibliografía
