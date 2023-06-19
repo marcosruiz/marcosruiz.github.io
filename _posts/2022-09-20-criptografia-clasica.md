@@ -6,7 +6,8 @@ tags: [seguridad informática, smr, teoría]
 img_path: /assets/img/criptografia-clasica/
 ---
 
-## 1. Introducción ¿Por qué cifrar?
+{:.section}
+## Introducción ¿Por qué cifrar?
 
 La **información** (datos) es poder y **tiene un gran valor**. Por ejemplo: diseño de un automóvil, la fórmula de un nuevo medicamento, estrategia de mercado de una empresa...
 
@@ -31,7 +32,8 @@ Es imposible asegurar que nunca conseguirán el mensaje (o documento) que contie
 En esta tarea nos ayudará la criptografía.
 
 
-## 2. Criptografía vs criptoanálisis
+{:.section}
+## Criptografía vs criptoanálisis
 
 La palabra Criptografía proviene del griego "kryptos" que significa oculto, y "graphia", que significa escritura.
 
@@ -54,7 +56,8 @@ La criptografía no engloba a las técnicas que se usan para romper dichos códi
 Principio de Kerckhoffs: La efectividad del sistema no debe depender de que su diseño permanezca en secreto. 
 
 
-## 3. Historia de la criptografía
+{:.section}
+## Historia de la criptografía
 
 El uso de la criptografía se remonta a casi la época en la que comenzó la escritura.
 
@@ -81,7 +84,8 @@ El método de la escítala era extremadamente sencillo, como también lo era el 
 {:.question}
 Desencripta el texto "Q   PEUQQER EUULOZ EE FAS  MERUTTESAEEEJOGRNNOROTGGR ZEOO DA" si tengo un cilindro hexagonal.
 
-## 4. Cifrado César
+{:.section}
+## Cifrado César
 
 El cifrado César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. 
 
@@ -101,27 +105,31 @@ Jp uwtuóxnyt ij pfx htunfx ij xjlzwnifi jx pf wjhzujwfhnór ij ifytx
 </details>
 
 
-### 4.1. Ventajas
+{:.subsection}
+### Ventajas
 
 1. Uno de los métodos más fáciles de usar en criptografía y puede proporcionar una seguridad mínima a la información.
 1. Uso de solo una clave todo el proceso (Desplazamiento).
 1. Uno de los mejores métodos para usar si el sistema no puede usar ninguna técnica de codificación complicada
 1. Requiere pocos recursos informáticos.
 
-### 4.2. Desventajas
+{:.subsection}
+### Desventajas
 
 1. Uso de estructura simple
 1. Solo puede proporcionar seguridad mínima a la información
 1. La frecuencia del patrón de letras proporciona una gran pista para descifrar el mensaje completo.
 
-## 5. Rot13
+{:.section}
+## Rot13
 
 El ROT13 no está pensado para los casos en los que el secreto tiene alguna importancia.
 
 El efecto real del ROT13 es simplemente asegurarse de que el lector de un mensaje tenga que descifrarlo conscientemente, lo que normalmente suele implicar ejecutar el comando en cuestión en el software que lee el mensaje. En lugar de proteger un mensaje confidencial de los lectores no autorizados, el ROT13 salvaguarda a los lectores autorizados del material que pueden no querer leer involuntariamente, como los spoilers en una crítica de un libro o una película.
 
 
-## 6. Cifrado de Polibio 
+{:.section}
+## Cifrado de Polibio 
 
 Se trata de un algoritmo trivial, donde cada letra del alfabeto es reemplazada por las coordenadas de su posición en un cuadrado.
 
@@ -172,7 +180,8 @@ _Clave del cifrado de Polibio: Murcielago_
   </div>
 </details>
 
-## 7. Cifrado de Francmasón
+{:.section}
+## Cifrado de Francmasón
 
 El cifrado Francmasón es un cifrado por sustitución simple que cambia las letras por símbolos basándose en un diagrama.
 
@@ -192,13 +201,15 @@ _Ejemplo de Francmasón_
 {:.question}
 Escribir "IES Tiempos Modernos" con el cifrado de Francmason. 
 
-## 8. Tipos de cifrado
+{:.section}
+## Tipos de cifrado
 
 Existen 2 tipos de cifrados:
 - Monoalfabéticos
 - Polialfabéticos
 
-### 8.1. Cifrados monoalfabéticos
+{:.subsection}
+### Cifrados monoalfabéticos
 
 Un sistema de cifrado es monoalfabético cuando cada carácter se sustituye siempre por un determinado carácter del alfabeto del texto cifrado.
 
@@ -252,7 +263,8 @@ Todos los vistos hasta ahora: César, ROT13, Polibio y Francmason
 {:.question}
 ¿Cuáles de los algoritmos vistos tiene un cifrado polialfabético? ¿Qué quiere decir esto?
 
-### 8.2. Cifrados polialfabéticos 
+{:.subsection}
+### Cifrados polialfabéticos 
 
 Como ya se vio en el apartado dedicado a los criptosistemas monoalfabéticos, su principal debilidad es que el texto cifrado mantiene la misma distribución de frecuencia de caracteres que tiene el texto claro original, 
 
@@ -264,7 +276,8 @@ En los cifrados polialfabéticos la sustitución aplicada a cada caracter varía
 
 En realidad corresponde a una aplicación cíclica de n cifrados de sustitución monoalfabeto.
 
-## 9. Cifrado de Della Porta
+{:.section}
+## Cifrado de Della Porta
 
 Giovanni Battista Della Porta es un famoso científico italiano. En el ámbito de la criptografía su obra más importante data del 1563 y es De Furtivis Literarum Notis.
 
@@ -276,7 +289,8 @@ El cifrado de Porta original emplea 11 alfabetos distintos.
 
 La palabra clave nos permite conocer en todo momento cual es el alfabeto que debemos emplear (En el caso del idioma español se deben utilizar 13 alfabetos distintos puesto que utilizamos 26 letras. Se construyen de modo análogo al que utilizó nuestro personaje para el latín).
 
-### 9.1. Funcionamiento
+{:.subsection}
+### Funcionamiento
 
 Supongamos que la palabra clave es PORTA. 
 
@@ -302,7 +316,8 @@ TODO
 </details>
 
 
-## 10. Cifrado de Alberti
+{:.section}
+## Cifrado de Alberti
 
 Leon Battista Alberti fue uno de los ejemplos de "homo universalis" del Renacimiento. Fue poeta, compositor, pintor, pero sobre todo es conocido como arquitecto. 
 
@@ -330,8 +345,10 @@ Pero aun así tiene inconvenientes graves: Para poder desencriptar el mensaje el
 Otro problema, es que si alguien posee un disco igual al que creó el criptograma, lo descifraría con facilidad. La seguridad de este cifrado depende de mantener secretos los discos. En la actualidad esto se considera una falta grave de cualquier método de cifrado.
 
 
-## 11. Cifrado de Vigenère
+{:.section}
+## Cifrado de Vigenère
 
+{:.subsection}
 ### Con tabla
 
 La tabla consiste en los alfabetos escritos 26 veces en diferentes filas, cada alfabeto desplazado cíclicamente a la izquierda en comparación con el alfabeto anterior, correspondiente a los 26 posibles Cifrados César.
@@ -364,6 +381,7 @@ El texto cifrado es: OWYCH CCNMY PZUNJ LBWM
   </div>
 </details>
 
+{:.subsection}
 ### Sin tabla
 
 En términos matemáticos, puede expresarse la función de cifrado como:
@@ -403,7 +421,8 @@ Con el alfabeto castellano el resultado es "KTN Vxyñfju Bjftmoen".
 </details>
 
 
-## 12. Bibliografía
+{:.section}
+## Bibliografía
 
 - [Cifrado César](https://www.dcode.fr/caesar-cipher)
 - [Cifrado de Vigenere](https://www.dcode.fr/cifrado-vigenere)

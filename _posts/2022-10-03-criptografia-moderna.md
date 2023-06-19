@@ -7,51 +7,8 @@ img_path: /assets/img/criptografia-moderna/
 math: true
 ---
 
-<details class="card mb-2">
-  <summary class="card-header">Índice</summary>
-  <div class="card-body" markdown="1">
-
-- [1. Introducción](#1-introducción)
-- [2. Cifrado simétrico](#2-cifrado-simétrico)
-  - [2.1. Problemas de la criptografía simétrica](#21-problemas-de-la-criptografía-simétrica)
-  - [2.2. Algoritmos de cifrado simétrico](#22-algoritmos-de-cifrado-simétrico)
-    - [2.2.1. DES](#221-des)
-    - [2.2.2. 3DES](#222-3des)
-    - [2.2.3. AES](#223-aes)
-    - [2.2.4. RC4](#224-rc4)
-- [3. Cifrado asimétrico](#3-cifrado-asimétrico)
-  - [3.1. Ventajas criptografía asimétrica](#31-ventajas-criptografía-asimétrica)
-  - [3.2. Desventajas criptografía asimétrica](#32-desventajas-criptografía-asimétrica)
-  - [3.3. Algoritmos de cifrado asimétrico](#33-algoritmos-de-cifrado-asimétrico)
-    - [3.3.1. Diffie-Hellman](#331-diffie-hellman)
-    - [3.3.2. RSA](#332-rsa)
-    - [3.3.3. DSA](#333-dsa)
-    - [3.3.4. ElGamal](#334-elgamal)
-- [4. Resumen del cifrado simétrico y asimétrico](#4-resumen-del-cifrado-simétrico-y-asimétrico)
-- [5. Criptografía híbrida](#5-criptografía-híbrida)
-- [6. Hash](#6-hash)
-  - [6.1. Características de los hash](#61-características-de-los-hash)
-  - [6.2. Aplicación de los hash](#62-aplicación-de-los-hash)
-  - [6.3. Como obtener un hash](#63-como-obtener-un-hash)
-- [7. Firma electrónica](#7-firma-electrónica)
-  - [7.1. Proceso básico de firma electrónica](#71-proceso-básico-de-firma-electrónica)
-- [8. Firma digital](#8-firma-digital)
-  - [8.1. Proceso de firma digital](#81-proceso-de-firma-digital)
-    - [8.1.1. Paso 1](#811-paso-1)
-    - [8.1.2. Paso 2](#812-paso-2)
-    - [8.1.3. Paso 3](#813-paso-3)
-- [9. Certificado digital de clave pública](#9-certificado-digital-de-clave-pública)
-- [10. PKI (Public Key Infraestructure)](#10-pki-public-key-infraestructure)
-  - [10.1. Nuevos interlocutores](#101-nuevos-interlocutores)
-  - [10.2. Funcionamiento PKI](#102-funcionamiento-pki)
-- [11. Bibliografía](#11-bibliografía)
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-
-## 1. Introducción
+{:.section}
+## Introducción
 
 Con la **criptografía moderna** se intenta garantizar las siguientes propiedades deseables en la comunicación de información de forma segura (a estas propiedades se las conoce como funciones o servicios de seguridad):
 
@@ -64,7 +21,8 @@ Con la **criptografía moderna** se intenta garantizar las siguientes propiedade
 7. **No repudio en destino**: que cuando se envía un mensaje, el destinatario no pueda negar haberlo recibido cuando le llegue.
 8. **Autenticación de actualidad (no replay)**: consiste en probar que el mensaje es actual, y que no se trata de un mensaje antiguo reenviado.
 
-## 2. Cifrado simétrico
+{:.section}
+## Cifrado simétrico
 
 La criptografía simétrica solo utiliza una clave para cifrar y descifrar el mensaje.
 
@@ -103,7 +61,8 @@ _Proceso de cifrado simétrico_
 {:.question}
 ¿Por qué existe el cifrado por bloque y cifrado por flujo?
 
-### 2.1. Problemas de la criptografía simétrica
+{:.subsection}
+### Problemas de la criptografía simétrica
 
 1. **Circulación de claves**: no podemos utilizar el mismo canal inseguro por el que enviamos el mensaje. Hay que utilizar un segundo canal de comunicación, que también habría que proteger.
 2. **Gestión de claves almacenadas**: si en una empresa hay 10 trabajadores y todos tienen conversaciones privadas con todos, cada uno deberá establecer 9 contraseñas distintas y encontrar 9 canales seguros para actualizarlas. En total hay 81 claves (9 por usuario x 9 usuarios) y 81 canales... ¿O no?
@@ -127,7 +86,8 @@ tenemos 36 aristas, que es lo mismo que 36 claves/llaves.
   </div>
 </details>
 
-### 2.2. Algoritmos de cifrado simétrico
+{:.subsection}
+### Algoritmos de cifrado simétrico
 
 En criptografía simétrica existen 2 modos de cifrado:
 
@@ -146,7 +106,8 @@ A continuación vamos a describir algunos algoritmos de simétrico:
 - AES
 - RC4
 
-#### 2.2.1. DES
+{:.subsubsection}
+#### DES
 
 El Standard de Encriptación de Datos (DES - Data Encryption Standard) es un algoritmo desarrollado a mediados de los 70s. 
 
@@ -158,7 +119,8 @@ Esto lo hace susceptible a una búsqueda exhaustiva de la llave con computadoras
 
 Aunque el algoritmo DES era computacionalmente seguro, esto ha dejado de ser cierto, ya que con hardware específico es posible realizar ataques por fuerza bruta que descubran una clave en pocos días. El problema principal es que el tamaño de la clave (56 bits) es demasiado pequeño para la potencia de cálculo actual.
 
-#### 2.2.2. 3DES
+{:.subsubsection}
+#### 3DES
 
 Surge en 1999 como una versión mejorada de DES. 
 
@@ -170,7 +132,8 @@ Sigue siendo utilizado pero cada vez más está siendo sustituido por el algorit
 ![3DES](3des.jpg)
 _3DES_
 
-#### 2.2.3. AES
+{:.subsubsection}
+#### AES
 
 AES (Advanced Encryption Standard o Estándar de Encriptación Avanzada) es un algoritmo de clave simétrica que remplazará el 3DES.
 
@@ -187,7 +150,8 @@ Tiempo que necesitarían los superordenadores (de alrededor de 10 PFLOPS) para 
 ![Tiempo de descifrado de AES](aesTiempoDescifrado.webp)
 _Tiempo de descifrado de AES_
 
-#### 2.2.4. RC4
+{:.subsubsection}
+#### RC4
 
 El RC4 es un algoritmo de cifrado de flujo diseñado por Ronald Rivest para RSA Data Security. 
 
@@ -197,7 +161,8 @@ Es un algoritmo de ejecución rápida en software.
 
 El algoritmo se emplea para encriptación de ficheros y para encriptar la comunicación en protocolos como el SSL (TLS).
 
-## 3. Cifrado asimétrico
+{:.section}
+## Cifrado asimétrico
 
 Años 70: los criptógrafos Diffie y Hellman publicaron sus investigaciones sobre criptografía asimétrica. Su algoritmo de cifrado utiliza 2 claves matemáticas relacionadas de manera que lo que cifras con una solo lo puedes descifrar con otra.
 
@@ -228,14 +193,16 @@ _Proceso de cifrado asimétrico_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/apn1BN6XMVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### 3.1. Ventajas criptografía asimétrica
+{:.subsection}
+### Ventajas criptografía asimétrica
 
 La criptografía asimétrica resuelve los 2 problemas de la clave simétrica.
 
 1. No necesitamos canales seguros para comunicar la clave: Podemos adjuntar la clave pública en nuestros correos, añadirla al perfil de nuestras redes sociales, en un blog… La información que nos envíen estará cifrada y solo nosotros podremos acceder a ella.
 1. No hay desbordamiento en el tratamiento de claves y canales. Si somos 9 empleados, solo necesitamos 18 claves y un canal.
 
-### 3.2. Desventajas criptografía asimétrica
+{:.subsection}
+### Desventajas criptografía asimétrica
 
 Sin embargo, los algoritmos públicos presentan ciertos problemas.
 
@@ -243,7 +210,8 @@ Sin embargo, los algoritmos públicos presentan ciertos problemas.
 2. Hay que proteger la clave privada: no bastará con dejarla en un fichero de una carpeta del disco. Las claves privadas se guardarán en un fichero (llamado keyring o llavero) y este fichero estará cifrado mediante cifrado simétrico. Es decir, para poder usar la clave privada, hay que introducir una clave que descifra el llavero y permite leerla.
 3. La necesidad de una Autoridad de Certificación (CA) en el proceso.
 
-### 3.3. Algoritmos de cifrado asimétrico
+{:.subsection}
+### Algoritmos de cifrado asimétrico
 
 Existen varios:
 
@@ -252,7 +220,8 @@ Existen varios:
 - DSA
 - ElGamal
 
-#### 3.3.1. Diffie-Hellman
+{:.subsubsection}
+#### Diffie-Hellman
 
 La criptografía asimétrica vio su nacimiento en 1976, cuando Ralph Merkel, Whitfield Diffie y Martin Hellman crearon el primer sistema público de criptografía asimétrica. Aunque no era exactamente asimétrico, el algoritmo  Diffie-Hellman supuso un primera paso importantísimo en el desarrollo de esta técnica, que pronto vio llegar más aportaciones de otros investigadores.
 
@@ -263,7 +232,8 @@ _Concepto del intercambio de claves secretas detrás del Diffie–Hellman_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q8K311s7EiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### 3.3.2. RSA
+{:.subsubsection}
+#### RSA
 
 Es un sistema criptográfico de clave pública desarrollado en 1977. Es el primer y más utilizado algoritmo de este tipo y es válido tanto para cifrar como para firmar digitalmente.
 
@@ -282,15 +252,18 @@ Garantiza no solo la confidencialidad de la comunicación entre dos partes, cifr
 
 También proporciona otros servicios o funciones de seguridad de la información, como son la autenticación de origen , la integridad o el no-repudio (mediante la firma digital).
 
-#### 3.3.3. DSA
+{:.subsubsection}
+#### DSA
 
 DSA es un estándar del Gobierno Federal de los Estados Unidos de América o FIPS para firmas digitales.
 
-#### 3.3.4. ElGamal
+{:.subsubsection}
+#### ElGamal
 
 El procedimiento de cifrado/descifrado ElGamal se refiere a un esquema de cifrado basado en el problema matemático del logaritmo discreto. Es un algoritmo de criptografía asimétrica basado en la idea de Diffie-Hellman y que funciona de una forma parecida a este algoritmo discreto. El algoritmo de ElGamal puede ser utilizado tanto para generar firmas digitales como para cifrar o descifrar.
 
-## 4. Resumen del cifrado simétrico y asimétrico
+{:.section}
+## Resumen del cifrado simétrico y asimétrico
 
 El vídeo más importante...
 
@@ -319,7 +292,8 @@ Aún más resumido...
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5BYhdr5n3es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 5. Criptografía híbrida
+{:.section}
+## Criptografía híbrida
 
 El cifrado asimétrico no puede ser usado para cifrar todos los paquetes de intercambiados en una red local porque el bajo rendimiento del algoritmo ralentizaría el tráfico. 
 
@@ -336,7 +310,8 @@ _Comunicación a través de criptografía híbrida_
 ![Proceso híbrido del protocolo SSH](esquemaHibridoCifradoSsh.png)
 _Esquema híbrido del protocolo SSH_
 
-## 6. Hash
+{:.section}
+## Hash
 
 Un hash es un algoritmo matemático que transforma un bloque arbitrario de datos en una nueva serie de caracteres de longitud fija. 
 
@@ -353,7 +328,8 @@ Son los siguientes:
 
 Leer el artículo [¿Qué Es Un Hash Y Cómo Funciona?](https://latam.kaspersky.com/blog/que-es-un-hash-y-como-funciona/2806/)
 
-### 6.1. Características de los hash
+{:.subsection}
+### Características de los hash
 
 1. Los hashes producidos, a pesar de que son palabras parecidas, son totalmente distintos.
 1. Ambos tienen 40 caracteres de longitud: ya sean 5 caracteres los que metamos o todos los caracteres de esta presentación, la función hash hace un resumen de 40 caracteres.
@@ -365,7 +341,8 @@ Leer el artículo [¿Qué Es Un Hash Y Cómo Funciona?](https://latam.kaspersky.
 ![Ejemplos de la aplicación de un algoritmo hash](ejemplosHash.png)
 _Ejemplos de la aplicación de un algoritmo hash_
 
-### 6.2. Aplicación de los hash
+{:.subsection}
+### Aplicación de los hash
 
 - Almacenamiento de contraseñas: se guarda el hash que produce la contraseña pero no la contraseña.
 - Integridad de los mensajes (como ya vimos en el tema y práctica anterior).
@@ -401,7 +378,8 @@ _Salting de contraseñas_
   </div>
 </details>
 
-### 6.3. Como obtener un hash
+{:.subsection}
+### Como obtener un hash
 
 En GNU Linux:
 
@@ -415,7 +393,8 @@ En Windows:
 $ winmd5 <fichero del que quiero obtener el hash>
 ```
 
-## 7. Firma electrónica
+{:.section}
+## Firma electrónica
 
 La firma electrónica es un conjunto de datos electrónicos que acompañan o que están asociados a un documento electrónico y cuyas funciones básicas son:
 
@@ -431,7 +410,8 @@ Podemos precisar varios tipos:
 - Firma electrónica **avanzada**: permite, además de conocer a la persona firmante, saber si se han efectuado cambios posteriormente. Por ejemplo: firma digital.
 - Firma electrónica **cualificada**: se trata de una firma electrónica avanzada que ha sido generada por un dispositivo capacitado para la creación de firmas electrónicas. Por ejemplo: firma digital.
 
-### 7.1. Proceso básico de firma electrónica
+{:.subsection}
+### Proceso básico de firma electrónica
 
 El proceso básico que se sigue para la firma electrónica es el siguiente:
 
@@ -440,7 +420,8 @@ El proceso básico que se sigue para la firma electrónica es el siguiente:
 1. La aplicación utiliza la clave privada para codificar el resumen.
 1. La aplicación crea otro documento electrónico que contiene ese resumen codificado. Este nuevo documento es la firma electrónica.
 
-## 8. Firma digital
+{:.section}
+## Firma digital
 
 - La primera utilidad de la criptografía es **ocultar el mensaje** o encriptarlo, es decir, garantizar la confidencialidad de la comunicación.
 - La segunda es conseguir **determinar la autenticidad del emisor**. ¿Cómo podría estar seguro un general romano de que el mensaje con las órdenes venía de otro general romano y no del algún enemigo? Si el enemigo conocía el algoritmo de cifrado y la clave actual, podía intentar engañarle mediante un mensaje falso pero correctamente cifrado.
@@ -473,7 +454,8 @@ Además, las firmas digitalizadas se pueden falsificar muy fácilmente. Con lo q
   </div>
 </details>
 
-### 8.1. Proceso de firma digital
+{:.subsection}
+### Proceso de firma digital
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JRYUxqghPG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -483,7 +465,8 @@ _Proceso de firma digital_
 ![Proceso de firma digital](firmaDigital.png)
 _Proceso de firma digital_
 
-#### 8.1.1. Paso 1
+{:.subsubsection}
+#### Paso 1
 
 El emisor aplica al documento una función de resumen (Función hash). 
 
@@ -491,11 +474,13 @@ El resultado de esa función es un lista de caracteres (resumen), que la funció
 
 El algoritmo de la función hash no necesita una clave externa como los algoritmos de cifrado
 
-#### 8.1.2. Paso 2
+{:.subsubsection}
+#### Paso 2
 
 Ahora el emisor cifra ese resumen con su clave privada y lo envía al destinatario junto con el documento original. 
 
-#### 8.1.3. Paso 3
+{:.subsubsection}
+#### Paso 3
 
 En el destino se hacen 2 operaciones:
 
@@ -508,7 +493,8 @@ Por supuesto, si queremos que el documento original no pueda ser interceptado en
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ysfBTecjGIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## 9. Certificado digital de clave pública
+{:.section}
+## Certificado digital de clave pública
 
 Es, principalmente, un documento digital que contiene nuestros datos identificativos que están autentificados por un organismo oficial. El certificado digital es un documento que confirma nuestra identidad en internet como Persona Física y es obligatorio para poder consultar y realizar trámites con la Administración Pública.
 
@@ -524,7 +510,8 @@ _Captura de pantalla de un certificado digital_
 {:.question}
 ¿Qué es una lista de revocación de certificados?
 
-## 10. PKI (Public Key Infraestructure)
+{:.section}
+## PKI (Public Key Infraestructure)
 
 Hasta de ahora hemos aprendido...
 
@@ -557,7 +544,8 @@ Con el PKI se asegura:
 {:.question}
 ¿Qué es el no repudio?
 
-### 10.1. Nuevos interlocutores
+{:.subsection}
+### Nuevos interlocutores
 
 - **Autoridad de Certificación (CA)**: su misión es emitir certificados. Hasta ahora los generábamos nosotros mismos.
 - **Autoridad de Registro (RA)**: es la responsable de asegurar que el solicitante del certificado es quien dice ser.
@@ -566,7 +554,8 @@ Con el PKI se asegura:
 ![Interlocutores PKI](pki.jpg)
 _Interlocutores PKI_
 
-### 10.2. Funcionamiento PKI
+{:.subsection}
+### Funcionamiento PKI
 
 1. Durante el inicio de la sesión, el SERVIDOR envía su clave publica al CLIENTE. El CLIENTE, antes de iniciar el diálogo, DESCONFIA (necesita comprobar que el servidor es quien dice ser).
 1. El SERVIDOR lo ha supuesto y ha enviado, junto con su clave pública, la firma digital de esa clave. Esa firma digital ha sido realizada por una CA oficial (utilizando la clave privada de esa CA)
@@ -577,7 +566,8 @@ Por lo tanto, para que funcione la autentificación de clave publica mediante PK
 - El SERVIDOR ha conseguido que una CA firme su clave publica (Por ejemplo, Verisign, FNMT…)
 - El CLIENTE dispone de la clave pública de esa CA dentro de su llavero de claves asimétricas.
 
-## 11. Bibliografía
+{:.section}
+## Bibliografía
 
 - [Función hash](https://es.wikipedia.org/wiki/Funci%C3%B3n_hash)
 - [5 - Criptografía](https://sites.google.com/site/seguridadinformaticaisidro/5---criptografia)
