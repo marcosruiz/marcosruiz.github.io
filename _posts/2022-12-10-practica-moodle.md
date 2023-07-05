@@ -18,7 +18,7 @@ La entrega será en formato presentación grupal. Leer [Entrega y presentación 
 
 ## Actividades
 
-En las noticias sale el gobernante de Canarias diciendo "¡La ley de protección de datos debe cumplirse y a saber que puede llegar Google o el gobierno de EEUU con los datos de nuestros alumnes canaries!". Parece ser que el gobierno de Canarias va ha prohibir a todos los docentes de sus centros educativos públicos usar la GSuite, incluido Google Classroom.
+En las noticias sale el gobernante de Canarias diciendo "¡La ley de protección de datos debe cumplirse y a saber que puede llegar a hacer Google o el gobierno de EEUU con los datos de nuestros alumnes canaries!". Parece ser que el gobierno de Canarias va ha prohibir a todos los docentes de sus centros educativos públicos usar la GSuite, incluido Google Classroom.
 
 Debido a esto, el gobernante de Canarias ha sacado a concurso público la instalación y mantenimiento de un sistema de gestión del aprendizaje para que sus docentes tengan una herramienta con la que comunicarse y evaluar a sus alumnos ahora que les ha prohibido usar la GSuite. Parece ser que le corre mucha prisa y hay que tener un servidor de prueba totalmente operativo junto con una presentación donde se muestre lo genial que es la solución propuesta en un plazo de 10 horas laborales.
 
@@ -115,17 +115,17 @@ Haz que las contraseñas de los usuarios cumplan con los siguientes requisitos:
 Y demuestra que funciona.
 
 {:.activity}
-## Realiza una copia de seguridad del curso
+### Realiza una copia de seguridad del curso
 
 Realiza una copia de seguridad del curso de prueba, modifica el curso que has creado y restáuralo.
 
 {:.activity}
-## Configura tu perfil
+### Configura tu perfil
 
 Modifica tu perfil de usuario con al menos una foto y una descripción creativa.
 
 {:.activity}
-## Genera informes
+### Genera informes
 
 Genera informes de acceso y utilización del sitio para impresionar al jurado de tu dominio de esta plataforma.
 
