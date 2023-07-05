@@ -24,7 +24,7 @@ Debido a esto, el gobernante de Canarias ha sacado a concurso público la instal
 
 Tu jefe ha visto que hay mucho dinero en juego y le ha parecido una buena idea presentarse al concurso público. Eso sí, todo el trabajo lo vas a hacer tú junto a otro compañero, que para eso os paga. De todos modos si ganáis el concurso tendréis que viajar tanto tu compañero como tú a Canarias a montar los servidores. "Nada mal" piensas.
 
-Además, tu jefe ha encontrado el artículo [Tutorial: Instalar Moodle en Ubuntu Server 22.04](/posts/tutorial-moodle/) que te servirá para hacer tu trabajo más fácil. "¡Bastante crack mi jefe!" dices para tus adentros.
+Además, tu jefe ha encontrado los artículos Cómo instalar la pila [LAMP en Ubuntu 22.04 LTS](https://comoinstalar.me/como-instalar-la-pila-lamp-en-ubuntu-22-04-lts/) y [Cómo instalar Moodle en Ubuntu 22.04 LTS](https://comoinstalar.me/como-instalar-moodle-en-ubuntu-22-04-lts/). "¡Bastante crack mi jefe!" dices para tus adentros.
 
 Así que con algo más de motivación te dispones a instalar y configurar el Moodle más bacano que pueda existir para dejar impresionados al jurado del concurso, que esperemos que no esté comprado.
 
@@ -50,7 +50,7 @@ Instala y configura Moodle 4.1. Tu jefe cree que con la elección de esta versi�
 {:.activity}
 ### Crea un curso de prueba
 
-Crea un curso llamado `tuUsuario` con al menos un usuario con rol de alumno y un usuario con rol de profesor. El alumno deberá tener `alumno<tuUsuario>` como nombre y el profesor `profesor<tuUsuario>`. Deberás hacer login con el usuario alumno y el usuario profesor y ambos deberán estar matriculados en el mismo curso, cada uno con su respectivo rol. Se valorará positivamente que añadas más de un alumno y más de un profesor.
+Crea un curso llamado `<tu usuario>` con al menos un usuario con rol de alumno y un usuario con rol de profesor. El alumno deberá tener `alumno<tu usuario>` como nombre y el profesor `profesor<tu usuario>`. Deberás hacer login con el usuario alumno y el usuario profesor y ambos deberán estar matriculados en el mismo curso, cada uno con su respectivo rol. Se valorará positivamente que añadas más de un alumno y más de un profesor.
 
 {:.activity}
 ### Crea una actividad
@@ -135,9 +135,16 @@ Genera informes de acceso y utilización del sitio para impresionar al jurado de
 Como profesor, configura el cajón de bloques (barra lateral derecha) del curso para que contenga un bloque que consideres que pueden ser útil para el profesorado o para el alumnado canario.
 
 {:.activity}
+### (Opcional) Instala Moodle 4.1 con Docker
+
+Esta actividad sustituye la Actividad “Instala la pila LAMP” y “Instala Moodle 4.1 en la máquina virtual”.
+
+Instala y configura Moodle 4.1. Tu jefe cree que con la elección de esta versión tendréis más posibilidades de ganar. Además, en tu empresa habeis empezado a usar Docker para todas las instalaciones desde hace unos 6 meses y ha resultado todo un éxito.
+
+{:.activity}
 ### (Opcional) Realiza una copia de seguridad de Moodle
 
-Realiza una copia de seguridad de todo Moodle, elimina el curso que has creado y restáuralo. Para ello puedes seguir la documentación oficial de Moodle [Respaldo del sitio](https://docs.moodle.org/all/es/Respaldo_del_sitio).
+Realiza una copia de seguridad de todo Moodle, elimina el curso que has creado y restáuralo. Para ello puedes seguir la documentación oficial de Moodle en el siguiente enlace: [Respaldo del sitio](https://docs.moodle.org/all/es/Respaldo_del_sitio).
 
 {:.activity}
 ### (Opcional) Comprueba las actualizaciones
@@ -154,3 +161,10 @@ Realiza una copia de seguridad remota y periódica de todo Moodle. Para ello pue
 - Filezilla
 - Cron
 - Scripts hechos por tí
+
+{:.activity}
+### Prepara y envía la presentación
+
+Prepara una presentación de 5 minutos para vender el producto y mostrar el sistema funcionando en tiempo real. El formato de la presentación es libre.
+
+Envía la presentación en la tarea correspondiente.
