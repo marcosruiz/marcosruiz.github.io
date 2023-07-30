@@ -13,7 +13,6 @@ Para convertir una lista de Spotify a una lista de YouTube se puede utilizar la 
 > Si tienes la aplicación Nervenschoner deberás deshabilitarla para que funcionen los botones.
 {:.prompt-info}
 
-
 ## Descargar en MP3 una lista de YouTube
 
 En GitHub existe el proyecto [YT-DLP](https://github.com/yt-dlp/yt-dlp). Se trata de un programa de terminal que permite descargar una lista de reproducción en formato MP3 con el siguiente comando:
