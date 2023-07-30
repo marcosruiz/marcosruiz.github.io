@@ -10,7 +10,10 @@ img_path: /assets/img/tutorial-descargar-playlist/
 
 Para convertir una lista de Spotify a una lista de YouTube se puede utilizar la web [Playlist Buddy](https://playlistbuddy.com/).
 
-> Si tienes la aplicación Nervenschoner deberás deshabilitarla para que funcionen los botones.
+> Si tienes la aplicación Nervenschoner o una extensión que te bloquee las cookies deberás deshabilitarla para que funcionen los botones.
+{:.prompt-info}
+
+> El límite está en 250 canciones por lista de reproducción.
 {:.prompt-info}
 
 ## Descargar en MP3 una lista de YouTube
