@@ -16,4 +16,10 @@ pin: true
 - <https://www.apuntesfpinformatica.es/apuntes-lmsgi>
 - <https://fp.josedomingo.org/lmgs/>
 - <https://www.abrirllave.com/lmsgi/>
-- 
+- <https://lenguajehtml.com/>
+- <https://web.dev/learn/>
+- <https://caniuse.com/>
+- <https://www.codewars.com/>
+- <https://desarrolloweb.com/>
+- <https://beacons.ai/criislopeez>
+- <https://fonts.google.com/icons>

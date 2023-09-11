@@ -7,11 +7,11 @@ tags: []
 
 ## Enlaces de interés
 
+- [DRBL](https://drbl.org/): Para instalar Windows 10 de forma masiva. Tiene una instancia de Clonezilla client y clonezilla server.
 - [FOG](https://www.bujarra.com/instalando-fog/): Para instalar Windows 10 de forma masiva.
 - [Vitalinux](https://wiki.vitalinux.educa.aragon.es/index.php/P%C3%A1gina_principal).
 - [Clonezilla](https://clonezilla.org/downloads.php)
 - [MiniTool Partition Wizard 10](https://www.partitionwizard.com/what-is-new-in-v10.html)
-- [DRBL](https://drbl.org/)
 - [Ninite](https://ninite.com/): Para instalar varios programas a la vez.
 - [Clonezilla: Recuperar una imagen del equipo paso a paso](http://somebooks.es/clonezilla-recuperar-una-imagen-del-equipo-paso-paso/)
 - [FOG Project](https://fogproject.org/)
@@ -36,14 +36,14 @@ tags: []
 | PuTTY | ❌ | ✅ |
 | WinSCP | ❌ | ✅ |
 | OBS Studio | ✅ | ✅ |
-| Sublime Text 3 | ✅ | ✅ |
+| [Sublime Text 3](https://www.sublimetext.com/download) | ✅ | ✅ |
 | Windows Terminal | ❌ | ✅ |
 | Subsistema Ubuntu | ❌ | ✅ |
 | [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) | ✅ | ✅ |
 | WPS Office | ✅ | ✅ |
 | Vagrant | ✅ | ✅ |
 | CristalDiskInfo | ❌ | ✅ |
-| Safe Exam Browser | ❌ | ✅ |
+| [Safe Exam Browser](https://safeexambrowser.org/download_en.html) | ❌ | ✅ |
 
 ## Programas para mi
 
