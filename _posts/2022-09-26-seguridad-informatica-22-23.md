@@ -3,7 +3,6 @@ title: Seguridad Informática 22 23
 date: 2022-09-26 23:40:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr]
-pin: true
 ---
 
 ## Evaluación 1

@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Arranque múltiple con VHD"
-date: 2023-07-08 9:00:00 +0100
+date: 2023-09-06 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Seguridad Informática]
 tags: [seguridad informática, smr, tutorial, seguridad pasiva]
 img_path: /assets/img/tutorial-arranque-multiple-vhd/
