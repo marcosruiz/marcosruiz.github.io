@@ -2,7 +2,7 @@
 title: "Tutorial: Descargar playlist de YouTube"
 date: 2023-05-05 12:20:00 +0100
 categories: [General]
-tags: [m365]
+tags: [YouTube, tutorial, playlist, Spotify, descargar]
 img_path: /assets/img/tutorial-descargar-playlist/
 ---
 
@@ -22,6 +22,7 @@ En GitHub existe el proyecto [YT-DLP](https://github.com/yt-dlp/yt-dlp). Se trat
 
 ```console
 $yt-dlp.exe --extract-audio --audio-format mp3 <url>
+$yt-dlp.exe --playlist-items 1:100:1 --extract-audio --audio-format mp3 <url> 
 ```
 
 > La lista de reproducción tiene que ser pública.
