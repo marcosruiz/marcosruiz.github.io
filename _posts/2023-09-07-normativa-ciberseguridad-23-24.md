@@ -17,3 +17,9 @@ pin: true
 
 ## Enlaces increíbles 🔥 (beta)
 
+- 
+
+## Cursos
+
+- <https://elandroidefeliz.com/cisco-curso-de-ciberseguridad-gratuito-de-120-horas/>
+- <https://skillsforall.com/catalog?category=course>

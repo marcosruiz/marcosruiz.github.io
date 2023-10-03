@@ -19,3 +19,7 @@ pin: true
 
 - <https://www.garceta.es/catalogo/libro.php?ISBN=978-84-1903-407-6&idd=12>
 - <https://aitor-medrano.github.io/iabd2223/>
+
+## Cursos
+
+- <https://elandroidefeliz.com/10-cursos-online-gratuitos-sobre-ia-impartidos-por-google/>
