@@ -8,7 +8,7 @@ img_path: /assets/img/tarea-01-introduccion-xml/
 
 ## Entrega y presentación
 
-La entrega será en formato PDF. Leer [Entrega y presentación de prácticas](/posts/entrega-presentacion-tareas/).
+La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
 ## Calificación
 
