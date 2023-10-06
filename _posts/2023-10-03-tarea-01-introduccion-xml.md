@@ -10,11 +10,11 @@ img_path: /assets/img/tarea-01-introduccion-xml/
 
 Una vez realizada la tarea elaborarás un único documento donde figuren las respuestas correspondientes. El documento tiene que estar en un formato editable (por ejemplo, fichero de LibreOffice o Word, pero no en PDF).  El envío se realizará a través de la plataforma de la forma establecida para ello, y el archivo se nombrará siguiendo las siguientes pautas:
 
-apellido1_apellido2_nombre_SIGxx_Tarea.pdf
+`apellido1_apellido2_nombre_SIGxx_Tarea.pdf`{: .filepath}
 
 Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna Begoña Sánchez Mañas para la primera unidad del MP de LMSGI, debería nombrar esta tarea como...
 
-sanchez_manas_begona_LMSGI01_Tarea.pdf
+`sanchez_manas_begona_LMSGI01_Tarea.pdf`{: .filepath}
 
 ## Calificación
 
@@ -43,6 +43,8 @@ Indica por qué  los siguientes ejemplos XML son incorrectos.
 
 ```xml
 <negrita><italica>Texto XML</negrita></italica>
+```
+
 #### d)
 
 ```xml
@@ -78,14 +80,14 @@ Indica por qué  los siguientes ejemplos XML son incorrectos.
 
 ### Actividad 2
 
-Diseñar un documento válido en XML que permita estructurar la información de una agenda de teléfonos, suponer que la información que podemos tener de una persona es su nombre y apellidos, su dirección y sus teléfonos, que pueden ser el teléfono de casa, el móvil y el teléfono del trabajo
+Diseñar un documento válido en XML que permita estructurar la información de una agenda de teléfonos, suponer que la información que podemos tener de una persona es su nombre y apellidos, su dirección y sus teléfonos, que pueden ser el teléfono de casa, el móvil y el teléfono del trabajo.
 
 > Tiempo aproximado de resolución: 45 minutos.
 {:.prompt-info}
 
 ### Actividad 3
 
-Diseñar un documento válido en XML que permita estructurar la información de las recetas de cocina de un restaurante y aplicarlo a la siguiente receta de cocina. Hay que hacerlo de modo que un sistema informático pueda realizar búsquedas por ingredientes, cantidad de comensales o nombre de la receta
+Diseñar un documento válido en XML que permita estructurar la información de las recetas de cocina de un restaurante y aplicarlo a la siguiente receta de cocina. Hay que hacerlo de modo que un sistema informático pueda realizar búsquedas por ingredientes, cantidad de comensales o nombre de la receta.
 
 Sopa de cebolla (4 personas).
 
@@ -119,7 +121,7 @@ Diseñar un documento XML válido que permita estructurar la información para p
 
 Ana Fernández Gutiérrez con nif 16965696L teléfono 789654321 email <ana.fdezgtrrez@hotmail.com>, su dirección es C/ El Percebe, 13 de Santander CP 39302 No hay información sobre las faltas de asistencia o sus notas hasta el momento.
 
-Pepito Grillo con nif 98765432H teléfono 656566555 email <yhyh@yahoo.com>, su dirección es Avd. El Pez, 5 de Suances CP 39401. Su nota es "apto" y no tiene faltas de asistencia
+Pepito Grillo con nif 98765432H teléfono 656566555 email <yhyh@yahoo.com>, su dirección es Avd. El Pez, 5 de Suances CP 39401. Su nota es "apto" y no tiene faltas de asistencia.
 
 > Tiempo de resolución aproximado: 1,5 h.
 {:.prompt-info}
