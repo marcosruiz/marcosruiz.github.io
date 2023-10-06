@@ -33,14 +33,14 @@ Además:
 1. El documento no debe contener faltas ortográficas.
 1. En el caso de utilizar capturas de pantalla, las capturas también deben demostrar la autoría de las actividades. Por lo tanto, estas capturas deberán ser de toda la pantalla del alumno para que se vea la fecha de realización y el nombre del fichero que está abierto.
 
-> En el curso de Moodle tenéis una plantilla realizada con WPS Office que cumple la mayoría de los requisitos.
-{:.prompt-info}
-
 ![Ejemplo de portada](ejemploPortada.png)
 _Ejemplo de portada_
 
 ![Ejemplo de actividad](ejemploActividad.png)
 _Ejemplo de actividad_
+
+> En el curso de Moodle tenéis una plantilla realizada con WPS Office que cumple la mayoría de los requisitos.
+{:.prompt-info}
 
 ## Entrega y presentación en formato ZIP
 
