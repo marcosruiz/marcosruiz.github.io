@@ -1,6 +1,6 @@
 ---
 title: "Tarea: Introducción a XML"
-date: 2023-09-07 9:00:00 +0100
+date: 2023-10-03 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Multiplataforma, Lenguajes de Marcas y Sistemas de Gestión de Información]
 tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, desarrollo de aplicaciones web]
 img_path: /assets/img/tarea-01-introduccion-xml/
@@ -8,13 +8,7 @@ img_path: /assets/img/tarea-01-introduccion-xml/
 
 ## Entrega y presentación
 
-Una vez realizada la tarea elaborarás un único documento donde figuren las respuestas correspondientes. El documento tiene que estar en un formato editable (por ejemplo, fichero de LibreOffice o Word, pero no en PDF).  El envío se realizará a través de la plataforma de la forma establecida para ello, y el archivo se nombrará siguiendo las siguientes pautas:
-
-`apellido1_apellido2_nombre_SIGxx_Tarea.pdf`{: .filepath}
-
-Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna Begoña Sánchez Mañas para la primera unidad del MP de LMSGI, debería nombrar esta tarea como...
-
-`sanchez_manas_begona_LMSGI01_Tarea.pdf`{: .filepath}
+La entrega será en formato PDF. Leer [Entrega y presentación de prácticas](/posts/entrega-presentacion-tareas/).
 
 ## Calificación
 
