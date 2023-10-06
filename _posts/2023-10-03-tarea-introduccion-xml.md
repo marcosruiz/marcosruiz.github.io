@@ -1,5 +1,5 @@
 ---
-title: "Tarea 01 (sin nota): Introducción a XML"
+title: "Tarea: Introducción a XML"
 date: 2023-09-07 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Multiplataforma, Lenguajes de Marcas y Sistemas de Gestión de Información]
 tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, desarrollo de aplicaciones web]
@@ -119,9 +119,8 @@ Proceso:
 
 Diseñar un documento XML válido que permita estructurar la información para permitir su gestión informática de los alumnos de un modulo del ciclo formativo DAM. Aplicarlo al módulo de Lenguajes de Marcas y Sistemas de Gestión de Información sabiendo que tiene asignadas 4 horas semanales y es de carácter obligatorio. El modulo se imparte entre el 15 de septiembre de 2010 y el 30 de junio de 2011. Hay matriculados dos alumnos:
 
-Ana Fernández Gutiérrez con nif 16965696L teléfono 789654321 email <ana.fdezgtrrez@hotmail.com>, su dirección es C/ El Percebe, 13 de Santander CP 39302 No hay información sobre las faltas de asistencia o sus notas hasta el momento.
-
-Pepito Grillo con nif 98765432H teléfono 656566555 email <yhyh@yahoo.com>, su dirección es Avd. El Pez, 5 de Suances CP 39401. Su nota es "apto" y no tiene faltas de asistencia.
+- Ana Fernández Gutiérrez con nif 16965696L teléfono 789654321 email <ana.fdezgtrrez@hotmail.com>, su dirección es C/ El Percebe, 13 de Santander CP 39302 No hay información sobre las faltas de asistencia o sus notas hasta el momento.
+- Pepito Grillo con nif 98765432H teléfono 656566555 email <yhyh@yahoo.com>, su dirección es Avd. El Pez, 5 de Suances CP 39401. Su nota es "apto" y no tiene faltas de asistencia.
 
 > Tiempo de resolución aproximado: 1,5 h.
 {:.prompt-info}
