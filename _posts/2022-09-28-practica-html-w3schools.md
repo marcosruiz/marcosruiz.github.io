@@ -1,8 +1,8 @@
 ---
-title: "Práctica: HTML en W3Schools"
+title: "Tarea: HTML en W3Schools"
 date: 2022-09-28 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
-tags: [aplicaciones web, smr, práctica]
+tags: [aplicaciones web, smr, práctica, tarea]
 img_path: /assets/img/practica-html-w3schools/
 ---
 

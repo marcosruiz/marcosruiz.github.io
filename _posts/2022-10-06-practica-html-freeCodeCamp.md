@@ -1,8 +1,8 @@
 ---
-title: "Práctica: HTML en freeCodeCamp"
+title: "Tarea: HTML en freeCodeCamp"
 date: 2022-10-06 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
-tags: [aplicaciones web, smr, práctica]
+tags: [aplicaciones web, smr, práctica, tarea]
 img_path: /assets/img/practica-html-freecodecamp/
 ---
 
@@ -25,7 +25,7 @@ La entrega de esta práctica debe ser un fichero PDF con un nombre en el siguien
 7. El documento no debe contener faltas ortográficas.
 8. Los comandos y ficheros de configuración que hayas utilizado deben quedar reflejados en el PDF de la entrega en texto para permitirte copiar y pegar el día del examen todos los comandos de una manera rápida.
 9. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
-10. Para las actividades a mano se deberá hacer una foto a la resolución del ejercicio y añadirla al PDF. 
+10. Para las actividades a mano se deberá hacer una foto a la resolución del ejercicio y añadirla al PDF.
 
 ## Evaluación
 
