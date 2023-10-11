@@ -11,7 +11,7 @@ pin: true
 
 - T01 - [Tarea: Introducción a XML](/posts/tarea-introduccion-xml/)
 - T02 - [Tarea: Introducción a HTML](/posts/practica-html/)
-- T03 - [Tarea: HTML en freeCodeCamp](/posts/practica-html-freecodecamp/)
+- T03 - [Tarea: HTML en freeCodeCamp](/posts/practica-html-freeCodeCamp/)
 - T04 - [Tarea: HTML en W3Schools](/posts/practica-html-w3schools/)
 
 ## Enlaces increíbles 🔥 (beta)

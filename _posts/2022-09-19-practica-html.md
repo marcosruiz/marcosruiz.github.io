@@ -737,6 +737,9 @@ Escribe el html de un formulario web según las especificaciones descritas a con
 ![Resultado final del formulario](resultadoFinalFormulario.png)
 _Resultado final del formulario_
 
+{:.question}
+Con el inspector de código del navegador (F12) puedes llegar a observar qué datos se estarían enviando al servidor. Intenta averiguar como.
+
 ## Bibliografía (no usar)
 
 - [EJERCICIOS HTML](https://francescricart.com/tutorial-html/ejercicios-html/)
