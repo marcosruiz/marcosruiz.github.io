@@ -1,6 +1,6 @@
 ---
 title: "Tarea: Introducción a HTML"
-date: 2022-09-21 9:00:00 +0100
+date: 2023-10-15 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
 tags: [aplicaciones web, smr, práctica, tarea, lmsgi, dam, daw, asir]
 img_path: /assets/img/practica-html/
@@ -68,7 +68,7 @@ Berners-Lee trabajó en el CERN desde junio hasta diciembre de 1980. Durante ese
 
 Haz que tenga un formato según la siguiente imagen:
 
-![Biografía de Tim Berners-Lee en HTML](biografia-tim-berners-lee.jpg)
+![Biografía de Tim Berners-Lee en HTML](biografia-tim-berners-lee.png)
 _Biografía de Tim Berners-Lee en HTML_
 
 {:.activity}
