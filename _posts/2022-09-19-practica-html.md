@@ -2,7 +2,7 @@
 title: "Tarea: Introducción a HTML"
 date: 2022-09-21 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
-tags: [aplicaciones web, smr, práctica, tarea]
+tags: [aplicaciones web, smr, práctica, tarea, lmsgi, dam, daw, asir]
 img_path: /assets/img/practica-html/
 ---
 

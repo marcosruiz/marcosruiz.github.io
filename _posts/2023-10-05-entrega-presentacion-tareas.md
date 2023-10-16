@@ -54,7 +54,7 @@ Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiale
 
 En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que se pida) con el nombre `apellido1_apellido2_nombre1_nombre2_SIGxx_Tarea.zip`{: .filepath} y las actividades en el formato que corresponda:
 
-- Las actividades de XML deberán estar en formato HTML con el nombre `<tu usuario>_a<Número de la actividad con dos dígitos>.xml`{: .filepath}. Por ejemplo: `mruizg_a01.xml`{: .filepath}.
+- Las actividades de XML deberán estar en formato XML con el nombre `<tu usuario>_a<Número de la actividad con dos dígitos>.xml`{: .filepath}. Por ejemplo: `mruizg_a01.xml`{: .filepath}.
 - Las actividades de HTML deberán estar en formato HTML con el nombre `<tu usuario>_a<Número de la actividad con dos dígitos>.html`{: .filepath}. Por ejemplo: `mruizg_a01.html`{: .filepath}.
 - Las actividades de Packet Tracer deberán estar en formato PKT con el nombre `<tu usuario>_a<Número de la actividad con dos dígitos>.pkt`{: .filepath}. Por ejemplo: `mruizg_a01.pkt`{: .filepath}.
 - Las actividades de JavaScript deberán estar en formato JS con el nombre `<tu usuario>_a<Número de la actividad con dos dígitos>.js`{: .filepath}. Por ejemplo: `mruizg_a01.js`{: .filepath}.
