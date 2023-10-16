@@ -218,35 +218,35 @@ Anida correctamente la lista no ordenada que se muestra en la imagen.
 _Lista html anidada con un subnivel y un subsubnivel_
 
 {:.activity}
-### URLs relativas (nuevo)
+### URLs relativas
 
 A continuación se te presenta un directorio de carpetas y documentos html según la imagen.
 
 Consta de:
 
-- Una carpeta server de la que cuelgan las carpetas fitxers, prova, subdir y en la que hay un documento de nombre arrel.html
-- Dentro de la carpeta fitxers hay el documento carta.html
-- Dentro de la carpeta prova hay el documento prova.html
-- La carpeta subdir contiene una carpeta de nombre direct y 3 archivos html de nombres docu.html, llista.html, index.html
-- La carpeta direct contiene un documento web de nombre textual.html
+- Una carpeta server de la que cuelgan las carpetas ficheros, prueba, subdir y en la que hay un documento de nombre raiz.html.
+- Dentro de la carpeta ficheros hay el documento carta.html.
+- Dentro de la carpeta prueba hay el documento prueba.html.
+- La carpeta subdir contiene una carpeta de nombre direct y 3 archivos html de nombres docu.html, lista.html, index.html.
+- La carpeta direct contiene un documento web de nombre textual.html.
 
 ![Carpetas y archivos html de un proyecto web](url-relativas-html.jpg)
 _Carpetas y archivos html de un proyecto web_
 
 Dentro de cada documento HTML especificado a continuación debes poder navegar a los siguientes sitios:
 
-- Desde arrel.html debe haber un enlace a textual.html
-- Desde docu.html debe haber un enlace a llista.html
-- Desde docu.html debe haber un enlace a llista.html
-- Desde carta.html debe haber un enlace a prova.html
+- Desde raiz.html debe haber un enlace a textual.html
+- Desde docu.html debe haber un enlace a lista.html
+- Desde docu.html debe haber un enlace a lista.html
+- Desde carta.html debe haber un enlace a prueba.html
 - Desde carta.html debe haber un enlace a docu.html
-- Desde textual.html debe haber un enlace a arrel.html
+- Desde textual.html debe haber un enlace a raiz.html
 - Desde textual.html debe haber un enlace a subdir (carpeta)
-- Desde textual.html debe haber un enlace a prova (carpeta)
-- Desde textual.html debe haber un enlace a prova.html
+- Desde textual.html debe haber un enlace a prueba (carpeta)
+- Desde textual.html debe haber un enlace a prueba.html
 
 {:.activity}
-### Libro digital navegable (nuevo)
+### Libro digital navegable
 
 Crea un libro digital que conste de 4 capítulos y un índice desde el que se puede acceder a:
 
@@ -255,11 +255,11 @@ Crea un libro digital que conste de 4 capítulos y un índice desde el que se pu
 
 Cada capítulo se divide de las secciones:
 
-- Descripción del problema (2 párrafos de tipo lorem ipsum)
-- Argumentación (Como mínimo 10 párrafos de tipo lorem ipsum)
-- Conclusión (2 párrafos lorem ipsum)
+- Introducción (2 párrafos de tipo chiquito ipsum)
+- Nudo (Como mínimo 10 párrafos de tipo chiquito ipsum)
+- Desenlace (2 párrafos chiquito ipsum)
 
-En el pié de página de cada uno de los capítulos debe aparecer 2 enlaces que ocupen 2 líneas diferenciadas que nos permitan:
+En el pié de página de cada uno de los capítulos deben aparecer 2 enlaces que ocupen 2 líneas diferenciadas que nos permitan:
 
 - Ir al índice del libro digital.
 - Situarse de nuevo en la parte superior del documento capítulo.
@@ -275,7 +275,7 @@ _Resultado final índice de capítulos libro digital con html_
 _Muestra del resultado final de un capítulo del libro digital navegable._
 
 {:.activity}
-### Corrige errores (nuevo)
+### Corrige errores
 
 El siguiente documento html está plagado de errores.
 
@@ -284,30 +284,58 @@ El siguiente documento html está plagado de errores.
 ```html
 <!DOCTYPE html>
 <html>
-<head>
- <meta charset="utf8">
- <title>Corrige los errores</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf8" />
+    <title>Corrige los errores</title>
+  </head>
 
- <h1><strong>Corrige los errores</strong></h1>
- 
- <h2>Índice de contenidos</h2>
- <ul>
-  <li><a href="ancla">Enlace 1</a></li>
-   <ul>
-    <li><a href="#">Enlace 2</a></li>
-    <li><a href="">Enlace 3</a></li>
-   </ul>
-  <li><a href=""></a>Enlace 4</li>
- </ul>
+  <body>
+    <h1><strong>Corrige los errores</strong></h1>
 
- <h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem at nostrum iure vitae veritatis officiis officia nam aperiam consequatur, dolor in unde beatae labore quibusdam, nihil assumenda eligendi sint!<br><br>
- Maiores.</p></h2>
+    <h2>Índice de contenidos</h2>
+    <ul>
+      <li>
+        <a href="ancla">Enlace 1</a>
+        <ul>
+          <li><a href="#">Enlace 2</a></li>
+          <li><a href="">Enlace 3</a></li>
+        </ul>
+      </li>
+      <li><a href=""></a>Enlace 4</li>
+    </ul>
 
- <p id="#ancla">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex mollitia quia, corporis dicta, eaque itaque.</p>
+    <h2>
+      <p>Lorem fistrum</p>
+    </h2>
 
-</body>
+    <br />
+
+    <p>
+      Lorem fistrum te voy a borrar el cerito ese que llega pecador a peich al
+      ataquerl pecador mamaar a wan. No puedor me cago en tus muelas fistro
+      jarl. Llevame al sircoo mamaar torpedo quietooor. A gramenawer al ataquerl
+      te voy a borrar el cerito quietooor no te digo trigo por no llamarte
+      Rodrigor. Benemeritaar torpedo te va a hasé pupitaa amatomaa benemeritaar
+      por la gloria de mi madre a gramenawer a peich papaar papaar llevame al
+      sircoo. Qué dise usteer de la pradera jarl ese hombree te va a hasé
+      pupitaa pecador quietooor está la cosa muy malar. Va usté muy cargadoo
+      amatomaa de la pradera por la gloria de mi madre quietooor.
+    </p>
+
+    <br />
+
+    <p id="#ancla">
+      Lorem fistrum te voy a borrar el cerito ese que llega pecador a peich al
+      ataquerl pecador mamaar a wan. No puedor me cago en tus muelas fistro
+      jarl. Llevame al sircoo mamaar torpedo quietooor. A gramenawer al ataquerl
+      te voy a borrar el cerito quietooor no te digo trigo por no llamarte
+      Rodrigor. Benemeritaar torpedo te va a hasé pupitaa amatomaa benemeritaar
+      por la gloria de mi madre a gramenawer a peich papaar papaar llevame al
+      sircoo. Qué dise usteer de la pradera jarl ese hombree te va a hasé
+      pupitaa pecador quietooor está la cosa muy malar. Va usté muy cargadoo
+      amatomaa de la pradera por la gloria de mi madre quietooor.
+    </p>
+  </body>
 </html>
 ```
 
@@ -317,8 +345,8 @@ El siguiente documento html está plagado de errores.
 A partir de la imagen que podrás descargar a continuación genera un mapa de imagen según las siguientes especificaciones:
 
 - El área magenta púrpura está delimitada por los puntos 105,95 y 125,207. Cuando se pulsa envía al usuario a <https://marcosruiz.github.io/posts/atajos-de-teclado/>.
-- El área verde oscuro está delimitada por los puntos 126,95 y 215,117. Cuando se pulsa envía al usuario a <https://marcosruiz.github.io/posts/comandos-basicos-gnu-linux/>.
-- El área verde azul claro está delimitada por los puntos 128,140 y 215,161. Cuando se pulsa envía al usuario a <https://marcosruiz.github.io/posts/manual-java/>.
+- El área verde oscuro está delimitada por los puntos 126,95 y 215,117. Cuando se pulsa envía al usuario a <https://olgacarreras.blogspot.com/>.
+- El área verde azul claro está delimitada por los puntos 128,140 y 215,161. Cuando se pulsa envía al usuario a <https://marcosruiz.github.io/posts/trabajar-visual-studio-code/>.
 
 ![Letra F](letra-f.jpg)
 _Letra F_
@@ -329,8 +357,8 @@ _Letra F_
 A partir de la imagen que podrás descargar a continuación genera un mapa de imagen según las siguientes especificaciones:
 
 - El área negro delimitado por los puntos 95,44 y 128,257 envía al usuario a <https://marcosruiz.github.io/posts/atajos-de-teclado/> cuando se pulsa. En su interior tiene un área definido por los puntos 104,56 y 117,244 que es inerte cuando es pulsado, generando un hueco.
-- El área negro delimitado por los puntos 128,44 y 235,74 envía al usuario a <https://marcosruiz.github.io/posts/comandos-basicos-gnu-linux/> cuando se pulsa. En su interior tiene un área definido por los puntos 128,56 y 226,65 que es inerte cuando es pulsado, generando un hueco.
-- El área negro delimitado por los puntos 128,138 y 220,165 envía al usuario a <https://marcosruiz.github.io/posts/manual-java/> cuando se pulsa. En su interior tiene un área definido por los puntos 128,144 y 211,156 que es inerte cuando es pulsado, generando un hueco.
+- El área negro delimitado por los puntos 128,44 y 235,74 envía al usuario a <https://olgacarreras.blogspot.com/> cuando se pulsa. En su interior tiene un área definido por los puntos 128,56 y 226,65 que es inerte cuando es pulsado, generando un hueco.
+- El área negro delimitado por los puntos 128,138 y 220,165 envía al usuario a <https://marcosruiz.github.io/posts/trabajar-visual-studio-code/> cuando se pulsa. En su interior tiene un área definido por los puntos 128,144 y 211,156 que es inerte cuando es pulsado, generando un hueco.
 
 ![Letra F](letra-F-ejercicio-avanzado.jpg)
 _Letra F_
@@ -354,15 +382,18 @@ Puedes encontrar archivos de vídeo mp4 en [Moving Image Archive](https://archiv
 {:.prompt-info}
 
 {:.activity}
-### Frameset (nuevo)
+### Frameset
+
+> La etiqueta `<frameset>` de HTML ha sido eliminada de los estándares web, sin embargo es interesante conocerla.
+{:.prompt-error}
 
 Mediante el uso adecuado de la etiqueta `<frameset>` de html y siguiendo la imagen a continuación haz que cada sección muestre las páginas web especificadas.
 
-- verde, ancho del 100% y muestra wikipedia.org
-- rosa, ancho del 25% y muestra fcb.com
-- carne, ancho del 75% y muestra archive.org
-- azul, ancho del 50% y muestra lycos.com
-- marrón, ancho del 25% y muestra creativecommons.org
+- verde, ancho del 100% y muestra <https://marcosruiz.github.io/posts/atajos-de-teclado/>.
+- rosa, ancho del 25% y muestra <https://olgacarreras.blogspot.com/>
+- amarillo, ancho del 75% y muestra <https://marcosruiz.github.io/posts/trabajar-visual-studio-code/>
+- gris, ancho del 50% y muestra <https://en.wikipedia.org/wiki/Tim_Berners-Lee>
+- marrón, ancho del 25% y muestra <https://es.wikipedia.org/wiki/ARPANET>.
 
 ![Framesets](ejercicio-framesets.jpg)
 _Framesets_
@@ -427,9 +458,11 @@ Para que se vea bonita la tabla añade dentro del `<head>` del documento html es
 _Tabla con `colspan` y `rowspan`_
 
 {:.activity}
-### Corrige los errores (nuevo)
+### Corrige los errores
 
 Corrige los siguientes ejercicios están plagados de errores de sintaxis html.
+
+#### a)
 
 ```html
 <head>
@@ -437,6 +470,8 @@ Corrige los siguientes ejercicios están plagados de errores de sintaxis html.
   <meta description=""/>
 <head>
 ```
+
+#### b)
 
 ```html
 <html>
@@ -447,6 +482,8 @@ Corrige los siguientes ejercicios están plagados de errores de sintaxis html.
   </body>
 </html>
 ```
+
+#### c)
 
 ```html
 <table>
@@ -461,16 +498,18 @@ Corrige los siguientes ejercicios están plagados de errores de sintaxis html.
 </table>
 ```
 
+#### d)
+
 ```html
 <p>
-Un texto legendario </br>
-sucede en un gran escenario </br>
+Las cosas con como son </br>
+hasta que dejan de serlas </br>
 ¿ves el <em><b>error</em></b>?
 </p>
 ```
 
 {:.activity}
-### Iniciación a las capas (nuevo)
+### Iniciación a las capas
 
 En la pizarra (imagen adjunta) se presenta una propuesta de página web.
 
@@ -478,12 +517,11 @@ Tradúcela a lenguaje de marcado siguiendo las indicaciones del dibujo.
 
 Incluye también una ancla al final del documento que permita llevar al visitante web a la cabecera del documento.
 
-Atención: Todavía no usemos etiquetas html5, lo haremos en un ejercicio posterior que consistirá en actualizar este actual a las nuevas etiquetas.
+> Todavía no usemos etiquetas html5, lo haremos en un ejercicio posterior que consistirá en actualizar este actual a las nuevas etiquetas. Por ejemplo en lugar de la etiqueta `<header>` usaremos `<div id="head">`.
+{:.prompt-warning}
 
-(Por ejemplo en lugar de la etiqueta `<header>` usaremos `<div id="head">`)
-
-![Pizarra con documento web dibujado y estructurado](enunciado-pizarra-ejercicio-html-capas.jpg)
-_Pizarra con documento web dibujado y estructurado_
+![Enunciado ejercicio capas HTML](enunciado-ejercicio-html-capas.jpg)
+_Enunciado ejercicio capas HTML_
 
 Para mayor claridad, si lo deseas,  añade dentro del `<head>` el siguiente código que entenderás mejor cuando se de CSS.
 
@@ -496,8 +534,13 @@ Para mayor claridad, si lo deseas,  añade dentro del `<head>` el siguiente cód
 </style>
 ```
 
+El resultado final será parecido a la siguiente imagen:
+
+![Resultado final capas HTML](resultado-final-capas-html.png)
+_Resultado final capas HTML_
+
 {:.activity}
-### Estructura de un documento web (nuevo)
+### Estructura de un documento web
 
 Se adjunto un mockup de propuesta de página web.
 
@@ -509,10 +552,10 @@ Importante: La solución no es única.
 
 Atención: Todavía no usemos etiquetas html5, lo haremos en un ejercicio posterior que consistirá en actualizar este actual a las nuevas etiquetas.
 
-(Por ejemplo en lugar de la etiqueta `<header>` usaremos`<div id="head">`)
+(Por ejemplo en lugar de la etiqueta `<header>` usaremos `<div id="head">`)
 
-![Croquis realizado mediante Balsamiq Mockup 3](mockup-capas-web.jpg)
-_Croquis realizado mediante Balsamiq Mockup 3_
+![Croquis realizado mediante Balsamiq](mockup-capas-web.png)
+_Croquis realizado mediante Balsamiq_
 
 Para mayor claridad, si lo deseas,  añade dentro del `<head>` el siguiente código.
 
@@ -526,7 +569,7 @@ Para mayor claridad, si lo deseas,  añade dentro del `<head>` el siguiente cód
 ```
 
 {:.activity}
-### De XHTML a HTML5 I (nuevo)
+### De XHTML a HTML5 I
 
 Traduce el siguiente código a HTML5:
 
@@ -604,7 +647,7 @@ Traduce el siguiente código a HTML5:
   </div>
   <div id="section5">
    <h3>Horarios</h3>
-   <p>Mañanas:9.00-13.00<br/>Tardes:16.00-19.00<br/>Domingo cerrado.</p>
+   <p>Mañanas:9.00-14.00<br/>Tardes:16.00-19.00<br/>Domingo cerrado.</p>
   </div>
   <div id="section6">
    <img src="" alt="ISO9001"/>
@@ -622,7 +665,7 @@ Traduce el siguiente código a HTML5:
 ```
 
 {:.activity}
-### De XHTML a HTML5 II (nuevo)
+### De XHTML a HTML5 II
 
 Traduce el siguiente código a HTML5:
 
@@ -700,7 +743,7 @@ Traduce el siguiente código a HTML5:
   </div>
   <div id="section5">
    <h3>Horarios</h3>
-   <p>Mañanas:9.00-13.00<br/>Tardes:16.00-19.00<br/>Domingo cerrado.</p>
+   <p>Mañanas:9.00-14.00<br/>Tardes:16.00-19.00<br/>Domingo cerrado.</p>
   </div>
   <div id="section6">
    <img src="" alt="ISO9001"/>
@@ -729,7 +772,7 @@ Escribe el html de un formulario web según las especificaciones descritas a con
 - Apellidos. El campo debe aceptar un máximo de 30 caracteres.
 - Email. Campo de relleno obligado.
 - Asunto a elegir una opción entre pedir presupuesto, solicitar cita previa, otros. Deben mostrarse las 3 opciones en un cajetín según la imagen (usa el atributo `size`).
-- Cómo nos a escogido a elegir una o más opciones entre un amigo, googleando, buzoneo, otros.
+- Cómo nos a escogido a elegir una o más opciones entre un amigo, googleando, spam, otros.
 - Un mensaje. Debe tener una longitud máxima de 300 caracteres.
 - Aceptación de cláusula RGPD. De obligada selección antes de enviar el currículum.
 - Botón de envío.
