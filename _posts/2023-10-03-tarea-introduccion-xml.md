@@ -81,7 +81,7 @@ Diseñar un documento válido en XML que permita estructurar la información de 
 
 ### Actividad 3
 
-Diseñar un documento válido en XML que permita estructurar la información de las recetas de cocina de un restaurante y aplicarlo a la siguiente receta de cocina. Hay que hacerlo de modo que un sistema informático pueda realizar búsquedas por ingredientes, cantidad de comensales o nombre de la receta.
+Diseñar un documento válido en XML que permita estructurar la información de las recetas de cocina de un restaurante y aplicarlo a la siguiente receta de cocina. Hay que hacerlo de modo que un sistema informático pueda realizar búsquedas por ingredientes, cantidad de comensales o nombre de la receta. Esto quiere decir que los ingredientes, cantidad de comensales o nombre de la receta deben ser datos que estén aislados de otra información, es decir, deben ser elementos atómicos.
 
 Sopa de cebolla (4 personas).
 

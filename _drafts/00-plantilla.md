@@ -42,7 +42,7 @@ Ejemplo
 {:.prompt-warning}
 
 > 
-{:.prompt-error}
+{:.prompt-danger}
 
 > 
 {:.prompt-tip}

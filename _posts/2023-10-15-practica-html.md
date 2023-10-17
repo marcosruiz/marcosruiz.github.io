@@ -157,7 +157,7 @@ _Encabezados con carácteres escapados_
 {:.activity}
 ### Espacios en blanco y encabezados
 
-Escribe el html necesario para hacer posible que se visualize el resultado de la imagen.
+Escribe el HTML necesario para hacer posible que se visualize el resultado de la imagen.
 
 Observaciones:
 
@@ -170,20 +170,17 @@ _Encabezados con espacios_
 {:.activity}
 ### Listas de definiciones
 
-Crea una lista de definiciones para los siguientes términos relacionadas con la teoría explicada en clase. Puedes buscar la información en google.
+Crea una lista de definiciones para los siguientes términos relacionadas con la teoría explicada en clase. Deberás buscar la definición de estos términos en Internet.
 
-- HTTP
+- XML
 - HTML
-- URL
-- Web semántica
-- TCP/IP
-- Internet
 - W3C
+- RFC
 
 {:.activity}
 ### Listas ordenadas y no ordenadas
 
-Escribe con html las listas según las siguientes imágenes.
+Escribe con HTML las listas según las siguientes imágenes.
 
 ![Listas ordenadas](ejercicio-html-listas-ordenadas.jpg)
 _Listas ordenadas_
@@ -194,17 +191,17 @@ _Listas NO ordenadas_
 {:.activity}
 ### Listas anidadas
 
-Transcribe la siguiente imagen en lenguaje html.
+Transcribe la siguiente imagen en lenguaje HTML.
 
 ![Lista anidada 1](ejercicio-listas-anidadas-01.jpg)
 _Lista anidada 1_
 
-Transcribe la siguiente imagen en lenguaje html.
+Transcribe la siguiente imagen en lenguaje HTML.
 
 ![Lista anidada 2](ejercicio-listas-anidadas-02.jpg)
 _Lista anidada 2_
 
-Transcribe la siguiente imagen en lenguaje html.
+Transcribe la siguiente imagen en lenguaje HTML.
 
 ![Lista anidada 3](ejercicio-listas-anidadas-03.jpg)
 _Lista anidada 3_
@@ -214,36 +211,36 @@ _Lista anidada 3_
 
 Anida correctamente la lista no ordenada que se muestra en la imagen.
 
-![Lista html anidada con un subnivel y un subsubnivel](ejemplo-listas-anidadas.jpg)
-_Lista html anidada con un subnivel y un subsubnivel_
+![Lista HTML anidada con un subnivel y un subsubnivel](ejemplo-listas-anidadas.jpg)
+_Lista HTML anidada con un subnivel y un subsubnivel_
 
 {:.activity}
 ### URLs relativas
 
-A continuación se te presenta un directorio de carpetas y documentos html según la imagen.
+A continuación se te presenta un directorio de carpetas y documentos HTML según la imagen.
 
 Consta de:
 
 - Una carpeta server de la que cuelgan las carpetas ficheros, prueba, subdir y en la que hay un documento de nombre raiz.html.
 - Dentro de la carpeta ficheros hay el documento carta.html.
 - Dentro de la carpeta prueba hay el documento prueba.html.
-- La carpeta subdir contiene una carpeta de nombre direct y 3 archivos html de nombres docu.html, lista.html, index.html.
+- La carpeta subdir contiene una carpeta de nombre direct y 3 archivos HTML de nombres docu.html, lista.html, index.html.
 - La carpeta direct contiene un documento web de nombre textual.html.
 
-![Carpetas y archivos html de un proyecto web](url-relativas-html.jpg)
-_Carpetas y archivos html de un proyecto web_
+![Carpetas y archivos HTML de un proyecto web](url-relativas-html.jpg)
+_Carpetas y archivos HTML de un proyecto web_
 
 Dentro de cada documento HTML especificado a continuación debes poder navegar a los siguientes sitios:
 
-- Desde raiz.html debe haber un enlace a textual.html
-- Desde docu.html debe haber un enlace a lista.html
-- Desde docu.html debe haber un enlace a lista.html
-- Desde carta.html debe haber un enlace a prueba.html
-- Desde carta.html debe haber un enlace a docu.html
-- Desde textual.html debe haber un enlace a raiz.html
-- Desde textual.html debe haber un enlace a subdir (carpeta)
-- Desde textual.html debe haber un enlace a prueba (carpeta)
-- Desde textual.html debe haber un enlace a prueba.html
+- Desde raiz.html debe haber un enlace relativo a textual.html
+- Desde docu.html debe haber un enlace relativo a lista.html
+- Desde docu.html debe haber un enlace relativo a lista.html
+- Desde carta.html debe haber un enlace relativo a prueba.html
+- Desde carta.html debe haber un enlace relativo a docu.html
+- Desde textual.html debe haber un enlace relativo a raiz.html
+- Desde textual.html debe haber un enlace relativo a subdir (carpeta)
+- Desde textual.html debe haber un enlace relativo a prueba (carpeta)
+- Desde textual.html debe haber un enlace relativo a prueba.html
 
 {:.activity}
 ### Libro digital navegable
@@ -266,10 +263,10 @@ En el pié de página de cada uno de los capítulos deben aparecer 2 enlaces que
 
 Una vez finalizado el libro digital configura la cabecera de todos los capítulos para indicar que capítulo es el primero, cual viene después, cual es el anterior y cuál es el último. Utiliza para ello la etiqueta `<link>`.
 
-A continuación se adjuntan a modo de guía una captura de pantalla de la solución final para el índice y uno de los capítulos.
+A continuación se muestran a modo de guía una captura de pantalla de la solución final para el índice y uno de los capítulos.
 
-![Resultado final índice de capítulos libro digital con html](indice-libro-digital.jpg)
-_Resultado final índice de capítulos libro digital con html_
+![Resultado final índice de capítulos libro digital con HTML](indice-libro-digital.jpg)
+_Resultado final índice de capítulos libro digital con HTML_
 
 ![Muestra del resultado final de un capítulo del libro digital navegable.](capitulo1-libro-digital.jpg)
 _Muestra del resultado final de un capítulo del libro digital navegable._
@@ -277,7 +274,7 @@ _Muestra del resultado final de un capítulo del libro digital navegable._
 {:.activity}
 ### Corrige errores
 
-El siguiente documento html está plagado de errores.
+El siguiente documento HTML está plagado de errores.
 
 ¿Puedes encontrarlos todos?
 
@@ -366,7 +363,7 @@ _Letra F_
 {:.activity}
 ### Audio y vídeo
 
-Escribe un código html que muestre por pantalla dos reproductores de audio.
+Escribe un código HTML que muestre por pantalla dos reproductores de audio.
 
 En el primero debes reproducir un audio alojado en tu ordenador/hosting.
 
@@ -378,16 +375,13 @@ A continuación reproduce exactamente el mismo ejercicio pero en este caso repro
 
 Puedes encontrar archivos de vídeo mp4 en [Moving Image Archive](https://archive.org/details/movies).
 
-> Para encontrar audios y vídeos cortos podéis buscar la palabra "sample"
+> Para encontrar audios y vídeos cortos podéis buscar la palabra "sample". Recuerda que el número de megas en las entregas está limitado.
 {:.prompt-info}
 
 {:.activity}
 ### Frameset
 
-> La etiqueta `<frameset>` de HTML ha sido eliminada de los estándares web, sin embargo es interesante conocerla.
-{:.prompt-error}
-
-Mediante el uso adecuado de la etiqueta `<frameset>` de html y siguiendo la imagen a continuación haz que cada sección muestre las páginas web especificadas.
+La etiqueta `<frameset>` de HTML ha sido eliminada de los estándares web, sin embargo es interesante conocerla. Mediante el uso adecuado de la etiqueta `<frameset>` de HTML y siguiendo la imagen a continuación haz que cada sección muestre las páginas web especificadas.
 
 - verde, ancho del 100% y muestra <https://marcosruiz.github.io/posts/atajos-de-teclado/>.
 - rosa, ancho del 25% y muestra <https://olgacarreras.blogspot.com/>
@@ -401,13 +395,13 @@ _Framesets_
 {:.activity}
 ### Creación de tablas I
 
-Dado el siguiente documento html se desea conseguir el resultado de la imagen adjunta.
+Dado el siguiente documento HTML se desea conseguir el resultado de la siguiente imagen.
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
- <title>Ejercicio tablas html</title>
+ <title>Ejercicio tablas HTML</title>
  <meta charset="utf-8"/>
  <style>
   table{
@@ -436,9 +430,9 @@ _Tabla fácil_
 {:.activity}
 ### Creación de tablas II
 
-Crea un documento html mediante el cuál se visualize una tabla como la de la imagen.
+Crea un documento HTML mediante el cuál se visualize una tabla como la de la imagen.
 
-Para que se vea bonita la tabla añade dentro del `<head>` del documento html este código.
+Para que se vea bonita la tabla añade dentro del `<head>` del documento HTML este código.
 
 ```html
 <style>
@@ -460,7 +454,7 @@ _Tabla con `colspan` y `rowspan`_
 {:.activity}
 ### Corrige los errores
 
-Corrige los siguientes ejercicios están plagados de errores de sintaxis html.
+Corrige los siguientes ejercicios están plagados de errores de sintaxis HTML.
 
 #### a)
 
@@ -511,13 +505,13 @@ hasta que dejan de serlas </br>
 {:.activity}
 ### Iniciación a las capas
 
-En la pizarra (imagen adjunta) se presenta una propuesta de página web.
+En la siguiente imagen se presenta una propuesta de página web.
 
 Tradúcela a lenguaje de marcado siguiendo las indicaciones del dibujo.
 
 Incluye también una ancla al final del documento que permita llevar al visitante web a la cabecera del documento.
 
-> Todavía no usemos etiquetas html5, lo haremos en un ejercicio posterior que consistirá en actualizar este actual a las nuevas etiquetas. Por ejemplo en lugar de la etiqueta `<header>` usaremos `<div id="head">`.
+> Todavía no usemos etiquetas HTML5, lo haremos en un ejercicio posterior que consistirá en actualizar este actual a las nuevas etiquetas. Por ejemplo en lugar de la etiqueta `<header>` usaremos `<div id="head">`.
 {:.prompt-warning}
 
 ![Enunciado ejercicio capas HTML](enunciado-ejercicio-html-capas.jpg)
@@ -542,22 +536,28 @@ _Resultado final capas HTML_
 {:.activity}
 ### Estructura de un documento web
 
-Se adjunto un mockup de propuesta de página web.
+Se muestra un mockup de propuesta de página web.
+
+{:.question}
+Investiga que es un mockup.
 
 Tradúcela a lenguaje de marcado agrupando y estructurando las etiquetas en grupos de información según criterio.
 
 Si en el mockup consideras que falta alguna etiqueta o información muy importante añádela en la solución.
 
-Importante: La solución no es única.
+> OJO! La solución no es única.
+{:.prompt-info}
 
-Atención: Todavía no usemos etiquetas html5, lo haremos en un ejercicio posterior que consistirá en actualizar este actual a las nuevas etiquetas.
-
-(Por ejemplo en lugar de la etiqueta `<header>` usaremos `<div id="head">`)
+> Todavía no usemos etiquetas HTML5, lo haremos en un ejercicio posterior que consistirá en actualizar este actual a las nuevas etiquetas. Por ejemplo en lugar de la etiqueta `<header>` usaremos `<div id="head">`.
+{:.prompt-warning}
 
 ![Croquis realizado mediante Balsamiq](mockup-capas-web.png)
 _Croquis realizado mediante Balsamiq_
 
-Para mayor claridad, si lo deseas,  añade dentro del `<head>` el siguiente código.
+Para mayor claridad, si lo deseas, añade dentro del `<head>` el siguiente código.
+
+{:.question}
+¿Se podría poner en otra parte? ¿Por qué se indica añadirlo en el `<head>`?
 
 ```html
 <style>
@@ -579,7 +579,7 @@ Traduce el siguiente código a HTML5:
 <head>
  <title>Capas web</title>
  <meta charset="utf-8"/>
- <meta name="description" content="Ejemplo de documento html con capas como paso intermedio a transformar <div> en etiquetas de html5"/>
+ <meta name="description" content="Ejemplo de documento HTML con capas como paso intermedio a transformar <div> en etiquetas de HTML5"/>
  <meta name="author" content="Francesc Ricart"/>
 
  <style>
@@ -611,9 +611,9 @@ Traduce el siguiente código a HTML5:
   <div id="main">
    <div  id="section1">
     <h1>Un título muy representativo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem fistrum ese que llega está la cosa muy malar te va a hasé pupitaa hasta luego Lucas a peich a wan.</p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem fistrum ese que llega está la cosa muy malar te va a hasé pupitaa hasta luego Lucas a peich a wan.</p>
    </div>
    
    <div  id="section2">   
@@ -621,7 +621,7 @@ Traduce el siguiente código a HTML5:
     <!-- contenido -->
     <div id="article1">
      <h2>Un título 2</h2>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+     <p>Lorem fistrum ese que llega está la cosa muy malar te va a hasé pupitaa hasta luego Lucas a peich a wan.</p>
      <a href="" title="ir a...">Saber más</a>
     </div>
    </div>
@@ -630,7 +630,7 @@ Traduce el siguiente código a HTML5:
     <!-- contenido -->
     <div id="article2">
      <h2>Un título 2</h2>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+     <p>Lorem fistrum ese que llega está la cosa muy malar te va a hasé pupitaa hasta luego Lucas a peich a wan.</p>
      <a href="" title="ir a...">Saber más</a>
     </div>
     <audio controls src=""></audio>
@@ -642,8 +642,7 @@ Traduce el siguiente código a HTML5:
  <div id="footer">
   <div id="section4">
    <h3>Sobre mí</h3>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-   tempor incididunt.</p>
+   <p>Lorem fistrum ese que llega está la cosa muy malar te va a hasé pupitaa hasta luego Lucas a peich a wan.</p>
   </div>
   <div id="section5">
    <h3>Horarios</h3>
@@ -664,6 +663,12 @@ Traduce el siguiente código a HTML5:
 </html>
 ```
 
+{:.question}
+¿Por qué es importante usar las etiquetas semánticas de HTML5?
+
+{:.question}
+¿Qué es el SEO y que tiene que ver con las etiquetas semánticas?
+
 {:.activity}
 ### De XHTML a HTML5 II
 
@@ -675,7 +680,7 @@ Traduce el siguiente código a HTML5:
 <head>
  <title>Capas web</title>
  <meta charset="utf-8"/>
- <meta name="description" content="Ejemplo de documento html con capas como paso intermedio a transformar <div> en etiquetas de html5"/>
+ <meta name="description" content="Ejemplo de documento HTML con capas como paso intermedio a transformar <div> en etiquetas de HTML5"/>
  <meta name="author" content="Francesc Ricart"/>
 
  <style>
@@ -707,9 +712,9 @@ Traduce el siguiente código a HTML5:
   <div id="main">
    <div  id="section1">
     <h1>Un título muy representativo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem fistrum ese que llega está la cosa muy malar te va a hasé pupitaa hasta luego Lucas a peich a wan.</p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Lorem fistrum ese que llega está la cosa muy malar te va a hasé pupitaa hasta luego Lucas a peich a wan.</p>
    </div>
    
    <div  id="section2">   
@@ -717,7 +722,7 @@ Traduce el siguiente código a HTML5:
     <!-- contenido -->
     <div id="article1">
      <h2>Un título 2</h2>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+     <p>Lorem fistrum ese que llega está la cosa muy malar te va a hasé pupitaa hasta luego Lucas a peich a wan.</p>
      <a href="" title="ir a...">Saber más</a>
     </div>
    </div>
@@ -726,7 +731,7 @@ Traduce el siguiente código a HTML5:
     <!-- contenido -->
     <div id="article2">
      <h2>Un título 2</h2>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+     <p>Lorem fistrum ese que llega está la cosa muy malar te va a hasé pupitaa hasta luego Lucas a peich a wan.</p>
      <a href="" title="ir a...">Saber más</a>
     </div>
     <audio controls src=""></audio>
@@ -738,8 +743,7 @@ Traduce el siguiente código a HTML5:
  <div id="footer">
   <div id="section4">
    <h3>Sobre mí</h3>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-   tempor incididunt.</p>
+   <p>Lorem fistrum ese que llega está la cosa muy malar te va a hasé pupitaa hasta luego Lucas a peich a wan.</p>
   </div>
   <div id="section5">
    <h3>Horarios</h3>
@@ -763,7 +767,7 @@ Traduce el siguiente código a HTML5:
 {:.activity}
 ### Creación de formularios
 
-Escribe el html de un formulario web según las especificaciones descritas a continuación:
+Escribe el HTML de un formulario web según las especificaciones descritas a continuación:
 
 > En este ejercicio no se te pide que escribas css
 {:.prompt-warning}
