@@ -40,20 +40,17 @@ Escribe los razonamientos de tus cálculos y añade captura de pantalla del uso 
 Dada la distribución de datos de la siguiente imagen, aplica, de forma gráfica, la clasificación KNN con un K=3 para los siguientes puntos:
 
 - (2.5, 7)
-- (5.5, 4.5).
-
-Analiza cuál tendría que ser el valor de K mínimo para que hubiese empate entre ambas clases para cualquiera de los dos puntos.
+- (5.5, 4.5)
 
 ![Distribución de datos](distribucionDeDatos.png)
 _Distribución de datos_
 
+Analiza cuál tendría que ser el valor de K mínimo para que hubiese empate entre ambas clases para cualquiera de los dos puntos.
+
 {:.activity}
 ### Reflexión sobre la factibilidad de una inteligencia artificial fuerte
 
-En función de lo visto en la unidad de trabajo, piensa en el concepto de IA Fuerte.
-
-{:.question}
-¿Crees que realmente sería posible llegar a desarrollar una IA general que supere la inteligencia humana?
+En función de lo visto en la unidad de trabajo, piensa en el concepto de IA Fuerte. ¿Crees que realmente sería posible llegar a desarrollar una IA general que supere la inteligencia humana?
 
 ## Bibliografía
 
