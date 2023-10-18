@@ -10,6 +10,73 @@ img_path: /assets/img/practica-html/
 
 La entrega será en formato ZIP. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
+Ejemplo de estructura de carpetas en la entrega:
+
+```text
+ruiz_garcia_marcos_LMSGI02_Tarea.zip
+│   mruizg_a01.html
+│   mruizg_a02.html
+│   mruizg_a03.html
+│   mruizg_a04.pdf
+│   mruizg_a05.html
+│   mruizg_a06.html
+│   mruizg_a07.html
+│   mruizg_a08.html
+│   mruizg_a09.html
+│   mruizg_a10.html
+│   mruizg_a11.html
+├───mruizg_a12
+│   │
+│   └───server
+│       │   raiz.html
+│       │
+│       ├───ficheros
+│       │       carta.html
+│       │
+│       ├───prueba
+│       │       prueba.html
+│       │
+│       └───subdir
+│           │   docu.html
+│           │   index.html
+│           │   lista.html
+│           │
+│           └───direct
+│                   textual.html
+├───mruizg_a13
+│   │   indice.html
+│   │
+│   ├───capitulos
+│   │       capitulo1.html
+│   │       capitulo2.html
+│   │       capitulo3.html
+│   │       capitulo4.html
+│   │
+│   └───img
+│   mruizg_a14.html
+├───mruizg_a15
+│       letra-f.jpg
+│       mruizg_a15.html
+│
+├───mruizg_a16
+│       letra-f-avanzado.jpg
+│       mruizg_a16.html
+│
+├───mruizg_a17
+│       2_512kb.mp4
+│       Beat It_sample.mp3
+│       mruizg_a17.html
+│   mruizg_a18.html
+│   mruizg_a19.html
+│   mruizg_a20.html
+│   mruizg_a21.md
+│   mruizg_a22.html
+│   mruizg_a23.html
+│   mruizg_a24.html
+│   mruizg_a25.html
+│   mruizg_a26.html
+```
+
 ## Calificación
 
 La tarea se calificará como apto o no apto.
@@ -97,7 +164,7 @@ _Biografía de Vinton Cerf en HTML_
 {:.activity}
 ### Encabezados
 
-A continuación se te presenta un documento de texto plano para el que se te pide darle formato a los encabezados mediante un procesador de textos.
+A continuación se te presenta un documento de texto plano para el que se te pide darle formato a los encabezados mediante un procesador de textos (se recomienda usar WPS Office).
 
 ```text
 Título principal que resume la idea general del escrito
@@ -126,6 +193,9 @@ _Portada con tabla de contenidos_
 
 ![Primera página](pagina1.png)
 _Primera página_
+
+> Esta actividad se entrega en formato .pdf
+{:.prompt-info}
 
 {:.activity}
 ### Códigos y nombres HTML
@@ -272,11 +342,9 @@ _Resultado final índice de capítulos libro digital con HTML_
 _Muestra del resultado final de un capítulo del libro digital navegable._
 
 {:.activity}
-### Corrige errores
+### Corrige los errores I
 
-El siguiente documento HTML está plagado de errores.
-
-¿Puedes encontrarlos todos?
+El siguiente documento HTML está plagado de errores. ¿Puedes encontrarlos todos?
 
 ```html
 <!DOCTYPE html>
@@ -452,7 +520,7 @@ Para que se vea bonita la tabla añade dentro del `<head>` del documento HTML es
 _Tabla con `colspan` y `rowspan`_
 
 {:.activity}
-### Corrige los errores
+### Corrige los errores II
 
 Corrige los siguientes ejercicios están plagados de errores de sintaxis HTML.
 
@@ -501,6 +569,9 @@ hasta que dejan de serlas </br>
 ¿ves el <em><b>error</em></b>?
 </p>
 ```
+
+> Esta actividad se entrega en formato .md o .txt
+{:.prompt-info}
 
 {:.activity}
 ### Iniciación a las capas
@@ -556,9 +627,6 @@ _Croquis realizado mediante Balsamiq_
 
 Para mayor claridad, si lo deseas, añade dentro del `<head>` el siguiente código.
 
-{:.question}
-¿Se podría poner en otra parte? ¿Por qué se indica añadirlo en el `<head>`?
-
 ```html
 <style>
   div{
@@ -567,6 +635,9 @@ Para mayor claridad, si lo deseas, añade dentro del `<head>` el siguiente códi
   }
 </style>
 ```
+
+{:.question}
+¿Se podría poner el elemento `<style>` en otra parte? ¿Por qué se indica añadirlo en el `<head>`?
 
 {:.activity}
 ### De XHTML a HTML5 I
@@ -580,7 +651,6 @@ Traduce el siguiente código a HTML5:
  <title>Capas web</title>
  <meta charset="utf-8"/>
  <meta name="description" content="Ejemplo de documento HTML con capas como paso intermedio a transformar <div> en etiquetas de HTML5"/>
- <meta name="author" content="Francesc Ricart"/>
 
  <style>
   div{
@@ -681,7 +751,6 @@ Traduce el siguiente código a HTML5:
  <title>Capas web</title>
  <meta charset="utf-8"/>
  <meta name="description" content="Ejemplo de documento HTML con capas como paso intermedio a transformar <div> en etiquetas de HTML5"/>
- <meta name="author" content="Francesc Ricart"/>
 
  <style>
   div{
