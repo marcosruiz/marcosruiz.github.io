@@ -40,14 +40,12 @@ La dirección de la organización esta planteándose mejorar su imagen y competi
 
 ¿Podrías identificar que actividades ha realizado ya ACME como respuesta a sus principios de ética empresarial?
 
-¿Qué siete ejemplos incluirías en la el código ético de ACME?
+¿Qué siete ejemplos incluirías en el código ético de ACME?
 
 {:.activity}
 ### Relaciones con terceras partes
 
-Acme quiere contratar los servicios de un call centre para cubrir el servicio de atención telefónica de su centro de atención al cliente.
-
-¿Qué elementos tendrías en cuenta dentro de un proceso de diligencia debida?
+ACME quiere contratar los servicios de un call center para cubrir el servicio de atención telefónica de su centro de atención al cliente. ¿Qué elementos tendrías en cuenta dentro de un proceso de diligencia debida?
 
 ## Bibliografía
 
