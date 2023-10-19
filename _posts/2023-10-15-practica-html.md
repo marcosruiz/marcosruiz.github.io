@@ -12,7 +12,7 @@ La entrega será en formato ZIP. Leer [Entrega y presentación de tareas](/posts
 
 ## Calificación
 
-La tarea se calificará como apto o no apto.
+La tarea se calificará con una nota de 0 a 10.
 
 ## Actividades
 
