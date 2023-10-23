@@ -21,6 +21,9 @@ pin: true
 
 - <https://www.garceta.es/catalogo/libro.php?ISBN=978-84-1903-407-6&idd=12>
 - <https://aitor-medrano.github.io/iabd2223/>
+- <https://playground.tensorflow.org/>
+- <https://www.anaconda.com/>
+- <https://colab.google/>
 
 ## Cursos
 
