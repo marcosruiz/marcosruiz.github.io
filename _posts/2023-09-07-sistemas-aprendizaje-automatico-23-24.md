@@ -15,6 +15,8 @@ pin: true
 4. Casos prácticos de aplicación.
 5. Técnicas avanzadas y evaluación del modelo.
 
+- T01 - [Tarea: Aplicación de modelos probabilísticos](/posts/tarea-aplicacion-modelos-probabilisticos/)
+
 ## Enlaces increíbles 🔥 (beta)
 
 - <https://www.garceta.es/catalogo/libro.php?ISBN=978-84-1903-407-6&idd=12>
