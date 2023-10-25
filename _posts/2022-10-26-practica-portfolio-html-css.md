@@ -14,11 +14,11 @@ Duración: 7 h
 
 ## Entrega y presentación
 
-La entrega de esta práctica debe ser un documento ZIP con un nombre en el siguiente formato: "\<Apellidos\>_\<Nombre\>_P\<NúmeroDeLaPráctica\>.zip". Por ejemplo, en mi caso el nombre del documento ZIP sería "RuizGarcía_Marcos_P06.pdf". En la raíz del fichero ZIP deben estar directamente los ficheros HTML y CSS.
+La entrega será en formato ZIP. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
-## Evaluación
+## Calificación
 
-La realización de la práctica conllevará una presentación de la misma.
+La tarea se calificará con una nota de 0 a 10.
 
 ## Actividades
 
@@ -75,8 +75,3 @@ Respecto a la parte de CSS el portfolio/curriculum deberá cumplir al menos con 
 Si quieres hacer que tu curriculum sea realmente responsivo puedes usar este vídeo de guía:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/El0OJ6h_2ZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-{:.activity}
-### Presentación
-
-Cada alumno hará una presentación de 2 minutos mostrando su portfolio/curriculum al resto de compañeros.

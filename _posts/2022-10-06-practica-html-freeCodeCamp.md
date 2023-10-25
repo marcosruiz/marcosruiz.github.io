@@ -16,6 +16,10 @@ Duración: 4 h
 
 La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
+## Calificación
+
+La tarea se calificará como apto o no apto.
+
 ## Actividades
 
 {:.activity}

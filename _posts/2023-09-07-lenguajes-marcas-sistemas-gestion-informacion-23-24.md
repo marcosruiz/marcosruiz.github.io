@@ -9,10 +9,27 @@ pin: true
 
 ## Evaluación 1
 
+- UD01 - Reconocimiento de las características de lenguajes de marcas
+- UD02 - Utilización de lenguajes de marcas en entornos web
+- UD03 - Aplicación de los lenguajes de marcas a la sindicación de contenidos
+- UD04 - Definición de esquemas y vocabularios en XML
+
 - T01 - [Tarea: Introducción a XML](/posts/tarea-introduccion-xml/)
 - T02 - [Tarea: Introducción a HTML](/posts/practica-html/)
 - T03 - [Tarea: HTML en freeCodeCamp](/posts/practica-html-freeCodeCamp/)
 - T04 - [Tarea: HTML en W3Schools](/posts/practica-html-w3schools/)
+- T05 - [Tarea: CSS en freeCodeCamp](/posts/practica-css-responsivo/)
+- T06 - [Tarea: CSS en W3Schools](/posts/practica-css-w3schools/)
+- T07 - [Tarea: CSS en Codepip](/posts/practica-css-responsivo/)
+- T08 - [Tarea: Portfolio en HTML y CSS](/posts/practica-portfolio-html-css/)
+- T09
+- T10
+
+## Evaluación 2
+
+- UD05 - Conversión y adaptación de documentos XML
+- UD06 - Almacenamiento de información
+- UD07 - Sistemas de gestión empresarial
 
 ## Enlaces increíbles 🔥 (beta)
 
