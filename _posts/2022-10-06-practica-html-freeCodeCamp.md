@@ -42,7 +42,7 @@ _Ajustes de privacidad_
 Ir al curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/) y hacer una captura de tu perfil público e **indica el enlace de tu perfil**.
 
 > ¡Te animo a intentar hacerlo en inglés ya que así aprenderás HTML e inglés al mismo tiempo!
-{:.promtp-info}
+{:.prompt-info}
 
 > En mi caso este es [mi perfil](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b).
-{:.promtp-info}
+{:.prompt-info}
