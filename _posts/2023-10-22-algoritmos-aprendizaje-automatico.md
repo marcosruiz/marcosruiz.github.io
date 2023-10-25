@@ -12,6 +12,8 @@ img_path: /assets/img/algoritmos-aprendizaje-automatico/
 
 ## Regresión Lineal
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k964_uNn3l0?si=WsWwIMtLhJ-0JK6_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Regresión Logística
 
 ## Árbol de Decisión
