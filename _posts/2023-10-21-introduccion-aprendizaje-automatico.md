@@ -8,16 +8,22 @@ img_path: /assets/img/introduccion-aprendizaje-automatico/
 
 ## Introducción
 
+{:.section}
 ## Inteligencia Artificial Fuerte y Débil
 
+{:.subsection}
 ### Inteligencia Artificial Débil
 
-### Inteligencia Artificial Fuerte
+{:.subsection}
+## Inteligencia Artificial Fuerte
 
+{:.section}
 ## Antecedentes del Machine Learning
 
+{:.subsection}
 ### Estadística y probabilidad
 
+{:.subsection}
 ### Modelos bayesianos
 
 <details class="card mb-2">
@@ -40,4 +46,5 @@ Es aquel que sea capaz de contestar a las preguntas.
 
 #### Algoritmos Naive Bayes
 
+{:.subsection}
 ### KNN
