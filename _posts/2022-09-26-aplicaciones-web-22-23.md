@@ -16,7 +16,7 @@ tags: [aplicaciones web, smr]
 - P02 - [Práctica: HTML en W3Schools](/posts/practica-html-w3schools/)
 - P03 - [Práctica: HTML en freeCodeCamp](/posts/practica-html-freeCodeCamp/)
 - P04 - [Práctica: CSS en W3Schools](/posts/practica-css-w3schools/)
-- P05 - [Práctica: CSS responsivo](/posts/practica-css-responsivo/)
+- P05 - Práctica: CSS responsivo
 - P06 - [Práctica: Portfolio con HTML y CSS](/posts/practica-portfolio-html-css)
 - P07 - [Práctica: Wordpress](/posts/practica-wordpress)
 
