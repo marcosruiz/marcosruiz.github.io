@@ -23,9 +23,17 @@ La tarea se calificará como apto o no apto.
 ## Actividades
 
 {:.activity}
-### Hacer el curso "Diseño Web Responsivo"
+### Menú cafetería
 
-Ir al curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/) y hacer el apartado "Aprende CSS básico construyendo un menú de cafetería".
+Hacer el apartado "Aprende CSS básico construyendo un menú de cafetería" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/)
 
 > 📷 Cuando termines los 91 pasos, haz una captura de tu perfil público y añade el enlace de tu perfil. En mi caso este es [mi perfil](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b).
+{:.prompt-info}
+
+{:.activity}
+### (Voluntaria) Marcadores de colores
+
+Hacer el apartado "Aprenda los colores de CSS construyendo un conjunto de marcadores de colores" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
+
+> 📷 Cuando termines los 94 pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
 {:.prompt-info}

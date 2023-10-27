@@ -10,7 +10,7 @@ img_path: /assets/img/practica-css-codepip/
 
 El objetivo de esta práctica es aprender a escribir CSS de forma correcta.
 
-Duración: 3 h
+Duración: 2 h
 
 ## Entrega y presentación
 
@@ -44,18 +44,6 @@ _Apartado "Edit Profile" del profesor_
 En mi caso, este es [mi perfil](https://codepip.com/user/chirihop/).
 
 {:.activity}
-### Flexbox froggy
-
-Después de ver el siguiente vídeo:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-nVJwYKx6H8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-deberemos hacer las actividades de [Flexbox Froggy](https://codepip.com/games/flexbox-froggy/).
-
-> 📷 Haz una captura de tu perfil con la actividad completada.
-{:.prompt-info}
-
-{:.activity}
 ### Grid Garden
 
 Después de ver el siguiente vídeo:
@@ -63,6 +51,18 @@ Después de ver el siguiente vídeo:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/edEG0CoM5gw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 deberemos hacer las actividades de [Grid Garden](https://codepip.com/games/grid-garden/).
+
+> 📷 Haz una captura de tu perfil con la actividad completada.
+{:.prompt-info}
+
+{:.activity}
+### (Voluntaria) Flexbox froggy
+
+Después de ver el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-nVJwYKx6H8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+deberemos hacer las actividades de [Flexbox Froggy](https://codepip.com/games/flexbox-froggy/).
 
 > 📷 Haz una captura de tu perfil con la actividad completada.
 {:.prompt-info}

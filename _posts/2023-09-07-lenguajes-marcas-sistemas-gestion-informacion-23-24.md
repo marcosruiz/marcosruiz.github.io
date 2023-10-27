@@ -17,20 +17,25 @@ pin: true
 - T00 (Voluntaria) - [El formato SVG](/posts/tarea-formato-svg/)
 - T01 - [Tarea: Introducción a XML](/posts/tarea-introduccion-xml/)
 - T02 - [Tarea: Introducción a HTML](/posts/practica-html/)
-- T03 - [Tarea: HTML en freeCodeCamp](/posts/practica-html-freecodecamp/)
+- T03 (Voluntaria) - [Tarea: HTML en freeCodeCamp](/posts/practica-html-freecodecamp/)
 - T04 (Voluntaria) - [Tarea: HTML en W3Schools](/posts/practica-html-w3schools/)
 - T05 - [Tarea: CSS en freeCodeCamp](/posts/practica-css-freecodecamp/)
 - T06 (Voluntaria) - [Tarea: CSS en W3Schools](/posts/practica-css-w3schools/)
 - T07 - [Tarea: CSS en Codepip](/posts/practica-css-codepip/)
-- T08 - [Tarea: Portfolio en HTML y CSS](/posts/practica-portfolio-html-css/)
-- T09 - 
-- T10 - 
+- T08 - [Tarea: Calculadora con HTML y CSS](/posts/tarea-calculadora-html-css/)
+- T09 - Tarea: DTDs
 
 ## Evaluación 2
 
 - UD05 - Conversión y adaptación de documentos XML
 - UD06 - Almacenamiento de información
 - UD07 - Sistemas de gestión empresarial
+
+- T10 - Tarea: XML Schemas
+- T11 - Tarea: XSLT
+- T12 - Tarea: XSL-FO
+- T13 - Tarea: XPath
+- T14 - Tarea: XQuery
 
 ## Enlaces increíbles 🔥 (beta)
 
