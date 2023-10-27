@@ -14,9 +14,10 @@ pin: true
 - UD03 - Aplicación de los lenguajes de marcas a la sindicación de contenidos
 - UD04 - Definición de esquemas y vocabularios en XML
 
+- T00 (Voluntaria) - [El formato SVG](/posts/tarea-formato-svg/)
 - T01 - [Tarea: Introducción a XML](/posts/tarea-introduccion-xml/)
 - T02 - [Tarea: Introducción a HTML](/posts/practica-html/)
-- T03 - [Tarea: HTML en freeCodeCamp](/posts/practica-html-freeCodeCamp/)
+- T03 - [Tarea: HTML en freeCodeCamp](/posts/practica-html-freecodecamp/)
 - T04 (Voluntaria) - [Tarea: HTML en W3Schools](/posts/practica-html-w3schools/)
 - T05 - [Tarea: CSS en freeCodeCamp](/posts/practica-css-freecodecamp/)
 - T06 (Voluntaria) - [Tarea: CSS en W3Schools](/posts/practica-css-w3schools/)

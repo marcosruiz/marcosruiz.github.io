@@ -14,7 +14,7 @@ tags: [aplicaciones web, smr]
 
 - P01 - [Práctica: HTML](/posts/practica-html/)
 - P02 - [Práctica: HTML en W3Schools](/posts/practica-html-w3schools/)
-- P03 - [Práctica: HTML en freeCodeCamp](/posts/practica-html-freeCodeCamp/)
+- P03 - [Práctica: HTML en freeCodeCamp](/posts/practica-html-freecodecamp/)
 - P04 - [Práctica: CSS en W3Schools](/posts/practica-css-w3schools/)
 - P05 - Práctica: CSS responsivo
 - P06 - [Práctica: Portfolio con HTML y CSS](/posts/practica-portfolio-html-css)
@@ -29,7 +29,7 @@ tags: [aplicaciones web, smr]
 - UD9 - [Aplicaciones web de escritorio](/posts/aplicaciones-web-escritorio)
 
 - P08 - [Práctica: Moodle](/posts/practica-moodle/)
-- P09 - [Práctica: JavaScript en freeCodeCamp](/posts/practica-javascript-freeCodeCamp)
+- P09 - [Práctica: JavaScript en freeCodeCamp](/posts/practica-javascript-freecodecamp)
 - P10 - [Práctica: JavaScript en W3Schools](/posts/practica-javascript-w3schools)
 - P11 - [Práctica: Introducción a JavaScript](/posts/practica-introduccion-javascript)
 - P12 - [Práctica: Introducción a JavaScript 2](/posts/practica-introduccion-javascript-2)
