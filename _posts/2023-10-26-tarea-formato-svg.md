@@ -43,8 +43,8 @@ Copia el siguiente texto en el bloc de notas de tu equipo o en otro editor simil
 
 Guarda el archivo con extensión SVG y ábrelo con un navegador en tu equipo, si lo has hecho correctamente y el navegador es compatible verás una imagen como la siguiente:
 
-![imgDescription](SolucionSVG.jpg)
-_imgDescription_
+![Visualización de imagen vectorial SVG](SolucionSVG.jpg)
+_Visualización de imagen vectorial SVG_
 
 Prueba a generar y entregar en esta tarea tu propio archivo SVG con la imagen que quieras, puedes coger ideas o inspiración en los [tutoriales del w3schools](https://www.w3schools.com/graphics/svg_intro.asp).
 
