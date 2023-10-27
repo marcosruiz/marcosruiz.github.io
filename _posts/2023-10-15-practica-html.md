@@ -245,6 +245,9 @@ Dentro de cada documento HTML especificado a continuación debes poder navegar a
 - Desde textual.html debe haber un enlace relativo a prueba (carpeta)
 - Desde textual.html debe haber un enlace relativo a prueba.html
 
+> Recuerda que las rutas relativas deberían funcionar en cualquier PC.
+{:.prompt-info}
+
 {:.activity}
 ### Libro digital navegable
 
@@ -361,6 +364,9 @@ A partir de la imagen que podrás descargar a continuación genera un mapa de im
 ![Letra F](letra-F-ejercicio-avanzado.jpg)
 _Letra F_
 
+> Si algo no funciona como esperas prueba a jugar con el orden de los elementos.
+{:.prompt-info}
+
 {:.activity}
 ### Audio y vídeo
 
@@ -376,7 +382,7 @@ A continuación reproduce exactamente el mismo ejercicio pero en este caso repro
 
 Puedes encontrar archivos de vídeo mp4 en [Moving Image Archive](https://archive.org/details/movies).
 
-> Para encontrar audios y vídeos cortos podéis buscar la palabra "sample". Recuerda que el número de megas en las entregas está limitado.
+> Usa audios y vídeos lo más cortos posible. Para encontrar audios y vídeos cortos podéis buscar la palabra "sample". Recuerda que el número de megas en las entregas está limitado.
 {:.prompt-info}
 
 {:.activity}
@@ -786,9 +792,16 @@ Escribe el HTML de un formulario web según las especificaciones descritas a con
 ![Resultado final del formulario](resultadoFinalFormulario.png)
 _Resultado final del formulario_
 
-{:.question}
-Con el inspector de código del navegador (F12) puedes llegar a observar qué datos se estarían enviando al servidor. Intenta averiguar como.
+<details class="card mb-2">
+  <summary class="card-header question">Con el inspector de código del navegador (F12) puedes llegar a observar qué datos se estarían enviando al servidor. Intenta averiguar como.</summary>
+  <div class="card-body" markdown="1">
 
-## Bibliografía (no usar)
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/tqLJoWfdqIc?si=hG6qH7mK2BgUM_3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+## Bibliografía (NO USAR)
 
 - [EJERCICIOS HTML](https://francescricart.com/tutorial-html/ejercicios-html/)

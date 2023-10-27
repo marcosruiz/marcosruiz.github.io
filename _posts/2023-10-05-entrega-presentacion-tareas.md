@@ -39,7 +39,7 @@ _Ejemplo de portada_
 ![Ejemplo de actividad](ejemploActividad.png)
 _Ejemplo de actividad_
 
-> En el curso de Moodle tenéis una plantilla realizada con WPS Office que cumple la mayoría de los requisitos.
+> Os dejo en [este enlace](/assets/docx/apellido1_apellido2_nombre_SIGxx_Tarea.docx) una plantilla en formato DOCX realizada con WPS Office que cumple la mayoría de los requisitos. ¡Recuerda eliminar los símbolos "<" y ">" al usar esta plantilla.
 {:.prompt-info}
 
 ## Entrega y presentación en formato ZIP
