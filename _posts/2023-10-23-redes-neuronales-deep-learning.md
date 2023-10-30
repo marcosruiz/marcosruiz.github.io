@@ -39,7 +39,18 @@ Preguntas sobre el vídeo:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MRIv2IwFTPg?si=GB_NvnUb9bQVU_m6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+Preguntas sobre el vídeo:
+
+1. ¿Es lo mismo una neurona artificial que una función matemática?
+1. ¿Cuál es la solución para resolver el problema de clasificación del XOR?
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uwbHOpp9xkc?si=I8f6J5MOt7rs8RLZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+1. ¿Cuales son los 3 tipos de capas de una red neuronal?
+1. ¿Qué ocurre cuando sumamos varias líneas rectas entre si?
+1. ¿Qué funciones de activación nombra en DotCSV en el vídeo?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_0wdproot34?si=U-E-WtjHZmq9xI8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
