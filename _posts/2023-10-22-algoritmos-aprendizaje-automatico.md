@@ -30,6 +30,13 @@ Preguntas sobre el vídeo:
 1. ¿En que se diferencia el aprendizaje supervisado del no supervisado?
 1. ¿Qué es el aprendizaje semisupervisado?
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_tA5cinv0U8?si=83FYEyOK9lvNzuR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+1. ¿Existen hoy en dia máquinas con autoconciencia?
+1. ¿Para qué sirven los captchas?
+
 {:.section}
 ## Regresión Lineal
 
@@ -42,6 +49,8 @@ Preguntas sobre el vídeo:
 1. ¿Cómo podemos saber que una recta es mejor que otra en el modelo de regresión lineal?
 1. ¿Por qué elevamos al cuadrado los errores en el modelo de regresión lineal?
 1. ¿Por qué no se usa método de cuadrados ordinarios en inteligencia artificial?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w2RJ1D6kz-o?si=t0LDQnQZkNpCh0Aa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 {:.section}
 ## Regresión Logística
@@ -71,11 +80,42 @@ Preguntas sobre el vídeo:
 {:.section}
 ## Máquinas de Vector Soporte (SVM)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kl6tyEi5eso?si=f6DPqO9pqxfzUpTx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+1. ¿Qué significan las siglas en inglés SVM?
+1. ¿Es SVM aprendizaje supervisado o no supervisado? ¿Por qué?
+1. ¿Cómo explica que se obtiene la recta que separa los dos grupos?
+1. ¿Por qué llama hiperplano a la recta?
+
 {:.section}
 ## Clustering
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aUPRixo1jFw?si=Cjx2Z_r30fqtFxrt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+1. ¿Qué es un cluster?
+1. ¿Es el clustering aprendizaje supervisado o no supervisado? ¿Por qué?
+
 {:.subsection}
 ### K-Means
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vFFGIPXwFlE?si=NQnPL8Gxne4FlBlp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+1. ¿Es el método de K-Means iterativo?
+1. ¿Cómo se calcula el nuevo centroide?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gKU5zkN7BZw?si=YnsLP9qzZ0p7Xcij" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/klTXlLU6ejM?si=_7DH4BHfRtTtWiDT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d53WiYsnxv8?si=t6ofIF9jmchQKV8a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GuCq5y0pb8Y?si=EMSZsgUofmqmmy1W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 {:.subsection}
 ### G-Means

@@ -9,6 +9,8 @@ math: true
 
 ## Introducción
 
+
+
 {:.section}
 ## Inteligencia Artificial Fuerte y Débil
 
