@@ -30,7 +30,7 @@ En un determinado grupo poblacional, la probabilidad de tener cáncer es del 0,0
 
 Calcular la probabilidad de que se tenga cáncer si la prueba da positiva.
 
-Entra en la [web de cálculo del Teorema de Bayes](https://www.ugr.es/~jsalinas/bayes.htm) para comprobar si tus cálculos son correctos
+Entra en la [web de cálculo del Teorema de Bayes](https://www.ugr.es/~jsalinas/bayes.htm) para comprobar si tus cálculos son correctos. Puedes utilizar otra web si lo consideras oportuno.
 
 Escribe los razonamientos de tus cálculos y añade captura de pantalla del uso de la calculadora de Bayes.
 
