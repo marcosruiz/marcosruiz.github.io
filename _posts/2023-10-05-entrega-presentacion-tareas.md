@@ -24,8 +24,8 @@ Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiale
 1. Las actividades deberán estar numeradas y ordenadas correctamente. Por ejemplo: `1. Actividad`, `Actividad 1`, `1. <Título de la actividad>` o `Actividad 1: <Título de la actividad>` en la entrega del alumno.
 1. Cada actividad debe tener **el enunciado en negrita** y la respuesta en texto normal.
 1. Cada imagen debe tener un texto que la presente o un pie de foto con el siguiente formato: `Figura <número>: <Breve descripción de la figura>`.
-1. Los comandos, ficheros de configuración y/o código fuente deben quedar reflejados en el PDF de la entrega en texto plano para permitir copiar y pegar de una manera rápida.
-1. Los comandos y documentos de configuración que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
+1. Los comandos, documentos de configuración y código fuente deben quedar reflejados en el PDF de la entrega en texto plano para permitir copiar y pegar de una manera rápida.
+1. Los comandos, documentos de configuración y código fuente que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
 1. Para las actividades a mano se deberá hacer una foto a la resolución del ejercicio y añadirla al PDF.
 
 Además:

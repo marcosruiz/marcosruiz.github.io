@@ -9,19 +9,21 @@ img_path: /assets/img/videos-profesor/
 {:.section}
 ## Programas útiles
 
-- Carnac para mostrar atajos de teclado en pantalla
-- OBS para grabar
-- KDEnlive para editar vídeos
-- Canva para todo
-- ZoomIt para hacer zoom y pintar en la pantalla
+- [Carnac](http://carnackeys.com/) para mostrar atajos de teclado en pantalla.
+- [OBS](https://obsproject.com/es/download) para grabar.
+- [KDEnlive](https://kdenlive.org/es/) para editar vídeos.
+- [Canva](https://www.canva.com/) para grabar y editar vídeos.
+- [ZoomIt](https://learn.microsoft.com/es-es/sysinternals/downloads/zoomit) para hacer zoom y pintar en la pantalla.
 
-### Carnac
+### Configurar Carnac
 
-![imgDescription](carnacConfig01.png)
-_imgDescription_
+La configuración que uso para Carnac es la siguiente:
 
-![imgDescription](carnacConfig02.png)
-_imgDescription_
+![Sección General de Carnac](carnacConfig01.png)
+_Sección General de Carnac_
+
+![Sección Appearance de Carnac](carnacConfig02.png)
+_Sección Appearance de Carnac_
 
 ### Hacer webcam circular con OBS
 
@@ -73,9 +75,9 @@ Resultado final:
 
 ![imgDescription](obsPaso10.png)
 
-### KDEnlive
+## Grabar vídeos con Canva
 
-### Canva
+
 
 ## Bibliografía
 
