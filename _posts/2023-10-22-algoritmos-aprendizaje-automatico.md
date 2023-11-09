@@ -119,3 +119,7 @@ Preguntas sobre el vídeo:
 
 {:.subsection}
 ### G-Means
+
+## Bibliografía
+
+## Pie de página
