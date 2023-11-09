@@ -52,6 +52,29 @@ Preguntas sobre el vídeo:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w2RJ1D6kz-o?si=t0LDQnQZkNpCh0Aa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es regresión?</summary>
+  <div class="card-body" markdown="1">
+
+El análisis de regresión es la parte del aprendizaje supervisado que se ocupa de la predicción de valores numéricos continuos. En este caso, el objetivo del algoritmo es inferir[^inferir] las relaciones entre las variables, que son previamente conocidas y que permiten ofrecer una predicción sobre la salida requerida. Para estos problemas, se utiliza un algoritmo de aprendizaje automático para construir un modelo que prediga un valor continuo. Es decir, dados los campos que definen una nueva instancia, el modelo predice un número real. Por ejemplo, el precio de una casa, el número de unidades vendidas de un producto, los ingresos potenciales de un posible cliente, el número de horas hasta el próximo fallo del sistema, etc.
+
+[^inferir]: Extraer un juicio o conclusión a partir de hechos, proposiciones o principios, sean generales o particulares.
+
+La regresión es un problema matemático ampliamente conocido en el que se aplican técnicas que van desde las más simples (regresión lineal o polinómica) hasta las más complejas (Deep Learning, etc.) pero que se asemeja a un proceso de aproximación de funciones clásico en el que a partir de unas variables de entrada necesitamos encontrar aquella función que ofrezca la salida requerida. El proceso de validación de los modelos que resuelven problemas de regresión se basa en el uso de métricas de error, por ejemplo el error absoluto medio (MAE), el coeficiente de determinación (R^{2}), etc.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+{:.subsection}
+### Información práctica
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J3Sw1Z2rVmc?si=NJtl9oz4EEQNXgwT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tsjcrtCyraE?si=aQdAa8jx1gtizBP3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6ayzBy7U4A4?si=wNFljVNKPgHh86nT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 {:.section}
 ## Regresión Logística
 
@@ -100,7 +123,7 @@ Preguntas sobre el vídeo:
 1. ¿Es el clustering aprendizaje supervisado o no supervisado? ¿Por qué?
 
 {:.subsection}
-### K-Means
+### K-Means (no responder)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vFFGIPXwFlE?si=NQnPL8Gxne4FlBlp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -111,11 +134,35 @@ Preguntas sobre el vídeo:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gKU5zkN7BZw?si=YnsLP9qzZ0p7Xcij" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+Preguntas sobre el vídeo:
+
+1. ¿Para qué sirve numpy?
+1. ¿Qué es una distribución normal?
+1. ¿De qué dimensiones es la matriz `puntos`?
+1. ¿De qué dimensiones es la matriz `centroides`?
+1. ¿Se te ocurre una manera más sencilla de elegir los centroides?
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/klTXlLU6ejM?si=_7DH4BHfRtTtWiDT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+1. ¿Qué dimensiones tienen las matrices `puntos_expand` y `centroides_expand`?
+1. ¿Qué es la distancia euclídea?
+1. ¿Cómo se elige a que cluster pertenece un punto?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d53WiYsnxv8?si=t6ofIF9jmchQKV8a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+Preguntas sobre el vídeo:
+
+1. ¿Qué dimensiones tiene la matriz `lista`?
+1. ¿Qué dimensiones tiene la matriz `nuevos_centroides`?
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GuCq5y0pb8Y?si=EMSZsgUofmqmmy1W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+1. ¿Qué librería se usa para representar los tres clusters?
 
 {:.subsection}
 ### G-Means
+
