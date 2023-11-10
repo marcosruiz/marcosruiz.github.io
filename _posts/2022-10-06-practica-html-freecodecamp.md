@@ -43,7 +43,7 @@ _Ajustes de privacidad_
 {:.activity}
 ### Hacer el curso Diseño Web Responsivo
 
-Hacer el apartado "Aprende HTML construyendo una aplicación de fotos de gatos" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/) y
+Hacer el apartado "Aprende HTML construyendo una aplicación de fotos de gatos" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
 
 Una vez terminado, haz una captura de tu perfil público e **indica el enlace de tu perfil**.
 
