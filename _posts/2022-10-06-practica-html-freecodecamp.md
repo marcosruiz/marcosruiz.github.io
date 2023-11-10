@@ -50,5 +50,5 @@ Una vez terminado, haz una captura de tu perfil público e **indica el enlace de
 > ¡Te animo a intentar hacerlo en inglés ya que así aprenderás HTML e inglés al mismo tiempo!
 {:.prompt-info}
 
-> En mi caso este es [mi perfil](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b).
+> En mi caso este es [mi perfil público](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b).
 {:.prompt-info}
