@@ -48,8 +48,7 @@ Haz una o varias capturas cuando completes los 88 los ejercicios, de manera que 
 _Ejercicios HTML finalizados_
 
 > En mi caso este es [mi perfil](https://www.w3profile.com/marcosruiz).
-{:.promtp-info}
-
+{:.prompt-info}
 
 {:.activity}
 ### (Voluntaria) Cuestionario

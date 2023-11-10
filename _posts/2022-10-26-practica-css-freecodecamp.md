@@ -25,9 +25,9 @@ La tarea se calificará como apto o no apto.
 {:.activity}
 ### Menú cafetería
 
-Hacer el apartado "Aprende CSS básico construyendo un menú de cafetería" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/)
+Hacer el apartado "Aprende CSS básico construyendo un menú de cafetería" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
 
-> 📷 Cuando termines los 91 pasos, haz una captura de tu perfil público y añade el enlace de tu perfil. En mi caso este es [mi perfil](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b).
+> 📷 Cuando termines los 91 pasos, haz una captura de tu perfil público y añade el enlace de tu perfil. En mi caso este es [mi perfil público](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b).
 {:.prompt-info}
 
 {:.activity}

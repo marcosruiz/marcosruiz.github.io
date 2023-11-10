@@ -8,7 +8,7 @@ img_path: /assets/img/practica-css-codepip/
 
 ## Objetivo y duración
 
-El objetivo de esta práctica es aprender a escribir CSS de forma correcta.
+El objetivo de esta tarea es aprender a utilizar el display grid y el display flex de CSS de forma correcta.
 
 Duración: 2 h
 
@@ -32,16 +32,11 @@ Ir a [https://codepip.com/](https://codepip.com/) y registrarnos con el email de
 - "Nickname" con el nombre de usuario de vuestro email del centro educativo.
 - "Private Profile" **desmarcado**.
 
-> 📷 Haz una captura de tu perfil vacío.
-{:.prompt-info}
-
 ![Apartado "Edit Profile" del profesor](editarPerfil.png){: width="400px"}
 _Apartado "Edit Profile" del profesor_
 
-> Indica la URL de tu perfil público.
+> 📷 Haz una captura de tu perfil vacío e indica la URL de tu perfil público. En mi caso, este es [mi perfil público](https://codepip.com/user/chirihop/).
 {:.prompt-info}
-
-En mi caso, este es [mi perfil](https://codepip.com/user/chirihop/).
 
 {:.activity}
 ### Grid Garden
