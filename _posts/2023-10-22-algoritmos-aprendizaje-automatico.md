@@ -91,7 +91,7 @@ Preguntas sobre el vídeo:
 
 1. ¿En qué se diferencia la regresión lineal de la regresión logística?
 1. ¿Qué es el BMI?
-1. ¿Cuál es la función logística? 
+1. ¿Cuál es la función logística?
 1. ¿Qué otro nombre tiene la función logística?
 1. ¿Con que algoritmo se optimiza el error en la regresión logística?
 
@@ -141,7 +141,7 @@ Preguntas sobre el vídeo:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gKU5zkN7BZw?si=YnsLP9qzZ0p7Xcij" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Preguntas sobre el vídeo (voluntario):
+Preguntas sobre el vídeo:
 
 1. ¿Para qué sirve numpy?
 1. ¿Qué es una distribución normal?
@@ -151,7 +151,7 @@ Preguntas sobre el vídeo (voluntario):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/klTXlLU6ejM?si=_7DH4BHfRtTtWiDT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Preguntas sobre el vídeo (voluntario):
+Preguntas sobre el vídeo:
 
 1. ¿Qué dimensiones tienen las matrices `puntos_expand` y `centroides_expand`?
 1. ¿Qué es la distancia euclídea?
@@ -159,14 +159,14 @@ Preguntas sobre el vídeo (voluntario):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d53WiYsnxv8?si=t6ofIF9jmchQKV8a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Preguntas sobre el vídeo (voluntario):
+Preguntas sobre el vídeo:
 
 1. ¿Qué dimensiones tiene la matriz `lista`?
 1. ¿Qué dimensiones tiene la matriz `nuevos_centroides`?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GuCq5y0pb8Y?si=EMSZsgUofmqmmy1W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Preguntas sobre el vídeo (voluntario):
+Preguntas sobre el vídeo:
 
 1. ¿Qué librería se usa para representar los tres clusters?
 
