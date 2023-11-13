@@ -175,9 +175,9 @@ Preguntas sobre el vídeo (voluntario):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OiKEs2BZ4v0?si=UdwrNTJkAeRC_xsC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Preguntas sobre el vídeo (voluntario):
+Preguntas sobre el vídeo:
 
-1. ¿Con que coincide el eje de simetría de la distribución normal?
+1. ¿Con qué coincide el eje de simetría de la distribución normal?
 1. Coloquialmente ¿qué simboliza la desviación estándar?
 1. ¿Qué ejemplo de uso de una distribución normal se menciona en el vídeo?
 
