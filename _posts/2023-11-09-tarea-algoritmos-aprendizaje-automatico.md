@@ -19,7 +19,7 @@ La tarea se calificará como apto o no apto.
 {:.activity}
 ### Vídeo introductorio por DotCSV
 
-Mira el vídeo [¿Qué es el Machine Learning?¿Y Deep Learning? Un mapa conceptual | DotCSV](https://www.youtube.com/embed/KytW151dpqU?si=GVVTwLVpZ39gk0dU) y responde a las siguientes preguntas sobre el mismo:
+Mira el vídeo [¿Qué es el Machine Learning?¿Y Deep Learning? Un mapa conceptual](https://www.youtube.com/embed/KytW151dpqU?si=GVVTwLVpZ39gk0dU) y responde a las siguientes preguntas sobre el mismo:
 
 1. ¿Qué dos tipos de IA existen?
 1. ¿Hay algún ejemplo de IA fuerte en la vida real?
@@ -51,7 +51,7 @@ Mira el vídeo [¿Qué es y cómo funciona la INTELIGENCIA ARTIFICIAL?](https://
 {:.activity}
 ### Vídeo sobre regresión lineal por DotCSV
 
-Mira el vídeo [Regresión Lineal y Mínimos Cuadrados Ordinarios | DotCSV](https://www.youtube.com/embed/k964_uNn3l0?si=WsWwIMtLhJ-0JK6_) y responde a las siguientes preguntas sobre el mismo:
+Mira el vídeo [Regresión Lineal y Mínimos Cuadrados Ordinarios](https://www.youtube.com/embed/k964_uNn3l0?si=WsWwIMtLhJ-0JK6_) y responde a las siguientes preguntas sobre el mismo:
 
 1. ¿Qué diferencia hay entre el modelo de regresión lineal simple y el modelo de regresión lineal múltiple?
 1. ¿Por qué se usan matrices a la hora de programar modelos?
@@ -62,7 +62,7 @@ Mira el vídeo [Regresión Lineal y Mínimos Cuadrados Ordinarios | DotCSV](http
 {:.activity}
 ### Vídeo sobre regresión lineal por Tensor4Dummies
 
-Mira el vídeo [ Parte 3.1 - Introducción a la regresión lineal](https://www.youtube.com/embed/J3Sw1Z2rVmc?si=NJtl9oz4EEQNXgwT) y responde a las siguientes preguntas sobre el mismo:
+Mira el vídeo [Parte 3.1 - Introducción a la regresión lineal](https://www.youtube.com/embed/J3Sw1Z2rVmc?si=NJtl9oz4EEQNXgwT) y responde a las siguientes preguntas sobre el mismo:
 
 1. ¿Qué simboliza el $$\epsilon$$ en la fórumla $$Y = \beta_{0} + \beta_{1} X_{1} + \epsilon$$?
 1. ¿Qué determina/simboliza el $$\beta_{1}$$ en la fórumla $$Y = \beta_{0} + \beta_{1} X_{1} + \epsilon$$?
