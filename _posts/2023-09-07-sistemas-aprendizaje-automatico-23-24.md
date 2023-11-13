@@ -16,6 +16,7 @@ pin: true
 5. Técnicas avanzadas y evaluación del modelo.
 
 - T01 - [Tarea: Aplicación de modelos probabilísticos](/posts/tarea-aplicacion-modelos-probabilisticos/)
+- T02 - [Tarea: Algoritmos para el aprendizaje automático](/posts/tarea-algoritmos-aprendizaje-automatico/)
 
 ## Enlaces increíbles 🔥 (beta)
 
