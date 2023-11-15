@@ -2,7 +2,7 @@
 title: "Lenguajes de Marcas y Sistemas de Gestión de Información 23 24"
 date: 2023-09-07 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Multiplataforma, Lenguajes de Marcas y Sistemas de Gestión de Información]
-tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, desarrollo de aplicaciones web]
+tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, desarrollo de aplicaciones web, dam, daw, asir, lmsgi]
 img_path: /assets/img/lenguajes-marcas-sistemas-gestion-informacion-23-24/
 pin: true
 ---
@@ -23,7 +23,6 @@ pin: true
 - T06 (Voluntaria) - [Tarea: CSS en W3Schools](/posts/practica-css-w3schools/)
 - T07 - [Tarea: CSS en Codepip](/posts/practica-css-codepip/)
 - T08 - [Tarea: Calculadora con HTML y CSS](/posts/tarea-calculadora-html-css/)
-- T09 - Tarea: DTDs
 
 ## Evaluación 2
 
@@ -31,6 +30,7 @@ pin: true
 - UD06 - Almacenamiento de información
 - UD07 - Sistemas de gestión empresarial
 
+- T09 - Tarea: DTDs
 - T10 - Tarea: XML Schemas
 - T11 - Tarea: XSLT
 - T12 - Tarea: XSL-FO

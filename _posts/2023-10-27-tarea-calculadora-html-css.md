@@ -1,8 +1,8 @@
 ---
 title: "Tarea: Calculadora con HTML y CSS"
 date: 2023-10-26 9:00:00 +0100
-categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
-tags: [aplicaciones web, smr, práctica, tarea, lmsgi, dam, daw, asir]
+categories: [Desarrollo de Aplicaciones Multiplataforma, Lenguajes de Marcas y Sistemas de Gestión de Información]
+tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, desarrollo de aplicaciones web, práctica, tarea, dam, daw, asir]
 img_path: /assets/img/tarea-calculadora-html-css/
 ---
 

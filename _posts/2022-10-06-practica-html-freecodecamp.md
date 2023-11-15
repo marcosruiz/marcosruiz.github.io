@@ -2,7 +2,8 @@
 title: "Tarea: HTML en freeCodeCamp"
 date: 2022-10-06 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
-tags: [aplicaciones web, smr, práctica, tarea]
+categories: [Desarrollo de Aplicaciones Multiplataforma, Lenguajes de Marcas y Sistemas de Gestión de Información]
+tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, desarrollo de aplicaciones web, dam, daw, asir, lmsgi, aplicaciones web, smr, práctica, tarea]
 img_path: /assets/img/practica-html-freecodecamp/
 ---
 

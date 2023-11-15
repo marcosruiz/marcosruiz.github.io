@@ -2,7 +2,7 @@
 title: "Tarea: CSS en freeCodeCamp"
 date: 2022-10-26 9:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Aplicaciones Web]
-tags: [aplicaciones web, smr, práctica, css]
+tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, desarrollo de aplicaciones web, dam, daw, asir, lmsgi, aplicaciones web, smr, sistemas microinformáticos y redes, práctica, tarea]
 img_path: /assets/img/practica-css-freecodecamp/
 ---
 

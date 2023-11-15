@@ -2,7 +2,7 @@
 title: "Tarea: Introducción a XML"
 date: 2023-10-03 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Multiplataforma, Lenguajes de Marcas y Sistemas de Gestión de Información]
-tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, desarrollo de aplicaciones web]
+tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, desarrollo de aplicaciones web, práctica, tarea, dam, daw, asir]
 img_path: /assets/img/tarea-01-introduccion-xml/
 ---
 
