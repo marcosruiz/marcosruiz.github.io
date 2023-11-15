@@ -28,7 +28,7 @@ Para realizar este tipo de entregas son necesarias dos acciones:
 3. A la derecha, tenemos el engranaje, hacemos click en él y seleccionamos la opción "Grupos" del desplegable.
 4. Ahora podemos crear grupos de dos maneras:
    1. **Manualmente**: Creamos los grupos uno a uno.
-   2. **Automaticamente** (recomendada): Creamos todos los grupos de golpe. Podemos hacer que sean grupos al azar, alfabéticamente o podemos crearlos vacíos para añadirlos manualmente más adelante.
+   2. **Automáticamente** (recomendada): Creamos todos los grupos de golpe. Podemos hacer que sean grupos al azar, alfabéticamente o podemos crearlos vacíos para añadirlos manualmente más adelante.
 
 ![Creación de grupos vacíos automáticamente en Moodle](crearGruposAutomaticamente.png)
 _Creación de grupos vacíos automáticamente en Moodle_
@@ -45,9 +45,9 @@ _Configuración de entrega por grupo en Moodle_
 ## Cuestionarios GIFT
 
 {:.subsection}
-### Carácteres especiales que hay que escapar
+### Caracteres especiales que hay que escapar
 
-```
+```plaintext
 ~ = # { } :
 ```
 
@@ -58,7 +58,7 @@ A continuación se ponen plantillas para copiar y pegar de forma rápida
 
 #### Pregunta de una opción
 
-```
+```plaintext
 [markdown]Pregunta{
     =Respuesta
     ~Respuesta
@@ -69,7 +69,7 @@ A continuación se ponen plantillas para copiar y pegar de forma rápida
 
 #### Pregunta de opción múltiple
 
-```
+```plaintext
 [markdown]Pregunta{
     ~%50%Respuesta
     ~%50%Respuesta
@@ -80,25 +80,35 @@ A continuación se ponen plantillas para copiar y pegar de forma rápida
 
 #### Pregunta respuesta numérica
 
-```
+```plaintext
 [markdown]Pregunta {#5}
 ```
 
 #### Pregunta respuesta texto
 
-```
+```plaintext
 [markdown]Pregunta {=respuesta}
 ```
 
-```
+```plaintext
 [markdown]Pregunta {=respuesta =respuesta2}
 ```
 
 #### Pregunta de verdadero y falso
 
-```
+```plaintext
 [markdown]Pregunta {T}
 ```
+
+{:.subsection}
+### Autoincrementar
+
+Es útil darle un nombre a cada pregunta para encontrarla en el banco de preguntas. En Visual Studio code se puede hacer lo siguiente para hacerlo de forma rápida:
+
+1. Instalas la extensión Increment Selection.
+1. Delante de `[markdown]`, añades al inicio de cada línea un título. Por ejemplo: `::T05 01::`.
+1. Seleccionas el `01`. Haces `Ctrl+Shift+L` para seleccionar todas las preguntas.
+1. Hacer `Ctrl+Alt+I` para dar un nombre único a cada pregunta.
 
 ## Bibliografía
 
