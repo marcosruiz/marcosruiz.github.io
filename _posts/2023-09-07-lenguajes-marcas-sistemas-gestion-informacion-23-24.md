@@ -11,6 +11,8 @@ pin: true
 
 - UD01 - Reconocimiento de las características de lenguajes de marcas
 - UD02 - Utilización de lenguajes de marcas en entornos web
+  - [HTML](/posts/html/)
+  - [CSS](/posts/css/)
 - UD03 - Aplicación de los lenguajes de marcas a la sindicación de contenidos
 - UD04 - Definición de esquemas y vocabularios en XML
 
