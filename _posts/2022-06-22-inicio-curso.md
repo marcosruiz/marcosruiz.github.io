@@ -28,18 +28,19 @@ tags: []
 | [Epoptes](https://epoptes.org/)  | ✅ | ❌ |
 | Oracle VM Virtual Box | ✅ | ✅ |
 | Visual Studio Code | ✅ | ✅ |
-| Cisco Packet Tracer 6.2 | ✅ | ✅ |
-| Wireshark | ✅ | ✅ |
-| CrypTool 2 | ❌ | ✅ |
-| BlueJ | ✅ | ✅ |
-| PSeInt | ✅ | ✅ |
+| Cisco Packet Tracer 6.2  (Redes) | ✅ | ✅ |
+| Wireshark (Redes) | ✅ | ✅ |
+| CrypTool 2 (Seguridad Informática) | ❌ | ✅ |
+| BlueJ (TIC II) | ✅ | ✅ |
+| PSeInt (TIC II) | ✅ | ✅ |
 | PuTTY | ❌ | ✅ |
 | WinSCP | ❌ | ✅ |
 | OBS Studio | ✅ | ✅ |
 | [Sublime Text 3](https://www.sublimetext.com/download) | ✅ | ✅ |
 | Windows Terminal | ❌ | ✅ |
 | Subsistema Ubuntu | ❌ | ✅ |
-| [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) | ✅ | ✅ |
+| [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) | ❌ | ✅ |
+| CrystalDiskMark | ❌ | ✅ |
 | WPS Office | ✅ | ✅ |
 | Vagrant | ✅ | ✅ |
 | CristalDiskInfo | ❌ | ✅ |
@@ -48,13 +49,21 @@ tags: []
 ## Programas para mi
 
 - [PDFsam Basic](https://pdfsam.org/es/download-pdfsam-basic/)
+- [TinyTask With-Editor](https://tinytask.net/) para automatizar tareas con el ratón.
+- [Carnac](http://code52.org/carnac/): Para mostrar atajos de teclado.
+- [ShareX](https://getsharex.com/): Para hacer capturas de una parte de la pantalla.
+- [PowerToys](https://learn.microsoft.com/es-es/windows/powertoys/)
+  - Mouse utilities: Para mostrar los clicks del ratón.
+  - Paste As Plain Text
+  - Text Extractor: OCR
+- [ZoomIt](https://learn.microsoft.com/es-es/sysinternals/downloads/zoomit): Para hacer zoom y grabar la pantalla.
 
 ## Extensiones para navegador
 
 De seguridad:
 
 - Bitwarden
-- Copyfish Free OCR Software
+- Copyfish Free OCR Software → Sustituido por Text Extractor de PowerToys
 - uBlock Origin
 - Firefox Relay: Genera alias para emails.
 - Nervenschoner: Rechaza automáticamente las cookies y elimina los banners.
