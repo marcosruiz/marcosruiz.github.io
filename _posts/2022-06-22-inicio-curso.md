@@ -48,7 +48,7 @@ tags: []
 
 ## Programas para mi
 
-- [PDFsam Basic](https://pdfsam.org/es/download-pdfsam-basic/)
+- [PDF24](https://www.pdf24.org/es/)
 - [TinyTask With-Editor](https://tinytask.net/) para automatizar tareas con el ratón.
 - [Carnac](http://code52.org/carnac/): Para mostrar atajos de teclado.
 - [ShareX](https://getsharex.com/): Para hacer capturas de una parte de la pantalla.
