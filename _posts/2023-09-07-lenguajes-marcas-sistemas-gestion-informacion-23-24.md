@@ -10,6 +10,7 @@ pin: true
 ## Evaluación 1
 
 - UD01 - Reconocimiento de las características de lenguajes de marcas
+  - [XML](/posts/xml/)
 - UD02 - Utilización de lenguajes de marcas en entornos web
   - [HTML](/posts/html/)
   - [CSS](/posts/css/)
