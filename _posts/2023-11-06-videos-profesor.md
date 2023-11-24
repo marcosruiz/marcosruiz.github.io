@@ -12,9 +12,9 @@ img_path: /assets/img/videos-profesor/
 - [Carnac](http://carnackeys.com/): Para mostrar atajos de teclado en pantalla.
 - [OBS](https://obsproject.com/es/download): Para grabar.
 - [KDEnlive](https://kdenlive.org/es/): Para editar vídeos.
-- [Canva](https://www.canva.com/): Para grabar y editar vídeos.
 - [ZoomIt](https://learn.microsoft.com/es-es/sysinternals/downloads/zoomit): Para hacer zoom y pintar en la pantalla.
 - Mouse utilities de [PowerToys](https://learn.microsoft.com/es-es/windows/powertoys/): Para mostrar los clicks del ratón.
+- [Canva](https://www.canva.com/): Para grabar y editar vídeos.
 
 ### Configurar Carnac
 
