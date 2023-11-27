@@ -35,7 +35,7 @@ Lo que tendremos que hacer, para hacer llegar esa información a los lectores, e
 {:.subsubsection}
 #### Sindicación
 
-Podemos hacer que una web se convierta en suministradora (origen) de un canal de información, de modo que esta información pueda ser sindicada. Para lograrlo, en la cabecera de la página web hay que incluir, debajo del elemento <title>, un enlace al canal de contenidos.
+Podemos hacer que una web se convierta en suministradora (origen) de un canal de información, de modo que esta información pueda ser sindicada. Para lograrlo, en la cabecera de la página web hay que incluir, debajo del elemento `<title>`, un enlace al canal de contenidos.
 
 Para lograrlo, hay que usar una de las dos líneas siguientes, dependiendo de que el canal esté hecho con un estándar RSS o con uno Atom, respectivamente:
 
@@ -279,6 +279,9 @@ Como ejemplo, veamos el canal RSS del Boletín Oficial del Estado. En la direcci
 </rss>
 ```
 
+{:.question}
+¿Qué es el BOE?
+
 El elemento raíz es rss. Tiene un único hijo, channel, que define el canal de noticias. Como hijos de este elemento hay varios elementos item, uno por cada noticia publicada en el canal.
 
 Para cada item, hay un título (title), un vínculo (link), una descripción (descripción), una o más categorías (category), un elemento guid y una fecha de publicación (pubDate).
@@ -333,7 +336,7 @@ Un ejemplo de un documento en el formato de distribución Atom:
 {:.section}
 ## Validación
 
-En internet hay múltiples lugares que dan este servicio.
+En Internet hay múltiples lugares que dan este servicio.
 
 Para validar un documento RSS con uno de estos validadores, se le da la dirección del fichero donde se encuentra alojado y comprueba que lo pueden encontrar, es decir que la URI es válida, y que no contiene errores.
 
@@ -342,7 +345,7 @@ Una vez validado, suelen ofrecer una imagen del tipo "XML" o "RSS", de color nar
 Algunos de estos servicios de validación también ofrecen imágenes que se pueden incluir en la página para que cualquier visitante compruebe que el canal es válido.
 
 {:.question}
-¿Sabrías decir un validador RSS?
+¿Sabrías decir el nombre de un validador RSS?
 
 {:.section}
 ## ¿Qué es un agregador o lector de fuentes?
