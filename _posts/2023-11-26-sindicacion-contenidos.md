@@ -26,7 +26,7 @@ Las fuentes suelen codificarse en lenguaje XML, aunque es válido hacerlo en cua
 {:.subsubsection}
 #### Publicación en la web
 
-Publicar en la web puede ser visto como un flujo de información, que va desde un cierto origen hasta los usuarios y usuarias que la leerán. Podrán hacerlo a través de su navegador, es decir, accediendo a una página web disponible en Internet.
+Publicar en la web puede ser visto como un flujo de información, que va desde un cierto origen hasta los usuarios que la leerán. Podrán hacerlo a través de su navegador, es decir, accediendo a una página web disponible en Internet.
 
 Supongamos que el flujo de información de una publicación tiene su origen en unos ficheros localizados en un ordenador local, codificados en un documento HTML.
 
@@ -96,14 +96,17 @@ Al utilizar un CMS de cualquier tipo la transformación puede replicarse. Ademá
 {:.subsection}
 ### Ventajas de la sindicación de contenidos
 
-¿Cuáles serán las ventajas de utilizar los canales de contenidos de otros propietarios?
+Las ventajas de utilizar los canales de contenidos de otros propietarios son:
 
 - Aumentar el tráfico de nuestro sitio web.
-- Ayuda a que los usuarios y usuarias visiten frecuentemente el sitio web.
+- Ayuda a que los usuarios visiten frecuentemente el sitio web.
 - Favorece el posicionamiento del sitio en buscadores.
 - Ayuda a establecer relaciones entre distintos sitios web dentro de la comunidad.
 - Permite a otras personas añadir características a los servicios del sitio web (por ejemplo, notificaciones de actualizaciones mediante mensajes instantáneos), aunque se requiera de tecnologías adicionales.
 - Enriquece Internet impulsando la tecnología semántica y fomentando la reutilización.
+
+{:.question}
+Nombra tres ventajas de utilizar los canales de contenidos de otros propietarios
 
 {:.section}
 ## Ámbito de aplicación
@@ -114,7 +117,7 @@ De esta forma podemos ofrecer contenidos propios para que sean mostrados en otra
 
 La redifusión de contenidos web puede aplicarse a todo tipo de contenidos, es decir, texto, audio, vídeos e imágenes.
 
-Desde el punto de vista de los suscriptores, la redifusión de contenidos permite, entre otras cosas, la actualización profesional. Mediante la suscripción a sitios relevantes, el usuario o la usuaria puede estar al día en temas relacionados con su profesión, recibiendo las noticias e informaciones en su blog o en su programa agregador de noticias.
+Desde el punto de vista de los suscriptores, la redifusión de contenidos permite, entre otras cosas, la actualización profesional. Mediante la suscripción a sitios relevantes, el usuario puede estar al día en temas relacionados con su profesión, recibiendo las noticias e informaciones en su blog o en su programa agregador de noticias.
 
 {:.section}
 ## Tecnologías de creación de canales de contenidos
@@ -135,15 +138,18 @@ RSS (Really Simple Syndication) es parte de la familia de los formatos XML, desa
 
 Ha sido desarrollado por tres organizaciones diferentes, lo que ha dado lugar a siete formatos diferentes entre sí:
 
-- RSS 0.90, es el estándar que creó la empresa Netscape en el año 1999. Se basa en la especificación RDF de metadatos, con la intención de que su proyecto My Netscape estuviese formado por titulares de otras webs.
-- RSS 0.91, es la versión simplificada de RSS 0.90 que Nestscape lanzó posteriormente. El desarrollo de este formato se detuvo por falta de éxito, aunque la empresa UserLand Software decidió usar esta versión para desarrollar blogs.
-- RSS 1.0, fue creado a partir del estándar el RSS 0.90. Es más estable y permite definir una cantidad mayor de datos que el resto de versiones de RSS.
-- RSS 2.0, UserLand Software rechazó el estándar RSS 1.0 por considerarlo complejo y continuó el desarrollo del formato RSS 0.91, publicando las versiones 0.92, 0.93 y 0.94. Su sintaxis está incompleta y no cumplen todas las normas de XML. El estándar RSS 2.0 se publicó para subsanar esos problemas.
+- **RSS 0.90**, es el estándar que creó la empresa Netscape en el año 1999. Se basa en la especificación RDF de metadatos, con la intención de que su proyecto My Netscape estuviese formado por titulares de otras webs.
+- **RSS 0.91**, es la versión simplificada de RSS 0.90 que Nestscape lanzó posteriormente. El desarrollo de este formato se detuvo por falta de éxito, aunque la empresa UserLand Software decidió usar esta versión para desarrollar blogs.
+- **RSS 1.0**, fue creado a partir del estándar el RSS 0.90. Es más estable y permite definir una cantidad mayor de datos que el resto de versiones de RSS.
+- **RSS 2.0**, UserLand Software rechazó el estándar RSS 1.0 por considerarlo complejo y continuó el desarrollo del formato RSS 0.91, publicando las versiones 0.92, 0.93 y 0.94. Su sintaxis está incompleta y no cumplen todas las normas de XML. El estándar RSS 2.0 se publicó para subsanar esos problemas.
 
 {:.subsection}
 ### Atom
 
 Atom fue publicado como un estándar propuesto por el grupo de trabajo Atom Publishing Format and Protocol (Formato y protocolo de publicación Atom) de la IETF en el RFC4287. Se desarrolló como una alternativa a RSS, con el fin de evitar la confusión creada por la existencia de estándares similares para la sindicación de contenidos, entre los que existía cierta incompatibilidad. En lugar de sustituir a los estándares existentes, se creó un nuevo estándar que convive con ellos. Se caracteriza por su flexibilidad. Atom permite tener un mayor control sobre la cantidad de información a representar en los agregadores.
+
+{:.question}
+¿Qué significa RFC y para qué se utiliza?
 
 {:.section}
 ## Estructura de los canales de contenidos
@@ -335,17 +341,20 @@ Una vez validado, suelen ofrecer una imagen del tipo "XML" o "RSS", de color nar
 
 Algunos de estos servicios de validación también ofrecen imágenes que se pueden incluir en la página para que cualquier visitante compruebe que el canal es válido.
 
+{:.question}
+¿Sabrías decir un validador RSS?
+
 {:.section}
 ## ¿Qué es un agregador o lector de fuentes?
 
-Un agregador o lector de fuentes es una aplicación de software para suscribirse a fuentes en formatos RSS y Atom. El agregador avisa al usuario o usuaria de qué páginas web han incorporado contenido nuevo desde nuestra última lectura y cuál es ese contenido.
+Un agregador o lector de fuentes es una aplicación de software para suscribirse a fuentes en formatos RSS y Atom. El agregador avisa al usuario  de qué páginas web han incorporado contenido nuevo desde nuestra última lectura y cuál es ese contenido.
 
 En el agregador hay que indicar la dirección web de cada archivo fuente, ya sea en formato RSS o Atom, para que pueda acceder a sus contenidos, los interprete y los muestre.
 
 Existen varios tipos de agregadores:
 
-- **Los agregadores web (o agregadores en línea)**, son aplicaciones que residen en determinados sitios web y que se ejecutan a través de la propia web. Son recomendables cuando el usuario o la usuaria no accede siempre a Internet desde el mismo ordenador. Es el caso de Feedly, Inoreader o NewsBlur.
-- **Los agregadores de escritorio**, son aplicaciones que se instalan en el ordenador del usuario o usuaria. Su uso es aconsejable para quienes accedan a Internet siempre desde el mismo ordenador. Su interfaz gráfica suele ser parecida a la de los programas de cliente de correo electrónico, con un panel donde se agrupan las suscripciones, y otro donde se accede a las entradas individuales para su lectura. Algunos ejemplos serían RSSOwl o .QuiteRSS. También podemos descargarnos por ejemplo la versión de escritorio de Feedly.
+- **Los agregadores web (o agregadores en línea)**, son aplicaciones que residen en determinados sitios web y que se ejecutan a través de la propia web. Son recomendables cuando el usuario no accede siempre a Internet desde el mismo ordenador. Es el caso de Feedly, Inoreader o NewsBlur.
+- **Los agregadores de escritorio**, son aplicaciones que se instalan en el ordenador del usuario . Su uso es aconsejable para quienes accedan a Internet siempre desde el mismo ordenador. Su interfaz gráfica suele ser parecida a la de los programas de cliente de correo electrónico, con un panel donde se agrupan las suscripciones, y otro donde se accede a las entradas individuales para su lectura. Algunos ejemplos serían RSSOwl o .QuiteRSS. También podemos descargarnos por ejemplo la versión de escritorio de Feedly.
 - **Complementos de navegador**. También hay agregadores disponibles como complementos de navegador web, como por ejemplo Awesome RSS o Livemarks.
 
 {:.section}
