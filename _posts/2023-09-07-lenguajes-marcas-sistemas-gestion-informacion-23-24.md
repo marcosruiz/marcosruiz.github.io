@@ -15,6 +15,7 @@ pin: true
   - [HTML](/posts/html/)
   - [CSS](/posts/css/)
 - UD03 - Aplicación de los lenguajes de marcas a la sindicación de contenidos
+  - [Sindicación de contenidos](/posts/sindicacion-contenidos/)
 - UD04 - Definición de esquemas y vocabularios en XML
 
 - T00 (Voluntaria recomendada) - [El formato SVG](/posts/tarea-formato-svg/)
