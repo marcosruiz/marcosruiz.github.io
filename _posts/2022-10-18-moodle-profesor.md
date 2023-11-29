@@ -110,6 +110,34 @@ Es útil darle un nombre a cada pregunta para encontrarla en el banco de pregunt
 1. Seleccionas el `01`. Haces `Ctrl+Shift+L` para seleccionar todas las preguntas.
 1. Hacer `Ctrl+Alt+I` para dar un nombre único a cada pregunta.
 
+{:.section}
+## Test para revisar
+
+La siguiente configuración es para los test para el profesor.
+
+![imgDescription](testRevisarEsquema.png)
+_Sección "Esquema" para Test para revisar_
+
+![imgDescription](testRevisarComportamientoPreguntas.png)
+_Sección "Comportamiento de las preguntas" para Test para revisar_
+
+![imgDescription](testRevisarOpcionesRevision.png)
+_Sección "Opciones de revisión" para Test para revisar_
+
+{:.section}
+## Test alumnos distancia
+
+La siguiente configuración es para los test de los alumnos que estudian a distancia:
+
+![imgDescription](testEsquema.png)
+_Sección "Esquema" para Test alumnos distancia_
+
+![imgDescription](testComportamientoPreguntas.png)
+_Sección "Comportamiento de las preguntas" para Test alumnos distancia_
+
+![imgDescription](testOpcionesRevision.png)
+_Sección "Opciones de revisión" para Test alumnos distancia_
+
 ## Bibliografía
 
 - [Formato GIFT](https://docs.moodle.org/all/es/Formato_GIFT#Caracteres_especiales_.7E_.3D_.23_.7B_.7D)
