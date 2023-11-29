@@ -58,6 +58,16 @@ tags: []
   - Text Extractor: OCR
 - [ZoomIt](https://learn.microsoft.com/es-es/sysinternals/downloads/zoomit): Para hacer zoom y grabar la pantalla.
 
+## Preparar PCs alumnos
+
+Con el siguiente comando podemos desactivar la telemetría de Windows 10:
+
+```bash
+>iwr -useb https://git.io/debloat|iex
+```
+
+Con <https://winstall.app/> puedes generar un script para Windows 10 que usa winget con el que instalar todos los programas que necesites en los equipos.
+
 ## Extensiones para navegador
 
 De seguridad:
