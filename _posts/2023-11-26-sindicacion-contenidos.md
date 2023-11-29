@@ -1,5 +1,5 @@
 ---
-title: "XML"
+title: "Sindicación de contenidos"
 date: 2023-11-26 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Multiplataforma, Lenguajes de Marcas y Sistemas de Gestión de Información]
 tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, desarrollo de aplicaciones web, dam, daw, asir, lmsgi, xml, teoría]
