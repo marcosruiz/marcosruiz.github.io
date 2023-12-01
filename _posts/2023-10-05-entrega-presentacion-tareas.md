@@ -12,11 +12,11 @@ En todas las tareas se debe seguir el siguiente formato:
 
 Si la entrega de la práctica debe ser un documento PDF con un nombre en el siguiente formato:
 
-`apellido1_apellido2_nombre1_nombre2_SIGxx_Tarea.pdf`{: .filepath}
+`<tu usuario>_t<número de la tarea con dos dígitos>.pdf`{: .filepath}
 
 Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna María Begoña Sánchez Mañas para la primera unidad del módulo profesional de LMSGI, debería nombrar esta tarea como:
 
-`sanchez_manas_maria_begona_LMSGI01_Tarea.pdf`{: .filepath}
+`mruizg_t01.pdf`{: .filepath}
 
 1. Debe contener una portada número de la tarea, título de la tarea, nombre del módulo profesional, nombre del ciclo formativo, autor(es) y fecha de realización.
 1. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.
@@ -46,11 +46,11 @@ _Ejemplo de actividad_
 
 Si la entrega de la práctica debe ser un documento ZIP con un nombre en el siguiente formato:
 
-`apellido1_apellido2_nombre1_nombre2_SIGxx_Tarea.zip`{: .filepath}
+`<tu usuario>_t<número de la tarea con dos dígitos>.zip`{: .filepath}
 
 Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna María Begoña Sánchez Mañas para la primera unidad del módulo profesional de LMSGI, debería nombrar esta tarea como:
 
-`sanchez_manas_maria_begona_LMSGI01_Tarea.zip`{: .filepath}
+`mruizg_t01.zip`{: .filepath}
 
 En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que se pida) con el nombre `apellido1_apellido2_nombre1_nombre2_SIGxx_Tarea.zip`{: .filepath} y las actividades en el formato que corresponda:
 
@@ -64,11 +64,11 @@ En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que
 
 Si la entrega de la práctica debe ser un documento PDF con un nombre en el siguiente formato: 
 
-`apellido1_apellido2_nombre1_nombre2_SIGxx_Tarea.pdf`{: .filepath}
+`<tu usuario>_t<número de la tarea con dos dígitos>.pdf`{: .filepath}
 
 Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna María Begoña Sánchez Mañas para la primera unidad del módulo profesional de LMSGI, debería nombrar esta tarea como:
 
-`sanchez_manas_maria_begona_LMSGI01_Tarea.pdf`{: .filepath}
+`mruizg_t01.pdf`{: .filepath}
 
 En caso de que no se pueda trasladar la presentación desarrollada a formato PDF se deberá entregar un documento PDF con un número de capturas adecuado y un enlace web público con la presentación real.
 
