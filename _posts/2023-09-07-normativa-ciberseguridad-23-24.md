@@ -9,9 +9,9 @@ pin: true
 
 ## Evaluación 1
 
-- UD01 - Puntos principales sobre el cumplimiento normativo.
-- UD01 - Diseño de sistemas de gestión de cumplimiento normativo.
-- UD01 - Legislación para el cumplimiento de la responsabilidad penal.
+- UD1 - Puntos principales sobre el cumplimiento normativo.
+- UD2 - Diseño de sistemas de gestión de cumplimiento normativo.
+- UD3 - Legislación para el cumplimiento de la responsabilidad penal.
 
 - T01 - [Tarea: Introducción al cumplimiento normativo](/posts/tarea-introduccion-cumplimiento-normativo)
 - T02 (Voluntaria) - [Tarea: Sistemas de Gestión de Compliance](/posts/tarea-algoritmos-aprendizaje-automatico)
@@ -20,7 +20,7 @@ pin: true
 ## Evaluación 2
 
 - UD4 - Legislación y jurisprudencia en materia de protección de datos.
-- UD4 - Normativa vigente de ciberseguridad de ámbito nacional e internacional.
+- UD5 - Normativa vigente de ciberseguridad de ámbito nacional e internacional.
 
 ## Enlaces increíbles 🔥 (beta)
 
