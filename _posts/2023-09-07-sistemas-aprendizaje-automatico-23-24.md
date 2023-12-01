@@ -1,5 +1,5 @@
 ---
-title: "Sistemas de aprendizaje automático 23 24"
+title: "Sistemas de Aprendizaje Automático 23 24"
 date: 2023-09-07 9:00:00 +0100
 categories: [Inteligencia Artificial y Big Data, Sistemas de aprendizaje automático]
 tags: [inteligencia artificial y big data, sistemas de aprendizaje automático]
@@ -17,6 +17,7 @@ pin: true
 
 - T01 - [Tarea: Aplicación de modelos probabilísticos](/posts/tarea-aplicacion-modelos-probabilisticos/)
 - T02 - [Tarea: Algoritmos para el aprendizaje automático](/posts/tarea-algoritmos-aprendizaje-automatico/)
+- T03 - [Tarea: Introducción a Jupyter Notebooks](/posts/tarea-introduccion-jupyter-notebooks/)
 
 ## Enlaces increíbles 🔥 (beta)
 

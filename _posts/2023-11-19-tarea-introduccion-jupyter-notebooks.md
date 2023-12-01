@@ -14,9 +14,9 @@ Ejemplo del árbol de directorios de entrega (si la tuviese que hacer yo):
 
 ```plaintext
 mruizg_t01.zip
-|- tools_matplotlib_con_preguntas.ipynb
-|- tools_numpy_con_preguntas.ipynb
-|- mruizg_a04.ipynb
+├─ tools_matplotlib_con_preguntas.ipynb
+├─ tools_numpy_con_preguntas.ipynb
+├─ mruizg_a04.ipynb
 ```
 
 ## Calificación
