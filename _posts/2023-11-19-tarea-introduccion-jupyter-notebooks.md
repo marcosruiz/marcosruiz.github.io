@@ -13,9 +13,9 @@ La entrega será en formato ZIP. Leer [Entrega y presentación de tareas](/posts
 Ejemplo del árbol de directorios de entrega (si la tuviese que hacer yo):
 
 ```plaintext
-mruizg_t01.zip
-├─ tools_matplotlib_con_preguntas.ipynb
-├─ tools_numpy_con_preguntas.ipynb
+mruizg_t03.zip
+├─ mruizg_a02.ipynb
+├─ mruizg_a03.ipynb
 ├─ mruizg_a04.ipynb
 ```
 
@@ -55,7 +55,7 @@ Descarga el fichero [tools_numpy_con_preguntas.ipynb](/assets/img/tarea-introduc
 
 Mira el vídeo de [IA NOTEBOOK #1 \| Regresión Lineal y Mínimos Cuadrados Ordinarios \| Programando IA](https://youtu.be/w2RJ1D6kz-o?si=7jfMNFJbUnxW3Z2e) y sigue los pasos para crear tu primer Notebook de Jupyter desde 0. Llámalo `<tu usuario>_a04.ipynb`.
 
-> Si tienes dudas cual es tu nombre de usuario lee el artículo [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
+> Si tienes dudas sobre cual es tu nombre de usuario lee el artículo [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 {:.prompt-info}
 
 ## Bibliografía
