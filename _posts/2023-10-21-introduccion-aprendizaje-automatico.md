@@ -11,7 +11,7 @@ math: true
 ## Introducción
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Qué es la Inteligencia Artificial?</summary>
+  <summary class="card-header question">¿Qué es la inteligencia artificial?</summary>
   <div class="card-body" markdown="1">
 
 Definir la Inteligencia Artificial no es nada fácil. Incluso los investigadores de IA no tienen una definición exacta. Más bien, el campo se redefine constantemente cuando algunos temas se clasifican como no IA y surgen nuevos temas.
@@ -71,8 +71,11 @@ Para Alan Turing, la inteligencia artificial existirá cuando no seamos capaces 
 - **Recomendación de contenido**: Mucha de la información que encontramos en el transcurso de un día típico es personalizada. Los ejemplos incluyen Facebook, Twitter, Instagram y otros contenidos de redes sociales; anuncios en línea; recomendaciones de música en Spotify; recomendaciones de películas en Netflix, HBO y otros servicios de streaming… Muchos editores en línea, como las webs de periódicos y empresas de radiodifusión, así como motores de búsqueda como Google, también personalizan el contenido que ofrecen.
 - **Procesamiento de imágenes y vídeos**: El reconocimiento facial ya es un producto que se utiliza en muchas aplicaciones gubernamentales, comerciales y de clientes, como la organización de sus fotos según las personas, el etiquetado automático en las redes sociales y el control de pasaportes. Se pueden utilizar técnicas similares para reconocer otros automóviles y obstáculos alrededor de un automóvil autónomo, o para estimar las poblaciones de vida silvestre, solo por nombrar algunos ejemplos. La IA también se puede utilizar para generar o alterar contenido visual. Los ejemplos que ya se utilizan en la actualidad incluyen la transferencia de estilo, mediante la cual puede adaptar sus fotos personales para que parezcan pintadas por Vincent van Gogh, y personajes generados por computadora en películas como Avatar , el Señor de los Anillos y animaciones populares de Pixar donde los personajes animados reproducen gestos realizados por actores humanos reales.
 - **Filtros de SPAM**: google, Microsoft, Yahooo… aplican algoritmos de IA para detectar correos fraudulentos y de tipo SPAM.
-- **Asistentes personales y chatbots**: sistemas que utilizan NLP (Natural Language Processing) para mejorar la experiencia de usuario. Permiten una comunicación bidireccional coherente con seres humanos ya sea oral o escrita. Ejemplos: Alexa, Siri... 
+- **Asistentes personales y chatbots**: sistemas que utilizan NLP (Natural Language Processing) para mejorar la experiencia de usuario. Permiten una comunicación bidireccional coherente con seres humanos ya sea oral o escrita. Ejemplos: Alexa, Siri...
 - **Videojuegos**: sistemas capaces de predecir la actuación del humano y que permiten generar escenarios de juego realistas sin necesidad de haber sido programados específicamente.
+
+{:.question}
+¿Cuál es la estimación del volumen de datos que un coche autónomo puede generar anualmente?
 
 {:.section}
 ## Tipos de Inteligencia Artificial
@@ -96,6 +99,9 @@ Para diferenciar IAD de IAF, Huawei ha elaborado la siguiente infografía para c
 ![Diferencias entre IAD e IAF](IA_infografia.png)
 _Diferencias entre IAD e IAF_
 
+{:.question}
+¿Qué es la inteligencia artificial débil?
+
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es la Super IA?</summary>
   <div class="card-body" markdown="1">
@@ -111,7 +117,10 @@ Super IA (Artificial Super Intelligence): sistema informático que haya logrado 
 
 IA Fuerte (Artificial General Intelligence o de nivel humano): sistema informático que ha conseguido resolver problemas sumamente complejos, emitir juicios en situaciones inciertas e incorporar conocimientos previos a su razonamiento actual. Podría poseer creatividad e imaginación a la par que las personas y podría realizar tareas que la IA estrecha no puede.
 
-Los tres casos mencionados inicialmente son ejemplos de inteligencia artificial fuerte
+Los tres casos mencionados inicialmente son ejemplos de inteligencia artificial fuerte.
+
+{:.question}
+¿Qué es la inteligencia artificial fuerte?
 
 {:.section}
 ## ¿Qué es el Machine Learning?
