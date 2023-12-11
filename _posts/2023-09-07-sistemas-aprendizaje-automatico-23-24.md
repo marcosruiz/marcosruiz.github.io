@@ -27,6 +27,10 @@ pin: true
 - <https://www.anaconda.com/>
 - <https://colab.google/>
 
+- <https://home.work.caltech.edu/lectures.html#lectures>
+- <http://cesguiro.es/doku.php?id=clase:ia:saa:start>
+
 ## Cursos
 
 - <https://elandroidefeliz.com/10-cursos-online-gratuitos-sobre-ia-impartidos-por-google/>
+- https://home.work.caltech.edu/lectures.html#lectures
