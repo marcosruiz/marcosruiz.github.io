@@ -26,12 +26,12 @@ La tarea se calificará como apto o no apto.
 {:.activity}
 ### Álgebra lineal
 
-Descarga el fichero [tools_matplotlib_con_preguntas.ipynb](/assets/img/tarea-jupyter-notebooks/tools_matplotlib_con_preguntas.ipynb) lee, ejecuta en tu máquina local y responde a las preguntas que aparecen a lo largo del mismo.
+Descarga el fichero [tools_matplotlib_con_preguntas.ipynb](/assets/img/tarea-introduccion-jupyter-notebooks/tools_matplotlib_con_preguntas.ipynb) lee, ejecuta en tu máquina local y responde a las preguntas que aparecen a lo largo del mismo.
 
 {:.activity}
 ### Cálculo diferencial
 
-Descarga el fichero [tools_matplotlib_con_preguntas.ipynb](/assets/img/tarea-jupyter-notebooks/tools_matplotlib_con_preguntas.ipynb) lee, ejecuta en tu máquina local y responde a las preguntas que aparecen a lo largo del mismo.
+Descarga el fichero [tools_matplotlib_con_preguntas.ipynb](/assets/img/tarea-introduccion-jupyter-notebooks/tools_matplotlib_con_preguntas.ipynb) lee, ejecuta en tu máquina local y responde a las preguntas que aparecen a lo largo del mismo.
 
 {:.activity}
 ### (Voluntaria) Vídeo de vectores propios y valores propios por 3Blue1Brown Español
