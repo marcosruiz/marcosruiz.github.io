@@ -20,6 +20,7 @@ Hace cincuenta años, por ejemplo, se consideraba que los métodos automáticos 
 
 - **Autonomía**: La capacidad de realizar tareas en entornos complejos sin la guía constante de un usuario.
 - **Adaptabilidad**: La capacidad de mejorar el desempeño aprendiendo de la experiencia
+
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
@@ -44,9 +45,9 @@ Leer <https://ecosistemahuawei.xataka.com/como-se-levanta-uno-e-inventa-la-ia-en
   <summary class="card-header question">¿Qué es  el test de Turing?</summary>
   <div class="card-body" markdown="1">
 
-El Test de Turing nace como un método para determinar si una máquina puede pensar. 
+El Test de Turing nace como un método para determinar si una máquina puede pensar.
 
-El juez debe descubrir cuál es el ser humano y cuál es la máquina, estándoles a los dos permitido mentir o equivocarse al contestar por escrito las preguntas que el juez les hiciera. 
+El juez debe descubrir cuál es el ser humano y cuál es la máquina, estándoles a los dos permitido mentir o equivocarse al contestar por escrito las preguntas que el juez les hiciera.
 
 La tesis de Turing supone que si ambos jugadores son suficientemente hábiles, el juez no podrá distinguir quién es el ser humano y quién la máquina.
 
@@ -121,31 +122,6 @@ Los tres casos mencionados inicialmente son ejemplos de inteligencia artificial 
 
 {:.question}
 ¿Qué es la inteligencia artificial fuerte?
-
-{:.section}
-## ¿Qué es el Machine Learning?
-
-El Machine Learning es una rama de la Inteligencia Artificial que se centra en el uso de datos y algoritmos para imitar el modo en que aprendemos los humanos gradualmente e incrementando la precisión sin intervención humana. Tom Mitchell proporciona una definición moderna: "Se dice que un programa de computadora aprende de la experiencia E con respecto a alguna clase de tareas T y medida de desempeño D, si su desempeño en las tareas de T, medido por D, mejora con la experiencia E."
-
-Ejemplo: jugar a las damas.
-
-- E = la experiencia de jugar muchos juegos de damas.
-- T = la tarea de jugar a las damas.
-- D = la probabilidad de que el programa gane el próximo juego.
-
-Los modelos de aprendizaje automático se obtienen mediante el entrenamiento de los algoritmos con subconjuntos de datos. Ese subconjunto se denomina “training dataset” o conjunto de entrenamiento.
-
-La esencia del machine learning comporta la existencia de un patrón que no podemos precisar matemáticamente a pesar de disponer de un gran volumen de datos (llamado dataset).
-
-La década de 2000 marcó el comienzo de rápidos avances en el aprendizaje automático y el aprendizaje profundo, en parte debido a la ley de Moore y al auge de la informática en la nube. El resultado es un acceso más fácil a capacidades de informática y almacenamiento más grandes, más rápidas y económicas. Ahora puede alquilar potencia informática durante unas horas a un coste muy reducido, en comparación con las enormes inversiones necesarias para comprar y operar clústeres informáticos a gran escala.
-
-- **Inteligencia artificial** (AI): Rama de la informática que intenta simular diferentes comportamientos humanos por parte de las máquinas. 
-- **Aprendizaje automático** (ML): Es una parte de la inteligencia artificial (pero no la única) que permite a las máquinas aprender a partir de los datos sin ser programadas. Se centra en el uso de datos para entrenar modelos de aprendizaje automático para que los modelos puedan hacer predicciones. 
-- **Redes neuronales** (NN): Uno de los tipos de aprendizaje automático (hoy en día, uno de los más populares). Es una técnica inspirada en la biología humana. Utiliza capas de neuronas para construir redes que resuelven problemas.
-- **Aprendizaje profundo** (DL): Método para construir, entrenar y usar redes neuronales con múltiples capas internas.
-
-![Aprendizaje automático vs aprendizaje profundo](Machine-learning-vs-deep-learning.jpg)
-_Aprendizaje automático vs aprendizaje profundo_
 
 {:.subsection}
 ### Estadística y probabilidad

@@ -10,6 +10,34 @@ math: true
 {:.section}
 ## ¿Qué es el Machine Learning?
 
+El Machine Learning es una rama de la Inteligencia Artificial que se centra en el uso de datos y algoritmos para imitar el modo en que aprendemos los humanos gradualmente e incrementando la precisión sin intervención humana. Tom Mitchell proporciona una definición moderna: "Se dice que un programa de computadora aprende de la experiencia E con respecto a alguna clase de tareas T y medida de desempeño D, si su desempeño en las tareas de T, medido por D, mejora con la experiencia E."
+
+Ejemplo: jugar a las damas.
+
+- E = la experiencia de jugar muchos juegos de damas.
+- T = la tarea de jugar a las damas.
+- D = la probabilidad de que el programa gane el próximo juego.
+
+Los modelos de aprendizaje automático se obtienen mediante el entrenamiento de los algoritmos con subconjuntos de datos. Ese subconjunto se denomina “training dataset” o conjunto de entrenamiento.
+
+La esencia del machine learning comporta la existencia de un patrón que no podemos precisar matemáticamente a pesar de disponer de un gran volumen de datos (llamado dataset).
+
+La década de 2000 marcó el comienzo de rápidos avances en el aprendizaje automático y el aprendizaje profundo, en parte debido a la ley de Moore y al auge de la informática en la nube. El resultado es un acceso más fácil a capacidades de informática y almacenamiento más grandes, más rápidas y económicas. Ahora puede alquilar potencia informática durante unas horas a un coste muy reducido, en comparación con las enormes inversiones necesarias para comprar y operar clústeres informáticos a gran escala.
+
+- **Inteligencia artificial** (AI): Rama de la informática que intenta simular diferentes comportamientos humanos por parte de las máquinas.
+- **Aprendizaje automático** (ML): Es una parte de la inteligencia artificial (pero no la única) que permite a las máquinas aprender a partir de los datos sin ser programadas. Se centra en el uso de datos para entrenar modelos de aprendizaje automático para que los modelos puedan hacer predicciones.
+- **Redes neuronales** (NN): Uno de los tipos de aprendizaje automático (hoy en día, uno de los más populares). Es una técnica inspirada en la biología humana. Utiliza capas de neuronas para construir redes que resuelven problemas.
+- **Aprendizaje profundo** (DL): Método para construir, entrenar y usar redes neuronales con múltiples capas internas.
+
+![Aprendizaje automático vs aprendizaje profundo](Machine-learning-vs-deep-learning.jpg)
+_Aprendizaje automático vs aprendizaje profundo_
+
+{:.question}
+¿Qué es la ley de Moore?
+
+{:.question}
+¿Es lo mismo el aprendizaje automático que el machine learning?
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KytW151dpqU?si=GVVTwLVpZ39gk0dU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Preguntas sobre el vídeo:
@@ -68,58 +96,14 @@ Otros ejemplos:
 {:.question}
 ¿Cuál es la diferencia entre clasificación y regresión?
 
-Ejemplos de aprendizaje supervisado son:
+Casos de aprendizaje supervisado son:
 
 - Regresión Lineal
+- Regresión Logística
 - Árboles de decisión
+- Máquinas de Vector Soporte (SVM)
 
-{:.subsection}
-### Aprendizaje no supervisado
-
-El aprendizaje no supervisado permite abordar los problemas con poca o ninguna idea de cómo deberían verse los resultados y sin indicaciones externas. En este tipo de aprendizaje, los datos se agrupan en base a las relaciones no obvias entre las variables.
-
-En este tipo de aprendizaje los datos no están etiquetados, y por tanto, no se dispone de resultados conocidos previos. Con el aprendizaje no supervisado, no hay retroalimentación basada en los resultados de la predicción.
-
-Ejemplos de aprendizaje no supervisado:
-
-- **Clustering**: dada una colección de 1,000,000 de genes diferentes, se busca una manera de agrupar automáticamente dichos genes en grupos que sean de alguna manera similares o relacionados por diferentes variables, como la vida útil, la ubicación, los roles, etc. Otros usos podría ser en marketing, bibliotecas, seguros...
-- **Reducción de dimensionalidad**: por ejemplo, el “Cocktail Party Algoritm” permite encontrar estructuras en un entorno caótico (es decir, identificar voces y música individuales a partir de una malla de sonidos).
-
-{:.subsection}
-### Aprendizaje por refuerzo
-
-Es un aprendizaje que une al supervisado y no supervisado.
-
-El aprendizaje por refuerzo consiste en la iteración constante y basada en “prueba y error”. Una computadora es capaz de realizar iteraciones ante determinadas condiciones y con un objetivo específico llamado “recompensa”, ya que el algoritmo de aprendizaje recibe una valoración sobre la relevancia de la respuesta dada. Si la respuesta es correcta, el aprendizaje por refuerzo actúa como el aprendizaje supervisado.
-
-El objetivo del aprendizaje por refuerzo consiste, por tanto, en maximizar la recompensa acumulativa total, así que con el tiempo, el agente aprende, a través de prueba y error, a identificar aquellas acciones que incrementan dicha recompensa. Cuanto mejor entrenado esté el agente, más eficientemente elegirá aquellas acciones que logren su objetivo.
-
-El aprendizaje por refuerzo es particularmente útil para abordar problemas secuenciales con objetivos a largo plazo.
-
-Este tipo de aprendizaje es el más habitual en la naturaleza. A diferencia de éste, el aprendizaje supervisado informa exactamente al algoritmo de que hubiese tenido que responder en caso de responder erróneamente.
-
-Ejemplos:
-
-- RL es excelente para jugar a juegos:
-  - Go (juego de mesa) fue dominado por el software AlphaGo Zero de DeepMind (filial de Google) <https://es.wikipedia.org/wiki/AlphaZero>.
-  - Los videojuegos clásicos de Atari se utilizan comúnmente como una herramienta de aprendizaje para crear y probar software RL.
-  - StarCraft II, el videojuego de estrategia en tiempo real, fue dominado por el software AlphaStar.
-- RL se utiliza en el diseño de niveles de videojuegos:
-  - El diseño de nivel de videojuego determina qué tan compleja es cada etapa de un juego y afecta directamente a qué tan aburrido, frustrante o divertido es jugar ese juego.
-  - Las empresas de videojuegos crean un agente que juega el juego una y otra vez para recopilar datos que se pueden visualizar en gráficos.
-  - Estos datos visuales brindan a los diseñadores una forma rápida de evaluar qué tan fácil o difícil es para un jugador progresar, lo que les permite encontrar el equilibrio "perfecto" entre el aburrimiento y la frustración de forma más rápida.
-- RL se utiliza en la optimización de la energía eólica:
-  - Los modelos RL también se pueden utilizar para impulsar la robótica en dispositivos físicos. 
-  - Cuando varias turbinas trabajan juntas en un parque eólico, las turbinas en el frente, que reciben el viento primero, pueden causar malas condiciones de viento para las turbinas detrás de ellas. Esto se llama estela turbulenta y reduce la cantidad de energía que se captura y se convierte en energía eléctrica. 
-  - Las organizaciones de energía eólica de todo el mundo utilizan el aprendizaje por refuerzo para probar soluciones. Sus modelos responden a las condiciones cambiantes del viento cambiando el ángulo de las palas de la turbina. Cuando las turbinas delanteras disminuyen, ayuda a las turbinas traseras a capturar más energía.
-- Otros ejemplos de RL del mundo real incluyen:
-  - Robótica industrial.
-  - Detección de fraudes.
-  - Análisis de la bolsa.
-  - Conducción autónoma.
-
-{:.section}
-## Regresión Lineal
+#### Regresión Lineal
 
 Los modelos lineales simplemente describen la relación entre un conjunto de números de entrada y un conjunto de números de salida a través de una función lineal y = b0+ b1x como una línea en un gráfico xy.
 
@@ -151,23 +135,7 @@ La regresión es un problema matemático ampliamente conocido en el que se aplic
   </div>
 </details>
 
-{:.subsection}
-### Información práctica
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/J3Sw1Z2rVmc?si=NJtl9oz4EEQNXgwT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-Preguntas sobre el vídeo:
-
-1. ¿Qué simboliza el $$\epsilon$$ en la fórumla $$Y = \beta_{0} + \beta_{1} X_{1} + \epsilon$$?
-1. ¿Qué determina/simboliza el $$\beta_{1}$$ en la fórumla $$Y = \beta_{0} + \beta_{1} X_{1} + \epsilon$$?
-1. ¿A través de que método se obtienen los valores de $$\beta_{0}$$ y $$\beta_{1}$$?
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tsjcrtCyraE?si=aQdAa8jx1gtizBP3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6ayzBy7U4A4?si=wNFljVNKPgHh86nT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-{:.section}
-## Regresión Logística
+#### Regresión Logística
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BHok3wJpmf0?si=_2WDTq4oc922AP6X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -179,8 +147,7 @@ Preguntas sobre el vídeo:
 1. ¿Qué otro nombre tiene la función logística?
 1. ¿Con que algoritmo se optimiza el error en la regresión logística?
 
-{:.section}
-## Árboles de Decisión
+#### Árboles de Decisión
 
 Los modelos basados en árboles son probablemente el segundo tipo de modelo más común por detrás de la regresión lineal y el más importante modelo de clasificación. Aprenden a categorizar o retroceder construyendo una estructura extremadamente grande de bloques if/else anidados, dividiendo el conjunto de datos en diferentes regiones en cada bloque if/else. El entrenamiento determina exactamente dónde ocurren estas divisiones y qué valor se asigna en cada región hoja. Por ejemplo, si intentamos determinar si un sensor de luz está al sol o a la sombra, podríamos entrenar un árbol de profundidad 1 con la configuración final aprendida:
 
@@ -200,8 +167,7 @@ Preguntas sobre el vídeo:
 1. ¿Cuales son los pros de los árboles de decisión?
 1. ¿Cuáles son los contras de los árboles de decisión?
 
-{:.section}
-## Máquinas de Vector Soporte (SVM)
+#### Máquinas de Vector Soporte (SVM)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kl6tyEi5eso?si=f6DPqO9pqxfzUpTx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -212,8 +178,19 @@ Preguntas sobre el vídeo:
 1. ¿Cómo explica que se obtiene la recta que separa los dos grupos?
 1. ¿Por qué llama hiperplano a la recta?
 
-{:.section}
-## Clustering
+{:.subsection}
+### Aprendizaje no supervisado
+
+El aprendizaje no supervisado permite abordar los problemas con poca o ninguna idea de cómo deberían verse los resultados y sin indicaciones externas. En este tipo de aprendizaje, los datos se agrupan en base a las relaciones no obvias entre las variables.
+
+En este tipo de aprendizaje los datos no están etiquetados, y por tanto, no se dispone de resultados conocidos previos. Con el aprendizaje no supervisado, no hay retroalimentación basada en los resultados de la predicción.
+
+Ejemplos de aprendizaje no supervisado:
+
+- **Clustering**: dada una colección de 1,000,000 de genes diferentes, se busca una manera de agrupar automáticamente dichos genes en grupos que sean de alguna manera similares o relacionados por diferentes variables, como la vida útil, la ubicación, los roles, etc. Otros usos podría ser en marketing, bibliotecas, seguros...
+- **Reducción de dimensionalidad**: por ejemplo, el “Cocktail Party Algoritm” permite encontrar estructuras en un entorno caótico (es decir, identificar voces y música individuales a partir de una malla de sonidos).
+
+#### Clustering
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aUPRixo1jFw?si=Cjx2Z_r30fqtFxrt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -222,8 +199,7 @@ Preguntas sobre el vídeo:
 1. ¿Qué es un cluster?
 1. ¿Es el clustering aprendizaje supervisado o no supervisado? ¿Por qué?
 
-{:.subsection}
-### K-Means
+##### K-Means
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vFFGIPXwFlE?si=NQnPL8Gxne4FlBlp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -263,8 +239,7 @@ Preguntas sobre el vídeo:
 
 1. ¿Qué librería se usa para representar los tres clusters?
 
-{:.subsection}
-### G-Means
+##### G-Means
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OiKEs2BZ4v0?si=UdwrNTJkAeRC_xsC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -282,6 +257,54 @@ Si
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
+
+{:.subsection}
+### Aprendizaje por refuerzo
+
+Es un aprendizaje que une al supervisado y no supervisado.
+
+El aprendizaje por refuerzo consiste en la iteración constante y basada en “prueba y error”. Una computadora es capaz de realizar iteraciones ante determinadas condiciones y con un objetivo específico llamado “recompensa”, ya que el algoritmo de aprendizaje recibe una valoración sobre la relevancia de la respuesta dada. Si la respuesta es correcta, el aprendizaje por refuerzo actúa como el aprendizaje supervisado.
+
+El objetivo del aprendizaje por refuerzo consiste, por tanto, en maximizar la recompensa acumulativa total, así que con el tiempo, el agente aprende, a través de prueba y error, a identificar aquellas acciones que incrementan dicha recompensa. Cuanto mejor entrenado esté el agente, más eficientemente elegirá aquellas acciones que logren su objetivo.
+
+El aprendizaje por refuerzo es particularmente útil para abordar problemas secuenciales con objetivos a largo plazo.
+
+Este tipo de aprendizaje es el más habitual en la naturaleza. A diferencia de éste, el aprendizaje supervisado informa exactamente al algoritmo de que hubiese tenido que responder en caso de responder erróneamente.
+
+Ejemplos:
+
+- RL es excelente para jugar a juegos:
+  - Go (juego de mesa) fue dominado por el software AlphaGo Zero de DeepMind (filial de Google) <https://es.wikipedia.org/wiki/AlphaZero>.
+  - Los videojuegos clásicos de Atari se utilizan comúnmente como una herramienta de aprendizaje para crear y probar software RL.
+  - StarCraft II, el videojuego de estrategia en tiempo real, fue dominado por el software AlphaStar.
+- RL se utiliza en el diseño de niveles de videojuegos:
+  - El diseño de nivel de videojuego determina qué tan compleja es cada etapa de un juego y afecta directamente a qué tan aburrido, frustrante o divertido es jugar ese juego.
+  - Las empresas de videojuegos crean un agente que juega el juego una y otra vez para recopilar datos que se pueden visualizar en gráficos.
+  - Estos datos visuales brindan a los diseñadores una forma rápida de evaluar qué tan fácil o difícil es para un jugador progresar, lo que les permite encontrar el equilibrio "perfecto" entre el aburrimiento y la frustración de forma más rápida.
+- RL se utiliza en la optimización de la energía eólica:
+  - Los modelos RL también se pueden utilizar para impulsar la robótica en dispositivos físicos. 
+  - Cuando varias turbinas trabajan juntas en un parque eólico, las turbinas en el frente, que reciben el viento primero, pueden causar malas condiciones de viento para las turbinas detrás de ellas. Esto se llama estela turbulenta y reduce la cantidad de energía que se captura y se convierte en energía eléctrica. 
+  - Las organizaciones de energía eólica de todo el mundo utilizan el aprendizaje por refuerzo para probar soluciones. Sus modelos responden a las condiciones cambiantes del viento cambiando el ángulo de las palas de la turbina. Cuando las turbinas delanteras disminuyen, ayuda a las turbinas traseras a capturar más energía.
+- Otros ejemplos de RL del mundo real incluyen:
+  - Robótica industrial.
+  - Detección de fraudes.
+  - Análisis de la bolsa.
+  - Conducción autónoma.
+
+{:.subsection}
+### Información práctica
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J3Sw1Z2rVmc?si=NJtl9oz4EEQNXgwT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+1. ¿Qué simboliza el $$\epsilon$$ en la fórumla $$Y = \beta_{0} + \beta_{1} X_{1} + \epsilon$$?
+1. ¿Qué determina/simboliza el $$\beta_{1}$$ en la fórumla $$Y = \beta_{0} + \beta_{1} X_{1} + \epsilon$$?
+1. ¿A través de que método se obtienen los valores de $$\beta_{0}$$ y $$\beta_{1}$$?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tsjcrtCyraE?si=aQdAa8jx1gtizBP3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6ayzBy7U4A4?si=wNFljVNKPgHh86nT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Bibliografía
 

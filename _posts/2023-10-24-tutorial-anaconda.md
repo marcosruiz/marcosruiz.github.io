@@ -17,6 +17,16 @@ Hay diferentes entornos de desarrollo:
   - DataSpell/PyCharm
   - Jupyter Notebook (no autocompleta)
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es un Notebook?</summary>
+  <div class="card-body" markdown="1">
+
+Documento que contiene código, ecuaciones, visualizaciones y texto narrativo ejecutable. Se puede utilizar para limpiar y transformar datos, realizar simulaciones numéricas, modelado estadístico, visualización de datos, aprendizaje automático y mucho más.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 ## Instalar Python
 
 Ir a la web <https://www.python.org/downloads/> y descarga la versión 3.11.4 de Python.
