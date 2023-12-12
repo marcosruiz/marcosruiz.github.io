@@ -11,6 +11,8 @@ pin: true
 
 1. [Justificación y antecedentes del Aprendizaje Automático](/posts/introduccion-aprendizaje-automatico)
 2. [Tipos de algoritmos en relación con el aprendizaje automático](/posts/algoritmos-aprendizaje-automatico)
+   1. [Aprendizaje Supervisado](/posts/aprendizaje-supervisado/)
+   1. [Aprendizaje No Supervisado](/posts/aprendizaje-no-supervisado/)
 3. [Redes neuronales y Deep Learning](/posts/redes-neuronales-deep-learning)
 4. Casos prácticos de aplicación.
 5. Técnicas avanzadas y evaluación del modelo.

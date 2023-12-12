@@ -171,12 +171,12 @@ A continuación veremos cada uno de ellos.
 {:.subsection}
 ### Aprendizaje supervisado
 
-Leer artículo Aprendizaje Supervisado.
+Leer artículo [Aprendizaje Supervisado](/posts/aprendizaje-supervisado/).
 
 {:.subsection}
 ### Aprendizaje no supervisado
 
-Leer artículo Aprendizaje No Supervisado.
+Leer artículo [Aprendizaje No Supervisado](/posts/aprendizaje-no-supervisado/).
 
 {:.subsection}
 ### Aprendizaje por refuerzo

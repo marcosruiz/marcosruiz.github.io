@@ -1,6 +1,6 @@
 ---
 title: "Aprendizaje No Supervisado"
-date: 2023-12-11 9:00:00 +0100
+date: 2023-12-12 9:00:00 +0100
 categories: [Inteligencia Artificial y Big Data, Sistemas de aprendizaje automático]
 tags: [inteligencia artificial y big data, sistemas de aprendizaje automático]
 img_path: /assets/img/aprendizaje-no-supervisado/
@@ -14,7 +14,13 @@ El aprendizaje no supervisado permite abordar los problemas con poca o ninguna i
 
 En este tipo de aprendizaje los datos no están etiquetados, y por tanto, no se dispone de resultados conocidos previos. Con el aprendizaje no supervisado, no hay retroalimentación basada en los resultados de la predicción.
 
-Ejemplos de aprendizaje no supervisado:
+El aprendizaje supervisado usa algoritmos de machine learning para analizar y agrupar conjuntos de datos no etiquetados.
+
+Estos algoritmos son capaces de descubrir patrones ocultos en la información sin necesidad de intervención humana.
+
+Su capacidad para descubrir similitudes y diferencias en la información los hace ideales para minería de datos, venta cruzada, segmentación de clientes, reconocimiento de imágenes, detección de anomalías, etc.
+
+El aprendizaje no supervisado trata de resolver dos tipos principales de problemas:
 
 - **Clustering**: dada una colección de 1,000,000 de genes diferentes, se busca una manera de agrupar automáticamente dichos genes en grupos que sean de alguna manera similares o relacionados por diferentes variables, como la vida útil, la ubicación, los roles, etc. Otros usos podría ser en marketing, bibliotecas, seguros...
 - **Reducción de dimensionalidad**: por ejemplo, el “Cocktail Party Algoritm” permite encontrar estructuras en un entorno caótico (es decir, identificar voces y música individuales a partir de una malla de sonidos).
@@ -29,9 +35,8 @@ Leer <https://es.wikipedia.org/wiki/Efecto_de_fiesta_de_c%C3%B3ctel>. La impleme
   </div>
 </details>
 
-{:.subsubsection}
-
-#### Clustering
+{:.section}
+## Clustering
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aUPRixo1jFw?si=Cjx2Z_r30fqtFxrt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -40,7 +45,11 @@ Preguntas sobre el vídeo:
 1. ¿Qué es un cluster?
 1. ¿Es el clustering aprendizaje supervisado o no supervisado? ¿Por qué?
 
-##### K-Means
+{:.section}
+## Clustering K-Means
+
+![Clustering K-Means](Day 43.jpg)
+_Clustering K-Means_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vFFGIPXwFlE?si=NQnPL8Gxne4FlBlp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -80,7 +89,8 @@ Preguntas sobre el vídeo:
 
 1. ¿Qué librería se usa para representar los tres clusters?
 
-##### G-Means
+{:.section}
+## Clustering G-Means
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OiKEs2BZ4v0?si=UdwrNTJkAeRC_xsC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -100,7 +110,13 @@ Si
   </div>
 </details>
 
+{:.section}
+## Clustering jerárquico
+
+![Clustering jerárquico](Day 54.jpg)
+_Clustering jerárquico_
+
+
 ## Bibliografía
 
 - <https://github.com/cristinagom/machinelearning/>
-
