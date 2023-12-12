@@ -77,31 +77,6 @@ _Estructura de una red neuronal_
 {:.question}
 ¿Qué es el bias?
 
-### Experimentación con TensorFlow Playground
-
-TensorFlow Playground es una aplicación web de visualización interactiva, escrita en JavaScript, que nos permite simular redes neuronales densamente conectadas que se ejecutan en nuestro navegador y ver los resultados en tiempo real.
-
-Permite añadir hasta 6 capas internas con hasta 8 neuronas por capa. Al entrenar la red neuronal, vemos si lo estamos consiguiendo o no por la métrica de “Training loss”, es decir, por la función de pérdida para los datos de entrenamiento. Posteriormente, para comprobar que el modelo generaliza, se debe conseguir también minimizar la “Test loss”, es decir, el error calculado por la función de pérdida para los datos de test.
-
-Propuestas de cambios:
-
-- Subir el ratio of training to test data al 70%
-- Dejar una única capa interna con una neurona
-- Añadir 2 neuronas más a la capa interna (de forma que tenga 3 neuronas)
-- Cambiar el dataset al que tiene 4 zonas cuadradas diferentes
-- Cambiar el dataset al que tiene el remolino (necesitará más capas con más neuronas)
-- Cambio valores de los hiperparámetros
-- Adición de ruido a los datos de entrada
-
-Conclusiones:
-
-- Pocas neuronas en las capas ocultas provocarán infraajuste o underfitting.
-- Demasiadas neuronas en las capas ocultas provocarán overfitting (la red
-neuronal tiene más capacidad de procesamiento de información que la cantidad
-de información contenida en el conjunto de entrenamiento que no es suficiente
-para entrenar a todas las neuronas de las capas ocultas) y mucho más tiempo de
-procesamiento
-
 ### Funciones de activación
 
 La función de activación determina, como su propio nombre indica, el nivel de activación que alcanza cada neurona una vez que ha recibido los impulsos transmitidos. Estas funciones ostentan un rol muy importante en la determinación del poder computacional de la red neuronal.

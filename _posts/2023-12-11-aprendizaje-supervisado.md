@@ -88,6 +88,21 @@ La regresión es un problema matemático ampliamente conocido en el que se aplic
   </div>
 </details>
 
+{:.subsection}
+### Información práctica
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J3Sw1Z2rVmc?si=NJtl9oz4EEQNXgwT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+1. ¿Qué simboliza el $$\epsilon$$ en la fórumla $$Y = \beta_{0} + \beta_{1} X_{1} + \epsilon$$?
+1. ¿Qué determina/simboliza el $$\beta_{1}$$ en la fórumla $$Y = \beta_{0} + \beta_{1} X_{1} + \epsilon$$?
+1. ¿A través de que método se obtienen los valores de $$\beta_{0}$$ y $$\beta_{1}$$?
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tsjcrtCyraE?si=aQdAa8jx1gtizBP3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6ayzBy7U4A4?si=wNFljVNKPgHh86nT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 {:.section}
 ## Regresión Logística
 
