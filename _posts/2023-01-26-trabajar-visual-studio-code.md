@@ -95,6 +95,13 @@ _Mensaje de error de Stylelint_
 #### Extensiones para trabajar con Markdown
 
 - Markdown All in One
+- markdownlint. Deberás añadir en `settings.json` de Visual Studio Code la siguiente excepción.
+
+```json
+"markdownlint.config": {
+    "MD022": false
+}
+```
 
 ## Fuentes para programar
 

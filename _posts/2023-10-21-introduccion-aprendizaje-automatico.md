@@ -59,7 +59,7 @@ La tesis de Turing supone que si ambos jugadores son suficientemente hábiles, e
   <summary class="card-header question">¿Cuándo decía Turing que existirá la Inteligencia Artificial?</summary>
   <div class="card-body" markdown="1">
 
-Para Alan Turing, la inteligencia artificial existirá cuando no seamos capaces de distinguir entre un ser humano y un programa de una computadora en una conversación a ciegas. 
+Para Alan Turing, la inteligencia artificial existirá cuando no seamos capaces de distinguir entre un ser humano y un programa de una computadora en una conversación a ciegas.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -196,90 +196,6 @@ Preguntas sobre el vídeo:
 {:.subsection}
 ### KNN
 
-## Preguntas
-
-{:.question}
-¿Qué es un conjunto de entrenamiento etiquetado y en qué tipo de machine learning se utiliza?
-
-{:.question}
-¿Cuáles son las dos tareas supervisadas más comunes?
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué tipo de algoritmo de machine learning utilizarías para permitir a un robot caminar por varios terrenos desconocidos?</summary>
-  <div class="card-body" markdown="1">
-
-Aprendizaje por refuerzo.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué tipo de algoritmo de machine learning utilizarías para segmentar a tus clientes en múltiples grupos?</summary>
-  <div class="card-body" markdown="1">
-
-Aprendizaje no supervisado - clustering.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Definirías el problema de detección de spam como un problema de aprendizaje supervisado o no supervisado?</summary>
-  <div class="card-body" markdown="1">
-
-Aprendizaje supervisado - clasificación (spam vs. no spam).
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-{:.question}
-¿Porqué es útil separar los datos en entrenamiento y prueba?
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Para qué se utiliza la función de activación de un perceptrón?</summary>
-  <div class="card-body" markdown="1">
-
-Activar(1)/inhibir(0) el paso de información desde la neurona actual a la neurona de la siguiente capa.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-<details class="card mb-2">
-  <summary class="card-header question">Tenemos un conjunto de datos de personas con los campos edad, sexo, peso, altura y el índice de masa corporal. Si queremos entrenar una red neuronal para hacer una predicción de este último parámetro (índice de masa temporal) en función del resto, ¿cuántas neuronas tendrá nuestra red neuronal en la capa de entrada? ¿Y cuántas neuronas tendrá la capa de salida?</summary>
-  <div class="card-body" markdown="1">
-
-4 de entrada y 1 de salida.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-{:.question}
-¿Cuántas neuronas hacen falta en la capa de salida para clasificar mails entre correo no deseado y correo deseado?
-
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué tipo de red neuronal utilizarías para crear un traductor de texto?</summary>
-  <div class="card-body" markdown="1">
-
-RNN o transformadora.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Para qué se utiliza la ecuación de Bellman? Busca un ejemplo que justifique su uso.</summary>
-  <div class="card-body" markdown="1">
-
-En aprendizaje por refuerzo para reducir y optimizar los cálculos de las recompensas. Por ejemplo: ajedrez, control de ingeniería.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
 
 ## Bibliografía
 
