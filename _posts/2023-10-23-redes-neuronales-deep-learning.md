@@ -37,10 +37,13 @@ Preguntas sobre el vídeo:
 
 ## ¿Qué es una neurona?
 
-Una neurona artificial es una función matemática concebida como un modelo de una neurona biológica. La neurona artificial recibe una o más entradas y las suma para producir una salida. Por lo general, cada entrada se pondera por separado con un peso y la suma se pasa a través de una función no lineal conocida como función de activación. 
+Una neurona artificial es una función matemática concebida como un modelo de una neurona biológica. La neurona artificial recibe una o más entradas y las suma para producir una salida. Por lo general, cada entrada se pondera por separado con un peso y la suma se pasa a través de una función no lineal conocida como función de activación.
 
 ![Estructura básica de una neurona](neurona.png)
 _Estructura básica de una neurona_
+
+{:.question}
+¿Es lo mismo una neurona que un perceptrón?
 
 {:.section}
 ## Definición y esquema general de una red neuronal
@@ -164,6 +167,15 @@ En la actualidad existen muchos tipos diferentes de redes neuronales para modela
 
 Una red neuronal profunda posee tres o más capas de redes neuronales internas (hidden) y tiene nodos neuronales anidados tal que por cada pregunta que responde conduce a un conjunto de preguntas relacionadas.
 
+![Machine Learning vs Deep Learning](mlVsDl.png)
+_Machine Learning vs Deep Learning_
+
+![Machine Learning vs Deep Learning](deepLearningKingGeorge.png)
+_Machine Learning vs Deep Learning_
+
+![Estimación del resultado de un partido de fútbol](redNeuronalPartidoDeFutbol.png)
+_Estimación del resultado de un partido de fútbol_
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FVozZVUNOOA?si=JHtRk2_s1OW8uRf1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eNIqz_noix8?si=xVDZkGRsR931dGSZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -183,14 +195,14 @@ Si
 {:.subsection}
 ### Inconvenientes del Deep Learning
 
-- El aprendizaje profundo “suele” requerir un conjunto de datos de gran tamaño para el entrenamiento
-- Los conjuntos de entrenamiento para el aprendizaje profundo se componen “a veces” de millones de puntos de datos
+- El aprendizaje profundo “suele” requerir un conjunto de datos de gran tamaño para el entrenamiento.
+- Los conjuntos de entrenamiento para el aprendizaje profundo se componen “a veces” de millones de puntos de datos.
 - Una vez que se ha entrenado una red neuronal profunda con estos conjuntos de datos de gran tamaño, puede controlar más ambigüedad que una red superficial.
 
 {:.subsection}
 ### Topologías de Redes Neuronales
 
-Las topologías de las redes neuronales son las siguientes:
+Existen muchas topologías de las redes neuronales:
 
 - Red Neuronal de Avance - Feed Forward (FF)
 - Red de Base Radial - Radial Basis Network (RBN)
@@ -218,23 +230,74 @@ Las topologías de las redes neuronales son las siguientes:
 - Máquina de Vector Soporte - Support Vector Machine (SVM)
 - Máquina Neuronal de Turing - Neural Turing Machine (NTM)
 
+Pero las más relevantes son:
+
+1. FFNN
+1. CNN
+1. RNN/LSTM
+1. Transformador
+
+{:.subsubsection}
 #### FFNN
 
-la forma más sencilla de estructurar una red neuronal. En Feed Forward Neural Network (FFNN) o red prealimentada, donde todas las neuronas de una capa se encuentran conectadas con todas las neuronas de la capa anterior. Cada conexión puede tener una fuerza o un peso diferente. En esta red, la información se mueve en una sola dirección, hacia adelante, desde los nodos de entrada, a través de los nodos ocultos y hacia los nodos de salida. No hay ciclos ni bucles en la red.
+La forma más sencilla de estructurar una red neuronal. En Feed Forward Neural Network (FFNN) o red prealimentada, donde todas las neuronas de una capa se encuentran conectadas con todas las neuronas de la capa anterior. Cada conexión puede tener una fuerza o un peso diferente. En esta red, la información se mueve en una sola dirección, hacia adelante, desde los nodos de entrada, a través de los nodos ocultos y hacia los nodos de salida. No hay ciclos ni bucles en la red.
 
+{:.subsubsection}
 #### CNN
 
 Las redes neuronales convolucionales (CNN) representan filtros anidados sobre datos organizados en cuadrículas. Son, con diferencia, el tipo de modelo más utilizado al procesar imágenes.
 
-#### RNN / LSTM
+{:.subsubsection}
+#### RNN/LSTM
 
 Las redes neuronales recurrentes (RNN) y los tipos de modelos de memoria a corto plazo a largo plazo (LSTM) están estructurados para representar de manera efectiva los bucles for en la computación tradicional, recolectando estados mientras se itera sobre algún objeto. Por tanto, en este tipo de redes la información puede fluir en cualquier dirección. Se pueden utilizar para procesar secuencias de datos.
 
+{:.subsubsection}
 #### Transformador
 
 Un reemplazo más moderno para los RNN/LSTM, la arquitectura del transformador permite el entrenamiento sobre conjuntos de datos más grandes que involucran secuencias de datos.
 
-#### RN DENSAMENTE CONECTADAS (FEED FORWARD NEURAL NETWORKS)
+{:.subsubsection}
+#### Red Generativa de Adversarios - Generative Adversarial Network (GAN)
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es Generative AI?</summary>
+  <div class="card-body" markdown="1">
+
+La IA generativa es uno de los mayores avances recientes en IA debido a su capacidad para crear nuevas cosas. Hasta hace poco, la mayoría de las aplicaciones de aprendizaje automático funcionaban con modelos discriminativos.
+
+Un modelo discriminativo tiene como objetivo responder la pregunta: "Si estoy mirando algunos datos, ¿cómo puedo clasificar mejor estos datos o predecir un valor?" Por ejemplo, podríamos usar modelos discriminativos para detectar si una cámara apunta a un gato. Mientras entrenamos este modelo sobre una colección de imágenes (algunas de las cuales contienen gatos y otras que no), esperamos que el modelo encuentre patrones en las imágenes que ayuden a hacer esta predicción.
+
+Un modelo generativo tiene como objetivo responder a la pregunta: "¿He visto datos como este antes?" En nuestro ejemplo de clasificación de imágenes, aún podríamos usar un modelo generativo al enmarcar el problema en términos de si una imagen con la etiqueta "gato" es más similar a los datos que ha visto antes que una imagen con la etiqueta "sin gato".
+
+Sin embargo, los modelos generativos se pueden utilizar para respaldar un segundo caso de uso. Los patrones aprendidos en modelos generativos se pueden utilizar para crear nuevos ejemplos de datos que se parecen a los datos que se vieron antes.
+
+![Algoritmos discriminativos vs algoritmos generativos](cat.png)
+_Algoritmos discriminativos vs algoritmos generativos_
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+Las redes generativas adversarias (GAN) son un formato de modelo de aprendizaje automático que implica enfrentar dos redes entre sí para generar contenido nuevo. El algoritmo de entrenamiento alterna entre entrenar una red de generador (responsable de producir nuevos datos) y una red discriminadora (responsable de medir qué tan cerca los datos de la red del generador representan el conjunto de datos de entrenamiento).
+
+![Ejemplo GAN](gan.png)
+_Ejemplo GAN_
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Cómo funcionan los filtros de FaceApp?</summary>
+  <div class="card-body" markdown="1">
+
+Leer <https://mastersofmedia.hum.uva.nl/blog/2017/09/24/neural-networks-the-technology-behind-faceapp/>.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+Documental sobre Machine Learning y Entrenamiento Humano: <https://www.documaniatv.com/social/trabajadores-fantasma-video_bd817bfb9.html>.
+
+{:.subsubsection}
+#### Redes Neuronales densamente conectadas (feed forward neural networks)
 
 Cuando todas las neuronas de una capa están conectadas con todas las neuronas de la capa anterior, la capa se denomina completamente/densamente conectada.
 
@@ -246,7 +309,7 @@ Etapas para crear una RN densamente conectada:
 2. Configuración del proceso de aprendizaje: método compile
    - función de coste (loss function): evalúa el grado de error entre las salidas calculadas y las salidas deseadas de los datos de entrenamiento. El objetivo está en reducir dicho valor en cada iteración.
    - optimizador (optimizer): es la manera que tenemos de indicar los detalles del algoritmo de optimización que permite a la red neuronal calcular los pesos de los parámetros durante el entrenamiento a partir de los datos de entrada y de la función de coste definida.
-   - métrica (metrics): es la que usaremos para monitorizar el proceso de aprendizaje y prueba de nuestra red neuronal. Si indicamos “accuracy” solo tendremos en cuenta la fracción de datos que son correctamente clasificados, es decir, la proporción entre las predicciones correctas que ha hecho el modelo del total de predicciones)
+   - métrica (metrics): es la que usaremos para monitorizar el proceso de aprendizaje y prueba de nuestra red neuronal. Si indicamos “accuracy” solo tendremos en cuenta la fracción de datos que son correctamente clasificados, es decir, la proporción entre las predicciones correctas que ha hecho el modelo del total de predicciones.
 3. Entrenamiento con los datos de training: método fit
    - epochs: número de veces que usaremos todos los datos en el proceso de aprendizaje.
    - verbose: permite ver el avance del entrenamiento así como una estimación de cuánto tarda cada época.
@@ -263,7 +326,6 @@ confusión:
    - Si utilizamos la precisión (accuracy), conoceremos la proporción entre las predicciones correctas que ha hecho el modelo del total de predicciones, ya que `Presicion=(TP+TN)/(TP+TN+FP+FN)`.
    - Si utilizamos el recall: sabremos como de bien el modelo evita los falsos negativos, ya que Recall = TP/(TP+FN)
 5. Generación de predicciones: método predict
-
 
 ##### Función de pérdida (Loss function)
 
@@ -371,3 +433,4 @@ _imgDescription_
 ## Bibliografía
 
 - <https://github.com/Avik-Jain/100-Days-Of-ML-Code>
+- <https://es.wikipedia.org/wiki/Red_generativa_adversativa>

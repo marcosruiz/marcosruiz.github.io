@@ -65,6 +65,9 @@ Para Alan Turing, la inteligencia artificial existirá cuando no seamos capaces 
   </div>
 </details>
 
+![Línea del tiempo de la historia de la IA](historiaIA.png)
+_Línea del tiempo de la historia de la IA_
+
 {:.section}
 ## Ejemplos de uso de IA
 
