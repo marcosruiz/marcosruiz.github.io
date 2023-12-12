@@ -66,7 +66,7 @@ Preguntas sobre el vídeo:
 {:.section}
 ## Deep Learning
 
-El aprendizaje profundo es un tipo avanzado de aprendizaje automático dentro de las redes neuronales. 
+El aprendizaje profundo es un tipo avanzado de aprendizaje automático dentro de las redes neuronales.
 
 El aprendizaje profundo es un enfoque moderno basado en un modelo conceptual de cómo funciona el cerebro humano. El modelo (también llamado red neuronal) está compuesto por colecciones de neuronas (unidades computacionales muy simples) conectadas entre sí por pesos (representaciones matemáticas de cuánta información se permite que fluya de una neurona a la siguiente). Los pesos de estas conexiones codifican el conocimiento de una red. Estos pesos en los enlaces pueden incrementar o inhibir el estado de activación de las neuronas adyacentes. Del mismo modo, a la salida de la neurona, puede existir una función limitadora o umbral, que modifica el valor resultado o impone un límite que no se debe sobrepasar antes de propagarse a otra neurona. Esta función se conoce como función de activación.
 

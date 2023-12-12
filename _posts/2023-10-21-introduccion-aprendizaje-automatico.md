@@ -68,40 +68,59 @@ Para Alan Turing, la inteligencia artificial existirá cuando no seamos capaces 
 {:.section}
 ## Ejemplos de uso de IA
 
-- **Coches autónomos**: Los automóviles autónomos requieren una combinación de técnicas de inteligencia artificial de muchos tipos: búsqueda y planificación para encontrar la ruta más conveniente de A a B, visión por computadora para identificar obstáculos y toma de decisiones en condiciones de incertidumbre para hacer frente al entorno complejo y dinámico en tiempo real con un gran volumen de información y sin necesidad de haber sido programados específicamente. Cada uno de ellos debe funcionar con una precisión casi perfecta para evitar accidentes tomando decisiones en menos de 0,1 segundos. Las mismas tecnologías también se utilizan en otros sistemas autónomos como robots de reparto, drones voladores y barcos autónomos. Noticia: <https://www.tuxera.com/blog/autonomous-cars-300-tb-of-data-per-year/>.
-- **Recomendación de contenido**: Mucha de la información que encontramos en el transcurso de un día típico es personalizada. Los ejemplos incluyen Facebook, Twitter, Instagram y otros contenidos de redes sociales; anuncios en línea; recomendaciones de música en Spotify; recomendaciones de películas en Netflix, HBO y otros servicios de streaming… Muchos editores en línea, como las webs de periódicos y empresas de radiodifusión, así como motores de búsqueda como Google, también personalizan el contenido que ofrecen.
+- **Coches autónomos**: Los automóviles autónomos requieren una combinación de técnicas de inteligencia artificial de muchos tipos: búsqueda y planificación para encontrar la ruta más conveniente de A a B, visión por computadora para identificar obstáculos y toma de decisiones en condiciones de incertidumbre para hacer frente al entorno complejo y dinámico en tiempo real con un gran volumen de información y sin necesidad de haber sido programados específicamente. Cada uno de ellos debe funcionar con una precisión casi perfecta para evitar accidentes tomando decisiones en menos de 0,1 segundos. Las mismas tecnologías también se utilizan en otros sistemas autónomos como robots de reparto, drones voladores y barcos autónomos.
+- **Recomendación de contenido**: Mucha de la información que encontramos en el transcurso de un día típico es personalizada. Los ejemplos incluyen Facebook, Twitter, Instagram y otros contenidos de redes sociales; anuncios en línea; recomendaciones de música en Spotify; recomendaciones de películas en Netflix, HBO y otros servicios de streaming... Muchos editores en línea, como las webs de periódicos y empresas de radiodifusión, así como motores de búsqueda como Google, también personalizan el contenido que ofrecen.
 - **Procesamiento de imágenes y vídeos**: El reconocimiento facial ya es un producto que se utiliza en muchas aplicaciones gubernamentales, comerciales y de clientes, como la organización de sus fotos según las personas, el etiquetado automático en las redes sociales y el control de pasaportes. Se pueden utilizar técnicas similares para reconocer otros automóviles y obstáculos alrededor de un automóvil autónomo, o para estimar las poblaciones de vida silvestre, solo por nombrar algunos ejemplos. La IA también se puede utilizar para generar o alterar contenido visual. Los ejemplos que ya se utilizan en la actualidad incluyen la transferencia de estilo, mediante la cual puede adaptar sus fotos personales para que parezcan pintadas por Vincent van Gogh, y personajes generados por computadora en películas como Avatar , el Señor de los Anillos y animaciones populares de Pixar donde los personajes animados reproducen gestos realizados por actores humanos reales.
-- **Filtros de SPAM**: google, Microsoft, Yahooo… aplican algoritmos de IA para detectar correos fraudulentos y de tipo SPAM.
-- **Asistentes personales y chatbots**: sistemas que utilizan NLP (Natural Language Processing) para mejorar la experiencia de usuario. Permiten una comunicación bidireccional coherente con seres humanos ya sea oral o escrita. Ejemplos: Alexa, Siri...
-- **Videojuegos**: sistemas capaces de predecir la actuación del humano y que permiten generar escenarios de juego realistas sin necesidad de haber sido programados específicamente.
+- **Filtros de SPAM**: Google, Microsoft, Yahoo… aplican algoritmos de IA para detectar correos fraudulentos y de tipo SPAM.
+- **Asistentes personales y chatbots**: Sistemas que utilizan NLP (Natural Language Processing) para mejorar la experiencia de usuario. Permiten una comunicación bidireccional coherente con seres humanos ya sea oral o escrita. Ejemplos: Alexa, Siri...
+- **Videojuegos**: Sistemas capaces de predecir la actuación del humano y que permiten generar escenarios de juego realistas sin necesidad de haber sido programados específicamente.
 
 {:.question}
 ¿Cuál es la estimación del volumen de datos que un coche autónomo puede generar anualmente?
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Se te ocurre algún caso más de uso de IA?</summary>
+  <div class="card-body" markdown="1">
+
+Detección de virus, deep fakes, OCRs, etc.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 {:.section}
 ## Tipos de Inteligencia Artificial
 
-Al pensar en inteligencia artificial, la mayoría de nosotros tiene en mente una IA con capacidades mentales humanas, un programa que nos supera con un largo margen, o una persona sintética capaz de imitarnos e incluso combatirnos.
-
-Existen 2 tipos de Inteligencia Artificial:
+Al pensar en inteligencia artificial, la mayoría de nosotros tiene en mente una IA con capacidades mentales humanas, un programa que nos supera con un largo margen, o una persona sintética capaz de imitarnos e incluso combatirnos. Es por esto que existen 2 tipos de Inteligencia Artificial:
 
 - Inteligencia Artificial Débil
 - Inteligencia Artificial Fuerte
 
 {:.subsection}
-### Inteligencia Artificial Débil
+### Inteligencia Artificial Débil (Artificial Narrow Intelligence)
 
-IA Débil (Artificial Narrow Intelligence): Todo nuestro desarrollo y avance científico ha cristalizado en una forma de inteligencia que, aunque puede superar algunas capacidades humanas y va a tener un enorme impacto en nuestra economía, sólo puede orientarse a un objetivo. Es la llamada inteligencia artificial débil (IAD). La IA débil es la capacidad de un sistema informático de imitar funciones cognitivas humanas, como el aprendizaje y la solución de problemas. «Débil» no significa que no tenga valor. La IAD nos es de gran ayuda a la hora de detectar una metástasis, por ejemplo. También nos echa una mano cuando tratamos de extraer valor de un gran conjunto de datos o cuando necesitamos coordinar una flota de vehículos en una ciudad, clave para la movilidad autónoma. Lo cierto es que la inteligencia artificial débil ya se encuentra a nuestro alrededor y le damos multitud de usos.
+Todo nuestro desarrollo y avance científico ha cristalizado en una forma de inteligencia que, aunque puede superar algunas capacidades humanas y va a tener un enorme impacto en nuestra economía, sólo puede orientarse a un objetivo. Es la llamada inteligencia artificial débil (IAD). La IA débil es la capacidad de un sistema informático de imitar funciones cognitivas humanas, como el aprendizaje y la solución de problemas. «Débil» no significa que no tenga valor. La IAD nos es de gran ayuda a la hora de detectar una metástasis, por ejemplo. También nos echa una mano cuando tratamos de extraer valor de un gran conjunto de datos o cuando necesitamos coordinar una flota de vehículos en una ciudad, clave para la movilidad autónoma. Lo cierto es que la inteligencia artificial débil ya se encuentra a nuestro alrededor y le damos multitud de usos.
 
-En la IA Débil, aunque parezca que la IA está pensando por sí misma en tiempo real, en realidad está analizando varios procesos estrechos y tomando decisiones dentro de un marco predeterminado. La IA débil no implica conciencia en sus acciones (IAF),es decir, inteligencia artificial igual o superior a la capacidad humana promedio. De momento, todos estos casos quedan dentro de la ciencia ficción. A día de hoy, no hemos conseguido programar una IA fuerte.
+{:.quesiton}
+¿Qué es una metástasis?
 
-Para diferenciar IAD de IAF, Huawei ha elaborado la siguiente infografía para clasificar sus respectivas características:
+En la IA Débil, aunque parezca que la IA está pensando por sí misma en tiempo real, en realidad está analizando varios procesos estrechos y tomando decisiones dentro de un marco predeterminado. La IA débil no implica conciencia en sus acciones.
+
+{:.question}
+¿Qué es la inteligencia artificial débil?
+
+{:.subsection}
+### Inteligencia Artificial Fuerte (Artificial General Intelligence o de nivel humano)
+
+La IA Fuerte es un sistema informático que ha conseguido resolver problemas sumamente complejos, emitir juicios en situaciones inciertas e incorporar conocimientos previos a su razonamiento actual. Podría poseer creatividad e imaginación a la par que las personas y podría realizar tareas que la IA estrecha no puede.
+
+Los tres casos mencionados inicialmente son ejemplos de inteligencia artificial (IAF), es decir, inteligencia artificial igual o superior a la capacidad humana promedio. De momento, todos estos casos quedan dentro de la ciencia ficción. A día de hoy, no hemos conseguido programar una IA fuerte.
 
 ![Diferencias entre IAD e IAF](IA_infografia.png)
 _Diferencias entre IAD e IAF_
 
 {:.question}
-¿Qué es la inteligencia artificial débil?
+¿Qué es la inteligencia artificial fuerte?
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es la Super IA?</summary>
@@ -112,16 +131,6 @@ Super IA (Artificial Super Intelligence): sistema informático que haya logrado 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
-
-{:.subsection}
-## Inteligencia Artificial Fuerte
-
-IA Fuerte (Artificial General Intelligence o de nivel humano): sistema informático que ha conseguido resolver problemas sumamente complejos, emitir juicios en situaciones inciertas e incorporar conocimientos previos a su razonamiento actual. Podría poseer creatividad e imaginación a la par que las personas y podría realizar tareas que la IA estrecha no puede.
-
-Los tres casos mencionados inicialmente son ejemplos de inteligencia artificial fuerte.
-
-{:.question}
-¿Qué es la inteligencia artificial fuerte?
 
 {:.subsection}
 ### Estadística y probabilidad
