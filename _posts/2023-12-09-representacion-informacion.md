@@ -13,7 +13,7 @@ El ordenador es una máquina digital, por lo tanto solo es capaz de representar 
 
 El problema de los números binarios es que están muy alejados del ser humano; es decir, que las personas no estamos capacitadas para manejar información en binario. Nosotros usamos un sistema numérico decimal para los números y sistemas mucho más complejos para representar otros tipos de información (como el texto, las imágenes, la música,…)
 
-Al principio los ordenadores solo eran capaces de manipular números (de hecho todavía, la CPU, el cerebro de los ordenadores sigue trabajando en binario), pero en la actualidad no hay prácticamente ningún tipo de información que no estemos manipulando a través del ordenador: así manejamos texto, imágenes, música, vídeo,... etc. a través del ordenador. Esto es posible porque se ha conseguido que casi cualquier tipo de información se pueda transformar a binario.
+Al principio los ordenadores solo eran capaces de manipular números (de hecho todavía, la CPU, el cerebro de los ordenadores sigue trabajando en binario), pero en la actualidad no hay prácticamente ningún tipo de información que no estemos manipulando a través del ordenador: así manejamos texto, imágenes, música, vídeo... a través del ordenador. Esto es posible porque se ha conseguido que casi cualquier tipo de información se pueda transformar a binario.
 
 Los seres humanos tenemos la capacidad de diferenciar claramente lo que es un texto de una imagen, lo que es un número de una canción,… Pero en un ordenador todo es más complicado, porque todo es binario.
 
@@ -207,6 +207,7 @@ Aunque UTF-8 es más compleja de procesar, en la actualidad es el claro estánda
 1. Su manipulación es más sencilla que la de los archivos binarios.
 1. Los dispositivos de red y software cliente permiten el paso de archivos de texto ya que no son susceptibles de contener virus informáticos.
 
+{:.subsection}
 ## Exportar/importar datos
 
 {:.subsection}
@@ -228,7 +229,7 @@ Este problema puede ocurrir incluso con el mismo software pero con versiones dis
 
 De ahí que muchas veces la opción para exportar e importar datos sea utilizar conversores. Software con capacidad de convertir los datos de un formato a otro (por ejemplo de Word a Open Office; de MP3 a MOV de Apple, etc.).
 
-{:.section}
+{:.subsection}
 ### El texto como el formato más versátil
 
 Como ya se ha explicado, hay un formato de archivo que cualquier dispositivo es capaz de entender: el texto. La cuestión es que los archivos llamados de texto, solo son capaces de almacenar texto plano; es decir, solo texto sin indicar ningún formato o añadir información no textual.
