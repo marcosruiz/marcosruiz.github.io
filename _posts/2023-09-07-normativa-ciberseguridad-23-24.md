@@ -14,7 +14,7 @@ pin: true
 - UD3 - Legislación para el cumplimiento de la responsabilidad penal.
 
 - T01 - [Tarea: Introducción al cumplimiento normativo](/posts/tarea-introduccion-cumplimiento-normativo)
-- T02 (Voluntaria) - [Tarea: Sistemas de Gestión de Compliance](/posts/tarea-algoritmos-aprendizaje-automatico)
+- T02 (Voluntaria) - [Tarea: Sistemas de Gestión de Compliance](/posts/tarea-sistemas-gestion-compliance/)
 - T03 (Voluntaria) - [Tarea: Legislación para el cumplimiento de la responsabilidad penal](/posts/tarea-cumplimiento-responsabilidad-penal)
 
 ## Evaluación 2
