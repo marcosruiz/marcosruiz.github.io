@@ -44,7 +44,7 @@ Mira el vídeo de [Vectores, ¿qué son? \| Esencia del álgebra lineal, capítu
 1. ¿Por qué es útil la algebra lineal?
 
 {:.activity}
-### Vídeo "Combinaciones lineales, subespacio generado y bases"
+### (Importante) Vídeo "Combinaciones lineales, subespacio generado y bases"
 
 Mira el vídeo de [Combinaciones lineales, subespacio generado y bases \| Esencia del álgebra lineal, capítulo 2](https://www.youtube.com/watch?v=RqQqFx4xUjk) y responde a las siguientes preguntas sobre el mismo:
 
@@ -100,7 +100,7 @@ Mira el vídeo de [Matriz inversa, rango y rango nulo \| Esencia del álgebra li
 1. Con una transformación del espacio, ¿podría convertirse un vector de rango 3 en uno de rango 2?
 
 {:.activity}
-### Vídeo "Matrices no cuadradas como transformaciones entre dimensiones"
+### (Voluntaria) Vídeo "Matrices no cuadradas como transformaciones entre dimensiones"
 
 Mira el vídeo de [Matrices no cuadradas como transformaciones entre dimensiones \| Álgebra lineal, capítulo 6b](https://youtu.be/VXJEsYgeXX0?si=8A0zKfHqcmwjBaxE) y responde a las siguientes preguntas sobre el mismo:
 
@@ -121,32 +121,44 @@ Mira el vídeo de [Producto escalar y dualidad \| Esencia del álgebra lineal, c
 Mira el vídeo de [Producto vectorial \| Esencia del álgebra lineal, capítulo 8a](https://youtu.be/2u1YeOyGuAc?si=dN6TO4Z_ZSN23hg1) y responde a las siguientes preguntas sobre el mismo:
 
 1. ¿Con qué símbolo se representa el producto vectorial?
-1. 
+1. ¿El producto vectorial de dos vectores 2D da como resultado otro vector?
+1. ¿Cómo se interpreta el resultado al realizar el producto vectorial de dos vectores 2D?
 
 {:.activity}
-### Vídeo "Producto vectorial bajo la luz de las transformaciones lineales"
+### (Voluntaria) Vídeo "Producto vectorial bajo la luz de las transformaciones lineales"
 
 Mira el vídeo de [Producto vectorial bajo la luz de las transformaciones lineales \| Álgebra lineal, capítulo 8b](https://youtu.be/k5MxuAVGTto?si=xZvqIq75kqxs3baV) y responde a las siguientes preguntas sobre el mismo:
+
+1. ¿El producto vectorial de dos vectores 3D da como resultado otro vector?
+1. ¿Cómo se interpreta el resultado al realizar el producto vectorial de dos vectores 3D?
 
 {:.activity}
 ### Vídeo "Cambio de Bases"
 
 Mira el vídeo de [Cambio de Bases \| Esencia del álgebra lineal, capítulo 09](https://youtu.be/LYlaRDsi_T8?si=veice1e2pL7WmKOK) y responde a las siguientes preguntas sobre el mismo:
 
+1. Traduce el vector $\begin{pmatrix}7 \\ -5 \end{pmatrix}$ al sistema de coordenadas de Jennifer.
+
 {:.activity}
 ### Vídeo "Vectores propios y valores propios"
 
 Mira el vídeo de [Vectores propios y valores propios \| Esencia del álgebra lineal, capítulo 10](https://www.youtube.com/embed/Gx0PaWI9eYo?si=vZtBoOe5Ot0G4DV4). Si no lo entiendes es recomendable verse los vídeos anteriores que recomienda el propio autor.
 
+1. ¿Qué es un vector propio y que tiene que relación tiene con su valor propio?
+1. ¿Los valores propios pueden ser negativos?
+1. ¿Cuál es el valor propio de una rotación? ¿Por qué?
+1. ¿Cómo transformamos el escalar $\lambda$ en una matriz?
+1. ¿Hay transformaciones sin vectores propios en espacios 2D?
+
 {:.activity}
-### Álgebra lineal
+### Notebook de álgebra lineal
 
-Descarga el fichero [tools_matplotlib_con_preguntas.ipynb](/assets/img/tarea-introduccion-jupyter-notebooks/tools_matplotlib_con_preguntas.ipynb) lee, ejecuta en tu máquina local y responde a las preguntas que aparecen a lo largo del mismo.
+Descarga el fichero [math_linear_algebra_con_preguntas.ipynb](/assets/img/tarea-algebra-lineal/math_linear_algebra_con_preguntas.ipynb) lee, ejecuta en tu máquina local y responde a las preguntas que aparecen a lo largo del mismo.
 
 {:.activity}
-### (Voluntaria) Cálculo diferencial
+### (Voluntaria) Notebook de cálculo diferencial
 
-Descarga el fichero [tools_matplotlib_con_preguntas.ipynb](/assets/img/tarea-introduccion-jupyter-notebooks/tools_matplotlib_con_preguntas.ipynb) lee, ejecuta en tu máquina local y responde a las preguntas que aparecen a lo largo del mismo.
+Descarga el fichero [math_differential_calculus.ipynb](/assets/img/tarea-algebra-lineal/math_differential_calculus.ipynb) lee, ejecuta en tu máquina local.
 
 ## Bibliografía
 
