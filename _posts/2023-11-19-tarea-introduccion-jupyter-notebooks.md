@@ -37,7 +37,7 @@ Instala y configura la aplicación Notebook de Jupyter. Puedes usar la alternati
 - [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html)
 - Visual Studio Code con la extensión de Jupyter
 
-> Puedes usar el artículo [Tutorial: Anaconda](/posts/tutorial-anaconda) como guía.
+> Puedes usar el artículo [Tutorial: Entornos de desarrollo para Aprendizaje Automático](/posts/tutorial-anaconda) como guía.
 {:.prompt-info}
 
 {:.activity}

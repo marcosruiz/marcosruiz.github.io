@@ -65,6 +65,17 @@ La distribución Anaconda es utilizada por 6 millones de usuarios e incluye más
 
 Ir a la web <https://www.anaconda.com/download> y descarga e instala la última versión de Anaconda.
 
+### Crear entorno de SAA en Anaconda
+
+Creamos el entorno:
+
+![Crear entorno](crearEntorno.png)
+_imgDescription_
+
+Le damos nombre de saa:
+
+![Nombre de entorno](nombreDeEntorno.png)
+
 ### Instalar aplicaciones con Anaconda
 
 Las aplicaciones que debemos instalar con Anaconda son:
@@ -78,17 +89,6 @@ Instalamos las aplicaciones marcadas:
 
 ![Aplicaciones ya instaladas](aplicacionesInstaladas.png)
 _Aplicaciones ya instaladas_
-
-### Crear entorno de SAA en Anaconda
-
-Creamos el entorno:
-
-![Crear entorno](crearEntorno.png)
-_imgDescription_
-
-Le damos nombre de saa:
-
-![Nombre de entorno](nombreDeEntorno.png)
 
 ### Instalar librerías en entorno SAA desde entorno gráfico en Anaconda
 

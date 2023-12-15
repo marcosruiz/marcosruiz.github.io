@@ -38,7 +38,7 @@ Mira el vídeo de [Fundamentos del Álgebra Lineal \| Esencia del álgebra linea
 Mira el vídeo de [Vectores, ¿qué son? \| Esencia del álgebra lineal, capítulo 1](https://www.youtube.com/watch?v=wiuEEkP_XuM) y responde a las siguientes preguntas sobre el mismo:
 
 1. ¿De dónde debemos asumir que parten todos los vectores?
-1. ¿Cómo se diferencia la nomenclatura de un vector de un punto si ambos solo necesitan dos números en un espacio bidimensional?
+1. ¿Cómo se diferencia la nomenclatura/sintaxis de un vector respecto a un punto si ambos solo necesitan dos escalares para ser representados (supniendo que estamos en un espacio 2D)?
 1. ¿Qué significa geométricamente multiplicar un vector por un escalar?
 1. ¿Por qué es útil la algebra lineal?
 
@@ -48,9 +48,9 @@ Mira el vídeo de [Vectores, ¿qué son? \| Esencia del álgebra lineal, capítu
 Mira el vídeo de [Combinaciones lineales, subespacio generado y bases \| Esencia del álgebra lineal, capítulo 2](https://www.youtube.com/watch?v=RqQqFx4xUjk) y responde a las siguientes preguntas sobre el mismo:
 
 1. ¿Cómo se llaman $\hat{i}$  y $\hat{j}$?
-1. ¿Podemos cambiar la base del un sistema de coordenadas?
-1. ¿Qué es un subespacio generado por dos vectores?
-1. ¿Cuándo el subespacio generado por dos vectores contiene todo el espacio de 2 dimensiones?
+1. ¿Podemos cambiar la base de un sistema de coordenadas?
+1. ¿Qué es el subespacio generado por dos vectores?
+1. ¿Cuándo el subespacio generado por dos vectores 2D contiene todo el espacio 2D?
 1. ¿Qué significa que dos vectores son linealmente independientes? ¿Qué tiene que ver esto con la generación de subespacios?
 
 {:.activity}
@@ -70,12 +70,12 @@ Mira el vídeo de [Multiplicación matricial como composición \| Esencia del á
 1. ¿Por qué la multiplicación de matrices es asociativa ($(AB)C = A(BC)$) a pesar de no ser conmutativa ($AB \ne BA$)?
 
 {:.activity}
-### Vídeo "Transformaciones lineales en tres dimensiones"
+### (Voluntaria) Vídeo "Transformaciones lineales en tres dimensiones"
 
 Mira el vídeo de [Transformaciones lineales en tres dimensiones \| Esencia del álgebra lineal, capítulo 4b](https://youtu.be/IvGS6aFkofg?si=43phKcXZmkFA1UQP) y responde a las siguientes preguntas sobre el mismo:
 
-1. ¿Se puede multiplicar $\begin{pmatrix}x \\ y \\ z \end{pmatrix}$ con $\begin{pmatrix}1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$?
-1. Haz la siguiente multiplicación de matices $\begin{pmatrix}1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}\begin{pmatrix}x \\ y \\ z \end{pmatrix}$ de la manera tradicional y de la manera en que se muestra enseña en el vídeo.
+1. ¿Se puede multiplicar $\begin{pmatrix}x \\\\ y \\\\ z \end{pmatrix}$ con $\begin{pmatrix}1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \end{pmatrix}$?
+1. Haz la siguiente multiplicación de matices $\begin{pmatrix}1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9 \end{pmatrix}\begin{pmatrix}x \\\\ y \\\\ z \end{pmatrix}$ de la manera tradicional y de la manera en que se muestra enseña en el vídeo.
 
 {:.activity}
 ### Vídeo "El determinante"
@@ -84,8 +84,8 @@ Mira el vídeo de [El determinante \| Esencia del álgebra lineal, capítulo 5](
 
 1. ¿Qué simboliza el determinante de manera geométrica en un espacio 2D?
 1. ¿Qué ocurre si un determinante es mayor que 0 y menos que 1?
-1. ¿Cuál es el determinante de $\begin{pmatrix}1 & 1 \\ 0 & 0 \end{pmatrix}$?
-1. ¿Cual es el área de un rectángulo 1x1 si le aplicamos una transformación con la matriz $\begin{pmatrix}1 & 1 \\ 0 & 0 \end{pmatrix}$?
+1. ¿Cuál es el determinante de $\begin{pmatrix}1 & 1 \\\\ 0 & 0 \end{pmatrix}$?
+1. ¿Cual es el área de un rectángulo 1x1 si le aplicamos una transformación con la matriz $\begin{pmatrix}1 & 1 \\\\ 0 & 0 \end{pmatrix}$?
 1. ¿Qué ocurre si un determinante es -3?
 1. Explica en una frase (de manera geométrica) si la siguiente fórmula es cierta: $det(M_1 M_2) = det(M_1) det(M_2)$
 
@@ -136,14 +136,14 @@ Mira el vídeo de [Producto vectorial bajo la luz de las transformaciones lineal
 
 Mira el vídeo de [Cambio de Bases \| Esencia del álgebra lineal, capítulo 09](https://youtu.be/LYlaRDsi_T8?si=veice1e2pL7WmKOK) y responde a las siguientes preguntas sobre el mismo:
 
-1. Traduce el vector $\begin{pmatrix}7 \\ -5 \end{pmatrix}$ al sistema de coordenadas de Jennifer.
+1. Traduce el vector $\begin{pmatrix}7 \\\\ -5 \end{pmatrix}$ al sistema de coordenadas de Jennifer.
 
 {:.activity}
 ### Vídeo "Vectores propios y valores propios"
 
 Mira el vídeo de [Vectores propios y valores propios \| Esencia del álgebra lineal, capítulo 10](https://www.youtube.com/embed/Gx0PaWI9eYo?si=vZtBoOe5Ot0G4DV4). Si no lo entiendes es recomendable verse los vídeos anteriores que recomienda el propio autor.
 
-1. ¿Qué es un vector propio y que tiene que relación tiene con su valor propio?
+1. ¿Qué es un vector propio y que relación tiene con su valor propio?
 1. ¿Los valores propios pueden ser negativos?
 1. ¿Cuál es el valor propio de una rotación? ¿Por qué?
 1. ¿Cómo transformamos el escalar $\lambda$ en una matriz?
@@ -153,11 +153,6 @@ Mira el vídeo de [Vectores propios y valores propios \| Esencia del álgebra li
 ### Notebook de álgebra lineal
 
 Descarga el fichero [math_linear_algebra_con_preguntas.ipynb](/assets/img/tarea-algebra-lineal/math_linear_algebra_con_preguntas.ipynb) lee, ejecuta en tu máquina local y responde a las preguntas que aparecen a lo largo del mismo.
-
-{:.activity}
-### (Voluntaria) Notebook de cálculo diferencial
-
-Descarga el fichero [math_differential_calculus.ipynb](/assets/img/tarea-algebra-lineal/math_differential_calculus.ipynb) lee, ejecuta en tu máquina local.
 
 ## Bibliografía
 

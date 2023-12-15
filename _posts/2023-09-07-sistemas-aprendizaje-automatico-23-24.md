@@ -19,7 +19,7 @@ pin: true
 
 - T01 - [Tarea: Aplicación de modelos probabilísticos](/posts/tarea-aplicacion-modelos-probabilisticos/)
 - T02 - [Tarea: Algoritmos para el aprendizaje automático](/posts/tarea-algoritmos-aprendizaje-automatico/)
-- T03 - [Tarea: Introducción a Jupyter Notebooks](/posts/tarea-introduccion-jupyter-notebooks/)ç
+- T03 - [Tarea: Introducción a Jupyter Notebooks](/posts/tarea-introduccion-jupyter-notebooks/)
 - T04 - [Tarea: Álgebra lineal](/posts/tarea-algebra-lineal/)
 
 ## Enlaces increíbles 🔥 (beta)

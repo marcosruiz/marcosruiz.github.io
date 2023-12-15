@@ -16,7 +16,7 @@ img_path: /assets/img/videos-profesor/
 - Mouse utilities de [PowerToys](https://learn.microsoft.com/es-es/windows/powertoys/): Para mostrar los clicks del ratón.
 - [Canva](https://www.canva.com/): Para grabar y editar vídeos.
 
-### Configurar Carnac
+## Configurar Carnac
 
 La configuración que uso para Carnac es la siguiente:
 
@@ -26,7 +26,7 @@ _Sección General de Carnac_
 ![Sección Appearance de Carnac](carnacConfig02.png){: width="400px"}
 _Sección Appearance de Carnac_
 
-### Hacer webcam circular con OBS
+## Mejorar el audio de micrófono en OBS
 
 Primero necesitamos descargar estas dos imágenes:
 
@@ -36,6 +36,16 @@ _Circulo para filtro_
 ![imgDescription](Webcam Circle shadow.png){: width="200px"}
 _Sombra para círculo_
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xrNugzNPYIk?si=qvYMLqRZ0qvfTbVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Hacer webcam circular con OBS
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HkNw7u4SrPk?si=WDInoNsHmNGfKzrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<details class="card mb-2">
+  <summary class="card-header question">Pasos a seguir si no quieres ver el vídeo</summary>
+  <div class="card-body" markdown="1">
+  
 En el elemento de captura de vídeo o webcam aplicamos un filtro:
 
 ![imgDescription](obsPaso01.png){: width="400px"}
@@ -76,9 +86,9 @@ Resultado final:
 
 ![imgDescription](obsPaso10.png){: width="400px"}
 
-## Grabar vídeos con Canva
-
-
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 ## Bibliografía
 
