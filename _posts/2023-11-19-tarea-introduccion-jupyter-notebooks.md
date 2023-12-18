@@ -72,6 +72,26 @@ Si quieres saber más puedes leer el [este artículo](https://scikit-learn.org/1
 > Si tienes dudas sobre cual es tu nombre de usuario lee el artículo [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 {:.prompt-info}
 
+{:.activity}
+### (Voluntaria) Regresión lineal sobre california_housing
+
+Utiliza regresión lineal con el dataset de california_housing donde aparecen datos de los precios de las casas en California. Lo puedes importar de la siguiente manera:
+
+```python
+from sklearn.datasets import fetch_california_housing
+housing = fetch_california_housing()
+```
+
+{:.activity}
+### (Voluntaria) Regresión lineal sobre openml
+
+Utiliza regresión lineal con el dataset de openml donde aparecen datos de los precios de las casas en Ames (Iowa). Lo puedes importar de la siguiente manera:
+
+```python
+from sklearn.datasets import fetch_openml
+housing = fetch_openml(name="house_prices", as_frame=True)
+```
+
 ## Bibliografía
 
 - <https://github.com/ageron/handson-ml3>
