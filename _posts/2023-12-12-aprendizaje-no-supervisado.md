@@ -116,7 +116,6 @@ Si
 ![Clustering jerárquico](Day 54.jpg)
 _Clustering jerárquico_
 
-
 ## Bibliografía
 
 - <https://github.com/cristinagom/machinelearning/>

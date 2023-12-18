@@ -55,6 +55,20 @@ Descarga el fichero [tools_numpy_con_preguntas.ipynb](/assets/img/tarea-introduc
 
 Mira el vídeo de [IA NOTEBOOK #1 \| Regresión Lineal y Mínimos Cuadrados Ordinarios \| Programando IA](https://youtu.be/w2RJ1D6kz-o?si=7jfMNFJbUnxW3Z2e) y sigue los pasos para crear tu primer Notebook de Jupyter desde 0. Llámalo `<tu usuario>_a04.ipynb`.
 
+El dataset de Boston tiene un problema ético por lo que ha sido eliminado de los datasets de sklearn por lo que hay que importarlo de la fuente original de la siguiente manera:
+
+```python
+import pandas as pd  # doctest: +SKIP
+import numpy as np
+
+data_url = "http://lib.stat.cmu.edu/datasets/boston"
+raw_df = pd.read_csv(data_url, sep="s+", skiprows=22, header=None)
+data = np.hstack([raw_df.values[::2, :], raw_df.values[1::2, :2]])
+target = raw_df.values[1::2, 2]
+```
+
+Si quieres saber más puedes leer el [este artículo](https://scikit-learn.org/1.0/modules/generated/sklearn.datasets.load_boston.html).
+
 > Si tienes dudas sobre cual es tu nombre de usuario lee el artículo [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 {:.prompt-info}
 
