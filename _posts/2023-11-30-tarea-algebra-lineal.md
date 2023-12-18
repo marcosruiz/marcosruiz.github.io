@@ -9,7 +9,7 @@ math: true
 
 ## Entrega y presentación
 
-La entrega será en formato ZIP. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
+La entrega será en formato ZIP. Dentro del ZIP deberá haber un documento en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
 Ejemplo del árbol de directorios de entrega (si la tuviese que hacer yo):
 
@@ -21,7 +21,7 @@ mruizg_t01.zip
 
 ## Calificación
 
-La tarea se calificará como apto o no apto.
+La tarea se calificará con una nota de 0 a 10.
 
 ## Actividades
 

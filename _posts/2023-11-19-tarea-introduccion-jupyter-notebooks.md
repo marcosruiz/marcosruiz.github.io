@@ -17,6 +17,8 @@ mruizg_t03.zip
 ├─ mruizg_a02.ipynb
 ├─ mruizg_a03.ipynb
 ├─ mruizg_a04.ipynb
+├─ mruizg_a05.ipynb
+├─ mruizg_a06.ipynb
 ```
 
 ## Calificación
