@@ -138,7 +138,8 @@ _Sección "Comportamiento de las preguntas" para Test alumnos distancia_
 ![imgDescription](testOpcionesRevision.png)
 _Sección "Opciones de revisión" para Test alumnos distancia_
 
-## Configuración tareas
+{:.section}
+## Configuración de tareas
 
 El uso del workflow permite que todos los alumnos reciban la nota al mismo tiempo.
 
