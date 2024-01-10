@@ -138,6 +138,13 @@ _Sección "Comportamiento de las preguntas" para Test alumnos distancia_
 ![imgDescription](testOpcionesRevision.png)
 _Sección "Opciones de revisión" para Test alumnos distancia_
 
+## Configuración tareas
+
+El uso del workflow permite que todos los alumnos reciban la nota al mismo tiempo.
+
+![imgDescription](calificacion.png)
+_Sección "Calificación" con workflow_
+
 ## Bibliografía
 
 - [Formato GIFT](https://docs.moodle.org/all/es/Formato_GIFT#Caracteres_especiales_.7E_.3D_.23_.7B_.7D)
