@@ -15,7 +15,7 @@ Ejemplo del árbol de directorios de entrega (si la tuviese que hacer yo):
 
 ```plaintext
 mruizg_t01.zip
-├─ mruizg_t01.pdf
+├─ mruizg_t04.pdf
 ├─ mruizg_a15.ipynb
 ```
 
