@@ -38,7 +38,7 @@ Mira el vídeo de [Fundamentos del Álgebra Lineal \| Esencia del álgebra linea
 Mira el vídeo de [Vectores, ¿qué son? \| Esencia del álgebra lineal, capítulo 1](https://www.youtube.com/watch?v=wiuEEkP_XuM) y responde a las siguientes preguntas sobre el mismo:
 
 1. ¿De dónde debemos asumir que parten todos los vectores?
-1. ¿Cómo se diferencia la nomenclatura/sintaxis de un vector respecto a un punto si ambos solo necesitan dos escalares para ser representados (supniendo que estamos en un espacio 2D)?
+1. ¿Cómo se diferencia la nomenclatura/sintaxis de un vector respecto a un punto si ambos solo necesitan dos escalares para ser representados (suponiendo que estamos en un espacio 2D)?
 1. ¿Qué significa geométricamente multiplicar un vector por un escalar?
 1. ¿Por qué es útil la algebra lineal?
 
@@ -83,7 +83,7 @@ Mira el vídeo de [Transformaciones lineales en tres dimensiones \| Esencia del 
 Mira el vídeo de [El determinante \| Esencia del álgebra lineal, capítulo 5](https://youtu.be/yt3eoYvGel0?si=d1-NaG_xgWGRIEYa) y responde a las siguientes preguntas sobre el mismo:
 
 1. ¿Qué simboliza el determinante de manera geométrica en un espacio 2D?
-1. ¿Qué ocurre si un determinante es mayor que 0 y menos que 1?
+1. ¿Qué ocurre si un determinante es mayor que 0 y menor que 1?
 1. ¿Cuál es el determinante de $\begin{pmatrix}1 & 1 \\\\ 0 & 0 \end{pmatrix}$?
 1. ¿Cual es el área de un rectángulo 1x1 si le aplicamos una transformación con la matriz $\begin{pmatrix}1 & 1 \\\\ 0 & 0 \end{pmatrix}$?
 1. ¿Qué ocurre si un determinante es -3?
