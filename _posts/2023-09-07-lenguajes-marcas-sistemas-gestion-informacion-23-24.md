@@ -32,7 +32,7 @@ pin: true
 ## Evaluación 2
 
 - UD04 - Definición de esquemas y vocabularios en XML
-  - DTD
+  - [DTD](/posts/dtd/)
   - XMLSchemas
 - UD05 - Conversión y adaptación de documentos XML
 - UD06 - Almacenamiento de información
