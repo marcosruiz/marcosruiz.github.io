@@ -18,7 +18,6 @@ pin: true
   - [CSS](/posts/css/)
 - UD03 - Aplicación de los lenguajes de marcas a la sindicación de contenidos
   - [Sindicación de contenidos](/posts/sindicacion-contenidos/)
-- UD04 - Definición de esquemas y vocabularios en XML
 
 - T00 (Voluntaria recomendada) - [El formato SVG](/posts/tarea-formato-svg/)
 - T01 - [Tarea: Introducción a XML](/posts/tarea-introduccion-xml/)
@@ -32,6 +31,7 @@ pin: true
 
 ## Evaluación 2
 
+- UD04 - Definición de esquemas y vocabularios en XML
 - UD05 - Conversión y adaptación de documentos XML
 - UD06 - Almacenamiento de información
 - UD07 - Sistemas de gestión empresarial
