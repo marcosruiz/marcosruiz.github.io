@@ -33,7 +33,7 @@ pin: true
 
 - UD04 - Definición de esquemas y vocabularios en XML
   - [DTD](/posts/dtd/)
-  - XMLSchemas
+  - [XML Schema o XSD](/posts/xsd/)
 - UD05 - Conversión y adaptación de documentos XML
 - UD06 - Almacenamiento de información
 - UD07 - Sistemas de gestión empresarial
