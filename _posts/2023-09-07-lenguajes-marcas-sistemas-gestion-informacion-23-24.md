@@ -32,10 +32,12 @@ pin: true
 ## Evaluación 2
 
 - UD04 - Definición de esquemas y vocabularios en XML
-  - [DTD](/posts/dtd/)
-  - [XML Schema o XSD](/posts/xsd/)
-- UD05 - Conversión y adaptación de documentos XML
+  - [DTD (Document Type Definition)](/posts/dtd/)
+  - [XSD (XML Schema Definition)](/posts/xsd/)
+- UD05 -  [Conversión y adaptación de documentos XML](/posts/xsl)
 - UD06 - Almacenamiento de información
+  - XPath
+  - XQuery
 - UD07 - Sistemas de gestión empresarial
 
 - T09 - Tarea: DTDs
