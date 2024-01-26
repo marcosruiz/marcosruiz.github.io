@@ -30,7 +30,7 @@ Para realizar este tipo de entregas son necesarias dos acciones:
    1. **Manualmente**: Creamos los grupos uno a uno.
    2. **Automáticamente** (recomendada): Creamos todos los grupos de golpe. Podemos hacer que sean grupos al azar, alfabéticamente o podemos crearlos vacíos para añadirlos manualmente más adelante.
 
-![Creación de grupos vacíos automáticamente en Moodle](crearGruposAutomaticamente.png)
+![Creación de grupos vacíos automáticamente en Moodle](crearGruposAutomaticamente.png){: w="250" }
 _Creación de grupos vacíos automáticamente en Moodle_
 
 {:.subsection}
@@ -38,7 +38,7 @@ _Creación de grupos vacíos automáticamente en Moodle_
 
 En la opción "Editar ajustes" de una Tarea vamos a la sección "Configuración de entrega por grupo" y ponemos los ajustes que aparecen en la siguiente Figura.
 
-![Configuración de entrega por grupo en Moodle](configuracionEntregaPorGrupo.png)
+![Configuración de entrega por grupo en Moodle](configuracionEntregaPorGrupo.png){: w="250" }
 _Configuración de entrega por grupo en Moodle_
 
 {:.section}
@@ -58,6 +58,8 @@ A continuación se ponen plantillas para copiar y pegar de forma rápida
 
 #### Pregunta de una opción
 
+Sin restar por respuesta errónea:
+
 ```plaintext
 [markdown]Pregunta{
     =Respuesta
@@ -66,6 +68,8 @@ A continuación se ponen plantillas para copiar y pegar de forma rápida
     ~Respuesta
 }
 ```
+
+Restando el 50% del valor de la pregunta por respuesta errónea:
 
 ```plaintext
 [markdown]Pregunta{
@@ -78,6 +82,8 @@ A continuación se ponen plantillas para copiar y pegar de forma rápida
 
 #### Pregunta de opción múltiple
 
+Dos respuestas correctas y dos incorrectas:
+
 ```plaintext
 [markdown]Pregunta{
     ~%50%Respuesta
@@ -87,27 +93,67 @@ A continuación se ponen plantillas para copiar y pegar de forma rápida
 }
 ```
 
+Tres respuestas correctas y una incorrecta:
+
+```plaintext
+[markdown]Pregunta{
+    ~%33.33333%Respuesta
+    ~%33.33333%Respuesta
+    ~%33.33333%Respuesta
+    ~%-100%Respuesta
+}
+```
+
+Cuatro respuestas correctas:
+
+```plaintext
+[markdown]Pregunta{
+    ~%25%Respuesta
+    ~%25%Respuesta
+    ~%25%Respuesta
+    ~%25%Respuesta
+}
+```
+
 #### Pregunta respuesta numérica
+
+Respuesta exacta:
 
 ```plaintext
 [markdown]Pregunta {#5}
 ```
 
+Dando un rango de error:
+
+```plaintext
+[markdown]Pregunta {#5.2:0.1}
+```
+
 #### Pregunta respuesta texto
+
+Una única respuesta correcta:
 
 ```plaintext
 [markdown]Pregunta {=respuesta}
 ```
 
+Varias respuestas correctas:
+
 ```plaintext
 [markdown]Pregunta {=respuesta =respuesta2}
 ```
+
+> En caso de estas respuestas siempre NO son case sensitive por lo que el alumno podrá escribir "RespUESta" y se la dará como correcta.
+{:.prompt-info}
 
 #### Pregunta de verdadero y falso
 
 ```plaintext
 [markdown]Pregunta {T}
 ```
+
+> No se recomienda usar este tipo de preguntas ya que si la pregunta es confusa (y nos damos cuenta tarde) no permite la opción de que "Verdadero" y "Falso" sean opciones correctas al mismo tiempo.
+{:.prompt-info}
 
 {:.subsection}
 ### Autoincrementar
@@ -150,10 +196,43 @@ _Sección "Opciones de revisión" para Test alumnos distancia_
 {:.section}
 ## Configuración de tareas
 
+{:.subsection}
+### Calificación de tarea Apto/No apto
+
 El uso del workflow permite que todos los alumnos reciban la nota al mismo tiempo.
 
-![imgDescription](calificacion.png)
-_Sección "Calificación" con workflow_
+![Sección "Calificación" de tarea Apto/No apto con workflow](calificacionTareaAptoNoApto.png){: w="250" }
+_Sección "Calificación" de tarea Apto/No apto con workflow_
+
+Cuando trabajamos con tareas de Apto/No apto debemos tener en cuenta que:
+
+- "No hay calificación" corresponde a un 0.
+- "No apta" corresponde a un 1.
+- "Apta" corresponde a un 2.
+
+{:.subsection}
+### Calificación de tarea con nota
+
+![Sección "Calificación" de tarea con nota 0 a 10 con workflow](calificacionTareaConNota.png){: w="250" }
+_Sección "Calificación" de tarea con nota 0 a 10 con workflow_
+
+{:.subsection}
+### Finalización de actividad
+
+Si queremos que la tarea esté gamificada deberemos tener la siguiente configuración en la sección "Finalización de actividad":
+
+![Sección "Finalización de actividad" para gamificación](finalizacionActividad.png){: w="250" }
+_Sección "Finalización de actividad" para gamificación_
+
+Como resultado a esto los alumnos verán que para completar su tarea deben entregarla, debe ser corregida y debe tener una nota superior o igual a "Calificación para aprobar" de la sección "Calificación".
+
+![Cómo ve el alumno el curso desde "Mis cursos"](porcentajeCompletoCardCurso.png){: w="250" }
+_Cómo ve el alumno el curso desde "Mis cursos"_
+
+En el caso de que estemos gamificando es recomendable que añadamos el bloque "Estado de Finaliazación" para que el alumno pueda ver cual es el estado general de sus tareas.
+
+![Bloque "Estado de Finaliazación" dentro del curso](estadoFinalizacionBloqueCurso.png){: w="250" }
+_Bloque "Estado de Finaliazación" dentro del curso_
 
 {:.section}
 ## Libro de calificaciones
@@ -161,7 +240,7 @@ _Sección "Calificación" con workflow_
 Fórmula EV1:
 
 ```plaintext
-=if(AND([[ExamenEV1]]>=5;[[Tarea01]]>1;[[Tarea02]]>0;[[Tarea05]]>1;[[Tarea07]]>1;[[Tarea08]]>0); ([[ExamenEV1]]*0,7 + [[TareasObligatoriasEV1]]*0,2 + [[TestsEV1]]*0,1); min(4,99;[[ExamenEV1]]))
+=if(AND([[ExamenEV1]]>=5;[[Tarea01]]>1;[[Tarea02]]>0;[[Tarea05]]>1;[[Tarea07]]>1;[[Tarea08]]>0); ([[ExamenEV1]]*0,7 + [[TareasObligatoriasEV1]]*0,2 + [[TestsEV1]]*0,1+[[TareasVoluntariasEV1]]*0,1); min(4,99;[[ExamenEV1]]*0,7 + [[TareasObligatoriasEV1]]*0,2 + [[TestsEV1]]*0,1))
 ```
 
 Donde:
@@ -172,10 +251,22 @@ Donde:
   - No apto equivale a 1.
   - Apto equivale a 2.
 
+Fórmula SIGAD EV1:
+
+```plaintext
+=if([[EV1]]>=5; round([[EV1]];0); floor([[EV1]]))
+```
+
 La fórmula de la EV2 sería similar a la de la EV1:
 
 ```plaintext
-=if(AND([[ExamenEV2]]>=5;[[Tarea09]]>0;[[Tarea10]]>0;[[Tarea11]]>0;[[Tarea12]]>0;[[Tarea13]]>0); ([[ExamenEV1]]*0,7 + [[TareasObligatoriasEV2]]*0,2 + [[TestsEV2]]*0,1); min(4,99;[[ExamenEV2]]))
+=if(AND([[ExamenEV2]]>=5;[[Tarea09]]>0;[[Tarea10]]>0;[[Tarea11]]>0;[[Tarea12]]>0;[[Tarea13]]>0); ([[ExamenEV1]]*0,7 + [[TareasObligatoriasEV2]]*0,2 + [[TestsEV2]]*0,1); min(4,99;[[ExamenEV2]]*0,7 + [[TareasObligatoriasEV2]]*0,2 + [[TestsEV2]]*0,1))
+```
+
+Fórmula SIGAD EV2:
+
+```plaintext
+=if([[EV2]]>=5; round([[EV2]];0); floor([[EV2]]))
 ```
 
 La fórmula de la nota final será:
