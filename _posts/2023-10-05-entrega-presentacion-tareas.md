@@ -14,7 +14,7 @@ Si la entrega de la práctica debe ser un documento PDF con un nombre en el sigu
 
 `<tu usuario>_t<número de la tarea con dos dígitos>.pdf`{: .filepath}
 
-Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna María Begoña Sánchez Mañas para la primera unidad del módulo profesional de LMSGI, debería nombrar esta tarea como:
+Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna Marcos Ruiz García para la primera unidad del módulo profesional de LMSGI, debería nombrar esta tarea como:
 
 `mruizg_t01.pdf`{: .filepath}
 
@@ -48,11 +48,11 @@ Si la entrega de la práctica debe ser un documento ZIP con un nombre en el sigu
 
 `<tu usuario>_t<número de la tarea con dos dígitos>.zip`{: .filepath}
 
-Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna María Begoña Sánchez Mañas para la primera unidad del módulo profesional de LMSGI, debería nombrar esta tarea como:
+Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna Marcos Ruiz García para la primera unidad del módulo profesional de LMSGI, debería nombrar esta tarea como:
 
 `mruizg_t01.zip`{: .filepath}
 
-En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que se pida) con el nombre `apellido1_apellido2_nombre1_nombre2_SIGxx_Tarea.zip`{: .filepath} y las actividades en el formato que corresponda:
+En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que se pida) con el nombre `mruizg_t01.zip`{: .filepath} y las actividades en el formato que corresponda:
 
 - Las actividades de XML deberán estar en formato XML con el nombre `<tu usuario>_a<Número de la actividad con dos dígitos>.xml`{: .filepath}. Por ejemplo: `mruizg_a01.xml`{: .filepath}.
 - Las actividades de HTML deberán estar en formato HTML con el nombre `<tu usuario>_a<Número de la actividad con dos dígitos>.html`{: .filepath}. Por ejemplo: `mruizg_a01.html`{: .filepath}.
@@ -66,7 +66,7 @@ Si la entrega de la práctica debe ser un documento PDF con un nombre en el sigu
 
 `<tu usuario>_t<número de la tarea con dos dígitos>.pdf`{: .filepath}
 
-Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna María Begoña Sánchez Mañas para la primera unidad del módulo profesional de LMSGI, debería nombrar esta tarea como:
+Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna Marcos Ruiz García para la primera unidad del módulo profesional de LMSGI, debería nombrar esta tarea como:
 
 `mruizg_t01.pdf`{: .filepath}
 
