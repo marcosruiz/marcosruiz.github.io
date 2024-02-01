@@ -40,8 +40,8 @@ pin: true
   - XQuery
 - UD07 - Sistemas de gestión empresarial
 
-- T09 - Tarea: DTDs
-- T10 - Tarea: XML Schemas
+- T09 - [Tarea: DTD](/posts/tarea-dtd/)
+- T10 - [Tarea: XSD](/posts/tarea-xsd/)
 - T11 - Tarea: XSLT
 - T12 - Tarea: XSL-FO
 - T13 - Tarea: XPath
