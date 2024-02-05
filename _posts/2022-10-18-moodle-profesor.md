@@ -234,6 +234,24 @@ En el caso de que estemos gamificando es recomendable que añadamos el bloque "E
 ![Bloque "Estado de Finaliazación" dentro del curso](estadoFinalizacionBloqueCurso.png){: w="250" }
 _Bloque "Estado de Finaliazación" dentro del curso_
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Cómo añado el bloque "Estado de Finaliazación"?</summary>
+  <div class="card-body" markdown="1">
+
+Estando en "Modo edición" seleccionamos "Agregar bloque":
+
+![Paso 1: Click en "Agregar bloque"](agregarBloqueEstadoFinalizacion1.png)
+_Paso 1: Click en "Agregar bloque"_
+
+Y añadimos el bloque "Estado de Finaliazación":
+
+![Paso 2: Seleccionar "Estado de Finaliazación"](agregarBloqueEstadoFinalizacion2.png)
+_Paso 2: Seleccionar "Estado de Finaliazación"_
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 {:.section}
 ## Libro de calificaciones
 
