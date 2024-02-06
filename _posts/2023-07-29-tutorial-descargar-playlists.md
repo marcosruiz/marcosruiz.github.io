@@ -27,3 +27,7 @@ $yt-dlp.exe --playlist-items 1:100:1 --extract-audio --audio-format mp3 <url>
 
 > La lista de reproducción tiene que ser pública.
 {:.prompt-info}
+
+## Bibliografía
+
+- <https://www.raulprietofernandez.net/blog/internet/como-descargar-musica-gratis-de-spotify>

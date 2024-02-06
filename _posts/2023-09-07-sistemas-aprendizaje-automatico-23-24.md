@@ -36,4 +36,4 @@ pin: true
 ## Cursos
 
 - <https://elandroidefeliz.com/10-cursos-online-gratuitos-sobre-ia-impartidos-por-google/>
-- https://home.work.caltech.edu/lectures.html#lectures
+- <https://home.work.caltech.edu/lectures.html#lectures>
