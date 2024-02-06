@@ -13,7 +13,7 @@ pin: true
 4. Casos prácticos de aplicación.
 5. Técnicas avanzadas y evaluación del modelo.
 
-- T05 - [Tarea: Pandas, KNN y Regresión Lineal](/posts/tarea-pandas-knn-reg-lineal/)
+- T05 - Obligatoria - Apto/No apto - [Tarea: Pandas, KNN y Regresión Lineal](/posts/tarea-pandas-knn-reg-lineal/)
 
 - Trabajo en progreso: [Tarea: Tensorflow Playground](/posts/tarea-tensorflow-playground/)
 
@@ -24,10 +24,10 @@ pin: true
    1. [Aprendizaje Supervisado](/posts/aprendizaje-supervisado/)
    1. [Aprendizaje No Supervisado](/posts/aprendizaje-no-supervisado/)
 
-- T01 - [Tarea: Aplicación de modelos probabilísticos](/posts/tarea-aplicacion-modelos-probabilisticos/)
-- T02 - [Tarea: Algoritmos para el aprendizaje automático](/posts/tarea-algoritmos-aprendizaje-automatico/)
-- T03 - [Tarea: Introducción a Jupyter Notebooks](/posts/tarea-introduccion-jupyter-notebooks/)
-- T04 - [Tarea: Álgebra lineal](/posts/tarea-algebra-lineal/)
+- T01 - Obligatoria - Apto/No apto - [Tarea: Aplicación de modelos probabilísticos](/posts/tarea-aplicacion-modelos-probabilisticos/)
+- T02 - Obligatoria - Apto/No apto - [Tarea: Algoritmos para el aprendizaje automático](/posts/tarea-algoritmos-aprendizaje-automatico/)
+- T03 - Obligatoria - Apto/No apto - [Tarea: Introducción a Jupyter Notebooks](/posts/tarea-introduccion-jupyter-notebooks/)
+- T04 - Obligatoria - Nota - [Tarea: Álgebra lineal](/posts/tarea-algebra-lineal/)
 
 ## Enlaces increíbles 🔥 (beta)
 

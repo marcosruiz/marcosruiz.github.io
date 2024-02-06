@@ -7,6 +7,24 @@ img_path: /assets/img/lenguajes-marcas-sistemas-gestion-informacion-23-24/
 pin: true
 ---
 
+## Evaluación 2
+
+- UD04 - Definición de esquemas y vocabularios en XML
+  - [DTD (Document Type Definition)](/posts/dtd/)
+  - [XSD (XML Schema Definition)](/posts/xsd/)
+- UD05 -  [Conversión y adaptación de documentos XML](/posts/xsl)
+- UD06 - Almacenamiento de información
+  - XPath
+  - XQuery
+- UD07 - Sistemas de gestión empresarial
+
+- T09 - Obligatoria - Nota - [Tarea: DTD](/posts/tarea-dtd/)
+- T10 - Obligatoria - Nota - [Tarea: XSD](/posts/tarea-xsd/)
+- T11 - Tarea: XSLT
+- T12 - Tarea: XSL-FO
+- T13 - Tarea: XPath
+- T14 - Tarea: XQuery
+
 ## Evaluación 1
 
 - UD01 - Reconocimiento de las características de lenguajes de marcas
@@ -19,33 +37,15 @@ pin: true
 - UD03 - Aplicación de los lenguajes de marcas a la sindicación de contenidos
   - [Sindicación de contenidos](/posts/sindicacion-contenidos/)
 
-- T00 (Voluntaria recomendada) - [El formato SVG](/posts/tarea-formato-svg/)
-- T01 - [Tarea: Introducción a XML](/posts/tarea-introduccion-xml/)
-- T02 - [Tarea: Introducción a HTML](/posts/practica-html/)
-- T03 (Voluntaria recomendada) - [Tarea: HTML en freeCodeCamp](/posts/practica-html-freecodecamp/)
-- T04 (Voluntaria) - [Tarea: HTML en W3Schools](/posts/practica-html-w3schools/)
+- T00 - Voluntaria recomendada - Apto/No apto - [El formato SVG](/posts/tarea-formato-svg/)
+- T01 - Obligatoria - Apto/No apto - [Tarea: Introducción a XML](/posts/tarea-introduccion-xml/)
+- T02 - Obligatoria - Nota - [Tarea: Introducción a HTML](/posts/practica-html/)
+- T03 - Voluntaria recomendada - Apto/No apto - [Tarea: HTML en freeCodeCamp](/posts/practica-html-freecodecamp/)
+- T04 - Voluntaria - Apto/No apto - [Tarea: HTML en W3Schools](/posts/practica-html-w3schools/)
 - T05 - [Tarea: CSS en freeCodeCamp](/posts/practica-css-freecodecamp/)
-- T06 (Voluntaria) - [Tarea: CSS en W3Schools](/posts/practica-css-w3schools/)
-- T07 - [Tarea: CSS en Codepip](/posts/practica-css-codepip/)
-- T08 - [Tarea: Calculadora con HTML y CSS](/posts/tarea-calculadora-html-css/)
-
-## Evaluación 2
-
-- UD04 - Definición de esquemas y vocabularios en XML
-  - [DTD (Document Type Definition)](/posts/dtd/)
-  - [XSD (XML Schema Definition)](/posts/xsd/)
-- UD05 -  [Conversión y adaptación de documentos XML](/posts/xsl)
-- UD06 - Almacenamiento de información
-  - XPath
-  - XQuery
-- UD07 - Sistemas de gestión empresarial
-
-- T09 - [Tarea: DTD](/posts/tarea-dtd/)
-- T10 - [Tarea: XSD](/posts/tarea-xsd/)
-- T11 - Tarea: XSLT
-- T12 - Tarea: XSL-FO
-- T13 - Tarea: XPath
-- T14 - Tarea: XQuery
+- T06 - Voluntaria - Apto/No apto - [Tarea: CSS en W3Schools](/posts/practica-css-w3schools/)
+- T07 - Obligatoria - Apto/No apto -[Tarea: CSS en Codepip](/posts/practica-css-codepip/)
+- T08 - Obligatoria - Nota -[Tarea: Calculadora con HTML y CSS](/posts/tarea-calculadora-html-css/)
 
 ## Enlaces increíbles 🔥 (beta)
 
