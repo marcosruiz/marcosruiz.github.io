@@ -19,7 +19,7 @@ La tarea se calificará como apto o no apto.
 {:.activity}
 ### Experimentación con TensorFlow Playground
 
-TensorFlow Playground es una aplicación web de visualización interactiva, escrita en JavaScript, que nos permite simular redes neuronales densamente conectadas que se ejecutan en nuestro navegador y ver los resultados en tiempo real.
+[TensorFlow Playground](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.25548&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false) es una aplicación web de visualización interactiva, escrita en JavaScript, que nos permite simular redes neuronales densamente conectadas que se ejecutan en nuestro navegador y ver los resultados en tiempo real.
 
 Permite añadir hasta 6 capas internas con hasta 8 neuronas por capa. Al entrenar la red neuronal, vemos si lo estamos consiguiendo o no por la métrica de “Training loss”, es decir, por la función de pérdida para los datos de entrenamiento. Posteriormente, para comprobar que el modelo generaliza, se debe conseguir también minimizar la “Test loss”, es decir, el error calculado por la función de pérdida para los datos de test.
 
@@ -42,3 +42,4 @@ Conclusiones:
 
 - <https://github.com/ageron/handson-ml3>
 - <https://www.khanacademy.org/>
+- <https://playground.tensorflow.org>

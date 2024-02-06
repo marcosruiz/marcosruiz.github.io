@@ -13,7 +13,9 @@ pin: true
 4. Casos prácticos de aplicación.
 5. Técnicas avanzadas y evaluación del modelo.
 
-- T05 - [Tarea: Pandas](/posts/tarea-pandas-knn-reg-lineal/)
+- T05 - [Tarea: Pandas, KNN y Regresión Lineal](/posts/tarea-pandas-knn-reg-lineal/)
+
+- Trabajo en progreso: [Tarea: Tensorflow Playground](/posts/tarea-tensorflow-playground/)
 
 ## Evaluación 1
 
