@@ -12,7 +12,8 @@ pin: true
 - UD4 - Legislación y jurisprudencia en materia de protección de datos.
 - UD5 - Normativa vigente de ciberseguridad de ámbito nacional e internacional.
 
-- T05
+- T05 - Voluntaria - Apto/No apto - [Tarea: Legislación sobre protección de datos](/posts/tarea-legislacion-proteccion-datos)
+- T06 - Obligatoria - Nota - [Tarea: Legislación sobre protección de datos](/posts/tarea-legislacion-proteccion-datos/)
 
 ## Evaluación 1
 
@@ -20,10 +21,10 @@ pin: true
 - UD2 - Diseño de sistemas de gestión de cumplimiento normativo.
 - UD3 - Legislación para el cumplimiento de la responsabilidad penal.
 
-- T01 (Obligatoria) - [Tarea: Introducción al cumplimiento normativo](/posts/tarea-introduccion-cumplimiento-normativo)
-- T02 (Voluntaria) - [Tarea: Sistemas de Gestión de Compliance](/posts/tarea-sistemas-gestion-compliance/)
-- T03 (Voluntaria) - [Tarea: Legislación para el cumplimiento de la responsabilidad penal](/posts/tarea-cumplimiento-responsabilidad-penal)
-- T04 (Obligatoria) - Test EV1
+- T01 - Obligatoria - Apto/No apto - [Tarea: Introducción al cumplimiento normativo](/posts/tarea-introduccion-cumplimiento-normativo)
+- T02 - Voluntaria - Apto/No apto - [Tarea: Sistemas de Gestión de Compliance](/posts/tarea-sistemas-gestion-compliance/)
+- T03 - Voluntaria - Apto/No apto - [Tarea: Legislación para el cumplimiento de la responsabilidad penal](/posts/tarea-cumplimiento-responsabilidad-penal)
+- T04 - Obligatoria - Nota - Test EV1
 
 ## Enlaces increíbles 🔥 (beta)
 

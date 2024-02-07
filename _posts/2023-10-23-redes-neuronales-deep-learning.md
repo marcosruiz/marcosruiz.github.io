@@ -98,17 +98,9 @@ Link muy explicativo sobre los diferentes tipos de funciones de activación: <ht
 {:.subsubsection}
 #### Función de activación Softmax
 
-En la teoría de la probabilidad, la salida de la función softmax se puede utilizar para
-representar una distribución categórica, es decir, una distribución de probabilidad sobre
-K diferentes resultados posibles. Por tanto, la función softmax se utiliza para
-clasificación multiclase. Podríamos considerar la función softmax como una
-generalización de la función sigmoid que permite clasificar más de dos clases. La función
-de activación softmax nos garantiza que todas las probabilidades estimadas son entre 0 y
-1 y que suman 1.
+En la teoría de la probabilidad, la salida de la función softmax se puede utilizar para representar una distribución categórica, es decir, una distribución de probabilidad sobre K diferentes resultados posibles. Por tanto, la función softmax se utiliza para clasificación multiclase. Podríamos considerar la función softmax como una generalización de la función sigmoid que permite clasificar más de dos clases. La función de activación softmax nos garantiza que todas las probabilidades estimadas son entre 0 y 1 y que suman 1.
 
-A nivel matemático, softmax usa el valor exponencial de las evidencias calculadas y,
-luego, las normaliza de modo que sumen uno, formando una distribución de
-probabilidad.
+A nivel matemático, softmax usa el valor exponencial de las evidencias calculadas y, luego, las normaliza de modo que sumen uno, formando una distribución de probabilidad.
 
 $$
 \sigma: \mathbb{R}^K \to [0,1]^K
