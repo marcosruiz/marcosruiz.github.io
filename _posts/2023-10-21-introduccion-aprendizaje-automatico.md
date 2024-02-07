@@ -78,6 +78,19 @@ _Línea del tiempo de la historia de la IA_
 - **Asistentes personales y chatbots**: Sistemas que utilizan NLP (Natural Language Processing) para mejorar la experiencia de usuario. Permiten una comunicación bidireccional coherente con seres humanos ya sea oral o escrita. Ejemplos: Alexa, Siri...
 - **Videojuegos**: Sistemas capaces de predecir la actuación del humano y que permiten generar escenarios de juego realistas sin necesidad de haber sido programados específicamente.
 
+<details class="card mb-2">
+  <summary class="card-header">Más sobre NLP</summary>
+  <div class="card-body" markdown="1">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tg1MjMIVArc?si=fbG_fOxyE3W1BRmq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RkYuH_K7Fx4?si=Fz6dzyAWPpFCfi8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+
 {:.question}
 ¿Cuál es la estimación del volumen de datos que un coche autónomo puede generar anualmente?
 

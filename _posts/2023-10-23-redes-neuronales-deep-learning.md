@@ -118,6 +118,8 @@ _Ejemplo de la función de activación softmax_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7-6X3DTt3R8?si=oNIBKqKjjwAfyI2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZmLKqZYlYUI?si=tPIzowmxq1uiixnH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/elH6MOFtJJg?si=StWrxYuOonPgNabB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 {:.subsection}
@@ -222,6 +224,8 @@ Cuando todas las neuronas de una capa están conectadas con todas las neuronas d
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V8j1oENVz00?si=FxvcjOkicNFkhv64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ysqpl6w6Wzg?si=Gvc7SsHqcez37bN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4sWhhQwHqug?si=mJ_zGyRr9614UjMT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 - Las redes neuronales convolucionales (CNN) representan filtros anidados sobre datos organizados en cuadrículas. Son, con diferencia, el tipo de modelo más utilizado al procesar imágenes.
@@ -311,6 +315,10 @@ Las redes neuronales recurrentes permiten:
 #### Transformer Neural Networks
 
 Un reemplazo más moderno para los RNN/LSTM, la arquitectura del transformador permite el entrenamiento sobre conjuntos de datos más grandes que involucran secuencias de datos.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aL-EmKuB078?si=HL_VPl0QrvTlituH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xi94v_jl26U?si=xwnAImUsvwRliusm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 {:.subsubsection}
 #### Generative Adversarial Network (GAN)
@@ -419,6 +427,10 @@ Métricas para problemas de clasificación:
 
 {:.subsection}
 ### Descenso del gradiente
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A6FiCDoz8_4?si=ZNN_y9eIB5PAuMSR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-_A_AAxqzCg?si=Lfn42fSem5v9IhqF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 El descenso de gradiente es un algoritmo de optimización de primer orden.
 
