@@ -14,6 +14,7 @@ pin: true
 - UD5 - Técnicas avanzadas y evaluación del modelo.
 
 - T05 - Obligatoria - Apto/No apto - [Tarea: Pandas, KNN y Regresión Lineal](/posts/tarea-pandas-knn-reg-lineal/)
+- T06 - Voluntaria - Apto/No apto - [Tarea: BigML](/posts/tarea-big-ml/)
 
 - [Tarea: Tensorflow Playground](/posts/tarea-tensorflow-playground/)
   - [Tutorial: Tensorflow Playground](/posts/tutorial-tensorflow-playground/)
