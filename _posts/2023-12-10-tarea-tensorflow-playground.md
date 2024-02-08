@@ -57,16 +57,16 @@ Encontrar la estructura mínima necesaria para lograr una clasificación exitosa
 
 Encontrar una estructura de red neuronal profunda que logre un modelo de clasificación exitoso para el dataset "spiral".
 
-> 📷 Efectúa captura de pantalla de, al menos, la estructura mínima óptima que consideres (aunque también puedes añadir las de las diferentes pruebas que vayas haciendo). Deberá verse la fecha y hora en la barra de inicio.
-{:.prompt-info}
-
 > En este caso, que es más complicado, es probable que necesites incorporar algún parámetro de entrada más. Pues por muchas capas y neuronas que incluyas, y por muchas iteraciones (o tiempo de entrenamiento) que dejes pasar, va a ser muy complicado que el entrenamiento proporcione un modelo sin errores. Por ejemplo, en este caso, se aproxima bastante, pero hay algunas áreas con puntos del color contrario y además se observa una inestabilidad importante en la corrección de los parámetros erróneos (gráfica de arriba a la derecha).
 > 
-> ![imgDescription](ejemploTensorflowEspiral.png)
-> _imgDescription_
+> ![Entrenamiento inestable en Tensorflow Playground](ejemploTensorflowEspiral.png)
+> _Entrenamiento inestable en Tensorflow Playground_
 > 
-> Te recomendamos que incluyas algún parámetro de entrada tipo "sin"
+> Te recomiendo que incluyas algún parámetro de entrada tipo "sin"
 {:.prompt-tip}
+
+> 📷 Efectúa captura de pantalla de, al menos, la estructura mínima óptima que consideres (aunque también puedes añadir las de las diferentes pruebas que vayas haciendo). Deberá verse la fecha y hora en la barra de inicio.
+{:.prompt-info}
 
 ## Bibliografía
 
