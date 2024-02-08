@@ -14,10 +14,11 @@ pin: true
 - UD5 - Técnicas avanzadas y evaluación del modelo.
 
 - T05 - Obligatoria - Apto/No apto - [Tarea: Pandas, KNN y Regresión Lineal](/posts/tarea-pandas-knn-reg-lineal/)
-- T06 - Voluntaria - Apto/No apto - [Tarea: BigML](/posts/tarea-big-ml/)
 
-- [Tarea: Tensorflow Playground](/posts/tarea-tensorflow-playground/)
+- TXX - Obligatoria - Apto/No apto - [Tarea: Tensorflow Playground](/posts/tarea-tensorflow-playground/)
   - [Tutorial: Tensorflow Playground](/posts/tutorial-tensorflow-playground/)
+- TXX - Voluntaria - Apto/No apto - [Tarea: Tarea: Introducción a BigML](/posts/tarea-introduccion-big-ml/)
+- TXX - Voluntaria - Apto/No apto - [Tarea: Matriz de confusión en BigML](/posts/tarea-matriz-confusion-big-ml)
 
 ## Evaluación 1
 

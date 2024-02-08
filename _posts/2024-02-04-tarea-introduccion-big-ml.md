@@ -1,5 +1,5 @@
 ---
-title: "Tarea: BigML"
+title: "Tarea: Introducción a BigML"
 date: 2024-02-04 9:00:00 +0100
 categories: [Inteligencia Artificial y Big Data, Sistemas de aprendizaje automático]
 tags: [inteligencia artificial y big data, sistemas de aprendizaje automático]
@@ -69,7 +69,7 @@ Te pedimos que utilices la plataforma BigML, tal como se ha explicado en el caso
 {:.activity}
 ### Comparativa de herramientas
 
-Haz una breve comparativa entre las plataformas de aprendizaje automático y minería de datos de BigML, Rapid Miner y KNIME. ¿Con cuál de las tres plataformas te decidirías si tuvieses que usar una? ¿Por qué?
+Haz una breve comparativa entre las plataformas de aprendizaje automático y minería de datos de BigML, RapidMiner y KNIME. ¿Con cuál de las tres plataformas te decidirías si tuvieses que usar una? ¿Por qué?
 
 ## Bibliografía
 
