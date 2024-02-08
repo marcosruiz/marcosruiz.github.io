@@ -24,7 +24,7 @@ mruizg_t05.zip
 
 ## Calificación
 
-La tarea se calificará como apto o no apto.
+La tarea se calificará con una nota de 0 a 10.
 
 ## Actividades
 

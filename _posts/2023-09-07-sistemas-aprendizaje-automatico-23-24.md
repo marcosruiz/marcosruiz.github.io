@@ -13,7 +13,7 @@ pin: true
 - UD4 - Casos prácticos de aplicación.
 - UD5 - Técnicas avanzadas y evaluación del modelo.
 
-- T05 - Obligatoria - Apto/No apto - [Tarea: Pandas, KNN y Regresión Lineal](/posts/tarea-pandas-knn-reg-lineal/)
+- T05 - Obligatoria - Nota - [Tarea: Pandas, KNN y Regresión Lineal](/posts/tarea-pandas-knn-reg-lineal/)
 
 - TXX - Obligatoria - Apto/No apto - [Tarea: Tensorflow Playground](/posts/tarea-tensorflow-playground/)
   - [Tutorial: Tensorflow Playground](/posts/tutorial-tensorflow-playground/)
