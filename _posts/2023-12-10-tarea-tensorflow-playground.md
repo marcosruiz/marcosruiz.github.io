@@ -16,17 +16,15 @@ La tarea se calificará como apto o no apto.
 
 ## Actividades
 
-{:.activity}
-### DotCSV
+Realiza las siguientes actividades.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FVozZVUNOOA?si=z7hqXGpSkSG1l9iL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{:.activity}
+### (Voluntaria) Tutorial
+
+Lee el artículo [Tutorial: Tensorflow Playground](/posts/tutorial-tensorflow-playground/) para que esta tarea tenga sentido.
 
 {:.activity}
 ### Experimentación con TensorFlow Playground
-
-[TensorFlow Playground](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.25548&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false) es una aplicación web de visualización interactiva, escrita en JavaScript, que nos permite simular redes neuronales densamente conectadas que se ejecutan en nuestro navegador y ver los resultados en tiempo real.
-
-Permite añadir hasta 6 capas internas con hasta 8 neuronas por capa. Al entrenar la red neuronal, vemos si lo estamos consiguiendo o no por la métrica de “Training loss”, es decir, por la función de pérdida para los datos de entrenamiento. Posteriormente, para comprobar que el modelo generaliza, se debe conseguir también minimizar la “Test loss”, es decir, el error calculado por la función de pérdida para los datos de test.
 
 Propuestas de cambios:
 
@@ -42,6 +40,33 @@ Conclusiones:
 
 - Pocas neuronas en las capas ocultas provocarán infraajuste o underfitting.
 - Demasiadas neuronas en las capas ocultas provocarán overfitting (la red neuronal tiene más capacidad de procesamiento de información que la cantidad de información contenida en el conjunto de entrenamiento que no es suficiente para entrenar a todas las neuronas de las capas ocultas) y mucho más tiempo de procesamiento.
+
+> 📷 Haz una o varias capturas para demostrar que la actividad ha sido realizada satisfactoriamente por ti. Deberá verse la fecha y hora en la barra de inicio.
+{:.prompt-info}
+
+{:.activity}
+### Dataset circle
+
+Encontrar la estructura mínima necesaria para lograr una clasificación exitosa del data set "circle".
+
+> 📷 Efectúa captura de pantalla de, al menos, la estructura mínima óptima que consideres (aunque también puedes añadir las de las diferentes pruebas que vayas haciendo). Deberá verse la fecha y hora en la barra de inicio.
+{:.prompt-info}
+
+{:.activity}
+### Dataset spiral
+
+Encontrar una estructura de red neuronal profunda que logre un modelo de clasificación exitoso para el dataset "spiral".
+
+> 📷 Efectúa captura de pantalla de, al menos, la estructura mínima óptima que consideres (aunque también puedes añadir las de las diferentes pruebas que vayas haciendo). Deberá verse la fecha y hora en la barra de inicio.
+{:.prompt-info}
+
+> En este caso, que es más complicado, es probable que necesites incorporar algún parámetro de entrada más. Pues por muchas capas y neuronas que incluyas, y por muchas iteraciones (o tiempo de entrenamiento) que dejes pasar, va a ser muy complicado que el entrenamiento proporcione un modelo sin errores. Por ejemplo, en este caso, se aproxima bastante, pero hay algunas áreas con puntos del color contrario y además se observa una inestabilidad importante en la corrección de los parámetros erróneos (gráfica de arriba a la derecha).
+> 
+> ![imgDescription](ejemploTensorflowEspiral.png)
+> _imgDescription_
+> 
+> Te recomendamos que incluyas algún parámetro de entrada tipo "sin"
+{:.prompt-tip}
 
 ## Bibliografía
 
