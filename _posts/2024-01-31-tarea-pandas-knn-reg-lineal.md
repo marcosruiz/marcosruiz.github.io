@@ -78,7 +78,7 @@ Lee el artículo [Análisis Exploratorio de Datos con Pandas en Python](https://
 1. ¿Qué significan las siglas EDA?
 1. ¿Qué es el EDA en ML?
 1. ¿Qué librería de Python podemos usar para llevar a cabo el EDA?
-1. Dada la siguiente matriz de coorelación del artículo, ¿hay una alta o baja coorelación entre los datos?
+1. Dada la siguiente matriz de correlación del artículo, ¿hay una alta o baja correlación entre los datos?
 1. ¿Qué es un outlier?
 1. ¿Es importante tener en cuenta cuál es el propósito que buscamos lograr cuando llevamos a cabo el EDA?
 
@@ -98,9 +98,6 @@ Lee el artículo [Clasificar con K-Nearest-Neighbor ejemplo en Python](https://w
 {:.activity}
 ### KNN
 
-> Actividad pendiente de realizar por el profesor.
-{:.prompt-info}
-
 Dado el fichero `knn.ipynb`{: .filepath} , lee, ejecuta en tu máquina local y responde a las preguntas que aparecen a lo largo del mismo.
 
 {:.activity}
@@ -116,9 +113,6 @@ Lee el artículo [Regresión Lineal en español con Python](https://www.aprendem
 ### Regresión Lineal
 
 Dado el fichero `reg_lineal.ipynb`{: .filepath}, lee, ejecuta en tu máquina local y responde a las preguntas que aparecen a lo largo del mismo.
-
-> Actividad pendiente de realizar por el profesor.
-{:.prompt-info}
 
 ## Bibliografía
 
