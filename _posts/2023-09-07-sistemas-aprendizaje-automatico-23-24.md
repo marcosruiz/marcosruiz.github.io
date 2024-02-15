@@ -10,7 +10,7 @@ pin: true
 ## Evaluación 2
 
 - UD3 - [Redes neuronales y Deep Learning](/posts/redes-neuronales-deep-learning)
-- UD4 - Casos prácticos de aplicación.
+- UD4 - [Casos prácticos de aplicación](/posts/casos-practicos-sobre-aprendizaje-automatico)
 - UD5 - Técnicas avanzadas y evaluación del modelo.
 
 - T05 - Obligatoria - Nota - [Tarea: Pandas, KNN y Regresión Lineal](/posts/tarea-pandas-knn-reg-lineal/)
