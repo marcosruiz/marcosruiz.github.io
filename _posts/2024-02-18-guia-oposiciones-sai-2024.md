@@ -1,8 +1,8 @@
 ---
 title: "Guía oposiciones SAI 2024"
-date: 2024-02-14 9:00:00 +0100
+date: 2024-02-18 9:00:00 +0100
 categories: [General]
-tags: [aragón, oposiciones, 2024]
+tags: [aragon, oposiciones, 2024]
 img_path: /assets/img/guia-oposiciones-sai-2024/
 ---
 

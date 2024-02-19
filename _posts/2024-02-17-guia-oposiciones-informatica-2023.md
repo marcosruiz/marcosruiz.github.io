@@ -1,8 +1,8 @@
 ---
 title: "Guía oposiciones INFORMÁTICA 2023"
-date: 2024-02-14 9:00:00 +0100
+date: 2024-02-17 9:00:00 +0100
 categories: [General]
-tags: [aragón, oposiciones, 2024]
+tags: [aragon, oposiciones, 2023]
 img_path: /assets/img/guia-oposiciones-informatica-2023/
 ---
 
