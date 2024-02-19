@@ -2,7 +2,7 @@
 title: "Guía oposiciones INFORMÁTICA 2023"
 date: 2024-02-17 9:00:00 +0100
 categories: [General]
-tags: [aragon, oposiciones, 2023]
+tags: [aragon, oposiciones]
 img_path: /assets/img/guia-oposiciones-informatica-2023/
 ---
 
@@ -170,39 +170,36 @@ Con esto tuve un 66.10% de probabilidades de que salga al menos uno de los temas
 
 ## Unidad Didáctica
 
-### Módulos profesionales asociados a la especialidad de Sistemas y aplicaciones informáticas
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué módulo profesional elegí?</summary>
+  <div class="card-body" markdown="1">
+
+- Seguridad Informática
+
+Material propio:
+
+- [Práctica: Moodle](https://marcosruiz.github.io/posts/practica-moodle/)
+- [Tutorial: Instalar Ubuntu Server 22.04](https://marcosruiz.github.io/posts/tutorial-ubuntu-server-22-04/)
+- [Sistemas de gestión de aprendizaje a distancia](https://marcosruiz.github.io/posts/sistemas-gestion-aprendizaje-distancia/)
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+### Módulos profesionales asociados a la especialidad de Informática
 
 Sistemas Microinformáticos y Redes:
 
-- Montaje y mantenimiento de equipos (1º)
-- Sistemas operativos monopuesto (1º)
-- Aplicaciones ofimáticas (1º)
-- Sistemas operativos en red (2º)
-
 Administración de Sistemas Informáticos en Red:
-
-- Implantación de sistemas operativos (1º)
-- Fundamentos de hardware (1º)
-- Administración de sistemas operativos (2º)
 
 Desarrollo de Aplicaciones Multiplataforma:
 
-- Sistemas informáticos (1º)
-- Desarrollo de interfaces (2º)
-- Sistemas de gestión empresarial (2º)
-
 Desarrollo de Aplicaciones Web:
 
-- Desarrollo web en entorno cliente (2º)
-- Diseño de interfaces web (2º)
+ESO:
 
-### ¿Qué módulo profesional elijo?
+Bachiller:
 
-- Diseño de interfaces web
-- Código: 0615
-- Duración: 126 horas
-
-UF0615_13. Planificación y creación de interfaces web.
 
 ### Consejos
 
