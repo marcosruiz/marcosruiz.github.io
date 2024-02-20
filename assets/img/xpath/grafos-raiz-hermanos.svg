@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="323.6" height="231.1" viewBox="0 0 85.617171 61.132705">
+  <defs>
+    <marker id="b" orient="auto" overflow="visible">
+      <path fill="red" fill-rule="evenodd" stroke="red" stroke-width=".4" d="M-5.2-2.4L1.3 0l-6.5 2.4c1-1.4 1-3.4 0-4.8z" font-size="12" stroke-linejoin="round"/>
+    </marker>
+    <marker id="d" orient="auto" overflow="visible">
+      <path fill="red" fill-rule="evenodd" stroke="red" stroke-width=".4" d="M-5.2-2.4L1.3 0l-6.5 2.4c1-1.4 1-3.4 0-4.8z" font-size="12" stroke-linejoin="round"/>
+    </marker>
+    <marker id="c" orient="auto" overflow="visible">
+      <path fill="red" fill-rule="evenodd" stroke="red" stroke-width=".4" d="M-5.2-2.4L1.3 0l-6.5 2.4c1-1.4 1-3.4 0-4.8z" font-size="12" stroke-linejoin="round"/>
+    </marker>
+    <marker id="a" orient="auto" overflow="visible">
+      <path fill-rule="evenodd" stroke-width=".6" d="M-5.2-2.4L1.3 0l-6.5 2.4c1-1.4 1-3.4 0-4.8z" font-size="12" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <g transform="translate(166.43706,-87.13119)">
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-139.4 123.4l4 4.6" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-134.7 112c-1.3 1.3-3 3-4 4.3" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-128 112.3c1 1.5 2.7 3.2 4 4.6" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-117.3 124c1 1.4 2.3 2.7 3.4 4" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-131.5 98.3v5.5" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-145.6 123.4l-4 4.6" font-family="Times-Roman" marker-end="url(#a)"/>
+    <circle cx="-43.9" cy="166.5" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(25.251724)" font-family="Times-Roman"/>
+    <circle cx="37.5" cy="182.7" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <circle cx="21.8" cy="185.1" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <circle cx="34.1" cy="167.1" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <circle cx="18.4" cy="169.6" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <circle cx="5.7" cy="161.3" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <circle cx="194.4" cy="-55.3" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="matrix(-0.5502976,0.83496859,0.83496859,0.5502976,0,0)" font-family="Times-Roman"/>
+    <text x="-160.7" y="146.9" stroke-width=".3" style="line-height:0%" font-size="4.2" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="-160.7" y="146.9" style="line-height:1.25" font-size="4.9">Nodos hermanos</tspan>
+    </text>
+    <path fill="red" stroke="red" stroke-width=".4" d="M-148 142.7l-2-5" marker-end="url(#b)"/>
+    <path fill="red" stroke="red" stroke-width=".4" d="M-115.2 110.3l-1.7 5" marker-end="url(#c)"/>
+    <path fill="red" stroke="red" stroke-width=".4" d="M-120.2 110l-16 7.7" marker-end="url(#d)"/>
+    <text x="-165.6" y="103.3" stroke-width=".3" style="line-height:0%" font-size="4.2" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="-165.6" y="103.3" style="line-height:1.25" font-size="4.9">Nodo raíz</tspan>
+    </text>
+    <path fill="red" stroke="red" stroke-width=".4" d="M-144.3 99.2l6.4-2.8" marker-end="url(#b)"/>
+    <path fill="red" stroke="red" stroke-width=".4" d="M-136.7 142.7l2-5" marker-end="url(#b)"/>
+    <text x="-123.2" y="108.9" stroke-width=".3" style="line-height:0%" font-size="4.2" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="-123.2" y="108.9" style="line-height:1.25" font-size="4.9">Nodos hermanos</tspan>
+    </text>
+  </g>
+</svg>

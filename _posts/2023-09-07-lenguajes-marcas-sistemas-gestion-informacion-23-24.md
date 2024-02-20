@@ -13,9 +13,11 @@ pin: true
   - [DTD (Document Type Definition)](/posts/dtd/)
   - [XSD (XML Schema Definition)](/posts/xsd/)
 - UD05 -  [Conversión y adaptación de documentos XML](/posts/xsl)
+  - [¿Qué es XSLT?](/posts/xslt/)
+  - [¿Qué es XSL-FO?](/posts/xslfo/)
+  - [¿Qué es XPath?](/posts/xpath/)
 - UD06 - Almacenamiento de información
-  - XPath
-  - XQuery
+  - [¿Qué es XQuery?](/posts/xquery/)
 - UD07 - Sistemas de gestión empresarial
 
 - T09 - Obligatoria - Nota - [Tarea: DTD](/posts/tarea-dtd/)
