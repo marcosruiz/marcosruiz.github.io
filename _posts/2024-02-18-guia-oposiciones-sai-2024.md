@@ -6,6 +6,7 @@ tags: [aragon, oposiciones]
 img_path: /assets/img/guia-oposiciones-sai-2024/
 ---
 
+{:.section}
 ## Introducción
 
 Esto es una guía para preparar mis oposiciones pero seguro que puede servir para las oposiciones de cualquiera. Siéntete libre de robarme las ideas.
@@ -21,6 +22,7 @@ Distribución de partes de la oposición:
 1. B2: Parte práctica (25%)
 1. B1: Unidad Didáctica (25%)
 
+{:.section}
 ## Fechas y lugar de oposiciones
 
 Las fechas son las siguientes:
@@ -28,10 +30,13 @@ Las fechas son las siguientes:
 - Presentación de solicitudes via Paddoc: 8 de febrero a 27 de febrero de 2024.
 - Parte teórica y parte práctica: 22 de junio de 2024 en Zaragoza.
 
+{:.section}
 ## Parte teórica: Desarrollo del tema
 
+{:.subsection}
 ### Temario completo por bloques
 
+{:.subsubsection}
 #### Bloque 01 – Información, Hardware, Arquitectura
 
 - Tema 01. Representación y comunicación de la información.
@@ -43,6 +48,7 @@ Las fechas son las siguientes:
 - Tema 07. Dispositivos periféricos de entrada/salida. Características y funcionamiento.
 - Tema 08. Componentes hardware comerciales de un ordenador. Placa base. Tarjetas controladoras de dispositivo y de entrada/salida.
 
+{:.subsubsection}
 #### Bloque 02 – Los Datos, Representación Interna Y Organización Lógica
 
 - Tema 09. Lógica de circuitos. Circuitos combinacionales y secuenciales.
@@ -50,11 +56,13 @@ Las fechas son las siguientes:
 - Tema 11. Organización lógica de los datos. Estructuras estáticas.
 - Tema 12. Organización lógica de los datos. Estructuras dinámicas.
 
+{:.subsubsection}
 #### Bloque 03 – Ficheros
 
 - Tema 13. Ficheros. Tipos. Características. Organizaciones.
 - Tema 14. Utilización de ficheros según su organización.
 
+{:.subsubsection}
 #### Bloque 04 – Sistemas Operativos
 
 - Tema 15. Sistemas operativos. Componentes. Estructura. Funciones. Tipos.
@@ -65,12 +73,14 @@ Las fechas son las siguientes:
 - Tema 20. Explotación y administración de un Sistema Operativo Monousuario.
 - Tema 21. Explotación y administración de un Sistema Operativo Multiusuario.
 
+{:.subsubsection}
 #### Bloque 05 – Sistemas Informáticos
 
 - Tema 22. Sistemas informáticos. Estructura física y funcional.
 - Tema 23. Instalación de un sistema informático. Entorno. Elementos. Conexión. Configuración. Medidas de seguridad.
 - Tema 24. Planificación y explotación de un Sistema Informático.
 
+{:.subsubsection}
 #### Bloque 06 – Algoritmos Y Programación
 
 - Tema 25. Diseño de algoritmos. Técnicas descriptivas.
@@ -85,6 +95,7 @@ Las fechas son las siguientes:
 - Tema 34. Lenguaje C: Características generales. Elementos del lenguaje. Estructura de un programa. Funciones de librería y usuario. Entorno de compilación. Herramientas para la elaboración y depuración de programas en lenguaje C.
 - Tema 35. Lenguaje C: Manipulación de estructuras de datos dinámicas y estáticas. Entrada y salida de datos. Gestión de punteros. Punteros a funciones. Gráficos en C.
 
+{:.subsubsection}
 #### Bloque 07 – Bases De Datos
 
 - Tema 36. Sistemas gestores de bases de datos. Funciones. Componentes. Arquitectura de referencia y operacionales. Tipos de sistemas.
@@ -92,6 +103,7 @@ Las fechas son las siguientes:
 - Tema 38. Lenguajes para definición y manipulación de datos en sistemas de bases de datos relacionales. Tipos. Características. Lenguaje SQL.
 - Tema 39. Desarrollo de aplicaciones mediante bases de datos relacionales.
 
+{:.subsubsection}
 #### Bloque 08 – Sistemas De Información Y Aplicaciones informáticas
 
 - Tema 40. Explotación automática de documentación administrativa.
@@ -99,6 +111,7 @@ Las fechas son las siguientes:
 - Tema 42. Instalación y explotación de aplicaciones informáticas.
 - Tema 43. Utilización compartida de recursos, ficheros y datos entre aplicaciones informáticas.
 
+{:.subsubsection}
 #### Bloque 09 – Ingeniería Del Software, Análisis Y Diseño
 
 - Tema 44. Análisis y diseño de aplicaciones informáticas.
@@ -110,6 +123,7 @@ Las fechas son las siguientes:
 - Tema 50. Calidad y documentación en entornos gráficos.
 - Tema 51. Ayudas automatizadas para el desarrollo de software (herramientas CASE). Tipos. Estructura. Prestaciones.
 
+{:.subsubsection}
 #### Bloque 10 – Redes Y Comunicaciones
 
 - Tema 52. Sistemas en red. Tipos. Componentes y topologías.
@@ -127,6 +141,7 @@ Las fechas son las siguientes:
 - Tema 64. Explotación y administración de sistemas en red.
 - Tema 65. Análisis comparativo entre un sistema operativo multiusuario y un sistema en red.
 
+{:.subsection}
 ### Preguntas frecuentes
 
 <details class="card mb-2">
@@ -142,7 +157,7 @@ Haciendo click en [este enlace](https://www.opositatest.com/calcular-probabilida
   - Bloque 07 – Bases De Datos
   - Bloque 10 – Redes Y Comunicaciones (Ya lo tengo de INF)
 
-Con esto tendría un 93.42% de probabilidades de que salga al menos uno de los temas que estudiaste.
+Con esto tendría un 93.42% de probabilidades de que salga al menos uno de los temas que voy a estudiar.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -168,6 +183,7 @@ No lo sé.
   </div>
 </details>
 
+{:.subsection}
 ### Consejos
 
 1. Haz referencia a la ley en la introducción.
@@ -175,8 +191,10 @@ No lo sé.
 1. Haz simulacros de examen para ponerte a prueba.
 1. Estudia una pequeña bibliografía por bloques de contenido. No te vas a estudiar más de 4 bloques por lo que no debería ser un problema.
 
+{:.subsection}
 ### Rúbricas
 
+{:.subsection}
 ### Enlaces a temarios de oposición
 
 - [MistikEdu: Material Oposiciones SAI (2021)](https://mistikedu.notion.site/Material-Oposiciones-SAI-2021-0f284df50a4d48a4be9260f0125c24b3)
@@ -186,8 +204,10 @@ No lo sé.
 - [Temario burningthetowers](https://nube.burningthetowers.com/oposiciones/Temario/EPO/)
 - [Temario cifprodolfoucha](https://wiki.cifprodolfoucha.es/index.php?title=A2_Sistemas_y_aplicaciones_inform%C3%A1ticas)
 
+{:.section}
 ## Unidad Didáctica
 
+{:.subsection}
 ### Módulos profesionales asociados a la especialidad de Sistemas y aplicaciones informáticas
 
 Sistemas Microinformáticos y Redes:
@@ -214,6 +234,7 @@ Desarrollo de Aplicaciones Web:
 - Desarrollo web en entorno cliente (2º)
 - Diseño de interfaces web (2º)
 
+{:.subsection}
 ### ¿Qué módulo profesional elijo?
 
 - Diseño de interfaces web
@@ -222,6 +243,7 @@ Desarrollo de Aplicaciones Web:
 
 UF0615_13. Planificación y creación de interfaces web.
 
+{:.subsection}
 ### Preguntas frecuentes
 
 <details class="card mb-2">
@@ -250,6 +272,7 @@ En caso de que no hayas dado ningún módulo profesional de la especialidad que 
   </div>
 </details>
 
+{:.subsection}
 ### Consejos
 
 1. Haz primero el esqueleto de la programación didáctica y los siguientes apartados desarrollados:
@@ -269,6 +292,7 @@ En caso de que no hayas dado ningún módulo profesional de la especialidad que 
 1. Usar metodología inductiva.
 1. Si puedes llevar una hoja, haz dos columnas y utiliza colores para diferenciar los apartados y subapartados.
 
+{:.subsection}
 ### Enlaces de interés para la elaboración de la UD
 
 - [CÓMO ELABORAR UNA SITUACIÓN DE APRENDIZAJE / UNIDAD DIDÁCTICA. OPOSICIONES 2024-2025](https://www.econosublime.com/2017/12/como-hacer-unidad-didactica-oposiciones.html)
