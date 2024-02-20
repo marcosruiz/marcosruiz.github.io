@@ -192,7 +192,42 @@ No lo sé.
 1. Estudia una pequeña bibliografía por bloques de contenido. No te vas a estudiar más de 4 bloques por lo que no debería ser un problema.
 
 {:.subsection}
-### Rúbricas
+### Rúbricas de años anteriores
+
+{:.subsubsection}
+#### Rúbrica del año 2023 en Aragón (107 - INFORMÁTICA)
+
+- Conocimiento científico, profundo y actualizado del tema. 8,2 puntos.
+  - Domina el contenido epistemológico de la especialidad. Utiliza los conceptos con precisión, rigor y de forma actualizada. 7,8 puntos.
+  - Aporta citas bibliográficas o bibliografía actualizadas. 0,2 puntos.
+  - Aporta referencias legislativas actualizadas. 0,2 puntos.
+- Estructura del tema, desarrollo completo y originalidad en el planteamiento. 1,3 puntos.
+  - El tema presenta una estructura coherente -índice, planteamiento, desarrollo, conclusiones- que facilita su comprensión. 0,4 puntos.
+  - El tema se ajusta al temario de la especialidad, desarrollando cada uno de sus epígrafes de forma concreta y clara y se cierra de forma coherente con su desarrollo. 0,4 puntos.
+  - Utiliza ejemplos aclaratorios y/o aplicaciones prácticas. 0,5 puntos.
+- Redacción del tema
+  - La expresión escrita es legible. 0,1 puntos.
+  - Utiliza correctamente la lengua, ortografía y la puntuación. 0,2 puntos.
+  - La presentación es adecuada. 0,2 puntos.
+
+{:.subsubsection}
+#### Rúbrica del año 2021 en Canarias (107 - INFORMÁTICA)
+
+- Estructura y organización del tema. 2 puntos.
+  - Inclusión de un índice, de una introducción y de una conclusión.
+  - Adecuada estructuración del tema.
+  - Tratamiento equilibrado de todos los apartados del tema en función de su relevancia.
+  - Presencia y adecuada coherencia en la interrelación de todos los apartados desarrollados.
+- Desarrollo, planteamiento del contenido y rigor científico.
+  - Exposición y argumentación, con precisión y rigor científico, de los contenidos más relevantes, demostrando un conocimiento profundo y actualizado del tema.
+  - Utilización de un vocabulario técnico adecuado: precisión terminológica.
+  - Conclusión final personal y coherente con el desarrollo.
+  - Cita de aspectos históricos, autores o autoras, y referencias bibliográficas y webs, relacionados con el tema.
+- Desarrollo, planteamiento del contenido y rigor científico.
+  - Exposición y argumentación, con precisión y rigor científico, de los contenidos más relevantes, demostrando un conocimiento profundo y actualizado del tema.
+  - Utilización de un vocabulario técnico adecuado: precisión terminológica.
+  - Conclusión final personal y coherente con el desarrollo.
+  - Cita de aspectos históricos, autores o autoras, y referencias bibliográficas y webs, relacionados con el tema.
 
 {:.subsection}
 ### Enlaces a temarios de oposición
@@ -205,9 +240,31 @@ No lo sé.
 - [Temario cifprodolfoucha](https://wiki.cifprodolfoucha.es/index.php?title=A2_Sistemas_y_aplicaciones_inform%C3%A1ticas)
 
 {:.section}
-## Unidad Didáctica
+## Parte práctica: Problemas
 
 {:.subsection}
+### Consejos
+
+1. Leer ESPECIFICACIONES DE LA PRUEBA, aquí se indican los lenguajes en los que se programará.
+
+{:.subsection}
+### Rúbricas de años anteriores
+
+{:.subsubsection}
+#### Rúbrica del año Aragón 2023 (107 - INFORMÁTICA)
+
+- Contextualización. 0,4 puntos.
+- Objetivos de aprendizaje. 0,3 puntos.
+- Contenidos. 1,5 puntos.
+- Actividades de enseñanza-aprendizaje. 2,3 puntos.
+- Evaluación. 2,0 puntos.
+- Medidas de atención al alumnado con necesidades específicas de apoyo educativo. 0,5 puntos.
+- Exposición. 2,0 puntos.
+- Debate. 1,0 puntos.
+
+{:.section}
+## Unidad Didáctica
+
 ### Módulos profesionales asociados a la especialidad de Sistemas y aplicaciones informáticas
 
 Sistemas Microinformáticos y Redes:
@@ -291,6 +348,31 @@ En caso de que no hayas dado ningún módulo profesional de la especialidad que 
 1. Haz que la presentación sea diferente a todas las demás y que no sea aburrida. Enfócate en lo que más les pueda interesar.
 1. Usar metodología inductiva.
 1. Si puedes llevar una hoja, haz dos columnas y utiliza colores para diferenciar los apartados y subapartados.
+
+{:.subsection}
+### Rúbricas de años anteriores
+
+{:.subsubsection}
+#### Rúbrica del año Aragón 2023 (107 - INFORMÁTICA)
+
+- **Unidad de trabajo (50%)**:
+  - Relación de la unidad didáctica o de trabajo con el currículo, y contextualización.
+  - Apropiada justificación y contextualización de los elementos de la unidad didáctica o de trabajo,teniendo en cuenta las características del alumnado, del centro y del entorno; así como una adecuada relación con el proyecto educativo y la programación general anual del centro, en el que se contextualiza.
+  - Establecimiento de la debida relación de la unidad didáctica o de trabajo con respecto al resto de las unidades de programación planificada dentro del módulo profesional. Fundamentación curricular.
+  - Adecuada fundamentación curricular: idónea inclusión del desarrollo de las competencias profesionales,personales y sociales, de los resultados de aprendizaje y criterios de evaluación, de los contenidos con los que se relacionan y de la vinculación con el resto de los elementos del currículo.
+  - Exposición de diferentes tipos de evaluación, atendiendo al momento en que se realiza, a su finalidad ya quién la realiza (heteroevaluación, coevaluación, autoevaluación). Mención de los procedimientos utilizados para establecer los criterios de calificación (rúbricas, indicadores de logro de los resultados de aprendizaje, escalas de evaluación...)
+  - Presencia e idoneidad de aprendizajes, recursos o contextos referidos a la Comunidad Autónoma de Canarias Fundamentación metodológica, atención a la diversidad y otros aspectos.
+  - Adecuada fundamentación metodológica: coherencia entre la metodología y la secuencia de actividades de enseñanza-aprendizaje y evaluación, con los criterios de evaluación y los contenidos seleccionados para la unidad didáctica o de trabajo, teniendo en cuenta que se haya realizado una adecuada elección de la temporalización o número de sesiones, agrupamientos, recursos, espacios y productos o instrumentos de evaluación.
+  - Se valorará la mención y la correcta justificación de los principios y las estrategias para favorecer: el trabajo colaborativo, la integración de las tecnologías de la información y de la comunicación como recurso didáctico, relación con otras materias.
+  - Adecuada adaptación de al menos un 30% de las actividades planteadas en la unidad didáctica o de trabajo a un posible escenario online (telemático); y adecuada adaptación de los instrumentos de evaluación que se vayan a emplear en dicho escenario.
+  - Adecuado tratamiento de la atención a la diversidad en el diseño y la secuencia de actividades, desde un modelo inclusivo.
+  - Idóneo tratamiento de los elementos transversales respecto al resto de módulos que componen el ciclo formativo.
+  - Inclusión de las fuentes consultadas y utilizadas para el diseño.
+- **Exposición de la unidad de trabajo (50%)**:
+  - Expresión adecuada, utilización de una correcta terminología, rigor conceptual, distribución apropiada del tiempo de la exposición, ajustándose al tiempo fijado.
+  - Exponer de forma clara, bien estructurada, orden expositivo, capacidad de convicción. - Aportación de argumentos y datos actualizados y/o ampliados.
+  - Capacidad para motivar, despertar interés y transmitir conocimientos.
+  - Concreción y corrección en las respuestas dadas.
 
 {:.subsection}
 ### Enlaces de interés para la elaboración de la UD
