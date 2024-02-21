@@ -42,6 +42,54 @@ Realiza las siguientes actividades.
 14. Obtener la suma del precio de todas las clases.
 15. Obtener la suma del precio de todas las clases, teniendo en cuenta la moneda usada.
 
+{:.activity}
+## Tienda de libros
+
+Sobre los datos del fichero `bookstore.xml`{: .filepath}:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+  <book category="COOKING">
+    <title>Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>49.99</price>
+  </book>
+  <book category="WEB" soldout="true">
+    <title lang="en">XQuery Kick Start</title>
+    <author>James McGovern</author>
+    <year>2001</year>
+    <price>30.00</price>
+  </book>
+  <book category="COOKING" soldout="true">
+    <title lang="en">Learning Cake</title>
+    <author>Erik T. Ray</author>
+    <year>2003</year>
+    <price>39.95</price>
+    <ebook format="epub" />
+  </book>
+  <sale ident="v00001">
+    <refbook>Learning Cake</refbook>
+    <date>2021-11-30</date>
+  </sale>
+  <sale ident="v00002">
+    <refbook>XQuery Kick Start</refbook>
+    <date>2020-12-05</date>
+  </sale>
+</bookstore>
+```
+{: file="bookstore.xml" }
+
+Realizar las siguientes consultas XQuery:
+
+1. Obtener el título de aquellos los libros que hayan tenido alguna venta el 2020 o 2021.
+2. Obtener el autor, año y precio de cada libro perteneciente a la categoría WEB.
+3. Mostrar en una tabla de HTML la cantidad total de libros y precio medio entre todos los libros.
+4. Obtener cuántos libros hay que no disponen de formato digital almacenados en el XML.
+5. Obtener todos los libros con un precio entre 20 y 40, ambos no incluidos, ordenados por el año de forma descendente.
+
 ## Bibliografía
 
+- <https://www.youtube.com/watch?v=lnVLbrTrXpo>
 - <https://github.com/DiscoDurodeRoer/ejercicios-xquery-discoduroderoer/tree/master>

@@ -346,7 +346,7 @@ En caso de que no hayas dado ningún módulo profesional de la especialidad que 
   <summary class="card-header question">¿Qué puedo llevar a la presentación?</summary>
   <div class="card-body" markdown="1">
 
-- Una cara DIN-A4 como guión.
+- Una cara DIN-A4 como guion.
 - Todo el material que consideres relevante para darlo al tribunal. Te recomiendo que des una copia de todo a cada miembro del tribunal ya que esto SI se lo suelen quedar.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
@@ -377,7 +377,7 @@ En caso de que no hayas dado ningún módulo profesional de la especialidad que 
 ### Rúbricas de años anteriores
 
 {:.subsubsection}
-#### Rúbrica del año Aragón 2023 (107 - INFORMÁTICA)
+#### Rúbrica del año Aragón 2023 (INF)
 
 - **Unidad de trabajo (50%)**:
   - Relación de la unidad didáctica o de trabajo con el currículo, y contextualización.
@@ -398,6 +398,40 @@ En caso de que no hayas dado ningún módulo profesional de la especialidad que 
   - Capacidad para motivar, despertar interés y transmitir conocimientos.
   - Concreción y corrección en las respuestas dadas.
 
+{:.subsubsection}
+#### Rúbrica del año Aragón 2021 (INF)
+
+- **Contextualización**
+  - Estructura la unidad de forma lógica, coherente y ordenada. 0,2 puntos.
+  - La unidad didáctica es coherente con la programación presentada. Se programa atendiendo a las características específicas de las enseñanzas y niveles para los que se programa, así como del alumnado destinatario. 0,3 puntos.
+- **Objetivos**
+  - Están relacionados con los de las enseñanzas, etapas y niveles para los que se programa y son coherentes con el resto de los elementos de la unidad didáctica. 0,25 puntos.
+  - Su consecución puede comprobarse a través de los criterios de evaluación formulados. 0,25 puntos.
+- **Contenidos**
+  - Son coherentes con los objetivos planteados. 0,5 puntos.
+  - Están incluidos en las normas que regulan los currículos de las enseñanzas programadas. 0,5 puntos.
+  - Contempla contenidos mínimos. 0,5 puntos.
+- **Actividades de enseñanza-aprendizaje**
+  - Permiten abordar los contenidos de la unidad y son coherentes con los objetivos planteados. 0,3 puntos.
+  - Son innovadoras y coherentes con la metodología planteada en la programación. 0,3 puntos.
+  - Incorpora en las actividades elementos transversales. 0,3 puntos.
+  - Son motivadoras y graduadas en dificultad. 0,3 puntos.
+  - Se prevé la utilización de diferentes recursos. 0,3 puntos.
+- **Procedimientos de evaluación**
+  - Cuerpo de Profesorado de Educación Secundaria: Se contemplan como referentes los criterios de evaluación y los objetivos y las competencias clave en las enseñanzas de las etapas de Educación Secundaria Obligatoria y de Bachillerato o, en su caso, las competencias profesionales, personales y sociales, los resultados de aprendizaje y criterios de evaluación de los distintos ciclos de formación profesional. 0,2 puntos.
+  - Los instrumentos de evaluación son variados, graduados en dificultad y con criterios de calificación. 0,5 puntos.
+  - Se contemplan los mecanismos de recuperación, refuerzo y evaluación extraordinaria (en el caso de las enseñanzas que contemplen esta convocatoria de evaluación). 0,3 puntos.
+- **Medidas de atención al alumnado con necesidades específicas de apoyo educativo**
+  - En su caso, tiene en cuenta las actuaciones de intervención educativa generales o específicas que se aplican al alumnado, (Decreto 188/2017, de 28 de noviembre, BOA de 18 de diciembre, Orden ECD/1005/2018, de 7 de junio), así como, cuando proceda, los programas de atención a la diversidad contemplados en los currículos de las distintas enseñanzas. 0,5 puntos.
+  - En su caso, concreta determinadas actuaciones dentro del contexto de impartición de la unidad didáctica para alumnado con necesidad específica de apoyo educativo. 0,5 puntos.
+- **Exposición**
+  - Se expresa de forma precisa y fluida. 1 punto.
+  - Domina las técnicas necesarias para el ejercicio docente: oratoria, dicción, lenguaje no verbal. 1 punto.
+  - Muestra una aptitud pedagógica adecuada: ejemplifica, concreta, resume, esquematiza, puntualiza... 1 punto.
+- **Debate con el tribunal**
+  - Concreción y corrección en las respuestas dadas. 0,5 puntos.
+  - Aporta argumentos que complementan o amplían los expuestos en la presentación oral. 0,5 puntos.
+
 {:.subsection}
 ### Enlaces de interés para la elaboración de la UD
 
@@ -414,3 +448,6 @@ En caso de que no hayas dado ningún módulo profesional de la especialidad que 
 - [Técnico en Sistemas Microinformáticos y Redes](https://todofp.es/que-estudiar/loe/informatica-comunicaciones/sistemas-microniformaticos-redes.html)
 - [Técnico Superior en Administración de Sistemas Informáticos en Red](https://todofp.es/que-estudiar/loe/informatica-comunicaciones/admin-sist-informaticos-red.html)
 - [Técnico Superior en Desarrollo de Aplicaciones Multiplataforma](https://todofp.es/que-estudiar/loe/informatica-comunicaciones/des-aplicaciones-multiplataforma.html)
+- <https://educa.aragon.es/-/criterios-de-calificaci%C3%B3n-segunda-prueba>
+- <https://www.gobiernodecanarias.org/educacion/web/personal/docente/oferta/oposiciones/secundaria-y-otros-cuerpos/2021/criterios-material-instrucciones-primera-prueba/>
+- 
