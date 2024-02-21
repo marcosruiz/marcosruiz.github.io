@@ -177,7 +177,7 @@ Lo más recomendable es prepararte el temario por bloques ya que los temas suele
   <summary class="card-header question">¿Es recomendable hacer alusión al alumnado durante el desarrollo del tema?</summary>
   <div class="card-body" markdown="1">
 
-No lo sé.
+No. En la rúbricas vistas no se hace alusión a la aplicación didáctica de los contenidos del tema.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -187,7 +187,7 @@ No lo sé.
 ### Consejos
 
 1. Haz referencia a la ley en la introducción.
-1. Asocia la teoría a la aplicación
+1. Asocia la teoría a la aplicación.
 1. Haz simulacros de examen para ponerte a prueba.
 1. Estudia una pequeña bibliografía por bloques de contenido. No te vas a estudiar más de 4 bloques por lo que no debería ser un problema.
 
@@ -195,39 +195,63 @@ No lo sé.
 ### Rúbricas de años anteriores
 
 {:.subsubsection}
-#### Rúbrica del año 2023 en Aragón (107 - INFORMÁTICA)
+#### Rúbrica del año 2023 en Aragón (INF)
 
-- Conocimiento científico, profundo y actualizado del tema. 8,2 puntos.
-  - Domina el contenido epistemológico de la especialidad. Utiliza los conceptos con precisión, rigor y de forma actualizada. 7,8 puntos.
-  - Aporta citas bibliográficas o bibliografía actualizadas. 0,2 puntos.
-  - Aporta referencias legislativas actualizadas. 0,2 puntos.
-- Estructura del tema, desarrollo completo y originalidad en el planteamiento. 1,3 puntos.
-  - El tema presenta una estructura coherente -índice, planteamiento, desarrollo, conclusiones- que facilita su comprensión. 0,4 puntos.
-  - El tema se ajusta al temario de la especialidad, desarrollando cada uno de sus epígrafes de forma concreta y clara y se cierra de forma coherente con su desarrollo. 0,4 puntos.
-  - Utiliza ejemplos aclaratorios y/o aplicaciones prácticas. 0,5 puntos.
-- Redacción del tema
-  - La expresión escrita es legible. 0,1 puntos.
-  - Utiliza correctamente la lengua, ortografía y la puntuación. 0,2 puntos.
-  - La presentación es adecuada. 0,2 puntos.
+1. **Conocimiento científico, profundo y actualizado del tema. 8,2 puntos.**
+     - Domina el contenido epistemológico de la especialidad. Utiliza los conceptos con precisión, rigor y de forma actualizada. 7,8 puntos.
+     - Aporta citas bibliográficas o bibliografía actualizadas. 0,2 puntos.
+     - Aporta referencias legislativas actualizadas. 0,2 puntos.
+1. **Estructura del tema, desarrollo completo y originalidad en el planteamiento. 1,3 puntos.**
+     - El tema presenta una estructura coherente -índice, planteamiento, desarrollo, conclusiones- que facilita su comprensión. 0,4 puntos.
+     - El tema se ajusta al temario de la especialidad, desarrollando cada uno de sus epígrafes de forma concreta y clara y se cierra de forma coherente con su desarrollo. 0,4 puntos.
+     - Utiliza ejemplos aclaratorios y/o aplicaciones prácticas. 0,5 puntos.
+1. **Redacción del tema. 0,5 puntos.**
+     - La expresión escrita es legible. 0,1 puntos.
+     - Utiliza correctamente la lengua, ortografía y la puntuación. 0,2 puntos.
+     - La presentación es adecuada. 0,2 puntos.
 
 {:.subsubsection}
-#### Rúbrica del año 2021 en Canarias (107 - INFORMÁTICA)
+#### Rúbrica del año 2021 en Canarias (INF)
 
-- Estructura y organización del tema. 2 puntos.
-  - Inclusión de un índice, de una introducción y de una conclusión.
-  - Adecuada estructuración del tema.
-  - Tratamiento equilibrado de todos los apartados del tema en función de su relevancia.
-  - Presencia y adecuada coherencia en la interrelación de todos los apartados desarrollados.
-- Desarrollo, planteamiento del contenido y rigor científico.
-  - Exposición y argumentación, con precisión y rigor científico, de los contenidos más relevantes, demostrando un conocimiento profundo y actualizado del tema.
-  - Utilización de un vocabulario técnico adecuado: precisión terminológica.
-  - Conclusión final personal y coherente con el desarrollo.
-  - Cita de aspectos históricos, autores o autoras, y referencias bibliográficas y webs, relacionados con el tema.
-- Desarrollo, planteamiento del contenido y rigor científico.
-  - Exposición y argumentación, con precisión y rigor científico, de los contenidos más relevantes, demostrando un conocimiento profundo y actualizado del tema.
-  - Utilización de un vocabulario técnico adecuado: precisión terminológica.
-  - Conclusión final personal y coherente con el desarrollo.
-  - Cita de aspectos históricos, autores o autoras, y referencias bibliográficas y webs, relacionados con el tema.
+1. **Estructura y organización del tema. 2 puntos.**
+     - Inclusión de un índice, de una introducción y de una conclusión.
+     - Adecuada estructuración del tema.
+     - Tratamiento equilibrado de todos los apartados del tema en función de su relevancia.
+     - Presencia y adecuada coherencia en la interrelación de todos los apartados desarrollados.
+1. **Desarrollo, planteamiento del contenido y rigor científico. 7 puntos.**
+     - Exposición y argumentación, con precisión y rigor científico, de los contenidos más relevantes, demostrando un conocimiento profundo y actualizado del tema.
+     - Utilización de un vocabulario técnico adecuado: precisión terminológica.
+     - Conclusión final personal y coherente con el desarrollo.
+     - Cita de aspectos históricos, autores o autoras, y referencias bibliográficas y webs, relacionados con el tema.
+1. **Competencia comunicativa. 1 punto.**
+     - Correcta presentación y legibilidad del contenido escrito.
+     - La corrección ortográfica, el orden, la claridad y la coherencia, así como la cohesión sintáctica y semántica, la riqueza léxica y la adecuación, entre otros aspectos.
+
+{:.subsubsection}
+#### Rúbrica del año 2021 en Canarias (SAI)
+
+1. **Estructura y organización del tema. 2 puntos.**
+   - Inclusión de un índice, de una introducción y de una conclusión.
+   - Adecuada estructuración del tema.
+   - Tratamiento equilibrado de todos los apartados del tema en función de su relevancia.
+   - Presencia y adecuada coherencia en la interrelación de todos los apartados desarrollados.
+2. **Desarrollo, planteamiento del contenido y rigor científico. 7 puntos.**
+   - Exposición y argumentación, con precisión y rigor científico, de los contenidos más relevantes, demostrando un conocimiento profundo y actualizado del tema.
+   - Utilización de un vocabulario técnico adecuado: precisión terminológica.
+   - Conclusión final personal y coherente con el desarrollo.
+   - Cita de aspectos históricos, autores o autoras, y referencias bibliográficas y webs, relacionados con el tema.
+   - Además se tendrá en cuenta:
+     - La definición de conceptos básicos es clara.
+     - Expone y argumenta cada uno de los apartados con corrección y profundidad, mostrando seguridad en sus conocimientos del tema.
+     - Los contenidos son los suficientemente actualizados y/o novedosos.
+     - Uso de ejemplos o refuerzos para clarificar los apartados.
+     - Recapitulación de los aspectos fundamentales.
+     - Coherencia con el desarrollo del tema.
+     - Incluye reflexiones y sugerencias.
+     - Describe el estado actual y las tendencias.
+3. **Competencia comunicativa. 7 puntos.**
+   - Correcta presentación y legibilidad del contenido escrito.
+   - La corrección ortográfica, el orden, la claridad y la coherencia, así como la cohesión sintáctica y semántica, la riqueza léxica y la adecuación, entre otros aspectos.
 
 {:.subsection}
 ### Enlaces a temarios de oposición
