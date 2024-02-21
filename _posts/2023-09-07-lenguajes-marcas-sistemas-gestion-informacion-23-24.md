@@ -22,10 +22,10 @@ pin: true
 
 - T09 - Obligatoria - Nota - [Tarea: DTD](/posts/tarea-dtd/)
 - T10 - Obligatoria - Nota - [Tarea: XSD](/posts/tarea-xsd/)
-- T13 - Voluntaria - Apto/No apto - [Tarea: Introducción a XPath](/posts/tarea-introduccion-xpath/)
-- T11 - Tarea: XSLT
-- T12 - Tarea: XSL-FO
-- T14 - Tarea: XQuery
+- TXX - Voluntaria - Apto/No apto - [Tarea: Introducción a XPath](/posts/tarea-introduccion-xpath/)
+- TXX - Tarea: XSLT
+- TXX - Tarea: XSL-FO
+- TXX - Tarea: XQuery
 
 ## Evaluación 1
 

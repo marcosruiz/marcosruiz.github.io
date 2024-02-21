@@ -76,7 +76,8 @@ _ imgDescription _
 
 `/path/to/a/file.extend`{: .filepath}
 
-
+> Artículo en construcción.
+{:.prompt-warning}
 
 ## Introducción
 

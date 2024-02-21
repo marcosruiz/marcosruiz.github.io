@@ -1,10 +1,13 @@
 ---
 title: "Tarea: Introducción a XPath"
-date: 2024-01-30 9:00:00 +0100
+date: 2024-02-19 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Multiplataforma, Lenguajes de Marcas y Sistemas de Gestión de Información]
 tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, práctica, tarea, dam, daw, asir]
 img_path: /assets/img/tarea-xpath/
 ---
+
+> Artículo en construcción.
+{:.prompt-warning}
 
 ## Entrega y presentación
 
