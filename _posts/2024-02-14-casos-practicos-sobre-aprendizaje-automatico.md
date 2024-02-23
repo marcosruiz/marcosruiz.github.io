@@ -31,3 +31,10 @@ img_path: /assets/img/aprendizaje-no-supervisado/
 /assets/img/casos-practicos-sobre-aprendizaje-automatico/Regresión_con_kNN_Bikes.ipynb)
 - [bikes.csv](
 /assets/img/casos-practicos-sobre-aprendizaje-automatico/bikes.csv)
+
+{:.section}
+## Regresión lineal
+
+- Regresión_y_Regularización_con_Scikit_learn.ipynb
+- boston.csv
+
