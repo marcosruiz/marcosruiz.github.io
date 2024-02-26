@@ -107,6 +107,8 @@ Detección de virus, deep fakes, OCRs, etc.
 {:.section}
 ## Tipos de Inteligencia Artificial
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uFjj9bJNQ6Y?si=2sA_Lg6NzAeBg6hd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 Al pensar en inteligencia artificial, la mayoría de nosotros tiene en mente una IA con capacidades mentales humanas, un programa que nos supera con un largo margen, o una persona sintética capaz de imitarnos e incluso combatirnos. Es por esto que existen 2 tipos de Inteligencia Artificial:
 
 - Inteligencia Artificial Débil
