@@ -131,7 +131,7 @@ _Cuadro de mando de un ERP_
   </div>
 </details>
 
-#{:.section}
+{:.section}
 ## ¿Qué gestiona un CRM?
 
 En general se enfoca en 3 campos:
@@ -180,6 +180,9 @@ Además, un ERP tiene sus propias limitaciones y obstáculos:
 - Son vistos como sistemas muy rígidos, y difíciles de adaptar al modo de trabajo de las empresas.
 - Son sistemas que sufren problemas de "cuello de botella", es decir, todos los usuarios del sistema se pueden ver afectados por la ineficiencia en uno de los departamentos participantes.
 - Es muy caro modificar un ERP una vez implantado.
+
+{:.question}
+¿Qué es la normalización?
 
 {:.question}
 ¿Te has parado a pensar alguna vez en los efectos negativos que tiene la falta de normalización en los procedimientos que se realizan en las pequeñas empresas? Y ¿la falta de interés que suelen tener los empleados de las mismas en establecer un protocolo de comportamiento que los formalice?
