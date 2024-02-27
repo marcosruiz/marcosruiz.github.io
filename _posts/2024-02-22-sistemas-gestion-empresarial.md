@@ -40,7 +40,7 @@ El software que una empresa necesita. Un software que integre toda la gestión d
 
 Se trata de un método visual de gestión de proyectos que permite a los equipos visualizar sus flujos de trabajo y la carga de trabajo.
 
-![Kanban](image.png)
+![Kanban](kanban.png)
 
 Una aplicación muy famosa es [Trello](https://trello.com/).
 
@@ -121,10 +121,10 @@ _Cuadro de mando de un avión_
 ![Cuadro de mando del halcón milenario](halconMilenarioDashboard.png)
 _Cuadro de mando del halcón milenario_
 
-![Cuadro de mando de un ERP](erpDasboard.png)
+![Cuadro de mando de un ERP](erpDashboard.png)
 _Cuadro de mando de un ERP_
 
-![Cuadro de mando de un ERP](erpDasboard2.png)
+![Cuadro de mando de un ERP](erpDashboard2.png)
 _Cuadro de mando de un ERP_
 
 <!-- Comentario para que no se descuajeringue la cosa -->
@@ -154,9 +154,6 @@ Más concretamente, un CRM gestiona:
   - **Historial médico** si somos un hospital.
   - **Hipotecas** si somos un banco.
   - **Seguros** si somos una aseguradora.
-
-{:.question}
-¿Qué es un ERP?
 
 {:.section}
 ## Ventajas del uso de ERP/CRM
@@ -219,7 +216,7 @@ Es un lenguaje de programación diseñado para ser ejecutado por un intérprete.
 - Relaciones con el cliente.
 - Fabricación.
 
-Puede descargarse en sus distintas versiones en el siguiente enlace ([Descargas Odoo](https://www.odoo.com/es_ES/page/download) siendo totalmente gratuita la versión Community. Debes tener en cuenta que la descarga nos obliga a rellenar un formulario. En el [canal de youtube de odooerpdevelopers](https://www.youtube.com/channel/UCLYNXm3oExJwUnV8eJU7dMQ) puedes encontrar diversos vídeos sobre instalación y configuración. Igualmente puedes ver la información oficial de la versión 12 de Odoo sobre la instalación en este [enlace](https://www.odoo.com/documentation/12.0/setup/install.html).
+Puede descargarse en sus distintas versiones en el siguiente enlace ([Descargas Odoo](https://www.odoo.com/es_ES/page/download) siendo totalmente gratuita la versión Community. Debes tener en cuenta que la descarga nos obliga a rellenar un formulario. En el [canal de youtube de jcmontoya](https://www.youtube.com/@jcmontoya) puedes encontrar diversos vídeos sobre instalación y configuración. Igualmente puedes ver la información oficial de la versión 12 de Odoo sobre la instalación en este [enlace](https://www.odoo.com/documentation/12.0/setup/install.html).
 
 <details class="card mb-2">
   <summary class="card-header question">¿En qué lenguaje está escrito Odoo?</summary>
