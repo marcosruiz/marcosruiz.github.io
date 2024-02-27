@@ -18,7 +18,7 @@ pin: true
   - [¿Qué es XSL-FO?](/posts/xslfo/)
 - UD06 - Almacenamiento de información
   - [¿Qué es XQuery?](/posts/xquery/)
-- UD07 - Sistemas de gestión empresarial
+- UD07 - [Sistemas de gestión empresarial](/posts/sistemas-gestion-empresarial/)
 
 - T09 - Obligatoria - Nota - [Tarea: DTD](/posts/tarea-dtd/)
 - T10 - Obligatoria - Nota - [Tarea: XSD](/posts/tarea-xsd/)

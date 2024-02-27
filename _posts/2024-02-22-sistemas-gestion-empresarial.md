@@ -2,7 +2,7 @@
 title: "Sistemas de gestión empresarial"
 date: 2024-02-22 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Multiplataforma, Lenguajes de Marcas y Sistemas de Gestión de Información]
-tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, desarrollo de aplicaciones web, dam, daw, asir, lmsgi, xml, teoría]
+tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, desarrollo de aplicaciones web, dam, daw, asir, lmsgi, sistemas de gestión empresarial, erp, crm, dashboard, scoreboard, odoo, salesforce, sap, teoría]
 img_path: /assets/img/sistemas-gestion-empresarial/
 ---
 
@@ -71,9 +71,9 @@ Los objetivos principales de los ERP son:
 
 Las características que distinguen a un ERP de cualquier otro software empresarial, es que deben de ser sistemas integrales, modulares y adaptables. Un ERP se caracteriza por:
 
-- Ser un programa con **acceso a una base de datos**.
-- Sus **componentes interactúan** entre sí.
-- Los **datos** deben ser consistentes, completos.
+- Ser un programa con acceso a una base de datos.
+- Sus componentes interactúan entre sí.
+- Los datos deben ser consistentes, completos.
 
 En ocasiones son sistemas complejos y difíciles de implantar, debido a que necesitan un desarrollo personalizado para cada empresa a partir del paquete inicial. Estas adaptaciones suelen encargarse a las consultorías.
 
