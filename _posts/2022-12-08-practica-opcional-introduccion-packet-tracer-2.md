@@ -36,9 +36,9 @@ A continuación se listan las actividades que se deben realizar para esta práct
 
 Las primeras 6 actividades son las mismas que en el artículo [Práctica: Introducción a redes con Packet Tracer](/posts/practica-introduccion-packet-tracer/) cambiando los tipos de las redes del siguiente modo:
 
-- A ➡️ B
-- B ➡️ C
-- C ➡️ A
+- A → B
+- B → C
+- C → A
 
 Además se ha añadido una actividad extra.
 

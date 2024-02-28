@@ -45,8 +45,8 @@ tags: [aplicaciones web, smr]
 - [Lenguaje JS](https://lenguajejs.com/)
 - [Roadmap.sh](https://roadmap.sh/frontend)
 - [Aprende X en Y mintuos, Donde X=javascript](https://learnxinyminutes.com/docs/es-es/javascript-es/)
-- [CodinGame](https://www.codingame.com/start) ➡️ En inglés
-- [CodeAcademy](https://www.codecademy.com/catalog/language/javascript) ➡️ En inglés
+- [CodinGame](https://www.codingame.com/start) → En inglés
+- [CodeAcademy](https://www.codecademy.com/catalog/language/javascript) → En inglés
 
 ## Carpeta compartida de la asignatura
 

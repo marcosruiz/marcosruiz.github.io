@@ -159,5 +159,5 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 - [curvefever](https://curvefever.pro/)
 - [1v1.LOL](https://1v1.lol/)
 - [Quizizz](https://quizizz.com)
-- [Kahoot!](https://kahoot.com/) ➡️ Sólo permite 10 participantes
+- [Kahoot!](https://kahoot.com/) → Sólo permite 10 participantes
 - [2048](https://juego2048.es/)

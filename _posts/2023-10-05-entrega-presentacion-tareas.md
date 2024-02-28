@@ -2,7 +2,7 @@
 title: "Entrega y presentación de tareas"
 date: 2023-10-05 9:00:00 +0100
 categories: [General]
-tags: [práctica]
+tags: [práctica, tarea]
 img_path: /assets/img/entrega-presentacion-tareas/
 ---
 
@@ -10,7 +10,7 @@ En todas las tareas se debe seguir el siguiente formato:
 
 ## Entrega y presentación en formato PDF
 
-Si la entrega de la práctica debe ser un documento PDF, el nombre tendrá el siguiente formato:
+Si la entrega de la tarea debe ser un documento PDF, el nombre tendrá el siguiente formato:
 
 `<tu usuario>_t<número de la tarea con dos dígitos>.pdf`{: .filepath}
 
@@ -44,7 +44,7 @@ _Ejemplo de actividad_
 
 ## Entrega y presentación en formato ZIP
 
-Si la entrega de la práctica debe ser un documento ZIP, el nombre tendrá el siguiente formato:
+Si la entrega de la tarea debe ser un documento ZIP, el nombre tendrá el siguiente formato:
 
 `<tu usuario>_t<número de la tarea con dos dígitos>.zip`{: .filepath}
 
@@ -62,7 +62,7 @@ En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que
 
 ## Entrega y presentación en formato presentación
 
-Si la entrega de la práctica debe ser un documento PDF, el nombre tendrá el siguiente formato:
+Si la entrega de la tarea debe ser un documento PDF, el nombre tendrá el siguiente formato:
 
 `<tu usuario>_t<número de la tarea con dos dígitos>.pdf`{: .filepath}
 
@@ -76,7 +76,7 @@ El documento PDF SIEMPRE debe contener una portada, número de la tarea, título
 
 ## Entrega y presentación en formato Markdown
 
-Si la entrega de la práctica debe ser un documento PDF, el nombre tendrá el siguiente formato:
+Si la entrega de la tarea debe ser un documento PDF, el nombre tendrá el siguiente formato:
 
 `<tu usuario>_t<número de la tarea con dos dígitos>.md`{: .filepath}
 
@@ -133,12 +133,14 @@ Salida real:
 ```
 {: file="mruizg_t01.md" }
 
-> No usar el documento anterior de plantilla ya que contiene caracteres invisibles para su correcta visualización.
+> No usar el documento anterior de plantilla ya que contiene caracteres invisibles para su correcta visualización en web.
 {:.prompt-warning}
+
+> Si quieres saber más sobre Markdown, puedes leer este artículo introductorio.
 
 ## Cómo saber mi nombre de usuario
 
-El usuario que debes usar siempre en las prácticas debe cumplir con el siguiente formato:
+El usuario que debes usar siempre en las tareas debe cumplir con el siguiente formato:
 
 - La inicial de tu primer nombre.
 - Tu primer apellido.
@@ -146,7 +148,7 @@ El usuario que debes usar siempre en las prácticas debe cumplir con el siguient
 
 En mi caso, como yo me llamo Marcos Ruiz García mi usuario será: mruizg.
 
-En todas las prácticas, cada vez que se haga mención a `<tu usuario>` deberás sustituirlo por tu usuario.
+En todas las tareas, cada vez que se haga mención a `<tu usuario>` deberás sustituirlo por tu usuario.
 
-> Siempre que sea posible deberás usar tu nombre de usuario para que no haya ninguna duda sobre la autoría de las prácticas.
+> Siempre que sea posible deberás usar tu nombre de usuario para que no haya ninguna duda sobre la autoría de las tareas.
 {:.prompt-warning}

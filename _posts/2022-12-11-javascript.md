@@ -477,37 +477,37 @@ Si has visto los 3 vídeos deja un comentario de cual te parece mejor.
 
 ## Ejercicios en español
 
-- [freeCodeCamp](https://www.freecodecamp.org/) ➡️ Ejercicios guiados de JS
-- [Algoritmos y Estructuras de Datos en JavaScript](https://github.com/trekhleb/javascript-algorithms/blob/master/README.es-ES.md) ➡️ AVANZADO
+- [freeCodeCamp](https://www.freecodecamp.org/) → Ejercicios guiados de JS
+- [Algoritmos y Estructuras de Datos en JavaScript](https://github.com/trekhleb/javascript-algorithms/blob/master/README.es-ES.md) → AVANZADO
 - [DesafioLatam/guia-de-ejercicios-javascript](https://github.com/DesafioLatam/guia-de-ejercicios-javascript/blob/master/ejercicios.md)
 - [Exámenes de JavaScript](https://cibertest.com/test-examen/20/javascript)
-- [Lista de preguntas (avanzadas) de JavaScript](https://github.com/lydiahallie/javascript-questions/blob/master/es-ES/README-ES.md) ➡️ Preguntas rebuscadas de JS
+- [Lista de preguntas (avanzadas) de JavaScript](https://github.com/lydiahallie/javascript-questions/blob/master/es-ES/README-ES.md) → Preguntas rebuscadas de JS
 - [Reto #1 - Bingo (ManzDev)](https://lenguajejs.com/retos/nivel-medio/bingo/)
-- [JavaScript Ya](https://www.tutorialesprogramacionya.com/javascriptya/) ➡️ 111 Ejercicios guiados de JS y con solución.
-- [denulemos/programming-training (Ejercicios Logica de Programacion)](https://github.com/denulemos/programming-training) ➡️ 102 Ejercicios de JS y con solución.
-- [a0viedo/fullstack](https://github.com/a0viedo/fullstack/blob/master/contenido/ejercicios/auto-evaluacion.md) ➡️ 6 problemas de JS.
-- [Juanma-Gutierrez/Ejercicios-Javascript-06-05-2022 (Ejercicios Javascript)](https://github.com/Juanma-Gutierrez/Ejercicios-Javascript-06-05-2022) ➡️ 29 ejercicios JS un poco interesantes.
-- [fryntiz/javascript-ejercicios-resueltos (Javascript Ejercicios_Resueltos)](https://github.com/fryntiz/javascript-ejercicios-resueltos) ➡️ Nivel muy básico, introducción y nivel medio de JS con el DOM.
-- [makeitrealcamp/js-foundation](https://github.com/makeitrealcamp/js-foundation) ➡️ 60 ejercicios básicos de JS.
-- [maxwellnewage/javascript_ejercicios (Ejercicios de Javascript)](https://github.com/maxwellnewage/javascript_ejercicios) ➡️ 65 ejercicios JS con solución.
-- [makeitrealcamp/ejercicios-javascript (Ejercicios de JavaScript)](https://github.com/makeitrealcamp/ejercicios-javascript) ➡️ 31 ejercicios de JS.
-- [Ada-Online-2da-Gen/ejercicios-javascript (ejercicios-javascript)](https://github.com/Ada-Online-2da-Gen/ejercicios-javascript) ➡️ Ejercicios de JS y React.
+- [JavaScript Ya](https://www.tutorialesprogramacionya.com/javascriptya/) → 111 Ejercicios guiados de JS y con solución.
+- [denulemos/programming-training (Ejercicios Logica de Programacion)](https://github.com/denulemos/programming-training) → 102 Ejercicios de JS y con solución.
+- [a0viedo/fullstack](https://github.com/a0viedo/fullstack/blob/master/contenido/ejercicios/auto-evaluacion.md) → 6 problemas de JS.
+- [Juanma-Gutierrez/Ejercicios-Javascript-06-05-2022 (Ejercicios Javascript)](https://github.com/Juanma-Gutierrez/Ejercicios-Javascript-06-05-2022) → 29 ejercicios JS un poco interesantes.
+- [fryntiz/javascript-ejercicios-resueltos (Javascript Ejercicios_Resueltos)](https://github.com/fryntiz/javascript-ejercicios-resueltos) → Nivel muy básico, introducción y nivel medio de JS con el DOM.
+- [makeitrealcamp/js-foundation](https://github.com/makeitrealcamp/js-foundation) → 60 ejercicios básicos de JS.
+- [maxwellnewage/javascript_ejercicios (Ejercicios de Javascript)](https://github.com/maxwellnewage/javascript_ejercicios) → 65 ejercicios JS con solución.
+- [makeitrealcamp/ejercicios-javascript (Ejercicios de JavaScript)](https://github.com/makeitrealcamp/ejercicios-javascript) → 31 ejercicios de JS.
+- [Ada-Online-2da-Gen/ejercicios-javascript (ejercicios-javascript)](https://github.com/Ada-Online-2da-Gen/ejercicios-javascript) → Ejercicios de JS y React.
 
 ## Ejercicios en inglés
 
-- [CodeAcademy](https://www.codecademy.com/catalog/language/javascript) ➡️ Ejercicios guiados de JS
-- [Learn JavaScript](https://learnjavascript.online/) ➡️ Ejercicios guiados de JS
-- [Advent of Code](https://adventjs.dev/es) ➡️ Lo recomiendan mucho.
-- [Edabit](https://edabit.com/challenges/javascript) ➡️ Lo recomiendan mucho.
-- [Eloquent Javascript](https://eloquentjavascript.net/2nd_edition/code/) ➡️ Curso de JavaScript
+- [CodeAcademy](https://www.codecademy.com/catalog/language/javascript) → Ejercicios guiados de JS
+- [Learn JavaScript](https://learnjavascript.online/) → Ejercicios guiados de JS
+- [Advent of Code](https://adventjs.dev/es) → Lo recomiendan mucho.
+- [Edabit](https://edabit.com/challenges/javascript) → Lo recomiendan mucho.
+- [Eloquent Javascript](https://eloquentjavascript.net/2nd_edition/code/) → Curso de JavaScript
 - [JavaScript Exercises](https://www.w3schools.com/js/js_exercises.asp)
-- [CodinGame](https://www.codingame.com/start) ➡️ Para aprender jugando
-- [CodeWars](https://www.codewars.com/) ➡️ Para aprender jugando
-- [Exercism](https://exercism.org/) ➡️ Ejercicios guiados de JS 
-- [Project Lovelace](https://projectlovelace.net/problems/) ➡️ Problemas para resolver con JS
-- [JSChallenger](https://www.jschallenger.com/) ➡️ Ejercicios guiados de JS y retos.
-- [Kattis](https://open.kattis.com/) ➡️ Programación competitiva y problemas para resolver. 
-- [Online Judge](https://onlinejudge.org/) ➡️ Ejercicios difíciles de programación competitiva.
+- [CodinGame](https://www.codingame.com/start) → Para aprender jugando
+- [CodeWars](https://www.codewars.com/) → Para aprender jugando
+- [Exercism](https://exercism.org/) → Ejercicios guiados de JS 
+- [Project Lovelace](https://projectlovelace.net/problems/) → Problemas para resolver con JS
+- [JSChallenger](https://www.jschallenger.com/) → Ejercicios guiados de JS y retos.
+- [Kattis](https://open.kattis.com/) → Programación competitiva y problemas para resolver. 
+- [Online Judge](https://onlinejudge.org/) → Ejercicios difíciles de programación competitiva.
 
 ## Chuletas de JavaScript en español
 

@@ -40,7 +40,7 @@ Creamos una máquina en VirtualBox con las siguientes características:
 ![img-description](/assets/img/tutorial-instalacion-openmediavault/vbox-openmediavault-recien-creado.png)
 _Máquina OpenMediaVault creada e iniciada_
 
-Haz click en "➡️ Iniciar"
+Haz click en "→ Iniciar"
 
 Selecciona en el disco de inicio la ISO de OpenMediaVault:
 

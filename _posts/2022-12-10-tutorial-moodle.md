@@ -384,6 +384,6 @@ Es el momento de acceder al área personal de Moodle para comprobar si Unoconv f
 ## Bibliografía
 
 - [Cómo instalar la pila LAMP en Ubuntu 22.04 LTS](https://comoinstalar.me/como-instalar-la-pila-lamp-en-ubuntu-22-04-lts/)
-- [Cómo instalar Moodle en Ubuntu 20.04 LTS](https://comoinstalar.me/como-instalar-moodle-en-ubuntu-20-04-lts/) ➡️ El enlace proporcionado usa Ubuntu 20.04 por lo que la versión por defecto de PHP también cambiará:
-  - Ubuntu 20.04 ➡️ PHP 7.4
-  - Ubuntu 22.04 ➡️ PHP 8.1
+- [Cómo instalar Moodle en Ubuntu 20.04 LTS](https://comoinstalar.me/como-instalar-moodle-en-ubuntu-20-04-lts/) → El enlace proporcionado usa Ubuntu 20.04 por lo que la versión por defecto de PHP también cambiará:
+  - Ubuntu 20.04 → PHP 7.4
+  - Ubuntu 22.04 → PHP 8.1
