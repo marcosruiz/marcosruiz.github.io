@@ -1,128 +1,128 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <universidad>
 
-    <nombre>Universidad de Victoria</nombre>
+    <nombre>Universidad de Zaragoza</nombre>
     <pais>España</pais>
 
-<!-- CARRERAS -->
+    <!-- GRADOS -->
 
-    <carreras>
+    <grados>
 
-        <carrera id="c01">
-            <nombre>I.T. Informática</nombre>
+        <grado id="g01">
+            <nombre>Grado en Ingeniería Informática</nombre>
             <plan>2003</plan>
             <creditos>250</creditos>
             <centro>Escuela de Informática</centro>
-        </carrera>
+        </grado>
 
-        <carrera id="c02">
-            <nombre>Dipl. Empresariales</nombre>
-            <plan>2001</plan>
+        <grado id="g02">
+            <nombre>Grado en Administración y Dirección de Empresas</nombre>
+            <plan>2000</plan>
             <creditos>275</creditos>
             <centro>Facultad de Ciencias Sociales</centro>
-        </carrera>
+        </grado>
 
-        <carrera id="c03">
-            <nombre>Dipl. Relaciones Laborales</nombre>
-            <plan>2001</plan>
+        <grado id="g03">
+            <nombre>Grado en Relaciones Laborales</nombre>
+            <plan>2000</plan>
             <creditos>280</creditos>
             <centro>Facultad de Ciencias Sociales</centro>
-            <subdirector>Alfonso Martín  Luque</subdirector>
-        </carrera>
+            <subdirector>Alfonso Martín Luque</subdirector>
+        </grado>
 
-        <carrera id="c04">
-            <nombre>Lic. Quimica</nombre>
+        <grado id="g04">
+            <nombre>Grado en Quimica</nombre>
             <plan>2003</plan>
             <creditos>175</creditos>
             <centro>Facultad de Ciencias Experimentales</centro>
-        </carrera>
+        </grado>
 
-        <carrera id="c05">
-            <nombre>Lic. Biología</nombre>
-            <plan>2001</plan>
+        <grado id="g05">
+            <nombre>Grado en Biotecnología</nombre>
+            <plan>2000</plan>
             <creditos>175</creditos>
-            <centro>Facultad de Ciencias Experimentales</centro>
-        </carrera>
+            <centro>Facultad de Ciencias</centro>
+        </grado>
 
-        <carrera id="c06">
-            <nombre>Lic. Humanidades</nombre>
+        <grado id="g06">
+            <nombre>Grado en Humanidades</nombre>
             <plan>1980</plan>
             <creditos>475</creditos>
             <centro>Facultad de Humanidades</centro>
-        </carrera>
+        </grado>
 
-    </carreras>
-<!-- ASIGNATURAS -->
+    </grados>
+
+    <!-- ASIGNATURAS -->
 
     <asignaturas>
 
-        <asignatura id="a01" titulacion="c01">
+        <asignatura id="a01" titulacion="g01">
             <nombre>Ofimática</nombre>
-            <creditos_teoricos>3</creditos_teoricos>
-            <creditos_practicos>1.5</creditos_practicos>
+            <creditosTeoricos>3</creditosTeoricos>
+            <creditosPracticos>1.5</creditosPracticos>
             <trimestre>1</trimestre>
         </asignatura>
 
-        <asignatura id="a02" titulacion="c01">
+        <asignatura id="a02" titulacion="g01">
             <nombre>Ingeniería del Software</nombre>
-            <creditos_teoricos>6</creditos_teoricos>
-            <creditos_practicos>1.5</creditos_practicos>
+            <creditosTeoricos>6</creditosTeoricos>
+            <creditosPracticos>1.5</creditosPracticos>
             <trimestre>2</trimestre>
         </asignatura>
 
-        <asignatura id="a03" titulacion="c02">
+        <asignatura id="a03" titulacion="g02">
             <nombre>Administración de Empresas</nombre>
-            <creditos_teoricos>4</creditos_teoricos>
-            <creditos_practicos>1.5</creditos_practicos>
+            <creditosTeoricos>4</creditosTeoricos>
+            <creditosPracticos>1.5</creditosPracticos>
             <trimestre>1</trimestre>
         </asignatura>
 
-        <asignatura id="a04" titulacion="c02">
+        <asignatura id="a04" titulacion="g02">
             <nombre>Derecho Internacional</nombre>
-            <creditos_teoricos>4</creditos_teoricos>
-            <creditos_practicos>5</creditos_practicos>
+            <creditosTeoricos>4</creditosTeoricos>
+            <creditosPracticos>5</creditosPracticos>
             <trimestre>1</trimestre>
         </asignatura>
 
-        <asignatura id="a05" titulacion="c04">
+        <asignatura id="a05" titulacion="g04">
             <nombre>Pedagogía</nombre>
-            <creditos_teoricos>4</creditos_teoricos>
-            <creditos_practicos>1.5</creditos_practicos>
+            <creditosTeoricos>4</creditosTeoricos>
+            <creditosPracticos>1.5</creditosPracticos>
             <trimestre>2</trimestre>
         </asignatura>
 
-        <asignatura id="a06" titulacion="c03">
+        <asignatura id="a06" titulacion="g03">
             <nombre>Didáctica</nombre>
-            <creditos_teoricos>4</creditos_teoricos>
-            <creditos_practicos>3</creditos_practicos>
+            <creditosTeoricos>4</creditosTeoricos>
+            <creditosPracticos>3</creditosPracticos>
             <trimestre>2</trimestre>
         </asignatura>
 
-        <asignatura id="a07" titulacion="c04">
+        <asignatura id="a07" titulacion="g04">
             <nombre>Tecnología de los Alimentos</nombre>
-            <creditos_teoricos>1.5</creditos_teoricos>
-            <creditos_practicos>7.5</creditos_practicos>
+            <creditosTeoricos>1.5</creditosTeoricos>
+            <creditosPracticos>7.5</creditosPracticos>
             <trimestre>2</trimestre>
         </asignatura>
 
-        <asignatura id="a08" titulacion="c01">
+        <asignatura id="a08" titulacion="g01">
             <nombre>Bases de Datos</nombre>
-            <creditos_teoricos>4.5</creditos_teoricos>
-            <creditos_practicos>5.5</creditos_practicos>
+            <creditosTeoricos>4.5</creditosTeoricos>
+            <creditosPracticos>5.5</creditosPracticos>
             <trimestre>1</trimestre>
         </asignatura>
 
-        <asignatura id="a09" titulacion="c06">
+        <asignatura id="a09" titulacion="g06">
             <nombre>Historia del Pensamiento</nombre>
-            <creditos_teoricos>6</creditos_teoricos>
-            <creditos_practicos>0</creditos_practicos>
+            <creditosTeoricos>6</creditosTeoricos>
+            <creditosPracticos>0</creditosPracticos>
             <trimestre>2</trimestre>
         </asignatura>
 
     </asignaturas>
 
-<!-- ALUMNOS -->
+    <!-- ALUMNOS -->
 
     <alumnos>
 
@@ -132,12 +132,12 @@
             <nombre>Víctor Manuel</nombre>
             <sexo>Hombre</sexo>
             <estudios>
-                <carrera codigo="c01"/>
+                <grado codigo="g01" />
                 <asignaturas>
-                    <asignatura codigo="a01"/>
-                    <asignatura codigo="a03"/>
-                    <asignatura codigo="a05"/>
-                    <asignatura codigo="a09"/>
+                    <asignatura codigo="a01" />
+                    <asignatura codigo="a03" />
+                    <asignatura codigo="a05" />
+                    <asignatura codigo="a09" />
                 </asignaturas>
             </estudios>
         </alumno>
@@ -148,10 +148,10 @@
             <nombre>Luisa</nombre>
             <sexo>Mujer</sexo>
             <estudios>
-                <carrera codigo="c02"/>
+                <grado codigo="g02" />
                 <asignaturas>
-                    <asignatura codigo="a02"/>
-                    <asignatura codigo="a01"/>
+                    <asignatura codigo="a02" />
+                    <asignatura codigo="a01" />
                 </asignaturas>
                 <proyecto>Web de IBM.com</proyecto>
             </estudios>
@@ -164,12 +164,12 @@
             <nombre>Fernando</nombre>
             <sexo>Hombre</sexo>
             <estudios>
-                <carrera codigo="c02"/>
+                <grado codigo="g02" />
                 <asignaturas>
-                    <asignatura codigo="a02"/>
-                    <asignatura codigo="a01"/>
-                    <asignatura codigo="a04"/>
-                    <asignatura codigo="a09"/>
+                    <asignatura codigo="a02" />
+                    <asignatura codigo="a01" />
+                    <asignatura codigo="a04" />
+                    <asignatura codigo="a09" />
                 </asignaturas>
             </estudios>
         </alumno>
@@ -180,11 +180,11 @@
             <nombre>María</nombre>
             <sexo>Mujer</sexo>
             <estudios>
-                <carrera codigo="c01"/>
+                <grado codigo="g01" />
                 <asignaturas>
-                    <asignatura codigo="a02"/>
-                    <asignatura codigo="a01"/>
-                    <asignatura codigo="a07"/>
+                    <asignatura codigo="a02" />
+                    <asignatura codigo="a01" />
+                    <asignatura codigo="a07" />
                 </asignaturas>
                 <proyecto>Estudio de Salinidad del Pantano Iris</proyecto>
             </estudios>

@@ -10,15 +10,15 @@ En todas las tareas se debe seguir el siguiente formato:
 
 ## Entrega y presentación en formato PDF
 
-Si la entrega de la práctica debe ser un documento PDF con un nombre en el siguiente formato:
+Si la entrega de la práctica debe ser un documento PDF, el nombre tendrá el siguiente formato:
 
 `<tu usuario>_t<número de la tarea con dos dígitos>.pdf`{: .filepath}
 
-Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna Marcos Ruiz García para la primera unidad del módulo profesional de LMSGI, debería nombrar esta tarea como:
+Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo el alumno Marcos Ruiz García para la primera tarea, tendría el siguiente nombre:
 
 `mruizg_t01.pdf`{: .filepath}
 
-1. Debe contener una portada número de la tarea, título de la tarea, nombre del módulo profesional, nombre del ciclo formativo, autor(es) y fecha de realización.
+1. Debe contener una portada, número de la tarea, título de la tarea, nombre del módulo profesional, nombre del ciclo formativo, autor(es) y fecha de realización.
 1. Debe tener un índice actualizado con hiperenlaces a las diferentes secciones y el número de página donde están.
 1. Debe tener cada página numerada.
 1. Las actividades deberán estar numeradas y ordenadas correctamente. Por ejemplo: `1. Actividad`, `Actividad 1`, `1. <Título de la actividad>` o `Actividad 1: <Título de la actividad>` en la entrega del alumno.
@@ -44,11 +44,11 @@ _Ejemplo de actividad_
 
 ## Entrega y presentación en formato ZIP
 
-Si la entrega de la práctica debe ser un documento ZIP con un nombre en el siguiente formato:
+Si la entrega de la práctica debe ser un documento ZIP, el nombre tendrá el siguiente formato:
 
 `<tu usuario>_t<número de la tarea con dos dígitos>.zip`{: .filepath}
 
-Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna Marcos Ruiz García para la primera unidad del módulo profesional de LMSGI, debería nombrar esta tarea como:
+Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo el alumno Marcos Ruiz García para la primera tarea, tendría el siguiente nombre:
 
 `mruizg_t01.zip`{: .filepath}
 
@@ -62,17 +62,77 @@ En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que
 
 ## Entrega y presentación en formato presentación
 
-Si la entrega de la práctica debe ser un documento PDF con un nombre en el siguiente formato: 
+Si la entrega de la práctica debe ser un documento PDF, el nombre tendrá el siguiente formato:
 
 `<tu usuario>_t<número de la tarea con dos dígitos>.pdf`{: .filepath}
 
-Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo la alumna Marcos Ruiz García para la primera unidad del módulo profesional de LMSGI, debería nombrar esta tarea como:
+Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo el alumno Marcos Ruiz García para la primera tarea, tendría el siguiente nombre:
 
 `mruizg_t01.pdf`{: .filepath}
 
 En caso de que no se pueda trasladar la presentación desarrollada a formato PDF se deberá entregar un documento PDF con un número de capturas adecuado y un enlace web público con la presentación real.
 
-El documento PDF SIEMPRE debe contener una portada número de la tarea, título de la tarea, nombre del módulo profesional, nombre del ciclo formativo, autor(es) y fecha de realización.
+El documento PDF SIEMPRE debe contener una portada, número de la tarea, título de la tarea, nombre del módulo profesional, nombre del ciclo formativo, autor(es) y fecha de realización.
+
+## Entrega y presentación en formato Markdown
+
+Si la entrega de la práctica debe ser un documento PDF, el nombre tendrá el siguiente formato:
+
+`<tu usuario>_t<número de la tarea con dos dígitos>.md`{: .filepath}
+
+Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo el alumno Marcos Ruiz García para la primera tarea, tendría el siguiente nombre:
+
+`mruizg_t01.md`{: .filepath}
+
+El documento Markdown debe contener título de la tarea, nombre del módulo profesional, nombre del ciclo formativo, autor(es) y fecha de realización.
+
+Ejemplo de entrega:
+
+```markdown
+# Tarea 11: Introducción a XPath
+
+- Módulo profesional: Lenguajes de Marcas y Sistemas de Gestión de Información
+- Ciclo formativo: Desarrollo de Aplicaciones Web
+- Autor: Marcos Ruiz García
+- Fecha: 28/02/2024
+
+## Actividad 1
+
+Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la respuesta deseada.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<ies>
+  <nombre>Campus Digital</nombre>
+  <web>https://campusdigitalfp.com/</web>
+</ies>
+‎```
+
+### Actividad 1.1
+
+Nombre del instituto.
+
+Salida esperada:
+
+```xml
+<nombre>Campus Digital</nombre>
+‎```
+
+Consulta XPath:
+
+```xpath
+/ies/nombre
+‎```
+
+Salida real:
+
+```plaintext
+<nombre>Campus Digital</nombre>
+‎```
+
+```
+{: file="mruizg_t01.md" }
+
 
 ## Cómo saber mi nombre de usuario
 

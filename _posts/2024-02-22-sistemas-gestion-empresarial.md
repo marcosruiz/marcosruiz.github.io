@@ -84,7 +84,7 @@ La consultoría en materia de ERP puede ser de dos tipos:
     En la actualidad, y debido a la amplia implantación de las intranets en las empresas, la mayoría de los sistemas ERP tienen interfaz web, lo que aporta la ventaja de permitir el acceso al ERP a través del navegador web.
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Para qué tipo de empresas es viable un ERP?</summary>
+  <summary class="card-header question">¿Para qué tipo de empresas (grandes, medianas, pequeñas, micro) es viable un ERP?</summary>
   <div class="card-body" markdown="1">
 
 - Grandes empresas (más de 250 trabajadores): Si
