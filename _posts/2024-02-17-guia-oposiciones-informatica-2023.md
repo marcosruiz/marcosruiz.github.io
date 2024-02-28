@@ -127,7 +127,7 @@ Temas que salieron:
 - Tema 64. Funciones y servicios del nivel de enlace. Técnicas. Protocolos.
 - Tema 65. Funciones y servicios del nivel de red y del nivel de transporte. Técnicas. Protocolos.
 - Tema 66. Funciones y servicios en niveles sesión, presentación y aplicación. Protocolos. Estándares.
-- Tema 67. Redes de área local. Componentes. Tipologías. Estándares. Protocolos.
+- Tema 67. Redes de área local. Componentes. Topologías. Estándares. Protocolos.
 - Tema 68. "Software" de sistemas en red. Componentes. Funciones. Estructura.
 - Tema 69. Integración de sistemas. Medios de interconexión. Estándares. Protocolos de acceso a redes de área extensa.
 - Tema 70. Diseño de sistemas en red local. Parámetros de diseño. Instalación y configuración de sistemas en red local.
@@ -149,7 +149,7 @@ Me preparé un total de 15 temas:
 1. Tema 64. Funciones y servicios del nivel de enlace. Técnicas. Protocolos.
 1. Tema 65. Funciones y servicios del nivel de red y del nivel de transporte. Técnicas. Protocolos.
 1. Tema 66. Funciones y servicios en niveles sesión, presentación y aplicación. Protocolos. Estándares.
-1. Tema 67. Redes de área local. Componentes. Tipologías. Estándares. Protocolos.
+1. Tema 67. Redes de área local. Componentes. Topologías. Estándares. Protocolos.
 1. Tema 68. "Software" de sistemas en red. Componentes. Funciones. Estructura.
 1. Tema 69. Integración de sistemas. Medios de interconexión. Estándares. Protocolos de acceso a redes de área extensa.
 1. Tema 70. Diseño de sistemas en red local. Parámetros de diseño. Instalación y configuración de sistemas en red local.
