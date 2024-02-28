@@ -136,7 +136,7 @@ Salida real:
 > No usar el documento anterior de plantilla ya que contiene caracteres invisibles para su correcta visualización en web.
 {:.prompt-warning}
 
-> Si quieres saber más sobre Markdown, puedes leer este artículo introductorio.
+> Si quieres saber más sobre Markdown, puedes leer este [artículo introductorio](/posts/markdown/).
 
 ## Cómo saber mi nombre de usuario
 

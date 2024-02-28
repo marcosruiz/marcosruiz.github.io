@@ -8,21 +8,28 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 ## Noticias sobre tecnología
 
 - [El padre de la web está de vuelta para salvarla: qué es Inrupt, la nueva empresa de Tim Berners-Lee](https://hipertextual.com/2022/01/el-padre-de-la-web-esta-de-vuelta-para-salvarla-que-es-inrupt-la-nueva-empresa-de-tim-berners-lee)
-- [Ciberataques: seis consejos para convertirte en un 'cortafuegos humano’](https://www.elconfidencial.com/tecnologia/2021-10-15/ciberataques-seis-consejos-cortafuegos-bra_3302729/?fbclid=IwAR0Hm7qjYhXNxgexyvrujtADN_Qj_oV-6VYyHHWMgZFM6t4X-frai6SgSDQ_aem_AZa2waLFQrIYyQuWGKIxG6GuVwfkn5ihTeAFzHBVp2fz2PcsufIpUOxaQFzMVxw2QnowRVIZulhQxOG2_D5gOedfJEWKm7GcwnWof0YBNC_vQI1g-rehNsJXHSIFcgpzR2k)
-- [Multa de 4.000 euros por agregar a una antigua clienta a un grupo de WhatsApp: no protegieron sus datos personales ni tenían su consentimiento](https://www.xataka.com/pro/multa-4-000-euros-agregar-a-antigua-clienta-a-grupo-whatsapp-no-protegieron-sus-datos-personales-tenian-su-consentimiento)
 - [¿Cómo funcionan las redes inalámbricas de telefonía móvil?](https://unpocodecienciaporfavor.com/2017/02/24/como-funcionan-las-redes-inalambricas-de-telefonia-movil/?fbclid=IwAR0jA9P2Hgn9u5bbqe97XLyknUEjsUCL8m3zA5T35jX0RI4XpkBuUtkrjxw)
 - [La insólita historia de la invención del código QR](https://www.nippon.com/es/news/fnn20191214001/)
-- [Los streamers de Andorra se quedan sin internet a la vez por un ataque de denegación de servicio](https://es.gizmodo.com/los-streamers-de-andorra-se-quedan-sin-internet-a-la-ve-1848403292)
-- [Un bug en Linux de hace 12 años permite obtener acceso root en casi cualquier distro, y ya lo han explotado ](https://www.genbeta.com/linux/bug-linux-hace-12-anos-permite-obtener-acceso-root-casi-cualquier-distro-han-explotado)
 - [Una generación eternamente desconcentrada: "No puedo hacer nada durante más de quince minutos sin mirar el móvil" ](https://www.xataka.com/otros/generacion-eternamente-desconcentrada-no-puedo-hacer-nada-durante-quince-minutos-mirar-movil)
 - [¡Locura absoluta! Un minero en solitario consigue minar un Bitcoin, el cuarto caso en 2022](https://computerhoy.com/noticias/tecnologia/locura-absoluta-minero-solitario-consigue-minar-bitcoin-cuarto-caso-2022-1006033)
 - [R E I S U B, la secuencia de escape para emergencias en sistemas Linux](https://www.genbeta.com/linux/r-e-i-s-u-b-o-la-secuencia-de-escape-para-emergencias-en-sistemas-linux)
-- [Ya hay detectores de texto artificial: los profesores podrán saber cuando los deberes se han hecho con IA](https://www.xataka.com/robotica-e-ia/profesores-chatgpt-empieza-batalla-crear-detector-textos-que-evite-trampas-deberes)
 - [El próximo gran avance en la fabricación de chips está en las manos de una sola empresa, y llegará en 2025](https://www.xataka.com/investigacion/proximo-gran-avance-fabricacion-chips-esta-manos-sola-empresa-llegara-2025?fbclid=IwAR3VPAGTbl2FrsB3CeEo-OQvP96xeglqRDxg1ig7smuehdY2U_un5Z9lw1g)
+
+## Noticias sobre IA
+
+- [Ya hay detectores de texto artificial: los profesores podrán saber cuando los deberes se han hecho con IA](https://www.xataka.com/robotica-e-ia/profesores-chatgpt-empieza-batalla-crear-detector-textos-que-evite-trampas-deberes)
 - [ChatGPT: qué es, cómo usarlo y qué puedes hacer con este chat de inteligencia artificial GPT-3](https://www.xataka.com/basics/chatgpt-que-como-usarlo-que-puedes-hacer-este-chat-inteligencia-artificial)
+- [Jensen Huang lo tiene claro: a estas alturas nadie debería aprender a programar, ya lo hará la IA por nosotros](https://www.xataka.com/robotica-e-ia/jensen-huang-tiene-claro-a-estas-alturas-nadie-deberia-aprender-a-programar-hara-ia-nosotros)
+
+## Noticias sobre ciberseguridad
+
+- [Ciberataques: seis consejos para convertirte en un 'cortafuegos humano’](https://www.elconfidencial.com/tecnologia/2021-10-15/ciberataques-seis-consejos-cortafuegos-bra_3302729/?fbclid=IwAR0Hm7qjYhXNxgexyvrujtADN_Qj_oV-6VYyHHWMgZFM6t4X-frai6SgSDQ_aem_AZa2waLFQrIYyQuWGKIxG6GuVwfkn5ihTeAFzHBVp2fz2PcsufIpUOxaQFzMVxw2QnowRVIZulhQxOG2_D5gOedfJEWKm7GcwnWof0YBNC_vQI1g-rehNsJXHSIFcgpzR2k)
+- [Multa de 4.000 euros por agregar a una antigua clienta a un grupo de WhatsApp: no protegieron sus datos personales ni tenían su consentimiento](https://www.xataka.com/pro/multa-4-000-euros-agregar-a-antigua-clienta-a-grupo-whatsapp-no-protegieron-sus-datos-personales-tenian-su-consentimiento)
 - [Estamos en 2023 y 123456 sigue siendo la contraseña más usada. Tenemos un problema de gestión de seguridad](https://www.xataka.com/seguridad/estamos-2023-123456-sigue-siendo-contrasena-usada-hablemos-como-crear-gestionar-contrasena-segura)
 - [El Hospital Clínic de Barcelona está contra las cuerdas por un ataque de ransomware: de momento, ni negociación ni rescate](https://www.xataka.com/seguridad/hospital-clinic-barcelona-esta-cuerdas-ataque-ransomware-negociacion-rescate-nada)
 - [La ofuscación de código: un arte que reina en la ciberseguridad](https://www.welivesecurity.com/es/recursos-herramientas/ofuscacion-de-codigo-arte-ciberseguridad/)
+- [Los streamers de Andorra se quedan sin internet a la vez por un ataque de denegación de servicio](https://es.gizmodo.com/los-streamers-de-andorra-se-quedan-sin-internet-a-la-ve-1848403292)
+- [Un bug en Linux de hace 12 años permite obtener acceso root en casi cualquier distro, y ya lo han explotado ](https://www.genbeta.com/linux/bug-linux-hace-12-anos-permite-obtener-acceso-root-casi-cualquier-distro-han-explotado)
 
 ## Otras noticias
 
