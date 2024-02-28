@@ -133,6 +133,8 @@ Salida real:
 ```
 {: file="mruizg_t01.md" }
 
+> No usar el documento anterior de plantilla ya que contiene caracteres invisibles para su correcta visualización.
+{:.prompt-warning}
 
 ## Cómo saber mi nombre de usuario
 
