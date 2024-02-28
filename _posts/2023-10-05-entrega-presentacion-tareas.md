@@ -25,7 +25,7 @@ Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiale
 1. Cada actividad debe tener **el enunciado en negrita** y la respuesta en texto normal.
 1. Cada imagen debe tener un texto que la presente o un pie de foto con el siguiente formato: `Figura <número>: <Breve descripción de la figura>`.
 1. Los comandos, documentos de configuración y código fuente deben quedar reflejados en el PDF de la entrega en texto plano para permitir copiar y pegar de una manera rápida.
-1. Los comandos, documentos de configuración y código fuente que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$ sudo apt install neofetch`.
+1. Los comandos, documentos de configuración y código fuente que se muestren en el documento PDF deben tener un estilo de letra monospace como puede ser el tipo de letra Consolas o Courier New. Por ejemplo: `$sudo apt install neofetch`.
 1. Para las actividades a mano se deberá hacer una foto a la resolución del ejercicio y añadirla al PDF.
 
 Además:
@@ -39,7 +39,7 @@ _Ejemplo de portada_
 ![Ejemplo de actividad](ejemploActividad.png)
 _Ejemplo de actividad_
 
-> Os dejo en [este enlace](/assets/docx/apellido1_apellido2_nombre_SIGxx_Tarea.docx) una plantilla en formato DOCX realizada con WPS Office que cumple la mayoría de los requisitos. ¡Recuerda eliminar los símbolos "<" y ">" al usar esta plantilla.
+> Os dejo en [este enlace](/assets/docx/apellido1_apellido2_nombre_SIGxx_Tarea.docx) una plantilla en formato DOCX realizada con WPS Office que cumple la mayoría de los requisitos. ¡Recuerda eliminar los símbolos "<" y ">" al usar esta plantilla!
 {:.prompt-info}
 
 ## Entrega y presentación en formato ZIP
@@ -52,7 +52,7 @@ Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiale
 
 `mruizg_t01.zip`{: .filepath}
 
-En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que se pida) con el nombre `mruizg_t01.zip`{: .filepath} y las actividades en el formato que corresponda:
+En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que se pida) con el nombre `mruizg_t01.pdf`{: .filepath} y las actividades en el formato que corresponda:
 
 - Las actividades de XML deberán estar en formato XML con el nombre `<tu usuario>_a<Número de la actividad con dos dígitos>.xml`{: .filepath}. Por ejemplo: `mruizg_a01.xml`{: .filepath}.
 - Las actividades de HTML deberán estar en formato HTML con el nombre `<tu usuario>_a<Número de la actividad con dos dígitos>.html`{: .filepath}. Por ejemplo: `mruizg_a01.html`{: .filepath}.
