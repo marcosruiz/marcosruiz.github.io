@@ -57,6 +57,7 @@ tags: [seguridad informática, smr]
 - [HackMyVM](https://hackmyvm.eu/)
 - [VulnHub](https://www.vulnhub.com/)
 - [Try Hack Me](https://tryhackme.com/) (S4vitar no la recomienda porque se comparte VPN entre usuarios)
+- [MAPA EN TIEMPO REAL DE AMENAZAS CIBERNÉTICAS](https://cybermap.kaspersky.com/es)
 
 ## Carpeta compartida de la asignatura
 

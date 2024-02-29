@@ -30,6 +30,7 @@ tags: [dam, smr, daw, asir, enlaces, noticias, youtube]
 - [La ofuscación de código: un arte que reina en la ciberseguridad](https://www.welivesecurity.com/es/recursos-herramientas/ofuscacion-de-codigo-arte-ciberseguridad/)
 - [Los streamers de Andorra se quedan sin internet a la vez por un ataque de denegación de servicio](https://es.gizmodo.com/los-streamers-de-andorra-se-quedan-sin-internet-a-la-ve-1848403292)
 - [Un bug en Linux de hace 12 años permite obtener acceso root en casi cualquier distro, y ya lo han explotado ](https://www.genbeta.com/linux/bug-linux-hace-12-anos-permite-obtener-acceso-root-casi-cualquier-distro-han-explotado)
+- [El lado oscuro de Temu, la app más descargada que regala productos y anima a comprar como un millonario](https://www.lavanguardia.com/tecnologia/aplicaciones/20230928/9256797/lado-oscuro-temu-app-mas-descargada-espana-comercio-electronico.html)
 
 ## Otras noticias
 
