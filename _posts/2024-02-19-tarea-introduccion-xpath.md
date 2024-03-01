@@ -103,7 +103,7 @@ Siglas por las que se conocen los Ciclos Formativos.
 
 Salida esperada:
 
-```plaintext
+```xpath
 id="ASIR"
 id="DAW"
 id="SMR"
@@ -116,7 +116,7 @@ Años en los que se publicaron los decretos de título de los Ciclos Formativos.
 
 Salida esperada:
 
-```plaintext
+```xpath
 año="2009"
 año="2010"
 año="2008"

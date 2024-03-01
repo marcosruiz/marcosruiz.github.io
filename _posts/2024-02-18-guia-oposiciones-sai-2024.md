@@ -192,7 +192,7 @@ No. En la rúbricas vistas no se hace alusión a la aplicación didáctica de lo
 1. Estudia una pequeña bibliografía por bloques de contenido. No te vas a estudiar más de 4 bloques por lo que no debería ser un problema.
 
 {:.subsection}
-### Rúbricas de años anteriores
+### Rúbricas de años anteriores TEMA
 
 {:.subsubsection}
 #### Rúbrica del año 2023 en Aragón (INF)
@@ -374,7 +374,7 @@ En caso de que no hayas dado ningún módulo profesional de la especialidad que 
 1. Si puedes llevar una hoja, haz dos columnas y utiliza colores para diferenciar los apartados y subapartados.
 
 {:.subsection}
-### Rúbricas de años anteriores
+### Rúbricas de años anteriores UD
 
 {:.subsubsection}
 #### Rúbrica del año Aragón 2023 (INF)
@@ -439,6 +439,13 @@ En caso de que no hayas dado ningún módulo profesional de la especialidad que 
 - [20 actividades didácticas interactivas para el aula interactive](https://www.bookwidgets.com/blog/es/2020/06/20-actividades-didacticas-interactivas-para-el-aula-interactive)
 - [Desarrollo de unidades de trabajo en la programación didáctica FP. Oposiciones 2024-25](https://www.econosublime.com/2023/05/desarrollo-de-unidades-de-trabajo-en-la.html)
 
+## Herramientas útiles
+
+- <https://elevenlabs.io/> → Texto a voz
+- <https://chat.openai.com/> → Estudiar temas
+- <https://learn.microsoft.com/es-es/windows/powertoys/> → Función OCR texto en pantalla
+- <https://tools.pdf24.org/es/ocr-pdf> → Función OCR documentos PDF
+
 ## Bibliografía
 
 - [Temario TodoFP](https://www.todofp.es/dam/jcr:43bc1586-670a-42cb-98b3-a58b343d1dce/ptfp-sistemas-y-aplicacioens-informaticas-ok-pdf.pdf)
@@ -450,4 +457,3 @@ En caso de que no hayas dado ningún módulo profesional de la especialidad que 
 - [Técnico Superior en Desarrollo de Aplicaciones Multiplataforma](https://todofp.es/que-estudiar/loe/informatica-comunicaciones/des-aplicaciones-multiplataforma.html)
 - <https://educa.aragon.es/-/criterios-de-calificaci%C3%B3n-segunda-prueba>
 - <https://www.gobiernodecanarias.org/educacion/web/personal/docente/oferta/oposiciones/secundaria-y-otros-cuerpos/2021/criterios-material-instrucciones-primera-prueba/>
-- 
