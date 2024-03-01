@@ -43,6 +43,8 @@ pin: true
 - <https://home.work.caltech.edu/lectures.html#lectures>
 - <http://cesguiro.es/doku.php?id=clase:ia:saa:start>
 
+- https://learnxinyminutes.com/docs/es-es/python-es/
+
 ## Cursos
 
 - <https://elandroidefeliz.com/10-cursos-online-gratuitos-sobre-ia-impartidos-por-google/>
