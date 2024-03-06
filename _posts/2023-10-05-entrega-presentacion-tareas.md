@@ -100,7 +100,7 @@ Ejemplo de entrega:
 
 Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la respuesta deseada.
 
-```xml
+‎```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <ies>
   <nombre>Campus Digital</nombre>
@@ -114,19 +114,19 @@ Nombre del instituto.
 
 Salida esperada:
 
-```xml
+‎```xml
 <nombre>Campus Digital</nombre>
 ‎```
 
 Consulta XPath:
 
-```xpath
+‎```xpath
 /ies/nombre
 ‎```
 
 Salida real:
 
-```plaintext
+‎```plaintext
 <nombre>Campus Digital</nombre>
 ‎```
 
@@ -137,6 +137,7 @@ Salida real:
 {:.prompt-warning}
 
 > Si quieres saber más sobre Markdown, puedes leer este [artículo introductorio](/posts/markdown/).
+{:.prompt-info}
 
 ## Cómo saber mi nombre de usuario
 

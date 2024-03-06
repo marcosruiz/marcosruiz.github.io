@@ -44,8 +44,8 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
       <grado>Superior</grado>
       <decretoTitulo año="2009" />
     </ciclo>
-    <ciclo id="DAW">
-      <nombre>Desarrollo de Aplicaciones Web</nombre>
+    <ciclo id="DAM">
+      <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
       <grado>Superior</grado>
       <decretoTitulo año="2010" />
     </ciclo>
@@ -53,11 +53,6 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
       <nombre>Sistemas Microinformáticos y Redes</nombre>
       <grado>Medio</grado>
       <decretoTitulo año="2008" />
-    </ciclo>
-    <ciclo id="DAM">
-      <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
-      <grado>Superior</grado>
-      <decretoTitulo año="2010" />
     </ciclo>
   </ciclos>
 </ies>
@@ -92,9 +87,8 @@ Salida esperada:
 
 ```plaintext
 Administración de Sistemas Informáticos en Red
-Desarrollo de Aplicaciones Web
-Sistemas Microinformáticos y Redes
 Desarrollo de Aplicaciones Multiplataforma
+Sistemas Microinformáticos y Redes
 ```
 
 #### Actividad 1.4
@@ -105,9 +99,8 @@ Salida esperada:
 
 ```xpath
 id="ASIR"
-id="DAW"
-id="SMR"
 id="DAM"
+id="SMR"
 ```
 
 #### Actividad 1.5
@@ -120,7 +113,6 @@ Salida esperada:
 año="2009"
 año="2010"
 año="2008"
-año="2010"
 ```
 
 #### Actividad 1.6
@@ -150,9 +142,8 @@ Salida esperada:
 {:.prompt-info}
 
 ```xml
-<nombre>Administración de Sistemas Informáticos en Red</nombre>
-<nombre>Desarrollo de Aplicaciones Web</nombre>
 <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
+<nombre>Administración de Sistemas Informáticos en Red</nombre>
 ```
 
 #### Actividad 1.8
@@ -179,9 +170,8 @@ Salida esperada:
 {:.prompt-info}
 
 ```plaintext
-Desarrollo de Aplicaciones Web
-Sistemas Microinformáticos y Redes
 Desarrollo de Aplicaciones Multiplataforma
+Sistemas Microinformáticos y Redes
 ```
 
 #### Actividad 1.9
