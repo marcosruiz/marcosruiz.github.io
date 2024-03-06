@@ -256,7 +256,6 @@ Un documento de instancia XML válido creado a partir del esquema es similar al 
 </MyAddress>
 ```
 
-{:.section}
 ## Bibliografía
 
 - <https://www.ibm.com/docs/es/radfws/9.7?topic=schemas-xml-namespaces>
