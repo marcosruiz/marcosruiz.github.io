@@ -12,6 +12,7 @@ pin: true
 - UD04 - Definición de esquemas y vocabularios en XML
   - [DTD (Document Type Definition)](/posts/dtd/)
   - [XSD (XML Schema Definition)](/posts/xsd/)
+  - [Espacios de nombres XML](/posts/espacios-de-nombres-xml)
 - UD05 -  [Conversión y adaptación de documentos XML](/posts/xsl)
   - [¿Qué es XPath?](/posts/xpath/)
   - [¿Qué es XSLT?](/posts/xslt/)
@@ -22,10 +23,10 @@ pin: true
 
 - T09 - Obligatoria - Nota - [Tarea: DTD](/posts/tarea-dtd/)
 - T10 - Obligatoria - Nota - [Tarea: XSD](/posts/tarea-xsd/)
-- TXX - Voluntaria - Apto/No apto - [Tarea: Introducción a XPath](/posts/tarea-introduccion-xpath/)
-- TXX - Tarea: XSLT
-- TXX - Tarea: XSL-FO
-- TXX - Tarea: XQuery
+- T11 - Obligatoria - Apto/No apto - [Tarea: Introducción a XPath](/posts/tarea-introduccion-xpath/)
+  - [¿Qué es Markdown?](/posts/markdown/)
+- T12 - Obligatoria - Nota [Tarea: XSL](/posts/tarea-xsl/)
+- TXX - Voluntaria - Apto/No apto - Tarea: XQuery
 
 ## Evaluación 1
 
