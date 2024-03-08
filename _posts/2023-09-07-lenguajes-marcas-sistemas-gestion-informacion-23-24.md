@@ -25,7 +25,7 @@ pin: true
 - T10 - Obligatoria - Nota - [Tarea: XSD](/posts/tarea-xsd/)
 - T11 - Obligatoria - Apto/No apto - [Tarea: Introducción a XPath](/posts/tarea-introduccion-xpath/)
   - [¿Qué es Markdown?](/posts/markdown/)
-- T12 - Obligatoria - Nota [Tarea: XSL](/posts/tarea-xsl/)
+- T12 - Obligatoria - Nota - [Tarea: XSL](/posts/tarea-xsl/)
 - TXX - Voluntaria - Apto/No apto - Tarea: XQuery
 
 ## Evaluación 1
