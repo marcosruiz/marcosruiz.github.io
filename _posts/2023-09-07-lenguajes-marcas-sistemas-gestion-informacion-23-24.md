@@ -49,7 +49,7 @@ pin: true
 - T06 - Voluntaria - Apto/No apto - [Tarea: CSS en W3Schools](/posts/practica-css-w3schools/)
 - T07 - Obligatoria - Apto/No apto -[Tarea: CSS en Codepip](/posts/practica-css-codepip/)
 - T08 - Obligatoria - Nota -[Tarea: Calculadora con HTML y CSS](/posts/tarea-calculadora-html-css/)
-- TXX - Voluntaria - Apto/No apto - [Tarea: RSS](/posts/tarea-rss/)
+- TXX - Voluntaria - Apto/No apto - [Tarea: RSS y Atom](/posts/tarea-rss/)
 
 ## Enlaces increíbles 🔥 (beta)
 
