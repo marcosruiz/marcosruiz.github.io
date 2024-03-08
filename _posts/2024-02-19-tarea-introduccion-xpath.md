@@ -8,7 +8,10 @@ img_path: /assets/img/tarea-xpath/
 
 ## Entrega y presentación
 
-La entrega será en formato Markdown. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
+La entrega será en formato **Markdown**. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/#entrega-y-presentaci%C3%B3n-en-formato-markdown).
+
+> Si quieres saber más sobre Markdown, puedes leer este [artículo introductorio](/posts/markdown/).
+{:.prompt-info}
 
 > Esta tarea será utilizada para generar un PDF con XSL-FO.
 {:.prompt-info}

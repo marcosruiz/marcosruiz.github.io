@@ -88,6 +88,9 @@ El documento Markdown debe contener título de la tarea, nombre del módulo prof
 
 Ejemplo de entrega:
 
+> NO COPIAR NI USAR el documento siguiente de plantilla ya que contiene caracteres invisibles para su correcta visualización en web.
+{:.prompt-warning}
+
 ```markdown
 # Tarea 11: Introducción a XPath
 
@@ -132,9 +135,6 @@ Salida real:
 
 ```
 {: file="mruizg_t01.md" }
-
-> No usar el documento anterior de plantilla ya que contiene caracteres invisibles para su correcta visualización en web.
-{:.prompt-warning}
 
 > Si quieres saber más sobre Markdown, puedes leer este [artículo introductorio](/posts/markdown/).
 {:.prompt-info}
