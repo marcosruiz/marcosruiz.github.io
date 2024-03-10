@@ -58,7 +58,7 @@ Instala y prueba el módulo de foro (`Forum`) desde la sección `Apps`.
 
 Desinstala el módulo de foro.
 
-### Actividad 8
+### Actividad 7
 
 Instala y prueba otro módulo (desde el menú `Apps`) que consideres interesante.
 

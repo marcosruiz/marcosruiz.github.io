@@ -197,6 +197,24 @@ Actualmente lo más habitual es incorporar el ERP dentro de la intranet de la 
 
 Hoy en día existen ERP disponibles en la nube, por ejemplo [www.salesforce.com](https://www.salesforce.com/). Estos sistemas no tienen costes de instalación en las empresa y apuestan por facilitar su  adaptación a las diferentes necesidades de cada empresa.
 
+{:.question}
+¿Sabrías poner un ejemplo de ERP en la nube?
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es la nube?</summary>
+  <div class="card-body" markdown="1">
+
+"La nube" hace referencia a los servidores a los que se accede a través de Internet, y al software y bases de datos que se ejecutan en esos servidores. Los servidores de la nube están ubicados en centros de datos por todo el mundo. Con la informática en la nube, no es necesario que los usuarios y las empresas gestionen los servidores físicos ni que ejecuten aplicaciones de software en sus propios ordenadores.
+
+Si quieres saber más puedes leer el artículo [¿Qué es el cloud computing?](/posts/cloud-computing/)
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+{:.question}
+¿Qué ventajas tiene utilizar un ERP en la nube?
+
 Es un lenguaje de programación diseñado para ser ejecutado por un intérprete. Esto significa que las instrucciones del código se van traduciendo a un lenguaje que comprende el procesador a medida que se van ejecutando.
 
 {:.question}
