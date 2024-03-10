@@ -355,6 +355,11 @@ En el caso de Odoo la mayoría de informes se generan solamente en formato PDF a
 - [Excel Report engine](https://apps.odoo.com/apps/modules/8.0/report_xls/)
 - [Excel, word, pdf report Convert](https://apps.odoo.com/apps/modules/9.0/odoosmes_report_py3o_convert/)
 
+{:.section}
+## Para saber más...
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/igmnOZAJE4E?si=BOn2RnNhQ9jNf94i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Bibliografía
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
