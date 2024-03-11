@@ -18,7 +18,7 @@ Duración: - h
 
 ## Actividades
 
-En esta tarea vamos a pedirte que realices la instalación y despliegue de Odoo 13 . Además te pediremos que en una de las instalaciones realices algunas operaciones con Odoo para que te familiarices un poco con el entorno.
+En esta tarea vamos a pedirte que realices la instalación y despliegue de Odoo 13. Además te pediremos que en una de las instalaciones realices algunas operaciones con Odoo para que te familiarices un poco con el entorno.
 
 ### Actividad 1
 

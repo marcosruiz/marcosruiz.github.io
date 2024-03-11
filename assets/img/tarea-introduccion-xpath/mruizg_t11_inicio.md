@@ -1,38 +1,11 @@
----
-title: "Tarea: Introducción a XPath"
-date: 2024-02-19 9:00:00 +0100
-categories: [Desarrollo de Aplicaciones Multiplataforma, Lenguajes de Marcas y Sistemas de Gestión de Información]
-tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistemas de gestión de información, administración de sistemas informáticos de red, práctica, tarea, dam, daw, asir]
-img_path: /assets/img/tarea-xpath/
----
+# Tarea: Introducción a XPath
 
-## Entrega y presentación
+- Módulo profesional: Lenguajes de Marcas y Sistemas de Gestión de Información
+- Ciclo formativo: Desarrollo de Aplicaciones Web
+- Autor: Marcos Ruiz García
+- Fecha: 11/03/2024
 
-La entrega será en formato **Markdown**. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/#entrega-y-presentaci%C3%B3n-en-formato-markdown).
-
-> Si quieres saber más sobre Markdown, puedes leer este [artículo introductorio](/posts/markdown/).
-{:.prompt-info}
-
-> Puedes descargar el fichero [mruizg_t11_inicio.md](/assets/img/tarea-introduccion-xpath/mruizg_t11_inicio.md) como plantilla de inicio. ¡Recuerda cambiarle el nombre!
-{:.prompt-info}
-
-> Esta tarea será utilizada para generar un PDF con XSL-FO.
-{:.prompt-info}
-
-## Calificación
-
-La tarea se calificará como apto o no apto.
-
-Duración: - h
-
-## Actividades
-
-Realiza las siguientes actividades.
-
-> Para hacer estos ejercicios puedes utilizar la página [Code Beauty - XPath Tester](https://codebeautify.org/Xpath-Tester)
-{:.prompt-info}
-
-### Actividad 1
+## Actividad 1
 
 Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la respuesta deseada.
 
@@ -60,9 +33,8 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
   </ciclos>
 </ies>
 ```
-{: file="ciclos.xml" }
 
-#### Actividad 1.1
+### Actividad 1.1
 
 Nombre del instituto.
 
@@ -72,7 +44,19 @@ Salida esperada:
 <nombre>Campus Digital</nombre>
 ```
 
-#### Actividad 1.2
+Consulta XPath:
+
+```xpath
+
+```
+
+Salida real:
+
+```xml
+
+```
+
+### Actividad 1.2
 
 Página web del Instituto.
 
@@ -82,7 +66,7 @@ Salida esperada:
 https://campusdigitalfp.com/
 ```
 
-#### Actividad 1.3
+### Actividad 1.3
 
 Nombre de los Ciclos Formativos.
 
@@ -94,7 +78,7 @@ Desarrollo de Aplicaciones Multiplataforma
 Sistemas Microinformáticos y Redes
 ```
 
-#### Actividad 1.4
+### Actividad 1.4
 
 Siglas por las que se conocen los Ciclos Formativos.
 
@@ -106,7 +90,7 @@ id="DAM"
 id="SMR"
 ```
 
-#### Actividad 1.5
+### Actividad 1.5
 
 Años en los que se publicaron los decretos de título de los Ciclos Formativos.
 
@@ -118,14 +102,13 @@ año="2010"
 año="2008"
 ```
 
-#### Actividad 1.6
+### Actividad 1.6
 
 Ciclos Formativos de Grado Medio (se trata de obtener el elemento `<ciclo>` completo).
 
 Salida esperada:
 
 > Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
-{:.prompt-info}
 
 ```xml
 <ciclo id="SMR">
@@ -135,53 +118,50 @@ Salida esperada:
 </ciclo>
 ```
 
-#### Actividad 1.7
+### Actividad 1.7
 
 Nombre de los Ciclos Formativos de Grado Superior.
 
 Salida esperada:
 
 > Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
-{:.prompt-info}
 
 ```xml
 <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
 <nombre>Administración de Sistemas Informáticos en Red</nombre>
 ```
 
-#### Actividad 1.8
+### Actividad 1.8
 
 Nombre de los Ciclos Formativos anteriores a 2010.
 
 Salida esperada:
 
 > Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
-{:.prompt-info}
 
 ```plaintext
 Administración de Sistemas Informáticos en Red
 Sistemas Microinformáticos y Redes
 ```
 
-#### Actividad 1.9
+### Actividad 1.9
 
 Nombre de los Ciclos Formativos de 2008 o 2010.
 
 Salida esperada:
 
 > Resuelva este ejercicio de dos formas distintas, en un único paso de búsqueda y en dos pasos de búsqueda.
-{:.prompt-info}
 
 ```plaintext
 Desarrollo de Aplicaciones Multiplataforma
 Sistemas Microinformáticos y Redes
 ```
 
-#### Actividad 1.9
+### Actividad 1.9
 
 Invéntate tu propia consulta.
 
-### Actividad 2
+## Actividad 2
 
 Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la respuesta deseada.
 
@@ -217,9 +197,8 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
   </modulos>
 </ies>
 ```
-{: file="modulos.xml" }
 
-#### Actividad 2.1
+### Actividad 2.1
 
 Nombre de los módulos que se imparten en el Instituto.
 
@@ -232,7 +211,7 @@ Lenguajes de marcas y sistemas de gestión de información
 Seguridad y Alta Disponibilidad
 ```
 
-#### Actividad 2.2
+### Actividad 2.2
 
 Nombre de los módulos del ciclo ASIR.
 
@@ -244,7 +223,7 @@ Lenguajes de marcas y sistemas de gestión de información
 Seguridad y Alta Disponibilidad
 ```
 
-#### Actividad 2.3
+### Actividad 2.3
 
 Nombre de los módulos que se imparten en el segundo curso de cualquier ciclo.
 
@@ -255,7 +234,7 @@ Aplicaciones web
 Seguridad y Alta Disponibilidad
 ```
 
-#### Actividad 2.4
+### Actividad 2.4
 
 Nombre de los módulos de menos de 5 horas semanales.
 
@@ -267,7 +246,7 @@ Lenguajes de marcas y sistemas de gestión de información
 Seguridad y Alta Disponibilidad
 ```
 
-#### Actividad 2.5
+### Actividad 2.5
 
 Nombre de los módulos que se imparten en el primer curso de ASIR.
 
@@ -278,7 +257,7 @@ Gestión de bases de datos
 Lenguajes de marcas y sistemas de gestión de información
 ```
 
-#### Actividad 2.6
+### Actividad 2.6
 
 Horas semanales de los módulos de más de 3 horas semanales.
 
@@ -289,11 +268,11 @@ Salida esperada:
 5
 ```
 
-#### Actividad 2.7
+### Actividad 2.7
 
 Invéntate tu propia consulta.
 
-### Actividad 3
+## Actividad 3
 
 Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la respuesta deseada.
 
@@ -348,9 +327,8 @@ Dado el siguiente documento XML, escriba las expresiones XPath que devuelvan la 
   </modulos>
 </ies>
 ```
-{: file="ciclosYModulos.xml" }
 
-#### Actividad 3.1
+### Actividad 3.1
 
 Nombre de los módulos del ciclo "Sistemas Microinformáticos y Redes" (en la expresión final no deben aparecer las siglas SMR).
 
@@ -360,7 +338,7 @@ Salida esperada:
 Aplicaciones web
 ```
 
-#### Actividad 3.2
+### Actividad 3.2
 
 Nombre de los ciclos que incluyen el módulo "Lenguajes de marcas y sistemas de gestión de información".
 
@@ -371,7 +349,7 @@ Administración de Sistemas Informáticos en Red
 Desarrollo de Aplicaciones Web
 ```
 
-#### Actividad 3.3
+### Actividad 3.3
 
 Nombre de los módulos de ciclos de Grado Superior.
 
@@ -383,7 +361,7 @@ Lenguajes de marcas y sistemas de gestión de información
 Seguridad y Alta Disponibilidad
 ```
 
-#### Actividad 3.4
+### Actividad 3.4
 
 Nombre de los módulos de ciclos cuyo título se aprobó en 2008.
 
@@ -393,7 +371,7 @@ Salida esperada:
 Aplicaciones web
 ```
 
-#### Actividad 3.5
+### Actividad 3.5
 
 Grado de los ciclos con módulos de primer curso.
 
@@ -404,11 +382,11 @@ Superior
 Superior
 ```
 
-#### Actividad 3.6
+### Actividad 3.6
 
 Invéntate tu propia consulta.
 
-### (Voluntaria) Actividad 4
+## (Voluntaria) Actividad 4
 
 Dado el siguiente fichero XML:
 
@@ -609,159 +587,117 @@ Dado el siguiente fichero XML:
 
 </universidad>
 ```
-{: file="universidad.xml" }
 
 Obtén la siguiente información.
 
-#### Actividad 4.01
+### Actividad 4.01
 
 Nombre de la Universidad.
 
-#### Actividad 4.02
+### Actividad 4.02
 
 País de la Universidad.
 
-#### Actividad 4.03
+### Actividad 4.03
 
 Nombres de las grados.
 
-#### Actividad 4.04
+### Actividad 4.04
 
 Años de plan de estudio de las grados.
 
-#### Actividad 4.05
+### Actividad 4.05
 
 Nombres de todos los alumnos.
 
-#### Actividad 4.06
+### Actividad 4.06
 
 Identificadores de todas las grados.
 
-#### Actividad 4.07
+### Actividad 4.07
 
 Datos de la grado cuyo id es g01.
 
-#### Actividad 4.08
+### Actividad 4.08
 
 Centro en que se estudia de la grado cuyo id es g02.
 
-#### Actividad 4.09
+### Actividad 4.09
 
 Nombre de las grados que tengan subdirector.
 
-#### Actividad 4.10
+### Actividad 4.10
 
 Nombre de los alumnos que estén haciendo proyecto.
 
-#### Actividad 4.11
+### Actividad 4.11
 
 Códigos de las grados en las que hay algún alumno matriculado.
 
-#### Actividad 4.12
+### Actividad 4.12
 
 Apellidos y Nombre de los alumnos con beca.
 
-#### Actividad 4.13
+### Actividad 4.13
 
 Nombre de las asignaturas del grado g04.
 
-#### Actividad 4.14
+### Actividad 4.14
 
 Nombre de las asignaturas de segundo trimestre.
 
-#### Actividad 4.15
+### Actividad 4.15
 
 Nombre de las asignaturas que no tienen 4 créditos teóricos.
 
-#### Actividad 4.16
+### Actividad 4.16
 
 Código de la grado que estudia el último alumno.
 
-#### Actividad 4.17
+### Actividad 4.17
 
 Código de las asignaturas que estudian mujeres.
 
-#### Actividad 4.18
+### Actividad 4.18
 
 Nombre de los alumnos que matriculados en la asignatura a02.
 
-#### Actividad 4.19
+### Actividad 4.19
 
 Códigos de las grados que estudian los alumnos matriculados en alguna asignatura.
 
-#### Actividad 4.20
+### Actividad 4.20
 
 Apellidos de todos los hombres.
 
-#### Actividad 4.21
+### Actividad 4.21
 
 Nombre de la grado que estudia Víctor Manuel.
 
-#### Actividad 4.22
+### Actividad 4.22
 
 Nombre de las asignaturas que estudia Luisa.
 
-#### Actividad 4.23
+### Actividad 4.23
 
 Primer apellido de los alumnos matriculados en Ingeniería del Software.
 
-#### Actividad 4.24
+### Actividad 4.24
 
 Nombre de las grados que estudian los alumnos matriculados en la asignatura Tecnología de los Alimentos.
 
-#### Actividad 4.25
+### Actividad 4.25
 
 Nombre de los alumnos matriculados en grados que no tienen subdirector.
 
-#### Actividad 4.26
+### Actividad 4.26
 
 Nombre de las alumnos matriculados en asignaturas con 0 créditos prácticos y que estudien la grado de I.T. Informática .
 
-#### Actividad 4.27
+### Actividad 4.27
 
 Nombre de los alumnos que estudian grados cuyos planes son anteriores a 2002.
 
-#### Actividad 4.28
+### Actividad 4.28
 
 Invéntate tu propia consulta.
-
-<details class="card mb-2">
-  <summary class="card-header">Soluciones</summary>
-  <div class="card-body" markdown="1">
-
-1. `/universidad/nombre`
-2. `/universidad/pais`
-3. `//grado/nombre`
-4. `//grado/plan`
-5. `//alumno/nombre`
-6. `//grado/@id`
-7. `//grado[@id='g01']`
-8. `//grado[@id='g02']/centro`
-9. `//subdirector/../nombre`
-10. `//alumno//proyecto/../../nombre`
-11. `//alumno//grado/@codigo`
-12. `//alumno[@beca]/nombre | //alumno[@beca]/apellido1 | //alumno[@beca]/apellido2`
-13. `//asignatura[@titulacion='g04']/nombre`
-14. `//asignatura[trimestre=2]/nombre`
-15. `//asignatura[not(creditosTeoricos=4)]/nombre`
-16. `//alumno[last()]//grado/@codigo`
-17. `//alumno[sexo='Mujer']//asignatura/@codigo`
-18. `//alumno[.//asignatura/@codigo='a02']/nombre`
-19. `//alumno//asignatura/../../grado/@codigo`
-20. `//alumno[sexo='Hombre']/apellido1 | //alumno[sexo='Hombre']/apellido2`
-21. `//grado[@id=//alumno[nombre='Víctor Manuel']//grado/@codigo]/nombre`
-22. `//asignatura[@id=//alumno[nombre='Luisa']//asignatura/@codigo]/nombre`
-23. `//alumno[.//asignatura/@codigo=//asignatura[nombre='Ingeniería del Software']/@id]/apellido1`
-24. `//grado[@id=//alumno[.//asignatura[@codigo=//asignatura[nombre='Tecnología de los Alimentos']/@id]]//grado/@codigo]/nombre`
-25. `//alumno[not (.//grado/@codigo=//grado[subdirector]/@codigo)]/nombre`
-26. `//alumno[.//asignatura/@codigo=//asignatura[creditosPracticos=0]/@id][.//grado/@codigo=//grado[nombre='I.T. Informática']/@id]/nombre`
-27. `//alumno[.//grado/@codigo=//grado[not(plan>=2002)]/@id]/nombre`
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-## Bibliografía
-
-- <https://fp.josedomingo.org/lmgs/u04/ejercicio_xpath.html>
-- <https://www.mclibre.org/consultar/xml/ejercicios/xpath.html>
