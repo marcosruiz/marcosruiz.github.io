@@ -16,6 +16,8 @@ La tarea se calificará como apto o no apto.
 
 Duración: - h
 
+<div class="strawpoll-embed" id="strawpoll_poy9W3qb3gJ" style="height: 836px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_poy9W3qb3gJ" src="https://strawpoll.com/embed/poy9W3qb3gJ" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
 ## Actividades
 
 En esta tarea vamos a pedirte que realices la instalación y despliegue de Odoo 13. Además te pediremos que en una de las instalaciones realices algunas operaciones con Odoo para que te familiarices un poco con el entorno.
