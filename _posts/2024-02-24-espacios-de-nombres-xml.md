@@ -22,6 +22,9 @@ xmlns:<prefijo>="<uri>"
 Donde `<uri>` es un URI único (como <http://www.ibm.com>) y donde `<prefijo>` representa el espacio de nombres y proporciona un puntero al mismo.
 
 {:.question}
+¿El prefijo debe ser único?
+
+{:.question}
 ¿Qué es un puntero?
 
 Después de declarar el prefijo, puede usarlo para calificar elementos y atributos de un documento XML y asociarlos al identificador URI del espacio de nombres. Como el prefijo de espacio de nombres se utiliza en todo el documento, debe ser corto.
@@ -307,6 +310,28 @@ Un documento de instancia XML válido creado a partir del esquema es similar al 
   <name>name</name>
 </MyAddress>
 ```
+
+## Preguntas interesantes
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Es lo mismo un espacio de nombres que un XSD?</summary>
+  <div class="card-body" markdown="1">
+
+Un XSD es un lenguaje de esquema que se utiliza para definir la estructura y las restricciones de un documento XML. Por otro lado, un espacio de nombres en XML es un mecanismo que se utiliza para evitar conflictos de nombres al combinar documentos XML.Es decir, se podría decir que **un espacio de nombres actúa como identificador de un XSD, pero también podría hacerlo de un DTD.**
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es un URI?</summary>
+  <div class="card-body" markdown="1">
+
+Si no sabes que es un URI puedes leer el artículo [URI: ¿qué es el identificador de recursos uniforme?](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/uri-identificador-de-recursos-uniformes/).
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 ## Bibliografía
 

@@ -26,7 +26,7 @@ Realiza las siguientes actividades.
 {:.activity}
 ### Bailes
 
-Sobre lso datos del fichero ``:
+Sobre los datos del fichero `bailes.xml`:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -114,6 +114,7 @@ Sobre lso datos del fichero ``:
 
 </bailes>
 ```
+{: file="bailes.xml" }
 
 1. Muestra el nombre de todos los bailes.
 2. Muestra el nombre y precio de todos los bailes.
