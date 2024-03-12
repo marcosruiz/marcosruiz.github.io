@@ -64,7 +64,7 @@ Escribiremos `exit`, para salir de esta zona de la configuración.
 
 Y ahora vamos a indicar los puertos del switch que van a usar esa primera VLAN, para ello tecleamos: `interface range <tipo de puerto> <número del puerto inicio>-<número de puerto final>`.
 
-Ejemplo: 
+Ejemplo:
 
 ```console
 Switch(config-vlan)# interface range fa 0/1-7
@@ -78,7 +78,6 @@ Hecho lo cual añadiremos en la línea de comando:
 Switch(config-if-range)# switchport access vlan <número de vlan>
 ```
 
-
 En nuestro ejemplo:
 
 ```console
@@ -89,7 +88,6 @@ Switch(config-if-range)# exit
 Este proceso desde el paso 1 hasta el 4 hay que repetirlo para cada una de las VLAN que queramos configurar. 
 
 De este modo indicamos qué puertos del switch son para cada VLAN.
-
 
 ![img-description](/assets/img/tutorial-vlan-packet-tracer/configuracionSwitch.png)
 _Configuración del switch_
@@ -104,12 +102,11 @@ Switch(config)# interface fa 0/24
 
 Y ahora indicaremos cómo se va a hacer la comunicación por este puerto, el modo troncal.
 
-- El modo troncal (o **trunk mode**) nos permite utilizar múltiples VLANs a través del mismo cable. E usado normalmente para conectar switches y routers entre sí.
-- El modo de acceso (o **access mode**) solo nos permite usar una VLAN. Es usado normalmente pra conectar dispositivos como PCs, portátiles e impresoras a un switch.
+- El modo troncal (o **trunk mode**) nos permite utilizar múltiples VLANs a través del mismo cable. Es usado normalmente para conectar switches y routers entre sí.
+- El modo de acceso (o **access mode**) solo nos permite usar una VLAN. Es usado normalmente para conectar dispositivos como PCs, portátiles e impresoras a un switch.
 
 ![Gestión de permisos en GNU Linux](/assets/img/tutorial-vlan-packet-tracer/switchportAccessModeVsTrunkMode.webp)
 _Access mode vs trunk mode_
-
 
 ```console
 Switch(config-if)# switchport mode trunk
@@ -165,13 +162,13 @@ Router(config-subif)# exit
 
 Los pasos 1 a 3 se repetirán para cada VLAN que tengamos que configurar, cambiando obviamente los números de VLAN y las direcciones del router para cada una de las mismas.
 
-Y finalmente grabaremos los cambios con la instrucción: 
+Y finalmente grabaremos los cambios con la instrucción:
 
 ```console
 Router# copy run start
-``` 
+```
 
-Y pulsaremos enter para aceptar el guardado. 
+Y pulsaremos enter para aceptar el guardado.
 
 Obteniendo algo similar a esto:
 
