@@ -6,6 +6,9 @@ tags: [packet tracer, redes locales, smr, teoría]
 img_path: /assets/img/plantilla/
 ---
 
+> Artículo en construcción.
+{:.prompt-warning}
+
 ## Plantillas para copiar y pegar
 
 {:.question}
@@ -36,6 +39,9 @@ Ejemplo
 </details>
 
 > 
+{:.prompt-info}
+
+> 📸 Haz una o varias capturas para demostrar que ha realizado esta tarea.
 {:.prompt-info}
 
 > 
@@ -75,9 +81,6 @@ _ imgDescription _
 _ imgDescription _
 
 `/path/to/a/file.extend`{: .filepath}
-
-> Artículo en construcción.
-{:.prompt-warning}
 
 ## Introducción
 

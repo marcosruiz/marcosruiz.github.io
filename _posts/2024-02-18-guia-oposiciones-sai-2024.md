@@ -258,7 +258,7 @@ No. En la rúbricas vistas no se hace alusión a la aplicación didáctica de lo
 
 - [MistikEdu: Material Oposiciones SAI (2021)](https://mistikedu.notion.site/Material-Oposiciones-SAI-2021-0f284df50a4d48a4be9260f0125c24b3)
 - [AbacusNT: BLOQUE 01 – HARDWARE en vídeo](https://abacusnt.es/descargas/temario_oposiciones/sistemas_y_aplicaciones_informaticas/)
-- [Carlos Sernis](https://pildooras.com/temas/) → Pare sacar estructura de los temas.
+- [Carlos Sernis](https://pildooras.com/temas/) → Para sacar estructura de los temas.
 - [Temario Wikibooks](https://es.wikibooks.org/wiki/Temario_Oposici%C3%B3n_Profesor_FP_Inform%C3%A1tica)
 - [Temario burningthetowers](https://nube.burningthetowers.com/oposiciones/Temario/EPO/)
 - [Temario cifprodolfoucha](https://wiki.cifprodolfoucha.es/index.php?title=A2_Sistemas_y_aplicaciones_inform%C3%A1ticas)

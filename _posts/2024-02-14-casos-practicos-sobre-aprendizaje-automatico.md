@@ -37,4 +37,3 @@ img_path: /assets/img/aprendizaje-no-supervisado/
 
 - Regresión_y_Regularización_con_Scikit_learn.ipynb
 - boston.csv
-
