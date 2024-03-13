@@ -8,4 +8,4 @@ Apasionado de la tecnología y la educación sobre la misma. Utilizo este blog p
 
 Si quieres descargar mi curriculum haz click en [este enlace](/assets/pdf/Marcos Ruiz García CV.pdf).
 
-Si quieres apoyarme, puedes hacerlo pagándome un café muy caro [aquí](https://studio.buymeacoffee.com/dashboard).
+Si quieres apoyarme, puedes hacerlo pagándome un café muy caro en [buymeacoffee.com/marcosruiz](https://www.buymeacoffee.com/marcosruiz).
