@@ -13,7 +13,7 @@ pin: true
 - UD5 - Normativa vigente de ciberseguridad de ámbito nacional e internacional.
 
 - T05 - Voluntaria - Apto/No apto - [Tarea: Legislación sobre protección de datos](/posts/tarea-legislacion-proteccion-datos)
-- T06 - Obligatoria - Nota - [Tarea: Legislación sobre protección de datos](/posts/tarea-legislacion-proteccion-datos/)
+- T06 - Obligatoria - Nota - [Tarea: Normativa vigente de ciberseguridad](/posts/tarea-normativa-vigente-ciberseguridad/)
 
 ## Evaluación 1
 
