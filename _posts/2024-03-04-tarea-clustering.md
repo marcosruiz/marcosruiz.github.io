@@ -1,6 +1,6 @@
 ---
 title: "Tarea: Clustering"
-date: 2024-01-31 9:00:00 +0100
+date: 2024-03-04 9:00:00 +0100
 categories: [Inteligencia Artificial y Big Data, Sistemas de aprendizaje automático]
 tags: [inteligencia artificial y big data, sistemas de aprendizaje automático]
 img_path: /assets/img/tarea-clustering/
@@ -39,14 +39,14 @@ Lee el artículo [K-Means en Python paso a paso](https://www.aprendemachinelearn
 {:.activity}
 ### Ejercicio_K_Means.ipynb
 
-Descarga el notebook `Ejercicio_K_Means.ipynb`{: .filepath} y el archivo csv `analisis.csv`{: .filepath} del artículo [K-Means en Python paso a paso](https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/).
+Dados los ficheros `Ejercicio_K_Means.ipynb`{: .filepath} y `analisis.csv`{: .filepath} del artículo [K-Means en Python paso a paso](https://www.aprendemachinelearning.com/k-means-en-python-paso-a-paso/).
 
 Ejecuta el fichero `Ejercicio_K_Means.ipynb`{: .filepath} en tu workspace solventando los problemas que te puedan aparecer.
 
 > 📸 Haz una captura de la gráfica 3D con sus respectivo centroides.
 {:.prompt-info}
 
-¿Cuáles son los usuarios mas cercanos a su respectivo centroide?
+¿Cuál es el usuario más cercano a cada centroide?
 
 ¿En que grupo se clasifica davidguetta?
 
@@ -55,7 +55,7 @@ Ejecuta el fichero `Ejercicio_K_Means.ipynb`{: .filepath} en tu workspace solven
 
 ¿En que grupo se clasificaría las siguientes cuentas?
 
-```csv
+```plaintext
 "pata","49.541828","14.789355","47.688172","28.897527","8.211290","95.1008","8"
 "peta","41.483701","26.283071","50.352283","30.561496","16.201707","39.6299","9"
 "pita","36.813721","40.046124","52.722403","34.703256","6.625736","81.8495","1"
@@ -71,6 +71,11 @@ Cambia el número de centroides y vuelve a ejecutar todo el notebook.
 > 📸 Haz una captura de la gráfica 3D con sus respectivo centroides.
 {:.prompt-info}
 
+¿Cuál es el usuario más cercano a cada centroide?
+
+> 📸 Haz una captura donde se vea la ejecución de la clasificación.
+{:.prompt-info}
+
 Con los nuevos centroides, ¿En que grupo se clasificaría las cuentas de davidguetta, pata, peta, pita, pota y maria?
 
 > 📸 Haz una captura donde se vea el resultado de las nuevas clasificaciones.
@@ -79,24 +84,50 @@ Con los nuevos centroides, ¿En que grupo se clasificaría las cuentas de davidg
 {:.activity}
 ### ML_3_1_UnsupervisedLearning_Clustering.ipynb
 
-Dado los ficheros `ML_3_1_UnsupervisedLearning_Clustering.ipynb`, `ClusteringMetrics.ipynb` y `data_Clustering.csv`. Responde a las siguientes preguntas:
+Dados los ficheros `ML_3_1_UnsupervisedLearning_Clustering.ipynb`{: .filepath}, `ClusteringMetrics.ipynb`{: .filepath} y `data_Clustering.csv`{: .filepath}. Responde a las siguientes preguntas:
 
 1. ¿Cuáles son algunas de las principales aplicaciones de los algoritmos de clustering?
 1. Describe 2 técnicas para seleccionar el número correcto de clústeres al usar K-Means.
-1. Abre el fichero `ClusteringMetrics.ipynb` y explica que otros dos métodos adicionales existen para seleccionar el número correcto de clústers. ¿En qué consisten? Busca información al respecto.
-1.Dado el dataset `data_Clusters.csv` y aplica un algoritmo de clustering a dicho dataset. Responde a las siguientes preguntas
-   1. ¿Cuál es la media, max, min de cada característica?
-   1. ¿Cuál es la distribución espacial del dataset? Obtén una representación gráfica.
-   1. ¿Cuál es la evolución de la inertia en función de K? Obtén una representación gráfica.
-   1. ¿Cuál es el número óptimo de clusters que obtienes según el método del Elbow y el método del Silhouette Score?
-   1. Una vez obtenido el valor óptimo de K, genera un modelo K-means y entrénalo con los datos anteriores-
-   1. Invéntate diversas predicciones para saber en qué clúster se asigna.
+
+{:.activity}
+### ClusteringMetrics.ipynb
+
+Abre el fichero `ClusteringMetrics.ipynb`{: .filepath} y:
+
+1. Explica que otros dos métodos adicionales existen para seleccionar el número correcto de clústers. ¿En qué consisten? Busca información al respecto.
 1. ¿Qué otros algoritmos de clustering existen al margen del clásico K-means? Busca 2 y descríbelos.
+
+{:.activity}
+### data_Clustering.csv
+
+Dado el dataset `data_Clustering.csv`{: .filepath} aplica un algoritmo de clustering a dicho dataset. Responde a las siguientes preguntas:
+
+1. ¿Cuál es la media, max, min de cada característica?
+1. ¿Cuál es la distribución espacial del dataset? Obtén una representación gráfica.
+1. ¿Cuál es la evolución de la inertia en función de K? Obtén una representación gráfica.
+1. ¿Cuál es el número óptimo de clusters que obtienes según el método del Elbow y el método del Silhouette Score?
+1. Una vez obtenido el valor óptimo de K, genera un modelo K-means y entrénalo con los datos anteriores.
+1. Invéntate diversas predicciones para saber en qué clúster se asigna.
 
 {:.activity}
 ### (Voluntaria) 09_unsupervised_learning.ipynb
 
-Lee, ejecuta y trata de entender el fichero `09_unsupervised_learning.ipynb`.
+Lee, ejecuta y trata de entender el fichero `09_unsupervised_learning.ipynb`{: .filepath}.
+
+{:.activity}
+### (Voluntaria) Datasets en Kaggle
+
+Crea una cuenta en <https://www.kaggle.com/> y descárgate el dataset que más te interese para utilizar la técnica de K Means en él. Es probable que tengas que hacer una preparación previa de los datos.
+
+Si no sabes que dataset utilizar, aquí tienes varias:
+
+1. [Customer Clustering](https://www.kaggle.com/datasets/dev0914sharma/customer-clustering?select=segmentation+data.csv) → Encuentra cuantos grupos de clientes tenemos para poder hacer campañas de márketing dirigidas.
+1. [Big Five Personality Test](https://www.kaggle.com/datasets/tunguz/big-five-personality-test) → Encuentra cuantos grupos de personalidad existen para poder hacer estudios psicológicos basándonos en estos grupos.
+1. [Countries Dataset 2020](https://www.kaggle.com/datasets/dumbgeek/countries-dataset-2020?rvi=1) → Encuentra que países son similares a España.
+1. [Wine Dataset for Clustering](https://www.kaggle.com/datasets/harrywang/wine-dataset-for-clustering) → Encuentra cuentos tipos de vinos hay.
+
+> 📸 Haz una o varias capturas de pantalla donde se vea el de lo que has realizado.
+{:.prompt-info}
 
 ## Bibliografía
 
