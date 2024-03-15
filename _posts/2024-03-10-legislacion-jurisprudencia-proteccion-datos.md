@@ -10,7 +10,7 @@ img_path: /assets/img/legislacion-jurisprudencia-proteccion-datos/
 ## Principios de Protección de Datos
 
 {:.subsection}
-### Protección de datos, Conceptos Básicos
+### Conceptos Básicos de Protección de datos
 
 Los **datos personales** son cualquier **información relativa a una persona física identificada o identificable**.
 
