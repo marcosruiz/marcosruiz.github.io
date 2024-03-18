@@ -34,9 +34,12 @@ Ejemplos de **datos no considerados personales**:
 - Dirección de correo electrónico tipo `info@empresa.com`.
 - Datos anonimizados.
 
+{:.question}
+¿Qué diferencia hay entre datos anonimizados y pseudo-anonimizados?
+
 La Regulación General de Protección de Datos establece además, una categorización de **datos especialmente sensibles**. Estos datos son:
 
-- Origen racial
+- Origen racial.
 - Ideología política.
 - Religión o Creencias.
 - Afiliación sindical.
@@ -117,6 +120,9 @@ La siguiente infografía muestra los derechos de los propietarios de los datos c
 ![Infografía que muestra una tabla de derechos de protección de datos](derechosProteccionDeDatos.png)
 _Infografía que muestra una tabla de derechos de protección de datos_
 
+{:.question}
+¿Qué es la [Lista Robinson](https://www.listarobinson.es/)?
+
 {:.subsection}
 ### Figuras en el tratamiento de información
 
@@ -126,7 +132,7 @@ A continuación se presentan las diferentes figuras que intervienen en el proces
 - **Responsable del tratamiento de datos o controlador:** Persona física o Jurídica que maneja la información del interesado a través de uno o varios medios con uno o varios fines determinados. Ejemplo: Juan Flores firmando una hipoteca con Caja Rural de Teruel.  
 - **Encargado de tratamiento o procesador:** Persona física o Jurídica que trata los datos personales en nombre del responsable de tratamiento, siempre bajo el marco de un contrato. Ejemplo: Gestoría Tecnotramit realiza la gestión del proceso de registro de la propiedad en nombre de Caja Rural de Teruel, siendo Juan Flores el que ha contratado este servicio.
 
-[Infografía del tratamiento de los datos personales en tu centro educativo](quienEsQuien.png)
+![Infografía del tratamiento de los datos personales en tu centro educativo](quienEsQuien.png)
 _Infografía del tratamiento de los datos personales en tu centro educativo_
 
 {:.subsection}
@@ -281,7 +287,7 @@ Una transferencia internacional, **necesitará aprobación explicita de la Agenc
 - Disposiciones que se incorporen en acuerdos administrativos entre las autoridades u organismos públicos que incluyan derechos efectivos y exigibles para las personas interesadas
 
 {:.subsection}
-### La agencia española de protección de datos
+### AEPD
 
 La **Agencia Española de Protección de Datos (AEPD) está encargada de velar por el cumplimiento de la normativa** de protección de datos y controlar su aplicación, a nivel estatal, no obstante, para los ámbitos geográficos de Andalucía, Cataluña y País Vasco, existen agencias autonómicas de protección de datos con potestad de actuación en ámbito local y con funciones similares a las de la AEPD.
 
@@ -306,6 +312,24 @@ Las **funciones principales** que llevan a cabo estas agencias, son las siguient
 - **Tutelar los derechos y garantías** de las personas abonadas y usuarias en el ámbito de las comunicaciones electrónicas, incluyendo el envío de comunicaciones comerciales no solicitadas realizadas a través de correo electrónico o medios de comunicación electrónica equivalente (spam).
 - **Recibir las notificaciones de las eventuales quiebras de seguridad** que se produzcan en los sistemas de los proveedores de servicios de comunicaciones electrónicas y que puedan afectar a datos personales.
 - **Cooperación con diversos organismos** internacionales y con los órganos de la Unión Europea en materia de protección de datos.
+
+{:.subsubsection}
+#### Herramienta Facilita RGPD
+
+Facilita RGPD es una herramienta fácil y gratuita. Una vez finalizada su ejecución, los datos aportados durante el desarrollo de la misma se eliminan, por lo que la Agencia en ningún caso puede conocer la información que haya sido aportada.
+
+Ha sido diseñada como un recurso útil para cualquier empresa o profesional, ya que con tan solo tres pantallas de preguntas muy concretas permite a quien la utiliza valorar su situación respecto del tratamiento de datos personales que lleva a cabo: si se adapta a los requisitos exigidos para utilizar Facilita RGPD o si debe realizar un análisis de riesgos.
+
+Facilita RGPD no podrá utilizarse para tratamientos que impliquen un alto riesgo para los derechos y libertades de las personas, como datos de salud o tratamientos masivos de datos, entre otros.
+
+La herramienta genera diversos documentos adaptados a la empresa concreta, cláusulas informativas que debe incluir en sus formularios de recogida de datos personales, cláusulas contractuales para anexar a los contratos de encargado de tratamiento, el registro de actividades de tratamiento, y un anexo con medidas de seguridad orientativas consideradas mínimas.
+
+Facilita RGPD está orientada a empresas que tratan datos personales de escaso riesgo, como por ejemplo, datos personales de clientes, proveedores o recursos humanos.
+
+Tenga en cuenta que Facilita RGPD es una ayuda y, por tanto, la documentación resultante deberá estar adaptada y actualizada a la situación de los tratamientos que se lleven a cabo en su entidad. La obtención de los documentos no implica el cumplimiento automático del RGPD.
+
+- Enlace al formulario → [FACILITA 2.0](https://servicios.aepd.es/AEPD/view/form/MDAwMDAwMDAwMDAwMDUwNjg1ODExNzEwNzU4MjkxNDY0?updated=true)
+- Ejemplo de resultado de formulario → [resultadoFormularioFacilita.docx](/assets/img/resultadoFormularioFacilita.docx)
 
 {:.subsection}
 ### Sanciones por incumplimiento de la legislación en protección de datos
@@ -376,6 +400,11 @@ Son consideradas infracciones **muy graves**, las siguientes:
 - Utilizar los datos personales recogidos con una finalidad diferente para la que se dio el consentimiento.
 - Trata datos personales de las categorías recogidas en el artículo 9 del RGPD sin que concurra alguna de las circunstancias previstas de dicho artículo y del artículo 9 de la LOPDGDD.
 - Tratar datos personales relativos a condenas e infracciones penales o medidas de seguridad conexas fuera de los supuestos del artículo 10 del RGPD y el artículo 10 de la LOPDGDD.
+
+{:.question}
+¿La LOPD establece sanciones por incumplimiento?
+
+- [HOJA DE RUTA BÁSICA PARA EL CUMPLIMIENTO DE LA RGPD Y LOPDGDD](/assets/img/legislacion-jurisprudencia-proteccion-datos/hoja-de-ruta.pdf)
 
 {:.section}
 ## Privacidad por Diseño y por Defecto
@@ -546,3 +575,4 @@ Sus **funciones** son:
 - [LOPD-GDD](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673&tn=1&p=20230509)
 - [RGPD](https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-80807)
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
+- <https://www.aepd.es/guias-y-herramientas/herramientas/facilita-rgpd>
