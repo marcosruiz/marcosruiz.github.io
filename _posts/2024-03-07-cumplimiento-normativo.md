@@ -9,12 +9,11 @@ img_path: /assets/img/cumplimiento-normativo/
 {:.section}
 ## Introducción al cumplimiento normativo
 
-{:.subsection}
-### Definición, objetivo y función del cumplimiento normativo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BY532FeN_gQ?si=REKfb3y34G3wXRlx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 El cumplimiento consiste en establecer una serie de procesos en una organización, que, acompañados de un conjunto de políticas y procedimientos consigan asegurar que se respeten todos los requerimientos legales, normativos y compromisos internos y con terceros que sean de aplicación a la organización.
 
-El principal objetivo del cumplimiento -también denominado _compliance_\- es, en definitiva, el de garantizar que una organización cumple con sus obligaciones adquiridas como consecuencia del funcionamiento de su negocio.
+El principal objetivo del cumplimiento (también denominado _compliance_) es, en definitiva, el de garantizar que una organización cumple con sus obligaciones adquiridas como consecuencia del funcionamiento de su negocio.
 
 La función de compliance implica la adopción dentro de la organización de diferentes componentes que soportan su función, tales como:
 

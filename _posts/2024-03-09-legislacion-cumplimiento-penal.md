@@ -11,9 +11,6 @@ img_path: /assets/img/legislacion-cumplimiento-penal/
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W_oAeuqj5Zg?si=-UoJ5ysF1YAov4zy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-{:.subsection}
-### Riesgos penales que afectan a una organización
-
 Los **riesgos penales** en las organizaciones surgen como consecuencia del incumplimiento de las leyes aplicables. Una ley se define como una norma jurídica dictada por un legislador, en que se obliga o prohíbe algo en consonancia con la justicia y cuyo incumplimiento conlleva una sanción.
 
 Las posibles sanciones que pueda recibir una organización en relación al cumplimiento legal, son riesgos que deben ser **tenidos en cuenta para alimentar los sistemas de gestión de cumplimiento**, y uno de los conceptos iniciales necesarios es el conocimiento de las leyes aplicables.
@@ -92,9 +89,6 @@ _Riesgos penales de construcción_
 
 {:.section}
 ## Sistemas de gestión de compliance penal
-
-{:.subsection}
-### Introducción a los sistemas de gestión de compliance penal
 
 Un **sistema de gestión de compliance penal** se trata de un conjunto de elementos de una organización elaborados para concretar y medir el nivel de consecución de objetivos en materia de cumplimiento de la legislación vigente, así como las políticas, procesos y procedimientos para lograr dichos objetivos, reduciendo en consecuencia los riesgos penales de una organización.
 
@@ -375,19 +369,10 @@ Por último, como elemento diferenciador de los SGCP, se debe contar con un **r�
 - Consecuencias de incurrir en las sanciones anteriores, como, por ejemplo, amonestación verbal para las sanciones breves hasta la suspensión de empleo y sueldo por periodos de tiempo para las sanciones más graves e incluso la rescisión de la relación laboral con el empleado.
 - Procedimiento de actuación que incluya todos los pasos para su clasificación, sanción, comunicación y respuesta.
 
-![alt text](regimenSancionadorRgpd.png)
-
-![alt text](sancionesRgpd.png)
-
-![alt text](sancionesRgpd2.png)
-
 Los epígrafes 9 y 10 hacen referencia a las **actividades de auditoria y mejora continua**, y no se diferencian en mucho a otros sistemas de gestión como los ya explicados en el tema anterior.
 
 {:.section}
 ## Sistema de Gestión Antisoborno y Anticorrupción
-
-{:.subsection}
-### Sistemas de gestión antisoborno
 
 El soborno consiste en una oferta, promesa, entrega, aceptación o solicitud de una ventaja indebida de cualquier valor, en violación de la ley aplicable, como incentivo o recompensa para que una persona actúe o deje de actuar en relación las obligaciones de esa persona.
 
@@ -441,47 +426,30 @@ Los **requisitos documentales** de la norma ISO 37001 son los siguientes:
 
  A continuación, se proponen dos **ejemplos de manuales de sistemas de gestión antisoborno:**
 
-- Política antisoborno de T-Systems México:
-- [T-Systems México](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/DL-TSMX-SGA-MANUAL_antisoborno.pdf "Accede a la política antisoborno de T-systems ( se abre en ventana nueva)")
-- Portal Antisoborno del Programa nacional de infraestructura educativa de Perú, con información detallada del sistema de gestión antisoborno:
-- [Acceso](https://www.gob.pe/institucion/pronied/campa%C3%B1as/3390-sistema-de-gestion-antisoborno-sgas "Accede a la web del portal antisoborno del programa nacional de infraestructura educativa de Perú ( se abre en ventana nueva)")
+- [Política antisoborno de T-Systems México](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/DL-TSMX-SGA-MANUAL_antisoborno.pdf)
+- [Portal Antisoborno del Programa nacional de infraestructura educativa de Perú, con información detallada del sistema de gestión antisoborno](https://www.gob.pe/institucion/pronied/campa%C3%B1as/3390-sistema-de-gestion-antisoborno-sgas)
 
-{:.section}
-## Herramientas
-
-{:.subsection}
-### Comunica-Brecha RGPD
-
-Comunica-Brecha RGPD es un recurso de utilidad para que cualquier organización, responsable de un tratamiento de datos personales, pueda valorar la obligación de informar a las personas físicas afectadas por una brecha de seguridad de los datos personales, tal y como establece el artículo 34 del Reglamento General de Protección de Datos.
-
-Se trata de una herramienta sencilla y gratuita. Una vez finalizada su ejecución, los datos aportados durante el desarrollo de la misma se eliminan, por lo que la Agencia Española de Protección de Datos en ningún caso puede conocer la información que haya sido aportada.
-
-Tenga en cuenta que [Comunica-Brecha RGPD](https://servicios.aepd.es/AEPD/view/form/MDAwMDAwMDAwMDAwMDUwNjg2MDYxNzEwNzYwMjcwNDUx?updated=true) es una ayuda a la toma de decisiones, pero esta última corresponde ineludiblemente a la persona responsable de tratamiento y en ningún caso su utilización representa el pronunciamiento de esta Agencia sobre la aplicación del art. 34 del RGPD para una brecha de seguridad concreta.
-
-{:.section}
 ## Contenidos Adicionales
 
-- [Implantación de sistemas de cumplimiento penal para pymes - Confederación Canaria de Empresarios](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/Pasos-practicos-para-la-implementacion-de-un-Sistema-de-Gestion-en-Cumplimiento-Penal-para-Pymes.pdf "Accede a documento de implementación de programa de compliance penal para pymes ( se abre en ventana nueva)")
-- [Sistemas de gestión de cumplimiento penal - sodercan: Sociedad para el desarrollo regional de Cantabria](https://www.sodercan.es/sistema-de-gestion-de-riesgos-penales/%C2%A0%C2%A0%C2%A0 "Acceso a la web de Sodercan ( se abre en ventana nueva)")
-- [Manual del sistema de gestión de riesgo penal de Red Eléctrica de España (REE)](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/REE_manual_sistema_cumplimiento_penal.pdf "Accede al documento del sistema de gestión de riesgo penal de REE (se abre en ventana nueva)")
-- [Sistema de gestión de riesgo penal y antisoborno del grupo itinere](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/SGRP_Politica-SGRP-y-Anti-Soborno_2021.pdf "Accede a documento de política de gestión de riesgo penal del grupo Itínere ( se abre en ventana nueva) ")
+- [Implantación de sistemas de cumplimiento penal para pymes - Confederación Canaria de Empresarios](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/Pasos-practicos-para-la-implementacion-de-un-Sistema-de-Gestion-en-Cumplimiento-Penal-para-Pymes.pdf)
+- [Sistemas de gestión de cumplimiento penal - sodercan: Sociedad para el desarrollo regional de Cantabria](https://www.sodercan.es/sistema-de-gestion-de-riesgos-penales/%C2%A0%C2%A0%C2%A0)
+- [Manual del sistema de gestión de riesgo penal de Red Eléctrica de España (REE)](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/REE_manual_sistema_cumplimiento_penal.pdf)
+- [Sistema de gestión de riesgo penal y antisoborno del grupo itinere](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/SGRP_Politica-SGRP-y-Anti-Soborno_2021.pdf)
 
 Artículos sobre la ISO 37301 y la ISO 37001:
 
-- [IDBO compliance - La norma ISO 37301](https://idbocompliance.com/blog/iso-37301/ "Accede a la web de IDBO ( se abre en ventana nueva)")
-- [Asociación Española de Compliance- Identificar riesgos penales](https://www.asociacioncompliance.com/curso/como-identificar-los-riesgos-penales-a-los-que-se-enfrenta-la-empresa/ "Accede a la web de la asociación española de compliance ( se abre en ventana nueva)")
-- [Asociación Española de Normalización (AENOR) - Certificación antisoborno ISO 37001](https://www.aenor.com/certificacion/compliance-y-buen-gobierno/gestion-antisoborno "Accede a la web de AENOR ( se abre en ventana nueva)")
-- [International Organization for Standarization ( ISO) - Extracto de norma ISO 37001](https://www.iso.org/obp/ui#iso:std:iso:37001:ed-1:v1:es "Accede a la web de ISO (se abre en ventana nueva) ")
-- [SIGE - ISO 37001 Sistema de gestión antisoborno](https://www.sige.org.mx/servicios/iso-37001-gestion-antisoborno/ "Accede a la web de SIGE (se abre en ventana nueva)")
-- [TUV  - Implantacion de un sistema antisoborno basado en ISO 37001](https://www.tuvsud.com/es-es/servicios/sostenibilidad/soluciones-sostenibilidad-buen-gobierno/buen-gobierno/une-iso-37001-sistemas-gestion-anti-soborno "Accede a la web de TUV (se abre en ventana nueva)")
-- [Isotools - ¿Que supone la ISO 37001 en la lucha contra el fraude?](https://www.isotools.org/2017/02/09/supone-la-norma-iso-37001-la-lucha-soborno/ "Accede a la web de Isotools (se abre en ventana nueva) ")
-- Compliance antisoborno: [Los controles financieros en un sistema antisoborno](https://www.compliance-antisoborno.com/los-controles-financieros-en-un-sistema-antisoborno/ "Accede al a web de compliance antisoborno ( se abre en ventana nueva )") y [Norma ISO 37001](https://www.compliance-antisoborno.com/iso-37001/ "Accede a la web de compliance antisoborno (se abre en ventana nueva)")
-- [Global trust association - Principales controles antisoborno](https://globaltrustassociation.org/es/cuales-son-los-principales-controles-antisoborno-que-plantea-la-norma-iso-37001/ "Accede a la web de global trust association ( se abre en ventana nueva )")
+- [IDBO compliance - La norma ISO 37301](https://idbocompliance.com/blog/iso-37301/)
+- [Asociación Española de Compliance- Identificar riesgos penales](https://www.asociacioncompliance.com/curso/como-identificar-los-riesgos-penales-a-los-que-se-enfrenta-la-empresa/)
+- [Asociación Española de Normalización (AENOR) - Certificación antisoborno ISO 37001](https://www.aenor.com/certificacion/compliance-y-buen-gobierno/gestion-antisoborno)
+- [International Organization for Standarization ( ISO) - Extracto de norma ISO 37001](https://www.iso.org/obp/ui#iso:std:iso:37001:ed-1:v1:es)
+- [SIGE - ISO 37001 Sistema de gestión antisoborno](https://www.sige.org.mx/servicios/iso-37001-gestion-antisoborno/)
+- [TUV  - Implantacion de un sistema antisoborno basado en ISO 37001](https://www.tuvsud.com/es-es/servicios/sostenibilidad/soluciones-sostenibilidad-buen-gobierno/buen-gobierno/une-iso-37001-sistemas-gestion-anti-soborno) 
+- [Isotools - ¿Que supone la ISO 37001 en la lucha contra el fraude?](https://www.isotools.org/2017/02/09/supone-la-norma-iso-37001-la-lucha-soborno/)
+- Compliance antisoborno: [Los controles financieros en un sistema antisoborno](https://www.compliance-antisoborno.com/los-controles-financieros-en-un-sistema-antisoborno/) y [Norma ISO 37001](https://www.compliance-antisoborno.com/iso-37001/)
+- [Global trust association - Principales controles antisoborno](https://globaltrustassociation.org/es/cuales-son-los-principales-controles-antisoborno-que-plantea-la-norma-iso-37001/)
 
-{:.section}
 ## Bibliografía
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - <https://www.aepd.es/informes-y-resoluciones/resoluciones>
 - <https://servicios.aepd.es/AEPD/view/form/MDAwMDAwMDAwMDAwMDUwNjg2MDYxNzEwNzYwMjcwNDUx?updated=true>
-- 
