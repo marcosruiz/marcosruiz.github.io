@@ -329,7 +329,7 @@ Facilita RGPD está orientada a empresas que tratan datos personales de escaso r
 Tenga en cuenta que Facilita RGPD es una ayuda y, por tanto, la documentación resultante deberá estar adaptada y actualizada a la situación de los tratamientos que se lleven a cabo en su entidad. La obtención de los documentos no implica el cumplimiento automático del RGPD.
 
 - Enlace al formulario → [FACILITA 2.0](https://servicios.aepd.es/AEPD/view/form/MDAwMDAwMDAwMDAwMDUwNjg1ODExNzEwNzU4MjkxNDY0?updated=true)
-- Ejemplo de resultado de formulario → [resultadoFormularioFacilita.docx](/assets/img/resultadoFormularioFacilita.docx)
+- Ejemplo de resultado de formulario → [resultadoFormularioFacilita.docx](/assets/img/legislacion-jurisprudencia-proteccion-datos/resultadoFormularioFacilita.docx)
 
 {:.subsection}
 ### Sanciones por incumplimiento de la legislación en protección de datos
