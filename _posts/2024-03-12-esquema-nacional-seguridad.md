@@ -126,6 +126,18 @@ En particular, este anexo detalla las medidas de seguridad estructuradas en tres
 > [Herramientas soporte ENS CCN](https://ens.ccn.cni.es/index.php/es/conformidad-y-cumplimiento "Accede a la web del CCN en el que se proponen herramientas de soporte al cumplimiento del ENS (se abre en ventana nueva)")
 {:.prompt-info}
 
+{:.section}
+## Normativa que regula el ENS
+
+El Esquema Nacional de seguridad está regulado específicamente por la siguiente normativa:
+
+- Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad.
+- Resolución de 27 de marzo de 2018, de la Secretaría de Estado de Función Pública, por la que se aprueba la Instrucción Técnica de Seguridad de Auditoría de la Seguridad de los Sistemas deInformación.
+- Resolución de 13 de octubre de 2016, de la Secretaría de Estado de Administraciones Públicas,por la que se aprueba la Instrucción de Seguridad de conformidad con el Esquema Nacional deSeguridad.
+- Resolución de 7 de octubre de 2016, de la Secretaría de Estado de Administraciones Públicas, por la que se aprueba la Instrucción Técnica de Seguridad de Informe del Estado de la Seguridad.
+- Resolución de 13 de abril de 2018, de la Secretaría de Estado de Función Pública, por la que seaprueba la Instrucción Técnica de Seguridad de Notificación de Incidentes de Seguridad.
+- La relación de otra normativa relacionada con la ciberseguridad en España puede consultarseen el Código de Derecho de la Ciberseguridad editado por el BOE.
+
 ## Contenidos Adicionales
 
 - [Presentación del proceso administrativo común de las administraciones publicas](https://www.hacienda.gob.es/Documentacion/Publico/PortalVarios/MVB15J02%20PPT%20Ley%20procedimiento%2002.10.15.pdf)

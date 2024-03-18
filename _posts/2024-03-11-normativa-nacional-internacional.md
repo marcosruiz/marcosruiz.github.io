@@ -400,7 +400,9 @@ Para el desempeño de sus cometidos, se apoya en los servicios transversales sig
 > Como tal, ¿Podría ser considerada ACME como infraestructura crítica?
 {:.prompt-info}
 
-{:.section}
+
+
+
 ## Contenidos Adicionales
 
 - [BOE: mCódigo de derecho de la ciberseguridad](https://www.boe.es/biblioteca_juridica/codigos/codigo.php?id=173&modo=2&nota=0&tab=2)
