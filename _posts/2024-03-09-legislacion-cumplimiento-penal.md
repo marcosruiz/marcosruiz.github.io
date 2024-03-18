@@ -398,10 +398,6 @@ El soborno es **uno de las formas de corrupción más habituales**. Las organiza
 {:.subsection}
 ### La norma ISO 37001 vs la norma UNE 19601
 
-![Ilustración que muestra una serie de monedas y billetes alrededor del fútbol](Legislaci%C3%B3n%20para%20el%20cumplimiento%20de%20la%20responsabilidad%20penal./soborno_futbol.jpg "Billetes alrededor del fútbol")
-
-[DS-foto](https://pixabay.com/es/photos/f%c3%batbol-dinero-comercial-deportes-673206/ "Accede a la web del autor  Billetes alrededor del fútbol (se abre en ventana nueva)"). _Situaciones relacionadas con sobornos_ (Dominio público)
-
 La norma ISO 37001 es un sistema de gestión que se entiende como una **guía en materia de prevención de la corrupción**, siendo este un subconjunto de los posibles delitos en el alcance de la UNE 19601, siendo este un estándar nacional español. La implantación cualquiera de los dos sistemas de gestión no supone en sí mismo un eximente en caso de que la organización incurra en un delito ya sea de soborno, corrupción o cualquiera de los recogidos en el código penal, y que podrían estar ya registrados en el análisis de riesgos de la matriz del sistema de gestión de compliance penal, no obstante, si puede suponer un criterio para la limitación de la responsabilidad de la organización, siempre que se siga y se opere de manera diligente el sistema de gestión.
 
 La ISO 37001 es algo más exigente en materia de corrupción y delitos anti soborno que la UNE 19601, no obstante, si la organización ya dispone de un sistema de gestión basado en la UNE, será suficiente con revisar las políticas, protocolos y controles establecidos para adaptarlos al delito de soborno.
@@ -433,10 +429,6 @@ Los **requisitos documentales** de la norma ISO 37001 son los siguientes:
 
 {:.subsection}
 ### Controles antisoborno
-
-![Ilustración que muestra una mano sujetando una mascarilla y billetes](Legislaci%C3%B3n%20para%20el%20cumplimiento%20de%20la%20responsabilidad%20penal./soborno_mascarillas.jpg "Mascarillas y billetes")
-
-[WiR\_Pixs](https://pixabay.com/es/photos/m%c3%a1scara-dinero-dinero-en-efectivo-6135901/ "Accede a la web del autor de la imagen Mascarillas y billetes ( se abre en ventana nueva)"). _Mascarillas y billetes_ (Dominio público)
 
 - Debida diligencia: proceso para evaluar con mayor detalle la naturaleza y alcance del riesgo de soborno y ayudar a las organizaciones a tomar decisiones en relación con transacciones, proyectos, actividades, socios de negocios y personal específicos.
 - Ejemplos: Análisis de conducta de terceros, análisis de reputación, antecedentes…

@@ -278,7 +278,7 @@ El **tratamiento de riesgos** consiste en **tomar una decisión sobre el modo de
 - **Transferirlo, compartirlo o asignarlo a terceros:** a través de la contratación de un seguro, o la ejecución de un proceso compartido con otra organización.
 - **Aceptarlo:** No realizar ningún tipo de actividad, por lo general, dado un nivel bajo de riesgo, o bien, tras un análisis de coste de las actividades de mitigación, dado su alto coste de mitigación.
 
-La decisión sobre llevar a cabo una opción u otra dependerá de varios factores, complejidad, coste, etc…  el nivel  de riesgo que una empresa está dispuesta a asumir o aceptar se denomina “apetito de riesgo”.
+La decisión sobre llevar a cabo una opción u otra dependerá de varios factores, complejidad, coste, etc…  el nivel  de riesgo que una empresa está dispuesta a asumir o aceptar se denomina "apetito de riesgo”.
 
 ## Documentación del sistema de cumplimiento normativo diseñado
 

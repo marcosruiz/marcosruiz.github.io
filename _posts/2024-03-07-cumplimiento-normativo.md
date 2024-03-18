@@ -15,7 +15,7 @@ img_path: /assets/img/cumplimiento-normativo/
 El cumplimiento consiste en establecer una serie de procesos en una organización, que, acompañados de un conjunto de políticas y procedimientos consigan asegurar que se respeten todos los requerimientos legales, normativos y compromisos internos y con terceros que sean de aplicación a la organización.
 
 El principal objetivo del cumplimiento -también denominado _compliance_\- es, en definitiva, el de garantizar que una organización cumple con sus obligaciones adquiridas como consecuencia del funcionamiento de su negocio.
-  
+
 La función de compliance implica la adopción dentro de la organización de diferentes componentes que soportan su función, tales como:
 
 - Un código ético, como un conjunto de principios y pautas de conducta que conforman la cultura organizacional de una empresa.
@@ -35,45 +35,45 @@ Los compromisos adquiridos por una organización, se pueden clasificar en dos ca
 
 A continuación, se presentan algunos de los compromisos posibles que pueden ser adquiridos por una organización:
 
-**Compromisos de obligado cumplimiento:**
+{:.subsubsection}
+#### Compromisos de obligado cumplimiento
 
 En este tipo de compromisos implica un alto nivel de riesgo más elevado para la compañía, ya que en caso de incumplimiento, pueden existir sanciones económicas y penales, se podrían poner en riesgo contratos firmados con clientes, con la consiguiente perdida de negocio, asi como ocasionar pérdidas en la imagen y reputación de la compañía.
 
-**Legislación vigente:**
+{:.subsubsection}
+#### Legislación vigente
 
 Cualquier empresa está sometida a una legislación por el mero hecho de mantener su función. El cumplimiento legislativo esta también asociado a uno de los principales riesgos a los que se ve sometido una organización, el riesgo penal, financiero y reputacional. Éste deberá ser tenido en cuenta a la hora de identificar, analizar y gestionar los riesgos dentro del plan de gestión de cumplimiento.
 
 Cualquier empresa que tenga su actividad en España debe respetar, por ejemplo, las siguientes leyes:
 
-_Ley de Sociedades de Capital:_ es la ley que regula las sociedades en España. Todas las personas que creen una sociedad empresa deben conocer que derechos y obligaciones tienen como socios y administradores, y las consecuencias sobre su propio patrimonio podría tener el no actuar de acuerdo a la legislación.
+- **Ley de Sociedades de Capital:** es la ley que regula las sociedades en España. Todas las personas que creen una sociedad empresa deben conocer que derechos y obligaciones tienen como socios y administradores, y las consecuencias sobre su propio patrimonio podría tener el no actuar de acuerdo a la legislación.
+- **Ley de impuesto de sociedades:** es la legislación sobre la tributación de las actividades económicas de una sociedad. Regula los impuestos sobre los rendimientos de negocio y las deducciones, bonificaciones y tipos impositivos, algo similar al IRPF, pero para empresas.
+- **Ley del Impuesto sobre el Valor Añadido:** se trata de la ley que regula los impuestos sobre los productos y servicios que presta la empresa hacia el consumidor final, esta ley establece que, como proveedora y consumidora de productos y servicios, una organización debe soportar y repercutir el Impuesto de Valor Añadido (IVA), en caso de que el IVA repercutido sea mayor que el soportado, el empresario debe pagar a hacienda la diferencia en concepto de IVA.
+- **Ley de marcas:** es la legislación para la protección de los elementos distintivos de una empresa, a través de ella se regirán los derechos sobre las marcas y los nombres comerciales de productos y servicios de una empresa española. La solicitud y tramitación de las marcas en España, se realiza a través de la Oficina Española de Patentes y Marcas, y deben especificar las tipologías de productos y servicios que se desea identificar. Éstas, pueden ser renovadas de manera indefinida o por periodos de diez años.
+- **Ley de Servicios de la Sociedad de la Información y de comercio electrónico (LSSI-CE):** Se trata de la ley que regula las actividades comerciales realizadas a través de internet. Principalmente define los requisitos que deben cumplir los sitios web de comercio electrónico de todas aquellas empresas registradas en España. En ella, se establece que en los sitios de comercio electrónico tiene que constar el nombre del dominio de Internet, ofrecer información sobre la empresa, colaborar con las autoridades y retener los datos concernientes a comunicaciones electrónicas.
+- **Reglamento General de Protección de Datos (RGPD):** Establece las normas relativas a la protección de las personas físicas en lo que respecta al tratamiento de los datos personales y las normas relativas a la libre circulación de tales datos. Además, protege los derechos y libertades fundamentales de las personas físicas y, en particular, su derecho a la protección de los datos personales. Por último, regula la libre circulación de los datos personales en la Unión, que no podrá ser restringida ni prohibida por motivos relacionados con la protección de las personas físicas en lo que respecta al tratamiento de datos personales.
+- **Ley Orgánica de Protección de Datos y Garantía de los Derechos Digitales (LOPD):** Es la adaptación a la normativa local española al Reglamento Europeo de Protección de Datos (RGPD), el objetivo de esta ley es proporcionar una base legal para el tratamiento de los datos personales de las personas físicas, además, en la normativa nacional se incluyen artículos enfocados en la garantía de los derechos digitales tales como la desconexión digital, derecho al olvido, seguridad digital, protección de menores.
 
-_Ley de impuesto de sociedades:_ es la legislación sobre la tributación de las actividades económicas de una sociedad. Regula los impuestos sobre los rendimientos de negocio y las deducciones, bonificaciones y tipos impositivos, algo similar al IRPF, pero para empresas.
-
-_Ley del Impuesto sobre el Valor Añadido:_ se trata de la ley que regula los impuestos sobre los productos y servicios que presta la empresa hacia el consumidor final, esta ley establece que, como proveedora y consumidora de productos y servicios, una organización debe soportar y repercutir el Impuesto de Valor Añadido (IVA), en caso de que el IVA repercutido sea mayor que el soportado, el empresario debe pagar a hacienda la diferencia en concepto de IVA.
-
-_Ley de marcas:_ es la legislación para la protección de los elementos distintivos de una empresa, a través de ella se regirán los derechos sobre las marcas y los nombres comerciales de productos y servicios de una empresa española. La solicitud y tramitación de las marcas en España, se realiza a través de la Oficina Española de Patentes y Marcas, y deben especificar las tipologías de productos y servicios que se desea identificar. Éstas, pueden ser renovadas de manera indefinida o por periodos de diez años.
-
-_Ley de Servicios de la Sociedad de la Información y de comercio electrónico (LSSI-CE):_ Se trata de la ley que regula las actividades comerciales realizadas a través de internet. Principalmente define los requisitos que deben cumplir los sitios web de comercio electrónico de todas aquellas empresas registradas en España. En ella, se establece que en los sitios de comercio electrónico tiene que constar el nombre del dominio de Internet, ofrecer información sobre la empresa, colaborar con las autoridades y retener los datos concernientes a comunicaciones electrónicas.
-
-_Reglamento General de Protección de Datos (RGPD):_ Establece las normas relativas a la protección de las personas físicas en lo que respecta al tratamiento de los datos personales y las normas relativas a la libre circulación de tales datos. Además, protege los derechos y libertades fundamentales de las personas físicas y, en particular, su derecho a la protección de los datos personales. Por último, regula la libre circulación de los datos personales en la Unión, que no podrá ser restringida ni prohibida por motivos relacionados con la protección de las personas físicas en lo que respecta al tratamiento de datos personales.
-
-_Ley Orgánica de Protección de Datos y Garantía de los Derechos Digitales (LOPD):_ Es la adaptación a la normativa local española al Reglamento Europeo de Protección de Datos (RGPD), el objetivo de esta ley es proporcionar una base legal para el tratamiento de los datos personales de las personas físicas, además, en la normativa nacional se incluyen artículos enfocados en la garantía de los derechos digitales tales como la desconexión digital, derecho al olvido, seguridad digital, protección de menores.
-
-**Obligaciones por mandamiento judicial, tribunales o sentencias judiciales:**
+{:.subsubsection}
+#### Obligaciones por mandamiento judicial, tribunales o sentencias judiciales
 
 En este tipo de obligaciones, implica una acción por parte de la organización que los recibe, estas acciones podrían ser, desde la proporción de cierta información a un judgado o a fuerzas y cuerpos de seguridad del estado, hasta el pago de multas o sanciones, incluso la modificación de su modelo de negocio, hasta el punto de la rescisión de las licencias que permiten ejecutar la actividad de la organización. Este tipo de obligaciones pueden implicar grandes riesgos para las organizaciones y tienen que ser tenidas en cuenta en el momento de construir los sistemas de gestión de cumplimiento.
 
-**Obligaciones por contrato de terceros:**
+{:.subsubsection}
+#### Obligaciones por contrato de terceros
 
 En ocasiones, las organizaciones se comprometen en el cumplimiento de ciertas normas como forma de garantizar sus servicios, por lo general se trata de condiciones que podrían clasificarse como compromisos voluntarios, pero, al ser incluidas en los contratos de prestación de servicios, se convierten en compromisos de obligado cumplimiento.
 
 Una muestra de este tipo de obligaciones pueden ser los compromisos contractuales de certificación en normas ISO, como puede ser la 9001 sobre sistemas de gestión de la calidad, 14001 sobre sistemas de gestión ambiental, 20001 sobre gestión de servicios de TI, e ISO 27001 sobre sistemas de gestión de seguridad de la información.
 
-**Compromisos voluntarios:**
+{:.subsubsection}
+#### Compromisos voluntarios
 
 Los compromisos voluntarios tienen un menor nivel de riesgo en cuanto a las consecuencias directas derivadas de su incumplimiento, ya que en el corto plazo estas serán muy leves y podrían limitarse a daños reputacionales, no obstante, este tipo compromisos significan un mejor funcionamiento para la organización, pudiendo implicar en función de los esfuerzos realizados, un funcionamiento más eficiente, seguro y respetuoso con la sociedad y medio ambiente. Estos pueden ser:
 
-**Políticas y procedimientos:**
+{:.subsubsection}
+#### Políticas y procedimientos
 
 Las políticas y procedimientos integran las normas, reglas y directrices a través de las cuales se debe regir una organización.
 
@@ -81,31 +81,33 @@ Las políticas deben ser específicas para cada organización y establecer los p
 
 Si bien las políticas son documentos estratégicos, los procedimientos, son los documentos que definen las tácticas a través de las cuales se van a conseguir los objetivos de la compañía. Por lo general son documentos con un nivel de detalle más elevado, que describen una manera de ejecutar una actividad o un proceso dentro de la empresa.  El procedimiento puede describir un proceso empresarial completo, describiendo paso a paso las actividades que lo comprenden.
 
-**Normas y estándares:**
+{:.subsubsection}
+#### Normas y estándares
 
 Una norma es una forma comúnmente aceptada de llevar a cabo una actividad.  Por lo general, puede tratarse de cualquier proceso empresarial, no obstante, en relación a tecnologías de información, se pueden definir como formas de gestionar los sistemas y tecnologías de información y comunicaciones de una organización.
 
 El ejemplo más conocido son las ISO (International Organization for Standardization), que, aunque no estén limitadas a la gestión de procesos de IT si son las mas generalizadas, por ejemplo, la norma ISO 20000 de gestión de servicios TI, la ISO 27001 de gestión de seguridad de la información o la ISO 22301 sobre continuidad de negocio. En España, la transposición a estos estándares son las normas UNE ( Una Norma Española), publicadas por la Asociación Española para la NORmalización y Certificación (AENOR).
 
-**Buenas Prácticas y Mejores prácticas:**
+{:.subsubsection}
+#### Buenas Prácticas y Mejores prácticas
 
 Las buenas prácticas son acciones recomendadas para llevar a cabo una actividad que han resultado satisfactorias para la organización, estas actividades, deben ser documentadas con el fin de crear guías, procedimientos, directrices o manuales de ejecución de un proceso.
 
 Las mejores prácticas son acciones, que, si bien han demostrado ser satisfactorias para la organización, han sido monitorizadas y optimizadas para obtener los mejores resultados en ejecución y eficiencia en los objetivos de una organización. Las mejores prácticas son fruto del análisis y aplicación de conocimientos y procesos empresariales de los resultados obtenidos de los mismos, de lo que se ha identificado es beneficioso para la organización, de las lecciones aprendidas tras incidencias, y en definitiva tras la reflexión sobre resultados y aprendizaje continuo.
 
-**Marcos de trabajo o Frameworks:**
+{:.subsubsection}
+#### Marcos de trabajo o Frameworks
 
 Los marcos de trabajo se enfocan en el cómo implementar una serie de procesos en una organización, éstos pueden ser construidos basándose en normas existentes, pero desarrollando un conjunto de procesos y buenas prácticas que marcan los pasos para desarrollar ciertas funciones dentro de una compañía. Estableciendo técnicas estandarizadas de operación incrementando el valor y la eficiencia del los procesos TI y por tanto, del negocio. Ejemplo de marcos de trabajo son:
 
-_ITIL: Acrónimo en inglés de "Biblioteca de Infraestructura para las Tecnologías de la Información",_ consiste en una serie de libros que recogen las procesos y buenas prácticas para la gestión de las tecnologías de información obtenidas de diversas fuentes. La última versión de ITIL (v4) publicada en el 2019, se enfoca en la automatización de servicios IT, la gestión de los servicios, y la integración de las áreas de IT en el negocio de la organización.
+- **ITIL: Acrónimo en inglés de "Biblioteca de Infraestructura para las Tecnologías de la Información",** consiste en una serie de libros que recogen las procesos y buenas prácticas para la gestión de las tecnologías de información obtenidas de diversas fuentes. La última versión de ITIL (v4) publicada en el 2019, se enfoca en la automatización de servicios IT, la gestión de los servicios, y la integración de las áreas de IT en el negocio de la organización.
+- **Objetivos de Control para Tecnologías de la Información y Relacionadas (COBIT, por sus siglas en inglés):** Es un marco desarrollado por ISACA cuyo objetivo de desarrollar estrategias de gestión y gobierno de la información y además incluye herramientas para construir, supervisar y mejorar procesos IT tras su implementación y proveer de soluciones para la gestión de riesgos. Cobit incluye 40 objetivos de gestión para ayudar a las organizaciones, para conseguir  los siguientes objetivos:
+  - Alinear los objetivos empresariales con los objetivos informáticos
+  - Establecer un marco de gobernanza sólido
+  - Navegar por el gobierno de la información, la gestión de riesgos y la seguridad
 
-_Objetivos de Control para Tecnologías de la Información y Relacionadas (COBIT, por sus siglas en inglés):_ Es un marco desarrollado por ISACA cuyo objetivo de desarrollar estrategias de gestión y gobierno de la información y además incluye herramientas para construir, supervisar y mejorar procesos IT tras su implementación y proveer de soluciones para la gestión de riesgos.  Cobit incluye 40 objetivos de gestión para ayudar a las organizaciones, para conseguir  los siguientes objetivos:
-
-Alinear los objetivos empresariales con los objetivos informáticos  
-Establecer un marco de gobernanza sólido  
-Navegar por el gobierno de la información, la gestión de riesgos y la seguridad
-
-**Código ético:**
+{:.subsubsection}
+#### Código ético
 
 El código ético  es el conjunto de valores, principios y pautas a través de las cuales se debe regir la cultura de una organización. Asociado al código ético de la organización, podemos encontrar el código de conducta, en el cual se establecerán las directrices comportamentales que deben regir la manera de actuar de los profesionales que componen la organización.
 
@@ -131,7 +133,7 @@ Dentro de estas pautas, cabe la existencia de herramientas de control corporativ
 
 Otro elemento del buen gobierno implica el concepto de cumplimiento normativo, y como consecuencia, el cumplimiento de la ley vigente y la reducción del riesgo de cualquier consecuencia penal o económica para la compañía y su dirección.
 
-Asimismo, otro objetivo consiste en vigilar y controlar los comportamientos de la compañía, de las áreas de negocio y de sus integrantes, estableciendo derechos y obligaciones de las mismas y vigilando su cumplimiento.  
+Asimismo, otro objetivo consiste en vigilar y controlar los comportamientos de la compañía, de las áreas de negocio y de sus integrantes, estableciendo derechos y obligaciones de las mismas y vigilando su cumplimiento.
 
 Las actividades relacionadas con el buen gobierno corporativo pueden ser interpretadas por el mercado como una ventaja competitiva, por ello, son utilizadas como una métrica de situación con respecto a la competencia, y una manera de llevar a cabo acciones de mejora que principalmente estarán relacionadas con los mayores beneficios generados por el buen gobierno, como el aumento de la confianza del mercado, la mejora de los procesos internos de la compañía y la garantía de funcionamiento dentro de los márgenes de la ley, como ejemplo, uno de los elementos que mas hincapié se realiza dentro de las políticas de buen gobierno corporativo son la prevención de delitos fiscales y blanqueo de capitales, existiendo otros más relacionados con el estricto cumplimiento normativo más enfocados a la prevención de la financiación del terrorismo.
 
@@ -247,7 +249,7 @@ En él, se deben tener en cuenta posibles aspectos conflictivos de la organizaci
 
 Debe estar descrita en un **lenguaje accesible** para todos los destinatarios de la misma tanto a nivel interno como externo y debe aplicar a todos los empleados de la organización.
 
-Su construcción debe contar con personal de diferentes partes de la organización para obtener el mayor volumen de información y representación posible.  
+Su construcción debe contar con personal de diferentes partes de la organización para obtener el mayor volumen de información y representación posible.
 
 Y, finalmente debe ser un documento vivo, que se revise y actualice con cierta frecuencia.
 
@@ -259,7 +261,7 @@ Y, finalmente debe ser un documento vivo, que se revise y actualice con cierta f
 
 {:.subsection}
 ### El compliance officer
-  
+
 El **compliance officer** es la persona encargada de velar por el cumplimiento de los requisitos legales y normativos de una organización, se encarga de identificar los riesgos regulatorios y asegura la existencia de controles internos para la medición y gestión de los mismos.
 
 Debe promover una conducta ética y una cultura de cumplimiento normativo y debe trabajar para garantizar que la actividad de la empresa de realice de acuerdo a la ley, a los compromisos adquiridos con clientes y a la normativa interna.
@@ -270,13 +272,13 @@ Si bien la figura de compliance officer no está definida en la legislación esp
 
 Tras la reforma del Código Penal operada por la Ley Orgánica 1/2015, se establece:
 
-“ 2.ª la supervisión del funcionamiento y del cumplimiento del modelo de prevención implantado ha sido confiada a un órgano de la persona jurídica con poderes autónomos de iniciativa y de control o que tenga encomendada legalmente la función de supervisar la eficacia de los controles internos de la persona jurídica;”
+" 2.ª la supervisión del funcionamiento y del cumplimiento del modelo de prevención implantado ha sido confiada a un órgano de la persona jurídica con poderes autónomos de iniciativa y de control o que tenga encomendada legalmente la función de supervisar la eficacia de los controles internos de la persona jurídica;"
 
 (…)
 
-“ 4.ª no se ha producido una omisión o un ejercicio insuficiente de sus funciones de supervisión, vigilancia y control por parte del órgano al que se refiere la condición 2.ª”
+" 4.ª no se ha producido una omisión o un ejercicio insuficiente de sus funciones de supervisión, vigilancia y control por parte del órgano al que se refiere la condición 2.ª"
 
-Si bien el artículo 2 no hace referencia explícita al compliance officer, se puede interpretar su figura en las la definición de “órgano de la persona jurídica con poderes autónomos de iniciativa y de control”, así como las herramientas y obligaciones con las que debe contar esta figura para ejercer su función, como son:
+Si bien el artículo 2 no hace referencia explícita al compliance officer, se puede interpretar su figura en las la definición de "órgano de la persona jurídica con poderes autónomos de iniciativa y de control", así como las herramientas y obligaciones con las que debe contar esta figura para ejercer su función, como son:
 
 Poderes para realizar de manera autónoma y proactiva controles sobre el negocio, o una función legalmente establecida de supervisión sobre el mismo.
 
@@ -357,7 +359,7 @@ Se debe tener especial atención a las responsabilidades de cumplimiento, ya que
 
 Hoy en día todas las empresas tienen **relación con terceros** que forman parte de manera directa o indirecta de su negocio. Los terceros relacionados, pueden ser entre otros, proveedores, socios, distribuidores, intermediarios, empresas colaboradoras, y también clientes.
 
-Como hemos visto en el apartado anterior, el código penal establece que una empresa (persona jurídica) es responsable de los actos delictivos cometidos por sus representantes legales o por quienes ostenten facultades de organización y control dentro de la misma. En este punto estamos incluyendo “sus representantes legales”, es decir, los terceros relacionados. Por este motivo, cobra tanta relevancia la gestión del cumplimiento en terceras partes y los riesgos asociados a los servicios prestados por terceras partes.
+Como hemos visto en el apartado anterior, el código penal establece que una empresa (persona jurídica) es responsable de los actos delictivos cometidos por sus representantes legales o por quienes ostenten facultades de organización y control dentro de la misma. En este punto estamos incluyendo "sus representantes legales", es decir, los terceros relacionados. Por este motivo, cobra tanta relevancia la gestión del cumplimiento en terceras partes y los riesgos asociados a los servicios prestados por terceras partes.
 
 Por este motivo el compliance no se debe limitar a la organización, sino que se trata de que **todos los terceros relacionados con la empresa respeten también** sus compromisos. De lo contrario, su actividad económica se puede ver afectada, y también su reputación.
 
@@ -365,7 +367,7 @@ El riesgo de corrupción relacionado con terceros es estadísticamente elevado, 
 
 ¿De qué manera se puede controlar el cumplimiento en terceras partes?
 
-Para esta tarea existen procedimientos denominados de “diligencia debida” cuyo objetivo es llevar a cabo una adecuada selección y supervisión de las empresas que colaboran con la organización, de tal manera que se ajusten a los principios, valores y conductas de la organización. Asimismo, sirve para conocer el nivel de compromiso ético y de cumplimiento legal de los terceros.
+Para esta tarea existen procedimientos denominados de "diligencia debida" cuyo objetivo es llevar a cabo una adecuada selección y supervisión de las empresas que colaboran con la organización, de tal manera que se ajusten a los principios, valores y conductas de la organización. Asimismo, sirve para conocer el nivel de compromiso ético y de cumplimiento legal de los terceros.
 
 Tal es la importancia de este tipo de procesos que organismos como la Organización para la Cooperación y el Desarrollo Económico (OCDE) ha publicado una guía de debida diligencia para una conducta empresarial responsable, teniendo en cuenta especialmente lo siguientes elementos a analizar, que forman parte de la Conducta Empresarial Responsable.
 
