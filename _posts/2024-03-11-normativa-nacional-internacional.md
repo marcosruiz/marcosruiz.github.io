@@ -185,7 +185,7 @@ Otra de las novedades en la nueva versión es la posibilidad de inclusión de at
 {:.prompt-info}
 
 {:.section}
-## 1.2.- Sistema de Gestión de Continuidad de Negocio con ISO 22301
+## Sistema de Gestión de Continuidad de Negocio con ISO 22301
 
 {:.subsection}
 ### La continuidad de negocio con ISO 22301
@@ -438,10 +438,7 @@ Asimismo, el CCN, proporciona una serie de herramientas que dan soporte en el pr
 [Herramientas soporte ENS CCN](https://ens.ccn.cni.es/index.php/es/conformidad-y-cumplimiento "Accede a la web del CCN en el que se proponen herramientas de soporte al cumplimiento del ENS (se abre en ventana nueva)")
 
 {:.section}
-## 1.5.- La Directiva NIS
-
-{:.subsection}
-### La directiva NIS
+## La Directiva NIS
 
 Bautizada como **directiva NIS (Network and Information Security directive)**, se trata de una directiva **aprobada por el Parlamento Europeo**, que recoge las medidas para garantizar un nivel de seguridad elevado en entidades tanto del sector privado como del sector público en toda Europa, mejorando su resiliencia y su capacidad de respuesta a incidentes.
 
@@ -655,7 +652,7 @@ La notificación de los incidentes es una función del responsable de la Segurid
 Los CSIRT de referencia, el CCN-CERT, el INCIBE-CERT y el ESP-DEF-CERT del Mando Conjunto del Ciberespacio, podra facilitar los actores involucrados el acceso a la Plataforma Nacional de Notificación y Seguimiento de Cibe rincidentes, con el objetivo de intercambiar información y hacer un seguimiento de incidentes entre los operadores o proveedores y las autoridades competentes.
 
 {:.section}
-## 1.6.- Ley de Protección de Infraestructuras Críticas
+## Ley de Protección de Infraestructuras Críticas
 
 {:.subsection}
 ### Ley de Protección de Infraestructuras Críticas
