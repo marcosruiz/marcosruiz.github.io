@@ -55,7 +55,7 @@ Por lo general, el **tratamiento** de estos datos esta **prohibido, salvo en los
 - Interés público en el ámbito de la salud pública, investigación científica, histórica, etc...
 
 > Puedes descargar el [manual de legislación europea en materia de la protección.pdf](/assets/img/legislacion-proteccion-datos/manual de legislación europea en materia de la protección.pdf)
-{:.prompt info}
+{:.prompt-info}
 
 {:.subsection}
 ### Legislación vigente

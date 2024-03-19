@@ -31,11 +31,7 @@ pin: true
 
 ## Evaluación 0
 
-Antes de comenzar con el curso es recomendable que conozcas la mayoría de términos de la seguridad informática como confidencialidad, disponibilidad, integridad,  riesgo, vulnerabilidad, amenaza, etc.
-
-Puedes leer los siguientes artículos para aclarar dichos conceptos:
-
-- [Conceptos básicos de seguridad informática](https://marcosruiz.github.io/posts/conceptos-basicos-seguridad-informatica/)
+Antes de comenzar con el curso es recomendable que conozcas la mayoría de términos de la seguridad informática como confidencialidad, disponibilidad, integridad,  riesgo, vulnerabilidad, amenaza, etc. Puedes leer el artículo [Conceptos básicos de seguridad informática](https://marcosruiz.github.io/posts/conceptos-basicos-seguridad-informatica/) para repasar dichos conceptos.
 
 ## Enlaces increíbles 🔥 (beta)
 

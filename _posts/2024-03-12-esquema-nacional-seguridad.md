@@ -15,7 +15,7 @@ El **ENS establece la política de seguridad** para la protección adecuada de l
 
 La **última versión** esta publicada  en el Real Decreto 311/2022, del **3 de mayo de 2022**, y sustituye a la versión publicada en enero del 2010.
 
-**Objetivos:**
+Objetivos del ENS:
 
 - Crear las condiciones necesarias de **seguridad en el uso de los medio electrónicos.**
 - Promover la **gestión continuada de la seguridad**.
@@ -23,7 +23,8 @@ La **última versión** esta publicada  en el Real Decreto 311/2022, del **3 de
 - Promover un **tratamiento homogéneo de la seguridad**.
 - Servir de **modelo de buenas prácticas**.
 
-**Implantación del esquema nacional de seguridad:**
+{:.section}
+## Implantación del esquema nacional de seguridad
 
 A continuación se presentan las actividades que se han de llevar a cabo para implantar el ENS en una organización:
 
@@ -37,16 +38,30 @@ A continuación se presentan las actividades que se han de llevar a cabo para im
 - Obtener y publicitar la **conformidad con el ENS.**
 - Informar sobre el estado de la seguridad.
 
-{:.subsection}
-### Estructura del ENS
+{:.section}
+## Estructura del ENS
 
 El real decreto se estructura en cuarenta y un artículos distribuidos en siete capítulos, tres disposiciones adicionales, una disposición transitoria, una disposición derogatoria, tres disposiciones finales y cuatro anexos.
 
 A continuación, vamos a repasar los **elementos principales del ENS:**
 
-**El Capítulo 1 - Disposiciones generales**, define el objeto de la norma, ámbito de aplicación, información, elementos y entidades dentro del alcance. Además, también considera elementos como el uso de tecnologías de comunicación 5G y la protección de datos de carácter personal.
+- Capítulo 1 - Disposiciones generales
+- Capítulo 2 – Principios básicos
+- Capítulo 3 - Política de Seguridad
+- Capítulo 4 - Seguridad de sistemas
+- Capítulo 5 – Normas de conformidad
+- Capítulo 6 - Actualización del Esquema Nacional de Seguridad
+- Capítulo 7 - Categorización de los sistemas de información
 
-**El Capítulo 2 – Principios básicos**, establece los principios básicos de la norma, enumerados en el artículo 5:
+{.subsection}
+### Capítulo 1 - Disposiciones generales
+
+Define el objeto de la norma, ámbito de aplicación, información, elementos y entidades dentro del alcance. Además, también considera elementos como el uso de tecnologías de comunicación 5G y la protección de datos de carácter personal.
+
+{.subsection}
+### Capítulo 2 – Principios básicos
+
+Establece los principios básicos de la norma, enumerados en el artículo 5:
 
 1. **La seguridad como proceso integral,** formada por todos los elementos relacionados con los sistemas de información, tales como recursos humanos, materiales, técnicos, jurídicos y organizativos, siendo el despliegue del ENS un proceso integral y no un elemento atómico y parcial a la organización.
 1. **Gestión de la seguridad basada en los riesgos**, elaborando un análisis de riesgos como elemento de base para el esquema y evolucionándolo y actualizándolo a medida que se despliegan herramientas y controles.
@@ -56,7 +71,10 @@ A continuación, vamos a repasar los **elementos principales del ENS:**
 1. **Reevaluación periódica de las medidas de seguridad** implementadas, adaptando su implementación a la evolución del nivel de riesgo de la organización.
 1. **Diferenciación de responsabilidades** entre el responsable de información, servicio, seguridad y sistema.
 
-**Capítulo 3 - Política de Seguridad** y requisitos mínimos para permitir una protección adecuada de la información y los servicios:
+{.subsection}
+### Capítulo 3 - Política de Seguridad
+
+Establece la política de seguridad y requisitos mínimos para permitir una protección adecuada de la información y los servicios:
 
 La política de seguridad se desarrollará cubriendo los siguientes contenidos mínimos:
 
@@ -85,24 +103,32 @@ El artículo 29 **promueve la utilización de infraestructuras y servicios comun
 
 El artículo 30 establece la posibilidad de implementar **perfiles de cumplimiento específicos** estableciendo una serie de medidas de seguridad en función del nivel de riesgos identificado.
 
-**Capítulo 4 - Seguridad de sistemas:** auditoría, informe e incidentes de seguridad, establece los requisitos de auditoría de seguridad de la organización, debiendo ejecutarse al menos una vez cada dos años siguiendo criterios y métodos de auditoria reconocidos.
+{.subsection}
+### Capítulo 4 - Seguridad de sistemas
+
+Auditoría, informe e incidentes de seguridad, establece los requisitos de auditoría de seguridad de la organización, debiendo ejecutarse al menos una vez cada dos años siguiendo criterios y métodos de auditoria reconocidos.
 
 Por su parte, el artículo 32, relativo al **informe del estado de la seguridad,** precisa que este deberá permitir elaborar un perfil general del estado de la seguridad en las entidades.
 
 La prevención, detección y respuesta a incidentes de seguridad se define los artículos 33 y 34, indicando la necesidad de existencia de procesos de gestión de incidencias y designando al CCN-CERT como responsable de la coordinación de respuesta a incidencias en el ámbito de las administraciones y organizaciones dentro del alcance del ENS.
 
-**Capítulo 5 – Normas de conformidad,** que se concretan en cuatro:
+{.subsection}
+### Capítulo 5 – Normas de conformidad
+
+Establece las normas de conformidad que se concretan en cuatro:
 
 - Administración Digital.
 - Ciclo de vida de servicios y sistemas.
 - Mecanismos de control y,
 - Procedimientos de determinación de la conformidad con el ENS.
 
-**Capítulo 6 - Actualización del Esquema Nacional de Seguridad**:
+{.subsection}
+### Capítulo 6 - Actualización del Esquema Nacional de Seguridad
 
 Establece la obligación de actualización de acuerdo con el marco jurídico, la evolución de la tecnología y los estándares en materia de seguridad, nuevas amenazas y vectores de ataque.
 
-**Capítulo 7 - Categorización de los sistemas de información**:
+{.subsection}
+### Capítulo 7 - Categorización de los sistemas de información
 
 El artículo 40 establece la categorización de seguridad en función del impacto de un incidente en términos de disponibilidad, autenticidad, integridad, confidencialidad o trazabilidad, siguiendo para ello el procedimiento descrito en el anexo I;
 

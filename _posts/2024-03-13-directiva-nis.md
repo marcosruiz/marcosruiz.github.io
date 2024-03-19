@@ -77,14 +77,14 @@ Punto de Contacto Único, que será el encargado de garantizar una cooperación 
    1. Criticidad del sistema o de la información afectada por el incidente en un OSE.
    1. Daño reputacional.
 
-{:.subsection}
-### Estructura de la directiva NIS
+{:.section}
+## Estructura de la directiva NIS
 
 La última versión de la directiva NIS puede ser **consultada en el portal de publicación de regulaciones de la unión europea**, a través de este enlace: [Directiva NIS](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex:32016L1148)
 
 La directiva cuenta con un total de **27 artículos distribuidos en 7 capítulos:**
 
-#### Capitulo 1
+### Capitulo 1
 
 **El capítulo 1, es de disposiciones generales**, cuenta con los siguientes artículos:
 
@@ -94,7 +94,7 @@ La directiva cuenta con un total de **27 artículos distribuidos en 7 capítulos
 - El artículo 4 define y describe diferentes términos utilizados en la normativa.
 - Los artículos 5 y 6 define que son Operadores de Servicios Esenciales y efecto perturbador definitivo.
 
-#### Capitulo 2
+### Capitulo 2
 
 El **capítulo 2 versa sobre marcos nacionales de seguridad de las redes y sistemas de información**, compuesto por los siguientes artículos:
 
@@ -106,7 +106,7 @@ El **capítulo 2 versa sobre marcos nacionales de seguridad de las redes y siste
 - El artículo 9 habla sobre los equipos de respuesta a incidentes (CSIRT).
 - El artículo 10 introduce conceptos de cooperación a escala nacional y sirve de introducción al capítulo 3.
 
-#### Capitulo 3
+### Capitulo 3
 
 El **capítulo 3 trata sobre la cooperación en materia de seguridad**, esta conformado por los siguientes artículos:
 
@@ -127,7 +127,7 @@ Entre las tareas dentro de las competencias de la red CSIRT están:
 - Identificación de una respuesta coordinada a un incidente.
 - Prestación de apoyo para los Estados miembros al abordar incidentes transfronterizos.
 
-#### Capitulo 4
+### Capitulo 4
 
 El **capítulo 4 establece las normas de seguridad de las redes y sistemas de información de los operadores de servicios esenciales**, lo forman los siguientes artículos:
 
@@ -141,7 +141,7 @@ Se establece una lista de parámetros que deben tenerse en cuenta al determinar 
 - Duración del incidente.
 - Extensión geográfica con respecto al área afectada por el incidente.
 
-#### Capitulo 5
+### Capitulo 5
 
 El **capítulo 5 establece las normas de seguridad de las redes y sistemas de información de los proveedores de servicios digitales**, lo forman los siguientes artículos:
 
@@ -168,19 +168,19 @@ Los parámetros que deben tenerse en cuenta para determinar si el impacto de un 
 - alcance de la interrupción del funcionamiento del servicio;
 - alcance del impacto en las actividades económicas y sociales.
 
-#### Capitulo 6
+### Capitulo 6
 
 El **capítulo 6 trata sobre la normalización y notificación voluntaria**, cuenta con los siguientes artículos:
 
 - El artículo 19 habla sobre la normalización, la utilización de normas agnósticas a la tecnología.
 - El artículo 20 trata de la notificación voluntaria de incidentes por cualquier entidad con independencia de su nombramiento como operador de servicio esencial.
 
-#### Capitulo 7
+### Capitulo 7
 
 El **capítulo 7 comprende las disposiciones finales**, consta de diferentes artículos en los que se establecen elementos como el régimen sancionador, procedimientos de comité, la revisión de la interpretación y ejecución de la directiva por los estados miembros, medidas transitorias, entrada en vigor, y destinatarios.
 
-{:.subsection}
-### Reglamento de Seguridad de las Redes y Sistemas de Información
+{:.section}
+## Reglamento de Seguridad de las Redes y Sistemas de Información
 
 El **Reglamento de Seguridad de las Redes y Sistemas de la Información** (Reglamento NIS) tiene como objetivo **desarrollar en el territorio nacional lo establecido en la Ley NIS europea**, con respecto al marco institucional en la materia, la cooperación y coordinación, la gestión y notificación de incidentes, las medidas a implantar, la supervisión de los requisitos de ciberseguridad o la función del CISO.
 
