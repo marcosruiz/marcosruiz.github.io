@@ -182,7 +182,7 @@ En el caso de dar acceso al contenido del Registro de Actividades de Tratamiento
 
 El artículo 32 del RGPD impone a los responsables de un tratamiento la **obligación de definir e implantar las medidas de seguridad adecuadas** para garantizar el nivel de seguridad apropiado en función del estado de la técnica, los costes de aplicación y, la naturaleza, el alcance, el contexto y los fines del tratamiento, así como los riesgos asociados al mismo.
 
-A diferencia de la LOPD existente previamente en España, en la cual se definían explícitamente las medidas de seguridad a implementar, con el RGPD, el r**esponsable debe evaluar los riesgos inherentes al tratamiento y aplicar medidas para mitigarlo**s. En dicha evaluación del riesgo deben tenerse en cuenta los riesgos que atenten contra los derechos y libertades de los interesados.
+A diferencia de la LOPD existente previamente en España, en la cual se definían explícitamente las medidas de seguridad a implementar, con el RGPD, el **responsable debe evaluar los riesgos inherentes al tratamiento y aplicar medidas para mitigarlos**. En dicha evaluación del riesgo deben tenerse en cuenta los riesgos que atenten contra los derechos y libertades de los interesados.
 
 Con el objetivo de seleccionar las medidas para gestionar el riesgo para los derechos y libertades, **pueden utilizarse estándares de seguridad** ya existentes en el mercado como la norma ISO 27000 o cualquier otra, como las que se pueden consultar en el apartado de normas nacionales e internacionales en la unidad 5. Por su parte, **las Administraciones Públicas deberán utilizar el Esquema Nacional de Seguridad** para seleccionar las medidas que deban implantarse para evitar su pérdida, alteración o acceso no autorizado, adaptando los criterios de determinación del riesgo en el tratamiento de los datos.
 
@@ -513,7 +513,7 @@ La evaluación de impacto de la protección de datos (EIPD) debe ser realizada e
 - Una evaluación de los riesgos.
 - Las medidas previstas para afrontar los riesgos, incluidas garantías, medidas de seguridad y mecanismos que garanticen la protección de datos personales.
 
-Asimismo, también deben **tenerse en cuenta los siguientes aspectos:**
+Asimismo, también deben **tenerse en cuenta los siguientes aspectos**:
 
 Con respecto al **contexto**, se deben tener en cuenta dos elementos:
 
@@ -523,7 +523,7 @@ Con respecto al **contexto**, se deben tener en cuenta dos elementos:
   - Necesidad: determinar si la finalidad perseguida no puede alcanzarse de otro modo menos lesivo o invasivo, es decir, no existe un tratamiento alternativo que sea igualmente eficaz para el logro de la finalidad perseguida.
   - Proporcionalidad: La gravedad del riesgo para los derechos y libertades del tratamiento, y su intromisión en la privacidad, ha de ser adecuada al objetivo perseguido y proporcionada a la urgencia y gravedad de esta.
 
-Asimismo, también debe llevarse a cabo un proceso de **gestión de riesgos,** que incluya:
+Asimismo, también debe llevarse a cabo un proceso de **gestión de riesgos**, que incluya:
 
 - Amenazas y riesgos: Identificación de las amenazas y riesgos potenciales a los que están expuestos las actividades de tratamiento.
 - Evaluación los riesgos: Evaluación de la probabilidad y el impacto de que se materialicen los riesgos a los que está expuesta la organización.
@@ -539,7 +539,7 @@ El proceso de evaluación de impacto en privacidad, debe ser entendido como un *
 {:.section}
 ## Delegado de Protección de Datos (DPO)
 
-El Delegado de Protección de Datos (Data Privacy Officer, DPO) es la figura dentro de la organización que se encarga de v**elar por la protección de la información.**
+El Delegado de Protección de Datos (Data Privacy Officer, DPO) es la figura dentro de la organización que se encarga de **velar por la protección de la información.**
 
 El RGPD establece la figura del Delegado de Protección de Datos (DPD), que será **obligatorio en:**
 

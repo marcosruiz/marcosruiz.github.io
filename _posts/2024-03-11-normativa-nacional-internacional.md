@@ -231,7 +231,7 @@ Los cambios con respecto a otros sistemas de gestión son fundamentalmente refer
 
 - **Continuidad de negocio:** Capacidad de una organización para continuar la entrega de productos o servicios a niveles predefinidos y aceptables tras una interrupción.
 - **Análisis de impacto al negocio (BIA):** Proceso de análisis de actividades y el efecto que una interrupción de negocio puede tener sobre ella.
-- **Interrupción:** Evento anticipado (por ejemplo, una huelga laboral o un huracán) o no anticipado (por ejemplo, un apagón o un terremoto), que causa una desviación negativa no planificad
+- **Interrupción:** Evento anticipado (por ejemplo, una huelga laboral o un huracán) o no anticipado (por ejemplo, un apagón o un terremoto), que causa una desviación negativa no planificada.
 - **Periodo máximo tolerable de interrupción (MTPD):** Tiempo para que los impactos adversos, que pueden surgir como resultado de no proporcionar un producto/servicio o realizar una actividad, se vuelvan inaceptable.
 - **Requisitos mínimos de continuidad de negocio (MBCO):** Nivel mínimo de servicios y /o productos aceptable para una organización con el fin de lograr sus objetivos comerciales durante una interrupción.
 - **Objetivo de punto de recuperación (RPO):** Punto en el que la información utilizada por una actividad puede restaurarse para permitir que la actividad se reanude.
@@ -320,7 +320,7 @@ El procedimiento administrativo común de las Administraciones Públicas tiene 
 
 **Mejorar la calidad normativa** del ordenamiento jurídico.
 
-Administración con cero papel. La tr**amitación de todos los procedimientos se realizará íntegramente a través de medios electrónicos**, manteniendo, no obstante, los interesados su derecho a la presentación presencial de documentos.
+Administración con cero papel. La **tramitación de todos los procedimientos se realizará íntegramente a través de medios electrónicos**, manteniendo, no obstante, los interesados su derecho a la presentación presencial de documentos.
 
 Todas las **Administraciones** estarán **interconectadas** mediante plataformas comunes de intercambio de información.
 
@@ -347,18 +347,18 @@ La **Ley 8/2011, de 28 de abril, establecen las directrices para la protección 
 
 Los dos principales objetivos de esta norma son:
 
-Identificar el conjunto de infraestructuras que prestan servicios esenciales a nuestra sociedad.
-Diseñar un plan de prevención y protección eficaz contra las posibles amenazas físicas y tecnológicas sobre dichas infraestructuras.
+1. Identificar el conjunto de infraestructuras que prestan servicios esenciales a nuestra sociedad.
+1. Diseñar un plan de prevención y protección eficaz contra las posibles amenazas físicas y tecnológicas sobre dichas infraestructuras.
 
 La [Ley 8/2011 de protección de infraestructuras críticas](https://www.boe.es/buscar/act.php?id=BOE-A-2011-7630 "Accede a la web en la que esta publicada la Ley de Protección de Infraestructuras Críticas ( se abre en ventana nueva )"), consta de **18 artículos**, estructurados en 3 Títulos.
 
 - **Disposiciones generales** (artículos 1 al 4): **Definiciones** de los términos acuñados por la Directiva 2008/114/CE, así como a establecer las cuestiones relativas al ámbito de aplicación y objeto. Entre las definiciones establecidas, cabe destacar:
   - **Servicio esencial:** Se considera como el servicio necesario para el mantenimiento de las funciones sociales básicas, la salud, la seguridad, el bienestar social y económico de los ciudadanos, o el eficaz funcionamiento de las Instituciones del Estado y las Administraciones Públicas.
   - **Sector estratégico:** Cada una de las áreas diferenciadas dentro de la actividad laboral, económica y productiva, que proporciona un servicio esencial.
-  - Infraestructuras estratégicas: Instalaciones, redes, sistemas y equipos físicos y de tecnología de la información sobre las que descansa el funcionamiento de los servicios esenciales.
+  - **Infraestructuras estratégicas**: Instalaciones, redes, sistemas y equipos físicos y de tecnología de la información sobre las que descansa el funcionamiento de los servicios esenciales.
   - **Infraestructuras críticas:** Infraestructura estratégica cuyo funcionamiento es indispensable y no permite soluciones alternativas, por lo que su perturbación o destrucción tendría un grave impacto sobre los servicios esenciales.
   - **Criterios horizontales de criticidad:** Parámetros en función de los cuales se determina la criticidad, la gravedad y las consecuencias de la perturbación o destrucción de una infraestructura crítica, en base al potencial de víctimas mortales o heridos con lesiones graves y las consecuencias para la salud pública, el impacto económico en función de la magnitud de las pérdidas económicas y el deterioro de productos y servicios, el impacto medioambiental, y por último, el impacto público y social, que va relacionado con la confianza del ciudadano en sus Instituciones Públicas, el sufrimiento físico o la alteración de la vida cotidiana por el grave deterioro de servicios esenciales.
-- El **Sistema de Protección de Infraestructuras Críticas** (artículos 5 al 13): Describe como se regulan los órganos e instrumentos de planificación que se integran en el Sistema de Protección de las Infraestructuras Críticas, compuesto por una serie de instituciones, órganos y empresas, procedentes públicas o privadas con responsabilidades en el correcto funcionamiento de los servicios esenciales. **La Ley involucra a** los siguientes agentes:
+- El **Sistema de Protección de Infraestructuras Críticas** (artículos 5 al 13): Describe como se regulan los órganos e instrumentos de planificación que se integran en el Sistema de Protección de las Infraestructuras Críticas, compuesto por una serie de instituciones, órganos y empresas, procedentes públicas o privadas con responsabilidades en el correcto funcionamiento de los servicios esenciales. La Ley involucra a los siguientes agentes:
   - **La secretaría de Estado de Seguridad** es nombrada responsable del Sistema de Protección de las infraestructuras críticas nacionales y es la encargada de dirigir la estrategia nacional de protección de infraestructuras críticas y aprobar los planes de seguridad.
   - **El Centro Nacional para la Protección de las Infraestructuras Críticas** (en adelante CNPIC) encargado del impulso, la coordinación y supervisión de todas las actividades que tiene encomendadas la Secretaría de Estado de Seguridad en relación con la protección de las Infraestructuras Críticas en el territorio nacional, además corresponderá la realización de altas, bajas y modificaciones de infraestructuras en el Catálogo, así como la determinación de la criticidad de las infraestructuras estratégicas incluidas en el mismo.
   - **Por cada sector estratégico, se designará al menos, un ministerio, organismo, entidad u órgano de la Administración General del Estado** integrado en el Sistema, que será el encargado de impulsar, en el ámbito de sus competencias, las políticas de seguridad del Gobierno sobre los distintos sectores estratégicos nacionales y de velar por su aplicación, actuando igualmente como puntos de contacto especializados en la materia.
