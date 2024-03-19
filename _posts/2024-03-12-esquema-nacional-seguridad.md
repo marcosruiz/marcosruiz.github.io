@@ -138,13 +138,10 @@ El Esquema Nacional de seguridad está regulado específicamente por la siguient
 - Resolución de 13 de abril de 2018, de la Secretaría de Estado de Función Pública, por la que seaprueba la Instrucción Técnica de Seguridad de Notificación de Incidentes de Seguridad.
 - La relación de otra normativa relacionada con la ciberseguridad en España puede consultarseen el Código de Derecho de la Ciberseguridad editado por el BOE.
 
-## Contenidos Adicionales
+## Bibliografía y contenidos adicionales
 
+- [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - [Presentación del proceso administrativo común de las administraciones publicas](https://www.hacienda.gob.es/Documentacion/Publico/PortalVarios/MVB15J02%20PPT%20Ley%20procedimiento%2002.10.15.pdf)
 - [Real decreto oficial del Esquema Nacional de Seguridad](https://www.boe.es/boe/dias/2022/05/04/pdfs/BOE-A-2022-7191.pdf)
 - [Pagina oficial del Esquema nacional de Seguridad del Centro Criptológico Nacional (CCN)](https://ens.ccn.cni.es/es/)
 - [Resumen novedades ENS 2022](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html#.YqBtHOxBy3A)
-
-## Bibliografía
-
-- [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)

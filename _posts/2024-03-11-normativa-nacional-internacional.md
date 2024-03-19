@@ -67,27 +67,51 @@ Además de las organizaciones, existen diversas certificaciones para profesional
 {:.subsection}
 ### Estructura de la norma ISO 27001
 
-**Objeto y campo de aplicación:** orientaciones sobre el uso, finalidad y modo de aplicación de este estándar.
+> Descarga una plantilla de la [Norma ISO 27001](/assets/img/normativa-nacional-internacional/ISO_27001.pdf).
+{:.prompt-info}
 
-**Referencias Normativas:** documentos indispensables para la aplicación de ISO27001.
+{:.subsubsection}
+#### Objeto y campo de aplicación
 
-**Términos y Definiciones:** Describe la terminología aplicable a este estándar.
+Orientaciones sobre el uso, finalidad y modo de aplicación de este estándar.
 
-**Contexto de la Organización:** conocimiento de la organización y su contexto, la comprensión de las necesidades y expectativas de las partes interesadas y la determinación del alcance del SGSI. Como ya hemos visto en temas anteriores en este epígrafe es indispensable:
+{:.subsubsection}
+#### Referencias Normativas
+
+Documentos indispensables para la aplicación de ISO 27001.
+
+{:.subsubsection}
+#### Términos y Definiciones
+
+Describe la terminología aplicable a este estándar.
+
+{:.subsubsection}
+#### Contexto de la Organización
+
+Conocimiento de la organización y su contexto, la comprensión de las necesidades y expectativas de las partes interesadas y la determinación del alcance del SGSI. Como ya hemos visto en temas anteriores en este epígrafe es indispensable:
 
 - Identificación de las partes interesadas dentro del sistema de gestión.
 - Identificación de objetivos y requerimientos de las partes interesadas.
 - Determinar a que parte del negocio va a afectar el sistema de gestión.
 - Analizar los riesgos en seguridad de la información. Este análisis puede estar basado en la norma ISO 31000 o en la 27005 específica de seguridad de la información, ya que son compatibles.
 
-**Liderazgo:** Este apartado destaca la necesidad de que todos los empleados de la organización han de contribuir al establecimiento de la norma. Para ello la alta dirección ha de demostrar su liderazgo y compromiso, ha de elaborar una política de seguridad que conozca toda la organización y ha de asignar roles, responsabilidades y autoridades dentro de la misma. Los elementos más relevantes con respecto al apartado de liderazgo son:
+{:.subsubsection}
+#### Liderazgo
+
+Este apartado destaca la necesidad de que todos los empleados de la organización han de contribuir al establecimiento de la norma. Para ello la alta dirección ha de demostrar su liderazgo y compromiso, ha de elaborar una política de seguridad que conozca toda la organización y ha de asignar roles, responsabilidades y autoridades dentro de la misma. Los elementos más relevantes con respecto al apartado de liderazgo son:
 
 - La existencia de una política de seguridad de la información firmada por la dirección, comunicada y disponible para todos los empleados de la organización.
 - La definición de un equipo y recursos humanos
 
-**Planificación:** En esta sección se establece el plan para dar respuesta a los riesgos oportunidades y objetivos establecidos el epígrafe del contexto. Dentro de esta epígrafe debe establecerse el plan de proyectos e iniciativas a acometer, junto el detalle de los parámetros que justifican la priorización elegida.
+{:.subsubsection}
+#### Planificación
 
-**Soporte:**  En este epígrafe se deben detallar los recursos necesarios para operar el sistema de gestión de seguridad de la información.
+En esta sección se establece el plan para dar respuesta a los riesgos oportunidades y objetivos establecidos el epígrafe del contexto. Dentro de esta epígrafe debe establecerse el plan de proyectos e iniciativas a acometer, junto el detalle de los parámetros que justifican la priorización elegida.
+
+{:.subsubsection}
+#### Soporte
+
+En este epígrafe se deben detallar los recursos necesarios para operar el sistema de gestión de seguridad de la información.
 
 Para los recursos humanos necesarios, se deberá detallar las competencias necesarias con las que debe contar.
 
@@ -95,11 +119,17 @@ Asimismo, el SGSI deberá contar con un plan de comunicación y los documentos r
 
 Recursos, competencias, conciencia, comunicación e información documentada con la que debe contar la organización para el funcionamiento del SGSI.
 
-**Operación:** esta parte de la norma indica qué se debe planificar, implementar y controlar los procesos de seguridad de la organización, hacer una valoración de los riesgos de la Seguridad de la Información y un tratamiento de ellos.
+{:.subsubsection}
+#### Operación
+
+Esta parte de la norma indica qué se debe planificar, implementar y controlar los procesos de seguridad de la organización, hacer una valoración de los riesgos de la Seguridad de la Información y un tratamiento de ellos.
 
 Por cada uno de los procesos implementados dentro del sistema de gestión de seguridad de la información, se ha de hacer un seguimiento y evaluación de los impactos en la madurez y en los riesgos. Como consecuencia de este requerimiento de la norma, se debe realizar una actualización del análisis de riesgos a intervalos planificados, al menos una vez por cada ciclo.
 
-**Evaluación del Desempeño:** En este punto se establece guías para el seguimiento del sistema, la medición, el análisis, la evaluación, la auditoría interna y la revisión por la dirección del Sistema de Gestión de Seguridad de la Información.
+{:.subsubsection}
+#### Evaluación del Desempeño
+
+En este punto se establece guías para el seguimiento del sistema, la medición, el análisis, la evaluación, la auditoría interna y la revisión por la dirección del Sistema de Gestión de Seguridad de la Información.
 
 El sistema de gestión tiene que ser evaluado para facilitar su mejora. La evaluación del sistema puede llevarse a cabo a través de diferentes herramientas, por ejemplo:
 
@@ -110,7 +140,10 @@ El sistema de gestión tiene que ser evaluado para facilitar su mejora. La evalu
 
 Todas estas revisiones deben ser dejar un soporte documental. Además la información sobre las oportunidades de mejora detectadas, serán utilizadas para la mejora del Sistema de Gestión de Seguridad de la Información.
 
-**Mejora:** Define obligaciones que tendrá una organización cuando encuentre una no conformidad y la importancia de mejorar continuamente la conveniencia, adecuación y eficacia del SGSI.
+{:.subsubsection}
+#### Mejora
+
+Define obligaciones que tendrá una organización cuando encuentre una no conformidad y la importancia de mejorar continuamente la conveniencia, adecuación y eficacia del SGSI.
 
 Por lo general, en este último epígrafe se evidencian las decisiones tomadas con respecto a los puntos de mejora y acciones correctivas tomadas tras las evaluaciones de desempeño realizadas en la fase anterior.
 
@@ -400,10 +433,7 @@ Para el desempeño de sus cometidos, se apoya en los servicios transversales sig
 > Como tal, ¿Podría ser considerada ACME como infraestructura crítica?
 {:.prompt-info}
 
-
-
-
-## Contenidos Adicionales
+## Bibliografía y contenidos adicionales
 
 - [BOE: mCódigo de derecho de la ciberseguridad](https://www.boe.es/biblioteca_juridica/codigos/codigo.php?id=173&modo=2&nota=0&tab=2)
 - [Normas para mejorar la ciberseguridad:Globalsuite](https://www.globalsuitesolutions.com/es/normas-iso-para-mejorar-la-ciberseguridad)
@@ -419,9 +449,4 @@ Para el desempeño de sus cometidos, se apoya en los servicios transversales sig
 - [Guía de controles CIS en Ciberseguridad.com](https://ciberseguridad.com/herramientas/controles-seguridad-cis/#%C2%BFQue_son_los_controles_CIS)
 - [Documento Guía de implementación norma ISO 22301 de Sistemas de gestión de continuidad de negocio en NQA](https://www.nqa.com/medialibraries/NQA/NQA-Media-Library/PDFs/Spanish%20QRFs%20and%20PDFs/NQA-ISO-22301-Guia-de-implantacion.pdf)
 - [Guía comparativa ISO 22301:2012 vs ISO 22301:2019](https://www.bsigroup.com/globalassets/localfiles/es-es/Documentos%20tecnicos/ISO%2022301/es-iso-22301-guia-comparativa-low-res.pdf)
-- [Entrada en vigor de la directiva NIS 2](https://administracionelectronica.gob.es/pae_Home/pae_Actualidad/pae_Noticias/Anio2022/Mayo/Noticia-2022-05-26-Union-Europea-refuerza-ciberseguridad-directiva-NIS-2.html#.YqCIcOxBy3A)
-- [Artículo sobre la directiva NIS](https://www2.deloitte.com/content/dam/Deloitte/es/Documents/riesgos/Deloitte-ES-risk-Transposicion-Directiva-NIS.pdf)
-
-## Bibliografía
-
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)

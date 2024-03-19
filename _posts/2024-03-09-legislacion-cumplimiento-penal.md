@@ -429,7 +429,11 @@ Los **requisitos documentales** de la norma ISO 37001 son los siguientes:
 - [Política antisoborno de T-Systems México](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/DL-TSMX-SGA-MANUAL_antisoborno.pdf)
 - [Portal Antisoborno del Programa nacional de infraestructura educativa de Perú, con información detallada del sistema de gestión antisoborno](https://www.gob.pe/institucion/pronied/campa%C3%B1as/3390-sistema-de-gestion-antisoborno-sgas)
 
-## Contenidos Adicionales
+## Bibliografía y contenidos adicionales
+
+- [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
+- <https://www.aepd.es/informes-y-resoluciones/resoluciones>
+- <https://servicios.aepd.es/AEPD/view/form/MDAwMDAwMDAwMDAwMDUwNjg2MDYxNzEwNzYwMjcwNDUx?updated=true>
 
 - [Implantación de sistemas de cumplimiento penal para pymes - Confederación Canaria de Empresarios](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/Pasos-practicos-para-la-implementacion-de-un-Sistema-de-Gestion-en-Cumplimiento-Penal-para-Pymes.pdf)
 - [Sistemas de gestión de cumplimiento penal - sodercan: Sociedad para el desarrollo regional de Cantabria](https://www.sodercan.es/sistema-de-gestion-de-riesgos-penales/%C2%A0%C2%A0%C2%A0)
@@ -447,9 +451,3 @@ Artículos sobre la ISO 37301 y la ISO 37001:
 - [Isotools - ¿Que supone la ISO 37001 en la lucha contra el fraude?](https://www.isotools.org/2017/02/09/supone-la-norma-iso-37001-la-lucha-soborno/)
 - Compliance antisoborno: [Los controles financieros en un sistema antisoborno](https://www.compliance-antisoborno.com/los-controles-financieros-en-un-sistema-antisoborno/) y [Norma ISO 37001](https://www.compliance-antisoborno.com/iso-37001/)
 - [Global trust association - Principales controles antisoborno](https://globaltrustassociation.org/es/cuales-son-los-principales-controles-antisoborno-que-plantea-la-norma-iso-37001/)
-
-## Bibliografía
-
-- [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
-- <https://www.aepd.es/informes-y-resoluciones/resoluciones>
-- <https://servicios.aepd.es/AEPD/view/form/MDAwMDAwMDAwMDAwMDUwNjg2MDYxNzEwNzYwMjcwNDUx?updated=true>

@@ -11,6 +11,16 @@ img_path: /assets/img/directiva-nis/
 
 Bautizada como **directiva NIS (Network and Information Security directive)**, se trata de una directiva **aprobada por el Parlamento Europeo**, que recoge las medidas para garantizar un nivel de seguridad elevado en entidades tanto del sector privado como del sector público en toda Europa, mejorando su resiliencia y su capacidad de respuesta a incidentes.
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es una directiva?</summary>
+  <div class="card-body" markdown="1">
+
+Las directivas son actos legislativos en los cuales se establecen objetivos que todos los países de la UE deben cumplir. Sin embargo, corresponde a cada país elaborar sus propias leyes sobre cómo alcanzar esos objetivos. Ejemplo de ello es la Directiva de la UE sobre plásticos de un solo uso, que reduce el impacto en el medio ambiente de este tipo de plásticos, por ejemplo, limitando e incluso prohibiendo la utilización de platos, pajitas y vasos de este material.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 Sienta las bases para la gestión de riesgos de ciberseguridad y la obligación de notificación en las organizaciones de los sectores que cubre.
 
 Entre sus **objetivos**, destacan la homogeneización de las medidas de seguridad entre organizaciones de diferentes países, y el establecimiento de un marco de comunicación común para la respuesta a eventos e incidencias de seguridad, denominado, Red Europea de Organización de Enlace de Crisis Cibernéticas (EU-CYCLONe)
@@ -234,6 +244,9 @@ La notificación de los incidentes es una función del responsable de la Segurid
 
 Los CSIRT de referencia, el CCN-CERT, el INCIBE-CERT y el ESP-DEF-CERT del Mando Conjunto del Ciberespacio, podra facilitar los actores involucrados el acceso a la Plataforma Nacional de Notificación y Seguimiento de Cibe rincidentes, con el objetivo de intercambiar información y hacer un seguimiento de incidentes entre los operadores o proveedores y las autoridades competentes.
 
-## Bibliografía
+## Bibliografía y contenidos adicionales
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
+- [Entrada en vigor de la directiva NIS 2](https://administracionelectronica.gob.es/pae_Home/pae_Actualidad/pae_Noticias/Anio2022/Mayo/Noticia-2022-05-26-Union-Europea-refuerza-ciberseguridad-directiva-NIS-2.html#.YqCIcOxBy3A)
+- [Artículo sobre la directiva NIS](https://www2.deloitte.com/content/dam/Deloitte/es/Documents/riesgos/Deloitte-ES-risk-Transposicion-Directiva-NIS.pdf)
+- <https://european-union.europa.eu/institutions-law-budget/law/types-legislation_es>
