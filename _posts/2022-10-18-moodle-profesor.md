@@ -61,7 +61,7 @@ A continuación se ponen plantillas para copiar y pegar de forma rápida
 Sin restar por respuesta errónea:
 
 ```plaintext
-[markdown]Pregunta{
+::Código::[markdown]Pregunta{
     =Respuesta
     ~Respuesta
     ~Respuesta
@@ -72,7 +72,7 @@ Sin restar por respuesta errónea:
 Restando el 50% del valor de la pregunta por respuesta errónea:
 
 ```plaintext
-[markdown]Pregunta{
+::Código::[markdown]Pregunta{
     =Respuesta
     ~%-50%Respuesta
     ~%-50%Respuesta
@@ -85,7 +85,7 @@ Restando el 50% del valor de la pregunta por respuesta errónea:
 Dos respuestas correctas y dos incorrectas:
 
 ```plaintext
-[markdown]Pregunta{
+::Código::[markdown]Pregunta{
     ~%50%Respuesta
     ~%50%Respuesta
     ~%-50%Respuesta
@@ -96,7 +96,7 @@ Dos respuestas correctas y dos incorrectas:
 Tres respuestas correctas y una incorrecta:
 
 ```plaintext
-[markdown]Pregunta{
+::Código::[markdown]Pregunta{
     ~%33.33333%Respuesta
     ~%33.33333%Respuesta
     ~%33.33333%Respuesta
@@ -107,7 +107,7 @@ Tres respuestas correctas y una incorrecta:
 Cuatro respuestas correctas:
 
 ```plaintext
-[markdown]Pregunta{
+::Código::[markdown]Pregunta{
     ~%25%Respuesta
     ~%25%Respuesta
     ~%25%Respuesta
@@ -120,13 +120,13 @@ Cuatro respuestas correctas:
 Respuesta exacta:
 
 ```plaintext
-[markdown]Pregunta {#5}
+::Código::[markdown]Pregunta {#5}
 ```
 
 Dando un rango de error:
 
 ```plaintext
-[markdown]Pregunta {#5.2:0.1}
+::Código::[markdown]Pregunta {#5.2:0.1}
 ```
 
 #### Pregunta respuesta texto
@@ -134,13 +134,13 @@ Dando un rango de error:
 Una única respuesta correcta:
 
 ```plaintext
-[markdown]Pregunta {=respuesta}
+::Código::[markdown]Pregunta {=respuesta}
 ```
 
 Varias respuestas correctas:
 
 ```plaintext
-[markdown]Pregunta {=respuesta =respuesta2}
+::Código::[markdown]Pregunta {=respuesta =respuesta2}
 ```
 
 > En caso de estas respuestas siempre NO son case sensitive por lo que el alumno podrá escribir "RespUESta" y se la dará como correcta.
@@ -149,11 +149,22 @@ Varias respuestas correctas:
 #### Pregunta de verdadero y falso
 
 ```plaintext
-[markdown]Pregunta {T}
+::Código::[markdown]Pregunta {T}
 ```
 
 > No se recomienda usar este tipo de preguntas ya que si la pregunta es confusa (y nos damos cuenta tarde) no permite la opción de que "Verdadero" y "Falso" sean opciones correctas al mismo tiempo.
 {:.prompt-info}
+
+#### Pregunta de relacionar columnas
+
+```plaintext
+::Código::[markdown]Pregunta {
+  =Definición1 -> Término1
+  =Definición2 -> Término2
+  =Definición3 -> Término3
+  =Definición4 -> Término4
+}
+```
 
 {:.subsection}
 ### Autoincrementar
