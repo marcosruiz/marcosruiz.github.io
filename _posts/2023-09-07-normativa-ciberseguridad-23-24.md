@@ -21,6 +21,7 @@ pin: true
 
 - UD1 - [Puntos principales sobre el cumplimiento normativo](/posts/cumplimiento-normativo)
 - UD2 - [Diseño de sistemas de gestión de cumplimiento normativo](/posts/sistemas-gestion-cumplimiento)
+  - [Tipos de normas y su clasificación](/posts/tipos-normas-clasificacion/)
 - UD3 - [Legislación para el cumplimiento de la responsabilidad penal](/posts/legislacion-cumplimiento-penal)
 
 - T01 - Obligatoria - Apto/No apto - [Tarea: Introducción al cumplimiento normativo](/posts/tarea-introduccion-cumplimiento-normativo)

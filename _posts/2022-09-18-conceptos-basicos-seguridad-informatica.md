@@ -6,7 +6,6 @@ tags: [seguridad informática, smr, teoría]
 img_path: /assets/img/conceptos-basicos-seguridad-informatica/
 ---
 
-
 {:.section}
 ## Introducción
 
@@ -46,10 +45,10 @@ Solo los usuarios autorizados conocen la información. Para garantizar la confid
 
 Solo el personal autorizado podrá modificar la información. Para garantizar la integridad se recurre a:
 
-- Monitorización del tráfico
-- Auditorias
+- Monitorización del tráfico.
+- Auditorias.
 - Implementación de sistemas de control de cambios.
-- Implementación de procesos de copias de seguridad 
+- Implementación de procesos de copias de seguridad.
 
 {:.subsection}
 ### Disponibilidad

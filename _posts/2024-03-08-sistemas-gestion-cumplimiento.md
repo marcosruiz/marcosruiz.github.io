@@ -6,6 +6,7 @@ tags: [ciberseguridad en entornos de las tecnologías de la información, normat
 img_path: /assets/img/sistemas-gestion-cumplimiento/
 ---
 
+{:.section}
 ## Sistemas de Gestión de compliance
 
 La presión regulatoria de las empresas ha ido aumentando durante los últimos años. Además, los compromisos que adquieren las empresas son cada vez mayores, de distinta índole y con distinto nivel de riesgo. La regulación, las políticas y las normativas, los contratos, los códigos éticos, suponen un esfuerzo para las organizaciones y su incumplimiento entraña distintos riesgos en función de la tipología de los requisitos y del ente que los requiera.
@@ -14,6 +15,7 @@ Por este motivo, la dirección de ACME ha decidido ahora el analizar todos los r
 
 En los próximos epígrafes evaluaremos en que consiste, y que implicaciones tiene.
 
+{:.subsection}
 ### Definición de un sistema de gestión de compliance
 
 El cumplimiento es un elemento indispensable para el correcto funcionamiento de un negocio ya que ayuda a desarrollar el mismo dentro de los limites de la ley, pero también establece compromisos mas elevados que pueden ser utilizados como un argumento de venta para la empresa.
@@ -24,6 +26,7 @@ Dada la volumetría de estos compromisos, la heterogeneidad de sus orígenes y e
 
 **Un sistema de gestión de Compliance es un proceso integrado en la organización que permite identificar y garantizar el cumplimiento de aquella legislación, normativa, reglamento, código de buena conducta, o código de ética y transparencia** que le afecte con el objetivo principal de evitar los riesgos que puedan darse en un momento dado por su incumplimiento. Estos son cada vez más difíciles de prever dada la dificultad y la continua actualización de la normativa aplicable a las empresas.
 
+{:.subsection}
 ### Beneficios de un sistema de gestión de compliance
 
 El principal **objetivo del cumplimiento normativo**, es minimizar las consecuencias por llevar a cabo actividades fuera de los márgenes de la ley. En estos escenarios, tanto los comités de administración de las empresas como los compliance officers, pueden llegar a tener responsabilidad penal sobre sus actividades, entre otras cosas si se demuestra omisión en su labor de cumplimiento.
@@ -43,16 +46,15 @@ Además de esta, hay otras razones y **beneficios de desarrollar y operar un sis
   - Mejora los procesos de detección de nuevos requisitos legales y normativos que puedan surgir.
   - Disminuye el coste de los seguros de protección penal.
   - Supone una ventaja competitiva ante otras organizaciones que no dispongan de un programa de cumplimiento normativo.
-
 - **Para los clientes:**
   - Permite trabajar con proveedores con ciertas garantías de respetar y no comprometer su imagen de marca.
   - Reduce los riesgos de compliance en terceros, al poder contar con la evidencia de un sistema de gestión de cumplimiento.
-
-- **Para el mercado y la sociedad**:
+- **Para el mercado y la sociedad:**
   - Provee de cierta confianza a las instituciones.
   - Fomenta la igualdad y la justicia social.
   - Supone una mejora en el funcionamiento de los mercados al establecer reglas de competencia leal.
 
+{:.subsection}
 ### Evolución del estándar de sistema de gestión de cumplimiento normativo, de ISO19600 a ISO 37301
 
 La Organización Internacional de Normalización (ISO) ha construido un estándar para el desarrollo de sistemas de gestión de cumplimiento, esta norma que fue bautizada como **ISO 19600, definía una guía sobre compliance**.  Su propuesta se trataba del desarrollo de políticas y procedimientos diseñados para asegurar el cumplimiento legal, normativo, del sector y en general de los compromisos de la organización, utilizando la formula del ciclo de Deming (P-D-C-A) Plan – Do – Check – Act / Planificar – Hacer – Verificar – Actuar.
@@ -63,6 +65,7 @@ Esta nueva ISO venia acompañada de novedades obvias como la **posibilidad de se
 
 Los requisitos establecidos en la norma, al igual que otros muchos otros sistemas de gestión en otras normas ISO, hacen referencia a un órgano de gobierno con el que las organizaciones deben contar para tomar decisiones estratégicas sobre la operación del plan de gestión de cumplimiento.
 
+{:.subsection}
 ### El estándar ISO 37301
 
 La norma ISO 37301:2021 es el estándar de la Organización Internacional de Estandarización que especifica los requisitos y establece una guía  para implementar, desarrollar, evaluar, mantener, auditar y mejorar un Sistema de Gestión de Cumplimiento eficaz en una organización.
@@ -80,83 +83,18 @@ Este estándar para gestión de Compliance cuenta en total con 10 dominios y un 
 1. **Evaluación de desempeño:** Establecerá procesos para realizar el seguimiento de los procesos, medir el rendimiento de los mismos, herramientas para realizar las evaluaciones tales como la definición de indicadores o existencia de informes de cumplimiento. Asimismo, se establecerán directrices para la ejecución de procesos de auditoría interna y revisión por parte de la dirección.
 1. **Mejora:** En este epígrafe se definirán actividades de mejora continua identificadas tras las actividades de medición y evaluación de desempeño, y acciones correctivas sobre observaciones y hallazgos identificados durante los procesos de auditoria interna y revisión por parte de la dirección.
 
- **Anexo A:** Este apartado se amplía las explicaciones sobre los puntos anteriores del sistema de gestión de cumplimiento para hacer mas sencilla su implementación.
-
 En el siguiente diagrama se representa de manera gráfica un sistema de gestión de cumplimiento basado en el ciclo de Deming.
 
 ![Sistema de Gestión de cumplimiento](sistemaGestionCumplimiento.png)
 _Sistema de Gestión de cumplimiento_
 
-Elaboración propia
+{:.section}
+## Tipología de documentos jurídicos
 
-## Entorno regulatorio de aplicación
+Leer [Tipos de normas y su clasificación](/posts/tipos-normas-clasificacion/).
 
-### Tipología de documentos jurídicos
-
-**Una ley se define** como una norma jurídica dictada por un legislador, en que se obliga o prohíbe algo en consonancia con la justicia y cuyo incumplimiento conlleva una sanción.
-
-Las leyes son documentos jurídicos cuyo cumplimiento tiene más prioridad que cualquier fuente normativa. Están consideradas como consecuencia de la voluntad popular, ya que su publicación y aprobación depende del poder legislativo conformado por las cortes generales, esto es, congreso de los diputados y senado, que a su vez son elegidos por el pueblo.
-
-Estos documentos legales, una vez están aprobadas pasan a formar parte del ordenamiento jurídico, cuya **jerarquía** repasamos a continuación:
-
-![Jerarquía Legal en España](jerarquiaLegalEspana.png.png)
-_Jerarquía Legal en España_
-
-**Constitución de 1978 y Tratados Internacionales:**
-
-La Constitución es la norma suprema del ordenamiento jurídico español, prevalece sobre todas las demás leyes. Todos los ciudadanos y los poderes públicos están sujetos a ella y a partir de esta se desarrolla el resto de documentos legislativos. Fue aprobada por referéndum entre todos los españoles el 6 de diciembre de 1978 y el 29 de diciembre se publicó en el BOE y entró en vigor. Establece los conceptos que ordenan el funcionamiento de la nación, como pueden ser la definición del estado como monarquía parlamentaria, la división de poderes, y el establecimiento de autonomías.
-
-Un Tratado Internacional es un acuerdo celebrado por escrito entre Estados, o entre Estados y otros sujetos de derecho internacional, como las organizaciones internacionales, y regido por el Derecho Internacional.
-
-La Constitución, los tratados internacionales y toda la normativa comunitaria, se encuentran al mismo nivel en la pirámide de prioridad legal, dependiendo de quien hable de la materia podrá decir que uno está sobre el otro. Sin embargo, conviven en el mismo nivel.
-
-**Leyes orgánicas:**
-
-Las leyes orgánicas vienen reguladas en el art. 81 de la Constitución Española, desarrollan los derechos fundamentales y libertades públicas, son este tipo de leyes en las que se aprueban los estatutos de autonomía, se definen las normas sobre el régimen electoral general (LOREG) o la protección de datos de carácter personal (LOPD).
-
-La aprobación, modificación o derogación de las leyes orgánicas exigirá mayoría absoluta del Congreso, en una votación final sobre el conjunto del proyecto.
-
-Además de todas aquellas que estén previstas en la Constitución, por ejemplo, la regulación de los estados de alarma, excepción y sitio, la regulación del defensor del pueblo, entre otras. Su aprobación, modificación o derogación se llevará a cabo por mayoría absoluta de los miembros del Congreso.
-
-**Leyes ordinarias:**
-
-Las leyes ordinarias se encargan de regular materias que no estén reservadas a ley orgánica y para su aprobación se necesita mayoría simple de cada una de las cámaras. Son aprobadas por las cortes generales por mayoría simple y no afectan a las materias propias de las leyes orgánicas. Se encuentran al mismo nivel que las leyes orgánicas, aunque se pueden ver por debajo en la jerarquía legislativa. Son leyes ordinarias, por ejemplo:
-
-- Las leyes que están encargadas de regular el ejercicio de profesiones y gremios de un país.
-- Los códigos civiles, regulando todo lo referente a derecho civil.
-- Leyes de tránsito, abocadas al transporte terrestre, pero abracan también la aeronáutica y otros tipos de transporte.
-- Leyes que regulan el comercio, y por ende forman el derecho mercantil.
-- Leyes de ascenso militar.
-- Algunos aspectos involucrados en el derecho penal tal como sanciones monetarias, o procedimientos jurídicos en caso de cometer algún crimen.
-
-**Normas reglamentarias:**
-
-Hay normas que no son elaboradas por el poder legislativo a través de las cortes generales, pero su valor se equipara a la ley. Estas normas se crean por el poder ejecutivo a través del gobierno o Asambleas Legislativas y desarrollan materias que no están reservadas a ley orgánica. Fundamentalmente se trata de decretos legislativos y decretos ley.
-
-**Decretos Legislativos:** Los decretos legislativos desarrollan materias delegadas, que no guarde la Constitución a las leyes orgánicas. Este tipo de normas las crea el gobierno, a través de la potestad legislativa otorgada por el poder legislativo mediante las leyes ordinarias.
-
-**Decreto Ley:** En caso de extraordinaria y urgente necesidad, el Gobierno podrá dictar disposiciones legislativas provisionales, que tomarán la forma de Decretos-leyes, y que no podrán afectar al ordenamiento de las instituciones básicas del Estado, a los derechos, deberes y libertades de los ciudadanos regulados en el Título I de la Constitución, al régimen de las Comunidades Autónomas ni al Derecho electoral general.
-
-**Reglamentos de gobierno:**
-
-Se trata de una serie de instrucciones o normativas que se utilizan para evitar la subjetividad en los procesos. Estos tienen distintas funciones, según lo que se espere lograr con ellos.
-
-Leyes Orgánicas, por ejemplo, no tienen la oportunidad de especificar al detalle todos los procedimientos a seguir. Debido a esto, es allí donde surgen los reglamentos como estrategia de apoyo para su correcta aplicación y uso.
-
-Los reglamentos pueden tener forma de Reales Decretos, las Órdenes de las Comisiones delegadas del Gobierno, las Órdenes Ministeriales, etc.
-
-Son ejemplos de reglamentos:
-
-- Reglamento General de protección de datos.
-- Reglamento General de recaudación.
-- Reglamento General de la seguridad social.
-- Reglamento General de circulación.
-
- **Leyes y reglamentos de las comunidades autónomas:**
-
-Por último, tenemos las leyes y los reglamentos de las Comunidades Autónomas. Su función es exactamente la misma que las de régimen estatal, pero las competencias son variables entre autonomías, por lo que, aunque estén colocadas en esta posición, la relación entre las normas autonómicas y las estatales depende de las competencias de cada una en los diferentes temas.
-
-### Jurisdicciones
+{:.section}
+## Jurisdicciones
 
 En esta sección se presentan todos los **órganos pertenecientes al poder Judicial y que se encargan de garantizar el cumplimiento de la ley** por parte de las instituciones y ciudadanos. Se dividen en diferentes instituciones según la función que se encargue de regular cada uno de ellos.
 
@@ -177,7 +115,8 @@ En esta sección se presentan todos los **órganos pertenecientes al poder Judic
 | Tribunal Constitucional                     | Juzga la naturaleza constitucional de los textos legislativos votados por el Estado o las comunidades autónomas. Se ocupa de todos los conflictos de jurisdicción entre el Estado y las comunidades autónomas. |
 | Tribunal de Cuentas                         | Monitoreo de la actividad económica y financiera del Estado. Cada comunidad autónoma tiene una corte regional similar.                                                                                         |
 
-### Legislación nacional y acuerdos internacionales
+{:.section}
+## Legislación nacional y acuerdos internacionales
 
 Como hemos visto, el cumplimiento es un elemento indispensable para el correcto funcionamiento de un negocio, ya que uno de sus principales objetivos es que este sea desarrollado dentro de los límites de la ley, aunque también establece compromisos más elevados que pueden ser utilizados como un argumento de venta para la empresa.
 
@@ -187,23 +126,18 @@ A continuación, se presentan una serie de leyes con impacto sobre empresas y or
 
 Regulación con impacto en empresas y organizaciones vinculada con el uso de tecnologías:
 
-**El Reglamento General de Protección de Datos (RGPD, o GDPR por sus siglas en inglés) y la Ley Orgánica de Protección de Datos (LOPD).** Son las dos principales normas que velan por la privacidad de los datos personales. Todas las empresas deben tenerlas en cuenta y cumplirlas escrupulosamente.
-
-**Ley de Propiedad Intelectual (LPI).** Protege las creaciones originales, en cualquier formato y medio: grabaciones, emisiones de radio, etc. Debe tenerse en cuenta, no obstante, que no incluye ideas, procesos ni conceptos de matemáticas.
-
-**Leyes de Propiedad Industrial.** Similares a la anterior, pero, en este caso, destinadas a la protección de diseños industriales, marcas, nombres comerciales, patentes, etc. Son varias normativas diferentes: de marcas, de patentes…
-
-**Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE)**. Regula todos los intercambios comerciales realizados a través de Internet. Si tienes o piensas montar una tienda online, te interesa especialmente.
-
-**Reglamento Europeo de Identificación Electrónica y Servicios de Confianza en el Mercado Interior (eIDAS)**. Tiene como objetivo reforzar la seguridad y la confianza de las transacciones electrónicas realizadas dentro del marco del Mercado Único Digital Europeo.
+- **El Reglamento General de Protección de Datos (RGPD, o GDPR por sus siglas en inglés) y la Ley Orgánica de Protección de Datos (LOPD).** Son las dos principales normas que velan por la privacidad de los datos personales. Todas las empresas deben tenerlas en cuenta y cumplirlas escrupulosamente.
+- **Ley de Propiedad Intelectual (LPI).** Protege las creaciones originales, en cualquier formato y medio: grabaciones, emisiones de radio, etc. Debe tenerse en cuenta, no obstante, que no incluye ideas, procesos ni conceptos de matemáticas.
+- **Leyes de Propiedad Industrial.** Similares a la anterior, pero, en este caso, destinadas a la protección de diseños industriales, marcas, nombres comerciales, patentes, etc. Son varias normativas diferentes: de marcas, de patentes…
+- **Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE)**. Regula todos los intercambios comerciales realizados a través de Internet. Si tienes o piensas montar una tienda online, te interesa especialmente.
+- **Reglamento Europeo de Identificación Electrónica y Servicios de Confianza en el Mercado Interior (eIDAS)**. Tiene como objetivo reforzar la seguridad y la confianza de las transacciones electrónicas realizadas dentro del marco del Mercado Único Digital Europeo.
 
 > Sea cual sea el impacto, toda la regulación existente puede encontrarse y ser consultada en la web del Boletín Oficial del Estado, con especial atención a los epígrafes sobre el derecho mercantil y las sociedades mercantiles del enlace a continuación: [Biblioteca Jurídica Digital](https://www.boe.es/biblioteca_juridica/index.php?tipo=C&modo=2)
 > Asimismo, se presenta otro recurso relacionado con la regulación específica en diferentes ámbitos relacionados con la pyme, que engloba las principales leyes de impacto en las pequeñas y medianas empresas: [iPYME - Normativa relacionada con la PyME](http://www.ipyme.org/es-ES/Normativa/Paginas/Normativa.aspx)
 {:.prompt-info}
 
-## Análisis y gestión de riesgos, mapas de riesgos
-
-### La gestión de riesgo con ISO 31000
+{:.section}
+## Gestión de riesgos
 
 Cualquier **actividad relacionada con el negocio de la empresa conlleva la existencia de riesgos**. La toma de decisiones relacionada con los riesgos es un aspecto diferencial en la manera de gestionar una organización. Existen varias fuentes de riesgo en cada organización, hasta ahora el contenido de este módulo se ha centrado en aquellos relacionados con cumplimiento normativo, pero hay otros, como pueden ser aquellos relacionados con el uso de las tecnologías, o relacionados con la seguridad física, la salud, etc…
 
@@ -216,41 +150,33 @@ Los objetivos de la norma ISO 31000 para la gestión de riesgos son los siguient
 - Dar soporte para la gestión de incertidumbres. La gestión del riesgo ayuda a gestionar situaciones en las cuales la organización se encuentra con falta de información o incerteza, considerando la incertidumbre y la manera de gestionarla.
 - Fomentar la mejora continua en la organización y reducción de riesgos negativos para la misma de manera dinámica, iterativa y con atención al cambio, respondiendo ante nuevas situaciones que puedan acontecer en una organización y su entorno.
 
+{:.subsection}
 ### Conceptos relacionados con la gestión de riesgo
 
 A la hora de hablar de gestión riesgos, se deben tener en cuenta una serie de **conceptos básicos** que tienen que ver y conforman los riesgos.
 
-**Activo:** Cualquier recurso de la empresa necesario para desempeñar las actividades diarias y cuya no disponibilidad o deterioro supone un agravio o coste. La naturaleza de los activos dependerá de la empresa, pero su protección es el fin último de la gestión de riesgos. La valoración de los activos es importante para la evaluación de la magnitud del riesgo.
+- **Activo:** Cualquier recurso de la empresa necesario para desempeñar las actividades diarias y cuya no disponibilidad o deterioro supone un agravio o coste. La naturaleza de los activos dependerá de la empresa, pero su protección es el fin último de la gestión de riesgos. La valoración de los activos es importante para la evaluación de la magnitud del riesgo.
+- **Evento:** Ocurrencia de una circunstancia o cambio en un conjunto de circunstancias.
+- **Vulnerabilidad:** Debilidad que presenta un activo o un proceso.
+- **Amenaza:** Circunstancia desfavorable que, de ocurrir, tendrá consecuencias negativas en la organización.
+- **Consecuencia:** Efecto de un evento que afecta a un objetivo.
+- **Impacto:** materialización de una amenaza sobre un activo aprovechando una vulnerabilidad. La consecuencia o el impacto se pueden ser entendidas como sinónimos en función de la tipología de riegos sobre las que se trate, y estos, pueden ser de diferentes tipos:
+  - Daños personales.
+  - Pérdidas financieras.
+  - Interrupción de servicio.
+  - Pérdida de imagen.
+  - Pérdida de reputación.
+  - Disminución de rendimiento.
+  - Sanciones.
+  - Penas judiciales.
+- **Probabilidad:** Posibilidad de que suceda un hecho, suceso o acontecimiento.
+- **Riesgo:** Efecto de la incertidumbre sobre un objetivo. El riesgo está calculado como el producto del impacto por la probabilidad.
+- **Control:** Medida que mitiga un riesgo, reduciendo la probabilidad o el impacto.
 
-**Evento:** Ocurrencia de una circunstancia o cambio en un conjunto de circunstancias.
+> Puedes leer más sobre estos término en el artículo [Conceptos básicos de seguridad informática](https://marcosruiz.github.io/posts/conceptos-basicos-seguridad-informatica/)
+{:.prompt-info}
 
-**Vulnerabilidad:** Debilidad que presenta un activo o un proceso.
-
-**Amenaza:** Circunstancia desfavorable que, de ocurrir, tendrá consecuencias negativas en la organización.
-
-**Consecuencia:** Efecto de un evento que afecta a un objetivo.
-
-**Impacto:** materialización de una amenaza sobre un activo aprovechando una vulnerabilidad.
-
-La consecuencia o el impacto se pueden ser entendidas como sinónimos en función de la tipología de riegos sobre las que se trate, y estos, pueden ser de diferentes tipos:
-
-- Daños personales.
-- Pérdidas financieras.
-- Interrupción de servicio.
-- Pérdida de imagen.
-- Pérdida de reputación.
-- Disminución de rendimiento.
-- Sanciones.
-- Penas judiciales.
-
-**Probabilidad:** Posibilidad de que suceda un hecho, suceso o acontecimiento.
-
-**Riesgo:** Efecto de la incertidumbre sobre un objetivo.
-
-El riesgo está calculado como el producto del impacto por la probabilidad.
-
-**Control:** Medida que mitiga un riesgo, reduciendo la probabilidad o el impacto.
-
+{:.subsection}
 ### La gestión del riesgo
 
 Una vez se han visto estos conceptos básicos, se ha de entender en que consiste el **proceso de gestión del riesgo.**
@@ -260,7 +186,7 @@ _Tabla de Clasificación de Riesgos_
 
 La gestión de riesgos básicamente implica procesos distintos, la **identificación de riesgos, la evaluación de riesgos, y el tratamiento de riesgos.**
 
-La **identificación de riesgo**s consiste en encontrar **situaciones que pueda****n tener efectos negativos en la organización,** básicamente este proceso se lleva a cabo mediante la identificación de amenazas y la asociación de probabilidad de que acontezca dada una de ellas.
+La **identificación de riesgo**s consiste en encontrar **situaciones que puedan tener efectos negativos en la organización,** básicamente este proceso se lleva a cabo mediante la identificación de amenazas y la asociación de probabilidad de que acontezca dada una de ellas.
 
 Para la identificar los riesgos, hay que tener en cuenta los activos o procesos del negocio que pueden funcionar como fuentes de riesgo, con cada una de las amenazas que pueden acontecer con ellos. La identificación de las amenazas y la valoración de los daños que pueden producir se puede obtener preguntando a los propietarios de los activos, usuarios, expertos, etc.
 
@@ -280,9 +206,8 @@ El **tratamiento de riesgos** consiste en **tomar una decisión sobre el modo de
 
 La decisión sobre llevar a cabo una opción u otra dependerá de varios factores, complejidad, coste, etc…  el nivel  de riesgo que una empresa está dispuesta a asumir o aceptar se denomina "apetito de riesgo”.
 
-## Documentación del sistema de cumplimiento normativo diseñado
-
-### Documentación de soporte sobre el sistema de gestión de compliance
+{:.section}
+## Documentación de soporte sobre el sistema de gestión de compliance
 
 Como ya se ha comentado, la norma ISO 37301 define las guías para el desarrollo de un sistema de gestión de compliance.
 
@@ -290,7 +215,8 @@ Según la misma, el sistema de gestión de contar con una **documentación de so
 
 Los primeros dominios (1,2,3) de norma son dominios explicativos de la norma, se refieren a su propio funcionamiento, por lo que no requieren de documentación específica.
 
-#### 4. Contexto de la organización
+{:.subsection}
+### 4. Contexto de la organización
 
 En el epígrafe 4, se habla del contexto de la organización, para ello se debe desarrollar un documento de contexto en el que se especifique **información básica sobre el funcionamiento de la empresa, su negocio, estrategia, tipología y tamaño**.  En este documento se debe el **contexto interno** de la organización indicando si **situación económica, su estructura de políticas y procedimientos, tecnologías y recursos internos**. Además, también se debe hacer referencia al **contexto externo** de la organización, identificando **relaciones comerciales con terceros y su naturaleza, el contexto regulatorio y legal, la situación geopolítica, social, cultural y ambiental de la región o del país** que pudiera afectar a la organización.
 
@@ -306,7 +232,8 @@ Debe existir documentación sobre los **análisis de riesgos de cumplimiento en 
 
 los compromisos identificados deben contar asimismo con una evaluación de riesgos de cumplimiento para la organización, y evaluar los impactos que ocasiona en la organización.
 
-#### 5. Liderazgo y compromiso de la dirección
+{:.subsection}
+### 5. Liderazgo y compromiso de la dirección
 
 El epígrafe 5 trata sobre el **liderazgo y compromiso de la dirección** por parte de la dirección, que debe estar **demostrada** estableciendo una **política de compliance**, así como una **definición de roles y responsabilidades** dentro de la organización, y **recursos humanos, financieros, tecnológicos** o en general, de cualquier tipo,  que den soporte a la función de compliance. Asimismo, se debe nombrar un **responsable del proceso y establecer una estructura organizativa** en la que se incluyan que actividades deben llevar a cabo.
 
@@ -314,7 +241,8 @@ La dirección u órgano de gobierno, debe responsabilizarse de dar seguimiento a
 
 De todo este epígrafe, se deben dejar evidencias de las actividades relacionadas con respecto al liderazgo. El único documento que la norma requiere explícitamente es la **política de compliance**, la cual debe ser adecuada a los objetivos del negocio, debe funcionar como marco de referencia para la gestión del compliance, debe describir la función de compliance, resumir las consecuencias de fallar al cumplimiento debe incluir compromisos de cumplir con los requisitos aplicables y la mejora continua del proceso de gestión de compliance.
 
-#### 6. Planificación del sistema de gestión de cumplimiento
+{:.subsection}
+### 6. Planificación del sistema de gestión de cumplimiento
 
 Para dar respuesta al epígrafe 6, se deben **determinar las acciones y recursos son necesarios para llevar a cabo que cubran los riesgos y oportunidades** identificados en el epígrafe 4, durante la definición del contexto.
 
@@ -322,7 +250,8 @@ Asimismo, se deben **establecer los objetivos del cumplimiento**. Estos deben es
 
 En el caso en que exista algún cambio en el sistema de gestión de cumplimiento, se debe tener en cuenta el propósito del cambio y sus consecuencias, la eficacia del cambio, recursos necesarios y asignación o reasignación de roles y responsabilidades.
 
-#### 7. Soporte al Sistema de Gestión de Compliance
+{:.subsection}
+### 7. Soporte al Sistema de Gestión de Compliance
 
 El Epígrafe 7 trata de elementos de apoyo al SGC. Como elemento inicial, se deben determinar que **recursos son necesarios para el establecimiento, operación y mejora continua** del sistema de cumplimiento.
 
@@ -336,7 +265,8 @@ La organización debe contar con un **procedimiento de comunicaciones internas y
 
 En cuanto a la información documentada, este epígrafe establece que el sistema debe incluir obligatoriamente los documentos definidos como mínimos en la norma que se especifican en este tema, así como cualquier tipo de información que la organización encuentre relevante para el sistema de gestión de cumplimiento. Toda la información ha de estar correctamente documentada, formateada, revisada y aprobada. Debe existir un control documental disponible y adecuado para su uso. Para el control de la información la organización debe controlar la distribución, acceso, recuperación y uso, almacenamiento y conservación, control de cambios, retención y disposición de la información.
 
-#### 8. Operación del Sistema de Gestión de Cumplimiento
+{:.subsection}
+### 8. Operación del Sistema de Gestión de Cumplimiento
 
 La organización debe **planificar y controlar los procesos** necesarios para cumplir con los requisitos y acciones del apartado de planificación. Para ello debe establecer unos **criterios de priorización para la  implementación y control de procesos** de compliance.
 
@@ -350,7 +280,8 @@ La organización debe contar con **procesos para investigar posibles incidencias
 
 En caso de existencia de cualquier investigación, se debe conservar la información documentada.
 
-#### 9. Evaluación de desempeño
+{:.subsection}
+### 9. Evaluación de desempeño
 
 Las organizaciones deben **monitorizar el sistema de gestión de cumplimiento**, para ello, la empresa debe definir, que necesita ser medido, **métodos de seguimiento y medición**, cuando se realizan las mediciones y se lleva a cabo el seguimiento. Se debe dejar evidencia documental de los resultados de la monitorización.
 
@@ -372,14 +303,16 @@ La dirección debe tener en cuenta la adecuación de la política de cumplimient
 
 Se debe dejar constancia formalizada de los informes de revisión por parte de la dirección.
 
-#### 10. Mejora
+{:.subsection}
+### 10. Mejora
 
 La organización debe mejorar de **manera continua el sistema de gestión de cumplimiento**, para ello pueden utilizarse diferentes orígenes de información tales como las **métricas sobre los procesos, las no conformidades y acciones correctivas sobre auditorias internas o externas ejecutadas** e incluso de acciones que surjan como consecuencia de la revisión por la dirección.
 
 Se debe dejar información documentada sobre los no cumplimientos detectados, origen y tipología de incumplimiento, así como acciones correctivas llevadas a cabo y resultados de las mismas.
 
-## Contenidos Adicionales
+## Bibliografía y contenidos adicionales
 
+- [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - [Escuela europea de excelencia -  7 elementos clave de un programa de cumplimiento ISO 37301](https://www.escuelaeuropeaexcelencia.com/2021/09/7-elementos-clave-de-un-programa-de-cumplimiento-iso-37301/)
 - [EQS group - El sistema de gestión de compliance](https://www.eqs.com/es/compliance-blog/sistema-de-gestion-de-compliance/)
 - Cuadernos Legales - KPMG: [Sistemas de Gestión de Cumplimiento - Parte 1](https://assets.kpmg/content/dam/kpmg/es/pdf/2016/12/Cuadernos_Legales_N3.pdf) y [Sistemas de Gestión de cumplimiento - Parte 2](https://assets.kpmg/content/dam/kpmg/es/pdf/2016/12/Cuadernos_Legales_N4.pdf)
@@ -387,8 +320,3 @@ Se debe dejar información documentada sobre los no cumplimientos detectados, or
 - [Blog Calidad y gestión: Sistemas de Gestión de compliance](https://calidadgestion.wordpress.com/tag/sistema-de-gestion-de-compliance/)
 - [UNE ISO 37301: Extracto de la norma](https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma/?c=N0065822)
 - [INCIBE: Guía de gestión de riesgos](https://www.incibe.es/sites/default/files/contenidos/guias/doc/guia_ciberseguridad_gestion_riesgos_metad.pdf)
-
-{:.section}
-## Bibliografía
-
-- [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
