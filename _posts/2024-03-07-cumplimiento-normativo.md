@@ -319,7 +319,7 @@ Debe definir y asegurarse el despliegue de las medidas y controles que permitan 
 El compliance officer debe promover los procesos de cumplimiento dentro de la organización, comunicarlos y supervisarlos, con el objetivo de que sus integrantes los conozcan y los tomen en cuenta. Deben ser comunicados y recordados con frecuencia. En caso de que exista madurez en cuanto a la cultura de cumplimiento de la organización, el compliance officer será consultado a la hora de establecer nuevos procesos de negocio en la organización, y éste ayudará a diseñarlos dentro de lo limites legales.
 
 {:.subsubsection}
-#### Asesoramiento legal y regulatori**o
+#### Asesoramiento legal y regulatorio
 
 Debe encargarse de conocer las leyes y regulaciones que afectan al negocio de la organización y debe mantenerse actualizado sobre todas las modificaciones o nuevas regulaciones que puedan surgir. Además, deben conocer los posibles impactos que puede ocasionar su incumplimiento, por lo que son consultados ante el lanzamiento de nuevos productos o servicios.
 

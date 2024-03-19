@@ -57,7 +57,7 @@ Además de esta, hay otras razones y **beneficios de desarrollar y operar un sis
 {:.subsection}
 ### Evolución del estándar de sistema de gestión de cumplimiento normativo, de ISO19600 a ISO 37301
 
-La Organización Internacional de Normalización (ISO) ha construido un estándar para el desarrollo de sistemas de gestión de cumplimiento, esta norma que fue bautizada como **ISO 19600, definía una guía sobre compliance**.  Su propuesta se trataba del desarrollo de políticas y procedimientos diseñados para asegurar el cumplimiento legal, normativo, del sector y en general de los compromisos de la organización, utilizando la formula del ciclo de Deming (P-D-C-A) Plan – Do – Check – Act / Planificar – Hacer – Verificar – Actuar.
+La Organización Internacional de Normalización (ISO) ha construido un estándar para el desarrollo de sistemas de gestión de cumplimiento, esta norma que fue bautizada como **ISO 19600, definía una guía sobre compliance**.  Su propuesta se trataba del desarrollo de políticas y procedimientos diseñados para asegurar el cumplimiento legal, normativo, del sector y en general de los compromisos de la organización, utilizando la formula del ciclo de Deming (P-D-C-A / Plan – Do – Check – Act / Planificar – Hacer – Verificar – Actúa).
 
 No obstante, varios años después de haberla publicado, se hizo evidente la necesidad de una nueva norma que estableciera el proceso de desarrollo de un sistema de gestión de cumplimiento, y que lo hiciera certificable. La **nueva norma, publicada en el 2021 se denominó ISO 37301:2021** y se convirtió en el estándar de referencia **reemplazando a la norma ISO19600 del 2014**.
 
