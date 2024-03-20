@@ -11,7 +11,9 @@ math: true
 
 La entrega será en formato ZIP. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
-Ejemplo de entrega:
+<details class="card mb-2">
+  <summary class="card-header">Ejemplo de entrega</summary>
+  <div class="card-body" markdown="1">
 
 ```plaintext
 mruizg_t05.zip
@@ -41,6 +43,10 @@ mruizg_t05.zip
         housing.csv
         reg_lineal.ipynb
 ```
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 > El ejemplo de entrega solo es una referencia de entrega, si se necesita eliminar o crear algún fichero o carpeta siéntete libre de hacerlo.
 {:.prompt-info}
