@@ -102,6 +102,33 @@ Entra en la web <https://ens.ccn.cni.es/es/> y busca información sobre lo sigui
 1. Busca 5, al menos, 5 entidades certificadas. Por ejemplo, comprueba si lo está el ayuntamiento de tu localidad.
 
 {:.activity}
+### (Voluntaria) Caso Práctico. Servicio de Licitación Electrónica
+
+Imaginamos un servicio de licitación electrónica de un organismo público. En el proceso de contratación se contemplan las siguientes fases*:
+
+1. **Anuncio electrónico del concurso**. En esta fase se produce la publicación en el organismo público correspondiente.
+1. **Publicación de pliegos**. En esta fase se publican los pliegos de cláusulas administrativas y prescripciones técnicas del concurso en cuestión.
+1. **Recepción de ofertas**. En esta fase cada empresa remite al organismo su ofertas. Es muy importante que las ofertas presentadas permanezcan inaccesibles al resto de los licitadores así como a la mesa de contratación del organismo que no podrá tener acceso a su contenido hasta que concluya el plazo de presentación de propuestas.
+1. **Evaluación y análisis**. Una vez concluido el plazo de presentación la mesa de contratación del organismo procede abrir todas ellas para su examen y aprobación. El intercambio de información debe permanecer inaccesible a cualquier persona que no está autorizada.
+1. **Adjudicación**. En esta fase la mesa de contratación se notifica la adjudicación a una de las ofertas recibidas dando cuenta de ello a todos los participantes.
+1. **Contratación y pedido**. El organismo formalmente proceda la realización del pedido a la empresa adjudicataria.
+
+> Ejemplo basado en el procedimiento de contratación contemplado en el Real Decreto 3/2011 de Ley de Contratos del Sector público.
+{:.prompt-info}
+
+En la guía [CCN-STIC 803 - ENS. Valoración de los sistemas](https://www.ccn-cert.cni.es/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/682-ccn-stic-803-valoracion-de-sistemas-en-el-ens-1/file.html) se establece la diferencia entre SERVICIO e INFORMACIÓN. A efectos de valoración:
+
+- La información suele imponer requisitos relevantes en las dimensiones de confidencialidad, integridad, trazabilidad y autenticidad.
+- Para los servicios se considera relevante la dimensión de disponibilidad.
+
+Para facilitar la tarea, identifica cada fase con una única dimensión de seguridad a la hora de hacer el análisis.
+Se pide:
+
+1. Para cada fase, establecer la CATEGORÍA de seguridad, en base al análisis de la dimensión elegida. Utiliza la clasificación del ANEXO I del RD 311/2022.
+1. Categorizar el servicio completo de licitación electrónica, como BÁSICA, MEDIA O ALTA.
+1. Establecer al menos 6 medidas concretas de seguridad de las registradas en el Anexo II del RD 311/2022 que sirvan para mitigar el impacto en el servicio de licitación. Se deberán asignar al menos una medida a cada fase concreta.
+
+{:.activity}
 ### (Voluntaria) Marco de Cibersguridad del NIST
 
 Investiga sobre el marco de ciberseguridad del NIST y responde a las siguientes preguntas:
