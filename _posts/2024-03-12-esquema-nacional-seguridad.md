@@ -53,12 +53,12 @@ A continuación, vamos a repasar los **elementos principales del ENS:**
 - Capítulo 6 - Actualización del Esquema Nacional de Seguridad
 - Capítulo 7 - Categorización de los sistemas de información
 
-{.subsection}
+{:.subsection}
 ### Capítulo 1 - Disposiciones generales
 
 Define el objeto de la norma, ámbito de aplicación, información, elementos y entidades dentro del alcance. Además, también considera elementos como el uso de tecnologías de comunicación 5G y la protección de datos de carácter personal.
 
-{.subsection}
+{:.subsection}
 ### Capítulo 2 – Principios básicos
 
 Establece los principios básicos de la norma, enumerados en el artículo 5:
@@ -71,7 +71,7 @@ Establece los principios básicos de la norma, enumerados en el artículo 5:
 1. **Reevaluación periódica de las medidas de seguridad** implementadas, adaptando su implementación a la evolución del nivel de riesgo de la organización.
 1. **Diferenciación de responsabilidades** entre el responsable de información, servicio, seguridad y sistema.
 
-{.subsection}
+{:.subsection}
 ### Capítulo 3 - Política de Seguridad
 
 Establece la política de seguridad y requisitos mínimos para permitir una protección adecuada de la información y los servicios:
@@ -103,7 +103,7 @@ El artículo 29 **promueve la utilización de infraestructuras y servicios comun
 
 El artículo 30 establece la posibilidad de implementar **perfiles de cumplimiento específicos** estableciendo una serie de medidas de seguridad en función del nivel de riesgos identificado.
 
-{.subsection}
+{:.subsection}
 ### Capítulo 4 - Seguridad de sistemas
 
 Auditoría, informe e incidentes de seguridad, establece los requisitos de auditoría de seguridad de la organización, debiendo ejecutarse al menos una vez cada dos años siguiendo criterios y métodos de auditoria reconocidos.
@@ -112,22 +112,22 @@ Por su parte, el artículo 32, relativo al **informe del estado de la seguridad,
 
 La prevención, detección y respuesta a incidentes de seguridad se define los artículos 33 y 34, indicando la necesidad de existencia de procesos de gestión de incidencias y designando al CCN-CERT como responsable de la coordinación de respuesta a incidencias en el ámbito de las administraciones y organizaciones dentro del alcance del ENS.
 
-{.subsection}
+{:.subsection}
 ### Capítulo 5 – Normas de conformidad
 
 Establece las normas de conformidad que se concretan en cuatro:
 
 - Administración Digital.
 - Ciclo de vida de servicios y sistemas.
-- Mecanismos de control y,
+- Mecanismos de control.
 - Procedimientos de determinación de la conformidad con el ENS.
 
-{.subsection}
+{:.subsection}
 ### Capítulo 6 - Actualización del Esquema Nacional de Seguridad
 
 Establece la obligación de actualización de acuerdo con el marco jurídico, la evolución de la tecnología y los estándares en materia de seguridad, nuevas amenazas y vectores de ataque.
 
-{.subsection}
+{:.subsection}
 ### Capítulo 7 - Categorización de los sistemas de información
 
 El artículo 40 establece la categorización de seguridad en función del impacto de un incidente en términos de disponibilidad, autenticidad, integridad, confidencialidad o trazabilidad, siguiendo para ello el procedimiento descrito en el anexo I;

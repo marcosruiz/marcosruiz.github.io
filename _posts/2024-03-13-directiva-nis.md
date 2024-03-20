@@ -32,8 +32,8 @@ Entre sus **objetivos**, destacan la homogeneización de las medidas de segurida
 
 Tres tipos de proveedores de servicios digitales entran dentro del alcance de la Directiva NIS:
 
-- Proveedores de mercados en línea,
-- Proveedores de motores de búsqueda en línea y
+- Proveedores de mercados en línea.
+- Proveedores de motores de búsqueda en línea.
 - Distribuidores de servicios de computación en la nube.
 
 **Autoridades relevantes**:
@@ -80,7 +80,8 @@ Punto de Contacto Único, que será el encargado de garantizar una cooperación 
 {:.section}
 ## Estructura de la directiva NIS
 
-La última versión de la directiva NIS puede ser **consultada en el portal de publicación de regulaciones de la unión europea**, a través de este enlace: [Directiva NIS](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex:32016L1148)
+> La última versión de la directiva NIS puede ser consultada en el portal de publicación de regulaciones de la unión europea, a través de [este enlace](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex:32016L1148)
+{:.prompt-info}
 
 La directiva cuenta con un total de **27 artículos distribuidos en 7 capítulos:**
 
@@ -184,7 +185,7 @@ El **capítulo 7 comprende las disposiciones finales**, consta de diferentes art
 
 El **Reglamento de Seguridad de las Redes y Sistemas de la Información** (Reglamento NIS) tiene como objetivo **desarrollar en el territorio nacional lo establecido en la Ley NIS europea**, con respecto al marco institucional en la materia, la cooperación y coordinación, la gestión y notificación de incidentes, las medidas a implantar, la supervisión de los requisitos de ciberseguridad o la función del CISO.
 
-Estarán **sometidos a este real decreto,**
+Estarán sometidos a este real decreto:
 
 - Los operadores de servicios esenciales (OSE) y los proveedores de servicios digitales (PSD) que realicen su actividad en España.
 - Los operadores de redes y servicios de comunicaciones electrónicas y los prestadores de servicios electrónicos de confianza que no se consideren como operadores críticos.
@@ -197,7 +198,7 @@ El Reglamento especifica asimismo, que las **autoridades competentes** en cibers
 
 Para los operadores privados de servicios esenciales que no sean críticos, establece que serán autoridades competentes, los organismos responsables para los sectores de transporte, energía, TIC, sistema financiero, espacio, industria química, instalaciones de investigación, salud, agua, alimentación e industria nuclear.
 
-La **cooperación entre los CSIRT de referencia y las autoridades competentes**, se llevará a cabo mediante la Plataforma Nacional de Notificación y Seguimiento de Ciber incidentes.
+La **cooperación entre los CSIRT de referencia y las autoridades competentes**, se llevará a cabo mediante la Plataforma Nacional de Notificación y Seguimiento de Ciberincidentes.
 
 El **Departamento de Seguridad Nacional** es el **punto de contacto único** para actuar como enlace entre autoridades nacionales y la Unión Europea, el Grupo de Cooperación Europeo y la red de CSIRT.
 
