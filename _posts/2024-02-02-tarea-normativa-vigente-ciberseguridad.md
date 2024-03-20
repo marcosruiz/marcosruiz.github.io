@@ -42,7 +42,7 @@ En esta tarea se requerirá de los conocimientos adquiridos a lo largo de la uni
 {:.activity}
 ### Sistema de gestión de seguridad de la información basado en ISO 27001
 
-1. Desarrolla un contexto descriptivo de la organización alineado con los requisitos de información del estándar. 
+1. Desarrolla un contexto descriptivo de la organización alineado con los requisitos de información del estándar.
 1. Propón al menos tres controles para la mitigación de riesgos identificados.
 1. Desarrolla tres métricas de seguridad para ACME.
 
@@ -72,6 +72,55 @@ La organización no está dispuesta a asumir perdidas mayores a 1,5 millones de 
 Categoriza los sistemas asociados al servicio de telecomunicaciones en función al escenario definido en el caso práctico, por la prestación de servicios a FCSEs.
 
 Desarrolla una declaración de aplicabilidad justificada.
+
+{:.activity}
+### (Voluntaria) Responsables ENS
+
+En el capítulo II, artículo 11 del RD 311/2022 se establece la diferenciación entre los siguientes responsables:
+
+- Responsable de la información.
+- Responsable del servicio.
+- Responsable de la seguridad.
+- Responsable del sistema.
+
+Pero, ¿cuáles son las funciones de cada uno de ellos?
+
+{:.activity}
+### (Voluntaria) Conformidad con el ENS
+
+Existen una serie de entidades que pueden acreditar la conformidad con el ENS. Así mismo, existe un registro de entidades que están ya acreditadas.
+
+Entra en la web <https://ens.ccn.cni.es/es/> y busca información sobre lo siguiente:
+
+1. ¿Qué el el CoCENS? ¿Cuáles son sus fines y atribuciones?
+1. ¿Qué es la ENAC?
+1. Busca 5, al menos, 5 entidades de certificación acreditadas.
+1. Busca 5, al menos, 5 entidades certificadas. Por ejemplo, comprueba si lo está el ayuntamiento de tu localidad.
+
+{:.activity}
+### (Voluntaria) Marco de Cibersguridad del NIST
+
+Investiga sobre el marco de ciberseguridad del NIST y responde a las siguientes preguntas:
+
+1. ¿Qué es?
+1. ¿Cuáles son las áreas que implementa y en qué consiste cada una?
+
+{:.activity}
+### (Voluntaria) LPIC
+
+La Ley 8/2011, de 28 de abril define en su anexo los sectores estratégicos, junto con el organismo responsable de cada sector.
+
+Localiza esa información y entrega una tabla con el resultado.
+
+{:.activity}
+### (Voluntaria) CNPIC
+
+Investiga sobre el CNPIC y contesta a las siguientes preguntas:
+
+1. ¿Cuándo se creó?
+1. ¿Cuál es su objetivo?
+1. ¿Qué es el Catálogo Nacional de Infraestructuras Críticas?
+1. ¿Puedes poner algún ejemplo de empresa que esté incluída en el Catálogo?
 
 ## Bibliografía
 

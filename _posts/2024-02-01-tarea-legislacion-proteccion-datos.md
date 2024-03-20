@@ -33,7 +33,7 @@ Dada su cartera de clientes, ACME es responsable de la información de su carter
 {:.activity}
 ### Principios de protección de datos
 
-1. Enumera 10 datos de carácter personal que trate ACME en la prestación de sus servicio. 
+1. Enumera 10 datos de carácter personal que trate ACME en la prestación de sus servicio.
 1. ¿Alguno de los datos enumerados es sensible?
 
 {:.activity}
@@ -46,7 +46,70 @@ Dada su cartera de clientes, ACME es responsable de la información de su carter
 {:.activity}
 ### Análisis de impacto en privacidad
 
-Realiza un análisis de impacto de las tres actividades de tratamiento descritas en el apartado anterior. 
+Realiza un análisis de impacto de las tres actividades de tratamiento descritas en el apartado anterior.
+
+{:.activity}
+### Carta Derechos Fundamentales / Constitución Española
+
+1. Localiza en la carta de Derechos Fundamentales de la UE el artículo referente a la protección de datos de caracter personal. Copia el artículo completo.
+1. Localiza en la Constitución Española el artículo referente a la garantía del honor y la intimidad. Copia el artículo completo.
+
+{:.activity}
+### Identificación de responsables
+
+1. Entra en las siguientes páginas web e identifica en cada una de ellas al responsable del tratamiento de los datos. Busca el correo electrónico o dirección postal donde puedes enviar una reclamación (más adelante veremos como utilizar los formularios de la AEPD para este fin).
+   - <https://www.elcorteingles.es/>
+   - <https://www.mercadona.es/>
+   - <https://www.bbva.es/>
+   - <https://www.educa2.madrid.org/educamadrid/>
+2. La AEPD cuenta con una Sede Electrónica con diferentes servicios. Para cada una de las páginas consultadas, comprueba si está resgistrada en el servicio de consulta DPD de la sede electrónica de la  AEPD. Captura la pantalla.
+3. Busca en el RGDP el artículo sobre las obligaciones generales del responsable de tratamiento.
+
+{:.activity}
+### Consentimiento y Lista Robinson
+
+#### PARTE I. Consentimiento
+
+Busca al menos 2 ejemplos de consentimientos informados a la hora de realizar un registro. Puedes utilizar un registro en una red social, en una plataforma de compras, una aplicación, etc. No es necesario que completes el registro, solo que analices si el consentimiento cumple los requisitos del RGPD. Adjunta capturas de pantalla para justificar tu explicación.
+
+#### PARTE II. Lista Robinson
+
+Investiga sobre los siguientes aspectos:
+
+- ¿Qué es la Lista Robinson? ¿Para qué se utiliza?
+- ¿Quién es el responsable de tratamiento de la Lista Robinson?
+- ¿Cómo puedo darme de alta?
+- ¿Puedo modificar mis preferencias posteriormente?
+
+{:.activity}
+### Principio de transparencia
+
+En la tarea "Identificación de responsables", localizaste a los responsables de tratamiento de 4 entidades.
+
+Ahora debes analizar la Política de Privacidad de esas 4 entidades, poniendo el foco de atención en el cumplimiento del principio de transparencia.
+
+Revisa la información que debería facilitarse según el artículo 13 del RGPD y concluye de manera justificada si cada entidad cumple con este principio de transparencia.
+
+{:.activity}
+### Facilita RGPD
+
+La Agencia Española de Protección de Datos pone a disposición de empresas y profesionales  la herramienta Facilita RGPD. Está pensada para un tratamiento de datos personales de bajo riesgo, de cara al cumplimiento del RGPD.
+
+En primer lugar, permite una valoración inicial respecto del tratamiento de datos personales que lleva a cabo  la organización:
+
+Si se adapta a los requisitos se puede utilizar Facilita RGPD.
+En caso contrario sugiere un realizar un análisis de riesgos.
+
+**Paso 1**. Accede a la herramienta y simula una empresa con datos de especial protección, por ejemplo, un hospital. Captura la pantalla con la sugerencia de la propia herramienta.
+
+**Paso 2**. Piensa en una empresa / organización que realice un tratamiento de bajo rasgo. Escribe una breve descripción del cometido de la empresa, así como el tipo de datos personales que necesita para realizarlo. Puede ser una ONG, una pequeña empresa, etc. Si durante el paso 3 quieres modificar / añadir cosas a tu descripción, puedes hacerlo.
+
+**Paso 3**. Accede de nuevo a la herramienta con la mente puesta en tu empresa / organización. Lee atentamente las instrucciones y completa el proceso. Recuerda que una vez finalizada su ejecución, los datos aportados se eliminan, por lo que la Agencia en ningún caso puede conocer la información que haya sido aportada. Entrega el informe resultante.
+
+**Paso 4**. Realiza un breve análisis sobre los resultados del informe.
+
+> El uso de este programa no garantiza el pleno cumplimiento del RGPD.
+{:.prompt-info}
 
 ## Bibliografía
 
