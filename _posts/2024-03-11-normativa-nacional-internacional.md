@@ -22,7 +22,7 @@ img_path: /assets/img/normativa-nacional-internacional/
 
 **[Marco SCF:](https://www.securecontrolsframework.com/secure-by-default)** El marco Secure Controls Framework (SCF) se trata de un proyecto abierto formado por especialistas voluntarios en ciberguridad, privacidad y Gobierno, Riesgo y Control (GRC) que pretender proveer de una guía gratuita de controles de privacidad y de ciberseguridad que cubran las necesidades estratégicas, tácticas y operacionales de cualquier organización con independencia de su tamaño, sector y país de origen.
 
-[**NIST Cibersecurity Framework:**](https://www.nist.gov/cyberframework/framework) Es un marco de ciberseguridad creado para  ayudar a las empresas de todos los tamaños a comprender, gestionar y reducir los riesgos cibernéticos y proteger sus redes y datos, proporcionando un lenguaje común y un resumen de las mejores prácticas en ciberseguridad.
+**[NIST Cibersecurity Framework:](https://www.nist.gov/cyberframework/framework)** Es un marco de ciberseguridad creado para  ayudar a las empresas de todos los tamaños a comprender, gestionar y reducir los riesgos cibernéticos y proteger sus redes y datos, proporcionando un lenguaje común y un resumen de las mejores prácticas en ciberseguridad.
 
 Sus resultados se basan en la mejora de los **5 procesos que constituyen el ciclo de la ciberseguridad** que presenta el marco:
 
@@ -44,9 +44,9 @@ El **grado de madurez** de los controles se evalúa en función a 4 niveles de i
 {:.section}
 ## Sistemas de Gestión de Seguridad de la Información
 
-La ISO 27001 es una norma internacional de Seguridad de la Información que pretende mejorar el nivel de seguridad de una organización a través de la implantación de un **Sistema de Gestión de Seguridad de la Información** que suponga una mejora continua en el nivel de madurez de seguridad y por tanto **asegurar la confidencialidad, integridad y disponibilidad de la información** de una organización y de los sistemas y aplicaciones que la tratan. Este estándar ha sido desarrollado por la Organización Internacional de Normalización y publicado en su última versión en el año 2013. **Es certificable.**
+La ISO 27001 es una norma internacional de Seguridad de la Información que pretende mejorar el nivel de seguridad de una organización a través de la implantación de un Sistema de Gestión de Seguridad de la Información que suponga una mejora continua en el nivel de madurez de seguridad y por tanto **asegurar la confidencialidad, integridad y disponibilidad de la información** de una organización y de los sistemas y aplicaciones que la tratan. Este estándar ha sido desarrollado por la Organización Internacional de Normalización y publicado en su última versión en el año 2013. **Es certificable.**
 
-Esta norma cuenta con un **modo de desarrollo y gestión muy similar al del resto de los estándares ISO que implementan sistemas de gestión** vistos anteriormente, por lo que únicamente nos vamos a fijar en los aspectos diferenciales de esta ISO, el marco de controles definidos en la ISO 27002.
+Esta norma cuenta con un modo de desarrollo y gestión muy similar al del resto de los estándares ISO que implementan sistemas de gestión vistos anteriormente, por lo que únicamente nos vamos a fijar en los aspectos diferenciales de esta ISO, el marco de controles definidos en la ISO 27002.
 
 Aunque ésta es la más relevante y la mas conocida, la **familia ISO 27000** esta compuesta por multitud de normas siempre relacionadas con seguridad de la información, a continuación se presentan varios ejemplos:
 
@@ -63,6 +63,9 @@ Aunque ésta es la más relevante y la mas conocida, la **familia ISO 27000** es
 - **ISO 27018:** Privacidad de la información en entornos cloud.
 
 Además de las organizaciones, existen diversas certificaciones para profesionales enfocados en la seguridad de la información, que deseen auditar o desplegar un SGSI, se trata de la certificación ISO 27001 Lead Auditor (LA) y ISO 27001 Lead Implementer (LI).
+
+{:.question}
+¿En qué se enfocan la ISO 27018 y 27018?
 
 {:.subsection}
 ### Estructura de la norma ISO 27001
@@ -150,7 +153,7 @@ Por lo general, en este último epígrafe se evidencian las decisiones tomadas c
 {:.subsection}
 ### ISO 27002
 
-La ISO 27002, proporciona los **controles de seguridad de la información, ciberseguridad y privacidad** para una organización.  Es un **estándar complementario a la ISO 27001** que ayuda a implementar las mejores prácticas y controles más eficaces para prevenir ataques o vulneraciones de privacidad.
+La ISO 27002, proporciona los **controles de seguridad de la información, ciberseguridad y privacidad** para una organización. Es un **estándar complementario a la ISO 27001** que ayuda a implementar las mejores prácticas y controles más eficaces para prevenir ataques o vulneraciones de privacidad.
 
 En la edición del 2013 contaba con un total de 114 controles divididos en 14 dominios.
 
@@ -170,9 +173,9 @@ En la edición del 2013 contaba con un total de 114 controles divididos en 14 do
 - Cumplimiento.
 
 {:.subsubsection}
-#### ACTUALIZACIÓN ISO 27001 E ISO 27002 VERSIÓN 2022
+#### Actualización ISO 27001 e ISO 27002 versión 2022
 
-El **15 de febrero se publicó una nueva versión de la norma, la ISO 27002:2022**, si bien la 27001 aun no se ha publicado, ya se conoce que va a ser publicada durante el año 2022 y que no cambiará el núcleo del sistema de gestión, sino que adaptara sus anexos para alinearse con la nueva ISO 27002.
+El 15 de febrero se publicó una nueva versión de la norma, la ISO 27002:2022, si bien la 27001 aun no se ha publicado, ya se conoce que va a ser publicada durante el año 2022 y que no cambiará el núcleo del sistema de gestión, sino que adaptara sus anexos para alinearse con la nueva ISO 27002.
 
 En relación a la ISO 27002:2022 han sido varios los **cambios** que ha sufrido:
 
@@ -221,7 +224,7 @@ Otra de las novedades en la nueva versión es la posibilidad de inclusión de at
 {:.subsection}
 ### La continuidad de negocio con ISO 22301
 
-La norma **ISO 22301** establece las directrices para el desarrollo de un **Sistema de Gestión de Continuidad de Negocio.**
+La norma **ISO 22301** establece las directrices para el desarrollo de un **Sistema de Gestión de Continuidad de Negocio**.
 
 Un Sistema de Gestión de Continuidad de un Negocio o SGCN identifica los activos más relevantes para el funcionamiento de una organización y evalúa los efectos que puede tener una interrupción de la actividad para establecer medidas de actuación en caso de que ocurra. Para ello, debe tener en cuenta cualquier tipo de circunstancia adversa que pueda acontecer y que procesos y agentes deben actuar ante dicha situación de riesgo.
 
@@ -239,7 +242,8 @@ Los cambios con respecto a otros sistemas de gestión son fundamentalmente refer
 
 A continuación se detallan las diferentes **fases** que deben ser llevadas a cabo **para la operación del plan de continuidad de negocio**.
 
-**Análisis de impacto en negocio:**
+{:.subsubsection}
+#### Análisis de impacto en negocio
 
 El objetivo de esta fase es **evaluar las actividades de negocio más críticas que sustenten** el negocio. Una vez identificadas, se han de **identificar las aplicaciones y sistemas informáticos que les dan servicio**, para establecer prioridades y requisitos de continuidad.
 
@@ -248,10 +252,11 @@ Elementos a tener en cuenta:
 - Tipos de impacto.
 - Actividades clave de negocio.
 - Evaluación de impacto en la interrupción de estas actividades.
-- Calcular el tiempo máximo tolerable de interrupción ( MTPD ).
-- Calcular un tiempo de recuperación aceptable ( RTO ).
+- Calcular el tiempo máximo tolerable de interrupción (MTPD).
+- Calcular un tiempo de recuperación aceptable (RTO).
 
-**Evaluación de riesgo:**
+{:.subsubsection}
+#### Evaluación de riesgo
 
 Permite a la organización **evaluar la probabilidad de que se materialice una amenaza y cause un impacto negativo** en la organización. El objetivo de este proceso es establecer un plan de mitigación de riesgos de continuidad para minimizar los posibles efectos adversos que pueda ocasionar una disrupción en el negocio, y recuperar los procesos de negocio en el menor tiempo posible.
 
@@ -260,6 +265,9 @@ Acciones a llevar a cabo:
 - Identificar riesgos para las actividades criticas para la organización.
 - Analizar los riesgos identificados.
 - Determinar la mejor decisión de tratamiento de riesgos.
+
+{:.subsubsection}
+#### Continuidad de negocio
 
 Con las evaluaciones de Impacto y Riesgos se determinará la **estrategia de continuidad de negocio.**
 
@@ -284,6 +292,9 @@ Con la estrategia de continuidad, será necesario llevar a cabo una **evaluació
 
 Una vez diseñada la estrategia y e identificados los recursos, la organización debe establecer un **plan y procedimientos de continuidad de negocio**, para gestionar la organización en caso de una incidencia que suponga una interrupción y requiera de la activación del plan de continuidad.
 
+{:.subsubsection}
+#### Recuperación
+
 Asimismo, se debe crear una **estructura organizativa de respuesta con equipos de gestión de crisis responsables de gestionar y responder** las interrupciones, con roles y responsabilidades bien definidos, suficiente competencia y procedimientos para comunicarse con partes interesadas, autoridades y medios de comunicación.
 
 Una vez se disponen de los procedimientos de respuesta, se deben **generar los planes de recuperación,** para volver a la normalidad después de una situación de contingencia.
@@ -301,7 +312,7 @@ Por lo general, las políticas, planes y procedimientos de respuesta deben ser r
 {:.section}
 ## Acceso electrónico de los ciudadanos a los Servicios Públicos
 
-La Ley 11/2007, de 22 de junio, de **Acceso Electrónico de los Ciudadanos a los Servicios Públicos** es la ley que reconoce a los ciudadanos su derecho a relacionarse electrónicamente con las administraciones públicas, así como la obligación de éstas a garantizar ese derecho.
+La Ley 11/2007, de 22 de junio, de Acceso Electrónico de los Ciudadanos a los Servicios Públicos es la ley que reconoce a los ciudadanos su derecho a relacionarse electrónicamente con las administraciones públicas, así como la obligación de éstas a garantizar ese derecho.
 
 Dentro de un proceso de reorganización y funcionamiento de las administraciones públicas, fue **derogada en 2015** surgiendo por dos leyes similares, pero con diferentes enfoques.
 
@@ -312,19 +323,12 @@ Ley 40/2015, de 1 de octubre, de régimen jurídico del Gobierno y del sector p�
 {:.subsection}
 ### Procedimiento administrativo común de las Administraciones Públicas
 
-El procedimiento administrativo común de las Administraciones Públicas tiene **objetivos:**
+El procedimiento administrativo común de las Administraciones Públicas tiene objetivos:
 
-**Mejorar la eficiencia** con una Administración totalmente electrónica con **cero papel** e interconectada en sus relaciones con ciudadanos y empresas, facilitar el uso de medios electrónicos y simplificar y agilizar los procedimientos.
-
-**Incrementar la seguridad jurídica** ganando en certidumbre y predictibilidad al sistematizar en una sola ley la regulación de las relaciones externas de la Administración con los ciudadanos y empresas: procedimiento administrativo y principios aplicables al ejercicio de la iniciativa legislativa y potestad reglamentaria.
-
-**Mejorar la calidad normativa** del ordenamiento jurídico.
-
-Administración con cero papel. La **tramitación de todos los procedimientos se realizará íntegramente a través de medios electrónicos**, manteniendo, no obstante, los interesados su derecho a la presentación presencial de documentos.
-
-Todas las **Administraciones** estarán **interconectadas** mediante plataformas comunes de intercambio de información.
-
-Se definen los colectivos obligados a relacionarse electrónicamente con la Administración (personas jurídicas, entidades sin personalidad jurídica, empleados públicos, profesionales con obligación de colegiación y representantes de un interesado obligado a relacionarse a través de medios electrónicos con la Administración)
+1. **Mejorar la eficiencia** con una Administración totalmente electrónica con **cero papel** e interconectada en sus relaciones con ciudadanos y empresas, facilitar el uso de medios electrónicos y simplificar y agilizar los procedimientos.
+1. **Incrementar la seguridad jurídica** ganando en certidumbre y predictibilidad al sistematizar en una sola ley la regulación de las relaciones externas de la Administración con los ciudadanos y empresas: procedimiento administrativo y principios aplicables al ejercicio de la iniciativa legislativa y potestad reglamentaria.
+1. **Mejorar la calidad normativa** del ordenamiento jurídico.
+1. **Administración con cero papel**. La tramitación de todos los procedimientos se realizará íntegramente a través de medios electrónicos, manteniendo, no obstante, los interesados su derecho a la presentación presencial de documentos. Todas las Administraciones estarán interconectadas mediante plataformas comunes de intercambio de información. Se definen los colectivos obligados a relacionarse electrónicamente con la Administración (personas jurídicas, entidades sin personalidad jurídica, empleados públicos, profesionales con obligación de colegiación y representantes de un interesado obligado a relacionarse a través de medios electrónicos con la Administración)
 
 {:.section}
 ## Esquema Nacional de Seguridad
@@ -339,41 +343,41 @@ Leer [Directiva NIS](/posts/directiva-nis/).
 {:.section}
 ## Ley de Protección de Infraestructuras Críticas
 
-Una **Infraestructura Crítica** es aquella cuyo **funcionamiento es indispensable** y no permite soluciones alternativas. Estas incluyen instalaciones, redes, sistemas y equipos físicos y de tecnología de comunicaciones sobre los que **funcionan los servicios esenciales para la población**. Los servicios esenciales son aquellos necesarios para el funcionamiento de las funciones sociales básicas: **Salud, seguridad, bienestar social y económico y sector público**.
+Una Infraestructura Crítica es aquella cuyo funcionamiento es indispensable y no permite soluciones alternativas. Estas incluyen instalaciones, redes, sistemas y equipos físicos y de tecnología de comunicaciones sobre los que funcionan los servicios esenciales para la población. Los servicios esenciales son aquellos necesarios para el funcionamiento de las funciones sociales básicas: Salud, seguridad, bienestar social y económico y sector público.
 
 La protección de infraestructuras críticas consiste en el conjunto de actividades destinadas a garantizar el funcionamiento, continuidad e integridad de las infraestructuras críticas y  prevenir, reducir o neutralizar el daño causado por un ataque deliberado contra las mismas.
 
-La **Ley 8/2011, de 28 de abril, establecen las directrices para la protección de las infraestructuras críticas** y que esta ampliada por el reglamento de medidas de protección descritas en el real decreto 704/2011. Esta normativa, surge como consecuencia de la transposición española de la directiva europea Directiva 2008/114/CE.
+La Ley 8/2011, de 28 de abril, establecen las directrices para la protección de las infraestructuras críticas y que esta ampliada por el reglamento de medidas de protección descritas en el real decreto 704/2011. Esta normativa, surge como consecuencia de la transposición española de la directiva europea Directiva 2008/114/CE.
 
 Los dos principales objetivos de esta norma son:
 
 1. Identificar el conjunto de infraestructuras que prestan servicios esenciales a nuestra sociedad.
 1. Diseñar un plan de prevención y protección eficaz contra las posibles amenazas físicas y tecnológicas sobre dichas infraestructuras.
 
-La [Ley 8/2011 de protección de infraestructuras críticas](https://www.boe.es/buscar/act.php?id=BOE-A-2011-7630 "Accede a la web en la que esta publicada la Ley de Protección de Infraestructuras Críticas ( se abre en ventana nueva )"), consta de **18 artículos**, estructurados en 3 Títulos.
+La [Ley 8/2011 de protección de infraestructuras críticas](https://www.boe.es/buscar/act.php?id=BOE-A-2011-7630), consta de 18 artículos, estructurados en 3 Títulos.
 
-- **Disposiciones generales** (artículos 1 al 4): **Definiciones** de los términos acuñados por la Directiva 2008/114/CE, así como a establecer las cuestiones relativas al ámbito de aplicación y objeto. Entre las definiciones establecidas, cabe destacar:
-  - **Servicio esencial:** Se considera como el servicio necesario para el mantenimiento de las funciones sociales básicas, la salud, la seguridad, el bienestar social y económico de los ciudadanos, o el eficaz funcionamiento de las Instituciones del Estado y las Administraciones Públicas.
-  - **Sector estratégico:** Cada una de las áreas diferenciadas dentro de la actividad laboral, económica y productiva, que proporciona un servicio esencial.
-  - **Infraestructuras estratégicas**: Instalaciones, redes, sistemas y equipos físicos y de tecnología de la información sobre las que descansa el funcionamiento de los servicios esenciales.
-  - **Infraestructuras críticas:** Infraestructura estratégica cuyo funcionamiento es indispensable y no permite soluciones alternativas, por lo que su perturbación o destrucción tendría un grave impacto sobre los servicios esenciales.
-  - **Criterios horizontales de criticidad:** Parámetros en función de los cuales se determina la criticidad, la gravedad y las consecuencias de la perturbación o destrucción de una infraestructura crítica, en base al potencial de víctimas mortales o heridos con lesiones graves y las consecuencias para la salud pública, el impacto económico en función de la magnitud de las pérdidas económicas y el deterioro de productos y servicios, el impacto medioambiental, y por último, el impacto público y social, que va relacionado con la confianza del ciudadano en sus Instituciones Públicas, el sufrimiento físico o la alteración de la vida cotidiana por el grave deterioro de servicios esenciales.
-- El **Sistema de Protección de Infraestructuras Críticas** (artículos 5 al 13): Describe como se regulan los órganos e instrumentos de planificación que se integran en el Sistema de Protección de las Infraestructuras Críticas, compuesto por una serie de instituciones, órganos y empresas, procedentes públicas o privadas con responsabilidades en el correcto funcionamiento de los servicios esenciales. La Ley involucra a los siguientes agentes:
-  - **La secretaría de Estado de Seguridad** es nombrada responsable del Sistema de Protección de las infraestructuras críticas nacionales y es la encargada de dirigir la estrategia nacional de protección de infraestructuras críticas y aprobar los planes de seguridad.
-  - **El Centro Nacional para la Protección de las Infraestructuras Críticas** (en adelante CNPIC) encargado del impulso, la coordinación y supervisión de todas las actividades que tiene encomendadas la Secretaría de Estado de Seguridad en relación con la protección de las Infraestructuras Críticas en el territorio nacional, además corresponderá la realización de altas, bajas y modificaciones de infraestructuras en el Catálogo, así como la determinación de la criticidad de las infraestructuras estratégicas incluidas en el mismo.
-  - **Por cada sector estratégico, se designará al menos, un ministerio, organismo, entidad u órgano de la Administración General del Estado** integrado en el Sistema, que será el encargado de impulsar, en el ámbito de sus competencias, las políticas de seguridad del Gobierno sobre los distintos sectores estratégicos nacionales y de velar por su aplicación, actuando igualmente como puntos de contacto especializados en la materia.
-  - **Las Delegaciones del Gobierno en las Comunidades Autónomas y en las Ciudades** intervendrán, a través de las Fuerzas y Cuerpos de Seguridad en la implantación de los diferentes planes de las infraestructuras críticas de su demarcación.
-  - **Para las Comunidades Autónomas y Ciudades con Estatuto de Autonomía** que ostenten competencias estatutariamente reconocidas para la protección de personas y bienes y para el mantenimiento del orden público participarán en la implantación de los planes a través de sus respectivos cuerpos policiales, y serán miembros de la Comisión Nacional para la Protección de las Infraestructuras Críticas. Las Comunidades Autónomas no incluidas en los apartados anteriores participarán en el Sistema de Protección de Infraestructuras Críticas y en los Órganos previstos en esta Ley, de acuerdo con las competencias que les reconozcan sus respectivos Estatutos de Autonomía.
-  - Otro órgano de nueva creación es la **Comisión Nacional para la Protección de las Infraestructuras Críticas**, que es un órgano colegiado competente para aprobar los diferentes Planes Estratégicos Sectoriales así como para designar a los operadores críticos a propuesta del Grupo de Trabajo Interdepartamental para la Protección de las Infraestructuras Críticas, al que le corresponderá la elaboración de los diferentes Planes Estratégicos Sectoriales y la propuesta a la Comisión de la designación de los operadores críticos por cada uno de los sectores estratégicos definidos.
-  - Especial atención merecen la figura de **operadores críticos** que son los encargados de proveer un servicio esencial a través de sus infraestructuras críticas.
-- **Instrumentos y comunicación del Sistema** (artículos 14 al 18): Define las medidas de protección y los procedimientos que deben derivar de la aplicación de la norma.
-  - Los operadores considerados críticos en virtud de esta Ley deberán colaborar con las autoridades competentes del Sistema, con el fin de optimizar la protección de las infraestructuras críticas y de las infraestructuras críticas europeas por ellos gestionados y deberán, entre otras obligaciones, **elaborar el Plan de Seguridad del Operador y un Plan de Protección Específico** por cada una de las infraestructuras consideradas como críticas en el Catálogo, así como **designar a un Responsable de Seguridad y Enlace**, que será el interlocutor con el CNPIC en esta materia, **y a un Delegado de Seguridad** por cada una de sus infraestructuras consideradas Críticas.
-  - **El sistema de planificación comprende los siguientes planes:**
-    - El **Plan Nacional de Protección de las Infraestructuras Críticas**, elaborado por la Secretaría de Estado de Seguridad, es un documento para dirigir y coordinar las actuaciones en esta materia en la lucha contra el terrorismo.
-    - Los **Planes Estratégicos Sectoriales**, elaborados por el Grupo de Trabajo Interdepartamental, que incluyen por sectores los criterios de las medidas a adoptar frente a una situación de riesgo.
-    - Las empresas que sean designadas como operadores críticos deberán presentar un **PSO (Plan de Seguridad del Operador).** En el, se define la política general de seguridad del operador y su marco de gobierno; identificando los servicios esenciales que presta; implantando una metodología de análisis de riesgo y desarrollando los criterios de aplicación de medidas de seguridad integral. Los Planes de Seguridad del Operador son documentos de alto nivel que contemplan aspectos relativos a la seguridad organizativa y procedimental del operador crítico. Deberán contener, al menos, aspectos relacionados con la política de seguridad del operador, marco de gobierno de la seguridad, identificación y estudio de los servicios esenciales que presta, la metodología de análisis de riesgos empleada, los criterios de aplicación de las medidas de seguridad empleadas y documentación complementaria.
-    - Asimismo, también deberán presentar un **PPE (Plan de Protección Específico)** respecto a todas sus infraestructuras clasificadas como críticas, en el que se defina la organización de la seguridad asociada al operador crítico; describiendo los datos generales, activos, elementos e interdependencias de las infraestructuras que hayan sido designadas como críticas; identificando las amenazas internas o externas, físicas o lógicas, intencionadas o aleatorias; detallando las medidas de seguridad y valores de riesgo y proponiendo las medidas a aplicar para proteger los activos críticos como consecuencia de los resultados obtenidos en el análisis de riesgos. Los Planes de Protección Específicos son documentos de seguridad de cada una de las infraestructuras críticas, donde se establecen las medidas de seguridad adoptadas por los operadores críticos para su protección.
-    - Los **Planes de Apoyo Operativo** son planes de carácter táctico, elaborados por el Cuerpo Policial con competencia en la demarcación, para cada una de las infraestructuras críticas, que deberán contener, al menos, los aspectos organizativos de la seguridad de la infraestructura, la descripción de la misma, un análisis de riesgos y un plan de acción con las medidas de seguridad a implementar.
+1. **Disposiciones generales** (artículos 1 al 4): **Definiciones** de los términos acuñados por la Directiva 2008/114/CE, así como a establecer las cuestiones relativas al ámbito de aplicación y objeto. Entre las definiciones establecidas, cabe destacar:
+   - **Servicio esencial:** Se considera como el servicio necesario para el mantenimiento de las funciones sociales básicas, la salud, la seguridad, el bienestar social y económico de los ciudadanos, o el eficaz funcionamiento de las Instituciones del Estado y las Administraciones Públicas.
+   - **Sector estratégico:** Cada una de las áreas diferenciadas dentro de la actividad laboral, económica y productiva, que proporciona un servicio esencial.
+   - **Infraestructuras estratégicas**: Instalaciones, redes, sistemas y equipos físicos y de tecnología de la información sobre las que descansa el funcionamiento de los servicios esenciales.
+   - **Infraestructuras críticas:** Infraestructura estratégica cuyo funcionamiento es indispensable y no permite soluciones alternativas, por lo que su perturbación o destrucción tendría un grave impacto sobre los servicios esenciales.
+   - **Criterios horizontales de criticidad:** Parámetros en función de los cuales se determina la criticidad, la gravedad y las consecuencias de la perturbación o destrucción de una infraestructura crítica, en base al potencial de víctimas mortales o heridos con lesiones graves y las consecuencias para la salud pública, el impacto económico en función de la magnitud de las pérdidas económicas y el deterioro de productos y servicios, el impacto medioambiental, y por último, el impacto público y social, que va relacionado con la confianza del ciudadano en sus Instituciones Públicas, el sufrimiento físico o la alteración de la vida cotidiana por el grave deterioro de servicios esenciales.
+1. El **Sistema de Protección de Infraestructuras Críticas** (artículos 5 al 13): Describe como se regulan los órganos e instrumentos de planificación que se integran en el Sistema de Protección de las Infraestructuras Críticas, compuesto por una serie de instituciones, órganos y empresas, procedentes públicas o privadas con responsabilidades en el correcto funcionamiento de los servicios esenciales. La Ley involucra a los siguientes agentes:
+   - **La secretaría de Estado de Seguridad** es nombrada responsable del Sistema de Protección de las infraestructuras críticas nacionales y es la encargada de dirigir la estrategia nacional de protección de infraestructuras críticas y aprobar los planes de seguridad.
+   - **El Centro Nacional para la Protección de las Infraestructuras Críticas** (en adelante CNPIC) encargado del impulso, la coordinación y supervisión de todas las actividades que tiene encomendadas la Secretaría de Estado de Seguridad en relación con la protección de las Infraestructuras Críticas en el territorio nacional, además corresponderá la realización de altas, bajas y modificaciones de infraestructuras en el Catálogo, así como la determinación de la criticidad de las infraestructuras estratégicas incluidas en el mismo.
+   - **Por cada sector estratégico, se designará al menos, un ministerio, organismo, entidad u órgano de la Administración General del Estado** integrado en el Sistema, que será el encargado de impulsar, en el ámbito de sus competencias, las políticas de seguridad del Gobierno sobre los distintos sectores estratégicos nacionales y de velar por su aplicación, actuando igualmente como puntos de contacto especializados en la materia.
+   - **Las Delegaciones del Gobierno en las Comunidades Autónomas y en las Ciudades** intervendrán, a través de las Fuerzas y Cuerpos de Seguridad en la implantación de los diferentes planes de las infraestructuras críticas de su demarcación.
+   - **Para las Comunidades Autónomas y Ciudades con Estatuto de Autonomía** que ostenten competencias estatutariamente reconocidas para la protección de personas y bienes y para el mantenimiento del orden público participarán en la implantación de los planes a través de sus respectivos cuerpos policiales, y serán miembros de la Comisión Nacional para la Protección de las Infraestructuras Críticas. Las Comunidades Autónomas no incluidas en los apartados anteriores participarán en el Sistema de Protección de Infraestructuras Críticas y en los Órganos previstos en esta Ley, de acuerdo con las competencias que les reconozcan sus respectivos Estatutos de Autonomía.
+   - Otro órgano de nueva creación es la **Comisión Nacional para la Protección de las Infraestructuras Críticas**, que es un órgano colegiado competente para aprobar los diferentes Planes Estratégicos Sectoriales así como para designar a los operadores críticos a propuesta del Grupo de Trabajo Interdepartamental para la Protección de las Infraestructuras Críticas, al que le corresponderá la elaboración de los diferentes Planes Estratégicos Sectoriales y la propuesta a la Comisión de la designación de los operadores críticos por cada uno de los sectores estratégicos definidos.
+   - Especial atención merecen la figura de **operadores críticos** que son los encargados de proveer un servicio esencial a través de sus infraestructuras críticas.
+1. **Instrumentos y comunicación del Sistema** (artículos 14 al 18): Define las medidas de protección y los procedimientos que deben derivar de la aplicación de la norma.
+   - Los operadores considerados críticos en virtud de esta Ley deberán colaborar con las autoridades competentes del Sistema, con el fin de optimizar la protección de las infraestructuras críticas y de las infraestructuras críticas europeas por ellos gestionados y deberán, entre otras obligaciones, **elaborar el Plan de Seguridad del Operador y un Plan de Protección Específico** por cada una de las infraestructuras consideradas como críticas en el Catálogo, así como **designar a un Responsable de Seguridad y Enlace**, que será el interlocutor con el CNPIC en esta materia, **y a un Delegado de Seguridad** por cada una de sus infraestructuras consideradas Críticas.
+   - **El sistema de planificación comprende los siguientes planes:**
+      - El **Plan Nacional de Protección de las Infraestructuras Críticas**, elaborado por la Secretaría de Estado de Seguridad, es un documento para dirigir y coordinar las actuaciones en esta materia en la lucha contra el terrorismo.
+      - Los **Planes Estratégicos Sectoriales**, elaborados por el Grupo de Trabajo Interdepartamental, que incluyen por sectores los criterios de las medidas a adoptar frente a una situación de riesgo.
+      - Las empresas que sean designadas como operadores críticos deberán presentar un **PSO (Plan de Seguridad del Operador).** En el, se define la política general de seguridad del operador y su marco de gobierno; identificando los servicios esenciales que presta; implantando una metodología de análisis de riesgo y desarrollando los criterios de aplicación de medidas de seguridad integral. Los Planes de Seguridad del Operador son documentos de alto nivel que contemplan aspectos relativos a la seguridad organizativa y procedimental del operador crítico. Deberán contener, al menos, aspectos relacionados con la política de seguridad del operador, marco de gobierno de la seguridad, identificación y estudio de los servicios esenciales que presta, la metodología de análisis de riesgos empleada, los criterios de aplicación de las medidas de seguridad empleadas y documentación complementaria.
+      - Asimismo, también deberán presentar un **PPE (Plan de Protección Específico)** respecto a todas sus infraestructuras clasificadas como críticas, en el que se defina la organización de la seguridad asociada al operador crítico; describiendo los datos generales, activos, elementos e interdependencias de las infraestructuras que hayan sido designadas como críticas; identificando las amenazas internas o externas, físicas o lógicas, intencionadas o aleatorias; detallando las medidas de seguridad y valores de riesgo y proponiendo las medidas a aplicar para proteger los activos críticos como consecuencia de los resultados obtenidos en el análisis de riesgos. Los Planes de Protección Específicos son documentos de seguridad de cada una de las infraestructuras críticas, donde se establecen las medidas de seguridad adoptadas por los operadores críticos para su protección.
+      - Los **Planes de Apoyo Operativo** son planes de carácter táctico, elaborados por el Cuerpo Policial con competencia en la demarcación, para cada una de las infraestructuras críticas, que deberán contener, al menos, los aspectos organizativos de la seguridad de la infraestructura, la descripción de la misma, un análisis de riesgos y un plan de acción con las medidas de seguridad a implementar.
 
 Las entidades y organizaciones consideradas **infraestructuras críticas, no están publicadas**, no obstante, pertenecen a los siguientes **sectores, considerados críticos:**
 
@@ -390,9 +394,7 @@ Las entidades y organizaciones consideradas **infraestructuras críticas, no est
 - Agua.
 - Alimentación.
 
-El CNPIC ha desarrollado unas guías de buenas prácticas para el desarrollo del Plan de Seguridad del Operador y del Plan de Protección Específico.
-
-Estas pueden ser visitadas en el [apartado de Guías y metodologías del CNPIC](https://cnpic.interior.gob.es/opencms/es/publicaciones/guias-y-metodologias/ "Accede a la web del CNPIC ( se abre en ventana nueva ) ")
+El CNPIC ha desarrollado unas guías de buenas prácticas para el desarrollo del Plan de Seguridad del Operador y del Plan de Protección Específico. Estas pueden ser visitadas en el [apartado de Guías y metodologías del CNPIC](https://cnpic.interior.gob.es/opencms/es/publicaciones/guias-y-metodologias/).
 
 {:.subsection}
 ### El Centro Nacional de Protección de Infraestructuras Críticas

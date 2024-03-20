@@ -44,7 +44,7 @@ La Regulación General de Protección de Datos establece además, una categoriz
 - Datos relativos a la vida sexual u orientaciones sexuales.
 - Datos genéticos y biométricos.
 
-Por lo general, el **tratamiento** de estos datos esta **prohibido, salvo en los siguientes escenarios:**
+Por lo general, el tratamiento de estos datos esta prohibido, salvo en los siguientes escenarios:
 
 - Con el consentimiento explicito del interesado, cuando el individuo consiente su tratamiento.
 - Por obligación legal cuando existen peticiones judiciales.
@@ -60,8 +60,8 @@ Por lo general, el **tratamiento** de estos datos esta **prohibido, salvo en los
 {:.subsection}
 ### Legislación vigente
 
-- **El Reglamento General de Protección de Datos (RGPD) es el reglamento europeo relativo a la protección de las personas físicas en lo que respecta al tratamiento de sus datos personales** y a la libre circulación de estos datos. Entró en vigor el 24 de mayo de 2016 y fue de aplicación el 25 de mayo de 2018.
-- **La Ley Orgánica de Protección de Datos es la adaptación española del reglamento europeo**. Fue aprobada el 5 de diciembre de 2018 como Ley Orgánica 3/2018, de Protección de Datos y Garantía de los Derechos Digitales (LOPDGDD). Aunque en esencia es muy similar al RGPD Europeo, incluye artículos adicionales dentro de los epígrafes de Garantía de los Derechos Digitales, tales como el derecho de Desconexión Digital.
+- **El Reglamento General de Protección de Datos (RGPD)** es el reglamento europeo relativo a la protección de las personas físicas en lo que respecta al tratamiento de sus datos personales y a la libre circulación de estos datos. Entró en vigor el 24 de mayo de 2016 y fue de aplicación el 25 de mayo de 2018.
+- **La Ley Orgánica de Protección de Datos** es la adaptación española del reglamento europeo. Fue aprobada el 5 de diciembre de 2018 como Ley Orgánica 3/2018, de Protección de Datos y Garantía de los Derechos Digitales (LOPDGDD). Aunque en esencia es muy similar al RGPD Europeo, incluye artículos adicionales dentro de los epígrafes de Garantía de los Derechos Digitales, tales como el derecho de Desconexión Digital.
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es un reglamento?</summary>
@@ -87,6 +87,9 @@ La protección de datos se basa **principios rectores** definidos en el artícul
 - **Limitación del plazo de conservación**: Los datos deben ser tratados y/o almacenados solo durante el tiempo por el tiempo necesario para garantizar la finalidad del tratamiento consentida.
 - **Seguridad**: Establecer las medidas técnicas y organizativas que permitan mantener su confidencialidad, integridad y disponibilidad.
 - **Responsabilidad activa**: Demostrar diligencia debida en el tratamiento de datos personales, para proteger y garantizar derechos y libertades de las personas físicas en base a un análisis de riesgos.
+
+{:.question}
+¿Qué es un principio rector?
 
 {:.section}
 ## Regulación General de Protección de Datos de la Unión Europea
@@ -139,7 +142,7 @@ _Tratamiento de los datos personales en tu centro educativo_
 {:.subsection}
 ### Códigos de conducta y certificación
 
-Las **asociaciones sectoriales** o cualquier organización que agrupe entidades de sectores homogéneos, **podrán elaborar códigos de conducta** a los que adscribirse que describan el modo en el que están cumpliendo el presente reglamento. Estos códigos de conducta **incluirán elementos como**:
+Las **asociaciones sectoriales** o cualquier organización que agrupe entidades de sectores homogéneos, podrán elaborar códigos de conducta a los que adscribirse que describan el modo en el que están cumpliendo el presente reglamento. Estos códigos de conducta **incluirán elementos como**:
 
 1. El tratamiento leal y transparente de la información.
 1. Los intereses legítimos perseguidos por los responsables del tratamiento en contextos específicos.
@@ -171,7 +174,7 @@ El RGPD y la LOPDGDD exigen que el registro **contenga como mínimo** la siguien
 - cuando sea posible, los plazos previstos para la supresión de las diferentes categorías de datos.
 - cuando sea posible, una descripción general de las medidas técnicas y organizativas de seguridad.
 
-El contenido del Registro de Actividades de Tratamiento constituye una información mínima exigible, éste, p**odría formar parte de los catálogos de procesos que ya existiesen en la entidad**, incluyendo toda la información que el responsable considere necesaria para proteger los derechos y libertades de las personas físicas y poder demostrar cumplimiento atendiendo a la naturaleza, el ámbito, el contexto y los fines del tratamiento, así como los posibles orígenes de los riesgos que dicho tratamiento pudiera suponer para los interesados.
+El contenido del Registro de Actividades de Tratamiento constituye una información mínima exigible, éste, podría formar parte de los catálogos de procesos que ya existiesen en la entidad, incluyendo toda la información que el responsable considere necesaria para proteger los derechos y libertades de las personas físicas y poder demostrar cumplimiento atendiendo a la naturaleza, el ámbito, el contexto y los fines del tratamiento, así como los posibles orígenes de los riesgos que dicho tratamiento pudiera suponer para los interesados.
 
 El registro podría incluir aspectos que faciliten la **aplicación efectiva de la responsabilidad proactiva** como: análisis de riesgos para los derechos y libertades realizados, la descripción sistemática del tratamiento, los sistemas de información sobre los que se apoya, la descripción de la identidad de los encargados del tratamiento, las garantías previstas para llevar a cabo transferencias internacionales de datos, información de contacto de las personas o los departamentos de la organización que se encuentran implicados en las operaciones de tratamiento, etc.
 
@@ -231,16 +234,16 @@ El artículo 33 del RGPD impone a los responsables de un tratamiento de datos pe
 
 El responsable de tratamiento debe **valorar el nivel de riesgo de una brecha de datos personales y notificarla** a la autoridad de control cuando exista tal riesgo. El plazo para notificar a la autoridad de control es de 72 horas desde que la organización tiene constancia de la brecha.
 
-Si además entraña un **alto riesgo deberá comunicarse sin dilación indebida a los afectados a través** del medio que se suela utilizar para comunicarse con ellos, con un lenguaje claro y sencillo. Esto permitirá que los afectados puedan reaccionar cuanto antes y tomar las medidas oportunas, porque en dicha comunicación se les deberá explicar claramente lo sucedido y las medidas recomendadas para que puedan minimizar o eliminar las consecuencias negativas que pueda tener la brecha sobre ellos.
+Si además entraña un **alto riesgo deberá comunicarse sin dilación indebida** a los afectados a través del medio que se suela utilizar para comunicarse con ellos, con un lenguaje claro y sencillo. Esto permitirá que los afectados puedan reaccionar cuanto antes y tomar las medidas oportunas, porque en dicha comunicación se les deberá explicar claramente lo sucedido y las medidas recomendadas para que puedan minimizar o eliminar las consecuencias negativas que pueda tener la brecha sobre ellos.
 
-En el ámbito privado, los **responsables del tratamiento** afectados por una brecha de datos personales **deberán notificar a la AEPD:**
+En el ámbito privado, los **responsables del tratamiento** afectados por una brecha de datos personales **deberán notificar a la AEPD**:
 
 - Cuando su único establecimiento esté localizado en España.
 - Si tienen varios establecimientos en la Unión Europea, únicamente cuando el establecimiento principal esté localizado en España.
 - Si no tienen establecimiento principal en la Unión Europea, sólo en el caso de que hayan designado un representante en España.
 - Si no tienen establecimiento ni representante en la Unión Europea, en el caso de que la brecha de datos personales cuente con afectados en España.
 
-La notificación a la autoridad de control de una brecha que afecta a datos personales forma parte de la **responsabilidad proactiva establecida en el RGPD**, y el hecho de notificarla no implica necesariamente la apertura de un procedimiento administrativo. De hecho, notificar en tiempo y forma es una evidencia de la diligencia de la organización, mientas que no cumplir con esa obligación si está tipificado como infracción.
+La notificación a la autoridad de control de una brecha que afecta a datos personales forma parte de la responsabilidad proactiva establecida en el RGPD, y el hecho de notificarla no implica necesariamente la apertura de un procedimiento administrativo. De hecho, notificar en tiempo y forma es una evidencia de la diligencia de la organización, mientas que no cumplir con esa obligación si está tipificado como infracción.
 
 Sin embargo, en aquellos casos en los que el responsable considere que no existieran riesgos para los derechos y libertades de las personas físicas el responsable tiene la **obligación de documentar cualquier violación de la seguridad** de los datos personales, incluidos los hechos relacionados con ella, sus efectos y las medidas correctivas adoptadas, dicha documentación permitirá a la autoridad de control verificar el cumplimiento de lo dispuesto en el artículo 33 del RGPD.
 
@@ -259,13 +262,13 @@ Tenga en cuenta que [Comunica-Brecha RGPD](https://servicios.aepd.es/AEPD/view/f
 {:.subsection}
 ### Transferencias internacionales de datos
 
-Una transferencia internacional de datos se produce cuando los **datos personales** que son tratados por un responsable o un encargado del tratamiento en el Espacio Económico Europeo (países de la Unión Europea, Islandia, Liechtenstein y Noruega) son **enviados a un tercer país u organización internacional, fuera de dicho territorio.**
+Una transferencia internacional de datos se produce cuando los **datos personales** que son tratados por un responsable o un encargado del tratamiento en el Espacio Económico Europeo (países de la Unión Europea, Islandia, Liechtenstein y Noruega) son **enviados a un tercer país u organización internacional**, fuera de dicho territorio.
 
-El **objetivo** de la regulación es garantizar, que una vez que los datos salgan del territorio europeo, se sigan dando los elementos necesarios para **garantizar el derecho fundamental a la** **protección de datos** personales de las personas físicas cuyos datos personales son objeto de tratamiento.
+El **objetivo** de la regulación es garantizar, que una vez que los datos salgan del territorio europeo, se sigan dando los elementos necesarios para **garantizar el derecho fundamental a la protección de datos** personales de las personas físicas cuyos datos personales son objeto de tratamiento.
 
 Una transferencia internacional de datos fuera del Espacio Económico Europeo (EEE), es decir, los países de la Unión Europea e Islandia, Liechtenstein y Noruega, solo puede llevarse a cabo cuando el tercer país u organización internacional tiene un nivel adecuado o se dan otras garantías adecuadas en materia de protección de datos personales.  
 
-Por lo general, todas las **transferencias internacionales, deben ser notificadas y aprobadas por la agencia española de protección de datos**, no obstante, los responsables y encargados del tratamiento **podrán realizar transferencias internacionales de datos sin necesidad de autorización** siempre que el tratamiento de datos observe lo dispuesto en el RGPD y en los **siguientes supuestos:**
+**Por lo general, todas las transferencias internacionales, deben ser notificadas y aprobadas por la agencia española de protección de datos**, no obstante, los responsables y encargados del tratamiento podrán realizar transferencias internacionales de datos sin necesidad de autorización siempre que el tratamiento de datos observe lo dispuesto en el RGPD y en los siguientes supuestos:
 
 - **Transferencias basadas en una decisión de adecuación**: Cuando las entidades receptoras de los datos se encuentren en un país, un territorio o uno o varios sectores específicos de ese país u organización internacional que hayan sido declarados de nivel de protección adecuado por la Comisión Europea. Hasta la fecha los países y territorios están declarados como adecuados son: Suiza, Canadá, Argentina, Guernsey, Isla de Man, Jersey, Islas Feroe, Andorra, Israel, Uruguay, Nueva Zelanda, Japón, Reino Unido y República de Corea.
 - **Mediante la aportación de garantías adecuadas**: A falta de decisión de adecuación si se ofrecen garantías adecuadas, que podrán ser aportadas a través de:
@@ -287,15 +290,15 @@ A falta de decisión de adecuación y de garantías adecuadas únicamente se pod
 - La transferencia sea necesaria para proteger los intereses vitales del interesado o de otras personas, cuando la persona interesada esté física o jurídicamente incapacitada para dar su consentimiento.
 - La transferencia se realice desde un registro público que, con arreglo al Derecho de la Unión o de los Estados miembros, tenga por objeto facilitar información al público y esté abierto a la consulta del público en general o de cualquier persona que pueda acreditar un interés legítimo, pero sólo en la medida en que se cumplan, en cada caso particular, las condiciones que establece el Derecho de la Unión o de los Estados miembros para la consulta.
 
-Una transferencia internacional, **necesitará aprobación explicita de la Agencia Española de Protección de Datos, cuando** el ofrecimiento de garantías adecuadas se realice mediante:
+Una transferencia internacional, necesitará aprobación explicita de la Agencia Española de Protección de Datos, cuando el ofrecimiento de garantías adecuadas se realice mediante:
 
 - Cláusulas contractuales entre el responsable o el encargado y el responsable, encargado o sub encargado, que no hayan sido adoptadas por la Comisión Europea o por la Agencia Española de Protección de Datos y aprobadas por la Comisión Europea.
 - Disposiciones que se incorporen en acuerdos administrativos entre las autoridades u organismos públicos que incluyan derechos efectivos y exigibles para las personas interesadas
 
 {:.subsection}
-### La agencia española de protección de datos
+### La Agencia Española de Protección de Datos
 
-La **Agencia Española de Protección de Datos (AEPD) está encargada de velar por el cumplimiento de la normativa** de protección de datos y controlar su aplicación, a nivel estatal, no obstante, para los ámbitos geográficos de Andalucía, Cataluña y País Vasco, existen agencias autonómicas de protección de datos con potestad de actuación en ámbito local y con funciones similares a las de la AEPD.
+La **Agencia Española de Protección de Datos (AEPD)** está encargada de velar por el cumplimiento de la normativa de protección de datos y controlar su aplicación, a nivel estatal, no obstante, para los ámbitos geográficos de Andalucía, Cataluña y País Vasco, existen agencias autonómicas de protección de datos con potestad de actuación en ámbito local y con funciones similares a las de la AEPD.
 
 ![Logo de la Agencia Española de Protección de datos](logoAepd.png)
 _Logo de la Agencia Española de Protección de datos_
@@ -304,8 +307,7 @@ Las **funciones principales** que llevan a cabo estas agencias, son las siguient
 
 - **Controlar la aplicación del Reglamento General de Protección de Datos** y el resto de la normativa de protección de datos, así como proceder a que se aplique.
 - Promover la **sensibilización del público** y su comprensión de los riesgos, normas, garantías y derechos en relación con el tratamiento.
-- Asesorar al Parlamento nacional, al Gobierno y a otras instituciones y organismos sobre las medidas legislativas y administrativas relativas a la protección de los  
-    derechos y libertades de las personas físicas con respecto al tratamiento.
+- Asesorar al Parlamento nacional, al Gobierno y a otras instituciones y organismos sobre las medidas legislativas y administrativas relativas a la protección de los derechos y libertades de las personas físicas con respecto al tratamiento.
 - Promover la sensibilización de las personas responsables y encargadas del tratamiento acerca de las obligaciones que les incumben en virtud del presente Reglamento.
 - **Facilitar información** a cualquier interesado en relación con el ejercicio de sus derechos.
 - **Tratar las reclamaciones** presentadas por un interesado o por un organismo, organización o asociación, e investigar, en la medida oportuna, el motivo de la reclamación.
@@ -423,17 +425,17 @@ Son consideradas infracciones **muy graves**, las siguientes:
 {:.prompt-info}
 
 {:.section}
-## Privacidad por Diseño y por Defecto
+## Privacidad por diseño y por defecto
 
-La **privacidad desde el diseño y por defecto** se trata de establecer un proceso a través del cual se **consideren los riesgos en privacidad** de un proceso o un sistema de tal manera que **durante su construcción** se apliquen las medidas técnicas y organizativas necesarias para garantizar la  privacidad de la información de carácter personal antes de su tratamiento.
+La privacidad desde el diseño y por defecto se trata de establecer un proceso a través del cual se **consideren los riesgos en privacidad** de un proceso o un sistema de tal manera que **durante su construcción** se apliquen las medidas técnicas y organizativas necesarias para garantizar la  privacidad de la información de carácter personal antes de su tratamiento.
 
 Este paradigma implica un cambio en la manera en el que se desarrollan estos procesos, en los cuales, típicamente se realizaba un diseño funcional para posteriormente, se agregaran las medidas de seguridad, una vez desarrollado.
 
-Este proceso esta **regulado en el RGPD en el artículo 25:**
+Este proceso esta regulado en el RGPD en el artículo 25:
 
-> "Teniendo en cuenta el estado de la técnica, el coste de la aplicación y la naturaleza, ámbito, contexto y fines del tratamiento, así como los riesgos de diversa probabilidad y gravedad que entraña el tratamiento para los derechos y libertades de las personas físicas, el responsable del tratamiento aplicará, tanto **en el momento de determinar los medios de tratamiento** como en el momento del propio tratamiento, medidas técnicas y organizativas apropiadas, concebidas para aplicar de forma efectiva los principios de protección de datos, e integrar las garantías necesarias en el tratamiento, a fin de cumplir los requisitos del presente Reglamento y proteger los derechos de los interesados."
+> "Teniendo en cuenta el estado de la técnica, el coste de la aplicación y la naturaleza, ámbito, contexto y fines del tratamiento, así como los riesgos de diversa probabilidad y gravedad que entraña el tratamiento para los derechos y libertades de las personas físicas, el responsable del tratamiento aplicará, tanto en el momento de determinar los medios de tratamiento como en el momento del propio tratamiento, medidas técnicas y organizativas apropiadas, concebidas para aplicar de forma efectiva los principios de protección de datos, e integrar las garantías necesarias en el tratamiento, a fin de cumplir los requisitos del presente Reglamento y proteger los derechos de los interesados."
 
-El concepto de privacidad desde el diseño y por defecto se basa en **siete principios fundamentales**:
+El concepto de privacidad desde el diseño y por defecto se basa en siete **principios fundamentales**:
 
 1. **Proactivo, no reactivo; preventivo, no correctivo:** La privacidad por diseño, (por sus siglas en ingles "PbD") implica anticiparse a los eventos que afecten a la privacidad antes de que sucedan. Cualquier sistema, proceso o infraestructura que vaya a utilizar datos personales debe ser concebida y diseñada desde cero identificando, a priori, los posibles riesgos a los derechos y libertades de los interesados y minimizarlos para que no lleguen a concretarse en daños.
 1. **La privacidad como configuración predeterminada:** La configuración por defecto deberá quedar establecida desde el diseño a aquel nivel que resulte lo más respetuoso posible en términos de privacidad. En el caso de que el sujeto no tome ninguna acción de configuración, su privacidad debe estar garantizada y mantenerse intacta, pues está integrada en el sistema y configurada por defecto. Como ejemplo práctico de este principio se pueden determinar los siguientes elementos:
@@ -451,13 +453,15 @@ El concepto de privacidad desde el diseño y por defecto se basa en **siete prin
 ![Privacidad desde el Diseño](privacidadDesdeElDiseño.png)
 _Privacidad desde el Diseño_
 
-Tradicionalmente la protección de los procesos y sistemas de información se ha basado en el despliegue de medidas de seguridad cuya finalidad se basaba en la cobertura de las principales propiedades de seguridad de la información: confidencialidad, integridad y disponibilidad. La minimización de riesgos en privacidad implica una serie de objetivos nuevos distintos pero complementarios a los de la seguridad, que cumplen con los **principios establecidos en la RGDP**, estos son:
+Tradicionalmente la protección de los procesos y sistemas de información se ha basado en el despliegue de medidas de seguridad cuya finalidad se basaba en la cobertura de las principales propiedades de seguridad de la información: confidencialidad, integridad y disponibilidad. La minimización de riesgos en privacidad implica una serie de **objetivos nuevos** distintos pero complementarios a los de la seguridad, que cumplen con los principios establecidos en la RGDP, estos son:
 
-**Desvinculación:** Este objetivo de privacidad minimiza el riesgo de un uso no autorizado de los datos personales y la creación de perfiles mediante la interconexión de información perteneciente a diferentes conjuntos de datos, estableciendo garantías sobre los principios de limitación de la finalidad, la minimización de datos y la limitación del plazo de conservación.
 
-**Transparencia:** Este objetivo de la privacidad pretende que el contexto del tratamiento quede perfectamente delimitado y que la información sobre las finalidades y las condiciones legales, técnicas y organizativas aplicables esté disponible antes, durante y después del tratamiento a todas las partes implicadas, tanto para el responsable como para el sujeto cuyos datos son tratados, minimizando así los riesgos que pueden afectar a los principios de lealtad y transparencia.
+![Objetivos de protección de la privacidad desde el diseño](objetivosProteccionPrivacidad.png)
+_Objetivos de protección de la privacidad desde el diseño_
 
-**Control:** Este objetivo se basa en la implementación de procedimientos para el ejercicio de derechos en materia de protección de datos, la presentación de reclamaciones o la revocación de los consentimientos prestados por parte de los interesados, así como mecanismos para garantizar, por parte del responsable, la evaluación del cumplimiento y la efectividad de las obligaciones que le son fijadas por la normativa, lo que contribuye a respetar los principios de exactitud y responsabilidad proactiva marcados por el RGPD.
+- **Desvinculación**: Este objetivo de privacidad minimiza el riesgo de un uso no autorizado de los datos personales y la creación de perfiles mediante la interconexión de información perteneciente a diferentes conjuntos de datos, estableciendo garantías sobre los principios de limitación de la finalidad, la minimización de datos y la limitación del plazo de conservación.
+- **Transparencia**: Este objetivo de la privacidad pretende que el contexto del tratamiento quede perfectamente delimitado y que la información sobre las finalidades y las condiciones legales, técnicas y organizativas aplicables esté disponible antes, durante y después del tratamiento a todas las partes implicadas, tanto para el responsable como para el sujeto cuyos datos son tratados, minimizando así los riesgos que pueden afectar a los principios de lealtad y transparencia.
+- **Control**: Este objetivo se basa en la implementación de procedimientos para el ejercicio de derechos en materia de protección de datos, la presentación de reclamaciones o la revocación de los consentimientos prestados por parte de los interesados, así como mecanismos para garantizar, por parte del responsable, la evaluación del cumplimiento y la efectividad de las obligaciones que le son fijadas por la normativa, lo que contribuye a respetar los principios de exactitud y responsabilidad proactiva marcados por el RGPD.
 
 Para que la privacidad quede integrada como parte del diseño del sistema debe seguirse una **aproximación sistemática y metodológica**, trasladando los requisitos de la fase de análisis a su desarrollo en la fase de implementación. Para ello, existen ciertas estrategias de manejo de información que dan soporte en el cumplimiento de los objetivos recién mencionados. Las estrategias de privacidad se materializan, a más bajo nivel, en patrones de diseño de soluciones reutilizables de privacidad que son aplicables para resolver problemas comunes y repetibles de privacidad que se presentan de forma reiterada en el desarrollo de productos y sistemas. Se han identificado ocho **estrategias de diseño de la privacidad** que se conocen como "minimizar", "ocultar", "separar", "abstraer", "informar", "controlar", "cumplir" y "demostrar".
 
@@ -519,15 +523,18 @@ Con respecto al **contexto**, se deben tener en cuenta dos elementos:
 
 - El ciclo de vida de los datos, elaborando una descripción del mismo y del flujo de datos  durante el tratamiento, identificando los datos tratados, intervinientes, terceros, sistemas implicados y cualquier elemento relevante que participe en la actividad de tratamiento.
 - Analizar la idoneidad, necesidad y proporcionalidad del tratamiento, en base a:
-  - Idoneidad: determinar si el tratamiento es adecuado para el fin que persigue. El tratamiento da respuesta a determinadas carencias, demandas, exigencias, obligaciones u oportunidades objetivas y puede conseguir los objetivos propuestos con la eficacia suficiente.
-  - Necesidad: determinar si la finalidad perseguida no puede alcanzarse de otro modo menos lesivo o invasivo, es decir, no existe un tratamiento alternativo que sea igualmente eficaz para el logro de la finalidad perseguida.
-  - Proporcionalidad: La gravedad del riesgo para los derechos y libertades del tratamiento, y su intromisión en la privacidad, ha de ser adecuada al objetivo perseguido y proporcionada a la urgencia y gravedad de esta.
+  - **Idoneidad**: determinar si el tratamiento es adecuado para el fin que persigue. El tratamiento da respuesta a determinadas carencias, demandas, exigencias, obligaciones u oportunidades objetivas y puede conseguir los objetivos propuestos con la eficacia suficiente.
+  - **Necesidad**: determinar si la finalidad perseguida no puede alcanzarse de otro modo menos lesivo o invasivo, es decir, no existe un tratamiento alternativo que sea igualmente eficaz para el logro de la finalidad perseguida.
+  - **Proporcionalidad**: La gravedad del riesgo para los derechos y libertades del tratamiento, y su intromisión en la privacidad, ha de ser adecuada al objetivo perseguido y proporcionada a la urgencia y gravedad de esta.
 
 Asimismo, también debe llevarse a cabo un proceso de **gestión de riesgos**, que incluya:
 
-- Amenazas y riesgos: Identificación de las amenazas y riesgos potenciales a los que están expuestos las actividades de tratamiento.
-- Evaluación los riesgos: Evaluación de la probabilidad y el impacto de que se materialicen los riesgos a los que está expuesta la organización.
-- Tratamiento los riesgos: Respuesta ante los riesgos identificados con el objetivo de minimizar la probabilidad y el impacto de que estos se materialicen hasta un nivel de riesgo aceptable que permita garantizar los derechos y libertades de las personas físicas.
+- **Amenazas y riesgos**: Identificación de las amenazas y riesgos potenciales a los que están expuestos las actividades de tratamiento.
+- **Evaluación los riesgos**: Evaluación de la probabilidad y el impacto de que se materialicen los riesgos a los que está expuesta la organización.
+- **Tratamiento los riesgos**: Respuesta ante los riesgos identificados con el objetivo de minimizar la probabilidad y el impacto de que estos se materialicen hasta un nivel de riesgo aceptable que permita garantizar los derechos y libertades de las personas físicas.
+
+> La AEPD ha desarrollado una **guía** para la gestión de riesgos para los derechos y libertades de los interesados aplicable a cualquier tratamiento, independientemente de su nivel de riesgo, titulada [Gestión del riesgo y evaluación de impacto en tratamientos de datos personales](https://www.aepd.es/guias/gestion-riesgo-y-evaluacion-impacto-en-tratamientos-datos-personales.pdf).
+{:.prompt-info}
 
 Por último, se debe emitir un **informe con las conclusiones y el plan de acción que** debe recoger:
 
@@ -541,13 +548,13 @@ El proceso de evaluación de impacto en privacidad, debe ser entendido como un *
 
 El Delegado de Protección de Datos (Data Privacy Officer, DPO) es la figura dentro de la organización que se encarga de **velar por la protección de la información.**
 
-El RGPD establece la figura del Delegado de Protección de Datos (DPD), que será **obligatorio en:**
+El RGPD establece la figura del Delegado de Protección de Datos (DPD), que será obligatorio en:
 
 - Autoridades y organismos públicos.
 - Responsables o encargados que tengan entre sus actividades principales las operaciones de tratamiento que requieran una observación habitual y sistemática de interesados a gran escala.
 - Responsables o encargados que tengan entre sus actividades principales el tratamiento a gran escala de datos sensibles.
 
-O bien cuando la organización pertenezca a los **siguientes sectores:**
+O bien cuando la organización pertenezca a los siguientes sectores:
 
 - Educación.
 - Servicios de comunicaciones.

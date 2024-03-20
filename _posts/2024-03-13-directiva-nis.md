@@ -23,9 +23,9 @@ Las directivas son actos legislativos en los cuales se establecen objetivos que 
 
 Sienta las bases para la gestión de riesgos de ciberseguridad y la obligación de notificación en las organizaciones de los sectores que cubre.
 
-Entre sus **objetivos**, destacan la homogeneización de las medidas de seguridad entre organizaciones de diferentes países, y el establecimiento de un marco de comunicación común para la respuesta a eventos e incidencias de seguridad, denominado, Red Europea de Organización de Enlace de Crisis Cibernéticas (EU-CYCLONe)
+Entre sus objetivos, destacan la homogeneización de las medidas de seguridad entre organizaciones de diferentes países, y el establecimiento de un marco de comunicación común para la respuesta a eventos e incidencias de seguridad, denominado, Red Europea de Organización de Enlace de Crisis Cibernéticas (EU-CYCLONe)
 
-¿Qué **organizaciones están afectadas**?
+¿Qué organizaciones están afectadas?
 
 1. Aquellas que sean designadas como **Operadores de Servicios Esenciales (OSE)**, en función de si prestan un servicio esencial que dependan de redes y sistemas de información. Y si su pérdida o indisponibilidad causan un perjuicio severo a la sociedad. Son designados equiparando la aplicabilidad a las organizaciones afectadas por la Ley de Protección de Infraestructuras Críticas. Pueden ser entidades públicas o privadas que se activan en sectores específicos, como el de la energía, el transporte, la banca y la salud, y que al mismo tiempo cumple algunos criterios esenciales que lo califican como servicio esencial.
 1. **Proveedores de Servicios Digitales (PSD)**, estos incluyen cualquier persona jurídica que ofrezca un servicio digital y más específicamente un comercio online, un motor de búsqueda o un servicio de computación en la nube. Su regulación se justifica debido al hecho de que muchas empresas dependen de estos proveedores para la prestación de sus propios servicios. Y por ello, una parada del servicio digital podría tener importantes efectos para las actividades económicas y sociales esenciales en la UE. Cabe señalar que la Directiva NIS no exige que los Estados miembros identifiquen a los proveedores de servicios digitales, lo que garantiza un enfoque global.
@@ -36,7 +36,8 @@ Tres tipos de proveedores de servicios digitales entran dentro del alcance de la
 - Proveedores de motores de búsqueda en línea.
 - Distribuidores de servicios de computación en la nube.
 
-**Autoridades relevantes**:
+{:.subsection}
+### Autoridades relevantes
 
 Se trata de las autoridades competentes, que serán quienes ejerzan las funciones de vigilancia y apliquen el régimen sancionador.
 
@@ -49,7 +50,7 @@ Según el tipo de entidad, se distinguen los siguientes:
 
 **Elementos relevantes** definidos en la directiva NIS:
 
-**Equipos de respuesta a incidentes** de seguridad informática de referencia **(CSIRT)**, que serán los encargados de analizar los riesgos y supervisar los incidentes a escala nacional, difundiendo alertas y aportando soluciones para mitigar sus efectos.
+**Equipos de respuesta a incidentes** de seguridad informática de referencia (CSIRT), que serán los encargados de analizar los riesgos y supervisar los incidentes a escala nacional, difundiendo alertas y aportando soluciones para mitigar sus efectos.
 
 Según el tipo de entidad, se distinguen los siguientes:
 
@@ -59,7 +60,7 @@ Según el tipo de entidad, se distinguen los siguientes:
 
 Punto de Contacto Único, que será el encargado de garantizar una cooperación transfronteriza con las autoridades competentes y los CSIRT de otros estados miembros, y que será ejercido por parte del Departamento de Seguridad Nacional del Consejo de Seguridad Nacional.
 
-**Requisitos de seguridad** a cumplir por OSE y PSDs:
+Los requisitos de seguridad a cumplir por OSE y PSDs son los siguientes:
 
 1. Designar a una persona, unidad u órgano, como responsable de Seguridad como punto de contacto y coordinador técnico.
 1. Establecimiento de desarrollos reglamentarios, órdenes ministeriales, instrucciones y guías que permitan detallar las obligaciones específicas.
@@ -83,11 +84,11 @@ Punto de Contacto Único, que será el encargado de garantizar una cooperación 
 > La última versión de la directiva NIS puede ser consultada en el portal de publicación de regulaciones de la unión europea, a través de [este enlace](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=celex:32016L1148)
 {:.prompt-info}
 
-La directiva cuenta con un total de **27 artículos distribuidos en 7 capítulos:**
+La directiva cuenta con un total de 27 artículos distribuidos en 7 capítulos:
 
 ### Capitulo 1
 
-**El capítulo 1, es de disposiciones generales**, cuenta con los siguientes artículos:
+El capítulo 1, es de **disposiciones generales**, cuenta con los siguientes artículos:
 
 - El artículo 1 define el objeto de la norma y su ámbito de aplicación, en él, se detalla la finalidad de la norma y los diferentes objetivos que persigue.
 - El artículo 2 habla del tratamiento de los datos personales, especificando que debe ser realizado de acuerdo a la directiva 95/46/CE.
@@ -97,7 +98,7 @@ La directiva cuenta con un total de **27 artículos distribuidos en 7 capítulos
 
 ### Capitulo 2
 
-El **capítulo 2 versa sobre marcos nacionales de seguridad de las redes y sistemas de información**, compuesto por los siguientes artículos:
+El capítulo 2 versa sobre **marcos nacionales de seguridad de las redes y sistemas de información**, compuesto por los siguientes artículos:
 
 - El artículo 7 habla sobre la estrategia nacional de seguridad de las redes y sistemas de información.
 
@@ -109,7 +110,7 @@ El **capítulo 2 versa sobre marcos nacionales de seguridad de las redes y siste
 
 ### Capitulo 3
 
-El **capítulo 3 trata sobre la cooperación en materia de seguridad**, esta conformado por los siguientes artículos:
+El capítulo 3 trata sobre la **cooperación en materia de seguridad**, esta conformado por los siguientes artículos:
 
 - El artículo 11 trata de la construcción de grupos de cooperación entre los diferentes Estados miembros.
 - El artículo 12 habla sobre la construcción de una serie de CSIRT nacionales y la colaboración entre los diferentes CSIRT de los Estados miembros.
@@ -130,7 +131,7 @@ Entre las tareas dentro de las competencias de la red CSIRT están:
 
 ### Capitulo 4
 
-El **capítulo 4 establece las normas de seguridad de las redes y sistemas de información de los operadores de servicios esenciales**, lo forman los siguientes artículos:
+El capítulo 4 establece las **normas de seguridad de las redes y sistemas de información de los operadores de servicios esenciales**, lo forman los siguientes artículos:
 
 - El artículo 14 trata sobre requisitos en materia de seguridad y notificación de incidentes y el artículo 15 sobre la observación y seguimiento de las mismas.
 
@@ -144,7 +145,7 @@ Se establece una lista de parámetros que deben tenerse en cuenta al determinar 
 
 ### Capitulo 5
 
-El **capítulo 5 establece las normas de seguridad de las redes y sistemas de información de los proveedores de servicios digitales**, lo forman los siguientes artículos:
+El capítulo 5 establece las **normas de seguridad de las redes y sistemas de información de los proveedores de servicios digitales**, lo forman los siguientes artículos:
 
 - El artículo 16 trata sobre requisitos en materia de seguridad y notificación de incidentes y el 17 sobre la observación y el seguimiento de las mismas.
 - El artículo 18 trata sobre la jurisdicción y territorialidad de los prestadores de servicios digitales.
@@ -171,19 +172,19 @@ Los parámetros que deben tenerse en cuenta para determinar si el impacto de un 
 
 ### Capitulo 6
 
-El **capítulo 6 trata sobre la normalización y notificación voluntaria**, cuenta con los siguientes artículos:
+El capítulo 6 trata sobre la **normalización y notificación voluntaria**, cuenta con los siguientes artículos:
 
 - El artículo 19 habla sobre la normalización, la utilización de normas agnósticas a la tecnología.
 - El artículo 20 trata de la notificación voluntaria de incidentes por cualquier entidad con independencia de su nombramiento como operador de servicio esencial.
 
 ### Capitulo 7
 
-El **capítulo 7 comprende las disposiciones finales**, consta de diferentes artículos en los que se establecen elementos como el régimen sancionador, procedimientos de comité, la revisión de la interpretación y ejecución de la directiva por los estados miembros, medidas transitorias, entrada en vigor, y destinatarios.
+El capítulo 7 comprende las **disposiciones finales**, consta de diferentes artículos en los que se establecen elementos como el régimen sancionador, procedimientos de comité, la revisión de la interpretación y ejecución de la directiva por los estados miembros, medidas transitorias, entrada en vigor, y destinatarios.
 
 {:.section}
 ## Reglamento de Seguridad de las Redes y Sistemas de Información
 
-El **Reglamento de Seguridad de las Redes y Sistemas de la Información** (Reglamento NIS) tiene como objetivo **desarrollar en el territorio nacional lo establecido en la Ley NIS europea**, con respecto al marco institucional en la materia, la cooperación y coordinación, la gestión y notificación de incidentes, las medidas a implantar, la supervisión de los requisitos de ciberseguridad o la función del CISO.
+El Reglamento de Seguridad de las Redes y Sistemas de la Información (Reglamento NIS) tiene como objetivo **desarrollar en el territorio nacional lo establecido en la Ley NIS europea**, con respecto al marco institucional en la materia, la cooperación y coordinación, la gestión y notificación de incidentes, las medidas a implantar, la supervisión de los requisitos de ciberseguridad o la función del CISO.
 
 Estarán sometidos a este real decreto:
 
@@ -198,7 +199,7 @@ El Reglamento especifica asimismo, que las **autoridades competentes** en cibers
 
 Para los operadores privados de servicios esenciales que no sean críticos, establece que serán autoridades competentes, los organismos responsables para los sectores de transporte, energía, TIC, sistema financiero, espacio, industria química, instalaciones de investigación, salud, agua, alimentación e industria nuclear.
 
-La **cooperación entre los CSIRT de referencia y las autoridades competentes**, se llevará a cabo mediante la Plataforma Nacional de Notificación y Seguimiento de Ciberincidentes.
+La cooperación entre los CSIRT de referencia y las autoridades competentes, se llevará a cabo mediante la Plataforma Nacional de Notificación y Seguimiento de Ciberincidentes.
 
 El **Departamento de Seguridad Nacional** es el **punto de contacto único** para actuar como enlace entre autoridades nacionales y la Unión Europea, el Grupo de Cooperación Europeo y la red de CSIRT.
 
@@ -219,7 +220,7 @@ Las funciones del responsable de seguridad son:
 - Actuar como capacitador de buenas prácticas en seguridad de las redes y sistemas de información, tanto en aspectos físicos como lógicos.
 - Comunicar los incidentes perturbadores a la autoridad competente.
 
-El Reglamento NIS recoge asimismo el procedimiento de **gestión de incidentes de seguridad**, el proceso de notificación a través de la Plataforma Nacional de Notificación y Seguimiento de Ciber incidentes, así como el sistema de supervisión de cumplimiento de obligaciones de seguridad y notificación de incidentes.
+El Reglamento NIS recoge asimismo el procedimiento de **gestión de incidentes de seguridad**, el proceso de notificación a través de la Plataforma Nacional de Notificación y Seguimiento de Ciberincidentes, así como el sistema de supervisión de cumplimiento de obligaciones de seguridad y notificación de incidentes.
 
 Los OSE y PSD están obligados a implantar las **medidas de seguridad** técnicas y de organización adecuadas y proporcionadas para gestionar los riesgos que afecten a la seguridad de las redes y sistemas de información que usan para prestar sus servicios, ya sean redes y sistemas propios, o de proveedores externos. Además, se tienen que aprobar unas políticas de seguridad de las redes y sistemas de información, teniendo en cuenta los principios de seguridad integral, gestión de riesgos, prevención, respuesta y recuperación, líneas de defensa, reevaluación periódica y segregación de tareas.
 
@@ -243,7 +244,7 @@ La obligación de gestionar y resolver los incidentes de seguridad afecta tanto 
 
 La notificación de los incidentes es una función del responsable de la Seguridad de la Información designado.
 
-Los CSIRT de referencia, el CCN-CERT, el INCIBE-CERT y el ESP-DEF-CERT del Mando Conjunto del Ciberespacio, podra facilitar los actores involucrados el acceso a la Plataforma Nacional de Notificación y Seguimiento de Cibe rincidentes, con el objetivo de intercambiar información y hacer un seguimiento de incidentes entre los operadores o proveedores y las autoridades competentes.
+Los CSIRT de referencia, el CCN-CERT, el INCIBE-CERT y el ESP-DEF-CERT del Mando Conjunto del Ciberespacio, podrá facilitar los actores involucrados el acceso a la Plataforma Nacional de Notificación y Seguimiento de Ciberincidentes, con el objetivo de intercambiar información y hacer un seguimiento de incidentes entre los operadores o proveedores y las autoridades competentes.
 
 ## Bibliografía y contenidos adicionales
 

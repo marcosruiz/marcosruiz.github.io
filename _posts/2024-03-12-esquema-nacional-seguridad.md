@@ -11,17 +11,17 @@ img_path: /assets/img/esquema-nacional-seguridad/
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jQJU-UB4sAQ?si=E8djNVaFAuN0aJQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-El **ENS establece la política de seguridad** para la protección adecuada de la **información y los servicios prestados a por las administraciones públicas**, así como los **proveedores del sector privado que prestan servicio a las administraciones publicas**. Estas políticas se estructuran en base a un **planteamiento común de principios, requisitos, medidas de protección, mecanismos de conformidad y monitorización** para todas las entidades en el alcance.
+El ENS establece la **política de seguridad** para la protección adecuada de la información y los servicios prestados a por las administraciones públicas, así como los proveedores del sector privado que prestan servicio a las administraciones publicas. Estas políticas se estructuran en base a un planteamiento común de principios, requisitos, medidas de protección, mecanismos de conformidad y monitorización para todas las entidades en el alcance.
 
-La **última versión** esta publicada  en el Real Decreto 311/2022, del **3 de mayo de 2022**, y sustituye a la versión publicada en enero del 2010.
+La última versión esta publicada  en el Real Decreto 311/2022, del 3 de mayo de 2022, y sustituye a la versión publicada en enero del 2010.
 
 Objetivos del ENS:
 
-- Crear las condiciones necesarias de **seguridad en el uso de los medio electrónicos.**
-- Promover la **gestión continuada de la seguridad**.
-- Promover la **prevención, detección y corrección**.
-- Promover un **tratamiento homogéneo de la seguridad**.
-- Servir de **modelo de buenas prácticas**.
+- Crear las condiciones necesarias de seguridad en el uso de los medio electrónicos.
+- Promover la gestión continuada de la seguridad.
+- Promover la prevención, detección y corrección.
+- Promover un tratamiento homogéneo de la seguridad.
+- Servir de modelo de buenas prácticas.
 
 {:.section}
 ## Implantación del esquema nacional de seguridad
@@ -43,7 +43,7 @@ A continuación se presentan las actividades que se han de llevar a cabo para im
 
 El real decreto se estructura en cuarenta y un artículos distribuidos en siete capítulos, tres disposiciones adicionales, una disposición transitoria, una disposición derogatoria, tres disposiciones finales y cuatro anexos.
 
-A continuación, vamos a repasar los **elementos principales del ENS:**
+A continuación, vamos a repasar los elementos principales del ENS:
 
 - Capítulo 1 - Disposiciones generales
 - Capítulo 2 – Principios básicos
@@ -63,7 +63,7 @@ Define el objeto de la norma, ámbito de aplicación, información, elementos y 
 
 Establece los principios básicos de la norma, enumerados en el artículo 5:
 
-1. **La seguridad como proceso integral,** formada por todos los elementos relacionados con los sistemas de información, tales como recursos humanos, materiales, técnicos, jurídicos y organizativos, siendo el despliegue del ENS un proceso integral y no un elemento atómico y parcial a la organización.
+1. **La seguridad como proceso integral**, formada por todos los elementos relacionados con los sistemas de información, tales como recursos humanos, materiales, técnicos, jurídicos y organizativos, siendo el despliegue del ENS un proceso integral y no un elemento atómico y parcial a la organización.
 1. **Gestión de la seguridad basada en los riesgos**, elaborando un análisis de riesgos como elemento de base para el esquema y evolucionándolo y actualizándolo a medida que se despliegan herramientas y controles.
 1. **Prevención, detección, respuesta y conservación**, con el objetivo de minimizar precisamente las vulnerabilidades que permitan materializar amenazas, o en su defecto, limitar sus daños.
 1. **Existencia de líneas de defensa**, constituyendo una estrategia que permita proteger a la organización en caso de que una capa de seguridad sea vulnerada existiendo capas de seguridad con más profundidad y de alcance acotado.
@@ -97,9 +97,9 @@ La política de seguridad se desarrollará cubriendo los siguientes contenidos m
 ![Logo ENS](logoEns.png)
 _Logo ENS_
 
-El artículo 28 regula el **cumplimiento de los requisitos mínimos,** según las medidas del anexo II, que podrán no ser implementadas siempre y cuando se establezcan y justifique la implantación de otras medidas compensatorias.
+El artículo 28 regula el **cumplimiento de los requisitos mínimos**, según las medidas del anexo II, que podrán no ser implementadas siempre y cuando se establezcan y justifique la implantación de otras medidas compensatorias.
 
-El artículo 29 **promueve la utilización de infraestructuras y servicios comune**s a las administraciones públicas con el objetivo de fomentar la eficiencia y la compartición de información de ciberseguridad e inteligencia entre administraciones públicas.
+El artículo 29 **promueve la utilización de infraestructuras y servicios comunes** a las administraciones públicas con el objetivo de fomentar la eficiencia y la compartición de información de ciberseguridad e inteligencia entre administraciones públicas.
 
 El artículo 30 establece la posibilidad de implementar **perfiles de cumplimiento específicos** estableciendo una serie de medidas de seguridad en función del nivel de riesgos identificado.
 
@@ -108,7 +108,7 @@ El artículo 30 establece la posibilidad de implementar **perfiles de cumplimien
 
 Auditoría, informe e incidentes de seguridad, establece los requisitos de auditoría de seguridad de la organización, debiendo ejecutarse al menos una vez cada dos años siguiendo criterios y métodos de auditoria reconocidos.
 
-Por su parte, el artículo 32, relativo al **informe del estado de la seguridad,** precisa que este deberá permitir elaborar un perfil general del estado de la seguridad en las entidades.
+Por su parte, el artículo 32, relativo al **informe del estado de la seguridad**, precisa que este deberá permitir elaborar un perfil general del estado de la seguridad en las entidades.
 
 La prevención, detección y respuesta a incidentes de seguridad se define los artículos 33 y 34, indicando la necesidad de existencia de procesos de gestión de incidencias y designando al CCN-CERT como responsable de la coordinación de respuesta a incidencias en el ámbito de las administraciones y organizaciones dentro del alcance del ENS.
 
@@ -135,21 +135,17 @@ El artículo 40 establece la categorización de seguridad en función del impact
 El real decreto se complementa con **cuatro anexos:**
 
 - El **anexo I regula las categorías de seguridad** de los sistemas de información, detallando la secuencia de actuaciones para determinar la categoría de seguridad de un sistema.
-- El **anexo II detalla las medidas de seguridad**.
-
-En particular, este anexo detalla las medidas de seguridad estructuradas en tres grupos:
-
-1. El **marco organizativo,** constituido por el conjunto de medidas relacionadas con la organización global de la seguridad.
-1. El **marco operacional,** formado por las medidas a tomar para proteger la operación del sistema como conjunto integral de componentes para un fin.
-1. las **medidas de protección,** que se centran en proteger activos concretos, según su naturaleza y la calidad exigida por el nivel de seguridad de las dimensiones afectadas.
-
-- El **anexo III** se ocupa del objeto, niveles e interpretación de la **Auditoría de la seguridad** y,
+- El **anexo II detalla las medidas de seguridad**. En particular, este anexo detalla las medidas de seguridad estructuradas en tres grupos:
+  1. El **marco organizativo,** constituido por el conjunto de medidas relacionadas con la organización global de la seguridad.
+  1. El **marco operacional,** formado por las medidas a tomar para proteger la operación del sistema como conjunto integral de componentes para un fin.
+  1. las **medidas de protección,** que se centran en proteger activos concretos, según su naturaleza y la calidad exigida por el nivel de seguridad de las dimensiones afectadas.
+- El **anexo III** se ocupa del objeto, niveles e interpretación de la **auditoría de la seguridad**.
 - El **anexo IV incluye el glosario de términos** y definiciones.
 
 > Además de la legislación vigente consultable en la web del BOE, el CCN ha habilitado una web específica para consultar las novedades del ENS con multitud de materiales e infografías.
-> [Web del ENS CCN-CERT](https://ens.ccn.cni.es/es/ "Accede a la página web específica del ENS ( se abre en ventana nueva)")
+> [Web del ENS CCN-CERT](https://ens.ccn.cni.es/es/)
 > Asimismo, el CCN, proporciona una serie de herramientas que dan soporte en el proceso de cumplimiento del ENS.
-> [Herramientas soporte ENS CCN](https://ens.ccn.cni.es/index.php/es/conformidad-y-cumplimiento "Accede a la web del CCN en el que se proponen herramientas de soporte al cumplimiento del ENS (se abre en ventana nueva)")
+> [Herramientas soporte ENS CCN](https://ens.ccn.cni.es/index.php/es/conformidad-y-cumplimiento)
 {:.prompt-info}
 
 {:.section}
@@ -161,8 +157,8 @@ El Esquema Nacional de seguridad está regulado específicamente por la siguient
 - Resolución de 27 de marzo de 2018, de la Secretaría de Estado de Función Pública, por la que se aprueba la Instrucción Técnica de Seguridad de Auditoría de la Seguridad de los Sistemas deInformación.
 - Resolución de 13 de octubre de 2016, de la Secretaría de Estado de Administraciones Públicas,por la que se aprueba la Instrucción de Seguridad de conformidad con el Esquema Nacional deSeguridad.
 - Resolución de 7 de octubre de 2016, de la Secretaría de Estado de Administraciones Públicas, por la que se aprueba la Instrucción Técnica de Seguridad de Informe del Estado de la Seguridad.
-- Resolución de 13 de abril de 2018, de la Secretaría de Estado de Función Pública, por la que seaprueba la Instrucción Técnica de Seguridad de Notificación de Incidentes de Seguridad.
-- La relación de otra normativa relacionada con la ciberseguridad en España puede consultarseen el Código de Derecho de la Ciberseguridad editado por el BOE.
+- Resolución de 13 de abril de 2018, de la Secretaría de Estado de Función Pública, por la que se aprueba la Instrucción Técnica de Seguridad de Notificación de Incidentes de Seguridad.
+- La relación de otra normativa relacionada con la ciberseguridad en España puede consultarse en el Código de Derecho de la Ciberseguridad editado por el BOE.
 
 ## Bibliografía y contenidos adicionales
 
