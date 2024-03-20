@@ -45,13 +45,15 @@ mruizg_t05.zip
 > El ejemplo de entrega solo es una referencia de entrega, si se necesita eliminar o crear algún fichero o carpeta siéntete libre de hacerlo.
 {:.prompt-info}
 
-## Calificación
+## Calificación y duración
 
 La tarea se calificará con una nota de 0 a 10.
 
-Duración: - horas
+<div class="strawpoll-embed" id="strawpoll_X3nk4X2eBgE" style="max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_X3nk4X2eBgE" src="https://strawpoll.com/embed/X3nk4X2eBgE" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
 
-<div class="strawpoll-embed" id="strawpoll_X3nk4X2eBgE" style="max-height: 320px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_X3nk4X2eBgE" src="https://strawpoll.com/embed/X3nk4X2eBgE" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 ## Actividades
 

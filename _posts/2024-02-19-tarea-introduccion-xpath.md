@@ -19,13 +19,19 @@ La entrega será en formato **Markdown**. Leer [Entrega y presentación de tarea
 > Esta tarea será utilizada para generar un PDF con XSL-FO.
 {:.prompt-info}
 
-## Calificación
+## Calificación y duración
 
 La tarea se calificará como apto o no apto.
 
-## Duración
+<details class="card mb-2">
+  <summary class="card-header">Duración</summary>
+  <div class="card-body" markdown="1">
 
-<div class="strawpoll-embed" id="strawpoll_YVyPmWKb7nN" style="max-height: 320px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_YVyPmWKb7nN" src="https://strawpoll.com/embed/YVyPmWKb7nN" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+<div class="strawpoll-embed" id="strawpoll_YVyPmWKb7nN" style="max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_YVyPmWKb7nN" src="https://strawpoll.com/embed/YVyPmWKb7nN" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 ## Actividades
 
