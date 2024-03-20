@@ -14,6 +14,10 @@ La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts
 
 La tarea se calificará con una nota de 0 a 10.
 
+## Duración
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMKLLtt-KAC9eUJ_uonBaiQOmE5nAZalExPeDqZKrX2I9qBQ/viewform?embedded=true" width="640" height="419" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+
 ## Actividades
 
 La compañía ACME S.A. se encarga de proveer servicios de telecomunicaciones enfocados en comunicaciones internacionales tanto a particulares como a empresas.
