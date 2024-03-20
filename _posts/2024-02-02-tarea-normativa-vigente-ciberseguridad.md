@@ -14,9 +14,15 @@ La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts
 
 La tarea se calificará con una nota de 0 a 10.
 
-## Duración
+<details class="card mb-2">
+  <summary class="card-header question">Duración</summary>
+  <div class="card-body" markdown="1">
 
-<div class="strawpoll-embed" id="strawpoll_QrgebNd8jZp" style="max-height: 320px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_QrgebNd8jZp" src="https://strawpoll.com/embed/QrgebNd8jZp" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+<div class="strawpoll-embed" id="strawpoll_QrgebNd8jZp" style="max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_QrgebNd8jZp" src="https://strawpoll.com/embed/QrgebNd8jZp" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 ## Actividades
 
