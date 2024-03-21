@@ -22,7 +22,7 @@ Duración: - horas
 
 ## Actividades
 
-Realiza las siguientes actividades
+Descarga el fichero patata.zip y realiza las siguientes actividades:
 
 {:.activity}
 ### (Voluntaria) K-Means en Python paso a paso
