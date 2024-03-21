@@ -48,12 +48,12 @@ Ejecuta el fichero `Ejercicio_K_Means.ipynb`{: .filepath} en tu workspace solven
 
 ¿Cuál es el usuario más cercano a cada centroide?
 
-¿En que grupo se clasifica davidguetta?
+¿En qué grupo se clasifica davidguetta?
 
 > 📸 Haz una captura donde se vea la ejecución de la clasificación.
 {:.prompt-info}
 
-¿En que grupo se clasificaría las siguientes cuentas?
+¿En qué grupo se clasificaría las siguientes cuentas?
 
 ```plaintext
 "pata","49.541828","14.789355","47.688172","28.897527","8.211290","95.1008","8"
@@ -94,7 +94,7 @@ Dados los ficheros `ML_3_1_UnsupervisedLearning_Clustering.ipynb`{: .filepath}, 
 
 Abre el fichero `ClusteringMetrics.ipynb`{: .filepath} y:
 
-1. Explica que otros dos métodos adicionales existen para seleccionar el número correcto de clústers. ¿En qué consisten? Busca información al respecto.
+1. Explica que otros dos métodos adicionales existen para seleccionar el número correcto de clusters. ¿En qué consisten? Busca información al respecto.
 1. ¿Qué otros algoritmos de clustering existen al margen del clásico K-means? Busca 2 y descríbelos.
 
 {:.activity}

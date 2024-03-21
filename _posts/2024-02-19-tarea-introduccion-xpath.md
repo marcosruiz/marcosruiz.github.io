@@ -37,7 +37,7 @@ La tarea se calificará como apto o no apto.
 
 Realiza las siguientes actividades.
 
-> Para hacer estos ejercicios puedes utilizar la página [Code Beauty - XPath Tester](https://codebeautify.org/Xpath-Tester). Otra opción es [XPather](http://xpather.com/) que aunque no soporta algunas consultas es más visual y mejor a la hora de aprender y hacer pruebas.
+> Para hacer estos ejercicios se recomienda utilizar la página [Code Beautify - XPath Tester](https://codebeautify.org/Xpath-Tester). Otra opción es [XPather](http://xpather.com/) que aunque no soporta algunas consultas es más visual y mejor a la hora de empezar a usar XPath.
 {:.prompt-info}
 
 ### Actividad 1
