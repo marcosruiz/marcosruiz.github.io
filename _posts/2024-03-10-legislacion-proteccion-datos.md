@@ -61,7 +61,7 @@ Por lo general, el tratamiento de estos datos esta prohibido, salvo en los sigui
 ### Legislación vigente
 
 - **El Reglamento General de Protección de Datos (RGPD)** es el reglamento europeo relativo a la protección de las personas físicas en lo que respecta al tratamiento de sus datos personales y a la libre circulación de estos datos. Entró en vigor el 24 de mayo de 2016 y fue de aplicación el 25 de mayo de 2018.
-- **La Ley Orgánica de Protección de Datos** es la adaptación española del reglamento europeo. Fue aprobada el 5 de diciembre de 2018 como Ley Orgánica 3/2018, de Protección de Datos y Garantía de los Derechos Digitales (LOPDGDD). Aunque en esencia es muy similar al RGPD Europeo, incluye artículos adicionales dentro de los epígrafes de Garantía de los Derechos Digitales, tales como el derecho de Desconexión Digital.
+- **La Ley Orgánica de Protección de Datos** es la adaptación española del reglamento europeo. Fue aprobada el 5 de diciembre de 2018 como Ley Orgánica 3/2018, de Protección de Datos y Garantía de los Derechos Digitales (LOPD-GDD). Aunque en esencia es muy similar al RGPD Europeo, incluye artículos adicionales dentro de los epígrafes de Garantía de los Derechos Digitales, tales como el derecho de Desconexión Digital.
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es un reglamento?</summary>
@@ -164,7 +164,7 @@ Las **asociaciones sectoriales** o cualquier organización que agrupe entidades 
 
 Uno de los requisitos del RGPD es el mantenimiento de un **registro de actividades de tratamiento de la información que almacena la organización**. Este registro, debe ser puesto en manos de un auditor de la AEPD en caso de que así lo requiera como información mínima que evidencie el cumplimiento del reglamento.
 
-El RGPD y la LOPDGDD exigen que el registro **contenga como mínimo** la siguiente información:
+El RGPD y la LOPD-GDD exigen que el registro **contenga como mínimo** la siguiente información:
 
 - El nombre y los datos de contacto del responsable y, en su caso, del corresponsable, del representante del responsable, y del delegado de protección de datos.
 - Las finalidades de tratamiento.
@@ -346,7 +346,7 @@ En este epígrafe se detallará el régimen sancionador por incumplimiento de pr
 
 En este sentido, se debe diferenciar la cuantía de las multas según lo definido en el RGPD que las que están especificadas en la nueva LOPD-GDD. El reglamento europeo es más abstracto en cuanto a la especificidad de los incumplimientos y la graduación de su cuantía, mientras que la LOPD-GDD lo especifica de manera más pormenorizada.
 
-La cuantía de las sanciones por protección de datos que tanto el RGPD como la LOPDGDD imponen, se valora según los derechos personales afectados, los beneficios obtenidos, la posible reincidencia, la intencionalidad y cualquier circunstancia que sea relevante para determinar la culpabilidad.
+La cuantía de las sanciones por protección de datos que tanto el RGPD como la LOPD-GDD imponen, se valora según los derechos personales afectados, los beneficios obtenidos, la posible reincidencia, la intencionalidad y cualquier circunstancia que sea relevante para determinar la culpabilidad.
 
 ![Regimen sancionador RGPD](regimenSancionadorRgpd.png)
 _Regimen sancionador RGPD_
@@ -362,7 +362,16 @@ _Sanciones RGPD (2 años en vigor)_
 ![Sanciones RGPD (3 años en vigor)](sancionesRgpd2.png)
 _Sanciones RGPD (3 años en vigor)_
 
+> Puedes leer el artículo del confidencial [Multa récord de la AEPD a Vodafone: 8M de euros por saltarse varias normativas](https://www.elconfidencial.com/tecnologia/2021-03-12/aepd-vodafone-multa-millonaria-record-rgpd_2988888/)
+{:.prompt-info}
+
+{:.subsection}
+### Tipos de infracciones de la LOPD-GDD
+
 En caso de la **LOPD-GDD española, las infracciones** por protección de datos se dividen en leves, graves y muy graves.
+
+La LOPD-GDD NO establece ninguna cuantía en las sanciones pero sí categoriza las infracciones a efectos de determinar los plazos de prescripción. Si quieres saber más sobre la relación que existe entre la RGPD y la LOPD-GDD puedes leer el artículo [Cuestiones básicas sobre la LOPD](/posts/cuestiones-lopd).
+{:.prompt-info}
 
 Son consideradas infracciones **leves**, las siguientes:
 
@@ -372,7 +381,7 @@ Son consideradas infracciones **leves**, las siguientes:
 - No atender los derechos de acceso, rectificación, supresión, limitación del tratamiento o portabilidad de los datos cuando no se requiera la identificación del afectado.
 - No cumplir con la obligación de notificación relativa a la rectificación o supresión de datos personales o la limitación del tratamiento que exige el artículo 19 del RGPD.
 - No cumplir con la obligación de informar al afectado de los destinatarios a los que se haya comunicado la rectificación, supresión o limitación del tratamiento.
-- No cumplir con la supresión de datos referidos a una persona fallecida cuando así lo exige el artículo 3 de la LOPDGDD.
+- No cumplir con la supresión de datos referidos a una persona fallecida cuando así lo exige el artículo 3 de la LOPD-GDD.
 - Incumplimiento de las obligaciones de los responsables y encargados del tratamiento.
 - Que el registro de actividades de tratamiento no contenga toda la información que exige el artículo 30 del RGPD.
 - Informar tarde o de forma incompleta a la AEPD de una brecha de seguridad.
@@ -397,8 +406,8 @@ Son consideradas infracciones **graves**, las siguientes:
 - Contratación por parte del encargado del tratamiento de otros encargados sin contar con la autorización del responsable.
 - Infracción de lo dispuesto en el artículo 28.10 del RGPD respeto a la determinación de los fines y los medios de tratamiento por parte del encargado.
 - No disponer del registro de actividades.
-- No cooperar con la AEPD u otras autoridades de control en el desempeño de sus funciones en los supuestos no previstos en el artículo 72 de la LOPDGDD.
-- El tratamiento de datos personales sin cumplir con lo recogido en el artículo 28 de la LOPDGDD.
+- No cooperar con la AEPD u otras autoridades de control en el desempeño de sus funciones en los supuestos no previstos en el artículo 72 de la LOPD-GDD.
+- El tratamiento de datos personales sin cumplir con lo recogido en el artículo 28 de la LOPD-GDD.
 - Incumplir el deber de informar de las violaciones de seguridad por parte del encargado del tratamiento al responsable.
 - No informar de las violaciones de seguridad a la AEPD, según el artículo 33 del RGPD.
 - No informar al afectado de una violación de seguridad de datos personales.
@@ -415,17 +424,22 @@ Son consideradas infracciones **muy graves**, las siguientes:
 - Trata datos personales sin la legitimación establecida en el artículo 6 del RGPD.
 - No cumplir con los requisitos exigidos en el artículo 7 del RGPD para la validez del consentimiento.
 - Utilizar los datos personales recogidos con una finalidad diferente para la que se dio el consentimiento.
-- Trata datos personales de las categorías recogidas en el artículo 9 del RGPD sin que concurra alguna de las circunstancias previstas de dicho artículo y del artículo 9 de la LOPDGDD.
-- Tratar datos personales relativos a condenas e infracciones penales o medidas de seguridad conexas fuera de los supuestos del artículo 10 del RGPD y el artículo 10 de la LOPDGDD.
+- Trata datos personales de las categorías recogidas en el artículo 9 del RGPD sin que concurra alguna de las circunstancias previstas de dicho artículo y del artículo 9 de la LOPD-GDD.
+- Tratar datos personales relativos a condenas e infracciones penales o medidas de seguridad conexas fuera de los supuestos del artículo 10 del RGPD y el artículo 10 de la LOPD-GDD.
 
 {:.question}
 ¿La LOPD establece sanciones por incumplimiento?
 
-> [HOJA DE RUTA BÁSICA PARA EL CUMPLIMIENTO DE LA RGPD Y LOPDGDD](/assets/img/legislacion-proteccion-datos/hoja-de-ruta.pdf)
+> Puedes descargar la [Hoja de ruta básica para el cumplimiento de la RGPD y LOPD-GDD de la AEPD](/assets/img/legislacion-proteccion-datos/hoja-de-ruta.pdf)
 {:.prompt-info}
 
 {:.section}
 ## Privacidad por diseño y por defecto
+
+> Recursos adicionales:
+> - [Privacidad por defecto y desde el diseño: PREVENSYSTEM](https://www.prevensystem.com/internacional/807/noticia-privacidad-desde-el-diseo-y-por-defecto.html)
+> - [Privacidad desde el diseño: GRUPO ATICO34](https://protecciondatos-lopd.com/empresas/privacy-by-design/)
+{:.prompt-info}
 
 La privacidad desde el diseño y por defecto se trata de establecer un proceso a través del cual se **consideren los riesgos en privacidad** de un proceso o un sistema de tal manera que **durante su construcción** se apliquen las medidas técnicas y organizativas necesarias para garantizar la  privacidad de la información de carácter personal antes de su tratamiento.
 
@@ -583,16 +597,14 @@ Sus **funciones** son:
 - Proponer y supervisar la ejecución de Evaluaciones de Impacto de Protección de Datos.
 - Punto de contacto para las Agencias de Protección de Datos.
 
-## Bibliografía y contenidos adicionales
+> [RGPD y DPOs: ACCID Congress – Barcelona 2019: Miguel Reboiro](https://accid.org/wp-content/uploads/2019/06/VIII-Congr%C3%A9s-ACCID-GRUPO-LAE-Miguel-Reboiro.pdf)
+{:.prompt-info}
 
+## Bibliografía
+
+- [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - [LOPD-GDD](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673&tn=1&p=20230509)
 - [RGPD](https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-80807)
-- [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - <https://www.aepd.es/guias-y-herramientas/herramientas/facilita-rgpd>
 - [Presentación sobre el Reglamento General de Protección de datos: Natalia Olivares – Alaro Avant](http://www.iisgm.com/wp-content/uploads/2013/08/100320-Seminario-RGPD-FIBHGM.pdf)
 - [Protección de datos – Fundación EDE](https://www.ehige.eus/wp-content/uploads/2019/02/ProteccionDatosBIGE-ADAKA.pdf)
-- [La nueva LOPD – Elzaburu](https://www.elzaburu.es/wp-content/uploads/2019/01/ELZABURU-191207-Dosier-LOPD_Elzaburu-e.pdf)
-- [ACCID Congress – Barcelona 2019: Miguel Reboiro](https://accid.org/wp-content/uploads/2019/06/VIII-Congr%C3%A9s-ACCID-GRUPO-LAE-Miguel-Reboiro.pdf)
-- [Privacidad por defecto y desde el diseño: PREVENSYSTEM](https://www.prevensystem.com/internacional/807/noticia-privacidad-desde-el-diseo-y-por-defecto.html)
-- [Privacidad desde el diseño: GRUPO ATICO34](https://protecciondatos-lopd.com/empresas/privacy-by-design/)
-- <https://www.elconfidencial.com/tecnologia/2021-03-12/aepd-vodafone-multa-millonaria-record-rgpd_2988888/>
