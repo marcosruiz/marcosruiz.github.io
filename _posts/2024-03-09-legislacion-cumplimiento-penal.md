@@ -82,9 +82,7 @@ Para el sector de construcción, por ejemplo, se identificarán estos otros ries
 ![Riesgos penales de construcción](riesgosPenalesColnstruccion.png)
 _Riesgos penales de construcción_
 
-> La Confederación Canaria de Empresarios, ha construido dos documentos muy detallados acerca del compliance penal y los riesgos asociados al mismo, es muy recomendable echarle un vistazo a estos documentos ya que amplían la información proporcionada en la unidad con un sentido práctico.
-> - [Guía de compliance para pymes](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/Pasos-practicos-para-la-implementacion-de-un-Sistema-de-Gestion-en-Cumplimiento-Penal-para-Pymes.pdf)
-> - [Pasos prácticos para la implementación de un sistema de gestión en cumplimiento penal para pymes](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/Pasos-practicos-para-la-implementacion-de-un-Sistema-de-Gestion-en-Cumplimiento-Penal-para-Pymes.pdf)
+> La Confederación Canaria de Empresarios, ha construido dos documentos muy detallados acerca del compliance penal y los riesgos asociados al mismo, es muy recomendable echarle un vistazo a l documento [Pasos prácticos para la implementación de un sistema de gestión en cumplimiento penal para pymes](/assets/img/legislacion-cumplimiento-penal/Pasos-practicos-para-la-implementacion-de-un-Sistema-de-Gestion-en-Cumplimiento-Penal-para-Pymes.pdf) ya que amplían la información proporcionada en la unidad con un sentido práctico.
 {:.prompt-info}
 
 {:.section}
@@ -195,9 +193,9 @@ El código ético debe **recoger los siguientes elementos:**
 
 A continuación, se presentan ejemplos de organizaciones que han publicado sus códigos éticos:
 
-- [Iberdrola](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/codigo_etico_iberdrola.pdf)
-- [Elecnor](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/codigo_etico_elecnor.pdf )
-- [Deloitte](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/Deloitte-ES-Codigo_Etico.pdf )
+- [Iberdrola](/assets/img/legislacion-cumplimiento-penal/codigo_etico_iberdrola.pdf)
+- [Elecnor](/assets/img/legislacion-cumplimiento-penal/codigo_etico_elecnor.pdf)
+- [Deloitte](/assets/img/legislacion-cumplimiento-penal/Deloitte-ES-Codigo_Etico.pdf)
 
 {:.subsubsection}
 #### Designación de recursos
@@ -426,19 +424,17 @@ Los **requisitos documentales** de la norma ISO 37001 son los siguientes:
 
  A continuación, se proponen dos **ejemplos de manuales de sistemas de gestión antisoborno:**
 
-- [Política antisoborno de T-Systems México](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/DL-TSMX-SGA-MANUAL_antisoborno.pdf)
-- [Portal Antisoborno del Programa nacional de infraestructura educativa de Perú, con información detallada del sistema de gestión antisoborno](https://www.gob.pe/institucion/pronied/campa%C3%B1as/3390-sistema-de-gestion-antisoborno-sgas)
+- [Política antisoborno de T-Systems México](../assets/img/legislacion-cumplimiento-penal/DL-TSMX-SGA-MANUAL_antisoborno.pdf)
+- [Portal Antisoborno del Programa nacional de infraestructura educativa de Perú](https://www.gob.pe/institucion/pronied/campa%C3%B1as/3390-sistema-de-gestion-antisoborno-sgas), con información detallada del sistema de gestión antisoborno.
 
 ## Bibliografía y contenidos adicionales
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - <https://www.aepd.es/informes-y-resoluciones/resoluciones>
 - <https://servicios.aepd.es/AEPD/view/form/MDAwMDAwMDAwMDAwMDUwNjg2MDYxNzEwNzYwMjcwNDUx?updated=true>
-
-- [Implantación de sistemas de cumplimiento penal para pymes - Confederación Canaria de Empresarios](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/Pasos-practicos-para-la-implementacion-de-un-Sistema-de-Gestion-en-Cumplimiento-Penal-para-Pymes.pdf)
-- [Sistemas de gestión de cumplimiento penal - sodercan: Sociedad para el desarrollo regional de Cantabria](https://www.sodercan.es/sistema-de-gestion-de-riesgos-penales/%C2%A0%C2%A0%C2%A0)
-- [Manual del sistema de gestión de riesgo penal de Red Eléctrica de España (REE)](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/REE_manual_sistema_cumplimiento_penal.pdf)
-- [Sistema de gestión de riesgo penal y antisoborno del grupo itinere](https://www.adistanciafparagon.es/pluginfile.php/63308/mod_resource/content/1/U3_legislacionCcumplimientoRespPenal_rev25_08/SGRP_Politica-SGRP-y-Anti-Soborno_2021.pdf)
+- [Sistemas de gestión de cumplimiento penal - sodercan: Sociedad para el desarrollo regional de Cantabria](https://www.sodercan.es/sistema-de-gestion-de-riesgos-penales/)
+- [Manual del sistema de gestión de riesgo penal de Red Eléctrica de España (REE)](/assets/img/legislacion-cumplimiento-penal/REE_manual_sistema_cumplimiento_penal.pdf)
+- [Sistema de gestión de riesgo penal y antisoborno del grupo itinere](/assets/img/legislacion-cumplimiento-penal/SGRP_Politica-SGRP-y-Anti-Soborno_2021.pdf)
 
 Artículos sobre la ISO 37301 y la ISO 37001:
 
@@ -447,7 +443,7 @@ Artículos sobre la ISO 37301 y la ISO 37001:
 - [Asociación Española de Normalización (AENOR) - Certificación antisoborno ISO 37001](https://www.aenor.com/certificacion/compliance-y-buen-gobierno/gestion-antisoborno)
 - [International Organization for Standarization ( ISO) - Extracto de norma ISO 37001](https://www.iso.org/obp/ui#iso:std:iso:37001:ed-1:v1:es)
 - [SIGE - ISO 37001 Sistema de gestión antisoborno](https://www.sige.org.mx/servicios/iso-37001-gestion-antisoborno/)
-- [TUV  - Implantacion de un sistema antisoborno basado en ISO 37001](https://www.tuvsud.com/es-es/servicios/sostenibilidad/soluciones-sostenibilidad-buen-gobierno/buen-gobierno/une-iso-37001-sistemas-gestion-anti-soborno) 
+- [TUV  - Implantacion de un sistema antisoborno basado en ISO 37001](https://www.tuvsud.com/es-es/servicios/sostenibilidad/soluciones-sostenibilidad-buen-gobierno/buen-gobierno/une-iso-37001-sistemas-gestion-anti-soborno)
 - [Isotools - ¿Que supone la ISO 37001 en la lucha contra el fraude?](https://www.isotools.org/2017/02/09/supone-la-norma-iso-37001-la-lucha-soborno/)
 - Compliance antisoborno: [Los controles financieros en un sistema antisoborno](https://www.compliance-antisoborno.com/los-controles-financieros-en-un-sistema-antisoborno/) y [Norma ISO 37001](https://www.compliance-antisoborno.com/iso-37001/)
 - [Global trust association - Principales controles antisoborno](https://globaltrustassociation.org/es/cuales-son-los-principales-controles-antisoborno-que-plantea-la-norma-iso-37001/)

@@ -226,7 +226,7 @@ Con carácter general **el estándar utilizado implicará:**
 {:.subsection}
 ### Las brechas de Seguridad
 
-Una **brecha de seguridad es un incidente de seguridad que afecta a datos de carácter personal.** Este incidente puede tener un origen accidental o intencionado y además puede afectar a datos tratados digitalmente o en formato papel. En general, se trata de un suceso que ocasione **destrucción, pérdida, alteración, comunicación o acceso no autorizado a datos personales.**
+Una **brecha de seguridad es un incidente de seguridad que afecta a datos de carácter personal.** Este incidente puede tener un origen accidental o intencionado y además puede afectar a datos tratados digitalmente o en formato papel. En general, se trata de un suceso que ocasione **destrucción, pérdida, alteración, comunicación o acceso no autorizado a datos personales**.
 
 Una brecha de datos personales puede tener una serie de efectos adversos considerables en las personas, susceptibles de ocasionar daños y perjuicios físicos, materiales o inmateriales; por lo que hay que intentar evitarlas y en caso de que sucedan gestionarlas adecuadamente, especialmente cuando puedan poner en riesgo los derechos y libertades de las personas físicas.
 
@@ -247,7 +247,7 @@ La notificación a la autoridad de control de una brecha que afecta a datos pers
 
 Sin embargo, en aquellos casos en los que el responsable considere que no existieran riesgos para los derechos y libertades de las personas físicas el responsable tiene la **obligación de documentar cualquier violación de la seguridad** de los datos personales, incluidos los hechos relacionados con ella, sus efectos y las medidas correctivas adoptadas, dicha documentación permitirá a la autoridad de control verificar el cumplimiento de lo dispuesto en el artículo 33 del RGPD.
 
-> La agencia española de protección de datos ha publicado una guía para la notificación  de brechas de datos personales: [Guía para la notificación de brechas de datos](https://www.adistanciafparagon.es/pluginfile.php/63323/mod_resource/content/1/U4_LegislacionMateriaProteccionDatos_25_08/guia-brechas-seguridad.pdf).
+> La agencia española de protección de datos ha publicado una guía para la notificación  de brechas de datos personales: [Guía para la notificación de brechas de datos](/assets/img/legislacion-proteccion-datos/guia-brechas-seguridad.pdf).
 {:.prompt-info}
 
 {:.subsubsection}
@@ -455,7 +455,6 @@ _Privacidad desde el Diseño_
 
 Tradicionalmente la protección de los procesos y sistemas de información se ha basado en el despliegue de medidas de seguridad cuya finalidad se basaba en la cobertura de las principales propiedades de seguridad de la información: confidencialidad, integridad y disponibilidad. La minimización de riesgos en privacidad implica una serie de **objetivos nuevos** distintos pero complementarios a los de la seguridad, que cumplen con los principios establecidos en la RGDP, estos son:
 
-
 ![Objetivos de protección de la privacidad desde el diseño](objetivosProteccionPrivacidad.png)
 _Objetivos de protección de la privacidad desde el diseño_
 
@@ -507,7 +506,7 @@ El reglamento establece **cuando es necesario llevar a cabo un análisis de impa
 - La duración o permanencia de la actividad de tratamiento.
 - La extensión geográfica de la actividad de tratamiento.
 
-> La agencia española de protección de datos ha desarrollado una guía para la evaluación de impacto y el análisis de riesgo en privacidad. Es consultable en el siguiente enlace: [Guía para la evaluación de impacto y análisis de riesgos en privacidad](https://www.adistanciafparagon.es/pluginfile.php/63323/mod_resource/content/1/U4_LegislacionMateriaProteccionDatos_25_08/gestion-riesgo-y-evaluacion-impacto-en-tratamientos-datos-personales.pdf)
+> La agencia española de protección de datos ha desarrollado una guía para la evaluación de impacto y el análisis de riesgo en privacidad. Es consultable en el siguiente enlace: [Guía para la evaluación de impacto y análisis de riesgos en privacidad](/assets/img/legislacion-proteccion-datos/gestion-riesgo-y-evaluacion-impacto-en-tratamientos-datos-personales.pdf)
 {:.prompt-info}
 
 La evaluación de impacto de la protección de datos (EIPD) debe ser realizada en base a una metodología que tenga en cuenta los requerimientos establecidos por el RGPD. Los **análisis de impacto deben incluir al menos lo siguientes contenidos**:
