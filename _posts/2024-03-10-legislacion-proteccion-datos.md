@@ -73,6 +73,35 @@ Los reglamentos son actos legislativos vinculantes. Deben aplicarse en su integr
   </div>
 </details>
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Cómo afectó la RGPD al resto de leyes?</summary>
+  <div class="card-body" markdown="1">
+
+- Derogó la Directiva 95/46/CE de protección de datos.
+- Sustituyó en aquello que lo contradiga a la LOPD y al RLOPD.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+{:.question}
+¿A quién afecta el RGPD?
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Dónde NO aplica la RGPD?</summary>
+  <div class="card-body" markdown="1">
+
+- Tratamiento de datos por Estados Miembros en el ejercicio de actividades relacionadas con el SEBC (Sistema Europeo de Bancos Centrales).
+- Tratamiento de datos por autoridades competentes para los fines de prevención, investigación, detección o enjuiciamiento de infracciones penales, o de ejecución de sanciones penales, incluida la protección frente amenazas a la seguridad pública.
+- Persona física en el ejercicio de actividades exclusivamente personales o domésticas. Sin embargo se aplica el Reglamento a los responsables de tratamiento que proporcionen los medios para tratar datos personales para actividades personales o domésticas (p.e. Facebook).
+- Tratamiento de datos de personas fallecidas. 
+- Cuestiones de protección de los derechos y libertades fundamentales o la libre circulación de datos personales relacionadas con actividades excluidas del ámbito del derecho de la Unión Europea (p.ej., Actividades relativas a la Seguridad Nacional).
+- Tratamiento de datos personales relativos a personas jurídicas, incluido el nombre y la forma de la persona jurídica
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 {:.subsection}
 ### Principios de protección de datos
 
