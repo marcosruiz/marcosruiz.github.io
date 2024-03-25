@@ -424,7 +424,7 @@ Los **requisitos documentales** de la norma ISO 37001 son los siguientes:
 
  A continuación, se proponen dos **ejemplos de manuales de sistemas de gestión antisoborno:**
 
-- [Política antisoborno de T-Systems México](../assets/img/legislacion-cumplimiento-penal/DL-TSMX-SGA-MANUAL_antisoborno.pdf)
+- [Política antisoborno de T-Systems México](/assets/img/legislacion-cumplimiento-penal/DL-TSMX-SGA-MANUAL_antisoborno.pdf)
 - [Portal Antisoborno del Programa nacional de infraestructura educativa de Perú](https://www.gob.pe/institucion/pronied/campa%C3%B1as/3390-sistema-de-gestion-antisoborno-sgas), con información detallada del sistema de gestión antisoborno.
 
 ## Bibliografía y contenidos adicionales
