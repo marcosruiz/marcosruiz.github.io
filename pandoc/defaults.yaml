@@ -1,0 +1,6 @@
+listings: true
+shift-heading-level-by: -1
+number-sections: true
+resource-path: ["/data/assets/img/tarea-xsl"]
+template: "eisvogel2"
+# lua-filter: "/data/pandoc/filter.lua"
