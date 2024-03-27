@@ -107,8 +107,18 @@ function RemoveFilepaths(el)
 end
 
 -- Filtro para los nombres de los ficheros
-function ParaFile(el)
-  -- TODO
+function ExtractFilePath(el)
+  -- Si el elemento es un párrafo
+  if el.tag == "Para" then
+    local content = pandoc.utils.stringify(el)
+    -- Buscamos los párrafos que empiezan por "{: file=\"" y terminan con "\" }"
+    local filepath = content:match("{:%s?file=“(.-)”%s?}")
+    -- Si encontramos un filepath, devolvemos un nuevo párrafo con el filepath como contenido
+    if filepath then
+      return pandoc.Para("Fichero: " .. filepath)
+    end
+  end
+  -- Devolvemos el elemento sin cambios si no es un párrafo que cumple con el patrón
   return el
 end
 
@@ -118,5 +128,6 @@ return {
   {Para = ParaSubsection},
   {Para = ParaSubsubsetion},
   {Para = RemovePrompts},
-  {Para = RemoveFilepaths}
+  {Para = RemoveFilepaths},
+  {Para = ExtractFilePath}
 }
