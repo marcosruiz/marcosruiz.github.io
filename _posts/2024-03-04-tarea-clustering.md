@@ -7,9 +7,6 @@ img_path: /assets/img/tarea-clustering/
 math: true
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Entrega y presentación
 
 La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
@@ -22,7 +19,7 @@ Duración: - horas
 
 ## Actividades
 
-Descarga el fichero patata.zip y realiza las siguientes actividades:
+Descarga el fichero [enunciado_tarea_clustering.zip](/assets/img/tarea-clustering/enunciado_tarea_clustering.zip) y realiza las siguientes actividades:
 
 {:.activity}
 ### (Voluntaria) K-Means en Python paso a paso
@@ -84,7 +81,7 @@ Con los nuevos centroides, ¿En que grupo se clasificaría las cuentas de davidg
 {:.activity}
 ### ML_3_1_UnsupervisedLearning_Clustering.ipynb
 
-Dados los ficheros `ML_3_1_UnsupervisedLearning_Clustering.ipynb`{: .filepath}, `ClusteringMetrics.ipynb`{: .filepath} y `data_Clustering.csv`{: .filepath}. Responde a las siguientes preguntas:
+Ejecuta el fichero `ML_3_1_UnsupervisedLearning_Clustering.ipynb`{: .filepath} y responde a las siguientes preguntas:
 
 1. ¿Cuáles son algunas de las principales aplicaciones de los algoritmos de clustering?
 1. Describe 2 técnicas para seleccionar el número correcto de clústeres al usar K-Means.
@@ -92,7 +89,7 @@ Dados los ficheros `ML_3_1_UnsupervisedLearning_Clustering.ipynb`{: .filepath}, 
 {:.activity}
 ### ClusteringMetrics.ipynb
 
-Abre el fichero `ClusteringMetrics.ipynb`{: .filepath} y:
+Ejecuta el fichero `ClusteringMetrics.ipynb`{: .filepath} y responde a las siguientes preguntas:
 
 1. Explica que otros dos métodos adicionales existen para seleccionar el número correcto de clusters. ¿En qué consisten? Busca información al respecto.
 1. ¿Qué otros algoritmos de clustering existen al margen del clásico K-means? Busca 2 y descríbelos.

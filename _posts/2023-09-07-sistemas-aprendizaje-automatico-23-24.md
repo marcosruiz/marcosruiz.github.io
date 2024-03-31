@@ -14,6 +14,8 @@ pin: true
 - UD5 - Técnicas avanzadas y evaluación del modelo.
 
 - T05 - Obligatoria - Nota - [Tarea: Pandas, KNN y Regresión Lineal](/posts/tarea-pandas-knn-reg-lineal/)
+- T06 - Obligatoria - Nota - [Tarea: Clustering
+](/posts/tarea-clustering)
 
 - TXX - Obligatoria - Apto/No apto - [Tarea: Tensorflow Playground](/posts/tarea-tensorflow-playground/)
   - [Tutorial: Tensorflow Playground](/posts/tutorial-tensorflow-playground/)
