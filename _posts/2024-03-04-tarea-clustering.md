@@ -4,7 +4,6 @@ date: 2024-03-04 9:00:00 +0100
 categories: [Inteligencia Artificial y Big Data, Sistemas de aprendizaje automático]
 tags: [inteligencia artificial y big data, sistemas de aprendizaje automático]
 img_path: /assets/img/tarea-clustering/
-math: true
 ---
 
 ## Entrega y presentación
