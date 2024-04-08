@@ -143,7 +143,7 @@ Por ello se diseñaron códigos de 8 bits que añadían 128 símbolos más y as�
 
 8 bits siguen siendo insuficientes para codificar todos los alfabetos del planeta, por lo que cada zona usaba su propia tabla ASCII extendida. Ante el caos consiguiente, la ISO decidió normalizar dichas tablas de códigos para conseguir versiones estándares de los mismos. Lo hizo mediante las siguientes normas (cada una de las cuales definía una tabla de 256 caracteres; siempre los 128 primeros son el ASCII original y los siguientes 128 son los que se utilizan para los símbolos de la zona geográfica concreta)
 
-- 8859-1. ASCII extendido para Europa Occidental (incluye símbolos como ñ o β)
+- 8859-1. ASCII extendido para Europa Occidental (incluye símbolos como ñ o $\beta$)
 - 8859-2. ASCII extendido para Europa Central y del Este (incluye símbolos como Ź o č)
 - 8859-3. ASCII extendido para Europa del Sur (incluye símbolos como Ġ o Ï)
 - 8859-4. ASCII extendido para Europa del Norte (incluye símbolos como ø o å)

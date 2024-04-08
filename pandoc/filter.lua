@@ -122,12 +122,38 @@ function ExtractFilePath(el)
   return el
 end
 
+-- Función para eliminar emojis y ciertos caracteres de una cadena de texto
+function RemoveEmojisAndSymbols(text)
+    -- Patrón para detectar emojis Unicode y caracteres específicos
+    local pattern = "[\u{1F000}-\u{1FFFF}\u{0434}\u{0416}]"
+    -- Remover emojis y caracteres del texto
+    local filteredText = string.gsub(text, pattern, "")
+    return filteredText
+end
+
+-- Función para procesar bloques de texto en el filtro
+function RemoveEmojisAndSymbolsPadre(el)
+    -- Verificar si el bloque es de tipo "Para"
+    if el.t == "Para" then
+        -- Obtener el contenido del bloque
+        local contenido = pandoc.utils.stringify(el)
+        -- Filtrar emojis y caracteres del contenido
+        local contenidoFiltrado = RemoveEmojisAndSymbols(contenido)
+        -- Actualizar el contenido del bloque
+        return pandoc.Para(contenidoFiltrado)
+    end
+    -- Devolver el bloque procesado
+    return el
+end
+
+
 return {
   {Para = ParaActivity},
   {Para = ParaSection},
   {Para = ParaSubsection},
-  {Para = ParaSubsubsetion},
+  {Para = ParaSubsubsection},
   {Para = RemovePrompts},
   {Para = RemoveFilepaths},
-  {Para = ExtractFilePath}
+  {Para = ExtractFilePath},
+  {Para = RemoveEmojisAndSymbolsPadre}
 }
