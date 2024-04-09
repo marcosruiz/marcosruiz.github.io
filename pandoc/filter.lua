@@ -174,6 +174,22 @@ function extract_youtube_url(el)
   return el
 end
 
+-- Filtro para borrar el width de las imágenes
+function RemoveWidth(el)
+  -- Si el elemento es un párrafo y contiene "{:.filepath}", lo convertimos en un encabezado
+  if el.tag == "Para" then
+    local content = pandoc.utils.stringify(el)
+    if content:find("{:%s?width.*") then
+      content = content:gsub("{:%s?width.*", "")
+      -- Creamos un nuevo elemento de encabezado con el contenido modificado
+      return pandoc.Para({el.content[1], pandoc.Str(content)})
+    end
+    return el
+  end
+  -- Devolvemos el elemento sin cambios si no es un párrafo
+  return el
+end
+
 return {
   {Para = ParaActivity},
   {Para = ParaSection},
@@ -185,5 +201,6 @@ return {
   {Para = ExtractQuestion},
   {Str = removeEmojis},
   {Str = removeCyrilic},
+  {Para = RemoveWidth},
   {RawBlock = extract_youtube_url}
 }
