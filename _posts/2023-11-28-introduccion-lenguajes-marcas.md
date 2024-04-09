@@ -61,7 +61,7 @@ El código anterior se podría convertir en:
 ![imgDescription](ejemploGml.png)
 _Resultado ejemplo GML_
 
-La idea es que los elementos arcados con símbolos “:” y “.” delimiten marcas de formato. Así :h1. significa título principal y :p. significa párrafo.
+La idea es que los elementos arcados con símbolos “:" y “." delimiten marcas de formato. Así :h1. significa título principal y :p. significa párrafo.
 
 {:.subsection}
 ### SGML
@@ -256,18 +256,18 @@ Actualmente está siendo sustituido en la mayoría de sus usos por JSON.
 Ejemplo de XML:
 
 ```xml
-<?xml version=”1.0” encoding=”UTF-8”?>
+<?xml version="1.0" encoding="UTF-8"?>
 <nombre>Jorge</nombre>
 <apellido1>Sánchez</apellido1>
 <dirección>
-  <calle>C/ Falsa nº 0</calle>
+  <calle>C/ Falsa número 0</calle>
   <localidad>Palencia</localidad>
   <código_Postal>34001</código_Postal>
   <pais>España</pais>
 </direccion>
 <teléfonos>
-  <teléfono tipo=”fijo”>999 999 999</teléfono>
-  <teléfono tipo=”móvil”>666 666 666</teléfono>
+  <teléfono tipo="fijo">999 999 999</teléfono>
+  <teléfono tipo="móvil">666 666 666</teléfono>
 </telefono>
 ```
 

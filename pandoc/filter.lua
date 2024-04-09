@@ -122,30 +122,28 @@ function ExtractFilePath(el)
   return el
 end
 
--- Función para eliminar emojis y ciertos caracteres de una cadena de texto
-function RemoveEmojisAndSymbols(text)
-    -- Patrón para detectar emojis Unicode y caracteres específicos
-    local pattern = "[\u{1F000}-\u{1FFFF}\u{0434}\u{0416}]"
-    -- Remover emojis y caracteres del texto
-    local filteredText = string.gsub(text, pattern, "")
-    return filteredText
-end
-
--- Función para procesar bloques de texto en el filtro
-function RemoveEmojisAndSymbolsPadre(el)
-    -- Verificar si el bloque es de tipo "Para"
-    if el.t == "Para" then
-        -- Obtener el contenido del bloque
-        local contenido = pandoc.utils.stringify(el)
-        -- Filtrar emojis y caracteres del contenido
-        local contenidoFiltrado = RemoveEmojisAndSymbols(contenido)
-        -- Actualizar el contenido del bloque
-        return pandoc.Para(contenidoFiltrado)
+function removeEmojis(el)
+  if el.tag == "Str" then
+    local content = pandoc.utils.stringify(el)
+    local palabras = {"🥳", "📸", "📷", "👏", "😮", "🔥", "🔝", "🙌", "👌", "取", "得", "𐐝"}
+    -- Recorrer la array
+    for i, palabra in ipairs(palabras) do
+      content = content:gsub(palabra, "")
     end
-    -- Devolver el bloque procesado
-    return el
+    return pandoc.Str(content)
+  end
+  return el
 end
 
+function removeCyrilic(el)
+  if el.tag == "Str" then
+    local content = pandoc.utils.stringify(el)
+    local patron = "[дЖ]"
+    content = content:gsub(patron, "")
+    return pandoc.Str(content)
+  end
+  return el
+end
 
 return {
   {Para = ParaActivity},
@@ -155,5 +153,6 @@ return {
   {Para = RemovePrompts},
   {Para = RemoveFilepaths},
   {Para = ExtractFilePath},
-  {Para = RemoveEmojisAndSymbolsPadre}
+  {Str = removeEmojis},
+  {Str = removeCyrilic}
 }

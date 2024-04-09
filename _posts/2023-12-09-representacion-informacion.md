@@ -7,7 +7,7 @@ img_path: /assets/img/representacion-informacion/
 ---
 
 {:.section}
-## Introduccción
+## Introducción
 
 El ordenador es una máquina digital, por lo tanto solo es capaz de representar información utilizando el sistema binario de numeración. Esto obliga a que, para poder almacenar información en un ordenador, previamente haya que codificarla en forma de números binarios.
 
@@ -207,7 +207,7 @@ Aunque UTF-8 es más compleja de procesar, en la actualidad es el claro estánda
 1. Su manipulación es más sencilla que la de los archivos binarios.
 1. Los dispositivos de red y software cliente permiten el paso de archivos de texto ya que no son susceptibles de contener virus informáticos.
 
-{:.subsection}
+{:.section}
 ## Exportar/importar datos
 
 {:.subsection}
