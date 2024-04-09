@@ -1,9 +1,10 @@
 $githubProjectFolder = "C:\Users\marco\Documents\GitHub\marcosruiz.github.io"
 $templateFolder = "C:\Users\marco\Documents\MEGA\CURSO 23 24\Plantillas\Eisvogel"
 
-$routes = "representacion-informacion"
-
 $routes = "css", "dtd", "espacios-de-nombres-xml", "html", "introduccion-lenguajes-marcas", "markdown", "practica-css-codepip", "practica-css-freecodecamp", "practica-css-w3schools", "practica-html", "practica-html-freecodecamp", "practica-html-w3schools", "representacion-informacion", "sindicacion-contenidos", "sistemas-gestion-empresarial", "tarea-calculadora-html-css", "tarea-dtd", "tarea-formato-svg", "tarea-introduccion-odoo", "tarea-introduccion-xpath", "tarea-introduccion-xml", "tarea-introduccion-xquery", "tarea-rss", "tarea-xsd", "tarea-xsl", "xml", "xpath", "xquery", "xsl", "xslfo", "xslt"
+
+$routes = "sistemas-gestion-empresarial"
+
 
 # Iterar sobre cada patrón de archivo
 foreach ($route in $routes) {

@@ -26,7 +26,7 @@ Elige una de las siguientes calculadoras:
 ![Calculadora simple](calculadora1.png)
 _Calculadora simple_
 
-![Calculadora compleja](calculadora2.avif)
+![Calculadora compleja](calculadora2.png)
 _Calculadora compleja_
 
 Y créala (en dos documentos separados, uno HTML y otro CSS) de la manera más similar posible.

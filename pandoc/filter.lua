@@ -122,6 +122,24 @@ function ExtractFilePath(el)
   return el
 end
 
+-- Filtro para clase question
+function ExtractQuestion(el)
+  -- Si el elemento es un párrafo y contiene "{:.filepath}", lo convertimos en un encabezado
+  if el.tag == "Para" then
+    local content = pandoc.utils.stringify(el)
+    -- Si el párrafo contiene "{:.question}", lo convertimos en un encabezado de nivel 2
+    if content:find("{:%s?%.question}") then
+      -- Reemplazamos "{:.question}" con una cadena vacía
+      content = content:gsub("{:%s?%.question}", "Pregunta: ")
+      -- Creamos un nuevo elemento de encabezado con el contenido modificado
+      return pandoc.Para(content)
+    end
+    return el
+  end
+  -- Devolvemos el elemento sin cambios si no es un párrafo
+  return el
+end
+
 function removeEmojis(el)
   if el.tag == "Str" then
     local content = pandoc.utils.stringify(el)
@@ -145,6 +163,17 @@ function removeCyrilic(el)
   return el
 end
 
+function extract_youtube_url(el)
+  if el.tag == "RawBlock" and el.format == "html" then
+    local iframe_src = el.text:match('<iframe [^>]* src="([^"]*)[^>]* title="YouTube video player"')
+    if iframe_src then
+      -- Hasta aqui llega
+      return pandoc.RawBlock("latex", "\\url{" .. iframe_src .. "}")
+    end
+  end
+  return el
+end
+
 return {
   {Para = ParaActivity},
   {Para = ParaSection},
@@ -153,6 +182,8 @@ return {
   {Para = RemovePrompts},
   {Para = RemoveFilepaths},
   {Para = ExtractFilePath},
+  {Para = ExtractQuestion},
   {Str = removeEmojis},
-  {Str = removeCyrilic}
+  {Str = removeCyrilic},
+  {RawBlock = extract_youtube_url}
 }
