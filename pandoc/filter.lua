@@ -185,10 +185,12 @@ function RemoveImageDesc(el)
       -- Ignoramos todo menos la imagen
       local image = el.content[1].src
       local caption = pandoc.utils.stringify(el.content[1])
-      if image:match(".*%.svg") then
-        return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\includesvg{/data' .. img_path .. image .. '}\n\\caption{' .. caption ..'}\n\\end{figure}')
+      if image:match(".*%.gif") then
+        return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\begin{adjustbox}{max width=\\textwidth, max height=\\textheight}\n\\includegraphics{/data' .. img_path .. image:gsub("%..+$", ".png") .. '}\n\\end{adjustbox}\\caption{' .. caption ..'}\n\\end{figure}')
+      elseif image:match(".*%.svg") then
+        return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\begin{adjustbox}{max width=\\textwidth, max height=\\textheight}\n\\includegraphics{/data/' .. img_path .. image:gsub("%..+$", ".pdf") .. '}\n\\end{adjustbox}\\caption{' .. caption ..'}\n\\end{figure}')
       else
-        return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\begin{adjustbox}{max width=\\textwidth}\n\\includegraphics{/data/' .. img_path .. image .. '}\n\\end{adjustbox}\\caption{' .. caption ..'}\n\\end{figure}')
+        return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\begin{adjustbox}{max width=\\textwidth, max height=\\textheight}\n\\includegraphics{/data/' .. img_path .. image .. '}\n\\end{adjustbox}\\caption{' .. caption ..'}\n\\end{figure}')
       end
     end
     return el

@@ -6,9 +6,11 @@ $templateFolder = "C:\Users\marco\Documents\MEGA\CURSO 23 24\Plantillas\Eisvogel
 $githubProjectFolder = "D:\GitHub\marcosruiz.github.io"
 $templateFolder = "C:\Users\marco\MEGA\CURSO 23 24\Plantillas\Eisvogel"
 
-$routes = "css", "dtd", "espacios-de-nombres-xml", "html", "introduccion-lenguajes-marcas", "markdown", "practica-css-codepip", "practica-css-freecodecamp", "practica-css-w3schools", "practica-html", "practica-html-freecodecamp", "practica-html-w3schools", "representacion-informacion", "sindicacion-contenidos", "sistemas-gestion-empresarial", "tarea-calculadora-html-css", "tarea-dtd", "tarea-formato-svg", "tarea-introduccion-odoo", "tarea-introduccion-xpath", "tarea-introduccion-xml", "tarea-introduccion-xquery", "tarea-rss", "tarea-xsd", "tarea-xsl", "xml", "xpath", "xquery", "xsl", "xslfo", "xslt"
+$routesTareas = "tarea-calculadora-html-css", "tarea-dtd", "tarea-formato-svg", "tarea-introduccion-odoo", "tarea-introduccion-xpath", "tarea-introduccion-xml", "tarea-introduccion-xquery", "tarea-rss", "tarea-xsd", "tarea-xsl", "practica-css-w3schools", "practica-html", "practica-html-freecodecamp", "practica-html-w3schools"
 
-$routes = "sindicacion-contenidos"
+$routes = "css", "dtd", "espacios-de-nombres-xml", "html", "introduccion-lenguajes-marcas", "markdown", "practica-css-codepip", "practica-css-freecodecamp", "representacion-informacion", "sindicacion-contenidos", "sistemas-gestion-empresarial", "xml", "xpath", "xquery", "xsl", "xslfo", "xslt"
+
+$routes = "xml"
 
 # Iterar sobre cada patron de archivo
 foreach ($route in $routes) {
