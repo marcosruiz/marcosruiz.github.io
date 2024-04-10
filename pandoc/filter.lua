@@ -188,7 +188,7 @@ function RemoveImageDesc(el)
       if image:match(".*%.svg") then
         return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\includesvg{/data' .. img_path .. image .. '}\n\\caption{' .. caption ..'}\n\\end{figure}')
       else
-        return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\includegraphics{' .. image .. '}\n\\caption{' .. caption ..'}\n\\end{figure}')
+        return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\begin{adjustbox}{max width=\\textwidth}\n\\includegraphics{/data/' .. img_path .. image .. '}\n\\end{adjustbox}\\caption{' .. caption ..'}\n\\end{figure}')
       end
     end
     return el
