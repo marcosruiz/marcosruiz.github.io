@@ -67,7 +67,6 @@ El resultado en Internet Explorer sería el siguiente:
 ![Imagen con Canal RSS suscrito en Internet Explorer](Ejemplo_Canal_RSS.png)
 _Imagen con Canal RSS suscrito en Internet Explorer_
 
-Materiales educativos de la CAM (Uso educativo NC)
 Es decir, se muestra un menú desplegable con las fuentes vinculadas (si la barra correspondiente está activada).
 
 Para que quede más claro, se puede poner un vínculo normal, para el normalmente se utiliza el símbolo de RSS.

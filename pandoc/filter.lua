@@ -1,12 +1,14 @@
+img_path = ""
+
 -- Filtro para clase activity
 function ParaActivity(el)
   -- Si el elemento es un párrafo y contiene "{:.activity}", lo convertimos en un encabezado
   if el.tag == "Para" then
     local content = pandoc.utils.stringify(el)
     -- Si el párrafo contiene "{:.activity}", lo convertimos en un encabezado de nivel 2
-    if content:find("{:%.activity}") then
+    if content:find("{:?%.activity}") then
       -- Reemplazamos "{:.activity}" con una cadena vacía
-      content = content:gsub("{:%.activity} ###", "")
+      content = content:gsub("{:?%.activity} ###", "")
       -- Creamos un nuevo elemento de encabezado con el contenido modificado
       return pandoc.Header(2, content)
     end
@@ -22,9 +24,9 @@ function ParaSection(el)
   if el.tag == "Para" then
     local content = pandoc.utils.stringify(el)
     -- Si el párrafo contiene "{:.section}", lo convertimos en un encabezado de nivel 2
-    if content:find("{:%.section}") then
+    if content:find("{:?%.section}") then
       -- Reemplazamos "{:.section}" con una cadena vacía
-      content = content:gsub("{:%.section} ##", "")
+      content = content:gsub("{:?%.section} ##", "")
       -- Creamos un nuevo elemento de encabezado con el contenido modificado
       return pandoc.Header(1, content)
     end
@@ -40,9 +42,9 @@ function ParaSubsection(el)
   if el.tag == "Para" then
     local content = pandoc.utils.stringify(el)
     -- Si el párrafo contiene "{:.subsection}", lo convertimos en un encabezado de nivel 2
-    if content:find("{:%.subsection}") then
+    if content:find("{:?%.subsection}") then
       -- Reemplazamos "{:.subsection}" con una cadena vacía
-      content = content:gsub("{:%.subsection} ###", "")
+      content = content:gsub("{:?%.subsection} ###", "")
       -- Creamos un nuevo elemento de encabezado con el contenido modificado
       return pandoc.Header(2, content)
     end
@@ -58,9 +60,9 @@ function ParaSubsubsection(el)
   if el.tag == "Para" then
     local content = pandoc.utils.stringify(el)
     -- Si el párrafo contiene "{:.subsubsection}", lo convertimos en un encabezado de nivel 2
-    if content:find("{:%.subsubsection}") then
+    if content:find("{:?%.subsubsection}") then
       -- Reemplazamos "{:.subsubsection}" con una cadena vacía
-      content = content:gsub("{:%.subsubsection} ####", "")
+      content = content:gsub("{:?%.subsubsection} ####", "")
       -- Creamos un nuevo elemento de encabezado con el contenido modificado
       return pandoc.Header(3, content)
     end
@@ -76,9 +78,9 @@ function RemovePrompts(el)
   if el.tag == "Para" then
     local content = pandoc.utils.stringify(el)
     -- Si el párrafo contiene "{:.prompt-.*}", lo convertimos en un encabezado de nivel 2
-    if content:find("{:%s?%.prompt%-.+}") then
+    if content:find("{:?%s?%.prompt%-.+}") then
       -- Reemplazamos "{:.prompt-.*}" con una cadena vacía
-      content = content:gsub("{:%s?%.prompt%-.+}", "")
+      content = content:gsub("{:?%s?%.prompt%-.+}", "")
       -- Creamos un nuevo elemento de encabezado con el contenido modificado
       return pandoc.Para(content)
     end
@@ -94,9 +96,9 @@ function RemoveFilepaths(el)
   if el.tag == "Para" then
     local content = pandoc.utils.stringify(el)
     -- Si el párrafo contiene "{:.filepath}", lo convertimos en un encabezado de nivel 2
-    if content:find("{:%s?%.filepath}") then
+    if content:find("{:?%s?%.filepath}") then
       -- Reemplazamos "{:.filepath}" con una cadena vacía
-      content = content:gsub("{:%s?%.filepath}", "")
+      content = content:gsub("{:?%s?%.filepath}", "")
       -- Creamos un nuevo elemento de encabezado con el contenido modificado
       return pandoc.Para(content)
     end
@@ -112,7 +114,7 @@ function ExtractFilePath(el)
   if el.tag == "Para" then
     local content = pandoc.utils.stringify(el)
     -- Buscamos los párrafos que empiezan por "{: file=\"" y terminan con "\" }"
-    local filepath = content:match("{:%s?file=“(.-)”%s?}")
+    local filepath = content:match("{:?%s?file=“(.-)”%s?}")
     -- Si encontramos un filepath, devolvemos un nuevo párrafo con el filepath como contenido
     if filepath then
       return pandoc.Para("Fichero: " .. filepath)
@@ -128,9 +130,9 @@ function ExtractQuestion(el)
   if el.tag == "Para" then
     local content = pandoc.utils.stringify(el)
     -- Si el párrafo contiene "{:.question}", lo convertimos en un encabezado de nivel 2
-    if content:find("{:%s?%.question}") then
+    if content:find("{:?%s?%.question}") then
       -- Reemplazamos "{:.question}" con una cadena vacía
-      content = content:gsub("{:%s?%.question}", "Pregunta: ")
+      content = content:gsub("{:?%s?%.question}", "Pregunta: ")
       -- Creamos un nuevo elemento de encabezado con el contenido modificado
       return pandoc.Para(content)
     end
@@ -157,7 +159,7 @@ function removeCyrilic(el)
   if el.tag == "Str" then
     local content = pandoc.utils.stringify(el)
     local patron = "[дЖ]"
-    content = content:gsub(patron, "")
+    content = content:gsub(patron, ":cirylicchar:")
     return pandoc.Str(content)
   end
   return el
@@ -175,14 +177,19 @@ function extract_youtube_url(el)
 end
 
 -- Filtro para borrar el width de las imágenes
-function RemoveWidth(el)
+function RemoveImageDesc(el)
   -- Si el elemento es un párrafo y contiene "{:.filepath}", lo convertimos en un encabezado
   if el.tag == "Para" then
     local content = pandoc.utils.stringify(el)
-    if content:find("{:%s?width.*") then
-      content = content:gsub("{:%s?width.*", "")
-      -- Creamos un nuevo elemento de encabezado con el contenido modificado
-      return pandoc.Para({el.content[1], pandoc.Str(content)})
+    if el.content[1].tag == "Image" then
+      -- Ignoramos todo menos la imagen
+      local image = el.content[1].src
+      local caption = pandoc.utils.stringify(el.content[1])
+      if image:match(".*%.svg") then
+        return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\includesvg{' .. img_path .. image .. '}\n\\caption{' .. caption ..'}\n\\end{figure}')
+      else
+        return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\includegraphics{' .. img_path .. image .. '}\n\\caption{' .. caption ..'}\n\\end{figure}')
+      end
     end
     return el
   end
@@ -190,7 +197,16 @@ function RemoveWidth(el)
   return el
 end
 
+-- Función principal del filtro
+function Meta(meta)
+    -- Obtener los argumentos de la línea de comandos pasados al filtro
+    img_path = pandoc.utils.stringify(meta["img_path"])
+    return meta
+end
+
 return {
+  {Meta = Meta},
+  {Para = RemoveImageDesc},
   {Para = ParaActivity},
   {Para = ParaSection},
   {Para = ParaSubsection},
@@ -201,6 +217,5 @@ return {
   {Para = ExtractQuestion},
   {Str = removeEmojis},
   {Str = removeCyrilic},
-  {Para = RemoveWidth},
   {RawBlock = extract_youtube_url}
 }

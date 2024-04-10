@@ -1,5 +1,5 @@
 listings: true
 shift-heading-level-by: -1
 number-sections: true
-template: "eisvogel2"
+template: "eisvogel2.latex"
 # lua-filter: "/data/pandoc/filter.lua" # Hay que meterlo como parámetro en el comando
