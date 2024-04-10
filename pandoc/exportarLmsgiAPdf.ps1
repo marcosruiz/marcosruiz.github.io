@@ -10,7 +10,7 @@ $routesTareas = "tarea-calculadora-html-css", "tarea-dtd", "tarea-formato-svg", 
 
 $routes = "css", "dtd", "espacios-de-nombres-xml", "html", "introduccion-lenguajes-marcas", "markdown", "practica-css-codepip", "practica-css-freecodecamp", "representacion-informacion", "sindicacion-contenidos", "sistemas-gestion-empresarial", "xml", "xpath", "xquery", "xsl", "xslfo", "xslt"
 
-$routes = "xml"
+$routes = "sistemas-gestion-empresarial"
 
 # Iterar sobre cada patron de archivo
 foreach ($route in $routes) {
