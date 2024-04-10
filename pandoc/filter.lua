@@ -186,9 +186,9 @@ function RemoveImageDesc(el)
       local image = el.content[1].src
       local caption = pandoc.utils.stringify(el.content[1])
       if image:match(".*%.svg") then
-        return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\includesvg{' .. img_path .. image .. '}\n\\caption{' .. caption ..'}\n\\end{figure}')
+        return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\includesvg{/data' .. img_path .. image .. '}\n\\caption{' .. caption ..'}\n\\end{figure}')
       else
-        return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\includegraphics{' .. img_path .. image .. '}\n\\caption{' .. caption ..'}\n\\end{figure}')
+        return pandoc.RawBlock('latex', '\\begin{figure}[htbp]\n\\centering\n\\includegraphics{' .. image .. '}\n\\caption{' .. caption ..'}\n\\end{figure}')
       end
     end
     return el
@@ -197,7 +197,7 @@ function RemoveImageDesc(el)
   return el
 end
 
--- Función principal del filtro
+-- Guardamos la variable global img_path
 function Meta(meta)
     -- Obtener los argumentos de la línea de comandos pasados al filtro
     img_path = pandoc.utils.stringify(meta["img_path"])
