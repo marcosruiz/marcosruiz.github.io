@@ -148,7 +148,7 @@ Los responsables de tratamiento de datos estarán obligadas a obtener el consent
 La siguiente infografía muestra los derechos de los propietarios de los datos con respecto a su información:
 
 ![Tabla de derechos de protección de datos](derechosProteccionDeDatos.png)
-_[Tabla de derechos de protección de datos](/assets/img/legislacion-proteccion-datos/cualesSonMisDerechos.pdf)_
+_Tabla de derechos de protección de datos_
 
 {:.question}
 ¿Qué es la [Lista Robinson](https://www.listarobinson.es/)?

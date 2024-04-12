@@ -88,7 +88,7 @@ La función de activación se encarga de devolver una salida a partir de un valo
 
 Se buscan funciones que las derivadas sean simples, para minimizar con ello el coste computacional.
 
-![Funciones de activación](activationFunctions.webp)
+![Funciones de activación](activationFunctions.png)
 _Funciones de activación_
 
 Link muy explicativo sobre los diferentes tipos de funciones de activación: <https://www.diegocalvo.es/funcion-de-activacion-redes-neuronales/>.
