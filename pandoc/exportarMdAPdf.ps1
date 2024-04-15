@@ -1,5 +1,9 @@
+# Script de powershell para generar documentos PDF
+# Este fichero debe ejecutarse en la raiz del proyecto ya que usa rutas relativas en las variables:
+# $githubProjectFolder = "."
+
 # 
-# Quito toda la basura que tenga que ver con  mi Where-Object
+# Función para quitar todo lo que tenga que ver con mi web y de problemas a la hora de generar los PDFs.
 # 
 function generarTemporal {
   param(
@@ -44,17 +48,21 @@ function generarTemporal {
     '(\{\s*):(\s*width=.*\})'                                      = '$1$2'
   }
 
-  # Iterar sobre el contenido y eliminar las líneas que coincidan con los patrones
+  # Iterar sobre el contenido y modificar las líneas que coincidan con los patrones
   foreach ($patron in $patrones.Keys) {
     $contenido = $contenido -replace $patron, $patrones[$patron]
   }
 
-  # Escribir el contenido filtrado de vuelta al archivo
+  # Escribir el contenido filtrado de vuelta a un archivo temporal
   $contenido | Set-Content -Path $tempFileRoute
 
 }
 
+# Aquí empieza el script
+
 $githubProjectFolder = "."
+
+# TODO: debemos definir la variable $routes con el nombre de las rutas que queremos convertir
 
 # Temas LMSGI
 # $routes = "css", "dtd", "espacios-de-nombres-xml", "html", "introduccion-lenguajes-marcas", "markdown", "practica-css-codepip", "practica-css-freecodecamp", "representacion-informacion", "sindicacion-contenidos", "sistemas-gestion-empresarial", "xml", "xpath", "xquery", "xsl", "xslfo", "xslt"
@@ -80,6 +88,7 @@ foreach ($route in $routes) {
 
   $resourcePath = "/data/assets/img/" + $route
 
+  # Recuerda cambiar el ID del contentedor por el que corresponda
   docker exec aaa230b91f7592b6f2e74372eccfc2038caf5c5ebc16865aea3d9ab11ef8923d pandoc "/data/tmp/$($file.Name)" `
     -o "/data/pdf/$($route).pdf" `
     --metadata-file /data/pandoc/metadata.yaml `
