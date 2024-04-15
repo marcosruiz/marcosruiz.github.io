@@ -2,7 +2,7 @@
 title: "Uso de Moodle como profesor"
 date: 2022-10-18 9:00:00 +0100
 categories: [General]
-tags: [gift, moodle, aeducar]
+tags: [gift, moodle, aeducar, profesor, adistanciafp]
 img_path: /assets/img/moodle-profesor/
 ---
 
@@ -152,8 +152,26 @@ Varias respuestas correctas:
 ::Código::[markdown]Pregunta {T}
 ```
 
+```plaintext
+::Código::[markdown]Pregunta {F}
+```
+
 > No se recomienda usar este tipo de preguntas ya que si la pregunta es confusa (y nos damos cuenta tarde) no permite la opción de que "Verdadero" y "Falso" sean opciones correctas al mismo tiempo.
 {:.prompt-info}
+
+```plaintext
+::Código::[markdown]Pregunta {
+  =Verdadero
+  ~Falso
+}
+```
+
+```plaintext
+::Código::[markdown]Pregunta {
+  =Falso
+  ~Verdadero
+}
+```
 
 #### Pregunta de relacionar columnas
 
@@ -303,6 +321,57 @@ La fórmula de la nota final será:
 ```plaintext
 =if(AND([[EV1]]>=5; [[EV2]]>=5); average([[EV1]];[[EV2]]); min([[EV1]];[[EV2]]))
 ```
+
+## Exportación e importación de cuestionarios GIFT
+
+La recomendación es preparar los test bien antes de abrirlos al alumnado. Para ello debemos realizar los siguientes pasos:
+
+1. Exportar preguntas.
+1. Editar preguntas exportadas.
+1. Borrar preguntas de Moodle.
+1. Importar preguntas.
+
+### Exportar preguntas
+
+Para exportar preguntas hay que seguir los siguientes pasos:
+
+1. Ir al banco de preguntas.
+1. En el desplegable superior, seleccionar "Exportar".
+1. Seleccionar "Formato GIFT".
+1. Seleccionar categoría deseada.
+1. Seleccionar "Exportar preguntas a un archivo".
+1. Seleccionar categoría a exportar.
+
+### Editar preguntas exportadas
+
+Una vez exportado podemos abrir el documento con cualquier bloc de notas. Yo uso Visual Studio Code, pero para profesores que no sean de informática recomiendo Sublime Text o Notepad++.
+
+> Recuerda que aunque en el documento exportado cada pregunta esté precedida de un comentario con su ID ( por ejemplo, `// question: 277277 `) esto no tiene efecto alguno en la importación de estas preguntas. Es decir, si exportamos, actualizamos algunas preguntas y reimportamos las preguntas aparecerán duplicadas en lugar de actualizadas.
+{:.prompt-warning}
+
+### Borrar (cambiar de categoría) preguntas de Moodle
+
+Aunque lo que queremos e borrar preguntas antiguas, esto genera ciertos el problema de que las preguntas eliminadas también se exportan por lo que **es mejor cambiar las preguntas de categoría**. A estas categorías y las llamo `OLD - <nombre de la categoría original>`.
+
+Por lo tanto, lo primero que debemos hacer es cambiar de categoría las preguntas viejas de la siguiente manera:
+
+1. Ir al banco de preguntas.
+1. Seleccionar todas las preguntas.
+1. Seleccionar "Con seleccionadas" y "Mover a...".
+1. Seleccionamos una categoría cajón desastre. En mi caso "OLD - Test 05".
+
+### Importar preguntas
+
+1. Ir al banco de preguntas.
+1. En el desplegable superior, seleccionar "Importar".
+1. Seleccionar "Formato GIFT".
+1. En "General" seleccionamos la "Categoría a donde importar". En mi caso "Test 05".
+1. Seleccionamos el archivo.
+1. Hacemos click en "Importar".
+1. Comprobamos que el número de preguntas es el que tiene que ser y hacemos click en "Continuar".
+
+> Recuerda que quizás sea necesario actualizar el cuestionario que use las preguntas de la categoría que has actualizado.
+{:.prompt-info}
 
 ## Bibliografía
 
