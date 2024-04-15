@@ -172,6 +172,9 @@ En la edición del 2013 contaba con un total de 114 controles divididos en 14 do
 - Aspectos de la Seguridad de la Información en la gestión de la continuidad de negocio.
 - Cumplimiento.
 
+> Si quieres profundizar puedes leer los [Controles ISO 27002-2013](/assets/img/normativa-nacional-internacional/ControlesISO27002-2013.pdf).
+{:.prompt-info}
+
 {:.subsubsection}
 #### Actualización ISO 27001 e ISO 27002 versión 2022
 
