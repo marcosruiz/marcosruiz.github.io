@@ -76,13 +76,12 @@ Realiza un análisis de impacto de las tres actividades de tratamiento descritas
 3. Busca en el RGDP el artículo sobre las obligaciones generales del responsable de tratamiento.
 
 {:.activity}
-### Consentimiento y Lista Robinson
-
-#### PARTE I. Consentimiento
+### Consentimiento
 
 Busca al menos 2 ejemplos de consentimientos informados a la hora de realizar un registro. Puedes utilizar un registro en una red social, en una plataforma de compras, una aplicación, etc. No es necesario que completes el registro, solo que analices si el consentimiento cumple los requisitos del RGPD. Adjunta capturas de pantalla para justificar tu explicación.
 
-#### PARTE II. Lista Robinson
+{:.activity}
+### Lista Robinson
 
 Investiga sobre los siguientes aspectos:
 
@@ -110,13 +109,10 @@ En primer lugar, permite una valoración inicial respecto del tratamiento de dat
 Si se adapta a los requisitos se puede utilizar Facilita RGPD.
 En caso contrario sugiere un realizar un análisis de riesgos.
 
-**Paso 1**. Accede a la herramienta y simula una empresa con datos de especial protección, por ejemplo, un hospital. Captura la pantalla con la sugerencia de la propia herramienta.
-
-**Paso 2**. Piensa en una empresa / organización que realice un tratamiento de bajo rasgo. Escribe una breve descripción del cometido de la empresa, así como el tipo de datos personales que necesita para realizarlo. Puede ser una ONG, una pequeña empresa, etc. Si durante el paso 3 quieres modificar / añadir cosas a tu descripción, puedes hacerlo.
-
-**Paso 3**. Accede de nuevo a la herramienta con la mente puesta en tu empresa / organización. Lee atentamente las instrucciones y completa el proceso. Recuerda que una vez finalizada su ejecución, los datos aportados se eliminan, por lo que la Agencia en ningún caso puede conocer la información que haya sido aportada. Entrega el informe resultante.
-
-**Paso 4**. Realiza un breve análisis sobre los resultados del informe.
+- **Paso 1**. Accede a la herramienta y simula una empresa con datos de especial protección, por ejemplo, un hospital. Captura la pantalla con la sugerencia de la propia herramienta.
+- **Paso 2**. Piensa en una empresa / organización que realice un tratamiento de bajo rasgo. Escribe una breve descripción del cometido de la empresa, así como el tipo de datos personales que necesita para realizarlo. Puede ser una ONG, una pequeña empresa, etc. Si durante el paso 3 quieres modificar / añadir cosas a tu descripción, puedes hacerlo.
+- **Paso 3**. Accede de nuevo a la herramienta con la mente puesta en tu empresa / organización. Lee atentamente las instrucciones y completa el proceso. Recuerda que una vez finalizada su ejecución, los datos aportados se eliminan, por lo que la Agencia en ningún caso puede conocer la información que haya sido aportada. Entrega el informe resultante.
+- **Paso 4**. Realiza un breve análisis sobre los resultados del informe.
 
 > El uso de este programa no garantiza el pleno cumplimiento del RGPD.
 {:.prompt-info}

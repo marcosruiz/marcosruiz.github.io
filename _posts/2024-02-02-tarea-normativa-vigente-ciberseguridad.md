@@ -104,13 +104,13 @@ Entra en la web <https://ens.ccn.cni.es/es/> y busca información sobre lo sigui
 
 1. ¿Qué el el CoCENS? ¿Cuáles son sus fines y atribuciones?
 1. ¿Qué es la ENAC?
-1. Busca 5, al menos, 5 entidades de certificación acreditadas.
-1. Busca 5, al menos, 5 entidades certificadas. Por ejemplo, comprueba si lo está el ayuntamiento de tu localidad.
+1. Busca al menos 5 entidades de certificación acreditadas.
+1. Busca al menos 5 entidades certificadas. Por ejemplo, comprueba si lo está el ayuntamiento de tu localidad.
 
 {:.activity}
 ### (Voluntaria) Caso Práctico. Servicio de Licitación Electrónica
 
-Imaginamos un servicio de licitación electrónica de un organismo público. En el proceso de contratación se contemplan las siguientes fases*:
+Imaginamos un servicio de licitación electrónica de un organismo público. En el proceso de contratación se contemplan las siguientes fases:
 
 1. **Anuncio electrónico del concurso**. En esta fase se produce la publicación en el organismo público correspondiente.
 1. **Publicación de pliegos**. En esta fase se publican los pliegos de cláusulas administrativas y prescripciones técnicas del concurso en cuestión.
@@ -128,6 +128,7 @@ En la guía [CCN-STIC 803 - ENS. Valoración de los sistemas](https://www.ccn-ce
 - Para los servicios se considera relevante la dimensión de disponibilidad.
 
 Para facilitar la tarea, identifica cada fase con una única dimensión de seguridad a la hora de hacer el análisis.
+
 Se pide:
 
 1. Para cada fase, establecer la CATEGORÍA de seguridad, en base al análisis de la dimensión elegida. Utiliza la clasificación del ANEXO I del RD 311/2022.
