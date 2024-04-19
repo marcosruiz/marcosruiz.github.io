@@ -182,10 +182,10 @@ Seaborn es otra biblioteca de visualización de datos para Python. Está constru
 Existe la posibilidad de usar Visual Studio Code para ejecutar y editar ficheros IPYNB. En este caso no haremos uso de entornos aislados por lo que podemos tener problemas a la hora de usar los Notebook si estos usan diferentes versiones de Python. Para instalar librerías por terminal, es tan sencillo como lo siguiente:
 
 ```console
-$pip install scikit-learn matplotlib numpy pandas
+$pip install scikit-learn matplotlib numpy pandas keras tensorflow
 ```
 
-Este comando instalará los paquetes de `scikit-learn`, `matplotlib`, `numpy` y `pandas`.
+Este comando instalará los paquetes de `scikit-learn`, `matplotlib`, `numpy`, `pandas`, `keras` y `tensorflow`.
 
 ## Bibliografía
 

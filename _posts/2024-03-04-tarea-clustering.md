@@ -122,7 +122,7 @@ Si no sabes que dataset utilizar, aquí tienes varias:
 1. [Countries Dataset 2020](https://www.kaggle.com/datasets/dumbgeek/countries-dataset-2020?rvi=1) → Encuentra que países son similares a España.
 1. [Wine Dataset for Clustering](https://www.kaggle.com/datasets/harrywang/wine-dataset-for-clustering) → Encuentra cuentos tipos de vinos hay.
 
-> 📸 Haz una o varias capturas de pantalla donde se vea el de lo que has realizado.
+> 📸 Haz una o varias capturas de pantalla donde se vea lo que has realizado.
 {:.prompt-info}
 
 ## Bibliografía

@@ -412,18 +412,30 @@ Generación de predicciones: método `predict`.
 {:.subsection}
 ### Función de pérdida (Loss function)
 
+En las redes neuronales, las funciones de pérdida ayudan a optimizar el rendimiento del  modelo.  Suelen  utilizarse  para  medir  alguna  penalización  en  la  que  incurre  el modelo en sus predicciones, como la desviación de la predicción con respecto a la etiqueta  de  verdad.  Las  funciones  de  pérdida  suelen  ser  diferenciables  en  todo  su dominio  (pero  se  permite  que  el  gradiente  sea  indefinido  sólo  para  puntos  muy concretos, como x = 0, que básicamente se ignora en la práctica). En el bucle de entrenamiento, se diferencian con respecto a los parámetros, y estos gradientes se utilizan para sus pasos de retropropagación y descenso de gradiente para optimizar su modelo en el conjunto de entrenamiento.
+
+Las  funciones  de  pérdida  también  son  ligeramente  diferentes  de  las  métricas. Mientras que las funciones de pérdida pueden indicarnos el rendimiento de nuestro modelo,  puede  que  no  sean  de  interés  directo  o  fácilmente  explicables  por  los humanos.  Aquí  es  donde  entran  en  juego  las  métricas.  Métricas  como  la  precisión son  mucho  más  útiles  para  que  los  humanos  entiendan  el  rendimiento  de  una  red neuronal, aunque no sean buenas opciones para las funciones de pérdida, ya que pueden no ser diferenciables.
+
 Existen diferentes métricas del error según trabajamos con problemas de regresión o clasificación.
 
-Métricas para problemas de regresión:
+Métricas para problemas de regresión y RRNN:
 
-- Error cuadrático medio: $ECM = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$
-- Raíz cuadrada del error cuadrático medio
+- The Mean Absolute Error (Error absoluto medio): $EAM = \frac{1}{n} \sum_{i=1}^{n} abs(y_i - \hat{y}_i)$
+- Mean Squared Error (Error cuadrático medio): $ECM = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$
+- Raíz Cuadrada del Error Cuadrático Medio $RCECM = \frac{1}{n} \sum_{i=1}^{n} \sqrt{(y_i - \hat{y}_i)^2}$
+- Logarithmic Loss: $LogLoss = -\frac{1}{n} \sum_{i=1}^{n} [y_i \log(\hat{y}_i) + (1-y_i) \log(1-\hat{y}_i)]$
+- Accuracy
+
+Métricas para regresiones logísticas cuando tenemos dos clasificaciones:
+
+- Logistic Loss
+- Binary Cross Entropy (Entropía cruzada binaria)
 
 Métricas para problemas de clasificación:
 
-- Logistic Loss
-- Logarithmic Loss: $LogLoss = -\frac{1}{n} \sum_{i=1}^{n} [y_i \log(\hat{y}_i) + (1-y_i) \log(1-\hat{y}_i)]$
-- Accuracy
+- Categorical Cross Entropy (Entropía Cruzada Categórica): Esta función necesita que la salida de la red neuronal sean tantos nodos como 
+categorías hay.
+- Sparse Categorical Cross Entropy (Entropía Cruzada Categórica Dispersa)
 
 {:.subsection}
 ### Descenso del gradiente
