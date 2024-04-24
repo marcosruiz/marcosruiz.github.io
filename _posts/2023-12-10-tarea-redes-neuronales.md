@@ -3,7 +3,7 @@ title: "Tarea: Redes Neuronales"
 date: 2023-12-10 9:00:00 +0100
 categories: [Inteligencia Artificial y Big Data, Sistemas de aprendizaje automático]
 tags: [inteligencia artificial y big data, sistemas de aprendizaje automático]
-img_path: /assets/img/tarea-tensorflow-playground/
+img_path: /assets/img/tarea-redes-neuronales/
 ---
 
 ## Entrega y presentación
@@ -12,11 +12,11 @@ La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts
 
 ## Calificación
 
-La tarea se calificará como apto o no apto.
+La tarea se calificará con una nota de 0 a 10.
 
 ## Actividades
 
-Realiza las siguientes actividades.
+Descarga el fichero [enunciado_redes_neuronales](/assets/img/tarea-redes-neuronales/enunciado_tarea_redes_neuronales.zip) y realiza las siguientes actividades.
 
 > Se ha usado la versión de **Python 3.9.13** para ejecutar los todos los cuadernos ya que la librería de Tensorflow no es compatible con Python 3.11.5. Si no recuerdas como instalar una versión de Python en concreto puedes volver a leer el artículo [Tutorial: Entornos de desarrollo para Aprendizaje Automático](/posts/tutorial-anaconda/).
 {:.prompt-warning}
@@ -24,7 +24,7 @@ Realiza las siguientes actividades.
 {:.activity}
 ### (Voluntaria) Tutorial
 
-Lee el artículo [Tutorial: Tensorflow Playground](/posts/tutorial-tensorflow-playground/) para que esta tarea tenga sentido.
+Lee el artículo [Tutorial: Tensorflow Playground](/posts/tutorial-tensorflow-playground/).
 
 {:.activity}
 ### Experimentación con TensorFlow Playground
@@ -163,16 +163,36 @@ Lee, ejecuta y comprende los ficheros:
 {:.activity}
 ### (Voluntaria) 10_neural_nets_with_keras
 
-Lee, ejecuta y comprende los ficheros:
+En el entorno `holm3`, lee, ejecuta y intenta comprender el fichero `10_neural_nets_with_keras.ipynb`{: .filepath}.
 
+Si quieres que te funcione en tu máquina local sin problema deberás importar el entorno llamado `environment.yml`{: .filepath} de la siguiente manera:
 
+```console
+$conda env create -f environment.yml
+```
+
+Posteriormente puedes activar el entorno de la siguiente manera:
+
+```console
+$conda activate homl3
+```
+
+> Este cuaderno está en inglés.
+{:.prompt-warning}
+
+> Este cuaderno está hecho usando **Python 3.10.14**
+{:.prompt-warning}
 
 {:.activity}
 ### (Voluntaria) 11_training_deep_neural_networks
 
-Lee, ejecuta y comprende los ficheros:
+En el entorno `holm3`, lee, ejecuta e intenta comprender el fichero `11_training_deep_neural_networks.ipynb`{: .filepath}.
 
+> Este cuaderno está en inglés.
+{:.prompt-warning}
 
+> Este cuaderno está hecho usando **Python 3.10.14**
+{:.prompt-warning}
 
 ## Bibliografía
 
