@@ -1,5 +1,5 @@
 ---
-title: "Tarea: Tensorflow Playground"
+title: "Tarea: Redes Neuronales"
 date: 2023-12-10 9:00:00 +0100
 categories: [Inteligencia Artificial y Big Data, Sistemas de aprendizaje automático]
 tags: [inteligencia artificial y big data, sistemas de aprendizaje automático]
@@ -19,7 +19,7 @@ La tarea se calificará como apto o no apto.
 Realiza las siguientes actividades.
 
 > Se ha usado la versión de **Python 3.9.13** para ejecutar los todos los cuadernos ya que la librería de Tensorflow no es compatible con Python 3.11.5. Si no recuerdas como instalar una versión de Python en concreto puedes volver a leer el artículo [Tutorial: Entornos de desarrollo para Aprendizaje Automático](/posts/tutorial-anaconda/).
-{:.prompt-info}
+{:.prompt-warning}
 
 {:.activity}
 ### (Voluntaria) Tutorial
@@ -79,25 +79,47 @@ Lee el artículo [Breve Historia de las Redes Neuronales Artificiales](https://w
 1. ¿Cómo es también llamada la neurona artificial?
 1. ¿Cuántas salidas binarias puede tener un perceptrón?
 1. ¿Qué diferencia hay entre un perceptrón y una neurona sigmoide?
-1. ¿En una red tipo feedforward puede haber bucles?
-1. ¿Para que son buenas las Redes Neuronales Convolucionales?
+1. En una red tipo feedforward ¿puede haber bucles?
+1. ¿Para qué son buenas las Redes Neuronales Convolucionales?
 1. En las redes neuronales convolucionales, ¿de que depende el número de nodos de salida?
-1. Me he quedado en 1997 Long Short Term Memory / Recurrent Neural Network
+1. ¿Para qué se suelen aplicar las redes neuronales LSTM?
+1. ¿Utilizar pesos aleatorios al inicializar las redes es una buena idea?
+1. En las GAN, ¿cuál es la función del generador?
 
 {:.activity}
 ### Aprendizaje Profundo: una Guía rápida
 
 Lee el artículo [Aprendizaje Profundo: una Guía rápida](https://www.aprendemachinelearning.com/aprendizaje-profundo-una-guia-rapida/) y responde a las siguientes preguntas sobre el mismo:
 
+1. ¿Cuántas neuronas hay en la capa de salida del ejemplo?
+1. ¿Qué son los pesos?
+1. ¿Cómo crees que se calcula la función de coste en la última capa?
+1. ¿Cuál es el valor ideal de la función de coste?
+1. ¿Con qué algoritmo se minimiza la función de coste?
+
 {:.activity}
 ### Una sencilla Red Neuronal en Python con Keras y Tensorflow
 
 Lee el artículo [Una sencilla Red Neuronal en Python con Keras y Tensorflow](https://www.aprendemachinelearning.com/una-sencilla-red-neuronal-en-python-con-keras-y-tensorflow/) y responde a las siguientes preguntas sobre el mismo:
 
+1. ¿Por qué usa la puerta lógica XOR para su ejemplo?
+1. ¿Qué funciones de activación conoces a parte de `relu`?
+1. ¿Qué función de pérdida utiliza en el ejemplo?
+1. ¿Se puede guardar una red entrenada?
+1. ¿Tiene sentido utilizar una red neuronal para resolver la tabla de verdad de un XOR?
+
 {:.activity}
-### Crear una Red Neuronal en Python desde cero
+### (Voluntaria) Crear una Red Neuronal en Python desde cero
 
 Lee el artículo [Crear una Red Neuronal en Python desde cero](https://www.aprendemachinelearning.com/crear-una-red-neuronal-en-python-desde-cero/) y responde a las siguientes preguntas sobre el mismo:
+
+1. ¿Qué es el Bias?
+1. ¿Qué significa epoch?
+1. ¿Qué es el learning rate? ¿Cuánto vale el learning rate en código de ejemplo?
+1. ¿Dónde utiliza derivadas y por qué?
+
+> Si quieres saber como se uso esta red neuronal puedes leer el artículo [Programa un coche Arduino con Inteligencia Artificial](https://www.aprendemachinelearning.com/programa-un-coche-arduino-con-inteligencia-artificial/)
+{:.prompt-info}
 
 {:.activity}
 ### ML.4.1.IntroRRNN-MNIST
@@ -117,24 +139,40 @@ Lee, ejecuta y comprende el fichero `Ejemplo_RRNN_convolucionales`{: .filepath}.
 {:.activity}
 ### (Voluntaria) Notebooks de Google
 
-Lee, ejecuta y comprende el fichero `Ejemplo_RRNN_convolucionales`{: .filepath}.
+Lee, ejecuta y comprende los ficheros:
 
+- `1.1-beginner.ipynb`{: .filepath}
+- `1.2-classification.ipynb`{: .filepath}
+- `1.3-csv.ipynb`{: .filepath}
+- `1.4-KerasGuide_sequential_model. ipynb`{: .filepath}
+- `2.1 -advanced.ipynb`{: .filepath}
+- `2.2-basics.ipynb`{: .filepath}
+- `2.3-keras.ipynb`{: .filepath}
+
+> Estos cuadernos están en inglés.
+{:.prompt-warning}
 
 {:.activity}
 ### (Voluntaria) Demos Keras
 
+Lee, ejecuta y comprende los ficheros:
+
+- `demoKeras1.ipynb`{: .filepath}
+- `demoKeras2.ipynb`{: .filepath}
+
 {:.activity}
 ### (Voluntaria) 10_neural_nets_with_keras
+
+Lee, ejecuta y comprende los ficheros:
+
+
 
 {:.activity}
 ### (Voluntaria) 11_training_deep_neural_networks
 
+Lee, ejecuta y comprende los ficheros:
 
 
-{:.activity}
-### (Voluntaria) Programa un coche Arduino con Inteligencia Artificial
-
-Lee el artículo [Programa un coche Arduino con Inteligencia Artificial](https://www.aprendemachinelearning.com/programa-un-coche-arduino-con-inteligencia-artificial/) y responde a las siguientes preguntas sobre el mismo:
 
 ## Bibliografía
 

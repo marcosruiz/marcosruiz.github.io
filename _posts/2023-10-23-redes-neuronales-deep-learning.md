@@ -459,6 +459,17 @@ El gradiente ($\nabla J (\theta)$) se calcula por retropropagación.
 
 Calcula el gradiente de una función de pérdida con respecto a todos los pesos en la red (regla de la cadena) y lo usa para actualizar los pesos para minimizar la función de pérdida.
 
+{:.subsection}
+### Backpropagation
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ilg3gGewQ5U?si=AT2hCYX4ViAHm0I-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tIeHLnjs5U8?si=hI4EdSs64cQ1CpJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eNIqz_noix8?si=YpYuPWoAqvRxxo8F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M5QHwkkHgAA?si=awU9XdJNmIlCY5Yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Bibliografía
 
 - <https://github.com/Avik-Jain/100-Days-Of-ML-Code>
