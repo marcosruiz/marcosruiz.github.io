@@ -79,6 +79,10 @@ Para cambiar sus valores, deberemos recurrir a editar, principalmente, tres arch
 > Recuerda que el símbolo `~` representa la carpeta del usuario actual.
 {:.prompt-info}
 
+## Variables de entorno en OSX (macOS)
+
+OSX es un sistema POSIX al igual que la inmensa mayoría de distribuciones Linux, por lo en gran medida lo expuesto para Linux en este artículo es aplicable a macOS.
+
 ## Bibliografía
 
 - <https://medium.com/@01luisrene/como-agregar-variables-de-entorno-s-o-windows-10-e7f38851f11f>
