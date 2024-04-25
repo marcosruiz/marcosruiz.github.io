@@ -29,6 +29,11 @@ pin: true
 - TXX - Voluntaria - Apto/No apto - [Tarea: Introducción a XQuery](/posts/tarea-introduccion-xquery/)
 - TXX - Voluntaria - Apto/No apto - [Tarea: Introducción a Odoo](/posts/tarea-introduccion-odoo/)
 
+### Material examen Ev2
+
+- DTD, XSD, XPath y XSLT: <https://www.w3schools.com/xml/default.asp>
+- XSL-FO: <https://w3schools.sinsixx.com/xslfo/xslfo_documents.asp.htm>
+
 ## Evaluación 1
 
 - UD01 - Reconocimiento de las características de lenguajes de marcas
@@ -51,6 +56,10 @@ pin: true
 - T07 - Obligatoria - Apto/No apto -[Tarea: CSS en Codepip](/posts/practica-css-codepip/)
 - T08 - Obligatoria - Nota -[Tarea: Calculadora con HTML y CSS](/posts/tarea-calculadora-html-css/)
 - TXX - Voluntaria - Apto/No apto - [Tarea: RSS y Atom](/posts/tarea-rss/)
+
+### Material examen Ev1
+
+- <https://developer.mozilla.org/es/docs/Web>
 
 ## Enlaces increíbles 🔥 (beta)
 

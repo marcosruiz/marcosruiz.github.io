@@ -16,11 +16,10 @@ pin: true
 - T05 - Obligatoria - Nota - [Tarea: Pandas, KNN y Regresión Lineal](/posts/tarea-pandas-knn-reg-lineal/)
 - T06 - Obligatoria - Nota - [Tarea: Clustering
 ](/posts/tarea-clustering)
-
-- TXX - Obligatoria - Apto/No apto - [Tarea: Tensorflow Playground](/posts/tarea-tensorflow-playground/)
+- T07 - Obligatoria - Nota - [Tarea: Redes Neuronales](/posts/tarea-redes-neuronales/)
   - [Tutorial: Tensorflow Playground](/posts/tutorial-tensorflow-playground/)
-- TXX - Voluntaria - Apto/No apto - [Tarea: Tarea: Introducción a BigML](/posts/tarea-introduccion-big-ml/)
-- TXX - Voluntaria - Apto/No apto - [Tarea: Matriz de confusión en BigML](/posts/tarea-matriz-confusion-big-ml)
+- T08 - Voluntaria - Apto/No apto - [Tarea: Tarea: Introducción a BigML](/posts/tarea-introduccion-big-ml/)
+- T09 - Voluntaria - Apto/No apto - [Tarea: Matriz de confusión en BigML](/posts/tarea-matriz-confusion-big-ml)
 
 ## Evaluación 1
 
