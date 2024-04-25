@@ -32,6 +32,7 @@ pin: true
 - T01 - Obligatoria - Apto/No apto - [Tarea: Aplicación de modelos probabilísticos](/posts/tarea-aplicacion-modelos-probabilisticos/)
 - T02 - Obligatoria - Apto/No apto - [Tarea: Algoritmos para el aprendizaje automático](/posts/tarea-algoritmos-aprendizaje-automatico/)
 - T03 - Obligatoria - Apto/No apto - [Tarea: Introducción a Jupyter Notebooks](/posts/tarea-introduccion-jupyter-notebooks/)
+  - [Tutorial: Entornos de desarrollo para Aprendizaje Automático](/posts/tutorial-anaconda/)
 - T04 - Obligatoria - Nota - [Tarea: Álgebra lineal](/posts/tarea-algebra-lineal/)
 
 ## Enlaces increíbles 🔥 (beta)
