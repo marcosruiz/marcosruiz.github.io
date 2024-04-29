@@ -137,7 +137,7 @@ Si es necesario escribir código para responder a alguna pregunta déjalo indica
 Lee, ejecuta y comprende el fichero `Ejemplo_RRNN_convolucionales`{: .filepath}.
 
 {:.activity}
-### (Voluntaria) Notebooks de Google
+### (Voluntaria NO recomendada) Notebooks de Google
 
 Lee, ejecuta y comprende los ficheros:
 
@@ -161,7 +161,7 @@ Lee, ejecuta y comprende los ficheros:
 - `demoKeras2.ipynb`{: .filepath}
 
 {:.activity}
-### (Voluntaria) 10_neural_nets_with_keras
+### (Voluntaria NO recomendada) 10_neural_nets_with_keras
 
 En el entorno `holm3`, lee, ejecuta y intenta comprender el fichero `10_neural_nets_with_keras.ipynb`{: .filepath}.
 
@@ -184,7 +184,7 @@ $conda activate homl3
 {:.prompt-warning}
 
 {:.activity}
-### (Voluntaria) 11_training_deep_neural_networks
+### (Voluntaria NO recomendada) 11_training_deep_neural_networks
 
 En el entorno `holm3`, lee, ejecuta e intenta comprender el fichero `11_training_deep_neural_networks.ipynb`{: .filepath}.
 
