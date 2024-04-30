@@ -26,6 +26,7 @@ pin: true
 - T11 - Obligatoria - Apto/No apto - [Tarea: Introducción a XPath](/posts/tarea-introduccion-xpath/)
   - [¿Qué es Markdown?](/posts/markdown/)
 - T12 - Obligatoria - Nota - [Tarea: XSL](/posts/tarea-xsl/)
+  - [Tutorial: La variable de entorno Path](/posts/variable-entorno-path)
 - T13 - Voluntaria - Apto/No apto - [Tarea: Introducción a XQuery](/posts/tarea-introduccion-xquery/)
 - T14 - Voluntaria - Apto/No apto - [Tarea: Introducción a Odoo](/posts/tarea-introduccion-odoo/)
 
