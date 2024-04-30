@@ -31,6 +31,9 @@ La tarea se calificará como apto o no apto.
 
 Realiza las siguientes actividades.
 
+> Para poder probar las actividades de esta tarea hace falta un programa que pueda ejecutar XQuery. Una de las alternativas es [BaseX](https://basex.org/).
+{:.prompt-info}
+
 {:.activity}
 ### Bailes
 
@@ -189,6 +192,105 @@ Realizar las siguientes consultas XQuery:
 3. Mostrar en una tabla de HTML la cantidad total de libros y precio medio entre todos los libros.
 4. Obtener cuántos libros hay que no disponen de formato digital almacenados en el XML.
 5. Obtener todos los libros con un precio entre 20 y 40, ambos no incluidos, ordenados por el año de forma descendente.
+
+{:.activity}
+### (Voluntaria) Artistas
+
+Sobre los datos del fichero `artistas.xml`{: .filepath}:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<artistas>
+  <artista cod="a101">
+    <nombreCompleto>Diego Velázquez</nombreCompleto>
+    <nacimiento>1599</nacimiento>
+    <fallecimiento>1660</fallecimiento>
+    <pais>España</pais>
+    <fichaCompleta>https://es.wikipedia.org/wiki/Diego_Vel%C3%A1zquez</fichaCompleta>
+  </artista>
+  <artista cod="a102">
+    <nombreCompleto>Michelangelo Caravaggio</nombreCompleto>
+    <nacimiento>1571</nacimiento>
+    <pais>Italia</pais>
+    <fichaCompleta>https://es.wikipedia.org/wiki/Caravaggio</fichaCompleta>
+  </artista>
+  <artista cod="a103">
+    <nombreCompleto>Herrada de Landsberg</nombreCompleto>
+    <nacimiento>1125</nacimiento>
+    <fallecimiento>1195</fallecimiento>
+    <pais>Alsacia</pais>
+    <fichaCompleta>  https://es.wikipedia.org/wiki/Herrada_de_Landsberg</fichaCompleta>
+  </artista>
+  <artista cod="a104">
+    <nombreCompleto>Francisco de Goya</nombreCompleto>
+    <nacimiento>1746</nacimiento>
+    <fallecimiento>1828</fallecimiento>
+    <pais>España</pais>
+    <fichaCompleta>https://es.wikipedia.org/wiki/Francisco_de_Goya</fichaCompleta>
+  </artista>
+</artistas>
+
+```
+{: file="artistas.xml" }
+
+Realizar las siguientes consultas XQuery:
+
+1. Nombre y país de todos los artistas.
+1. El nombre (sin etiquetas) de los artistas que nacieron antes de 1500.
+1. Nombre de los artistas para los que no hay año de fallecimiento.
+1. Una lista HTML con el nombre de los artistas nacidos en España.
+1. El número de artistas nacidos antes de 1600.
+
+{:.activity}
+### (Voluntaria) Impresoras
+
+Sobre los datos del fichero `impresoras.xml`{: .filepath}:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<impresoras xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <impresora numSerie="i245" tipo="láser" compra="2010">
+    <marca>Epson</marca>
+    <modelo>EPL300</modelo>
+    <peso>4.52</peso>
+    <tamaño>A4</tamaño>
+    <tamaño>A5</tamaño>
+    <cartucho>C-123BV</cartucho>
+    <enred/>
+  </impresora>
+  <impresora numSerie="i246" tipo="matricial">
+    <marca>HP</marca>
+    <modelo>LaserJet 2410</modelo>
+    <peso>3.2</peso>
+    <tamaño>A4</tamaño>
+    <cartucho>C-456P</cartucho>
+  </impresora>
+  <impresora numSerie="i247" tipo="matricial">
+    <marca>HP</marca>
+    <modelo>LaserJet 2420</modelo>
+    <peso>3.2</peso>
+    <tamaño>A4</tamaño>
+    <tamaño>A3</tamaño>
+    <cartucho>C-456P</cartucho>
+  </impresora>
+  <impresora numSerie="i248" tipo="matricial">
+    <marca>HP</marca>
+    <modelo>LaserJet 2430</modelo>
+    <peso>3.2</peso>
+    <tamaño>A3</tamaño>
+    <cartucho>C-456P</cartucho>
+  </impresora>
+</impresoras>
+```
+{: file="impresoras.xml" }
+
+Realizar las siguientes consultas XQuery:
+
+1. Modelo de las impresoras de tipo "láser".
+1. Marca y modelo de las impresoras con más de un tamaño .
+1. Marca y modelo de las impresoras con tamaño A3 (pueden tener otros).
+1. Marca y modelo de las impresoras con tamaño A3 como único tamaño .
+1. Modelo de las impresoras en red.
 
 ## Bibliografía
 

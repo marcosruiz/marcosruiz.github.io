@@ -26,8 +26,8 @@ pin: true
 - T11 - Obligatoria - Apto/No apto - [Tarea: Introducción a XPath](/posts/tarea-introduccion-xpath/)
   - [¿Qué es Markdown?](/posts/markdown/)
 - T12 - Obligatoria - Nota - [Tarea: XSL](/posts/tarea-xsl/)
-- TXX - Voluntaria - Apto/No apto - [Tarea: Introducción a XQuery](/posts/tarea-introduccion-xquery/)
-- TXX - Voluntaria - Apto/No apto - [Tarea: Introducción a Odoo](/posts/tarea-introduccion-odoo/)
+- T13 - Voluntaria - Apto/No apto - [Tarea: Introducción a XQuery](/posts/tarea-introduccion-xquery/)
+- T14 - Voluntaria - Apto/No apto - [Tarea: Introducción a Odoo](/posts/tarea-introduccion-odoo/)
 
 ### Material examen Ev2
 
