@@ -154,7 +154,6 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/London
-      - TRANSMISSION_WEB_HOME=/combustion-release/ #optional
       - USER=username #optional
       - PASS=password #optional
       - WHITELIST=iplist #optional
