@@ -6,9 +6,6 @@ tags: [desarrollo de aplicaciones multiplataforma, lenguajes de marcas y sistema
 img_path: /assets/img/tarea-introduccion-xquery/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Entrega y presentación
 
 La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
