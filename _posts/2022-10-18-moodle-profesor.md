@@ -51,17 +51,22 @@ _Configuración de entrega por grupo en Moodle_
 ~ = # { } :
 ```
 
+Estos carácteres escribiendo el `\` delante de ellos.
+
 {:.subsection}
 ### Plantillas
 
-A continuación se ponen plantillas para copiar y pegar de forma rápida
+A continuación se ponen plantillas para copiar y pegar de forma rápida.
+
+> Todo lo que está entre los símbolos `::` y `::` es el nombre corto de la pregunta. En mi caso uso los códigos con el siguiente formato `TXX XX`. Por ejemplo: `T01 02`, sería la pregunta 2 del primer test del curso.
+{:.prompt-info}
 
 #### Pregunta de una opción
 
 Sin restar por respuesta errónea:
 
 ```plaintext
-::Código::[markdown]Pregunta{
+::TXX XX::[markdown]Pregunta{
     =Respuesta
     ~Respuesta
     ~Respuesta
@@ -72,7 +77,7 @@ Sin restar por respuesta errónea:
 Restando el 50% del valor de la pregunta por respuesta errónea:
 
 ```plaintext
-::Código::[markdown]Pregunta{
+::TXX XX::[markdown]Pregunta{
     =Respuesta
     ~%-50%Respuesta
     ~%-50%Respuesta
@@ -85,7 +90,7 @@ Restando el 50% del valor de la pregunta por respuesta errónea:
 Dos respuestas correctas y dos incorrectas:
 
 ```plaintext
-::Código::[markdown]Pregunta{
+::TXX XX::[markdown]Pregunta{
     ~%50%Respuesta
     ~%50%Respuesta
     ~%-50%Respuesta
@@ -96,7 +101,7 @@ Dos respuestas correctas y dos incorrectas:
 Tres respuestas correctas y una incorrecta:
 
 ```plaintext
-::Código::[markdown]Pregunta{
+::TXX XX::[markdown]Pregunta{
     ~%33.33333%Respuesta
     ~%33.33333%Respuesta
     ~%33.33333%Respuesta
@@ -107,7 +112,7 @@ Tres respuestas correctas y una incorrecta:
 Cuatro respuestas correctas:
 
 ```plaintext
-::Código::[markdown]Pregunta{
+::TXX XX::[markdown]Pregunta{
     ~%25%Respuesta
     ~%25%Respuesta
     ~%25%Respuesta
@@ -120,13 +125,13 @@ Cuatro respuestas correctas:
 Respuesta exacta:
 
 ```plaintext
-::Código::[markdown]Pregunta {#5}
+::TXX XX::[markdown]Pregunta {#5}
 ```
 
 Dando un rango de error:
 
 ```plaintext
-::Código::[markdown]Pregunta {#5.2:0.1}
+::TXX XX::[markdown]Pregunta {#5.2:0.1}
 ```
 
 #### Pregunta respuesta texto
@@ -134,13 +139,13 @@ Dando un rango de error:
 Una única respuesta correcta:
 
 ```plaintext
-::Código::[markdown]Pregunta {=respuesta}
+::TXX XX::[markdown]Pregunta {=respuesta}
 ```
 
 Varias respuestas correctas:
 
 ```plaintext
-::Código::[markdown]Pregunta {=respuesta =respuesta2}
+::TXX XX::[markdown]Pregunta {=respuesta =respuesta2}
 ```
 
 > En caso de estas respuestas siempre NO son case sensitive por lo que el alumno podrá escribir "RespUESta" y se la dará como correcta.
@@ -149,25 +154,25 @@ Varias respuestas correctas:
 #### Pregunta de verdadero y falso
 
 ```plaintext
-::Código::[markdown]Pregunta {T}
+::TXX XX::[markdown]Pregunta {T}
 ```
 
 ```plaintext
-::Código::[markdown]Pregunta {F}
+::TXX XX::[markdown]Pregunta {F}
 ```
 
 > No se recomienda usar este tipo de preguntas ya que si la pregunta es confusa (y nos damos cuenta tarde) no permite la opción de que "Verdadero" y "Falso" sean opciones correctas al mismo tiempo.
 {:.prompt-info}
 
 ```plaintext
-::Código::[markdown]Pregunta {
+::TXX XX::[markdown]Pregunta {
   =Verdadero
   ~Falso
 }
 ```
 
 ```plaintext
-::Código::[markdown]Pregunta {
+::TXX XX::[markdown]Pregunta {
   =Falso
   ~Verdadero
 }
@@ -176,7 +181,7 @@ Varias respuestas correctas:
 #### Pregunta de relacionar columnas
 
 ```plaintext
-::Código::[markdown]Pregunta {
+::TXX XX::[markdown]Pregunta {
   =Definición1 -> Término1
   =Definición2 -> Término2
   =Definición3 -> Término3
@@ -304,10 +309,10 @@ Fórmula SIGAD EV1:
 =if([[EV1]]>=5; round([[EV1]];0); floor([[EV1]]))
 ```
 
-La fórmula de la EV2 sería similar a la de la EV1:
+La fórmula de la EV2 es similar a la de la EV1:
 
 ```plaintext
-=if(AND([[ExamenEV2]]>=5;[[Tarea09]]>0;[[Tarea10]]>0;[[Tarea11]]>0;[[Tarea12]]>0;[[Tarea13]]>0); ([[ExamenEV1]]*0,7 + [[TareasObligatoriasEV2]]*0,2 + [[TestsEV2]]*0,1); min(4,99;[[ExamenEV2]]*0,7 + [[TareasObligatoriasEV2]]*0,2 + [[TestsEV2]]*0,1))
+=if(AND([[ExamenEV2]]>=5;[[Tarea09]]>0;[[Tarea10]]>0;[[Tarea11]]>1;[[Tarea12]]>0); ([[ExamenEV2]]*0,7 + [[TareasObligatoriasEV2]]*0,2 + [[TestsEV2]]*0,1); min(4,99;[[ExamenEV2]]*0,7 + [[TareasObligatoriasEV2]]*0,2 + [[TestsEV2]]*0,1))
 ```
 
 Fórmula SIGAD EV2:
@@ -319,7 +324,7 @@ Fórmula SIGAD EV2:
 La fórmula de la nota final será:
 
 ```plaintext
-=if(AND([[EV1]]>=5; [[EV2]]>=5); average([[EV1]];[[EV2]]); min([[EV1]];[[EV2]]))
+=if(AND([[EV1]]>5; [[EV2]]>5); average([[EV1]];[[EV2]]); min(4,99; average([[EV1]];[[EV2]])))
 ```
 
 ## Exportación e importación de cuestionarios GIFT
