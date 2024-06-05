@@ -327,6 +327,18 @@ La fórmula de la nota final será:
 =if(AND([[EV1]]>5; [[EV2]]>5); average([[EV1]];[[EV2]]); min(4,99; average([[EV1]];[[EV2]])))
 ```
 
+La fórmula de la nota final tras J1 será:
+
+```plaintext
+=if(AND(max([[EV1]]; [[ExamenFINALJ1EV1]])>5; max([[EV2]]; [[ExamenFINALJ1EV2]])>5); average(max([[EV1]]; [[ExamenFINALJ1EV1]]);max([[EV2]]; [[ExamenFINALJ1EV2]])); min(4,99; average(max([[EV1]]; [[ExamenFINALJ1EV1]]);max([[EV2]]; [[ExamenFINALJ1EV2]]))))
+```
+
+La fórmula de la nota final tras J2 será:
+
+```plaintext
+=if(AND(max([[EV1]]; [[ExamenFINALJ1EV1]]; [[ExamenFINALJ2EV1]])>5; max([[EV2]]; [[ExamenFINALJ1EV2]]; [[ExamenFINALJ2EV2]])>5); average(max([[EV1]]; [[ExamenFINALJ1EV1]]; [[ExamenFINALJ2EV1]]);max([[EV2]]; [[ExamenFINALJ1EV2]]; [[ExamenFINALJ2EV2]])); min(4,99; average(max([[EV1]]; [[ExamenFINALJ1EV1]]; [[ExamenFINALJ2EV1]]);max([[EV2]]; [[ExamenFINALJ1EV2]]; [[ExamenFINALJ2EV2]]))))
+```
+
 ## Exportación e importación de cuestionarios GIFT
 
 La recomendación es preparar los test bien antes de abrirlos al alumnado. Para ello debemos realizar los siguientes pasos:
