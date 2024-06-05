@@ -7,15 +7,9 @@ img_path: /assets/img/normativa-ciberseguridad-23-24/
 pin: true
 ---
 
-## Evaluación 2
+## Evaluación 0
 
-- UD4 - [Legislación y jurisprudencia en materia de protección de datos](/posts/legislacion-proteccion-datos)
-- UD5 - [Normativa vigente de ciberseguridad de ámbito nacional e internacional](/posts/normativa-nacional-internacional)
-  - [Esquema Nacional de Seguridad](/posts/esquema-nacional-seguridad/)
-  - [Directiva NIS](/posts/directiva-nis/)
-
-- T05 - Voluntaria - Apto/No apto - [Tarea: Legislación sobre protección de datos](/posts/tarea-legislacion-proteccion-datos)
-- T06 - Obligatoria - Nota - [Tarea: Normativa vigente de ciberseguridad](/posts/tarea-normativa-vigente-ciberseguridad/)
+Antes de comenzar con el curso es recomendable que conozcas la mayoría de términos de la seguridad informática como confidencialidad, disponibilidad, integridad,  riesgo, vulnerabilidad, amenaza, etc. Puedes leer el artículo [Conceptos básicos de seguridad informática](https://marcosruiz.github.io/posts/conceptos-basicos-seguridad-informatica/) para repasar dichos conceptos.
 
 ## Evaluación 1
 
@@ -29,11 +23,15 @@ pin: true
 - T03 - Voluntaria - Apto/No apto - [Tarea: Legislación para el cumplimiento de la responsabilidad penal](/posts/tarea-cumplimiento-responsabilidad-penal)
 - T04 - Obligatoria - Nota - Test EV1
 
-## Evaluación 0
+## Evaluación 2
 
-Antes de comenzar con el curso es recomendable que conozcas la mayoría de términos de la seguridad informática como confidencialidad, disponibilidad, integridad,  riesgo, vulnerabilidad, amenaza, etc. Puedes leer el artículo [Conceptos básicos de seguridad informática](https://marcosruiz.github.io/posts/conceptos-basicos-seguridad-informatica/) para repasar dichos conceptos.
+- UD4 - [Legislación y jurisprudencia en materia de protección de datos](/posts/legislacion-proteccion-datos)
+- UD5 - [Normativa vigente de ciberseguridad de ámbito nacional e internacional](/posts/normativa-nacional-internacional)
+  - [Esquema Nacional de Seguridad](/posts/esquema-nacional-seguridad/)
+  - [Directiva NIS](/posts/directiva-nis/)
 
-## Enlaces increíbles 🔥 (beta)
+- T05 - Voluntaria - Apto/No apto - [Tarea: Legislación sobre protección de datos](/posts/tarea-legislacion-proteccion-datos)
+- T06 - Obligatoria - Nota - [Tarea: Normativa vigente de ciberseguridad](/posts/tarea-normativa-vigente-ciberseguridad/)
 
 ## Cursos
 

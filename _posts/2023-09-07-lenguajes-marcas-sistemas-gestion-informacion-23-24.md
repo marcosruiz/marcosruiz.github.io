@@ -7,6 +7,33 @@ img_path: /assets/img/lenguajes-marcas-sistemas-gestion-informacion-23-24/
 pin: true
 ---
 
+## Evaluación 1
+
+- UD01 - Reconocimiento de las características de lenguajes de marcas
+  - [Representación de la información](/posts/representacion-informacion/)
+  - [Introducción a los lenguajes de marcas](/posts/introduccion-lenguajes-marcas)
+  - [XML](/posts/xml/)
+- UD02 - Utilización de lenguajes de marcas en entornos web
+  - [HTML](/posts/html/)
+  - [CSS](/posts/css/)
+- UD03 - Aplicación de los lenguajes de marcas a la sindicación de contenidos
+  - [Sindicación de contenidos](/posts/sindicacion-contenidos/)
+
+- T00 - Voluntaria recomendada - Apto/No apto - [El formato SVG](/posts/tarea-formato-svg/)
+- T01 - Obligatoria - Apto/No apto - [Tarea: Introducción a XML](/posts/tarea-introduccion-xml/)
+- T02 - Obligatoria - Nota - [Tarea: Introducción a HTML](/posts/practica-html/)
+- T03 - Voluntaria recomendada - Apto/No apto - [Tarea: HTML en freeCodeCamp](/posts/practica-html-freecodecamp/)
+- T04 - Voluntaria - Apto/No apto - [Tarea: HTML en W3Schools](/posts/practica-html-w3schools/)
+- T05 - [Tarea: CSS en freeCodeCamp](/posts/practica-css-freecodecamp/)
+- T06 - Voluntaria - Apto/No apto - [Tarea: CSS en W3Schools](/posts/practica-css-w3schools/)
+- T07 - Obligatoria - Apto/No apto -[Tarea: CSS en Codepip](/posts/practica-css-codepip/)
+- T08 - Obligatoria - Nota -[Tarea: Calculadora con HTML y CSS](/posts/tarea-calculadora-html-css/)
+- TXX - Voluntaria - Apto/No apto - [Tarea: RSS y Atom](/posts/tarea-rss/)
+
+### Material examen Ev1
+
+- <https://developer.mozilla.org/es/docs/Web>
+
 ## Evaluación 2
 
 - UD04 - Definición de esquemas y vocabularios en XML
@@ -35,34 +62,7 @@ pin: true
 - DTD, XSD, XPath y XSLT: <https://www.w3schools.com/xml/default.asp>
 - XSL-FO: <https://w3schools.sinsixx.com/xslfo/xslfo_documents.asp.htm>
 
-## Evaluación 1
-
-- UD01 - Reconocimiento de las características de lenguajes de marcas
-  - [Representación de la información](/posts/representacion-informacion/)
-  - [Introducción a los lenguajes de marcas](/posts/introduccion-lenguajes-marcas)
-  - [XML](/posts/xml/)
-- UD02 - Utilización de lenguajes de marcas en entornos web
-  - [HTML](/posts/html/)
-  - [CSS](/posts/css/)
-- UD03 - Aplicación de los lenguajes de marcas a la sindicación de contenidos
-  - [Sindicación de contenidos](/posts/sindicacion-contenidos/)
-
-- T00 - Voluntaria recomendada - Apto/No apto - [El formato SVG](/posts/tarea-formato-svg/)
-- T01 - Obligatoria - Apto/No apto - [Tarea: Introducción a XML](/posts/tarea-introduccion-xml/)
-- T02 - Obligatoria - Nota - [Tarea: Introducción a HTML](/posts/practica-html/)
-- T03 - Voluntaria recomendada - Apto/No apto - [Tarea: HTML en freeCodeCamp](/posts/practica-html-freecodecamp/)
-- T04 - Voluntaria - Apto/No apto - [Tarea: HTML en W3Schools](/posts/practica-html-w3schools/)
-- T05 - [Tarea: CSS en freeCodeCamp](/posts/practica-css-freecodecamp/)
-- T06 - Voluntaria - Apto/No apto - [Tarea: CSS en W3Schools](/posts/practica-css-w3schools/)
-- T07 - Obligatoria - Apto/No apto -[Tarea: CSS en Codepip](/posts/practica-css-codepip/)
-- T08 - Obligatoria - Nota -[Tarea: Calculadora con HTML y CSS](/posts/tarea-calculadora-html-css/)
-- TXX - Voluntaria - Apto/No apto - [Tarea: RSS y Atom](/posts/tarea-rss/)
-
-### Material examen Ev1
-
-- <https://developer.mozilla.org/es/docs/Web>
-
-## Enlaces increíbles 🔥 (beta)
+## Enlaces increíbles 🔥
 
 - <https://www.apuntesfpinformatica.es/apuntes-lmsgi>
 - <https://fp.josedomingo.org/lmgs/>
@@ -74,3 +74,4 @@ pin: true
 - <https://desarrolloweb.com/>
 - <https://beacons.ai/criislopeez>
 - <https://fonts.google.com/icons>
+- <https://www.flaticon.es/>

@@ -7,20 +7,6 @@ img_path: /assets/img/sistemas-aprendizaje-automatico-23-24/
 pin: true
 ---
 
-## Evaluación 2
-
-- UD3 - [Redes neuronales y Deep Learning](/posts/redes-neuronales-deep-learning)
-- UD4 - [Casos prácticos de aplicación](/posts/casos-practicos-sobre-aprendizaje-automatico)
-- UD5 - Técnicas avanzadas y evaluación del modelo.
-
-- T05 - Obligatoria - Nota - [Tarea: Pandas, KNN y Regresión Lineal](/posts/tarea-pandas-knn-reg-lineal/)
-- T06 - Obligatoria - Nota - [Tarea: Clustering
-](/posts/tarea-clustering)
-- T07 - Obligatoria - Nota - [Tarea: Redes Neuronales](/posts/tarea-redes-neuronales/)
-  - [Tutorial: Tensorflow Playground](/posts/tutorial-tensorflow-playground/)
-- T08 - Voluntaria - Apto/No apto - [Tarea: Tarea: Introducción a BigML](/posts/tarea-introduccion-big-ml/)
-- T09 - Voluntaria - Apto/No apto - [Tarea: Matriz de confusión en BigML](/posts/tarea-matriz-confusion-big-ml)
-
 ## Evaluación 1
 
 - UD1 -  [Justificación y antecedentes del Aprendizaje Automático](/posts/introduccion-aprendizaje-automatico)
@@ -34,18 +20,28 @@ pin: true
   - [Tutorial: Entornos de desarrollo para Aprendizaje Automático](/posts/tutorial-anaconda/)
 - T04 - Obligatoria - Nota - [Tarea: Álgebra lineal](/posts/tarea-algebra-lineal/)
 
-## Enlaces increíbles 🔥 (beta)
+## Evaluación 2
 
+- UD3 - [Redes neuronales y Deep Learning](/posts/redes-neuronales-deep-learning)
+- UD4 - [Casos prácticos de aplicación](/posts/casos-practicos-sobre-aprendizaje-automatico)
+- UD5 - Técnicas avanzadas y evaluación del modelo.
+
+- T05 - Obligatoria - Nota - [Tarea: Pandas, KNN y Regresión Lineal](/posts/tarea-pandas-knn-reg-lineal/)
+- T06 - Obligatoria - Nota - [Tarea: Clustering](/posts/tarea-clustering)
+- T07 - Obligatoria - Nota - [Tarea: Redes Neuronales](/posts/tarea-redes-neuronales/)
+  - [Tutorial: Tensorflow Playground](/posts/tutorial-tensorflow-playground/)
+- T08 - Voluntaria - Apto/No apto - [Tarea: Tarea: Introducción a BigML](/posts/tarea-introduccion-big-ml/)
+- T09 - Voluntaria - Apto/No apto - [Tarea: Matriz de confusión en BigML](/posts/tarea-matriz-confusion-big-ml)
+
+## Enlaces de interés
+
+- <https://github.com/ageron/handson-ml3>
+- <https://www.aprendemachinelearning.com/>
 - <https://www.garceta.es/catalogo/libro.php?ISBN=978-84-1903-407-6&idd=12>
-- <https://aitor-medrano.github.io/iabd2223/>
 - <https://playground.tensorflow.org/>
-- <https://www.anaconda.com/>
-- <https://colab.google/>
-
 - <https://home.work.caltech.edu/lectures.html#lectures>
 - <http://cesguiro.es/doku.php?id=clase:ia:saa:start>
-
-- https://learnxinyminutes.com/docs/es-es/python-es/
+- <https://learnxinyminutes.com/docs/es-es/python-es/>
 
 ## Cursos
 
