@@ -24,27 +24,27 @@ tags: []
 
 | Programa                                                                 | GNU Linux | Windows |
 | ------------------------------------------------------------------------ | --------- | ------- |
-| Veyon                                                                    | ❌        | ✅      |
-| [Epoptes](https://epoptes.org/)                                          | ✅        | ❌      |
-| Oracle VM Virtual Box                                                    | ✅        | ✅      |
-| Visual Studio Code                                                       | ✅        | ✅      |
-| Cisco Packet Tracer 6.2  (Redes)                                         | ✅        | ✅      |
-| Wireshark (Redes)                                                        | ✅        | ✅      |
-| CrypTool 2 (Seguridad Informática)                                       | ❌        | ✅      |
-| BlueJ (TIC II)                                                           | ✅        | ✅      |
-| PSeInt (TIC II)                                                          | ✅        | ✅      |
-| PuTTY                                                                    | ❌        | ✅      |
-| WinSCP                                                                   | ❌        | ✅      |
-| OBS Studio                                                               | ✅        | ✅      |
-| [Sublime Text 3](https://www.sublimetext.com/download)                   | ✅        | ✅      |
-| Windows Terminal                                                         | ❌        | ✅      |
-| Subsistema Ubuntu                                                        | ❌        | ✅      |
-| [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) | ❌        | ✅      |
-| CrystalDiskMark                                                          | ❌        | ✅      |
-| WPS Office                                                               | ✅        | ✅      |
-| Vagrant                                                                  | ✅        | ✅      |
-| CristalDiskInfo                                                          | ❌        | ✅      |
-| [Safe Exam Browser](https://safeexambrowser.org/download_en.html)        | ❌        | ✅      |
+| Veyon                                                                    | ❌         | ✅       |
+| [Epoptes](https://epoptes.org/)                                          | ✅         | ❌       |
+| Oracle VM Virtual Box                                                    | ✅         | ✅       |
+| Visual Studio Code                                                       | ✅         | ✅       |
+| Cisco Packet Tracer 6.2  (Redes)                                         | ✅         | ✅       |
+| Wireshark (Redes)                                                        | ✅         | ✅       |
+| CrypTool 2 (Seguridad Informática)                                       | ❌         | ✅       |
+| BlueJ (TIC II)                                                           | ✅         | ✅       |
+| PSeInt (TIC II)                                                          | ✅         | ✅       |
+| PuTTY                                                                    | ❌         | ✅       |
+| WinSCP                                                                   | ❌         | ✅       |
+| OBS Studio                                                               | ✅         | ✅       |
+| [Sublime Text 3](https://www.sublimetext.com/download)                   | ✅         | ✅       |
+| Windows Terminal                                                         | ❌         | ✅       |
+| Subsistema Ubuntu                                                        | ❌         | ✅       |
+| [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) | ❌         | ✅       |
+| CrystalDiskMark                                                          | ❌         | ✅       |
+| WPS Office                                                               | ✅         | ✅       |
+| Vagrant                                                                  | ✅         | ✅       |
+| CristalDiskInfo                                                          | ❌         | ✅       |
+| [Safe Exam Browser](https://safeexambrowser.org/download_en.html)        | ❌         | ✅       |
 
 ## Programas para mi
 
@@ -87,3 +87,5 @@ Otros:
 - <https://1v1.lol/>
 
 ## Bibliografía
+
+- <https://www.wps.com/blog/how-to-disable-annoying-ads-in-wps-office/>
