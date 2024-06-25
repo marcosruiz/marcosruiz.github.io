@@ -390,6 +390,23 @@ Por lo tanto, lo primero que debemos hacer es cambiar de categoría las pregunta
 > Recuerda que quizás sea necesario actualizar el cuestionario que use las preguntas de la categoría que has actualizado.
 {:.prompt-info}
 
+## AutoCrat
+
+```plaintext
+Job name: Corrección Ex. EV2
+Template: LMSGI 23 24 - Plantilla Corrección Examen EV2
+File Name: Ex. EV2 <<APELLIDOS>> <<NOMBRE>>
+File Type: PDF
+Output: Multiple documents
+Run on form trigger: No
+Run on time trigger: No
+Send emails and Share:
+To: <<EMAIL>>
+Subject: Nota LMSGI Examen EV2
+Body: Ya tienes la nota en la plataforma educativa pero te adjunto tu nota desglosada.
+Users can re share: false
+```
+
 ## Bibliografía
 
 - <https://docs.moodle.org/all/es/Formato_GIFT#Caracteres_especiales_.7E_.3D_.23_.7B_.7D>
