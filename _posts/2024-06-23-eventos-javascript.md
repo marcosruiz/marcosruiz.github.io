@@ -153,7 +153,7 @@ Lee el artículo [El método addEventListener](https://lenguajejs.com/javascript
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Es necesario que la función que pasamos como parámetro a la función `addEventListener()` tenga nombre?
+  <summary class="card-header question" markdown="1">¿Es necesario que la función que pasamos como parámetro a la función `addEventListener()` tenga nombre?
 </summary>
   <div class="card-body" markdown="1">
 
@@ -164,7 +164,7 @@ No.
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Se pueden añadir varios listeners utilizando la función `.addEventListener()` sobre el mismo evento de manera sencilla?</summary>
+  <summary class="card-header question" markdown="1">¿Se pueden añadir varios listeners utilizando la función `.addEventListener()` sobre el mismo evento de manera sencilla?</summary>
   <div class="card-body" markdown="1">
 
 Si.
@@ -177,7 +177,7 @@ Si.
 ¿Qué hace el la opción `once` del tercer parámetro de la función `addEventListener()`?
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Se puede borrar una función anónima con `.removeEventListener()`?</summary>
+  <summary class="card-header question" markdown="1">¿Se puede borrar una función anónima con `.removeEventListener()`?</summary>
   <div class="card-body" markdown="1">
 
 Sólo si la hemos guardado en una variable antes de llamar a `addEventListener()`.
@@ -210,7 +210,7 @@ Si.
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Podemos añadir información adicional al crar un objeto Event de la siguiente manera: `const event = new Event("click", { detail: 123 });`?</summary>
+  <summary class="card-header question" markdown="1">¿Podemos añadir información adicional al crear un objeto Event de la siguiente manera: `const event = new Event("click", { detail: 123 });`?</summary>
   <div class="card-body" markdown="1">
 
 No.
@@ -247,7 +247,7 @@ El objeto `KeyboardEvent` .
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Cómo podemos diferenciar entre el 7 de arriba del teclado con el 7 del numpad en un `KeyboardEvent`?</summary>
+  <summary class="card-header question" markdown="1">¿Cómo podemos diferenciar entre el 7 de arriba del teclado con el 7 del numpad en un `KeyboardEvent`?</summary>
   <div class="card-body" markdown="1">
 
 Mediante la propiedad `location`.
@@ -257,7 +257,7 @@ Mediante la propiedad `location`.
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Esta el evento "keycode" obsoleto?</summary>
+  <summary class="card-header question">¿Está el evento "keycode" obsoleto?</summary>
   <div class="card-body" markdown="1">
 
 No.
@@ -267,7 +267,7 @@ No.
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Esta el evento "keydown" obsoleto?</summary>
+  <summary class="card-header question">¿Está el evento "keydown" obsoleto?</summary>
   <div class="card-body" markdown="1">
 
 No.
@@ -294,7 +294,7 @@ metaKey.
 Lee el artículo [Eventos de puntero](https://lenguajejs.com/javascript/eventos-navegador/pointer-event/).
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Qué evento usamos para trabajar con eventos realizados por el usuario con el raton en JavaScript?</summary>
+  <summary class="card-header question">¿Qué evento usamos para trabajar con eventos realizados por el usuario con el ratón en JavaScript?</summary>
   <div class="card-body" markdown="1">
 
 MouseEvent, TouchEvent o PointerEvent, siendo esta última la más conveniente ya que engloba a las dos anteriores.
@@ -307,14 +307,14 @@ MouseEvent, TouchEvent o PointerEvent, siendo esta última la más conveniente y
   <summary class="card-header question">¿Sabrías decir más de 5 tipos de dispositivos apuntadores?</summary>
   <div class="card-body" markdown="1">
 
-Ratones, trackballs, lapiz óptico, touchpad, multitouch, trackpoint, etc.
+Ratones, trackballs, lápiz óptico, touchpad, multitouch, trackpoint, etc.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Cuándo se dispara el evento `auxclick` de un PointerEvent?</summary>
+  <summary class="card-header question" markdown="1">¿Cuándo se dispara el evento `auxclick` de un `PointerEvent?`</summary>
   <div class="card-body" markdown="1">
 
 Cuando hacemos click con el botón derecho.
