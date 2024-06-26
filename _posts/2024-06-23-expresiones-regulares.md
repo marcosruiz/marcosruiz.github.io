@@ -44,7 +44,11 @@ No. También podemos utilizar la notación literal.
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Qué significa la `i` de la expresión regular `/.a.o/i` (notación literal)?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  ¿Qué significa la `i` de la expresión regular `/.a.o/i` (notación literal)?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 El flag `i` significa que no diferencia mayúsculas de minúsculas.

@@ -153,7 +153,10 @@ Lee el artículo [El método addEventListener](https://lenguajejs.com/javascript
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Es necesario que la función que pasamos como parámetro a la función `addEventListener()` tenga nombre?
+  <summary class="card-header question" markdown="1">
+  
+  ¿Es necesario que la función que pasamos como parámetro a la función `addEventListener()` tenga nombre?
+  
 </summary>
   <div class="card-body" markdown="1">
 
@@ -164,7 +167,11 @@ No.
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Se pueden añadir varios listeners utilizando la función `.addEventListener()` sobre el mismo evento de manera sencilla?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  ¿Se pueden añadir varios listeners utilizando la función `.addEventListener()` sobre el mismo evento de manera sencilla?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 Si.
@@ -177,7 +184,11 @@ Si.
 ¿Qué hace el la opción `once` del tercer parámetro de la función `addEventListener()`?
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Se puede borrar una función anónima con `.removeEventListener()`?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  ¿Se puede borrar una función anónima con `.removeEventListener()`?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 Sólo si la hemos guardado en una variable antes de llamar a `addEventListener()`.
@@ -210,7 +221,11 @@ Si.
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Podemos añadir información adicional al crear un objeto Event de la siguiente manera: `const event = new Event("click", { detail: 123 });`?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  ¿Podemos añadir información adicional al crear un objeto Event de la siguiente manera: `const event = new Event("click", { detail: 123 });`?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 No.
@@ -247,7 +262,11 @@ El objeto `KeyboardEvent` .
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Cómo podemos diferenciar entre el 7 de arriba del teclado con el 7 del numpad en un `KeyboardEvent`?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  ¿Cómo podemos diferenciar entre el 7 de arriba del teclado con el 7 del numpad en un `KeyboardEvent`?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 Mediante la propiedad `location`.
@@ -314,7 +333,11 @@ Ratones, trackballs, lápiz óptico, touchpad, multitouch, trackpoint, etc.
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Cuándo se dispara el evento `auxclick` de un `PointerEvent?`</summary>
+  <summary class="card-header question" markdown="1">
+  
+  ¿Cuándo se dispara el evento `auxclick` de un `PointerEvent?`?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 Cuando hacemos click con el botón derecho.

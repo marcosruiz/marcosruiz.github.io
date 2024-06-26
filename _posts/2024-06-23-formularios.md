@@ -67,7 +67,11 @@ Se conoce como formulario a los mecanismos para enviar información por parte de
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Se pueden utilizar varias etiquetas `form` en la misma página?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  ¿Se pueden utilizar varias etiquetas `form` en la misma página?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 Si.
@@ -76,7 +80,11 @@ Si.
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Cuáles son los dos atributos más importantes de un `form`?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  ¿Cuáles son los dos atributos más importantes de un `form`?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 - `action`: Dirección URL del backend al cuál se enviará la información obtenida en el formulario.
@@ -116,7 +124,11 @@ Lee el artículo [La etiqueta HTML input](https://lenguajehtml.com/html/formular
 ¿Es la etiqueta `input` versátil?
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Para qué sirve el atributo `value` de un `input`?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  ¿Para qué sirve el atributo `value` de un `input`?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 Para dar un valor por defecto al campo `input`.
@@ -126,7 +138,11 @@ Para dar un valor por defecto al campo `input`.
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Para qué sirve el atributo `placeholder` de un `input`?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  ¿Para qué sirve el atributo `placeholder` de un `input`?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 El atributo `placeholder` establece una sugerencia visual, pero al enviar o pulsar sobre el campo para escribir, su valor estará en blanco, no hay contenido.
@@ -148,7 +164,11 @@ El atributo `placeholder` establece una sugerencia visual, pero al enviar o puls
 ¿Existe el atributo `type="hidden"` de un `input`?
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Qué diferencia hay entre un elemento `<input type="text">` y un `<input type="email">`?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  ¿Qué diferencia hay entre un elemento `<input type="text">` y un `<input type="email">`?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 En principio ninguno ya que ambos son dos inputs en los que se puede meter cualquier texto.
@@ -160,7 +180,11 @@ Solo sirve para que el autocompletado del navegador funcione correctamente y en 
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">El elemento `<input type="password">` ¿encripta la contraseña cuando la envía al servidor?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  El elemento `<input type="password">` ¿encripta la contraseña cuando la envía al servidor?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 No. Solo oculta el texto visualmente para protejernos de ojos ajenos.
@@ -188,7 +212,11 @@ En un elemento `ìnput type="checkbox"` ¿qué hace el atributo `checked`?
 En un grupo, cuando marcamos un botón tipo _____, al marcar uno deseleccionamos el resto.
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">Para hacer un grupo de casillas, ¿qué atributo debe coincidir entre los elementos `input`?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  Para hacer un grupo de casillas, ¿qué atributo debe coincidir entre los elementos `input`?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 El name. Por ejemplo:
@@ -219,7 +247,11 @@ Si. Con la propiedad de css `appearance: none;`.
 Lee el artículo [La etiqueta HTML input submit](https://lenguajehtml.com/html/formularios/etiqueta-html-input-submit/).
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Qué es el `<input type="submit">`?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  ¿Qué es el `<input type="submit">`?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 Un botón de envío de formulario.
@@ -229,7 +261,11 @@ Un botón de envío de formulario.
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">¿Se pueden enviar formularios sin un input o botón tipo `submit`?</summary>
+  <summary class="card-header question" markdown="1">
+  
+  ¿Se pueden enviar formularios sin un input o botón tipo `submit`?
+  
+  </summary>
   <div class="card-body" markdown="1">
 
 Si, pulsando ENTER en el último campo.
@@ -268,7 +304,7 @@ Si partimos del siguiente ejemplo:
 
 ```html
 <div  id="menulateral">
-     <form  id="contactar" name="contactar" action="...">...</form>
+  <form  id="contactar" name="contactar" action="...">...</form>
 </div>
 ```
 
