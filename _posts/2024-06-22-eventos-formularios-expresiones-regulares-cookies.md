@@ -8,25 +8,16 @@ img_path: /assets/img/variable-entorno-path/
 
 ## Eventos
 
-Lee el artículo [Eventos en JavaScript](/posts/eventos-javascript)
+Lee el artículo [Eventos en JavaScript](/posts/eventos-javascript).
 
 ## Formularios
 
-Lee el artículo [Formularios](/posts/eventos-javascript)
+Lee el artículo [Formularios](/posts/eventos-javascript).
 
 ## Expresiones regulares
 
-Lee el artículo [Expresiones regulares](/posts/expresiones-regulares)
+Lee el artículo [Expresiones regulares](/posts/expresiones-regulares).
 
 ## Cookies
 
-Lee el artículo [¿Qué son las cookies?](/posts/cookies)
-
-## Bibliografía
-
-- [Lenguaje JS](https://lenguajejs.com/)
-- [Aprende X en Y minutos, Donde X=javascript](https://learnxinyminutes.com/docs/es-es/javascript-es/)
-- [Basics of Javascript](https://fwhibbit.es/basics-of-javascript)
-- [Comparación de funciones tradicionales con funciones flecha](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-- [JavaScript Asíncrono](https://jonmircha.com/javascript-asincrono)
-- https://alf.nu/RegexGolf?world=regex&level=r00
+Lee el artículo [¿Qué son las cookies?](/posts/cookies).
