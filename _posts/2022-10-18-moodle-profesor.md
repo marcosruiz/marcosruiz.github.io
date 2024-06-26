@@ -1,10 +1,21 @@
 ---
-title: "Uso de Moodle como profesor"
+title: "Guía del profesor virtual"
 date: 2022-10-18 9:00:00 +0100
 categories: [General]
 tags: [gift, moodle, aeducar, profesor, adistanciafp]
 img_path: /assets/img/moodle-profesor/
 ---
+
+{:.section}
+## Introducción
+
+Este artículo busca ser una guía para recordar todo lo que se puede hacer con:
+
+- Moodle
+- Autocrat
+- Visual Studio Code
+
+Para preparar materiales educativos.
 
 {:.section}
 ## Tareas con entregas grupales
@@ -198,6 +209,17 @@ Es útil darle un nombre a cada pregunta para encontrarla en el banco de pregunt
 1. Delante de `[markdown]`, añades al inicio de cada línea un título. Por ejemplo: `::T05 01::`.
 1. Seleccionas el `01`. Haces `Ctrl+Shift+L` para seleccionar todas las preguntas.
 1. Hacer `Ctrl+Alt+I` para dar un nombre único a cada pregunta.
+
+{:.subsection}
+### Añadir atajos de teclado en Visual Studio Code
+
+En Notion podemos usar `Ctrl + e` para hacer que un texto se vea como código. En el caso de Visual Studio Code también podemos configurarlo. En mi caso uso `Ctrl + comilla inversa`. 
+
+- Debemos tener instalada la extensión "Markdown All In One".
+- File > Preferences > Keyboard Shortcuts
+- Buscamos "Toggle code span".
+- Hacemos doble click en la casilla correspondiente a la columna de "Keybinding".
+- Presionamos el atajo de teclado al que queramos asociar dicha acción.
 
 {:.section}
 ## Test para revisar

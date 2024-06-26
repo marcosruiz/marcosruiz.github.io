@@ -67,6 +67,17 @@ Lee el artículo [Buscar y capturar textos](https://lenguajejs.com/javascript/re
 
 Lee el artículo [Crear expresiones regulares](https://lenguajejs.com/javascript/regexp/crear-expresiones-regulares/)
 
+## Expresión regular para validar un email
+
+Mira el vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tcYCaRnJlVw?si=XNy_pwx1WEJV0eQ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Preguntas a responder tras la visualización del vídeo:
+
+1. ¿Cuál es la expresión regular para validar o encontrar cualquier email?
+1. Si tenemos un email por línea, ¿cómo podríamos hacer que no encuentre líneas que no tengan la forma de un email válido?
+
 ## Bibliografía
 
 - <https://alf.nu/RegexGolf?world=regex&level=r00>
