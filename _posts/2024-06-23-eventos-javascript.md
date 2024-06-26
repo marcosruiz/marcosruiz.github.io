@@ -1,14 +1,12 @@
 ---
-title: "Interacción con el usuario: eventos y formularios"
-date: 2024-06-25 9:00:00 +0100
+title: "Eventos en JavaScript"
+date: 2024-06-23 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, dwec, teoria]
 img_path: /assets/img/variable-entorno-path/
 ---
 
-## Eventos
-
-### ¿Qué son los eventos?
+## ¿Qué son los eventos?
 
 Lee el artículo [¿Qué son los eventos?](https://lenguajejs.com/javascript/eventos/que-son-eventos/)
 
@@ -37,7 +35,22 @@ Mediante `addEventListener()`.
   </div>
 </details>
 
-### Eventos mediante HTML
+## Modelo de eventos en línea → Eventos mediante HTML
+
+Mira el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FbO4rxuowMw?si=arBcVJvYFPMqCEXG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Preguntas a responder tras la visualización del vídeo:
+
+- ¿Qué web podemos usar para consultar todos los eventos que existen?
+- ¿A qué hace referencia la palabra clave `this`?
+- ¿Qué alternativa existe al uso de `this`?
+- ¿La función `cambiar` debe declararse antes de usarse?
+- ¿Hay acciones que desencadenan varios eventos?
+- ¿Cómo podemos hacer para que un elemento `href` no ejecute la acción por defecto?
+- ¿Qué permite hacer el atributo `onload` del `body`?
+- ¿Es recomendable usar el modelo de eventos en línea? ¿Por qué?
 
 Lee el artículo [Eventos mediante HTML](https://lenguajejs.com/javascript/eventos/eventos-html/)
 
@@ -77,10 +90,24 @@ No. Es mejor localizar los elementos HTML desde el fichero JS.
   </div>
 </details>
 
-### Eventos mediante JavaScript
+## Modelo de eventos tradicional → Eventos mediante JavaScript
+
+Mira el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w_dHL9arm6g?si=5abKbNBtYOBUyl-f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Preguntas a responder tras la visualización del vídeo:
+
+1. ¿Cómo cambiamos el contenido de un elemento HTML?
+1. ¿Cómo podemos hacer que un evento `onclick` se ejecute una y solo una vez?
+1. ¿Es necesario tener un elemento `button` o un `input` para ocurra el evento `onclick`?
+1. ¿Es necesario que se cargue completamente la página para ejecutar las funciones DOM que asignan manejadores a los elementos HTML?
+1. ¿Cuál de las siguientes es la forma correcta de asociar un evento: 1. 
+   1. `.onclick = miMensaje`
+   1. `.onclick = miMensaje()`
+1. ¿Es recomendable usar el modelo de eventos tradicional? ¿Por qué?
 
 Lee el artículo [Eventos mediante JavaScript](https://lenguajejs.com/javascript/eventos/eventos-javascript/)
-
 
 {:.question}
 ¿Qué diferencia hay entre una propiedad y una función en JavaScript?
@@ -88,7 +115,28 @@ Lee el artículo [Eventos mediante JavaScript](https://lenguajejs.com/javascript
 {:.question}
 En JavaScript, la propiedad `.onclick` ¿puede ir en maýusuculas y minúsculas indistintemante? Es decir, ¿puedo escribir tnato `.onclick` como `.onClick`?
 
-### El método addEventListener
+### Modelo de eventos del W3C → El método addEventListener
+
+Mira el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nLyhVCCb9dc?si=mn3fxoJ6IBX_Mh_f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Preguntas a responder tras la visualización del vídeo:
+
+1. ¿Cuál es la forma correcta de añadir el evento de click?
+   1. `document.getElementById("w3c").addEventListener(onclick, saludarUnaVez, false)`
+   1. `document.getElementById("w3c").addEventListener("click", saludarUnaVez, false)`
+   1. `document.getElementById("w3c").addEventListener("click", saludarUnaVez(), false)`
+   1. `document.getElementById("w3c").addEventListener("click", "saludarUnaVez()", false)`
+   1. `document.getElementById("w3c").addEventListener("onclick", saludarUnaVez, false)`
+   1. `document.getElementById("w3c").addEventListener(onclick(), saludarUnaVez(), false)`
+1. ¿Podemos añadir al mismo elemento dos eventos de diferente tipo al mismo tiempo?
+1. ¿Podemos añadir al mismo elemento dos eventos del mismo tipo al mismo tiempo?
+1. ¿Cuál es la función para borrar un `EventListener`?
+   1. `.deleteEventListener()`
+   1. `.delEventListener()`
+   1. `.archiveEventListener()`
+   1. `.removeEventListener()`
 
 Lee el artículo [El método addEventListener](https://lenguajejs.com/javascript/eventos/addeventlistener/)
 
@@ -138,13 +186,13 @@ Sólo si la hemos guardado en una variable antes de llamar a `addEventListener()
   </div>
 </details>
 
-### (Voluntario) Para saber más...
+## (Voluntario) Para saber más...
 
 Lee el artículo [Escuchar eventos y handleEvent](https://lenguajejs.com/javascript/eventos/addeventlistener-handleevent/).
 
 Lee el artículo [El objeto Event](https://lenguajejs.com/javascript/eventos/objeto-event/).
 
-### ¿Qué son los Custom Events?
+## ¿Qué son los Custom Events?
 
 Lee el artículo [¿Qué son los Custom Events?](https://lenguajejs.com/javascript/custom-events/que-son/#custom-events)
 
@@ -171,18 +219,15 @@ No.
   </div>
 </details>
 
-### (Voluntario) Para saber más...
+## (Voluntario) Para saber más...
 
 Lee el artículo [Emisión de eventos](https://lenguajejs.com/javascript/custom-events/emision-eventos/).
 
 Lee el artículo [Propagación de eventos](https://lenguajejs.com/javascript/custom-events/propagacion-eventos/).
 
-### ¿Qué son los eventos de navegador?
+## ¿Qué son los eventos de navegador?
 
 Lee el artículo [Eventos de navegador: ¿Qué son?](https://lenguajejs.com/javascript/eventos-navegador/que-son/)
-
-{:.question}
-¿Como podríamos obtener ?
 
 {:.question}
 ¿En qué consiste la desestructuración?
@@ -195,7 +240,7 @@ Lee el artículo [Eventos de teclado](https://lenguajejs.com/javascript/eventos-
   <summary class="card-header question">¿Cuál es el objeto de navegador para capturar eventos del teclado?</summary>
   <div class="card-body" markdown="1">
 
-El objeto `KeyboardEvent`
+El objeto `KeyboardEvent` .
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -212,7 +257,7 @@ Mediante la propiedad `location`.
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Keydown y keyup están obsoletos?</summary>
+  <summary class="card-header question">¿Esta el evento "keycode" obsoleto?</summary>
   <div class="card-body" markdown="1">
 
 No.
@@ -221,38 +266,68 @@ No.
   </div>
 </details>
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Esta el evento "keydown" obsoleto?</summary>
+  <div class="card-body" markdown="1">
+
+No.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+{:.question}
+¿Qué hace `const { key, code } = ev;`?
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Cómo se llama la tecla del logo de windows en un evento de teclado de JavaScript?</summary>
+  <div class="card-body" markdown="1">
+
+metaKey.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 ### Eventos de puntero
 
-Lee el artículo [Eventos de puntero](https://lenguajejs.com/javascript/eventos-navegador/pointer-event/)
+Lee el artículo [Eventos de puntero](https://lenguajejs.com/javascript/eventos-navegador/pointer-event/).
 
-## Utilización de formularios
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué evento usamos para trabajar con eventos realizados por el usuario con el raton en JavaScript?</summary>
+  <div class="card-body" markdown="1">
 
+MouseEvent, TouchEvent o PointerEvent, siendo esta última la más conveniente ya que engloba a las dos anteriores.
 
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
-## Manejo de los elementos de un formulario
+<details class="card mb-2">
+  <summary class="card-header question">¿Sabrías decir más de 5 tipos de dispositivos apuntadores?</summary>
+  <div class="card-body" markdown="1">
 
+Ratones, trackballs, lapiz óptico, touchpad, multitouch, trackpoint, etc.
 
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
-## Modificación de apariencia y comportamiento
+<details class="card mb-2">
+  <summary class="card-header question">¿Cuándo se dispara el evento `auxclick` de un PointerEvent?</summary>
+  <div class="card-body" markdown="1">
 
+Cuando hacemos click con el botón derecho.
 
-
-## Validación de formularios
-
-
-
-## Expresiones regulares
-
-
-
-## Cookies
-
-
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 ## Bibliografía
 
-- [Lenguaje JS](https://lenguajejs.com/)
-- [Aprende X en Y minutos, Donde X=javascript](https://learnxinyminutes.com/docs/es-es/javascript-es/)
-- [Basics of Javascript](https://fwhibbit.es/basics-of-javascript)
-- [Comparación de funciones tradicionales con funciones flecha](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-- [JavaScript Asíncrono](https://jonmircha.com/javascript-asincrono)
+- <https://lenguajejs.com/>
+- <https://learnxinyminutes.com/docs/es-es/javascript-es/>
+- <https://fwhibbit.es/basics-of-javascript>
+- <https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions>
+- <https://jonmircha.com/javascript-asincrono>
+- <https://es.javascript.info/>

@@ -1,6 +1,6 @@
 ---
-title: "Interacción con el usuario: eventos y formularios"
-date: 2024-06-25 9:00:00 +0100
+title: "Tarea: Eventos y formularios"
+date: 2024-06-23 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, dwec, practica]
 img_path: /assets/img/variable-entorno-path/
