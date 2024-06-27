@@ -18,23 +18,47 @@ Duración: - horas
 
 ## Actividades
 
-Tú y tu compañero sois los dos únicos desarrolladores de una empresa de marketing digital llamada Total Marketing.
+Es pleno agosto y trabajas en una empresa de marketing digital llamada Total Marketing.
 
-Total Marketing quiere...
+Todo el equipo de desarrollo se ha cogido vacaciones salvo tu compañero y tú.
 
+El famoso director español, Juan Antonio Vayona ha contratado a Total Marketing ya que quiere promocionar su última película de espías llamada "Black code".
 
+La campaña de márketing va a incluir numerosos elementos como carteles, pancartas, merchandaising, anuncios y una página web.
 
-{:.activity}
-### Escribe
+Para la página web promocional, a tu jefe se le ha ocurrido una idea bastante original.
 
-{:.activity}
-### Bingo
-
-{:.activity}
-### MP3
+La idea es que tú y tu compañero hagáis una web que simule un sistema operativo de un hacker y que cuando el usuario pulse cualquier tecla se escriba un código que supuestamente hackeará el avión presidencial del presidente del gobierno de España.
 
 {:.activity}
-### (Voluntaria)
+### Escritura automática
+
+Tu jefe quiere que hagáis una web hacker antes de que vuelvan vuestros compañeros de vacaciones. No es necesario que sea muy bonita pero si que tenga la funcionalidad básica que se ha comentado anteriormente.
+
+Podéis usar las siguientes webs como inspiración:
+
+- <https://hackertyper.net/>
+- <https://geekprank.com/hacker/>
+
+{:.activity}
+### Fecha y título de la película
+
+Cuando se pulse el conjunto de teclas `Ctrl` + `Alt` + `X` deberá aparecer el título y la fecha de estreno de la película en mitad de la pantalla. La fecha de estreno será el 1 de septiembre de este mismo año.
+
+{:.activity}
+### (Voluntaria) Vídeo
+
+Añade un vídeo que simule una cámara de seguridad cuando hagas doble click en una zona concreta de la pantalla.
+
+{:.activity}
+### Documenta
+
+Documenta el código que has desarrollado por si algún compañero se une al proyecto cuando vuelva de vacaciones.
+
+{:.activity}
+### Presentación
+
+En unos días tenéis que enseñarle vuestra web a Bayona a ver si le gusta la web que habéis preparado. Total Marketing tiene muchas cosas que enseñar a Bayona y es un hombre bastante ocupado por lo que debéis intentar ser lo más breves posible.
 
 ## Bibliografía
 

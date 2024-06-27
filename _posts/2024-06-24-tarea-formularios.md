@@ -22,9 +22,7 @@ Tú y tu compañero sois trabajadores de una empresa tecnológica multinacional 
 
 TekMex ha recibido una licitación para mejorar algunos formularios del gobierno, entre ellos, el de la sede de educación del cual muchos usuarios llevan quejándose casi un año. El equipo de desarrollo de tres personas os habéis repartido el trabajo y mientras otro compañero de trabajo se centra en optimizar la parte del servidor, los otros dos vais a desarrollar la parte del cliente.
 
-"¡Menos mal que somos dos para realizar esta tarea!" piensas para tus adentros porque sabes que todos los formularios que habías desarrollado hasta ahora solo los habías validado con Java en el backend así que es la oportunidad perfecta para aprender a validar formularios con HTML y JavaScript.
-
-Recuerda que en la empresa en la que estás hay mucha rotación de plantilla por lo que está muy bien visto comentar el código y dejarlo lo más limpio y ordenado posible.
+"¡Menos mal que somos dos para realizar esta tarea!" piensas para tus adentros porque sabes que todos los formularios que habías desarrollado hasta ahora solo los habías validado con PHP en el backend así que es la oportunidad perfecta para aprender a validar formularios con HTML y JavaScript.
 
 Respecto a la parte CSS para que el formulario se vea bonito, no es necesario que lo hagáis, una vez tengáis todo el formulario preparado se lo pasareis al equipo de diseño y maquetación.
 
@@ -119,9 +117,14 @@ Almacenar en una cookie el número de intentos de envío del formulario que se v
 {:.prompt-info}
 
 {:.activity}
-### (Voluntaria) 
+### Documenta
 
+Recuerda que en la empresa en la que estás hay mucha rotación de plantilla por lo que está muy bien visto comentar el código y dejarlo lo más limpio y ordenado posible.
 
+{:.activity}
+### Presentación
+
+Antes de que entre el equipo de diseño y maquetación vas a enseñar a tus compañeros un vídeo de 3 minutos como máximo donde vas a mostrar todo el trabajo que habéis realizado. Tienes que intentar quedar bien con todo lo que has hecho y aprendido ya que en un mes tienes revisión de contrato y quieres tener argumentos para que te den una buena subida de sueldo. Esta claro que no todo en la vida es programar.
 
 ## Bibliografía
 
