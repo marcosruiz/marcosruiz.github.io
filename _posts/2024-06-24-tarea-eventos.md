@@ -2,8 +2,8 @@
 title: "Tarea: Web para Bayona"
 date: 2024-06-23 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
-tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, dwec, practica]
-img_path: /assets/img/variable-entorno-path/
+tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, dwec, practica, tarea, javascript]
+img_path: /assets/img/tarea-eventos/
 ---
 
 ## Entrega y presentación
