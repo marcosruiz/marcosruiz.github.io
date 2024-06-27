@@ -349,17 +349,8 @@ La fórmula de la nota final será:
 =if(AND([[EV1]]>5; [[EV2]]>5); average([[EV1]];[[EV2]]); min(4,99; average([[EV1]];[[EV2]])))
 ```
 
-La fórmula de la nota final tras J1 será:
-
-```plaintext
-=if(AND(max([[EV1]]; [[ExamenFINALJ1EV1]])>5; max([[EV2]]; [[ExamenFINALJ1EV2]])>5); average(max([[EV1]]; [[ExamenFINALJ1EV1]]);max([[EV2]]; [[ExamenFINALJ1EV2]])); min(4,99; average(max([[EV1]]; [[ExamenFINALJ1EV1]]);max([[EV2]]; [[ExamenFINALJ1EV2]]))))
-```
-
-La fórmula de la nota final tras J2 será:
-
-```plaintext
-=if(AND(max([[EV1]]; [[ExamenFINALJ1EV1]]; [[ExamenFINALJ2EV1]])>5; max([[EV2]]; [[ExamenFINALJ1EV2]]; [[ExamenFINALJ2EV2]])>5); average(max([[EV1]]; [[ExamenFINALJ1EV1]]; [[ExamenFINALJ2EV1]]);max([[EV2]]; [[ExamenFINALJ1EV2]]; [[ExamenFINALJ2EV2]])); min(4,99; average(max([[EV1]]; [[ExamenFINALJ1EV1]]; [[ExamenFINALJ2EV1]]);max([[EV2]]; [[ExamenFINALJ1EV2]]; [[ExamenFINALJ2EV2]]))))
-```
+> Cuando se pongan las notas de J1 y J2 habrá que sustituir la nota del examen de cada evaluación por la nota de EV1 y EV2 como corresponda.
+{:.prompt-info}
 
 ## Exportación e importación de cuestionarios GIFT
 

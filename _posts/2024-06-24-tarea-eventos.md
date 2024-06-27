@@ -20,7 +20,8 @@ Duración: - horas
 
 Introducción
 
-
+{:.activity}
+### (Voluntaria)
 
 {:.activity}
 ### (Voluntaria)
@@ -30,3 +31,6 @@ Introducción
 
 ## Bibliografía
 
+- <https://lenguajejs.com/retos/nivel-facil/rock-paper-scissors/>
+- <https://lenguajejs.com/retos/nivel-medio/bingo/>
+- <https://lenguajejs.com/retos/nivel-medio/mp3-player/>

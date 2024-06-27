@@ -2,7 +2,7 @@
 title: "Inicio de curso"
 date: 2022-06-22 9:00:00 +0100
 categories: [General]
-tags: []
+tags: [enlaces, edteam, alva majo, programas, software, extensiones]
 ---
 
 ## Enlaces de interés
@@ -85,6 +85,16 @@ Otros:
 ## Webs para bloquear
 
 - <https://1v1.lol/>
+
+## Aprender a estudiar
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TQDWKA8qjMA?si=R6gwp7tfELnorp_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EQX70k1d-Ys?si=BLsgC6lT-5WC6DZa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NMQuGlQ0XHQ?si=VliU7Vf26EezDz_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mKVV1vBpn08?si=_i5sPGdk4e27oI_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Bibliografía
 

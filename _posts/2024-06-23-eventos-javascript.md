@@ -102,7 +102,7 @@ Preguntas a responder tras la visualización del vídeo:
 1. ¿Cómo podemos hacer que un evento `onclick` se ejecute una y solo una vez?
 1. ¿Es necesario tener un elemento `button` o un `input` para ocurra el evento `onclick`?
 1. ¿Es necesario que se cargue completamente la página para ejecutar las funciones DOM que asignan manejadores a los elementos HTML?
-1. ¿Cuál de las siguientes es la forma correcta de asociar un evento: 1. 
+1. ¿Cuál de las siguientes es la forma correcta de asociar un evento: 1.
    1. `.onclick = miMensaje`
    1. `.onclick = miMensaje()`
 1. ¿Es recomendable usar el modelo de eventos tradicional? ¿Por qué?
@@ -113,7 +113,7 @@ Lee el artículo [Eventos mediante JavaScript](https://lenguajejs.com/javascript
 ¿Qué diferencia hay entre una propiedad y una función en JavaScript?
 
 {:.question}
-En JavaScript, la propiedad `.onclick` ¿puede ir en maýusuculas y minúsculas indistintemante? Es decir, ¿puedo escribir tnato `.onclick` como `.onClick`?
+En JavaScript, la propiedad `.onclick` ¿puede ir en mayúsculas y minúsculas indistintamente? Es decir, ¿puedo escribir tanto `.onclick` como `.onClick`?
 
 ### Modelo de eventos del W3C → El método addEventListener
 
@@ -255,7 +255,7 @@ Lee el artículo [Eventos de teclado](https://lenguajejs.com/javascript/eventos-
   <summary class="card-header question">¿Cuál es el objeto de navegador para capturar eventos del teclado?</summary>
   <div class="card-body" markdown="1">
 
-El objeto `KeyboardEvent` .
+El objeto `KeyboardEvent`.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -302,7 +302,7 @@ No.
   <summary class="card-header question">¿Cómo se llama la tecla del logo de windows en un evento de teclado de JavaScript?</summary>
   <div class="card-body" markdown="1">
 
-metaKey.
+La tecla del logo de Windows es llamada `metaKey`.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>

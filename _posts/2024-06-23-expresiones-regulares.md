@@ -6,12 +6,12 @@ tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, d
 img_path: /assets/img/variable-entorno-path/
 ---
 
+> "Usar expresiones regulares para resolver un problema genera ahora dos problemas"
+> Jamie Zawinski
+
 ## ¿Qué es una expresión regular?
 
 Lee el artículo [¿Qué es una expresión regular?](https://lenguajejs.com/javascript/regexp/expresiones-regulares/).
-
-> "Usar expresiones regulares para resolver un problema genera ahora dos problemas"
-> Jamie Zawinski
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es una expresión regular en pocas palabras?</summary>
@@ -44,6 +44,17 @@ No. También podemos utilizar la notación literal.
 </details>
 
 <details class="card mb-2">
+  <summary class="card-header question">¿Cuáles son las cuatro partes de una expresión regular?</summary>
+  <div class="card-body" markdown="1">
+
+![alt text](regexp.png)
+_Partes de una expresión regular_
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
   <summary class="card-header question" markdown="1">
   
   ¿Qué significa la `i` de la expresión regular `/.a.o/i` (notación literal)?
@@ -62,25 +73,6 @@ El flag `i` significa que no diferencia mayúsculas de minúsculas.
 
 {:.question}
 ¿Es lo mismo `/M.+s/i` que `/[Mm].+[Ss]/`?
-
-## (Voluntario) Para saber más...
-
-Lee el artículo [Propiedades y flags](https://lenguajejs.com/javascript/regexp/flags/)
-
-Lee el artículo [Buscar y capturar textos](https://lenguajejs.com/javascript/regexp/buscar-capturar/)
-
-Lee el artículo [Crear expresiones regulares](https://lenguajejs.com/javascript/regexp/crear-expresiones-regulares/)
-
-## Expresión regular para validar un email
-
-Mira el vídeo:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tcYCaRnJlVw?si=XNy_pwx1WEJV0eQ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-Preguntas a responder tras la visualización del vídeo:
-
-1. ¿Cuál es la expresión regular para validar o encontrar cualquier email?
-1. Si tenemos un email por línea, ¿cómo podríamos hacer que no encuentre líneas que no tengan la forma de un email válido?
 
 ## Patrones
 
@@ -114,6 +106,25 @@ La potencia de las expresiones regulares es que podemos usar patrones para const
   - `/i`: que no distinga entre mayúsculas y minúsculas (Ej. `/html/i` = buscará html, Html, HTML, …)
   - `/g`: búsqueda global, busca todas las coincidencias y no sólo la primera
   - `/m`: busca en más de 1 línea (para cadenas con saltos de línea)
+
+## Expresión regular para validar un email
+
+Mira el vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tcYCaRnJlVw?si=XNy_pwx1WEJV0eQ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Preguntas a responder tras la visualización del vídeo:
+
+1. ¿Cuál es la expresión regular para validar o encontrar cualquier email?
+1. Si tenemos un email por línea, ¿cómo podríamos hacer que no encuentre líneas que no tengan la forma de un email válido?
+
+## (Voluntario) Para saber más...
+
+Lee el artículo [Propiedades y flags](https://lenguajejs.com/javascript/regexp/flags/)
+
+Lee el artículo [Buscar y capturar textos](https://lenguajejs.com/javascript/regexp/buscar-capturar/)
+
+Lee el artículo [Crear expresiones regulares](https://lenguajejs.com/javascript/regexp/crear-expresiones-regulares/)
 
 ## Bibliografía
 

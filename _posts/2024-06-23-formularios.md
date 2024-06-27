@@ -1,5 +1,5 @@
 ---
-title: "Formularios"
+title: "Validación de formularios con HTML y JavaScript"
 date: 2024-06-23 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, dwec, teoria]
@@ -32,27 +32,7 @@ Preguntas a responder tras la visualización del vídeo:
 1. ¿Qué tecla tenemos que pulsar para ver el código fuente de una web?
 1. ¿Por qué hay que validar en el lado del cliente?
 
-## Validación del navegador incorporada en HTML5
-
-Funciona añadiendo atributos a los campos del formulario que queremos validar. Los más usados son:
-
-- `required`: indica que el campo es obligatorio. La validación fallará si no hay nada escrito en el input. En el caso de un grupo de radiobuttons se pone sobre cualquiera de ellos (o sobre todos) y obliga a que haya seleccionada una opción cualquiera del grupo
-- `pattern`: obliga a que el contenido del campo cumpla la expresión regular indicada. Por ejemplo para un código postal sería `pattern="^[0-9]{5}$"`
-- `minlength` / maxlength: indica la longitud mínima/máxima del contenido del campo
-- `min` / `max`: indica el valor mínimo/máximo del contenido de un campo numérico
-También producen errores de validación si el contenido de un campo no se adapta al type indicado (`email`, `number`, ...) o si el valor de un campo numérico no cumple con el step indicado.
-
-Cuando el contenido de un campo es valido dicho campo obtiene automáticamente la pseudoclase `:valid` y si no lo es tendrá la pseudoclase `:invalid` lo que nos permite poner reglas en nuestro CSS para destacar dichos campos, por ejemplo:
-
-```css
-input:invalid {
-  border: 2px dashed red;
-}
-```
-
-La validación del navegador se realiza al enviar el formulario. Si encuentra un error lo muestra, se detiene la validación del resto de campos y no se envía el formulario.
-
-### La etiqueta form
+## La etiqueta form
 
 Lee [La etiqueta form](https://lenguajehtml.com/html/formularios/etiqueta-html-form/).
 
@@ -107,7 +87,7 @@ Si.
 ¿Si tenemos dos formularios en un mismo documento HTML? ¿Qué es más recomendable, usar una etiqueta `form` o dos etiquetas `form`? ¿Por qué?
 
 <details class="card mb-2">
-  <summary class="card-header question">Para enviar un formulario ¿que elemento usamos?</summary>
+  <summary class="card-header question">Para enviar un formulario ¿qué elemento usamos?</summary>
   <div class="card-body" markdown="1">
 
 Un `<input type="submit"/>`
@@ -116,7 +96,7 @@ Un `<input type="submit"/>`
   </div>
 </details>
 
-### La etiqueta input
+## La etiqueta input
 
 Lee el artículo [La etiqueta HTML input](https://lenguajehtml.com/html/formularios/etiqueta-html-input/).
 
@@ -193,12 +173,12 @@ No. Solo oculta el texto visualmente para protejernos de ojos ajenos.
   </div>
 </details>
 
-#### Checkboxes y radio buttons
+### Checkboxes y radio buttons
 
 Lee el artículo [La etiqueta input con casillas](https://lenguajehtml.com/html/formularios/etiqueta-html-input-checkbox-radio/).
 
 {:.question}
-En un elemento `ìnput type="checkbox"` ¿qué hace el atributo `checked`?
+En un elemento `input type="checkbox"` ¿qué hace el atributo `checked`?
 
 {:.question}
 ¿Qué quiere decir la frase: "El atributo checked muestra el estado inicial de la casilla. Por otro lado, la propiedad checked te muestra el estado actual de la casilla."?
@@ -209,7 +189,7 @@ En un elemento `ìnput type="checkbox"` ¿qué hace el atributo `checked`?
 ¿Qué información de un formulario llega al servidor? ¿Llegan los identificadores de los `input`?
 
 {:.question}
-En un grupo, cuando marcamos un botón tipo _____, al marcar uno deseleccionamos el resto.
+En un grupo, cuando marcamos un `input` tipo _____, al marcar uno deseleccionamos el resto.
 
 <details class="card mb-2">
   <summary class="card-header question" markdown="1">
@@ -219,7 +199,7 @@ En un grupo, cuando marcamos un botón tipo _____, al marcar uno deseleccionamos
   </summary>
   <div class="card-body" markdown="1">
 
-El name. Por ejemplo:
+El `name`. Por ejemplo:
 
 ```html
 <form method="post" action="/send/">
@@ -242,7 +222,7 @@ Si. Con la propiedad de css `appearance: none;`.
   </div>
 </details>
 
-#### La etiqueta input submit
+### La etiqueta input submit
 
 Lee el artículo [La etiqueta HTML input submit](https://lenguajehtml.com/html/formularios/etiqueta-html-input-submit/).
 
@@ -290,10 +270,15 @@ Si, con un `<input type="reset">`.
 #### Para cuando lo necesites...
 
 Lee el artículo [La etiqueta HTML textarea](https://lenguajehtml.com/html/formularios/etiqueta-html-textarea/).
+
 Lee el artículo [La etiqueta input con números](https://lenguajehtml.com/html/formularios/etiqueta-html-input-numeros/).
+
 Lee el artículo [La etiqueta input con fechas](https://lenguajehtml.com/html/formularios/etiqueta-html-input-fechas/).
+
 Lee el artículo [La etiqueta input con casillas](https://lenguajehtml.com/html/formularios/etiqueta-html-input-checkbox-radio/).
+
 Lee el artículo [La etiqueta input con colores](https://lenguajehtml.com/html/formularios/etiqueta-html-input-color/).
+
 Lee el artículo [La etiqueta HTML select](https://lenguajehtml.com/html/formularios/etiqueta-html-select/).
 
 ## Formas de selección del objeto form
@@ -310,7 +295,7 @@ Si partimos del siguiente ejemplo:
 
 Tendremos los siguientes métodos de selección del objeto `form` en el documento:
 
-- A través del método `getElementById() `del DOM, nos permite acceder a un objeto a través de su atributo ID. Tendremos que tener la precaución de asignar id únicos a nuestros objetos, para evitar que tengamos objetos con id repetidos:
+- A través del método `getElementById()` del DOM, nos permite acceder a un objeto a través de su atributo ID. Tendremos que tener la precaución de asignar id únicos a nuestros objetos, para evitar que tengamos objetos con id repetidos:
 
 ```javascript
 let formulario = document.getElementById("contactar");
@@ -337,7 +322,7 @@ let formularios = menu.getElementsByTagName("form"); // formularios contenidos e
 let primerFormulario =  formularios[0]; // primer formulario en el menú lateral
 ```
 
-- Otro método puede ser a través de la colección forms[] del objeto document. Esta colección es un array, que contiene la referencia a todos los formularios que tenemos en nuestro documento.
+- Otro método puede ser a través de la colección `forms[]` del objeto `document`. Esta colección es un array, que contiene la referencia a todos los formularios que tenemos en nuestro documento.
 
 ```javascript
 let formularios = document.forms; // la referencia a todos los formularios del documento
@@ -383,15 +368,41 @@ document.forms["formularioBusqueda"].elements["cEntrada"];
 document.forms["formularioBusqueda"].cEntrada;
 ```
 
-Aunque muchos de los controles de un formulario tienen propiedades en común, algunas propiedades son únicas a un control en particular. Por ejemplo, en un objeto select tienes propiedades que te permiten conocer la opción que está actualmente seleccionada. Al igual que los `checkbox`es o los botones de tipo `radio`, que también disponen de propiedades para saber cuál es la opción que está actualmente seleccionada.
+Aunque muchos de los controles de un formulario tienen propiedades en común, algunas propiedades son únicas a un control en particular. Por ejemplo, en un objeto select tienes propiedades que te permiten conocer la opción que está actualmente seleccionada. Al igual que los `checkbox` es o los botones de tipo `radio`, que también disponen de propiedades para saber cuál es la opción que está actualmente seleccionada.
 
-## Validación de formularios con JavaScript
+## Validación de formularios
 
-## Validación mediante la API de validación de formularios
+### Validación del navegador incorporada en HTML5
+
+Funciona añadiendo atributos a los campos del formulario que queremos validar. Los más usados son:
+
+- `required`: indica que el campo es obligatorio. La validación fallará si no hay nada escrito en el input. En el caso de un grupo de radiobuttons se pone sobre cualquiera de ellos (o sobre todos) y obliga a que haya seleccionada una opción cualquiera del grupo.
+- `pattern`: obliga a que el contenido del campo cumpla la expresión regular indicada. Por ejemplo para un código postal sería `pattern="^[0-9]{5}$"`.
+- `minlength` / maxlength: indica la longitud mínima/máxima del contenido del campo
+- `min` / `max`: indica el valor mínimo/máximo del contenido de un campo numérico
+También producen errores de validación si el contenido de un campo no se adapta al type indicado (`email`, `number`, ...) o si el valor de un campo numérico no cumple con el step indicado.
+
+> Puedes leer el artículo [Expresiones regulares](/posts/expresiones-regulares) si quieres saber más sobre expresiones regulares.
+{:.prompt-tip}
+
+Cuando el contenido de un campo es valido dicho campo obtiene automáticamente la pseudoclase `:valid` y si no lo es tendrá la pseudoclase `:invalid` lo que nos permite poner reglas en nuestro CSS para destacar dichos campos, por ejemplo:
+
+```css
+input:invalid {
+  border: 2px dashed red;
+}
+```
+
+La validación del navegador se realiza al enviar el formulario. Si encuentra un error lo muestra, se detiene la validación del resto de campos y no se envía el formulario.
+
+### Validación mediante la API de validación de formularios
 
 Mediante JavaScript tenemos acceso a todos los campos del formulario por lo que podemos hacer la validación como queramos, pero es una tarea pesada, repetitiva y que provoca código espaguetti difícil de leer y mantener más adelante.
 
-Para hacerla más simple podemos usar la API de validación de formularios de HTML5 que permite que sea el navegador quien se encargue de comprobar la validez de cada campo pero las acciones (mostrar mensajes de error, no enviar el formulario, …) las realizamos desde Javascript.
+{:.question}
+¿Qué es el código espaguetti?
+
+Para hacerla más simple podemos usar la API de validación de formularios de HTML5 que permite que sea el navegador quien se encargue de comprobar la validez de cada campo pero las acciones (mostrar mensajes de error, no enviar el formulario, etc.) las realizamos desde Javascript.
 
 Esto nos da la ventaja de:
 
@@ -550,3 +561,4 @@ form.addEventListener('submit', (event) => {
 - <https://jonmircha.com/javascript-asincrono>
 - <https://es.javascript.info/>
 - <https://cipfpbatoi.github.io/materials/daw/dwc/01-js/08-forms.html>
+- 
