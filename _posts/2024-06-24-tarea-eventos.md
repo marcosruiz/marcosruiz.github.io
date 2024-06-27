@@ -1,5 +1,5 @@
 ---
-title: "Tarea: Eventos"
+title: "Tarea: Web para Bayona"
 date: 2024-06-23 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, dwec, practica]
@@ -22,7 +22,7 @@ Es pleno agosto y trabajas en una empresa de marketing digital llamada Total Mar
 
 Todo el equipo de desarrollo se ha cogido vacaciones salvo tu compañero y tú.
 
-El famoso director español, Juan Antonio Vayona ha contratado a Total Marketing ya que quiere promocionar su última película de espías llamada "Black code".
+El famoso director español, Juan Antonio Bayona ha contratado a Total Marketing ya que quiere promocionar su última película de espías llamada "Black code".
 
 La campaña de márketing va a incluir numerosos elementos como carteles, pancartas, merchandaising, anuncios y una página web.
 

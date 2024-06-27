@@ -1,5 +1,5 @@
 ---
-title: "Tarea: Formularios y expresiones regulares"
+title: "Tarea: El formulario del gobierno"
 date: 2024-06-23 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, dwec, practica]
