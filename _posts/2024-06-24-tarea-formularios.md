@@ -3,7 +3,7 @@ title: "Tarea: Formularios y expresiones regulares"
 date: 2024-06-23 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, dwec, practica]
-img_path: /assets/img/variable-entorno-path/
+img_path: /assets/img/tarea-formularios/
 ---
 
 ## Entrega y presentación
@@ -24,7 +24,9 @@ TekMex ha recibido una licitación para mejorar algunos formularios del gobierno
 
 "¡Menos mal que somos dos para realizar esta tarea!" piensas para tus adentros porque sabes que todos los formularios que habías desarrollado hasta ahora solo los habías validado con Java en el backend así que es la oportunidad perfecta para aprender a validar formularios con HTML y JavaScript.
 
-Recuerda que en la empresa en la que estás hay mucha rotación de plantilla por lo que está muy bien visto comentar el código y dejarlo lo más limpio posible.
+Recuerda que en la empresa en la que estás hay mucha rotación de plantilla por lo que está muy bien visto comentar el código y dejarlo lo más limpio y ordenado posible.
+
+Respecto a la parte CSS para que el formulario se vea bonito, no es necesario que lo hagáis, una vez tengáis todo el formulario preparado se lo pasareis al equipo de diseño y maquetación.
 
 {:.activity}
 ### Formulario de la sede de educación
@@ -97,21 +99,29 @@ Además, deberás añadir las siguientes verificaciones:
 
 - El campo "Nombre" es obligatorio.
 - El campo "Contraseña" y "repita contraseña" deben coincidir tener más de 12 caracteres y contener al menos un número y un símbolo de los siguientes: `!@#%^&*`.
+- La "Fecha de nacimiento" tiene que ser de una persona que sea mayor de edad. Es obligatorio que no tengamos que mantener este campo en el futuro.
+- Recuerda que puedes añadir placeholders para mostrar un ejemplo de como debe rellenarse cada campo.
+- El campo "DNI" debe cumplir con el formato de un DNI válido.
+- El campo "Correo electrónico" debe cumplir con el formato de un email válido.
+- El campo "Teléfono móvil" tiene que tener al menos 9 dígitos. El primer número debe ser un 6, un 7, un 8, un 9 o un +.
+- Pedir confirmación de envío en el formulario.
+- Deberás realizar una función para cada una de las validaciones de tal forma que se pueda llamar a cada una de forma independiente.
+
+> Recuerda que puedes usar expresiones regulares para el DNI, los emails y las fechas y esto puede facilitarte el trabajo.
+{:.prompt-tip}
 
 {:.activity}
-### (Voluntaria)
+### (Voluntaria) Cookies
+
+Almacenar en una cookie el número de intentos de envío del formulario que se van produciendo y mostrar un mensaje en el contenedor "intentos" similar a: "Intento de Envíos del formulario: X". Es decir cada vez que le demos al botón de enviar tendrá que incrementar el valor de la cookie en 1 y mostrar su contenido en el div antes mencionado.
+
+> Recuerda que para poder actualizar el contenido de un contenedor o div la propiedad que tenemos que modificar para ese objeto es `innerHTML`.
+{:.prompt-info}
 
 {:.activity}
-### (Voluntaria)
+### (Voluntaria) 
 
-{:.activity}
-### (Voluntaria)
 
-Construye una expresión regular para lo que se pide a continuación y pruébala con distintas cadenas:
-
-- Un código postal.
-- Un NIF formado por 8 números, un guión y una letra mayúscula o minúscula.
-- Un número de teléfono y aceptamos 2 formatos: XXX XX XX XX o XXX XXX XXX. EL primer número debe ser un 6, un 7, un 8 o un 9.
 
 ## Bibliografía
 

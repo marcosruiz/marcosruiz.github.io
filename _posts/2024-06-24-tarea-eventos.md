@@ -18,13 +18,20 @@ Duración: - horas
 
 ## Actividades
 
-Introducción
+Tú y tu compañero sois los dos únicos desarrolladores de una empresa de marketing digital llamada Total Marketing.
+
+Total Marketing quiere...
+
+
 
 {:.activity}
-### (Voluntaria)
+### Escribe
 
 {:.activity}
-### (Voluntaria)
+### Bingo
+
+{:.activity}
+### MP3
 
 {:.activity}
 ### (Voluntaria)
