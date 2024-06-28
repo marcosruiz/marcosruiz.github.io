@@ -29,7 +29,9 @@ Respecto a la parte CSS para que el formulario se vea bonito, no es necesario qu
 {:.activity}
 ### Formulario de la sede de educación
 
-Mejorar el formulario de la sede electrónica de educación del gobierno que se muestra a continuación:
+Mejorar el formulario de la sede electrónica de educación del gobierno que se muestra a continuación en vídeo y capturas:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v1L4ct3ZpPw?si=VMenvHri-2EdL_tp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ![Parte superior del formulario](datosUsuario1.png)
 _Parte superior del formulario_
