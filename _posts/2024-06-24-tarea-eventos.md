@@ -18,9 +18,9 @@ Duración: - horas
 
 ## Actividades
 
-Es pleno agosto y trabajas en una empresa de marketing digital llamada Total Marketing.
+Es pleno julio y trabajas en una empresa de marketing digital llamada Total Marketing.
 
-Todo el equipo de desarrollo se ha cogido vacaciones salvo tu compañero y tú.
+Todo el equipo de desarrollo se ha cogido vacaciones salvo un compañero tuyo y tú.
 
 El famoso director español, Juan Antonio Bayona ha contratado a Total Marketing ya que quiere promocionar su última película de espías llamada "Black code".
 
@@ -33,7 +33,7 @@ La idea es que tú y tu compañero hagáis una web que simule un sistema operati
 {:.activity}
 ### Escritura automática
 
-Tu jefe quiere que hagáis una web hacker antes de que vuelvan vuestros compañeros de vacaciones. No es necesario que sea muy bonita pero si que tenga la funcionalidad básica que se ha comentado anteriormente.
+Tu jefe quiere que hagáis una web hacker antes de que vuelvan vuestros compañeros de vacaciones. No es necesario que sea muy bonita, ya que para eso ya habrá mas tiempo en el futuro, pero si debe tener la funcionalidad básica que se ha comentado anteriormente.
 
 Podéis usar las siguientes webs como inspiración:
 
@@ -60,7 +60,9 @@ Documenta el código que has desarrollado por si algún compañero se une al pro
 
 En unos días tenéis que enseñarle vuestra web a Bayona a ver si le gusta la web que habéis preparado. Total Marketing tiene muchas cosas que enseñar a Bayona y es un hombre bastante ocupado por lo que debéis intentar ser lo más breves posible.
 
-## Bibliografía
+### (Voluntaria) Side projects
+
+Si has conseguido terminar antes de tiempo y tienes ganas de más retos puedes hacer los siguientes side projects que quedarían increíbles en tu portfolio:
 
 - <https://lenguajejs.com/retos/nivel-facil/rock-paper-scissors/>
 - <https://lenguajejs.com/retos/nivel-medio/bingo/>
