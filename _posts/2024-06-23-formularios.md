@@ -6,6 +6,7 @@ tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, d
 img_path: /assets/img/formularios/
 ---
 
+{:.section}
 ## Introducción
 
 Los formularios, son el principal medio de introducción de datos en una aplicación web, y el **principal punto de interactividad con el usuario**.
@@ -32,6 +33,7 @@ Preguntas a responder tras la visualización del vídeo:
 1. ¿Qué tecla tenemos que pulsar para ver el código fuente de una web?
 1. ¿Por qué hay que validar en el lado del cliente?
 
+{:.section}
 ## La etiqueta form
 
 Lee [La etiqueta form](https://lenguajehtml.com/html/formularios/etiqueta-html-form/).
@@ -96,6 +98,7 @@ Un `<input type="submit"/>`
   </div>
 </details>
 
+{:.section}
 ## La etiqueta input
 
 Lee el artículo [La etiqueta HTML input](https://lenguajehtml.com/html/formularios/etiqueta-html-input/).
@@ -173,6 +176,7 @@ No. Solo oculta el texto visualmente para protejernos de ojos ajenos.
   </div>
 </details>
 
+{:.subsection}
 ### Checkboxes y radio buttons
 
 Lee el artículo [La etiqueta input con casillas](https://lenguajehtml.com/html/formularios/etiqueta-html-input-checkbox-radio/).
@@ -222,6 +226,7 @@ Si. Con la propiedad de css `appearance: none;`.
   </div>
 </details>
 
+{:.subsection}
 ### La etiqueta input submit
 
 Lee el artículo [La etiqueta HTML input submit](https://lenguajehtml.com/html/formularios/etiqueta-html-input-submit/).
@@ -267,6 +272,7 @@ Si, con un `<input type="reset">`.
 {:.question}
 ¿Qué diferencia hay entre un `<input type="submit">` y un `<button>`?
 
+{:.subsubsection}
 #### Para cuando lo necesites...
 
 Lee el artículo [La etiqueta HTML textarea](https://lenguajehtml.com/html/formularios/etiqueta-html-textarea/).
@@ -281,6 +287,7 @@ Lee el artículo [La etiqueta input con colores](https://lenguajehtml.com/html/f
 
 Lee el artículo [La etiqueta HTML select](https://lenguajehtml.com/html/formularios/etiqueta-html-select/).
 
+{:.section}
 ## Formas de selección del objeto form
 
 Dentro de un documento tendremos varias formas de selección de un formulario.
@@ -341,6 +348,7 @@ o bien:
 let miFormulario = formularios["contactar"]; // referenciamos al formulario con name "contactar"
 ```
 
+{:.section}
 ## Formas de seleccionar los hijos de form
 
 Una vez visto cómo referenciar a un formulario en JavaScript, tenemos que saber cómo acceder a cada uno de los elementos u objetos, que contiene ese formulario.
@@ -370,8 +378,10 @@ document.forms["formularioBusqueda"].cEntrada;
 
 Aunque muchos de los controles de un formulario tienen propiedades en común, algunas propiedades son únicas a un control en particular. Por ejemplo, en un objeto select tienes propiedades que te permiten conocer la opción que está actualmente seleccionada. Al igual que los `checkbox` es o los botones de tipo `radio`, que también disponen de propiedades para saber cuál es la opción que está actualmente seleccionada.
 
+{:.section}
 ## Validación de formularios
 
+{:.subsection}
 ### Validación del navegador incorporada en HTML5
 
 Funciona añadiendo atributos a los campos del formulario que queremos validar. Los más usados son:
@@ -395,6 +405,7 @@ input:invalid {
 
 La validación del navegador se realiza al enviar el formulario. Si encuentra un error lo muestra, se detiene la validación del resto de campos y no se envía el formulario.
 
+{:.subsection}
 ### Validación mediante la API de validación de formularios
 
 Mediante JavaScript tenemos acceso a todos los campos del formulario por lo que podemos hacer la validación como queramos, pero es una tarea pesada, repetitiva y que provoca código espaguetti difícil de leer y mantener más adelante.
@@ -460,6 +471,7 @@ document.getElementById('comprueba').addEventListener('click', (event) => {
 
 Para validar un formulario nosotros pero usando esta API debemos añadir al FORM el atributo novalidate que hace que no se encargue el navegador de mostrar los mensajes de error ni de decidir si se envía o no el formulario (aunque sí valida los campos) sino que lo haremos nosotros.
 
+{:.subsubsection}
 #### Ejemplo
 
 Un ejemplo sencillo de validación de un formulario podría ser:

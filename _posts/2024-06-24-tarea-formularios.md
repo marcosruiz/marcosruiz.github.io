@@ -125,7 +125,3 @@ Recuerda que en la empresa en la que estás hay mucha rotación de plantilla por
 ### Presentación
 
 Antes de que entre el equipo de diseño y maquetación vas a enseñar a tus compañeros un vídeo de 3 minutos como máximo donde vas a mostrar todo el trabajo que habéis realizado. Tienes que intentar quedar bien con todo lo que has hecho y aprendido ya que en un mes tienes revisión de contrato y quieres tener argumentos para que te den una buena subida de sueldo. Esta claro que no todo en la vida es programar.
-
-## Bibliografía
-
-- <https://cipfpbatoi.github.io/materials/daw/dwc/01-js/08-forms.html>

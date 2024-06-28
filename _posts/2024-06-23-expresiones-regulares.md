@@ -9,6 +9,7 @@ img_path: /assets/img/expresiones-regulares/
 > "Usar expresiones regulares para resolver un problema genera ahora dos problemas"
 > Jamie Zawinski
 
+{:.section}
 ## ¿Qué es una expresión regular?
 
 Lee el artículo [¿Qué es una expresión regular?](https://lenguajejs.com/javascript/regexp/expresiones-regulares/).
@@ -74,6 +75,7 @@ El flag `i` significa que no diferencia mayúsculas de minúsculas.
 {:.question}
 ¿Es lo mismo `/M.+s/i` que `/[Mm].+[Ss]/`?
 
+{:.section}
 ## Patrones
 
 La potencia de las expresiones regulares es que podemos usar patrones para construir la expresión. Los más comunes son:
@@ -107,6 +109,7 @@ La potencia de las expresiones regulares es que podemos usar patrones para const
   - `/g`: búsqueda global, busca todas las coincidencias y no sólo la primera
   - `/m`: busca en más de 1 línea (para cadenas con saltos de línea)
 
+{:.section}
 ## Expresión regular para validar un email
 
 Mira el vídeo:
@@ -118,13 +121,14 @@ Preguntas a responder tras la visualización del vídeo:
 1. ¿Cuál es la expresión regular para validar o encontrar cualquier email?
 1. Si tenemos un email por línea, ¿cómo podríamos hacer que no encuentre líneas que no tengan la forma de un email válido?
 
+{:.section}
 ## (Voluntario) Para saber más...
 
-Lee el artículo [Propiedades y flags](https://lenguajejs.com/javascript/regexp/flags/)
+Lee el artículo [Propiedades y flags](https://lenguajejs.com/javascript/regexp/flags/).
 
-Lee el artículo [Buscar y capturar textos](https://lenguajejs.com/javascript/regexp/buscar-capturar/)
+Lee el artículo [Buscar y capturar textos](https://lenguajejs.com/javascript/regexp/buscar-capturar/).
 
-Lee el artículo [Crear expresiones regulares](https://lenguajejs.com/javascript/regexp/crear-expresiones-regulares/)
+Lee el artículo [Crear expresiones regulares](https://lenguajejs.com/javascript/regexp/crear-expresiones-regulares/).
 
 ## Bibliografía
 

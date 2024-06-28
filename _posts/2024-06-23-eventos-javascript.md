@@ -6,6 +6,7 @@ tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, d
 img_path: /assets/img/eventos-javascript/
 ---
 
+{:.section}
 ## ¿Qué son los eventos?
 
 Lee el artículo [¿Qué son los eventos?](https://lenguajejs.com/javascript/eventos/que-son-eventos/)
@@ -35,6 +36,7 @@ Mediante `addEventListener()`.
   </div>
 </details>
 
+{:.section}
 ## Modelo de eventos en línea → Eventos mediante HTML
 
 Mira el siguiente vídeo:
@@ -90,6 +92,7 @@ No. Es mejor localizar los elementos HTML desde el fichero JS.
   </div>
 </details>
 
+{:.section}
 ## Modelo de eventos tradicional → Eventos mediante JavaScript
 
 Mira el siguiente vídeo:
@@ -115,6 +118,7 @@ Lee el artículo [Eventos mediante JavaScript](https://lenguajejs.com/javascript
 {:.question}
 En JavaScript, la propiedad `.onclick` ¿puede ir en mayúsculas y minúsculas indistintamente? Es decir, ¿puedo escribir tanto `.onclick` como `.onClick`?
 
+{:.subsection}
 ### Modelo de eventos del W3C → El método addEventListener
 
 Mira el siguiente vídeo:
@@ -197,12 +201,14 @@ Sólo si la hemos guardado en una variable antes de llamar a `addEventListener()
   </div>
 </details>
 
+{:.section}
 ## (Voluntario) Para saber más...
 
 Lee el artículo [Escuchar eventos y handleEvent](https://lenguajejs.com/javascript/eventos/addeventlistener-handleevent/).
 
 Lee el artículo [El objeto Event](https://lenguajejs.com/javascript/eventos/objeto-event/).
 
+{:.section}
 ## ¿Qué son los Custom Events?
 
 Lee el artículo [¿Qué son los Custom Events?](https://lenguajejs.com/javascript/custom-events/que-son/#custom-events)
@@ -234,12 +240,14 @@ No.
   </div>
 </details>
 
+{:.section}
 ## (Voluntario) Para saber más...
 
 Lee el artículo [Emisión de eventos](https://lenguajejs.com/javascript/custom-events/emision-eventos/).
 
 Lee el artículo [Propagación de eventos](https://lenguajejs.com/javascript/custom-events/propagacion-eventos/).
 
+{:.section}
 ## ¿Qué son los eventos de navegador?
 
 Lee el artículo [Eventos de navegador: ¿Qué son?](https://lenguajejs.com/javascript/eventos-navegador/que-son/)
@@ -247,6 +255,7 @@ Lee el artículo [Eventos de navegador: ¿Qué son?](https://lenguajejs.com/java
 {:.question}
 ¿En qué consiste la desestructuración?
 
+{:.subsection}
 ### Eventos de teclado
 
 Lee el artículo [Eventos de teclado](https://lenguajejs.com/javascript/eventos-navegador/keyboard-event/)
@@ -308,6 +317,7 @@ La tecla del logo de Windows es llamada `metaKey`.
   </div>
 </details>
 
+{:.subsection}
 ### Eventos de puntero
 
 Lee el artículo [Eventos de puntero](https://lenguajejs.com/javascript/eventos-navegador/pointer-event/).

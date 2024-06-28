@@ -6,18 +6,22 @@ tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, d
 img_path: /assets/img/eventos-formularios/
 ---
 
+{:.section}
 ## Eventos
 
 Lee el artículo [Eventos en JavaScript](/posts/eventos-javascript).
 
+{:.section}
 ## Formularios
 
 Lee el artículo [Formularios](/posts/formularios).
 
+{:.section}
 ## Expresiones regulares
 
 Lee el artículo [Expresiones regulares](/posts/expresiones-regulares).
 
+{:.section}
 ## Cookies
 
 Lee el artículo [Gestión de cookies en JavaScript](/posts/cookies).
