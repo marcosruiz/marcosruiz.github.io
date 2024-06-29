@@ -208,9 +208,6 @@ Lee el artículo [Escuchar eventos y handleEvent](https://lenguajejs.com/javascr
 
 Lee el artículo [El objeto Event](https://lenguajejs.com/javascript/eventos/objeto-event/).
 
-{:.section}
-## ¿Qué son los Custom Events?
-
 Lee el artículo [¿Qué son los Custom Events?](https://lenguajejs.com/javascript/custom-events/que-son/#custom-events)
 
 {:.question}
@@ -239,9 +236,6 @@ No.
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
-
-{:.section}
-## (Voluntario) Para saber más...
 
 Lee el artículo [Emisión de eventos](https://lenguajejs.com/javascript/custom-events/emision-eventos/).
 

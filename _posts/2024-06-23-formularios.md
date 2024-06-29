@@ -36,7 +36,7 @@ Preguntas a responder tras la visualización del vídeo:
 {:.section}
 ## La etiqueta form
 
-Lee [La etiqueta form](https://lenguajehtml.com/html/formularios/etiqueta-html-form/).
+Lee el artículo [La etiqueta form](https://lenguajehtml.com/html/formularios/etiqueta-html-form/).
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es un formulario?</summary>
@@ -272,8 +272,8 @@ Si, con un `<input type="reset">`.
 {:.question}
 ¿Qué diferencia hay entre un `<input type="submit">` y un `<button>`?
 
-{:.subsubsection}
-#### Para cuando lo necesites...
+{:.subsection}
+### Para cuando lo necesites...
 
 Lee el artículo [La etiqueta HTML textarea](https://lenguajehtml.com/html/formularios/etiqueta-html-textarea/).
 
