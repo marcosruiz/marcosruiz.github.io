@@ -14,7 +14,7 @@ La entrega será en formato Presentación. Leer [Entrega y presentación de tare
 
 La tarea se calificará con una nota de 0 a 10.
 
-Duración: - horas
+Duración actividades obligatorias: 3 horas
 
 ## Actividades
 
@@ -28,7 +28,7 @@ La campaña de márketing va a incluir numerosos elementos como carteles, pancar
 
 Para la página web promocional, a tu jefe se le ha ocurrido una idea bastante original.
 
-La idea es que tú y tu compañero hagáis una web que simule un sistema operativo de un hacker y que cuando el usuario pulse cualquier tecla se escriba un código que supuestamente hackeará el avión presidencial del presidente del gobierno de España.
+La idea es que tú y tu compañero hagáis una web que simule un sistema operativo de un hacker y que cuando el usuario pulse cualquier tecla se escriba un código que supuestamente hackeará el teléfono presidencial del presidente de España.
 
 {:.activity}
 ### Escritura automática
@@ -46,19 +46,39 @@ Podéis usar las siguientes webs como inspiración:
 Cuando se pulse el conjunto de teclas `Ctrl` + `Alt` + `X` deberá aparecer el título y la fecha de estreno de la película en mitad de la pantalla. La fecha de estreno será el 1 de septiembre de este mismo año.
 
 {:.activity}
-### (Voluntaria) Vídeo
+### (Voluntaria) Cámara de seguridad
 
 Añade un vídeo que simule una cámara de seguridad cuando hagas doble click en una zona concreta de la pantalla.
 
 {:.activity}
-### Documenta
+### (Voluntaria) Cuanta atrás
+
+Añadir una cuenta atrás, cuando esta cuenta llegue a 0 aparecerá un cartel que ponga "Intrusión fallida".
+
+{:.activity}
+### (Voluntaria) Publicidad
+
+Añade un banner de publicidad que aparezca cuando hagas click en una zona concreta de la pantalla. Seguro que es algo que Total Marketing querrá hacer en un futuro.
+
+{:.activity}
+### (Voluntaria) Mejorar la interfaz de usuario
+
+Mejora la interfaz de usuario utilizando CSS. A continuación se listan algunas ideas que podrías implementar:
+
+1. Añadir una imagen de fondo.
+1. Cambia el puntero del ratón.
+1. Utiliza un tipo de letra monospace y de color verde.
+1. Personaliza la transición de cuando aparece la cámara de seguridad.
+
+{:.activity}
+### Documentación
 
 Documenta el código que has desarrollado por si algún compañero se une al proyecto cuando vuelva de vacaciones.
 
 {:.activity}
 ### Presentación
 
-En unos días tenéis que enseñarle vuestra web a Bayona a ver si le gusta la web que habéis preparado. Total Marketing tiene muchas cosas que enseñar a Bayona y es un hombre bastante ocupado por lo que debéis intentar ser lo más breves posible.
+En unos días tenéis que enseñarle vuestra web a Bayona a ver si le gusta la web que habéis preparado. Total Marketing tiene muchas cosas que enseñar a Bayona y es un hombre bastante ocupado por lo que la presentación no debe superar los 3 minutos.
 
 ### (Voluntaria) Side projects
 

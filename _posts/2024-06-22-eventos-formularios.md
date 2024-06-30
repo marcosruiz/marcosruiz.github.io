@@ -31,18 +31,3 @@ Lee el artículo [Expresiones regulares](/posts/expresiones-regulares).
 ## Cookies
 
 Lee el artículo [Gestión de cookies en JavaScript](/posts/cookies).
-
-<details class="card mb-2">
-  <summary class="card-header">Para finalizar la UD...</summary>
-  <div class="card-body" markdown="1">
-
-Cuando terminemos esta unidad didáctica haremos una reflexión respondiendo a las siguientes preguntas:
-
-1. ¿Qué he aprendido?
-2. ¿Cómo lo he aprendido?
-3. ¿Para qué me ha servido?
-4. ¿En qué otras ocasiones puedo usarlo?
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>

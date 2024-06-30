@@ -14,7 +14,7 @@ La entrega será en formato Presentación. Leer [Entrega y presentación de tare
 
 La tarea se calificará con una nota de 0 a 10.
 
-Duración: - horas
+Duración actividades obligatorias: 6 horas
 
 ## Actividades
 
@@ -100,15 +100,23 @@ Además, deberás añadir las siguientes verificaciones:
 - El campo "Nombre" es obligatorio.
 - El campo "Contraseña" y "repita contraseña" deben coincidir tener más de 12 caracteres y contener al menos un número y un símbolo de los siguientes: `!@#%^&*`.
 - La "Fecha de nacimiento" tiene que ser de una persona que sea mayor de edad. Es obligatorio que no tengamos que mantener este campo en el futuro.
-- Recuerda que puedes añadir placeholders para mostrar un ejemplo de como debe rellenarse cada campo.
 - El campo "DNI" debe cumplir con el formato de un DNI válido.
 - El campo "Correo electrónico" debe cumplir con el formato de un email válido.
 - El campo "Teléfono móvil" tiene que tener al menos 9 dígitos. El primer número debe ser un 6, un 7, un 8, un 9 o un +.
-- Pedir confirmación de envío en el formulario.
 - Deberás realizar una función para cada una de las validaciones de tal forma que se pueda llamar a cada una de forma independiente.
 
 > Recuerda que puedes usar expresiones regulares para el DNI, los emails y las fechas y esto puede facilitarte el trabajo.
 {:.prompt-tip}
+
+{:.activity}
+### (Voluntaria) Placeholders
+
+Añade placeholders para mostrar un ejemplo de como puede rellenarse cada campo.
+
+{:.activity}
+### (Voluntaria) Confirmación
+
+Pide confirmación antes de enviar en el formulario.
 
 {:.activity}
 ### (Voluntaria) Cookies
@@ -119,7 +127,14 @@ Almacenar en una cookie el número de intentos de envío del formulario que se v
 {:.prompt-info}
 
 {:.activity}
-### Documenta
+### Mejorar la interfaz de usuario
+
+Aunque tenemos un equipo de diseño y maquetación estos suelen estar muy ocupados. Puedes mejorar la interfaz de usuario utilizando CSS. También puedes añadir iconos que ayuden a entender que datos pedimos al usuario.
+
+Otra opción es que uses ese tiempo en investigar como usar una biblioteca externa como [Bootstrap](https://getbootstrap.com/) o [Tailwind](https://tailwindcss.com/) y de que manera nos podría ayuda a desarrollar más rápido en un futuro.
+
+{:.activity}
+### Documentación
 
 Recuerda que en la empresa en la que estás hay mucha rotación de plantilla por lo que está muy bien visto comentar el código y dejarlo lo más limpio y ordenado posible.
 
