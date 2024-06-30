@@ -51,9 +51,9 @@ Cuando se pulse el conjunto de teclas `Ctrl` + `Alt` + `X` deberá aparecer el t
 Añade un vídeo que simule una cámara de seguridad cuando hagas doble click en una zona concreta de la pantalla.
 
 {:.activity}
-### (Voluntaria) Cuanta atrás
+### (Voluntaria) Cuenta atrás
 
-Añadir una cuenta atrás, cuando esta cuenta llegue a 0 aparecerá un cartel que ponga "Intrusión fallida".
+Añade una cuenta atrás, cuando esta cuenta llegue a 0 aparecerá un cartel que ponga "Intrusión fallida".
 
 {:.activity}
 ### (Voluntaria) Publicidad
@@ -65,7 +65,7 @@ Añade un banner de publicidad que aparezca cuando hagas click en una zona concr
 
 Mejora la interfaz de usuario utilizando CSS. A continuación se listan algunas ideas que podrías implementar:
 
-1. Añadir una imagen de fondo.
+1. Añade una imagen de fondo.
 1. Cambia el puntero del ratón.
 1. Utiliza un tipo de letra monospace y de color verde.
 1. Personaliza la transición de cuando aparece la cámara de seguridad.
@@ -76,7 +76,7 @@ Mejora la interfaz de usuario utilizando CSS. A continuación se listan algunas 
 Documenta el código que has desarrollado por si algún compañero se une al proyecto cuando vuelva de vacaciones.
 
 {:.activity}
-### Presentación
+### Preparación de la presentación
 
 En unos días tenéis que enseñarle vuestra web a Bayona a ver si le gusta la web que habéis preparado. Total Marketing tiene muchas cosas que enseñar a Bayona y es un hombre bastante ocupado por lo que la presentación no debe superar los 3 minutos.
 

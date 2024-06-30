@@ -127,7 +127,7 @@ Almacenar en una cookie el número de intentos de envío del formulario que se v
 {:.prompt-info}
 
 {:.activity}
-### Mejorar la interfaz de usuario
+### (Voluntaria) Mejorar la interfaz de usuario
 
 Aunque tenemos un equipo de diseño y maquetación estos suelen estar muy ocupados. Puedes mejorar la interfaz de usuario utilizando CSS. También puedes añadir iconos que ayuden a entender que datos pedimos al usuario.
 
@@ -139,6 +139,6 @@ Otra opción es que uses ese tiempo en investigar como usar una biblioteca exter
 Recuerda que en la empresa en la que estás hay mucha rotación de plantilla por lo que está muy bien visto comentar el código y dejarlo lo más limpio y ordenado posible.
 
 {:.activity}
-### Presentación
+### Preparación del vídeo
 
 Antes de que entre el equipo de diseño y maquetación vas a enseñar a tus compañeros un vídeo de 3 minutos como máximo donde vas a mostrar todo el trabajo que habéis realizado. Tienes que intentar quedar bien con todo lo que has hecho y aprendido ya que en un mes tienes revisión de contrato y quieres tener argumentos para que te den una buena subida de sueldo. Esta claro que no todo en la vida es programar.
