@@ -80,6 +80,7 @@ Documenta el código que has desarrollado por si algún compañero se une al pro
 
 En unos días tenéis que enseñarle vuestra web a Bayona a ver si le gusta la web que habéis preparado. Total Marketing tiene muchas cosas que enseñar a Bayona y es un hombre bastante ocupado por lo que la presentación no debe superar los 3 minutos.
 
+{:.activity}
 ### (Voluntaria) Side projects
 
 Si has conseguido terminar antes de tiempo y tienes ganas de más retos puedes hacer los siguientes side projects que quedarían increíbles en tu portfolio:
