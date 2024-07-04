@@ -22,26 +22,31 @@ Personalmente me quedo con **SOCIOGRAM - Forms ADD ON** por ser gratuito y me pe
 
 Ir a la web <https://workspace.google.com/marketplace/app/sociogram/298994610440> e instala SOCIOGRAM:
 
-![alt text](2024-07-04_18-38.png)
+![Instalar Sociogram](2024-07-04_18-38.png)
+_Instalar Sociogram_
 
 ## Paso 2: Ejecutar extensión
 
 Creamos un Formulario de Google y ejecutamos la Extensión:
 
-![alt text](2024-07-04_18-39.png)
+![Seleccionar extensión "Sociogram" en Google Forms](2024-07-04_18-39.png)
+_Seleccionar extensión "Sociogram" en Google Forms_
 
-![alt text](2024-07-04_18-40.png)
+![Seleccionar "Start a sociogram in this form"](2024-07-04_18-40.png)
+_Seleccionar "Start a sociogram in this form"_
 
 ## Paso 3: Alumnos
 
-Añade los nombres de los alumnos:
+Añade (copia y pega) los nombres de los alumnos:
 
 > ¡IMPORTANTE! Ten cuidado con copiar datos de un EXCEL en columnas diferentes ya que te dará problemas si hay tabulaciones en los nombres.
 {:.prompt-warning}
 
-![alt text](2024-07-04_18-41.png)
+![Introducir los nombres de tus alumnos](2024-07-04_18-41.png)
+_Introducir los nombres de tus alumnos_
 
-![alt text](2024-07-04_18-42.png)
+![Copiar y pegar desde Google Sheet](2024-07-04_18-42.png)
+_Copiar y pegar desde Google Sheet_
 
 ## Paso 4: Preguntas
 
@@ -61,38 +66,46 @@ Sociograma (trabajo):
 
 Selecciona tu nombre de la lista:
 
-![alt text](2024-07-04_18-42_1.png)
+![Selecciona tu nombre de la lista](2024-07-04_18-42_1.png)
+_Selecciona tu nombre de la lista_
 
 Añade la pregunta positiva:
 
-![alt text](2024-07-04_18-43.png)
+![¿Con quién prefieres pasar tu tiempo libre?](2024-07-04_18-43.png)
+_¿Con quién prefieres pasar tu tiempo libre?_
 
 Añade la pregunta negativa:
 
-![alt text](2024-07-04_18-43_1.png)
+![¿Con quién preferirías NO pasar tu tiempo libre?](2024-07-04_18-43_1.png)
+_¿Con quién preferirías NO pasar tu tiempo libre?_
 
 Generamos el formulario:
 
 > ¡IMPORTANTE! Esto borrará el formulario y las respuestas anteriores.
 {:.prompt-warning}
 
-![alt text](2024-07-04_18-44.png)
+![Hacer click en "Build my form"](2024-07-04_18-44.png)
+_Hacer click en "Build my form"_
 
 ## Paso 5: Generar reporte y grupos
 
-Seleccionamos opción de gnerar reporte:
+Seleccionamos opción de generar reporte:
 
-![alt text](2024-07-04_18-44_1.png)
+![Seleccionar extensión "Sociogram" en Google Forms](2024-07-04_18-44_1.png)
+_Seleccionar extensión "Sociogram" en Google Forms_
 
-![alt text](2024-07-04_18-45.png)
+![Seleccionar "View sociogram reporting"](2024-07-04_18-45.png)
+_Seleccionar "View sociogram reporting"_
 
 Bajamos al final del reporte y exportamos todo en PDF:
 
-![alt text](2024-07-04_18-46.png)
+![Seleccionar "Print or save as PDF"](2024-07-04_18-46.png)
+_Seleccionar "Print or save as PDF"_
 
 También podemos generar grupos directamente en el reporte interactivo:
 
-![alt text](2024-07-04_18-47.png)
+![Seleccionar "Generate groups"](2024-07-04_18-47.png)
+_Seleccionar "Generate groups"_
 
 ## Bibliografía
 
