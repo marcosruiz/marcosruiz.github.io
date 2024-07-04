@@ -24,7 +24,7 @@ Ir a la web <https://workspace.google.com/marketplace/app/sociogram/298994610440
 
 ![alt text](2024-07-04_18-38.png)
 
-## Paso 2: Ejecutar extenxión
+## Paso 2: Ejecutar extensión
 
 Creamos un Formulario de Google y ejecutamos la Extensión:
 
