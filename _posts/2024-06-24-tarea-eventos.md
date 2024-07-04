@@ -65,10 +65,11 @@ Añade un banner de publicidad que aparezca cuando hagas click en una zona concr
 
 Mejora la interfaz de usuario utilizando CSS. A continuación se listan algunas ideas que podrías implementar:
 
-1. Añade una imagen de fondo.
+1. Añade una imagen de fondo para que parezca un escritorio hacker.
 1. Cambia el puntero del ratón.
-1. Utiliza un tipo de letra monospace y de color verde.
+1. Utiliza un tipo de letra monospace y el color de letra que prefieras.
 1. Personaliza la transición de cuando aparece la cámara de seguridad.
+1. Haz que haya un scroll automático para ver siempre lo que escribes.
 
 {:.activity}
 ### Documentación
