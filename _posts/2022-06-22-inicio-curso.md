@@ -43,7 +43,6 @@ tags: [enlaces, edteam, alva majo, programas, software, extensiones]
 | CrystalDiskMark                                                          | ❌         | ✅       |
 | WPS Office                                                               | ✅         | ✅       |
 | Vagrant                                                                  | ✅         | ✅       |
-| CristalDiskInfo                                                          | ❌         | ✅       |
 | [Safe Exam Browser](https://safeexambrowser.org/download_en.html)        | ❌         | ✅       |
 
 ## Programas para mi
@@ -95,6 +94,10 @@ Otros:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NMQuGlQ0XHQ?si=VliU7Vf26EezDz_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mKVV1vBpn08?si=_i5sPGdk4e27oI_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Sociograma
+
+Leer el artículo [Tutorial: Crea tu propio sociograma en Google Forms](/posts/tutorial-sociograma)
 
 ## Bibliografía
 

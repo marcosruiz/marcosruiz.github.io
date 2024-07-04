@@ -47,3 +47,9 @@ pin: true
 
 - <https://elandroidefeliz.com/10-cursos-online-gratuitos-sobre-ia-impartidos-por-google/>
 - <https://home.work.caltech.edu/lectures.html#lectures>
+
+## Cosas a mejorar para el próximo curso...
+
+- La [Tarea: Álgebra lineal](/posts/tarea-algebra-lineal/) lleva mucho tiempo para la poca importancia que tiene a posteriori.
+- Se tendría que haber hecho más hincapié en la preparación de datos.
+- Se puede profundizar mucho más en la parte de Redes Neuronales.
