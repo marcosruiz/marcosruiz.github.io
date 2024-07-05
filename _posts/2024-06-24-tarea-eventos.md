@@ -40,6 +40,9 @@ Podéis usar las siguientes webs como inspiración:
 - <https://hackertyper.net/>
 - <https://geekprank.com/hacker/>
 
+> Recuerda que tambíen deben aparecer saltos de línea en el código que aparece en la web.
+{:.prompt-info}
+
 {:.activity}
 ### Fecha y título de la película
 
@@ -61,15 +64,16 @@ Añade una cuenta atrás, cuando esta cuenta llegue a 0 aparecerá un cartel que
 Añade un banner de publicidad que aparezca cuando hagas click en una zona concreta de la pantalla. Seguro que es algo que Total Marketing querrá hacer en un futuro.
 
 {:.activity}
-### (Voluntaria) Mejorar la interfaz de usuario
+### (Voluntaria) Mejorar la experiencia de usuario
 
 Mejora la interfaz de usuario utilizando CSS. A continuación se listan algunas ideas que podrías implementar:
 
+1. Haz que en lugar de una letra por cada pulsación se escriban 5 letras.
+1. Haz que haya un scroll automático para ver siempre lo que escribes.
 1. Añade una imagen de fondo para que parezca un escritorio hacker.
 1. Cambia el puntero del ratón.
 1. Utiliza un tipo de letra monospace y el color de letra que prefieras.
 1. Personaliza la transición de cuando aparece la cámara de seguridad.
-1. Haz que haya un scroll automático para ver siempre lo que escribes.
 
 {:.activity}
 ### Documentación
