@@ -28,6 +28,6 @@ Lee el artículo [Formularios](/posts/formularios).
 Lee el artículo [Expresiones regulares](/posts/expresiones-regulares).
 
 {:.section}
-## Cookies
+## (Voluntario) Cookies
 
 Lee el artículo [Gestión de cookies en JavaScript](/posts/cookies).

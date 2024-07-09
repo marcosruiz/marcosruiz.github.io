@@ -119,9 +119,12 @@ Añade placeholders para mostrar un ejemplo de como puede rellenarse cada campo.
 Pide confirmación antes de enviar en el formulario.
 
 {:.activity}
-### (Voluntaria) Cookies
+### (Voluntaria) Número de intentos
 
-Almacenar en una cookie el número de intentos de envío del formulario que se van produciendo y mostrar un mensaje en el contenedor "intentos" similar a: "Intento de Envíos del formulario: X". Es decir cada vez que le demos al botón de enviar tendrá que incrementar el valor de la cookie en 1 y mostrar su contenido en el div antes mencionado.
+Mostrar el número de intentos de envío del formulario que se van produciendo y mostrar un mensaje similar a: "Intento de Envíos del formulario: X". Es decir, cada vez que le demos al botón de enviar tendrá que incrementar el valor de la cookie en 1 y mostrar su contenido en el div antes mencionado. **¡El número de intentos NO debe reiniciarse si cerramos y abrimos el navegador!**
+
+> El artículo [Gestión de cookies en JavaScript](/posts/cookies/) puede serte de ayuda para la realización de esta actividad.
+{:.prompt-info}
 
 > Recuerda que para poder actualizar el contenido de un contenedor o div la propiedad que tenemos que modificar para ese objeto es `innerHTML`.
 {:.prompt-info}
@@ -142,3 +145,16 @@ Recuerda que en la empresa en la que estás hay mucha rotación de plantilla por
 ### Preparación del vídeo
 
 Antes de que entre el equipo de diseño y maquetación vas a enseñar a tus compañeros un vídeo de 3 minutos como máximo donde vas a mostrar todo el trabajo que habéis realizado. Tienes que intentar quedar bien con todo lo que has hecho y aprendido ya que en un mes tienes revisión de contrato y quieres tener argumentos para que te den una buena subida de sueldo. Esta claro que no todo en la vida es programar.
+
+> Si no sabes ninguna herramienta con la que grabar vídeos puedes usar:
+> 
+> - **Herramienta de Recortes de Windows**: Herramienta sencilla para capturas y grabación de videos para Windows. Software propietario.
+> - **ZoomIt**: Herramienta sencilla para capturas y grabación de videos para Windows. Permite dibujar en pantalla y hacer zoom. Software propietario.
+> - **OBS Studio**: Herramienta profesional para grabación de vídeos para Windows y GNU Linux. Software libre.
+> 
+> Si no sabes ninguna herramienta con la que editar vídeos puedes usar:
+> 
+> - **Microsoft Clipchamp**: Herramienta sencilla para Windows. Software propietario.
+> - **Kdenlive**: Herramienta profesional para Windows y GNU Linux. Software libre.
+> - **Open Shot**: Herramienta profesional para Windows y GNU Linux. Con menos opciones que Kdenlive. Software libre.
+{:.prompt-info}
