@@ -47,6 +47,8 @@ tags: [aplicaciones web, smr]
 - [Aprende X en Y mintuos, Donde X=javascript](https://learnxinyminutes.com/docs/es-es/javascript-es/)
 - [CodinGame](https://www.codingame.com/start) → En inglés
 - [CodeAcademy](https://www.codecademy.com/catalog/language/javascript) → En inglés
+- <https://javascript30.com/>
+- <https://bgjar.com/>
 
 ## Carpeta compartida de la asignatura
 
