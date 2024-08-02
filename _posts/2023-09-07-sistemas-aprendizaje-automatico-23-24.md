@@ -4,7 +4,6 @@ date: 2023-09-07 9:00:00 +0100
 categories: [Inteligencia Artificial y Big Data, Sistemas de aprendizaje automático]
 tags: [inteligencia artificial y big data, sistemas de aprendizaje automático]
 img_path: /assets/img/sistemas-aprendizaje-automatico-23-24/
-pin: true
 ---
 
 ## Evaluación 1

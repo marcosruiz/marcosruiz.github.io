@@ -4,7 +4,6 @@ date: 2023-09-07 9:00:00 +0100
 categories: [Ciberseguridad en Entornos de las Tecnologías de la Información, Normativa de Ciberseguridad]
 tags: [ciberseguridad en entornos de las tecnologías de la información, normativa de ciberseguridad]
 img_path: /assets/img/normativa-ciberseguridad-23-24/
-pin: true
 ---
 
 ## Evaluación 0
