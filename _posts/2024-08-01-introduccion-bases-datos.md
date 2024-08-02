@@ -1,7 +1,7 @@
 ---
 title: "Introducción a las bases de datos"
 date: 2024-08-01 9:00:00 +0100
-categories: categories: [Desarrollo de Aplicaciones Web, Bases de Datos]
+categories: [Desarrollo de Aplicaciones Web, Bases de Datos]
 tags: [bases, base, datos, bbdd, daw, dam, desarrollo de aplicaciones web, desarrollo de aplicaciones multiplataforma, bases de datos, fp, ciclo superior, modulo, profesional]
 img_path: /assets/img/introduccion-bases-datos/
 ---

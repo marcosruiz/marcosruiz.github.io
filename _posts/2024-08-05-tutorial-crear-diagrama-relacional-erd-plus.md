@@ -26,7 +26,7 @@ Hay que clicar sobre el botón "table":
 
 ![alt text](boton-table.png)
 
- A continuación clicar sobre cualquier punto del lienzo de dibujo y se creará una tabla vacía:
+A continuación clicar sobre cualquier punto del lienzo de dibujo y se creará una tabla vacía:
 
 ![alt text](tabla-vacia.png)
 
