@@ -141,7 +141,7 @@ También hay que tener en cuenta si los atributos son simples o compuestos, o si
 
 Los atributos de una entidad se representan mediante elipses o círculos etiquetados, que se conectan por una línea recta a la entidad o relación que califican, cada uno de los cuales tiene que tener un nombre único y que haga referencia a su contenido. Los nombres de los atributos deben ir en minúsculas.
 
-[alt text](atributos.png)
+![alt text](atributos.png)
 
 Cada atributo tiene un conjunto de valores asociados denominado dominio. El dominio define todos los valores posibles que puede tomar un atributo.
 
