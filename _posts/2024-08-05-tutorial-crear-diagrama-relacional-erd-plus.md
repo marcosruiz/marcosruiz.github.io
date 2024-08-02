@@ -6,6 +6,8 @@ tags: [general, sociograma, tutoria, tutorial, google, forms, sociogram, add on,
 img_path: /assets/img/tutorial-crear-diagrama-relacional-erd-plus/
 ---
 
+## Introducción
+
 Vamos a ver cómo se crearía un diagrama relacional con la herramienta ERD Plus.
 
 Imaginad que tenemos el diagrama ER siguiente sobre una base de datos de recetas:
@@ -18,7 +20,8 @@ Si diagrama relacional correspondiente es el siguiente:
 
 Voy a indicar cómo se crea cada uno de los elementos del diagrama.
 
-Tablas
+## Tablas
+
 Hay que clicar sobre el botón "table":
 
 ![alt text](boton-table.png)
