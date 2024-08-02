@@ -48,7 +48,7 @@ CREATE TABLE Alumno (
 
 ### Claves primarias
 
-Siguiendo con el ejemplo de la tabla Alumno, la clave primaria está formada por un solo campo, por lo que se puede poner directamente en la columna que es la clave primaria la palabra clave PRIMARY KEY:
+Siguiendo con el ejemplo de la tabla Alumno, la clave primaria está formada por un solo campo, por lo que se puede poner directamente en la columna que es la clave primaria la palabra clave `PRIMARY KEY`:
 
 ```sql
 CREATE TABLE Alumno (
@@ -75,7 +75,7 @@ CREATE TABLE Matricula (
 
 ### Claves ajenas
 
-La tabla Matricula tiene dos claves ajenas, en la columna Codigo y en la columna DNI.
+La tabla Matricula tiene dos claves ajenas, en la columna `Codigo` y en la columna `DNI`.
 El diagrama de las tablas Alumno, Matricula y Asignatura:
 
 ![alt text](ddl-claves-ajenas.png)
@@ -111,11 +111,11 @@ CREATE TABLE Matricula (
 );
 ```
 
-La clave ajena se indica después de todas las columnas, se pone FOREIGN KEY, a continuación entre paréntesis el nombre de la columna o columnas que forman parte de la clave ajena, luego la palabra REFERENCES y el nombre de la tabla con el de la columna a la que hace referencia como clave primaria, entre paréntesis.
+La clave ajena se indica después de todas las columnas, se pone `FOREIGN KEY`, a continuación entre paréntesis el nombre de la columna o columnas que forman parte de la clave ajena, luego la palabra `REFERENCES` y el nombre de la tabla con el de la columna a la que hace referencia como clave primaria, entre paréntesis.
 
 ### Algunas restricciones de integridad
 
-**Prohibir nulos**. Esto obliga a que la columna tenga que tener obligatoriamente un valor para que sea almacenado el registro. Para esto, basta con añadir en la columna que no se permite dejar vacía en ninguna fila, después del tipo de dato, las palabras claves NOT NULL.
+**Prohibir nulos**. Esto obliga a que la columna tenga que tener obligatoriamente un valor para que sea almacenado el registro. Para esto, basta con añadir en la columna que no se permite dejar vacía en ninguna fila, después del tipo de dato, las palabras claves `NOT NULL`.
 
 ```sql
 CREATE TABLE Alumno(
@@ -128,7 +128,7 @@ CREATE TABLE Alumno(
 );
 ```
 
-**Valores no repetidos**. Esto obliga a que el contenido de una o más columnas no puedan repetir valores en la tabla. Basta con añadir al final de la columna la palabra clave UNIQUE.
+**Valores no repetidos**. Esto obliga a que el contenido de una o más columnas no puedan repetir valores en la tabla. Basta con añadir al final de la columna la palabra clave `UNIQUE`.
 
 Si no permitimos que dos grados tengan el mismo nombre:
 
@@ -188,15 +188,15 @@ El lenguaje de manipulación de datos (Data Manipulation Language) permite indic
 
 ### Inserción de datos
 
-La inserción de datos a una tabla se realiza mediante la instrucción INSERT. Su sintaxis fundamental es:
+La inserción de datos a una tabla se realiza mediante la instrucción `INSERT`. Su sintaxis fundamental es:
 
 ```sql
 INSERT INTO tabla (listaDeColumnas) VALUES (valor1,valor2, ...)
 ```
 
-La tabla representa la tabla a la que se quiere añadir el registro y los valores que siguen a VALUES son los valores que se dan a los distintos campos del registro. Si no se especifica la lista de campos, la lista de valores debe seguir el orden de las columnas según fueron creados.
+La tabla representa la tabla a la que se quiere añadir el registro y los valores que siguen a `VALUES` son los valores que se dan a los distintos campos del registro. Si no se especifica la lista de campos, la lista de valores debe seguir el orden de las columnas según fueron creados.
 
-La lista de campos a rellenar se indica si no se quieren rellenar todos los campos. Los campos no rellenados explícitamente con la orden INSERT, se rellenan con su valor por defecto o bien se dejan vacíos (valor nulo) si no se indica valor alguno. Si algún campo tiene restricción de obligatoriedad (NOT NULL), ocurrirá un error si no rellenamos el campo con algún valor.
+La lista de campos a rellenar se indica si no se quieren rellenar todos los campos. Los campos no rellenados explícitamente con la orden `INSERT`, se rellenan con su valor por defecto o bien se dejan vacíos (valor nulo) si no se indica valor alguno. Si algún campo tiene restricción de obligatoriedad (`NOT NULL`), ocurrirá un error si no rellenamos el campo con algún valor.
 
 Inserción de un registro en la tabla Alumno:
 
@@ -236,21 +236,21 @@ Borrado del registro insertado antes:
 DELETE FROM ALUMNOS WHERE DNI LIKE '25458982A';
 ```
 
-Con la sentencia `DELETE` hay que tener cuidado. Si se ejecuta la sentencia sin la cláusula WHERE (sin ninguna condición), se elimina todo el contenido de la tabla, es decir, se vacía la tabla.
+Con la sentencia `DELETE` hay que tener cuidado. Si se ejecuta la sentencia sin la cláusula `WHERE` (sin ninguna condición), se elimina todo el contenido de la tabla, es decir, se vacía la tabla.
 
 ## Generación del script SQL mediante ERD Plus
 
-Teniendo el diagrama relacional en la herramienta ERD Plus, se puede generar el SQL de creación de las tablas, con sus restricciones.
+Teniendo el diagrama relacional en la herramienta [ERD Plus](https://erdplus.com/), se puede generar el SQL de creación de las tablas, con sus restricciones.
 
-Hay que clicar en el elemento “Documents” del menú principal y se abren todos los diseños que tenemos creados en nuestra cuenta:
+Hay que clicar en el elemento "Documents" del menú principal y se abren todos los diseños que tenemos creados en nuestra cuenta:
 
 ![alt text](erd-plus-documents.png)
 
-Clicando en los 3 puntos de la derecha del modelo que se desea exportar en SQL, se despliega un menú en el que hay que seleccionar la opción “Generate SQL”.
+Clicando en los 3 puntos de la derecha del modelo que se desea exportar en SQL, se despliega un menú en el que hay que seleccionar la opción "Generate SQL".
 
 ![alt text](erd-plus-generate-sql-2.png)
 
-Pinchando en “Generate SQL” se abre una ventana con las sentencias SQL que al ejecutarlas en un sistema gestor de base de datos, creará las tablas con las restricciones del modelo diseñado.
+Pinchando en "Generate SQL" se abre una ventana con las sentencias SQL que al ejecutarlas en un sistema gestor de base de datos, creará las tablas con las restricciones del modelo diseñado.
 
 ![alt text](erd-plus-sql.png)
 
