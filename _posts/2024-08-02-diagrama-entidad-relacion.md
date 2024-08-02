@@ -1,8 +1,8 @@
 ---
 title: "Diagrama Entidad-Relación"
 date: 2024-08-02 9:00:00 +0100
-categories: [General]
-tags: [general, sociograma, tutoria, tutorial, google, forms, sociogram, add on, alumnos, clase, dinamica, gratis, free]
+categories: [Desarrollo de Aplicaciones Web, Bases de Datos]
+tags: [bases, base, datos, bbdd, daw, dam, desarrollo de aplicaciones web, desarrollo de aplicaciones multiplataforma, bases de datos, fp, ciclo superior, modulo, profesional]
 img_path: /assets/img/diagrama-entidad-relacion/
 ---
 
