@@ -8,10 +8,11 @@ img_path: /assets/img/tutorial-crear-diagrama-entidad-relacion-dia/
 
 ## Introducción
 
-Vamos a crear el diagrama de la universidad que se ha explicado en la página Creación de un diagrama Entidad-Relación, utilizando el programa Dia.
+Vamos a crear el diagrama de la universidad que se ha explicado en la página [Diagrama Entidad-Relación](/posts/diagrama-entidad-relacion/), utilizando el programa [Dia](https://www.rollapp.com/app/dia).
 
-Registrarse en rollApp
-Por pasos, primero hay que registrarse en rollApp:
+## Registrarse en rollApp
+
+Por pasos, primero hay que registrarse en [rollApp](https://www.rollapp.com/):
 
 ![alt text](rolapp-signup.png)
 
@@ -19,7 +20,7 @@ Una vez finalizado el proceso de registro, al acceder se ve una página en donde
 
 ![alt text](rollapp-apps.png)
 
-Al introducir en el buscador la aplicacion "Dia", nos aparecerán las sugerencias del buscador y hay que seleccionar la aplicación Dia, como muestra la imagen siguiente:
+Al introducir en el buscador la aplicación "Dia", nos aparecerán las sugerencias del buscador y hay que seleccionar la aplicación Dia, como muestra la imagen siguiente:
 
 ![alt text](rollapp-select-dia.png)
 
