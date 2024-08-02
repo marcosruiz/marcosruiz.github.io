@@ -90,7 +90,7 @@ Dependiendo del número de instancias que aparezcan, podemos tener:
 
 - **Relación uno a muchos**. En la notación se pone 1:N. Por ejemplo, teniendo las entidades ASIGNATURA y PROFESOR, y la relación "imparte" para un curso concreto. En el caso de que una asignatura pueda ser impartida por un único profesor (no contemplando desdobles), pero cada profesor pueda impartir muchas asignaturas. El diagrama sería:
 
-![alt text](image.png)
+![alt text](cardinalidad1N.png)
 
 - **Relación muchos a uno**. Es el mismo concepto que el de una relación uno a muchos (1:N).
 - **Relación muchos a muchos**. En la notación se pone N:M. En el caso de una empresa de autobuses, si consideramos las entidades CONDUCTOR y AUTOBÚS, y la relación "conduce", lo normal es que cada autobús pueda ser conducido por distintos conductores, en diferentes turnos, y al mismo tiempo, que cada conductor pueda conducir varios autobuses en distintos turnos, de forma que cada autobús se relaciona con muchos conductores, y cada conductor se relaciona con muchos autobuses, formando una relación muchos a muchos.
@@ -107,7 +107,7 @@ Se pueden encontrar los siguientes tipos de relaciones según su grado:
 
 - **Reflexiva**: participa una única entidad.
 
-![alt text](image.png)
+![alt text](reflexiva.png)
 
 - **Binaria**: Es aquella relación en la que participan dos entidades, es el tipo más habitual de relación.
 

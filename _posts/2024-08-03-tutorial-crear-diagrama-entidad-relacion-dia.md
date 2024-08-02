@@ -54,7 +54,7 @@ Si solo queremos cambiar el nombre de la entidad, basta con pulsar F2 teniendo l
 
 Para añadir atributos, hay que seleccionar el elemento que es un círculo con una A dentro de él y pinchar en la parte del lienzo en la que se desea crear el atributo. Esto crea una elipse a la que hay que cambiar el nombre y ponerle el nombre del atributo correspondiente. Las propiedades se abren igual que la entidad.
 
-![alt text](dia-propiedades-atributo-1.png)
+![alt text](dia-propiedades-atributo.png)
 
 Para indicar que un atributo es clave primaria, bastaría con clicar sobre el botón con etiqueta "Clave".
 
@@ -84,7 +84,7 @@ Ahora ya tenemos dos entidades con sus atributos y su relación, pero falta la c
 
 Con todo esto ya tendríamos toda la relación completa:
 
-![alt text](dia-relacioin-completa-1.png)
+![alt text](dia-relacion-completa.png)
 
 Siguiendo los mismo pasos se van añadiendo el resto de entidades y relaciones del diagrama.
 
