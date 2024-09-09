@@ -16,6 +16,16 @@ img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
 - UD6 - Utilización del modelo de objetos del documento (DOM).
 - UD7 - Utilización de mecanismos de comunicación asíncrona.
 
+## Enlaces de interés
+
+
+
+## Normativa
+
+
+
 ## Bibliografía
 
 - <https://www.todofp.es/que-estudiar/loe/informatica-comunicaciones/des-aplicaciones-web.html>
+- [ORDEN de 8 de julio de 2011](https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=612154820202#:~:text=miento%20de%20instalaciones%20de%20infraestructuras%20comunes%20de%20telecomunicaciones,%20a)
+- [Real Decreto 405/2023](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-13221#:~:text=Este%20real%20decreto%20se%20dicta%20al%20amparo%20de%20las%20competencias)
