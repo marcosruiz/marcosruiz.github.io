@@ -8,12 +8,14 @@ img_path: /assets/img/diseno-interfaces-web-24-25/
 
 ## Unidades
 
-- UD1 - Planificación de interfaces gráficas
-- UD2 - Uso de estilos
-- UD3 - Implantación de contenido multimedia
-- UD4 - Integración de contenido interactivo
-- UD5 - Diseño de webs accesibles
-- UD6 - Implementación de la usabilidad en la Web. Diseño amigable
+- UD1 - [Planificación de interfaces gráficas](/posts/planificacion-interfaces-graficas)
+- UD2 - Hojas de estilos
+- UD3 - Contenidos multimedia en la web: Imágenes
+- UD4 - Contenidos multimedia en la Web: Audio y Vídeo
+- UD5 - Contenidos multimedia en la Web: Animaciones
+- UD6 - Contenidos web interactivos
+- UD7 - [Usabilidad en la Web](/posts/usabilidad-web)
+- UD8 - Accesibilidad en la Web
 
 ## Enlaces de interés
 
@@ -24,7 +26,4 @@ img_path: /assets/img/diseno-interfaces-web-24-25/
 - <https://www.todofp.es/que-estudiar/loe/informatica-comunicaciones/des-aplicaciones-web.html>
 - [ORDEN de 8 de julio de 2011](https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=612154820202#:~:text=miento%20de%20instalaciones%20de%20infraestructuras%20comunes%20de%20telecomunicaciones,%20a)
 - [Real Decreto 405/2023](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-13221#:~:text=Este%20real%20decreto%20se%20dicta%20al%20amparo%20de%20las%20competencias)
-
-
-
 

@@ -43,10 +43,11 @@ La construcción de mensajes visuales conlleva siempre una intención comunicati
   </div>
 </details>
 
+![alt text](logoCarrefour.jpg)
+_Logo de Carrefour_
+
 {:.question}
 ¿Crees que el logo de Carrefour consigue su intención?
-
-![alt text](logoCarrefour.jpg)
 
 Las personas dedicadas al diseño son comunicadores visuales por lo que deben conocer al público, sus necesidades e inquietudes para poder lograr que el mensaje visual llegue de manera correcta a los receptores del mismo.
 
@@ -165,7 +166,7 @@ Un sitio Web tiene la característica de ser visual cuando los elementos gráfic
 
 ## Guías de estilo
 
-Un manual de estilo es un conjunto de normas para el diseño y la redacción de documentos, ya sea para el uso general, o para una publicación u organización específica. Los manuales de estilo son frecuentes en el uso general y especializado, en medios escritos, orales y gráficos. También dice que el manual de estilo se compone tanto de normas lingüísticas, como de estilo, para que el mensaje sea más coherente, eficaz y correcto.
+Una guía o manual de estilo es un conjunto de normas para el diseño y la redacción de documentos, ya sea para el uso general, o para una publicación u organización específica. Los manuales de estilo son frecuentes en el uso general y especializado, en medios escritos, orales y gráficos. También dice que el manual de estilo se compone tanto de normas lingüísticas, como de estilo, para que el mensaje sea más coherente, eficaz y correcto.
 
 Algunos manuales de estilo se centran en el diseño gráfico, y abarcan tópicos tales como la tipografía, los colores y espacios en blanco. Los manuales de estilo de sitios Web se centran en los aspectos técnicos y visuales de la publicación, la prosa, uso correcto del lenguaje, la gramática, la puntuación, la ortografía pero, sobre todo, la estética. La estricta aplicación de los reglamentos del manual de estilo proporciona uniformidad al aspecto visual de un documento.
 
@@ -280,9 +281,12 @@ Os dejo una lista de webs para conseguir iconos de forma gratuita:
 - <https://icons8.com/>
 - <https://www.flaticon.es/>
 - <https://fonts.google.com/icons>
+- <https://icones.js.org/>
+- <https://www.svgrepo.com/>
 - <https://fontawesome.com/>
 - <https://feathericons.com/>
 - <https://www.webiconset.com/category/free-icons/>
+- <https://lenguajejs.com/retos/recursos/iconos/>
 
 > Si conoces alguna web de iconos que creas que merezca estar aquí ponla en los comentarios y la añadiré 😉.
 {:.prompt-info}
