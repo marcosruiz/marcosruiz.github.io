@@ -175,7 +175,7 @@ Una guía de estilo incluye aspectos relacionados en la inclusión en la interfa
 
 Una guía de estilo se hace imprescindible cuando el sitio Web es desarrollado por un grupo de personas.
 
-Haz click [aquí]((/assets/img/planificacion-interfaces-graficas/manual_estilo_simplificacion_aprobado.pdf).) para descargar el manual de estilo del Gobierno de Navarra.
+Haz click [aquí](/assets/img/planificacion-interfaces-graficas/manual_estilo_simplificacion_aprobado.pdf). para descargar el manual de estilo del Gobierno de Navarra.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e7CpH_B7XPU?si=9NyiMsPNOhBuMkV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
