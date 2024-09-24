@@ -25,7 +25,21 @@ Las personas dedicadas al diseño deben comunicar las ideas y conceptos, de una 
 
 ### Percepción visual
 
-Percibimos todo lo que nos rodea a través de los sentidos. Percepción, es el proceso de recogida y tratamiento de la información sensorial. Consiste en recibir, a través de los sentidos, las imágenes, sonidos, impresiones o sensaciones externas y elaborar e interpretar toda la información recibida.
+Percibimos todo lo que nos rodea a través de los sentidos: la vista, el oído, el olfato, el gusto, el tacto, aunque actualmente empleamos únicamente la vista, el oído y el tacto en nuestra comunicación con el ordenador. Percepción, es el proceso de recogida y tratamiento de la información sensorial. Consiste en recibir, a través de los sentidos, las imágenes, sonidos, impresiones o sensaciones externas y elaborar e interpretar toda la información recibida.
+
+Hoy en día, la mayor parte de los sistemas informáticos son sistemas interactivos y su éxito o fracaso depende, en gran medida, de la interfaz persona-ordenador. Por este motivo la interfaz tiene que estar diseñada pensando en las necesidades del usuario.
+
+Debemos tener en cuenta que cada día aumenta el número de personas que utilizan el ordenador, que estas personas se enfrentan a la interacción con el ordenador con diferentes grados de preparación y con distintas expectativas.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué significan las siglas IPO?</summary>
+  <div class="card-body" markdown="1">
+
+La IPO (Interacción Persona-Ordenador) es la disciplina que estudia el intercambio de información entre las personas y los ordenadores. Cuando hay una buena comunicación entre el usuario y el ordenador el intercambio de información es más eficiente, se reducen los errores y aumenta la satisfacción del usuario.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 Existe una teoría (psicología de la Gestalt) sobre la percepción que estudia la forma en que nuestro cerebro decodifica la información que recibe a través de diversas asociaciones que se producen en el momento de la percepción. Según esta teoría, la mente configura, a través de ciertas leyes, los elementos que le llegan a través de los canales sensoriales (percepción) o a través de la memoria (pensamiento, inteligencia y resolución de problemas).
 
@@ -64,7 +78,9 @@ Los elementos conceptuales no son visibles. Los elementos conceptuales del dise�
 {:.question}
 ¿Son las líneas visibles en la naturaleza?
 
-### Elementos visuales
+### Tipos de elementos del diseño
+
+#### Elementos visuales
 
 Los elementos visuales son la parte más importante de un diseño, porque son lo que realmente vemos.
 
@@ -75,7 +91,7 @@ Cuando dibujamos una línea en un papel, empleamos una línea visible para repre
 - **Color**: El color y, el contraste de color en particular, se utilizatambién para llamar la atención sobre una parte determinada de la imagen.
 - **Textura**: El material con el que se hacen los objetos aporta a su superficie una textura determinada con unas determinadas características de rugosidad, suavidad, aspereza, homogeneidad, etcétera.
 
-### Elementos de relación
+#### Elementos de relación
 
 Este grupo de elementos gobierna la ubicación y la interrelación de las formas en un diseño. Algunos, como la dirección y la posición, pueden ser percibidos y otros, como el espacio y la gravedad, pueden ser sentidos.
 
@@ -84,7 +100,7 @@ Este grupo de elementos gobierna la ubicación y la interrelación de las formas
 - **Espacio**: Las formas por muy pequeñas que sean, ocupan un espacio. Así, el espacio puede estar ocupado o vacío. Se puede utilizar la perspectiva para organizar y sugerir el espacio creando la ilusión de profundidad. Se pueden superponer objetos de modo que el observador percibe como más cercano el objeto que está delante de los demás. También podemos lograr la profundidad dentro del campo visual utilizando el contraste y la variación de tamaño en las formas.
 - **Gravedad**: La sensación de gravedad no es visual, es psicológica. Tenemos tendencia a aplicar cualidades tales como pesadez o ligereza, estabilidad o inestabilidad, tanto a las formas individuales como a los grupos de formas.
 
-### Elementos prácticos
+#### Elementos prácticos
 
 Los elementos prácticos del diseño permanecen ocultos en el contenido y en la trascendencia del diseño.
 
@@ -92,20 +108,6 @@ Los elementos prácticos del diseño permanecen ocultos en el contenido y en la 
 - **Significado**: Es la imagen conceptual que se representa en nuestra mente cuando el diseño transporta un mensaje visual. Cada receptor del mensaje le dará una interpretación, un significado distinto, según sean sus conocimientos y experiencias previas.
 - **Función**: la función se hace presente cuando un diseño debe servir a un determinado propósito.
 La imagen anterior cumple una función muy importante. Colocada en el lugar adecuado como por ejemplo, una sala de revelado de fotografías, o una sala de microfilmación cumple la función de mantener el ambiente oscuro para poder trabajar.
-
-## Color, tipografía, iconos
-
-
-
-## Interacción persona-ordenador
-
-Nos comunicamos con el mundo que nos rodea a través de nuestros sentidos: la vista, el oído, el olfato, el gusto, el tacto, aunque actualmente empleamos únicamente la vista, el oído y el tacto en nuestra comunicación con el ordenador.
-
-La IPO (Interacción Persona-Ordenador) es la disciplina que estudia el intercambio de información entre las personas y los ordenadores. Cuando hay una buena comunicación entre el usuario y el ordenador el intercambio de información es más eficiente, se reducen los errores y aumenta la satisfacción del usuario.
-
-Hoy en día, la mayor parte de los sistemas informáticos son sistemas interactivos y su éxito o fracaso depende, en gran medida, de la interfaz persona-ordenador. Por este motivo la interfaz tiene que estar diseñada pensando en las necesidades del usuario.
-
-Debemos tener en cuenta que cada día aumenta el número de personas que utilizan el ordenador, que estas personas se enfrentan a la interacción con el ordenador con diferentes grados de preparación y con distintas expectativas.
 
 ## Diseño de una interfaz web
 
@@ -163,7 +165,7 @@ Un sitio Web tiene la característica de ser visual cuando los elementos gráfic
   </div>
 </details>
 
-## Guías de estilo
+### Guías de estilo
 
 Un manual de estilo es un conjunto de normas para el diseño y la redacción de documentos, ya sea para el uso general, o para una publicación u organización específica. Los manuales de estilo son frecuentes en el uso general y especializado, en medios escritos, orales y gráficos. También dice que el manual de estilo se compone tanto de normas lingüísticas, como de estilo, para que el mensaje sea más coherente, eficaz y correcto.
 
@@ -179,7 +181,7 @@ Haz click [aquí]((/assets/img/planificacion-interfaces-graficas/manual_estilo_s
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e7CpH_B7XPU?si=9NyiMsPNOhBuMkV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### Elementos
+#### Elementos de las guías de estilo
 
 Los elementos de una guía de estilo son:
 
@@ -189,7 +191,7 @@ Los elementos de una guía de estilo son:
 - Iconografía
 - Estructura
 
-#### Fotos y logos
+##### Fotos y logos
 
 Los recursos gráficos se emplean mucho en la Web. Si se utilizan adecuadamente, pueden mejorar el aprendizaje del usuario y añadir valor a nuestro sitio. Ahora bien, si se utilizan inadecuadamente, producen el efecto contrario.
 
@@ -205,7 +207,7 @@ Una guía debe indicar al equipo de desarrollo de la interfaz los siguientes pun
 
 Todos los tamaños y formatos a emplear en las imágenes y logos del sitio deben quedar perfectamente descritos en el documento de la guía de estilo.
 
-#### Tipografías
+##### Tipografías
 
 El uso de una fuente familiar al usuario aumenta la facilidad de lectura.
 
@@ -230,7 +232,7 @@ Conocer los tipos de fuentes y sus comportamientos en los distintos navegadores 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tGgoRgsA1Co?si=qhZgpfSf12oJMhT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-#### Colores
+##### Colores
 
 En una guía de estilo deben figurar los colores a emplear en el sitio Web en todos los textos, fondos, e imágenes según sea su ubicación y finalidad. La información debe suministrarse aportando los valores para el modelo RGB tanto en hexadecimal como en decimal.
 
@@ -252,7 +254,7 @@ Por último, una serie de consejos que te pueden ser útiles:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/X8kbrAzV6BM?si=36BMIy8d8z-kghfJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-#### Iconografía
+##### Iconografía
 
 La iconografía es la aplicación práctica de los elementos prácticos del diseño.
 
@@ -297,7 +299,7 @@ No. Pero... ¿sabrías decirme por qué?
   </div>
 </details>
 
-#### Estructura
+##### Estructura
 
 En una guía de estilos debe quedar reflejada no sólo la disposición de estos bloques en cada una de las páginas del sitio, sino también el esquema de navegación que va a existir entre las diferentes páginas del sitio.
 
@@ -324,29 +326,23 @@ Los huecos en el diseño de una web son tan importantes como los silencios en el
   </div>
 </details>
 
-
-## Generación de documentos y sitios web
-
-
-
-
-### Componentes de una interfaz web
+### Elementos de una interfaz web
 
 Son muchos los elementos de los que puede estar compuesta una interfaz Web. El número de elementos empleados dependerá del objetivo del sitio. Así, un portal de noticias, o un portal de un organismo público seguramente utilizará un mayor número de elementos que una página Web de un restaurante o una página personal. Los más destacados son:
 
-- Elementos de Identificación.
-- Elementos de Navegación.
-- Elementos de Contenidos.
-- Elementos de Interacción.
+- Elementos de identificación.
+- Elementos de navegación.
+- Elementos de contenidos.
+- Elementos de interacción.
 
-#### Zona de navegación
+#### Elementos de navegación
 
 Ya hemos dicho que los elementos de navegación son los que nos permiten acceder a todos los contenidos que se encuentran en las diferentes páginas de un sitio Web. Pero, lo que no hemos dicho, es que si queremos que nuestra página sea usable, el usuario debe conseguir navegar por la página sin perderse y sin tener la sensación de perderse. Para conseguirlo, el sistema de navegación debería constar de una serie de elementos:
 
-Elemento de regreso a la portada.
-Menú de secciones y/o áreas de interés.
-Información sobre la ubicación del usuario dentro del sitio Web.
-Es importante para el usuario tener algún elemento que le permita volver al principio sin necesidad de utilizar la herramienta “ir hacia atrás o regresar” del navegador. Este problema suele resolverse empleando un enlace en el logotipo de la empresa que se sitúa normalmente en parte superior izquierda de cada una de las páginas que componen el sitio Web.
+- Elemento de regreso a la portada.
+- Menú de secciones y/o áreas de interés.
+- Información sobre la ubicación del usuario dentro del sitio Web.
+- Es importante para el usuario tener algún elemento que le permita volver al principio sin necesidad de utilizar la herramienta “ir hacia atrás o regresar” del navegador. Este problema suele resolverse empleando un enlace en el logotipo de la empresa que se sitúa normalmente en parte superior izquierda de cada una de las páginas que componen el sitio Web.
 
 El menú de secciones y/o áreas de interés es una zona de la interfaz en la que se detallan las secciones y/o áreas en las que está dividida la información contenida en el sitio Web. Debe ser fácilmente localizable. Se suele ubicar en la parte superior de cada página, debajo del logotipo. Es importante que estas secciones y áreas estén bien identificadas mediante un texto descriptivo y/o una imagen representativa. También es importante que mantenga la misma posición en todas las páginas del sitio.
 
@@ -356,11 +352,11 @@ En la imagen siguiente están señaladas cada uno de los elementos mencionados. 
 
 ![alt text](navegacionMinisterio.png)
 
-#### Zona de contenido
+#### Elementos de contenido
 
 El contenido es la parte esencial de una página Web. Es importante que los contenidos estén expresados en un lenguaje claro y conciso y, presentados en un formato agradable y de fácil lectura. Además, si el sitio Web está formado por muchas páginas, el contenido debe situarse siempre en la misma ubicación. También es importante evitar que el usuario tenga que hacer grandes desplazamientos durante la lectura de los contenidos. Siempre es mejor dividir el contenido en más de una página y enlazar unas con otras.
 
-#### Zona de interacción
+#### Elementos de interacción
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué son las zonas de interacción?</summary>
@@ -402,7 +398,7 @@ A diferencia del HTML en el que los errores sintácticos no producen errores en 
 
 XHTML, acrónimo de las palabras en inglés de eXtensible Hypertext Markup Language o lenguaje extensible de marcado de hipertexto. Es un lenguaje que utiliza las mismas etiquetas y atributos que el HTML pero aplicando las reglas de sintaxis del XML.
 
-### Maquetación web
+## Maquetación web
 
 Una maqueta es un boceto previo de la composición de un texto que se va a publicar, usado para determinar sus características definitivas.
 
@@ -430,25 +426,25 @@ A día de hoy tenemos otros tipos de display mucho más intuitivos y versátiles
 
 Con la aparición de la hojas de estilo, las cuales no hay que confundir con las Guías de estilo que vimos con anterioridad, se tiende a dejar de emplear tanto los marcos como las tablas sustituyendo ambos por el empleo de la etiqueta DIV para definir los bloques y las hojas de estilos para configurar la visualización de dichos bloques. Pero este tema no es tan sencillo por lo que se verá más adelante.
 
-#### Elementos de ordenación
+### Elementos de ordenación
 
 Cuando diseñamos un sitio Web debemos ser consistentes en la distribución de los grandes bloques en todas las páginas del sitio y debemos tener en cuenta el espacio disponible en la ventana del navegador.
 
-##### Encabezado
+#### Encabezado
 
 El bloque de Encabezado está situado siempre en la parte superior de cualquier página. Suele contener además de los elementos identificativos del sitio Web: el logotipo, el nombre de la empresa, elementos de acción que permiten cambiar el idioma de lectura, realizar búsquedas, e incluso, si el sitio es muy grande, puede contener elementos de navegación que permanecen a la vista en todas las páginas del sitio.
 
 **El bloque de Encabezado se repite en todas las páginas de un sitio Web y debe permanecer visible en todas ellas** siempre que sea posible y la complejidad del sitio nos lo permita.
 
-##### Navegación
+#### Navegación
 
 El bloque de Navegación es donde se coloca el sistema de navegación del que ya hemos hablado en el apartado Zonas de navegación, contenido, interacción.
 
-##### Contenido
+#### Contenido
 
 El bloque de Contenido es aquel en el que se muestran los contenidos. Los contenidos representan la meta del usuario y la razón por la que visita nuestro sitio Web por lo que debemos prestar mucha atención al diseño de este bloque. Debemos reservar una zona lo suficientemente grande para que el usuario pueda leer los contenidos cómodamente, sin necesidad de realizar grandes desplazamientos. Es importantísimo evitar que el usuario tenga que realizar desplazamientos horizontales para leer el final de cada línea.
 
-##### Pie
+#### Pie
 
 El bloque de Pie de página está situado al final de la página y, al igual que el encabezado, se repite en todas las páginas del sitio. Normalmente se emplea el pie como zona de navegación complementaria a la zona superior situada en el encabezado. En ellas se repiten algunos enlaces que se suelen colocar en el encabezado como el enlace al Mapa del sitio (que veremos en el próximo apartado) o, el enlace a la información de contacto y, además, se colocan algunos enlaces nuevos como los enlaces a la información relativa a los derechos de autor, privacidad e información legal.
 
@@ -465,9 +461,7 @@ Aquí puedes ver un par de mapas de navegación:
 - <https://www.educacionfpydeportes.gob.es/comunes/mapa-web.html>
 - <https://www.xunta.gal/mapa-do-portal>
 
-#### Prototipos
-
-Ahora que ya conoces algunos mapas de navegación, vamos a ver cuáles son las estructuras más habituales.
+A continuación, vamos a ver cuáles son las estructuras más habituales de los mapas de navagación.
 
 El mapa de un sitio Web va a tener una estructura que dependerá de la relación que tengan las páginas del sitio entre sí. Esta relación puede ser de diferentes tipos:
 
