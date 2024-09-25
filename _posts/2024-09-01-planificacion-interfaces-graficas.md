@@ -41,6 +41,8 @@ La IPO (Interacción Persona-Ordenador) es la disciplina que estudia el intercam
   </div>
 </details>
 
+### Teoría de la Gestalt
+
 Existe una teoría (psicología de la Gestalt) sobre la percepción que estudia la forma en que nuestro cerebro decodifica la información que recibe a través de diversas asociaciones que se producen en el momento de la percepción. Según esta teoría, la mente configura, a través de ciertas leyes, los elementos que le llegan a través de los canales sensoriales (percepción) o a través de la memoria (pensamiento, inteligencia y resolución de problemas).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6_Ak5Rdo_rc?si=74VDF3dkicPdXdPX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -67,7 +69,123 @@ Las personas dedicadas al diseño son comunicadores visuales por lo que deben co
 
 Cuando utilizamos imágenes para construir mensajes audiovisuales, debemos tener presente que con las imágenes sólo podemos comunicar las experiencias comunes.
 
-### Elementos conceptuales
+### Principios básicos de la Gestalt
+
+Los principios básicos de la Gestalt son:
+
+- Principios de proximidad y de semejanza
+- Principios de simetría y de continuidad
+- Principios de cierre y de área o tamaño relativo
+- Principio de figura-fondo
+- Ley de simplicidad, pregnancia o buena forma
+
+En los subapartados siguientes veremos estos principios y su aplicación en el diseño de interfaces Web.
+
+#### Principios de proximidad y de semejanza
+
+##### Proximidad
+
+Nuestra mente tiende a agrupar los elementos en función de la distancia que hay entre ellos.
+
+![alt text](principioDeProximidad.png)
+
+En la imagen nuestra mente agrupa los elementos formando 3 columnas, 4 filas y 6 bloques.
+
+Un ejemplo de la aplicación de este principio lo puedes ver en la imagen de una de las páginas del antiguo sitio de la Comunidad de Madrid. En esta imagen se han agrupado, dentro de dos rectángulos azules, aquellos elementos que, siendo todos enlaces a otras páginas del sitio y, presentando el mismo formato, se perciben como bloques distintos por estar sus elementos más próximos entre sí. 
+
+![alt text](principioDeProximidadCM.png)
+
+La cercanía de los elementos del mismo tipo es percibida por el usuario como si fueran una única unidad. Y, la distancia que hay entre los dos bloques, es suficiente para que el usuario los perciba como elementos que pertenecen a diferentes categorías de información.
+
+Agrupamos todo lo que nos rodea por sus características similares. A las personas las agrupamos por su raza, religión, sexo, altura, color del pelo, clase social. También realizamos agrupamientos en el resto de los seres vivos: arbustos, vegetales, mamíferos, anfibios, etcétera y, en nuestras alacenas, tendemos a agrupar objetos según su funcionalidad: artículos de droguería, alimentación, jardinería, utensilios de cocina.
+
+##### Semejanza
+
+Nuestra mente tiende a agrupar aquellos elementos que son similares en su aspecto visual: forma, color, tamaño, etcétera
+
+![alt text](principioDeSemejanza.png)
+
+Nuestra mente no percibe los  36 elementos de la parte izquierda de la imagen. Percibe  3 filas de elementos amarillos y  3 filas de elementos marrones. En la parte central de la imagen vemos las líneas en diagonal formadas por elementos con la misma forma. En la parte de la derecha de la imagen distinguimos  3 bloques de rectángulos, el bloque superior horizontal y dos bloques paralelos dispuestos verticalmente.
+
+Un ejemplo de la aplicación de este principio lo puedes ver en la imagen de una de las páginas del antiguo sitio de la Xunta de Galicia. En esta imagen se han agrupado dentro de unos rectángulos azules aquellos elementos que, siendo todos enlaces a diferentes páginas del sitio, son similares entre sí tanto en forma como en tamaño.
+
+![alt text](principioDeSemejanzaEjemplo.png)
+
+#### Principios de simetría y de continuidad
+
+##### Simetría
+
+Nuestra mente tiende a percibir como un único elemento aquellos que están dispuestos simétricamente.
+
+![alt text](principioDeSimetria.png)
+
+En el dibujo no vemos el símbolo © del Copyright que está colocado cuatro veces pero girándolo de modo que la letra C de cada uno de los símbolos está mirando al centro. Lo que vemos son los pétalos de una flor.
+
+Un ejemplo de la aplicación de este principio lo puedes ver en la imagen de la página de la Tienda On-line de Bornay Desserts. En esta imagen se han separado mediante una línea vertical de color azul las dos zonas simétricas. En la zona de la izquierda el texto está alineado por su derecha, mientras que en la zona de la derecha, el texto está alineado por su izquierda. Desde lejos parece un único elemento centrado en la imagen. 
+
+![alt text](principioDeSimetriaEjemplo.png)
+
+##### Continuidad
+
+Nuestra mente tiende a percibir los elementos continuos aunque estén interrumpidos entre sí.
+
+![alt text](principioDeContinuidad.png)
+
+En la imagen vemos a la izquierda un grupo de ovejas que avanzan por un camino. Las ovejas que van delante no se ven claramente pero nosotros las percibimos igualmente por efecto del principio de continuidad. En la parte derecha de la imagen no vemos la forma de aleta de delfín de color azul que se ha repetido ocho veces. Por efecto del principio de continuidad lo que vemos es una forma con ondulaciones sobre las que está escrito el texto “abcd”.
+
+Un ejemplo de la aplicación de este principio lo puedes ver en la imagen de la parte central de la página de la Tienda On-line de Bornay Desserts. En esta figura se han separado mediante una línea vertical de color azul la imagen central original con su hueco central, de la imagen de lo que el usuario percibe destacando con color azul la letra B completa y con color granate el hueco de la línea central. El usuario percibe estos elementos unidos aunque estén interrumpidos.
+
+![alt text](principioDeContinuidadEjemplo.png)
+
+#### Principios de cierre y de área o tamaño relativo
+
+##### Principio de cierre
+
+Nuestra mente tiende a percibir figuras completas o cerradas a partir de contornos, incluso aunque éstos estén incompletos.
+
+![alt text](principioDeCierre.png)
+
+Un ejemplo de la aplicación de este principio lo puedes ver en las tres zonas enmarcadas con un rectángulo grisáceo en la parte derecha de la imagen. La parte izquierda se corresponde con el aspecto original de la página web de la empresa Enesa Logística S.L.
+
+![alt text](principioDeCierreEjemplo.png)
+
+##### Principio de área o tamaño relativo
+
+Nuestra mente tiende a percibir como objeto el más pequeño de dos objetos que se superponen, percibiendo el objeto de mayor tamaño como fondo.
+
+![alt text](principioDeArea.png)
+
+La hexágono se percibe como el objeto principal de la imagen y el cuadrado azul se percibe como el fondo sobre el cual se encuentra el hexágono.
+
+Un ejemplo de la aplicación de este principio lo puedes ver en las zonas enmarcadas mediante círculos en la parte derecha de la imagen. La circunferencia roja representa el fondo y los círculos pequeños son los elementos de interés. La parte izquierda de la imagen se corresponde con el aspecto original de la página web de la empresa Golfitness style Donde se pueden ver las imágenes que están debajo de los círculo y que se corresponden con la zona de navegación de la página.
+
+![alt text](principioDeAreaEjemplo.png)
+
+#### Principio de figura-fondo
+
+Nuestra mente tiende a percibir ciertos elementos como figuras, con forma y borde, destacándolos del resto de los objetos que los envuelven (fondo).
+
+![alt text](principioDeFigura.png)
+
+En la imagen distinguimos el triángulo de color claro como una forma sobre un rectángulo de color azul que está de fondo, debido a que asimilamos mejor la forma triangular que la poligonal. Si esto no fuera así, estaríamos viendo un triangulo a la izquierda y una forma poligonal a la derecha.
+
+Un ejemplo de la aplicación de principios es la imagen de la página de ISAIAH FRAZIER ARTISTIC DESIGNS. En ella podemos ver el corazón como objeto principal situado sobre un fondo de rectángulos de colores.
+
+![alt text](principioDeFiguraEjemplo.png)
+
+#### Ley de simplicidad, pregnancia o buena forma
+
+Nuestra mente tiende a percibir las formas más simples, facilitando así su recuerdo. Es un principio de organización de los elementos que componen una experiencia perceptiva, por el cual se reducen las ambigüedades o efectos distorsionadores, permitiéndonos centrarnos en un objeto separándolo del entorno con facilidad.
+
+![alt text](leyDeSimplicidad1.png)
+
+![alt text](leyDeSimplicidad2.png)
+
+La misma imagen que proponíamos como ejemplo del principio figura-fondo nos vale como aplicación práctica de otros principios. Distinguimos en la fila superior los elementos que forman parte del sistema de navegación por la tonalidad más oscura de los colores (principio de semejanza). También hay agrupación de elementos en distintos rectángulos con fondo blanco (principio de proximidad). Y, vemos rectángulos completos, aún cuando no lo están por estar recortados con la silueta del corazón blanco del centro (principio de cierre).
+
+![alt text](principioDeFiguraEjemplo.png)
+
+## Elementos conceptuales del diseño
 
 Los elementos conceptuales no son visibles. Los elementos conceptuales del diseño son la base del mismo, sobre ellos se asientan los demás elementos que veremos más adelante. Cada uno tiene sus propias características que les permiten desempeñar funciones determinadas dentro de una composición.
 
@@ -79,9 +197,7 @@ Los elementos conceptuales no son visibles. Los elementos conceptuales del dise�
 {:.question}
 ¿Son las líneas visibles en la naturaleza?
 
-### Tipos de elementos del diseño
-
-#### Elementos visuales
+### Elementos visuales
 
 Los elementos visuales son la parte más importante de un diseño, porque son lo que realmente vemos.
 
@@ -92,7 +208,7 @@ Cuando dibujamos una línea en un papel, empleamos una línea visible para repre
 - **Color**: El color y, el contraste de color en particular, se utilizatambién para llamar la atención sobre una parte determinada de la imagen.
 - **Textura**: El material con el que se hacen los objetos aporta a su superficie una textura determinada con unas determinadas características de rugosidad, suavidad, aspereza, homogeneidad, etcétera.
 
-#### Elementos de relación
+### Elementos de relación
 
 Este grupo de elementos gobierna la ubicación y la interrelación de las formas en un diseño. Algunos, como la dirección y la posición, pueden ser percibidos y otros, como el espacio y la gravedad, pueden ser sentidos.
 
@@ -101,7 +217,7 @@ Este grupo de elementos gobierna la ubicación y la interrelación de las formas
 - **Espacio**: Las formas por muy pequeñas que sean, ocupan un espacio. Así, el espacio puede estar ocupado o vacío. Se puede utilizar la perspectiva para organizar y sugerir el espacio creando la ilusión de profundidad. Se pueden superponer objetos de modo que el observador percibe como más cercano el objeto que está delante de los demás. También podemos lograr la profundidad dentro del campo visual utilizando el contraste y la variación de tamaño en las formas.
 - **Gravedad**: La sensación de gravedad no es visual, es psicológica. Tenemos tendencia a aplicar cualidades tales como pesadez o ligereza, estabilidad o inestabilidad, tanto a las formas individuales como a los grupos de formas.
 
-#### Elementos prácticos
+### Elementos prácticos
 
 Los elementos prácticos del diseño permanecen ocultos en el contenido y en la trascendencia del diseño.
 
@@ -182,7 +298,7 @@ Haz click [aquí](/assets/img/planificacion-interfaces-graficas/manual_estilo_si
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e7CpH_B7XPU?si=9NyiMsPNOhBuMkV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-#### Elementos de las guías de estilo
+### Elementos de las guías de estilo
 
 Los elementos de una guía de estilo son:
 
@@ -192,7 +308,7 @@ Los elementos de una guía de estilo son:
 - Iconografía
 - Estructura
 
-##### Fotos y logos
+#### Fotos y logos
 
 Los recursos gráficos se emplean mucho en la Web. Si se utilizan adecuadamente, pueden mejorar el aprendizaje del usuario y añadir valor a nuestro sitio. Ahora bien, si se utilizan inadecuadamente, producen el efecto contrario.
 
@@ -208,7 +324,7 @@ Una guía debe indicar al equipo de desarrollo de la interfaz los siguientes pun
 
 Todos los tamaños y formatos a emplear en las imágenes y logos del sitio deben quedar perfectamente descritos en el documento de la guía de estilo.
 
-##### Tipografías
+#### Tipografías
 
 El uso de una fuente familiar al usuario aumenta la facilidad de lectura.
 
@@ -233,7 +349,7 @@ Conocer los tipos de fuentes y sus comportamientos en los distintos navegadores 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tGgoRgsA1Co?si=qhZgpfSf12oJMhT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-##### Colores
+#### Colores
 
 En una guía de estilo deben figurar los colores a emplear en el sitio Web en todos los textos, fondos, e imágenes según sea su ubicación y finalidad. La información debe suministrarse aportando los valores para el modelo RGB tanto en hexadecimal como en decimal.
 
@@ -255,7 +371,7 @@ Por último, una serie de consejos que te pueden ser útiles:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/X8kbrAzV6BM?si=36BMIy8d8z-kghfJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-##### Iconografía
+#### Iconografía
 
 La iconografía es la aplicación práctica de los elementos prácticos del diseño.
 
@@ -303,7 +419,7 @@ No. Pero... ¿sabrías decirme por qué?
   </div>
 </details>
 
-##### Estructura
+#### Estructura
 
 En una guía de estilos debe quedar reflejada no sólo la disposición de estos bloques en cada una de las páginas del sitio, sino también el esquema de navegación que va a existir entre las diferentes páginas del sitio.
 
@@ -339,6 +455,19 @@ Son muchos los elementos de los que puede estar compuesta una interfaz Web. El n
 - Elementos de contenidos.
 - Elementos de interacción.
 
+#### Elementos de identificación
+
+Los elementos de identificación son componentes visuales y funcionales que permiten a los usuarios reconocer de forma clara el propósito y la marca del sitio, facilitando la navegación y el entendimiento de la página. Son por ejemplo:
+
+- Logotipo
+- Título con el ombre de la empresa
+- Favicon
+- Título de la sección
+- Pie de página
+
+{:.question}
+¿Qué es el favicon?
+
 #### Elementos de navegación
 
 Ya hemos dicho que los elementos de navegación son los que nos permiten acceder a todos los contenidos que se encuentran en las diferentes páginas de un sitio Web. Pero, lo que no hemos dicho, es que si queremos que nuestra página sea usable, el usuario debe conseguir navegar por la página sin perderse y sin tener la sensación de perderse. Para conseguirlo, el sistema de navegación debería constar de una serie de elementos:
@@ -346,7 +475,8 @@ Ya hemos dicho que los elementos de navegación son los que nos permiten acceder
 - Elemento de regreso a la portada.
 - Menú de secciones y/o áreas de interés.
 - Información sobre la ubicación del usuario dentro del sitio Web.
-- Es importante para el usuario tener algún elemento que le permita volver al principio sin necesidad de utilizar la herramienta “ir hacia atrás o regresar” del navegador. Este problema suele resolverse empleando un enlace en el logotipo de la empresa que se sitúa normalmente en parte superior izquierda de cada una de las páginas que componen el sitio Web.
+
+Es importante para el usuario tener algún elemento que le permita volver al principio sin necesidad de utilizar la herramienta “ir hacia atrás o regresar” del navegador. Este problema suele resolverse empleando un enlace en el logotipo de la empresa que se sitúa normalmente en parte superior izquierda de cada una de las páginas que componen el sitio Web.
 
 El menú de secciones y/o áreas de interés es una zona de la interfaz en la que se detallan las secciones y/o áreas en las que está dividida la información contenida en el sitio Web. Debe ser fácilmente localizable. Se suele ubicar en la parte superior de cada página, debajo del logotipo. Es importante que estas secciones y áreas estén bien identificadas mediante un texto descriptivo y/o una imagen representativa. También es importante que mantenga la misma posición en todas las páginas del sitio.
 
@@ -388,39 +518,14 @@ Los elementos que permiten la interacción son muy variados y cada uno de ellos 
 {:.question}
 ¿Cómo se les llama a las casillas de verificación en inglés?
 
-### Tecnologías para el diseño de documentos web
+### Maquetación web
 
-Los sitios Web están compuestos de páginas que están escritas en lenguaje HTML.
-
-HTML, acrónimo de las palabras en inglés HyperText Markup Language o Lenguaje de Marcado de Hipertexto, es el lenguaje de marcado predominante para la elaboración de páginas web. Los documentos escritos en este lenguaje sirven para describir tanto la estructura como el contenido de una página web.
-
-El HTML emplea marcas o etiquetas dentro del documento para informar al navegador de lo que es presentación dentro de un documento y lo hace, normalmente, delimitando el texto entre dos etiquetas: una de apertura y una de cierre, y, digo normalmente, porque hay etiquetas que no tienen etiqueta de cierre. Una etiqueta se distingue del resto porque va encerrada entre corchetes angulares (los símbolos “menor que” y “mayor que”) y tiene unas normas sintácticas que se deben respetar si queremos que el resultado mostrado en el navegador sea el que pretendemos. La mayoría de ellas constan de: nombre de la etiqueta y atributos de la etiqueta, aunque algunas no tienen atributos.
-
-XML, acrónimo de las palabras en inglés de eXtensible Markup Language o Lenguaje de Marcas eXtensible, se propone como un estándar para el intercambio de información estructurada entre diferentes plataformas. XML no es realmente un lenguaje en particular, es un metalenguaje extensible de etiquetas desarrollado por el World Wide Web Consortium (W3C).
-
-A diferencia del HTML en el que los errores sintácticos no producen errores en el navegador y sólo pueden provocar variaciones en la presentación, el XML es muy estricto en cuanto a sus normas de sintaxis.
-
-XHTML, acrónimo de las palabras en inglés de eXtensible Hypertext Markup Language o lenguaje extensible de marcado de hipertexto. Es un lenguaje que utiliza las mismas etiquetas y atributos que el HTML pero aplicando las reglas de sintaxis del XML.
-
-## Maquetación web
-
-Una maqueta es un boceto previo de la composición de un texto que se va a publicar, usado para determinar sus características definitivas.
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Conoces alguna herramienta especializada para hacer bocetos de una web?</summary>
-  <div class="card-body" markdown="1">
-
-- Balsamiq
-- Figma
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
+La maquetación web es el proceso de estructurar y organizar los elementos visuales de una página web para asegurar que se presenten de manera clara, atractiva y funcional en diferentes dispositivos y tamaños de pantalla. Consiste en definir cómo se disponen los bloques de contenido (como texto, imágenes, menús, etc.) y cómo estos elementos interactúan con el usuario.
 
 A la hora de realizar la maquetación Web, deberemos pensar previamente:
 
-Cuáles son los elementos que va a contener cada una de nuestras páginas.
-Cómo irán colocados cada uno de esos elementos dentro de las páginas teniendo en cuenta siempre el espacio disponible, es decir, la ventana del navegador.
+- Cuáles son los elementos que va a contener cada una de nuestras páginas.
+- Cómo irán colocados cada uno de esos elementos dentro de las páginas teniendo en cuenta siempre el espacio disponible, es decir, la ventana del navegador.
 
 Para diseñar un sitio web, debemos comenzar por hacer una distribución de los grandes bloques de elementos de información.
 
@@ -430,31 +535,31 @@ A día de hoy tenemos otros tipos de display mucho más intuitivos y versátiles
 
 Con la aparición de la hojas de estilo, las cuales no hay que confundir con las Guías de estilo que vimos con anterioridad, se tiende a dejar de emplear tanto los marcos como las tablas sustituyendo ambos por el empleo de la etiqueta DIV para definir los bloques y las hojas de estilos para configurar la visualización de dichos bloques. Pero este tema no es tan sencillo por lo que se verá más adelante.
 
-### Elementos de ordenación
+#### Elementos de ordenación
 
 Cuando diseñamos un sitio Web debemos ser consistentes en la distribución de los grandes bloques en todas las páginas del sitio y debemos tener en cuenta el espacio disponible en la ventana del navegador.
 
-#### Encabezado
+##### Encabezado
 
 El bloque de Encabezado está situado siempre en la parte superior de cualquier página. Suele contener además de los elementos identificativos del sitio Web: el logotipo, el nombre de la empresa, elementos de acción que permiten cambiar el idioma de lectura, realizar búsquedas, e incluso, si el sitio es muy grande, puede contener elementos de navegación que permanecen a la vista en todas las páginas del sitio.
 
 **El bloque de Encabezado se repite en todas las páginas de un sitio Web y debe permanecer visible en todas ellas** siempre que sea posible y la complejidad del sitio nos lo permita.
 
-#### Navegación
+##### Navegación
 
 El bloque de Navegación es donde se coloca el sistema de navegación del que ya hemos hablado en el apartado Zonas de navegación, contenido, interacción.
 
-#### Contenido
+##### Contenido
 
 El bloque de Contenido es aquel en el que se muestran los contenidos. Los contenidos representan la meta del usuario y la razón por la que visita nuestro sitio Web por lo que debemos prestar mucha atención al diseño de este bloque. Debemos reservar una zona lo suficientemente grande para que el usuario pueda leer los contenidos cómodamente, sin necesidad de realizar grandes desplazamientos. Es importantísimo evitar que el usuario tenga que realizar desplazamientos horizontales para leer el final de cada línea.
 
-#### Pie
+##### Pie
 
 El bloque de Pie de página está situado al final de la página y, al igual que el encabezado, se repite en todas las páginas del sitio. Normalmente se emplea el pie como zona de navegación complementaria a la zona superior situada en el encabezado. En ellas se repiten algunos enlaces que se suelen colocar en el encabezado como el enlace al Mapa del sitio (que veremos en el próximo apartado) o, el enlace a la información de contacto y, además, se colocan algunos enlaces nuevos como los enlaces a la información relativa a los derechos de autor, privacidad e información legal.
 
 El diseño del pie no suele estar tan elaborado como el del encabezado, ya que su importancia es menor. El usuario tiene que ser consciente de que lo que está viendo es el pie. Esto es de gran importancia en aquellos casos en los que, por ser el tamaño vertical de la página mayor que la ventana del navegador, el usuario se ve obligado a desplazarse verticalmente, pudiendo perder de vista el encabezado. Con un diseño más sencillo del pie respecto al resto de los bloques conseguimos esa percepción por parte del usuario.
 
-### Mapa de navegación
+##### Mapa de navegación
 
 Cuando un sitio Web es **muy grande y complejo**, como el antiguo sitio del Ministerio de Educación y Ciencia, es conveniente tener un mapa del sitio que ayude a los usuarios a encontrar lo que buscan.
 
@@ -480,7 +585,32 @@ _Representación gráfica de las estructuras de mapas de sitios_
 {:.question}
 ¿Qué estructura de mapa debería tener esta web?
 
-## Plantilla de diseño
+### Tecnologías para el diseño de documentos web
+
+Los sitios Web están compuestos de páginas que están escritas en lenguaje HTML.
+
+HTML, acrónimo de las palabras en inglés HyperText Markup Language o Lenguaje de Marcado de Hipertexto, es el lenguaje de marcado predominante para la elaboración de páginas web. Los documentos escritos en este lenguaje sirven para describir tanto la estructura como el contenido de una página web.
+
+El HTML emplea marcas o etiquetas dentro del documento para informar al navegador de lo que es presentación dentro de un documento y lo hace, normalmente, delimitando el texto entre dos etiquetas: una de apertura y una de cierre, y, digo normalmente, porque hay etiquetas que no tienen etiqueta de cierre. Una etiqueta se distingue del resto porque va encerrada entre corchetes angulares (los símbolos “menor que” y “mayor que”) y tiene unas normas sintácticas que se deben respetar si queremos que el resultado mostrado en el navegador sea el que pretendemos. La mayoría de ellas constan de: nombre de la etiqueta y atributos de la etiqueta, aunque algunas no tienen atributos.
+
+XML, acrónimo de las palabras en inglés de eXtensible Markup Language o Lenguaje de Marcas eXtensible, se propone como un estándar para el intercambio de información estructurada entre diferentes plataformas. XML no es realmente un lenguaje en particular, es un metalenguaje extensible de etiquetas desarrollado por el World Wide Web Consortium (W3C).
+
+A diferencia del HTML en el que los errores sintácticos no producen errores en el navegador y sólo pueden provocar variaciones en la presentación, el XML es muy estricto en cuanto a sus normas de sintaxis.
+
+XHTML, acrónimo de las palabras en inglés de eXtensible Hypertext Markup Language o lenguaje extensible de marcado de hipertexto. Es un lenguaje que utiliza las mismas etiquetas y atributos que el HTML pero aplicando las reglas de sintaxis del XML.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Conoces alguna herramienta especializada para hacer diseños web?</summary>
+  <div class="card-body" markdown="1">
+
+- Balsamiq
+- Figma
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+#### Plantilla de diseño
 
 La reutilización de código es una técnica común que intenta ahorrar tiempo y energía, reduciendo el trabajo redundante.
 
