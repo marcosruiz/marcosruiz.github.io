@@ -43,147 +43,7 @@ La IPO (Interacción Persona-Ordenador) es la disciplina que estudia el intercam
 
 ### Teoría de la Gestalt
 
-Existe una teoría (psicología de la Gestalt) sobre la percepción que estudia la forma en que nuestro cerebro decodifica la información que recibe a través de diversas asociaciones que se producen en el momento de la percepción. Según esta teoría, la mente configura, a través de ciertas leyes, los elementos que le llegan a través de los canales sensoriales (percepción) o a través de la memoria (pensamiento, inteligencia y resolución de problemas).
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6_Ak5Rdo_rc?si=74VDF3dkicPdXdPX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-Toda percepción es un acto de búsqueda de significado y, en este sentido, es un acto de comunicación o de búsqueda de comunicación. Percibir no es recibir pasivamente información visual. Percibir implica buscar, seleccionar, relacionar, organizar, establecer conexiones, recordar, identificar, jerarquizar, evaluar, aprender e interpretar.
-
-<details class="card mb-2">
-  <summary class="card-header question">En el proceso de diseño se construye un mensaje visual con alguna intención concreta. ¿Cuándo crees que se logra alcanzar este objetivo?</summary>
-  <div class="card-body" markdown="1">
-
-La construcción de mensajes visuales conlleva siempre una intención comunicativa que tendrá éxito cuando el receptor del mensaje sea capaz de decodificarlo correctamente de acuerdo con las intenciones del emisor del mismo.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-![alt text](logoCarrefour.jpg)
-_Logo de Carrefour_
-
-{:.question}
-¿Crees que el logo de Carrefour consigue su intención?
-
-Las personas dedicadas al diseño son comunicadores visuales por lo que deben conocer al público, sus necesidades e inquietudes para poder lograr que el mensaje visual llegue de manera correcta a los receptores del mismo.
-
-Cuando utilizamos imágenes para construir mensajes audiovisuales, debemos tener presente que con las imágenes sólo podemos comunicar las experiencias comunes.
-
-### Principios básicos de la Gestalt
-
-Los principios básicos de la Gestalt son:
-
-- Principios de proximidad y de semejanza
-- Principios de simetría y de continuidad
-- Principios de cierre y de área o tamaño relativo
-- Principio de figura-fondo
-- Ley de simplicidad, pregnancia o buena forma
-
-En los subapartados siguientes veremos estos principios y su aplicación en el diseño de interfaces Web.
-
-#### Principios de proximidad y de semejanza
-
-##### Proximidad
-
-Nuestra mente tiende a agrupar los elementos en función de la distancia que hay entre ellos.
-
-![alt text](principioDeProximidad.png)
-
-En la imagen nuestra mente agrupa los elementos formando 3 columnas, 4 filas y 6 bloques.
-
-Un ejemplo de la aplicación de este principio lo puedes ver en la imagen de una de las páginas del antiguo sitio de la Comunidad de Madrid. En esta imagen se han agrupado, dentro de dos rectángulos azules, aquellos elementos que, siendo todos enlaces a otras páginas del sitio y, presentando el mismo formato, se perciben como bloques distintos por estar sus elementos más próximos entre sí. 
-
-![alt text](principioDeProximidadCM.png)
-
-La cercanía de los elementos del mismo tipo es percibida por el usuario como si fueran una única unidad. Y, la distancia que hay entre los dos bloques, es suficiente para que el usuario los perciba como elementos que pertenecen a diferentes categorías de información.
-
-Agrupamos todo lo que nos rodea por sus características similares. A las personas las agrupamos por su raza, religión, sexo, altura, color del pelo, clase social. También realizamos agrupamientos en el resto de los seres vivos: arbustos, vegetales, mamíferos, anfibios, etcétera y, en nuestras alacenas, tendemos a agrupar objetos según su funcionalidad: artículos de droguería, alimentación, jardinería, utensilios de cocina.
-
-##### Semejanza
-
-Nuestra mente tiende a agrupar aquellos elementos que son similares en su aspecto visual: forma, color, tamaño, etcétera
-
-![alt text](principioDeSemejanza.png)
-
-Nuestra mente no percibe los  36 elementos de la parte izquierda de la imagen. Percibe  3 filas de elementos amarillos y  3 filas de elementos marrones. En la parte central de la imagen vemos las líneas en diagonal formadas por elementos con la misma forma. En la parte de la derecha de la imagen distinguimos  3 bloques de rectángulos, el bloque superior horizontal y dos bloques paralelos dispuestos verticalmente.
-
-Un ejemplo de la aplicación de este principio lo puedes ver en la imagen de una de las páginas del antiguo sitio de la Xunta de Galicia. En esta imagen se han agrupado dentro de unos rectángulos azules aquellos elementos que, siendo todos enlaces a diferentes páginas del sitio, son similares entre sí tanto en forma como en tamaño.
-
-![alt text](principioDeSemejanzaEjemplo.png)
-
-#### Principios de simetría y de continuidad
-
-##### Simetría
-
-Nuestra mente tiende a percibir como un único elemento aquellos que están dispuestos simétricamente.
-
-![alt text](principioDeSimetria.png)
-
-En el dibujo no vemos el símbolo © del Copyright que está colocado cuatro veces pero girándolo de modo que la letra C de cada uno de los símbolos está mirando al centro. Lo que vemos son los pétalos de una flor.
-
-Un ejemplo de la aplicación de este principio lo puedes ver en la imagen de la página de la Tienda On-line de Bornay Desserts. En esta imagen se han separado mediante una línea vertical de color azul las dos zonas simétricas. En la zona de la izquierda el texto está alineado por su derecha, mientras que en la zona de la derecha, el texto está alineado por su izquierda. Desde lejos parece un único elemento centrado en la imagen. 
-
-![alt text](principioDeSimetriaEjemplo.png)
-
-##### Continuidad
-
-Nuestra mente tiende a percibir los elementos continuos aunque estén interrumpidos entre sí.
-
-![alt text](principioDeContinuidad.png)
-
-En la imagen vemos a la izquierda un grupo de ovejas que avanzan por un camino. Las ovejas que van delante no se ven claramente pero nosotros las percibimos igualmente por efecto del principio de continuidad. En la parte derecha de la imagen no vemos la forma de aleta de delfín de color azul que se ha repetido ocho veces. Por efecto del principio de continuidad lo que vemos es una forma con ondulaciones sobre las que está escrito el texto “abcd”.
-
-Un ejemplo de la aplicación de este principio lo puedes ver en la imagen de la parte central de la página de la Tienda On-line de Bornay Desserts. En esta figura se han separado mediante una línea vertical de color azul la imagen central original con su hueco central, de la imagen de lo que el usuario percibe destacando con color azul la letra B completa y con color granate el hueco de la línea central. El usuario percibe estos elementos unidos aunque estén interrumpidos.
-
-![alt text](principioDeContinuidadEjemplo.png)
-
-#### Principios de cierre y de área o tamaño relativo
-
-##### Principio de cierre
-
-Nuestra mente tiende a percibir figuras completas o cerradas a partir de contornos, incluso aunque éstos estén incompletos.
-
-![alt text](principioDeCierre.png)
-
-Un ejemplo de la aplicación de este principio lo puedes ver en las tres zonas enmarcadas con un rectángulo grisáceo en la parte derecha de la imagen. La parte izquierda se corresponde con el aspecto original de la página web de la empresa Enesa Logística S.L.
-
-![alt text](principioDeCierreEjemplo.png)
-
-##### Principio de área o tamaño relativo
-
-Nuestra mente tiende a percibir como objeto el más pequeño de dos objetos que se superponen, percibiendo el objeto de mayor tamaño como fondo.
-
-![alt text](principioDeArea.png)
-
-La hexágono se percibe como el objeto principal de la imagen y el cuadrado azul se percibe como el fondo sobre el cual se encuentra el hexágono.
-
-Un ejemplo de la aplicación de este principio lo puedes ver en las zonas enmarcadas mediante círculos en la parte derecha de la imagen. La circunferencia roja representa el fondo y los círculos pequeños son los elementos de interés. La parte izquierda de la imagen se corresponde con el aspecto original de la página web de la empresa Golfitness style Donde se pueden ver las imágenes que están debajo de los círculo y que se corresponden con la zona de navegación de la página.
-
-![alt text](principioDeAreaEjemplo.png)
-
-#### Principio de figura-fondo
-
-Nuestra mente tiende a percibir ciertos elementos como figuras, con forma y borde, destacándolos del resto de los objetos que los envuelven (fondo).
-
-![alt text](principioDeFigura.png)
-
-En la imagen distinguimos el triángulo de color claro como una forma sobre un rectángulo de color azul que está de fondo, debido a que asimilamos mejor la forma triangular que la poligonal. Si esto no fuera así, estaríamos viendo un triangulo a la izquierda y una forma poligonal a la derecha.
-
-Un ejemplo de la aplicación de principios es la imagen de la página de ISAIAH FRAZIER ARTISTIC DESIGNS. En ella podemos ver el corazón como objeto principal situado sobre un fondo de rectángulos de colores.
-
-![alt text](principioDeFiguraEjemplo.png)
-
-#### Ley de simplicidad, pregnancia o buena forma
-
-Nuestra mente tiende a percibir las formas más simples, facilitando así su recuerdo. Es un principio de organización de los elementos que componen una experiencia perceptiva, por el cual se reducen las ambigüedades o efectos distorsionadores, permitiéndonos centrarnos en un objeto separándolo del entorno con facilidad.
-
-![alt text](leyDeSimplicidad1.png)
-
-![alt text](leyDeSimplicidad2.png)
-
-La misma imagen que proponíamos como ejemplo del principio figura-fondo nos vale como aplicación práctica de otros principios. Distinguimos en la fila superior los elementos que forman parte del sistema de navegación por la tonalidad más oscura de los colores (principio de semejanza). También hay agrupación de elementos en distintos rectángulos con fondo blanco (principio de proximidad). Y, vemos rectángulos completos, aún cuando no lo están por estar recortados con la silueta del corazón blanco del centro (principio de cierre).
-
-![alt text](principioDeFiguraEjemplo.png)
+Lee el artículo [Teoría de la Gestalt](/posts/gestalt).
 
 ## Elementos conceptuales del diseño
 
@@ -225,6 +85,10 @@ Los elementos prácticos del diseño permanecen ocultos en el contenido y en la 
 - **Significado**: Es la imagen conceptual que se representa en nuestra mente cuando el diseño transporta un mensaje visual. Cada receptor del mensaje le dará una interpretación, un significado distinto, según sean sus conocimientos y experiencias previas.
 - **Función**: la función se hace presente cuando un diseño debe servir a un determinado propósito.
 La imagen anterior cumple una función muy importante. Colocada en el lugar adecuado como por ejemplo, una sala de revelado de fotografías, o una sala de microfilmación cumple la función de mantener el ambiente oscuro para poder trabajar.
+
+## El color
+
+Lee el artículo [Representación de colores](/posts/colores).
 
 ## Diseño de una interfaz web
 
@@ -353,7 +217,7 @@ Conocer los tipos de fuentes y sus comportamientos en los distintos navegadores 
 
 En una guía de estilo deben figurar los colores a emplear en el sitio Web en todos los textos, fondos, e imágenes según sea su ubicación y finalidad. La información debe suministrarse aportando los valores para el modelo RGB tanto en hexadecimal como en decimal.
 
-la guía de estilos debería reflejar, entre otras, las combinaciones hexadecimales para el color de:
+La guía de estilos debería reflejar, entre otras, las combinaciones hexadecimales para el color de:
 
 - Las fuentes en el bloque central de la página principal (la que está en el centro de la imagen).
 - Los fondos de los títulos de las secciones de la página principal (mencionadas en el párrafo anterior).
@@ -368,8 +232,6 @@ Por último, una serie de consejos que te pueden ser útiles:
 - Utilizar combinaciones de colores que transmitan armonía.
 - Utilizar correctamente el contraste de colores para destacar las partes relevantes del sitio.
 - Ten en cuenta la psicología del color.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/X8kbrAzV6BM?si=36BMIy8d8z-kghfJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 #### Iconografía
 
@@ -620,5 +482,6 @@ Hoy en día, hay gran cantidad de sitios comerciales que suministran plantillas 
 
 ## Bibliografía
 
+- [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - <https://www.reddit.com/r/logodesign/>
 - <https://www.lawebera.es/>
