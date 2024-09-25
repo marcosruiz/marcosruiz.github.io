@@ -162,7 +162,7 @@ Haz click [aquí](/assets/img/planificacion-interfaces-graficas/manual_estilo_si
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e7CpH_B7XPU?si=9NyiMsPNOhBuMkV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### Elementos de las guías de estilo
+## Elementos de las guías de estilo
 
 Los elementos de una guía de estilo son:
 
@@ -172,7 +172,7 @@ Los elementos de una guía de estilo son:
 - Iconografía
 - Estructura
 
-#### Fotos y logos
+### Fotos y logos
 
 Los recursos gráficos se emplean mucho en la Web. Si se utilizan adecuadamente, pueden mejorar el aprendizaje del usuario y añadir valor a nuestro sitio. Ahora bien, si se utilizan inadecuadamente, producen el efecto contrario.
 
@@ -188,7 +188,7 @@ Una guía debe indicar al equipo de desarrollo de la interfaz los siguientes pun
 
 Todos los tamaños y formatos a emplear en las imágenes y logos del sitio deben quedar perfectamente descritos en el documento de la guía de estilo.
 
-#### Tipografías
+### Tipografías
 
 El uso de una fuente familiar al usuario aumenta la facilidad de lectura.
 
@@ -213,7 +213,7 @@ Conocer los tipos de fuentes y sus comportamientos en los distintos navegadores 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tGgoRgsA1Co?si=qhZgpfSf12oJMhT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-#### Colores
+### Colores
 
 En una guía de estilo deben figurar los colores a emplear en el sitio Web en todos los textos, fondos, e imágenes según sea su ubicación y finalidad. La información debe suministrarse aportando los valores para el modelo RGB tanto en hexadecimal como en decimal.
 
@@ -233,7 +233,7 @@ Por último, una serie de consejos que te pueden ser útiles:
 - Utilizar correctamente el contraste de colores para destacar las partes relevantes del sitio.
 - Ten en cuenta la psicología del color.
 
-#### Iconografía
+### Iconografía
 
 La iconografía es la aplicación práctica de los elementos prácticos del diseño.
 
@@ -281,7 +281,7 @@ No. Pero... ¿sabrías decirme por qué?
   </div>
 </details>
 
-#### Estructura
+### Estructura
 
 En una guía de estilos debe quedar reflejada no sólo la disposición de estos bloques en cada una de las páginas del sitio, sino también el esquema de navegación que va a existir entre las diferentes páginas del sitio.
 
@@ -308,7 +308,7 @@ Los huecos en el diseño de una web son tan importantes como los silencios en el
   </div>
 </details>
 
-### Elementos de una interfaz web
+## Elementos de una interfaz web
 
 Son muchos los elementos de los que puede estar compuesta una interfaz Web. El número de elementos empleados dependerá del objetivo del sitio. Así, un portal de noticias, o un portal de un organismo público seguramente utilizará un mayor número de elementos que una página Web de un restaurante o una página personal. Los más destacados son:
 
@@ -317,7 +317,7 @@ Son muchos los elementos de los que puede estar compuesta una interfaz Web. El n
 - Elementos de contenidos.
 - Elementos de interacción.
 
-#### Elementos de identificación
+### Elementos de identificación
 
 Los elementos de identificación son componentes visuales y funcionales que permiten a los usuarios reconocer de forma clara el propósito y la marca del sitio, facilitando la navegación y el entendimiento de la página. Son por ejemplo:
 
@@ -330,7 +330,7 @@ Los elementos de identificación son componentes visuales y funcionales que perm
 {:.question}
 ¿Qué es el favicon?
 
-#### Elementos de navegación
+### Elementos de navegación
 
 Ya hemos dicho que los elementos de navegación son los que nos permiten acceder a todos los contenidos que se encuentran en las diferentes páginas de un sitio Web. Pero, lo que no hemos dicho, es que si queremos que nuestra página sea usable, el usuario debe conseguir navegar por la página sin perderse y sin tener la sensación de perderse. Para conseguirlo, el sistema de navegación debería constar de una serie de elementos:
 
@@ -348,11 +348,11 @@ En la imagen siguiente están señaladas cada uno de los elementos mencionados. 
 
 ![alt text](navegacionMinisterio.png)
 
-#### Elementos de contenido
+### Elementos de contenido
 
 El contenido es la parte esencial de una página Web. Es importante que los contenidos estén expresados en un lenguaje claro y conciso y, presentados en un formato agradable y de fácil lectura. Además, si el sitio Web está formado por muchas páginas, el contenido debe situarse siempre en la misma ubicación. También es importante evitar que el usuario tenga que hacer grandes desplazamientos durante la lectura de los contenidos. Siempre es mejor dividir el contenido en más de una página y enlazar unas con otras.
 
-#### Elementos de interacción
+### Elementos de interacción
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué son las zonas de interacción?</summary>
@@ -380,7 +380,7 @@ Los elementos que permiten la interacción son muy variados y cada uno de ellos 
 {:.question}
 ¿Cómo se les llama a las casillas de verificación en inglés?
 
-### Maquetación web
+## Maquetación web
 
 La maquetación web es el proceso de estructurar y organizar los elementos visuales de una página web para asegurar que se presenten de manera clara, atractiva y funcional en diferentes dispositivos y tamaños de pantalla. Consiste en definir cómo se disponen los bloques de contenido (como texto, imágenes, menús, etc.) y cómo estos elementos interactúan con el usuario.
 
@@ -397,31 +397,31 @@ A día de hoy tenemos otros tipos de display mucho más intuitivos y versátiles
 
 Con la aparición de la hojas de estilo, las cuales no hay que confundir con las Guías de estilo que vimos con anterioridad, se tiende a dejar de emplear tanto los marcos como las tablas sustituyendo ambos por el empleo de la etiqueta DIV para definir los bloques y las hojas de estilos para configurar la visualización de dichos bloques. Pero este tema no es tan sencillo por lo que se verá más adelante.
 
-#### Elementos de ordenación
+### Elementos de ordenación
 
 Cuando diseñamos un sitio Web debemos ser consistentes en la distribución de los grandes bloques en todas las páginas del sitio y debemos tener en cuenta el espacio disponible en la ventana del navegador.
 
-##### Encabezado
+#### Encabezado
 
 El bloque de Encabezado está situado siempre en la parte superior de cualquier página. Suele contener además de los elementos identificativos del sitio Web: el logotipo, el nombre de la empresa, elementos de acción que permiten cambiar el idioma de lectura, realizar búsquedas, e incluso, si el sitio es muy grande, puede contener elementos de navegación que permanecen a la vista en todas las páginas del sitio.
 
 **El bloque de Encabezado se repite en todas las páginas de un sitio Web y debe permanecer visible en todas ellas** siempre que sea posible y la complejidad del sitio nos lo permita.
 
-##### Navegación
+#### Navegación
 
 El bloque de Navegación es donde se coloca el sistema de navegación del que ya hemos hablado en el apartado Zonas de navegación, contenido, interacción.
 
-##### Contenido
+#### Contenido
 
 El bloque de Contenido es aquel en el que se muestran los contenidos. Los contenidos representan la meta del usuario y la razón por la que visita nuestro sitio Web por lo que debemos prestar mucha atención al diseño de este bloque. Debemos reservar una zona lo suficientemente grande para que el usuario pueda leer los contenidos cómodamente, sin necesidad de realizar grandes desplazamientos. Es importantísimo evitar que el usuario tenga que realizar desplazamientos horizontales para leer el final de cada línea.
 
-##### Pie
+#### Pie
 
 El bloque de Pie de página está situado al final de la página y, al igual que el encabezado, se repite en todas las páginas del sitio. Normalmente se emplea el pie como zona de navegación complementaria a la zona superior situada en el encabezado. En ellas se repiten algunos enlaces que se suelen colocar en el encabezado como el enlace al Mapa del sitio (que veremos en el próximo apartado) o, el enlace a la información de contacto y, además, se colocan algunos enlaces nuevos como los enlaces a la información relativa a los derechos de autor, privacidad e información legal.
 
 El diseño del pie no suele estar tan elaborado como el del encabezado, ya que su importancia es menor. El usuario tiene que ser consciente de que lo que está viendo es el pie. Esto es de gran importancia en aquellos casos en los que, por ser el tamaño vertical de la página mayor que la ventana del navegador, el usuario se ve obligado a desplazarse verticalmente, pudiendo perder de vista el encabezado. Con un diseño más sencillo del pie respecto al resto de los bloques conseguimos esa percepción por parte del usuario.
 
-##### Mapa de navegación
+#### Mapa de navegación
 
 Cuando un sitio Web es **muy grande y complejo**, como el antiguo sitio del Ministerio de Educación y Ciencia, es conveniente tener un mapa del sitio que ayude a los usuarios a encontrar lo que buscan.
 
@@ -447,7 +447,7 @@ _Representación gráfica de las estructuras de mapas de sitios_
 {:.question}
 ¿Qué estructura de mapa debería tener esta web?
 
-### Tecnologías para el diseño de documentos web
+## Tecnologías para el diseño de documentos web
 
 Los sitios Web están compuestos de páginas que están escritas en lenguaje HTML.
 
@@ -472,7 +472,7 @@ XHTML, acrónimo de las palabras en inglés de eXtensible Hypertext Markup Langu
   </div>
 </details>
 
-#### Plantilla de diseño
+### Plantilla de diseño
 
 La reutilización de código es una técnica común que intenta ahorrar tiempo y energía, reduciendo el trabajo redundante.
 
