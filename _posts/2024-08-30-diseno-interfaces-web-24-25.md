@@ -10,7 +10,9 @@ pin: true
 ## Unidades
 
 - UD1 - [Planificación de interfaces gráficas](/posts/planificacion-interfaces-graficas)
-- UD2 - Hojas de estilos
+  - [Teoría de la Gestalt](/posts/gestalt)
+  - [Representación de colores](/posts/colores)
+- UD2 - [Hojas de estilos](/posts/hojas-estilos)
 - UD3 - Contenidos multimedia en la web: Imágenes
 - UD4 - Contenidos multimedia en la Web: Audio y Vídeo
 - UD5 - Contenidos multimedia en la Web: Animaciones
