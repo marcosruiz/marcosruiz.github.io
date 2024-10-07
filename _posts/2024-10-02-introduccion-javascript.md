@@ -102,6 +102,15 @@ Lo más que se puede hacer es ofuscar el código, o hacerlo más difícil de ent
 
 Para que veas un ejemplo de ofuscador de JavaScript visita [este enlace](https://www.javascriptobfuscator.com/Javascript-Obfuscator.aspx).
 
+El siguiente código es un ejemplo de un simple "Hello World!":
+
+```javascript
+var _0x47a0=['log','Hello\x20World!']; (function (_0x558f55,_0x47a08a){var _0x257f99= function (_0x256ed6) 
+{while(--_0x256ed6) {_0x558f55['push'] (_0x558f55['shift']()); }};_0x257f99(++_0x47a08a);}
+(_0x47a0,0x1cb));var _0x257f =function(_0x558f55,_0x47a08a){_0x558f55=_0x558f55-0x0;
+var _0x257f99=_0x47a0[_0x558f55];return _0x257f99;};function hi(){console[_0x257f('0x1')](_0x257f('0x0'));}hi();
+```
+
 {:.question}
 ¿En qué consiste la ofuscación de código JavaScript?
 
@@ -126,11 +135,63 @@ Dos. Usando la etiqueta script e incluyendo un fichero .js externo.
   <summary class="card-header question">¿Qué diferencia hay entre JavaScript y ECMAScript?</summary>
   <div class="card-body" markdown="1">
 
-Lee el artículo [La especificación ECMAScript](https://lenguajejs.com/javascript/introduccion/ecmascript/).
+A partir de 1997, el World Wide Web Consortium (W3C) y ECMA International comenzaron a definir las especificaciones del lenguaje JavaScript bajo el nombre de ECMAScript. Este estándar asegura la interoperabilidad y la compatibilidad del lenguaje en distintos navegadores y plataformas. El W3C se encarga también de otros protocolos y lenguajes estándar, incluso de principios éticos: <https://www.w3.org/TR/ethical-web-principles/>.
+
+Lee el artículo [La especificación ECMAScript](https://lenguajejs.com/javascript/introduccion/ecmascript/) si quieres saber más.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
+
+### Atributos `async` y `defer` en la Etiqueta `<script>`
+
+A partir de HTML5, la etiqueta `<script>` admite dos atributos, async y defer, que permiten que los scripts comiencen su descarga inmediatamente sin interrumpir el proceso de parseo del documento HTML.
+
+![alt text](asyncdefer.jpeg)
+_Diagrama del funcionamiento de Async o Defer_
+
+#### async
+
+El atributo async permite que el script se ejecute de manera asíncrona tan pronto como se haya descargado. Esto significa que:
+
+- El script se descargará en paralelo con el parseo del documento.
+- Se ejecutará tan pronto como la descarga haya terminado, sin esperar a que el documento se haya parseado por completo.
+- Los scripts marcados con async pueden no ejecutarse en el orden en el que aparecen en el documento HTML, ya que la ejecución depende de cuál script se descargue primero.
+
+Ejemplo:
+
+```html
+<script src="scripts.js" async></script>
+```
+
+#### defer
+
+El atributo defer asegura que los scripts se ejecutarán en el orden en el que aparecen en el documento HTML. Las características de defer incluyen:
+
+- El script se descarga en paralelo con el parseo del documento, similar a async.
+- La ejecución del script se pospone hasta que el documento se haya parseado completamente.
+- La ejecución ocurre justo antes del evento `DOMContentLoaded`, pero después de que todo el HTML haya sido procesado.
+
+Ejemplo:
+
+```html
+<script src="scripts.js" defer></script>
+```
+
+#### Sin async ni defer
+
+Si un script no tiene ninguno de estos atributos, el comportamiento por defecto es que el script se descarga y se ejecuta de manera síncrona. Esto significa que:
+
+- El parseo del documento se pausa hasta que el script haya sido descargado y ejecutado completamente.
+- Los scripts se ejecutan en el orden en que aparecen en el documento.
+
+Ejemplo:
+
+```html
+<script src="scripts.js"></script>
+```
+
+En cualquier caso, salvo ocasiones específicas, suele ser más fácil añadir un sólo script, trabajar con módulos y esperar al evento DOMContentLoaded.
 
 ## Bibliografía
 

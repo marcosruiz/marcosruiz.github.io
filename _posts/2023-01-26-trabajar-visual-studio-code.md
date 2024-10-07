@@ -70,12 +70,13 @@ Si escribes `ul>li*5` y le das al Enter se te generará el siguiente código:
 
 Existe la posibilidad de instalar extensiones en Visual Studio Code, yo te recomiendo las siguientes:
 
-- Live Preview ➡ Ver un navegador integrado que se actualiza solo.
-- Code Runner (necesario instalar Node) ➡ Ejecutar código JavaScript.
-- Error lens ➡ Mostrar los errores en la misma línea donde se escribe.
-- Stylelint (necesario npm) ➡ Errores de estilo.
-- ESLint (necesario npm) ➡ Errores de JavaScript.
-- Prettier (necesario npm) ➡ Indenta de manera correcta.
+- **Live Preview**: Ver un navegador integrado que se actualiza solo.
+- **Live Server**: Para probar la web en un servidor local de manera rápida y sencilla.
+- **Error lens**: Mostrar los errores en la misma línea donde se escribe.
+- **Prettier** (necesario npm): Indenta de manera correcta.
+- **ESLint** (necesario npm): Errores de JavaScript.
+- **Stylelint** (necesario npm): Errores de estilo.
+- **Code Runner** (necesario npm): Ejecutar código JavaScript.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sdbl-LpIoQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

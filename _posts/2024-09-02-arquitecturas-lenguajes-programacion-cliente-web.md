@@ -18,31 +18,57 @@ Por Web se pueden entender tres cosas distintas: el proyecto inicial del CERN, e
 
 El Desarrollo Web ha sido y sigue estando muy influenciado por múltiples campos como el de las nuevas tecnologías, los avances científicos, el diseño gráfico, la programación, las redes, el diseño de interfaces de usuario, la usabilidad y una variedad de múltiples recursos. Por lo tanto el Desarrollo Web es realmente un campo multidisciplinar.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NWUZCTTLQcg?si=X1ZNqewMNyycyafM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 {:.question}
 ¿Qué es Internet? ¿Qué es la web? ¿Son lo mismo?
 
+### Arquitectura cliente-servidor
+
 Hoy en día los sitios web siguen un modelo basado en la programación cliente-servidor con tres elementos comunes:
 
-- **El lado del servidor (server-side)**: incluye el hardware y software del servidor Web así como diferentes elementos de programación y tecnologías incrustadas. Las tecnologías tecnologías de servidor son múltiples y pueden abarcar los lenguajes de programación clásicos como Java, PHP, C#, Perl, etc., SGBD (Sistemas Gestores de Bases de Datos) o programas para la gestión de servidores web. Hoy día se ha incorporado en el lado servidor el lenguaje JavaScript a través del framework node.js.
-- **El lado del cliente (client-side)**: este elemento hace referencia a los navegadores web y está soportado por tecnologías como HTML, CSS y lenguajes como JavaScript los cuales se utilizan para crear la presentación de la página o proporcionar características interactivas. Es justamente aquí dónde nos vamos a centrar a lo largo de todo el módulo.
-- **La red**: describe los diferentes elementos de conectividad utilizados para mostrar el sitio web al usuario.
+La arquitectura cliente-servidor es el modelo fundamental en el que se basa la Web. Se divide en dos partes principales:
+
+- **Server-side** (Lado del servidor)
+  - Hardware: Incluye servidores y elementos de red, máquinas virtuales y contenedores.
+  - Software: Involucra servidores web (como Apache, IIS, NGINX) y lenguajes CGI (como Perl, PHP, C). También incluye lenguajes y frameworks con servidores web integrados, como Python, Java, Node.js y C++.
+- **Client-side** (Lado del cliente)
+  - Clientes web: Los navegadores web como Firefox, Chrome, Vivaldi, Opera, Edge e Internet Explorer.
+  - Lenguajes de marcas: HTML, XHTML, HTML5 y CSS.
+  - Lenguajes de programación del entorno Cliente: Principalmente JavaScript.
+
+En el desarrollo web, tanto el lado del servidor (server-side) como el lado del cliente (client-side) juegan sus propios roles. Sin embargo, muchas tareas pueden llevarse a cabo en cualquiera de los dos lados, y la elección de dónde implementar una funcionalidad específica depende de varios factores, como la tecnología adecuada para el caso o la comodidad del desarrollador con una tecnología particular.
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es node.js?</summary>
   <div class="card-body" markdown="1">
 
-Node.js es un entorno de ejecución de JavaScript que permite ejecutar código JavaScript fuera del navegador, es decir, en el lado del servidor.
+Node.js es un entorno de ejecución de JavaScript que permite ejecutar código JavaScript fuera del navegador, es decir, en el lado del servidor. Esto permite convertir a JavaScript en un lenguaje que nos puede servir para desarrollar front-end como back-end.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
 
-El entendimiento completo de todos los aspectos técnicos del medio Web, incluyendo la componente de red, es de vital importancia para llegar a ser un buen desarrollador web.
+<details class="card mb-2">
+  <summary class="card-header question">¿Cuáles son los pasos a seguir para convertirme en un front-end developer?</summary>
+  <div class="card-body" markdown="1">
+
+Seguir los pasos de la web [Roadmap.sh](https://roadmap.sh/frontend).
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 > La diferencia entre server-side y client-side puede ser difícil de entender al principio si no se ha trabajado con las tecnologías web.
 {:.prompt-info}
+
+
+### Evolución de la web
+
+1. **Páginas Web Estáticas**: Las primeras aplicaciones web eran simples páginas estáticas con hipervínculos.
+1. **Páginas Web Generadas por el Servidor**: Con el tiempo, se introdujo un poco de JavaScript para mejorar la interacción.
+1. **Introducción de AJAX**: Permite cargar o subir datos al servidor de manera asíncrona, mejorando la interactividad sin recargar la página.
+1. **Single Page Application (SPA)**: Las aplicaciones de una sola página se comunican con el servidor usando JSON o XML, proporcionando una experiencia más fluida.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NWUZCTTLQcg?si=X1ZNqewMNyycyafM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Lenguajes de programación en entorno cliente
 
@@ -212,8 +238,14 @@ No. Solo necesitamos un navegador.
 
 Es importante es utilizar las extensiones que nos ofrecen muchos de los navegadores ya que te van a permitir ver las salidas por consola que anuncian errores, ver la estructura del documento, incluso en algunos casos depurarlos, etc.
 
+### Otras herramientas
+
+- Tecla F12 en los navegadores: Accede a las herramientas de desarrollo del navegador.
+- Firefox Developer Edition: Una versión del navegador Firefox con herramientas avanzadas para desarrolladores web.
+
 ## Integración del código JavaScript en documentos HTML
+
+Lee el artículo [Fundamentos de la programación con JavaScript](/posts/fundamentos-programación-javascript) para repasar conceptos básicos de programación y empezar a entender la loca sintaxis de JavaScript.
 
 Lee el artículo [Introducción a JavaScript](/posts/introduccion-javascript).
 
-También te puede ser útil leer el artículo [Fundamentos de la programación con JavaScript](/posts/fundamentos-programación-javascript) para comprender la sintaxis de JavaScript y repasar conceptos básicos de programación.
