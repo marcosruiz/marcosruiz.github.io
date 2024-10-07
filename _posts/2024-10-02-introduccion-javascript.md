@@ -1,0 +1,140 @@
+---
+title: "Introducción a JavaScript"
+date: 2024-10-02 9:00:00 +0100
+categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
+tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec]
+img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
+---
+
+## Introducción
+
+Lee el artículo [¿Qué es Javascript?](https://lenguajejs.com/javascript/introduccion/que-es-javascript/).
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Es JavaScript un lenguaje de programación?</summary>
+  <div class="card-body" markdown="1">
+
+Si, ya que es un mecanismo con el que podemos decirle a nuestro navegador que tareas debe realizar, en que orden y cuantas veces.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Es JavaScript un lenguaje compilado o interpretado?</summary>
+  <div class="card-body" markdown="1">
+
+Interpretado.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+## La consola JavaScript
+
+Lee el artículo [La consola Javascript](https://lenguajejs.com/javascript/introduccion/consola-de-javascript/).
+
+{:.question}
+¿Cómo se abre la consola de JavaScript en un navegador?
+
+## Integración del código JavaScript
+
+Los navegadores web te permiten varias opciones de inserción de código de JavaScript. Podremos insertar código usando las etiquetas `<script> </script>` y empleando un atributo `type` indicaremos qué tipo de lenguaje de script estamos utilizando:
+
+Por ejemplo:
+
+```html
+<script type="text/javascript">
+      //  El código de JavaScript vendrá aquí.
+</script>
+```
+
+Otra forma de integrar el código de JavaScript es utilizar un fichero externo que contenga el código de JavaScript y referenciar dicho fichero. Ésta sería la forma más recomendable, ya que así se consigue una separación entre el código y la estructura de la página web y como ventajas adicionales podrás compartir código entre diferentes páginas, centralizar el código para la depuración de errores, tendrás mayor claridad en tus desarrollos, más modularidad, seguridad del código y conseguirás que las páginas carguen más rápido. La rapidez de carga de las páginas se consigue al tener el código de JavaScript en un fichero independiente, ya que si más de una página tiene que acceder a ese fichero lo cogerá automáticamente de la caché del navegador con lo que se acelerará la carga de la página.
+
+Para ello tendremos que añadir a la etiqueta `script` el atributo `src`, con el nombre del fichero que contiene el código de JavaScript. Generalmente los ficheros que contienen código JavaScript tendrán la extensión .js.
+
+Por ejemplo:
+
+```html
+<script  type="text/javascript"  src="miScript.js"></script>
+```
+
+Si necesitas cargar más de un fichero .js repite la misma instrucción cambiando el nombre del fichero. Las etiquetas de `<script>` y `</script>` son obligatorias a la hora de incluir el fichero .js.
+
+> No debes escribir ningún código de JavaScript entre esas etiquetas cuando uses el atributo src.
+{:.prompt-warning}
+
+Para referenciar el fichero origen .js de JavaScript dependerá de la localización física de ese fichero. Por ejemplo en la línea anterior el fichero miScript.js deberá estar en el mismo directorio que el fichero .html. Podrás enlazar fácilmente a otros ficheros de JavaScript localizados en directorios diferentes de tu servidor o de tu dominio. Si quieres hacer una referencia absoluta al fichero, la ruta tendrá que comenzar por `http://`, en otro caso tendrás que poner la ruta relativa dónde se encuentra tu fichero .js.
+
+Por ejemplo:
+
+```html
+<script  type="text/javascript"  src="http://www.midominio.com/miScript.js"></script>
+```
+
+En este caso estamos referenciando nuestro script mediante una referencia absoluta, que hace referencia a nuestro dominio en primer lugar y posteriormente a la ruta dentro de nuestro domino. Es decir, estamos referenciando mediante una URL que se refiere a nuestro domino.
+
+{:.question}
+¿Qué diferencia hay entre una ruta relativa y una ruta absoluta?
+
+Otro ejemplo:
+
+```html
+<script  type="text/javascript"  src="./js/miScript.js"></script>
+```
+
+En este caso estamos referenciando nuestro script mediante una referencia relativa, que hace referencia a nuestro nuestro script desde el mismo directorio o carpeta en la que se encuentra la página .html en la que está incrustado dicho código, pero situado en el directorio js.
+
+Cuando alguien examine el código fuente de tu página web verá el enlace a tu fichero .js, en lugar de ver el código de JavaScript directamente. Ésto no quiere decir que tu código sea inaccesible, ya que simplemente copiando la ruta de tu fichero .js y tecleándola en el navegador podremos descargar el fichero .js y ver todo el código de JavaScript. En otras palabras, nada de lo que tu navegador descargue para mostrar la página web podrá estar oculto de la vista de cualquier programador.
+
+A veces te puedes encontrar que tu script se va a ejecutar en un navegador que no soporta JavaScript. Para ello dispones de una etiqueta `<noscript>Texto informativo</noscript>` que te permitirá indicar un texto adicional que se mostrará indicando que ese navegador no soporta JavaScript. Pero eso no es lo habitual hoy día.
+
+En resumen, para insertar código Javascript en HTML5 existen dos formas:
+
+- Insertando el código directamente en el archivo index.html.
+- Haciendo referencia al código existente en otro archivo .js.
+
+Seguramente estarás pensando en cómo puedes proteger el código de JavaScript que vas a programar, del uso fraudulento por otros programadores o visitantes a tu página: la respuesta rápida a esa pregunta es que es imposible hacerlo.
+
+Para que el código de JavaScript pueda ejecutarse correctamente deberá ser cargado por el navegador web y por lo tanto su código fuente deberá estar visible al navegador. Si realmente te preocupa que otras personas usen o roben tus scripts, deberías incluir un mensaje de copyright en tu código fuente. Piensa que no solamente tus scripts son visibles al mundo, sino que los scripts del resto de programadores también lo son. De esta forma puedes ver fácilmente cuando alguien está utilizando al pie de la letra tus scripts, aunque ésto no evita que alguien copie tu código y elimine tu mensaje de copyright.
+
+Lo más que se puede hacer es ofuscar el código, o hacerlo más difícil de entender. Las técnicas de ofuscación incluyen la eliminación de saltos de línea, espacios en blanco innecesarios, tabuladores, utilización de nombres ininteligibles en las funciones y variables, utilización de variables para almacenar trozos de código, uso de recursividad, etc. La forma más rápida de hacer todas esas tareas de ofuscación es utilizar un software que producirá una copia comprimida del script que has programado para facilitar su carga rápida.
+
+Para que veas un ejemplo de ofuscador de JavaScript visita [este enlace](https://www.javascriptobfuscator.com/Javascript-Obfuscator.aspx).
+
+{:.question}
+¿En qué consiste la ofuscación de código JavaScript?
+
+Lo mejor es que cambies ese paradigma y pienses de una manera diferente. En lugar de proteger tu código, lo mejor es promocionarlo y hacer ostentación de él para hacer ver lo bueno que eres programando y así muchas empresas llamarán a tu puerta.
+
+Si esta sección no te ha quedado clara puedes leer el artículo [¿Cómo funciona Javascript?](https://lenguajejs.com/javascript/introduccion/como-funciona/).
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Cuántas maneras hay de incluir código JavaScript en un documento HTML?</summary>
+  <div class="card-body" markdown="1">
+
+Dos. Usando la etiqueta script e incluyendo un fichero .js externo.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+{:.question}
+¿Dónde podemos poner la etiqueta script dentro de un documento HTML?
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué diferencia hay entre JavaScript y ECMAScript?</summary>
+  <div class="card-body" markdown="1">
+
+Lee el artículo [La especificación ECMAScript](https://lenguajejs.com/javascript/introduccion/ecmascript/).
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+## Bibliografía
+
+- [Lenguaje JS](https://lenguajejs.com/)
+- [Aprende X en Y minutos, Donde X=javascript](https://learnxinyminutes.com/docs/es-es/javascript-es/)
+- [Basics of Javascript](https://fwhibbit.es/basics-of-javascript)
+- [Comparación de funciones tradicionales con funciones flecha](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
