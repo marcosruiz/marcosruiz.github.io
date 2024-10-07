@@ -166,7 +166,7 @@ Ejemplo:
 
 #### defer
 
-El atributo defer asegura que los scripts se ejecutarán en el orden en el que aparecen en el documento HTML. Las características de defer incluyen:
+El atributo `defer` asegura que los scripts se ejecutarán en el orden en el que aparecen en el documento HTML. Las características de defer incluyen:
 
 - El script se descarga en paralelo con el parseo del documento, similar a async.
 - La ejecución del script se pospone hasta que el documento se haya parseado completamente.
