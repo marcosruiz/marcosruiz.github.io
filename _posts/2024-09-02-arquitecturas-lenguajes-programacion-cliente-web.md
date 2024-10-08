@@ -294,20 +294,20 @@ El desarrollo de aplicaciones web ha evolucionado significativamente con el tiem
 
 La bibliotecas tienen las siguientes características:
 
-- Funcionalidades: Aportan funcionalidades específicas al lenguaje de programación.
-- Flexibilidad: No obligan a cambiar la manera de programar.
-- Simplificación: Facilitan la programación de tareas concretas.
-- Desventajas: Pueden crear dependencia en el programador.
-- Reemplazo: Algunas bibliotecas, como Underscore, Lodash o JQuery, han perdido relevancia con la introducción de ES6.
+- **Funcionalidades**: Aportan funcionalidades específicas al lenguaje de programación.
+- **Flexibilidad**: No obligan a cambiar la manera de programar.
+- **Simplificación**: Facilitan la programación de tareas concretas.
+- **Desventajas**: Pueden crear dependencia en el programador.
+- **Reemplazo**: Algunas bibliotecas, como Underscore, Lodash o JQuery, han perdido relevancia con la introducción de ES6.
 
 Los framworks tienen las siguientes características:
 
-- Modificación: Cambian completamente la manera de programar.
-- Integración: Se encargan de plantillas, comunicaciones, enrutamientos, componentes, módulos, etc.
-- Curva de aprendizaje: Son complejos de aprender.
-- Eficiencia: Una vez dominados, hacen la programación más ágil y correcta.
-- Inercia: Pueden dificultar el cambio a otro framework.
-- Obsolescencia: Si el framework queda obsoleto, la web también.
+- **Modificación**: Cambian completamente la manera de programar.
+- **Integración**: Se encargan de plantillas, comunicaciones, enrutamientos, componentes, módulos, etc.
+- **Curva de aprendizaje**: Son complejos de aprender.
+- **Eficiencia**: Una vez dominados, hacen la programación más ágil y correcta.
+- **Inercia**: Pueden dificultar el cambio a otro framework.
+- **Obsolescencia**: Si el framework queda obsoleto, la web también.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -315,9 +315,9 @@ Los framworks tienen las siguientes características:
 
 Para obtener bibliotecas o frameworks existen varias formas:
 
-- Descarga directa: Descargar un archivo .js o un directorio comprimido de la web oficial y copiarlo al proyecto.
-- CDN: Utilizar un CDN directamente desde la web oficial.
-- Gestores de paquetes: Utilizar NPM o Yarn para gestionar dependencias.
+- **Descarga directa**: Descargar un archivo .js o un directorio comprimido de la web oficial y copiarlo al proyecto.
+- **CDN**: Utilizar un CDN directamente desde la web oficial.
+- **Gestores de paquetes**: Utilizar NPM o Yarn para gestionar dependencias.
 
 {:.question}
 ¿Qué significan las siglas CDN?
@@ -331,6 +331,9 @@ Para que una web con HTML, CSS y Javascript funcione tan solo necesitamos un ser
 
 - **Método tradicional**: Copiar todo el contenido de las carpetas al servidor alrededor del archivo index.html.
 - **JavaScript Build Tool**: Utilizar herramientas que compilan el código fuente, lo minifican, unifican, optimizan y comprimen para mejorar la velocidad de carga y evitar incompatibilidades entre navegadores.
+
+> ¿Qué es minificar un código?
+{:.prompt-info}
 
 ## Integración del código JavaScript en documentos HTML
 
