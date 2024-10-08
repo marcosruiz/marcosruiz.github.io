@@ -16,7 +16,14 @@ Todos los prototipos y desarrollos posteriores crecieron bajo la guía del conso
 
 Por Web se pueden entender tres cosas distintas: el proyecto inicial del CERN, el conjunto de protocolos desarrollados en dicho proyecto o bien el espacio de información formado por todos los servidores interconectados. Cuando se habla de la Web generalmente se hace referencia a esto último.
 
-El Desarrollo Web ha sido y sigue estando muy influenciado por múltiples campos como el de las nuevas tecnologías, los avances científicos, el diseño gráfico, la programación, las redes, el diseño de interfaces de usuario, la usabilidad y una variedad de múltiples recursos. Por lo tanto el Desarrollo Web es realmente un campo multidisciplinar.
+El desarrollo web es un campo multidisciplinario que abarca varias áreas y tecnologías. A continuación, se describen las principales áreas profesionales del desarrollo web:
+
+- **Contenido**: El contenido se refiere a la organización, semántica, presentación y estructura de la información en la web. El lenguaje fundamental para el contenido web es HTML (HyperText Markup Language), que define la estructura y el contenido de una página web.
+- **Diseño**: El diseño se centra en el aspecto visual y los elementos gráficos de una página web. Utiliza tecnologías como CSS (Cascading Style Sheets) para definir estilos y plantillas que controlan la apariencia de las páginas.
+- **Tecnología Frontend**: Las tecnologías frontend son las que se ejecutan en el navegador del usuario y son responsables de los elementos interactivos de una página web. El principal lenguaje de programación frontend es JavaScript, que permite la creación de interfaces dinámicas y reactivas.
+- **Tecnología Backend**: El backend se encarga de la lógica del servidor, el acceso a bases de datos y el procesamiento de las solicitudes de los usuarios. Los lenguajes comunes de backend incluyen PHP, Python y Node.js, entre otros.
+- **Distribución**: La distribución se refiere a cómo se despliegan y gestionan los sitios web. Esto incluye tanto el hardware (servidores, máquinas virtuales, contenedores) como el software (servidores web como Apache, IIS y NGINX).
+- **Propósito**: Las webs se hacen para algo. Definir el propósito puede que no sea la tarea más técnica, pero son necesarios perfiles intermedios que sepan trasladar las necesidades de los clientes a los desarrolladores. O incluso inventar nuevos modelos de negocio basados en tecnologías web.
 
 {:.question}
 ¿Qué es Internet? ¿Qué es la web? ¿Son lo mismo?
@@ -28,12 +35,12 @@ Hoy en día los sitios web siguen un modelo basado en la programación cliente-s
 La arquitectura cliente-servidor es el modelo fundamental en el que se basa la Web. Se divide en dos partes principales:
 
 - **Server-side** (Lado del servidor)
-  - Hardware: Incluye servidores y elementos de red, máquinas virtuales y contenedores.
-  - Software: Involucra servidores web (como Apache, IIS, NGINX) y lenguajes CGI (como Perl, PHP, C). También incluye lenguajes y frameworks con servidores web integrados, como Python, Java, Node.js y C++.
+  - **Hardware**: Incluye servidores y elementos de red, máquinas virtuales y contenedores.
+  - **Software**: Involucra servidores web (como Apache, IIS, NGINX) y lenguajes CGI (como Perl, PHP, C). También incluye lenguajes y frameworks con servidores web integrados, como Python, Java, Node.js y C++.
 - **Client-side** (Lado del cliente)
-  - Clientes web: Los navegadores web como Firefox, Chrome, Vivaldi, Opera, Edge e Internet Explorer.
-  - Lenguajes de marcas: HTML, XHTML, HTML5 y CSS.
-  - Lenguajes de programación del entorno Cliente: Principalmente JavaScript.
+  - **Clientes web**: Los navegadores web como Firefox, Chrome, Vivaldi, Opera, Edge e Internet Explorer.
+  - **Lenguajes de marcas**: HTML, XHTML, HTML5 y CSS.
+  - **Lenguajes de programación del entorno Cliente**: Principalmente JavaScript.
 
 En el desarrollo web, tanto el lado del servidor (server-side) como el lado del cliente (client-side) juegan sus propios roles. Sin embargo, muchas tareas pueden llevarse a cabo en cualquiera de los dos lados, y la elección de dónde implementar una funcionalidad específica depende de varios factores, como la tecnología adecuada para el caso o la comodidad del desarrollador con una tecnología particular.
 
@@ -60,7 +67,6 @@ Seguir los pasos de la web [Roadmap.sh](https://roadmap.sh/frontend).
 > La diferencia entre server-side y client-side puede ser difícil de entender al principio si no se ha trabajado con las tecnologías web.
 {:.prompt-info}
 
-
 ### Evolución de la web
 
 1. **Páginas Web Estáticas**: Las primeras aplicaciones web eran simples páginas estáticas con hipervínculos.
@@ -77,8 +83,20 @@ Cuando hablamos de tecnologías empleadas en lenguajes de programación web pode
 {:.question}
 ¿Qué diferencia existe entre los lenguajes de programación client-side y server-side?
 
-{:.question}
-Hay veces que podemos hacer lo mismo en el server-side y en el client-side. ¿Cuándo lo haríamos en un sitio o en otro?
+<details class="card mb-2">
+  <summary class="card-header question">Hay veces que podemos hacer lo mismo en el server-side y en el client-side. ¿Cuándo lo haríamos en un sitio o en otro?</summary>
+  <div class="card-body" markdown="1">
+
+- **Validar formularios**: La validación puede hacerse en el cliente para mejorar la experiencia del usuario, pero debe verificarse nuevamente en el servidor por razones de seguridad.
+- **Guardar datos permanentes**: Generalmente se hace en el servidor utilizando bases de datos.
+- **Presentación de diapositivas**: Es más común en el lado del cliente, utilizando JavaScript o frameworks de frontend.
+- **Eliminar un párrafo**: Esta tarea se realiza típicamente en el cliente, utilizando JavaScript para modificar el DOM (Document Object Model).
+- **Calcular datos**: Los cálculos pueden hacerse en ambos lados, dependiendo de la naturaleza del cálculo y los requisitos de seguridad.
+- **Acceder a bases de datos**: Esta tarea se realiza en el servidor para mantener la seguridad y la integridad de los datos.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 Uno de los objetivos en la programación web es saber escoger la tecnología correcta para tu trabajo. Muchas veces los desarrolladores escogen rápidamente una tecnología favorita, que puede ser JavaScript o PHP (generalmente) y la usan en todas las situaciones. La realidad es que cada tecnología tiene sus pros y sus contras. En general las tecnologías client-side y server-side poseen características que las hacen complementarias más que adversarias. Por ejemplo, cuando añadimos un formulario para recoger información y grabarla en una base de datos, es obvio que tendría más sentido chequear el formulario en el lado del cliente para asegurarnos que la información introducida es correcta, justo antes de enviar la información a la base de datos del servidor, aunque siempre también deberemos validar dicha información en el lado del servidor para asegurar la integridad. La programación en el lado del cliente consigue que la validación del formulario sea mucho más efectiva y que el usuario se sienta menos frustrado al cubrir los datos en el formulario. Por otro lado el almacenar los datos en el servidor estaría mucho mejor gestionado por una tecnología del lado del servidor (server-side), dando por supuesto que la base de datos estará en el lado del servidor.
 
@@ -100,18 +118,19 @@ A continuación te mostramos las 4 capas del desarrollo web en el lado del clien
 
 los lenguajes de programación para clientes web no son un reemplazo de la programación en el lado del servidor. Cualquier web que reaccione dinámicamente a interacciones del usuario o que almacene datos, estará gestionada por lenguajes de programación en el lado del servidor, incluso aunque usemos JavaScript en el cliente para mejorar la experiencia de usuario. Las razones son simples:
 
-1. JavaScript por sí mismo no puede escribir ficheros en el servidor. Puede ayudar al usuario a elegir opciones o preparar datos para su envío, pero después de eso solamente podrá ceder los datos al lenguaje de servidor encargado de la actualización de datos.
-1. No todos los clientes web ejecutan JavaScript. Algunos lectores, dispositivos móviles, buscadores, o navegadores instalados en ciertos contextos están entre aquellos que no pueden realizar llamadas a JavaScript, o que simplemente son incompatibles con el código de JavaScript que reciben. Aunque ésto ocurra nuestra página web debería ser completamente funcional con JavaScript desactivado. Utilizaremos JavaScript para conseguir que la experiencia de navegación web sea lo más rápida, moderna o divertida posible, pero no dejaremos que nuestra web deje de funcionar si JavaScript no está funcionando.
-1. Uno de los caminos que más ha integrado la programación cliente con la programación servidor ha surgido gracias a AJAX. El proceso "asíncrono" de AJAX se ejecuta en el navegador del cliente y emplea JavaScript. Este proceso se encarga de solicitar datos XML, o enviar datos al lenguaje de servidor y todo ello de forma transparente en background. Los datos devueltos por el servidor pueden ser examinados por JavaScript en el lado del cliente, para actualizar secciones o partes de la página web. Es así como funcionan hoy día la mayoría de las web.
+- No puede escribir directamente en el servidor.
+- No todos los navegadores soportan JavaScript y se puede desactivar, por lo que una página web bien diseñada debería funcionar sin él.
+- No puede modificar preferencias del navegador, lanzar aplicaciones, leer o escribir archivos en el cliente, retransmitir streaming, enviar emails, interactuar con lenguajes de servidor, acceder a una web de un dominio diferente, proteger el origen de las imágenes, ni implementar multiprocesos.
 
 JavaScript está orientado a dar soluciones a:
 
-- Conseguir que nuestra página web responda o reaccione directamente a la interacción del usuario con elementos de formulario y enlaces hipertexto.
-- La distribución de pequeños grupos de datos y proporcionar una interfaz amigable para esos datos.
-- Controlar múltiples ventanas o marcos de navegación, plug-ins, o applets Java basados en las elecciones que ha hecho el usuario en el documento HTML.
-- Pre-procesar datos en el cliente antes de enviarlos al servidor.
-- Modificar estilos y contenido en los navegadores de forma dinámica e instantáneamente, en respuesta a interacciones del usuario.
-- Solicitar ficheros del servidor, y enviar solicitudes de lectura y escritura a los lenguajes de servidor.
+- JavaScript puede solicitar datos al servidor de forma asíncrona utilizando tecnologías como AJAX (Asynchronous JavaScript and XML).
+- Hacer que la web reaccione a la interacción del usuario.
+- Proporcionar una interfaz agradable para los datos.
+- Controlar ventanas, marcos y applets en el documento HTML.
+- Preprocesar datos antes de enviarlos al servidor.
+- Modificar el estilo y contenido de manera dinámica en función de la interacción del usuario.
+- Solicitar o enviar archivos al servidor.
 
 JavaScript no se usa solamente en las páginas web. Los intérpretes de JavaScript están integrados en múltiples aplicaciones de uso cotidiano. Estas aplicaciones proporcionan su propio modelo de acceso y gestión de los módulos que componen la aplicación y para ello comparten el lenguaje JavaScript en cada aplicación.
 
@@ -223,7 +242,7 @@ Editores más populares para trabajar con JavaScript:
 - **SublimeText** es un bloc de notas que comparte gran parte de los atajos de teclado de Visual Studio Code.
 - **Atom** de GitHub es una herramienta también muy ligera y que también cuenta con multitud de extensiones para adaptarla a nuestras necesidades.
 
-> Para este curso vamos a usar Visual Studio Code y SublimeText.
+> Para este curso vamos a usar Visual Studio Code y SublimeText. Puedes leer el artículo [Trabajar con Visual Studio Code](/posts/trabajar-visual-studio-code) para aprender que extensiones y configuraciones utilizar así como aprender algunos atajos de teclado muy prácticos.
 {:.prompt-info}
 
 <details class="card mb-2">
@@ -238,14 +257,88 @@ No. Solo necesitamos un navegador.
 
 Es importante es utilizar las extensiones que nos ofrecen muchos de los navegadores ya que te van a permitir ver las salidas por consola que anuncian errores, ver la estructura del documento, incluso en algunos casos depurarlos, etc.
 
+{:.question}
+¿Qué significa depurar un código?
+
 ### Otras herramientas
 
 - Tecla F12 en los navegadores: Accede a las herramientas de desarrollo del navegador.
 - Firefox Developer Edition: Una versión del navegador Firefox con herramientas avanzadas para desarrolladores web.
 
+### Librerías y frameworks
+
+El desarrollo de aplicaciones web ha evolucionado significativamente con el tiempo, y hoy en día existen diversas maneras de abordar el frontend. A continuación, exploraremos los diferentes tipos de aplicaciones web según las tecnologías de frontend que se utilicen, así como la evolución de las mismas.
+
+- **Con JavaScript ‘Vanilla’**: Se refiere a la utilización de JavaScript puro sin ninguna biblioteca o framework adicional. Es una manera directa y eficiente de programar sobretodo cuando se trata de aplicaciones pequeñas y sencillas.
+- **Con Bibliotecas**:
+  - **JQuery**: Facilita la manipulación del DOM, eventos y AJAX.
+  - **Prototype**: Simplifica las tareas de programación orientada a objetos en JavaScript.
+  - **D3.js**: Se utiliza para crear visualizaciones de datos.
+  - **Bootstrap**: Biblioteca de CSS y JavaScript para diseño responsivo.
+  - **Vue.js**: Ofrece una manera progresiva de construir interfaces de usuario.
+  - **React**: Biblioteca para construir interfaces de usuario, principalmente en aplicaciones de una sola página.
+- **Con Frameworks**:
+  - **Angular**: Framework de JavaScript de Google para construir aplicaciones dinámicas de una sola página.
+  - **React**: Aunque es una biblioteca, también se utiliza como framework cuando se combina con otras herramientas.
+  - **Vue.js**: Al igual que React, puede considerarse un framework cuando se utiliza en proyectos más grandes.
+  - **Phaser**: Framework para el desarrollo de juegos en HTML5.
+- **Con Frameworks Full Stack**:
+  - **Odoo**: Plataforma de código abierto que proporciona un conjunto completo de aplicaciones empresariales.
+  - **Blitz**: Framework de React basado en Next.js para aplicaciones de pila completa.
+  - **Next.js**: Framework de React para aplicaciones de servidor y cliente.
+  - **SvelteKit**: Framework para construir aplicaciones rápidas y modernas.
+
+<details class="card mb-2">
+<summary class="card-header question">¿Qué diferencia hay entre una biblioteca y un framework?</summary>
+  <div class="card-body" markdown="1">
+
+La bibliotecas tienen las siguientes características:
+
+- Funcionalidades: Aportan funcionalidades específicas al lenguaje de programación.
+- Flexibilidad: No obligan a cambiar la manera de programar.
+- Simplificación: Facilitan la programación de tareas concretas.
+- Desventajas: Pueden crear dependencia en el programador.
+- Reemplazo: Algunas bibliotecas, como Underscore, Lodash o JQuery, han perdido relevancia con la introducción de ES6.
+
+Los framworks tienen las siguientes características:
+
+- Modificación: Cambian completamente la manera de programar.
+- Integración: Se encargan de plantillas, comunicaciones, enrutamientos, componentes, módulos, etc.
+- Curva de aprendizaje: Son complejos de aprender.
+- Eficiencia: Una vez dominados, hacen la programación más ágil y correcta.
+- Inercia: Pueden dificultar el cambio a otro framework.
+- Obsolescencia: Si el framework queda obsoleto, la web también.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+Para obtener bibliotecas o frameworks existen varias formas:
+
+- Descarga directa: Descargar un archivo .js o un directorio comprimido de la web oficial y copiarlo al proyecto.
+- CDN: Utilizar un CDN directamente desde la web oficial.
+- Gestores de paquetes: Utilizar NPM o Yarn para gestionar dependencias.
+
+{:.question}
+¿Qué significan las siglas CDN?
+
+> Las redes sociales están llenas de gente intentando vender su curso. En el mundo profesional hay mucha más gente trabajando silenciosa y eficazmente en productos de calidad y duraderos. Aunque los primeros tengan algo de razón en decir que PHP, JQuery o otros están obsoletos, el mundo laboral a veces dice lo contrario. Es necesario tomar cierta distancia para elegir la mejor tecnología para cada ocasión. (<https://www.bitecode.dev/p/hype-cycles>)
+{:.prompt-info}
+
+### Poner la web en producción
+
+Para que una web con HTML, CSS y Javascript funcione tan solo necesitamos un servidor web que sirva estáticamente estos ficheros cuando se le haga una petición HTTP. Este servidor suele estar accesible por Internet mediante SFTP, SSH o cualquier protocolo. Estos HTML, CSS y JS puede ser tratados de dos maneras:
+
+- **Método tradicional**: Copiar todo el contenido de las carpetas al servidor alrededor del archivo index.html.
+- **JavaScript Build Tool**: Utilizar herramientas que compilan el código fuente, lo minifican, unifican, optimizan y comprimen para mejorar la velocidad de carga y evitar incompatibilidades entre navegadores.
+
 ## Integración del código JavaScript en documentos HTML
 
-Lee el artículo [Fundamentos de la programación con JavaScript](/posts/fundamentos-programación-javascript) para repasar conceptos básicos de programación y empezar a entender la loca sintaxis de JavaScript.
+Lee el artículo [Fundamentos de la programación con JavaScript](/posts/fundamentos-programación-javascript) para repasar conceptos básicos de programación y empezar a acostumbrarte a la loca sintaxis de JavaScript.
 
 Lee el artículo [Introducción a JavaScript](/posts/introduccion-javascript).
 
+## Bibliografía
+
+- [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
+- <https://xxjcaxx.github.io/libro_dwec/desarrollofrontend.html>
