@@ -6,6 +6,9 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
 ---
 
+> Artículo en construcción.
+{:.prompt-warning}
+
 ## Introducción
 
 Lee el artículo [Conceptos previos](https://lenguajejs.com/fundamentos/introduccion/conceptos-previos/).

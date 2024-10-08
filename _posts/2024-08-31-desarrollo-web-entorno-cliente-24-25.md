@@ -20,6 +20,8 @@ pin: true
 - UD6 - Utilización del modelo de objetos del documento (DOM).
 - UD7 - Utilización de mecanismos de comunicación asíncrona.
 
+- T01 - [Tarea: Entorno de desarrollo para JavaScript](/posts/tarea-entorno-desarrollo-javascript/)
+
 ## Enlaces de interés
 
 
