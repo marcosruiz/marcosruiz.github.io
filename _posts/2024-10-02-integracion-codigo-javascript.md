@@ -1,5 +1,5 @@
 ---
-title: "Introducción a JavaScript"
+title: "Integración de código JavaScript"
 date: 2024-10-02 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec]
@@ -37,17 +37,24 @@ Lee el artículo [La consola Javascript](https://lenguajejs.com/javascript/intro
 {:.question}
 ¿Cómo se abre la consola de JavaScript en un navegador?
 
-## Integración del código JavaScript
+## Integración de código JavaScript
+
+### Integración de JavaScript directamente en el HTML
 
 Los navegadores web te permiten varias opciones de inserción de código de JavaScript. Podremos insertar código usando las etiquetas `<script> </script>` y empleando un atributo `type` indicaremos qué tipo de lenguaje de script estamos utilizando:
 
 Por ejemplo:
 
 ```html
-<script type="text/javascript">
-      //  El código de JavaScript vendrá aquí.
-</script>
+ <!-- Integración de JavaScript directamente en el HTML -->
+    <script type="text/javascript">
+        // Este es un bloque de código JavaScript embebido directamente en el documento HTML.
+        // Funciona para pequeños bloques en webs tradicionales. No recomendable en SPAs
+        console.log("Hola, este es un mensaje desde JavaScript embebido.");
+    </script>
 ```
+
+### Integración de un archivo JavaScript externo
 
 Otra forma de integrar el código de JavaScript es utilizar un fichero externo que contenga el código de JavaScript y referenciar dicho fichero. Ésta sería la forma más recomendable, ya que así se consigue una separación entre el código y la estructura de la página web y como ventajas adicionales podrás compartir código entre diferentes páginas, centralizar el código para la depuración de errores, tendrás mayor claridad en tus desarrollos, más modularidad, seguridad del código y conseguirás que las páginas carguen más rápido. La rapidez de carga de las páginas se consigue al tener el código de JavaScript en un fichero independiente, ya que si más de una página tiene que acceder a ese fichero lo cogerá automáticamente de la caché del navegador con lo que se acelerará la carga de la página.
 
@@ -56,7 +63,8 @@ Para ello tendremos que añadir a la etiqueta `script` el atributo `src`, con el
 Por ejemplo:
 
 ```html
-<script  type="text/javascript"  src="miScript.js"></script>
+<!-- Integración de un archivo JavaScript externo -->
+    <script type="text/javascript" src="scripts.js"></script>
 ```
 
 Si necesitas cargar más de un fichero .js repite la misma instrucción cambiando el nombre del fichero. Las etiquetas de `<script>` y `</script>` son obligatorias a la hora de incluir el fichero .js.
@@ -93,6 +101,61 @@ En resumen, para insertar código Javascript en HTML5 existen dos formas:
 
 - Insertando el código directamente en el archivo index.html.
 - Haciendo referencia al código existente en otro archivo .js.
+
+### AVANZADO Atributos `async` y `defer` en la Etiqueta `<script>`
+
+{:.question}
+¿Qué es un atributo?
+
+A partir de HTML5, la etiqueta `<script>` admite dos atributos, async y defer, que permiten que los scripts comiencen su descarga inmediatamente sin interrumpir el proceso de parseo del documento HTML.
+
+![alt text](asyncdefer.jpeg)
+_Diagrama del funcionamiento de Async o Defer_
+
+#### async
+
+El atributo async permite que el script se ejecute de manera asíncrona tan pronto como se haya descargado. Esto significa que:
+
+- El script se descargará en paralelo con el parseo del documento.
+- Se ejecutará tan pronto como la descarga haya terminado, sin esperar a que el documento se haya parseado por completo.
+- Los scripts marcados con async pueden no ejecutarse en el orden en el que aparecen en el documento HTML, ya que la ejecución depende de cuál script se descargue primero.
+
+Ejemplo:
+
+```html
+<script src="scripts.js" async></script>
+```
+
+#### defer
+
+El atributo `defer` asegura que los scripts se ejecutarán en el orden en el que aparecen en el documento HTML. Las características de defer incluyen:
+
+- El script se descarga en paralelo con el parseo del documento, similar a async.
+- La ejecución del script se pospone hasta que el documento se haya parseado completamente.
+- La ejecución ocurre justo antes del evento `DOMContentLoaded`, pero después de que todo el HTML haya sido procesado.
+
+Ejemplo:
+
+```html
+<script src="scripts.js" defer></script>
+```
+
+#### Sin async ni defer
+
+Si un script no tiene ninguno de estos atributos, el comportamiento por defecto es que el script se descarga y se ejecuta de manera síncrona. Esto significa que:
+
+- El parseo del documento se pausa hasta que el script haya sido descargado y ejecutado completamente.
+- Los scripts se ejecutan en el orden en que aparecen en el documento.
+
+Ejemplo:
+
+```html
+<script src="scripts.js"></script>
+```
+
+En cualquier caso, salvo ocasiones específicas, suele ser más fácil añadir un sólo script, trabajar con módulos y esperar al evento DOMContentLoaded.
+
+## Seguridad en JavaScript
 
 Seguramente estarás pensando en cómo puedes proteger el código de JavaScript que vas a programar, del uso fraudulento por otros programadores o visitantes a tu página: la respuesta rápida a esa pregunta es que es imposible hacerlo.
 
@@ -143,59 +206,8 @@ Lee el artículo [La especificación ECMAScript](https://lenguajejs.com/javascri
   </div>
 </details>
 
-### Atributos `async` y `defer` en la Etiqueta `<script>`
-
-A partir de HTML5, la etiqueta `<script>` admite dos atributos, async y defer, que permiten que los scripts comiencen su descarga inmediatamente sin interrumpir el proceso de parseo del documento HTML.
-
-![alt text](asyncdefer.jpeg)
-_Diagrama del funcionamiento de Async o Defer_
-
-#### async
-
-El atributo async permite que el script se ejecute de manera asíncrona tan pronto como se haya descargado. Esto significa que:
-
-- El script se descargará en paralelo con el parseo del documento.
-- Se ejecutará tan pronto como la descarga haya terminado, sin esperar a que el documento se haya parseado por completo.
-- Los scripts marcados con async pueden no ejecutarse en el orden en el que aparecen en el documento HTML, ya que la ejecución depende de cuál script se descargue primero.
-
-Ejemplo:
-
-```html
-<script src="scripts.js" async></script>
-```
-
-#### defer
-
-El atributo `defer` asegura que los scripts se ejecutarán en el orden en el que aparecen en el documento HTML. Las características de defer incluyen:
-
-- El script se descarga en paralelo con el parseo del documento, similar a async.
-- La ejecución del script se pospone hasta que el documento se haya parseado completamente.
-- La ejecución ocurre justo antes del evento `DOMContentLoaded`, pero después de que todo el HTML haya sido procesado.
-
-Ejemplo:
-
-```html
-<script src="scripts.js" defer></script>
-```
-
-#### Sin async ni defer
-
-Si un script no tiene ninguno de estos atributos, el comportamiento por defecto es que el script se descarga y se ejecuta de manera síncrona. Esto significa que:
-
-- El parseo del documento se pausa hasta que el script haya sido descargado y ejecutado completamente.
-- Los scripts se ejecutan en el orden en que aparecen en el documento.
-
-Ejemplo:
-
-```html
-<script src="scripts.js"></script>
-```
-
-En cualquier caso, salvo ocasiones específicas, suele ser más fácil añadir un sólo script, trabajar con módulos y esperar al evento DOMContentLoaded.
-
 ## Bibliografía
 
-- [Lenguaje JS](https://lenguajejs.com/)
-- [Aprende X en Y minutos, Donde X=javascript](https://learnxinyminutes.com/docs/es-es/javascript-es/)
-- [Basics of Javascript](https://fwhibbit.es/basics-of-javascript)
-- [Comparación de funciones tradicionales con funciones flecha](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+- [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
+- <https://lenguajejs.com/>
+- <https://xxjcaxx.github.io/libro_dwec/lenguajejavascript.html>

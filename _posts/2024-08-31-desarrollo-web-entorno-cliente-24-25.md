@@ -10,10 +10,10 @@ pin: true
 ## Unidades
 
 - UD1 - [Arquitecturas y lenguajes de programación en clientes web](/posts/arquitecturas-lenguajes-programacion-cliente-web/)
-  - [Fundamentos de la programación con JavaScript](/posts/fundamentos-programación-javascript)
-    - [Trabajar con Visual Studio Code](/posts/trabajar-visual-studio-code)
-  - [Introducción a JavaScript](/posts/introduccion-javascript)
+  - [Integración de código JavaScript](/posts/integracion-codigo-javascript)
+  - [Trabajar con Visual Studio Code](/posts/trabajar-visual-studio-code)
 - UD2 - Manejo de la sintaxis del lenguaje.
+  - [Fundamentos de la programación con JavaScript](/posts/fundamentos-programación-javascript)
 - UD3 - Utilización de los objetos predefinidos del lenguaje.
 - UD4 - Programación con arrays, funciones y objetos definidos por el usuario.
 - UD5 - Interacción con el usuario: eventos y formularios.

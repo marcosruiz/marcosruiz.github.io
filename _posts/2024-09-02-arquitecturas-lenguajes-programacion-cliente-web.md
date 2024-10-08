@@ -262,8 +262,8 @@ Es importante es utilizar las extensiones que nos ofrecen muchos de los navegado
 
 ### Otras herramientas
 
-- Tecla F12 en los navegadores: Accede a las herramientas de desarrollo del navegador.
-- Firefox Developer Edition: Una versión del navegador Firefox con herramientas avanzadas para desarrolladores web.
+- **Tecla F12 en los navegadores**: Accede a las herramientas de desarrollo del navegador.
+- **Firefox Developer Edition**: Una versión del navegador Firefox con herramientas avanzadas para desarrolladores web.
 
 ### Librerías y frameworks
 
@@ -337,9 +337,7 @@ Para que una web con HTML, CSS y Javascript funcione tan solo necesitamos un ser
 
 ## Integración del código JavaScript en documentos HTML
 
-Lee el artículo [Fundamentos de la programación con JavaScript](/posts/fundamentos-programación-javascript) para repasar conceptos básicos de programación y empezar a acostumbrarte a la loca sintaxis de JavaScript.
-
-Lee el artículo [Introducción a JavaScript](/posts/introduccion-javascript).
+Lee el artículo [Integración de código JavaScript](/posts/integracion-codigo-javascript).
 
 ## Bibliografía
 
