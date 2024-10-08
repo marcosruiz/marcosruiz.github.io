@@ -401,6 +401,31 @@ Los elementos que permiten la interacción son muy variados y cada uno de ellos 
 {:.question}
 ¿Cómo se les llama a las casillas de verificación en inglés?
 
+{:.subsubsection}
+### Botones
+
+Los botones tienen 2 características:
+
+- **Importancia**: Es si queremos o no que el usuario pulse ahí. A mayor importancia es que queremos que mas veces pulse en ese botón.
+- **Función**: Es para decir al usuario que tipo de acción está realizando. Por ejemplo , la función "Peligrosa" es roja y nos quiere decir que tengamos cuidado al pulsar ahí.
+
+![alt text](botones.png)
+_Tipos de botones_
+
+Veamos algunos ejemplos de varios botones juntos:
+
+- Pagar carrito: Primaria Normal . Queremos que pulse ahí y es una acción normal
+- Cancelar pago: Terciaria Normal . Nunca queremos que pulse ahí y es una acción normal
+
+- Pagar carrito: Primaria Normal . Queremos que pulse ahí y es una acción normal
+- Vaciar carrito: Terciaria Peligrosa . Nunca queremos que pulse ahí y ademas es peligroso porque se queda sin los productos del carrito
+
+- Actualizar a la nueva versión de Windows: Primaria Peligrosa . Queremos que pulse ahí y es una acción peligrosa
+- Mantener tu versión de Windows: Secundaria Normal . No queremos que pulse ahí y es una acción normal
+
+- Donar 20€ a Wikipedia: Primaria Normal . Queremos que pulse ahí y es una acción normal
+- Donar 5€ a Wikipedia: Secundaria Normal . No queremos que pulse ahí y es una acción normal
+
 {:.section}
 ## Maquetación web
 
@@ -509,6 +534,87 @@ La reutilización de código es una técnica común que intenta ahorrar tiempo y
 Las plantillas de diseño Web son sitios Web prediseñados que se pueden usar como base en un diseño Web y que permiten adaptarlo a las necesidades del diseñador de forma rápida y fácil, ahorrando una gran cantidad de tiempo y dinero.
 
 Hoy en día, hay gran cantidad de sitios comerciales que suministran plantillas de diseño Web por muy poco dinero si consideramos el tiempo ahorrado en el diseño.
+
+{:.subsection}
+## Normas y estilos de diseño
+
+Haz que las cosas que no están relacionadas estén muy separadas entre si. Es decir que haya mucho espacio en blanco. Y luego ya veremos si los juntas un poco.
+
+![alt text](espaciosBlancoMal.png)
+_Espacios en blanco mal_
+
+![alt text](espaciosBlancoBien.png)
+_Espacios en blanco bien_
+
+Los diseño no tienen que ocupar el 100% de la pantalla ya que en pantallas muy grandes queda mal.
+
+Haz que las cosas estén alineadas a una recta imaginaria que va de arriba a abajo.
+
+![alt text](alineacion1.png)
+
+![alt text](alineacion2.png)
+
+Resalta lo importante.
+
+Repele la atención de lo que no es importante (más pequeño, más espacioso, de menor contraste).
+
+Evita usar label o captions. Si ves "ventas@persianas.com" ya sabes que es un correo, no hace falta indicar que es el correo. Pero si usas un label que forme parte de una frase. "3 en stock" en vez de "Stock:3". Y aun así, si las usas, que estén desenfatizadas.
+
+Los títulos `<h1>` no tienen porque destacar ya que a veces no son importantes ya que es obvio el título. `<h1>` es para que el buscador sepa que eso es importante.
+
+Las esquinas cuadradas indican seriedad. Las Esquinas muy muy redondeadas son muy informales(`border-radious`).
+
+Para enfatizar en vez de un mayor tamaño de letra, usa negrita. Pero para desenfatizar, usa un color de letra gris en vez del negro del texto.
+
+Nunca usar un carrusel: <https://shouldiuseacarousel.com/>.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿En que se fija un diseñador?</summary>
+  <div class="card-body" markdown="1">
+
+Elige entre la imagen de la izquierda o de la derecha y luego se puedo comparar para ver las diferencias: <https://cantunsee.space/>.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+### Sistema de tamaños
+
+Al igual que en los colores nos ceñimos a un conjunto limitado de colores, se debe hacer lo mismo con los tamaños de margenes, fuentes, etc.
+
+![alt text](sistemaDeTamanos.png)
+
+Veamos algunos ejemplos.
+
+Padding o Margin:
+
+```plaintext
+0px, 4px, 6x, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px, 48px, 64px, 80px, 96px, 128px, 160px, 192px, 224px, 256px, 320px, 480px, 640px
+```
+
+Tamaño de fuente:
+
+```plaintext
+12px, 14px, 16px, 18px, 20px, 24px, 30px, 36px, 48px, 64px
+```
+
+Border radious:
+
+```plaintext
+0px, 2px, 4px, 6px, 8px, 16px
+```
+
+Obviamente se puede elegir los tamaños que se deseen pero se tiene que tener en cuenta que a mayor tamaño , mas debe ser el incremento entre uno y otro.
+
+{:.section}
+## Experiencia de usuario
+
+TODO
+
+{:.section}
+## Creación de logos
+
+TODO
 
 ## Bibliografía
 

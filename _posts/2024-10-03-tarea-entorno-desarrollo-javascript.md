@@ -6,7 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/tarea-entorno-desarrollo-javascript/
 ---
 
-## Introducción
+## Información sobre la tarea
 
 La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
