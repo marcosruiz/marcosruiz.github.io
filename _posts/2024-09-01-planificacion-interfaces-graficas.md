@@ -355,8 +355,18 @@ Las plantillas de diseño Web son sitios Web prediseñados que se pueden usar co
 
 Hoy en día, hay gran cantidad de sitios comerciales que suministran plantillas de diseño Web por muy poco dinero si consideramos el tiempo ahorrado en el diseño.
 
-{:.quiestion}
-¿Conoces alguna plataforma en la que sea muy habitual el uso de plantillas de diseño?
+<details class="card mb-2">
+
+  <summary class="card-header question"></summary>
+  <div class="card-body" markdown="1">
+
+Existen webs como Wordpress, Wix, Shopify, Prestashop, Magento, etc. cuyo negocio está basado en el uso de plantillas.
+
+(Voluntario) Lee el artículo [Cómo crear una página web paso a paso sin programar](https://www.lawebera.es/diseno-web/crear-pagina-web-paso-a-paso.php) si quieres saber más.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 {:.section}
 ## Normas y estilos de diseño
@@ -368,6 +378,8 @@ _Espacios en blanco mal_
 
 ![alt text](espaciosBlancoBien.png)
 _Espacios en blanco bien_
+
+Lee el artículo [Utilización del espacio en blanco en el diseño de una web](https://www.lawebera.es/diseno-web/utilizacion-espacio-en-blanco.php).
 
 Los diseño no tienen que ocupar el 100% de la pantalla ya que en pantallas muy grandes queda mal.
 
@@ -449,6 +461,31 @@ Lee el artículo [5 ejemplos en los que la ley de Hick te ayuda a diseñar tu we
   </div>
 </details>
 
+{:.section}
+## Diseño de logos
+
+El diseño de logos es un campo muy interesante en el que se pueden cometer muchos fallos como se puede ver en el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Et1NgsW_17Y?si=revUZ1yMck3Jl1eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Puedes ver infinidad de logos interesantes en <https://www.reddit.com/r/logodesign/>.
+
+Además existen herramientas que nos facilitan el trabajo para crear un logo resultón:
+
+- <https://www.logoai.com/>
+- <https://www.tailorbrands.com/>
+
+{:.section}
+## (Voluntario) Diseño en dispositivos móviles
+
+Lee el artículo [Técnicas de diseño web para dispositivos móviles](https://www.lawebera.es/diseno-web/diseno-web-para-moviles.php)
+
+Lee el artículo [Navegación en dispositivos móviles](https://www.lawebera.es/diseno-web/navegacion-dispositivos-moviles.php)
+
+Lee el artículo [Cómo hacer un diseño web adaptable (reponsive design)](https://www.lawebera.es/diseno-web/hacer-diseno-web-adaptable-responsive-design.php)
+
+Lee el artículo [Errores comunes al diseñar para móvil](https://www.lawebera.es/diseno-web/errores-comunes-disenar-movil.php)
+
 ## (Voluntario) Artículos de interés en inglés 🔥
 
 - <https://www.creativebloq.com/features/ui-design>
@@ -467,4 +504,5 @@ Lee el artículo [5 ejemplos en los que la ley de Hick te ayuda a diseñar tu we
 ## Bibliografía
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
-- <https://www.lawebera.es/>
+- <https://www.lawebera.es/diseno-web>
+- https://www.lawebera.es/diseno-web/el-diseno-de-la-interfaz.php

@@ -8,9 +8,9 @@ img_path: /assets/img/usabilidad-web/
 
 ## Introducción
 
-Leer artículo [Principios de usabilidad web de Jacob Nielsen y el diseño UX](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/).
+Lee el artículo [Principios de usabilidad web de Jacob Nielsen y el diseño UX](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/).
 
-Leer el artículo [La usabilidad en el diseño de aplicaciones](https://www.eniun.com/usabilidad-diseno-aplicaciones-reglas-principios/)
+Lee el artículo [La usabilidad en el diseño de aplicaciones](https://www.eniun.com/usabilidad-diseno-aplicaciones-reglas-principios/)
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué significa que una página sea usable?</summary>
@@ -35,6 +35,18 @@ Porque la facilidad de uso está relacionada directamente con la eficiencia. Si 
 
 > La web <https://userinyerface.com/> está hecha para conseguir la peor experiencia de usuario posible.
 {:.prompt-info}
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es el copywritting?</summary>
+  <div class="card-body" markdown="1">
+
+Lee el artículo [Experiencia de usuario. Cómo influye el copywritting](https://www.lawebera.es/diseno-web/experiencia-usuario-copywritting.php).
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+
 
 ## (Voluntario) Artículos en inglés
 

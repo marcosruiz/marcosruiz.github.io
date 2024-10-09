@@ -78,6 +78,10 @@ Conocer los tipos de fuentes y sus comportamientos en los distintos navegadores 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tGgoRgsA1Co?si=qhZgpfSf12oJMhT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+(Voluntario) Lee el artículo [Tipografía aplicada al diseño web](https://www.lawebera.es/diseno-web/tipografia-aplicada-al-diseno-web.php)
+
+(Voluntario) Lee el artículo [Cómo elegir una Tipografía para una página web](https://www.lawebera.es/diseno-web/elegir-tipografia-pagina-web.php)
+
 {:.subsection}
 ### Colores
 
