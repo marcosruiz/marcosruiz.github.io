@@ -172,6 +172,8 @@ Haz click [aquí](/assets/img/planificacion-interfaces-graficas/manual_estilo_si
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e7CpH_B7XPU?si=9NyiMsPNOhBuMkV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+Lee el artículo [Guía de estilo, importancia en el diseño de interfaces web](https://www.eniun.com/guia-estilo-diseno-interfaces-web/).
+
 {:.section}
 ## Elementos de las guías de estilo
 
@@ -609,12 +611,42 @@ Obviamente se puede elegir los tamaños que se deseen pero se tiene que tener en
 {:.section}
 ## Experiencia de usuario
 
-TODO
+La experiencia de usuario (UX, por sus siglas en inglés) en el diseño de software se refiere a cómo una persona interactúa con una aplicación o sistema y qué tan satisfactoria, eficiente y fácil es esa interacción. Es un concepto amplio que abarca muchos aspectos del diseño y desarrollo de software, con el objetivo de crear productos que sean intuitivos, accesibles y agradables para los usuarios. Para conseguir:
+
+- Retener a los usuarios
+- Hacer que los usuarios cometan menos errores.
+- Diferenciarte de la competencia.
+- Mejorar la eficiencia del usuario.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es la ley de Hick?</summary>
+  <div class="card-body" markdown="1">
+
+Lee el artículo [5 ejemplos en los que la ley de Hick te ayuda a diseñar tu web](https://www.markarina.com/5-ejemplos-en-los-que-la-ley-de-hick-te-ayuda-a-disenar-tu-web/)
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 {:.section}
 ## Creación de logos
 
-TODO
+La creación de logos es un campo muy interesante en la que hay que tener muchas cosas en cuenta:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Et1NgsW_17Y?si=EY04h0ZPVyxlLMMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Lee el artículo [Si quieres crear logos profesionales, gratis y online, ¡hazlo con Canva!](https://www.canva.com/es_es/crear/logos/).
+
+Pero podemos usar webs que nos simplifican el trabajo:
+
+- <https://www.logoai.com/>
+- <https://studio.tailorbrands.com/>
+
+## (Voluntario) Enlaces de interés 🔥
+
+- [Mitos en la experiencia de usuario (inglés)](https://uxmyths.com/)
+- [La usabilidad en el diseño de aplicaciones](https://www.eniun.com/usabilidad-diseno-aplicaciones-reglas-principios/)
+- [Checklist Design](https://logongas.es/doku.php?id=clase:daw:diw:1eval:tema01): Lista de cosas a incluir en cada tipo de página.
 
 ## Bibliografía
 
