@@ -46,12 +46,12 @@ Los navegadores web te permiten varias opciones de inserción de código de Java
 Por ejemplo:
 
 ```html
- <!-- Integración de JavaScript directamente en el HTML -->
-    <script type="text/javascript">
-        // Este es un bloque de código JavaScript embebido directamente en el documento HTML.
-        // Funciona para pequeños bloques en webs tradicionales. No recomendable en SPAs
-        console.log("Hola, este es un mensaje desde JavaScript embebido.");
-    </script>
+<!-- Integración de JavaScript directamente en el HTML -->
+<script type="text/javascript">
+    // Este es un bloque de código JavaScript embebido directamente en el documento HTML.
+    // Funciona para pequeños bloques en webs tradicionales. No recomendable en SPAs
+    console.log("Hola, este es un mensaje desde JavaScript embebido.");
+</script>
 ```
 
 ### Integración de un archivo JavaScript externo
@@ -64,7 +64,7 @@ Por ejemplo:
 
 ```html
 <!-- Integración de un archivo JavaScript externo -->
-    <script type="text/javascript" src="scripts.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
 ```
 
 Si necesitas cargar más de un fichero .js repite la misma instrucción cambiando el nombre del fichero. Las etiquetas de `<script>` y `</script>` son obligatorias a la hora de incluir el fichero .js.

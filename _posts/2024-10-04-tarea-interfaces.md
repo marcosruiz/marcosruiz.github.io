@@ -109,7 +109,26 @@ Mira la web <https://necesitountrastero.es/> y critica todas aquellas cosas rela
 {:.activity}
 ### Proyecto final
 
-Piensa en la temática que va a tener tu proyecto final.
+Piensa en la temática que va a tener tu proyecto final. Aquí tienes varias ideas base con las que puedes empezar:
+
+- Tienda online de productos o servicios.
+- Red social o foro.
+- Portal de noticias o CMS.
+- Web de reservas para espacios comunes.
+- Plataforma de cursos online.
+- Plataforma de crowdfunding.
+- Sistema de gestión de tareas tipo Trello.
+- Portal de eventos para las fiestas de una ciudad.
+- Portal de inversión de criptomonedas.
+- Portal para hacer encuestas.
+- Web para hacer seguimiento en el gimnasio.
+- Web de citas.
+- Web de videojuego tipo aventura gráfica.
+
+Y define:
+
+- Tipo y tamaño de letra para los encabezados y párrafos.
+- Fondo de pantalla.
 
 ## Bibliografía
 

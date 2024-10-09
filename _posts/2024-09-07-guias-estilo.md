@@ -83,6 +83,14 @@ Conocer los tipos de fuentes y sus comportamientos en los distintos navegadores 
 
 (Voluntario) Lee el artículo [Cómo elegir una Tipografía para una página web](https://www.lawebera.es/diseno-web/elegir-tipografia-pagina-web.php)
 
+> Recuerda que en las páginas web no puedes usar tipografías que los usuarios no tengan instalada en su PC.
+{:.prompt-info}
+
+Puedes utilizar la web de <https://fonts.google.com/> para descargar fuentes que no tengas en tu ordenador.
+
+{:.question}
+¿Qué diferencia hay entre una fuente con y sin sherifas?
+
 {:.subsection}
 ### Colores
 

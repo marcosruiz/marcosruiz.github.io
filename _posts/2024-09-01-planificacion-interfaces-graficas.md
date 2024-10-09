@@ -470,10 +470,23 @@ El diseño de logos es un campo muy interesante en el que se pueden cometer much
 
 Puedes ver infinidad de logos interesantes en <https://www.reddit.com/r/logodesign/>.
 
+(Voluntario) Lee el artículo [Si quieres crear logos profesionales, gratis y online, ¡hazlo con Canva!](https://www.canva.com/es_es/crear/logos/) para aprender a hacer un logo profesional.
+
 Además existen herramientas que nos facilitan el trabajo para crear un logo resultón:
 
 - <https://www.logoai.com/>
 - <https://www.tailorbrands.com/>
+
+{:.section}
+## Fondo de pantalla
+
+Para definir un fondo de pantalla existen varias alternativas:
+
+- Color sólido.
+- Gradientes. Puedes usar la web <https://cssgradient.io/> para generar gradientes automáticamente.
+- Una imagen:
+  - Puedes usar la web <https://unsplash.com/> para encontrar buenas fotografías en alta calidad.
+  - Puedes usar la web <https://deepdreamgenerator.com/> para generar imágenes con la IA.
 
 {:.section}
 ## (Voluntario) Diseño en dispositivos móviles
