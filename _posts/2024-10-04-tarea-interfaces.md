@@ -1,10 +1,13 @@
 ---
-title: "Planificación de interfaces gráficas"
+title: "Tarea: Introducción al diseño web"
 date: 2024-09-01 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
 img_path: /assets/img/planificacion-interfaces-graficas/
 ---
+
+> Artículo en construcción.
+{:.prompt-warning}
 
 ## Información sobre la tarea
 
@@ -22,7 +25,7 @@ Criterios de evaluación:
 - b) Se han analizado y seleccionado los colores y tipografías adecuados para su visualización en pantalla.
 - c) Se han analizado alternativas para la presentación de la información en documentos web.
 - d) Se ha valorado la importancia de definir y aplicar la guía de estilo en el desarrollo de una aplicación web.
-- e) Se han utilizado y valorado distintas tecnologías para el diseño de documentos web.**
+- e) Se han utilizado y valorado distintas tecnologías para el diseño de documentos web.
 - f) Se han creado y utilizado plantillas de diseño.
 
 ## Actividades
@@ -30,39 +33,79 @@ Criterios de evaluación:
 A continuación, se muestran las actividades a realizar.
 
 {:.activity}
-### Actividad
+### Colores
 
-Busca 2 Webs he indica cual es el color principal y cual el color alternativo.
+Busca 2 webs he indica cual es el color principal y cual el color alternativo.
 
-> 📸 Haz una o varias capturas para demostrar que ha realizado esta tarea.
+> 📸 Recuerda hacer capturas.
 {:.prompt-info}
 
 {:.activity}
-### Actividad
+### Tipos de botones
 
-Busca una Web y indica los tipos de botones que tienen según los tipos que hemos visto en el tema.
+Busca 2 webs e indica los tipos de botones que tienen según los tipos que hemos visto en la unidad.
 
-> 📸 Haz una o varias capturas para demostrar que ha realizado esta tarea.
+> 📸 Recuerda hacer capturas.
 {:.prompt-info}
 
 {:.activity}
-### Actividad
+### Analiza
 
+Busca 2 Webs y para cada una ellas indica como usan los siguientes conceptos:
 
+- Uso del espacio en blanco (Separación entre componentes)
+- Uso de paletas de colores (Usar poco colores con muchas variaciones de ellos)
+- Ancho máximo de la página
+- Indica como resaltan los importante
+- Alineación de la página
+- Uso de Labels (si se usan , si forman parte de la frase, si están desenfatizadas,)
+
+> 📸 Recuerda hacer capturas.
+{:.prompt-info}
 
 {:.activity}
-### Actividad
+### Web de FP
 
+Lee el artículo [Un cambio de imagen para la Formación Profesional en la Comunitat Valenciana](https://graffica.info/un-cambio-de-imagen-para-la-formacion-profesional-en-la-comunitat-valenciana/) sobre la web <https://portal.edu.gva.es/fpvalenciana/> contesta a las siguientes preguntas:
 
+1. ¿Resultan útiles las animaciones?
+1. ¿Resultan útiles los colores?
+1. ¿Que está mal en el buscador?
+1. ¿Cuando se usan mayúsculas?¿Es necesario?
 
 {:.activity}
-### Actividad
+### Sistema de tamaños
 
+Crea un sistema de tamaños creando varias clases CSS para las siguientes propiedades:
 
+- margin-top
+- margin-bottom
+- margin-left
+- margin-right
+- padding-top
+- padding-bottom
+- padding-left
+- padding-right
+- font-size
+- color
+- background-color
 
 {:.activity}
-### Actividad
+### Experiencia de usuario
 
+Busca en varias web e indica si algunas de ellas cumple o no cumple alguno de las reglas, principios o mitos de la usabilidad (experiencia de usuario).
 
+> 📸 Recuerda hacer capturas.
+{:.prompt-info}
+
+{:.activity}
+### Diseño web necesitountrastero.es
+
+Mira la web <https://necesitountrastero.es/> y critica todas aquellas cosas relativas al diseño.
+
+> 📸 Recuerda hacer capturas.
+{:.prompt-info}
 
 ## Bibliografía
+
+- <https://logongas.es/doku.php?id=clase:daw:diw:1eval:tema01>
