@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/planificacion-interfaces-graficas/
 ---
 
+{:.section}
 ## Introducción
 
 Una guía o manual de estilo es un conjunto de normas para el diseño y la redacción de documentos, ya sea para el uso general, o para una publicación u organización específica. Los manuales de estilo son frecuentes en el uso general y especializado, en medios escritos, orales y gráficos. También dice que el manual de estilo se compone tanto de normas lingüísticas, como de estilo, para que el mensaje sea más coherente, eficaz y correcto.
@@ -179,3 +180,7 @@ Los huecos en el diseño de una web son tan importantes como los silencios en el
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
+
+## Bibliografía
+
+- [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)

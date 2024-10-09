@@ -6,6 +6,9 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/usabilidad-web/
 ---
 
+> Artículo en construcción.
+{:.prompt-warning}
+
 ## Introducción
 
 Lee el artículo [Principios de usabilidad web de Jacob Nielsen y el diseño UX](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/).

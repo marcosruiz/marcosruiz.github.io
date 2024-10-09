@@ -504,5 +504,4 @@ Lee el artículo [Errores comunes al diseñar para móvil](https://www.lawebera.
 ## Bibliografía
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
-- <https://www.lawebera.es/diseno-web>
-- https://www.lawebera.es/diseno-web/el-diseno-de-la-interfaz.php
+- <https://www.lawebera.es/diseno-web/el-diseno-de-la-interfaz.php>

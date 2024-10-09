@@ -106,6 +106,11 @@ Mira la web <https://necesitountrastero.es/> y critica todas aquellas cosas rela
 > 📸 Recuerda hacer capturas.
 {:.prompt-info}
 
+{:.activity}
+### Proyecto final
+
+Piensa en la temática que va a tener tu proyecto final.
+
 ## Bibliografía
 
 - <https://logongas.es/doku.php?id=clase:daw:diw:1eval:tema01>

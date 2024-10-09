@@ -6,6 +6,9 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/planificacion-interfaces-graficas/
 ---
 
+> Artículo en construcción.
+{:.prompt-warning}
+
 ## Introducción
 
 
