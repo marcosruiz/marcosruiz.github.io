@@ -12,11 +12,9 @@ La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts
 
 La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
-RA1. Planifica la creación de una interfaz web valorando y aplicando especificaciones de diseño.
-
-## Duración
-
 Duración actividades obligatorias: 6 horas.
+
+RA1. Planifica la creación de una interfaz web valorando y aplicando especificaciones de diseño.
 
 ## Actividades
 
@@ -144,6 +142,12 @@ Vamos a comenzar a dar los primeros pasos con nuestra guía de estilo:
 
 > Puedes proponer tantas versiones de paleta de colores, tipografía, iconos y logo como desees.
 {:.prompt-info}
+
+## Dame tu feedback
+
+<div class="strawpoll-embed" id="strawpoll_61gD9bv7RZw" style="height: 644px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_61gD9bv7RZw" src="https://strawpoll.com/embed/61gD9bv7RZw" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
+<div class="strawpoll-embed" id="strawpoll_jVyG2xvl8Z7" style="height: 3012px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_jVyG2xvl8Z7" src="https://strawpoll.com/embed/jVyG2xvl8Z7" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
 
 ## Bibliografía
 

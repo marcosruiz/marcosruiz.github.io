@@ -49,7 +49,7 @@ Ejemplo
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header">Duración</summary>
+  <summary class="card-header">Encuesta: Horas de duración</summary>
   <div class="card-body" markdown="1">
 
 

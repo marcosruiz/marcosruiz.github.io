@@ -12,11 +12,9 @@ La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts
 
 La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
-RA1. Selecciona las arquitecturas y tecnologías de programación sobre clientes web, identificando y analizando las capacidades y características de cada una
-
-## Duración
-
 Duración actividades obligatorias: 2 horas.
+
+RA1. Selecciona las arquitecturas y tecnologías de programación sobre clientes web, identificando y analizando las capacidades y características de cada una
 
 ## Actividades
 
@@ -109,6 +107,12 @@ Crea una cuenta en GitHub si no la tienes.
 Crea un repositorio para este módulo profesional.
 
 Sube los ficheros que has utilizado esta práctica al repositorio.
+
+## Dame tu feedback
+
+<div class="strawpoll-embed" id="strawpoll_eNg6v47WWgA" style="height: 644px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_eNg6v47WWgA" src="https://strawpoll.com/embed/eNg6v47WWgA" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
+<div class="strawpoll-embed" id="strawpoll_wAg3QDazly8" style="height: 3012px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_wAg3QDazly8" src="https://strawpoll.com/embed/wAg3QDazly8" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
 
 ## Bibliografía
 
