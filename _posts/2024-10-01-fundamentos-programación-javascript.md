@@ -9,6 +9,7 @@ img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
 > Artículo en construcción.
 {:.prompt-warning}
 
+{:.section}
 ## Introducción
 
 Lee el artículo [Conceptos previos](https://lenguajejs.com/fundamentos/introduccion/conceptos-previos/).
@@ -16,6 +17,7 @@ Lee el artículo [Conceptos previos](https://lenguajejs.com/fundamentos/introduc
 {:.question}
 ¿Qué diferencia hay entre una variable y una constante?
 
+{:.subsection}
 ### Comentarios
 
 Lee el artículo [Comentarios de código](https://lenguajejs.com/javascript/introduccion/comentarios-de-codigo/).
@@ -23,6 +25,7 @@ Lee el artículo [Comentarios de código](https://lenguajejs.com/javascript/intr
 {:.question}
 ¿Qué dos tipos de comentarios hay en JavaScript? ¿Qué diferencia hay entre ellos?
 
+{:.subsection}
 ### Indentación de código
 
 Lee el artículo [Indentación de código](https://lenguajejs.com/javascript/introduccion/indentacion/).
@@ -43,6 +46,7 @@ Lee el artículo [Trabajar con Visual Studio Code](/posts/trabajar-visual-studio
   </div>
 </details>
 
+{:.subsection}
 ### Convenciones de nombres
 
 Lee el artículo [Convenciones de nombres](https://lenguajejs.com/javascript/introduccion/convenciones-de-nombres/).
@@ -77,6 +81,7 @@ camelCase
   </div>
 </details>
 
+{:.section}
 ## Estructuras de control
 
 Lee el artículo [Estructuras de control](https://lenguajejs.com/javascript/introduccion/estructuras-de-control/).
@@ -84,6 +89,7 @@ Lee el artículo [Estructuras de control](https://lenguajejs.com/javascript/intr
 {:.question}
 ¿Qué es un condicional? ¿Qué devuelve un condicional?¿Para qué sirven las condiciones en un lenguaje de programación como JavaScript?
 
+{:.section}
 ## Bucles e iteraciones
 
 Lee el artículo [Bucles e iteraciones](https://lenguajejs.com/javascript/introduccion/bucles/).
@@ -127,8 +133,10 @@ Leer [Operadores básicos](https://lenguajejs.com/javascript/introduccion/operad
 {:.question}
 ¿Cómo se incrementa en uno una variable numérica de la forma más corta posible?
 
+{:.section}
 ## Estructuras de datos básicas
 
+{:.subsection}
 ### Variables y constantes
 
 Lee el artículo [Variables y constantes](https://lenguajejs.com/javascript/fundamentos/variables/).
@@ -148,6 +156,7 @@ Siempre es mejor usar `let` desde que se creó esta palabra clave en ES6 o ECMAS
 {:.question}
 ¿Se pueden declarar variables de la siguiente forma: `var a = 3, c = 1, d = 2;`?
 
+{:.subsection}
 ### Tipos de datos
 
 Javascript es un lenguaje no tipado. Aunque ya veremos que esta definición se queda corta.
@@ -205,6 +214,7 @@ Number, BigInt, String, Boolean, undefined, Function, Symbol, Object
   </div>
 </details>
 
+{:.subsection}
 ### typeOf
 
 Si queremos saber de qué tipo es una variable, podemos preguntar con typeOf():
@@ -242,6 +252,7 @@ Usando la función `typeOf()` o utilizando `constructor.name`.
   </div>
 </details>
 
+{:.subsection}
 ### Conversiones
 
 En javascript las conversiones de tipos no siempre son necesarias, ya que existe un concepto llamado Type coercion que fuerza a una conversión automática cuando se usan distintos tipos.
@@ -264,10 +275,12 @@ let cadena = "" + 3600;
 let longitudCadena = cadena.length; // longitud de la cadena (en este caso, 4)
 ```
 
+{:.subsubsection}
 #### Number
 
 [¿Qué es un Number?](https://lenguajejs.com/javascript/number/variables-numericas/)
 
+{:.subsubsection}
 #### Strings
 
 Leer [¿Qué es un String?](https://lenguajejs.com/javascript/string/variables-texto/)
@@ -281,6 +294,7 @@ Leer [¿Qué es un String?](https://lenguajejs.com/javascript/string/variables-t
 {:.question}
 ¿Existe el concepto de infinito en JavaScript?
 
+{:.subsubsection}
 #### Objetos
 
 Leer [¿Qué son los objetos?](https://lenguajejs.com/javascript/objetos/que-son/)
@@ -330,6 +344,7 @@ Si. Se suele utilizar la función `fetch()`.
   </div>
 </details>
 
+{:.subsubsection}
 #### Arrays
 
 Leer [¿Qué es un Array en Javascript?](https://lenguajejs.com/javascript/arrays/que-es/)
@@ -355,6 +370,7 @@ Con la función `splice()`.
 {:.question}
 ¿Existen métodos para añadir elementos al principio y al final de un array? ¿Y para quitar?
 
+{:.subsection}
 ### Operadores básicos
 
 Leer [Operadores básicos](https://lenguajejs.com/javascript/introduccion/operadores-basicos/).
@@ -368,10 +384,12 @@ Leer [Operadores básicos](https://lenguajejs.com/javascript/introduccion/operad
 {:.question}
 ¿Cómo se incrementa en uno una variable numérica de la forma más corta posible?
 
+{:.subsection}
 ### Ámbitos o contextos
 
 Lee el artículo [Ámbitos o contextos](https://lenguajejs.com/fundamentos/estructuras-de-datos/ambitos-o-contextos/).
 
+{:.section}
 ## Funciones
 
 Las funciones son bloques fundamentales de código en JavaScript. Permiten agrupar y reutilizar código, y son esenciales para la programación modular, estructurada y funcional.
@@ -416,6 +434,7 @@ No.
 {:.question}
 ¿En qué consiste la devolución o retorno de valores? ¿Todas las funciones devuelven algo?
 
+{:.subsection}
 ### Parámetros de una función
 
 Una característica notable de JavaScript es que no da error si llamas a una función con más argumentos de los que espera. Los argumentos adicionales simplemente son ignorados.
@@ -463,6 +482,7 @@ Leer [apartado Funciones anónimas de Funciones](https://lenguajejs.com/javascri
   </div>
 </details>
 
+{:.subsection}
 ### Return en funciones
 
 Las funciones pueden o no tener un valor de retorno. Si no se especifica un return, la función devuelve undefined por defecto. Las funciones sólo retornan un valor. Si queremos retornar más de uno los podemos agrupar en arrays o objetos.
@@ -484,10 +504,12 @@ console.log(sinRetorno(),conRetorno());
 undefined Hola
 ```
 
+{:.subsection}
 ### Invocación de funciones
 
 Al usar paréntesis `()`, invocas a la función. Sin paréntesis, haces referencia al objeto que representa la función.
 
+{:.subsection}
 ### Las funciones son objetos
 
 En JavaScript, las funciones son objetos de primera clase. Esto significa que pueden ser asignadas a variables, pasadas como argumentos y devueltas por otras funciones.
@@ -519,6 +541,7 @@ Leer [apartado Funciones autoejecutables de Funciones](https://lenguajejs.com/ja
   </div>
 </details>
 
+{:.subsection}
 ### Declaración de funciones
 
 Las funciones pueden ser declaradas de manera explícita. Este tipo de declaración se carga en tiempo de compilación, permitiendo su uso antes de la declaración (hoisting).
@@ -551,7 +574,6 @@ console.log(restar(5, 3)); // 2
 
 Las expresiones de función pueden ser anónimas, es decir, no tener un nombre. Al no tener nombre, no se pueden invocar a si mismas, por lo que no se pueden hacer recursivas. Si no tienen nombre y son asignadas a una variable con una expresión de función, adquieren el nombre de la variable. Se suelen usar como funciones de “Callback”, aunque no es lo más recomendable porque luego complican la trazabilidad de los errores.
 
-
 ```javascript
 let dividir = function(a, b) {
   return a / b;
@@ -563,6 +585,7 @@ console.log(dividir(10, 2)); // 5
 5
 ```
 
+{:.subsection}
 ### Funciones flecha
 
 Una arrow function es una forma más abreviada/simplificada de escribir funciones anónimas. Esto las hace más complicadas de entender hasta que te acostumbras a su uso. Estas son su principales características:
@@ -596,6 +619,7 @@ A continuación te muestro como pasar de una función anónima a una función fl
 a => a + 100;
 ```
 
+{:.section}
 ## ¿Cuál es la forma más rápida de ser un maestro en JavaScript?
 
 Mira este vídeo [How To Master JavaScript](https://youtube.com/shorts/I5_Gx3JNho8?si=8WunChsHu2Ncjqd_.).

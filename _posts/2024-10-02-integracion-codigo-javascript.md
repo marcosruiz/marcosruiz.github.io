@@ -3,9 +3,10 @@ title: "Integración de código JavaScript"
 date: 2024-10-02 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec]
-img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
+img_path: /assets/img/arquitecturas-lenguajes-programacion-cliente-web/
 ---
 
+{:.section}
 ## Introducción
 
 Lee el artículo [¿Qué es Javascript?](https://lenguajejs.com/javascript/introduccion/que-es-javascript/).
@@ -30,6 +31,7 @@ Interpretado.
   </div>
 </details>
 
+{:.section}
 ## La consola JavaScript
 
 Lee el artículo [La consola Javascript](https://lenguajejs.com/javascript/introduccion/consola-de-javascript/).
@@ -37,8 +39,10 @@ Lee el artículo [La consola Javascript](https://lenguajejs.com/javascript/intro
 {:.question}
 ¿Cómo se abre la consola de JavaScript en un navegador?
 
+{:.section}
 ## Integración de código JavaScript
 
+{:.subsection}
 ### Integración de JavaScript directamente en el HTML
 
 Los navegadores web te permiten varias opciones de inserción de código de JavaScript. Podremos insertar código usando las etiquetas `<script> </script>` y empleando un atributo `type` indicaremos qué tipo de lenguaje de script estamos utilizando:
@@ -54,6 +58,7 @@ Por ejemplo:
 </script>
 ```
 
+{:.subsection}
 ### Integración de un archivo JavaScript externo
 
 Otra forma de integrar el código de JavaScript es utilizar un fichero externo que contenga el código de JavaScript y referenciar dicho fichero. Ésta sería la forma más recomendable, ya que así se consigue una separación entre el código y la estructura de la página web y como ventajas adicionales podrás compartir código entre diferentes páginas, centralizar el código para la depuración de errores, tendrás mayor claridad en tus desarrollos, más modularidad, seguridad del código y conseguirás que las páginas carguen más rápido. La rapidez de carga de las páginas se consigue al tener el código de JavaScript en un fichero independiente, ya que si más de una página tiene que acceder a ese fichero lo cogerá automáticamente de la caché del navegador con lo que se acelerará la carga de la página.
@@ -102,6 +107,7 @@ En resumen, para insertar código Javascript en HTML5 existen dos formas:
 - Insertando el código directamente en el archivo index.html.
 - Haciendo referencia al código existente en otro archivo .js.
 
+{:.subsection}
 ### AVANZADO Atributos `async` y `defer` en la Etiqueta `<script>`
 
 {:.question}
@@ -112,6 +118,7 @@ A partir de HTML5, la etiqueta `<script>` admite dos atributos, async y defer, q
 ![alt text](asyncdefer.jpeg)
 _Diagrama del funcionamiento de Async o Defer_
 
+{:.subsubsection}
 #### async
 
 El atributo async permite que el script se ejecute de manera asíncrona tan pronto como se haya descargado. Esto significa que:
@@ -126,6 +133,7 @@ Ejemplo:
 <script src="scripts.js" async></script>
 ```
 
+{:.subsubsection}
 #### defer
 
 El atributo `defer` asegura que los scripts se ejecutarán en el orden en el que aparecen en el documento HTML. Las características de defer incluyen:
@@ -140,6 +148,7 @@ Ejemplo:
 <script src="scripts.js" defer></script>
 ```
 
+{:.subsubsection}
 #### Sin async ni defer
 
 Si un script no tiene ninguno de estos atributos, el comportamiento por defecto es que el script se descarga y se ejecuta de manera síncrona. Esto significa que:
@@ -155,6 +164,7 @@ Ejemplo:
 
 En cualquier caso, salvo ocasiones específicas, suele ser más fácil añadir un sólo script, trabajar con módulos y esperar al evento DOMContentLoaded.
 
+{:.section}
 ## Seguridad en JavaScript
 
 Seguramente estarás pensando en cómo puedes proteger el código de JavaScript que vas a programar, del uso fraudulento por otros programadores o visitantes a tu página: la respuesta rápida a esa pregunta es que es imposible hacerlo.

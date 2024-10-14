@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
 ---
 
+{:.section}
 ## Introducción
 
 La web fue inicialmente concebida y creada por Tim Berners-Lee, un especialista del laboratorio europeo de partículas (CERN) en 1989. En sus mismas palabras, había una "necesidad de una herramienta colaborativa que soportara el conocimiento científico" en un contexto internacional. Él y su compañero Robert Cailliau crearon un prototipo web para el CERN y lo mostraron a la comunidad para sus pruebas y comentarios.
@@ -28,6 +29,7 @@ El desarrollo web es un campo multidisciplinario que abarca varias áreas y tecn
 {:.question}
 ¿Qué es Internet? ¿Qué es la web? ¿Son lo mismo?
 
+{:.subsection}
 ### Arquitectura cliente-servidor
 
 Hoy en día los sitios web siguen un modelo basado en la programación cliente-servidor con tres elementos comunes:
@@ -67,6 +69,7 @@ Seguir los pasos de la web [Roadmap.sh](https://roadmap.sh/frontend).
 > La diferencia entre server-side y client-side puede ser difícil de entender al principio si no se ha trabajado con las tecnologías web.
 {:.prompt-info}
 
+{:.subsection}
 ### Evolución de la web
 
 1. **Páginas Web Estáticas**: Las primeras aplicaciones web eran simples páginas estáticas con hipervínculos.
@@ -76,6 +79,7 @@ Seguir los pasos de la web [Roadmap.sh](https://roadmap.sh/frontend).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NWUZCTTLQcg?si=X1ZNqewMNyycyafM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+{:.section}
 ## Lenguajes de programación en entorno cliente
 
 Cuando hablamos de tecnologías empleadas en lenguajes de programación web podemos citar dos grupos básicos: client-side y server-side. Las tecnologías client-side son aquellas que son ejecutadas en el cliente, generalmente en el contexto del navegador web. Cuando los programas o tecnologías son ejecutadas o interpretadas por el servidor estamos hablando de programación server-side.
@@ -114,6 +118,7 @@ A continuación te mostramos las 4 capas del desarrollo web en el lado del clien
 - Estructura (DOM / estructura HTML)
 - Contenido (texto, imágenes, vídeos, etc.)
 
+{:.subsection}
 ### Características
 
 los lenguajes de programación para clientes web no son un reemplazo de la programación en el lado del servidor. Cualquier web que reaccione dinámicamente a interacciones del usuario o que almacene datos, estará gestionada por lenguajes de programación en el lado del servidor, incluso aunque usemos JavaScript en el cliente para mejorar la experiencia de usuario. Las razones son simples:
@@ -144,6 +149,7 @@ No.
   </div>
 </details>
 
+{:.subsection}
 ### Compatibilidades
 
 JavaScript es interpretado por el cliente. Actualmente existen múltiples clientes o navegadores que soportan JavaScript, incluyendo Firefox, Google Chrome, Safari, Opera, Internet Explorer, etc. Por lo tanto, cuando escribimos un script en nuestra página web, tenemos que estar seguros de que será interpretado por diferentes navegadores y que aporte la misma funcionalidad y características en cada uno de ellos. Ésta es otra de las diferencias con los scripts de servidor en los que nosotros dispondremos del control total sobre su interpretación.
@@ -170,6 +176,7 @@ También tienes que tener precaución con las limitaciones en el uso de JavaScri
 - La ejecución de código JavaScript en el cliente podría ser desactivada por el usuario de forma manual, con lo que no podremos tener una confianza ciega en que se vaya a ejecutar siempre tu código de JavaScript.
 - Algunos navegadores de voz, no interpretan el código de JavaScript.
 
+{:.subsection}
 ### Seguridad
 
 JavaScript proporciona un gran potencial para diseñadores maliciosos que quieran distribuir sus scripts a través de la web. Para evitar ésto los navegadores web en el cliente aplican dos tipos de restricciones:
@@ -208,6 +215,7 @@ El motor de ejecución de JavaScript es el encargado de ejecutar el código de J
 
 Hoy en día una de las características que más se resalta y que permite diferenciar a unos navegadores de otros, es la rapidez con la que sus motores de JavaScript pueden ejecutar las aplicaciones, y la seguridad y aislamiento que ofrecen en la ejecución de las aplicaciones en diferentes ventanas o pestañas de navegación.
 
+{:.section}
 ## Herramientas de programación
 
 La mejor forma de aprender JavaScript es tecleando el código HTML y JavaScript en un simple documento de texto. La elección del editor depende de ti, pero aquí te voy a dar algunas pistas para realizar una buena elección.
@@ -260,11 +268,13 @@ Es importante es utilizar las extensiones que nos ofrecen muchos de los navegado
 {:.question}
 ¿Qué significa depurar un código?
 
+{:.subsection}
 ### Otras herramientas
 
 - **Tecla F12 en los navegadores**: Accede a las herramientas de desarrollo del navegador.
 - **Firefox Developer Edition**: Una versión del navegador Firefox con herramientas avanzadas para desarrolladores web.
 
+{:.subsection}
 ### Librerías y frameworks
 
 El desarrollo de aplicaciones web ha evolucionado significativamente con el tiempo, y hoy en día existen diversas maneras de abordar el frontend. A continuación, exploraremos los diferentes tipos de aplicaciones web según las tecnologías de frontend que se utilicen, así como la evolución de las mismas.
@@ -325,6 +335,7 @@ Para obtener bibliotecas o frameworks existen varias formas:
 > Las redes sociales están llenas de gente intentando vender su curso. En el mundo profesional hay mucha más gente trabajando silenciosa y eficazmente en productos de calidad y duraderos. Aunque los primeros tengan algo de razón en decir que PHP, JQuery o otros están obsoletos, el mundo laboral a veces dice lo contrario. Es necesario tomar cierta distancia para elegir la mejor tecnología para cada ocasión. (<https://www.bitecode.dev/p/hype-cycles>)
 {:.prompt-info}
 
+{:.subsection}
 ### Poner la web en producción
 
 Para que una web con HTML, CSS y Javascript funcione tan solo necesitamos un servidor web que sirva estáticamente estos ficheros cuando se le haga una petición HTTP. Este servidor suele estar accesible por Internet mediante SFTP, SSH o cualquier protocolo. Estos HTML, CSS y JS puede ser tratados de dos maneras:
@@ -335,6 +346,7 @@ Para que una web con HTML, CSS y Javascript funcione tan solo necesitamos un ser
 > ¿Qué es minificar un código?
 {:.prompt-info}
 
+{:.section}
 ## Integración del código JavaScript en documentos HTML
 
 Lee el artículo [Integración de código JavaScript](/posts/integracion-codigo-javascript).

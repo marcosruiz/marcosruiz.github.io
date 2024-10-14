@@ -3,7 +3,7 @@ title: "Tarea: Introducción al diseño web"
 date: 2024-09-01 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
-img_path: /assets/img/planificacion-interfaces-graficas/
+img_path: /assets/img/tarea-interfaces/
 ---
 
 > Artículo en construcción.
@@ -53,12 +53,12 @@ Busca 2 webs e indica los tipos de botones que tienen según los tipos que hemos
 
 Busca 2 Webs y para cada una ellas indica como usan los siguientes conceptos:
 
-- Uso del espacio en blanco (Separación entre componentes)
-- Uso de paletas de colores (Usar poco colores con muchas variaciones de ellos)
-- Ancho máximo de la página
-- Indica como resaltan los importante
-- Alineación de la página
-- Uso de Labels (si se usan , si forman parte de la frase, si están desenfatizadas,)
+1. Uso del espacio en blanco (Separación entre componentes).
+1. Uso de paletas de colores (Usar poco colores con muchas variaciones de ellos).
+1. Ancho máximo de la página.
+1. Indica como resaltan lo importante.
+1. Alineación de la página.
+1. Uso de labels (si se usan, si forman parte de la frase, si están desenfatizadas, etc.).
 
 > 📸 Recuerda hacer capturas.
 {:.prompt-info}
@@ -93,7 +93,7 @@ Crea un sistema de tamaños creando varias clases CSS para las siguientes propie
 {:.activity}
 ### Experiencia de usuario
 
-Busca en varias web e indica si algunas de ellas cumple o no cumple alguno de las reglas, principios o mitos de la usabilidad (experiencia de usuario).
+Busca en varias páginas web e indica si algunas de ellas cumplen o no cumplen alguno de las reglas, principios o mitos de la usabilidad (experiencia de usuario).
 
 > 📸 Recuerda hacer capturas.
 {:.prompt-info}
@@ -101,7 +101,7 @@ Busca en varias web e indica si algunas de ellas cumple o no cumple alguno de la
 {:.activity}
 ### Diseño web necesitountrastero.es
 
-Mira la web <https://necesitountrastero.es/> y critica todas aquellas cosas relativas al diseño.
+Mira la web <https://necesitountrastero.es/> y critica todas aquellas cosas relativas al diseño que consideres mejorables.
 
 > 📸 Recuerda hacer capturas.
 {:.prompt-info}
@@ -125,10 +125,25 @@ Piensa en la temática que va a tener tu proyecto final. Aquí tienes varias ide
 - Web de citas.
 - Web de videojuego tipo aventura gráfica.
 
-Y define:
+Y descríbelo en no más de un párrafo.
 
-- Tipo y tamaño de letra para los encabezados y párrafos.
-- Fondo de pantalla.
+{:.activity}
+### Guía de estilo el proyecto final
+
+Vamos a comenzar a dar los primeros pasos con nuestra guía de estilo:
+
+1. Define y justifica la paleta de colores que vas a usar.
+   - Puedes utilizar un generador y la psicología del color.
+   - Deberás tener en cuenta que haya un alto contraste entre fondo y letra.
+   - Deberás incluir el color de fondo. Puede ser un degradado.
+   - En la fase actual del diseño web es recomendable definir una paleta de colores amplia.
+1. Define y justifica la tipografía.
+   - Usa fuentes legibles.
+   - No uses más de 3 tipografías distintas.
+   - Define el tamaño de letra de cada encabezado y párrafo.
+1. Tipo, tamaño y color de letra para los encabezados y párrafos. Seguramente necesites dos.
+1. Define y justifica los iconos que quieres usar.
+1. Diseña tu logo. Puedes tener varios logos si no te decides y puedes usar herramientas IA si consideras que te puede ser de utilidad.
 
 ## Bibliografía
 
