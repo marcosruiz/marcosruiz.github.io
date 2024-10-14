@@ -21,6 +21,8 @@ pin: true
 - UD7 - [Usabilidad en la Web](/posts/usabilidad-web)
 - UD8 - Accesibilidad en la Web
 
+- T01 - [Tarea: Introducción al diseño web](/posts/tarea-introduccion-diseno-web/)
+
 ## Enlaces de interés
 
 

@@ -3,30 +3,20 @@ title: "Tarea: Introducción al diseño web"
 date: 2024-09-01 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
-img_path: /assets/img/tarea-interfaces/
+img_path: /assets/img/tarea-introduccion-diseno-web/
 ---
-
-> Artículo en construcción.
-{:.prompt-warning}
 
 ## Información sobre la tarea
 
 La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
-La tarea se calificará con una nota de APTO (0) o NO APTO (10).
-
-Duración actividades obligatorias: 2 horas.
+La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
 RA1. Planifica la creación de una interfaz web valorando y aplicando especificaciones de diseño.
 
-Criterios de evaluación:
+## Duración
 
-- a) Se ha reconocido la importancia de la comunicación visual y sus principios básicos.
-- b) Se han analizado y seleccionado los colores y tipografías adecuados para su visualización en pantalla.
-- c) Se han analizado alternativas para la presentación de la información en documentos web.
-- d) Se ha valorado la importancia de definir y aplicar la guía de estilo en el desarrollo de una aplicación web.
-- e) Se han utilizado y valorado distintas tecnologías para el diseño de documentos web.
-- f) Se han creado y utilizado plantillas de diseño.
+Duración actividades obligatorias: 6 horas.
 
 ## Actividades
 
@@ -74,7 +64,7 @@ Lee el artículo [Un cambio de imagen para la Formación Profesional en la Comun
 1. ¿Cuando se usan mayúsculas?¿Es necesario?
 
 {:.activity}
-### Sistema de tamaños
+### (Voluntaria) Sistema de tamaños
 
 Crea un sistema de tamaños creando varias clases CSS para las siguientes propiedades:
 
@@ -93,17 +83,25 @@ Crea un sistema de tamaños creando varias clases CSS para las siguientes propie
 {:.activity}
 ### Experiencia de usuario
 
-Busca en varias páginas web e indica si algunas de ellas cumplen o no cumplen alguno de las reglas, principios o mitos de la usabilidad (experiencia de usuario).
+Busca en varias páginas web e indica si algunas de ellas cumplen o no cumplen alguna de las reglas, principios o mitos de la usabilidad (experiencia de usuario).
 
 > 📸 Recuerda hacer capturas.
 {:.prompt-info}
 
 {:.activity}
-### Diseño web necesitountrastero.es
+### (Voluntaria) Diseño web necesitountrastero.es
 
 Mira la web <https://necesitountrastero.es/> y critica todas aquellas cosas relativas al diseño que consideres mejorables.
 
 > 📸 Recuerda hacer capturas.
+{:.prompt-info}
+
+{:.activity}
+### Wordpress
+
+Entra en <https://wordpress.com/es/> y crea una cuenta y un sitio web asociado a la misma, aplica una plantilla de diseño y crea un post donde aparezca tu nombre de usuario. También puedes utilizar otro tipo de webs como Wix, Shopify, Prestashop, Magento, etc. si ya has trabajado con WordPress.
+
+> 📸 Recuerda hacer capturas para demostrar que has realizado la actividad.
 {:.prompt-info}
 
 {:.activity}
@@ -125,7 +123,7 @@ Piensa en la temática que va a tener tu proyecto final. Aquí tienes varias ide
 - Web de citas.
 - Web de videojuego tipo aventura gráfica.
 
-Y descríbelo en no más de un párrafo.
+Y escribe desarrollando brevemente la idea en no más de un párrafo.
 
 {:.activity}
 ### Guía de estilo el proyecto final
@@ -141,9 +139,11 @@ Vamos a comenzar a dar los primeros pasos con nuestra guía de estilo:
    - Usa fuentes legibles.
    - No uses más de 3 tipografías distintas.
    - Define el tamaño de letra de cada encabezado y párrafo.
-1. Tipo, tamaño y color de letra para los encabezados y párrafos. Seguramente necesites dos.
 1. Define y justifica los iconos que quieres usar.
-1. Diseña tu logo. Puedes tener varios logos si no te decides y puedes usar herramientas IA si consideras que te puede ser de utilidad.
+1. Diseña tu logo.
+
+> Puedes proponer tantas versiones de paleta de colores, tipografía, iconos y logo como desees.
+{:.prompt-info}
 
 ## Bibliografía
 

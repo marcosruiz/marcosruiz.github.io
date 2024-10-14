@@ -10,11 +10,13 @@ img_path: /assets/img/tarea-entorno-desarrollo-javascript/
 
 La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
-La tarea se calificará con una nota de APTO (0) o NO APTO (10).
-
-Duración actividades obligatorias: 2 horas.
+La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
 RA1. Selecciona las arquitecturas y tecnologías de programación sobre clientes web, identificando y analizando las capacidades y características de cada una
+
+## Duración
+
+Duración actividades obligatorias: 2 horas.
 
 ## Actividades
 
