@@ -18,6 +18,8 @@ Diseñar requiere principalmente consideraciones funcionales y estéticas. Esto 
 {:.question}
 De las fases de diseño nombradas anteriormente (investigación, análisis, modelado, ajustes y adaptaciones), ¿sabrías identificar dichas fases en el siguiente vídeo de DIY Perks?
 
+Video voluntario:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pABvTWSxOes?si=jpogoYVtvyTuT5N5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Diseñar es una tarea compleja, dinámica e intrincada. Es la integración de un conjunto de requisitos técnicos, sociales y económicos, de necesidades biológicas con efectos psicológicos y de materiales, forma, color, volumen y espacio, todo ello pensado e interrelacionado con el entorno.
@@ -341,6 +343,8 @@ XHTML, acrónimo de las palabras en inglés de eXtensible Hypertext Markup Langu
 
 - Balsamiq
 - Figma
+- Adobe XD
+- Sketch
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -357,7 +361,7 @@ Hoy en día, hay gran cantidad de sitios comerciales que suministran plantillas 
 
 <details class="card mb-2">
 
-  <summary class="card-header question"></summary>
+  <summary class="card-header question">¿Conoces algún sitio comercial que base su negocio en el uso de plantillas?</summary>
   <div class="card-body" markdown="1">
 
 Existen webs como Wordpress, Wix, Shopify, Prestashop, Magento, etc. cuyo negocio está basado en el uso de plantillas.
@@ -379,29 +383,31 @@ _Espacios en blanco mal_
 ![alt text](espaciosBlancoBien.png)
 _Espacios en blanco bien_
 
-Lee el artículo [Utilización del espacio en blanco en el diseño de una web](https://www.lawebera.es/diseno-web/utilizacion-espacio-en-blanco.php).
+(Voluntario) Lee el artículo [Utilización del espacio en blanco en el diseño de una web](https://www.lawebera.es/diseno-web/utilizacion-espacio-en-blanco.php).
 
 Los diseño no tienen que ocupar el 100% de la pantalla ya que en pantallas muy grandes queda mal.
 
 Haz que las cosas estén alineadas a una recta imaginaria que va de arriba a abajo.
 
 ![alt text](alineacion1.png)
+_Interfaz móvil alineada_
 
 ![alt text](alineacion2.png)
+_Interfaz móvil alineada con las líneas marcadas_
 
 Resalta lo importante.
 
 Repele la atención de lo que no es importante (más pequeño, más espacioso, de menor contraste).
 
-Evita usar label o captions. Si ves "ventas@persianas.com" ya sabes que es un correo, no hace falta indicar que es el correo. Pero si usas un label que forme parte de una frase. "3 en stock" en vez de "Stock:3". Y aun así, si las usas, que estén desenfatizadas.
+Evita usar label o captions. Si ves "<ventas@persianas.com>" ya sabes que es un correo, no hace falta indicar que es el correo. Pero si usas un label que forme parte de una frase. "3 en stock" en vez de "Stock:3". Y aun así, si las usas, que estén desenfatizadas.
 
 Los títulos `<h1>` no tienen porque destacar ya que a veces no son importantes ya que es obvio el título. `<h1>` es para que el buscador sepa que eso es importante.
 
-Las esquinas cuadradas indican seriedad. Las Esquinas muy muy redondeadas son muy informales(`border-radious`).
+Las esquinas cuadradas indican seriedad. Las Esquinas muy muy redondeadas son muy informales(`border-radius`).
 
 Para enfatizar en vez de un mayor tamaño de letra, usa negrita. Pero para desenfatizar, usa un color de letra gris en vez del negro del texto.
 
-Nunca usar un carrusel: <https://shouldiuseacarousel.com/>.
+Nunca usar un carrusel: Mira la web <https://shouldiuseacarousel.com/> para saber por qué.
 
 <details class="card mb-2">
   <summary class="card-header question">¿En que se fija un diseñador?</summary>
@@ -468,7 +474,16 @@ El diseño de logos es un campo muy interesante en el que se pueden cometer much
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Et1NgsW_17Y?si=revUZ1yMck3Jl1eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Puedes ver infinidad de logos interesantes en <https://www.reddit.com/r/logodesign/>.
+{:.question}
+¿Por qué es importante la versión de un logo a una tinta?
+
+{:.question}
+¿Qué es el kerning?
+
+{:.question}
+¿Es recomendable hacer ajustes a un logo en reducciones?
+
+(Voluntario) Si quieres, puedes ver infinidad de logos interesantes en <https://www.reddit.com/r/logodesign/>.
 
 (Voluntario) Lee el artículo [Si quieres crear logos profesionales, gratis y online, ¡hazlo con Canva!](https://www.canva.com/es_es/crear/logos/) para aprender a hacer un logo profesional.
 

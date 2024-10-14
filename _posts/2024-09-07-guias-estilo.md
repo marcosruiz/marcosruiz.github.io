@@ -19,11 +19,13 @@ Una guía de estilo incluye aspectos relacionados en la inclusión en la interfa
 
 Una guía de estilo se hace imprescindible cuando el sitio Web es desarrollado por un grupo de personas.
 
-Haz click [aquí](/assets/img/planificacion-interfaces-graficas/manual_estilo_simplificacion_aprobado.pdf). para descargar el manual de estilo del Gobierno de Navarra.
+Haz click [aquí](/assets/img/planificacion-interfaces-graficas/manual_estilo_simplificacion_aprobado.pdf) para descargar y echarle un ojo al manual de estilo del Gobierno de Navarra.
+
+Video voluntario:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e7CpH_B7XPU?si=9NyiMsPNOhBuMkV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Lee el artículo [Guía de estilo, importancia en el diseño de interfaces web](https://www.eniun.com/guia-estilo-diseno-interfaces-web/).
+(Voluntario) Lee el artículo [Guía de estilo, importancia en el diseño de interfaces web](https://www.eniun.com/guia-estilo-diseno-interfaces-web/).
 
 {:.section}
 ## Elementos de las guías de estilo
@@ -72,10 +74,14 @@ A la hora de elegir la tipografía más adecuada hay que tener en cuenta varias 
 
 Conocer los tipos de fuentes y sus comportamientos en los distintos navegadores y sistemas operativos es de gran importancia para garantizar una visualización consistente de nuestro sitio Web.
 
+Video voluntario:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/POeQZvzFf8A?si=70Ekj0-ua1QsfXdO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 {:.question}
 ¿Qué son las serifas? ¿Para qué sirven?
+
+Video voluntario:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tGgoRgsA1Co?si=qhZgpfSf12oJMhT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -86,7 +92,16 @@ Conocer los tipos de fuentes y sus comportamientos en los distintos navegadores 
 > Recuerda que en las páginas web no puedes usar tipografías que los usuarios no tengan instalada en su PC.
 {:.prompt-info}
 
-Puedes utilizar la web de <https://fonts.google.com/> para descargar fuentes que no tengas en tu ordenador.
+Puedes utilizar las siguientes webs para descargar fuentes que no tengas en tu ordenador:
+
+- <https://fonts.google.com/>
+- <https://www.creativefabrica.com/es/>
+- <https://www.dafont.com/es/>
+- <https://fonts.adobe.com/>
+- <https://fontawesome.com/>
+
+> Si conoces alguna web de fuentes que creas que merezca estar aquí ponla en los comentarios y la añadiré 😉.
+{:.prompt-info}
 
 {:.question}
 ¿Qué diferencia hay entre una fuente con y sin sherifas?
