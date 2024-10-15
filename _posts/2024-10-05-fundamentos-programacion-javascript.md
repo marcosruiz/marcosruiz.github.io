@@ -6,13 +6,10 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 {:.section}
-## Evolución de JavaScript
+## Introducción
 
-ECMAScript no para de evolucionar y ya está en la la versión 15.
+ECMAScript o JavaScript no para de evolucionar y ya está en la la versión ES2024.
 
 - **Mayo de 1995**
   - Brendan Eich crea un lenguaje llamado Mocha cuando trabajaba en Netscape.
@@ -30,9 +27,6 @@ ECMAScript no para de evolucionar y ya está en la la versión 15.
 - **Año 2015**
   - Sale a la luz la sexta versión del estándar ECMAScript: ES6. Fue en diciembre del año anterior cuando se propuso la versión candidata pero que no se aprobó hasta el citado año.
 
-{:.section}
-## Introducción
-
 Lee el artículo [Conceptos previos](https://lenguajejs.com/fundamentos/introduccion/conceptos-previos/).
 
 {:.question}
@@ -41,7 +35,21 @@ Lee el artículo [Conceptos previos](https://lenguajejs.com/fundamentos/introduc
 {:.section}
 ## Comentarios
 
-Lee el artículo [Comentarios de código](https://lenguajejs.com/javascript/introduccion/comentarios-de-codigo/).
+A la hora de programar en cualquier lenguaje de programación, es muy importante que comentes tu código. Aunque hoy día se aconseja que el propio código sea el que esté autodocumentado. Es decir, si una serie de sentencias realizan una determinada acción o función, es mejor y más claro crear una función para dicho propósito con un identificador lo suficientemente claro, que poner el comentario en el código. Pero todo eso lo veremos más adelante.
+
+Los comentarios son sentencias que el intérprete de JavaScript ignora. Sin embargo, estas sentencias permiten a los desarrolladores dejar notas sobre cómo funcionan las cosas en sus scripts.
+
+JavaScript permite dos estilos de comentarios: de una sola línea o de varias. Ejemplos de comentarios de una única línea o de varias líneas:
+
+```javascript
+// Comentarios de una línea
+
+/*
+Comentarios de varias líneas
+*/
+```
+
+(Voluntario) Lee el artículo [Comentarios de código](https://lenguajejs.com/javascript/introduccion/comentarios-de-codigo/).
 
 {:.question}
 ¿Qué dos tipos de comentarios hay en JavaScript? ¿Qué diferencia hay entre ellos?
@@ -105,7 +113,67 @@ camelCase
 {:.section}
 ## Variables y constantes
 
-Lee el artículo [Variables y constantes](https://lenguajejs.com/javascript/fundamentos/variables/).
+Una variable es un contenedor de un valor de un tipo dado al que le damos un identificador. El valor de una variable puede cambiar en el tiempo. También existen las constantes que, al contrario de las variables, su valor no puede cambiar.
+
+Para nombrar una variable o constante sólo podemos utilizar caracteres alfanuméricos `[a-zA-Z0-9]` y el caracter de subrayado `_`. No debe comenzar por un número. Tampoco podemos utilizar como identificador una palabra reservada ya que nos daría error. Es conveniente que los nombres, o los identificadores que les damos, sean descriptivos e informen del cometido de dicha variable para que nuestro código sea legible y entendible. También es conveniente seguir la convención **lower camel case** en la que se utilizan minúsculas para nombrarlas y si es la unión de varias palabras éstas se unen y se distingue entre palabras utilizando la primera letra en mayúscula.
+
+Antes de utilizar una variable deberemos declararla y luego darle un valor, ya que si no su valor será undefined.
+
+Para declarar constantes y variables debemos utilizar las palabras reservadas `const`, `var` y `let` (la primera para las constantes y las otras para las variables en las que ahora nos detendremos).
+
+```javascript
+const pi = 3.14;
+var edad = 18;
+let nombre = "Bob Esponja";
+```
+
+La palabra `var` declara una variable y se sigue utilizando por motivos históricos ya que genera algunos problemas que viene a solucionar `let`.
+
+Debido al **hoisting**, era posible declarar una variable con var después de ser utilizada y eso funcionaba. Por ejemplo:
+
+```javascript
+edad = 18;
+...
+...
+var edad;
+```
+
+{:.question}
+¿Qué es el hoisting?
+
+Ese código era válido, pero la verdad es que se hace confuso y más complejo de entender. Pues el hoisting ya no funciona con `let`, por lo que para utilizar una variable que vamos a declarar con let, primero debemos declararla o de lo contrario nos dará un error.
+
+```javascript
+let edad;
+...
+edad = 18;
+```
+
+Además con el uso de `var`, una variable se podía declarar varias veces y era correcto, pero como ves en el ejemplo vuelve a ser confuso.
+
+```javascript
+var edad = 18;
+....
+var edad = 20;
+```
+
+Eso con `let` ya no funciona y habría que hacerlo de la siguiente forma:
+
+```javascript
+let edad = 18;
+....
+edad = 20;
+```
+
+JavaScript es un lenguaje "débilmente tipado", lo cual significa que, a diferencia de otros lenguajes, no es necesario especificar el tipo de dato que vamos a almacenar en una variable y además éste puede cambiar. Esto deberíamos evitarlo para evitar confusiones.
+
+```javascript
+let edad;
+edad = '18';    // En este caso contiene una cadena
+edad = 18;      // En este caso contiene un número
+```
+
+(Voluntario) Lee el artículo [Variables y constantes](https://lenguajejs.com/javascript/fundamentos/variables/).
 
 <details class="card mb-2">
   <summary class="card-header question">Para declarar variables en JavaScript, ¿es mejor usar var, let o const? ¿Desde cuándo?</summary>
@@ -158,6 +226,20 @@ let longitudCadena = cadena.length; // longitud de la cadena (en este caso, 4)
 {:.section}
 ## Operadores básicos
 
+JavaScript es un lenguaje rico en operadores: símbolos y palabras que realizan operaciones sobre uno o varios valores, para obtener un nuevo valor.
+
+Cualquier valor sobre el cuál se realiza una acción (indicada por el operador), se denomina un operando. Una expresión puede contener un operando y un operador (denominado operador unario), como por ejemplo en `b++`, o bien dos operandos, separados por un operador (denominado operador binario), como por ejemplo en `a + b`. Incluso exsite algún operador ternario.
+
+Categorías de operadores en JavaScript:
+
+- Comparación: `==  !=  === !==  >  >=  <  <=`
+- Aritméticos: `+   -   *   /   %   ++   - -   +valor  -valor`
+- Asignación: `=    +=    -=    *=    /=    %=    <<=    >=    >>=    >>>=    &=    |=     ˆ =    []`
+- Lógicos: `&&  ||  !`
+- Bit a Bit: `&    |     ˆ ∼ <<    >>    >>>`
+- Objeto: `.    []    ()    delete    in    instanceOf    new    this`
+- Otros: `,    ?:    typeof    void`
+
 Leer [Operadores básicos](https://lenguajejs.com/javascript/introduccion/operadores-basicos/).
 
 {:.question}
@@ -169,8 +251,30 @@ Leer [Operadores básicos](https://lenguajejs.com/javascript/introduccion/operad
 {:.question}
 ¿Cómo se incrementa en uno una variable numérica de la forma más corta posible?
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es el operador `:?`?</summary>
+  <div class="card-body" markdown="1">
+
+Este operador condicional es la forma reducida de la expresión `if else`.
+
+La sintaxis formal para este operador condicional es:
+
+```javascript
+(condicion) ? expresionV : expresionF;
+```
+
+Si la condición evalúa a `true` devuelve `expresionV` y en caso contrario devuelve `expresionF`.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 {:.section}
 ## Condicionales if else
+
+En los lenguajes de programación, las instrucciones que te permiten controlar las decisiones y bloques de ejecución, se denominan "Estructuras de Control". Una estructura de control, dirige el flujo de ejecución a través de una secuencia de instrucciones, basadas en decisiones simples y en otros factores.
+
+Una parte muy importante de una estructura de control es la "condición". Cada condición es una expresión que se evalúa a `true` o `false`.
 
 Lee el artículo [Condicionales if else](https://lenguajejs.com/fundamentos/estructuras-de-control/condicionales-if-else/).
 
@@ -185,6 +289,8 @@ Lee el artículo [Condicionales if else](https://lenguajejs.com/fundamentos/estr
 
 {:.section}
 ## Bucles e iteraciones
+
+Los bucles son estructuras repetitivas, que se ejecutarán un número de veces determinado.
 
 Lee el artículo [¿Qué son los bucles?](https://lenguajejs.com/fundamentos/bucles-e-iteraciones/que-son/).
 
