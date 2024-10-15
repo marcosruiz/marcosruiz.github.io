@@ -106,7 +106,7 @@ Lee el artículo [Tipos de datos en JavaScript](/posts/tipos-datos-javascript).
 {:.subsection}
 ### Funciones
 
-Lee el artículo [Funciones en JavaScript](posts/funciones-javascript/).
+Lee el artículo [Funciones en JavaScript](/posts/funciones-javascript/).
 
 {:.subsection}
 ### Conversiones entre tipos de datos

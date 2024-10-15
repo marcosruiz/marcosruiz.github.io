@@ -12,9 +12,9 @@ pin: true
 - UD1 - [Arquitecturas y lenguajes de programación en clientes web](/posts/arquitecturas-lenguajes-programacion-cliente-web/)
   - [Integración de código JavaScript](/posts/integracion-codigo-javascript)
   - [Trabajar con Visual Studio Code](/posts/trabajar-visual-studio-code)
-- UD2 - [Fundamentos de la programación con JavaScript](/posts/fundamentos-programación-javascript)
+- UD2 - [Fundamentos de la programación con JavaScript](/posts/fundamentos-programacion-javascript)
   - [Tipos de datos en JavaScript](/posts/tipos-datos-javascript)
-  - [Funciones en JavaScript](posts/funciones-javascript/)
+  - [Funciones en JavaScript](/posts/funciones-javascript/)
 - UD3 - Utilización de los objetos predefinidos del lenguaje.
 - UD4 - Programación con arrays, funciones y objetos definidos por el usuario.
 - UD5 - Interacción con el usuario: eventos y formularios.
