@@ -1,5 +1,5 @@
 ---
-title: "Tarea: Entorno de desarrollo para JavaScript"
+title: "Tarea: Introducción a JavaScript"
 date: 2024-10-03 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec, tarea, práctica]
@@ -25,7 +25,7 @@ Es muy importante leer los apuntes y realizar las actividades. Los actividades d
 
 Crea los ficheros del proyecto como se muestra a continuación:
 
-![alt text](image.png)
+![alt text](ficheros.png)
 
 Una vez vista la estructura, pasemos a ver el formulario y la inclusión de nuestro fichero .js en el archivo index.html.
 
