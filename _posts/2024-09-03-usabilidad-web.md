@@ -49,8 +49,7 @@ Lee el artículo [Experiencia de usuario. Cómo influye el copywritting](https:/
   </div>
 </details>
 
-
-
 ## (Voluntario) Artículos en inglés
 
 - [Mitos en la experiencia de usuario (inglés)](https://uxmyths.com/)
+- [Principios de usabilidad web de Jacob Nielsen y el diseño UX](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/)

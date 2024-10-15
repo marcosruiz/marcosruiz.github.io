@@ -6,15 +6,18 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/tarea-entorno-desarrollo-javascript/
 ---
 
+> Artículo en construcción.
+{:.prompt-warning}
+
 ## Información sobre la tarea
 
 La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
 La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
-Duración actividades obligatorias: 2 horas.
+Duración actividades obligatorias: 9 horas.
 
-RA1. Selecciona las arquitecturas y tecnologías de programación sobre clientes web, identificando y analizando las capacidades y características de cada una
+RA 2. Escribe sentencias simples, aplicando la sintaxis del lenguaje y verificando su ejecución sobre navegadores Web.
 
 ## Actividades
 
@@ -87,12 +90,32 @@ El fichero `tablaMultiplicar.js` tiene una función que realiza las siguientes a
    1. Si lo está, rellena lo que se quiere mostrar en el bloque cuyo id es tabla mediante un bucle.
    1. Si no lo está, alerta al usuario del error y elimina el contenido del campo de texto.
 
-> 📸 Recuerda añadir tu código de usuario y hacer capturas del código funcionando.
+> 📸 Recuerda añadir tu **código de usuario** y hacer capturas del código funcionando.
 {:.prompt-info}
 
-## Dame tu feedback
+{:.activity}
+### Tabla de dividir
 
+Haz lo mismo que en la primera actividad pero en lugar de la tabla de multiplicar haz que aparezca la tabla de dividir.
 
+> 📸 Recuerda añadir tu **código de usuario** y hacer capturas del código funcionando.
+{:.prompt-info}
+
+{:.activity}
+### JavaScript básico en freeCodeCamp
+
+Ir a la certificación [Algoritmos de JavaScript y Estructuras de Datos](https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/) y hacer el curso "JavaScript básico".
+
+> 📷 Cuando termines los 113 pasos, haz una captura de tu perfil público y añade el enlace de tu perfil. En mi caso este es [mi perfil](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b). Recuerda que tu perfil debe ser público y se te debe poder identificar de manera inequívoca.
+{:.prompt-info}
+
+{:.activity}
+### ES6 en freeCodeCamp
+
+Ir a la certificación [Algoritmos de JavaScript y Estructuras de Datos](https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/) y hacer el curso "ES6".
+
+> 📷 Cuando termines, haz una captura de tu perfil público.
+{:.prompt-info}
 
 ## Bibliografía
 

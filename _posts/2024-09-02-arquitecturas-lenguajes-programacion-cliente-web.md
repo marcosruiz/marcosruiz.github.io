@@ -77,6 +77,8 @@ Seguir los pasos de la web [Roadmap.sh](https://roadmap.sh/frontend).
 1. **Introducción de AJAX**: Permite cargar o subir datos al servidor de manera asíncrona, mejorando la interactividad sin recargar la página.
 1. **Single Page Application (SPA)**: Las aplicaciones de una sola página se comunican con el servidor usando JSON o XML, proporcionando una experiencia más fluida.
 
+Video voluntario:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NWUZCTTLQcg?si=X1ZNqewMNyycyafM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 {:.section}
