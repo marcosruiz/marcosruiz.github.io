@@ -1,6 +1,6 @@
 ---
 title: "Funciones en JavaScript"
-date: 2024-10-15 9:00:00 +0100
+date: 2024-10-06 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec]
 img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/

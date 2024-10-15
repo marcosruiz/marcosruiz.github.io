@@ -1,10 +1,34 @@
 ---
 title: "Fundamentos de la programación con JavaScript"
-date: 2024-10-14 9:00:00 +0100
+date: 2024-10-06 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec]
 img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
 ---
+
+> Artículo en construcción.
+{:.prompt-warning}
+
+{:.section}
+## Evolución de JavaScript
+
+ECMAScript no para de evolucionar y ya está en la la versión 15.
+
+- **Mayo de 1995**
+  - Brendan Eich crea un lenguaje llamado Mocha cuando trabajaba en Netscape.
+- **Septiembre de 1995**
+  - Se renombra a LiveScript hasta que le cambiaron el nombre a JavaScript debido a una estrategia de marketing, ya que Netscape fue adquirida por Sun Microsystems, propietaria del lenguaje Java, muy popular por aquel entonces.
+  - Es muy importante aclarar que JavaScript no tiene nada nada que ver con Java; son dos lenguajes de programación totalmente diferentes.
+- **Año 1997**
+  - Se crea el comité European Computer Manufacturers' Association (ECMA de aquí en adelante) y se estadariza el DOM y todo navegador que soporte JavaScript se debe atener a dicho estándar.
+- **Año 1998**
+  - Sale a a la luz la segunda versión del estándar ECMAScript: ES2.
+- **Año 1999**
+  - Sale a la luz la tercera versión del estándar ECMAScript: ES3.
+- **Año 2011**
+  - Sale a la luz la quinta versión del estándar ECMAScript: ES5. La versión ES4 al final no salió a la luz.
+- **Año 2015**
+  - Sale a la luz la sexta versión del estándar ECMAScript: ES6. Fue en diciembre del año anterior cuando se propuso la versión candidata pero que no se aprobó hasta el citado año.
 
 {:.section}
 ## Introducción
