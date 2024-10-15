@@ -66,17 +66,17 @@ Lee el artículo [Un cambio de imagen para la Formación Profesional en la Comun
 
 Crea un sistema de tamaños creando varias clases CSS para las siguientes propiedades:
 
-- margin-top
-- margin-bottom
-- margin-left
-- margin-right
-- padding-top
-- padding-bottom
-- padding-left
-- padding-right
-- font-size
-- color
-- background-color
+- `margin-top`
+- `margin-bottom`
+- `margin-left`
+- `margin-right`
+- `padding-top`
+- `padding-bottom`
+- `padding-left`
+- `padding-right`
+- `font-size`
+- `color`
+- `background-color`
 
 {:.activity}
 ### Experiencia de usuario
