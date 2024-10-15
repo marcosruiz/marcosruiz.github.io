@@ -272,7 +272,7 @@ Usando la función `typeOf()` o utilizando `constructor.name`.
 {:.subsection}
 ### Funciones
 
-Lee el artículo [Funciones en JavaScript](posts/funciones-javascript/).
+Lee el artículo [Funciones en JavaScript](/posts/funciones-javascript/).
 
 {:.subsection}
 ### Conversiones entre tipos de datos
