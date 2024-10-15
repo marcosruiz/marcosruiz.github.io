@@ -3,7 +3,7 @@ title: "Hojas de estilo CSS"
 date: 2024-09-05 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
-img_path: /assets/img/planificacion-interfaces-graficas/
+img_path: /assets/img/hojas-estilo-css/
 ---
 
 > Artículo en construcción.
@@ -547,7 +547,6 @@ Pero hay más, ya que podemos usar los combinators, las pseudoclases, los pseudo
 - <https://www.w3schools.com/css/default.asp>
 - <https://cssreference.io/>
 - <https://developer.mozilla.org/es/docs/Learn/CSS>
-
 
 ## Bibliografía
 
