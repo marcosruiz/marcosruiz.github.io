@@ -78,6 +78,73 @@ Debes determinar las reglas CSS que pondrías en el elemento `style`, con las cl
 
 ![alt text](anteriorSiguiente.png)
 
+{:.activity}
+### Tabla
+
+Copia el siguiente código en tu editor de Visual Studio Code:
+
+```html
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Ejercicio de cambio de apariencia a tablas con CSS</title>
+    <style type="text/css">
+
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>Distancias planetarias</caption>
+      <thead>
+        <tr>
+          <th>Planeta</th>
+          <th>Distancia desde la Tierra</th>
+          <th>Web</th>
+        </tr>
+      </thead>
+ 
+      <tfoot>
+        <tr>
+          <td colspan="3">Astronomía Gobierno de España</td>
+        </tr>
+      </tfoot>
+ 
+      <tbody>
+        <tr>
+          <td>Venus</td>
+          <td>108 Millones de Kilómetros</td>
+          <td><a href="https://es.wikipedia.org/wiki/Venus_(planeta)">Web Venus</a></td>
+        </tr>
+        <tr>
+          <td>Saturno</td>
+          <td>1.281 Millones de Kilómetros</td>
+          <td><a href="https://es.wikipedia.org/wiki/Saturno_(planeta)">Web Saturno</a></td>
+        </tr>
+        <tr>
+          <td>Urano</td>
+          <td>2.720 Millones de Kilómetros</td>
+          <td><a href="https://es.wikipedia.org/wiki/Urano_(planeta)">Web Urano</a></td>
+        </tr>
+        <tr>
+          <td>Neptuno</td>
+          <td>4.504 Millones de Kilómetros</td>
+          <td><a href="https://es.wikipedia.org/wiki/Neptuno_(planeta)">Web Neptuno</a></td>
+        </tr>
+      </tbody>
+    </table>
+  
+</body></html>
+```
+
+Una vez descargado el código puedes abrirlos con tu navegador. Verás que el resultado es el que se muestra en la imagen siguiente:
+
+![alt text](tablaInicio.png)
+_Tabla sin CSS_
+
+Tendrás que editar el código y determinar las reglas CSS necesarias para que el resultado sea lo más parecido posible al de la siguiente imagen (Nota: Aunque no sale en la imagen, el puntero está sobre la primera fila, por eso se ve de color amarillo):
+
+![alt text](tablaFin.png)
+_Resultado final de la tabla_
+
 ## Dame tu feedback
 
 ## Bibliografía
