@@ -3,7 +3,7 @@ title: "Tarea: Introducción al diseño web"
 date: 2024-10-04 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
-img_path: /assets/img/tarea-introduccion-diseno-web/
+img_path: /assets/img/tarea-introduccion-css/
 ---
 
 > Artículo en construcción.
@@ -50,6 +50,33 @@ Queremos conseguir con CSS que elemento con ID `pie` tenga las siguientes caract
 - Margen superior de `1em`.
 - Bordes superior e inferior de tipo sólido, de 1 píxel de grosor y de color `#C5C5C5`.
 - Fondo de color `#F8F8F8`.
+
+{:.activity}
+### Anterior y siguiente
+
+A partir del siguiente código:
+
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Ejercicio de Flotar y Posicionamiento</title>
+    <style type="text/css"> </style>
+</head>
+
+<body>
+    <div> &laquo; Anterior &nbsp; Siguiente &raquo; </div>
+</body>
+
+</html>
+```
+
+Debes determinar las reglas CSS que pondrías en el elemento `style`, con las clases, identificadores y elementos que creas necesarios y modificar el código para que el resultado sea lo más parecido posible a la siguiente imagen:
+
+![alt text](anteriorSiguiente.png)
 
 ## Dame tu feedback
 
