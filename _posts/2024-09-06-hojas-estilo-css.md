@@ -315,12 +315,25 @@ Lee el artículo [Posicionamiento en CSS](/posts/posicionamiento-css).
 
 Lee el artículo [CSS con tablas y listas](/posts/css-tablas-listas)
 
-## Para todo lo demás...
+## Webs de referencia
 
 - <https://lenguajecss.com/css/>
 - <https://www.w3schools.com/css/default.asp>
 - <https://cssreference.io/>
 - <https://developer.mozilla.org/es/docs/Learn/CSS>
+
+## Chuletas CSS
+
+- CSS en español (2 caras): <https://i.emezeta.com/weblog/css3-cheatsheet/css3-cheatsheet-emezeta.pdf>
+- Grid y Flex en español (2 caras): <https://www.paradigmadigital.com/assets/cms/cheat_sheet_flexbox_6fb013edd1.pdf>
+- CSS en inglés (6 caras): <https://i.emezeta.com/weblog/css3-cheatsheet/css3-cheatsheet-2017-emezeta.pdf>
+- CSS en inglés (10 caras): <https://learnxinyminutes.com/docs/css/>
+- CSS en inglés (2 caras): <https://cheatography.com/davechild/cheat-sheets/css2/>
+
+## (Voluntario) Juegos CSS
+
+- [CSS Battle](https://cssbattle.dev/)
+- [100 DAYS CSS CHALLENGE](https://100dayscss.com/)
 
 ## Bibliografía
 
