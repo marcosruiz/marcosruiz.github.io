@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/hojas-estilo-css/
 ---
 
+{:.section}
 ## Introducción
 
 Las hojas de estilo en cascada (CSS, Cascading Style Sheets) son un estándar W3C que define la presentación de los documentos Web, es decir, el modo en el que se muestra un documento en pantalla o se suministra al usuario, ya sea por el monitor, en la pantalla del teléfono móvil o leído por un lector de pantalla. Lo más importante es que con CSS se mantienen las instrucciones de presentación separadas del contenido del documento HTML.
@@ -14,6 +15,7 @@ Las hojas de estilo en cascada (CSS, Cascading Style Sheets) son un estándar W3
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3yM5uXp-T_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+{:.section}
 ## Ventajas de usar CSS
 
 - Mayor control en el diseño de las páginas: Se puede llegar a diseños fuera del alcance de HTML.
@@ -23,6 +25,7 @@ Las hojas de estilo en cascada (CSS, Cascading Style Sheets) son un estándar W3
 - El HTML de presentación está en vías de desaparecer: Todos los elementos y atributos de presentación de las especificaciones HTML fueron declarados obsoletos por el W3C.
 - Tiene buen soporte: En este momento, casi todos los navegadores soportan casi toda la especificación CSS1, CSS2 y CSS3.
 
+{:.section}
 ## ¿Cómo funciona CSS?
 
 1. Hay que comenzar con un documento HTML. En teoría, el documento tendrá una estructura lógica y un significado semántico a través de los elementos HTML adecuados. Con HTML se crea la estructura de la página web.
@@ -59,6 +62,7 @@ p {
   </div>
 </details>
 
+{:.section}
 ## Estructura de las reglas CSS
 
 Todas las **reglas** CSS siguen misma estructura:
@@ -76,6 +80,7 @@ El conjunto de `<propiedad> : <valor>;` también se llama **declaración**.
 
 Hay que destacar que cuando a una propiedad como `font-family` se le asignan dos posibles valores estos van separados por comas (`,`) y a la hora de establecer uno de ellos intentará siempre hacerlo de izquierda a derecha.
 
+{:.section}
 ## TRES maneras de añadir estilos CSS a un HTML
 
 Existen TRES maneras de añadir CSS al HTML:
@@ -84,6 +89,7 @@ Existen TRES maneras de añadir CSS al HTML:
 - Usando la etiqueta style
 - Usando un fichero .css externo
 
+{:.subsection}
 ### Como atributo (estilo en línea)
 
 Se puede añadir información de estilo a un elemento concreto empleando el atributo style en la etiqueta del elemento. Por ejemplo:
@@ -96,6 +102,7 @@ Aunque este es un uso perfectamente válido de la información de estilo, los es
 
 Debe emplearse con moderación, solo ocasionalmente, para ignorar reglas de nivel más alto.
 
+{:.subsection}
 ### Usando la etiqueta style (estilos incrustados)
 
 Un método más compacto para añadir hojas de estilo es incrustar un bloque de estilo en la parte superior (en la cabecera o `head`) del documento HTML empleando el elemento `style`. Por ejemplo:
@@ -108,6 +115,7 @@ body {
 </style>
 ```
 
+{:.subsection}
 ### Usando un fichero .css externo (estilos importados o externos)
 
 Es el modo más potente de utilizar CSS.
@@ -170,6 +178,7 @@ Así:
   </div>
 </details>
 
+{:.section}
 ## La cascada de CSS
 
 La "cascada", de las hojas de estilo en cascada, se refiere a lo que ocurre si varias fuentes de información de estilo quieren dar formato al mismo elemento de una página. Cuando un navegador encuentra un elemento para el cual hay varias declaraciones de estilo, las ordena de acuerdo al origen de la hoja de estilo, la especificidad de los selectores y el orden de la regla para poder determinar cuál aplicar.
@@ -226,6 +235,7 @@ Se irán procesando en cascada sobreescribiendose unos a otros. De manera muy si
   </div>
 </details>
 
+{:.section}
 ## Tipos de elementos: Bloque y en línea
 
 En CSS, la noción de "elemento de bloque" y "en línea" es puramente de presentación. Un elemento de bloque de CSS siempre genera saltos de línea, antes y después de él, mientras que los elementos en línea de CSS no lo hacen, aparecen en el flujo de la línea y sólo pasarán a otra línea si no tienen espacio.
@@ -259,14 +269,17 @@ Por defecto, cada elemento HTML tiene un tipo de representación concreto. Como 
 {:.question}
 ¿De qué tipo es el elemento `em`? ¿Bloque o en línea?
 
+{:.section}
 ## Modelo de cajas
 
 Lee el artículo [Modelo de cajas CSS](/posts/modelo-cajas-css).
 
+{:.section}
 ## Selectores
 
 Lee el artículo [Selectores en CSS](/posts/selectores-css).
 
+{:.section}
 ## Unidades de medida en CSS
 
 | Código |   Unidad    |                                      Descripción                                       | Uso en la Web |     |     |
@@ -309,14 +322,17 @@ Establece el tamaño del texto de las cabeceras de primer nivel en un tamaño do
 
 (Voluntario) Lee [Unidades CSS](https://lenguajecss.com/css/modelo-de-cajas/unidades-css/).
 
+{:.section}
 ## Posicionamiento
 
 Lee el artículo [Posicionamiento en CSS](/posts/posicionamiento-css).
 
+{:.section}
 ## CSS con tablas y listas
 
 Lee el artículo [CSS con tablas y listas](/posts/css-tablas-listas)
 
+{:.section}
 ## Webs de referencia
 
 - <https://lenguajecss.com/css/>
@@ -324,6 +340,7 @@ Lee el artículo [CSS con tablas y listas](/posts/css-tablas-listas)
 - <https://cssreference.io/>
 - <https://developer.mozilla.org/es/docs/Learn/CSS>
 
+{:.section}
 ## Chuletas CSS
 
 - CSS en español (2 caras): <https://i.emezeta.com/weblog/css3-cheatsheet/css3-cheatsheet-emezeta.pdf>
@@ -332,6 +349,7 @@ Lee el artículo [CSS con tablas y listas](/posts/css-tablas-listas)
 - CSS en inglés (10 caras): <https://learnxinyminutes.com/docs/css/>
 - CSS en inglés (2 caras): <https://cheatography.com/davechild/cheat-sheets/css2/>
 
+{:.section}
 ## (Voluntario) Juegos CSS
 
 - [CSS Battle](https://cssbattle.dev/)
