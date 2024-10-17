@@ -1,6 +1,6 @@
 ---
 title: "Tarea: Introducción a JavaScript"
-date: 2024-10-03 9:00:00 +0100
+date: 2024-10-08 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec, tarea, práctica]
 img_path: /assets/img/tarea-entorno-desarrollo-javascript/

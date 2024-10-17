@@ -6,12 +6,11 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/hojas-estilo-css/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Introducción
 
 Las hojas de estilo en cascada (CSS, Cascading Style Sheets) son un estándar W3C que define la presentación de los documentos Web, es decir, el modo en el que se muestra un documento en pantalla o se suministra al usuario, ya sea por el monitor, en la pantalla del teléfono móvil o leído por un lector de pantalla. Lo más importante es que con CSS se mantienen las instrucciones de presentación separadas del contenido del documento HTML.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3yM5uXp-T_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Ventajas de usar CSS
 
@@ -31,7 +30,7 @@ Las hojas de estilo en cascada (CSS, Cascading Style Sheets) son un estándar W3
 <details class="card mb-2">
   <summary class="card-header question" markdown="1">
 
-¿Qué creés que hace el siguiente código?
+¿Qué crees que hace el siguiente código?
 
 ```css
 body {
@@ -60,7 +59,7 @@ p {
 
 ## Estructura de las reglas CSS
 
-Todas las reglas CSS siguen misma estructura:
+Todas las **reglas** CSS siguen misma estructura:
 
 ```plaintext
 <selector> {
@@ -71,10 +70,9 @@ Todas las reglas CSS siguen misma estructura:
 }
 ```
 
-El conjunto de `<propiedad> : <valor>;` también se llama declaración.
+El conjunto de `<propiedad> : <valor>;` también se llama **declaración**.
 
 Hay que destacar que cuando a una propiedad como `font-family` se le asignan dos posibles valores estos van separados por comas (`,`) y a la hora de establecer uno de ellos intentará siempre hacerlo de izquierda a derecha.
-
 
 ## TRES maneras de añadir estilos CSS a un HTML
 
@@ -176,10 +174,10 @@ La "cascada", de las hojas de estilo en cascada, se refiere a lo que ocurre si v
 
 Los navegadores otorgan un peso distinto a las hojas de estilo que, ordenadas de menor a mayor peso, son:
 
-1. Hojas de estilo del navegador.
-1. Hojas de estilo del lector.
-1. Hojas de estilo de la persona que ha diseñado la página web.
-1. Declaraciones de estilo `!important` del lector.
+1. Hojas de estilo del navegador: Son los que tiene el navegador por defecto.
+1. Hojas de estilo del usuario: Son las que se pueden aplicar desde una extensión de navegador como Stylus.
+1. Hojas de estilo del desarrollador.
+1. Hojas de estilo del usuario con el uso de `!important`.
 
 Además de este orden, existe otra jerarquía de pesos que se aplican a las hojas de estilo creadas por la persona que ha diseñado la página web. Es importante entender esta jerarquía y tener en cuenta que las reglas de estilo que están al final de la lista sobreescribiran a las primeras. La siguiente lista, que como la anterior está ordenada de menor a mayor peso, muestra esta otra jerarquía:
 
@@ -213,7 +211,7 @@ h1 {color: red;}
 Se irán procesando en cascada sobreescribiendose unos a otros. De manera muy simplificada ordenamos de mayor prioridad a menor prioridad de la siguiente manera:
 
 1. Importancia: Usando la palabra clave `!important`.
-1. Origen: No es necesario conocerlo este curso.
+1. Origen: Visto anteriormente.
 1. Especificidad:
    1. Estilos en linea.
    1. Seleccionando por ID.
@@ -259,543 +257,13 @@ Por defecto, cada elemento HTML tiene un tipo de representación concreto. Como 
 {:.question}
 ¿De qué tipo es el elemento `em`? ¿Bloque o en línea?
 
-## Modelo de cajas CSS
+## Modelo de cajas
 
-El modelo de cajas es un concepto fundamental para comprender el funcionamiento de las hojas de estilo. Aquí podrás ver una introducción básica a este modelo. De acuerdo con este modelo, todos los elementos de una página web generan una caja rectangular alrededor llamada "caja del elemento".
+Lee el artículo [Modelo de cajas CSS](/posts/modelo-cajas-css).
 
-En estas cajas se pueden configurar propiedades como bordes, márgenes y fondos (entre otras). Las cajas también se pueden emplear para posicionar los elementos y diseñar la página.
+## Selectores
 
-Las cajas de elementos, tal y como muestra la imagen, están hechas de cuatro componentes principales:
-
-![alt text](modelo-de-cajas-1.png)
-_Modelo de cajas CSS_
-
-- **Contenido** (`content`), en azul, es la parte interior del elemento, excluyendo el relleno.
-- **Relleno** (`padding`), en verde, es el espacio que rodea al contenido.
-- **Margen** (`margin`), en naranja, es el espacio que rodea al borde, la parte más externa del elemento.
-- **Borde** (`border`), en negro, es el límite que separa el interior del exterior del elemento.
-
-Hay algunas características fundamentales del modelo de cajas que vale la pena destacar:
-
-- El relleno, los bordes y los márgenes son opcionales, por lo que, si ajustas a cero sus valores se eliminarán de la caja.
-- Cualquier color o imagen que apliques de fondo al elemento se extenderá por el relleno.
-- Los bordes se generan con propiedades de estilo que especifican su estilo (por ejemplo: sólido), grosor y color. Cuando el borde tiene huecos, el color o imagen de fondo aparecerá a través de esos huecos.
-- Los márgenes siempre son transparentes (el color del elemento padre se verá a través de ellos).
-- Cuando definas el largo de un elemento estás definiendo el largo del área de contenido (los largos de relleno, de borde y de márgenes se sumarían a esta cantidad).
-- Puedes cambiar el estilo de los lados superior, derecho, inferior e izquierdo de una caja de un elemento por separado.
-
-Lee [Modelo de cajas](https://lenguajecss.com/css/modelo-de-cajas/que-es/)
-
-### Contenido
-
-Podemos definir el tamaño del contenido de la siguiente manera:
-
-```css
-div {width:100px; height:200px; }
-```
-
-```css
-
-```
-
-### Relleno
-
-Podemos definir el relleno. El orden de los valores son top (arriba), right (derecha), bottom (debajo) e left (izquierda), siempre en el sentido de las agujas del reloj y comenzando en las 12. Es fácil de recordar.
-
-Establece un relleno para todos los elementos `div`:
-
-```css
-div {padding: 3px 20px 3px 20px;} 
-```
-
-Al omitir un valor, asume que el valor del relleno a la izquierda es el mismo que el de la derecha:
-
-```css
-div {padding: 3px 20px 3px; }
-```
-
-Al omitir dos valores, asume que el primer valor corresponde al relleno por encima y por debajo del área de contenido y, el segundo valor corresponde al relleno a la derecha y a la izquierda:
-
-```css
-div {padding: 3px 20px; }
-```
-
-Al omitir tres valores, asume que ese valor es el mismo para todos.
-
-```css
-div {padding: 3px; }
-```
-
-Otras características interesantes del relleno son:
-
-- El valor del relleno se sumará al de width ya definido en el elemento.
-- Su color es el mismo al del área de contenido.
-- El relleno nunca se "colapsa". Esto lo entenderás cuando veas los márgenes que sí se colapsan.
-
-{:.question}
-¿El `background` afecta al padding?
-
-### Margen
-
-Los márgenes top y bottom de dos elementos que van seguidos se "colapsan". Es decir, se asume como margen entre ambos elementos el mayor de ellos. El siguiente ejemplo muestra lo que que ocurre cuando tenemos dos elementos un h1 y un h2 colocados uno a continuación del otro.
-
-```css
-h1 {margin: 10px 20px 10px 20px; }
-h2 {margin: 20px; }
-```
-
-En el primer caso el margen superior e inferior es de 10px. En el segundo caso es de 20px. El espacio resultante entre los dos elementos será de 20px.
-
-Por el contrario, si fuesen dos elementos colocados "uno al lado del otro" (como dos elementos `span`), deberíamos tener en cuenta que los márgenes `right` y `left` no se colapsan, sino que se suman.
-
-{:.question}
-¿Qué diferencia hay entre un margin y un padding?
-
-### Borde
-
-Los bordes funcionan, a la hora de establecer su valores, de la misma manera que el relleno visto anteriormente, siguiendo un orden: superior, derecho, inferior, izquierdo.
-
-Podemos configurar el estilo del borde, su grosor y su color.
-
-Ejemplo de la propiedad `border-style` con la que configuramos el estilo del borde:
-
-```css
-div {border-style: solid dashed dotted double; } 
-div {border-style: solid dashed dotted double; }
-```
-
-La propiedad `border-style` puede tener los valores: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset e inherit. En el siguiente ejemplo configuramos cada uno de los lados de la caja con un borde distinto.
-
-Ejemplo de la propiedad `border-width` con la que configuramos el grosor del borde:
-
-```css
-div {
-  border-style: solid; 
-  border-width: thin medium thick 12px; 
-}
-```
-
-Los valores que puede tomar esta propiedad son: `thin`, `medium`, `thick`, `inherit` o un valor concreto en píxeles. Si no se especifica esta propiedad tomará medium como valor por defecto. En el siguiente ejemplo configuramos un grosor distinto en cada uno de los lados del borde.
-
-Ejemplo de la propiedad `border-color` con la que configuramos el color del borde:
-
-```css
-div {
-  border-style: solid; 
-  border-width: 4px; 
-  border-color: #333 #red rgb(0,0,255) #0044AC; 
-}
-```
-
-La propiedad `border` une todas las propiedades "border" vistas hasta ahora. En esta propiedad, a diferencia de las anteriores, no hay que colocar los valores en ningún orden concreto. La propiedad `border` se emplea cuando se quieren configurar los cuatro lados por igual. Aunque también tenemos las propiedades: border-top, border-right, border-bottom y border-left. Por ejemplo:
-
-```css
-h1 {border: .5em solid blue; }
-h2 {border-left: solid blue .5em; }
-h3 {border-right: solid .5em; }
-```
-
-## TRES tipos de selectores
-
-Existen tres maneras de referenciar elementos HTML desde CSS:
-
-1. Por etiqueta o elemento
-1. Por clase
-1. Por identificador
-
-### Selector de etiqueta o elemento
-
-Son aquellos que se aplican a un elemento (etiqueta) del lenguaje HTML. Por ejemplo:
-
-```css
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-```
-
-```html
-<p>Esto es un párrafo con estilo</p>
-```
-
-O:
-
-```css
-h1 {color: blue;}
-h2 {color: blue;}
-p {color: blue;}
-```
-
-Si te fijas en los ejemplos, verás que se está definiendo la misma propiedad (color) en todos los elementos e incluso se está asignando el mismo valor (blue). El ejemplo siguiente muestra como se puede escribir una única regla aplicada a varios selectores a la vez:
-
-```css
-h1, h2, p {color: blue;}
-```
-
-Existe un selector de elementos "universal" representado por el asterisco (*). El ejemplo siguiente muestra una regla que pondrá en gris todos los elementos del documento que no tengan especificado otro color.
-
-```css
-* {color: grey;}
-```
-
-### Selector de clase
-
-En HTML se emplea el atributo `class` para identificar distintos elementos como parte de un grupo conceptual. Así, los elementos de una clase pueden modificarse con una única regla de estilo.
-
-En el siguiente ejemplo se muestra como dos elementos distintos se clasifican de la misma forma mediante la asignación del valor "especial" al atributo `class`.
-
-```css
-.bienvenida {
-  color: white;
-  text-align: center;
-}
-```
-
-```html
-<p class="bienvenida">Bienvenida con estilo</p>
-```
-
-También se puede hacer que un elemento pertenezca a más de una clase separando sus nombres de clase con espacios. En el siguiente ejemplo el párrafo pertenece a dos clases: "textocabecera" y "especial".
-
-```css
-<p class="textocabecera especial">Hoy tenemos grandes rebajas.</p>
-```
-
-```html
-<h1 class="especial">¡Atención!</h1>
-<p class="especial">Hoy tenemos grandes rebajas.</p>
-```
-
-Para escribir una regla de estilo que se aplique a todos los elementos de una determinada clase hay que escribir un punto seguido del nombre de la clase. Por ejemplo: .especial {color: green;}
-
-El siguiente ejemplo muestra la forma de lograr que todos los elementos de la clase "especial" tengan un color verde a excepción de las cabeceras de primer nivel que tienen que ser rojas.
-
-```css
-.especial {color: green;}
-h1.especial{color: red;}
-```
-
-### Selector de identificador
-
-Los elementos HTML disponen de un atributo llamado identificador (id), que tiene como finalidad identificar al de manera excluyente. De este modo, CSS u otro lenguaje podrá hacer referencia a él y distinguirlo del resto de los elementos del documento.
-
-Se recomienda que el valor del `id` sea un nombre que caracterice o clarifique, de forma breve y esquemática al elemento y que, además, sea fácilmente reconocible por el programador. Se utilizan con frecuencia para identificar las secciones principales de las páginas: contenido, cabecera, pie, etcétera.
-
-Para escribir una regla de estilo que se aplique a un determinado identificador hay que escribir el símbolo de la almohadilla (`#`) seguido del nombre del identificador. El ejemplo siguiente muestra algunas formas de establecer el tamaño de la fuente en 14 píxeles al elemento p identificado como "textocabecera" del ejemplo anterior:
-
-```css
-#bienvenida {
-  color: black;
-  text-align: center;
-}
-```
-
-```html
-<p id="bienvenida">Bienvenida con estilo</p>
-```
-
-Otro ejemplo:
-
-```css
-p#textocabecera {font-size: 14px;}
-#textocabecera {font-size: 14px;}
-```
-
-```html
-<p id="textocabecera">Texto de cabecera</p>
-```
-
-Con el primera regla indicamos que se aplique el estilo a un párrafo cuyo identificador sea "textocabacera" pero, como el id es único en cada documento, realmente basta con la segunda forma para decir lo mismo, porque no va a haber otro elemento `<p>` o diferente de `<p>` que tenga ese mismo identificador.
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Pueden dos etiquetas HTML tener el mismo id?</summary>
-  <div class="card-body" markdown="1">
-
-Los identificadores deben ser únicos para identificar de manera unequívoca el elemento. Si tenemos varios elementos que necesitan un tratamiento similar, emplearemos el atributo `class`.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué tipos de selectores hay?</summary>
-  <div class="card-body" markdown="1">
-
-Los básicos son los de:
-
-- Etiqueta
-- Clase
-- Identificador
-
-Pero hay más, ya que podemos usar los combinators, las pseudoclases, los pseudoelementos y selectores por atributo.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-### Combinators
-
-Al margen de la selección "básica" de elementos a través de CSS, que suele realizarse mediante clases e IDs, existe un amplio abanico de métodos para seleccionar elementos dependiendo de la estructura del documento HTML denominados combinadores CSS:
-
-| Nombre                     | Símbolo | Ejemplo           | Significado                                        |
-| -------------------------- | ------- | ----------------- | -------------------------------------------------- |
-| Agrupación de selectores   | `,`     | `p, a, div { }`   | Se aplican estilos a varios elementos.             |
-| Selector descendiente      | Espacio | `#page div { }`   | Se aplican estilos a elementos dentro de otros.    |
-| Selector hijo              | `>`     | `#page > div { }` | Se aplican estilos a elementos hijos directos.     |
-| Selector hermano adyacente | `+`     | `div + div { }`   | Se aplican estilos a elementos que siguen a otros. |
-| Selector hermano general   | `~`     | `div ~ div { }`   | Se aplican estilos a elementos al mismo nivel.     |
-| Selector universal         | `*`     | `#page * { }`     | Se aplican estilos a todos los elementos.          |
-
-### Pseudoselectores
-
-Si queremos aplicar reglas de estilo a elementos especiales como: los vínculos visitados, la primera línea de un párrafo o su primera letra, emplearemos los pseudoselectores.
-
-Hay dos tipos de pseudoelectores: pseudoclases y pseudoelementos.
-
-
-
-#### Pseudoclases
-
-Clasifican a los elementos basándose en características que van más allá de su nombre, atributos o contenido. La mayoría de las pseudoclases afectan a los elementos ancla (`a`), pudiendo definir un estilo diferente en función del comportamiento del enlace: si todavía no ha sido visitado (`:link`), si ya lo ha sido (`:visited`), mientras el ratón pasa por encima (`:hover`) o justo cuando se pulsa el ratón sobre él (`:active`).
-
-Para emplear una pseudoclase se escribe la misma a continuación del selector separándola de éste por el símbolo de dos puntos (`:`). El siguiente ejemplo muestra cómo se distinguirían los cuatro estados posibles de un enlace mediante colores diferentes:
-
-```css
-a:link {color: red;}
-a:visited {color: blue;}
-a:hover {color: fuchsia;}
-a:active {color: maroon;}
-```
-
-Con el empleo de estas pseudoclases podemos quitar el subrayado de los hiperenlaces y hacer que aparezca sólo cuando pasamos el puntero por encima. Por ejemplo siguiente muestra el empleo de la propiedad text-decoration para conseguir dicho objetivo:
-
-```css
-a:link {color: red; text-decoration: none;}
-a:visited {color: blue; text-decoration: none;}
-a:hover {color: red; text-decoration: underline;}
-```
-
-Debes tener en cuenta que las pseudoclases ancla deben aparecer siempre en un determinado orden. Este orden es: `:link`, `:visited`, `:hover` y `:active`.
-
-Existen otras pseudoclases, que se emplean menos:
-
-`:focus` hace referencia a los elementos que tienen el foco, como ocurre, por ejemplo, en los elementos de un formulario. Un ejemplo sería:
-
-```css
-input:focus {background-color: yellow;}
-```
-
-`:first-child` hace referencia el primer hijo de un elemento padre. En el siguiente ejemplo se aplica el estilo al primer elemento de una lista desordenada:
-
-```css
-ul li:first-child {font-weight: bold;}
-```
-
-`:lang` (idioma) hace referencia al idioma en el que está un determinado elemento. En el siguiente ejemplo se aplica el estilo a cualquier párrafo que esté escrito en inglés:
-
-```css
-p:lang(en) {color:red}
-```
-
-(Voluntario) Lee el artículo [Pseudoclases CSS](https://lenguajecss.com/css/selectores/pseudoclases/).
-
-#### Pseudoelementos
-
-Estos pseudoelementos suelen ser partes de un elemento ya existente, como puede ser su primera línea (`:first-line`) o su primera letra (`:first-letter`), aunque también nos permite hacer referencia a elementos sin concretar en la estructura del documento porque dependen de la estructura del documento (`:before` y `:after`). Por ejemplo:
-
-```css
-p:first-line {letter-spacing: 6pt;} /* añadimos espacio extra a la primera línea del texto de cada párrafo */
-p.definicion:first-letter {font-size: 300%; color: red;} /* modificamos el estilo (tamaño y color) de la primera letra de los párrafos pertenecientes a la clase "definicion" */
-p.incompleto:after { content: " continuará ..."; } /* añadimos el texto " continuará ..." al final de cada párrafo perteneciente a la clase "incompleto" */
-```
-
-> La única manera de aprender a programar e programando por lo que te recomiendo que pruebes todos los tipos de selectores en un proyecto propio.
-{:.prompt-info}
-
-(Voluntario) Lee el artículo [Pseudoelementos CSS](https://lenguajecss.com/css/selectores/pseudoelementos/)
-
-{:.question}
-¿Qué diferencia hay entre una pseudoclase y un pseudoelemento?
-
-### La palabra clave !important
-
-`!important` se utiliza para dar prioridad a ciertas reglas. Cualquier definición de estilo que vaya acompañada de un !important tendrá prioridad sobre cualquier otra.
-
-Como ya sabes, cuando tenemos una propiedad aplicada dos veces, el navegador hará caso a la última. En el ejemplo que se muestra a continuación está claro que se le asignarán 1200 píxeles al ancho del elemento identificado con el `id="principal"`.
-
-```css
-#principal {
-  width: 800 px;
-  width: 1200px; 
-}
-```
-
-Sin embargo, en el siguiente ejemplo se muestra como dando prioridad a la primera declaración con la palabra !important, podemos tener ese elemento con un ancho de 800 píxeles.
-
-```css
-#principal {
-  width: 800px !important;
-  width: 1200px;  
-}
-```
-
-Con esto de los selectores descendentes, hijos y adyacentes, se puede dar el caso de que, sin querer, estemos aplicando un estilo que no queremos a un elemento porque se ve indirectamente afectado por alguna de las reglas y no sabemos cuál. Por ejemplo: sale un párrafo en color rojo y no nos acordamos dónde lo configuramos porque realmente no tenemos ninguna regla que diga `p {color:red}`. En ese caso, y para no descerebrarnos buscando dónde está el fallo, si sabemos que los párrafos de texto emplean la letra de color negro, crearíamos la regla `p { color: green !important; }` ¡y solucionado!
-
-> El uso de `!important` en CSS es algo que debe hacerse con cuidado, ya que aunque puede ser útil en ciertos casos, también puede generar problemas a largo plazo ya que rompe la cascada de CSS y hace más complicado el mantenimiento del código CSS.
-{:.prompt-warning}
-
-## Propiedades para establecer la fuente
-
-Las propiedades de las fuentes en CSS son usadas para configurar la apariencia deseada para el texto de un documento. Las más empleadas son:
-
-### font-family
-
-Nos permite especificar un nombre de fuente en concreto o bien una familia genérica de fuentes. Se puede especificar una lista de fuentes separadas por comas teniendo en cuenta que si el nombre de la fuente o familia tiene algún espacio en blanco intercalado habrá que encerrarlo entre comillas. 
-
-Hay que darse cuenta de que el tipo de letra elegido debe estar instalado en el equipo cliente. Por lo que, si escogemos un tipo de letra "poco habitual", corremos el riesgo de que el usuario no vea la página tal y como la hemos diseñado.
-
-### font-size
-
-Nos permite configurar el tamaño del texto. Mientras que el HTML estándar prevé sólo 7 niveles predefinidos para el tamaño del texto, las hojas de estilo CSS permiten un control mucho más preciso y elástico sin, prácticamente, limitaciones.
-
-### font-weight
-
-Nos permite establecer el espesor o intensidad de las fuentes, como `<b>` para el HTML clásico.
-
-### font-style
-
-Nos permite configurar el "estilo" de la fuente. Hay tres valores posibles:
-
-- `normal` que no configura ningún estilo en particular sino que toma el definido por defecto en el navegador.
-- `italic` que equivale al elemento del HTML clásico (`<i>`) que coloca el testo en cursiva.
-- `oblique` que funciona, aparentemente, como "italic".
-
-### font-variant
-
-Permite dos posibilidades: `normal` y `small-caps`. Con `normal`, el texto no cambia de apariencia y con `small-caps` el texto pasa a mostrarse en mayúsculas de un tamaño inferior.
-
-<details class="card mb-2">
-  <summary class="card-header question" markdown="1">
-
-¿Qué es `font-variant: small-caps`?
-
-  </summary>
-  <div class="card-body" markdown="1">
-
-Puedes verlo en [aquí](https://www.w3schools.com/cssref/tryit.php?filename=trycss_font-variant).
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-### font
-
-Esta propiedad engloba las propiedades anteriores y más, pero debe ser escrita siguiendo el siguiente patrón:
-
-```plaintext
-font: (<font-style> | <font-variant> | <font-weight>)? <font-size>(/<line-height>)? <font-family>
-```
-
-Siendo `<font-style>` realmente el valor de la propiedad `<valor de la propiedad font-style>` y lo mismo con todas las demás propiedades.
-
-> Si no sabes como interpretar una expresión regular puedes leer el artículo [Expresiones regulares](https://marcosruiz.github.io/posts/expresiones-regulares/)
-{:.prompt-info}
-
-Intenta entender los siguientes ejemplos:
-
-```css
-p { font: 12px arial; }
-p { font: italic small-caps bold 12px arial; }
-p { font: oblique small-caps 900 12px/14px arial; }
-p { font: 80% sans-serif; }
-p { font: x-large/110% "new century schoolbook", serif; }
-p { font: bold italic large Palatino, serif; }
-p { font: normal small-caps 120%/120% fantasy; }
-```
-
-## Propiedades para establecer el texto
-
-Las propiedades de texto permiten aplicar estilos a los textos espaciando sus palabras o sus letras, decorándolo, alineándolo, transformándolo, etcétera. Algunas de estas propiedades son:
-
-Las propiedades de texto permiten aplicar estilos a los textos espaciando sus palabras o sus letras, decorándolo, alineándolo, transformándolo, etcétera. Algunas de estas propiedades son:
-
-### text-decoration
-
-Permite decorar el texto con subrayados y otros efectos. Los valores que puede tener son:
-
-- `none` (ninguno)
-- `underline` (subrayado)
-- `overline` (con una línea por encima)
-- `line-through` (tachado), blink (parpadeante)
-- `inherit` (heredado)
-
-### text-transform
-
-Controla la apariencia de las letras en un elemento. Los valores que puede tener son:
-
-- `none` (texto normal, con mayúsculas y minúsculas)
-- `capitalize` (cada palabra comienza con mayúsculas)
-- `uppercase` (todo el texto aparece en mayúsculas)
-- `lowercase` (todo el texto aparece en minúsculas)
-
-<details class="card mb-2">
-  <summary class="card-header question" markdown="1">
-
-¿Qué diferencia hay entre `text-transform: uppercase` y `text-transform: capitalize` de la propiedad ?
-
-  </summary>
-  <div class="card-body" markdown="1">
-
-- `uppercase` para convertir textos a mayúsculas.
-- `lowercase` para convertir textos a minúsculas.
-- `capitalize` poner sólo la primera letra en mayúscula.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-### line-height
-
-Establece el espacio que hay entre dos líneas consecutivas.
-
-Ejemplos:
-
-```css
-p { line-height: 1.4; } /* Se establece un factor de multiplicación respecto al tamaño font-size */
-p { line-height: 14pt; } /* Establece una distancia fija entre las líneas de 14 puntos */
-p { line-height: 140%; } /* Establece una distancia proporcional (%) respecto a font-size */
-```
-
-### text-indent
-
-Sangra la primera línea de texto de un párrafo.
-
-Ejemplos:
-
-```css
-p { text-indent: 20px; } /* Define un sangrado positivo. El valor por defecto es 0. */
-p { text-indent: -12px; } /* Éste es negativo (hacia la izquierda). */
-p { text-indent: 10%; } /* Aquí está como un porcentaje respecto al ancho del elemento padre. */
-```
-
-### letter-spacing
-
-Configura sobre el espacio que hay entre los caracteres. Este valor puede aumentar o disminuir ya que, al igual que text-indent y otras propiedades, admite valores positivos y negativos.
-
-Ejemplos:
-
-```css
-p { letter-spacing: 12px; } /* Expande los caracteres. Los separa */
-p { letter-spacing: -0.5px; } /* Contrae los caracteres. Los junta */
-```
-
-### white-space
-
-Permite establecer cómo se gestionan los espacios en blanco en un elemento. Los valores que puede tener son:
-
-- `normal`: Los espacios en blanco adicionales son ignorados por el navegador.
-- `pre`: Los espacios en blanco adicionales son utilizados como cuando se emplea la etiqueta pre en HTML.
-- `nowrap`: No se produce el ajuste de línea automático por lo que el texto permanecerá en la misma línea hasta que encuentre una etiqueta `<br/>`.
+Lee el artículo [Selectores en CSS](/posts/selectores-css).
 
 ## Unidades de medida en CSS
 
@@ -843,165 +311,9 @@ Establece el tamaño del texto de las cabeceras de primer nivel en un tamaño do
 
 Lee el artículo [Posicionamiento en CSS](/posts/posicionamiento-css).
 
-## Cambiar apariencia de tablas
+## CSS con tablas y listas
 
-Para controlar la presentación de las tablas tenemos las propiedades:
-
-- `caption-side`
-- `table-layout`
-- `border-collapse`
-- `border-spacing`
-- `empty-cells`
-- `display`
-
-### caption-side
-
-Esta propiedad sirve para indicar dónde se pone el título de la tabla. Puede tener los valores: `top`, `bottom`, `left` y `right`.
-
-### table-layout
-
-Permite definir el modo en el que el navegador dibujará la tabla ya que puede hacerse de dos formas. Los valores que admite son:
-
-- `fixed` dibuja la tabla basándose en las medidas establecidas en el código fuente. Con este valor se consigue que el sistema trabaje más rápido.
-- `auto` dibuja la tablas basándose en el contenido de sus celdas. Es el valor por defecto.
-
-### border-collapse
-
-Permite establecer el modo en el que se dibujan los bordes de las tablas: `separate` (separados), `collapse` (juntos) e `inherit`.
-
-- En el modo `separate`, cada celda está rodeada por su borde haciendo el efecto de un borde con una línea doble.
-- En el modo `collapse` las celdas contiguas comparten sus bordes.
-
-### border-spacing
-
-Permite establecer la separación entre celdas contiguas. Para hacerlos se indica el valor del espaciado horizontal seguido del valor del espaciado vertical. Si se escribe un único valor, la separación horizontal y vertical serán iguales.
-
-### empty-cells
-
-Esta propiedad soluciona la carencia que, al no dibujar las celdas que estaban vacías, obligaba a poner un espacio en blanco usando el carácter `&nbsp`. Los valores que admite son:
-
-- `show` que permite mostrar los bordes y fondos como en las celdas con contenido.
-- `hide` que permite ocultar los bordes y fondos de las celdas vacías.
-- `inherit` que permite heredar el valor de empty-cells que tenga su elemento padre.
-
-Ejemplos:
-
-```css
-table{  
-  border:#000 solid thin;  /* Para que los bordes aparezcan */
-  border-collapse: separate; /* Bordes separados */ 
-  border-spacing: 0.5em 1em; /* Separación de los bordes */
-  empty-cells: show;  /* Las celdas vacías se muestran */ 
-}
-
-table caption { 
-  caption-side: bottom;  /* El título de la tabla aparece debajo */ 
-}
-```
-
-## Cambiar apariencia de listas
-
-Las listas son un elemento muy utilizado en las páginas web. Hoy en día, su empleo no está limitado a la simple enumeración de elementos en el contenido, también se utilizan para crear barras de navegación verticales y horizontales.
-
-Para dar formato a las listas tenemos, entre otras, las propiedades: 
-
-- `list-style-type`
-- `list-style-image`
-- `list-style-position`
-- `list-style`
-
-### list-style-type
-
-Permite elegir el marcador visual de la lista asignando a la propiedad uno de los siguientes valores: 
-
-- `none` (eliminar el marcador)
-- `square` (cuadrado)
-- `disc` (círculo)
-- `circle` (circunferencia)
-- `lower-roman` (números romanos en minúscula)
-- `lower-alpha` (letras en minúscula)
-- `upper-alpha` (letras en mayúscula)
-- etcétera.
-
-### list-style-image
-
-Permite especificar una imagen como marcador. Para ello deberemos indicar la dirección o URL donde se encuentra la imagen.
-
-Cuando se usa esta propiedad conviene declarar también la propiedad `list-style-type` en prevención de un fallo en la localización de la imagen.
-
-Esto lo podríamos realizar, también empleando la propiedad `background` del elemento `li`. En este caso, mostrado en el ejemplo siguiente, debemos seguir los siguientes pasos:
-
-1. Eliminar previamente el marcador visual estableciendo none como valor de la propiedad `list-style-type`.
-1. Añadimos relleno a la izquierda de cada uno de los elementos de la lista.
-1. Colocamos de nuevo el marcador visual, declarando la propiedad `background` a la que asignaremos la URL de una imagen.
-1. Si cada elemento de la lista ocupa una sola línea, el marcador deberá centrarse verticalmente estableciendo su posición vertical al 50%.
-
-Ejemplo:
-
-```css
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-li {
-  background: url(boliche.gif) no-repeat 0 50%;
-  padding-left: 20px;
-}
-```
-
-### list-style-position
-
-Establece la posición del marcador de los elementos de la lista. Se puede colocar el marcador dentro del área de contenido con lo que todas las líneas de este elemento estarán alineadas por la izquierda (incluida la que lleva el marcador) o, se puede colocar fuera del área de contenido (como en una sangría francesa). Los valores que permiten posicionar el marcador son: `inside` (dentro) y `outside` (fuera).
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué es la sangrís francesa?</summary>
-  <div class="card-body" markdown="1">
-
-Estilo de sangría de párrafo en el que la primera línea sobresale por la izquierda algo más que el resto, que van algo más sangradas.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-### list-style
-
-Al igual que ocurría con otras propiedades que se vieron anteriormente, esta propiedad permite configurar las listas estableciendo, de forma abreviada y en cualquier orden, el valor de una o más de las propiedades individuales vistas en este apartado.
-
-En el siguiente ejemplo se muestra el uso de las propiedades vistas hasta ahora.
-
-Ejemplo:
-
-```css
-ul {
-  list-style-image: url(boliche.gif);
-  list-style-type: disc;
-  list-style-position: outside; 
-}
-
-ul.especial {
-  list-style: outside circle url("imagenes/balon.png"); 
-}
-```
-
-Un efecto muy utilizado para convertir una lista en una barra de menú de navegación es colocar sus elementos dispuestos horizontalmente en la misma línea. El ejemplo siguiente muestra cómo hacerlo.
-
-Ejemplo:
-
-```css
-ul {
-  list-style-type: none;  
-  padding: 0;  
-  border: 1px solid #000;  
-}  
-
-li {
-  display: inline;  
-  border: 1px solid #00f; 
-}
-```
-
-Si nos interesa eliminar los bordes simplemente debemos poner la propiedad `border` a 0.
+Lee el artículo [CSS con tablas y listas](/posts/css-tablas-listas)
 
 ## Para todo lo demás...
 
