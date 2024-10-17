@@ -6,24 +6,29 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/hojas-estilo-css/
 ---
 
+{:.section}
 ## Propiedades para establecer la fuente
 
 Las propiedades de las fuentes en CSS son usadas para configurar la apariencia deseada para el texto de un documento. Las más empleadas son:
 
+{:.subsection}
 ### font-family
 
 Nos permite especificar un nombre de fuente en concreto o bien una familia genérica de fuentes. Se puede especificar una lista de fuentes separadas por comas teniendo en cuenta que si el nombre de la fuente o familia tiene algún espacio en blanco intercalado habrá que encerrarlo entre comillas.
 
 Hay que darse cuenta de que el tipo de letra elegido debe estar instalado en el equipo cliente. Por lo que, si escogemos un tipo de letra "poco habitual", corremos el riesgo de que el usuario no vea la página tal y como la hemos diseñado.
 
+{:.subsection}
 ### font-size
 
 Nos permite configurar el tamaño del texto. Mientras que el HTML estándar prevé sólo 7 niveles predefinidos para el tamaño del texto, las hojas de estilo CSS permiten un control mucho más preciso y elástico sin, prácticamente, limitaciones.
 
+{:.subsection}
 ### font-weight
 
 Nos permite establecer el espesor o intensidad de las fuentes, como `<b>` para el HTML clásico.
 
+{:.subsection}
 ### font-style
 
 Nos permite configurar el "estilo" de la fuente. Hay tres valores posibles:
@@ -32,6 +37,7 @@ Nos permite configurar el "estilo" de la fuente. Hay tres valores posibles:
 - `italic` que equivale al elemento del HTML clásico (`<i>`) que coloca el testo en cursiva.
 - `oblique` que funciona, aparentemente, como "italic".
 
+{:.subsection}
 ### font-variant
 
 Permite dos posibilidades: `normal` y `small-caps`. Con `normal`, el texto no cambia de apariencia y con `small-caps` el texto pasa a mostrarse en mayúsculas de un tamaño inferior.
@@ -50,6 +56,7 @@ Puedes verlo en [aquí](https://www.w3schools.com/cssref/tryit.php?filename=tryc
   </div>
 </details>
 
+{:.subsection}
 ### font
 
 Esta propiedad engloba las propiedades anteriores y más, pero debe ser escrita siguiendo el siguiente patrón:
@@ -75,12 +82,14 @@ p { font: bold italic large Palatino, serif; }
 p { font: normal small-caps 120%/120% fantasy; }
 ```
 
+{:.section}
 ## Propiedades para establecer el texto
 
 Las propiedades de texto permiten aplicar estilos a los textos espaciando sus palabras o sus letras, decorándolo, alineándolo, transformándolo, etcétera. Algunas de estas propiedades son:
 
 Las propiedades de texto permiten aplicar estilos a los textos espaciando sus palabras o sus letras, decorándolo, alineándolo, transformándolo, etcétera. Algunas de estas propiedades son:
 
+{:.subsection}
 ### text-decoration
 
 Permite decorar el texto con subrayados y otros efectos. Los valores que puede tener son:
@@ -91,6 +100,7 @@ Permite decorar el texto con subrayados y otros efectos. Los valores que puede t
 - `line-through` (tachado), blink (parpadeante)
 - `inherit` (heredado)
 
+{:.subsection}
 ### text-transform
 
 Controla la apariencia de las letras en un elemento. Los valores que puede tener son:
@@ -116,6 +126,7 @@ Controla la apariencia de las letras en un elemento. Los valores que puede tener
   </div>
 </details>
 
+{:.subsection}
 ### line-height
 
 Establece el espacio que hay entre dos líneas consecutivas.
@@ -128,6 +139,7 @@ p { line-height: 14pt; } /* Establece una distancia fija entre las líneas de 14
 p { line-height: 140%; } /* Establece una distancia proporcional (%) respecto a font-size */
 ```
 
+{:.subsection}
 ### text-indent
 
 Sangra la primera línea de texto de un párrafo.
@@ -140,6 +152,7 @@ p { text-indent: -12px; } /* Éste es negativo (hacia la izquierda). */
 p { text-indent: 10%; } /* Aquí está como un porcentaje respecto al ancho del elemento padre. */
 ```
 
+{:.subsection}
 ### letter-spacing
 
 Configura sobre el espacio que hay entre los caracteres. Este valor puede aumentar o disminuir ya que, al igual que text-indent y otras propiedades, admite valores positivos y negativos.
@@ -151,6 +164,7 @@ p { letter-spacing: 12px; } /* Expande los caracteres. Los separa */
 p { letter-spacing: -0.5px; } /* Contrae los caracteres. Los junta */
 ```
 
+{:.subsection}
 ### white-space
 
 Permite establecer cómo se gestionan los espacios en blanco en un elemento. Los valores que puede tener son:

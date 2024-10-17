@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/hojas-estilo-css/
 ---
 
+{:.section}
 ## Introducción
 
 Existen tres maneras básicas de referenciar elementos HTML desde CSS:
@@ -22,6 +23,7 @@ Aunque hay otras maneras más avanzadas de referenciar elementos HTML:
   - Pseudoclases
   - Pseudoelementos
 
+{:.section}
 ## Selector de etiqueta o elemento
 
 Son aquellos que se aplican a un elemento (etiqueta) del lenguaje HTML. Por ejemplo:
@@ -57,6 +59,7 @@ Existe un selector de elementos "universal" representado por el asterisco (*). E
 * {color: grey;}
 ```
 
+{:.section}
 ## Selector de clase
 
 En HTML se emplea el atributo `class` para identificar distintos elementos como parte de un grupo conceptual. Así, los elementos de una clase pueden modificarse con una única regla de estilo.
@@ -116,6 +119,7 @@ Puedo usar la coma.
 </div>
 </details>
 
+{:.section}
 ## Selector de identificador
 
 Los elementos HTML disponen de un atributo llamado identificador (id), que tiene como finalidad identificar al de manera excluyente. De este modo, CSS u otro lenguaje podrá hacer referencia a él y distinguirlo del resto de los elementos del documento.
@@ -176,6 +180,7 @@ Pero hay más, ya que podemos usar los combinators, las pseudoclases, los pseudo
 </div>
 </details>
 
+{:.section}
 ## (Voluntario) Selector de atributo
 
 <details class="card mb-2">
@@ -207,6 +212,7 @@ Lee el artículo [Atributos CSS](https://lenguajecss.com/css/selectores/atributo
 </div>
 </details>
 
+{:.section}
 ## Combinators
 
 Al margen de la selección "básica" de elementos a través de CSS, que suele realizarse mediante clases e IDs, existe un amplio abanico de métodos para seleccionar elementos dependiendo de la estructura del documento HTML denominados combinadores CSS:
@@ -220,12 +226,14 @@ Al margen de la selección "básica" de elementos a través de CSS, que suele re
 | Selector hermano general   | `~`     | `div ~ div { }`   | Se aplican estilos a elementos al mismo nivel.     |
 | Selector universal         | `*`     | `#page * { }`     | Se aplican estilos a todos los elementos.          |
 
+{:.section}
 ## Pseudoselectores
 
 Si queremos aplicar reglas de estilo a elementos especiales como: los vínculos visitados, la primera línea de un párrafo o su primera letra, emplearemos los pseudoselectores.
 
 Hay dos tipos de pseudoelectores: pseudoclases y pseudoelementos.
 
+{:.subsection}
 ### Pseudoclases
 
 Clasifican a los elementos basándose en características que van más allá de su nombre, atributos o contenido. La mayoría de las pseudoclases afectan a los elementos ancla (`a`), pudiendo definir un estilo diferente en función del comportamiento del enlace: si todavía no ha sido visitado (`:link`), si ya lo ha sido (`:visited`), mientras el ratón pasa por encima (`:hover`) o justo cuando se pulsa el ratón sobre él (`:active`).
@@ -271,6 +279,7 @@ p:lang(en) {color:red}
 
 (Voluntario) Lee el artículo [Pseudoclases CSS](https://lenguajecss.com/css/selectores/pseudoclases/).
 
+{:.subsection}
 ### Pseudoelementos
 
 Estos pseudoelementos suelen ser partes de un elemento ya existente, como puede ser su primera línea (`:first-line`) o su primera letra (`:first-letter`), aunque también nos permite hacer referencia a elementos sin concretar en la estructura del documento porque dependen de la estructura del documento (`:before` y `:after`). Por ejemplo:
@@ -289,6 +298,7 @@ p.incompleto:after { content: " continuará ..."; } /* añadimos el texto " cont
 {:.question}
 ¿Qué diferencia hay entre una pseudoclase y un pseudoelemento?
 
+{:.section}
 ## La palabra clave !important
 
 `!important` se utiliza para dar prioridad a ciertas reglas. Cualquier definición de estilo que vaya acompañada de un !important tendrá prioridad sobre cualquier otra.

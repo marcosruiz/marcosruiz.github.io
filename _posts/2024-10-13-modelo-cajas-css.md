@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/hojas-estilo-css/
 ---
 
+{:.section}
 ## Introducción
 
 El modelo de cajas es un concepto fundamental para comprender el funcionamiento de las hojas de estilo. Aquí podrás ver una introducción básica a este modelo. De acuerdo con este modelo, todos los elementos de una página web generan una caja rectangular alrededor llamada "caja del elemento".
@@ -33,6 +34,7 @@ Hay algunas características fundamentales del modelo de cajas que vale la pena 
 
 Lee [Modelo de cajas](https://lenguajecss.com/css/modelo-de-cajas/que-es/)
 
+{:.section}
 ## Contenido
 
 Podemos definir el tamaño del contenido de la siguiente manera:
@@ -41,6 +43,7 @@ Podemos definir el tamaño del contenido de la siguiente manera:
 div {width:100px; height:200px; }
 ```
 
+{:.section}
 ## Relleno
 
 Podemos definir el relleno. El orden de los valores son top (arriba), right (derecha), bottom (debajo) e left (izquierda), siempre en el sentido de las agujas del reloj y comenzando en las 12. Es fácil de recordar.
@@ -78,6 +81,7 @@ Otras características interesantes del relleno son:
 {:.question}
 ¿El `background` afecta al padding?
 
+{:.section}
 ## Borde
 
 Los bordes funcionan, a la hora de establecer su valores, de la misma manera que el relleno visto anteriormente, siguiendo un orden: superior, derecho, inferior, izquierdo.
@@ -122,6 +126,7 @@ h2 {border-left: solid blue .5em; }
 h3 {border-right: solid .5em; }
 ```
 
+{:.section}
 ## Margen
 
 Los márgenes top y bottom de dos elementos que van seguidos se "colapsan". Es decir, se asume como margen entre ambos elementos el mayor de ellos. El siguiente ejemplo muestra lo que que ocurre cuando tenemos dos elementos un h1 y un h2 colocados uno a continuación del otro.

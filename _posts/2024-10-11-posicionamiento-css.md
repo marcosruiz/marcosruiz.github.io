@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/posicionamiento-css/
 ---
 
+{:.section}
 ## Introducción
 
 CSS utiliza el flotado y el posicionamiento para tener el máximo control sobre el lugar que ocupa cada elemento en una página web, sus condiciones de visibilidad y "flotabilidad", así como controlar el manejo de capas.
@@ -25,6 +26,7 @@ Un término que aparecerá a menudo es “flujo normal”. Cuando hablamos de qu
 
 Flotando y posicionando con CSS conseguimos que los elementos abandonen su flujo normal. De esta forma un elemento que este en el documento escrito más abajo que otro en el documento puede verse en el navegador por encima de él.
 
+{:.section}
 ## display
 
 La propiedad `display` permite al documento interpretar de otra forma los elementos de tipo bloque y los elementos de tipo línea. Para ello basta con que asignes a esta propiedad el valor `block` si quieres que un elemento "en línea" se comporte como un elemento de tipo bloque y `none`, si quieres que un elemento de bloque no genere caja, no muestre su contenido y no ocupe espacio en la página.
@@ -34,14 +36,17 @@ Lee el artículo [La propiedad display](https://lenguajecss.com/css/layout/displ
 {:.question}
 ¿Qué diferencia hay entre `inline` e `inline-block`?
 
+{:.subsection}
 ### flex
 
 Leer [Guía de Introducción a Flex](https://lenguajecss.com/css/flex/que-es-flex/)
 
+{:.subsection}
 ### grid
 
 Leer [Guía de Introducción a Grid](https://lenguajecss.com/css/grid/que-es-grid/)
 
+{:.section}
 ## float
 
 La propiedad `float` sirve para mover una caja a la izquierda o a la derecha hasta que su borde exterior toque el borde de la caja que lo contiene o toque otra caja flotante.
@@ -57,6 +62,7 @@ La propiedad `float` puede tener los siguientes valores:
 - `right` hace que el elemento flote a la derecha.
 - `inherit` hará que el elemento tome el valor de esta propiedad de su elemento padre.
 
+{:.subsection}
 ### Primer ejemplo con float
 
 ```html
@@ -110,8 +116,10 @@ Y si cambiamos `float:right` por `float:left`:
 ![alt text](floatLeft.png)
 _Resultado con `float:left`_
 
+{:.subsection}
 ### Segundo ejemplo con float
 
+{:.subsubsection}
 #### Flotar contenedores
 
 Para comprender la técnica de flotar cajas vamos a hacer este ejemplo. Se trata de tres contenedores (div) de distintos colores y tamaños, los tres están metidos en el interior de otro contenedor llamado “contenido” que lo que hace es conseguir que el conjunto se encuentre centrado en el navegador.
@@ -185,6 +193,7 @@ Como se muestra en la siguiente imagen, cuando se flota la Caja1 a la derecha, s
 
 Recordar que la Caja 1 no llega a "pegar de todo" en el borde del contenedor pues en el estilo aplicado se configura, para las tres cajas, un margen de 10px en todos los lados.
 
+{:.subsubsection}
 #### Flotar una caja a la izquierda
 
 Ahora vamos a flotar la Caja 1 a la izquierda, por lo que se saca otra vez del flujo del documento y se mueve a la izquierda hasta que el borde izquierdo del bloque toca el borde izquierdo del bloque que lo contiene.
@@ -208,6 +217,7 @@ La Caja 1 flotada a la izquierda quedaría así:
 
 Puesto que la Caja ya no se encuentra en el flujo del documento, no ocupa espacio y se sitúa sobre la Caja 2, ocultando así parte de ella.
 
+{:.subsubsection}
 #### Flotar la Caja 1 y la Caja 2 a la izquierda
 
 Ahora vamos a hacer que flote también la Caja 2. Para conseguir esto, tenemos que configurar el selector `#caja2` del archivo estilos.css tal y como se hizo en el apartado anterior para la Caja 1.
@@ -233,6 +243,7 @@ La Caja 3, junto con el Contenedor, es la única que queda en el flujo normal de
 
 Debemos fijarnos que el tamaño del Contenedor se adapta al de los elementos que siguen en el flujo normal.
 
+{:.subsubsection}
 #### Flotar todas las cajas a la izquierda
 
 Al flotar las tres cajas a la izquierda:
@@ -328,6 +339,7 @@ La web con todas las cajas flotadas a la izquierda, y con un nuevo div que sirve
 
 ![alt text](image-6.png)
 
+{:.subsubsection}
 #### Bloque contenedor demasiado estrecho
 
 El caso a tratar es cuando nuestro div "contenido" es demasiado estrecho como para que los elementos flotados quepan horizontalmente. Si es así, el que no quepa se desplazará hacia abajo.
@@ -356,6 +368,7 @@ La web con el bloque contenedor de 350px, todas las cajas flotadas a la izquierd
 
 Podemos ver que el resultado cambia mucho. El motivo por el que no se pega la Caja 1 al borde del div “contenido” es por que la Caja1 sigue tropezando con la Caja 3 al intentar ser flotada a la izquierda.
 
+{:.section}
 ## clear
 
 La propiedad clear se encarga de impedir elementos flotantes en la zona indicada, a la izquierda del elemento (`left`), a la derecha (`right`) o en ambos lados (`both`).
@@ -418,6 +431,7 @@ La propiedad `clear` puede tener los siguientes valores:
 - `none` permite elementos flotantes a ambos lados. Es el valor por defecto.
 - `inherit` indica, al igual que en float, que heredará el valor de la propiedad clear de su elemento padre.
 
+{:.section}
 ## position
 
 Aunque la mayoría de problemas pueden y deben ser solucionados con un modo u otro de la propiedad `display`, existen mecanismos alternativos y complementarios de posicionamiento que se utilizan para realizar acciones y casos muy concretos. Mediante la propiedad `position` podemos modificar la posición en donde aparecen los diferentes elementos y su contenido, al margen de utilizar sistemas como flex o grid.
@@ -446,10 +460,12 @@ Estas propiedades, lo único que hacen es colocar o fijar el elemento en el punt
 
 (Voluntario) Lee el artículo [La propiedad position](https://lenguajecss.com/css/posicionamiento/position/).
 
+{:.subsection}
 ### static
 
 `static` permite colocar los elementos según el flujo normal. Es el valor que asumirá por defecto en todos los elementos HTML.
 
+{:.subsection}
 ### relative
 
 `relative` permite dejar el elemento exactamente donde está. Un elemento posicionado de esta forma se puede cambiar desde su punto de partida estableciendo para ello una distancia vertical y/o horizontal. En el siguiente ejemplo se desplaza la "caja2" 50px del extremo izquierdo y 50 px del extremo superior de su posición relativa.
@@ -469,6 +485,7 @@ Estas propiedades, lo único que hacen es colocar o fijar el elemento en el punt
 {:.question}
 ¿Hacia donde se mueve el elemento con ID `caja2` del código anterior?
 
+{:.subsection}
 ### absolute
 
 `absolute` permite abandonar el flujo normal del haciendo que el elemento no ocupe ningún espacio de forma que el resto de elementos del flujo normal actuarán como si el elemento no estuviese allí. El modo de determinar el origen de coordenadas de nuestro elemento será el siguiente:
@@ -478,12 +495,14 @@ Estas propiedades, lo único que hacen es colocar o fijar el elemento en el punt
 
 Lee la sección "La propiedad position: absolute" del artículo [Posicionamiento absoluto](https://lenguajecss.com/css/posicionamiento/position-absolute/#la-propiedad-position-absolute).
 
+{:.subsection}
 ### fixed
 
 `fixed` funciona de forma parecida al posicionamiento absoluto pero posiciona con respecto a la ventana del navegador apareciendo en la misma posición aunque el usuario se desplace por la página con las barras de desplazamiento.
 
 (Voluntario) Lee el artículo [Posicionamiento fijo](https://lenguajecss.com/css/posicionamiento/position-fixed/).
 
+{:.subsection}
 ### sticky
 
 (Voluntario) Lee el artículo [Posicionamiento sticky](https://lenguajecss.com/css/posicionamiento/position-sticky/).
@@ -491,6 +510,7 @@ Lee la sección "La propiedad position: absolute" del artículo [Posicionamiento
 {:.question}
 ¿Qué diferencias hay entre las posiciones `static`, `relative`, `fixed`, `absolute`, `sticky`?
 
+{:.section}
 ## visibility
 
 Esta propiedad controla si el elemento será visualizado según le asignes el valor `visible` o `hidden`. Debes tener en cuenta que, aunque un elemento no sea visible, éste continúa ocupando su espacio en el flujo normal del documento al contrario de lo que ocurría con la propiedad `display` cuando se le asignaba el valor `none`.
@@ -498,6 +518,7 @@ Esta propiedad controla si el elemento será visualizado según le asignes el va
 {:.question}
 ¿Qué diferencia hay entre `visibility:hidden` y `display:none`?
 
+{:.section}
 ## z-index
 
 Permite controlar el orden en el que se presentan los elementos que quedan solapados por efecto de otras propiedades. Si cuando definimos algún elemento con posición absoluta, éste tiene que visualizarse en el mismo lugar ocupado por otro elemento, se producirá una superposición de elementos visualizándose, en la parte coincidente, sólo el que está ocupando la "posición superior". La propiedad `z-index` permite especificar el orden en el eje z de los elementos, esto es, el orden de apilamiento en capas del documento.
@@ -517,6 +538,7 @@ También debes saber que esta propiedad sólo se aplica a elementos que tengan l
 {:.question}
 ¿Se puede un `z-index` negativo?
 
+{:.section}
 ## overflow
 
 La propiedad `overflow` define cómo se maneja el contenido que excede el tamaño del contenedor.
@@ -533,6 +555,7 @@ Se puede definir tanto el overflow tanto en el eje X como en el eje Y con las pr
 
 (Voluntario) Lee el artículo [Desbordamiento (Overflow)](https://lenguajecss.com/css/modelo-de-cajas/overflow/).
 
+{:.section}
 ## clip-path
 
 Hace algún tiempo, existió una propiedad CSS llamada clip, cuya intención era permitir recortes con ciertas formas como rectángulos. Sin embargo, hoy en día ha sido marcada como obsoleta, en favor de una nueva propiedad llamada clip-path.

@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/hojas-estilo-css/
 ---
 
+{:.section}
 ## Cambiar apariencia de tablas
 
 Para controlar la presentación de las tablas tenemos las propiedades:
@@ -17,10 +18,12 @@ Para controlar la presentación de las tablas tenemos las propiedades:
 - `empty-cells`
 - `display`
 
+{:.subsection}
 ### caption-side
 
 Esta propiedad sirve para indicar dónde se pone el título de la tabla. Puede tener los valores: `top`, `bottom`, `left` y `right`.
 
+{:.subsection}
 ### table-layout
 
 Permite definir el modo en el que el navegador dibujará la tabla ya que puede hacerse de dos formas. Los valores que admite son:
@@ -28,6 +31,7 @@ Permite definir el modo en el que el navegador dibujará la tabla ya que puede h
 - `fixed` dibuja la tabla basándose en las medidas establecidas en el código fuente. Con este valor se consigue que el sistema trabaje más rápido.
 - `auto` dibuja la tablas basándose en el contenido de sus celdas. Es el valor por defecto.
 
+{:.subsection}
 ### border-collapse
 
 Permite establecer el modo en el que se dibujan los bordes de las tablas: `separate` (separados), `collapse` (juntos) e `inherit`.
@@ -35,10 +39,12 @@ Permite establecer el modo en el que se dibujan los bordes de las tablas: `separ
 - En el modo `separate`, cada celda está rodeada por su borde haciendo el efecto de un borde con una línea doble.
 - En el modo `collapse` las celdas contiguas comparten sus bordes.
 
+{:.subsection}
 ### border-spacing
 
 Permite establecer la separación entre celdas contiguas. Para hacerlos se indica el valor del espaciado horizontal seguido del valor del espaciado vertical. Si se escribe un único valor, la separación horizontal y vertical serán iguales.
 
+{:.subsection}
 ### empty-cells
 
 Esta propiedad soluciona la carencia que, al no dibujar las celdas que estaban vacías, obligaba a poner un espacio en blanco usando el carácter `&nbsp`. Los valores que admite son:
@@ -62,6 +68,7 @@ table caption {
 }
 ```
 
+{:.section}
 ## Cambiar apariencia de listas
 
 Las listas son un elemento muy utilizado en las páginas web. Hoy en día, su empleo no está limitado a la simple enumeración de elementos en el contenido, también se utilizan para crear barras de navegación verticales y horizontales.
@@ -73,6 +80,7 @@ Para dar formato a las listas tenemos, entre otras, las propiedades:
 - `list-style-position`
 - `list-style`
 
+{:.subsection}
 ### list-style-type
 
 Permite elegir el marcador visual de la lista asignando a la propiedad uno de los siguientes valores: 
@@ -86,6 +94,7 @@ Permite elegir el marcador visual de la lista asignando a la propiedad uno de lo
 - `upper-alpha` (letras en mayúscula)
 - etcétera.
 
+{:.subsection}
 ### list-style-image
 
 Permite especificar una imagen como marcador. Para ello deberemos indicar la dirección o URL donde se encuentra la imagen.
@@ -113,6 +122,7 @@ li {
 }
 ```
 
+{:.subsection}
 ### list-style-position
 
 Establece la posición del marcador de los elementos de la lista. Se puede colocar el marcador dentro del área de contenido con lo que todas las líneas de este elemento estarán alineadas por la izquierda (incluida la que lleva el marcador) o, se puede colocar fuera del área de contenido (como en una sangría francesa). Los valores que permiten posicionar el marcador son: `inside` (dentro) y `outside` (fuera).
@@ -127,6 +137,7 @@ Estilo de sangría de párrafo en el que la primera línea sobresale por la izqu
   </div>
 </details>
 
+{:.subsection}
 ### list-style
 
 Al igual que ocurría con otras propiedades que se vieron anteriormente, esta propiedad permite configurar las listas estableciendo, de forma abreviada y en cualquier orden, el valor de una o más de las propiedades individuales vistas en este apartado.
