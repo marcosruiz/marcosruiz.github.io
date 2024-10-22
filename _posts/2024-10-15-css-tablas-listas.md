@@ -128,7 +128,7 @@ li {
 Establece la posición del marcador de los elementos de la lista. Se puede colocar el marcador dentro del área de contenido con lo que todas las líneas de este elemento estarán alineadas por la izquierda (incluida la que lleva el marcador) o, se puede colocar fuera del área de contenido (como en una sangría francesa). Los valores que permiten posicionar el marcador son: `inside` (dentro) y `outside` (fuera).
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Qué es la sangrís francesa?</summary>
+  <summary class="card-header question">¿Qué es la sangría francesa?</summary>
   <div class="card-body" markdown="1">
 
 Estilo de sangría de párrafo en el que la primera línea sobresale por la izquierda algo más que el resto, que van algo más sangradas.

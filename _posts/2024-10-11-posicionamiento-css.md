@@ -275,9 +275,9 @@ Los divs de las cajas de colores siguen estando “en el interior” del div “
 
 Para que se vuelva a ver el “Contenido” tenemos varias opciones:
 
-- Se le puede aplicar una altura configurando en el selector #contenido la propiedad `height` con una altura mayor que el alto de la caja más grande.
-- Se puede flotar a la izquierda la caja con id #contenido. De esta forma volvería a aparecer pero flotada a la izquierda de su contendedor (body).
-- Añadir, dentro del div "contenido" y a continuación de las tres cajas flotadas, un div totalmente vacío. Este div lo configuramos estableciendo la propiedad clear con el valor both (aunque en este caso también serviría left, pues todas las cajas flotadas anteriormente lo están a la izquierda). Esta es la solución más utilizada y la que emplearemos.
+- Se le puede aplicar una altura configurando en el selector `#contenido` la propiedad `height` con una altura mayor que el alto de la caja más grande.
+- Se puede flotar a la izquierda la caja con id `contenido`. De esta forma volvería a aparecer pero flotada a la izquierda de su contendedor (`body`).
+- Añadir, dentro del div "contenido" y a continuación de las tres cajas flotadas, un `div` totalmente vacío. Este `div` lo configuramos estableciendo la propiedad `clear` con el valor `both` (aunque en este caso también serviría `left`, pues todas las cajas flotadas anteriormente lo están a la izquierda). Esta es la solución más utilizada y la que emplearemos.
 
 Veamos cómo quedan los códigos de los archivos HTML y CSS después de realizar la última operación explicada en la diapositiva anterior de modo que todas las cajas flotan a la izquierda y se ve igualmente el “contenido”.
 
@@ -335,7 +335,7 @@ body { font-weight: bold; color: white; }
     .clearboth {clear: both; }
 ```
 
-La web con todas las cajas flotadas a la izquierda, y con un nuevo div que sirve para resetear los elementos flotados hasta este punto (donde se añade el div), quedaría del siguiente modo:
+La web con todas las cajas flotadas a la izquierda, y con un nuevo div que sirve para resetear los elementos flotados hasta este punto (donde se añade el `div`), quedaría del siguiente modo:
 
 ![alt text](image-6.png)
 
@@ -371,7 +371,7 @@ Podemos ver que el resultado cambia mucho. El motivo por el que no se pega la Ca
 {:.section}
 ## clear
 
-La propiedad clear se encarga de impedir elementos flotantes en la zona indicada, a la izquierda del elemento (`left`), a la derecha (`right`) o en ambos lados (`both`).
+La propiedad `clear` se encarga de impedir elementos flotantes en la zona indicada, a la izquierda del elemento (`left`), a la derecha (`right`) o en ambos lados (`both`).
 
 ```html
 <!DOCTYPE html>
@@ -429,7 +429,7 @@ La propiedad `clear` puede tener los siguientes valores:
 - `right` funciona como el left pero en este caso el elemento deberá estar flotando a la derecha.
 - `both` mueve hacia abajo el elemento hasta que esté limpio de elementos flotantes a ambos lados.
 - `none` permite elementos flotantes a ambos lados. Es el valor por defecto.
-- `inherit` indica, al igual que en float, que heredará el valor de la propiedad clear de su elemento padre.
+- `inherit` indica, al igual que en float, que heredará el valor de la propiedad `clear` de su elemento padre.
 
 {:.section}
 ## position
