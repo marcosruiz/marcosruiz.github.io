@@ -14,7 +14,7 @@ img_path: /assets/img/videos-profesor/
 - [KDEnlive](https://kdenlive.org/es/): Para editar vídeos.
 - [ZoomIt](https://learn.microsoft.com/es-es/sysinternals/downloads/zoomit): Para hacer zoom y pintar en la pantalla.
 - Mouse utilities de [PowerToys](https://learn.microsoft.com/es-es/windows/powertoys/): Para mostrar los clicks del ratón.
-- [Canva](https://www.canva.com/): Para grabar y editar vídeos.
+- [Canva](https://www.canva.com/): Para hacer carteles o infografías.
 
 ## Configurar Carnac
 

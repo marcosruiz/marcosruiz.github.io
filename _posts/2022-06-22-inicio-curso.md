@@ -51,12 +51,21 @@ tags: [enlaces, edteam, alva majo, programas, software, extensiones]
 - [PDF24](https://www.pdf24.org/es/): Herramienta para gestión de PDFs. Incluye OCR.
 - [TinyTask With-Editor](https://tinytask.net/): Re-Mouse para automatizar tareas con el ratón.
 - [Carnac](http://code52.org/carnac/): Para mostrar atajos de teclado.
-- [Flameshot](https://flameshot.org/): Para hacer capturas y editarlas. → Sustituye a [ShareX](https://getsharex.com/).
+- [Flameshot](https://flameshot.org/): Para hacer capturas y editarlas. Una maravilla.
 - [PowerToys](https://learn.microsoft.com/es-es/windows/powertoys/)
   - Mouse utilities: Para mostrar los clicks del ratón.
   - Paste As Plain Text
   - Text Extractor: OCR
 - [ZoomIt](https://learn.microsoft.com/es-es/sysinternals/downloads/zoomit): Para hacer zoom y grabar la pantalla.
+- [Peek Screen Recorder](https://github.com/phw/peek): Para hacer GIFs o vídeos en MP4 de una manera rápida.
+
+## Webs de interés
+
+- <https://notebooklm.google.com/>: Para hacer resúmenes, preparar preguntas, etc.
+- <https://goblin.tools/>: Herramienta para desarrollar RAs.
+- <https://www.thinglink.com/>: Imágenes interactivas
+- <https://quizizz.com/>: Sustituto gratuito para Kahoot.
+- <https://www.plickers.com/>: Sustituto gratuito de Kahoot si los alumnos no tienen ordenador.
 
 ## Preparar PCs alumnos
 
