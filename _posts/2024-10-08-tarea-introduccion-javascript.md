@@ -50,7 +50,7 @@ _Ajustes de privacidad_
 Opción 1 (en inglés): Ir a la certificación [JavaScript Algorithms and Data Structures (Beta)](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/) y hacer el curso "Learn Introductory JavaScript by Building a Pyramid Generator".
 
 > Si tienes el módulo de inglés es obligatorio hacer la Opción 1.
-> {:.prompt-info}
+{:.prompt-info}
 
 Opción 2 (en español): Ir a la certificación [Algoritmos de JavaScript y Estructuras de Datos](https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/) y hacer el curso "JavaScript básico".
 
