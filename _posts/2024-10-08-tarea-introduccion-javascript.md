@@ -15,13 +15,47 @@ La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts
 
 La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
-Duración actividades obligatorias: 9 horas.
+Duración actividades obligatorias: 10 horas.
 
 RA 2. Escribe sentencias simples, aplicando la sintaxis del lenguaje y verificando su ejecución sobre navegadores Web.
 
 ## Actividades
 
 Es muy importante leer los apuntes y realizar las actividades. Los actividades de esta unidad son base para la realización de actividades en las próximas unidades.
+
+{:.activity}
+### Crear cuenta
+
+Crea una cuenta con el correo de la escuela en [freeCodeCamp](https://www.freecodecamp.org/) y asegúrate de hacer login antes de empezar con la siguiente actividad.
+
+{:.activity}
+### Hacer público todo tu perfil
+
+En [Ajustes de cuenta](https://www.freecodecamp.org/espanol/settings) añade los datos correspondientes a "Nombre", "Ubicación" y "Acerca de mí" de manera similar a como he hecho yo. Posteriormente deberás guardar los cambios.
+
+![img-description](ajustesNombreCuenta.png)
+_Ajustes principales de cuenta_
+
+Además, deberás poner todas las opciones en público y guardar los cambios.
+
+![img-description](ajustesPrivacidadCuenta.png)
+_Ajustes de privacidad_
+
+> 📷 Haz una captura de tu perfil vacío y **añade el enlace de tu perfil público**. En mi caso este es [mi perfil](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b). Recuerda que tu perfil debe ser público y se te debe poder identificar de manera inequívoca con tu nombre completo o tu código de usuario.
+{:.prompt-info}
+
+{:.activity}
+### JavaScript básico en freeCodeCamp
+
+Opción 1 (en inglés): Ir a la certificación [JavaScript Algorithms and Data Structures (Beta)](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/) y hacer el curso "Learn Introductory JavaScript by Building a Pyramid Generator".
+
+> Si tienes el módulo de inglés es obligatorio hacer la Opción 1.
+> {:.prompt-info}
+
+Opción 2 (en español): Ir a la certificación [Algoritmos de JavaScript y Estructuras de Datos](https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/) y hacer el curso "JavaScript básico".
+
+> 📷 Cuando termines todos los pasos, haz una captura de tu perfil.
+{:.prompt-info}
 
 {:.activity}
 ### Tabla de multiplicar
@@ -102,19 +136,11 @@ Haz lo mismo que en la primera actividad pero en lugar de la tabla de multiplica
 {:.prompt-info}
 
 {:.activity}
-### JavaScript básico en freeCodeCamp
+### Estructuras de datos básicas en freeCodeCamp
 
-Ir a la certificación [Algoritmos de JavaScript y Estructuras de Datos](https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/) y hacer el curso "JavaScript básico".
+Ir a la certificación [Algoritmos de JavaScript y Estructuras de Datos](https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/) y hacer el curso "Estructuras de datos básicas".
 
-> 📷 Cuando termines los 113 pasos, haz una captura de tu perfil público y añade el enlace de tu perfil. En mi caso este es [mi perfil](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b). Recuerda que tu perfil debe ser público y se te debe poder identificar de manera inequívoca.
-{:.prompt-info}
-
-{:.activity}
-### ES6 en freeCodeCamp
-
-Ir a la certificación [Algoritmos de JavaScript y Estructuras de Datos](https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/) y hacer el curso "ES6".
-
-> 📷 Cuando termines, haz una captura de tu perfil público.
+> 📷 Cuando termines todos los pasos, haz una captura de tu perfil.
 {:.prompt-info}
 
 ## Bibliografía
