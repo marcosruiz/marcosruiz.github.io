@@ -69,24 +69,22 @@ Una vez vista la estructura, pasemos a ver el formulario y la inclusión de nues
 ```html
 <!DOCTYPE html>
 <html lang="es-ES">
-    <head>
-        <meta charset="UTF-8">
-        <title>Tabla de multiplicar</title>
-        <script src="js/tablaMultiplicar.js"></script>
-    </head>
-    <body>
-        <h1>
-            Tabla de multiplicar
-        </h1>
-        <form onsubmit="mostrarTabla()">
-            <label for="numero">Introduce el número:</label>
-            <input id="numero" type="number" required/>
-            <input type="submit" value="Mostrar tabla" />
-        </form>
-        <div id="tabla">
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tabla de multiplicar</title>
+    <script src="js/tablaMultiplicar.js"></script>
+  </head>
+  <body>
+    <h1>Tabla de multiplicar</h1>
+    <form onsubmit="mostrarTabla(event)">
+      <label for="numero">Introduce el número:</label>
+      <input id="numero" type="number" required />
+      <input type="submit" value="Mostrar tabla" />
+    </form>
+    <div id="tabla"></div>
+  </body>
 </html>
+
 ```
 {: file="index.html" }
 
@@ -97,22 +95,22 @@ El fichero `index.html` contiene:
 1. Un bloque vacío cuyo `id` es `tabla` y en el que luego mostraremos los resultados.
 
 ```javascript
-const mostrarTabla = () => {
-    this.event.preventDefault();
-    const numero = Number(document.getElementById('numero').value);
-    if (numero >= 0 && numero <= 10) {
-        let tabla = document.getElementById('tabla');
-        let tablaMultiplicar = `<h2>Tabla de multiplicar del número ${numero}</h2>`;
-        tablaMultiplicar += '<ul>';
-        for (let i = 0; i <= 10; i++) {
-            tablaMultiplicar += `<li>${numero} * ${i} = ${numero * i}</li>`;
-        }
-        tablaMultiplicar += '</ul>';
-        tabla.innerHTML = tablaMultiplicar;
-    } else {
-        alert('El número introducido debe estar entre 0 y 10 (ambos inclusive');
-        document.getElementById("numero").value = '';
+const mostrarTabla = (event) => {
+  event.preventDefault();
+  const numero = Number(document.getElementById('numero').value);
+  if (numero >= 0 && numero <= 10) {
+    let tabla = document.getElementById('tabla');
+    let tablaMultiplicar = `<h2>Tabla de multiplicar del número ${numero}</h2>`;
+    tablaMultiplicar += '<ul>';
+    for (let i = 0; i <= 10; i++) {
+      tablaMultiplicar += `<li>${numero} * ${i} = ${numero * i}</li>`;
     }
+    tablaMultiplicar += '</ul>';
+    tabla.innerHTML = tablaMultiplicar;
+  } else {
+    alert('El número introducido debe estar entre 0 y 10 (ambos inclusive');
+    document.getElementById("numero").value = '';
+  }
 }
 ```
 {: file="tablaMultiplicar.js" }
