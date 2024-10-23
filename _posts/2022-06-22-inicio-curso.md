@@ -42,7 +42,6 @@ tags: [enlaces, edteam, alva majo, programas, software, extensiones]
 | Subsistema Ubuntu                                                        | ❌         | ✅       |
 | [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) | ❌         | ✅       |
 | CrystalDiskMark                                                          | ❌         | ✅       |
-| WPS Office                                                               | ✅         | ✅       |
 | Vagrant                                                                  | ✅         | ✅       |
 | [Safe Exam Browser](https://safeexambrowser.org/download_en.html)        | ❌         | ✅       |
 
