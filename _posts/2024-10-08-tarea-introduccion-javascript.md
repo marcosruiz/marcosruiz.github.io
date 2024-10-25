@@ -6,9 +6,6 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/tarea-introduccion-javascript/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Información sobre la tarea
 
 La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
