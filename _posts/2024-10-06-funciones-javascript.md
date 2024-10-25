@@ -28,8 +28,7 @@ Las funciones nos permiten agrupar líneas de código en tareas con un nombre, p
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Es lo mismo declarar una función que ejecutar una función?
-</summary>
+  <summary class="card-header question">¿Es lo mismo declarar una función que ejecutar una función?</summary>
   <div class="card-body" markdown="1">
 
 No.
@@ -37,7 +36,6 @@ No.
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
-{:.question}
 
 {:.question}
 ¿Qué es un parámetro/argumentos?
