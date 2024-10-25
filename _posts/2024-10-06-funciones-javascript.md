@@ -152,7 +152,32 @@ La capacidad de Javascript de tratar a las funciones como objetos le permite fac
   <summary class="card-header question">¿Qué es una función autoejecutable?</summary>
   <div class="card-body" markdown="1">
 
-Leer [apartado Funciones autoejecutables de Funciones](https://lenguajejs.com/javascript/fundamentos/funciones/#funciones-autoejecutables).
+Una función autoejecutable es una función en JavaScript que se define y se ejecuta automáticamente en el momento de ser interpretada. Su estructura característica permite ejecutar una función de inmediato sin necesidad de llamarla explícitamente después de su definición.
+
+La sintaxis básica de una función autoejecutable es la siguiente:
+
+```javascript
+(function() {
+    // Código de la función
+})();
+```
+
+O bien:
+
+```javascript
+(() => {
+    // Código de la función
+})();
+
+```
+
+Ejemplo con parámetros:
+
+```javascript
+(function(nombre) {
+    console.log(`Hola, ${nombre}!`);
+})("Juan");
+```
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
