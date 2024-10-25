@@ -147,6 +147,10 @@ _Resultado final de la tabla_
 
 ## Dame tu feedback
 
+<div class="strawpoll-embed" id="strawpoll_PbZqbYpQ0yN" style="height: 644px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_PbZqbYpQ0yN" src="https://strawpoll.com/embed/PbZqbYpQ0yN" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
+<div class="strawpoll-embed" id="strawpoll_2ayLQbK63n4" style="height: 3012px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_2ayLQbK63n4" src="https://strawpoll.com/embed/2ayLQbK63n4" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
 ## Bibliografía
 
 - <https://logongas.es/doku.php?id=clase:daw:diw:1eval:tema01>

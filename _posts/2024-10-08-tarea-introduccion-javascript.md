@@ -141,6 +141,12 @@ Ir a la certificación [Algoritmos de JavaScript y Estructuras de Datos](https:/
 > 📷 Cuando termines todos los pasos, haz una captura de tu perfil.
 {:.prompt-info}
 
+## Dame tu feedback
+
+<div class="strawpoll-embed" id="strawpoll_eNg6v4qD4gA" style="height: 644px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_eNg6v4qD4gA" src="https://strawpoll.com/embed/eNg6v4qD4gA" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
+<div class="strawpoll-embed" id="strawpoll_B2ZB9RAzEgJ" style="height: 3012px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_B2ZB9RAzEgJ" src="https://strawpoll.com/embed/B2ZB9RAzEgJ" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
 ## Bibliografía
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
