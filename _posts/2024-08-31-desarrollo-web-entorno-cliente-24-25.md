@@ -22,6 +22,7 @@ pin: true
 - UD7 - Utilización de mecanismos de comunicación asíncrona.
 
 - T01 - [Tarea: Entorno de desarrollo para JavaScript](/posts/tarea-entorno-desarrollo-javascript/)
+- T02 - [Tarea obligatoria: Introducción a JavaScript](/posts/tarea-introduccion-javascript/)
 
 ## Enlaces de interés
 
