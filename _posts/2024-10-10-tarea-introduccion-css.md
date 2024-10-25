@@ -1,9 +1,9 @@
 ---
-title: "Tarea: Introducción al diseño web"
+title: "Tarea obligatoria: Introducción al diseño web"
 date: 2024-10-10 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
-img_path: /assets/img/tarea-introduccion-css/
+img_path: /assets/img/tarea-introduccion-diseno-web/
 ---
 
 > Artículo en construcción.
@@ -20,6 +20,46 @@ Duración actividades obligatorias: X horas.
 ## Actividades
 
 A continuación, se muestran las actividades a realizar.
+
+{:.activity}
+### (Voluntaria) Menú cafetería en freeCodeCamp
+
+Hacer el apartado "Aprende CSS básico construyendo un menú de cafetería" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
+
+> 📷 Cuando termines los 91 pasos, haz una captura de tu perfil público y añade el enlace de tu perfil. En mi caso este es [mi perfil público](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b).
+{:.prompt-info}
+
+{:.activity}
+### Marcadores de colores en freeCodeCamp
+
+Hacer el apartado "Aprenda los colores de CSS construyendo un conjunto de marcadores de colores" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
+
+> 📷 Cuando termines los 94 pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
+{:.prompt-info}
+
+{:.activity}
+### Marcadores de colores
+
+Hacer el apartado "Aprenda los colores de CSS construyendo un conjunto de marcadores de colores" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
+
+> 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
+{:.prompt-info}
+
+{:.activity}
+### Formularios en freeCodeCamp
+
+Hacer el apartado "Aprende formularios HTML construyendo un formulario de registro" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
+
+> 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
+{:.prompt-info}
+
+{:.activity}
+### Modelo de cajas en freeCodeCamp
+
+Hacer el apartado "Aprende formularios HTML construyendo un formulario de registro" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
+
+> 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
+{:.prompt-info}
 
 {:.activity}
 ### Color de fondo
