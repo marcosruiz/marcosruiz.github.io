@@ -26,7 +26,7 @@ A continuación, se muestran las actividades a realizar.
 
 Hacer el apartado "Aprende CSS básico construyendo un menú de cafetería" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
 
-> 📷 Cuando termines los 91 pasos, haz una captura de tu perfil público y añade el enlace de tu perfil. En mi caso este es [mi perfil público](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b).
+> 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil. En mi caso este es [mi perfil público](https://www.freecodecamp.org/fccbc40f106-3a04-422a-afc3-e806f616be0b).
 {:.prompt-info}
 
 {:.activity}
@@ -34,7 +34,7 @@ Hacer el apartado "Aprende CSS básico construyendo un menú de cafetería" del 
 
 Hacer el apartado "Aprenda los colores de CSS construyendo un conjunto de marcadores de colores" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
 
-> 📷 Cuando termines los 94 pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
+> 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
 {:.prompt-info}
 
 {:.activity}
@@ -87,8 +87,14 @@ Queremos conseguir con CSS que elemento con ID `pie` tenga las siguientes caract
 {:.question}
 ¿El relleno se pinta con el color de fondo?
 
+> 📸 Haz una o varias capturas para demostrar que ha realizado esta tarea.
+{:.prompt-info}
+
 {:.activity}
 ### Anterior y siguiente
+
+> En esta tarea esta prohibido usar  Flex o Grid.
+{:.prompt-warning}
 
 A partir del siguiente código:
 
@@ -111,6 +117,17 @@ A partir del siguiente código:
 Debes determinar las reglas CSS que pondrías en el elemento `style`, con las clases, identificadores y elementos que creas necesarios y modificar el código para que el resultado sea lo más parecido posible a la siguiente imagen:
 
 ![alt text](anteriorSiguiente.png)
+
+> En artículo [Posicionamiento en CSS](https://marcosruiz.github.io/posts/posicionamiento-css/) se explica todo lo necesario para llevar a cabo esta tarea de manera satisfactoria.
+{:.prompt-info}
+
+> 📸 Haz una o varias capturas para demostrar que ha realizado esta tarea.
+{:.prompt-info}
+
+{:.activity}
+### (Voluntaria) Anterior y siguiente con Grid o Flex
+
+Si ya has trabajado con Flex y/o Grid, realiza la tarea anterior pero ahora utilizando cualquiera de estos dos displays.
 
 {:.activity}
 ### Tabla
@@ -179,6 +196,9 @@ Tendrás que editar el código y determinar las reglas CSS necesarias para que e
 ![alt text](tablaFin.png)
 _Resultado final de la tabla_
 
+> 📸 Haz una o varias capturas para demostrar que ha realizado esta tarea.
+{:.prompt-info}
+
 {:.activity}
 ### (Voluntaria) Web TofoFP
 
@@ -199,6 +219,9 @@ Instrucciones para la realización del portal:
 1. Columna derecha: 180px, padding left 20px.
 1. Pie de página: 960px de ancho.
 1. Fijarse en los bordes de las cajas, de la página principal y del pie de página.
+
+> 📸 Haz una o varias capturas para demostrar que ha realizado esta tarea.
+{:.prompt-info}
 
 ## Dame tu feedback
 
