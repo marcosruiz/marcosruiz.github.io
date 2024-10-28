@@ -6,16 +6,13 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/tarea-introduccion-css/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Información sobre la tarea
 
 La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
 La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
-Duración actividades obligatorias: X horas.
+Duración actividades obligatorias: 7 horas.
 
 ## Actividades
 
@@ -118,7 +115,7 @@ Debes determinar las reglas CSS que pondrías en el elemento `style`, con las cl
 
 ![alt text](anteriorSiguiente.png)
 
-> En artículo [Posicionamiento en CSS](https://marcosruiz.github.io/posts/posicionamiento-css/) se explica todo lo necesario para llevar a cabo esta tarea de manera satisfactoria.
+> Puedes utilizar del artículo [Posicionamiento en CSS](https://marcosruiz.github.io/posts/posicionamiento-css/) para llevar a cabo esta actividad.
 {:.prompt-info}
 
 > 📸 Haz una o varias capturas para demostrar que ha realizado esta tarea.
@@ -135,55 +132,60 @@ Si ya has trabajado con Flex y/o Grid, realiza la tarea anterior pero ahora util
 Copia el siguiente código en tu editor de Visual Studio Code:
 
 ```html
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <title>Ejercicio de cambio de apariencia a tablas con CSS</title>
-    <style type="text/css">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    </style>
-  </head>
-  <body>
-    <table>
-      <caption>Distancias planetarias</caption>
-      <thead>
-        <tr>
-          <th>Planeta</th>
-          <th>Distancia desde la Tierra</th>
-          <th>Web</th>
-        </tr>
-      </thead>
- 
-      <tfoot>
-        <tr>
-          <td colspan="3">Astronomía Gobierno de España</td>
-        </tr>
-      </tfoot>
- 
-      <tbody>
-        <tr>
-          <td>Venus</td>
-          <td>108 Millones de Kilómetros</td>
-          <td><a href="https://es.wikipedia.org/wiki/Venus_(planeta)">Web Venus</a></td>
-        </tr>
-        <tr>
-          <td>Saturno</td>
-          <td>1.281 Millones de Kilómetros</td>
-          <td><a href="https://es.wikipedia.org/wiki/Saturno_(planeta)">Web Saturno</a></td>
-        </tr>
-        <tr>
-          <td>Urano</td>
-          <td>2.720 Millones de Kilómetros</td>
-          <td><a href="https://es.wikipedia.org/wiki/Urano_(planeta)">Web Urano</a></td>
-        </tr>
-        <tr>
-          <td>Neptuno</td>
-          <td>4.504 Millones de Kilómetros</td>
-          <td><a href="https://es.wikipedia.org/wiki/Neptuno_(planeta)">Web Neptuno</a></td>
-        </tr>
-      </tbody>
-    </table>
-  
-</body></html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>Ejercicio de cambio de apariencia a tablas con CSS</title>
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption>Distancias planetarias</caption>
+    <thead>
+      <tr>
+        <th>Planeta</th>
+        <th>Distancia desde la Tierra</th>
+        <th>Web</th>
+      </tr>
+    </thead>
+
+    <tfoot>
+      <tr>
+        <td colspan="3">Astronomía Gobierno de España</td>
+      </tr>
+    </tfoot>
+
+    <tbody>
+      <tr>
+        <td>Venus</td>
+        <td>108 Millones de Kilómetros</td>
+        <td><a href="https://es.wikipedia.org/wiki/Venus_(planeta)">Web Venus</a></td>
+      </tr>
+      <tr>
+        <td>Saturno</td>
+        <td>1.281 Millones de Kilómetros</td>
+        <td><a href="https://es.wikipedia.org/wiki/Saturno_(planeta)">Web Saturno</a></td>
+      </tr>
+      <tr>
+        <td>Urano</td>
+        <td>2.720 Millones de Kilómetros</td>
+        <td><a href="https://es.wikipedia.org/wiki/Urano_(planeta)">Web Urano</a></td>
+      </tr>
+      <tr>
+        <td>Neptuno</td>
+        <td>4.504 Millones de Kilómetros</td>
+        <td><a href="https://es.wikipedia.org/wiki/Neptuno_(planeta)">Web Neptuno</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>
 ```
 
 Una vez descargado el código puedes abrirlos con tu navegador. Verás que el resultado es el que se muestra en la imagen siguiente:
@@ -195,6 +197,9 @@ Tendrás que editar el código y determinar las reglas CSS necesarias para que e
 
 ![alt text](tablaFin.png)
 _Resultado final de la tabla_
+
+> Puedes utilizar del artículo [CSS con tablas y listas](https://marcosruiz.github.io/posts/css-tablas-listas/) para llevar a cabo esta actividad.
+{:.prompt-info}
 
 > 📸 Haz una o varias capturas para demostrar que ha realizado esta tarea.
 {:.prompt-info}
