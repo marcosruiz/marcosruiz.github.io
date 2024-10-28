@@ -26,6 +26,7 @@ pin: true
 - UD8 - Accesibilidad en la Web
 
 - T01 - [Tarea: Introducción al diseño web](/posts/tarea-introduccion-diseno-web/)
+- T02 - [Tarea obligatoria: Introducción a CSS](/posts/tarea-introduccion-css)
 
 ## Enlaces de interés
 
