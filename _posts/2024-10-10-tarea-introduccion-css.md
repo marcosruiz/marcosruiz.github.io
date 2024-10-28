@@ -1,9 +1,9 @@
 ---
-title: "Tarea obligatoria: Introducción al diseño web"
+title: "Tarea obligatoria: Introducción a CSS"
 date: 2024-10-10 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
-img_path: /assets/img/tarea-introduccion-diseno-web/
+img_path: /assets/img/tarea-introduccion-css/
 ---
 
 > Artículo en construcción.
@@ -38,14 +38,6 @@ Hacer el apartado "Aprenda los colores de CSS construyendo un conjunto de marcad
 {:.prompt-info}
 
 {:.activity}
-### Marcadores de colores
-
-Hacer el apartado "Aprenda los colores de CSS construyendo un conjunto de marcadores de colores" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
-
-> 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
-{:.prompt-info}
-
-{:.activity}
 ### Formularios en freeCodeCamp
 
 Hacer el apartado "Aprende formularios HTML construyendo un formulario de registro" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
@@ -69,17 +61,17 @@ A partir del siguiente documento HTML:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    /* Escribe tu código CSS aquí */
-  </style>
-</head>
-<body>
-  <div id="pie"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Escribe tu código CSS aquí */
+    </style>
+  </head>
+  <body>
+    <div id="pie"></div>
+  </body>
 </html>
 ```
 
@@ -90,6 +82,10 @@ Queremos conseguir con CSS que elemento con ID `pie` tenga las siguientes caract
 - Margen superior de `1em`.
 - Bordes superior e inferior de tipo sólido, de 1 píxel de grosor y de color `#C5C5C5`.
 - Fondo de color `#F8F8F8`.
+- Altura de `3em`.
+
+{:.question}
+¿El relleno se pinta con el color de fondo?
 
 {:.activity}
 ### Anterior y siguiente
@@ -100,17 +96,15 @@ A partir del siguiente código:
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>Ejercicio de Flotar y Posicionamiento</title>
-    <style type="text/css"> </style>
-</head>
+    <style type="text/css"></style>
+  </head>
 
-<body>
-    <div> &laquo; Anterior &nbsp; Siguiente &raquo; </div>
-</body>
-
+  <body>
+    <div>&laquo; Anterior &nbsp; Siguiente &raquo;</div>
+  </body>
 </html>
 ```
 
@@ -184,6 +178,27 @@ Tendrás que editar el código y determinar las reglas CSS necesarias para que e
 
 ![alt text](tablaFin.png)
 _Resultado final de la tabla_
+
+{:.activity}
+### (Voluntaria) Web TofoFP
+
+Realiza una web lo más parecida a la siguiente:
+
+![alt text](webTodoFp.png)
+
+La tabla de colores empleada es la siguiente:
+
+![alt text](tablaDeColores.png)
+
+Instrucciones para la realización del portal:
+
+1. Ancho cabecera: 920px, con padding superior, izquierda y derecha de 20px.
+1. Las opciones del menú están programadas como una lista. Cada opción es un hiperenlace cuyo color de fondo cambia al pasar el ratón por encima
+1. Columna izquierda: ancho de 220px.
+1. Columna central : 480px, padding left 20px.
+1. Columna derecha: 180px, padding left 20px.
+1. Pie de página: 960px de ancho.
+1. Fijarse en los bordes de las cajas, de la página principal y del pie de página.
 
 ## Dame tu feedback
 
