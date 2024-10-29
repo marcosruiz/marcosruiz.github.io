@@ -6,7 +6,14 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
 ---
 
+> Artículo en construcción.
+{:.prompt-warning}
+
 ## Introducción
+
+El DOM es un estándar definido por el W3C y tiene diferentes versiones, llamadas niveles, como son DOM Level1, DOM Level 2, etc. Los navegadores actuales implementan en cierto grado el estándar DOM pero, en general, todos implementan completamente el DOM Level 1, el denominado DOM Level 0 (aunque no existe ese estándar en sí).
+
+El Modelo de Objetos del Documento (DOM), permite ver el mismo documento de otra manera, describiendo el contenido del documento como un conjunto de objetos, sobre los que un programa de Javascript puede interactuar.
 
 El DOM (Document Object Model) es una interfaz de programación que permite a los scripts actualizar el contenido, la estructura y el estilo de un documento mientras este se está visualizando en el navegador.
 
@@ -46,75 +53,61 @@ No.
   </div>
 </details>
 
-En esta unidad, nos enfocaremos en objetos de alto nivel:
+## Objeto document
 
-- **Window**: Representa la ventana del navegador y es el objeto global en los scripts del navegador.
-- **Document**: Representa el documento HTML que se carga en la ventana.
-- **Navigator**: Proporciona información sobre el navegador.
-  - `navigator.userAgent`
-  - `navigator.language`
-  - `navigator.geolocation`
-  - `navigator.getBattery()`
-- **Screen**: Proporciona información sobre la pantalla del usuario.
-  - `screen.width`
-  - `screen.height`
-  - `screen.availWidth`
-  - `screen.availHeight`
-- **History**: Permite la manipulación del historial del navegador.
-  - `history.back()`
-  - `history.forward()`
-  - `history.go()`
-  - `Location`: Proporciona la URL actual de la ventana.
-  - `location.href`
-  - `location.hostname`
-  - `location.pathname`
-  - `location.search`
-  - `location.hash`
-  - `location.reload()`
-- **Storage APIs**: LocalStorage, sessionStorage, IndexedDB
-- **Network APIs**: XMLHttpRequest, fetch
-- **Console**: Proporciona acceso a la consola de depuración del navegador.
-- **WebSocket**: Proporciona una interfaz para las conexiones WebSocket.
-- **Worker**: Permite la ejecución de scripts en segundo plano.
+Cada documento cargado en una ventana del navegador, será un objeto de tipo `document`.
 
-## Objeto window
+El objeto `document` proporciona a los scripts, el acceso a todos los elementos HTML dentro de una página.
 
-En la jerarquía de objetos, tenemos en la parte superior el objeto `window`.
+Este objeto forma parte además del objeto `window`, y puede ser accedido a través de la propiedad `window.document` o directamente `document` (ya que podemos omitir la referencia a la `window` actual).
 
-Este objeto está situado justamente ahí, porque es el contenedor principal de todo el contenido que se visualiza en el navegador. Tan pronto como se abre una ventana (`window`) en el navegador, incluso aunque no se cargue ningún documento en ella, este objeto `window` ya estará definido en memoria.
+### Colecciones del objeto document
 
-Además de la sección de contenido del objeto `window`, que es justamente dónde se cargarán los documentos, el campo de influencia de este objeto, abarca también las dimensiones de la ventana, así como todo lo que rodea al área de contenido: las barras de desplazamiento, barra de herramientas, barra de estado, etc.
+| Colección   | Descripción                                                    |
+| ----------- | -------------------------------------------------------------- |
+| `anchors[]` | Es un array que contiene todos los hiperenlaces del documento. |
+| `forms[]`   | Es un array que contiene todos los formularios del documento.  |
+| `images[]`  | Es un array que contiene todas las imágenes del documento.     |
+| `links[]`   | Es un array que contiene todos los enlaces del documento.      |
 
-Cómo se ve en la siguiente figura, debajo del objeto `window` tenemos otros objetos como el `navigator`, `screen`, `history`, `location` y el objeto `document`. Este objeto `document` será el que contendrá toda la jerarquía de objetos, que tengamos dentro de nuestra página HTML.
+### Propiedades del objeto Document
 
-![alt text](jerarquiaDeObjetos.png)
+| Propiedad  | Descripción                                                                          |
+| ---------- | ------------------------------------------------------------------------------------ |
+| `cookie`   | Devuelve todos los nombres/valores de las cookies en el documento.                   |
+| `domain`   | Cadena que contiene el nombre de dominio del servidor que cargó el documento.        |
+| `referrer` | Cadena que contiene la URL del documento desde el cuál llegamos al documento actual. |
+| `title`    | Devuelve o ajusta el título del documento.                                           |
+| `URL`      | Devuelve la URL completa del documento.                                              |
 
-### Acceso a propiedades y métodos
+### Métodos del objeto Document
 
-Para acceder a las propiedades y métodos del objeto `window`, lo podremos hacer de diferentes formas, dependiendo más de nuestro estilo, que de requerimientos sintácticos. Así, la forma más lógica y común de realizar esa referencia, incluiría el objeto `window` tal y como se muestra en este ejemplo:
+| Método                   | Descripción                                                                                             |
+| ------------------------ | ------------------------------------------------------------------------------------------------------- |
+| `close()`                | Cierra el flujo abierto previamente con `document.open()`.                                              |
+| `getElementById()`       | Para acceder a un elemento identificado por el id escrito entre paréntesis.                             |
+| `getElementsByName()`    | Para acceder a los elementos identificados por el atributo name escrito entre paréntesis.               |
+| `getElementsByTagName()` | Para acceder a los elementos identificados por el tag o la etiqueta escrita entre paréntesis.           |
+| `open()`                 | Abre el flujo de escritura para poder utilizar `document.write()` o `document.writeln` en el documento. |
+| `write()`                | Para poder escribir expresiones HTML o código de JavaScript dentro de un documento.                     |
+| `writeln()`              | Lo mismo que `write()` pero añade un salto de línea al final de cada instrucción.                       |
+
+(Voluntario) En el artículo de W3Schools [HTML DOM Documents](https://www.w3schools.com/jsref/dom_obj_document.asp) amplía información sobre el objeto `document`.
+
+
 
 ```javascript
-window.nombrePropiedad
-window.nombreMétodo([parámetros])
 ```
-
-Un objeto `window` también se podrá referenciar mediante la palabra `self`, cuando estamos haciendo la referencia desde el propio documento contenido en esa ventana:
 
 ```javascript
-self.nombrePropiedad
-self.nombreMétodo([parámetros])
 ```
-
-Podremos usar cualquiera de las dos referencias anteriores, pero intentaremos dejar la palabra reservada `self`, para scripts más complejos en los que tengamos múltiples marcos y ventanas.
-
-Debido a que el objeto `window` siempre estará presente cuando ejecutemos nuestros scripts, podremos omitirlo, en referencias a los objetos dentro de esa ventana. Así que, si escribimos:
 
 ```javascript
-nombrePropiedad
-nombreMétodo([parámetros])
 ```
 
-También funcionaría sin ningún problema, porque se asume que esas propiedades o métodos, son del objeto de mayor jerarquía (el objeto `window`) en el cuál nos encontramos.
+```javascript
+```
+
 
 ## Bibliografía
 
@@ -122,3 +115,5 @@ También funcionaría sin ningún problema, porque se asume que esas propiedades
 - <https://xxjcaxx.github.io/libro_dwec/dom.html>
 - <https://lenguajejs.com/>
 - <https://learnxinyminutes.com/docs/es-es/javascript-es/>
+- <https://manuais.iessanclemente.net/index.php/Objetos_de_m%C3%A1s_alto_nivel_en_JavaScript>
+- 
