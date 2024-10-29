@@ -172,6 +172,17 @@ Con la función `splice()`.
 {:.question}
 ¿Existen métodos para añadir elementos al principio y al final de un array? ¿Y para quitar?
 
+Lee la sección ["Arrays" del artículo Arrays Objetos y clases](https://xxjcaxx.github.io/libro_dwec/arraysobjetosclases.html#arrays).
+
+O si lo prefieres, puedes optar por leer los siguientes artículos:
+
+- [¿Qué es un Array en Javascript?](https://lenguajejs.com/javascript/arrays/que-es/)
+- [Desestructuración de arrays](https://lenguajejs.com/javascript/arrays/desestructuracion-arrays/)
+- [Buscar elementos en un array](https://lenguajejs.com/javascript/arrays/buscar-y-comprobar/)
+- [Modificar o crear subarrays](https://lenguajejs.com/javascript/arrays/modificar-subarrays/)
+- [Ordenación de un array](https://lenguajejs.com/javascript/arrays/ordenacion/)
+- (Voluntario) [Array functions](https://lenguajejs.com/javascript/arrays/array-functions/)
+
 {:.subsection}
 ### Objetos
 
@@ -229,7 +240,7 @@ Si. Se suele utilizar la función `fetch()`.
   </div>
 </details>
 
-
+Lee la sección ["Objetos en JavaScript" del artículo Arrays Objetos y clases](https://xxjcaxx.github.io/libro_dwec/arraysobjetosclases.html#objetos-en-javascript).
 
 {:.subsection}
 ### typeOf
