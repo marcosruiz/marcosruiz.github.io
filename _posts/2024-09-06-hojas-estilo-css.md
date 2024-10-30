@@ -141,7 +141,7 @@ body {
 {: file="mystyle.css" }
 
 <details class="card mb-2">
-  <summary class="card-header question">NO uses @import</summary>
+  <summary class="card-header question">¿Debería usar @import?</summary>
   <div class="card-body" markdown="1">
 
 Se puede importar una hoja de estilo con la sentencia `@import` de CSS pero es más recomendable utilizar la etiqueta `link`. Esta sentencia puede usarse en un archivo CSS o dentro del elemento style. Un ejemplo de este último método sería:
