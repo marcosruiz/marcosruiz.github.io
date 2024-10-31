@@ -29,15 +29,15 @@ console.log(2 / "bla bla");  // NaN, "bla bla" no se puede convertir a número
 
 Estos son los tipos soportados, como se puede ver, hay menos cantidad que en otros lenguajes sin perder la capacidad de representación de la información. El caso de las variables numéricas es interesante porque internamente usa coma flotante de doble precisión para cualquier número.
 
-- Número (Number)
-- Cadena (String)
-- Booleano (Boolean)
-- Lista (Array)
-- Nulo (Null)
-- Función (Function)
-- Objeto (Object)
+- Número (`number`)
+- Cadena (`string`)
+- Booleano (`boolean`)
+- Lista (`array`)
+- Nulo (`null`)
+- Función (`function`)
+- Objeto (`object`)
 
-Cabe destacar que Javascript tiene los tipos stringy String o numbery Number, así como Boolean. Con mayúsculas son objetos especiales que pueden ser usados como primitivos, pero también tienen métodos. Las strings siempre se comportan tanto como primitivos como String.
+Cabe destacar que Javascript tiene los tipos string y String o number y Number, así como Boolean. Con mayúsculas son objetos especiales que pueden ser usados como primitivos, pero también tienen métodos. Las strings siempre se comportan tanto como primitivos como String.
 
 Además, soporta valores especiales:
 
@@ -59,25 +59,18 @@ Además, soporta valores especiales:
   <summary class="card-header question">¿Sabrías decir algún tipo de dato de JavaScript?</summary>
   <div class="card-body" markdown="1">
 
-Number, BigInt, String, Boolean, undefined, Function, Symbol, Object
+number, bigint, string, boolean, undefined, function, symbol, object
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
 
 {:.subsection}
-### Number
+### number
 
 Pueden almacenar tanto números enteros como números decimales. Para expresar el valor de un número decimal se utiliza el separador.
 
 [¿Qué es un Number?](https://lenguajejs.com/javascript/number/variables-numericas/)
-
-{:.subsection}
-### Strings
-
-Las cadenas de texto son una secuencia de caracteres. Para expresar su valor, éstas se pueden encerrar entra comillas simples `'` o comillas dobles `"`.
-
-Leer [¿Qué es un String?](https://lenguajejs.com/javascript/string/variables-texto/)
 
 {:.question}
 ¿Es el número 18.5 tipo number?
@@ -87,6 +80,69 @@ Leer [¿Qué es un String?](https://lenguajejs.com/javascript/string/variables-t
 
 {:.question}
 ¿Existe el concepto de infinito en JavaScript?
+
+{:.subsection}
+### strings
+
+Las cadenas de texto son una secuencia de caracteres. Para expresar su valor, éstas se pueden encerrar entra comillas simples `'` o comillas dobles `"`.
+
+La forma en la que se crean las cadenas en JavaScript, hace que cuando tengamos que emplear ciertos caracteres especiales en una cadena de texto, tengamos que escaparlos, empleando el símbolo `\` seguido del carácter.
+
+| Símbolos | Explicación       |
+| -------- | ----------------- |
+| `\"`       | Comillas dobles.  |
+| `\'`       | Comilla simple.   |
+| `\\`       | Contrabarra inclinada.  |
+| `\b`       | Retroceso.        |
+| `\t`       | Tabulador.        |
+| `\n`       | Nueva línea.      |
+| `\r`       | Salto de línea.   |
+| `\f`       | Avance de página. |
+
+Para crear un objeto String lo podremos hacer de la siguientes formas:
+
+```javascript
+let cadena1 = new String('Primera cadena');
+let cadena2 = "Segunda cadena";
+let cadena3 = 'Tercera cadena';
+let todasCadenas = `${cadena1} - ${cadena2} - ${cadena3}`;
+```
+
+Es decir, cada vez que tengamos una cadena de texto, en realidad es un objeto String que tiene propiedades y métodos:
+
+```javascript
+cadena.propiedad;
+cadena.metodo( [parámetros] );
+```
+
+Lee [¿Qué es un String?](https://lenguajejs.com/javascript/string/variables-texto/)
+
+{:.question}
+¿Qué es la interpolación de variables?
+
+#### Propiedades y métodos de String
+
+| Propiedad | Descripción                         |
+| --------- | ----------------------------------- |
+| `length`    | Contiene la longitud de una cadena. |
+
+| Métodos        | Descripción                                                                                                                   |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `charAt()`       | Devuelve el carácter especificado por la posición que se indica entre paréntesis.                                             |
+| `charCodeAt()`   | Devuelve el Unicode del carácter especificado por la posición que se indica entre paréntesis.                                 |
+| `concat()`       | Une una o más cadenas y devuelve el resultado de esa unión.                                                                   |
+| `fromCharCode()` | Convierte valores Unicode a caracteres.                                                                                       |
+| `indexOf()`      | Devuelve la posición de la primera ocurrencia del carácter buscado en la cadena.                                              |
+| `lastIndexOf()`  | Devuelve la posición de la última ocurrencia del carácter buscado en la cadena.                                               |
+| `match()`        | Busca una coincidencia entre una expresión regular y una cadena y devuelve las coincidencias o null si no ha encontrado nada. |
+| `replace()`      | Busca una subcadena en la cadena y la reemplaza por la nueva cadena especificada.                                             |
+| `search()`       | Busca una subcadena en la cadena y devuelve la posición dónde se encontró.                                                    |
+| `slice()`        | Extrae una parte de la cadena y devuelve una nueva cadena.                                                                    |
+| `split()`        | Divide una cadena en un array de subcadenas.                                                                                  |
+| `substr()`       | Extrae los caracteres de una cadena, comenzando en una determinada posición y con el número de caracteres indicado.           |
+| `substring()`    | Extrae los caracteres de una cadena entre dos índices especificados.                                                          |
+| `toLowerCase()`  | Convierte una cadena en minúsculas.                                                                                           |
+| `toUpperCase()`  | Convierte una cadena en mayúsculas.                                                                                           |
 
 {:.subsubsection}
 #### Template literal o template strings

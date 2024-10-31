@@ -155,7 +155,7 @@ Ejemplo que permite abrir y cerrar una sub-ventana:
 El objeto `window` representa una ventana abierta en un navegador. Si un documento contiene marcos (`<frame>` o `<iframe>`), el navegador crea un objeto `window` para el documento HTML, y un objeto `window` adicional para para cada marco.
 
 | Propiedad       | Descripción                                                                         |
-| :-------------- | :---------------------------------------------------------------------------------- |
+| -------------- | ---------------------------------------------------------------------------------- |
 | `closed`        | Devuelve un valor Boolean indicando cuando una ventana ha sido cerrada o no.        |
 | `defaultStatus` | Ajusta o devuelve el valor por defecto de la barra de estado de una ventana.        |
 | `document`      | Devuelve el objeto document para la ventana.                                        |
@@ -173,7 +173,7 @@ El objeto `window` representa una ventana abierta en un navegador. Si un documen
 ### Métodos del objeto window
 
 | Método            | Descripción                                                                                |
-| :---------------- | :----------------------------------------------------------------------------------------- |
+| ---------------- | ----------------------------------------------------------------------------------------- |
 | `alert()`         | Muestra una ventana emergente de alerta y un botón de aceptar.                             |
 | `blur()`          | Elimina el foco de la ventana actual.                                                      |
 | `clearInterval()` | Resetea el cronómetro ajustado con setInterval().                                          |
@@ -194,10 +194,10 @@ El objeto `location` contiene información referente a la URL actual.
 
 Este objeto, es parte del objeto `window` y accedemos a él a través de la propiedad `window.location`.
 
-### Propiedades del objeto Location
+### Propiedades del objeto location
 
 | Propiedad  | Descripción                                                                                  |
-| :--------- | :------------------------------------------------------------------------------------------- |
+| --------- | ------------------------------------------------------------------------------------------- |
 | `hash`     | Cadena que contiene el nombre del enlace, dentro de la URL.                                  |
 | `host`     | Cadena que contiene el nombre del servidor y el número del puerto, dentro de la URL.         |
 | `hostname` | Cadena que contiene el nombre de dominio del servidor (o la dirección IP), dentro de la URL. |
@@ -210,7 +210,7 @@ Este objeto, es parte del objeto `window` y accedemos a él a través de la prop
 ### Métodos del objeto location
 
 | Método      | Descripción                                                                    |
-| :---------- | :----------------------------------------------------------------------------- |
+| ---------- | ----------------------------------------------------------------------------- |
 | `assign()`  | Carga un nuevo documento.                                                      |
 | `reload()`  | Vuelve a cargar la URL especificada en la propiedad href del objeto location.  |
 | `replace()` | Reemplaza el historial actual mientras carga la URL especificada en cadenaURL. |
@@ -219,7 +219,7 @@ Este objeto, es parte del objeto `window` y accedemos a él a través de la prop
 
 Este objeto `navigator`, contiene información sobre el navegador que estamos utilizando cuando abrimos una URL o un documento local.
 
-### Propiedades del objeto location
+### Propiedades del objeto navigator
 
 | Propiedad       | Descripción                                                                                                                                            |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -230,7 +230,7 @@ Este objeto `navigator`, contiene información sobre el navegador que estamos ut
 | `platform`      | Cadena con la plataforma sobre la que se está ejecutando el programa cliente.                                                                          |
 | `userAgent`     | Cadena que contiene la cabecera completa del agente enviada en una petición HTTP. Contiene la información de las propiedades appCodeName y appVersion. |
 
-### Métodos del objeto location
+### Métodos del objeto navigator
 
 | Método          | Descripción                                                                                        |
 | --------------- | -------------------------------------------------------------------------------------------------- |
