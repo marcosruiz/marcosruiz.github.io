@@ -82,67 +82,14 @@ Pueden almacenar tanto números enteros como números decimales. Para expresar e
 ¿Existe el concepto de infinito en JavaScript?
 
 {:.subsection}
-### strings
+### string
 
 Las cadenas de texto son una secuencia de caracteres. Para expresar su valor, éstas se pueden encerrar entra comillas simples `'` o comillas dobles `"`.
-
-La forma en la que se crean las cadenas en JavaScript, hace que cuando tengamos que emplear ciertos caracteres especiales en una cadena de texto, tengamos que escaparlos, empleando el símbolo `\` seguido del carácter.
-
-| Símbolos | Explicación       |
-| -------- | ----------------- |
-| `\"`       | Comillas dobles.  |
-| `\'`       | Comilla simple.   |
-| `\\`       | Contrabarra inclinada.  |
-| `\b`       | Retroceso.        |
-| `\t`       | Tabulador.        |
-| `\n`       | Nueva línea.      |
-| `\r`       | Salto de línea.   |
-| `\f`       | Avance de página. |
-
-Para crear un objeto String lo podremos hacer de la siguientes formas:
-
-```javascript
-let cadena1 = new String('Primera cadena');
-let cadena2 = "Segunda cadena";
-let cadena3 = 'Tercera cadena';
-let todasCadenas = `${cadena1} - ${cadena2} - ${cadena3}`;
-```
-
-Es decir, cada vez que tengamos una cadena de texto, en realidad es un objeto String que tiene propiedades y métodos:
-
-```javascript
-cadena.propiedad;
-cadena.metodo( [parámetros] );
-```
 
 Lee [¿Qué es un String?](https://lenguajejs.com/javascript/string/variables-texto/)
 
 {:.question}
 ¿Qué es la interpolación de variables?
-
-#### Propiedades y métodos de String
-
-| Propiedad | Descripción                         |
-| --------- | ----------------------------------- |
-| `length`    | Contiene la longitud de una cadena. |
-
-| Métodos        | Descripción                                                                                                                   |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `charAt()`       | Devuelve el carácter especificado por la posición que se indica entre paréntesis.                                             |
-| `charCodeAt()`   | Devuelve el Unicode del carácter especificado por la posición que se indica entre paréntesis.                                 |
-| `concat()`       | Une una o más cadenas y devuelve el resultado de esa unión.                                                                   |
-| `fromCharCode()` | Convierte valores Unicode a caracteres.                                                                                       |
-| `indexOf()`      | Devuelve la posición de la primera ocurrencia del carácter buscado en la cadena.                                              |
-| `lastIndexOf()`  | Devuelve la posición de la última ocurrencia del carácter buscado en la cadena.                                               |
-| `match()`        | Busca una coincidencia entre una expresión regular y una cadena y devuelve las coincidencias o null si no ha encontrado nada. |
-| `replace()`      | Busca una subcadena en la cadena y la reemplaza por la nueva cadena especificada.                                             |
-| `search()`       | Busca una subcadena en la cadena y devuelve la posición dónde se encontró.                                                    |
-| `slice()`        | Extrae una parte de la cadena y devuelve una nueva cadena.                                                                    |
-| `split()`        | Divide una cadena en un array de subcadenas.                                                                                  |
-| `substr()`       | Extrae los caracteres de una cadena, comenzando en una determinada posición y con el número de caracteres indicado.           |
-| `substring()`    | Extrae los caracteres de una cadena entre dos índices especificados.                                                          |
-| `toLowerCase()`  | Convierte una cadena en minúsculas.                                                                                           |
-| `toUpperCase()`  | Convierte una cadena en mayúsculas.                                                                                           |
 
 {:.subsubsection}
 #### Template literal o template strings
