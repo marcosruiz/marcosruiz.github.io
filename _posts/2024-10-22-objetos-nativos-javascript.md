@@ -40,7 +40,7 @@ let cadena3 = 'Tercera cadena';
 let todasCadenas = `${cadena1} - ${cadena2} - ${cadena3}`;
 ```
 
-Es decir, cada vez que tengamos una cadena de texto, en realidad es un objeto String que tiene propiedades y métodos:
+Es decir, cada vez que tengamos una cadena de texto, en realidad es un objeto `String` que tiene propiedades y métodos:
 
 ```javascript
 cadena.propiedad;
@@ -88,7 +88,7 @@ console.log(textObj1 === textObj2); // false
 {:.section}
 ## Objeto Math
 
-El objeto Math no posee un constructor (no nos permitirá por lo tanto crear o instanciar nuevos objetos que sean de tipo Math), por lo que para llamar a sus propiedades y métodos, lo haremos anteponiendo Math a la propiedad o el método. Por ejemplo:
+El objeto `Math` no posee un constructor (no nos permitirá por lo tanto crear o instanciar nuevos objetos que sean de tipo `Math`), por lo que para llamar a sus propiedades y métodos, lo haremos anteponiendo `Math` a la propiedad o el método. Por ejemplo:
 
 ```javascript
 let x = Math.PI;            // Devuelve el número PI.
@@ -146,7 +146,7 @@ Los objetos `Number` son creados con new `Number()`.
 
 | Propiedad         | Descripción                                                        |
 | ----------------- | ------------------------------------------------------------------ |
-| `constructor`       | Devuelve la función que creó el objeto Number.                     |
+| `constructor`       | Devuelve la función que creó el objeto `Number`.                     |
 | `MAX_VALUE`         | Devuelve el número más alto disponible en JavaScript.              |
 | `MIN_VALUE`         | Devuelve el número más pequeño disponible en JavaScript.           |
 | `NEGATIVE_INFINITY` | Representa a infinito negativo (se devuelve en caso de overflow).  |
@@ -158,7 +158,7 @@ Los objetos `Number` son creados con new `Number()`.
 | `toExponential(x)` | Convierte un número a su notación exponencial.                                                                                                                                                                                         |
 | `toFixed(x)`       | Formatea un número con x digitos decimales después del punto decimal.                                                                                                                                                                  |
 | `toPrecision(x)`   | Formatea un número a la longitud x.                                                                                                                                                                                                    |
-| `toString()`       | Convierte un objeto Number en una cadena. Si se pone 2 como parámetro se mostrará el número en binario. Si se pone 8 como parámetro se mostrará el número en octal. Si se pone 16 como parámetro se mostrará el número en hexadecimal. |
+| `toString()`       | Convierte un objeto `Number` en una cadena. Si se pone 2 como parámetro se mostrará el número en binario. Si se pone 8 como parámetro se mostrará el número en octal. Si se pone 16 como parámetro se mostrará el número en hexadecimal. |
 | `valueOf()`        | Devuelve el valor primitivo de un objeto Number.                                                                                                                                                                                       |
 
 {:.section}
@@ -182,9 +182,9 @@ El objeto `Boolean` se utiliza para convertir un valor no lógico, a un valor l�
 {:.section}
 ## Objeto Date
 
-El objeto Date se utiliza para trabajar con fechas y horas. Los objetos Date se crean con new Date().
+El objeto Date se utiliza para trabajar con fechas y horas. Los objetos Date se crean con `new Date()`.
 
-Hay 4 formas de instanciar (crear un objeto de tipo Date):
+Hay 4 formas de instanciar (crear un objeto de tipo `Date`):
 
 ```javascript
 let dia1 = new Date();
