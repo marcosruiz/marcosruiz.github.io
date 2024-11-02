@@ -9,6 +9,7 @@ img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
 > Artículo en construcción.
 {:.prompt-warning}
 
+{:.section}
 ## Introducción
 
 El Modelo de Objetos del Documento (DOM), permite ver el mismo documento de otra manera, describiendo el contenido del documento como un árbol de nodos, sobre los que un programa de Javascript puede interactuar.
@@ -51,6 +52,7 @@ No.
   </div>
 </details>
 
+{:.section}
 ## Objeto document
 
 El objeto `document` representa cualquier página web cargada en el navegador y sirve como punto de acceso a todos los elementos HTML, que es el árbol DOM (Document Object Model).
@@ -61,6 +63,7 @@ El objeto `document` proporciona a los scripts, el acceso a todos los elementos 
 
 Este objeto forma parte además del objeto `window`, y puede ser accedido a través de la propiedad `window.document` o directamente `document` (ya que podemos omitir la referencia a la `window` actual).
 
+{:.subsection}
 ### Colecciones del objeto document
 
 | Colección   | Descripción                                                    |
@@ -70,6 +73,7 @@ Este objeto forma parte además del objeto `window`, y puede ser accedido a trav
 | `images[]`  | Es un array que contiene todas las imágenes del documento.     |
 | `links[]`   | Es un array que contiene todos los enlaces del documento.      |
 
+{:.subsection}
 ### Propiedades del objeto document
 
 | Propiedad  | Descripción                                                                          |
@@ -80,6 +84,7 @@ Este objeto forma parte además del objeto `window`, y puede ser accedido a trav
 | `title`    | Devuelve o ajusta el título del documento.                                           |
 | `URL`      | Devuelve la URL completa del documento.                                              |
 
+{:.subsection}
 ### Métodos del objeto document
 
 | Método                   | Descripción                                                                                             |
@@ -94,6 +99,7 @@ Este objeto forma parte además del objeto `window`, y puede ser accedido a trav
 
 (Voluntario) En el artículo de W3Schools [HTML DOM Documents](https://www.w3schools.com/jsref/dom_obj_document.asp) amplía información sobre el objeto `document`.
 
+{:.section}
 ## Buscar nodos en el DOM
 
 Para manipular elementos del DOM, primero debemos encontrarlos. Los métodos más comunes son:
@@ -141,6 +147,7 @@ El DOM proporciona accesos directos (atajos) para obtener elementos comunes:
 - `document.images`: obtiene una colección de todas las imágenes del documento.
 - `document.scripts`: obtiene una colección de todos los scripts del documento.
 
+{:.section}
 ## Modificar nodos del DOM
 
 Una vez que hemos encontrado los nodos, podemos modificarlos. Algunos métodos útiles incluyen:
@@ -162,6 +169,7 @@ element.append('Texto adicional');
 element.remove();
 ```
 
+{:.subsection}
 ### Atributos
 
 Los elementos suelen tener atributos. Algunos son especiales como el id o la class. El id está accesible directamente como atributo del elemento, así como el className, aunque luego veremos que es mejor manipularlo de otra manera. Otros atributos como value en los `Input` o `scr` en los `<img>` también pueden ser leídos y modificados como propiedades. Se trata de los atributos estándar.
@@ -175,6 +183,7 @@ button.setAttribute("name", "helloButton");
 button.setAttribute("disabled", "");
 ```
 
+{:.subsection}
 ### Propiedades
 
 Puesto que los elementos HTML al ser parseados y convertidos al DOM se convierten en objetos, estos son manipulables como cualquier objeto, pudiendo añadir o modificar propiedades, incluso aquellas que vienen en el HTML como atributos estándar.
@@ -194,6 +203,7 @@ Hay unos atributos que se sincronizan de forma especial con las propiedades. Son
   </div>
 </details>
 
+{:.subsection}
 ### Estilos
 
 Para manipular los estilos de un elemento, podemos usar propiedades de estilo y clases CSS.
@@ -211,12 +221,14 @@ element.classList.remove('old-class');
 
 `ClassName` no debería usarse, ya que puede molestar si se usa classList por otro lado. Usaremos classList en todas las ocasiones excepto para eliminar todas las clases.
 
+{:.section}
 ## Creación de nodos
 
 Se pueden crear elementos totalmente de forma programática. Pero puede ser tedioso. Muchas veces, si sabemos que hay fragmentos de HTML bastante estáticos, podemos usar `innerHTML` y `.append()` con plantillas creadas mediante strings.
 
 Para crear elementos del DOM mediante plantillas hay muchas formas. Obviaremos las más farragosas y nos centraremos en aquellas que son más rápidas.
 
+{:.subsection}
 ### Creación de elementos con Template Literals
 
 Los template literals y las interpolaciones de cadenas permiten crear contenido dinámico de manera sencilla.
@@ -243,6 +255,7 @@ function generateGraphCard(graph) {
 {:.question}
 ¿Que tipo de objeto debería ser el atributo/parámetro `graph`?
 
+{:.subsection}
 ### Creación de elementos con template
 
 La etiqueta `<template>` es especial. Su interior no se renderiza como el resto, pero queda accesible para ser buscado. La utilidad es crear plantillas en HTML que puedan ser clonadas y rellenadas como se desee.
@@ -304,6 +317,7 @@ if ("content" in document.createElement("template")) {
 
 Cualquiera de las formas que hemos visto para crear elementos, mediante template literal o con templates es válida y combinable.
 
+{:.section}
 ## Esperar a que Cargue el DOM
 
 Podemos asegurarnos de que el DOM esté completamente cargado antes de ejecutar nuestro script utilizando `DOMContentLoaded` de la siguiente manera:
@@ -350,6 +364,7 @@ La instrucción `"use strict"` en JavaScript activa el modo estricto en el códi
   </div>
 </details>
 
+{:.subsection}
 ### Atributos de Datos
 
 HTML5 permite agregar atributos personalizados no visuales a las etiquetas utilizando data-*. Estos atributos pueden ser accesibles a través de JavaScript usando dataset.

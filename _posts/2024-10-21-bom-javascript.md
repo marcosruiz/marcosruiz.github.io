@@ -9,6 +9,7 @@ img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
 > Artículo en construcción.
 {:.prompt-warning}
 
+{:.section}
 ## Introducción
 
 El código JavaScript ejecutado en un navegador tiene acceso a un número alto de objetos. Estos objetos pueden estar divididos en varios tipos:
@@ -54,6 +55,7 @@ Así, ahora, nos centraremos en objetos de alto nivel, que se encontrarán frecu
 - **WebSocket**: Proporciona una interfaz para las conexiones WebSocket.
 - **Worker**: Permite la ejecución de scripts en segundo plano.
 
+{:.section}
 ## Objeto window
 
 En la jerarquía de objetos, tenemos en la parte superior el objeto `window`.
@@ -66,6 +68,7 @@ Cómo se ve en la siguiente figura, debajo del objeto `window` tenemos otros obj
 
 ![alt text](jerarquiaDeObjetos.png)
 
+{:.subsection}
 ### Acceso a propiedades y métodos del objeto window
 
 Para acceder a las propiedades y métodos del objeto `window`, lo podremos hacer de diferentes formas, dependiendo más de nuestro estilo, que de requerimientos sintácticos. Así, la forma más lógica y común de realizar esa referencia, incluiría el objeto `window` tal y como se muestra en este ejemplo:
@@ -93,6 +96,7 @@ nombreMétodo([parámetros])
 
 También funcionaría sin ningún problema, porque se asume que esas propiedades o métodos, son del objeto de mayor jerarquía (el objeto `window`) en el cuál nos encontramos.
 
+{:.subsection}
 ### Gestión de ventanas
 
 Para generar una nueva ventana en el navegador hacemos `window.open()`. Este método contiene hasta tres parámetros, que definen las características de la nueva ventana:
@@ -150,6 +154,7 @@ Ejemplo que permite abrir y cerrar una sub-ventana:
 </html>
 ```
 
+{:.subsection}
 ### Propiedades del objeto window
 
 El objeto `window` representa una ventana abierta en un navegador. Si un documento contiene marcos (`<frame>` o `<iframe>`), el navegador crea un objeto `window` para el documento HTML, y un objeto `window` adicional para para cada marco.
@@ -170,6 +175,7 @@ El objeto `window` representa una ventana abierta en un navegador. Si un documen
 | `self`          | Devuelve la ventana actual.                                                         |
 | `status`        | Ajusta el texto de la barra de estado de una ventana.                               |
 
+{:.subsection}
 ### Métodos del objeto window
 
 | Método            | Descripción                                                                                |
@@ -184,6 +190,7 @@ El objeto `window` representa una ventana abierta en un navegador. Si un documen
 | `open()`          | Abre una nueva ventana de navegación.                                                      |
 | `prompt()`        | Muestra una ventana de diálogo para introducir datos.                                      |
 
+{:.section}
 ## Objeto location
 
 El objeto `location` contiene información referente a la URL actual.
@@ -194,6 +201,7 @@ El objeto `location` contiene información referente a la URL actual.
 
 Este objeto, es parte del objeto `window` y accedemos a él a través de la propiedad `window.location`.
 
+{:.subsection}
 ### Propiedades del objeto location
 
 | Propiedad  | Descripción                                                                                  |
@@ -207,6 +215,7 @@ Este objeto, es parte del objeto `window` y accedemos a él a través de la prop
 | `protocol` | Cadena que contiene el protocolo utilizado (incluyendo los dos puntos), dentro de la URL.    |
 | `search`   | Cadena que contiene la información pasada en una llamada a un script, dentro de la URL.      |
 
+{:.subsection}
 ### Métodos del objeto location
 
 | Método      | Descripción                                                                    |
@@ -215,10 +224,12 @@ Este objeto, es parte del objeto `window` y accedemos a él a través de la prop
 | `reload()`  | Vuelve a cargar la URL especificada en la propiedad href del objeto location.  |
 | `replace()` | Reemplaza el historial actual mientras carga la URL especificada en cadenaURL. |
 
+{:.section}
 ## Objeto navigator
 
 Este objeto `navigator`, contiene información sobre el navegador que estamos utilizando cuando abrimos una URL o un documento local.
 
+{:.subsection}
 ### Propiedades del objeto navigator
 
 | Propiedad       | Descripción                                                                                                                                            |
@@ -230,12 +241,14 @@ Este objeto `navigator`, contiene información sobre el navegador que estamos ut
 | `platform`      | Cadena con la plataforma sobre la que se está ejecutando el programa cliente.                                                                          |
 | `userAgent`     | Cadena que contiene la cabecera completa del agente enviada en una petición HTTP. Contiene la información de las propiedades appCodeName y appVersion. |
 
+{:.subsection}
 ### Métodos del objeto navigator
 
 | Método          | Descripción                                                                                        |
 | --------------- | -------------------------------------------------------------------------------------------------- |
 | `javaEnabled()` | Devuelve `true` si el cliente permite la utilización de Java, en caso contrario, devuelve `false`. |
 
+{:.section}
 ## Objeto document
 
 Lee el artículo [¿Qué es el DOM?](/posts/dom-javascript).

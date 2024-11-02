@@ -6,12 +6,14 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
 ---
 
+{:.section}
 ## Introducción
 
 En esta sección vamos a echar una ojeada a objetos que son nativos en JavaScript, ésto es, aquello que JavaScript nos da, listos para su utilización en nuestra aplicación.
 
 Echaremos un vistazo a los objetos `String`, `Math`, `Number`, `Boolean` y `Date`.
 
+{:.section}
 ## Objeto String
 
 Recuerda que las cadenas de texto son una secuencia de caracteres. Para expresar su valor, éstas se pueden encerrar entra comillas simples `'` o comillas dobles `"`.
@@ -58,6 +60,7 @@ console.log(textObj1 == textObj2); // true
 console.log(textObj1 === textObj2); // false
 ```
 
+{:.subsection}
 ### Propiedades y métodos de String
 
 | Propiedad | Descripción                         |
@@ -82,6 +85,7 @@ console.log(textObj1 === textObj2); // false
 | `toLowerCase()`  | Convierte una cadena en minúsculas.                                                                                           |
 | `toUpperCase()`  | Convierte una cadena en mayúsculas.                                                                                           |
 
+{:.section}
 ## Objeto Math
 
 El objeto Math no posee un constructor (no nos permitirá por lo tanto crear o instanciar nuevos objetos que sean de tipo Math), por lo que para llamar a sus propiedades y métodos, lo haremos anteponiendo Math a la propiedad o el método. Por ejemplo:
@@ -91,6 +95,7 @@ let x = Math.PI;            // Devuelve el número PI.
 let y = Math.sqrt(16);      // Devuelve la raíz cuadrada de 16.
 ```
 
+{:.subsection}
 ### Propiedades y métodos del objeto Math
 
 | Propiedad | Descripción                                                     |
@@ -123,6 +128,7 @@ let y = Math.sqrt(16);      // Devuelve la raíz cuadrada de 16.
 | `sqrt(x)`          | Devuelve la raíz cuadrada de x.                                             |
 | `tan(x)`           | Devuelve la tangente de un ángulo.                                          |
 
+{:.section}
 ## Objeto Number
 
 El objeto `Number` se usa muy raramente, ya que para la mayor parte de los casos, JavaScript satisface las necesidades del día a día con los valores numéricos que almacenamos en variables. Pero el objeto Number contiene alguna información y capacidades muy interesantes.
@@ -135,6 +141,7 @@ El objeto `Number`, es un objeto envoltorio para valores numéricos primitivos.
 
 Los objetos `Number` son creados con new `Number()`.
 
+{:.subsection}
 ### Propiedades y métodos del objeto Number
 
 | Propiedad         | Descripción                                                        |
@@ -154,10 +161,12 @@ Los objetos `Number` son creados con new `Number()`.
 | `toString()`       | Convierte un objeto Number en una cadena. Si se pone 2 como parámetro se mostrará el número en binario. Si se pone 8 como parámetro se mostrará el número en octal. Si se pone 16 como parámetro se mostrará el número en hexadecimal. |
 | `valueOf()`        | Devuelve el valor primitivo de un objeto Number.                                                                                                                                                                                       |
 
+{:.section}
 ## Objeto Boolean
 
 El objeto `Boolean` se utiliza para convertir un valor no lógico, a un valor lógico (`true` o `false`).
 
+{:.subsection}
 ### Propiedades y métodos del objeto Boolean
 
 | Propiedad      | Descripción                                            |
@@ -170,6 +179,7 @@ El objeto `Boolean` se utiliza para convertir un valor no lógico, a un valor l�
 | `toString()` | Convierte un valor Boolean a una cadena y devuelve el resultado. |
 | `valueOf()`  | Devuelve el valor primitivo de un objeto Boolean.                |
 
+{:.section}
 ## Objeto Date
 
 El objeto Date se utiliza para trabajar con fechas y horas. Los objetos Date se crean con new Date().
@@ -183,6 +193,7 @@ let dia3 = new Date(cadena de Fecha);
 let dia4 = new Date(año, mes, día, horas, minutos, segundos, milisegundos);
 ```
 
+{:.subsection}
 ### Propiedades y métodos del objeto Date
 
 | Propiedad      | Descripción                                            |
