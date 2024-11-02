@@ -94,7 +94,7 @@ Este objeto forma parte además del objeto `window`, y puede ser accedido a trav
 
 (Voluntario) En el artículo de W3Schools [HTML DOM Documents](https://www.w3schools.com/jsref/dom_obj_document.asp) amplía información sobre el objeto `document`.
 
-## Buscar nodos
+## Buscar nodos en el DOM
 
 Para manipular elementos del DOM, primero debemos encontrarlos. Los métodos más comunes son:
 
@@ -113,7 +113,6 @@ let allElements = document.querySelectorAll('.exampleClass');
 ```
 
 A menudo, necesitamos acceder a un nodo específico a partir de uno ya existente en el DOM. Para esto, podemos utilizar los siguientes métodos aplicados a un elemento del árbol DOM:
-
 
 - `elemento.parentElement`: retorna el elemento padre del nodo actual.
 - `elemento.children`: retorna una colección de todos los elementos hijos del nodo actual (sólo elementos HTML, no incluye comentarios ni nodos de texto).
@@ -142,7 +141,7 @@ El DOM proporciona accesos directos (atajos) para obtener elementos comunes:
 - `document.images`: obtiene una colección de todas las imágenes del documento.
 - `document.scripts`: obtiene una colección de todos los scripts del documento.
 
-## Modificar nodos
+## Modificar nodos del DOM
 
 Una vez que hemos encontrado los nodos, podemos modificarlos. Algunos métodos útiles incluyen:
 
@@ -184,6 +183,17 @@ Atributos como `id` se sincronizan perfectamente con la propiedad. Otros como `v
 
 Hay unos atributos que se sincronizan de forma especial con las propiedades. Son los que comienzan por `data-`, que se guardan en un objeto `.dataset` del elemento en el DOM.
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué diferencia hay entre un atributo y una propiedad?</summary>
+  <div class="card-body" markdown="1">
+
+- Atributos: es lo que está escrito en HTML.
+- Propiedades: es lo que hay en los objetos DOM.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 ### Estilos
 
 Para manipular los estilos de un elemento, podemos usar propiedades de estilo y clases CSS.
@@ -203,7 +213,7 @@ element.classList.remove('old-class');
 
 ## Creación de nodos
 
-Se pueden crear elementos totalmente de forma programática. Pero puede ser tedioso. Muchas veces, si sabemos que hay fragmentos de HTML bastante estáticos, podemos usar innerHTML y .append() con plantillas creadas mediante strings.
+Se pueden crear elementos totalmente de forma programática. Pero puede ser tedioso. Muchas veces, si sabemos que hay fragmentos de HTML bastante estáticos, podemos usar `innerHTML` y `.append()` con plantillas creadas mediante strings.
 
 Para crear elementos del DOM mediante plantillas hay muchas formas. Obviaremos las más farragosas y nos centraremos en aquellas que son más rápidas.
 
@@ -230,11 +240,14 @@ function generateGraphCard(graph) {
 }
 ```
 
+{:.question}
+¿Que tipo de objeto debería ser el atributo/parámetro `graph`?
+
 ### Creación de elementos con template
 
 La etiqueta `<template>` es especial. Su interior no se renderiza como el resto, pero queda accesible para ser buscado. La utilidad es crear plantillas en HTML que puedan ser clonadas y rellenadas como se desee.
 
-Veamos este HTML extraido de la web de referencia: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template:
+Veamos este HTML extraido de la web de referencia: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template>:
 
 ```javascript
 <table id="producttable">
@@ -289,7 +302,73 @@ if ("content" in document.createElement("template")) {
 }
 ```
 
-Cualquiera de las formas que hemos visto para crear elementos, mediante template literal o funciones tagged, creando nuestras interpolaciones o con templates es válida y combinable. Para lograr lo que los frameworks hacen con sus motores de plantilla hay mucho trecho, porque no se ha hablado del shadow DOM y otras técnicas avanzadas como los custom elements para lograr plantillas con reactividad. Si logramos hacer un motor de plantillas suficientemente genérico para la aplicación en la que estamos trabajando, el uso de frameworks queda mucho menos justificado.
+Cualquiera de las formas que hemos visto para crear elementos, mediante template literal o con templates es válida y combinable.
+
+## Esperar a que Cargue el DOM
+
+Podemos asegurarnos de que el DOM esté completamente cargado antes de ejecutar nuestro script utilizando `DOMContentLoaded` de la siguiente manera:
+
+```javascript
+(function () {
+    "use strict";
+    document.addEventListener("DOMContentLoaded", function () {
+        for (let i = 0; i < 100; i++) {
+            let container = document.getElementById("content");
+            let number = document.createElement("p");
+            number.innerHTML = i;
+            container.appendChild(number);
+        }
+    });
+})();
+```
+
+También podemos colocar nuestro script al final del cuerpo (`body`) del documento HTML.
+
+Si, además, añadimos el atributo `defer` a un script, este se descargará de manera asíncrona y se ejecutará cuando el HTML haya sido totalmente interpretado y justo antes que `DOMContentLoaded`.
+
+Si es necesario esperar a que carge también todo el CSS, es decir el `CSSOM`, podemos recurrir al evento `load`, que espera a cargar e interpretar todo el CSS. Pero si no es necesario, es mejor esperar sólo al DOM. Esto es porque hay recursos muy pesados como imágenes o vídeos que puede incluso que no lleguen a cargar.
+
+En general, recomendaremos usar `DOMContentLoaded` en vez de poner el script al final o `load` porque al ser ejecutado al principio, ya hay cosas que se puede ir ejecutando sin necesidad de DOM antes de que cargue totalmente. En cualquier caso, los script en Módulos siempre se ejecutan en modo `defer`.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es el CSSOM?</summary>
+  <div class="card-body" markdown="1">
+
+El CSSOM (CSS Object Model) es una representación estructurada en forma de árbol de las reglas CSS de una página web, similar al DOM (Document Object Model) que estructura el HTML. El CSSOM se crea en el navegador cuando este procesa las hojas de estilo CSS vinculadas al HTML. Su propósito es permitir a los navegadores manipular y aplicar los estilos de manera dinámica mediante JavaScript.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Para qué sirve la instrucción `"use strict"`?</summary>
+  <div class="card-body" markdown="1">
+
+La instrucción `"use strict"` en JavaScript activa el modo estricto en el código, lo que ayuda a escribir un código más seguro y menos propenso a errores. Al utilizar `"use strict"`, el intérprete de JavaScript aplica reglas más estrictas y lanza errores en situaciones que normalmente pasaría por alto en el modo normal (o no estricto).
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+### Atributos de Datos
+
+HTML5 permite agregar atributos personalizados no visuales a las etiquetas utilizando data-*. Estos atributos pueden ser accesibles a través de JavaScript usando dataset.
+
+```html
+<article
+    id="electriccars"
+    data-columns="3"
+    data-index-number="12314"
+    data-parent="cars">
+    ...
+</article>
+```
+
+```javascript
+let article = document.getElementById('electriccars');
+console.log(article.dataset.columns); // 3
+console.log(article.dataset.indexNumber); // 12314
+```
 
 ## Bibliografía
 
@@ -298,5 +377,4 @@ Cualquiera de las formas que hemos visto para crear elementos, mediante template
 - <https://lenguajejs.com/>
 - <https://learnxinyminutes.com/docs/es-es/javascript-es/>
 - <https://manuais.iessanclemente.net/index.php/Objetos_de_m%C3%A1s_alto_nivel_en_JavaScript>
-- https://developer.mozilla.org/es/docs/Web/API/Document
-- 
+- <https://developer.mozilla.org/es/docs/Web/API/Document>
