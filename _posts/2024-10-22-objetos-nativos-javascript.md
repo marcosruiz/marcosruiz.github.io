@@ -163,7 +163,7 @@ let y = Math.sqrt(16);      // Devuelve la raíz cuadrada de 16.
 | `ceil(x)`          | Devuelve el número x redondeado al alta hacia el siguiente entero.          |
 | `cos(x)`           | Devuelve el coseno de x (x está en radianes).                               |
 | `floor(x)`         | Devuelve el número x redondeado a la baja hacia el anterior entero.         |
-| `log(x)`           | Devuelve el logaritmo neperiando (base E) de x.                             |
+| `log(x)`           | Devuelve el logaritmo neperiano (base E) de x.                             |
 | `max(x,y,z,...,n)` | Devuelve el número más alto de los que se pasan como parámetros.            |
 | `min(x,y,z,...,n)` | Devuelve el número más bajo de los que se pasan como parámetros.            |
 | `pow(x,y)`         | Devuelve el resultado de x elevado a y.                                     |
@@ -184,7 +184,7 @@ Los números y sus valores están definidos internamente en JavaScript, como val
 
 El objeto `Number`, es un objeto envoltorio para valores numéricos primitivos.
 
-Los objetos `Number` son creados con new `Number()`.
+Los objetos `Number` son creados con `new Number()`.
 
 {:.subsection}
 ### Propiedades y métodos del objeto Number
@@ -197,6 +197,9 @@ Los objetos `Number` son creados con new `Number()`.
 | `NEGATIVE_INFINITY` | Representa a infinito negativo (se devuelve en caso de overflow).  |
 | `POSITIVE_INFINITY` | Representa a infinito positivo (se devuelve en caso de overflow).  |
 | `prototype`         | Permite añadir nuestras propias propiedades y métodos a un objeto. |
+
+{:.question}
+¿Qué es el overflow?
 
 | Método           | Descripción                                                                                                                                                                                                                            |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -16,9 +16,9 @@ pin: true
   - [Tipos de datos en JavaScript](/posts/tipos-datos-javascript)
   - [Funciones en JavaScript](/posts/funciones-javascript/)
 - UD3 - Utilización de los objetos predefinidos del lenguaje.
+  - [Objetos nativos en JavaScript](/posts/objetos-nativos-javascript)
   - [¿Qué es el BOM?](/posts/bom-javascript)
   - [¿Qué es el DOM?](/posts/dom-javascript)
-  - [Objetos nativos en JavaScript](/posts/objetos-nativos-javascript)
 - UD4 - Programación con arrays, funciones y objetos definidos por el usuario.
 - UD5 - Interacción con el usuario: eventos y formularios.
   - [Formularios en JavaScript](/posts/formularios-javascript)
