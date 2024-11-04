@@ -27,33 +27,49 @@ console.log("1234" * 1);  // 1234, string convertido a número
 console.log(2 / "bla bla");  // NaN, "bla bla" no se puede convertir a número
 ```
 
-Estos son los tipos soportados, como se puede ver, hay menos cantidad que en otros lenguajes sin perder la capacidad de representación de la información. El caso de las variables numéricas es interesante porque internamente usa coma flotante de doble precisión para cualquier número.
+Tipos de **datos primitivos**:
 
-- Número (`number`)
-- Cadena (`string`)
-- Booleano (`boolean`)
-- Lista (`array`)
-- Nulo (`null`)
-- Función (`function`)
+- Número (`number`): Valor numérico (enteros, decimales...).
+- BigInt (`bigint`): Valor numérico muy grande.
+- Cadena (`string`): Valor de texto (cadenas de texto, carácteres...).
+- Booleano (`boolean`): Valores verdadero o falso.
+- Símbolo (`Symbol`): Valor único.
+- No definido (`undefined`): Indica que a la variable no se le ha asignado valor (variable sin inicializar).
+- Nulo (`null`): Valor nulo, se comporta como un objeto vacío. Representa la ausencia intencional de un valor.
+
+Tipos de **datos NO primitivos**:
+
 - Objeto (`object`)
+- Función (`function`)
 
-Cabe destacar que Javascript tiene los tipos string y String o number y Number, así como Boolean. Con mayúsculas son objetos especiales que pueden ser usados como primitivos, pero también tienen métodos. Las strings siempre se comportan tanto como primitivos como String.
+Estos son los tipos soportados. El caso de las variables numéricas es interesante porque internamente usa coma flotante de doble precisión para cualquier número. Además, los número en JavaScript soportan valores especiales:
 
-Además, soporta valores especiales:
-
-- `undefined`: Indica que a la variable no se le ha asignado valor.
-- `null`: Valor nulo, se comporta como un objeto vacío.
 - `NaN`: Not a Number, se obtiene cuando no se puede convertir a número el resultado de una operación.
-- `Inifinity -Infinity`: Demasiado grande o pequeño o el infinito en sí mismo. Por ejemplo, se puede hacer un bucle for de 0 a Infinity.
+- `Inifinity` y `-Infinity`: Demasiado grande o pequeño o el infinito en sí mismo. Por ejemplo, se puede hacer un bucle for de 0 a Infinity.
 
-> Si no te queda claro, puedes leer el artículo [Tipos de datos](https://lenguajejs.com/javascript/fundamentos/tipos-de-datos/).
+> Cabe destacar que Javascript tiene los tipos `string` y `String` o `number` y `Number`, así como `Boolean`. Con mayúsculas son objetos especiales que pueden ser usados como primitivos, pero también tienen métodos. Las strings siempre se comportan tanto como primitivos como String.
+{:.prompt-info}
+
+<details class="card mb-2">
+  <summary class="card-header question">¿De qué tipo de dato es NaN?</summary>
+  <div class="card-body" markdown="1">
+
+NaN es de tipo `number`.
+
+![alt text](explosionCerebral.png)
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+> Si no te queda claro, puedes leer el artículo [¿Qué son los tipos de datos?](https://lenguajejs.com/javascript/tipos/que-son/).
 {:.prompt-info}
 
 {:.question}
 ¿Es JavaScript un lenguaje estático o dinámico? ¿Qué quiere decir esto?
 
 {:.question}
-¿Es JavaScript un lenguaje tipado (fuertemente tipado) o no tipado (debilmente tipado)?
+¿Es JavaScript un lenguaje tipado (fuertemente tipado) o no tipado (débilmente tipado)?
 
 <details class="card mb-2">
   <summary class="card-header question">¿Sabrías decir algún tipo de dato de JavaScript?</summary>
@@ -66,7 +82,7 @@ number, bigint, string, boolean, undefined, function, symbol, object
 </details>
 
 {:.subsection}
-### number
+### Tipo number
 
 Pueden almacenar tanto números enteros como números decimales. Para expresar el valor de un número decimal se utiliza el separador.
 
@@ -82,7 +98,7 @@ Pueden almacenar tanto números enteros como números decimales. Para expresar e
 ¿Existe el concepto de infinito en JavaScript?
 
 {:.subsection}
-### string
+### Tipo string
 
 Las cadenas de texto son una secuencia de caracteres. Para expresar su valor, éstas se pueden encerrar entra comillas simples `'` o comillas dobles `"`.
 
@@ -138,56 +154,12 @@ console.log(`El alumno es: ${edad < 18 ? 'menor' : 'mayor'}`);
 También se pueden hacer una funciones especiales llamadas tagged template literals.
 
 {:.subsection}
-### Booleanos
+### Tipo boolean
 
 Pueden almacenar los valores `true` o `false` y se suelen utilizar en las sentencias condicionales o ser el resultado de una operación de comparación como luego veremos.
 
 {:.subsection}
-### Arrays
-
-Son objetos que contienen diferentes valores, que pueden ser de diferentes tipos, indexados por su índice, comenzando en 0. Para declararlos utilizamos los corchetes y para acceder a sus valores utilizamos su índice encerrado entre corchetes:
-
-```javascript
-let personajes = ['Bob Esponja', 'Calamardo', 'Patricio'];
-console.log(personajes[0]);        // Muestra por consola: Bob Esponja
-```
-
-Leer [¿Qué es un Array en Javascript?](https://lenguajejs.com/javascript/arrays/que-es/)
-
-{:.question}
-En JavaScript, ¿es lo mismo un array que un arreglo que un vector y que una lista?
-
-{:.question}
-¿Cómo podemos saber cuántos elementos hay en una lista?
-
-Puedes descargar [esta chuleta sobre los métodos de las arrays en JavaScript](/assets/img/javascript/js-metodos-array.pdf).
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué método debemos usar si queremos insertar un elemento entre medias de un array?</summary>
-  <div class="card-body" markdown="1">
-
-Con la función `splice()`.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-{:.question}
-¿Existen métodos para añadir elementos al principio y al final de un array? ¿Y para quitar?
-
-Lee la sección ["Arrays" del artículo Arrays Objetos y clases](https://xxjcaxx.github.io/libro_dwec/arraysobjetosclases.html#arrays).
-
-O si lo prefieres, puedes optar por leer los siguientes artículos:
-
-- [¿Qué es un Array en Javascript?](https://lenguajejs.com/javascript/arrays/que-es/)
-- [Desestructuración de arrays](https://lenguajejs.com/javascript/arrays/desestructuracion-arrays/)
-- [Buscar elementos en un array](https://lenguajejs.com/javascript/arrays/buscar-y-comprobar/)
-- [Modificar o crear subarrays](https://lenguajejs.com/javascript/arrays/modificar-subarrays/)
-- [Ordenación de un array](https://lenguajejs.com/javascript/arrays/ordenacion/)
-- (Voluntario) [Array functions](https://lenguajejs.com/javascript/arrays/array-functions/)
-
-{:.subsection}
-### Objetos
+### Tipo object
 
 Un objeto un tipo de dato que puede contener diferentes propiedades que lo definen, aunque esto no es del todo cierto. Para definir un objeto utilizamos las llaves y expresamos cada uno de sus atributos indicando el nombre y su valor separados por dos puntos.
 
@@ -284,7 +256,9 @@ Usando la función `typeOf()` o utilizando `constructor.name`.
 </details>
 
 {:.subsection}
-### Funciones
+### Tipo function
+
+Aunque existe `function` es una categoría especial de objetos pero internamente se comporta como un objeto clásico.
 
 Lee el artículo [Funciones en JavaScript](/posts/funciones-javascript/).
 
@@ -317,3 +291,4 @@ let longitudCadena = cadena.length; // longitud de la cadena (en este caso, 4)
 - [Aprende X en Y minutos, Donde X=javascript](https://learnxinyminutes.com/docs/es-es/javascript-es/)
 - [Basics of Javascript](https://fwhibbit.es/basics-of-javascript)
 - [Comparación de funciones tradicionales con funciones flecha](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+- <https://lenguajejs.com/javascript/tipos/que-son/>

@@ -58,6 +58,47 @@ console.log(typeof arr);            // "object"
 console.log(Array.isArray(arr));     // true
 ```
 
+Las arrays son objetos que contienen diferentes valores, que pueden ser de diferentes tipos, indexados por su índice, comenzando en 0. Para declararlos utilizamos los corchetes y para acceder a sus valores utilizamos su índice encerrado entre corchetes:
+
+```javascript
+let personajes = ['Bob Esponja', 'Calamardo', 'Patricio'];
+console.log(personajes[0]);        // Muestra por consola: Bob Esponja
+```
+
+Leer [¿Qué es un Array en Javascript?](https://lenguajejs.com/javascript/arrays/que-es/)
+
+{:.question}
+En JavaScript, ¿es lo mismo un array que un arreglo que un vector y que una lista?
+
+{:.question}
+¿Cómo podemos saber cuántos elementos hay en una lista?
+
+Puedes descargar [esta chuleta sobre los métodos de las arrays en JavaScript](/assets/img/javascript/js-metodos-array.pdf).
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué método debemos usar si queremos insertar un elemento entre medias de un array?</summary>
+  <div class="card-body" markdown="1">
+
+Con la función `splice()`.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+{:.question}
+¿Existen métodos para añadir elementos al principio y al final de un array? ¿Y para quitar?
+
+Lee la sección ["Arrays" del artículo Arrays Objetos y clases](https://xxjcaxx.github.io/libro_dwec/arraysobjetosclases.html#arrays).
+
+O si lo prefieres, puedes optar por leer los siguientes artículos:
+
+- [¿Qué es un Array en Javascript?](https://lenguajejs.com/javascript/arrays/que-es/)
+- [Desestructuración de arrays](https://lenguajejs.com/javascript/arrays/desestructuracion-arrays/)
+- [Buscar elementos en un array](https://lenguajejs.com/javascript/arrays/buscar-y-comprobar/)
+- [Modificar o crear subarrays](https://lenguajejs.com/javascript/arrays/modificar-subarrays/)
+- [Ordenación de un array](https://lenguajejs.com/javascript/arrays/ordenacion/)
+- (Voluntario) [Array functions](https://lenguajejs.com/javascript/arrays/array-functions/)
+
 {:.section}
 ## Objeto String
 
