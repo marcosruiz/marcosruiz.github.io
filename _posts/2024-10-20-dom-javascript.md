@@ -12,7 +12,13 @@ img_path: /assets/img/dom-javascript/
 {:.section}
 ## Introducción
 
-El Modelo de Objetos del Documento (DOM), permite ver el mismo documento de otra manera, describiendo el contenido del documento como un árbol de nodos, sobre los que un programa de Javascript puede interactuar.
+El Modelo de Objetos del Documento (DOM), permite ver el mismo documento HTML de otra manera, describiendo el contenido del documento como un árbol de nodos, sobre los que un programa de Javascript puede interactuar.
+
+![alt text](que-es-dom-1.png)
+_Estructura DOM simple_
+
+![alt text](estructuraDom.png)
+_Estructura DOM más detallada_
 
 El DOM (Document Object Model) es una interfaz de programación que permite a los scripts actualizar el contenido, la estructura y el estilo de un documento mientras este se está visualizando en el navegador.
 
@@ -55,7 +61,7 @@ No.
 {:.section}
 ## Objeto document
 
-El objeto `document` representa cualquier página web cargada en el navegador y sirve como punto de acceso a todos los elementos HTML, que es el árbol DOM (Document Object Model).
+El objeto `document` representa cualquier página web cargada en el navegador y sirve como punto de acceso a todos los elementos HTML, que es el árbol DOM (Document Object Model). Es decir, el objeto global `document` sirve de punto de entrada al DOM.
 
 Cada documento cargado en una ventana del navegador, será un objeto de tipo `object` a la vez que una instancia de `Document`.
 
@@ -147,6 +153,34 @@ El DOM proporciona accesos directos (atajos) para obtener elementos comunes:
 - `document.images`: obtiene una colección de todas las imágenes del documento.
 - `document.scripts`: obtiene una colección de todos los scripts del documento.
 
+<details class="card mb-2">
+  <summary class="card-header question" markdown="1">
+  
+  ¿Qué tipo de dato es `document.body`?
+  
+  </summary>
+  <div class="card-body" markdown="1">
+
+Es un objeto tipo `Object` y también una instancia de `HTMLBodyElement`. `HTMLBodyElement` hereda de `HTMLElement` que hereda de `Element` que hereda de `Node` que hereda de `EventTarget`:
+
+```javascript
+console.log(typeof document.body) // object
+console.log(document.body instanceof HTMLBodyElement); // true
+console.log(document.body instanceof HTMLElement); // true
+console.log(document.body instanceof Element); // true
+console.log(document.body instanceof Node); // true
+console.log(document.body instanceof EventTarget); // true
+```
+
+La estructura de clases del elemento `document.body` que es del tipo `HTMLBodyElement` se puede ver a continuación:
+
+![Jerarquía de clases del DOM](jerarquiaClasesDom.png)
+_Jerarquía de clases del DOM_
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 {:.section}
 ## Modificar nodos del DOM
 
@@ -196,8 +230,8 @@ Hay unos atributos que se sincronizan de forma especial con las propiedades. Son
   <summary class="card-header question">¿Qué diferencia hay entre un atributo y una propiedad?</summary>
   <div class="card-body" markdown="1">
 
-- Atributos: es lo que está escrito en HTML.
-- Propiedades: es lo que hay en los objetos DOM.
+- **Atributos**: es lo que está escrito en HTML.
+- **Propiedades**: es lo que hay en los objetos DOM.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -260,7 +294,7 @@ function generateGraphCard(graph) {
 
 La etiqueta `<template>` es especial. Su interior no se renderiza como el resto, pero queda accesible para ser buscado. La utilidad es crear plantillas en HTML que puedan ser clonadas y rellenadas como se desee.
 
-Veamos este HTML extraido de la web de referencia: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template>:
+Veamos este HTML extraído de la web de referencia: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template>:
 
 ```javascript
 <table id="producttable">
@@ -340,7 +374,7 @@ También podemos colocar nuestro script al final del cuerpo (`body`) del documen
 
 Si, además, añadimos el atributo `defer` a un script, este se descargará de manera asíncrona y se ejecutará cuando el HTML haya sido totalmente interpretado y justo antes que `DOMContentLoaded`.
 
-Si es necesario esperar a que carge también todo el CSS, es decir el `CSSOM`, podemos recurrir al evento `load`, que espera a cargar e interpretar todo el CSS. Pero si no es necesario, es mejor esperar sólo al DOM. Esto es porque hay recursos muy pesados como imágenes o vídeos que puede incluso que no lleguen a cargar.
+Si es necesario esperar a que cargue también todo el CSS, es decir el `CSSOM`, podemos recurrir al evento `load`, que espera a cargar e interpretar todo el CSS. Pero si no es necesario, es mejor esperar sólo al DOM. Esto es porque hay recursos muy pesados como imágenes o vídeos que puede incluso que no lleguen a cargar.
 
 En general, recomendaremos usar `DOMContentLoaded` en vez de poner el script al final o `load` porque al ser ejecutado al principio, ya hay cosas que se puede ir ejecutando sin necesidad de DOM antes de que cargue totalmente. En cualquier caso, los script en Módulos siempre se ejecutan en modo `defer`.
 

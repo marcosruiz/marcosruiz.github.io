@@ -14,9 +14,9 @@ img_path: /assets/img/bom-javascript/
 
 El código JavaScript ejecutado en un navegador tiene acceso a un número alto de objetos. Estos objetos pueden estar divididos en varios tipos:
 
-- Objetos del núcleo ECMAScript: Todos los objetos mencionados hasta este momento.
-- DOM (Document Object Model): Objetos que nos permiten hacer algo con la página cargada en estos momentos, objeto que se denomina document y todos los que cuelgan de él.
-- BOM (Browser Object Model): Objetos externos al documento web en sí, como la ventana del navegador y la pantalla del equipo.
+- **Objetos del núcleo ECMAScript**: Todos los objetos mencionados en el artículo [Objetos nativos en JavaScript](/posts/objetos-nativos-javascript).
+- **DOM** (Document Object Model): Objetos que nos permiten hacer algo con la página cargada en estos momentos, objeto que se denomina document y todos los que cuelgan de él.
+- **BOM** (Browser Object Model): Objetos externos al documento web en sí, como la ventana del navegador y la pantalla del equipo.
 
 ![alt text](objetosAltoNivelJavaScript.png)
 
@@ -49,8 +49,8 @@ Así, ahora, nos centraremos en objetos de alto nivel, que se encontrarán frecu
   - `location.search`
   - `location.hash`
   - `location.reload()`
-- **Storage APIs**: LocalStorage, sessionStorage, IndexedDB
-- **Network APIs**: XMLHttpRequest, fetch
+- **Storage APIs**: `LocalStorage`, `sessionStorage`, `IndexedDB`
+- **Network APIs**: `XMLHttpRequest`, `fetch`
 - **Console**: Proporciona acceso a la consola de depuración del navegador.
 - **WebSocket**: Proporciona una interfaz para las conexiones WebSocket.
 - **Worker**: Permite la ejecución de scripts en segundo plano.
