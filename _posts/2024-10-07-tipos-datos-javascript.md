@@ -37,15 +37,18 @@ Tipos de **datos primitivos**:
 - No definido (`undefined`): Indica que a la variable no se le ha asignado valor (variable sin inicializar).
 - Nulo (`null`): Valor nulo, se comporta como un objeto vacío. Representa la ausencia intencional de un valor.
 
+El caso de las variables numéricas es interesante porque internamente usa coma flotante de doble precisión para cualquier número. Además, los número en JavaScript soportan valores especiales:
+
+- `NaN`: Not a Number, se obtiene cuando no se puede convertir a número el resultado de una operación.
+- `Inifinity` y `-Infinity`: Demasiado grande o pequeño o el infinito en sí mismo. Por ejemplo, se puede hacer un bucle for de 0 a Infinity.
+
+> CURIOSIDAD Al ejecutar `typeof null`, el resultado será "object", debido a una peculiaridad histórica de JavaScript. Aunque `null` es primitivo, el lenguaje lo trata en este caso como si fuera un "objeto nulo".
+{:.prompt-tip}
+
 Tipos de **datos NO primitivos**:
 
 - Objeto (`object`)
 - Función (`function`)
-
-Estos son los tipos soportados. El caso de las variables numéricas es interesante porque internamente usa coma flotante de doble precisión para cualquier número. Además, los número en JavaScript soportan valores especiales:
-
-- `NaN`: Not a Number, se obtiene cuando no se puede convertir a número el resultado de una operación.
-- `Inifinity` y `-Infinity`: Demasiado grande o pequeño o el infinito en sí mismo. Por ejemplo, se puede hacer un bucle for de 0 a Infinity.
 
 > Cabe destacar que Javascript tiene los tipos `string` y `String` o `number` y `Number`, así como `Boolean`. Con mayúsculas son objetos especiales que pueden ser usados como primitivos, pero también tienen métodos. Las strings siempre se comportan tanto como primitivos como String.
 {:.prompt-info}
@@ -54,7 +57,7 @@ Estos son los tipos soportados. El caso de las variables numéricas es interesan
   <summary class="card-header question">¿De qué tipo de dato es NaN?</summary>
   <div class="card-body" markdown="1">
 
-NaN es de tipo `number`.
+Aunque `NaN` significa "no es un número", su tipo es `number`.
 
 ![alt text](explosionCerebral.png)
 
