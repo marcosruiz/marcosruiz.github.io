@@ -3,7 +3,7 @@ title: "Objetos nativos en JavaScript"
 date: 2024-10-22 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec]
-img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
+img_path: /assets/img/objetos-nativos-javascript/
 ---
 
 {:.section}
@@ -11,7 +11,52 @@ img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
 
 En esta sección vamos a echar una ojeada a objetos que son nativos en JavaScript, ésto es, aquello que JavaScript nos da, listos para su utilización en nuestra aplicación.
 
-Echaremos un vistazo a los objetos `String`, `Math`, `Number`, `Boolean` y `Date`.
+Echaremos un vistazo a los objetos `Object`, `Function`, `Array`, `String`, `Math`, `Number`, `Boolean` y `Date`.
+
+> Aunque ya hemos tratado con los objetos `Object`, `Function`, `Array` en el artículo [Tipos de datos en JavaScript](/posts/tipos-datos-javascript/) en este artículo lo haremos desde el punto de vista de objetos en lugar de tipos de datos. En este caso estamos hablando de lo mismo.
+{:.prompt-info}
+
+> También hemos tratado el tipo de dato `string` pero debes ser consciente de que también existe el objeto `String`. Ambos se comportan del mismo modo aunque no sean el mismo tipo de dato. En la práctica, es indiferente usar uno u otro.
+{:.prompt-info}
+
+> Aunque ya hemos tratado con el tipo de dato `boolean` también existe el objeto `Boolean` que NO se comporta de la misma manera y en general NO se recomienda su uso.
+{:.prompt-info}
+
+También existen otros objetos nativos como: `RegExp`, `Error`, `Map`, `Set`, `WeakMap`, `WeakSet` y `Promise` que verás en el futuro en caso de que lo necesitemos.
+
+{:.section}
+## Objeto Object
+
+Es la base de todos los objetos en JavaScript. Todos los objetos heredan de `Object`. Por lo tanto todos ellos tienen las siguientes métodos clave: `Object.create()`, `Object.assign()`, `Object.keys()`, `Object.values()`, `Object.entries()` y `Object.defineProperty()`.
+
+{:.section}
+## Objeto Function
+
+Representa funciones y métodos en JavaScript. Cada función es en sí misma un objeto `Function`.
+
+Propiedades y métodos clave: `.apply()`, `.call()`, `.bind()`.
+
+Aunque `typeof` identifica las funciones como `function`, las funciones en JavaScript siguen siendo objetos.
+
+```javascript
+function myFunction() {}
+console.log(typeof myFunction); // "function"
+```
+
+{:.section}
+## Objeto Array
+
+Permite almacenar una lista ordenada de elementos.
+
+Propiedades y métodos clave: `Array.push()`, `Array.pop()`, `Array.map()`, `Array.filter()`, `Array.reduce()`, `Array.forEach()`.
+
+Como se puede ver en el siguiente código una array es una subclase del objeto `Object`.
+
+```javascript
+let arr = [1, 2, 3];
+console.log(typeof arr);            // "object"
+console.log(Array.isArray(arr));     // true
+```
 
 {:.section}
 ## Objeto String
@@ -165,6 +210,22 @@ Los objetos `Number` son creados con new `Number()`.
 ## Objeto Boolean
 
 El objeto `Boolean` se utiliza para convertir un valor no lógico, a un valor lógico (`true` o `false`).
+
+Diferencias entre `boolean` y `Boolean`:
+
+- `boolean` primitivo: Representa directamente el valor `true` o `false`.
+- Objeto `Boolean`: Un envoltorio que convierte el valor en un objeto. Al convertir valores no booleanos, el constructor `Boolean()` convierte valores "falsy" (como `0`, `null`, `undefined`, `NaN`, `""`) en `false`, y los demás valores en `true`.
+
+```javascript
+let booleanObject = new Boolean(true);
+console.log(typeof booleanObject); // "object"
+console.log(booleanObject instanceof Boolean); // true
+```
+
+```javascript
+let booleanObject = new Boolean(false);
+console.log(booleanObject.valueOf()); // false
+```
 
 {:.subsection}
 ### Propiedades y métodos del objeto Boolean

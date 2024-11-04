@@ -3,7 +3,7 @@ title: "¿Qué es el DOM?"
 date: 2024-10-20 9:00:00 +0100
 categories: [Derrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec]
-img_path: /assets/img/desarrollo-web-entorno-cliente-24-25/
+img_path: /assets/img/dom-javascript/
 ---
 
 > Artículo en construcción.
@@ -359,6 +359,10 @@ El CSSOM (CSS Object Model) es una representación estructurada en forma de árb
   <div class="card-body" markdown="1">
 
 La instrucción `"use strict"` en JavaScript activa el modo estricto en el código, lo que ayuda a escribir un código más seguro y menos propenso a errores. Al utilizar `"use strict"`, el intérprete de JavaScript aplica reglas más estrictas y lanza errores en situaciones que normalmente pasaría por alto en el modo normal (o no estricto).
+
+En resumen, cuando no usamos el strict mode pasan cosas como las que relata esta persona:
+
+![alt text](noStrictMode.png)
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
