@@ -18,9 +18,10 @@ pin: true
   - [Selectores en CSS](/posts/selectores-css)
   - [Posicionamiento en CSS](/posts/posicionamiento-css)
   - [CSS con tablas y listas](/posts/css-tablas-listas)
-- UD3 - Contenidos multimedia en la web: Imágenes
-- UD4 - Contenidos multimedia en la Web: Audio y Vídeo
-- UD5 - Contenidos multimedia en la Web: Animaciones
+- UD3 - [Imágenes en la web](/imagenes-web/)
+  - [Ley de propiedad intelectual](/posts/propiedad-intelectual)
+- UD4 - Audio y Vídeo en la Web
+- UD5 - Animaciones en la Web
 - UD6 - Contenidos web interactivos
 - UD7 - [Usabilidad en la Web](/posts/usabilidad-web)
 - UD8 - Accesibilidad en la Web
