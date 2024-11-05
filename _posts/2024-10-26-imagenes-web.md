@@ -237,6 +237,32 @@ En los dos siguientes artículos puedes ver la misma imagen en diferentes format
 - <https://www.sitepoint.com/gif-png-jpg-which-one-to-use/>
 - <https://jakearchibald.com/2020/avif-has-landed/>
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es el formato AVIF?</summary>
+  <div class="card-body" markdown="1">
+
+AVIF (AV1 Image File Format) es un formato de imagen diseñado para ofrecer una alta calidad de imagen con tasas de compresión eficientes, lo que resulta en archivos de menor tamaño sin sacrificar calidad visual.
+
+Algunas de sus características principales incluyen:
+
+- AVIF ofrece una compresión más avanzada que formatos como JPEG y PNG, y en muchos casos también supera a WebP
+- Al igual que WebP, permite tanto compresión sin pérdida (para conservar el 100% de la calidad de la imagen) como con pérdida (para reducir significativamente el tamaño del archivo).
+- AVIF soporta profundidades de color superiores a 8 bits y tiene capacidad para contenido HDR (alto rango dinámico)
+- Al igual que PNG y WebP, el formato AVIF soporta canales alfa, lo que permite crear imágenes con transparencia.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+{:.question}
+¿Qué es el canal alfa?
+
+{:.question}
+¿Qué formatos de imagen soportan transparencias?
+
+{:.question}
+¿Qué es el HDR?
+
 ## Logos, iconos, banners e imágenes
 
 Los recursos gráficos se emplean mucho en la web. Si se utilizan adecuadamente, pueden mejorar el aprendizaje del usuario y añadir valor a nuestro sitio. Ahora bien, si se utilizan inadecuadamente, producen el efecto contrario.
