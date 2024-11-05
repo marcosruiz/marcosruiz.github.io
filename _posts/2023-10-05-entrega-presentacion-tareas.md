@@ -31,7 +31,8 @@ Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiale
 Además:
 
 1. El documento no debe contener faltas ortográficas.
-1. En el caso de utilizar capturas de pantalla, las capturas también deben demostrar la autoría de las actividades. Por lo tanto, estas capturas deberán ser de toda la pantalla del alumno para que se vea la fecha de realización y el nombre del fichero que está abierto. Recomiendo encarecidamente la herramienta gratuita [Flameshot](https://flameshot.org/) para hacer capturas.
+1. En el caso de utilizar capturas de toda la pantalla, las capturas también deben demostrar la autoría de las actividades. Por lo tanto, estas capturas deberán ser de toda la pantalla del alumno para que se vea la fecha de realización y el nombre del fichero que está abierto. Recomiendo encarecidamente la herramienta gratuita [Flameshot](https://flameshot.org/) para hacer capturas.
+1. Si las capturas son de una zona muy especifica de la pantalla no es necesario hacer lo anterior. Usad el sentido común.
 
 ![Ejemplo de portada](ejemploPortada.png)
 _Ejemplo de portada_

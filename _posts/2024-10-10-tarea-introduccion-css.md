@@ -47,7 +47,7 @@ Hacer el apartado "Aprende formularios HTML construyendo un formulario de regist
 {:.activity}
 ### Modelo de cajas en freeCodeCamp
 
-Hacer el apartado "Aprende formularios HTML construyendo un formulario de registro" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
+Hacer el apartado "Aprende el Modelo de Cajas de CSS construyendo una pintura de Rothko" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
 
 > 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
 {:.prompt-info}
