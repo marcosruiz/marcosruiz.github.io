@@ -111,14 +111,24 @@ Una de las razones principales es el espacio que ocupan las imágenes y el tiemp
 </details>
 
 - El **formato GIF** fue el primero en aparecer en Internet, creado por Compuserve en 1987, es un formato empleado en imágenes que tienen entre 2 y 256 colores. Su principal uso sigue siendo el mostrar imágenes animadas en las páginas web o en la creación de los iconos que acompañan a los enlaces y los logotipos. En general, resulta apropiado para todas las imágenes que tengan grandes áreas de color sólido.
-- El formato JPG se emplea en fotografía digital y para imágenes con más de 256 colores, logrando almacenar imágenes fotográficas de gran tamaño en poco espacio. No es conveniente utilizar este formato en las imágenes con colores sólidos, siendo muy recomendable cuando la imagen tiene gran variedad de colores distintos o de colores monocromáticos.
-- El formato PNG es el último de los tres en aparecer. Este formato se ha convertido en la alternativa del formato GIF, permitiendo el uso de más de 256 colores, lo que supone una gran ventaja.
+- El **formato JPG** se emplea en fotografía digital y para imágenes con más de 256 colores, logrando almacenar imágenes fotográficas de gran tamaño en poco espacio. No es conveniente utilizar este formato en las imágenes con colores sólidos, siendo muy recomendable cuando la imagen tiene gran variedad de colores distintos o de colores monocromáticos.
+- El **formato PNG** es el último de los tres en aparecer. Este formato se ha convertido en la alternativa del formato GIF, permitiendo el uso de más de 256 colores, lo que supone una gran ventaja.
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué tipo de imagen son los formatos GIF, ODG, SVG y JPG?</summary>
   <div class="card-body" markdown="1">
 
 GIF y JPG son formatos de tipo mapas de bits, mientras que ODG y SVG son formatos de tipo vectorial.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Cuál es el formato WEBP?</summary>
+  <div class="card-body" markdown="1">
+
+WebP (Formato de Imagen Web) fue desarrollado por Google como un reemplazo para los formatos GIF, JPEG y PNG. Ofrece compresión con y sin pérdida de calidad, además de soporte para animaciones, y se presenta como una solución integral en el ámbito de los formatos de archivo de imagen. Este formato presume tamaños de archivo más pequeños en comparación con sus predecesores.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -220,6 +230,13 @@ Realmente el procesador la descomprime sin que nos demos cuenta. Es por esto que
   </div>
 </details>
 
+### Ejemplos
+
+En los dos siguientes artículos puedes ver la misma imagen en diferentes formatos de compresión. Resulta sorprendente como podemos bajar el tamaño de una imagen de 486 kB a 17.7 kB sin que el usuario apenas lo note.
+
+- <https://www.sitepoint.com/gif-png-jpg-which-one-to-use/>
+- <https://jakearchibald.com/2020/avif-has-landed/>
+
 ## Logos, iconos, banners e imágenes
 
 Los recursos gráficos se emplean mucho en la web. Si se utilizan adecuadamente, pueden mejorar el aprendizaje del usuario y añadir valor a nuestro sitio. Ahora bien, si se utilizan inadecuadamente, producen el efecto contrario.
@@ -248,7 +265,7 @@ En resumen:
 
 ## Software de edición de imágenes
 
-Si  nos interesa es trabajar con imágenes de alta calidad y que pesen poco, esta última condición necesaria en la web, sería conveniente emplear nuestro tiempo en aprender a manejar alguna herramienta que tenga una función de optimización de imágenes para su uso en la web.
+Si nos interesa es trabajar con imágenes de alta calidad y que pesen poco, esta última condición necesaria en la web, sería conveniente emplear nuestro tiempo en aprender a manejar alguna herramienta que tenga una función de optimización de imágenes para su uso en la web.
 
 El Photoshop es una herramienta profesional que tiene una función de optimización para la web que, entre otras, cosas permite:
 
@@ -269,6 +286,28 @@ Para finalizar este apartado, daremos una serie de consejos que están relaciona
 1. Si realizas tus propios diseños, dale prioridad a las líneas de color horizontales sobre las verticales ya que las primeras se comprimen mejor.
 1. Trata de reducir la calidad al máximo sin que se perciba la pérdida. No todas las imágenes resultan afectadas de la misma manera cuando se reduce la calidad.
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Cuál es el programa más famoso para la edición de imágenes bitmap?</summary>
+  <div class="card-body" markdown="1">
+
+- Software libre: GIMP.
+- Software propietario: Adobe Photoshop o Corel PaintShop Pro.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Cuál es el programa más famoso para la edición de imágenes vecotriales?</summary>
+  <div class="card-body" markdown="1">
+
+- Software libre: Inkscape.
+- Software propietario: Adobe Illustrator o CorelDRAW.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 ## Ley de la propiedad intelectual
 
 Lee el artículo [Ley de propiedad intelectual](/posts/propiedad-intelectual).
@@ -277,3 +316,6 @@ Lee el artículo [Ley de propiedad intelectual](/posts/propiedad-intelectual).
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - <https://lenguajecss.com/css/>
+- <https://www.sitepoint.com/gif-png-jpg-which-one-to-use/>
+- <https://jakearchibald.com/2020/avif-has-landed/>
+- 
