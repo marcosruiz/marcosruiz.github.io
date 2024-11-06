@@ -33,7 +33,7 @@ Tipos de **datos primitivos**:
 - BigInt (`bigint`): Valor numérico muy grande.
 - Cadena (`string`): Valor de texto (cadenas de texto, carácteres...).
 - Booleano (`boolean`): Valores verdadero o falso.
-- Símbolo (`Symbol`): Valor único.
+- Símbolo (`symbol`): Valor único.
 - No definido (`undefined`): Indica que a la variable no se le ha asignado valor (variable sin inicializar).
 - Nulo (`null`): Valor nulo, se comporta como un objeto vacío. Representa la ausencia intencional de un valor.
 

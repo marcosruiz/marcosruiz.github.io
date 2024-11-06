@@ -14,8 +14,15 @@ Las funciones son bloques fundamentales de código en JavaScript. Permiten agrup
 > Lee el artículo [¿Qué es una función?](https://lenguajejs.com/javascript/introduccion/funciones-basicas/).
 {:.prompt-info}
 
-{:.question}
-¿Es lo mismo un parámetro que un argumento?
+<details class="card mb-2">
+  <summary class="card-header question">¿Es lo mismo un parámetro que un argumento?</summary>
+  <div class="card-body" markdown="1">
+
+Casi pero no. Los **parámetros** son variables definidas en la declaración de una función y los **argumentos** son los valores reales que se pasan a la función cuando se invoca.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es una función?</summary>
