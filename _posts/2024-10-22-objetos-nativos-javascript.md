@@ -13,7 +13,7 @@ En esta sección vamos a echar una ojeada a objetos que son nativos en JavaScrip
 
 Echaremos un vistazo a los objetos `Object`, `Function`, `Array`, `String`, `Math`, `Number`, `Boolean` y `Date`.
 
-> Aunque ya hemos tratado con los objetos `Object`, `Function`, `Array` en el artículo [Tipos de datos en JavaScript](/posts/tipos-datos-javascript/) en este artículo lo haremos desde el punto de vista de objetos en lugar de tipos de datos. En este caso estamos hablando de lo mismo.
+> Aunque ya hemos tratado con los objetos `Object` y `Function` en el artículo [Tipos de datos en JavaScript](/posts/tipos-datos-javascript/) en este artículo lo haremos desde el punto de vista de objetos en lugar de tipos de datos. En este caso estamos hablando de lo mismo.
 {:.prompt-info}
 
 > También hemos tratado el tipo de dato `string` pero debes ser consciente de que también existe el objeto `String`. Ambos se comportan del mismo modo aunque no sean el mismo tipo de dato. En la práctica, es indiferente usar uno u otro.
@@ -27,7 +27,7 @@ También existen otros objetos nativos como: `RegExp`, `Error`, `Map`, `Set`, `W
 {:.section}
 ## Objeto Object
 
-Es la base de todos los objetos en JavaScript. Todos los objetos heredan de `Object`. Por lo tanto todos ellos tienen las siguientes métodos clave: `Object.create()`, `Object.assign()`, `Object.keys()`, `Object.values()`, `Object.entries()` y `Object.defineProperty()`.
+Es la base de todos los objetos en JavaScript. Todos los objetos heredan de `Object`. Por lo tanto todos ellos tienen las siguientes métodos clave: `.create()`, `.assign()`, `.keys()`, `.values()`, `.entries()` y `.defineProperty()`.
 
 {:.section}
 ## Objeto Function
@@ -48,7 +48,7 @@ console.log(typeof myFunction); // "function"
 
 Permite almacenar una lista ordenada de elementos.
 
-Propiedades y métodos clave: `Array.push()`, `Array.pop()`, `Array.map()`, `Array.filter()`, `Array.reduce()`, `Array.forEach()`.
+Propiedades y métodos clave: `.push()`, `.pop()`, `.map()`, `.filter()`, `.reduce()`, `.forEach()`.
 
 Como se puede ver en el siguiente código una array es una subclase del objeto `Object`.
 
@@ -245,7 +245,7 @@ Los objetos `Number` son creados con `new Number()`.
 | Método           | Descripción                                                                                                                                                                                                                            |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `toExponential(x)` | Convierte un número a su notación exponencial.                                                                                                                                                                                         |
-| `toFixed(x)`       | Formatea un número con x digitos decimales después del punto decimal.                                                                                                                                                                  |
+| `toFixed(x)`       | Formatea un número con x dígitos decimales después del punto decimal.                                                                                                                                                                  |
 | `toPrecision(x)`   | Formatea un número a la longitud x.                                                                                                                                                                                                    |
 | `toString()`       | Convierte un objeto `Number` en una cadena. Si se pone 2 como parámetro se mostrará el número en binario. Si se pone 8 como parámetro se mostrará el número en octal. Si se pone 16 como parámetro se mostrará el número en hexadecimal. |
 | `valueOf()`        | Devuelve el valor primitivo de un objeto Number.                                                                                                                                                                                       |

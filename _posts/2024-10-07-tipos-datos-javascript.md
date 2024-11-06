@@ -221,6 +221,36 @@ Si. Se suele utilizar la función `fetch()`.
 Lee la sección ["Objetos en JavaScript" del artículo Arrays Objetos y clases](https://xxjcaxx.github.io/libro_dwec/arraysobjetosclases.html#objetos-en-javascript).
 
 {:.subsection}
+### Tipo function
+
+Aunque existe `function` es una categoría especial de objetos pero internamente se comporta como un objeto clásico.
+
+Lee el artículo [Funciones en JavaScript](/posts/funciones-javascript/).
+
+{:.subsection}
+### Conversiones entre tipos de datos
+
+En javascript las conversiones de tipos no siempre son necesarias, ya que existe un concepto llamado Type coercion que fuerza a una conversión automática cuando se usan distintos tipos.
+
+Puede ser útil, pero **es una mala práctica** usar continuamente la conversión forzada. Es mejor tener claro el tipo de datos que estamos usando. Para evitar los posibles problemas se inventó TypeScript.
+
+- Convertir cadenas a números usando parseInt(), parseFloat(), o el operador “+”:
+
+```javascript
+let cadenaNumerica = "1234";
+let numero1 = parseInt(cadenaNumerica); // convierte la cadena a un número entero
+let numero2 = parseFloat(cadenaNumerica); // convierte la cadena a un número de punto flotante
+let numero3 = +"1234"; // convierte la cadena a un número utilizando el operador "+"
+```
+
+- Convertir números a cadenas concatenándolos con una cadena vacía “”:
+
+```javascript
+let cadena = "" + 3600;
+let longitudCadena = cadena.length; // longitud de la cadena (en este caso, 4)
+```
+
+{:.subsection}
 ### typeOf
 
 Si queremos saber de qué tipo es una variable, podemos preguntar con typeOf():
@@ -257,36 +287,6 @@ Usando la función `typeOf()` o utilizando `constructor.name`.
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
-
-{:.subsection}
-### Tipo function
-
-Aunque existe `function` es una categoría especial de objetos pero internamente se comporta como un objeto clásico.
-
-Lee el artículo [Funciones en JavaScript](/posts/funciones-javascript/).
-
-{:.subsection}
-### Conversiones entre tipos de datos
-
-En javascript las conversiones de tipos no siempre son necesarias, ya que existe un concepto llamado Type coercion que fuerza a una conversión automática cuando se usan distintos tipos.
-
-Puede ser útil, pero **es una mala práctica** usar continuamente la conversión forzada. Es mejor tener claro el tipo de datos que estamos usando. Para evitar los posibles problemas se inventó TypeScript.
-
-- Convertir cadenas a números usando parseInt(), parseFloat(), o el operador “+”:
-
-```javascript
-let cadenaNumerica = "1234";
-let numero1 = parseInt(cadenaNumerica); // convierte la cadena a un número entero
-let numero2 = parseFloat(cadenaNumerica); // convierte la cadena a un número de punto flotante
-let numero3 = +"1234"; // convierte la cadena a un número utilizando el operador "+"
-```
-
-- Convertir números a cadenas concatenándolos con una cadena vacía “”:
-
-```javascript
-let cadena = "" + 3600;
-let longitudCadena = cadena.length; // longitud de la cadena (en este caso, 4)
-```
 
 ## Bibliografía
 
