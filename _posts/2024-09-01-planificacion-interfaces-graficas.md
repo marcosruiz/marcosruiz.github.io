@@ -491,6 +491,7 @@ Además existen herramientas que nos facilitan el trabajo para crear un logo res
 
 - <https://www.logoai.com/>
 - <https://www.tailorbrands.com/>
+- <https://www.namecheap.com/logo-maker/>
 
 {:.section}
 ## Fondo de pantalla
