@@ -28,6 +28,9 @@ mruizg_t03.zip
 └───mruizg_a13_domVentanaSecundaria.html
 ```
 
+> Lo anterior **solo es un ejemplo de entrega** por lo que si añades ficheros de otro tipo utiliza el sentido común para nombrarlos correctamente.
+{:.prompt-info}
+
 La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
 Duración actividades obligatorias: 8 horas.
@@ -56,8 +59,11 @@ Escribe el código para obtener el atributo `data-widget-name` del documento y l
 </html>
 ```
 
-> 📷 Cuando termines, haz varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
+> 📷 Cuando termines, haz una o varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
 {:.prompt-info}
+
+> Recuerda que **NO debes copiar el código fuente en el documento PDF** ya que me enviarás los originales en el ZIP.
+{:.prompt-warning}
 
 {:.activity}
 ### Enlaces externos naranjas
@@ -93,7 +99,7 @@ El resultado podría ser:
 
 ![alt text](enlacesNaranjas.png)
 
-> 📷 Cuando termines, haz varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
+> 📷 Cuando termines, haz una o varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
 {:.prompt-info}
 
 {:.activity}
@@ -101,7 +107,7 @@ El resultado podría ser:
 
 Haz todos lo mismo que en la actividad anterior pero modificando la clase de los elementos.
 
-> 📷 Cuando termines, haz varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
+> 📷 Cuando termines, haz una o varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
 {:.prompt-info}
 
 {:.activity}
@@ -132,7 +138,7 @@ Escribe una función que reciba dos palabras (`string`) y retorne verdadero o fa
 - Los datos deben ser recogido a través de `window.prompt()`.
 - El resultado debe ser mostrado a través de `window.alert()`.
 
-> 📷 Cuando termines todo, haz varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
+> 📷 Cuando termines todo, haz una o varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
 {:.prompt-info}
 
 {:.activity}
@@ -147,7 +153,7 @@ Crea un programa que sea capaz de transformar texto natural a código morse y vi
 - Los datos deben ser recogidos a través de `window.prompt()`.
 - El resultado debe ser mostrado en el `body`.
 
-> 📷 Cuando termines todo, haz varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
+> 📷 Cuando termines todo, haz una o varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
 {:.prompt-info}
 
 {:.activity}
@@ -158,11 +164,11 @@ Haz que aunque se actualice la web con F5 el último resultado generado no desap
 > Deberás usar el objeto `window` para guardar esta información.
 {:.prompt-info}
 
-> 📷 Cuando termines todo, haz varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
+> 📷 Cuando termines todo, haz una o varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
 {:.prompt-info}
 
 {:.activity}
-### Expresiones equilibradas
+### (Voluntaria) Expresiones equilibradas
 
 Crea un programa que comprueba si los paréntesis, llaves y corchetes de una expresión están equilibrados.
 
@@ -174,7 +180,7 @@ Crea un programa que comprueba si los paréntesis, llaves y corchetes de una exp
 - Los datos deben ser recogido a través de un `input`.
 - El resultado debe ser mostrado en el `body` de la ventana actual.
 
-> 📷 Cuando termines todo, haz varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
+> 📷 Cuando termines todo, haz una o varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
 {:.prompt-info}
 
 {:.activity}
@@ -191,7 +197,7 @@ Ejemplo de palíndromo: Ana lleva al oso la avellana.
 - Los datos deben ser recogido a través de un `input`.
 - El resultado debe ser mostrado en el `body` de una ventana o pestaña diferente.
 
-> 📷 Cuando termines todo, haz varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
+> 📷 Cuando termines todo, haz una o varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
 {:.prompt-info}
 
 {:.activity}
@@ -202,7 +208,7 @@ Escribe un programa que reciba un número \<X\> y muestre en el `body` los núme
 - Los datos deben ser recogido a través de un `input`.
 - El resultado debe ser mostrado en el `body` de una ventana o pestaña diferente.
 
-> 📷 Cuando termines todo, haz varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
+> 📷 Cuando termines todo, haz una o varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
 {:.prompt-info}
 
 {:.activity}
@@ -232,7 +238,7 @@ Hacer y llamar a una función que:
 
 Donde aparecen las \<XXXX\> tendrá que aparecer el cálculo o texto que corresponda.
 
-> 📷 Cuando termines todo, haz varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
+> 📷 Cuando termines todo, haz una o varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
 {:.prompt-info}
 
 {:.activity}
@@ -254,7 +260,7 @@ Hacer y llamar a una función que:
 
 Donde aparecen las \<XXXX\> tendrá que aparecer el cálculo o texto que corresponda.
 
-> 📷 Cuando termines todos los pasos, haz varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
+> 📷 Cuando termines todos los pasos, haz una o varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
 {:.prompt-info}
 
 ## Dame tu feedback
