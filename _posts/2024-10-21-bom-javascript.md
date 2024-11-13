@@ -114,7 +114,7 @@ Aquí si que es necesario especificar subVentana, ya que si escribiéramos `wind
 
 Ejemplo que permite abrir y cerrar una sub-ventana:
 
-```javascript
+```html
 <!DOCTYPE html>
 <html lang="es">
 
