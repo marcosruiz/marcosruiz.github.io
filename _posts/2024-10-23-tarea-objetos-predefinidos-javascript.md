@@ -1,21 +1,36 @@
 ---
-title: "Tarea obligatoria: DOM con JavaScript"
+title: "Tarea obligatoria: Objetos predefinidos de JavaScript"
 date: 2024-10-23 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec, tarea, práctica]
 img_path: /assets/img/tarea-dom/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Información sobre la tarea
 
-La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
+La entrega será en formato ZIP con un PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
+
+Ejemplo de entrega:
+
+```plaintext
+mruizg_t03.zip
+├───mruizg_t03.pdf
+├───mruizg_a01_atributo.html
+├───mruizg_a02_enlacesExternosNaranjas.html
+├───mruizg_a03_enlacesExternosNaranjasConClase.html
+├───mruizg_a06_anagrama.html
+├───mruizg_a07_codigoMorse.html
+├───mruizg_a08_codigoMorseConMemoria.html
+├───mruizg_a09_expresionesEquilibradas.html
+├───mruizg_a10_palindromo.html
+├───mruizg_a11_tablaPrimos.html
+├───mruizg_a12_domVentanaPrincipal.html
+└───mruizg_a13_domVentanaSecundaria.html
+```
 
 La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
-Duración actividades obligatorias: 10 horas.
+Duración actividades obligatorias: 8 horas.
 
 RA 2. Escribe sentencias simples, aplicando la sintaxis del lenguaje y verificando su ejecución sobre navegadores Web.
 
@@ -24,11 +39,11 @@ RA 2. Escribe sentencias simples, aplicando la sintaxis del lenguaje y verifican
 Es muy importante leer los apuntes y realizar las actividades. Los actividades de esta unidad son base para la realización de actividades en las próximas unidades.
 
 {:.activity}
-### Atributo
+### (Voluntaria) Atributo
 
 Escribe el código para obtener el atributo `data-widget-name` del documento y leer su valor.
 
-```javascript
+```html
 <!DOCTYPE html>
 <html>
   <body>
@@ -51,12 +66,12 @@ Haz todos los enlaces externos de color orange alterando su propiedad `style`.
 
 Un link es externo si:
 
-- Su `href` tiene `://`
+- Su `href` tiene `://`.
 - Pero no comienza con `http://internal.com`.
 
 Ejemplo:
 
-```javascript
+```html
 <a name="list">the list</a>
 <ul>
   <li><a href="http://google.com">http://google.com</a></li>
@@ -138,7 +153,7 @@ Crea un programa que sea capaz de transformar texto natural a código morse y vi
 {:.activity}
 ### Código morse con memoria
 
-Haz que aunque se actualice la web con F5 el último resultado generado no desaparezca. 
+Haz que aunque se actualice la web con F5 el último resultado generado no desaparezca.
 
 > Deberás usar el objeto `window` para guardar esta información.
 {:.prompt-info}
@@ -187,8 +202,11 @@ Escribe un programa que reciba un número \<X\> y muestre en el `body` los núme
 - Los datos deben ser recogido a través de un `input`.
 - El resultado debe ser mostrado en el `body` de una ventana o pestaña diferente.
 
+> 📷 Cuando termines todo, haz varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
+{:.prompt-info}
+
 {:.activity}
-### (Voluntaria) DOM en ventana principal
+### DOM en ventana principal
 
 Realizar una aplicación en HTML y JavaScript que realice lo siguiente:
 
