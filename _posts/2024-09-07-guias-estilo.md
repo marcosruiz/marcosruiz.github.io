@@ -162,6 +162,8 @@ Os dejo una lista de webs para conseguir iconos de forma gratuita:
 - <https://feathericons.com/>
 - <https://www.webiconset.com/category/free-icons/>
 - <https://lenguajejs.com/retos/recursos/iconos/>
+- Herramienta IA para generar iconos: <https://www.recraft.ai/>
+  - Como usarla [aquí](https://www.instagram.com/reel/CyOWm61A45e/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==).
 
 > Si conoces alguna web de iconos que creas que merezca estar aquí ponla en los comentarios y la añadiré 😉.
 {:.prompt-info}
