@@ -2,7 +2,7 @@
 title: "Guía del profesor virtual"
 date: 2022-10-18 9:00:00 +0100
 categories: [General]
-tags: [gift, moodle, aeducar, profesor, adistanciafp]
+tags: [gift, moodle, aeducar, profesor, adistanciafp, fpvirtual, fpvirtualaragon, adistanciafparagon]
 img_path: /assets/img/moodle-profesor/
 ---
 
