@@ -126,22 +126,58 @@ Utilizando el tutorial [StyleLint: Linter CSS](https://lenguajecss.com/css/calid
 {:.activity}
 ### SASS
 
-Sigue los pasos de este repositorio <https://github.com/workshopper/learn-sass> para instalar y ejecutar el módulo de learn-sass.
+Lee el artículo [Tutorial: Primeros pasos con SASS](/posts/tutorial-sass) y convierte los siguientes tres ficheros SCSS en CSS y **explica que transformaciones ocurren**.
 
-Una vez ejecutes `learn-sass` deberás ver lo siguiente:
+```scss
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
 
-![alt text](learnSass.png)
-_Menú de ejercicios de learn-sass_
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+```
+{: file="variables.scss" }
 
-Deberás completar los dos primeros ejercicios:
+```scss
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-- VARIABLES
-- NESTING
+  li { display: inline-block; }
 
-> 📷 Haz una captura cuando tengas los dos primeros ejercicios como `[COMPLETED]`.
-{:.prompt-info}
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+```
+{: file="nesting.scss" }
 
-> Se recomienda usar la versión de node 8.17.0.
+```scss
+@mixin theme($theme: DarkGray) {
+  background: $theme;
+  box-shadow: 0 0 1px rgba($theme, .25);
+  color: #fff;
+}
+
+.info {
+  @include theme;
+}
+.alert {
+  @include theme($theme: DarkRed);
+}
+.success {
+  @include theme($theme: DarkGreen);
+}
+```
+{: file="mixins.scss" }
+
+> 📷 Haz una o varias capturas para demostrar que has ejecutado sass.
 {:.prompt-info}
 
 {:.activity}
@@ -403,3 +439,5 @@ Y responde a las siguientes preguntas:
 - <https://github.com/workshopper/learn-sass>
 - <https://lenguajecss.com/css/calidad-de-codigo/stylelint/>
 - <https://getbootstrap.com/docs/5.3/examples/>
+- <https://sass-lang.com/install/>
+- <https://sass-lang.com/guide/>
