@@ -436,8 +436,5 @@ Y responde a las siguientes preguntas:
 ## Bibliografía
 
 - <https://logongas.es/doku.php?id=clase:daw:diw:1eval:tema01>
-- <https://github.com/workshopper/learn-sass>
 - <https://lenguajecss.com/css/calidad-de-codigo/stylelint/>
 - <https://getbootstrap.com/docs/5.3/examples/>
-- <https://sass-lang.com/install/>
-- <https://sass-lang.com/guide/>
