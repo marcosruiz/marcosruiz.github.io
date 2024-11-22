@@ -6,9 +6,6 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/tarea-css-avanzado/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Información sobre la tarea
 
 La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
@@ -164,9 +161,235 @@ Abre el ejemplo grid donde se ve el comportamiento del grid de Bootstrap y respo
 1. Cuando cambiamos del tema claro al tema oscuro, ¿cambia algo en el documento HTML?
 
 {:.activity}
-### Tema claro y tema oscuro
+### (Voluntaria) Tema claro y oscuro I
 
+Dados los siguientes ficheros:
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tema claro y oscuro</title>
+  <link rel="stylesheet" href="claroOscuro.css">
+</head>
+<body>
+  <header class="container">
+    <div class="row">
+      <div class="col text-center">
+        <label id="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <h1>Marcos Ruiz García</h1>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <section class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2>Mruizg</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure doloremque minima, nisi aspernatur, enim dolorum maiores error quis, veritatis incidunt vitae voluptatum reprehenderit aut distinctio officiis corrupti voluptates qui nostrum.
+        </p>
+        <a href="https://marcosruiz.github.io/" target="_blank">Visita mi web</a>
+      </div>
+    </section>
+  </main>
+  <script src="claroOscuro.js"></script>
+</body>
+</html>
+```
+{: file="claroOscuro.html" }
+
+```css
+:root {
+  --color-fuente: #2b2b2b;
+  --color-fondo: #fff;
+}
+
+[class="dark"] {
+  --color-fuente: #fff;
+  --color-fondo: #2b2b2b;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-fuente);
+  transition: background-color 1s ease;
+}
+
+header {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  font-family: 'Cinzel', serif;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-family: 'Cinzel', serif;
+}
+
+p {
+  margin-top: 1.4rem;
+  margin-bottom: 4rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+}
+
+a {
+  background-color: var(--color-fuente);
+  color: var(--color-fondo);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  border-style: solid;
+  border-width: .2rem;
+  border-color: var(--color-fuente);
+  border-radius: 2rem;
+
+}
+
+a:hover {
+  background-color: var(--color-fondo);
+  color: var(--color-fuente);
+  text-decoration: none;
+}
+
+/*Botón de cambio de tema*/
+
+#switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+#switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-fuente);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--color-fondo);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: var(--color-fuente);
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px var(--color-fuente);
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+```
+{: file="claroOscuro.css" }
+
+```javascript
+const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+function cambiaTema(ev) {
+  if (ev.target.checked) {
+    document.documentElement.setAttribute("class", "dark");
+  } else {
+    document.documentElement.removeAttribute("class");
+  }
+}
+colorSwitch.addEventListener("change", cambiaTema);
+```
+{: file="claroOscuro.js" }
+
+Ejecútalos, analiza y contesta a las siguientes preguntas:
+
+1. ¿A qué hace referencia el selector o pseudoselector `:root`?
+1. ¿Qué es `--color-fuente`?
+1. ¿Qué hace la propiedad `transition: background-color 1s ease;`?
+
+> 📷 Pon tu nombre y tu código de usuario en el HTML y haz una captura de pantalla.
+{:.prompt-info}
+
+{:.activity}
+### Tema claro y oscuro II
+
+Haz lo mismo que en el ejercicio anterior pero esta vez utilizando dos hojas de estilo diferentes. Para ello deberás enlazar dos hojas de estilo como ves a continuación:
+
+```html
+  <!-- Tema claro (predeterminado) -->
+  <link id="tema-claro" rel="stylesheet" href="claro.css" title="Tema claro">
+  
+  <!-- Tema oscuro (alternativo) -->
+  <link id="tema-oscuro" rel="stylesheet" href="oscuro.css" title="Tema oscuro">
+```
+{: file="claroOscuro2.html" }
+
+Y deberás ejecutar la siguiente función para cambiar entre una hoja de estilos y otra:
+
+```javascript
+function cambiaTema(ev) {
+  // Obtén las hojas de estilo
+  const claro = document.getElementById("tema-claro");
+  const oscuro = document.getElementById("tema-oscuro");
+
+  // Alterna entre los estilos
+  if (claro.disabled) {
+    claro.disabled = false; // Activa el tema claro
+    oscuro.disabled = true; // Desactiva el tema oscuro
+  } else {
+    claro.disabled = true; // Desactiva el tema claro
+    oscuro.disabled = false; // Activa el tema oscuro
+  }
+}
+
+document.getElementById("tema-oscuro").disabled = true;
+```
+{: file="claroOscuro2.js" }
+
+Y responde a las siguientes preguntas:
+
+1. ¿Qué solución te parece mejor para cambiar de tema? ¿Por qué?
+1. ¿En alguno de los dos casos me puedo ahorrar el uso de variables?
 
 ## Dame tu feedback
 
@@ -180,4 +403,3 @@ Abre el ejemplo grid donde se ve el comportamiento del grid de Bootstrap y respo
 - <https://github.com/workshopper/learn-sass>
 - <https://lenguajecss.com/css/calidad-de-codigo/stylelint/>
 - <https://getbootstrap.com/docs/5.3/examples/>
-- 
