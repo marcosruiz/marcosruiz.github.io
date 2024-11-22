@@ -33,6 +33,9 @@ Imagina un ejemplo de página web en la que al hacerse algo invisible sea mejor 
 
 Hacer el apartado "Aprende CSS Flexbox construyendo una galería de fotos" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
 
+![Galería de fotos de gatos](galeriaGatos.png)
+_Galería de fotos de gatos_
+
 > 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
 {:.prompt-info}
 
@@ -45,40 +48,56 @@ Haz todas las actividades de [Flexbox Froggy](https://codepip.com/games/flexbox-
 {:.prompt-info}
 
 {:.activity}
-### (Voluntaria) Tipografía en freeCodeCamp
+### (Voluntaria NO recomendada) Tipografía en freeCodeCamp
 
 Hacer el apartado "Aprende tipografía construyendo una etiqueta de nutrición" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
 
+![Etiqueta de nutrición](etiquetaNutricion.png)
+_Etiqueta de nutrición_
+
 > 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
 {:.prompt-info}
 
 {:.activity}
-### (Voluntaria) Pseudoselectores en freeCodeCamp
+### (Voluntaria NO recomendada) Pseudoselectores en freeCodeCamp
 
 Hacer el apartado "Aprende más sobre los selectores pseudo de CSS construyendo una hoja de balance" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
 
+![Balance](balance.png)
+_Balance_
+
 > 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
 {:.prompt-info}
 
 {:.activity}
-### (Voluntaria) Gato en freeCodeCamp
+### (Voluntaria NO recomendada) Gato en freeCodeCamp
 
 Hacer el apartado "Aprende CSS Intermedio haciendo una pintura de gatos" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
 
+![Gato](gato.png)
+_Gato_
+
 > 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
 {:.prompt-info}
 
 {:.activity}
-### Diseño responsive en freeCodeCamp
+### Piano en freeCodeCamp
 
 Hacer el apartado "Aprende diseño web adaptativo construyendo un piano" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
 
+![Piano](piano.png)
+_Piano_
+
 > 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
 {:.prompt-info}
+
 {:.activity}
-### Variables CSS en freeCodeCamp
+### (Voluntaria) Horizonte en freeCodeCamp
 
 Hacer el apartado "Aprende variables CSS construyendo un horizonte de la ciudad" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
+
+![Horizonte de ciudad](horizonteCuidad.png)
+_Horizonte de ciudad_
 
 > 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
 {:.prompt-info}
@@ -92,7 +111,7 @@ Hacer el apartado "Aprende la cuadrícula de CSS construyendo una revista" del c
 {:.prompt-info}
 
 {:.activity}
-### Grid Garden
+### (Voluntaria) Grid Garden
 
 Haz todas las actividades de [Grid Garden](https://codepip.com/games/grid-garden/).
 
@@ -108,7 +127,7 @@ Utilizando el tutorial [StyleLint: Linter CSS](https://lenguajecss.com/css/calid
 {:.prompt-info}
 
 {:.activity}
-### (Voluntaria) SASS
+### SASS
 
 Sigue los pasos de este repositorio <https://github.com/workshopper/learn-sass> para instalar y ejecutar el módulo de learn-sass.
 
@@ -137,6 +156,17 @@ Abre uno y modifícalo para que aparezca tu código de usuario en algún sitio.
 
 > 📷 Haz una captura cuando termines la actividad.
 {:.prompt-info}
+
+Abre el ejemplo grid donde se ve el comportamiento del grid de Bootstrap y responde a las siguientes preguntas:
+
+1. ¿De cuántas columnas consta el grid de bootstrap?
+1. ¿Qué diferencia aprecias entre usar la clase `.col-4` y la clase `.col-md-4`?
+1. Cuando cambiamos del tema claro al tema oscuro, ¿cambia algo en el documento HTML?
+
+{:.activity}
+### Tema claro y tema oscuro
+
+
 
 ## Dame tu feedback
 
