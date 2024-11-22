@@ -1,9 +1,9 @@
 ---
 title: "Tutorial: Primeros pasos con SASS"
-date: 2024-10-26 9:00:00 +0100
+date: 2024-11-16 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
-tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
-img_path: /assets/img/imagenes-web/
+tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw, sass]
+img_path: /assets/img/tutorial-sass/
 ---
 
 ## Introducción

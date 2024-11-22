@@ -21,10 +21,6 @@ Una guía de estilo se hace imprescindible cuando el sitio Web es desarrollado p
 
 Haz click [aquí](/assets/img/planificacion-interfaces-graficas/manual_estilo_simplificacion_aprobado.pdf) para descargar y echarle un ojo al manual de estilo del Gobierno de Navarra.
 
-Video voluntario:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e7CpH_B7XPU?si=9NyiMsPNOhBuMkV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 (Voluntario) Lee el artículo [Guía de estilo, importancia en el diseño de interfaces web](https://www.eniun.com/guia-estilo-diseno-interfaces-web/).
 
 {:.section}
