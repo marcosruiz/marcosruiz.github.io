@@ -28,6 +28,7 @@ pin: true
 
 - T01 - [Tarea: Introducción al diseño web](/posts/tarea-introduccion-diseno-web/)
 - T02 - [Tarea obligatoria: Introducción a CSS](/posts/tarea-introduccion-css)
+- T02.2 - [Tarea obligatoria: CSS avanzado](/posts/tarea-css-avanzado)
 
 ## Enlaces de interés
 

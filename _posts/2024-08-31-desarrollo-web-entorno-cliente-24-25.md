@@ -28,6 +28,7 @@ pin: true
 
 - T01 - [Tarea: Entorno de desarrollo para JavaScript](/posts/tarea-entorno-desarrollo-javascript/)
 - T02 - [Tarea obligatoria: Introducción a JavaScript](/posts/tarea-introduccion-javascript/)
+- T03 - [Tarea obligatoria: Objetos predefinidos de JavaScript](/posts/tarea-objetos-predefinidos-javascript/)
 
 ## Enlaces de interés
 
