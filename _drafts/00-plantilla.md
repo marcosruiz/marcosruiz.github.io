@@ -74,18 +74,15 @@ Ejemplo
 {:.prompt-tip}
 
 ```html
-
 ```
 
 ```java
-
 ```
 
 ```javascript
 ```
 
 ```xml
-
 ```
 
 ```console
@@ -93,7 +90,6 @@ Ejemplo
 ```
 
 ```
-
 ```
 {: file="" }
 

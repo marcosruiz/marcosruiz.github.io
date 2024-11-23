@@ -57,6 +57,29 @@ No.
 ¿En qué consiste la devolución o retorno de valores? ¿Todas las funciones devuelven algo?
 
 {:.section}
+## Variables Globales y Efectos Secundarios
+
+Las funciones pueden utilizar y modificar variables globales, lo que puede llevar a efectos secundarios (side-effects).
+
+```javascript
+let contador = 0;
+function incrementar() {
+  contador++;
+}
+incrementar();
+console.log(contador); // 1
+```
+
+Salida:
+
+```javascript
+1
+```
+
+> En términos generales, evitaremos funciones que usen o modifiquen variables globales. Estas funciones son consideradas como no puras y veremos en posteriores capítulos porqué no se deben utilizar.
+{:.prompt-info}
+
+{:.section}
 ## Parámetros de una función
 
 Una característica notable de JavaScript es que no da error si llamas a una función con más argumentos de los que espera. Los argumentos adicionales simplemente son ignorados.
@@ -191,7 +214,7 @@ Ejemplo con parámetros:
 {:.section}
 ## Declaración de funciones
 
-Las funciones pueden ser declaradas de manera explícita. Este tipo de declaración se carga en tiempo de compilación, permitiendo su uso antes de la declaración (hoisting).
+Las funciones pueden ser declaradas de manera **explícita**. Este tipo de declaración se carga en tiempo de compilación, permitiendo su uso antes de la declaración (hoisting).
 
 ```javascript
 console.log(suma(2, 3)); // 5
@@ -205,7 +228,7 @@ function suma(a, b) {
 5
 ```
 
-Las funciones también pueden ser definidas mediante expresiones. Este tipo de función se evalúa en tiempo de ejecución y no soporta hoisting.
+Las funciones también pueden ser definidas mediante **expresiones**. Este tipo de función se evalúa en tiempo de ejecución y no soporta hoisting.
 
 ```javascript
 let restar = function(a, b) {
@@ -219,7 +242,7 @@ console.log(restar(5, 3)); // 2
 2
 ```
 
-Las expresiones de función pueden ser anónimas, es decir, no tener un nombre. Al no tener nombre, no se pueden invocar a si mismas, por lo que no se pueden hacer recursivas. Si no tienen nombre y son asignadas a una variable con una expresión de función, adquieren el nombre de la variable. Se suelen usar como funciones de “Callback”, aunque no es lo más recomendable porque luego complican la trazabilidad de los errores.
+Las expresiones de función pueden ser **anónimas**, es decir, no tener un nombre. Al no tener nombre, no se pueden invocar a si mismas, por lo que no se pueden hacer recursivas. Si no tienen nombre y son asignadas a una variable con una expresión de función, adquieren el nombre de la variable. Se suelen usar como funciones de “Callback”, aunque no es lo más recomendable porque luego complican la trazabilidad de los errores.
 
 ```javascript
 let dividir = function(a, b) {
@@ -237,12 +260,12 @@ console.log(dividir(10, 2)); // 5
 
 Una arrow function es una forma más abreviada/simplificada de escribir funciones anónimas. Esto las hace más complicadas de entender hasta que te acostumbras a su uso. Estas son su principales características:
 
-- **Sintaxis Concisa**: No es necesario usar la palabra clave function, return, ni utilizar llaves {} si la función solo tiene una expresión.
-- **Constantes por Defecto**: Se recomienda declarar funciones flecha utilizando const en lugar de var o let, ya que una vez asignadas, no pueden ser reasignadas a otro valor.
-- **No tienen this propio**: A diferencia de las funciones regulares, las funciones flecha no tienen su propio contexto this. En su lugar, heredan el this del contexto en el que fueron creadas.
-- **No son hoisted**: Las funciones flecha no son elevadas (hoisted) como las funciones tradicionales. Esto significa que no pueden ser invocadas antes de su declaración en el código.
-- **Uso de {} y return**: Si la función flecha tiene más de una línea de código o más de una instrucción, es necesario utilizar llaves {} y la palabra clave return explícitamente.
-- **No pueden ser métodos**: Debido a que no tienen su propio this, no pueden ser utilizadas como métodos en objetos.
+- **Sintaxis Concisa**: No es necesario usar la palabra clave `function`, `return`, ni utilizar llaves `{}` si la función solo tiene una expresión.
+- **Constantes por Defecto**: Se recomienda declarar funciones flecha utilizando `const` en lugar de `var` o `let`, ya que una vez asignadas, no pueden ser reasignadas a otro valor.
+- **No tienen this propio**: A diferencia de las funciones regulares, las funciones flecha no tienen su propio contexto `this`. En su lugar, heredan el this del contexto en el que fueron creadas.
+- **No son hoisted**: Las funciones flecha no son elevadas (`hoisted`) como las funciones tradicionales. Esto significa que no pueden ser invocadas antes de su declaración en el código.
+- **Uso de `{}` y `return`**: Si la función flecha tiene más de una línea de código o más de una instrucción, es necesario utilizar llaves `{}` y la palabra clave `return` explícitamente.
+- **No pueden ser métodos**: Debido a que no tienen su propio `this`, no pueden ser utilizadas como métodos en objetos.
 
 A continuación te muestro como pasar de una función anónima a una función flecha:
 
@@ -266,7 +289,110 @@ A continuación te muestro como pasar de una función anónima a una función fl
 a => a + 100;
 ```
 
+### Ejemplo comparativo
+
+Expresión de función tradicional:
+
+```javascript
+var multiplicar = function(x, y) {
+  return x * y;
+};
+```
+
+Expresión de función flecha:
+
+```javascript
+const multiplicar = (x, y) => x * y;
+```
+
+Las funciones flecha son muy usadas en la programación funcional. Pero también son criticadas por:
+
+- No tener una sintaxis coherente al necesitar `()`, `{}` o `return` en algunas circunstancias o ser demasiado cortas y ser confundidas con asignaciones.
+- No pueden ser usadas como métodos o constructor por no tener contexto (`this`).
+- Cuando retornan un objeto literal siempre necesitan `{}` y return, lo cual es molesto, a no ser que se ponga entre paréntesis.
+
+```javascript
+const func = () => ({ foo: 1 });
+```
+
+- No tienen el array `arguments`, aunque se puede usar la técnica de `rest parameters` como alternativa
+
+```javascript
+const f = (...args) => args[0] + n;
+```
+
+### Uso en Objetos
+
+```javascript
+const persona = {
+  nombre: 'Pepe',
+  apellido: 'García',
+  
+  // Función regular
+  consulta: function() {
+    return `${this.nombre} ${this.apellido}`;
+  },
+  
+  // Función flecha
+  consultar: () => {
+    // En este contexto, `this` no se refiere al objeto persona
+    return `${this.nombre} ${this.apellido}`;
+  }
+};
+
+console.log(persona.consulta());   // Salida: Pepe García
+console.log(persona.consultar());  // Salida: undefined undefined
+```
+
+Salida:
+
+```plaintext
+Pepe García
+undefined undefined
+```
+
+- **Función Regular**: `consulta` es una función regular dentro del objeto `persona`. Al llamar a `this.nombre` y `this.apellido`, se refiere a las propiedades del objeto `persona`.
+- **Función Flecha**: consultar es una función flecha dentro del objeto `persona`. Debido a que las funciones flecha no tienen su propio `this`, `this` dentro de consultar no se refiere al objeto persona, sino al contexto global o a `undefined` en modo estricto (`undefined` en este caso).
+
+(Voluntario) Lee el artículo [Funciones Flecha](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Arrow_functions).
+
+## Funciones anidadas
+
+En JavaScript podemos anidar unas funciones dentro de otras. Es decir podemos programar una función dentro de otra función.
+
+Cuando no tenemos funciones anidadas, cada función que definamos será accesible por todo el código, es decir serán funciones globales. Con las funciones anidadas, podemos encapsular la accesibilidad de una función dentro de otra y hacer que esa función sea privada o local a la función principal. No te recomiendo el reutilizar nombres de funciones con esta técnica, para evitar problemas o confusiones posteriores.
+
+Ejemplo de una función anidada:
+
+```javascript
+const calcularHipotenusa = (cateto1, cateto2) => {
+   const calcularCuadrado = (x) => { return x * x; }
+   return Math.sqrt(calcularCuadrado(cateto1) + calcularCuadrado(cateto2));
+}
+console.log(calcularHipotenusa(1, 2)); // Muestra por consola: 2.23606797749979 
+```
+
+## Funciones predefinidas
+
+A continuación te dejo una lista de funciones predefinidas, que se pueden utilizar a nivel global en cualquier parte de tu código de JavaScript. Estas funciones no están asociadas a ningún objeto en particular. Típicamente, estas funciones te permiten convertir datos de un tipo a otro tipo.
+
+| Función              | Descripción                                                                  |
+| -------------------- | ---------------------------------------------------------------------------- |
+| `decodeURI()`          | Decodifica los caracteres especiales de una URL excepto: `, / ? : @ & = + $ #` |
+| `decodeURIComponent()` | Decodifica todos los caracteres especiales de una URL.                       |
+| `encodeURI()`          | Codifica los caracteres especiales de una URL excepto: `, / ? : @ & = + $ #`   |
+| `encodeURIComponent()` | Codifica todos los caracteres especiales de una URL.                         |
+| `escape()`             | Codifica caracteres especiales en una cadena, excepto: `* @ - _ + . /`        |
+| `eval()`               | Evalúa una cadena y la ejecuta si contiene código u operaciones.             |
+| `isFinite()`           | Determina si un valor es un número finito válido.                            |
+| `isNaN()`              | Determina cuando un valor no es un número.                                   |
+| `Number()`             | Convierte el valor de un objeto a un número.                                 |
+| `parseFloat()`         | Convierte una cadena a un número real.                                       |
+| `parseInt()`           | Convierte una cadena a un entero.                                            |
+| `unescape()`           | Decodifica caracteres especiales en una cadena, excepto: `* @ - _ + . /`       |
+
 ## Bibliografía
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - <https://xxjcaxx.github.io/libro_dwec/desarrollofrontend.html>
+- <https://www.digitalocean.com/community/tutorials/understanding-arrow-functions-in-javascript>

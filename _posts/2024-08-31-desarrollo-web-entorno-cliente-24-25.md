@@ -14,12 +14,17 @@ pin: true
   - [Trabajar con Visual Studio Code](/posts/trabajar-visual-studio-code)
 - UD2 - [Fundamentos de la programación con JavaScript](/posts/fundamentos-programacion-javascript)
   - [Tipos de datos en JavaScript](/posts/tipos-datos-javascript)
-  - [Funciones en JavaScript](/posts/funciones-javascript/)
+  
 - UD3 - Utilización de los objetos predefinidos del lenguaje.
   - [Objetos nativos en JavaScript](/posts/objetos-nativos-javascript)
   - [¿Qué es el BOM?](/posts/bom-javascript)
   - [¿Qué es el DOM?](/posts/dom-javascript)
 - UD4 - Programación con arrays, funciones y objetos definidos por el usuario.
+  - [Arrays en JavaScript](/posts/arrays-javascript)
+  - [Funciones en JavaScript](/posts/funciones-javascript/)
+  - [Objetos en JavaScript](/posts/objetos-javascript/)
+  - [Clases en JavaScript](/posts/clases-javascript/)
+  - [Clases en JavaScript (ES6)](/posts/clases-javascript-es6/)
 - UD5 - Interacción con el usuario: eventos y formularios.
   - [Formularios en JavaScript](/posts/formularios-javascript)
   - [Eventos y handlers en JavaScript](/posts/eventos-javascript)
