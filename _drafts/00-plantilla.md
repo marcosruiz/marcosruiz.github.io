@@ -15,11 +15,7 @@ img_path: /assets/img/plantilla/
 Ejemplo
 
 <details class="card mb-2">
-  <summary class="card-header question" markdown="1">
-
-
-
-  </summary>
+  <summary class="card-header question"></summary>
   <div class="card-body" markdown="1">
 
 
@@ -29,7 +25,11 @@ Ejemplo
 </details>
 
 <details class="card mb-2">
-  <summary class="card-header question"></summary>
+  <summary class="card-header question" markdown="1">
+
+
+
+  </summary>
   <div class="card-body" markdown="1">
 
 

@@ -55,7 +55,7 @@ volumes:
 ```
 {: file="docker-compose.yml" }
 
-En el directorio donde este el fichero docker-compose.yml ejecutamos la siguiente instrucción para iniciar los dos contenedores:
+En el directorio donde este el fichero `docker-compose.yml`{: .filepath} ejecutamos la siguiente instrucción para iniciar los dos contenedores:
 
 ```console
 $ docker-compose up -d

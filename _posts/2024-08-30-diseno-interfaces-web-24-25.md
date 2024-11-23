@@ -18,9 +18,12 @@ pin: true
   - [Selectores en CSS](/posts/selectores-css)
   - [Posicionamiento en CSS](/posts/posicionamiento-css)
   - [CSS con tablas y listas](/posts/css-tablas-listas)
+  - [Tutorial: Primeros pasos con SASS](/posts/tutorial-sass/)
 - UD3 - [Imágenes en la web](/posts/imagenes-web/)
   - [Ley de propiedad intelectual](/posts/propiedad-intelectual)
 - UD4 - Audio y Vídeo en la Web
+  - [Audio en la web](/posts/audio-web)
+  - [Video en la web](/posts/video-web)
 - UD5 - Animaciones en la Web
 - UD6 - Contenidos web interactivos
 - UD7 - [Usabilidad en la Web](/posts/usabilidad-web)
