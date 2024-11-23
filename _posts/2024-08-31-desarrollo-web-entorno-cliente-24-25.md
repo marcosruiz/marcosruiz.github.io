@@ -24,6 +24,7 @@ pin: true
   - [Funciones en JavaScript](/posts/funciones-javascript/)
   - [Objetos en JavaScript](/posts/objetos-javascript/)
   - [Clases en JavaScript](/posts/clases-javascript/)
+  - [Prototipos en JavaScript](/posts/prototipos-javascript/)
   - [Clases en JavaScript (ES6)](/posts/clases-javascript-es6/)
 - UD5 - Interacción con el usuario: eventos y formularios.
   - [Formularios en JavaScript](/posts/formularios-javascript)
