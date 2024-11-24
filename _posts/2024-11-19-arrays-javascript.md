@@ -75,7 +75,14 @@ a
 
 Para iterar sobre los elementos de un array, JavaScript ofrece varias opciones:
 
-- for loop:
+- for loop
+- for of loop
+- forEach
+- map
+
+La mejor manera de recorrer los arrays depende de la necesidad
+
+### for loop
 
 ```javascript
 for (let i = 0; i < a.length; i++) {
@@ -83,7 +90,9 @@ for (let i = 0; i < a.length; i++) {
 }
 ```
 
-- for...of loop:
+En el primer caso, la sintaxis típica de C, creamos una variable de control del bucle que puede ser útil dentro del bucle. Si es necesaria esa variable o queremos alterar las iteraciones en función de esa variable, puede ser la mejor opción. Se puede detener fácilmente alterando el índice o con `break`. El problema es que esa variable de control hace el código más “sucio” y puede molestar.
+
+### for of loop
 
 ```javascript
 for (let i of a) {
@@ -91,27 +100,23 @@ for (let i of a) {
 }
 ```
 
-- forEach:
+El caso de `for..of` es uno de los más sencillos, ya que no necesitamos la variable de control y sigue siendo ámbito de bloque. Esta sería la mejor opción en casi todos los casos en los que necesitamos recorrer un array completamente y en orden. Se puede detener con `break` y no tiene acceso al índice.
+
+### forEach
 
 ```javascript
 a.forEach(i => console.log(i));
 ```
 
-- map (aunque en este caso, forEach es más adecuado para solo imprimir):
+`forEach(callback, thisArg)` es como el anterior, pero en este caso creamos una función de callback. Una ventaja es que esta función también acepta el índice y el array. Puede ser útil en programación funcional cuando tenemos una función que ejecutar para cada elemento. El problema es que al pasar una función como callback, el ámbito de la función pasa a ser indefinido y podemos tener problemas con el this (`this` no es el array, sino el ámbito en el que se ejecuta, que puede ser un objeto, `Window`, `Global` o `undefined` en modo estricto). Si queremos un ámbito concreto para las funciones de callback se puede usar el argumento `thisArg`. No se puede detener. Normalmente si queremos que se detenga podemos usar `.every()` o `.some()`.
+
+### map
 
 ```javascript
 a.map(i => console.log(i));
 ```
 
-La mejor manera de recorrer los arrays depende de la necesidad:
-
-En el primer caso, la sintaxis típica de C, creamos una variable de control del bucle que puede ser útil dentro del bucle. Si es necesaria esa variable o queremos alterar las iteraciones en función de esa variable, puede ser la mejor opción. Se puede detener fácilmente alterando el índice o con `break`. El problema es que esa variable de control hace el código más “sucio” y puede molestar.
-
-El caso de `for..of` es uno de los más sencillos, ya que no necesitamos la variable de control y sigue siendo ámbito de bloque. Esta sería la mejor opción en casi todos los casos en los que necesitamos recorrer un array completamente y en orden. Se puede detener con `break` y no tiene acceso al índice.
-
-`forEach(callback, thisArg)` es como el anterior, pero en este caso creamos una función de callback. Una ventaja es que esta función también acepta el índice y el array. Puede ser útil en programación funcional cuando tenemos una función que ejecutar para cada elemento. El problema es que al pasar una función como callback, el ámbito de la función pasa a ser indefinido y podemos tener problemas con el this (`this` no es el array, sino el ámbito en el que se ejecuta, que puede ser un objeto, `Window`, `Global` o `undefined` en modo estricto). Si queremos un ámbito concreto para las funciones de callback se puede usar el argumento `thisArg`. No se puede detener. Normalmente si queremos que se detenga podemos usar `.every()` o `.some()`.
-
-El map solo se debería usar para retornar una copia modificada del array, como veremos más adelante. Tampoco se puede detener.
+El map (aunque en este caso, `forEach` es más adecuado para solo imprimir) solo se debería usar para retornar una copia modificada del array, como veremos más adelante. Tampoco se puede detener.
 
 ## Búsqueda en Arrays
 
@@ -268,6 +273,8 @@ Veamos si Javascript nos sabe responder a la clásica pregunta:
 console.log(['🥚','🐤'].sort());
 ```
 
+Salida:
+
 ```plaintext
 [ "🐤", "🥚" ]
 ```
@@ -275,6 +282,8 @@ console.log(['🥚','🐤'].sort());
 ```javascript
 console.log(['🦑','🌱','🦣','🫵','🌍'].sort());
 ```
+
+Salida:
 
 ```plaintext
 [ "🌍", "🌱", "🦑", "🦣", "🫵" ]
@@ -293,6 +302,7 @@ Existen varios métodos adicionales para manipular arrays en JavaScript:
 - `fill()`: Llena un array con un valor específico.
 
 ![alt text](otrosarrays.png)
+_Otras operaciones con arrays_
 
 Ejemplo de uso:
 
@@ -390,7 +400,7 @@ Métodos que no mutan el array:
   - `Array.prototype.toReverse()`
   - `Array.prototype.toSpliced()`
 
-En esta tabla se muestran algunos métodos que mutan con una alternativa. En algunos casos, la alternativa puede ser hacer una copia con [...array] sobre la que aplicar el método:
+En esta tabla se muestran algunos métodos que mutan con una alternativa. En algunos casos, la alternativa puede ser hacer una copia con `[...array]` sobre la que aplicar el método:
 
 | Método que muta el array | Método que no muta el array                       |
 | ------------------------ | ------------------------------------------------- |

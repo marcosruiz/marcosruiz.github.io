@@ -8,7 +8,7 @@ img_path: /assets/img/objetos-javascript/
 
 ## Introducción
 
-Antes de la introducción de ES6, las clases en JavaScript se creaban utilizando funciones constructoras. Esta técnica sigue siendo utilizada. Con ES6, se incorporó la palabra clave class, que se asemeja más a la sintaxis de otros lenguajes de programación orientados a objetos. Sin embargo, es importante entender que JavaScript no funciona exactamente con clases en el sentido tradicional, sino con prototipos.
+Antes de la introducción de ES6, las clases en JavaScript se creaban utilizando funciones constructoras. Esta técnica sigue siendo utilizada. Con ES6, se incorporó la palabra clave `class`, que se asemeja más a la sintaxis de otros lenguajes de programación orientados a objetos. Sin embargo, es importante entender que JavaScript no funciona exactamente con clases en el sentido tradicional, sino con prototipos.
 
 JavaScript siempre ha tenido objetos, pero no clases de la forma tradicional que se encuentran en otros lenguajes como Java o C++. Las clases en ES6 no tienen atributos y métodos privados de manera directa; esto se maneja mediante `closures`. En las nuevas versiones ya se permite declarar atributos privados con `#`. En JavaScript, las clases son más una técnica de programación que una funcionalidad del lenguaje.
 
@@ -48,7 +48,9 @@ console.log(myApple.getInfo()); // "red Granny Smith apple"
 })();
 ```
 
-```javascript
+Salida
+
+```plaintext
 red Granny Smith apple
 ```
 
@@ -121,9 +123,29 @@ var apple = new function() {
 
 El uso de `new function()` hace dos cosas: define una función anónima y la invoca inmediatamente con `new`, creando así un singleton. Este enfoque garantiza que solo haya una instancia del objeto.
 
+## Clases con Valores por Defecto
+
+Las clases en JavaScript permiten establecer valores por defecto para sus propiedades en el constructor.
+
+```javascript
+class Chameleon {
+  constructor({ newColor = "green" } = {}) {
+    this.newColor = newColor;
+  }
+}
+
+const freddie = new Chameleon({ newColor: "purple" });
+console.log(freddie.newColor); // "purple"
+```
+
+En este ejemplo, newColor se establece por defecto a “green” si no se proporciona un valor al crear una instancia de Chameleon.
+
+(Voluntario) Lee el artículo <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#examples>.
+
 ## Bibliografía
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - <https://xxjcaxx.github.io/libro_dwec/arraysobjetosclases.html#arrays>
 - <https://developer.mozilla.org/es/docs/Web/JavaScript/Inheritance_and_the_prototype_chain>
+- <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#examples>
 - 

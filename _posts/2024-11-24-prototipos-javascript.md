@@ -25,7 +25,9 @@ console.log(homework.toString()); // [object Object]
 })()
 ```
 
-```javascript
+Salida:
+
+```plaintext
 [object Object]
 ```
 
@@ -33,7 +35,7 @@ En el ejemplo anterior, el objeto `homework` no tiene una propiedad o método `t
 
 ## Vínculo de Objetos (Object Linkage)
 
-Se pueden crear nuevos objetos que hereden de otros objetos utilizando `Object.create()`. Esto permite crear una cadena de prototipos donde el objeto hijo puede acceder a las propiedades y métodos del objeto padre.
+Se pueden crear nuevos objetos que hereden de otros objetos utilizando `Object.create()`. Esto permite crear una cadena de prototipos donde el objeto hijo puede acceder a las propiedades y métodos del objeto padre:
 
 ```javascript
 (()=>{
@@ -45,7 +47,9 @@ console.log(otherHomework.topic); // "JS"
 })()
 ```
 
-```javascript
+Salida:
+
+```plaintext
 JS
 ```
 
@@ -71,7 +75,9 @@ console.log(myApple.getInfo()); // "red Granny Smith apple"
 })()
 ```
 
-```javascript
+Salida:
+
+```plaintext
 red Granny Smith apple
 ```
 
@@ -84,7 +90,9 @@ let obj = {};
 console.log(Object.getPrototypeOf(obj));
 ```
 
-```javascript
+Salida:
+
+```plaintext
 [Object: null prototype] {}
 ```
 
@@ -106,7 +114,9 @@ a.forEachLog();
 // Output: 1 2 3 4
 ```
 
-```javascript
+Salida:
+
+```plaintext
 1
 2
 3

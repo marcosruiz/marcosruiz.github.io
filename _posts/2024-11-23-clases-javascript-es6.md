@@ -24,8 +24,6 @@ console.log(hero1); // Hero { name: 'Link', level: 10 }
 
 
 // Sintaxis de Clase
-
-
 class HeroClass {
     constructor(name, level) {
         this.name = name;
@@ -35,6 +33,8 @@ class HeroClass {
 const hero2 = new HeroClass('Zelda', 20);
 console.log(hero2); // Hero { name: 'Zelda', level: 20 }
 ```
+
+Salida:
 
 ```plaintext
 Hero { name: "Link", level: 10 }
@@ -78,6 +78,8 @@ console.log(hero4.greet()); // Luigi says hello.
 })()
 ```
 
+Salida:
+
 ```plaintext
 Mario says hello.
 Luigi says hello.
@@ -118,6 +120,8 @@ console.log(mage2); // Mage { name: 'Merlin', level: 150, spell: 'Ice Blast' }
 })()
 ```
 
+Salida:
+
 ```plaintext
 Mage { name: "Gandalf", level: 100, spell: "Fireball" }
 Mage { name: "Merlin", level: 150, spell: "Ice Blast" }
@@ -149,6 +153,8 @@ console.log(Foo.staticMethod()); // classy
 console.log(foo.prototypeMethod()); // prototypical
 ```
 
+Salida:
+
 ```plaintext
 classy
 prototypical
@@ -156,11 +162,15 @@ prototypical
 
 En este ejemplo, `staticMethod` se llama en la clase `Foo`, mientras que `prototypeMethod` se llama en la instancia `foo`.
 
+Fíjate en la siguiente figura cómo la variable `foo` NO tiene la propiedad `staticMethod`.
+
 ![alt text](static.png)
+
+Fíjate también en cómo la variable `foo` del tipo `Foo` tiene acceso al padre a través de la propiedad `[[Prototype]]`.
 
 ## Atributos Privados
 
-Por defecto, en ES6, todo es público. Sin embargo, ES2019 introdujo la sintaxis # para declarar atributos privados. Alternativamente, se pueden utilizar funciones internas y scopes para emular privacidad.
+Por defecto, en ES6, todo es público. Sin embargo, ES2019 introdujo la sintaxis `#` para declarar atributos privados. Alternativamente, se pueden utilizar funciones internas y scopes para emular privacidad.
 
 ```javascript
 // Con Sintaxis ES2019
@@ -187,7 +197,6 @@ console.log(rectangle.width); // undefined
 })();
 
 // Utilizando Closure
-
 (()=>{
 class SmallRectangle {
     constructor() {
@@ -211,6 +220,8 @@ console.log(rectangle.height); // undefined
 console.log(rectangle.width); // undefined
 })()
 ```
+
+Salida:
 
 ```plaintext
 { width: 20, height: 10 }
@@ -240,6 +251,8 @@ console.log(add()); // 1
 console.log(add()); // 2
 ```
 
+Salida:
+
 ```plaintext
 1
 2
@@ -247,7 +260,7 @@ console.log(add()); // 2
 
 En este ejemplo, `add` es una función autoinvocada que mantiene un `counter` privado.
 
-Habrás observado que en muchos ejemplos, envuelvo el código en `(()=>{ ....codigo.... })()`. Esto es para mantener las variables creadas en el ámbito de esa función autoinvocada y que no moleste al resto del notebook. Esto es un ejemplo de closure.
+Habrás observado que en muchos ejemplos, envuelvo el código en `(()=>{ ....codigo.... })()`. Esto es para mantener las variables creadas en el ámbito de esa función autoinvocada y que no moleste al resto del código. Esto es un ejemplo de `closure`.
 
 (Voluntario) Lee el artículo <https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch3.md#closure>.
 
@@ -280,11 +293,53 @@ p1.setPrecio = 900;
 console.log(p1.getPrecio); // 900
 ```
 
+Salida:
+
 ```plaintext
 900
 ```
 
 En este ejemplo, el setter `setPrecio` valida el valor antes de asignarlo, y el getter `getPrecio` devuelve el precio como un número flotante.
+
+## Clases, Objetos y this en JavaScript
+
+El valor de `this` en JavaScript depende del contexto de ejecución y de cómo se llama la función. Esta peculiaridad puede causar confusión, ya que en otros lenguajes `this` o `self` siempre son el objeto al que pertenecen. Cualquier función que use `this` debe ejecutarse con un objeto como contexto de ejecución. Por tanto, la podemos denominar un método. Pero no es tan sencillo, porque los métodos no siempre pertenecen al mismo entorno de ejecución. El entorno depende de cómo se invoque y el tipo de función que sea.
+
+No importa que los métodos estén declarados dentro de una clase o objeto literal. El contexto puede cambiar.
+
+Veamos un ejemplo para ilustrar cómo this funciona en diferentes contextos:
+
+```javascript
+(()=>{
+function classroom(teacher) {
+    //"use strict";   // prueba el modo estricto
+    this.plant = 3;   // sin new, this es window
+    console.log(this);
+    return function study() {
+        console.log(
+            `${teacher} says to study ${this.topic} in plant ${this.plant}`
+        );
+    };
+}
+// Descomenta las líneas para ver el fallo y intenta repararlo. 
+//let assignment = classroom("Kyle");  // Prueba con new
+//console.log(assignment);
+//assignment();
+
+let clase = { 
+    topic: 'mates',
+    plant: '5',   // prueba a comentar esta línea
+   // assignment: assignment
+};
+//clase.assignment();
+})();
+```
+
+1. Sin `new`, this en la función `classroom` es el objeto global `window` (o `undefined` en modo estricto). Cuando se llama a `assignment()`, `this` dentro de `study` también es el objeto global, resultando en `undefined` para `this.topic` y `this.plant`.
+1. Al usar `new`, this se refiere a la nueva instancia creada.
+1. Cuando se asigna assignment a `clase.assignment` y se llama como un método de clase, `this` se refiere al objeto clase.
+
+(Voluntario) Si quieres saber más sobre this lee la sección [Clases, Objetos y this en JavaScript del artículo Arrays Objetos y clases](https://xxjcaxx.github.io/libro_dwec/arraysobjetosclases.html#clases-objetos-y-this-en-javascript).
 
 ## Bibliografía
 

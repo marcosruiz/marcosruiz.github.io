@@ -52,7 +52,7 @@ En el ejemplo hemos usado `?` para evitar el error al intentar acceder a un atri
 
 ## Iterar sobre las Propiedades de un Objeto
 
-Para recorrer las propiedades de un objeto, se puede utilizar el bucle for...in.
+Para recorrer las propiedades de un objeto, se puede utilizar el bucle `for...in`.
 
 ```javascript
 let user = {
@@ -79,11 +79,140 @@ alert("age" in user); // true, user.age exists
 alert("blabla" in user); // false, user.blabla doesn't exist
 ```
 
-Además de for..in, podemos usar las funciones estáticas del objeto `Object` como `Object.values()`, `Object.keys()` o `Object.entries()` para convertirlo en un array e iterar con `for..of`, `.map()`, `.forEach()`…
+Además de `for..in`, podemos usar las funciones estáticas del objeto `Object` como `Object.values()`, `Object.keys()` o `Object.entries()` para convertirlo en un array e iterar con `for..of`, `.map()`, `.forEach()`…
 
-## (Voluntario) Manipulación y Copia de Objetos
+## Copia de Objetos
 
-Lee el artículo [Manipulación y Copia de Objetos](https://xxjcaxx.github.io/libro_dwec/arraysobjetosclases.html#manipulacion-y-copia-de-objetos).
+En ES6, copiar objetos y arrays se puede realizar de manera sencilla utilizando el operador de propagación (spreading). Este operador permite crear copias superficiales de objetos y arrays.
+
+### Copia Superficial con Spreading
+
+```javascript
+//Para copiar un objeto, se usa el siguiente formato:
+
+const originalObject = { a: 1, b: 2 };
+const copyOfObject = { ...originalObject };
+console.log(copyOfObject); // { a: 1, b: 2 }
+
+//Para copiar un array, se usa el mismo operador:
+
+const originalArray = [1, 2, 3];
+const copyOfArray = [...originalArray];
+console.log(copyOfArray); // [1, 2, 3]
+```
+
+Salida:
+
+```plaintext
+{ a: 1, b: 2 }
+[ 1, 2, 3 ]
+```
+
+### Uso del Operador Rest
+
+El operador de propagación (`...`) también se puede utilizar como operador Rest, con la intención opuesta: recoger el resto de los elementos. Esto es útil tanto en objetos como en funciones.
+
+```javascript
+(()=>{
+    const { a, ...rest } = { a: 1, b: 2, c: 3 };
+    console.log(a); // 1
+    console.log(rest); // { b: 2, c: 3 }
+})()
+```
+
+Salida:
+
+```plaintext
+1
+{ b: 2, c: 3 }
+```
+
+### Copia Superficial con Object.assign()
+
+Otra manera de copiar objetos es utilizando `Object.assign()`, que también crea una copia superficial del objeto.
+
+```javascript
+const originalObject = { a: 1, b: 2 };
+const copyOfObject = Object.assign({}, originalObject);
+console.log(copyOfObject); // { a: 1, b: 2 }
+```
+
+Salida:
+
+```plaintext
+{ a: 1, b: 2 }
+```
+
+### Copia Profunda con structuredClone()
+
+(Voluntario) Lee el artículo: <https://developer.mozilla.org/en-US/docs/Web/API/structuredClone>.
+
+Para realizar una copia profunda, donde todas las referencias anidadas también se copian, se puede usar `structuredClone()`:
+
+```javascript
+const originalObject = { a: 1, b: { c: 2 } };
+const copyOfObject = structuredClone(originalObject);
+console.log(copyOfObject); // { a: 1, b: { c: 2 } }
+```
+
+Salida:
+
+```plaintext
+{ a: 1, b: { c: 2 } }
+```
+
+La copia profunda funciona para atributos y objetos normales, pero no para métodos y nodos del DOM. Tampoco mantiene la “prototype chain”.
+
+## Object Literal enhacement
+
+En ES6, se introdujo una sintaxis más concisa para definir objetos literales. Cuando el nombre de la variable y la propiedad son iguales, no es necesario repetirlos.
+
+```javascript
+(()=>{
+const a = 'foo';
+const b = 42;
+const c = {};
+
+const object1 = { a, b, c };
+console.log(object1); // { a: "foo", b: 42, c: {} }
+})()
+```
+
+Salida:
+
+```plaintext
+{ a: "foo", b: 42, c: {} }
+```
+
+En este ejemplo, `object1` se crea de manera más concisa, sin necesidad de escribir `a: a, b: b, c: c`.
+
+## Borrar elementos de los objetos
+
+Para eliminar una clave-valor de un objeto se puede usar `delete`:
+
+```javascript
+delete user.password
+```
+
+Esta operación muta el objeto, si queremos hacer una copia al mismo tiempo que eliminamos el dato del objeto resultante, se puede usar la desestructuración:
+
+```javascript
+(()=>{
+const user = {
+  name: 'user',
+  level: 32,
+  password: '1234'
+};
+const { password, ...userWithoutPassword } = user;
+console.log('password' in userWithoutPassword); // false
+})();
+```
+
+Salida:
+
+```plaintext
+false
+```
 
 ## Bibliografía
 
