@@ -17,7 +17,7 @@ Lee el artículo [Eventos en JavaScript](/posts/eventos-javascript).
 {:.section}
 ## Formularios
 
-Lee el artículo [Formularios](/posts/formularios).
+Lee el artículo [Formularios](/posts/formularios-html).
 
 > ¡Reto! [Tarea: El formulario del gobierno](/posts/tarea-formularios).
 {:.prompt-info}

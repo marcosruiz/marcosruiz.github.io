@@ -28,9 +28,11 @@ pin: true
   - [Clases en JavaScript (ES6)](/posts/clases-javascript-es6/)
   - [Desestructuración en JavaScript](/posts/desestructuracion-javascript/)
 - UD5 - Interacción con el usuario: eventos y formularios.
-  - [Formularios en HTML](/posts//formularios-html/)
+  - [Formularios en HTML](/posts/formularios-html/)
   - [Formularios en JavaScript](/posts/formularios-javascript)
   - [Eventos en JavaScript](/posts/eventos-javascript)
+  - [Expresiones regulares](/posts/expresiones-regulares)
+  - [Gestión de cookies en JavaScript](/posts/cookies)
 - UD6 - Utilización del modelo de objetos del documento (DOM).
 - UD7 - Utilización de mecanismos de comunicación asíncrona.
 
@@ -40,7 +42,8 @@ pin: true
 
 ## Enlaces de interés
 
-
+- [Tarea: Web para Bayona](/posts/tarea-eventos)
+- [Tarea: El formulario del gobierno](/posts/tarea-formularios)
 
 ## Normativa
 
