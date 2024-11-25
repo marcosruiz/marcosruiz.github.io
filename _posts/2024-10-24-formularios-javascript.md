@@ -514,7 +514,7 @@ Los ficheros deben ser validados en el lado del servidor, pero nosotros también
 
 Aquí hay un ejemplo completo que ilustra cómo realizar estas validaciones en un formulario HTML:
 
-```javascript
+```html
 <form id="fileForm">
   <input type="file" id="fileInput">
   <button type="submit">Enviar</button>

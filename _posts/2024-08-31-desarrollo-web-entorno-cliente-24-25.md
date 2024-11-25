@@ -14,12 +14,11 @@ pin: true
   - [Trabajar con Visual Studio Code](/posts/trabajar-visual-studio-code)
 - UD2 - [Fundamentos de la programación con JavaScript](/posts/fundamentos-programacion-javascript)
   - [Tipos de datos en JavaScript](/posts/tipos-datos-javascript)
-  
 - UD3 - Utilización de los objetos predefinidos del lenguaje.
   - [Objetos nativos en JavaScript](/posts/objetos-nativos-javascript)
   - [¿Qué es el BOM?](/posts/bom-javascript)
   - [¿Qué es el DOM?](/posts/dom-javascript)
-- UD4 - Programación con arrays, funciones y objetos definidos por el usuario.
+- UD4 - Arrays, funciones y objetos en JavaScript
   - [Arrays en JavaScript](/posts/arrays-javascript)
   - [Funciones en JavaScript](/posts/funciones-javascript/)
   - [Objetos en JavaScript](/posts/objetos-javascript/)
@@ -27,7 +26,7 @@ pin: true
   - [Prototipos en JavaScript](/posts/prototipos-javascript/)
   - [Clases en JavaScript (ES6)](/posts/clases-javascript-es6/)
   - [Desestructuración en JavaScript](/posts/desestructuracion-javascript/)
-- UD5 - Interacción con el usuario: eventos y formularios.
+- UD5 - Formularios y eventos en JavaScript
   - [Formularios en HTML](/posts/formularios-html/)
   - [Formularios en JavaScript](/posts/formularios-javascript)
   - [Eventos en JavaScript](/posts/eventos-javascript)
@@ -40,7 +39,7 @@ pin: true
 - T02 - [Tarea obligatoria: Introducción a JavaScript](/posts/tarea-introduccion-javascript/)
 - T03 - [Tarea obligatoria: Objetos predefinidos de JavaScript](/posts/tarea-objetos-predefinidos-javascript/)
 
-## Enlaces de interés
+## Enlaces de interés 🔥
 
 - [Tarea: Web para Bayona](/posts/tarea-eventos)
 - [Tarea: El formulario del gobierno](/posts/tarea-formularios)

@@ -140,7 +140,7 @@ console.log(freddie.newColor); // "purple"
 
 En este ejemplo, newColor se establece por defecto a “green” si no se proporciona un valor al crear una instancia de Chameleon.
 
-(Voluntario) Lee el artículo <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#examples>.
+Lee el artículo [Desestructuración en JavaScript](/posts/desestructuracion-javascript) si quieres saber más sobre la desestructuración.
 
 ## Bibliografía
 

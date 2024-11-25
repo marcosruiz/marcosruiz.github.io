@@ -111,6 +111,8 @@ Salida:
 jdoe es John
 ```
 
+(Voluntario) Lee el artículo <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#examples>.
+
 ## Bibliografía
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
