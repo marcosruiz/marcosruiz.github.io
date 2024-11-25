@@ -1,9 +1,9 @@
 ---
-title: "Validación de formularios con HTML y JavaScript"
+title: "Formularios en HTML"
 date: 2024-06-23 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, dwec, teoria, formularios, javascript]
-img_path: /assets/img/formularios/
+img_path: /assets/img/formularios-html/
 ---
 
 {:.section}
@@ -22,11 +22,11 @@ La ventaja de la primera opción es que no tenemos que escribir código sino sim
 - Los mensajes son los predeterminados del navegador y en ocasiones pueden no ser muy claros para el usuario.
 - Los mensajes se muestran en el idioma en que está configurado el navegador, no en el de nuestra página.
 
-Mira el vídeo:
+(Voluntario) Mira el vídeo:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mlVXOg_Hb_E?si=Ps0VI4uVDPE8tYHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Preguntas a responder tras la visualización del vídeo:
+Preguntas sobre el vídeo:
 
 1. ¿Es seguro validar un formulario con HTML y JavaScript?
 1. ¿Qué validación de formularios tiene mayor rendimiento, con HTML o con JavaScript?
@@ -404,166 +404,6 @@ input:invalid {
 ```
 
 La validación del navegador se realiza al enviar el formulario. Si encuentra un error lo muestra, se detiene la validación del resto de campos y no se envía el formulario.
-
-{:.subsection}
-### Validación mediante la API de validación de formularios
-
-Mediante JavaScript tenemos acceso a todos los campos del formulario por lo que podemos hacer la validación como queramos, pero es una tarea pesada, repetitiva y que provoca código espaguetti difícil de leer y mantener más adelante.
-
-{:.question}
-¿Qué es el código espaguetti?
-
-Para hacerla más simple podemos usar la API de validación de formularios de HTML5 que permite que sea el navegador quien se encargue de comprobar la validez de cada campo pero las acciones (mostrar mensajes de error, no enviar el formulario, etc.) las realizamos desde Javascript.
-
-Esto nos da la ventaja de:
-
-- Los requisitos de validación de cada campo están como atributos HTML de dicho campo por lo que son fáciles de ver.
-- Nos evitamos la mayor parte del código dedicada a comprobar si el contenido del campo es válido. Nosotros mediante la API sólo preguntamos si se cumplen o no y tomamos las medidas adecuadas.
-- Aprovechamos las pseudo-clases `:valid` o `:invalid` que el navegador pone automáticamente a los campos por lo que no tenemos que añadirles clases para destacarlos.
-
-Las principales propiedades y métodos que nos proporciona esta API son:
-
-- `checkValidity()`: método booleano que nos dice si el campo al que se aplica es o no válido. También se puede aplicar al formulario para saber si es válido o no.
-- `setCustomValidity(mensaje)`: añade un error personalizado al campo (que ahora ya NO será válido para el navegador) con el mensaje pasado como parámetro. Por ejemplo podemos usarlo para indicar que el nick elegido no es válido porque ya está en uso por otro usuario. Para quitar este error se hace `setCustomValidity('')`.
-- `validationMessage`: en caso de que un campo no sea válido esta propiedad contiene el texto del error de validación proporcionado por el navegador. Si es válido esta propiedad es una cadena vacía.
-- `validity` ([documentación aquí](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState)): es un objeto que tiene propiedades booleanas para saber qué requisito del campo es el que falla:
-  - `valueMissing`: indica si no se cumple el atributo `required` (es decir, valdrá true si el campo tiene el atributo required pero no se ha introducido nada en él).
-  - `typeMismatch`: indica si el contenido del campo no cumple con su atributo `type` (ej. `type="email"`).
-  - `patternMismatch`: indica si no se cumple con el `pattern` indicado en su atributo.
-  - `tooShort` / `tooLong`: indican si no se cumple el atributo `minlength` o `maxlength` respectivamente.
-  - `rangeUnderflow` / rangeOverflow: indica si no se cumple el atributo `min` / `max`.
-  - `stepMismatch`: indica si no se cumple el atributo `step` del campo.
-  - `customError`: indica al campo se le ha puesto un error personalizado con `setCustomValidity`.
-  - `valid`: indica si es campo es válido.
-
-En la página de [W3Schools](https://www.w3schools.com/js/js_validation_api.asp) podéis ver algún ejemplo básico de esto. También a continuación tenéis un ejemplo simple del valor de las diferentes propiedades involucradas en la validación de un campo de texto que es obligatorio y cuyo tamaño debe estar entre 5 y 50 caracteres:
-
-```html
-<label>Nombre:</label>
-<input type="text" required minlength="5" maxlength="50">
-<span id="error" class="error"></span>
-<button id="comprueba">Comprueba</button>
-<p>checkValidity: <span id="checkValidity"></span></p>
-<p>validationMessage: <span id="validationMessage"></span></p>
-<p>validity.valueMissing: <span id="valueMissing"></span></p>
-<p>validity.tooShort: <span id="tooShort"></span></p>
-<p>validity.tooLong: <span id="tooLong"></span></p>
-```
-
-```javascript
-document.getElementById('comprueba').addEventListener('click', (event) => {
-  const inputName = document.getElementsByTagName('input')[0];
-
-  document.getElementById('error').innerHTML = inputName.validationMessage;
-  document.getElementById('checkValidity').innerHTML = inputName.checkValidity();
-  document.getElementById('validationMessage').innerHTML = inputName.validationMessage;
-  document.getElementById('valueMissing').innerHTML = inputName.validity.valueMissing;
-  document.getElementById('tooShort').innerHTML = inputName.validity.tooShort;
-  document.getElementById('tooLong').innerHTML = inputName.validity.tooLong;
-})
-```
-
-```css
-.error {
-  color: red;
-}
-```
-
-Para validar un formulario nosotros pero usando esta API debemos añadir al FORM el atributo novalidate que hace que no se encargue el navegador de mostrar los mensajes de error ni de decidir si se envía o no el formulario (aunque sí valida los campos) sino que lo haremos nosotros.
-
-{:.subsubsection}
-#### Ejemplo
-
-Un ejemplo sencillo de validación de un formulario podría ser:
-
-```html
-<form novalidate>
-  <label for="nombre">Por favor, introduzca su nombre (entre 5 y 50 caracteres): </span>
-  <input type="text" id="nombre" name="nombre" required minlength="5" maxlength="50">
-  <span class="error"></label>
-  <label for="mail">Por favor, introduzca una dirección de correo electrónico: </label>
-  <input type="email" id="mail" name="mail" required minlength="8">
-  <span class="error"></span>
-  <button type="submit">Enviar</button>
-</form>
-```
-{: file="index.html" }
-
-```javascript
-const form  = document.getElementsByTagName('form')[0];
-
-const nombre = document.getElementById('nombre');
-const nombreError = document.querySelector('#nombre + span.error');
-const email = document.getElementById('mail');
-const emailError = document.querySelector('#mail + span.error');
-
-form.addEventListener('submit', (event) => {
-  if(!form.checkValidity()) {
-    event.preventDefault();
-  }
-  nombreError.textContent = nombre.validationMessage;
-  emailError.textContent = email.validationMessage;
-});
-```
-{: file="main.js" }
-
-```css
-.error {
-  color: red;
-}
-
-input:invalid {
-  border: 2px dashed red;
-}
-```
-{: file="style.css" }
-
-Estamos usando:
-
-- `ValidationMessage` para mostrar el posible error de cada campo, o quitar el error cuando el campo sea válido.
-- `CheckValidity()` para no enviar/procesar el formulario si contiene errores.
-
-Si no nos gusta el mensaje del navegador y queremos personalizarlo podemos hacer una función que reciba un `<input>` y usando su propiedad validity devuelva un mensaje en función del error detectado:
-
-```javascript
-function customErrorValidationMessage(input) {
-  if (input.checkValidity()) {
-    return ''
-  }
-  if (input.validity.valueMissing) {
-    return 'Este campo es obligatorio'
-  }
-  if (input.validity.tooShort) {
-    return `Debe tener al menos ${input.minLength} caracteres` 
-  }
-  // Y seguiremos comprobando cada atributo que hayamos usado en el HTML
-  return 'Error en el campo'   // por si se nos ha olvidado comprobar algo
-}
-```
-
-Y ahora en vez de `nombreError.textContent = nombre.validationMessage` haremos `nombreError.textContent = customErrorValidationMessage(nombre)`.
-
-Si tenemos que validar algo que no puede hacerse mediante atributos HTML (por ejemplo si el nombre de usuario ya está en uso) deberemos hacer la validación "a mano" y en caso de no ser válido ponerle un error con `.setCustomValidation()`, pero debemos recordar quitar el error si todo es correcto o el formulario siempre será inválido. Modificando el ejemplo:
-
-```javascript
-const nombre = document.getElementById('nombre');
-const nombreError = document.querySelector('#nombre + span.error');
-
-form.addEventListener('submit', (event) => {
-  if (nombreEnUso(nombre.value)) {
-    nombre.setCustomValidation('Ese nombre de usuario ya está en uso')
-  } else {
-    nombre.setCustomValidation('')  // Se quita el error personalizado
-  }
-
-  if(!form.checkValidity()) {
-    ...
-  }
-})
-```
-
-> Existen múltiples librerías que facilitan enormemente el tedioso trabajo de validar un formulario. Un ejemplo es [yup](https://www.npmjs.com/package/yup).
-{:.prompt-info}
 
 ## Bibliografía
 

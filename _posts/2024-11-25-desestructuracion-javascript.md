@@ -10,6 +10,8 @@ img_path: /assets/img/desestructuracion-javascript/
 
 La desestructuración es una característica que permite extraer propiedades de objetos y asignarlas a variables.
 
+(Voluntario) Lee el artículo [Desestructuración de objetos](https://lenguajejs.com/javascript/objetos/desestructuracion-objetos/).
+
 ## Desestructuración Básica de Objetos
 
 ```javascript
@@ -114,3 +116,4 @@ jdoe es John
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - <https://xxjcaxx.github.io/libro_dwec/arraysobjetosclases.html#objetos-en-javascript>
 - <https://xxjcaxx.github.io/libro_dwec/arraysobjetosclases.html#manipulacion-y-copia-de-objetos>
+- <https://lenguajejs.com/javascript/objetos/desestructuracion-objetos/>

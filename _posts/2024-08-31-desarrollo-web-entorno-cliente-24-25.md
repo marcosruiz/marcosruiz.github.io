@@ -28,8 +28,9 @@ pin: true
   - [Clases en JavaScript (ES6)](/posts/clases-javascript-es6/)
   - [Desestructuración en JavaScript](/posts/desestructuracion-javascript/)
 - UD5 - Interacción con el usuario: eventos y formularios.
+  - [Formularios en HTML](/posts//formularios-html/)
   - [Formularios en JavaScript](/posts/formularios-javascript)
-  - [Eventos y handlers en JavaScript](/posts/eventos-javascript)
+  - [Eventos en JavaScript](/posts/eventos-javascript)
 - UD6 - Utilización del modelo de objetos del documento (DOM).
 - UD7 - Utilización de mecanismos de comunicación asíncrona.
 

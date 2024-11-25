@@ -6,11 +6,27 @@ tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, d
 img_path: /assets/img/expresiones-regulares/
 ---
 
+{:.section}
+## Introducción
+
 > "Usar expresiones regulares para resolver un problema genera ahora dos problemas"
 > Jamie Zawinski
 
-{:.section}
-## ¿Qué es una expresión regular?
+Las expresiones regulares son una herramienta para validar campos de formulario, como números de teléfono, correos electrónicos, y otros patrones específicos.
+
+```html
+<input type="text" id="phone-number">
+<button onclick="validate()">Validar</button>
+
+<script>
+function validate() {
+  var phoneNumber = document.getElementById('phone-number').value;
+  var phoneRGEX = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+  var phoneResult = phoneRGEX.test(phoneNumber);
+  alert("phone: " + phoneResult);
+}
+</script>
+```
 
 Lee el artículo [¿Qué es una expresión regular?](https://lenguajejs.com/javascript/regexp/expresiones-regulares/).
 
