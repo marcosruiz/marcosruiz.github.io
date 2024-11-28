@@ -121,7 +121,7 @@ _Diagrama del funcionamiento de Async o Defer_
 {:.subsubsection}
 #### async
 
-El atributo async permite que el script se ejecute de manera asíncrona tan pronto como se haya descargado. Esto significa que:
+El atributo `async` permite que el script se ejecute de manera asíncrona tan pronto como se haya descargado. Esto significa que:
 
 - El script se descargará en paralelo con el parseo del documento.
 - Se ejecutará tan pronto como la descarga haya terminado, sin esperar a que el documento se haya parseado por completo.

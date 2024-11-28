@@ -236,7 +236,7 @@ Hacer y llamar a una función que:
   - El número mayor de (34,67,23,75,35,19) es: \<XX\>
   - Ejemplo de número al azar: \<XXXXXXXX\>
 
-Donde aparecen las \<XXXX\> tendrá que aparecer el cálculo o texto que corresponda.
+En lugar de \<XXXX\> tendrá que aparecer el cálculo o texto que corresponda.
 
 > 📷 Cuando termines todo, haz una o varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
 {:.prompt-info}
