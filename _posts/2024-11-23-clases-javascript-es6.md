@@ -264,6 +264,10 @@ Habrás observado que en muchos ejemplos, envuelvo el código en `(()=>{ ....cod
 
 (Voluntario) Lee el artículo <https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch3.md#closure>.
 
+(Voluntario) Mira el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xa8lhVwQBw4?si=N2NT80VbrwhfmNbG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Setters y Getters
 
 Los setters y getters permiten controlar cómo se acceden y modifican las propiedades de una clase.

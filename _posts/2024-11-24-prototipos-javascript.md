@@ -17,12 +17,10 @@ En JavaScript, todos los objetos tienen un prototipo. Un prototipo es también u
 Todos los objetos en JavaScript están conectados a un prototipo común llamado `Object`. Esto permite que los objetos hereden propiedades y métodos definidos en `Object.prototype`.
 
 ```javascript
-(()=>{
 let homework = {
     topic: "JS"
 };
 console.log(homework.toString()); // [object Object]
-})()
 ```
 
 Salida:
@@ -33,18 +31,20 @@ Salida:
 
 En el ejemplo anterior, el objeto `homework` no tiene una propiedad o método `toString`. Sin embargo, JavaScript lo encuentra en `Object.prototype`, lo que permite llamar a `homework.toString()`.
 
+Mira el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TWSI9SybwmI?si=OC-kRubsXwEOjvbz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Vínculo de Objetos (Object Linkage)
 
 Se pueden crear nuevos objetos que hereden de otros objetos utilizando `Object.create()`. Esto permite crear una cadena de prototipos donde el objeto hijo puede acceder a las propiedades y métodos del objeto padre:
 
 ```javascript
-(()=>{
 let homework = {
     topic: "JS"
 };
 var otherHomework = Object.create(homework);
 console.log(otherHomework.topic); // "JS"
-})()
 ```
 
 Salida:
@@ -55,12 +55,14 @@ JS
 
 En este ejemplo, `otherHomework` hereda la propiedad `topic` de `homework` a través de la cadena de prototipos.
 
+> Cuando hacemos un `Object.create(homework)` creamos un objeto VACÍO con el `[[Prototype]]` que le indiquemos como parámetro (`homework` en este caso).
+{:.prompt-info}
+
 ### Prototype en Objetos y Funciones
 
-Las funciones en JavaScript tienen una propiedad llamada `.prototype`, que es un objeto con una propiedad `constructor` (que apunta a la propia función) y un prototipo que es `Object`.
+Las funciones en JavaScript tienen una propiedad llamada `prototype`, que es un objeto con una propiedad `constructor` (que apunta a la propia función) y un prototipo que es `Object`.
 
 ```javascript
-(()=>{
 function Apple(type) {
     this.type = type;
     this.color = "red";
@@ -72,7 +74,6 @@ Apple.prototype.getInfo = function() {
 
 let myApple = new Apple("Granny Smith");
 console.log(myApple.getInfo()); // "red Granny Smith apple"
-})()
 ```
 
 Salida:
@@ -83,7 +84,10 @@ red Granny Smith apple
 
 Cuando se crea un nuevo objeto utilizando `new Apple("Granny Smith")`, este objeto hereda las propiedades y métodos definidos en `Apple.prototype`.
 
-Los objetos creados con literales o con `new` no tienen una propiedad `.prototype`, pero se puede acceder a su prototipo utilizando `Object.getPrototypeOf(objeto)`.
+> La propiedad `prototype` de las funciones constructoras funciona a modo de plantilla que se copiará en el `[[Prototype]]` del objeto que se cree al utilizar `new`.
+{:.prompt-info}
+
+Los objetos creados con literales o con `new` NO tienen una propiedad `prototype`, pero se puede acceder a su prototipo (`[[Prototype]]`) utilizando `Object.getPrototypeOf(objeto)`.
 
 ```javascript
 let obj = {};
@@ -95,6 +99,10 @@ Salida:
 ```plaintext
 [Object: null prototype] {}
 ```
+
+(Voluntario) Mira el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h_n_UIOycgM?si=qYYoHhfdBdWNY6oT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Prototype en Objetos Predefinidos
 
@@ -166,4 +174,3 @@ En cualquier caso es una práctica no recomendada y fácilmente sustituible con 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - <https://xxjcaxx.github.io/libro_dwec/arraysobjetosclases.html#arrays>
 - <https://developer.mozilla.org/es/docs/Web/JavaScript/Inheritance_and_the_prototype_chain>
-- 
