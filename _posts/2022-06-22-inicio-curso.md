@@ -19,7 +19,7 @@ tags: [enlaces, edteam, alva majo, programas, software, extensiones]
 - [Calendarios en blanco para Diario de profesor](https://www.wincalendar.com/es/Calendario-En-Blanco-2023-Gratis)
 - [FreeIPA](https://www.freeipa.org/page/Main_Page)
 - [VNC Viewer de RealVNC](https://www.realvnc.com/es/connect/download/viewer/)
-- <http://ofertasprofesorado.es/>
+- <http://ofertasprofesorado.es/>: Para sacar la lista ordenada de centros a los que puedes aplicar como funcionario interino.
 
 ## Programas que deben instalarse en los PCs de los alumnos
 
@@ -56,7 +56,6 @@ tags: [enlaces, edteam, alva majo, programas, software, extensiones]
   - Paste As Plain Text
   - Text Extractor: OCR
 - [ZoomIt](https://learn.microsoft.com/es-es/sysinternals/downloads/zoomit): Para hacer zoom y grabar la pantalla.
-- [Peek Screen Recorder](https://github.com/phw/peek): Para hacer GIFs o vídeos en MP4 de una manera rápida.
 
 ## Webs de interés
 

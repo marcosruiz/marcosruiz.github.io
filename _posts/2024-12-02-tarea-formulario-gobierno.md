@@ -1,30 +1,30 @@
 ---
-title: "Tarea: El formulario del gobierno"
-date: 2024-06-23 9:00:00 +0100
+title: "Tarea obligatoria: El formulario del gobierno"
+date: 2024-12-02 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [desarrollo de aplicaciones web, daw, desarrollo web en entorno cliente, dwec, practica, tarea, javascript]
-img_path: /assets/img/tarea-formularios/
+img_path: /assets/img/tarea-formulario-gobierno/
 ---
 
-## Entrega y presentación
+## Información sobre la tarea
 
-La entrega será en formato Presentación. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
+La entrega será en formato vídeo (preferiblemente MP4). Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
-## Calificación
+La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
-La tarea se calificará con una nota de 0 a 10.
+Duración actividades obligatorias: 6 horas.
 
-Duración actividades obligatorias: 6 horas
+RA5. Desarrolla aplicaciones web interactivas integrando mecanismos de manejo de eventos.
 
 ## Actividades
 
-Tú y tu compañero sois trabajadores de una empresa tecnológica multinacional llamada TekMex.
+Eres un trabajador de una empresa tecnológica multinacional llamada TekMex.
 
-TekMex ha recibido una licitación para mejorar algunos formularios del gobierno, entre ellos, el de la sede de educación del cual muchos usuarios llevan quejándose casi un año. El equipo de desarrollo de tres personas os habéis repartido el trabajo y mientras otro compañero de trabajo se centra en optimizar la parte del servidor, los otros dos vais a desarrollar la parte del cliente.
+TekMex ha recibido una licitación para mejorar algunos formularios del gobierno, entre ellos, el de la sede de educación del cual muchos usuarios llevan quejándose casi un año. El equipo de desarrollo de dos personas os habéis repartido el trabajo y mientras otro compañero de trabajo se centra en optimizar la parte del servidor, tú vas a desarrollar la parte del cliente.
 
-"¡Menos mal que somos dos para realizar esta tarea!" piensas para tus adentros porque sabes que todos los formularios que habías desarrollado hasta ahora solo los habías validado con PHP en el backend así que es la oportunidad perfecta para aprender a validar formularios con HTML y JavaScript.
+"¡Ahora si que voy a tener una visión global de un proyecto web!" piensas para tus adentros porque sabes que todos los formularios que habías desarrollado hasta ahora solo los habías validado con PHP en el backend, así que es la oportunidad perfecta para aprender a validar formularios con HTML y JavaScript.
 
-Respecto a la parte CSS para que el formulario se vea bonito, no es necesario que lo hagáis, una vez tengáis todo el formulario preparado se lo pasareis al equipo de diseño y maquetación.
+Respecto a la parte CSS para que el formulario se vea bonito, no es obligatorio que lo hagas, una vez tengas todo el formulario preparado se lo puedes pasar al equipo de diseño y maquetación aunque si les adelantas trabajo seguro que te lo agradecen.
 
 {:.activity}
 ### Formulario de la sede de educación
@@ -41,7 +41,7 @@ Texto extraído del formulario original:
 ```plaintext
 Este identificador se utilizará como usuario de acceso a la Sede electrónica.
 
-Si selecciona corno Tipo de Documento DNI deberá informar el IDESP, si por el contrario selecciona NIE deberá informar eI IXESP para que el Sistema pueda verificar sus Datos de Identidad con la Dirección General de la Policía.
+Si selecciona como Tipo de Documento DNI deberá informar el IDESP, si por el contrario selecciona NIE deberá informar el IXESP para que el Sistema pueda verificar sus Datos de Identidad con la Dirección General de la Policía.
 Ver ayuda identidad.
 Le recordamos en tal caso, que la información introducida en los campos Nombre, Primor apellido y Segundo apellido (en caso de estar informado) deben ser EXACTAMENTE IGUALES a los existentes en su documento de identificación.
 
@@ -126,7 +126,7 @@ Mostrar el número de intentos de envío del formulario que se van produciendo y
 > El artículo [Gestión de cookies en JavaScript](/posts/cookies/) puede serte de ayuda para la realización de esta actividad.
 {:.prompt-info}
 
-> Recuerda que para poder actualizar el contenido de un contenedor o div la propiedad que tenemos que modificar para ese objeto es `innerHTML`.
+> Recuerda que para poder actualizar el contenido de un contenedor o `div` la propiedad que tenemos que modificar para ese objeto es `innerHTML`.
 {:.prompt-info}
 
 {:.activity}
@@ -146,15 +146,16 @@ Recuerda que en la empresa en la que estás hay mucha rotación de plantilla por
 
 Antes de que entre el equipo de diseño y maquetación vas a enseñar a tus compañeros un vídeo de 3 minutos como máximo donde vas a mostrar todo el trabajo que habéis realizado. Tienes que intentar quedar bien con todo lo que has hecho y aprendido ya que en un mes tienes revisión de contrato y quieres tener argumentos para que te den una buena subida de sueldo. Esta claro que no todo en la vida es programar.
 
-> Si no sabes ninguna herramienta con la que grabar vídeos puedes usar:
-> 
-> - **Herramienta de Recortes de Windows**: Herramienta sencilla para capturas y grabación de videos para Windows. Software propietario.
-> - **ZoomIt**: Herramienta sencilla para capturas y grabación de videos para Windows. Permite dibujar en pantalla y hacer zoom. Software propietario.
-> - **OBS Studio**: Herramienta profesional para grabación de vídeos para Windows y GNU Linux. Software libre.
-> 
-> Si no sabes ninguna herramienta con la que editar vídeos puedes usar:
-> 
-> - **Microsoft Clipchamp**: Herramienta sencilla para Windows. Software propietario.
-> - **Kdenlive**: Herramienta profesional para Windows y GNU Linux. Software libre.
-> - **Open Shot**: Herramienta profesional para Windows y GNU Linux. Con menos opciones que Kdenlive. Software libre.
+> Si no sabes como grabar un vídeo puedes leer el artículo [Cómo grabar y editar vídeos](/posts/videos-youtube/)
 {:.prompt-info}
+
+## Dame tu feedback...
+
+<div class="strawpoll-embed" id="strawpoll_PKglepj41Zp" style="height: 644px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_PKglepj41Zp" src="https://strawpoll.com/embed/PKglepj41Zp" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
+<div class="strawpoll-embed" id="strawpoll_3RnYX1vrBye" style="height: 3012px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_3RnYX1vrBye" src="https://strawpoll.com/embed/3RnYX1vrBye" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
+## Bibliografía
+
+- <https://jsfiddle.net/xxjcaxx/L2q8vzgn/10/>
+- 

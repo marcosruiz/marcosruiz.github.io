@@ -38,11 +38,13 @@ pin: true
 - T01 - [Tarea: Entorno de desarrollo para JavaScript](/posts/tarea-entorno-desarrollo-javascript/)
 - T02 - [Tarea obligatoria: Introducción a JavaScript](/posts/tarea-introduccion-javascript/)
 - T03 - [Tarea obligatoria: Objetos predefinidos de JavaScript](/posts/tarea-objetos-predefinidos-javascript/)
+- T04 - [Tarea: Arrays, funciones y objetos en JavaScript](/posts/tarea-arrays-funciones-objetos-javascript/)
+- T05.1 - [Tarea: Web para Bayona](/posts/tarea-eventos)
+- T05.2 - [Tarea obligatoria: El formulario del gobierno](/posts/tarea-formularios)
 
 ## Enlaces de interés 🔥
 
-- [Tarea: Web para Bayona](/posts/tarea-eventos)
-- [Tarea: El formulario del gobierno](/posts/tarea-formularios)
+
 
 ## Normativa
 

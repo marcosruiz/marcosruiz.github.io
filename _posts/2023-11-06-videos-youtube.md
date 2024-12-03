@@ -1,21 +1,46 @@
 ---
-title: "Hacer vídeos como profesor"
+title: "Cómo grabar y editar vídeos"
 date: 2023-11-06 9:00:00 +0100
 categories: [General]
-tags: [canva, carnac, general, obs]
-img_path: /assets/img/videos-profesor/
+tags: [canva, carnac, general, obs, kdenlive, clipchamp, filmora, shotcut, premiere, pro, openshot, microsoft, zoomit,]
+img_path: /assets/img/videos-youtube/
 ---
 
 {:.section}
-## Programas útiles
+## Programas para grabar vídeos
+
+Si no sabes ninguna herramienta con la que grabar vídeos puedes usar:
+
+- **Herramienta de Recortes de Windows**: Herramienta sencilla para capturas y grabación de videos para Windows. Software propietario.
+- **ZoomIt**: Herramienta sencilla para capturas y grabación de videos para Windows. Permite dibujar en pantalla y hacer zoom. Software propietario. **RECOMENDADO**.
+- [Peek Screen Recorder](https://github.com/phw/peek): Para hacer GIFs o vídeos en MP4 de una manera rápida. **RECOMENDADO**.
+- **OBS Studio**: Herramienta profesional para grabación de vídeos para Windows y GNU Linux. Software libre.
+- **SimpleScreenRecorder**: Herramienta sencilla para grabación de videos para GNU Linux.
+
+{:.section}
+## Programas para editar vídeos
+
+- **Microsoft Clipchamp**: Herramienta sencilla para Windows. Software propietario.
+- **Kdenlive**: Herramienta profesional para Windows y GNU Linux. Software libre. **RECOMENDADO**.
+- **OpenShot**: Herramienta profesional para Windows y GNU Linux. Con menos opciones que Kdenlive. Software libre.
+- **Final Cut Pro**: Profesional. Solo para dispositivos Apple.
+- **Adobe Premiere Pro**: Profesional.
+- **Sony Vegas**: Profesional.
+- **DaVinci Resolve**: Profesional.
+- **AVS Video Editor**: Sencillo.
+- **iMovie**: Sencillo y gratuito. Solo para dispositivos Apple.
+- **Filmora**: Sencillo.
+- **Shotcut**: Gratuito.
+
+{:.section}
+## Otros programas que aportan valor a la grabación
 
 - [Carnac](http://carnackeys.com/): Para mostrar atajos de teclado en pantalla.
-- [OBS](https://obsproject.com/es/download): Para grabar.
-- [KDEnlive](https://kdenlive.org/es/): Para editar vídeos.
 - [ZoomIt](https://learn.microsoft.com/es-es/sysinternals/downloads/zoomit): Para hacer zoom y pintar en la pantalla.
 - Mouse utilities de [PowerToys](https://learn.microsoft.com/es-es/windows/powertoys/): Para mostrar los clicks del ratón.
-- [Canva](https://www.canva.com/): Para hacer carteles o infografías.
+- [Canva](https://www.canva.com/): Para hacer carteles, infografías o miniaturas.
 
+{:.section}
 ## Configurar Carnac
 
 La configuración que uso para Carnac es la siguiente:
@@ -26,6 +51,7 @@ _Sección General de Carnac_
 ![Sección Appearance de Carnac](carnacConfig02.png){: width="400px"}
 _Sección Appearance de Carnac_
 
+{:.section}
 ## Mejorar el audio de micrófono en OBS
 
 Primero necesitamos descargar estas dos imágenes:
@@ -38,6 +64,7 @@ _Sombra para círculo_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xrNugzNPYIk?si=qvYMLqRZ0qvfTbVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+{:.subsection}
 ### Hacer webcam circular con OBS
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HkNw7u4SrPk?si=WDInoNsHmNGfKzrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

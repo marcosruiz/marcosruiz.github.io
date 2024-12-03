@@ -75,6 +75,16 @@ En caso de que no se pueda trasladar la presentación desarrollada a formato PDF
 
 El documento PDF SIEMPRE debe contener una portada, número de la tarea, título de la tarea, nombre del módulo profesional, nombre del ciclo formativo, autor(es) y fecha de realización.
 
+## Entrega y presentación en otro formato (vídeo, imagen, etc.)
+
+Si la entrega de la tarea debe ser un documento PDF, el nombre tendrá el siguiente formato:
+
+`<tu usuario>_t<número de la tarea con dos dígitos>.<extensión>`{: .filepath}
+
+Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiales extraños. Así por ejemplo el alumno Marcos Ruiz García para la primera tarea, tendría el siguiente nombre:
+
+`mruizg_t01.mp4`{: .filepath}
+
 ## Entrega y presentación en formato Markdown
 
 Si la entrega de la tarea debe ser un documento PDF, el nombre tendrá el siguiente formato:
