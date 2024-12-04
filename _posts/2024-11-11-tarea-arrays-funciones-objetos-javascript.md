@@ -6,9 +6,6 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/tarea-arrays-funciones-objetos-javascript/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Información sobre la tarea
 
 La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
@@ -79,9 +76,9 @@ let array = [95, 95, 14, 83, 58, 33, 65, 52, 7, 72, 13, 46, 19, 31, 27, 36, 30, 
 ```
 
 {:.activity}
-### (Voluntaria) Tablero de ajedrez
+### Tablero de ajedrez
 
-Crea una función que llene el tablero con las fichas del ajedrez (utiliza iconos UNICODE). Llámala en el momento adecuado.
+Crea una función que llene el tablero con las fichas del ajedrez (utiliza iconos UNICODE). Llámala en el momento adecuado y documenta el código que has escrito con comentarios.
 
 ```html
 <!DOCTYPE html>
