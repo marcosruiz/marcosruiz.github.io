@@ -264,9 +264,11 @@ Habrás observado que en muchos ejemplos, envuelvo el código en `(()=>{ ....cod
 
 (Voluntario) Lee el artículo <https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/get-started/ch3.md#closure>.
 
-(Voluntario) Mira el siguiente vídeo:
+Mira el siguiente vídeo:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xa8lhVwQBw4?si=N2NT80VbrwhfmNbG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+(Voluntario) Lee el artículo [Closures](https://developer.mozilla.org/es/docs/Web/JavaScript/Closures).
 
 ## Setters y Getters
 
@@ -349,4 +351,5 @@ let clase = {
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - <https://xxjcaxx.github.io/libro_dwec/arraysobjetosclases.html#clases-en-javascript-es6>
+- <https://developer.mozilla.org/es/docs/Web/JavaScript/Closures>
 - 

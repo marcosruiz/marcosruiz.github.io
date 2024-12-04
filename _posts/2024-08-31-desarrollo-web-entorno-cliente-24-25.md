@@ -39,8 +39,8 @@ pin: true
 - T02 - [Tarea obligatoria: Introducción a JavaScript](/posts/tarea-introduccion-javascript/)
 - T03 - [Tarea obligatoria: Objetos predefinidos de JavaScript](/posts/tarea-objetos-predefinidos-javascript/)
 - T04 - [Tarea: Arrays, funciones y objetos en JavaScript](/posts/tarea-arrays-funciones-objetos-javascript/)
-- T05.1 - [Tarea: Web para Bayona](/posts/tarea-eventos)
-- T05.2 - [Tarea obligatoria: El formulario del gobierno](/posts/tarea-formularios)
+- T05.1 - [Tarea: Web para Bayona](/posts/tarea-bayona)
+- T05.2 - [Tarea obligatoria: El formulario del gobierno](/posts/tarea-formulario-gobierno)
 
 ## Enlaces de interés 🔥
 
