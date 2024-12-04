@@ -1,10 +1,13 @@
 ---
-title: "Tarea: Arrays, funciones y objetos en JavaScript"
+title: "Tarea obligatoria: Arrays, funciones y objetos en JavaScript"
 date: 2024-11-11 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec]
 img_path: /assets/img/tarea-arrays-funciones-objetos-javascript/
 ---
+
+> Artículo en construcción.
+{:.prompt-warning}
 
 ## Información sobre la tarea
 
@@ -53,7 +56,102 @@ Ir a la certificación Algoritmos de JavaScript y Estructuras de Datos y hacer e
 {:.prompt-info}
 
 {:.activity}
-### (Voluntaria) 
+### (Voluntaria) Funciones con arrays
+
+Sin modificar la array escribe y ejecuta las funciones que se piden:
+
+```javascript
+let array = [95, 95, 14, 83, 58, 33, 65, 52, 7, 72, 13, 46, 19, 31, 27, 36, 30, 86, 88, 88, 68, 16, 5, 14, 41, 56, 89, 11, 6, 29, 72, 11, 69, 36, 16, 11, 82, 84, 32, 84, 95, 98, 76, 99, 100, 12, 89, 1, 92, 27, 66, 48, 38, 49, 30, 40, 87, 19, 31, 37, 5, 32, 9, 33, 98, 94, 5, 15, 4, 88, 47, 34, 83, 8, 31, 4, 2, 72, 31, 39, 15, 10, 46, 78, 11, 21, 92, 22, 83, 3, 6, 71, 39, 54, 50, 77, 13, 85, 7, 36 ];
+
+// Haz una función que retorne el array ordenado sin modificar el array original
+
+// Haz una función que retorne los números impares y ordenados
+
+// Haz una función que retorne los números impares de dos cifras
+
+// Haz una función que retorne un array de 0 a 100 con la frecuencia de cada número en el array original
+
+// Haz una función que indique si un número es mayor que otro según la longitud de su nombre en castellano o valenciano
+
+// Haz una función para ordenar el array según el criterio de la función anterior
+
+// Haz una función que acepte un número y retorne una función que acepte un array y retorne si el número está en el array.
+```
+
+{:.activity}
+### (Voluntaria) Tablero de ajedrez
+
+Crea una función que llene el tablero con las fichas del ajedrez (utiliza iconos UNICODE). Llámala en el momento adecuado.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablero de ajedrez<</title>
+    <link rel="stylesheet" href="tableroAjedrez.css" />
+    
+  </head>
+  <body>
+    <div id="board"></div>
+    <script src="tableroAjedrez.js"></script>
+  </body>
+</html>
+```
+{: file="tableroAjedrez.html" }
+
+```css
+.chess {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #eee;
+  margin: 0;
+  padding: 0;
+  overflow: overlay;
+}
+
+.chess td {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.chess tr:nth-child(odd) td:nth-child(even),
+.chess tr:nth-child(even) td:nth-child(odd) {
+  background-color: #111;
+  color: #fff;
+}
+```
+{: file="tableroAjedrez.css" }
+
+```javascript
+**function createBoard(){
+	let row = new Array(8).fill(null);
+  return new Array(8).fill([...row]);
+}
+
+function createCell(cell){
+	return `<td></td>`;
+}
+
+function createRow(row){
+  return `<tr>${row.map(createCell).join(' ')}</tr>`;
+}
+
+function drawBoard(board){
+	let tableBoard = document.createElement('table');
+  tableBoard.classList.add('chess');
+  tableBoard.innerHTML = board.map(createRow).join(' ');
+  return tableBoard;
+}
+
+// Crea una funció que plene el tauler amb les fitxes unicode de l'escacs. Crida-la en el moment adequat
+
+document.querySelector('#board').append(drawBoard(createBoard()))**
+```
+{: file="tableroAjedrez.js" }
 
 {:.activity}
 ### (Voluntaria NO recomendada) Gestión de edificios
