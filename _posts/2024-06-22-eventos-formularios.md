@@ -11,7 +11,7 @@ img_path: /assets/img/eventos-formularios/
 
 Lee el artículo [Eventos en JavaScript](/posts/eventos-javascript).
 
-> ¡Reto! [Tarea: Web para Bayona](/posts/tarea-eventos).
+> ¡Reto! [Tarea: Web para Bayona](/posts/tarea-web-bayona).
 {:.prompt-info}
 
 {:.section}
@@ -19,7 +19,7 @@ Lee el artículo [Eventos en JavaScript](/posts/eventos-javascript).
 
 Lee el artículo [Formularios](/posts/formularios-html).
 
-> ¡Reto! [Tarea: El formulario del gobierno](/posts/tarea-formularios).
+> ¡Reto! [Tarea: El formulario del gobierno](/posts/tarea-formulario-gobierno).
 {:.prompt-info}
 
 {:.section}

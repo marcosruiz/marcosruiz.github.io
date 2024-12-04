@@ -6,16 +6,13 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/tarea-arrays-funciones-objetos-javascript/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Información sobre la tarea
 
 La entrega será en formato PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
 La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
-Duración actividades obligatorias: 7 horas.
+Duración actividades obligatorias: 6 horas.
 
 RA4. Programa código para clientes web analizando y utilizando estructuras definidas por el usuario.
 
@@ -24,7 +21,42 @@ RA4. Programa código para clientes web analizando y utilizando estructuras defi
 A continuación, se muestran las actividades a realizar.
 
 {:.activity}
-### (Voluntaria) Gestión de edificios
+### Programación orientada a objetos en freeCodeCamp
+
+Ir a la certificación Algoritmos de JavaScript y Estructuras de Datos y hacer el curso “Programación orientada a objetos”.
+
+> 📷 Cuando termines todos los pasos, haz una captura de tu perfil.
+{:.prompt-info}
+
+{:.activity}
+### (Voluntaria) Programación funcional en freeCodeCamp
+
+Ir a la certificación Algoritmos de JavaScript y Estructuras de Datos y hacer el curso “Programación funcional”.
+
+> 📷 Cuando termines todos los pasos, haz una captura de tu perfil.
+{:.prompt-info}
+
+{:.activity}
+### (Voluntaria) Programación de algoritmos intermedios en freeCodeCamp
+
+Ir a la certificación Algoritmos de JavaScript y Estructuras de Datos y hacer el curso “Programación de algoritmos intermedios”.
+
+> 📷 Cuando termines todos los pasos, haz una captura de tu perfil.
+{:.prompt-info}
+
+{:.activity}
+### Algoritmos de JavaScript y proyectos de estructuras de datos en freeCodeCamp
+
+Ir a la certificación Algoritmos de JavaScript y Estructuras de Datos y hacer el curso “Algoritmos de JavaScript y proyectos de estructuras de datos”.
+
+> 📷 Cuando termines todos los pasos, haz una captura de tu perfil.
+{:.prompt-info}
+
+{:.activity}
+### (Voluntaria) 
+
+{:.activity}
+### (Voluntaria NO recomendada) Gestión de edificios
 
 Queremos hacer una aplicación en JavaScript para gestionar edificios con la información de la situación del edificio y de los propietarios de cada piso. Para ello queremos almacenar la siguiente información de cada edificio:
 
@@ -36,19 +68,19 @@ Queremos hacer una aplicación en JavaScript para gestionar edificios con la inf
 Se pide:
 
 - Crear un objeto que nos permita instanciar edificios. Cada vez que instanciemos un edificio le pasaremos la calle, número y código postal como parámetros. Se pide además crear los siguientes métodos para el objeto Edificio:
-  - agregarPlantasYPuertas(numplantas, puertas) // Se le pasa el número de plantas que queremos crear en el piso y el número de puertas por planta. Cada vez que se llame a este método, añadirá el número de plantas y puertas indicadas en los parámetros, a las que ya están creadas en el edificio.
-  - modificarNumero(numero) // Se le pasa el nuevo número del edificio para que lo actualice.
-  - modificarCalle(calle) // Se le pasa el nuevo nombre de la calle para que lo actualice.
-  - modificarCodigoPostal(codigo) // Se le pasa el nuevo número de código postal del edificio.
-  - imprimeCalle // Devuelve el nombre de la calle del edificio.
-  - imprimeNumero // Devuelve el número del edificio.
-  - imprimeCodigoPostal // Devuelve el código postal del edificio.
-  - agregarPropietario(nombre,planta,puerta) // Se le pasa un nombre de propietario, un número de planta y un número de puerta y lo asignará como propietario de ese piso.
-  - imprimePlantas // Recorrerá el edificio e imprimirá todos los propietarios de cada puerta.
+  - `agregarPlantasYPuertas(numplantas, puertas)` // Se le pasa el número de plantas que queremos crear en el piso y el número de puertas por planta. Cada vez que se llame a este método, añadirá el número de plantas y puertas indicadas en los parámetros, a las que ya están creadas en el edificio.
+  - `modificarNumero(numero)` // Se le pasa el nuevo número del edificio para que lo actualice.
+  - `modificarCalle(calle)` // Se le pasa el nuevo nombre de la calle para que lo actualice.
+  - `modificarCodigoPostal(codigo)` // Se le pasa el nuevo número de código postal del edificio.
+  - `imprimeCalle` // Devuelve el nombre de la calle del edificio.
+  - `imprimeNumero` // Devuelve el número del edificio.
+  - `imprimeCodigoPostal` // Devuelve el código postal del edificio.
+  - `agregarPropietario(nombre,planta,puerta)` // Se le pasa un nombre de propietario, un número de planta y un número de puerta y lo asignará como propietario de ese piso.
+  - `imprimePlantas` // Recorrerá el edificio e imprimirá todos los propietarios de cada puerta.
 - Cada vez que se crea un edificio que muestre automáticamente un mensaje del estilo:
-  - construido nuevo edificio en calle: xxxxxx, nº: xx, CP: xxxxx.
+  - `construido nuevo edificio en calle: <xxxxxx>, nº: <xx>, CP: <xxxxx>.`
 - Cada vez que se añada un propietario a un piso de un edificio que muestre un mensaje del estilo:
-  - xxxxxxxx es ahora el propietario de la puerta x de la planta x.
+  - `<xxxxxxxx> es ahora el propietario de la puerta <x> de la planta <x>.`
 
 Aquí se muestra un ejemplo de lo que tendría que mostrar la aplicación:
 
@@ -71,7 +103,7 @@ Agregamos 4 propietarios al edificio A...
 - Jose Antonio Lopez es ahora el propietario de la puerta 1 de la planta 1.
 - Luisa Martinez es ahora el propietario de la puerta 2 de la planta 1.
 - Marta Castellón es ahora el propietario de la puerta 3 de la planta 1.
-- Antonio Pereira es ahora el propietario de la puerta 2 de la planta 2.
+- Antonio Perea es ahora el propietario de la puerta 2 de la planta 2.
 
 Listado de propietarios del edificio calle García Prieto número 58
 
@@ -79,14 +111,14 @@ Listado de propietarios del edificio calle García Prieto número 58
 - Propietario del piso 2 de la planta 1: Luisa Martinez.
 - Propietario del piso 3 de la planta 1: Marta Castellón.
 - Propietario del piso 1 de la planta 2:
-- Propietario del piso 2 de la planta 2: Antonio Pereira.
+- Propietario del piso 2 de la planta 2: Antonio Perea.
 - Propietario del piso 3 de la planta 2:
 
 Agregamos 1 planta más al edificio A...
 
 Agregamos 1 propietario más al edificio A planta 3, puerta 2...
 
-- Pedro Meijide es ahora el propietario de la puerta 2 de la planta 3.
+- Pedro Mejide es ahora el propietario de la puerta 2 de la planta 3.
 
 Listado de propietarios del edificio calle García Prieto número 58
 
@@ -96,7 +128,7 @@ Listado de propietarios del edificio calle García Prieto número 58
 - Propietario del piso 1 de la planta 2:
 - Propietario del piso 2 de la planta 2:
 - Propietario del piso 1 de la planta 3:
-- Propietario del piso 2 de la planta 3: Pedro Meijide.
+- Propietario del piso 2 de la planta 3: Pedro Mejide.
 
 ## Dame tu feedback...
 
