@@ -6,9 +6,6 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/imagenes-web/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Introducción
 
 Los recursos gráficos se emplean mucho en la Web y si se utilizan adecuadamente pueden mejorar el aprendizaje del usuario y añadir valor a nuestro sitio, pero si se utilizan inadecuadamente, producen el efecto contrario.

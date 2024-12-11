@@ -6,9 +6,6 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/propiedad-intelectual/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Introducción
 
 El Ministerio de Cultura define la propiedad intelectual como el conjunto de derechos que corresponden a los autores y a otros titulares (artistas, productores, organismos de radiodifusión, etcétera) respecto de las obras y prestaciones fruto de su creación y es este Ministerio el encargado de proponer las medidas, normativas o no, para lograr la adecuada protección de la propiedad intelectual.
