@@ -6,9 +6,6 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/eventos-javascript/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Introducción
 
 Los eventos y los manejadores (handlers) son elementos para capturar interacciones del usuario y realizar acciones en respuesta a estas interacciones.

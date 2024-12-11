@@ -6,9 +6,6 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/formularios-javascript/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Introducción
 
 En una aplicación web, la validación de los formularios se realiza tanto en el lado del cliente como en el del servidor.
