@@ -358,19 +358,19 @@ La fórmula de la nota final será:
 Para los RAs:
 
 ```plaintext
-=if([[ExamenesRA1]]>=5,0; 0,05*[[TestsRA1]]+0,25*[[TareasRA1]]+0,7*[[ExamenesRA1]]; [[ExamenesRA1]])
-=if([[ExamenesRA2]]>=5,0; 0,05*[[TestsRA2]]+0,25*[[TareasRA2]]+0,7*[[ExamenesRA2]]; [[ExamenesRA2]])
-=if([[ExamenesRA3]]>=5,0; 0,05*[[TestsRA3]]+0,25*[[TareasRA3]]+0,7*[[ExamenesRA3]]; [[ExamenesRA3]])
-=if([[ExamenesRA4]]>=5,0; 0,05*[[TestsRA4]]+0,25*[[TareasRA4]]+0,7*[[ExamenesRA4]]; [[ExamenesRA4]])
-=if([[ExamenesRA5]]>=5,0; 0,05*[[TestsRA5]]+0,25*[[TareasRA5]]+0,7*[[ExamenesRA5]]; [[ExamenesRA5]])
-=if([[ExamenesRA6]]>=5,0; 0,05*[[TestsRA6]]+0,25*[[TareasRA6]]+0,7*[[ExamenesRA6]]; [[ExamenesRA6]])
-=if([[ExamenesRA7]]>=5,0; 0,05*[[TestsRA7]]+0,25*[[TareasRA7]]+0,7*[[ExamenesRA7]]; [[ExamenesRA7]])
+=if([[ExamenesRA1]]>=5; 0,05*[[TestsRA1]]+0,25*[[TareasRA1]]+0,7*[[ExamenesRA1]]; [[ExamenesRA1]])
+=if([[ExamenesRA2]]>=5; 0,05*[[TestsRA2]]+0,25*[[TareasRA2]]+0,7*[[ExamenesRA2]]; [[ExamenesRA2]])
+=if([[ExamenesRA3]]>=5; 0,05*[[TestsRA3]]+0,25*[[TareasRA3]]+0,7*[[ExamenesRA3]]; [[ExamenesRA3]])
+=if([[ExamenesRA4]]>=5; 0,05*[[TestsRA4]]+0,25*[[TareasRA4]]+0,7*[[ExamenesRA4]]; [[ExamenesRA4]])
+=if([[ExamenesRA5]]>=5; 0,05*[[TestsRA5]]+0,25*[[TareasRA5]]+0,7*[[ExamenesRA5]]; [[ExamenesRA5]])
+=if([[ExamenesRA6]]>=5; 0,05*[[TestsRA6]]+0,25*[[TareasRA6]]+0,7*[[ExamenesRA6]]; [[ExamenesRA6]])
+=if([[ExamenesRA7]]>=5; 0,05*[[TestsRA7]]+0,25*[[TareasRA7]]+0,7*[[ExamenesRA7]]; [[ExamenesRA7]])
 ```
 
 Para la nota final:
 
 ```plaintext
-=if([[RA1]]>=5.0 AND [[RA2]]>=5.0 AND [[RA3]]>=5.0 AND [[RA4]]>=5.0 AND [[RA5]]>=5.0 AND [[RA6]]>=5.0 AND [[RA7]]>=5.0; average([[RA1]]; [[RA2]]; [[RA3]]; [[RA4]]; [[RA5]]; [[RA6]]; [[RA7]]); min(4; average([[RA1]]; [[RA2]]; [[RA3]]; [[RA4]]; [[RA5]]; [[RA6]]; [[RA7]])))
+=if(and([[RA1]]>=5; [[RA2]]>=5; [[RA3]]>=5; [[RA4]]>=5; [[RA5]]>=5; [[RA6]]>=5; [[RA7]]>=5); average([[RA1]]; [[RA2]]; [[RA3]]; [[RA4]]; [[RA5]]; [[RA6]]; [[RA7]]); min(4; average([[RA1]]; [[RA2]]; [[RA3]]; [[RA4]]; [[RA5]]; [[RA6]]; [[RA7]])))
 ```
 
 ## Exportación e importación de cuestionarios GIFT
