@@ -32,7 +32,8 @@ pin: true
 - T01 - [Tarea: Introducción al diseño web](/posts/tarea-introduccion-diseno-web/)
 - T02 - [Tarea obligatoria: Introducción a CSS](/posts/tarea-introduccion-css)
 - T02.2 - [Tarea obligatoria: CSS avanzado](/posts/tarea-css-avanzado)
-- T03 - [Tarea: Imágenes en la web](/posts/tarea-imagenes-web)
+- T03 - No hay
+- T04 - [Tarea: Imágenes en la web](/posts/tarea-imagenes-video-bayona)
 
 ## Enlaces de interés
 
