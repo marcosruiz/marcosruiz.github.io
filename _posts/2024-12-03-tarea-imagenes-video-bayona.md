@@ -18,7 +18,8 @@ RA3. Prepara archivos multimedia para la web, analizando sus características y 
 
 ## Actividades
 
-Esta tarea es la continuación de [Tarea: Web para Bayona](/posts/tarea-web-bayona).
+> Esta tarea es la continuación de [Tarea: Web para Bayona](/posts/tarea-web-bayona). Si no estás matriculado en el módulo de DWEC puedes hacer las actividades a partir de un documento en blanco.
+{:.prompt-info}
 
 Bayona está muy contento con su web promocional pero quiere añadir más elementos a la web para hacerla más interesante. Además, ha contratado a una persona que va a revisar si la web cumple con unos mínimos de calidad y rendimiento.
 
@@ -48,7 +49,7 @@ Infórmate sobre cual es el formato de video más adecuado y transforma el víde
 {:.activity}
 ### Audio de fondo
 
-Añade audio de fondo con música de uso comercial gratutito.
+Añade audio de fondo con música de uso comercial gratuito.
 
 Infórmate sobre cual es el formato de audio más adecuado y transforma el audio a dicho formato utilizando la herramienta que desees.
 

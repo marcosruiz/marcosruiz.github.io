@@ -75,17 +75,16 @@ En unos días tienes que enseñarle tu web a Bayona a ver si le gusta. Total Mar
 > Si no sabes como grabar un vídeo puedes leer el artículo [Cómo grabar y editar vídeos](/posts/videos-youtube/)
 {:.prompt-info}
 
-{:.activity}
-### (Voluntaria) Side projects
-
-Si has conseguido terminar antes de tiempo y tienes ganas de más retos puedes hacer los siguientes side projects que quedarían increíbles en tu portfolio:
-
-- <https://lenguajejs.com/retos/nivel-facil/rock-paper-scissors/>
-- <https://lenguajejs.com/retos/nivel-medio/bingo/>
-- <https://lenguajejs.com/retos/nivel-medio/mp3-player/>
-
 ## Dame tu feedback...
 
 <div class="strawpoll-embed" id="strawpoll_7rnzV84lDnO" style="height: 644px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_7rnzV84lDnO" src="https://strawpoll.com/embed/7rnzV84lDnO" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
 
 <div class="strawpoll-embed" id="strawpoll_xVg71aJxpyr" style="height: 3012px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_xVg71aJxpyr" src="https://strawpoll.com/embed/xVg71aJxpyr" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
+## Bibliografía
+
+Recuerda que si tienes tiempo puedes hacer otros proyectos que puedes poner en tu portfolio (enlaces rotos hasta que ManzDev los rehaga):
+
+- <https://lenguajejs.com/retos/nivel-facil/rock-paper-scissors/>
+- <https://lenguajejs.com/retos/nivel-medio/bingo/>
+- <https://lenguajejs.com/retos/nivel-medio/mp3-player/>
