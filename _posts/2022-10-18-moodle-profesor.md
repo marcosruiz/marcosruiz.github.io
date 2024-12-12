@@ -309,7 +309,7 @@ _Paso 2: Seleccionar "Estado de Finaliazación"_
 </details>
 
 {:.section}
-## Libro de calificaciones
+## Libro de calificaciones 23 24
 
 Fórmula EV1:
 
@@ -351,6 +351,28 @@ La fórmula de la nota final será:
 
 > Cuando se pongan las notas de J1 y J2 habrá que sustituir la nota del examen de cada evaluación por la nota de EV1 y EV2 como corresponda.
 {:.prompt-info}
+
+{:.section}
+## Libro de calificaciones 24 25
+
+Para los RAs:
+
+```plaintext
+=if([[ExamenesRA1]]>=5,0; 0,05*[[TestsRA1]]+0,25*[[TareasRA1]]+0,7*[[ExamenesRA1]]; [[ExamenesRA1]])
+=if([[ExamenesRA2]]>=5,0; 0,05*[[TestsRA2]]+0,25*[[TareasRA2]]+0,7*[[ExamenesRA2]]; [[ExamenesRA2]])
+=if([[ExamenesRA3]]>=5,0; 0,05*[[TestsRA3]]+0,25*[[TareasRA3]]+0,7*[[ExamenesRA3]]; [[ExamenesRA3]])
+=if([[ExamenesRA4]]>=5,0; 0,05*[[TestsRA4]]+0,25*[[TareasRA4]]+0,7*[[ExamenesRA4]]; [[ExamenesRA4]])
+=if([[ExamenesRA5]]>=5,0; 0,05*[[TestsRA5]]+0,25*[[TareasRA5]]+0,7*[[ExamenesRA5]]; [[ExamenesRA5]])
+=if([[ExamenesRA6]]>=5,0; 0,05*[[TestsRA6]]+0,25*[[TareasRA6]]+0,7*[[ExamenesRA6]]; [[ExamenesRA6]])
+=if([[ExamenesRA7]]>=5,0; 0,05*[[TestsRA7]]+0,25*[[TareasRA7]]+0,7*[[ExamenesRA7]]; [[ExamenesRA7]])
+```
+
+```plaintext
+
+```
+
+```plaintext
+```
 
 ## Exportación e importación de cuestionarios GIFT
 

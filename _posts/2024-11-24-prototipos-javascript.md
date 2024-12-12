@@ -12,6 +12,10 @@ En JavaScript, todos los objetos tienen un prototipo. Un prototipo es también u
 
 (Voluntario) Lee el artículo [Herencia y la cadena de prototipos](https://developer.mozilla.org/es/docs/Web/JavaScript/Inheritance_and_the_prototype_chain).
 
+(Voluntario) Mira el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h_n_UIOycgM?si=xGq4OlB4WpgaJALL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## La Cadena de Prototipos (Prototype Chain)
 
 Todos los objetos en JavaScript están conectados a un prototipo común llamado `Object`. Esto permite que los objetos hereden propiedades y métodos definidos en `Object.prototype`.

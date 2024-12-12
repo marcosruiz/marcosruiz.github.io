@@ -19,6 +19,10 @@ _Estructura DOM más detallada_
 
 El DOM (Document Object Model) es una interfaz de programación que permite a los scripts actualizar el contenido, la estructura y el estilo de un documento mientras este se está visualizando en el navegador.
 
+(Voluntario) Mira el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z1a0eHWn5ds?si=-OB1766ZyOHra6yS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es un objeto?</summary>
   <div class="card-body" markdown="1">
