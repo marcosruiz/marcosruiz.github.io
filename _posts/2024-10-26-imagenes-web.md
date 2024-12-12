@@ -341,4 +341,4 @@ Lee el artículo [Ley de propiedad intelectual](/posts/propiedad-intelectual).
 - <https://lenguajecss.com/css/>
 - <https://www.sitepoint.com/gif-png-jpg-which-one-to-use/>
 - <https://jakearchibald.com/2020/avif-has-landed/>
-- 
+- <https://logongas.es/doku.php?id=clase:daw:diw:2eval:tema09>
