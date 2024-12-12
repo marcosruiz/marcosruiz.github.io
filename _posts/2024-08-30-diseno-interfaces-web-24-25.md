@@ -33,7 +33,7 @@ pin: true
 - T02 - [Tarea obligatoria: Introducción a CSS](/posts/tarea-introduccion-css)
 - T02.2 - [Tarea obligatoria: CSS avanzado](/posts/tarea-css-avanzado)
 - T03 - No hay
-- T04 - [Tarea: Imágenes en la web](/posts/tarea-imagenes-video-bayona)
+- T04 - [Tarea: Imágenes y vídeo para Bayona](/posts/tarea-imagenes-video-bayona)
 
 ## Enlaces de interés
 

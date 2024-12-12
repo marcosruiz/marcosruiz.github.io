@@ -1,5 +1,5 @@
 ---
-title: "Tarea: Imágenes web"
+title: "Tarea: Imágenes y vídeo para Bayona"
 date: 2024-12-03 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
@@ -12,7 +12,7 @@ La entrega será en formato vídeo. Leer [Entrega y presentación de tareas](/po
 
 La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
-Duración actividades obligatorias: X horas.
+Duración actividades obligatorias: 5 horas.
 
 RA3. Prepara archivos multimedia para la web, analizando sus características y manejando herramientas específicas.
 
