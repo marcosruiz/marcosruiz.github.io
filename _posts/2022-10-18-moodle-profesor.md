@@ -367,11 +367,10 @@ Para los RAs:
 =if([[ExamenesRA7]]>=5,0; 0,05*[[TestsRA7]]+0,25*[[TareasRA7]]+0,7*[[ExamenesRA7]]; [[ExamenesRA7]])
 ```
 
-```plaintext
-
-```
+Para la nota final:
 
 ```plaintext
+=if([[RA1]]>=5.0 AND [[RA2]]>=5.0 AND [[RA3]]>=5.0 AND [[RA4]]>=5.0 AND [[RA5]]>=5.0 AND [[RA6]]>=5.0 AND [[RA7]]>=5.0; average([[RA1]]; [[RA2]]; [[RA3]]; [[RA4]]; [[RA5]]; [[RA6]]; [[RA7]]); min(4; average([[RA1]]; [[RA2]]; [[RA3]]; [[RA4]]; [[RA5]]; [[RA6]]; [[RA7]])))
 ```
 
 ## Exportación e importación de cuestionarios GIFT
