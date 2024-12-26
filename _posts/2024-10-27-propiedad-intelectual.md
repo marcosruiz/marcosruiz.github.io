@@ -76,6 +76,8 @@ Las licencias de Creative Commons están adaptadas a la legislación sobre propi
 > Si necesitas imágenes para tu web busca bancos de imágenes bajo licencias abiertas, de dominio público o copyleft.
 {:.prompt-info}
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jVLHdoiE_IU?si=0ov8kqsJFTavSr1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Registro de contenido
 
 Si encargamos recursos gráficos a un profesional tendremos que tener en cuenta el tipo de licencia que tendrán esos recursos.

@@ -286,6 +286,10 @@ En resumen:
 - Cuando realices un recurso gráfico que requiera de pocos colores o colores uniformes sin animación deberás emplear el formato PNG.
 - Cuando realices un recurso gráfico que requiera de muchos colores no uniformes deberás emplear el formato JPG.
 
+### Estilos de ilustraciones
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5G7gTgcmvyk?si=AkMdlNr-oftlnjZN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Software de edición de imágenes
 
 Si nos interesa es trabajar con imágenes de alta calidad y que pesen poco, esta última condición necesaria en la web, sería conveniente emplear nuestro tiempo en aprender a manejar alguna herramienta que tenga una función de optimización de imágenes para su uso en la web.

@@ -90,9 +90,11 @@ Video voluntario:
 
 Puedes utilizar las siguientes webs para descargar fuentes que no tengas en tu ordenador:
 
-- <https://fonts.google.com/>
+- <https://fonts.google.com/> (RECOMENDADO)
+- <https://www.fontsquirrel.com/> (RECOMENDADO)
+- <https://fontesk.com/> (RECOMENDADO)
 - <https://www.creativefabrica.com/es/>
-- <https://www.dafont.com/es/>
+- <https://www.dafont.com/es/> (CUIDADO CON LAS LICENCIAS)
 - <https://fonts.adobe.com/>
 - <https://fontawesome.com/>
 
