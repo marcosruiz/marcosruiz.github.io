@@ -63,7 +63,7 @@ En la raíz del fichero ZIP deberá encontrarse el documento PDF (en el caso que
 
 ## Entrega y presentación en formato presentación
 
-Si la entrega de la tarea debe ser un documento PDF, el nombre tendrá el siguiente formato:
+Si la entrega de la tarea debe ser un documento PDF (siempre que sea posible), el nombre tendrá el siguiente formato:
 
 `<tu usuario>_t<número de la tarea con dos dígitos>.pdf`{: .filepath}
 
@@ -87,7 +87,7 @@ Asegúrate que el nombre no contenga la letra ñ, tildes ni caracteres especiale
 
 ## Entrega y presentación en formato Markdown
 
-Si la entrega de la tarea debe ser un documento PDF, el nombre tendrá el siguiente formato:
+Si la entrega de la tarea debe ser un documento markdown, el nombre tendrá el siguiente formato:
 
 `<tu usuario>_t<número de la tarea con dos dígitos>.md`{: .filepath}
 
@@ -99,7 +99,7 @@ El documento Markdown debe contener título de la tarea, nombre del módulo prof
 
 Ejemplo de entrega:
 
-> NO COPIAR NI USAR el documento siguiente de plantilla ya que contiene caracteres invisibles para su correcta visualización en web.
+> NO COPIAR NI USAR el documento siguiente de plantilla ya que contiene caracteres invisibles para su correcta visualización en la web.
 {:.prompt-warning}
 
 ```markdown
