@@ -56,6 +56,10 @@ tags: [enlaces, edteam, alva majo, programas, software, extensiones]
   - Paste As Plain Text
   - Text Extractor: OCR
 - [ZoomIt](https://learn.microsoft.com/es-es/sysinternals/downloads/zoomit): Para hacer zoom y grabar la pantalla.
+- [Okular](https://okular.kde.org/es/): Para leer, anotar y firmar PDFs.
+- [SumatraPDF](https://www.sumatrapdfreader.org/free-pdf-reader): Para leer PDFs.
+- [CamScanner](https://www.camscanner.com/es-es): Para crear documentos PDF de fotos de documentos.
+- [Peek](https://github.com/phw/peek): Para crear GIFs o vídeos rápidos.
 
 ## Webs de interés
 
