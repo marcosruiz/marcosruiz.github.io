@@ -97,6 +97,10 @@ function manipulateValues() {
 
 Tradicionalmente, un formulario está diseñado para enviar datos mediante HTTP al servidor. Al enviar (submit) un formulario, el navegador empaqueta los datos y los envía utilizando el método HTTP especificado (como GET o POST). Los formularios pueden incluir validación interna mediante HTML, lo que es más rápido que JavaScript pero ofrece menos control y personalización. La validación interna de HTML genera pseudo-clases que pueden estilizarse con CSS.
 
+### Ejemplo
+
+Este ejemplo demuestra cómo utilizar pseudo-clases CSS para estilizar formularios con validación interna en HTML.
+
 ```html
 <!DOCTYPE html>
 <html lang="es">
@@ -181,8 +185,6 @@ document
     alert("Formulario enviado correctamente (validación exitosa)");
   });
 ```
-
-Este ejemplo demuestra cómo utilizar pseudo-clases CSS para estilizar formularios con validación interna en HTML.
 
 ## Ciclo del Formulario con JavaScript
 
@@ -315,7 +317,6 @@ Para validar un formulario nosotros pero usando esta API debemos añadir al FORM
 
 Como puedes ver, en caso de que un campo no sea válido, se puede manipular las clases CSS o mostrar un mensaje de error. Aquí entra el tema de la usabilidad. Estamos muy acostumbrados a un comportamiento de los formularios que nos informe de si estamos haciendo las cosas bien. Por ejemplo: un `input` que no haya sido manipulado de momento, no debería mostrarse como erróneo. Pero si ya se ha escrito algo en él y saltamos de `input`, ya debería mostrarse como erróneo. Esto también puede ser farragoso y siempre es mejor separar por funciones puras la validación y la aplicación de estilos.
 
-{:.subsubsection}
 #### Ejemplo
 
 Un ejemplo sencillo de validación de un formulario podría ser:
