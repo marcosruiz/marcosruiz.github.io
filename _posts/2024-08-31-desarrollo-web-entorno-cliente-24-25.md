@@ -29,6 +29,8 @@ pin: true
 - UD5 - Formularios y eventos en JavaScript
   - [Formularios en HTML](/posts/formularios-html/)
   - [Formularios en JavaScript](/posts/formularios-javascript)
+  - [Validación de formularios en HTML](/posts/validacion-formularios-html)
+  - [Validación de formularios en JavaScript](/posts/validacion-formularios-javascript)
   - [Eventos en JavaScript](/posts/eventos-javascript)
   - [Expresiones regulares](/posts/expresiones-regulares)
   - [Gestión de cookies en JavaScript](/posts/cookies)

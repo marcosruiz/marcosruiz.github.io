@@ -287,123 +287,242 @@ Lee el artículo [La etiqueta input con colores](https://lenguajehtml.com/html/f
 
 Lee el artículo [La etiqueta HTML select](https://lenguajehtml.com/html/formularios/etiqueta-html-select/).
 
-{:.section}
-## Formas de selección del objeto form
+## Envío de formularios
 
-Dentro de un documento tendremos varias formas de selección de un formulario.
+En las páginas web actuales, los clientes (también llamados navegadores) no solo obtienen un elemento HTML del servidor, sino que también envían información como la siguiente:
 
-Si partimos del siguiente ejemplo:
+- El texto de búsqueda que el usuario ha escrito en el motor de búsqueda
+- El contenido de los formularios
+- El filtro de selección en tiendas online
+- El orden de una lista
+
+Para enviar ciertos tipos de información al servidor, el protocolo HTTP provee diferentes métodos de petición. Los dos más importantes son GET y POST, los cuales, aunque entregan los mismos resultados, revelan algunas diferencias entre ellos. A continuación se explican estas diferencias y cuándo conviene utilizar uno u otro.
+
+Debes conocer que cuando introducimos una URL en la dirección de búsqueda se realiza una petición GET y que la información de los formularios HTML se puede enviar tanto usando GET como POST aunque la opción más habitual y flexible es usar POST.
+
+### GET
+
+Con el método GET, los datos que se envían al servidor se escriben en la misma dirección URL. En la ventana del navegador, lo encontrarás así:
+
+```plaintext
+www.ejemplo.com/registrarse.php?nombre=pedro&apellido=perez&edad=55&genero=hombre
+```
+
+Toda la información introducida por el usuario (los llamados “parámetros URL”) se transmiten tan abiertamente como el URL en sí mismo. Esto tiene ventajas y desventajas.
+
+#### Ventajas de GET
+
+Los parámetros URL se pueden guardar junto a la dirección URL como marcador. De esta manera, puedes introducir una búsqueda y más tarde consultarla de nuevo fácilmente. También se puede volver a acceder a la página a través del historial del navegador.
+
+Esto resulta práctico, por ejemplo, si visitas con asiduidad un mismo lugar en Google Maps o si guardas páginas web con configuraciones de filtro determinadas.
+
+#### Desventajas de GET
+
+La mayor desventaja del método GET es su débil protección de los datos. Los parámetros URL que se envían quedan visibles en la barra de direcciones del navegador y son accesibles sin clave en el historial de navegación, en el caché y en el log de los servidores.
+
+Otra desventaja es que su capacidad es limitada: dependiendo del servidor y del navegador, no es posible introducir más de 2000 caracteres. Además, los parámetros URL solo pueden contener caracteres ASCII (letras, números, signos, etc.) y no datos binarios como archivos de audio o imágenes.
+
+#### Formularios con GET
+
+La codificación URL, también conocida como "codificación porcentual", es un mecanismo para codificar información en un Identificador Uniforme de Recursos (URI).
 
 ```html
-<div  id="menulateral">
-  <form  id="contactar" name="contactar" action="...">...</form>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="http://localhost:3003/foo" method="get" enctype="application/x-www-form-urlencoded">
+    <div>
+      <label for="decir"> ¿Qué saludo quiere decir? </label>
+      <input name="decir" id="decir" value="Hola" />
+    </div>
+    <div>
+      <label for="para"> ¿A quién se lo quiere decir? </label>
+      <input name="para" value="mamá" />
+    </div>
+    <div>
+      <button>enviar mis saludos</button>
+    </div>
+  </form>
+</body>
+
+</html>
 ```
 
-Tendremos los siguientes métodos de selección del objeto `form` en el documento:
+Toda la información se envía en la URL ya que las peticiones de GET no tienen body:
 
-- A través del método `getElementById()` del DOM, nos permite acceder a un objeto a través de su atributo ID. Tendremos que tener la precaución de asignar id únicos a nuestros objetos, para evitar que tengamos objetos con id repetidos:
-
-```javascript
-let formulario = document.getElementById("contactar");
+```plaintext
+http://localhost:3003/foo?decir=Hola&para=mam%C3%A1
 ```
 
-- A través del método `getElementsByTagName()` del DOM, el cuál nos permite acceder a un objeto a través de la etiqueta HTML que queramos. Por ejemplo para acceder a los objetos con etiqueta form haremos:
+Y un resumen de las cabeceras de la petición sería la siguiente:
 
-```javascript
-let formularios = document.getElementsByTagName("form");
-let primerFormulario = formularios[0]; // primer formulario del documento
+```plaintext
+GET /foo?decir=Hola&para=mam%C3%A1 HTTP/1.1
 ```
 
-o también todo en una única línea:
+### POST
 
-```javascript
-let primerFormulario = document.getElementsByTagName("form")[0] ;
-```
+El método POST introduce los parámetros en el cuerpo de la solicitud HTTP para el servidor. Por ello, no quedan visibles para el usuario. Además, la capacidad del método POST es ilimitada.
 
-Otra posibilidad interesante que te permite el método anterior, es la de buscar objetos con un padre determinado, por ejemplo:
+#### Ventajas de POST
 
-```javascript
-let menu = document.getElementById("menulateral");
-let formularios = menu.getElementsByTagName("form"); // formularios contenidos en el menu lateral
-let primerFormulario =  formularios[0]; // primer formulario en el menú lateral
-```
+En lo relativo a los datos, como, por ejemplo, al rellenar formularios con nombres de usuario y contraseñas, el método POST ofrece mucha discreción. Los datos no se muestran en el caché ni tampoco en el historial de navegación. La flexibilidad del método POST también resulta muy útil: no solo se pueden enviar textos cortos, sino también otros tipos de información, como fotos o vídeos.
 
-- Otro método puede ser a través de la colección `forms[]` del objeto `document`. Esta colección es un array, que contiene la referencia a todos los formularios que tenemos en nuestro documento.
+#### Desventajas de POST
 
-```javascript
-let formularios = document.forms; // la referencia a todos los formularios del documento
-let miFormulario = formularios[0]; // primer formulario del documento
-```
+La principal desventaja de los datos transferidos con el método POST no pueden guardarse junto al URL como marcador.
 
-o bien:
+### Content-Type en formularios HTML
 
-```javascript
-let miFormulario = document.forms[0]; // primer formulario del documento
-```
+En una solicitud POST, que resulta del envío de un formulario html, el `Content-Type` de la solicitud es especificado como un atributo `enctype` del elemento `form`.
 
-o bien:
+| **Método** | **Atributos**                                 | **Formato Enviado**                               | **Uso Común**      |
+| ---------- | --------------------------------------------- | ------------------------------------------------- | ------------------ |
+| `POST`     | `enctype="application/x-www-form-urlencoded"` | `application/x-www-form-urlencoded` (por defecto) | Envío de datos     |
+| `POST`     | `enctype="multipart/form-data"`               | `multipart/form-data`                             | Subida de archivos |
 
-```javascript
-let miFormulario = formularios["contactar"]; // referenciamos al formulario con name "contactar"
-```
+#### POST con x-www-form-urlencoded
 
-{:.section}
-## Formas de seleccionar los hijos de form
-
-Una vez visto cómo referenciar a un formulario en JavaScript, tenemos que saber cómo acceder a cada uno de los elementos u objetos, que contiene ese formulario.
-
-Cada uno de los elementos de un formulario, son objetos en JavaScript que tendrán propiedades y métodos, que nos permitirán realizar acciones sobre ellos. Gracias a esos métodos y propiedades, podremos realizar acciones como validar el contenido de un formulario, marcar o desmarcar una determinada opción, mostrar contenido de un campo u ocultarlo, etc.
-
-Por ejemplo, si consideramos un ejemplo sencillo de formulario:
+Este tipo de codificación utiliza la misma codificación que utilizamos en las URL de las peticiones GET.
 
 ```html
-<form  id="formularioBusqueda"  action="cgi-bin/buscar.pl">
-  <p>
-    <input type="text"  id="entrada"  name="cEntrada">
-    <input type="submit"  id="enviar"  name="enviar"  value="Buscar...">
-  </p>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="http://localhost:3003/foo" method="post" enctype="application/x-www-form-urlencoded">
+    <div>
+      <label for="decir"> ¿Qué saludo quiere decir? </label>
+      <input name="decir" id="decir" value="Hola" />
+    </div>
+    <div>
+      <label for="para"> ¿A quién se lo quiere decir? </label>
+      <input name="para" value="mamá" />
+    </div>
+    <div>
+      <button>enviar mis saludos</button>
+    </div>
+  </form>
+</body>
+
+</html>
 ```
 
-Las siguientes referencias al campo de texto entrada, serán todas válidas:
+```plaintext
+POST /foo HTTP/1.1
+Content-Length: 25
+Content-Type: application/x-www-form-urlencoded
+
+decir=Hola&para=mam%C3%A1
+```
+
+#### POST con form-data
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="http://localhost:3003/foo" method="post" enctype="multipart/form-data">
+    <input type="text" name="description" value="some text" />
+    <input type="file" name="myFile" />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>
+```
+
+Debido a que utilizamos el tipo `multipart/form-data` los datos que enviamos al servidor se visualizarían de la siguiente forma:
+
+```plaintext
+POST /foo HTTP/1.1
+Content-Length: 1619
+Content-Type: multipart/form-data; boundary=---------------------------21532953428956400213398210119
+
+-----------------------------21532953428956400213398210119
+Content-Disposition: form-data; name="description"
+
+some text
+-----------------------------21532953428956400213398210119
+Content-Disposition: form-data; name="myFile"; filename="2024-12-02_12-41-45.png"
+Content-Type: image/png
+
+(binary)
+-----------------------------21532953428956400213398210119--
+```
+
+{:.question}
+¿Qué `Content-Type` existen?
+
+## Servidor de Node para probar cualquier formulario
+
+He preparado un sencillo servidor de Node que recibe cualquier tipo de petición y la muestra por pantalla. Esto permite que podáis hacer diferentes pruebas con todo tipo de formularios.
 
 ```javascript
-document.getElementById("entrada");
-document.formularioBusqueda.cEntrada;
-document.formularioBusqueda.elements[0];
-document.forms["formularioBusqueda"].elements["cEntrada"];
-document.forms["formularioBusqueda"].cEntrada;
+const express = require('express');
+const app = express();
+const cors = require('cors'); // Importar CORS
+
+const PORT = 3003;
+
+// Habilitar CORS para todas las rutas y orígenes
+app.use(cors());
+
+app.use(express.raw({ type: '*/*', limit: '10mb' })); // Captura cualquier tipo de datos sin procesar
+
+app.post('*', (req, res) => {
+  console.log("🔥 Datos recibidos:");
+
+  const data = req.body.toString();
+
+  // Si los datos contienen saltos de línea o son muy grandes, mostrar solo los primeros 100 caracteres
+  if (data.length > 1000) {
+    console.log(data.substring(0, 1000) + '... [truncado]');
+  } else {
+    console.log(data);
+  }
+
+  //res.send("Datos recibidos");
+  res.json({
+    status: "success",
+    message: "Datos recibidos"
+  })
+});
+
+
+app.listen(PORT, () => {
+  console.log(`👽👽👽 Servidor escuchando en http://localhost:${PORT}`);
+});
 ```
+{: file="server.js" }
 
-Aunque muchos de los controles de un formulario tienen propiedades en común, algunas propiedades son únicas a un control en particular. Por ejemplo, en un objeto select tienes propiedades que te permiten conocer la opción que está actualmente seleccionada. Al igual que los `checkbox` es o los botones de tipo `radio`, que también disponen de propiedades para saber cuál es la opción que está actualmente seleccionada.
+Para iniciarlo deberás tener instalado node y ejecutar las siguientes instrucciones colocándote en la carpeta donde este el fichero `sever.js`:
 
-{:.section}
-## Validación de formularios
-
-{:.subsection}
-### Validación del navegador incorporada en HTML5
-
-Funciona añadiendo atributos a los campos del formulario que queremos validar. Los más usados son:
-
-- `required`: indica que el campo es obligatorio. La validación fallará si no hay nada escrito en el input. En el caso de un grupo de radiobuttons se pone sobre cualquiera de ellos (o sobre todos) y obliga a que haya seleccionada una opción cualquiera del grupo.
-- `pattern`: obliga a que el contenido del campo cumpla la expresión regular indicada. Por ejemplo para un código postal sería `pattern="^[0-9]{5}$"`.
-- `minlength` / maxlength: indica la longitud mínima/máxima del contenido del campo
-- `min` / `max`: indica el valor mínimo/máximo del contenido de un campo numérico
-También producen errores de validación si el contenido de un campo no se adapta al type indicado (`email`, `number`, ...) o si el valor de un campo numérico no cumple con el step indicado.
-
-> Puedes leer el artículo [Expresiones regulares](/posts/expresiones-regulares) si quieres saber más sobre expresiones regulares.
-{:.prompt-tip}
-
-Cuando el contenido de un campo es valido dicho campo obtiene automáticamente la pseudoclase `:valid` y si no lo es tendrá la pseudoclase `:invalid` lo que nos permite poner reglas en nuestro CSS para destacar dichos campos, por ejemplo:
-
-```css
-input:invalid {
-  border: 2px dashed red;
-}
+```console
+npm init -y
+npm install express cors
+node server.js
 ```
-
-La validación del navegador se realiza al enviar el formulario. Si encuentra un error lo muestra, se detiene la validación del resto de campos y no se envía el formulario.
 
 ## Bibliografía
 
@@ -413,4 +532,4 @@ La validación del navegador se realiza al enviar el formulario. Si encuentra un
 - <https://jonmircha.com/javascript-asincrono>
 - <https://es.javascript.info/>
 - <https://cipfpbatoi.github.io/materials/daw/dwc/01-js/08-forms.html>
-- 
+- <https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/get-vs-post/>

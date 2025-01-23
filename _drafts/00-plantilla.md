@@ -93,6 +93,16 @@ Ejemplo
 ```
 {: file="" }
 
+```html
+
+```
+{: file="index.html" }
+
+```javascript
+
+```
+{: file="script.js" }
+
 ![imgDescription](/assets/img/ejemplo/ejemplo.png)
 _ imgDescription _
 
