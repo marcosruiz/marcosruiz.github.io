@@ -33,7 +33,7 @@ La validación del navegador se realiza al enviar el formulario. Si encuentra un
 
 Tradicionalmente, un formulario está diseñado para enviar datos mediante HTTP al servidor. Al enviar (`submit`) un formulario, el navegador empaqueta los datos y los envía utilizando el método HTTP especificado (como GET o POST). Los formularios pueden incluir validación interna mediante HTML, lo que es más rápido que JavaScript pero ofrece menos control y personalización. La validación interna de HTML genera pseudo-clases que pueden estilizarse con CSS.
 
-El siguiente ejemplo demuestra cómo utilizar pseudo-clases CSS para estilizar formularios con validación interna en HTML.
+Este ejemplo muestra cómo utilizar pseudo-clases CSS para estilizar formularios con validación interna en HTML.
 
 ```html
 <!DOCTYPE html>
