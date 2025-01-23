@@ -204,6 +204,10 @@ document.querySelector("#buttonSubmit").addEventListener("click", (event) => {
 
 ### Envío de datos con fetch en formato JSON
 
+### Ejemplo
+
+Este ejemplo demuestra cómo utilizar pseudo-clases CSS para estilizar formularios con validación interna en HTML.
+
 ```html
 <!DOCTYPE html>
 <html lang="es">
