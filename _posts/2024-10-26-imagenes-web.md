@@ -336,7 +336,18 @@ Para finalizar este apartado, daremos una serie de consejos que están relaciona
   </div>
 </details>
 
+## Webs para la descarga de imágenes
 
+- <https://unsplash.com/>
+- <https://deepdreamgenerator.com/>
+- http://freepik.es/
+- http://pixabay.com/
+- http://vecteezy.com/
+
+## Webs para cambiar el formato de imágenes
+
+- <http://tinypng.com/>
+- <http://convertio.co/>
 
 ## Ley de la propiedad intelectual
 
