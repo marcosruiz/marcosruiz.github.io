@@ -35,7 +35,7 @@ La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
 Duración actividades obligatorias: 8 horas.
 
-RA 2. Escribe sentencias simples, aplicando la sintaxis del lenguaje y verificando su ejecución sobre navegadores Web.
+RA3. Escribe código, identificando y aplicando las funcionalidades aportadas por los objetos predefinidos del lenguaje.
 
 ## Actividades
 
