@@ -319,7 +319,7 @@ Para finalizar este apartado, daremos una serie de consejos que están relaciona
   <div class="card-body" markdown="1">
 
 - Software libre: GIMP.
-- Software propietario: Adobe Photoshop o Corel PaintShop Pro.
+- Software propietario: Adobe Photoshop, Corel PaintShop Pro, Photopea (gratis).
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -335,6 +335,19 @@ Para finalizar este apartado, daremos una serie de consejos que están relaciona
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
+
+## Webs para la descarga de imágenes
+
+- <https://unsplash.com/>
+- <https://deepdreamgenerator.com/>
+- http://freepik.es/
+- http://pixabay.com/
+- http://vecteezy.com/
+
+## Webs para cambiar el formato de imágenes
+
+- <http://tinypng.com/>
+- <http://convertio.co/>
 
 ## Ley de la propiedad intelectual
 
