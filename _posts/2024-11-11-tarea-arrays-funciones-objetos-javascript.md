@@ -23,7 +23,7 @@ A continuación, se muestran las actividades a realizar.
 {:.activity}
 ### Programación orientada a objetos en freeCodeCamp
 
-Ir a la certificación Algoritmos de JavaScript y Estructuras de Datos y hacer el curso “Programación orientada a objetos”.
+Ir a la certificación [Algoritmos de JavaScript y Estructuras de Datos](https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/) y hacer el curso “Programación orientada a objetos”.
 
 > 📷 Cuando termines todos los pasos, haz una captura de tu perfil.
 {:.prompt-info}
@@ -31,7 +31,7 @@ Ir a la certificación Algoritmos de JavaScript y Estructuras de Datos y hacer e
 {:.activity}
 ### (Voluntaria) Programación funcional en freeCodeCamp
 
-Ir a la certificación Algoritmos de JavaScript y Estructuras de Datos y hacer el curso “Programación funcional”.
+Ir a la certificación [Algoritmos de JavaScript y Estructuras de Datos](https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/) y hacer el curso “Programación funcional”.
 
 > 📷 Cuando termines todos los pasos, haz una captura de tu perfil.
 {:.prompt-info}
@@ -39,7 +39,7 @@ Ir a la certificación Algoritmos de JavaScript y Estructuras de Datos y hacer e
 {:.activity}
 ### (Voluntaria) Programación de algoritmos intermedios en freeCodeCamp
 
-Ir a la certificación Algoritmos de JavaScript y Estructuras de Datos y hacer el curso “Programación de algoritmos intermedios”.
+Ir a la certificación [Algoritmos de JavaScript y Estructuras de Datos](https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/) y hacer el curso “Programación de algoritmos intermedios”.
 
 > 📷 Cuando termines todos los pasos, haz una captura de tu perfil.
 {:.prompt-info}
@@ -47,7 +47,7 @@ Ir a la certificación Algoritmos de JavaScript y Estructuras de Datos y hacer e
 {:.activity}
 ### Algoritmos de JavaScript y proyectos de estructuras de datos en freeCodeCamp
 
-Ir a la certificación Algoritmos de JavaScript y Estructuras de Datos y hacer el curso “Algoritmos de JavaScript y proyectos de estructuras de datos”.
+Ir a la certificación [Algoritmos de JavaScript y Estructuras de Datos](https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures/) y hacer el curso “Algoritmos de JavaScript y proyectos de estructuras de datos”.
 
 > 📷 Cuando termines todos los pasos, haz una captura de tu perfil.
 {:.prompt-info}
