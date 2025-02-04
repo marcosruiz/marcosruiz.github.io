@@ -22,6 +22,7 @@ Pero además ChatGPT conoce el formato GIFT y nos puede generar montones de preg
 > Otro formato más fácil de usar es el formato AIKEN, pero este formato solo permite preguntas de una sola opción válida.
 {:.prompt-info}
 
+{:.section}
 ## Caracteres especiales que hay que escapar
 
 ```plaintext
@@ -30,6 +31,7 @@ Pero además ChatGPT conoce el formato GIFT y nos puede generar montones de preg
 
 Estos caracteres escribiendo el `\` delante de ellos.
 
+{:.section}
 ## Plantillas
 
 A continuación se ponen plantillas para copiar y pegar de forma rápida.
@@ -37,6 +39,7 @@ A continuación se ponen plantillas para copiar y pegar de forma rápida.
 > Todo lo que está entre los símbolos `::` y `::` es el nombre corto de la pregunta. En mi caso uso los códigos con el siguiente formato `TXX XX`. Por ejemplo: `T01 02`, sería la pregunta 2 del primer test del curso.
 {:.prompt-info}
 
+{:.subsection}
 ### Pregunta de una opción
 
 Sin restar por respuesta errónea:
@@ -72,6 +75,7 @@ Restando el 50% del valor de la pregunta por respuesta errónea:
 }
 ```
 
+{:.subsection}
 ### Pregunta de opción múltiple
 
 Dos respuestas correctas y dos incorrectas:
@@ -107,6 +111,7 @@ Cuatro respuestas correctas:
 }
 ```
 
+{:.subsection}
 ### Pregunta respuesta numérica
 
 Respuesta exacta:
@@ -121,6 +126,7 @@ Dando un rango de error:
 ::TXX XX::[markdown]Pregunta {#5.2:0.1}
 ```
 
+{:.subsection}
 ### Pregunta respuesta texto
 
 Una única respuesta correcta:
@@ -138,6 +144,7 @@ Varias respuestas correctas:
 > En caso de estas respuestas siempre NO son case sensitive por lo que el alumno podrá escribir "RespUESta" y se la dará como correcta.
 {:.prompt-info}
 
+{:.subsection}
 ### Pregunta de verdadero y falso
 
 ```plaintext
@@ -165,6 +172,7 @@ Varias respuestas correctas:
 }
 ```
 
+{:.subsection}
 ### Pregunta de relacionar columnas
 
 ```plaintext
@@ -176,6 +184,7 @@ Varias respuestas correctas:
 }
 ```
 
+{:.subsection}
 ### Pregunta de bloque de texto o ensayo
 
 Cuando queremos que aparezca un bloque de texto grande para que contesten nuestros alumnos existe la pregunta tipo ensayo. El único problema de este tipo de preguntas es que deben ser corregidas de manera manual por el profesor.
@@ -184,6 +193,7 @@ Cuando queremos que aparezca un bloque de texto grande para que contesten nuestr
 ::TXX XX::[markdown]Pregunta{}
 ```
 
+{:.subsection}
 ### Pregunta con imágenes
 
 No hay una forma muy sencilla para añadir imágenes a nuestros cuestionarios pero la que yo uso es la siguiente:
@@ -262,6 +272,7 @@ Por ejemplo:
 ![alt text](preguntaImagen09.png)
 _Pregunta real con el carácter ":" escapado en la URL_
 
+{:.subsection}
 ### Retroaliemntación para el alumno
 
 Recuerda que también puedes añadir la retroalimentación que recibirán los alumnos. Yo suelo utilizar la retroalimentación general para la pregunta. Por ejemplo:
@@ -277,6 +288,7 @@ Recuerda que también puedes añadir la retroalimentación que recibirán los al
 ```
 
 {:.subsection}
+{:.section}
 ## Autoincrementar
 
 Es útil darle un nombre a cada pregunta para encontrarla en el banco de preguntas. En Visual Studio code se puede hacer lo siguiente para hacerlo de forma rápida:
@@ -287,6 +299,7 @@ Es útil darle un nombre a cada pregunta para encontrarla en el banco de pregunt
 1. Hacer `Ctrl+Alt+I` para dar un nombre único a cada pregunta.
 
 {:.subsection}
+{:.section}
 ## Añadir atajos de teclado en Visual Studio Code
 
 En Notion podemos usar `Ctrl + e` para hacer que un texto se vea como código. En el caso de Visual Studio Code también podemos configurarlo. En mi caso uso `Ctrl + comilla inversa`.
@@ -297,6 +310,7 @@ En Notion podemos usar `Ctrl + e` para hacer que un texto se vea como código. E
 - Hacemos doble click en la casilla correspondiente a la columna de "Keybinding".
 - Presionamos el atajo de teclado al que queramos asociar dicha acción.
 
+{:.section}
 ## Borrar preguntas
 
 Moodle exporta las preguntas aunque hayan sido eliminadas. Por lo que si queremos exportar, borrar y reimportar las mismas preguntas editadas, en lugar de borrar preguntas es mejor moverlas a una categoria llamada "Papelera" o "Preguntas viejas" para que no molesten.

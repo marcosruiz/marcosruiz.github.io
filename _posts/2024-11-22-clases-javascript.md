@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/objetos-javascript/
 ---
 
+{:.section}
 ## Introducción
 
 Antes de la introducción de ES6, las clases en JavaScript se creaban utilizando funciones constructoras. Esta técnica sigue siendo utilizada. Con ES6, se incorporó la palabra clave `class`, que se asemeja más a la sintaxis de otros lenguajes de programación orientados a objetos. Sin embargo, es importante entender que JavaScript no funciona exactamente con clases en el sentido tradicional, sino con prototipos.
@@ -14,6 +15,7 @@ JavaScript siempre ha tenido objetos, pero no clases de la forma tradicional que
 
 En este apartado vamos a ver lo que realmente son las clases, explicando cómo se crean con funciones constructoras, aunque sabemos que hoy en dia se puede usar `class`.
 
+{:.section}
 ## Creación de Objetos con Funciones Constructoras
 
 Una función constructora es una plantilla para crear nuevos objetos. Veamos un ejemplo:
@@ -56,6 +58,7 @@ red Granny Smith apple
 
 Al utilizar `new`, la función constructora Apple es invocada, creando un nuevo objeto con las propiedades y métodos definidos en la función.
 
+{:.section}
 ## Métodos en el Prototipo
 
 Para hacer el código más eficiente, es posible definir métodos en el prototipo de la función constructora en lugar de definirlos dentro de la propia función. Esto evita recrear la función cada vez que se crea un nuevo objeto:
@@ -82,6 +85,7 @@ console.log(myApple.getInfo()); // "red Granny Smith apple"
 red Granny Smith apple
 ```
 
+{:.section}
 ## Objetos Literales
 
 Los objetos literales permiten crear objetos de manera más sencilla y directa. Veamos un ejemplo:
@@ -107,6 +111,7 @@ console.log(anotherApple.getInfo()); // "red macintosh apple"
 
 Sin embargo, no es recomendable usar objetos literales para crear múltiples instancias, ya que todas ellas serían instancias directas de `Object`.
 
+{:.section}
 ## Singleton con una Función
 
 Un singleton se puede crear utilizando una función anónima invocada con new:
@@ -123,6 +128,7 @@ var apple = new function() {
 
 El uso de `new function()` hace dos cosas: define una función anónima y la invoca inmediatamente con `new`, creando así un singleton. Este enfoque garantiza que solo haya una instancia del objeto.
 
+{:.section}
 ## Clases con Valores por Defecto
 
 Las clases en JavaScript permiten establecer valores por defecto para sus propiedades en el constructor.

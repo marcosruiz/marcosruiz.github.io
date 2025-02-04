@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/propiedad-intelectual/
 ---
 
+{:.section}
 ## Introducción
 
 El Ministerio de Cultura define la propiedad intelectual como el conjunto de derechos que corresponden a los autores y a otros titulares (artistas, productores, organismos de radiodifusión, etcétera) respecto de las obras y prestaciones fruto de su creación y es este Ministerio el encargado de proponer las medidas, normativas o no, para lograr la adecuada protección de la propiedad intelectual.
@@ -14,6 +15,7 @@ La Ley de propiedad intelectual ofrece mecanismos que permiten, entre otras acci
 
 El 12 de abril de 1996 fue aprobado el texto refundido de la Ley de propiedad individual mediante el Real Decreto Legislativo 1/1996.
 
+{:.section}
 ## Derechos de autor
 
 Cuando creamos una sitio web, diseñamos su interfaz e insertamos en la página recursos gráficos de creación propia, estamos creando una obra que nos pertenece y, por lo tanto, tenemos unos derechos inherentes sobre ella. Somos nosotros los que debemos decidir si queremos ejercer nuestros derechos o no.
@@ -34,6 +36,7 @@ En España se conoce como Ley de la Propiedad Intelectual a lo que los ordenamie
 
 (Voluntario) En este [enlace](https://boe.es/buscar/act.php?id=BOE-A-1996-8930) puedes leer el Real Decreto Legislativo 1/1996.
 
+{:.section}
 ## Licencias
 
 <details class="card mb-2">
@@ -78,6 +81,7 @@ Las licencias de Creative Commons están adaptadas a la legislación sobre propi
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jVLHdoiE_IU?si=0ov8kqsJFTavSr1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+{:.section}
 ## Registro de contenido
 
 Si encargamos recursos gráficos a un profesional tendremos que tener en cuenta el tipo de licencia que tendrán esos recursos.
@@ -102,6 +106,7 @@ Reconocimiento-No comercial-Compartir bajo la misma licencia.
   </div>
 </details>
 
+{:.section}
 ## Entidades de gestión colectiva
 
 Las entidades de gestión colectiva de derechos de propiedad intelectual son organizaciones privadas de base asociativa y naturaleza no lucrativa que se dedican en nombre propio o ajeno a la gestión de derechos de propiedad intelectual de carácter patrimonial por cuenta de sus legítimos titulares.

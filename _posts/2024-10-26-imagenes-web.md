@@ -7,6 +7,7 @@ mermaid: true
 img_path: /assets/img/imagenes-web/
 ---
 
+{:.section}
 ## Introducción
 
 Los recursos gráficos se emplean mucho en la Web y si se utilizan adecuadamente pueden mejorar el aprendizaje del usuario y añadir valor a nuestro sitio, pero si se utilizan inadecuadamente, producen el efecto contrario.
@@ -20,6 +21,7 @@ Desde el punto de la accesibilidad web, los usuarios con discapacidad visual deb
 
 En este artículo, estudiaremos las imágenes, sus características, cómo se crean y cómo se gestionan para un mejor aprovechamiento de los recursos de la web.
 
+{:.section}
 ## ¿Qué es una imagen digital?
 
 Una imagen digital es aquella en la que se emplean los unos y los ceros para almacenar toda la información relativa a los colores y luminosidad de una imagen.
@@ -30,6 +32,7 @@ En la siguiente imagen puedes ver un paisaje donde se han enmarcado con diferent
 
 Una imagen digital es, en definitiva, el resultado visual final de una imagen capturada inicialmente por un dispositivo que almacena la información digitalmente y que puede ser transformada, posteriormente, usando los medios informáticos.
 
+{:.section}
 ## Tipos de imágenes
 
 Las imágenes digitales pueden ser de dos tipos:
@@ -62,6 +65,7 @@ No.
   </div>
 </details>
 
+{:.section}
 ## Formatos de imagen
 
 Cualquier información almacenada en un soporte electrónico lo está en un determinado formato de archivo que le va a indicar al ordenador el tipo de archivo con el que se está trabajando. Las imágenes, al igual que cualquier documento, hoja de cálculo, presentación, etcétera, tienen un formato de almacenamiento.
@@ -132,6 +136,7 @@ WebP (Formato de Imagen Web) fue desarrollado por Google como un reemplazo para 
   </div>
 </details>
 
+{:.section}
 ## Resolución, tamaño, profundidad de color
 
 las imágenes de mapas de bits están formadas por píxeles y cuando hacemos suficiente zoom en una de estas imágenes podemos apreciar los píxeles que la forman. Coloquialmente también se les llaman dientes de sierra.
@@ -158,6 +163,7 @@ No. Necesitamos conocer también el concepto de profundidad de color.
   </div>
 </details>
 
+{:.section}
 ## Profundidad de color
 
 La profundidad de color es una característica de las imágenes que nos indica el número de bits de información que se almacenan en disco por cada píxel, el cual está relacionado con el número de colores que se puedan representar en cada píxel. Teniendo esto en cuenta, si en la imagen anterior de 360 píxeles:
@@ -174,6 +180,7 @@ Siendo la Profundidad el número de bits que necesito para representar N colores
 - **Supuesto A**: Necesito 8 bits para representar 256 ($2^{8}$)colores.
 - **Supuesto B**: Necesito 24 bits para representar 256 ($2^{24}$)colores.
 
+{:.section}
 ## Compresión de imágenes
 
 <details class="card mb-2">
@@ -228,6 +235,7 @@ Realmente el procesador la descomprime sin que nos demos cuenta. Es por esto que
   </div>
 </details>
 
+{:.subsection}
 ### Ejemplos
 
 En los dos siguientes artículos puedes ver la misma imagen en diferentes formatos de compresión. Resulta sorprendente como podemos bajar el tamaño de una imagen de 486 kB a 17.7 kB sin que el usuario apenas lo note.
@@ -261,6 +269,7 @@ Algunas de sus características principales incluyen:
 {:.question}
 ¿Qué es el HDR?
 
+{:.section}
 ## Logos, iconos, banners e imágenes
 
 Los recursos gráficos se emplean mucho en la web. Si se utilizan adecuadamente, pueden mejorar el aprendizaje del usuario y añadir valor a nuestro sitio. Ahora bien, si se utilizan inadecuadamente, producen el efecto contrario.
@@ -287,10 +296,12 @@ En resumen:
 - Cuando realices un recurso gráfico que requiera de pocos colores o colores uniformes sin animación deberás emplear el formato PNG.
 - Cuando realices un recurso gráfico que requiera de muchos colores no uniformes deberás emplear el formato JPG.
 
+{:.subsection}
 ### Estilos de ilustraciones
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5G7gTgcmvyk?si=AkMdlNr-oftlnjZN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+{:.section}
 ## Software de edición de imágenes
 
 Si nos interesa es trabajar con imágenes de alta calidad y que pesen poco, esta última condición necesaria en la web, sería conveniente emplear nuestro tiempo en aprender a manejar alguna herramienta que tenga una función de optimización de imágenes para su uso en la web.
@@ -336,6 +347,7 @@ Para finalizar este apartado, daremos una serie de consejos que están relaciona
   </div>
 </details>
 
+{:.section}
 ## Webs para la descarga de imágenes
 
 - <https://unsplash.com/>
@@ -344,11 +356,13 @@ Para finalizar este apartado, daremos una serie de consejos que están relaciona
 - http://pixabay.com/
 - http://vecteezy.com/
 
+{:.section}
 ## Webs para cambiar el formato de imágenes
 
 - <http://tinypng.com/>
 - <http://convertio.co/>
 
+{:.section}
 ## Ley de la propiedad intelectual
 
 Lee el artículo [Ley de propiedad intelectual](/posts/propiedad-intelectual).

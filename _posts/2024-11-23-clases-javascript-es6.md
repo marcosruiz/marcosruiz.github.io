@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/clases-javascript-es6/
 ---
 
+{:.section}
 ## Introducción
 
 Como ya se ha explicado anteriormente, en JavaScript, todas las clases son en realidad funciones constructoras, que son a su vez objetos. Aunque JavaScript es un lenguaje basado en prototipos (`classless`), ES6 introdujo la palabra reservada `class` para proporcionar una sintaxis más familiar y cómoda para los programadores provenientes de otros lenguajes orientados a objetos. Sin embargo, bajo esta sintaxis, JavaScript sigue funcionando con prototipos.
@@ -43,6 +44,7 @@ HeroClass { name: "Zelda", level: 20 }
 
 En ambos ejemplos, se crea una clase `Hero` con un constructor que inicializa las propiedades `name` y `level`.
 
+{:.section}
 ## Creación de Métodos
 
 Los métodos en una clase pueden definirse directamente dentro del constructor utilizando funciones constructoras o como métodos de clase en la sintaxis ES6.
@@ -87,6 +89,7 @@ Luigi says hello.
 
 En ambos casos, se añade un método `greet` que devuelve un saludo del héroe.
 
+{:.section}
 ## Herencia
 
 La herencia permite crear una nueva clase que hereda las propiedades y métodos de otra clase.
@@ -129,6 +132,7 @@ Mage { name: "Merlin", level: 150, spell: "Ice Blast" }
 
 En estos ejemplos, `Mage` extiende `Hero`, añadiendo una nueva propiedad `spell`.
 
+{:.section}
 ## Atributos Estáticos
 
 Los atributos y métodos estáticos se definen en la clase en lugar de en las instancias.
@@ -168,6 +172,7 @@ Fíjate en la siguiente figura cómo la variable `foo` NO tiene la propiedad `st
 
 Fíjate también en cómo la variable `foo` del tipo `Foo` tiene acceso al padre a través de la propiedad `[[Prototype]]`.
 
+{:.section}
 ## Atributos Privados
 
 Por defecto, en ES6, todo es público. Sin embargo, ES2019 introdujo la sintaxis `#` para declarar atributos privados. Alternativamente, se pueden utilizar funciones internas y scopes para emular privacidad.
@@ -234,6 +239,7 @@ undefined
 
 En ambos ejemplos, `width` y `height` son privados y solo accesibles a través de métodos específicos.
 
+{:.section}
 ## Closure
 
 Una técnica importante para manejar variables privadas y comportamiento similar a las clases es el uso de closures.
@@ -270,6 +276,7 @@ Mira el siguiente vídeo:
 
 (Voluntario) Lee el artículo [Closures](https://developer.mozilla.org/es/docs/Web/JavaScript/Closures).
 
+{:.section}
 ## Setters y Getters
 
 Los setters y getters permiten controlar cómo se acceden y modifican las propiedades de una clase.
@@ -307,6 +314,7 @@ Salida:
 
 En este ejemplo, el setter `setPrecio` valida el valor antes de asignarlo, y el getter `getPrecio` devuelve el precio como un número flotante.
 
+{:.section}
 ## Clases, Objetos y this en JavaScript
 
 El valor de `this` en JavaScript depende del contexto de ejecución y de cómo se llama la función. Esta peculiaridad puede causar confusión, ya que en otros lenguajes `this` o `self` siempre son el objeto al que pertenecen. Cualquier función que use `this` debe ejecutarse con un objeto como contexto de ejecución. Por tanto, la podemos denominar un método. Pero no es tan sencillo, porque los métodos no siempre pertenecen al mismo entorno de ejecución. El entorno depende de cómo se invoque y el tipo de función que sea.

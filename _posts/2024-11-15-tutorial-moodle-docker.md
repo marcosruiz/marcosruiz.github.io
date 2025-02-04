@@ -6,6 +6,7 @@ tags: [gift, moodle, aeducar, profesor, adistanciafp, fpvirtual, fpvirtualaragon
 img_path: /assets/img/tutorial-moodle-docker/
 ---
 
+{:.section}
 ## Instalar Moodle
 
 Podemos instalar Moodle haciendo uso de Docker compose:
@@ -72,6 +73,7 @@ _Paso 2_
 ![alt text](hiAdmin.png)
 _Paso 3_
 
+{:.section}
 ## Ampliar el límite de ficheros de subida
 
 Si tenemos backups de cursos de más de 500 MB necesitamos ampliar el límite de subida de ficheros en Moodle.

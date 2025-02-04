@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/validacion-formularios-javascript/
 ---
 
+{:.section}
 ## Introducción
 
 En una aplicación web, la validación de los formularios se realiza tanto en el lado del cliente como en el del servidor.
@@ -20,6 +21,7 @@ Pero se puede usar Javascript para mucho más que validar formularios. Por ejemp
 {:.question}
 ¿Qué es `curl`?
 
+{:.section}
 ## Modificación de los inputs de un formulario
 
 El contenido de los campos de entrada en un formulario se puede visualizar y modificar utilizando el atributo `value`. Otros elementos del formulario, como los botones de opción (`radio button`) y las casillas de verificación (`checkbox`), deben tener un `name` común y también utilizan los atributos `value` y `checked`. Para los elementos `select`, se utilizan los atributos `options` y `selectedIndex`.
@@ -95,10 +97,12 @@ function manipulateValues() {
 ```
 {: file="script.js" }
 
+{:.section}
 ## Ciclo del Formulario con JavaScript
 
 Podemos interceptar y detener el ciclo por defecto de un formulario para validarlo y enviarlo utilizando JavaScript. De esta manera, podemos evitar tener un botón `submit` y controlar completamente el proceso de envío. Si el formulario envía datos al servidor y se refresca, JavaScript pierde el control del programa. Para evitar esto, podemos utilizar `preventDefault()` dentro del evento `submit` o devolver `false`.
 
+{:.subsection}
 ### Ejemplo de cómo interceptar el evento submit con el atributo onsubmit
 
 Podemos manejar eventos de formularios para personalizar su comportamiento. Un ejemplo común es el uso del evento `onsubmit` para ejecutar una función de validación antes de enviar el formulario. Si la función de validación devuelve `true`, el formulario se envía; de lo contrario, se cancela el envío.
@@ -147,6 +151,7 @@ function validar() {
 ```
 {: file="script.js" }
 
+{:.section}
 ## Validación de formularios
 
 Puesto que podemos interceptar el ciclo del formulario o atender a cualquier evento y leer y escribir el `value` de los inputs, validar el formulario es sencillo. No obstante, cuando hay que hacer muchos formularios o muy grandes, el código puede resultar farragoso. En ese caso, hay técnicas como crear funciones validadoras que hacen el código más sencillo y fácil de mantener.
@@ -161,12 +166,14 @@ Las funciones validadoras en JavaScript son funciones diseñadas para verificar 
   </div>
 </details>
 
+{:.subsection}
 ### Expresiones Regulares
 
 Los campos de los formularios pueden ser validados utilizando expresiones regulares.
 
 Lee el artículo [Expresiones regulares](/posts/expresiones-regulares/).
 
+{:.subsection}
 ### Validación mediante la API de validación de formularios
 
 Mediante JavaScript tenemos acceso a todos los campos del formulario por lo que podemos hacer la validación como queramos, pero es una tarea pesada, repetitiva y que provoca código espaguetti difícil de leer y mantener más adelante.
@@ -199,6 +206,7 @@ Las principales propiedades y métodos que nos proporciona esta API son:
 
 En la página de [W3Schools](https://www.w3schools.com/js/js_validation_api.asp) podéis ver algún ejemplo básico de esto.
 
+{:.subsubsection}
 #### Ejemplo para ver los valores de checkValidity y validationMessage
 
 A continuación tenéis un ejemplo simple del valor de las diferentes propiedades involucradas en la validación de un campo de texto que es obligatorio y cuyo tamaño debe estar entre 5 y 50 caracteres:
@@ -263,6 +271,7 @@ Para validar un formulario nosotros pero usando esta API debemos añadir al `for
 Como puedes ver, en caso de que un campo no sea válido, se puede manipular las clases CSS o mostrar un mensaje de error. Aquí entra el tema de la usabilidad. Estamos muy acostumbrados a un comportamiento de los formularios que nos informe de si estamos haciendo las cosas bien. Por ejemplo: un `input` que no haya sido manipulado de momento, no debería mostrarse como erróneo. Pero si ya se ha escrito algo en él y saltamos de `input`, ya debería mostrarse como erróneo. Esto también puede ser farragoso y siempre es mejor separar por funciones puras la validación y la aplicación de estilos.
 
 {:.subsubsection}
+{:.subsection}
 #### Ejemplo de validación con mensajes de error en elementos span del HTML
 
 Un ejemplo sencillo de validación de un formulario podría ser:
@@ -333,6 +342,7 @@ Estamos usando:
 - `validationMessage` para mostrar el posible error de cada campo, o quitar el error cuando el campo sea válido.
 - `checkValidity()` para no enviar/procesar el formulario si contiene errores.
 
+{:.subsubsection}
 #### Ejemplo utilizando setCustomValidity para añadir mensajes de error personalizados
 
 Si tenemos que validar algo que no puede hacerse mediante atributos HTML (por ejemplo si el nombre de usuario ya está en uso) deberemos hacer la validación "a mano" y en caso de no ser válido ponerle un error con `.setCustomValidity()`, pero debemos recordar quitar el error si todo es correcto o el formulario siempre será inválido. Modificando el ejemplo:
@@ -366,6 +376,7 @@ form.addEventListener("submit", (event) => {
 > Existen múltiples librerías que facilitan enormemente el tedioso trabajo de validar un formulario. Un ejemplo es [yup](https://www.npmjs.com/package/yup).
 {:.prompt-info}
 
+{:.subsection}
 ### Validación de ficheros
 
 Los ficheros deben ser validados en el lado del servidor, pero nosotros también podemos validarlos en la parte de cliente para mejorar la usabilidad. Validar los ficheros en el lado del cliente mejora la usabilidad al proporcionar retroalimentación inmediata a los usuarios sobre cualquier problema con sus archivos antes de que intenten subirlos al servidor. Esto puede ahorrar tiempo y frustración tanto para el usuario como para el servidor.
@@ -442,6 +453,7 @@ document
   });
 ```
 
+{:.subsection}
 ### Imágenes en formularios
 
 Las imágenes son un tipo interesante de ficheros, ya que se pueden previsualizar.
@@ -533,6 +545,7 @@ const resizeImage = (file, maxWidth, maxHeight) => {
 };
 ```
 
+{:.subsection}
 ### Otros ficheros
 
 Hay muchas cosas que se pueden hacer con otro tipo de ficheros antes de subirlos al servidor, o incluso sin subirlos nunca. Por ejemplo, se puede previsualizar el contenido de un fichero de texto:
@@ -589,6 +602,7 @@ function previewAudio(file, previewElementId) {
 }
 ```
 
+{:.subsubsection}
 #### El Objeto File
 
 Un objeto `File` en JavaScript representa un archivo que se ha seleccionado a través de un elemento `<input type="file">` o que se ha creado mediante la API de archivos. Este objeto hereda de `Blob` y, por lo tanto, tiene todos las propiedades y métodos de un `Blob`, además de algunas propiedades específicos para los archivos. Aquí tenemos una lista de las **propiedades principales del objeto `File`** y su utilidad:
@@ -624,10 +638,12 @@ El objeto `File` también hereda todos los **métodos de `Blob`**, lo que permit
   - **Descripción**: Devuelve un `ReadableStream` del contenido del `Blob`.
   - **Utilidad**: Permite trabajar con el contenido del archivo como un flujo de datos, lo que puede ser útil para grandes archivos que necesitan ser procesados por partes.
 
+{:.subsubsection}
 #### El objeto FileReader
 
 El objeto `FileReader` en JavaScript proporciona una forma de leer archivos de forma asíncrona desde el cliente, utilizando el API File de HTML5. Estos son las principales propiedades y métodos del objeto `FileReader`:
 
+{:.subsubsection}
 ##### Propiedades del objeto FileReader
 
 - `readyState`:
@@ -641,6 +657,7 @@ El objeto `FileReader` en JavaScript proporciona una forma de leer archivos de f
   - **Descripción**: Contiene los datos del archivo leído, representados como una cadena de caracteres o como un `ArrayBuffer`, dependiendo del método utilizado para leer el archivo.
   - **Uso**: Después de que la lectura del archivo sea exitosa, este atributo contiene los datos del archivo en el formato especificado.
 
+{:.subsubsection}
 ##### Métodos del objeto FileReader
 
 - `readAsArrayBuffer(file)`:

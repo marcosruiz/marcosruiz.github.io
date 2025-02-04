@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/validacion-formularios-html/
 ---
 
+{:.section}
 ## Introducción
 
 La validación de formularios funciona añadiendo atributos a los campos del formulario que queremos validar. Los más usados son:
@@ -29,6 +30,7 @@ input:invalid {
 
 La validación del navegador se realiza al enviar el formulario. Si encuentra un error lo muestra, se detiene la validación del resto de campos y no se envía el formulario.
 
+{:.section}
 ## Ciclo Tradicional del Formulario
 
 Tradicionalmente, un formulario está diseñado para enviar datos mediante HTTP al servidor. Al enviar (`submit`) un formulario, el navegador empaqueta los datos y los envía utilizando el método HTTP especificado (como GET o POST). Los formularios pueden incluir validación interna mediante HTML, lo que es más rápido que JavaScript pero ofrece menos control y personalización. La validación interna de HTML genera pseudo-clases que pueden estilizarse con CSS.

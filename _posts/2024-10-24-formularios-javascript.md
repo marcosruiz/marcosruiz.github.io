@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/formularios-javascript/
 ---
 
+{:.section}
 ## Introducción
 
 En este artículo vamos a ver como enviar y probar formularios utilizando javascript.
@@ -101,10 +102,12 @@ document.forms["formularioBusqueda"].cEntrada;
 
 Aunque muchos de los controles de un formulario tienen propiedades en común, algunas propiedades son únicas a un control en particular. Por ejemplo, en un objeto select tienes propiedades que te permiten conocer la opción que está actualmente seleccionada. Al igual que los `checkbox` es o los botones de tipo `radio`, que también disponen de propiedades para saber cuál es la opción que está actualmente seleccionada.
 
+{:.section}
 ## Enviar formulario por JavaScript
 
 Podemos enviar un formulario mediante JavaScript utilizando el método `submit()`. Esto es útil cuando queremos enviar el formulario después de realizar alguna operación adicional o validación personalizada.
 
+{:.subsection}
 ### Ejemplo de envío por JavaScript
 
 > Recuerda que puedes utilizar el mismo servidor de Node que hay en [Formularios en HTML](/posts/formularios-html/) para probar todos los formularios.
@@ -202,8 +205,10 @@ document.querySelector("#buttonSubmit").addEventListener("click", (event) => {
 {:.question}
 ¿Qué `Content-Type` estamos usando?
 
+{:.subsection}
 ### Envío de datos con fetch en formato JSON
 
+{:.subsection}
 ### Ejemplo
 
 Este ejemplo demuestra cómo utilizar pseudo-clases CSS para estilizar formularios con validación interna en HTML.
@@ -253,12 +258,14 @@ document.getElementById('form').addEventListener('submit', function (event) {
 ```
 {: file="script.js" }
 
+{:.section}
 ## Ficheros en formularios
 
 Enviar ficheros al servidor mediante un formulario HTML es una tarea común que se realiza utilizando un `input` de tipo `file`. El tratamiento de los ficheros puede diferir del de otros elementos del formulario.
 
 Para entender mejor este apartado, también hay que dominar la comunicación `fetch` con el servidor.
 
+{:.subsection}
 ### Envío de ficheros con fetch de JavaScript
 
 Para enviar un fichero en un formulario tradicional, simplemente se crea un `FormData` a partir del formulario y se envía utilizando un método HTTP como `POST`. Los formularios tradicionales aceptan binarios a través del MIME, lo cual facilita este proceso.
@@ -312,6 +319,7 @@ document.getElementById('fileForm').addEventListener('submit', function (event) 
 1. En el evento `submit` del formulario, se previene el comportamiento por defecto.
 1. Se crea un objeto `FormData` a partir del formulario y se envía con `fetch` usando el método `POST`.
 
+{:.subsection}
 ### Envío de ficheros con fetch de JavaScript y datos extra
 
 Con el anterior documento HTML podemos modificar el `script.js` para añadir inputs nuevos directamente sobre el objeto `FormData`.
@@ -338,6 +346,7 @@ document.getElementById('fileForm').addEventListener('submit', function (event) 
 ```
 {: file="script.js" }
 
+{:.subsection}
 ### Envío de ficheros utilizando JSON
 
 Si queremos enviar los datos con JSON, el proceso es un poco más complejo, ya que JSON no puede manejar binarios directamente. Para resolver esto, se puede convertir el fichero en una cadena en formato `Base64` antes de enviarlo.

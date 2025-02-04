@@ -32,6 +32,7 @@ Para realizar este tipo de entregas son necesarias dos acciones:
 2. Crear tarea
 
 {:.subsection}
+{:.section}
 ### Crear grupos
 
 1. Entramos en el curso donde queremos crear los grupos.
@@ -45,6 +46,7 @@ Para realizar este tipo de entregas son necesarias dos acciones:
 _Creación de grupos vacíos automáticamente en Moodle_
 
 {:.subsection}
+{:.section}
 ### Crear tarea
 
 En la opción "Editar ajustes" de una Tarea vamos a la sección "Configuración de entrega por grupo" y ponemos los ajustes que aparecen en la siguiente Figura.
@@ -89,6 +91,7 @@ _Sección "Opciones de revisión" para Test alumnos distancia_
 ## Configuración de tareas
 
 {:.subsection}
+{:.section}
 ### Calificación de tarea Apto/No apto
 
 El uso del workflow permite que todos los alumnos reciban la nota al mismo tiempo.
@@ -103,12 +106,14 @@ Cuando trabajamos con tareas de Apto/No apto debemos tener en cuenta que:
 - "Apta" corresponde a un 2.
 
 {:.subsection}
+{:.section}
 ### Calificación de tarea con nota
 
 ![Sección "Calificación" de tarea con nota 0 a 10 con workflow](calificacionTareaConNota.png){: w="250" }
 _Sección "Calificación" de tarea con nota 0 a 10 con workflow_
 
 {:.subsection}
+{:.section}
 ### Finalización de actividad
 
 Si queremos que la tarea esté gamificada deberemos tener la siguiente configuración en la sección "Finalización de actividad":
@@ -215,6 +220,7 @@ Para la nota final:
 > Si nos confundimos a la hora de dar un ID a una categoría, tarea o cuestionario se puede cambiar desde la propia configuración de la categoría, tarea o cuestionario.
 {:.prompt-tip}
 
+{:.section}
 ## Exportación e importación de cuestionarios GIFT
 
 La recomendación es preparar los test bien antes de abrirlos al alumnado. Para ello debemos realizar los siguientes pasos:
@@ -224,6 +230,7 @@ La recomendación es preparar los test bien antes de abrirlos al alumnado. Para 
 1. Borrar preguntas de Moodle.
 1. Importar preguntas.
 
+{:.subsection}
 ### Exportar preguntas
 
 Para exportar preguntas hay que seguir los siguientes pasos:
@@ -235,6 +242,7 @@ Para exportar preguntas hay que seguir los siguientes pasos:
 1. Seleccionar "Exportar preguntas a un archivo".
 1. Seleccionar categoría a exportar.
 
+{:.subsection}
 ### Editar preguntas exportadas
 
 Una vez exportado podemos abrir el documento con cualquier bloc de notas. Yo uso Visual Studio Code, pero para profesores que no sean de informática recomiendo Sublime Text o Notepad++.
@@ -242,6 +250,7 @@ Una vez exportado podemos abrir el documento con cualquier bloc de notas. Yo uso
 > Recuerda que aunque en el documento exportado cada pregunta esté precedida de un comentario con su ID ( por ejemplo, `// question: 277277`) esto no tiene efecto alguno en la importación de estas preguntas. Es decir, si exportamos, actualizamos algunas preguntas y reimportamos las preguntas aparecerán duplicadas en lugar de actualizadas.
 {:.prompt-warning}
 
+{:.subsection}
 ### Borrar (cambiar de categoría) preguntas de Moodle
 
 Aunque lo que queremos e borrar preguntas antiguas, esto genera ciertos el problema de que las preguntas eliminadas también se exportan por lo que **es mejor cambiar las preguntas de categoría**. A estas categorías y las llamo `OLD - <nombre de la categoría original>`.
@@ -253,6 +262,7 @@ Por lo tanto, lo primero que debemos hacer es cambiar de categoría las pregunta
 1. Seleccionar "Con seleccionadas" y "Mover a...".
 1. Seleccionamos una categoría cajón desastre. En mi caso "OLD - Test 05".
 
+{:.subsection}
 ### Importar preguntas
 
 1. Ir al banco de preguntas.
@@ -266,6 +276,7 @@ Por lo tanto, lo primero que debemos hacer es cambiar de categoría las pregunta
 > Recuerda que quizás sea necesario actualizar el cuestionario que use las preguntas de la categoría que has actualizado.
 {:.prompt-info}
 
+{:.section}
 ## AutoCrat
 
 ```plaintext

@@ -6,12 +6,14 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/eventos-javascript/
 ---
 
+{:.section}
 ## Introducción
 
 Los eventos y los manejadores (handlers) son elementos para capturar interacciones del usuario y realizar acciones en respuesta a estas interacciones.
 
 Los eventos en JavaScript permiten capturar desde movimientos del mouse hasta pulsaciones de teclado y manipular el contenido y comportamiento de la página en respuesta a estas interacciones.
 
+{:.section}
 ## Eventos (Events)
 
 Los eventos son mecanismos que se activan cuando el usuario interactúa con la página web. Estas interacciones pueden ser clics del ratón, pulsaciones de teclado, desplazamientos, cambios en el tamaño de la ventana, etc. Los eventos permiten que JavaScript responda dinámicamente a las acciones del usuario.
@@ -37,6 +39,7 @@ Mediante `addEventListener()`.
   </div>
 </details>
 
+{:.section}
 ## Manejadores (Handlers)
 
 Un manejador, o handler en inglés, es una función que se ejecuta cuando ocurre un evento específico. Cada tipo de evento (como `click`, `submit`, `mouseover`, etc.) puede tener asociado un manejador que define qué acción debe realizarse en respuesta al evento.
@@ -47,6 +50,7 @@ Características principales:
 - Define la acción o comportamiento que se debe llevar a cabo cuando el evento ocurre.
 - Los manejadores pueden ser definidos directamente en el HTML, usando atributos como `onclick`, o pueden ser asignados dinámicamente desde JavaScript.
 
+{:.section}
 ## Ejemplo de uso en HTML y JavaScript
 
 ```html
@@ -79,6 +83,7 @@ function handleClick(event) {
 button.addEventListener('click', handleClick);
 ```
 
+{:.section}
 ## Modelo de eventos en línea → Eventos mediante HTML (No recomendable)
 
 (Voluntario) Mira el siguiente vídeo:
@@ -142,6 +147,7 @@ No. Es mejor localizar los elementos HTML desde el fichero JS.
   </div>
 </details>
 
+{:.section}
 ## Modelo de eventos tradicional → Eventos mediante JavaScript
 
 (Voluntario) Mira el siguiente vídeo:
@@ -182,6 +188,7 @@ Aquí, se espera a que la ventana y todos los recursos se carguen completamente 
 {:.question}
 En JavaScript, la propiedad `.onclick` ¿puede ir en mayúsculas y minúsculas indistintamente? Es decir, ¿puedo escribir tanto `.onclick` como `.onClick`?
 
+{:.section}
 ## Registro avanzado del W3C → El método addEventListener
 
 (Voluntario) Mira el siguiente vídeo:
@@ -294,6 +301,7 @@ Sólo si la hemos guardado en una variable antes de llamar a `addEventListener()
   </div>
 </details>
 
+{:.section}
 ## Obtención de información del evento
 
 ```javascript
@@ -321,6 +329,7 @@ Sólo si la hemos guardado en una variable antes de llamar a `addEventListener()
 
 En este ejemplo, manejador es una función que maneja tanto el evento `mouseover` como `mouseout`. Utiliza el objeto `Event` para obtener información sobre el tipo de evento (`e.type`) y el objetivo del evento (`e.target`), que es el elemento que disparó el evento.
 
+{:.section}
 ## Propagación y captura de eventos
 
 Los eventos se propagan desde el elemento que los desencadena hacia sus elementos padre. Se puede capturar un evento durante esta propagación y realizar acciones diferentes según el elemento específico que lo desencadenó. Para detener la propagación de un evento a elementos padre, se usa `event.stopPropagation()`.
@@ -355,6 +364,7 @@ La propagación de eventos tiene dos fases principales:
 - **Capturing Phase**: La fase en la que el evento se propaga desde el documento raíz hasta el objetivo del evento.
 - **Bubbling Phase**: La fase en la que el evento se propaga desde el objetivo del evento hacia el documento raíz.
 
+{:.section}
 ## Enviar Datos de Hijos a Padres con Eventos Personalizados
 
 Los eventos personalizados se pueden utilizar para comunicar datos desde un componente hijo a un componente padre. A continuación se muestra un ejemplo de cómo se puede lograr esto en un entorno sin frameworks, utilizando la propagación de eventos del DOM:
@@ -408,6 +418,7 @@ Angular También proporciona `@Output` que crea un evento que es capturado por e
 
 Ejercicio de eventos y propagación: <https://jsfiddle.net/xxjcaxx/wep0c2j9/1/>
 
+{:.section}
 ## Tipos de eventos
 
 Lee el artículo [Eventos de navegador: ¿Qué son?](https://lenguajejs.com/javascript/eventos-navegador/que-son/)
@@ -424,6 +435,7 @@ Lee el artículo [Desestructuración en JavaScript](/posts/desestructuracion-jav
 
 A continuación, nos centraremos en los eventos de teclado y eventos de puntero.
 
+{:.subsection}
 ### Eventos de teclado
 
 Los eventos de teclado (`KeyboardEvent`) permiten capturar las pulsaciones de teclas y actuar en consecuencia. Se puede obtener el código de la tecla presionada usando `event.code`, lo que proporciona una manera estandarizada de identificar cada tecla. Aquí hay ejemplo sencillo que muestra cómo capturar eventos de teclado y obtener el código de la tecla presionada usando `event.code`:
@@ -497,6 +509,7 @@ La tecla del logo de Windows es llamada `metaKey`.
   </div>
 </details>
 
+{:.subsection}
 ### Eventos de puntero
 
 Lee el artículo [Eventos de puntero](https://lenguajejs.com/javascript/eventos-navegador/pointer-event/).
@@ -535,10 +548,12 @@ Cuando hacemos click con el botón derecho.
   </div>
 </details>
 
+{:.section}
 ## Notas finales
 
 Cuando programamos para el Frontend, la manera de tratar el DOM es muy diversa. Si distinguimos entre una SPA y una web generada en el servidor con algo de Javascript, las técnicas son muy diferentes. En el caso de la SPA, es muy importante tener claro una arquitectura MVC o similar en la que unas plantillas se rellenen con los datos del servidor. La interactividad y el manejo de formularios se suele implementar toda en Javascript porque préviamente no habia nada de HTML. En una web más tradicional en la que el HTML ya está generado por el servidor, es importante saber buscar nodos y manipularlos sin romper la estructura previa. Por otro lado, está el Javascript enfocado a la parte visual: controlar el scroll, drag & drop, animaciones... En este tema se han puesto las bases, pero eso requiere un estudio por separado. Esta parte puede ser explorada más profundamente en el módulo de Diseño de Interfaces.
 
+{:.section}
 ## (Voluntario) Para saber más...
 
 Lee el artículo [Escuchar eventos y handleEvent](https://lenguajejs.com/javascript/eventos/addeventlistener-handleevent/).

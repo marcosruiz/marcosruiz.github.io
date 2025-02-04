@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/objetos-javascript/
 ---
 
+{:.section}
 ## Introducción
 
 JavaScript siempre ha soportado objetos, aunque no de la manera tradicional de las clases como en otros lenguajes orientados a objetos. Un objeto en JavaScript es similar a un array, pero en lugar de estar indexado por números, está indexado por nombres (similar a un array asociativo en PHP o un diccionario en Python). Los objetos permiten almacenar colecciones de datos y funcionalidades relacionadas.
@@ -24,6 +25,7 @@ Si.
 
 Una función contenida en un objeto se conoce como un método. Los métodos no son diferentes de las funciones que has visto anteriormente, excepto que han sido diseñados para ser utilizados en el contexto de un objeto, y por lo tanto, tendrán acceso a las propiedades de ese objeto. Esta conexión entre propiedades y métodos es uno de los ejes centrales de la orientación a objetos.
 
+{:.section}
 ## Acceso a los atributos de un objeto
 
 Se puede acceder a los atributos de un objeto utilizando la notación de punto `.` o corchetes `[]`.
@@ -50,6 +52,7 @@ let descripcion = alumno.ciclo?.descripcion;
 
 En el ejemplo hemos usado `?` para evitar el error al intentar acceder a un atributo dentro de uno que no existe. El resultado sería `undefined`.
 
+{:.section}
 ## Iterar sobre las Propiedades de un Objeto
 
 Para recorrer las propiedades de un objeto, se puede utilizar el bucle `for...in`.
@@ -81,10 +84,12 @@ alert("blabla" in user); // false, user.blabla doesn't exist
 
 Además de `for..in`, podemos usar las funciones estáticas del objeto `Object` como `Object.values()`, `Object.keys()` o `Object.entries()` para convertirlo en un array e iterar con `for..of`, `.map()`, `.forEach()`…
 
+{:.section}
 ## Copia de Objetos
 
 En ES6, copiar objetos y arrays se puede realizar de manera sencilla utilizando el operador de propagación (spreading). Este operador permite crear copias superficiales de objetos y arrays.
 
+{:.subsection}
 ### Copia Superficial con Spreading
 
 ```javascript
@@ -108,6 +113,7 @@ Salida:
 [ 1, 2, 3 ]
 ```
 
+{:.subsection}
 ### Uso del Operador Rest
 
 El operador de propagación (`...`) también se puede utilizar como operador Rest, con la intención opuesta: recoger el resto de los elementos. Esto es útil tanto en objetos como en funciones.
@@ -127,6 +133,7 @@ Salida:
 { b: 2, c: 3 }
 ```
 
+{:.subsection}
 ### Copia Superficial con Object.assign()
 
 Otra manera de copiar objetos es utilizando `Object.assign()`, que también crea una copia superficial del objeto.
@@ -143,6 +150,7 @@ Salida:
 { a: 1, b: 2 }
 ```
 
+{:.subsection}
 ### Copia Profunda con structuredClone()
 
 (Voluntario) Lee el artículo: <https://developer.mozilla.org/en-US/docs/Web/API/structuredClone>.
@@ -163,6 +171,7 @@ Salida:
 
 La copia profunda funciona para atributos y objetos normales, pero no para métodos y nodos del DOM. Tampoco mantiene la “prototype chain”.
 
+{:.section}
 ## Object Literal enhacement
 
 En ES6, se introdujo una sintaxis más concisa para definir objetos literales. Cuando el nombre de la variable y la propiedad son iguales, no es necesario repetirlos.
@@ -186,6 +195,7 @@ Salida:
 
 En este ejemplo, `object1` se crea de manera más concisa, sin necesidad de escribir `a: a, b: b, c: c`.
 
+{:.section}
 ## Borrar elementos de los objetos
 
 Para eliminar una clave-valor de un objeto se puede usar `delete`:

@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/arrays-javascript/
 ---
 
+{:.section}
 ## Introducción
 
 El array, es como una variable o zona de almacenamiento continuo, donde podemos introducir varios valores en lugar de solamente uno, como ocurre con las variables normales.
@@ -28,6 +29,7 @@ No. Empiezan en 0.
   </div>
 </details>
 
+{:.section}
 ## Trabajando con Arrays
 
 Los arrays se definen utilizando corchetes [] y los elementos se separan por comas. A diferencia de otros lenguajes como C o Java, no es necesario definir la longitud del array al declararlo. Además, los arrays pueden contener posiciones vacías (empty), y es posible acceder a sus elementos de manera similar a otros lenguajes, utilizando índices. Por ejemplo:
@@ -45,6 +47,7 @@ Un array en JavaScript puede contener cualquier tipo de dato, incluyendo otros a
 var cars = new Array("Saab", "Volvo", "BMW");
 ```
 
+{:.section}
 ## Métodos y propiedades de los arrays
 
 Los arrays en JavaScript tienen varias propiedades y métodos interesantes que facilitan su manipulación. A lo largo de este capítulo y en el de programación funcional iremos viendo algunos de ellos. Entre otros:
@@ -71,6 +74,7 @@ a
 3
 ```
 
+{:.section}
 ## Recorrer arrays
 
 Para iterar sobre los elementos de un array, JavaScript ofrece varias opciones:
@@ -82,6 +86,7 @@ Para iterar sobre los elementos de un array, JavaScript ofrece varias opciones:
 
 La mejor manera de recorrer los arrays depende de la necesidad
 
+{:.subsection}
 ### for loop
 
 ```javascript
@@ -92,6 +97,7 @@ for (let i = 0; i < a.length; i++) {
 
 En el primer caso, la sintaxis típica de C, creamos una variable de control del bucle que puede ser útil dentro del bucle. Si es necesaria esa variable o queremos alterar las iteraciones en función de esa variable, puede ser la mejor opción. Se puede detener fácilmente alterando el índice o con `break`. El problema es que esa variable de control hace el código más “sucio” y puede molestar.
 
+{:.subsection}
 ### for of loop
 
 ```javascript
@@ -102,6 +108,7 @@ for (let i of a) {
 
 El caso de `for..of` es uno de los más sencillos, ya que no necesitamos la variable de control y sigue siendo ámbito de bloque. Esta sería la mejor opción en casi todos los casos en los que necesitamos recorrer un array completamente y en orden. Se puede detener con `break` y no tiene acceso al índice.
 
+{:.subsection}
 ### forEach
 
 ```javascript
@@ -110,6 +117,7 @@ a.forEach(i => console.log(i));
 
 `forEach(callback, thisArg)` es como el anterior, pero en este caso creamos una función de callback. Una ventaja es que esta función también acepta el índice y el array. Puede ser útil en programación funcional cuando tenemos una función que ejecutar para cada elemento. El problema es que al pasar una función como callback, el ámbito de la función pasa a ser indefinido y podemos tener problemas con el this (`this` no es el array, sino el ámbito en el que se ejecuta, que puede ser un objeto, `Window`, `Global` o `undefined` en modo estricto). Si queremos un ámbito concreto para las funciones de callback se puede usar el argumento `thisArg`. No se puede detener. Normalmente si queremos que se detenga podemos usar `.every()` o `.some()`.
 
+{:.subsection}
 ### map
 
 ```javascript
@@ -118,6 +126,7 @@ a.map(i => console.log(i));
 
 El map (aunque en este caso, `forEach` es más adecuado para solo imprimir) solo se debería usar para retornar una copia modificada del array, como veremos más adelante. Tampoco se puede detener.
 
+{:.section}
 ## Búsqueda en Arrays
 
 JavaScript proporciona métodos útiles para buscar elementos en un array:
@@ -154,6 +163,7 @@ true
 [ 80 ]
 ```
 
+{:.section}
 ## Ordenar Arrays
 
 La función `sort()` de los arrays permite ordenarlos. Esta operación muta el array original también lo retorna. Si no queremos mutarlo, podemos usar `toSorted()` o `[...array].sort()`.
@@ -289,6 +299,7 @@ Salida:
 [ "🌍", "🌱", "🦑", "🦣", "🫵" ]
 ```
 
+{:.section}
 ## Otras Operaciones en Arrays
 
 Existen varios métodos adicionales para manipular arrays en JavaScript:
@@ -355,6 +366,7 @@ Salida:
 [ 1, 0, 0, <1 empty item> ]
 ```
 
+{:.section}
 ## Mutabilidad de los arrays
 
 En Javascript, los arrays son mutables. Esto quiere decir que se puede alterar su contenido. No siempre nos interesa mutar un array cuando queremos obtener un resultado de él.
@@ -424,6 +436,7 @@ No. Un array puede contener elementos de diferentes tipos.
   </div>
 </details>
 
+{:.section}
 ## Lecturas voluntarias de ampliación
 
 - [¿Qué es un Array en Javascript?](https://lenguajejs.com/javascript/arrays/que-es/)

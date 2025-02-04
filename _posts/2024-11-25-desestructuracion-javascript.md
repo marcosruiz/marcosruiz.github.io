@@ -6,12 +6,14 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/desestructuracion-javascript/
 ---
 
+{:.section}
 ## Introducción
 
 La desestructuración es una característica que permite extraer propiedades de objetos y asignarlas a variables.
 
 (Voluntario) Lee el artículo [Desestructuración de objetos](https://lenguajejs.com/javascript/objetos/desestructuracion-objetos/).
 
+{:.section}
 ## Desestructuración Básica de Objetos
 
 ```javascript
@@ -26,6 +28,7 @@ Salida:
 42 true
 ```
 
+{:.section}
 ## Desestructuración con Nuevos Nombres
 
 Se pueden asignar nuevos nombres a las variables extraídas:
@@ -41,6 +44,7 @@ Salida:
 42 true
 ```
 
+{:.section}
 ## Desestructuración de Objetos Anidados
 
 También se pueden desestructurar objetos anidados y cambiar el nombre de las variables:
@@ -59,6 +63,7 @@ Salida:
 { r: 20, s: "abc" } 20
 ```
 
+{:.section}
 ## Desestructuración de Arrays
 
 La desestructuración también se aplica a arrays, permitiendo extraer elementos en variables individuales:
@@ -81,6 +86,7 @@ dos
 tres
 ```
 
+{:.section}
 ## Desestructuración en Funciones
 
 La desestructuración puede ser muy útil en funciones para extraer valores de objetos pasados como argumentos.

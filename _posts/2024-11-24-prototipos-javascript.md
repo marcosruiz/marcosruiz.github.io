@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/prototipos-javascript/
 ---
 
+{:.section}
 ## Introducción
 
 En JavaScript, todos los objetos tienen un prototipo. Un prototipo es también un objeto, y a su vez, tiene su propio prototipo. Este concepto crea una cadena de prototipos, conocida como prototype chain. A través de los prototipos, un objeto puede delegar propiedades y métodos a otros objetos, permitiendo la reutilización de código y la herencia.
@@ -16,6 +17,7 @@ En JavaScript, todos los objetos tienen un prototipo. Un prototipo es también u
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h_n_UIOycgM?si=xGq4OlB4WpgaJALL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+{:.section}
 ## La Cadena de Prototipos (Prototype Chain)
 
 Todos los objetos en JavaScript están conectados a un prototipo común llamado `Object`. Esto permite que los objetos hereden propiedades y métodos definidos en `Object.prototype`.
@@ -39,6 +41,7 @@ Mira el siguiente vídeo:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TWSI9SybwmI?si=OC-kRubsXwEOjvbz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+{:.section}
 ## Vínculo de Objetos (Object Linkage)
 
 Se pueden crear nuevos objetos que hereden de otros objetos utilizando `Object.create()`. Esto permite crear una cadena de prototipos donde el objeto hijo puede acceder a las propiedades y métodos del objeto padre:
@@ -62,6 +65,7 @@ En este ejemplo, `otherHomework` hereda la propiedad `topic` de `homework` a tra
 > Cuando hacemos un `Object.create(homework)` creamos un objeto VACÍO con el `[[Prototype]]` que le indiquemos como parámetro (`homework` en este caso).
 {:.prompt-info}
 
+{:.subsection}
 ### Prototype en Objetos y Funciones
 
 Las funciones en JavaScript tienen una propiedad llamada `prototype`, que es un objeto con una propiedad `constructor` (que apunta a la propia función) y un prototipo que es `Object`.
@@ -108,6 +112,7 @@ Salida:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h_n_UIOycgM?si=qYYoHhfdBdWNY6oT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+{:.subsection}
 ### Prototype en Objetos Predefinidos
 
 Es posible extender los prototipos de objetos predefinidos como `String`, `Array`, y `Object` añadiendo métodos adicionales. Esto permite que todos los objetos de ese tipo en la aplicación tengan acceso a los nuevos métodos. Sin embargo, esta práctica puede ser peligrosa en aplicaciones grandes o cuando se utilizan múltiples bibliotecas, ya que puede causar conflictos.

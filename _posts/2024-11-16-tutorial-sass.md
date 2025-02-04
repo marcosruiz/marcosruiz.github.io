@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/tutorial-sass/
 ---
 
+{:.section}
 ## Introducción
 
 **SASS** (Syntactically Awesome Stylesheets) es un preprocesador de CSS que permite escribir hojas de estilo de manera más eficiente, estructurada y con características avanzadas que no están disponibles en CSS nativo. Es una herramienta que compila su código en CSS estándar, el cual luego puede ser interpretado por los navegadores.
@@ -31,8 +32,10 @@ La **transpilación** es un proceso en el cual el código fuente de un lenguaje 
   </div>
 </details>
 
+{:.section}
 ## Principales características principales de SASS
 
+{:.subsection}
 ### Variables
 
 Permite definir variables para reutilizar valores como colores, tamaños, fuentes, etc.  
@@ -61,6 +64,7 @@ Comprueba también si IE es compatible con los template literals.
 {:.question}
 ¿Para qué sirve la web [Can I use](https://caniuse.com/)?
 
+{:.section}
 ## Anidación
 
 Facilita la organización del código al permitir anidar selectores dentro de otros, reflejando la jerarquía HTML.
@@ -76,6 +80,7 @@ nav {
 }
 ```
 
+{:.subsection}
 ### Mixins
 
 Permite reutilizar fragmentos de código con argumentos personalizables.  
@@ -130,6 +135,7 @@ A diferencia de las funciones en otros lenguajes de programación, los mixins en
   </div>
 </details>
 
+{:.section}
 ## Cómo usar SASS
 
 Para usar SASS necesitas instalarlo y configurarlo para compilarlo a CSS. Para ello debes seguir lso siguientes pasos.
