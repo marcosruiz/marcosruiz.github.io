@@ -234,9 +234,9 @@ Categorías de operadores en JavaScript:
 
 - Comparación: `==  !=  === !==  >  >=  <  <=`
 - Aritméticos: `+   -   *   /   %   ++   - -   +valor  -valor`
-- Asignación: `=    +=    -=    *=    /=    %=    <<=    >=    >>=    >>>=    &=    |=     ˆ =    []`
+- Asignación: `=    +=    -=    *=    /=    %=    **=    <<=    >>=    >>>=    &=    |=     ^=    []`
 - Lógicos: `&&  ||  !`
-- Bit a Bit: `&    |     ˆ ∼ <<    >>    >>>`
+- Bit a Bit: `&    |    ^    ∼    <<    >>    >>>`
 - Objeto: `.    []    ()    delete    in    instanceOf    new    this`
 - Otros: `,    ?:    typeof    void`
 

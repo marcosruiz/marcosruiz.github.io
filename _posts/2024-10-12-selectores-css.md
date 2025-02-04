@@ -84,7 +84,7 @@ También se puede hacer que un elemento pertenezca a más de una clase separando
 ```
 
 ```html
-<h1 class="especial">¡Atención!</h1>
+<h1 class="especial">Atencion!</h1>
 <p class="especial">Hoy tenemos grandes rebajas.</p>
 ```
 

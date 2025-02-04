@@ -282,7 +282,7 @@ A continuación te muestro como pasar de una función anónima a una función fl
   return a + 100;
 }
 
-// 2. Quita los corchetes del cuerpo y la palabra "return" — el return está implícito.
+// 2. Quita los corchetes del cuerpo y la palabra "return" - el return está implícito.
 (a) => a + 100;
 
 // 3. Suprime los paréntesis de los argumentos

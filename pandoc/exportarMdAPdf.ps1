@@ -1,5 +1,6 @@
 # Script de powershell para generar documentos PDF
-# Este fichero debe ejecutarse en la raiz del proyecto ya que usa rutas relativas en las variables:
+# Este fichero debe ejecutarse en la raiz del proyecto ya que usa rutas relativas en las variables: 
+# Es decir, debemos estar dentro de la carpeta marcosruiz.github.io
 # $githubProjectFolder = "."
 
 # 
@@ -23,6 +24,7 @@ function generarTemporal {
     '^\{\s*:\s*\.question\s*\}'                                    = '**Pregunta:** '
     '(<summary class="card-header question">)'                     = '$1**Pregunta:** '
     '\{\s*:\s*\.filepath\s*\}'                                     = ''
+    '😉'                                                           = ''
     '🥳'                                                           = ''
     '📸'                                                           = ''
     '📷'                                                           = ''
@@ -37,9 +39,17 @@ function generarTemporal {
     "💳"                                                           = ''
     "💸"                                                           = ''
     "👱"                                                           = ''
+    "👽"                                                           = ''
+    "🥚"                                                           = ''
+    "🐤"                                                           = ':emoji de pollo:'
+    "🦑"                                                           = ':emoji de pulpo:'
+    "🌱"                                                           = ':emoji de flor:'
+    "🦣"                                                           = ':emoji de mamut:'
+    "🫵"                                                           = ':emoji de mano señalando:'
+    "🌍"                                                           = ':emoji del planeta tierra:'
     '得'                                                            = ':imagínate un caracter chino aquí:'
     '取'                                                            = ':imagínate un caracter chino aquí:'
-    '𐐝'                                                           = ':imagínate un caracter raro aquí:'
+    '𐐝'                                                            = ':imagínate un caracter raro aquí:'
     'д'                                                            = ':imagínate un caracter cirílico aquí:'
     'Ж'                                                            = ':imagínate un caracter cirílico aquí:'
     '\{\s*:\s*file="([^"]+)"\s*\}$'                                = '_Fichero: `$1`_'
@@ -74,10 +84,10 @@ $githubProjectFolder = "."
 # $routes = "redes-neuronales-deep-learning", "casos-practicos-sobre-aprendizaje-automatico", "introduccion-aprendizaje-automatico", "algoritmos-aprendizaje-automatico", "aprendizaje-supervisado", "aprendizaje-no-supervisado"
 
 # Temas DIW
-# $routes = "planificacion-interfaces-graficas", "gestalt", "colores", "guias-estilo", "hojas-estilo-css", "modelo-cajas-css", "selectores-css", "posicionamiento-css", "css-tablas-listas", "tutorial-sass", "imagenes-web", "propiedad-intelectual", "audio-web", "video-web"
+# $routes = "selectores-css", "planificacion-interfaces-graficas", "gestalt", "colores", "guias-estilo", "hojas-estilo-css", "modelo-cajas-css", , "posicionamiento-css", "css-tablas-listas", "tutorial-sass", "imagenes-web", "propiedad-intelectual", "audio-web", "video-web"
 
 # Temas DWEC
-# $routes = "arquitecturas-lenguajes-programacion-cliente-web", "integracion-codigo-javascript", "trabajar-visual-studio-code", "fundamentos-programacion-javascript", "tipos-datos-javascript", "objetos-nativos-javascript", "bom-javascript", "dom-javascript", "arrays-javascript", "funciones-javascript", "objetos-javascript", "clases-javascript", "prototipos-javascript", "clases-javascript-es6", "desestructuracion-javascript", "formularios-html", "formularios-javascript", "validacion-formularios-html", "validacion-formularios-javascript", "eventos-javascript", "expresiones-regulares", "cookies", 
+#$routes = "arquitecturas-lenguajes-programacion-cliente-web", "integracion-codigo-javascript, "tipos-datos-javascript", "objetos-nativos-javascript", "bom-javascript", "dom-javascript", "funciones-javascript", "objetos-javascript", "clases-javascript", "prototipos-javascript", "clases-javascript-es6", "desestructuracion-javascript", "formularios-html", "formularios-javascript", "validacion-formularios-html", "validacion-formularios-javascript", "expresiones-regulares", "cookies", "fundamentos-programacion-javascript", "arrays-javascript", "eventos-javascript"
 
 # Iterar sobre cada patron de archivo
 foreach ($route in $routes) {

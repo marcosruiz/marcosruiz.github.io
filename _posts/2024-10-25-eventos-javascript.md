@@ -75,7 +75,7 @@ const button = document.getElementById('myButton');
 
 // Definir el manejador para el evento 'click'
 function handleClick(event) {
-    console.log('¡Se hizo clic en el botón!');
+    console.log('Se hizo clic en el botón!');
     console.log('Detalles del evento:', event);
 }
 
@@ -321,7 +321,7 @@ Sólo si la hemos guardado en una variable antes de llamar a `addEventListener()
            this.style.background = '#FFFFFF';
        }
        if (e.target.id === 'hola') {
-           console.log('¡Hola!');
+           console.log('Hola!');
        }
    }
 })();
