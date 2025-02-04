@@ -2,7 +2,7 @@
 title: "Guía del profesor virtual"
 date: 2022-10-18 9:00:00 +0100
 categories: [General]
-tags: [gift, moodle, aeducar, profesor, adistanciafp, fpvirtual, fpvirtualaragon, adistanciafparagon]
+tags: [gift, moodle, aeducar, profesor, adistanciafp, fpvirtual, fpvirtualaragon, adistanciafparagon, guia, virtual]
 img_path: /assets/img/moodle-profesor/
 ---
 
@@ -131,6 +131,20 @@ Cuatro respuestas correctas:
 }
 ```
 
+#### Retroaliemntación para el alumno
+
+Recuerda que también puedes añadir la retroalimentación que recibirán los alumnos. Yo suelo utilizar la retroalimentación general para la pregunta. Por ejemplo:
+
+```plaintext
+::TXX XX::[markdown]Pregunta{
+    ~%25%Respuesta
+    ~%25%Respuesta
+    ~%25%Respuesta
+    ~%25%Respuesta
+    #### Esto es una retroalimentación general
+}
+```
+
 #### Pregunta respuesta numérica
 
 Respuesta exacta:
@@ -199,6 +213,92 @@ Varias respuestas correctas:
   =Definición4 -> Término4
 }
 ```
+
+#### Pregunta de ensayo
+
+Cuando queremos que aparezca un bloque de texto grande para que contesten nuestros alumnos existe la pregunta tipo ensayo. El único problema de este tipo de preguntas es que deben ser corregidas de manera manual por el profesor.
+
+```plaintext
+::TXX XX::[markdown]Pregunta{}
+```
+
+#### Pregunta con imágenes
+
+No hay una forma muy sencilla para añadir imágenes a nuestros cuestionarios pero la que yo uso es la siguiente:
+
+Primero debemos subir las imágenes a Moodle, la forma más sencilla es crear el recurso CARPETA:
+
+![alt text](preguntaImagen01.png)
+_Añadir recurso carpeta al curso_
+
+Entramos en la carpeta y hacemos click en Editar:
+
+![alt text](preguntaImagen02.png)
+_Botón para editar el contenido de la carpeta_
+
+Añadir todas las imágenes que queramos utilizar en nuestro test:
+
+![alt text](preguntaImagen03.png)
+_Edición del contenido de la carpeta_
+
+En la Configuración del recurso CARPETA, vamos al apartado Contenido y desseleccionamos la opción "Forzar descarga de archivos":
+
+![alt text](preguntaImagen04.png)
+_Deshabilitar la descarga de archivos forzado_
+
+Ahora ocultamos el recurso para que no lo puedan ver nuestros alumnos:
+
+![alt text](preguntaImagen05.png)
+_Ocultar un recurso_
+
+Y tras ocultarlo podemos hacerlo disponible:
+
+![alt text](preguntaImagen06.png)
+_Hacer disponible un recurso_
+
+Esto hace que las imágenes se puedan ver pero el recurso no aparezca a simple vista para los estudiantes.
+
+Entramos en el recurso CARPETA que hemos creado y al hacer click en cada imagen se nos abrirá:
+
+![alt text](preguntaImagen07.png)
+_Lista de imágenes en su carpeta_
+
+Ahora debemos copiar la dirección de cada imagen:
+
+![alt text](preguntaImagen08.png)
+_Imagen abierta_
+
+Y la deberemos copiar el cuestionario de la siguiente manera:
+
+```plaintext
+::RA1 01::[markdown]Pregunta 
+![](URL de la imagen)
+{
+    =Respuesta
+    ~%-50%Respuesta
+    ~%-50%Respuesta
+    ~%-50%Respuesta
+}
+```
+
+> Recuerda que en la URL de la imagen también se deben escapar los caracteres especiales.
+{:.prompt-warning}
+
+Por ejemplo:
+
+```plaintext
+::TXX XX::[markdown]Pregunta 
+![](https\://www.fpvirtualaragon.es/pluginfile.php/123456/mod_folder/content/0/01.png)
+{
+    =Respuesta
+    ~%-50%Respuesta
+    ~%-50%Respuesta
+    ~%-50%Respuesta
+}
+```
+
+![alt text](preguntaImagen09.png)
+_Pregunta real con el carácter ":" escapado en la URL_
 
 {:.subsection}
 ### Autoincrementar
@@ -355,6 +455,9 @@ La fórmula de la nota final será:
 {:.section}
 ## Libro de calificaciones 24 25
 
+> Se recomienda usar categorías a la hora de configurar el calificador para poder tener las fórmulas preparadas antes de tener todas las tareas y cuestionarios preparados. Para la creación rápida de categorías es muy util utilizar `Ctrl + Click izquierdo` ya que así podemos crear varias categorías sin que se refresque la página.
+{:.prompt-tip}
+
 Para los RAs:
 
 ```plaintext
@@ -372,6 +475,9 @@ Para la nota final:
 ```plaintext
 =if(and([[RA1]]>=5; [[RA2]]>=5; [[RA3]]>=5; [[RA4]]>=5; [[RA5]]>=5; [[RA6]]>=5; [[RA7]]>=5); average([[RA1]]; [[RA2]]; [[RA3]]; [[RA4]]; [[RA5]]; [[RA6]]; [[RA7]]); min(4; average([[RA1]]; [[RA2]]; [[RA3]]; [[RA4]]; [[RA5]]; [[RA6]]; [[RA7]])))
 ```
+
+> Si nos confundimos a la hora de dar un ID a una categoría, tarea o cuestionario se puede cambiar desde la propia configuración de la categoría, tarea o cuestionario.
+{:.prompt-tip}
 
 ## Exportación e importación de cuestionarios GIFT
 
@@ -397,7 +503,7 @@ Para exportar preguntas hay que seguir los siguientes pasos:
 
 Una vez exportado podemos abrir el documento con cualquier bloc de notas. Yo uso Visual Studio Code, pero para profesores que no sean de informática recomiendo Sublime Text o Notepad++.
 
-> Recuerda que aunque en el documento exportado cada pregunta esté precedida de un comentario con su ID ( por ejemplo, `// question: 277277 `) esto no tiene efecto alguno en la importación de estas preguntas. Es decir, si exportamos, actualizamos algunas preguntas y reimportamos las preguntas aparecerán duplicadas en lugar de actualizadas.
+> Recuerda que aunque en el documento exportado cada pregunta esté precedida de un comentario con su ID ( por ejemplo, `// question: 277277`) esto no tiene efecto alguno en la importación de estas preguntas. Es decir, si exportamos, actualizamos algunas preguntas y reimportamos las preguntas aparecerán duplicadas en lugar de actualizadas.
 {:.prompt-warning}
 
 ### Borrar (cambiar de categoría) preguntas de Moodle
