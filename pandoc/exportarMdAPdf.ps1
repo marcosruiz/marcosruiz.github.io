@@ -73,6 +73,12 @@ $githubProjectFolder = "."
 # Temas SAA
 # $routes = "redes-neuronales-deep-learning", "casos-practicos-sobre-aprendizaje-automatico", "introduccion-aprendizaje-automatico", "algoritmos-aprendizaje-automatico", "aprendizaje-supervisado", "aprendizaje-no-supervisado"
 
+# Temas DIW
+# $routes = "planificacion-interfaces-graficas", "gestalt", "colores", "guias-estilo", "hojas-estilo-css", "modelo-cajas-css", "selectores-css", "posicionamiento-css", "css-tablas-listas", "tutorial-sass", "imagenes-web", "propiedad-intelectual", "audio-web", "video-web"
+
+# Temas DWEC
+# $routes = "arquitecturas-lenguajes-programacion-cliente-web", "integracion-codigo-javascript", "trabajar-visual-studio-code", "fundamentos-programacion-javascript", "tipos-datos-javascript", "objetos-nativos-javascript", "bom-javascript", "dom-javascript", "arrays-javascript", "funciones-javascript", "objetos-javascript", "clases-javascript", "prototipos-javascript", "clases-javascript-es6", "desestructuracion-javascript", "formularios-html", "formularios-javascript", "validacion-formularios-html", "validacion-formularios-javascript", "eventos-javascript", "expresiones-regulares", "cookies", 
+
 # Iterar sobre cada patron de archivo
 foreach ($route in $routes) {
   $pattern = "[0-9\-]{11}" + $route + "\.md"
