@@ -100,9 +100,13 @@ foreach ($route in $routes) {
   $fileRoute = "$($githubProjectFolder)\_posts\$($file.Name)"
   $tempFileRoute = "$($githubProjectFolder)\tmp\$($file.Name)"
 
+  print("Generando fichero temporal: " + $route + "en tmp/")
+
   generarTemporal -fileRoute $fileRoute -tempFileRoute $tempFileRoute
 
   $resourcePath = "/data/assets/img/" + $route
+
+  print("Generando pdf " + $route + "en pdf/")
 
   # Recuerda cambiar el ID del contentedor por el que corresponda
   docker exec aaa230b91f7592b6f2e74372eccfc2038caf5c5ebc16865aea3d9ab11ef8923d pandoc "/data/tmp/$($file.Name)" `
