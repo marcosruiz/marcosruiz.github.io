@@ -15,7 +15,7 @@ En estas cajas se pueden configurar propiedades como bordes, márgenes y fondos 
 
 Las cajas de elementos, tal y como muestra la imagen, están hechas de cuatro componentes principales:
 
-![alt text](modelo-de-cajas-1.png)
+![Modelo de cajas CSS](modelo-de-cajas-1.png)
 _Modelo de cajas CSS_
 
 - **Contenido** (`content`), en azul, es la parte interior del elemento, excluyendo el relleno.

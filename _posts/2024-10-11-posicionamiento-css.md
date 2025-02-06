@@ -108,12 +108,12 @@ li{
 }
 ```
 
-![alt text](floatRigth.png)
+![Resultado con float:right](floatRigth.png)
 _Resultado con `float:right`_
 
 Y si cambiamos `float:right` por `float:left`:
 
-![alt text](floatLeft.png)
+![Resultado con float:left](floatLeft.png)
 _Resultado con `float:left`_
 
 {:.subsection}
@@ -166,11 +166,13 @@ body { font-weight: bold; color: white; }
 
 La página sin aplicarle los estilos CSS:
 
-![alt text](image.png)
+![Cajas sin estilos](image.png)
+_Cajas sin estilos_
 
 La página con los estilos CSS:
 
-![alt text](image-1.png)
+![Cajas con estilos](image-1.png)
+_Cajas con estilos_
 
 Como se trata de tres elementos de bloque cada uno de ellos comienza debajo del anterior.
 
@@ -189,7 +191,8 @@ Ahora flotamos la Caja1 a la derecha, así que tenemos que modificar el selector
 
 Como se muestra en la siguiente imagen, cuando se flota la Caja1 a la derecha, se saca del flujo normal del documento y se mueve a la derecha hasta que su borde toca el borde derecho del bloque que lo contiene.
 
-![alt text](image-2.png)
+![Caja1 flotando a la derecha](image-2.png)
+_Caja1 flotando a la derecha_
 
 Recordar que la Caja 1 no llega a "pegar de todo" en el borde del contenedor pues en el estilo aplicado se configura, para las tres cajas, un margen de 10px en todos los lados.
 
@@ -213,7 +216,8 @@ Tenemos que modificar el selector #caja1 del archivo estilos.css. El resto lo de
 
 La Caja 1 flotada a la izquierda quedaría así:
 
-![alt text](image-3.png)
+![Caja1 flotando a la izquierda](image-3.png)
+_Caja1 flotando a la izquierda_
 
 Puesto que la Caja ya no se encuentra en el flujo del documento, no ocupa espacio y se sitúa sobre la Caja 2, ocultando así parte de ella.
 
@@ -235,7 +239,8 @@ Ahora vamos a hacer que flote también la Caja 2. Para conseguir esto, tenemos q
 
 Flotando las Cajas 1 y 2 a la izquierda la web quedaría así:
 
-![alt text](image-4.png)
+![Caja 1 y la Caja 2 flotando a la izquierda](image-4.png)
+_Caja 1 y la Caja 2 flotando a la izquierda_
 
 Al flotar ahora también la Caja 2, ésta se mueve hasta que toca su borde izquierdo con el borde derecho de la Caja 1. Esto es así porque la Caja 1 también está flotada y ambas fueron sacadas del flujo normal del documento.
 
@@ -267,7 +272,8 @@ Para conseguir esto, tenemos que modificar los selectores #caja1, #caja2 y #caja
 }
 ```
 
-![alt text](image-5.png)
+![Todas las cajas flotando a la izquierda](image-5.png)
+_Todas las cajas flotando a la izquierda_
 
 Tal y como se ve la imagen, el div “Contenido" tiene ahora una altura de 0px, ya que todo lo que tiene en su interior está fuera del flujo del documento. Es decir, como no tiene nada “dentro” no necesita tener una altura determinada.
 
@@ -337,7 +343,8 @@ body { font-weight: bold; color: white; }
 
 La web con todas las cajas flotadas a la izquierda, y con un nuevo div que sirve para resetear los elementos flotados hasta este punto (donde se añade el `div`), quedaría del siguiente modo:
 
-![alt text](image-6.png)
+![Todas las cajas flotando a la izquierda bien](image-6.png)
+_Todas las cajas flotando a la izquierda bien_
 
 {:.subsubsection}
 #### Bloque contenedor demasiado estrecho
@@ -358,13 +365,15 @@ body { font-weight: bold; color: white; }
 
 La web con un bloque contenedor con un ancho de 350px, todas las cajas flotadas a la izquierda, y con el div que resetea los flotados hasta el punto donde se añade éste, se vería del siguiente modo:
 
-![alt text](image-7.png)
+![Bloque contenedor demasiado estrecho](image-7.png)
+_Bloque contenedor demasiado estrecho_
 
 El orden de las cajas en el documento HTML es Caja 1 – Caja 2 – Caja 3 pero, ¿cómo quedaría la web si cambiamos el orden de las cajas a Caja 3 – Caja 2 – Caja 1?
 
 La web con el bloque contenedor de 350px, todas las cajas flotadas a la izquierda, y con el div que resetea los flotados hasta el punto donde se añade éste, pero con las cajas en el orden Caja 3 – Caja 2 – Caja 1, se vería del siguiente modo:
 
-![alt text](image-8.png)
+![Bloque contenedor demasiado estrecho](image-8.png)
+_Bloque contenedor demasiado estrecho_
 
 Podemos ver que el resultado cambia mucho. El motivo por el que no se pega la Caja 1 al borde del div “contenido” es por que la Caja1 sigue tropezando con la Caja 3 al intentar ser flotada a la izquierda.
 
@@ -420,7 +429,7 @@ li{
 }
 ```
 
-![alt text](clear.png)
+![Resultado con clear](clear.png)
 _Resultado con `clear`_
 
 La propiedad `clear` puede tener los siguientes valores:
@@ -525,7 +534,8 @@ Permite controlar el orden en el que se presentan los elementos que quedan solap
 
 Por defecto, los elementos se apilan en el orden en que aparecen: el elemento situado más abajo en el flujo normal del documento quedará encima. Si quieres que esta posición no sea tenida en cuenta, debes saber que los elementos con un valor mayor de la propiedad `z-index` son colocados encima de los que tienen un valor menor `z-index`, quedando estos últimos tapados por los primeros.
 
-![alt text](zIndex.png)
+![Ejemplo de z-index](zIndex.png)
+_Ejemplo de z-index_
 
 También debes saber que esta propiedad sólo se aplica a elementos que tengan la propiedad `position` en `absolute` o en `relative`.
 

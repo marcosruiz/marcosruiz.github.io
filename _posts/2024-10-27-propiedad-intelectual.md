@@ -45,7 +45,8 @@ En España se conoce como Ley de la Propiedad Intelectual a lo que los ordenamie
 
 En el derecho anglosajón se utiliza el término Copyright o derecho de copia para hacer referencia a los derechos patrimoniales de los autores sobre su obra.
 
-![alt text](copyrightSymbol.png)
+![Símbolo de Copyright](copyrightSymbol.png)
+_Símbolo de Copyright_
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>

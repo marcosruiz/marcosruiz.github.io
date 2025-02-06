@@ -97,7 +97,8 @@ Ejemplo:
 
 El resultado podría ser:
 
-![alt text](enlacesNaranjas.png)
+![Resultado de enlaces externos naranjas](enlacesNaranjas.png)
+_Resultado de enlaces externos naranjas_
 
 > 📷 Cuando termines, haz una o varias capturas para demostrar que has realizado la actividad de manera satisfactoria.
 {:.prompt-info}

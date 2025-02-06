@@ -151,12 +151,12 @@ En este caso estamos usando `Content-Type: multipart/form-data;` a pesar de ser 
 
 En el caso de utilizar Mozilla Firefox lo podemos averiguar de la siguiente manera:
 
-![alt text](requestHeaders.png)
+![Request headers](requestHeaders.png)
 _Request headers_
 
 Además, podemos ver exactamente que información estamos enviando:
 
-![alt text](requestPayload.png)
+![Request payload](requestPayload.png)
 _Request payload_
 
 <!-- Comentario para que no se descuajeringue la cosa -->

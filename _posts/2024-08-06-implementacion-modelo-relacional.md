@@ -34,7 +34,8 @@ CREATE TABLE nombreTabla (
 
 Para crear la tabla Alumno:
 
-![alt text](tabla-alumno.png)
+![Tabla de alumno](tabla-alumno.png)
+_Tabla de alumno_
 
 ```sql
 CREATE TABLE Alumno (

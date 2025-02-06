@@ -11,10 +11,10 @@ img_path: /assets/img/dom-javascript/
 
 El Modelo de Objetos del Documento (DOM), permite ver el mismo documento HTML de otra manera, describiendo el contenido del documento como un árbol de nodos, sobre los que un programa de Javascript puede interactuar.
 
-![alt text](que-es-dom-1.png)
+![Estructura DOM simple](que-es-dom-1.png)
 _Estructura DOM simple_
 
-![alt text](estructuraDom.png)
+![Estructura DOM más detallada](estructuraDom.png)
 _Estructura DOM más detallada_
 
 El DOM (Document Object Model) es una interfaz de programación que permite a los scripts actualizar el contenido, la estructura y el estilo de un documento mientras este se está visualizando en el navegador.
@@ -397,7 +397,8 @@ La instrucción `"use strict"` en JavaScript activa el modo estricto en el códi
 
 En resumen, cuando no usamos el strict mode pasan cosas como las que relata esta persona:
 
-![alt text](noStrictMode.png)
+![Ejemplo de problemas al no usar el modo estricto](noStrictMode.png)
+_Ejemplo de problemas al no usar el modo estricto_
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>

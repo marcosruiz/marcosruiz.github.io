@@ -28,7 +28,8 @@ Una imagen digital es aquella en la que se emplean los unos y los ceros para alm
 
 En la siguiente imagen puedes ver un paisaje donde se han enmarcado con diferentes colores y se han etiquetado con números las montañas en función de su profundidad. En amarillo y con el número 1, están las montañas más cercanas. En rojo y con el número 2, está la montaña que se encuentra un poco más lejos que las anteriores. Por último, en blanco, con puntos y rayas negras y con el número 3, están las montañas más lejanas de la fotografía. Si te fijas, verás que el contraste de los colores y la nitidez de las montañas es mayor cuanto más cerca están.
 
-![alt text](paisaje.png)
+![Paisaje con zonas marcadas](paisaje.png)
+_Paisaje con zonas marcadas_
 
 Una imagen digital es, en definitiva, el resultado visual final de una imagen capturada inicialmente por un dispositivo que almacena la información digitalmente y que puede ser transformada, posteriormente, usando los medios informáticos.
 
@@ -52,7 +53,8 @@ Como ves, estos tipos de imágenes tienen diferentes características y aplicaci
 
 En la siguiente figura puedes observar la diferencia que existe al ampliar un trozo de una imagen de mapa de bits (en la parte izquierda de la imagen) y al ampliar un trozo de una imagen vectorial (en la parte derecha de la imagen). Puedes comprobar que en el primer caso los bordes de las figuras se deforman (se ven como si fueran los dientes de una sierra), mientras en el segundo caso los bordes están formados por líneas y se siguen viendo perfectamente.
 
-![alt text](mapaDeBitsVsVectorial.png)
+![Imagen de mapa de bits vs vectorial](mapaDeBitsVsVectorial.png)
+_Imagen de mapa de bits vs vectorial_
 
 <details class="card mb-2">
   <summary class="card-header question">¿Son las imágenes de tipo vectorial las más apropiadas para almacenar una fotografía de un cumpleaños?
@@ -204,7 +206,8 @@ Para lograr que las imágenes ocupen el menor tamaño posible se utilizan las t�
 
 Si te fijas en la siguiente imagen verás que las dos fotografías tienen las mismas dimensiones en número de píxeles (2048x1536); sin embargo, la fotografía de la parte superior ocupa en disco 1,31 MB, mientras que la de la parte inferior ocupa tan sólo 378 KB. La razón es la técnica de compresión realizada unida a las características de la fotografía.
 
-![alt text](mismaDimensionDistintoTamanio.png)
+![Mismas dimensiones en dos imágenes con distinto tamaño](mismaDimensionDistintoTamanio.png)
+_Mismas dimensiones en dos imágenes con distinto tamaño_
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>

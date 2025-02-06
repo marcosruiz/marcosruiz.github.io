@@ -19,7 +19,8 @@ Permite añadir hasta 6 capas internas con hasta 8 neuronas por capa. Al entrena
 
 Aunque en la propia herramienta online tienes explicaciones de cómo se utiliza, a continuación te dejo una breve explicación de la interfaz.
 
-![alt text](ejemploTensorflow1.png)
+![Ejemplo interfaz de TensorFlow Playground](ejemploTensorflow1.png)
+_Ejemplo interfaz de TensorFlow Playground_
 
 Podemos observar en la columna de la izquierda el tipo de dataset que se va a utilizar para el entrenamiento (distribución en “circle”, en “exclusive or”, “Gaussian”, o “Spiral”). También podemos regular el % de datos que se van a emplear para el entrenamiento vs la comprobación de confiabilidad del resultado, así como el ruido y la cantidad de datos que se empleará en cada iteración.
 
@@ -34,7 +35,8 @@ Proceso: Define número de capas ocultas, y en cada una de ellas el número de n
 
 Por ejemplo, en este caso, con una capa oculta y dos neuronas en ella, el resultado del entrenamiento no es satisfactorio, pues las áreas de color azul y naranja propuestas por el modelo contienen puntos del color opuesto. Habría que probar a meter más neuronas o alguna capa más:
 
-![alt text](ejemploTensorflow2.png)
+![Ejemplo de Tensorflow Playground](ejemploTensorflow2.png)
+_Ejemplo de Tensorflow Playground_
 
 {:.section}
 ## Primeros pasos con TensorFlow Playground

@@ -64,14 +64,14 @@ $ docker-compose up -d
 
 Ahora accedemos a `localhost:8080` en el navegador y entramos con la cuenta de administrador `admin` `adminpassword` como se ve a continuación.
 
-![alt text](newSite.png)
-_Paso 1_
+![Paso 1: Nuevo sitio](newSite.png)
+_Paso 1: Nuevo sitio_
 
-![alt text](logIn.png)
-_Paso 2_
+![Paso 2: Log In](logIn.png)
+_Paso 2: Log In_
 
-![alt text](hiAdmin.png)
-_Paso 3_
+![Paso 3: Pantalla de bienvenida](hiAdmin.png)
+_Paso 3: Pantalla de bienvenida_
 
 {:.section}
 ## Ampliar el límite de ficheros de subida

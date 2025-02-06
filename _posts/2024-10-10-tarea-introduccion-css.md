@@ -115,7 +115,8 @@ A partir del siguiente código:
 
 Debes determinar las reglas CSS que pondrías en el elemento `style`, con las clases, identificadores y elementos que creas necesarios y modificar el código para que el resultado sea lo más parecido posible a la siguiente imagen:
 
-![alt text](anteriorSiguiente.png)
+![Estilos para Anterior y siguiente](anteriorSiguiente.png)
+_Estilos para Anterior y siguiente_
 
 > Puedes utilizar del artículo [Posicionamiento en CSS](https://marcosruiz.github.io/posts/posicionamiento-css/) para llevar a cabo esta actividad.
 {:.prompt-info}
@@ -192,12 +193,12 @@ Copia el siguiente código en tu editor de Visual Studio Code:
 
 Una vez descargado el código puedes abrirlos con tu navegador. Verás que el resultado es el que se muestra en la imagen siguiente:
 
-![alt text](tablaInicio.png)
+![Tabla sin CSS](tablaInicio.png)
 _Tabla sin CSS_
 
 Tendrás que editar el código y determinar las reglas CSS necesarias para que el resultado sea lo más parecido posible al de la siguiente imagen (Nota: Aunque no sale en la imagen, el puntero está sobre la primera fila, por eso se ve de color amarillo):
 
-![alt text](tablaFin.png)
+![Resultado final de la tabla](tablaFin.png)
 _Resultado final de la tabla_
 
 > Puedes utilizar del artículo [CSS con tablas y listas](https://marcosruiz.github.io/posts/css-tablas-listas/) para llevar a cabo esta actividad.
@@ -211,11 +212,13 @@ _Resultado final de la tabla_
 
 Realiza una web lo más parecida a la siguiente:
 
-![alt text](webTodoFp.png)
+![Web de TodoFP](webTodoFp.png)
+_Web de TodoFP_
 
 La tabla de colores empleada es la siguiente:
 
-![alt text](tablaDeColores.png)
+![Tabla de colores](tablaDeColores.png)
+_Tabla de colores_
 
 Instrucciones para la realización del portal:
 

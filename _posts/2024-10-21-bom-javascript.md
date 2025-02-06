@@ -15,7 +15,8 @@ El código JavaScript ejecutado en un navegador tiene acceso a un número alto d
 - **DOM** (Document Object Model): Objetos que nos permiten hacer algo con la página cargada en estos momentos, objeto que se denomina document y todos los que cuelgan de él.
 - **BOM** (Browser Object Model): Objetos externos al documento web en sí, como la ventana del navegador y la pantalla del equipo.
 
-![alt text](objetosAltoNivelJavaScript.png)
+![Objetos de alto nivel de JavaScript](objetosAltoNivelJavaScript.png)
+_Objetos de alto nivel de JavaScript_
 
 Históricamente, el BOM no es parte de ningún estándar. El estándar HTML5 implementa el comportamiento común de los navegadores e incluye objetos BOM comunes. Además, los dispositivos móviles vienen con sus objetos específicos (y HTML5 tiene como objetivo estandarizar esos objetos también), que tradicionalmente no eran necesarios para los equipos de escritorio, pero tienen sentido en un mundo móvil, como geolocalización, acceso a la cámara, vibración, eventos táctiles, telefonía y SMS.
 
@@ -63,7 +64,8 @@ Además de la sección de contenido del objeto `window`, que es justamente dónd
 
 Cómo se ve en la siguiente figura, debajo del objeto `window` tenemos otros objetos como el `navigator`, `screen`, `history`, `location` y el objeto `document`. Este objeto `document` será el que contendrá toda la jerarquía de objetos, que tengamos dentro de nuestra página HTML.
 
-![alt text](jerarquiaDeObjetos.png)
+![Jerarquía de objetos JavaScript](jerarquiaDeObjetos.png)
+_Jerarquía de objetos JavaScript_
 
 {:.subsection}
 ### Acceso a propiedades y métodos del objeto window
