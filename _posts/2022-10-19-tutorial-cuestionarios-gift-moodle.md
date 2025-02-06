@@ -200,44 +200,44 @@ No hay una forma muy sencilla para añadir imágenes a nuestros cuestionarios pe
 
 Primero debemos subir las imágenes a Moodle, la forma más sencilla es crear el recurso CARPETA:
 
-![alt text](preguntaImagen01.png)
+![Añadir recurso carpeta al curso](preguntaImagen01.png)
 _Añadir recurso carpeta al curso_
 
 Entramos en la carpeta y hacemos click en Editar:
 
-![alt text](preguntaImagen02.png)
+![Botón para editar el contenido de la carpeta](preguntaImagen02.png)
 _Botón para editar el contenido de la carpeta_
 
 Añadir todas las imágenes que queramos utilizar en nuestro test:
 
-![alt text](preguntaImagen03.png)
+![Edición del contenido de la carpeta](preguntaImagen03.png)
 _Edición del contenido de la carpeta_
 
 En la Configuración del recurso CARPETA, vamos al apartado Contenido y desseleccionamos la opción "Forzar descarga de archivos":
 
-![alt text](preguntaImagen04.png)
+![Deshabilitar la descarga de archivos forzado](preguntaImagen04.png)
 _Deshabilitar la descarga de archivos forzado_
 
 Ahora ocultamos el recurso para que no lo puedan ver nuestros alumnos:
 
-![alt text](preguntaImagen05.png)
+![Ocultar un recurso](preguntaImagen05.png)
 _Ocultar un recurso_
 
 Y tras ocultarlo podemos hacerlo disponible:
 
-![alt text](preguntaImagen06.png)
+![Hacer disponible un recurso](preguntaImagen06.png)
 _Hacer disponible un recurso_
 
 Esto hace que las imágenes se puedan ver pero el recurso no aparezca a simple vista para los estudiantes.
 
 Entramos en el recurso CARPETA que hemos creado y al hacer click en cada imagen se nos abrirá:
 
-![alt text](preguntaImagen07.png)
+![Lista de imágenes en su carpeta](preguntaImagen07.png)
 _Lista de imágenes en su carpeta_
 
 Ahora debemos copiar la dirección de cada imagen:
 
-![alt text](preguntaImagen08.png)
+![Imagen abierta](preguntaImagen08.png)
 _Imagen abierta_
 
 Y la deberemos copiar el cuestionario de la siguiente manera:
@@ -269,7 +269,7 @@ Por ejemplo:
 }
 ```
 
-![alt text](preguntaImagen09.png)
+![Pregunta real con el carácter ":" escapado en la URL](preguntaImagen09.png)
 _Pregunta real con el carácter ":" escapado en la URL_
 
 {:.subsection}
@@ -287,7 +287,6 @@ Recuerda que también puedes añadir la retroalimentación que recibirán los al
 }
 ```
 
-{:.subsection}
 {:.section}
 ## Autoincrementar
 
@@ -298,7 +297,6 @@ Es útil darle un nombre a cada pregunta para encontrarla en el banco de pregunt
 1. Seleccionas el `01`. Haces `Ctrl+Shift+L` para seleccionar todas las preguntas.
 1. Hacer `Ctrl+Alt+I` para dar un nombre único a cada pregunta.
 
-{:.subsection}
 {:.section}
 ## Añadir atajos de teclado en Visual Studio Code
 

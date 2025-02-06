@@ -81,9 +81,11 @@ Para realizar todas las operaciones nombradas anteriormente es necesario que el 
 
 Actualmente las bases de datos relacionales más conocidas son MySQL y Oracle, ambas pertenecientes a ORACLE y que requieren instalar el sistema gestor de bases de datos en un sistema operativo.
 
-![alt text](logo_mysql.png)
+![Logo de MySQL](logo_mysql.png)
+_Logo de MySQL_
 
-![alt text](logo_oracle.png)
+![Logo de Oracle](logo_oracle.png)
+_Logo de Oracle_
 
 MySQL es gratis y de código abierto, mientras que Oracle es de pago y privado. Tanto MySQL como Oracle ofrecen soporte tanto de comunidad como técnico.
 
@@ -99,7 +101,8 @@ El diseño de bases de datos requiere de una metodología lo suficientemente pot
 
 La manera óptima de diseñar una base de datos es realizando el proceso en fases. Las fases a seguir para modelar un sistema de bases de datos relacional son:
 
-![alt text](fasesDiseno.png)
+![Fases del diseño de una BBDD](fasesDiseno.png)
+_Fases del diseño de una BBDD_
 
 - **Diseño conceptual**: se obtiene a través del estudio del problema y seleccionando qué elementos se van a modelar. En el caso del modelo relacional, se utiliza el Modelo Entidad-Relación.
 - **Diseño lógico**: El objetivo del diseño lógico es convertir el esquema conceptual en un esquema lógico que se ajuste al modelo de SGBD sobre el que se vaya a implementar el sistema. El proceso a seguir para realizar el diseño lógico consiste en tomar el diagrama Entidad-Relación obtenido en el diseño conceptual y obtener las relaciones o tablas propias del modelo relacional, siguiendo unas determinadas reglas de transformación. El diagrama obtenido en este paso puede presentar algunos problemas derivados de fallos a a hora de interpretar del problema real, fallos arrastrados del diseño del diagrama Entidad-Relación o fallos del paso al modelo relacional. Entre otros problemas destacan:

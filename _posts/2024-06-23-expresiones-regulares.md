@@ -64,7 +64,7 @@ No. También podemos utilizar la notación literal.
   <summary class="card-header question">¿Cuáles son las cuatro partes de una expresión regular?</summary>
   <div class="card-body" markdown="1">
 
-![alt text](regexp.png)
+![Partes de una expresión regular](regexp.png)
 _Partes de una expresión regular_
 
 <!-- Comentario para que no se descuajeringue la cosa -->

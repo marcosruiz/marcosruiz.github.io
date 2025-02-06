@@ -187,7 +187,8 @@ No debemos olvidar que, cuando el sitio Web es de gran tamaño, con muchas secci
 
 En la imagen siguiente están señaladas cada uno de los elementos mencionados. Se ha empleado como ejemplo la página que habla del Consejo General del Estado en el antiguo sitio Web del Ministerio de Educación y Ciencia.
 
-![alt text](navegacionMinisterio.png)
+![Elementos de navegación en la web del ministerio de educación](navegacionMinisterio.png)
+_Elementos de navegación en la web del ministerio de educación_
 
 {:.subsection}
 ### Elementos de contenido
@@ -231,7 +232,7 @@ Los botones tienen 2 características:
 - **Importancia**: Es si queremos o no que el usuario pulse ahí. A mayor importancia es que queremos que mas veces pulse en ese botón.
 - **Función**: Es para decir al usuario que tipo de acción está realizando. Por ejemplo , la función "Peligrosa" es roja y nos quiere decir que tengamos cuidado al pulsar ahí.
 
-![alt text](botones.png)
+![Tipos de botones](botones.png)
 _Tipos de botones_
 
 Veamos algunos ejemplos de varios botones juntos:
@@ -311,7 +312,7 @@ A continuación, vamos a ver cuáles son las estructuras más habituales de los 
 
 El mapa de un sitio Web va a tener una estructura que dependerá de la relación que tengan las páginas del sitio entre sí. Esta relación puede ser de diferentes tipos:
 
-![alt text](tiposDeMapasDeNavegacion.png)
+![Representación gráfica de las estructuras de mapas de sitios](tiposDeMapasDeNavegacion.png)
 _Representación gráfica de las estructuras de mapas de sitios_
 
 - La estructura **lineal** es adecuada en aquellos sitios compuestos por páginas donde la lectura de las mismas es secuencial. Su estructura es similar a la de un libro donde avanzas de página en página, pero puedes volver a la página anterior y desde ésta a la anterior para releer algún párrafo.
@@ -377,10 +378,10 @@ Existen webs como Wordpress, Wix, Shopify, Prestashop, Magento, etc. cuyo negoci
 
 Haz que las cosas que no están relacionadas estén muy separadas entre si. Es decir que haya mucho espacio en blanco. Y luego ya veremos si los juntas un poco.
 
-![alt text](espaciosBlancoMal.png)
+![Espacios en blanco mal](espaciosBlancoMal.png)
 _Espacios en blanco mal_
 
-![alt text](espaciosBlancoBien.png)
+![Espacios en blanco bien](espaciosBlancoBien.png)
 _Espacios en blanco bien_
 
 (Voluntario) Lee el artículo [Utilización del espacio en blanco en el diseño de una web](https://www.lawebera.es/diseno-web/utilizacion-espacio-en-blanco.php).
@@ -389,10 +390,10 @@ Los diseño no tienen que ocupar el 100% de la pantalla ya que en pantallas muy 
 
 Haz que las cosas estén alineadas a una recta imaginaria que va de arriba a abajo.
 
-![alt text](alineacion1.png)
+![Interfaz móvil alineada](alineacion1.png)
 _Interfaz móvil alineada_
 
-![alt text](alineacion2.png)
+![Interfaz móvil alineada con las líneas marcadas](alineacion2.png)
 _Interfaz móvil alineada con las líneas marcadas_
 
 Resalta lo importante.
@@ -423,7 +424,8 @@ Elige entre la imagen de la izquierda o de la derecha y luego se puedo comparar 
 
 Al igual que en los colores nos ceñimos a un conjunto limitado de colores, se debe hacer lo mismo con los tamaños de margenes, fuentes, etc.
 
-![alt text](sistemaDeTamanos.png)
+![Tamaños de los márgenes](sistemaDeTamanos.png)
+_Tamaños de los márgenes_
 
 Veamos algunos ejemplos.
 

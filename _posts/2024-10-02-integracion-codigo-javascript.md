@@ -115,7 +115,7 @@ En resumen, para insertar código Javascript en HTML5 existen dos formas:
 
 A partir de HTML5, la etiqueta `<script>` admite dos atributos, async y defer, que permiten que los scripts comiencen su descarga inmediatamente sin interrumpir el proceso de parseo del documento HTML.
 
-![alt text](asyncdefer.jpeg)
+![Diagrama del funcionamiento de Async o Defer](asyncdefer.jpeg)
 _Diagrama del funcionamiento de Async o Defer_
 
 {:.subsubsection}

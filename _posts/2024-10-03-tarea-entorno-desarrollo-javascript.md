@@ -63,7 +63,7 @@ Añade en el `body`:
 
 Haz click en "Show preview" para ver el resultado:
 
-![alt text](showPreview.png)
+![Icono para ver el resultado dentro de Visual Studio Code](showPreview.png)
 _Icono para ver el resultado dentro de Visual Studio Code_
 
 > 📸 Haz una o varias capturas para demostrar que ha realizado esta tarea.

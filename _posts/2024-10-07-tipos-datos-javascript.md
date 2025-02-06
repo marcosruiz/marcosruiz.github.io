@@ -59,7 +59,8 @@ Tipos de **datos NO primitivos**:
 
 Aunque `NaN` significa "no es un número", su tipo es `number`.
 
-![alt text](explosionCerebral.png)
+![Explosión cerebral](explosionCerebral.png)
+_Explosión cerebral_
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>

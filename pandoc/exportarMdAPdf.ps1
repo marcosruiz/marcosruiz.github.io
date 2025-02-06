@@ -53,7 +53,7 @@ function generarTemporal {
     'д'                                                            = ':imagínate un caracter cirílico aquí:'
     'Ж'                                                            = ':imagínate un caracter cirílico aquí:'
     '\{\s*:\s*file="([^"]+)"\s*\}$'                                = '_Fichero: `$1`_'
-    '<iframe [^>]* src="([^"]*)[^>]* title="YouTube video player"' = 'Vídeo: $1'
+    '<iframe [^>]* src="([^"]*)[^>]* title="YouTube video player".*$' = 'Vídeo: $1'
     '^_.*_$'                                                       = ''
     '(\{\s*):(\s*width=.*\})'                                      = '$1$2'
   }
@@ -84,7 +84,7 @@ $githubProjectFolder = "."
 # $routes = "redes-neuronales-deep-learning", "casos-practicos-sobre-aprendizaje-automatico", "introduccion-aprendizaje-automatico", "algoritmos-aprendizaje-automatico", "aprendizaje-supervisado", "aprendizaje-no-supervisado"
 
 # Temas DIW
-# $routes = "selectores-css", "planificacion-interfaces-graficas", "gestalt", "colores", "guias-estilo", "hojas-estilo-css", "modelo-cajas-css", , "posicionamiento-css", "css-tablas-listas", "tutorial-sass", "imagenes-web", "propiedad-intelectual", "audio-web", "video-web"
+$routes = "selectores-css", "planificacion-interfaces-graficas", "gestalt", "colores", "guias-estilo", "hojas-estilo-css", "modelo-cajas-css", , "posicionamiento-css", "css-tablas-listas", "tutorial-sass", "imagenes-web", "propiedad-intelectual", "audio-web", "video-web"
 
 # Temas DWEC
 #$routes = "arquitecturas-lenguajes-programacion-cliente-web", "integracion-codigo-javascript, "tipos-datos-javascript", "objetos-nativos-javascript", "bom-javascript", "dom-javascript", "funciones-javascript", "objetos-javascript", "clases-javascript", "prototipos-javascript", "clases-javascript-es6", "desestructuracion-javascript", "formularios-html", "formularios-javascript", "validacion-formularios-html", "validacion-formularios-javascript", "expresiones-regulares", "cookies", "fundamentos-programacion-javascript", "arrays-javascript", "eventos-javascript"
@@ -100,13 +100,13 @@ foreach ($route in $routes) {
   $fileRoute = "$($githubProjectFolder)\_posts\$($file.Name)"
   $tempFileRoute = "$($githubProjectFolder)\tmp\$($file.Name)"
 
-  print("Generando fichero temporal: " + $route + "en tmp/")
+  Write-Output "Generando fichero temporal: $route en tmp/"
 
   generarTemporal -fileRoute $fileRoute -tempFileRoute $tempFileRoute
 
   $resourcePath = "/data/assets/img/" + $route
 
-  print("Generando pdf " + $route + "en pdf/")
+  Write-Output "Generando pdf $route en pdf/"
 
   # Recuerda cambiar el ID del contentedor por el que corresponda
   docker exec aaa230b91f7592b6f2e74372eccfc2038caf5c5ebc16865aea3d9ab11ef8923d pandoc "/data/tmp/$($file.Name)" `

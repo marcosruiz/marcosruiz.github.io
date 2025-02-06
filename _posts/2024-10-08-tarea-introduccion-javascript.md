@@ -59,7 +59,8 @@ Opción 2 (en español): Ir a la certificación [Algoritmos de JavaScript y Estr
 
 Crea los ficheros del proyecto como se muestra a continuación:
 
-![alt text](ficheros.png)
+![Organización de ficheros](ficheros.png)
+_Organización de ficheros_
 
 Una vez vista la estructura, pasemos a ver el formulario y la inclusión de nuestro fichero .js en el archivo index.html.
 
