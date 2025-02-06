@@ -312,7 +312,7 @@ Existen varios métodos adicionales para manipular arrays en JavaScript:
 - `split()`: Transforma una cadena en un array.
 - `fill()`: Llena un array con un valor específico.
 
-![alt text](otrosarrays.png)
+![Otras operaciones con arrays](otrosarrays.png)
 _Otras operaciones con arrays_
 
 Ejemplo de uso:

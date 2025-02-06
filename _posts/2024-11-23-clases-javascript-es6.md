@@ -168,7 +168,8 @@ En este ejemplo, `staticMethod` se llama en la clase `Foo`, mientras que `protot
 
 Fíjate en la siguiente figura cómo la variable `foo` NO tiene la propiedad `staticMethod`.
 
-![alt text](static.png)
+![Relación entre instancias y funciones constructoras en JavaScript](static.png)
+_Relación entre instancias y funciones constructoras en JavaScript_
 
 Fíjate también en cómo la variable `foo` del tipo `Foo` tiene acceso al padre a través de la propiedad `[[Prototype]]`.
 
