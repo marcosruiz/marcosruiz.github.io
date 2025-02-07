@@ -123,10 +123,13 @@ La transformación de un diagrama E/R al modelo relacional está basado en los s
 Ahora vamos a ver cómo se definen cada uno de los tipos de atributos:
 
 Todos los atributos pasan a ser columnas de la tabla.
+
 Los atributos que forman parte de la clave primaria de una entidad pasan a ser la clave primaria de la tabla. Se debe especificar que no son nulos, esto es, que no pueden quedarse esos campos vacíos al insertar filas nuevas en la tabla.
+
 Siguiendo con el ejemplo del diagrama E/R de la universidad, se tendrían las siguientes tablas con sus atributos. Las claves primarias están marcadas en negrita y subrayadas.
 
-![alt text](paso-al-relacional-1.png)
+![Transformación del modelo Entidad-Relación al modelo relacional](paso-al-relacional-1.png)
+_Transformación del modelo Entidad-Relación al modelo relacional_
 
 ### Transformación de las relaciones y sus atributos
 
@@ -153,7 +156,8 @@ Si la relación se transforma en una tabla, todos sus atributos pasan a ser colu
 
 En el ejemplo de la Universidad, tenemos una relación 1:N y otra N:M. De la relación 1:N tendremos una propagación de clave, es decir, la clave primaria de la tabla con cardinalidad máxima 1 (Grado), pasa como atributo a la otra tabla (Asignatura) y además como clave ajena que referencia a la clave primaria de Grado. De la relación N:M se obtiene una nueva tabla con los atributos que tiene la relación (Nota) y la clave primaria la forma la unión de las claves primarias de las entidades que intervienen en la relación (Codigo de la asignatura y DNI del Alumno).
 
-![alt text](paso-al-relacional-2.png)
+![Transformación de los atributos de relaciones](paso-al-relacional-2.png)
+_Transformación de los atributos de relaciones_
 
 > Para realizar estos diagramas, os recomiendo la herramienta [ERD Plus](https://erdplus.com/), que solo requiere registro en la misma y además permite luego exportar el código SQL de los diagramas relacionales, lo que es muy útil para luego generar la base de datos en un sistema físico.
 {:.prompt-info}

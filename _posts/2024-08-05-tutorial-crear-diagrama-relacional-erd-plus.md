@@ -12,11 +12,13 @@ Vamos a ver cómo se crearía un diagrama relacional con la herramienta ERD Plus
 
 Imaginad que tenemos el diagrama ER siguiente sobre una base de datos de recetas:
 
-![alt text](recetas-er.png)
+![Esquema ER de recetas](recetas-er.png)
+_Esquema ER de recetas_
 
 Si diagrama relacional correspondiente es el siguiente:
 
-![alt text](recetas-relacional.png)
+![Modelo relacional de recetas](recetas-relacional.png)
+_Modelo relacional de recetas_
 
 Voy a indicar cómo se crea cada uno de los elementos del diagrama.
 
@@ -24,15 +26,18 @@ Voy a indicar cómo se crea cada uno de los elementos del diagrama.
 
 Hay que clicar sobre el botón "table":
 
-![alt text](boton-table.png)
+![Botón de tabla](boton-table.png)
+_Botón de tabla_
 
 A continuación clicar sobre cualquier punto del lienzo de dibujo y se creará una tabla vacía:
 
-![alt text](tabla-vacia.png)
+![Tabla vacía](tabla-vacia.png)
+_Tabla vacía_
 
 Seleccionando la tabla, a la derecha aparecen todas las opciones de la tabla:
 
-![alt text](propiedades-tabla2.png)
+![Propiedades de tabla](propiedades-tabla2.png)
+_Propiedades de tabla_
 
 Vamos a crear la tabla Receta.
 
@@ -40,23 +45,27 @@ Tiene 5 columnas, pero una es una clave ajena, así que esa se añade de otra ma
 
 Para añadir las columnas, hay que clicar sobre el botón "ADD" y se abre debajo la ventana con las columnas:
 
-![alt text](columnas-receta.png)
+![Columnas de Receta](columnas-receta.png)
+_Columnas de Receta_
 
 Se van rellenando los nombres de las columnas y el tipo de dato como en la imagen de arriba.
 
 Ahora, para indicar la clave primaria, se clica en "PRIMARY KEY" y se abre una ventana con todas las columnas para seleccionar cuáles forman parte de la clave primaria:
 
-![alt text](clave-primaria-recetas.png)
+![Clave primaria de Receta](clave-primaria-recetas.png)
+_Clave primaria de Receta_
 
 También hay que indicar que la columna notas es opcional (no obligatoria). Para eso clicar sobre "OPTIONAL" y hacer lo mismo que al seleccionar la clave primaria:
 
-![alt text](opcionales-receta.png)
+![Columnas opcionales de Receta](opcionales-receta.png)
+_Columnas opcionales de Receta_
 
 Falta solo añadir la clave ajena. Para eso es necesario tener previamente creadas las dos tablas que intervienen en la clave ajena, en este caso la tabla "TIPO_RECETA" y la tabla "RECETA".
 
 Se selecciona el botón "CONNECT" del menú principal y hay que clicar en la tabla cuya clave primaria va a ser clave ajena (TIPO_RECETA) y arrastrar hasta la tabla en la que va a añadirse la columna como clave ajena (RECETA):
 
-![alt text](clave-ajena-receta.png)
+![Clave ajena de Receta](clave-ajena-receta.png)
+_Clave ajena de Receta_
 
 Y la columna se añade sola a la tabla RECETA.
 

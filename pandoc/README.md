@@ -2,9 +2,11 @@
 
 Para ejecutar el script `exportarMdAPdf.ps1` primero debemos estar en una máquina Windows y tener el contenedor `pandoc/extra` instalado y corriendo.
 
-![alt text](contenedorDockerPandocExtra.png)
+![Contenedor de pandoc/extra](contenedorDockerPandocExtra.png)
+_Contenedor de pandoc/extra_
 
-![alt text](volumenesPandocExtra.png)
+![Volumenes de pandoc/extra](volumenesPandocExtra.png)
+_Volumenes de pandoc/extra_
 
 Posteriormente, en el terminal de Windows, deberemos situarnos en la raíz del proyecto. En este caso en la carpeta `marcosruiz.github.io` y ejecutar el comando:
 

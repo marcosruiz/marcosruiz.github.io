@@ -63,7 +63,8 @@ CREATE TABLE Alumno (
 
 Si la clave primaria está formada por varias columnas, se debe poner al final, después de la declaración de todas las columnas:
 
-![alt text](tabla-matricula.png)
+![Tabla Matricula](tabla-matricula.png)
+_Tabla Matricula_
 
 ```sql
 CREATE TABLE Matricula (
@@ -79,7 +80,8 @@ CREATE TABLE Matricula (
 La tabla Matricula tiene dos claves ajenas, en la columna `Codigo` y en la columna `DNI`.
 El diagrama de las tablas Alumno, Matricula y Asignatura:
 
-![alt text](ddl-claves-ajenas.png)
+![Claves ajenas](ddl-claves-ajenas.png)
+_Claves ajenas_
 
 Se crea con las sentencias SQL siguientes:
 
@@ -245,15 +247,18 @@ Teniendo el diagrama relacional en la herramienta [ERD Plus](https://erdplus.com
 
 Hay que clicar en el elemento "Documents" del menú principal y se abren todos los diseños que tenemos creados en nuestra cuenta:
 
-![alt text](erd-plus-documents.png)
+![Generación del script SQL mediante ERD Plus](erd-plus-documents.png)
+_Generación del script SQL mediante ERD Plus_
 
 Clicando en los 3 puntos de la derecha del modelo que se desea exportar en SQL, se despliega un menú en el que hay que seleccionar la opción "Generate SQL".
 
-![alt text](erd-plus-generate-sql-2.png)
+![Generación del script SQL mediante ERD Plus](erd-plus-generate-sql-2.png)
+_Generación del script SQL mediante ERD Plus_
 
 Pinchando en "Generate SQL" se abre una ventana con las sentencias SQL que al ejecutarlas en un sistema gestor de base de datos, creará las tablas con las restricciones del modelo diseñado.
 
-![alt text](erd-plus-sql.png)
+![Generación del script SQL mediante ERD Plus](erd-plus-sql.png)
+_Generación del script SQL mediante ERD Plus_
 
 ## Bibliografía
 

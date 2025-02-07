@@ -37,7 +37,8 @@ En resumen: una entidad representa cualquier persona, suceso, evento o concepto 
 
 En el modelo E/R una entidad se representa con un rectángulo en cuyo interior aparece el nombre de la entidad.
 
-![alt text](entidadAsignatura.png)
+![Entidad Asignatura](entidadAsignatura.png)
+_Entidad Asignatura_
 
 Es importante tener en cuenta que el diseño E/R acabará plasmado en un sistema gestor de bases de datos (SGBD) físico en un ordenador, por lo que es interesante respetar los nombres utilizados en el diseño, y por esa razón es conveniente no utilizar tildes en los nombres, ya que hay SGBD que no aceptan este tipo de caracteres.
 
@@ -52,7 +53,8 @@ Se representa mediante un rombo con el nombre de la relación en el interior.
 
 En el siguiente ejemplo, se representa la relación "trabaja" que se establece entre un empleado y una sucursal bancaria, de forma que represente que un empleado trabaja en una sucursal bancaria, y que la sucursal bancaria es el lugar de trabajo del empleado.
 
-![alt text](relacion.png)
+![Relación](relacion.png)
+_Relación_
 
 En las líneas que unen las entidades con las relaciones se puede escribir el rol o papel que desempeña una entidad en la relación en caso de que dicho papel no quede claro.
 
@@ -74,7 +76,8 @@ Las cardinalidades de las entidades se definen como el número mínimo y máximo
 
 Por ejemplo, el siguiente diagrama representa el hecho de que un departamento de una empresa puede tener varios empleados trabajando en él (lo indica la cardinalidad máxima n) o ningún empleado trabajando en él (lo indica la cardinalidad mínima 0) y un empleado debe trabajar como mínimo y como máximo en un solo departamento.
 
-![alt text](cardinalidades.png)
+![Cardinalidades](cardinalidades.png)
+_Cardinalidades_
 
 ### Cardinalidades de las relaciones
 
@@ -86,16 +89,19 @@ Dependiendo del número de instancias que aparezcan, podemos tener:
 
 - **Relación uno a uno**. En la notación se pone 1:1. Con ejemplos se verá más fácil. Veamos el caso de las entidades EMPLEADO y PUESTO_DE_TRABAJO, y la relación "ocupa". Suponiendo que un determinado puesto de trabajo puede estar ocupado por un solo empleado, y al mismo tiempo, un empleado puede ocupar simultáneamente un único puesto de trabajo. El diagrama sería el siguiente:
 
-![alt text](cardinalidad11.png)
+![Cardinalidad 1 a 1](cardinalidad11.png)
+_Cardinalidad 1 a 1_
 
 - **Relación uno a muchos**. En la notación se pone 1:N. Por ejemplo, teniendo las entidades ASIGNATURA y PROFESOR, y la relación "imparte" para un curso concreto. En el caso de que una asignatura pueda ser impartida por un único profesor (no contemplando desdobles), pero cada profesor pueda impartir muchas asignaturas. El diagrama sería:
 
-![alt text](cardinalidad1N.png)
+![Cardinalidad 1 a N](cardinalidad1N.png)
+_Cardinalidad 1 a N_
 
 - **Relación muchos a uno**. Es el mismo concepto que el de una relación uno a muchos (1:N).
 - **Relación muchos a muchos**. En la notación se pone N:M. En el caso de una empresa de autobuses, si consideramos las entidades CONDUCTOR y AUTOBÚS, y la relación "conduce", lo normal es que cada autobús pueda ser conducido por distintos conductores, en diferentes turnos, y al mismo tiempo, que cada conductor pueda conducir varios autobuses en distintos turnos, de forma que cada autobús se relaciona con muchos conductores, y cada conductor se relaciona con muchos autobuses, formando una relación muchos a muchos.
 
-![alt text](cardinalidadNM.png)
+![Cardinalidad N a M_](cardinalidadNM.png)
+_Cardinalidad N a M_
 
 Aunque en este momento pueda parecer que los conceptos cardinalidad de una relación y cardinalidad de una entidad son muy similares, ambos son necesarios para la transformación del diagrama E/R al modelo relacional.
 
@@ -107,27 +113,32 @@ Se pueden encontrar los siguientes tipos de relaciones según su grado:
 
 - **Reflexiva**: participa una única entidad.
 
-![alt text](reflexiva.png)
+![Relación reflexiva](reflexiva.png)
+_Relación reflexiva_
 
 - **Binaria**: Es aquella relación en la que participan dos entidades, es el tipo más habitual de relación.
 
-![alt text](cardinalidad1N.png)
+![Relación binaria](cardinalidad1N.png)
+_Relación binaria_
 
 - **Ternaria**: Es aquella relación en la que participan tres entidades al mismo tiempo.
 .png
-![alt text](ternaria.png)
+![Relación ternaria](ternaria.png)
+_Relación ternaria_
 
 Este diagrama representa que una película se relaciona con un actor que ha interpretado un determinado personaje de los que forman parte del guión. O que un personaje se relaciona con la película de la que forma parte y con el actor que lo interpreta. O que un actor se relaciona con el personaje que interpreta y con la película en la que interviene... distintas formas de decir lo mismo.
 
 - **N-aria**: Es aquella relación en la que participan n conjuntos de entidades. Es muy poco frecuente su aparición y es importante intentar disminuir el grado de la relación para hacer más intuitivo el modelado del sistema.
 
-![alt text](naria.png)
+![Relación N-aria](naria.png)
+_Relación N-aria_
 
 Imaginemos una relación de orden 4, como la de la imagen, ¿cómo podemos disminuir su orden?
 
 Las relaciones que expresa el diagrama son: un actor se relaciona con una película en la que interviene, que es producida por un estudio, y lo hace a cambio de un determinado salario de la tabla salarial que tienen establecida en ese estudio, y todas esas relaciones son en realidad contractuales, es decir, derivadas de contratos.
 
-![alt text](naria2.png)
+![Relación N-aria](naria2.png)
+_Relación N-aria_
 
 Sustituyendo la relación 'tiene_contrato' por una entidad nueva llamada CONTRATO y convirtiendo todas las relaciones en binarias se elimina la relación de grado 4.
 
@@ -141,7 +152,8 @@ También hay que tener en cuenta si los atributos son simples o compuestos, o si
 
 Los atributos de una entidad se representan mediante elipses o círculos etiquetados, que se conectan por una línea recta a la entidad o relación que califican, cada uno de los cuales tiene que tener un nombre único y que haga referencia a su contenido. Los nombres de los atributos deben ir en minúsculas.
 
-![alt text](atributos.png)
+![Atributos](atributos.png)
+_Atributos_
 
 Cada atributo tiene un conjunto de valores asociados denominado dominio. El dominio define todos los valores posibles que puede tomar un atributo.
 
@@ -161,13 +173,15 @@ Un atributo compuesto es un atributo con varios componentes, cada uno con un sig
 
 En la siguiente figura se observa la forma de representar los atributos simples y los compuestos, Dirección es un atributo compuesto, que consta de varios componentes simples (calle, numero, poblacion).
 
-![alt text](tiposAtributos.png)
+![Tipos de atributos](tiposAtributos.png)
+_Tipos de atributos_
 
 Las relaciones también pueden tener atributos asociados. Se representan igual que los atributos de las entidades.
 
 Imaginar que es necesario guardar la fecha de emisión de una factura a un cliente, y que es posible emitir duplicados de la factura (con distinta fecha). En tal caso, el atributo "Fecha de emisión" de la factura debería colocarse en la relación "se emite".
 
-![alt text](atributoRelacion.png)
+![Atributo de una relación](atributoRelacion.png)
+_Atributo de una relación_
 
 #### Clave primaria
 
@@ -180,7 +194,8 @@ Cada instancia de una entidad se puede distinguir de cualquier otra por todos su
 - **Clave primaria**: Es la clave candidata elegida para identificar la entidad. Debe cumplir además que ningún subconjunto de ella sea clave candidata. En el caso anterior de la entidad EMPLEADO, pueden ser clave primaria tanto DNI, como codigo_empleado, y depende del criterio del diseñador de la base de datos que elija una u otra. Pero una vez que el diseñador elige una, sólo ese atributo (o conjunto de atributos) es clave primaria.
 A continuación hay un diagrama en el que se representa el caso de la entidad Empleado y su clave primaria.
 
-![alt text](clavePrimariaEmpleado.png)
+![Clave primaria de Empleado](clavePrimariaEmpleado.png)
+_Clave primaria de Empleado_
 
 ### Restricciones avanzadas del modelo Entidad-Relación
 
@@ -194,7 +209,8 @@ Lo primero es buscar las entidades, que son Asignatura, Grado y Alumno.
 
 Después las relaciones entre las entidades. Asignatura se relaciona con Grado a través de la relación "pertenece", y Alumno se relaciona con Asignatura a través de "esta_matriculado".
 
-![alt text](creacionDiagrama1.png)
+![Paso 1 de creación de diagrama Entidad Relación](creacionDiagrama1.png)
+_Paso 1 de creación de diagrama Entidad Relación_
 
 Ahora se ponen los atributos de las entidades y las relaciones (si los tuvieran). El enunciado del problema es bastante escueto y no nombra qué información se desea guardar. Normalmente los enunciados deben ser completos para no dejar nada a la imaginación del diseñador y que todo quede lo más aproximado posible al problema real.
 
@@ -202,7 +218,8 @@ En este caso no dicen nada, así que lo primero que debemos pensar es que las en
 
 Con todo esto el diagrama quedaría así (a falta de estudiar las cardinalidades).
 
-![alt text](creacionERFinal.png)
+![Paso 2 de creación de diagrama Entidad Relación](creacionERFinal.png)
+_Paso 2 de creación de diagrama Entidad Relación_
 
 Hay que fijarse que el atributo nota está en la relación porque es la nota que el alumno obtiene en una asignatura en concreto y para cada asignatura tendrá una nota distinta, por lo tanto, no puede ser un atributo de la entidad.
 
@@ -214,7 +231,8 @@ La relación "pertenece". Una asignatura pertenece a un y solo un grado, con lo 
 
 El diagrama final del problema es el siguiente:
 
-![alt text](diagramaFinal.png)
+![Final de creación de diagrama Entidad Relación](diagramaFinal.png)
+_Final de creación de diagrama Entidad Relación_
 
 ## Crear diagrama ER con DIA
 
