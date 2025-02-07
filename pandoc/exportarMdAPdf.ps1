@@ -84,10 +84,12 @@ $githubProjectFolder = "."
 # $routes = "redes-neuronales-deep-learning", "casos-practicos-sobre-aprendizaje-automatico", "introduccion-aprendizaje-automatico", "algoritmos-aprendizaje-automatico", "aprendizaje-supervisado", "aprendizaje-no-supervisado"
 
 # Temas DIW
-$routes = "selectores-css", "planificacion-interfaces-graficas", "gestalt", "colores", "guias-estilo", "hojas-estilo-css", "modelo-cajas-css", , "posicionamiento-css", "css-tablas-listas", "tutorial-sass", "imagenes-web", "propiedad-intelectual", "audio-web", "video-web"
+# $routes = "selectores-css", "planificacion-interfaces-graficas", "gestalt", "colores", "guias-estilo", "hojas-estilo-css", "modelo-cajas-css", , "posicionamiento-css", "css-tablas-listas", "tutorial-sass", "imagenes-web", "propiedad-intelectual", "audio-web", "video-web"
 
 # Temas DWEC
-#$routes = "arquitecturas-lenguajes-programacion-cliente-web", "integracion-codigo-javascript, "tipos-datos-javascript", "objetos-nativos-javascript", "bom-javascript", "dom-javascript", "funciones-javascript", "objetos-javascript", "clases-javascript", "prototipos-javascript", "clases-javascript-es6", "desestructuracion-javascript", "formularios-html", "formularios-javascript", "validacion-formularios-html", "validacion-formularios-javascript", "expresiones-regulares", "cookies", "fundamentos-programacion-javascript", "arrays-javascript", "eventos-javascript"
+# $routes = "arquitecturas-lenguajes-programacion-cliente-web", "integracion-codigo-javascript", "tipos-datos-javascript", "objetos-nativos-javascript", "bom-javascript", "dom-javascript", "funciones-javascript", "objetos-javascript", "clases-javascript", "prototipos-javascript", "clases-javascript-es6", "desestructuracion-javascript", "formularios-html", "formularios-javascript", "validacion-formularios-html", "validacion-formularios-javascript", "expresiones-regulares", "cookies", "arrays-javascript", "eventos-javascript"
+
+# $routes = "fundamentos-programacion-javascript" # Lo tengo aparte porque da problemas
 
 # Iterar sobre cada patron de archivo
 foreach ($route in $routes) {
