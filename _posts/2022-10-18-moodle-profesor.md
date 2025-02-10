@@ -32,7 +32,6 @@ Para realizar este tipo de entregas son necesarias dos acciones:
 2. Crear tarea
 
 {:.subsection}
-{:.section}
 ### Crear grupos
 
 1. Entramos en el curso donde queremos crear los grupos.
@@ -46,7 +45,6 @@ Para realizar este tipo de entregas son necesarias dos acciones:
 _Creación de grupos vacíos automáticamente en Moodle_
 
 {:.subsection}
-{:.section}
 ### Crear tarea
 
 En la opción "Editar ajustes" de una Tarea vamos a la sección "Configuración de entrega por grupo" y ponemos los ajustes que aparecen en la siguiente Figura.
@@ -91,7 +89,6 @@ _Sección "Opciones de revisión" para Test alumnos distancia_
 ## Configuración de tareas
 
 {:.subsection}
-{:.section}
 ### Calificación de tarea Apto/No apto
 
 El uso del workflow permite que todos los alumnos reciban la nota al mismo tiempo.
@@ -106,14 +103,12 @@ Cuando trabajamos con tareas de Apto/No apto debemos tener en cuenta que:
 - "Apta" corresponde a un 2.
 
 {:.subsection}
-{:.section}
 ### Calificación de tarea con nota
 
 ![Sección "Calificación" de tarea con nota 0 a 10 con workflow](calificacionTareaConNota.png){: w="250" }
 _Sección "Calificación" de tarea con nota 0 a 10 con workflow_
 
 {:.subsection}
-{:.section}
 ### Finalización de actividad
 
 Si queremos que la tarea esté gamificada deberemos tener la siguiente configuración en la sección "Finalización de actividad":
