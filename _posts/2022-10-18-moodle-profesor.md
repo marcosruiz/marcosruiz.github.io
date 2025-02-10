@@ -211,10 +211,16 @@ Para los RAs:
 =if([[ExamenesRA7]]>=5; 0,05*[[TestsRA7]]+0,25*[[TareasRA7]]+0,7*[[ExamenesRA7]]; [[ExamenesRA7]])
 ```
 
-Para la nota del 1º cuatrimestre:
+Para la nota del 1º cuatrimestre si cada cuatrimestre tiene un peso diferente:
 
 ```plaintext
 =round(if(and([[RA1]]>=5; [[RA2]]>=5; [[RA3]]>=5; [[RA4]]>=5; [[RA5]]>=5); [[RA1]] * 0,10 + [[RA2]] * 0,16 + [[RA3]] * 0,22 +  [[RA4]] * 0,22 + [[RA5]] * 0,30; min(4; [[RA1]] * 0,10 + [[RA2]] * 0,16 + [[RA3]] * 0,22 +  [[RA4]] * 0,22 + [[RA5]] * 0,30)))
+```
+
+Para la nota del 1º cuatrimestre si cada cuatrimestre tiene el mismo peso:
+
+```plaintext
+=if(and([[RA1]]>=5; [[RA2]]>=5; [[RA3]]>=5; [[RA4]]>=5; [[RA5]]>=5; [[RA6]]>=5; [[RA7]]>=5); average([[RA1]]; [[RA2]]; [[RA3]]; [[RA4]]; [[RA5]]; [[RA6]]; [[RA7]]); min(4; average([[RA1]]; [[RA2]]; [[RA3]]; [[RA4]]; [[RA5]]; [[RA6]]; [[RA7]])))
 ```
 
 Para la nota final:
