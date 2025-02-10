@@ -271,7 +271,6 @@ Para validar un formulario nosotros pero usando esta API debemos añadir al `for
 Como puedes ver, en caso de que un campo no sea válido, se puede manipular las clases CSS o mostrar un mensaje de error. Aquí entra el tema de la usabilidad. Estamos muy acostumbrados a un comportamiento de los formularios que nos informe de si estamos haciendo las cosas bien. Por ejemplo: un `input` que no haya sido manipulado de momento, no debería mostrarse como erróneo. Pero si ya se ha escrito algo en él y saltamos de `input`, ya debería mostrarse como erróneo. Esto también puede ser farragoso y siempre es mejor separar por funciones puras la validación y la aplicación de estilos.
 
 {:.subsubsection}
-{:.subsection}
 #### Ejemplo de validación con mensajes de error en elementos span del HTML
 
 Un ejemplo sencillo de validación de un formulario podría ser:

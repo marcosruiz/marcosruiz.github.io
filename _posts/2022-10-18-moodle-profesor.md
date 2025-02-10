@@ -258,7 +258,7 @@ Una vez exportado podemos abrir el documento con cualquier bloc de notas. Yo uso
 {:.prompt-warning}
 
 {:.subsection}
-### Borrar (cambiar de categoría) preguntas de Moodle
+### Borrar preguntas de Moodle
 
 Aunque lo que queremos e borrar preguntas antiguas, esto genera ciertos el problema de que las preguntas eliminadas también se exportan por lo que **es mejor cambiar las preguntas de categoría**. A estas categorías y las llamo `OLD - <nombre de la categoría original>`.
 
