@@ -301,6 +301,19 @@ Body: Ya tienes la nota en la plataforma educativa pero te adjunto tu nota desgl
 Users can re share: false
 ```
 
+{:.section}
+## Citas para revisión de exámenes
+
+Si queremos preparar citas para revisar exámenes de manera individual recomiendo la plataforma de Google:
+
+- <https://calendar.google.com/calendar/u/0/r/appointment>
+
+Permite poner horarios personalizados y es totalmente gratuita.
+
+También existe la opción de usar Doodle aunque me parece menos versátil:
+
+- <https://doodle.com/es/>
+
 ## Bibliografía
 
 - <https://docs.moodle.org/all/es/Formato_GIFT#Caracteres_especiales_.7E_.3D_.23_.7B_.7D>
