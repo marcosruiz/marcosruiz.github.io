@@ -1,6 +1,6 @@
 ---
 title: "Animaciones en la web"
-date: 2024-11-18 9:00:00 +0100
+date: 2025-02-14 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
 img_path: /assets/img/animaciones-web/
@@ -24,6 +24,17 @@ Tenemos varias formas de añadir animación a la Web:
   - **GSAP (GreenSock)**, **Anime.js** y **Three.js** para animaciones avanzadas.
   - **LottieFiles** permite importar animaciones exportadas en formato JSON de Adobe After Effects.
 
+{:.section}
+## Tipos de animación
+
+En general, existen dos tipos de animaciones:
+
+- La animación **fotograma a fotograma** está pensada para realizar animaciones en las que cada fotograma tiene una ligera variación respecto al fotograma anterior. Este es el caso de los dibujos animados o cuando representamos el movimiento de un personaje.
+- La animación por **interpolación de fotogramas** está pensada para la realización de animaciones sencillas: un balón girando, un objeto desplazándose, un cambio de forma en un objeto, un cambio de color. Este tipo de animación se caracteriza por necesitar solamente dos fotogramas clave distintos, uno inicial y otro final, separados entre sí por una serie de fotograma intermedios. La interpolación es la que se va a encargar de crear todos los fotogramas intermedios que haya entre los dos fotogramas clave.
+  - **Interpolación de forma**: Es aquella que nos permite transformar un objeto en otro (un cuadrado en un círculo, o algo más complejo).
+  - **Interpolación de movimiento**: Es aquella que nos permite cambiar un objeto de posición, de tamaño y/o rotarlo.
+
+{:.section}
 ## Elementos de una animación
 
 Cuando hablamos de animaciones podemos mencionar 3 elementos:
@@ -69,12 +80,47 @@ Lo mas importante de las animaciones es usarlas cuando tengan sentido y no solo 
   </div>
 </details>
 
+{:.section}
 ## Transiciones vs animaciones
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sX5hzEMMQAI?si=NPLwISRM1XV-WJnJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+Preguntas sobre el vídeo:
+
+1. ¿Para qué se de una transición CSS es necesario un trigger?
+1. ¿Qué cuatro propiedades podemos definir en las transiciones CSS?
+1. ¿Qué palabra clave se usa para crear animaciones en CSS?
+1. ¿Para qué se de una animación CSS es necesario un trigger?
+1. ¿Qué web usa para ejecutar pruebas de diseño?
+1. ¿Se puede ejecutar una animación de manera infinita?
+1. ¿Podemos añadir varias animaciones al mismo tiempo utilizando una sola propiedad de CSS?
+1. Nombra un consejo de accesibilidad de la WCAG.
+1. ¿Qué web nombra con la que puedes calcular la luminancia de un color?
+1. ¿Qué son las timing-functions?
+1. ¿Qué opciones hay en las timing-functions?
+1. ¿Se pueden crear timing-functions personalizadas?
+1. ¿El truco para hacer una animación perfecta es ensayo y error?
+1. Según Noe Medina, ¿es recomendable que se muevan elementos de una web sin que haya una razón?
+1. Desde la consola de desarrollo de Google Chrome, ¿podemos los tiempos de las animaciones de manera gráfica?
+1. Según Noe Medina, ¿qué es más recomendable para animar una web? ¿CSS o JS?
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es la luminancia relativa?</summary>
+  <div class="card-body" markdown="1">
+
+La luminancia relativa del color es una medida de cuán brillante parece un color en comparación con un blanco de referencia, tomando en cuenta la forma en que el ojo humano percibe la luz. Se basa en la definición fotométrica de luminancia, pero con valores normalizados entre 0 (negro absoluto) y 1 o 100 (blanco absoluto).
+
+Se calcula ponderando la cantidad de luz emitida o reflejada por un color según la función de luminosidad de la CIE (Comisión Internacional de Iluminación), que refleja la sensibilidad del ojo humano a diferentes longitudes de onda.
+
+En la siguiente web <https://contrastchecker.online/color-relative-luminance-calculator> puedes obtener este valor de cualquier color.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 Lee el artículo [Transiciones vs. Animaciones](https://cssanimation.rocks/es/transition-vs-animation/).
 
+{:.section}
 ## Transformaciones
 
 Las transformaciones es simplemente usar una nueva propiedad de CSS llamada `transform`. Esta propiedad es como cualquier otra de CSS y no tiene nada que ver con las animaciones.
@@ -99,6 +145,7 @@ El listado de opciones es el siguiente:
 - `skewX(angle)`
 - `skewY(angle)`
 
+{:.subsection}
 ### Ejemplos de transformaciones
 
 Mover el elemento 50px en el eje X y 100px en el eje Y
@@ -170,6 +217,7 @@ El listado de opciones es el siguiente:
 > (Voluntario) Recuerda que tienes en W3Schools el artículo [CSS 2D Transforms](https://www.w3schools.com/css/css3_2dtransforms.asp) y [CSS 3D Transforms](https://www.w3schools.com/css/css3_3dtransforms.asp) a tu disposición en un inglés fácil de entender. También tienes el artículo de [mdn web docs sobre la propiedad transform](https://developer.mozilla.org/es/docs/Web/CSS/transform).
 {:.prompt-info}
 
+{:.subsection}
 ### Origen de la transformación
 
 Existe la propiedad transform-origin que permite especificar el punto desde el que se ejecuta la transformación. Por defecto es el centro del elemento.
@@ -197,54 +245,51 @@ Ejemplo completo con transiciones:
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>transform-origin</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
- 
-    </style>
- 
-    <style>
-        .l-center {
-            display: grid;
-            place-items: center;
-            width: 100%;
-            height: 50vw;
-        }
- 
-        .c-cuadrado {
-            border: 1px solid red;
-            background: lightpink;
-            width:200px;
-            height: 200px;
-            transition: transform 4s;
-            transform-origin: 0 0;
-        }
- 
-        .c-cuadrado:hover {
-            transform: rotate(360deg);
-        }
- 
- 
-    </style>
-  </head>
- 
-  <body>
-        <div class="l-center" >
-          <div class="c-cuadrado">Hola mundo</div>
-        </div>
-  </body>
+
+<head>
+  <title>transform-origin</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+
+  </style>
+
+  <style>
+    .l-center {
+      display: grid;
+      place-items: center;
+      width: 100%;
+      height: 50vw;
+    }
+
+    .c-cuadrado {
+      border: 1px solid red;
+      background: lightpink;
+      width: 200px;
+      height: 200px;
+      transition: transform 4s;
+      transform-origin: 0 0;
+    }
+
+    .c-cuadrado:hover {
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="l-center">
+    <div class="c-cuadrado">Hola mundo</div>
+  </div>
+</body>
+
 </html>
 ```
 
+{:.section}
 ## Transiciones
 
-Las transiciones se usan sobre todo para hacer cambios en los eventos de :
-
-- `:hover`
-- `:focus`
-- `Etc.`
+Las transiciones se usan sobre todo para hacer cambios en los eventos de `:hover`, `:focus`, etc.
 
 > (Voluntario) Mas información en [W3Schools CSS3 Transitions](https://www.w3schools.com/css/css3_transitions.asp).
 {:.prompt-info}
@@ -276,7 +321,7 @@ Veamos un ejemplo con `:hover` y después le vamos a añadir la transición para
 </html>
 ```
 
-En el ejemplo que acabo de poner, al pasar el cursos sobre el botón se añade una sombra y cambia el color de fondo.
+En el ejemplo que acabo de poner, al pasar el cursor sobre el botón se añade una sombra y cambia el color de fondo.
 
 Sin embargo el efecto queda mal ya que es muy brusco pasar de:
 
@@ -285,7 +330,7 @@ Sin embargo el efecto queda mal ya que es muy brusco pasar de:
 
 Para evitar ésto, usamos en CSS la transición de la siguiente forma:
 
-```css
+```plaintext
 transition: background-color 1s, box-shadow 1s;
 ```
 
@@ -294,42 +339,45 @@ Con la línea anterior se hace que el cambio del color y añadir la sombra se ha
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-      <style>
-        .c-button {
-          padding: 10px 20px 10px 20px;
-          background-color: #ffffff;
-          border: 1px solid #bbd4f7;
-          border-radius: 4px;
-          cursor: pointer;
-          transition: background-color 1s, box-shadow 1s;
-        }
-         
-        .c-button:hover {
-          background-color: #deebfc;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-      </style>
-    </head>
-    <body>
-      <button class="c-button">Aceptar</button>
-    </body>
+
+<head>
+  <style>
+    .c-button {
+      padding: 10px 20px 10px 20px;
+      background-color: #ffffff;
+      border: 1px solid #bbd4f7;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 1s, box-shadow 1s;
+    }
+
+    .c-button:hover {
+      background-color: #deebfc;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+  <button class="c-button">Aceptar</button>
+</body>
+
 </html>
 ```
 
-Podemos aplicar las transiciones a cualquier propiedad CSS que tenga un rango de valores , como al color, a la sombra o como podíais imaginar a las transiciones.
+Podemos aplicar las transiciones a cualquier propiedad CSS que tenga un rango de valores, como al color, a la sombra o como podíais imaginar a las transiciones.
 
-Por lo tanto , siempre que usemos `:hover` , `:focus` , etc, lo normal es añadir una `transition:` con las propiedades que hemos incluido en el `:hover` , `:focus`, etc.
+Por lo tanto, siempre que usemos `:hover`, `:focus`... lo normal es añadir una `transition` con las propiedades que hemos incluido en el `:hover` , `:focus`, etc.
 
 La forma concreta de la propiedad `transition` es:
 
 ```plaintext
-transition: propiedadCSS duracion timing-function retardo
+transition: <propiedadCSS> <duración> <timing-function> <retardo>
 ```
 
-- Propiedad CSS: La propiedad CSS a la que se le aplica la transición.
-- Duración: Duración en segundos de la transición
-- Timing-function: La velocidad de la transición. Sus valores son:
+- `<propiedadCSS>`: La propiedad CSS a la que se le aplica la transición.
+- `<duración>`: Duración en segundos de la transición
+- `<timing-function>`: La velocidad de la transición. Sus valores son:
   - `linear`: Velocidad constante.
   - `ease`
   - `ease-in`: Aceleración constante.
@@ -337,7 +385,7 @@ transition: propiedadCSS duracion timing-function retardo
   - `ease-in-out`
   - `steps(pasos)`
   - `cubic-bezier(n,n,n,n)`
-- Retardo: Cuanto tiempo en segundos tarda en empezar la transición. Por ejemplo en hover, lo correcto es hacer que no empiece la animación enseguida ya pasando rápido el curso se empieza a hacer y queda feo si no nos detenemos. Por eso hay que poner un retardo de al menos 0.3s
+- `<retardo>`: Cuanto tiempo en segundos tarda en empezar la transición. Por ejemplo en hover, lo correcto es hacer que no empiece la animación enseguida ya pasando rápido el curso se empieza a hacer y queda feo si no nos detenemos. Por eso hay que poner un retardo de al menos 0.3s
 
 > (Voluntario) Más información de la timing-function en [W3Schools CSS transition-timing-function Property](https://www.w3schools.com/cssref/css3_pr_transition-timing-function.php) y en [mdn web docs transition-timing-function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function).
 {:.prompt-info}
@@ -348,24 +396,26 @@ Por ejemplo:
 transition: width 3s ease-in-out 2s
 ```
 
-Se cambiará el ancho . Durará 3 segundos. Empezará y terminará mas lentamente . Empezará con 2 segundos de retardo.
+Se cambiará el ancho. Durará 3 segundos. Empezará y terminará mas lentamente. Empezará con 2 segundos de retardo.
 
 Como pasa mucho en las propiedades CSS se puede poner también como varias propiedades independientes:
 
 ```css
-transition-property:width;
-transition-duration:3s;
-transition-timing-function:ease-in-out;
-transition-delay:2s;
+transition-property: width;
+transition-duration: 3s;
+transition-timing-function: ease-in-out;
+transition-delay: 2s;
 ```
 
+{:.section}
 ## Animaciones
 
-Las animaciones son similares a las transiciones pero mas potentes además que suelen usarse desde JavaScript.
+Las animaciones son similares a las transiciones pero más potentes además que suelen usarse desde JavaScript.
 
-(Voluntario) Recuerda que tienes a tu disposición la web de W3Schools con el artículo [CSS3 Animations](https://www.w3schools.com/css/css3_animations.asp) para consulta.
+> (Voluntario) Recuerda que tienes a tu disposición la web de W3Schools con el artículo [CSS3 Animations](https://www.w3schools.com/css/css3_animations.asp) para consulta.
+{:.prompt-info}
 
-Las animaciones constan de dos apartados distintos.
+Las animaciones constan de dos apartados distintos:
 
 - La definición de la propia animación con `@keyframes`.
 - Los parámetros de la animación con la propiedad `animation`.
@@ -375,45 +425,48 @@ Veamos un ejemplo:
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .c-cuadrado {
-              width: 100px;
-              height: 100px;
-              background-color: #bbd4f7;
-              border-radius: 4px;
-            }
-             
-            .c-cuadrado--girar {
-              animation-name: animacion-girar;
-              animation-duration: 3s;
-            }
-             
-             
-            @keyframes animacion-girar {
-              0% {
-                transform: rotate(0deg);
-                background-color: #bbd4f7;
-              }
-               
-              50% {
-                transform: rotate(360deg);
-                background-color: #1C4673;
-              }
-               
-              100% {
-                transform: rotate(0deg);
-                background-color: #bbd4f7;
-              }  
-               
-            }
-        </style>
-    </head>
-    <body>
-        <div style="padding:200px">
-            <div id="cuadrado1" class="c-cuadrado c-cuadrado--girar">Hola</div>
-        </div>
-    </body>
+
+<head>
+  <style>
+    .c-cuadrado {
+      width: 100px;
+      height: 100px;
+      background-color: #bbd4f7;
+      border-radius: 4px;
+    }
+
+    .c-cuadrado--girar {
+      animation-name: animacion-girar;
+      animation-duration: 3s;
+    }
+
+
+    @keyframes animacion-girar {
+      0% {
+        transform: rotate(0deg);
+        background-color: #bbd4f7;
+      }
+
+      50% {
+        transform: rotate(360deg);
+        background-color: #1C4673;
+      }
+
+      100% {
+        transform: rotate(0deg);
+        background-color: #bbd4f7;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div style="padding:200px">
+    <div id="cuadrado1" class="c-cuadrado c-cuadrado--girar">Hola</div>
+  </div>
+</body>
+
 </html>
 ```
 
@@ -448,17 +501,18 @@ Luego dentro de la clase `c-cuadrado--girar` indicamos que animación aplicar y 
 - `paused`: Empieza pausada
 - `animation`: La unión de todas las anteriores
 
-### JavaScript
+{:.subsection}
+### Animaciones con JavaScript
 
 Para volver a ejecutar la animación desde JavaScript se hace de la siguiente forma:
 
 ```javascript
 function animar() {
-    var cuadradoElement=document.getElementById("cuadrado1");
-    cuadradoElement.classList.remove("c-cuadrado--girar");
-    setTimeout(function() {
-        cuadradoElement.classList.add("c-cuadrado--girar");
-    },10);
+  var cuadradoElement=document.getElementById("cuadrado1");
+  cuadradoElement.classList.remove("c-cuadrado--girar");
+  setTimeout(function() {
+    cuadradoElement.classList.add("c-cuadrado--girar");
+  },10);
 }
 ```
 
@@ -466,11 +520,12 @@ function animar() {
 <button onclick="animar()">Animar</button>
 ```
 
-Es decir que hay que quitar la clase CSS que tiene la animación y volver a ponerla. El problema es que si la quitas y la vuelves a poner , el navegador no se entera. Así que hay que hacer el truco de quitarla , esperar 10 ms con un timeout y añadir la clase.
+Es decir que hay que quitar la clase CSS que tiene la animación y volver a ponerla. El problema es que si la quitas y la vuelves a poner, el navegador no se entera. Así que hay que hacer el truco de quitarla, esperar 10 ms con un timeout y añadir la clase.
 
 > (Voluntario) Tienes el artículo [Window setTimeout() de W3Schools](https://www.w3schools.com/jsref/met_win_settimeout.asp) a tu disposición para consulta.
 {:.prompt-info}
 
+{:.subsubsection}
 #### Movimiento de una campana
 
 En este apartado podéis ver el movimiento real que haría una campana. Para hacer el movimiento real se han usado las fórmulas físicas que describen el movimiento de dicha campana. Está con rozamiento y sin él.
@@ -478,9 +533,19 @@ En este apartado podéis ver el movimiento real que haría una campana. Para hac
 - [campana.html](/assets/img/animaciones-web/campana.html): Ejemplo de movimiento de la campana
 - [calculos_movimiento_campana.xlsx](/assets/img/animaciones-web/calculos_movimiento_campana.xlsx): Excel con el cálculo de los movimiento siguiendo la fórmula física
 
+{:.question}
+¿Se puede integrar audio sincronizado con, por ejemplo, la animación de una campana? ¿Cómo?
+
+{:.question}
+¿Se puede añadir una animación a un video con CSS?
+
+{:.question}
+¿Se puede parar una animación?
+
+{:.section}
 ## Animaciones simétricas
 
-La animación que hemos visto , vuelve al mismo sitio. Si queremos una animación que haga eso , no es necesario definir la ida y la vuelta. Es tan sencillo como solo definir la ida y decir que vuelva.
+La animación que hemos visto, vuelve al mismo sitio. Si queremos una animación que haga eso, no es necesario definir la ida y la vuelta. Es tan sencillo como solo definir la ida y decir que vuelva.
 
 Eso se consigue de la siguiente forma:
 
@@ -491,8 +556,7 @@ Eso se consigue de la siguiente forma:
   animation-iteration-count: 2;
   animation-direction: alternate;
 }
- 
- 
+
 @keyframes animacion-girar {
   0% {
     transform: rotate(0deg);
@@ -515,6 +579,9 @@ Los cambios que hemos hecho son los siguientes:
 
 Y con éste truco siempre tenemos una animación de ida y vuelta.
 
+{:.question}
+¿Qué es una animación simétrica?
+
 ## Bibliografía
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
@@ -524,6 +591,7 @@ Y con éste truco siempre tenemos una animación de ida y vuelta.
 - <https://www.youtube.com/watch?v=MXMlTOnZSvo>
 - <https://www.smashingmagazine.com/2011/09/the-guide-to-css-animation-principles-and-examples/>
 - <https://www.kirupa.com/html5/css3_animations_vs_transitions.htm>
+- <https://contrastchecker.online/color-relative-luminance-calculator>
 
 animation-timing-function:
 
