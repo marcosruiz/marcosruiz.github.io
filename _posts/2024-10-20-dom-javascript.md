@@ -11,13 +11,17 @@ img_path: /assets/img/dom-javascript/
 
 El Modelo de Objetos del Documento (DOM), permite ver el mismo documento HTML de otra manera, describiendo el contenido del documento como un árbol de nodos, sobre los que un programa de Javascript puede interactuar.
 
+El DOM (Document Object Model) es una interfaz de programación (API) que permite a los scripts actualizar el contenido, la estructura y el estilo de un documento (HTML y XML) mientras este se está visualizando en el navegador. 
+
+A través del DOM los programas pueden acceder y modificar el contenido, estructura y estilo de los documentos HTML y XML, que es para lo que se diseñó principalmente. El responsable del DOM es el W3C.
+
+El DOM transforma todos los documentos HTML en un conjunto de elementos, a los que llama nodos. En el HTML DOM cada nodo es un objeto. Estos nodos están conectados entre sí y representan los contenidos de la página web, y la relación que hay entre ellos. Cuando unimos todos estos nodos de forma jerárquica, obtenemos una estructura similar a un árbol, por lo que muchas veces se suele referenciar como árbol DOM, "árbol de nodos", etc.
+
 ![Estructura DOM simple](que-es-dom-1.png)
 _Estructura DOM simple_
 
-![Estructura DOM más detallada](estructuraDom.png)
+![Estructura DOM más detallada](estructuraDom2.png)
 _Estructura DOM más detallada_
-
-El DOM (Document Object Model) es una interfaz de programación que permite a los scripts actualizar el contenido, la estructura y el estilo de un documento mientras este se está visualizando en el navegador.
 
 (Voluntario) Mira el siguiente vídeo:
 
@@ -58,6 +62,19 @@ No.
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
+
+{:.section}
+## Tipos de nodos
+
+La especificación del DOM define 12 tipos de nodos, aunque generalmente nosotros emplearemos solamente cuatro o cinco tipos de nodos:
+
+- `Document`, es el nodo raíz y del que derivan todos los demás nodos del árbol.
+- `Element`, representa cada una de las etiquetas HTML. Es el único nodo que puede contener atributos y el único del que pueden derivar otros nodos.
+- `Attr`, con este tipo de nodos representamos los atributos de las etiquetas HTML, es decir, un nodo por cada atributo=valor.
+- `Text`, es el nodo que contiene el texto encerrado por una etiqueta HTML.
+- `Comment`, representa los comentarios incluidos en la página HTML.
+
+Los otros tipos de nodos pueden ser: `CdataSection`, `DocumentFragment`, `DocumentType`, `EntityReference`, `Entity`, `Notation` y `ProcessingInstruction`.
 
 {:.section}
 ## Objeto document
@@ -109,7 +126,13 @@ Este objeto forma parte además del objeto `window`, y puede ser accedido a trav
 {:.section}
 ## Buscar nodos en el DOM
 
-Para manipular elementos del DOM, primero debemos encontrarlos. Los métodos más comunes son:
+Cuando ya se ha construido automáticamente el árbol de nodos del DOM, ya podemos comenzar a utilizar sus funciones para acceder a cualquier nodo del árbol. El acceder a un nodo del árbol, es lo equivalente a acceder a un fragmento de la página de nuestro documento. Así que, una vez que hemos accedido a esa parte del documento, ya podemos modificar valores, crear y añadir nuevos elementos, moverlos de sitio, etc.
+
+Para acceder a un nodo específico lo podemos hacer empleando dos métodos: o bien a través de los nodos padre, o bien usando un método de acceso directo. A través de los nodos padre partiremos del nodo raíz e iremos accediendo a los nodos hijo, y así sucesivamente hasta llegar al elemento que deseemos. Y para el método de acceso directo, que por cierto es el método más utilizado, emplearemos funciones del DOM, que nos permiten ir directamente a un elemento sin tener que atravesar nodo a nodo.
+
+Algo muy importante que tenemos que destacar es, que para que podamos acceder a todos los nodos de un árbol, el árbol tiene que estar completamente construido, es decir, cuando la página haya sido cargada por completo, en ese momento es cuando podremos acceder a cualquier elemento de dicha página.
+
+Los métodos más comunes son para encontrar nodos son:
 
 - `document.getElementById(id)`: Encuentra un elemento por su ID.
 - `getElementsByTagName(tag)`: Encuentra todos los elementos con un nombre de etiqueta específico.
@@ -181,6 +204,104 @@ _Jerarquía de clases del DOM_
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
+
+### Buscar nodos de tipo atributo
+
+Para referenciar un atributo, como por ejemplo el atributo type="text" del campo "apellidos", emplearemos la colección attributes. Dependiendo del navegador, esta colección se podrá cubrir de diferentes maneras y podrán existir muchos pares en la colección, tantos como atributos tenga el elemento.
+
+Por ejemplo:
+
+```html
+<input type="text" id="apellidos" name="apellidos" /> 
+```
+
+Para imprimir todos los atributos del elemento "apellidos", podríamos hacer un bucle que recorriera todos esos atributos imprimiendo su valor:
+
+```javascript
+document.write("<br/>El elemento <b>apellidos</b> contiene los pares atributo -> valor: <br/>");
+for( let x = 0; x < document.getElementById("apellidos").attributes.length; x++) {
+  var atributo = document.getElementById("apellidos").attributes[x];
+  document.write(atributo.nodeName + " -> " + atributo.nodeValue+"<br/>");
+}
+```
+
+También podemos modificar los valores de un atributo de un nodo manualmente, por ejemplo:
+
+```javascript
+document.getElementById("apellidos").attributes[0].nodeValue="password";
+// En este caso hemos modificado el type del campo apellidos y lo hemos puesto de tipo “password”.
+```
+
+O también:
+
+```javascript
+document.getElementById("apellidos").attributes["type"].nodeValue="password";
+// hemos puesto el nombre del atributo como referencia en el array de atributos.
+```
+
+O también:
+
+```javascript
+document.getElementById("apellidos").type="password";
+// hemos puesto el atributo como una propiedad del objeto apellidos y lo hemos modificado.
+```
+
+El método `setAttribute()` nos permitirá crear o modificar atributos de un elemento. Por ejemplo, para ponerle de nuevo al campo "apellidos" `type='text'` y un `value='Cid Blanco'`, haríamos:
+
+```javascript
+document.getElementById("apellidos").setAttribute('type' ,'text');
+document.getElementById("apellidos").setAttribute('value', 'Cid Blanco');
+```
+
+Si lo que quieres realmente es chequear el valor del atributo y no modificarlo, se puede utilizar `getAttribute()`:
+
+```javascript
+let valor = document.getElementById("apellidos").getAttribute('type');
+// o también
+let valor= document.getElementById("apellidos").type;
+```
+
+Y si lo que quieres es eliminar un atributo, lo podemos hacer con `removeAttribute()`:
+
+```javascript
+// <div id="contenedor" align="left" width="200px"> 
+document.getElementById("contenedor").removeAttribute("align"); 
+// Obtendremos como resultado: <div id="contenedor" width="200px">
+```
+
+### Buscar nodos de tipo texto
+
+Para ver cómo podemos acceder a la información textual de un nodo, nos basaremos en el siguiente ejemplo:
+
+```html
+<p title="Texto de un párrafo">Esto es un ejemplo de <b>texto HTML<br/> que puedes tener</b> en tu documento.</p>
+```
+
+Para poder referenciar el fragmento "texto HTML" del nodo p, lo que haremos será utilizar la colección childNodes. Con la colección childNodes accederemos a los nodos hijo de un elemento, ya sean de tipo elemento o texto.
+
+Aquí puedes ver una imagen del árbol para ese elemento en cuestión:
+
+![Árbol de nodos del elemento p](nodoTipoTexto.png)
+_Árbol de nodos del elemento p_
+
+Y el código de JavaScript para mostrar una alerta, con el contenido "texto HTML", sería:
+
+```javascript
+alert(document.getElementsByTagName("p")[0].childNodes[1].childNodes[0].nodeValue);
+```
+
+- `childNodes[1]`: selecciona el segundo hijo de `<p>` que sería el elemento `<b>` (el primer hijo es un nodo de tipo Texto "Esto es un...").
+- `childNodes[0]`: selecciona el primer hijo del elemento `<b>` que es el nodo de texto "texto HTML".
+
+En lugar de `childNodes[0]` también podríamos haber utilizado `firstChild`, el cuál nos devuelve el primer hijo de un nodo.
+
+Por ejemplo:
+
+```javascript
+alert(document.getElementsByTagName("p")[0].childNodes[1].firstChild.nodeValue);
+```
+
+El tamaño máximo de lo que se puede almacenar en un nodo de texto, depende del navegador, por lo que muchas veces, si el texto es muy largo, tendremos que consultar varios nodos para ver todo el contenido.
 
 {:.section}
 ## Modificar nodos del DOM
@@ -262,6 +383,71 @@ element.classList.remove('old-class');
 Se pueden crear elementos totalmente de forma programática. Pero puede ser tedioso. Muchas veces, si sabemos que hay fragmentos de HTML bastante estáticos, podemos usar `innerHTML` y `.append()` con plantillas creadas mediante strings.
 
 Para crear elementos del DOM mediante plantillas hay muchas formas. Obviaremos las más farragosas y nos centraremos en aquellas que son más rápidas.
+
+{:.subsection}
+### Creación básica de elementos
+
+Podemos crear elementos y luego insertarlos en el DOM, y la actualización quedará reflejada automáticamente por el navegador.
+
+Usaremos los métodos `createElement()`, `createTextNode()` y `appendChild()`, que nos permitirán crear un elemento, crear un nodo de texto y añadir un nuevo nodo hijo.
+
+Ejemplo de creación de un nuevo párrafo, suponiendo que partimos del siguiente código:
+
+```html
+<p title="Texto de un párrafo" id="parrafo">Esto es un ejemplo de <b>texto HTML<br /> que puedes tener</b> en tu documento.</p>
+```
+
+Para crear el nuevo párrafo haremos:
+
+```javascript
+let nuevoParrafo = document.createElement('p');
+let nuevoTexto = document.createTextNode('Contenido añadido al párrafo.');
+nuevoParrafo.appendChild(nuevoTexto);
+document.getElementById('parrafo').appendChild(nuevoParrafo);
+```
+
+Y obtendremos como resultado:
+
+```html
+<p id="parrafo" title="Texto de un párrafo">
+  Esto es un ejemplo de <b>texto HTML<br>que puedes tener</b>en tu documento. <p>Contenido añadido al párrafo.</p> 
+</p>
+```
+
+Podríamos haber utilizado `insertBefore` en lugar de `appendChild` o, incluso, añadir manualmente el nuevo elemento al final de la colección de nodos `childNodes`. Si usamos `replaceChild`, incluso podríamos sobrescribir nodos ya existentes. También es posible copiar un nodo usando `cloneNode(true)`. Ésto devolverá una copia del nodo, pero no lo añade automáticamente a la colección childNodes.
+
+Para eliminar un nodo existente, lo podremos hacer con `element.removeChild(referencia al nodo hijo)`.
+
+Ejemplo de creación de elementos e inserción en el documento:
+
+```javascript
+//Creamos tres elementos nuevos: p, b, br
+let elementoP = document.createElement('p');
+let elementoB = document.createElement('b');
+let elementoBR = document.createElement('br');
+
+//Le asignamos un nuevo atributo title al elementoP que hemos creado.
+elementoP.setAttribute('title','Parrafo creado desde JavaScript');
+
+//Preparamos los nodos de texto
+let texto1 = document.createTextNode('Con JavaScript se ');
+let texto2 = document.createTextNode('pueden realizar ');
+let texto3 = document.createTextNode('un monton');
+let texto4 = document.createTextNode(' de cosas sobre el documento.');
+
+//Añadimos al elemento B los nodos de texto2, elemento BR y texto3.
+elementoB.appendChild(texto2);
+elementoB.appendChild(elementoBR);
+elementoB.appendChild(texto3);
+
+//Añadimos al elemento P los nodos de texto1, elemento B y texto 4.
+elementoP.appendChild(texto1);
+elementoP.appendChild(elementoB);
+elementoP.appendChild(texto4);
+
+//insertamos el nuevo párrafo como un nuevo hijo de nuestro parrafo
+document.getElementById('parrafo').appendChild(elementoP);
+```
 
 {:.subsection}
 ### Creación de elementos con Template Literals

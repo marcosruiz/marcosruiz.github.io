@@ -16,8 +16,6 @@ pin: true
   - [Tipos de datos en JavaScript](/posts/tipos-datos-javascript)
 - UD3 - Utilización de los objetos predefinidos del lenguaje.
   - [Objetos nativos en JavaScript](/posts/objetos-nativos-javascript)
-  - [¿Qué es el BOM?](/posts/bom-javascript)
-  - [¿Qué es el DOM?](/posts/dom-javascript)
 - UD4 - Arrays, funciones y objetos en JavaScript
   - [Arrays en JavaScript](/posts/arrays-javascript)
   - [Funciones en JavaScript](/posts/funciones-javascript/)
@@ -35,6 +33,8 @@ pin: true
   - [Expresiones regulares](/posts/expresiones-regulares)
   - [Gestión de cookies en JavaScript](/posts/cookies)
 - UD6 - Utilización del modelo de objetos del documento (DOM).
+  - [¿Qué es el BOM?](/posts/bom-javascript)
+  - [¿Qué es el DOM?](/posts/dom-javascript)
 - UD7 - Utilización de mecanismos de comunicación asíncrona.
 
 - T01 - [Tarea: Entorno de desarrollo para JavaScript](/posts/tarea-entorno-desarrollo-javascript/)
