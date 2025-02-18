@@ -35,6 +35,7 @@ pin: true
 - UD6 - Utilización del modelo de objetos del documento (DOM).
   - [¿Qué es el BOM?](/posts/bom-javascript)
   - [¿Qué es el DOM?](/posts/dom-javascript)
+  - [Propagación de eventos en JavaScript](/posts/propagacion-eventos-javascript/)
 - UD7 - Utilización de mecanismos de comunicación asíncrona.
 
 - T01 - [Tarea: Entorno de desarrollo para JavaScript](/posts/tarea-entorno-desarrollo-javascript/)

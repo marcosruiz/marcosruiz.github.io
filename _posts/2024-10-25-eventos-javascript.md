@@ -330,95 +330,6 @@ Sólo si la hemos guardado en una variable antes de llamar a `addEventListener()
 En este ejemplo, manejador es una función que maneja tanto el evento `mouseover` como `mouseout`. Utiliza el objeto `Event` para obtener información sobre el tipo de evento (`e.type`) y el objetivo del evento (`e.target`), que es el elemento que disparó el evento.
 
 {:.section}
-## Propagación y captura de eventos
-
-Los eventos se propagan desde el elemento que los desencadena hacia sus elementos padre. Se puede capturar un evento durante esta propagación y realizar acciones diferentes según el elemento específico que lo desencadenó. Para detener la propagación de un evento a elementos padre, se usa `event.stopPropagation()`.
-
-```javascript
-<div id="padre">
-    <div id="hijo">
-        <button id="boton">Haz clic aquí</button>
-    </div>
-</div>
-```
-
-```javascript
-document.getElementById('boton').addEventListener('click', function(event) {
-    alert('Haz clic en el botón hijo');
-    event.stopPropagation(); // Detiene la propagación del evento hacia arriba
-});
-
-document.getElementById('hijo').addEventListener('click', function(event) {
-    alert('Haz clic en el div hijo');
-});
-
-document.getElementById('padre').addEventListener('click', function(event) {
-    alert('Haz clic en el div padre');
-});
-```
-
-La propagación de eventos permite que los eventos desencadenados en elementos hijos se propaguen hacia sus elementos padres. Esta característica es muy útil para enviar datos desde elementos hijos a sus elementos padres mediante eventos personalizados y es fundamental en el funcionamiento de los componentes en varios frameworks de JavaScript como React, Vue.js y Angular.
-
-La propagación de eventos tiene dos fases principales:
-
-- **Capturing Phase**: La fase en la que el evento se propaga desde el documento raíz hasta el objetivo del evento.
-- **Bubbling Phase**: La fase en la que el evento se propaga desde el objetivo del evento hacia el documento raíz.
-
-{:.section}
-## Enviar Datos de Hijos a Padres con Eventos Personalizados
-
-Los eventos personalizados se pueden utilizar para comunicar datos desde un componente hijo a un componente padre. A continuación se muestra un ejemplo de cómo se puede lograr esto en un entorno sin frameworks, utilizando la propagación de eventos del DOM:
-
-```javascript
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Custom Event Example</title>
-</head>
-<body>
-    <div id="parent"></div>
-    <script>
-        // Crear el elemento hijo
-        const child = document.createElement('button');
-        child.textContent = 'Click me';
-
-        // Crear el elemento padre
-        const parent = document.getElementById('parent');
-        parent.appendChild(child);
-
-        // Añadir un evento personalizado al hijo
-        child.addEventListener('click', () => {
-            const customEvent = new CustomEvent('childEvent', { 
-                bubbles: true,  // para que se propague
-                detail: { message: 'Hello from child' }
-            });
-            child.dispatchEvent(customEvent);
-        });
-
-        // Añadir un listener en el padre para capturar el evento del hijo
-        parent.addEventListener('childEvent', (event) => { 
-            console.log('Received message from child:', event.detail.message);
-        });
-    </script>
-</body>
-</html>
-```
-
-En este ejemplo:
-
-- **Elemento hijo** (`child`): Cuando se hace clic en el botón, se dispara un evento personalizado `childEvent` con algunos datos en la propiedad detail.
-- **Elemento padre** (`parent`): El padre escucha el evento `childEvent` y maneja los datos recibidos del hijo.
-
-En React, los datos de un componente hijo se envían a un componente padre mediante la elevación del estado y callbacks, en lugar de utilizar directamente la propagación de eventos del DOM.
-
-En Vue.js, la comunicación de hijos a padres se realiza mediante la emisión de eventos personalizados.
-
-Angular También proporciona `@Output` que crea un evento que es capturado por el componente padre.
-
-Ejercicio de eventos y propagación: <https://jsfiddle.net/xxjcaxx/wep0c2j9/1/>
-
-{:.section}
 ## Tipos de eventos
 
 Lee el artículo [Eventos de navegador: ¿Qué son?](https://lenguajejs.com/javascript/eventos-navegador/que-son/)
@@ -433,7 +344,125 @@ Lee el artículo [Desestructuración en JavaScript](/posts/desestructuracion-jav
   </div>
 </details>
 
-A continuación, nos centraremos en los eventos de teclado y eventos de puntero.
+Existen diferentes tipos de eventos:
+
+- Eventos de dispositivo de entrada
+  - Eventos de ratón
+  - Eventos de teclado
+  - Eventos de puntero. Combina eventos de ratón, táctiles y stylus.
+  - Eventos táctiles
+- Eventos de control de formularios
+- Eventos de documento
+- Eventos de arrastrar y soltar o drag&drop
+- Etc.
+
+En las siguientes subsecciones nos centraremos en algunos de ellos.
+
+{:.subsection}
+### Eventos de ratón
+
+Los eventos del ratón son uno de los eventos más importantes en JavaScript.
+
+Cada vez que un usuario hace click en un elemento, al menos se disparan tres eventos y en el siguiente orden:
+
+1. `mousedown` cuando el usuario presiona el botón del ratón sobre el elemento.
+1. `mouseup` cuando el usuario suelta el botón del ratón.
+1. `click` cuando el usuario pulsa y suelta el botón sobre el elemento.
+
+Si por ejemplo presionamos el botón sobre un elemento A, nos desplazamos y soltamos el botón sobre otro elemento B, se detectarán solamente los eventos de `mousedown` sobre A y `mouseup` sobre B, pero no se detectará el evento de `click`.
+
+El evento de `mousemove` funciona bastante bien, aunque tienes que tener en cuenta que la gestión de este evento le puede llevar cierto tiempo al sistema para su procesamiento. Por ejemplo si el ratón se mueve 1 pixel, y tienes programado el evento de `mousemove`, para cada movimiento que hagas, ese evento se disparará, independientemente de si el usuario realiza o no realiza ninguna otra opción. En ordenadores antiguos ésto puede ralentizar el sistema, ya que para cada movimiento del ratón estaría realizando las tareas adicionales programadas en la función. Por lo tanto se recomienda utilizar este evento sólo cuando haga falta, y desactivarlo cuando hayamos terminado.
+
+> Debemos tener mucho cuidado con que tipos de eventos vamos a usar si queremos que la web sea usable tanto en dispositivos móviles como en dispositivos de escritorio.
+{:.prompt-info}
+
+Otros eventos adicionales del ratón son los de `mouseover` y `mouseout`, que se producen cuando el ratón entra en la zona del elemento o sale del elemento. Si, por ejemplo, tenemos tres contenedores anidados divA, divB y divC: si programamos un evento de `mouseover` sobre el divA y nos vamos moviendo hacia el contenedor interno, veremos que ese evento sigue disparándose cuando estemos sobre divB o entremos en divC. Ésta reacción se debe al burbujeo de eventos. Ni en divB o divC tenemos registrado el evento de `mouseover`, pero cuando se produce el burbujeo de dicho evento, se encontrará que tenemos registrado ese evento en el contenedor padre divA y por eso se ejecutará.
+
+Muchas veces es necesario saber de dónde procede el ratón y hacia dónde va, y para ello W3C añadió la propiedad `relatedTarget` a los eventos de `mouseover` y `mouseout`. Esta propiedad contiene el elemento desde dónde viene el ratón en el caso de `mouseover`, o el elemento en el que acaba de entrar en el caso de `mouseout`.
+
+Para saber los botones del ratón que hemos pulsado, disponemos de la propiedad `button`. Los valores de la propiedad button pueden ser:
+
+- Botón izquierdo: 0
+- Botón medio: 1
+- Botón derecho: 2
+
+También es muy interesante conocer la posición en la que se encuentra el ratón, y para ello disponemos de varias de propiedades que nos facilitan esa información:
+
+- `clientX`, `clientY`: devuelven las coordenadas del ratón relativas a la ventana.
+- `offsetX`, `offsetY`: devuelven las coordenadas del ratón relativas al objeto destino del evento.
+- `pageX`, `pageY`: devuelven las coordenadas del ratón relativas al documento. Estas coordenadas son las más utilizadas.
+- `screenX`, `screenY`: devuelven las coordenadas del ratón relativas a la pantalla.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="coordenadas" name="coordenadas" size="12" />
+
+  <script type="text/javascript">
+    const mostrarCoordenadas = (event) => {
+      document.getElementById("coordenadas").value = event.clientX + " : " + event.clientY;
+    }
+    document.addEventListener('mousemove', mostrarCoordenadas, false);
+  </script>
+
+</body>
+</html>
+```
+
+{:.question}
+¿En qué parte de la pantalla están situadas las coordenadas 0, 0?
+
+Lee el artículo [Eventos de puntero](https://lenguajejs.com/javascript/eventos-navegador/pointer-event/).
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué evento usamos para trabajar con eventos realizados por el usuario con el ratón en JavaScript?</summary>
+  <div class="card-body" markdown="1">
+
+`MouseEvent`, `TouchEvent` o `PointerEvent`, siendo esta última la más conveniente ya que engloba a las dos anteriores.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Sabrías decir más de 5 tipos de dispositivos apuntadores?</summary>
+  <div class="card-body" markdown="1">
+
+Ratones, trackballs, lápiz óptico, touchpad, multitouch, trackpoint, etc.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question" markdown="1">
+  
+  ¿Cuándo se dispara el evento `auxclick` de un `PointerEvent?`?
+  
+  </summary>
+  <div class="card-body" markdown="1">
+
+Cuando hacemos click con el botón derecho.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+Los eventos de puntero o ratón son los siguientes:
+
+- `click`: Al hacer click sobre un elemento. Un click se define como mousedown y mouseup sobre la misma localización en pantalla.
+- `dblclick`: Al hacer doble click sobre un elemento.
+- `mousedown`: Al mantener presionado el botón del ratón sobre un elemento.
+- `mousedownmouseup`: Al soltar el botón del ratón que estaba sobre un elemento.
+- `mouseover`: Al pasar el ratón justo sobre un elemento.
+- `mousemove`: Cuando el ratón se mueve mientras está sobre un elemento.
+- `mouseout`: Cuando el ratón sale fuera de un elemento.
 
 {:.subsection}
 ### Eventos de teclado
@@ -450,7 +479,7 @@ document.getElementById('inputTexto').addEventListener('keydown', function(event
 });
 ```
 
-(Voluntario) Lee el artículo [Eventos de teclado](https://lenguajejs.com/javascript/eventos-navegador/keyboard-event/)
+Lee el artículo [Eventos de teclado](https://lenguajejs.com/javascript/eventos-navegador/keyboard-event/)
 
 <details class="card mb-2">
   <summary class="card-header question">¿Cuál es el objeto de navegador para capturar eventos del teclado?</summary>
@@ -509,89 +538,70 @@ La tecla del logo de Windows es llamada `metaKey`.
   </div>
 </details>
 
+Los eventos de teclado son los siguientes:
+
+- `keydown`: Se produce al presionar una tecla y mantenerla presionada. Este evento se dispara justo antes del evento `keypress`.
+- `keypress`: Se produce en el instante de presionar la tecla. Este evento se dispara después de `keydown`. En este evento, existe la propiedad `charCode` que devuelve 0 para las teclas especiales (`Shift`, `Alt`, `AltGr`, `Enter`, etc.) o el código del carácter de la tecla pulsada para las teclas normales, que contienen letras, números, y símbolos.
+- `keyup`: Se produce al soltar una tecla presionada.
+
+Para los 3 eventos existe la propiedad `keyCode` que devuelve el código interno de la tecla.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form name="formulario" id="formulario">
+    <label for="nombre">Nombre: </label>
+    <input type="text" id="nombre" name="nombre" />
+    <label for="apellidos">Apellidos: </label>
+    <input type="text" id="apellidos" name="apellidos" />
+    <label for="provincia">Provincia: </label>
+    <input type="text" id="provincia" name="provincia" />
+    <input type="button" id="enviar" value="Enviar" />
+  </form>
+
+  <script type="text/javascript">
+    const cambiar = (event) => {
+      // 13 es el código de la tecla Enter
+      if (event.keyCode == 13){
+        // event.target es el elemento actual. Con nextSibling accedemos a los siguientes elementos hermanos.
+        nextTarget = event.target.nextSibling.nextSibling.nextSibling.nextSibling;
+        if (nextTarget.type == "text"){
+          nextTarget.focus();
+        }
+      }
+    }
+    let inputs = document.getElementsByTagName("input");
+    for (let i = 0; i < inputs.length; i++) {
+      inputs[i].addEventListener("keypress", cambiar, false);
+    }
+  </script>
+</body>
+</html>
+```
+
 {:.subsection}
-### Eventos de puntero
+### Eventos de documento
 
-Lee el artículo [Eventos de puntero](https://lenguajejs.com/javascript/eventos-navegador/pointer-event/).
+Los eventos de de documento son:
 
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué evento usamos para trabajar con eventos realizados por el usuario con el ratón en JavaScript?</summary>
-  <div class="card-body" markdown="1">
-
-MouseEvent, TouchEvent o PointerEvent, siendo esta última la más conveniente ya que engloba a las dos anteriores.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Sabrías decir más de 5 tipos de dispositivos apuntadores?</summary>
-  <div class="card-body" markdown="1">
-
-Ratones, trackballs, lápiz óptico, touchpad, multitouch, trackpoint, etc.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-<details class="card mb-2">
-  <summary class="card-header question" markdown="1">
-  
-  ¿Cuándo se dispara el evento `auxclick` de un `PointerEvent?`?
-  
-  </summary>
-  <div class="card-body" markdown="1">
-
-Cuando hacemos click con el botón derecho.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
+- `load`: Se dispara cuando se ha terminado de cargar todo el contenido de un documento, incluyendo ventanas, frames, objetos e imágenes.
+- `DOMContentLoaded`: Se dispara cuando el DOM ha terminado de generarse.
+- `unload`: Al salir de un documento y modificar el contenido de una ventana.
+- `abort`: Cuando se detiene la carga de un objeto/imagen antes de que esté completamente cargado.
+- `error`: Cuando se detiene la carga de un objeto/imagen antes de que esté completamente cargado.
+- `resize`: Cuando se redimensiona un documento.
+- `scroll`: Cuando nos desplazamos por el documento con scroll.
 
 {:.section}
 ## Notas finales
 
 Cuando programamos para el Frontend, la manera de tratar el DOM es muy diversa. Si distinguimos entre una SPA y una web generada en el servidor con algo de Javascript, las técnicas son muy diferentes. En el caso de la SPA, es muy importante tener claro una arquitectura MVC o similar en la que unas plantillas se rellenen con los datos del servidor. La interactividad y el manejo de formularios se suele implementar toda en Javascript porque préviamente no habia nada de HTML. En una web más tradicional en la que el HTML ya está generado por el servidor, es importante saber buscar nodos y manipularlos sin romper la estructura previa. Por otro lado, está el Javascript enfocado a la parte visual: controlar el scroll, drag & drop, animaciones... En este tema se han puesto las bases, pero eso requiere un estudio por separado. Esta parte puede ser explorada más profundamente en el módulo de Diseño de Interfaces.
-
-{:.section}
-## (Voluntario) Para saber más...
-
-Lee el artículo [Escuchar eventos y handleEvent](https://lenguajejs.com/javascript/eventos/addeventlistener-handleevent/).
-
-Lee el artículo [El objeto Event](https://lenguajejs.com/javascript/eventos/objeto-event/).
-
-Lee el artículo [¿Qué son los Custom Events?](https://lenguajejs.com/javascript/custom-events/que-son/#custom-events)
-
-{:.question}
-¿Podemos crear eventos personalizados en JavaScript sin el uso de bibliotecas externas?
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Podemos disparar eventos desde código JavaScript?</summary>
-  <div class="card-body" markdown="1">
-
-Si.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-<details class="card mb-2">
-  <summary class="card-header question" markdown="1">
-  
-  ¿Podemos añadir información adicional al crear un objeto Event de la siguiente manera: `const event = new Event("click", { detail: 123 });`?
-  
-  </summary>
-  <div class="card-body" markdown="1">
-
-No.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-Lee el artículo [Emisión de eventos](https://lenguajejs.com/javascript/custom-events/emision-eventos/).
-
-Lee el artículo [Propagación de eventos](https://lenguajejs.com/javascript/custom-events/propagacion-eventos/).
 
 ## Bibliografía
 

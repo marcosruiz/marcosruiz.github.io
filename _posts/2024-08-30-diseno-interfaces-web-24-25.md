@@ -24,7 +24,7 @@ pin: true
 - UD4 - Audio y Vídeo en la Web
   - [Audio en la web](/posts/audio-web)
   - [Video en la web](/posts/video-web)
-- UD5 - Animaciones en la Web
+- UD5 - [Animaciones en la Web](/posts/animaciones-web/)
 - UD6 - Contenidos web interactivos
 - UD7 - [Usabilidad en la Web](/posts/usabilidad-web)
 - UD8 - Accesibilidad en la Web
