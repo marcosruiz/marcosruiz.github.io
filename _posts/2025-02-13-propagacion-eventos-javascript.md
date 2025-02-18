@@ -146,7 +146,7 @@ Lee el artículo [Propagación de eventos](https://lenguajejs.com/javascript/cus
 
 Los eventos personalizados se pueden utilizar para comunicar datos desde un componente hijo a un componente padre. A continuación se muestra un ejemplo de cómo se puede lograr esto en un entorno sin frameworks, utilizando la propagación de eventos del DOM:
 
-```javascript
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
