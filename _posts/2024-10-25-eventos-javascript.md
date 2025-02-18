@@ -611,3 +611,4 @@ Cuando programamos para el Frontend, la manera de tratar el DOM es muy diversa. 
 - <https://fwhibbit.es/basics-of-javascript>
 - <https://jonmircha.com/javascript-asincrono>
 - <https://es.javascript.info/>
+- <https://www.w3schools.com/jsref/dom_obj_event.asp>
