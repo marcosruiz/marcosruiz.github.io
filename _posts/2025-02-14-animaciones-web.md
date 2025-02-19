@@ -24,6 +24,8 @@ Tenemos varias formas de añadir animación a la Web:
   - **GSAP (GreenSock)**, **Anime.js** y **Three.js** para animaciones avanzadas.
   - **LottieFiles** permite importar animaciones exportadas en formato JSON de Adobe After Effects.
 
+Lee el artículo [¿Qué son las animaciones?](https://lenguajecss.com/animaciones/bases/que-son-animaciones/).
+
 {:.section}
 ## Tipos de animación
 
@@ -33,6 +35,8 @@ En general, existen dos tipos de animaciones:
 - La animación por **interpolación de fotogramas** está pensada para la realización de animaciones sencillas: un balón girando, un objeto desplazándose, un cambio de forma en un objeto, un cambio de color. Este tipo de animación se caracteriza por necesitar solamente dos fotogramas clave distintos, uno inicial y otro final, separados entre sí por una serie de fotograma intermedios. La interpolación es la que se va a encargar de crear todos los fotogramas intermedios que haya entre los dos fotogramas clave.
   - **Interpolación de forma**: Es aquella que nos permite transformar un objeto en otro (un cuadrado en un círculo, o algo más complejo).
   - **Interpolación de movimiento**: Es aquella que nos permite cambiar un objeto de posición, de tamaño y/o rotarlo.
+
+Lee el artículo [Tipos de animaciones](https://lenguajecss.com/animaciones/bases/tipos-animaciones/).
 
 {:.section}
 ## Elementos de una animación
@@ -291,6 +295,8 @@ Ejemplo completo con transiciones:
 
 Las transiciones se usan sobre todo para hacer cambios en los eventos de `:hover`, `:focus`, etc.
 
+Lee el artículo [¿Qué son las transiciones?](https://lenguajecss.com/animaciones/transiciones/que-son/), el artículo [Transiciones CSS](https://lenguajecss.com/animaciones/transiciones/transition/) y el artículo [La regla @starting-style](https://lenguajecss.com/animaciones/transiciones/starting-style/).
+
 > (Voluntario) Mas información en [W3Schools CSS3 Transitions](https://www.w3schools.com/css/css3_transitions.asp).
 {:.prompt-info}
 
@@ -407,10 +413,14 @@ transition-timing-function: ease-in-out;
 transition-delay: 2s;
 ```
 
+Lee el artículo [¿Qué son las funciones de tiempo?](https://lenguajecss.com/animaciones/timing-functions/que-son/).
+
 {:.section}
 ## Animaciones
 
 Las animaciones son similares a las transiciones pero más potentes además que suelen usarse desde JavaScript.
+
+Lee el artículo [¿Qué son las animaciones?](https://lenguajecss.com/animaciones/animaciones/que-son/), [Animaciones CSS](https://lenguajecss.com/animaciones/animaciones/animaciones/) y [La regla @keyframes](https://lenguajecss.com/animaciones/animaciones/keyframes/).
 
 > (Voluntario) Recuerda que tienes a tu disposición la web de W3Schools con el artículo [CSS3 Animations](https://www.w3schools.com/css/css3_animations.asp) para consulta.
 {:.prompt-info}
@@ -592,6 +602,7 @@ Y con éste truco siempre tenemos una animación de ida y vuelta.
 - <https://www.smashingmagazine.com/2011/09/the-guide-to-css-animation-principles-and-examples/>
 - <https://www.kirupa.com/html5/css3_animations_vs_transitions.htm>
 - <https://contrastchecker.online/color-relative-luminance-calculator>
+- <https://lenguajecss.com/animaciones/>
 
 animation-timing-function:
 
