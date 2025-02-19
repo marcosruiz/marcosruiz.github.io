@@ -122,8 +122,6 @@ En la siguiente web <https://contrastchecker.online/color-relative-luminance-cal
   </div>
 </details>
 
-Lee el artículo [Transiciones vs. Animaciones](https://cssanimation.rocks/es/transition-vs-animation/).
-
 {:.section}
 ## Transformaciones
 
