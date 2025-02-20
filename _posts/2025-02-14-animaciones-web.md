@@ -432,6 +432,24 @@ transition-delay: 2s;
 
 Lee el artículo [¿Qué son las funciones de tiempo?](https://lenguajecss.com/animaciones/timing-functions/que-son/).
 
+Preguntas:
+
+1. ¿Existe la propiedad `transition-timing-function`?
+1. ¿Cuál es la timing-function que tiene un ritmo lento al principio, rápido al final?
+1. ¿Cuál es la timing-function que se usa por defecto por el navegador?
+
+Mira el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hiRIjRf2QD8?si=0itxR4Uv9w6bzvIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Preguntas:
+
+1. ¿Podemos hacer una transición de tiempo personalizada?
+1. ¿Para que sirve la función `cubic-bezier()` de CSS?
+1. ¿Podemos dar valores fuera del rango de [0,1] en la función `cubic-bezier()`?
+1. ¿Para qué sirven las funciones de salto?
+1. ¿Se pueden hacer GIFS con animaciones CSS?
+
 {:.section}
 ## Animaciones
 
