@@ -295,6 +295,25 @@ Las transiciones se usan sobre todo para hacer cambios en los eventos de `:hover
 
 Lee el artículo [¿Qué son las transiciones?](https://lenguajecss.com/animaciones/transiciones/que-son/), el artículo [Transiciones CSS](https://lenguajecss.com/animaciones/transiciones/transition/) y el artículo [La regla @starting-style](https://lenguajecss.com/animaciones/transiciones/starting-style/).
 
+Mira el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jdGpehoFoWA?si=Kp3OBZF-eQz1pOjp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+1. ¿Qué hace la propiedad `transition-property`?
+1. ¿Qué hace la propiedad `transition-duration`?
+1. ¿Podemos utilizar cualquier unidad de tiempo en `transition-duration`?
+1. ¿Cuál es su valor por defecto de `transition-duration`?
+1. ¿Existe la propiedad `transition-delay`?
+1. ¿Cuál es la propiedad de atajo para definir una transición?
+1. ¿Es recomendable usar la propiedad de atajo para las transiciones a la hora de escribir código?
+1. ¿Se pueden hacer transiciones múltiples únicamente usando una propiedad `transition`?
+1. ¿Podemos hacer que la transición de entrada a diferente tiempo que la transición de salida?
+1. ¿La propiedad del color es transicionable/animable?
+1. ¿Es un gradiente transicionable/animable?
+1. ¿Para qué es útil usar un delay en el caso de las transiciones?
+
 > (Voluntario) Mas información en [W3Schools CSS3 Transitions](https://www.w3schools.com/css/css3_transitions.asp).
 {:.prompt-info}
 
@@ -418,7 +437,59 @@ Lee el artículo [¿Qué son las funciones de tiempo?](https://lenguajecss.com/a
 
 Las animaciones son similares a las transiciones pero más potentes además que suelen usarse desde JavaScript.
 
-Lee el artículo [¿Qué son las animaciones?](https://lenguajecss.com/animaciones/animaciones/que-son/), [Animaciones CSS](https://lenguajecss.com/animaciones/animaciones/animaciones/) y [La regla @keyframes](https://lenguajecss.com/animaciones/animaciones/keyframes/).
+Lee el artículo [¿Qué son las animaciones?](https://lenguajecss.com/animaciones/animaciones/que-son/), [Animaciones CSS](https://lenguajecss.com/animaciones/animaciones/animaciones/).
+
+Preguntas sobre los artículos anteriores:
+
+1. ¿Qué dos cosas son necesarias definir para crear una animación?
+1. ¿Para qué es útil usar un delay en el caso de las transiciones?
+1. ¿Deberíamos usar el tipo de nombrado camelCase para definir el nombre de una animación en CSS?
+1. Si escribimos `change-color 4 normal forwards running;`, ¿`4` hace referencia a la propiedad `animation-iteration-count`, `animation-duration` o `animation-delay`?
+
+Lee el artículo [La regla @keyframes](https://lenguajecss.com/animaciones/animaciones/keyframes/).
+
+Preguntas:
+
+1. ¿Para qué sirve la regla `@keyframes`?
+1. ¿Qué es un fotograma clave cuando hablamos de animaciones CSS?
+1. En un `@keyframe`, ¿es equivalente usar `to` a `100%` como time-selector?
+1. ¿Basta únicamente con definir la animación mediante `@keyframes` para que funcione una animación?
+1. ¿Se puede obviar el `from` de un `@keyframe` en algún caso?
+1. ¿Cuántos fotogramas clave hay en el siguiente código? ¿Y cuantos fotogramas?
+
+```css
+@keyframes change-color {
+  0% { background: red; }
+  50% {
+    background: yellow;
+    width: 400px;
+  }
+  100% { background: green; }
+}
+
+.element {
+  background: grey;
+  width: 150px;
+  height: 150px;
+  animation: change-color 2s 0s infinite;
+}
+```
+
+Mira el siguiente vídeo:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8Jh2K3tq5n0?si=9c1t6LLK7qai5d0p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
+
+1. Dentro de un `@keyframe`, ¿es lo mismo usar `from` que `0%`?
+1. ¿Es necesario poner un `from` dentro de un `@keyframe` si tengo definido el color en el elemento?
+1. ¿Para qué sirve la propiedad `animation-fill-mode: forwards`?
+1. ¿Qué hace la propiedad `animation-iteration-count: infinite`?
+1. ¿Qué hace la propiedad `animation-direction: alternate-reverse`?
+1. ¿Cuándo es interesante usar la propiedad `animation-play-state`?
+1. ¿Cuál es la propiedad de atajo para definir una animación?
+1. ¿Cuándo es útil usar un `animation-delay` > 0 según Manz?
+1. ¿Podemos definir varias animaciones con una única propiedad `animation`?
 
 > (Voluntario) Recuerda que tienes a tu disposición la web de W3Schools con el artículo [CSS3 Animations](https://www.w3schools.com/css/css3_animations.asp) para consulta.
 {:.prompt-info}
