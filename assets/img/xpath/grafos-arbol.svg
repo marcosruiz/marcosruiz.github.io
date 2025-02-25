@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="208.1" height="193.1" viewBox="0 0 55.060348 51.09966">
+  <g transform="translate(168.21316,-78.392518)">
+    <text x="-165.2" y="92.9" stroke-width=".3" style="line-height:0%" font-size="4.2" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="-165.2" y="92.9" style="line-height:1.25" font-size="4.9">Árbol</tspan>
+    </text>
+    <circle cx="-55.6" cy="162.3" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(25.251724)" font-family="Times-Roman"/>
+    <circle cx="25.4" cy="185.2" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <circle cx="9.7" cy="187.6" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-144 119.5l-4-4.6" font-family="Times-Roman"/>
+    <circle cx="22" cy="169.6" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <circle cx="6.3" cy="172.1" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-147.8 107.8l4-4.4m6.8 0c1.4 1.7 3 3.3 4 4.7m7 7.4l3.4 4" font-family="Times-Roman"/>
+    <circle cx="-6.4" cy="163.8" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-140.3 89.6V95" font-family="Times-Roman"/>
+    <g stroke="#000" stroke-width="1.1" transform="matrix(0.34925,0,0,0.34925,-241.04099,-53.297508)" font-family="Times-Roman">
+      <circle cx="187" cy="135" r="24" fill="#fff" stroke-width="2" transform="matrix(-0.31781823,0.48222677,0.48222677,0.31781823,221.07327,372.07944)"/>
+      <path fill="none" d="M236.3 495c3.7-4.6 8-9.3 11.5-13.3"/>
+    </g>
+  </g>
+</svg>
