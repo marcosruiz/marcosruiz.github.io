@@ -28,6 +28,9 @@ A continuación, se muestran las actividades a realizar.
 
 Hacer el apartado "Aprende a animar con CSS construyendo una noria" del curso [Diseño Web Responsivo](https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/).
 
+> Si tienes dos monitores, te recomiendo escribir el código en Visual Studio Code con su autocompletado e ir copiando a la web. Así evitarás fallos de sintaxis.
+{:.prompt-tip}
+
 ![Noria](noria.png)
 _Noria_
 
@@ -142,9 +145,9 @@ Crea una página web:
 
 ## Dame tu feedback...
 
-<div class="strawpoll-embed" id="strawpoll_61gD9L3aaZw" style="height: 644px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_61gD9L3aaZw" src="https://strawpoll.com/embed/61gD9L3aaZw" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+<div class="strawpoll-embed" id="strawpoll_e2naXRXeMyB" style="height: 644px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_e2naXRXeMyB" src="https://strawpoll.com/embed/e2naXRXeMyB" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
 
-<div class="strawpoll-embed" id="strawpoll_05Zdzva2ln6" style="height: 3012px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_05Zdzva2ln6" src="https://strawpoll.com/embed/05Zdzva2ln6" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+<div class="strawpoll-embed" id="strawpoll_40Zm4x4Ewga" style="height: 3012px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_40Zm4x4Ewga" src="https://strawpoll.com/embed/40Zm4x4Ewga" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
 
 ## Bibliografía
 

@@ -133,8 +133,8 @@ Existen 3 modelos propuestos de disparo de eventos, que clarificarán el orden d
 - **Modelo de captura de eventos**: En este modelo los eventos se van disparando de afuera hacia adentro. Es decir, primero se disparará el evento asignado al elemento exterior, y continúa descendiendo y disparando los eventos que coincidan, hasta llegar al elemento interior.
 - **Modelo de burbujeo de eventos**: En este modelo los eventos se van disparando desde dentro hacia afuera. Es decir, primero se disparará el evento asignado al elemento interior, y continúa subiendo y disparando los eventos que coincidan, hasta llegar al elemento exterior.
 - **Modelo de W3C**: En este modelo se integran los dos modelos anteriores. Simplemente se realiza la fase de captura de eventos primero y, cuando termina, se realiza la fase de burbujeo. En este modelo cuando registramos un evento con `addEventListener(<evento>, <función>, <true|false>)` tenemos la opción de indicar cuándo queremos que se dispare el evento:
-  - En la fase de **burbujeo**, el evento se propaga desde el origen del evento hacia el documento raíz.
-  - En la fase de **captura**, el evento se propaga desde el documento raíz hasta el origen del evento.
+  1. En la fase de **captura**, el evento se propaga desde el documento raíz hasta el origen del evento.
+  1. En la fase de **burbujeo**, el evento se propaga desde el origen del evento hacia el documento raíz.
   - También disponemos de un método para cancelar eventos con `preventDefault()`, y de un método para detener la propagación de eventos en la fase de burbujeo, con `stopPropagation()`.
 
 Lee el artículo [Emisión de eventos](https://lenguajejs.com/javascript/custom-events/emision-eventos/).
