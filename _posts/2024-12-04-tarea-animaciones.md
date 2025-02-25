@@ -17,7 +17,7 @@ La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
 Duración actividades obligatorias: X horas.
 
-RA2. Crea interfaces web homogéneos definiendo y aplicando estilos.
+RAX. ....
 
 ## Actividades
 
