@@ -43,7 +43,7 @@ En [este enlace](https://buscaminas.eu/reglas) tienes un ejemplo de juego junto 
 {:.activity}
 ### Ahorcado
 
-Desarrolla el juego del ahorcado. 
+Desarrolla el juego del ahorcado.
 
 En [este enlace](https://lapalabradeldia.com/) tienes un ejemplo de juego junto a sus reglas.
 
