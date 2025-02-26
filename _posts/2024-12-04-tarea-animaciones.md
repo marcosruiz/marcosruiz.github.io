@@ -66,7 +66,7 @@ Crea una página web que muestre un cuadrado rojo de 200px de lado:
 {:.activity}
 ### (Voluntaria) Tamaño de letra
 
-Crea un programa en JavaScript+HTML+CSS que el tamaño de un texto pase de los 12px iniciales a los 30px finales y que tarde 3 segundos.
+Crea un programa en JavaScript + HTML + CSS que el tamaño de un texto pase de los 12px iniciales a los 30px finales y que tarde 3 segundos.
 
 {:.activity}
 ### Input animado
