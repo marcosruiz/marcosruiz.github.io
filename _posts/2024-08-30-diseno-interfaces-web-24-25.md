@@ -34,7 +34,7 @@ pin: true
 - T02.2 - [Tarea obligatoria: CSS avanzado](/posts/tarea-css-avanzado)
 - T03 - No hay
 - T04 - [Tarea: Imágenes y vídeo para Bayona](/posts/tarea-imagenes-video-bayona)
-- T05 - [Tarea obligatoria: Animaciones en la web](/posts/tarea-animaciones-web/)
+- T05 - [Tarea obligatoria: Animaciones en la web](/posts/tarea-animaciones/)
 
 ## Enlaces de interés
 
