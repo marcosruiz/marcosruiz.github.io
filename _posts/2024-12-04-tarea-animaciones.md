@@ -3,11 +3,8 @@ title: "Tarea: Animaciones en la web"
 date: 2024-12-04 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
-img_path: /assets/img/tarea-imagenes-web/
+img_path: /assets/img/tarea-animaciones-web/
 ---
-
-> Artículo en construcción.
-{:.prompt-warning}
 
 ## Información sobre la tarea
 
@@ -15,9 +12,9 @@ La entrega será en formato ZIP con un PDF dentro. Leer [Entrega y presentación
 
 La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
-Duración actividades obligatorias: X horas.
+Duración actividades obligatorias: 5 horas.
 
-RAX. ....
+RA3. Prepara archivos multimedia para la web, analizando sus características y manejando herramientas específicas.
 
 ## Actividades
 
@@ -31,7 +28,7 @@ Hacer el apartado "Aprende a animar con CSS construyendo una noria" del curso [D
 > Si tienes dos monitores, te recomiendo escribir el código en Visual Studio Code con su autocompletado e ir copiando a la web. Así evitarás fallos de sintaxis.
 {:.prompt-tip}
 
-![Noria](noria.png)
+![Noria](noria.gif)
 _Noria_
 
 > 📷 Cuando termines todos los pasos, haz una captura de tu perfil público y añade el enlace de tu perfil.
@@ -51,51 +48,52 @@ _Pinguino_
 {:.activity}
 ### (Voluntaria) Cuadrado I
 
-Crea una página web que:
+Crea una página web que muestre un cuadrado rojo de 200px de lado:
 
-- Muestre un cuadrado rojo de 200px de lado.
 - Que al poner el cursor encima gire 45 grados y cambie su color a azul.
-- Que al quitar el curso vuelva a su posición y su color original.
-- Que dure 2 segundos.
+- Que al quitar el cursor vuelva a su posición y su color original.
+- Que la transición dure 2 segundos.
 
 {:.activity}
 ### (Voluntaria) Cuadrado II
 
-Crea una página web que:
+Crea una página web que muestre un cuadrado rojo de 200px de lado:
 
-- Muestre un cuadrado rojo de 200px de lado.
-- Que al poner el cursor encima se cambia su ancho para ocupar 600px
+- Que al poner el cursor encima se cambie su ancho para ocupar 600px.
 - Que al quitar el curso vuelva a su tamaño original.
-- Que dure 3 segundos.
+- Que la transición dure 3 segundos.
+
+{:.activity}
+### (Voluntaria) Tamaño de letra
 
 Crea un programa en JavaScript+HTML+CSS que el tamaño de un texto pase de los 12px iniciales a los 30px finales y que tarde 3 segundos.
 
 {:.activity}
-### (Voluntaria) Input
+### Input animado
 
 Crea una página web:
 
 - Que el fondo sea gris claro.
-- Muestre un input de tipo text de fondo banco, bordes sin redondear.
+- Muestre un input de tipo texto de fondo banco y bordes sin redondear.
 - Que al poner el curso sobre él para escribir, se hagan los bordes redondeados, el color de fondo sea un azul muy clarito, se añada una sombra suave de color azul.
 - Que al quitar el curso el input vuelva a su etilo original.
-- Que dure 1 segundo.
+- Que la transición dure 1 segundo.
 
 {:.activity}
-### (Voluntaria) Torre de Pisa I
+### Torre de Pisa
 
 Crea una página web:
 
 - En el fondo se verá una foto con la torre de pisa.
-- Que sobre el borde superior de la torre coloques la imagen de una pelota.
-- Que al pulsar un botón se active una animación que deje caer la pelta hasta el suelo y al acabar se quede ahí.
+- Que sobre el borde superior de la torre coloques la imagen de una pelota. Debe ser una imagen, no un dibujo en CSS.
+- Que al pulsar un botón se active una animación que deje caer la pelota hasta el suelo y al acabar se quede ahí.
 - Si se vuelve a pulsar el botón, repetirá la animación.
 - La duración de la animación será de 9,4s (Es lo que tardaría en caer una pelota desde la torre de pisa suponiendo que no hay rozamiento)
 
-Debes probar con distintas animation-timing-function y elegir la que se parezca mas a la caída real de la pelota.
+Debes probar con distintas `animation-timing-function` y elegir la que se parezca mas a la caída real de la pelota.
 
 {:.activity}
-### (Voluntaria) Torre de Pisa II
+### (Voluntaria) Canasta de baloncesto
 
 Repite el ejercicio anterior de la torre de pisa pero ahora será una canasta de baloncesto y una pelota de baloncesto.
 
@@ -106,29 +104,29 @@ Otra diferencia es que la pelota al llegar abajo rebotará y volverá hasta arri
 
 Crea una página web:
 
-- En el fondo se verá una foto del espacio y de la Estación Espacial Internacional (IIS).
+- Que en el fondo se verá una foto del espacio y de la Estación Espacial Internacional (IIS).
 - Que sobre algún lado de la IIS coloques la imagen de un astronauta.
-- Que al pulsar un botón se active una animación que nueva el astronauta durante 1000px y al acabar se quede ahí.
+- Que al pulsar un botón se active una animación que mueva el astronauta 500px y al acabar se quede ahí.
 - Si se vuelve a pulsar el botón, repetirá la animación.
 - La duración de la animación será de 5s
 
-Debes probar con distintas animation-timing-function y elegir la que se parezca mas al movimiento rectilíneo uniforme que se tiene en el espacio.
+Debes probar con distintas `animation-timing-function` y elegir la que se parezca mas al movimiento rectilíneo uniforme que se tiene en el espacio.
 
 {:.activity}
-### (Voluntaria) Cartera I
+### (Voluntaria) Coche I
 
 Crea una página web:
 
 - En el fondo se verá una foto de una carretera recta vista desde arriba.
 - Que sobre el inicio de la carretera coloques la imagen de un coche visto desde arriba.
-- Que al pulsar un botón se active una animación que nueva el coche hasta llegar al final de la carretera y al acabar se quede ahí.
+- Que al pulsar un botón se active una animación que mueva el coche hasta llegar al final de la carretera y al acabar se quede ahí.
 - Si se vuelve a pulsar el botón, repetirá la animación.
-- La duración de la animación será la necesaria para que de sensación de realidad.
+- La duración de la animación será la necesaria para que de sensación realista.
 
-Debes probar con distintas animation-timing-function y elegir la que se parezca mas al movimiento acelerado de un coche hasta llegar a una velocidad y luego que sigue con una velocidad constante.
+Debes probar con distintas `animation-timing-function` y elegir la que se parezca mas al movimiento acelerado de un coche hasta llegar a una velocidad y luego que sigue con una velocidad constante.
 
 {:.activity}
-### (Voluntaria) Cartera II
+### (Voluntaria) Coche II
 
 Repite el ejercicio anterior pero ahora el coche irá frenando cuando llegue al final de la carretera.
 
@@ -137,11 +135,11 @@ Repite el ejercicio anterior pero ahora el coche irá frenando cuando llegue al 
 
 Crea una página web:
 
-- Que muestre un botón que tenga con el texto "Registrarse" y un icono de un usuario (usar Font Awesome).
-- Que cuando pasen 20 seg desde la carga de la página, se lance una animación que haga que el icono se haga un poco mas grande y tenga "mas" color de forma que resalte.
+- Que muestre un botón que tenga con el texto "Registrarse" y un icono de un usuario sacado de [Font Awesome](https://fontawesome.com/).
+- Que cuando pasen 5 seg desde la carga de la página, se lance una animación que haga que el icono se haga un poco mas grande y tenga "mas" color de forma que resalte.
 - La animación no se debe ejecutar si el usuario antes ha pulsado el botón.
-- Al acabar la animación el icono se quedará como estaba
-- La animación debe durar 2s.
+- Al acabar la animación el icono se quedará como estaba.
+- La animación debe durar 1s.
 
 ## Dame tu feedback...
 
