@@ -13,14 +13,24 @@ A la hora de importar y exportar cuestionarios en Moodle uso el formato GIFT.
 
 Las ventajas del formato GIFT es que se puede editar con cualquier bloc de notas como por ejemplo:
 
-- Notepad (Bloc de notas) de Microsoft.
-- Notepad++.
 - Visual Studio Code (RECOMENDADO) con la extensión GIFT Format y GIFT Format Preview.
+- Notepad++.
+- Notepad (Bloc de notas) de Microsoft.
 
-Pero además ChatGPT conoce el formato GIFT y nos puede generar montones de preguntas en este formato que podemos copiar y pegar fácilmente.
+Pero además [ChatGPT](https://chatgpt.com/) o [DeepSeek](https://www.deepseek.com/) conocen el formato GIFT y nos puede generar montones de preguntas en este formato que podemos copiar y pegar fácilmente.
 
 > Otro formato más fácil de usar es el formato AIKEN, pero este formato solo permite preguntas de una sola opción válida.
 {:.prompt-info}
+
+{:.section}
+## Generación de preguntas
+
+Recomiendo [NotebookLM](https://notebooklm.google.com/) si queremos generar preguntas para nuestro alumnado porque podemos añadir el material que estamos utilizando y que nos genere preguntas únicamente de eso. En mi caso me divido todo en temas como se puede ver a continuación:
+
+![Página principal de NotebookLM](notebooklm.png)
+_Página principal de NotebookLM_
+
+Posteriormente cojo esas preguntas y se las paso a [ChatGPT](https://chatgpt.com/) o [DeepSeek](https://www.deepseek.com/) para que me las escriba en el formato GIFT.
 
 {:.section}
 ## Caracteres especiales que hay que escapar
@@ -64,16 +74,21 @@ O como a mi me gusta poner un nombre corto y usar el formato Markdown para el co
 }
 ```
 
-Restando el 50% del valor de la pregunta por respuesta errónea:
+> Si no conoces el formato Markdown es un formato muy utilizado en desarrollo de software ya que es una forma muy simplificada de escribir documentos HTML. Si quieres saber más puedes leer el artículo <https://markdown.es/>.
+
+Restando el 33.33333% del valor de la pregunta por respuesta errónea:
 
 ```plaintext
 ::TXX XX::[markdown]Pregunta{
     =Respuesta
-    ~%-50%Respuesta
-    ~%-50%Respuesta
-    ~%-50%Respuesta
+    ~%-33.33333%Respuesta
+    ~%-33.33333%Respuesta
+    ~%-33.33333%Respuesta
 }
 ```
+
+> Los porcentajes de Moodle aceptan hasta 5 decimales.
+{:.prompt-info}
 
 {:.subsection}
 ### Pregunta de opción múltiple
@@ -111,6 +126,9 @@ Cuatro respuestas correctas:
 }
 ```
 
+> Para evitar la aleatoriedad todas las respuestas correctas deberían sumar el 100% y todas las respuestas incorrectas deberían sumar -100%.
+{:.prompt-tip}
+
 {:.subsection}
 ### Pregunta respuesta numérica
 
@@ -125,6 +143,8 @@ Dando un rango de error:
 ```plaintext
 ::TXX XX::[markdown]Pregunta {#5.2:0.1}
 ```
+
+En este caso las respuestas correctas irán desde 5.1 a 5.3 ambos incluidos.
 
 {:.subsection}
 ### Pregunta respuesta texto
@@ -247,9 +267,9 @@ Y la deberemos copiar el cuestionario de la siguiente manera:
 ![](URL de la imagen)
 {
     =Respuesta
-    ~%-50%Respuesta
-    ~%-50%Respuesta
-    ~%-50%Respuesta
+    ~%-33.33333%Respuesta
+    ~%-33.33333%Respuesta
+    ~%-33.33333%Respuesta
 }
 ```
 
