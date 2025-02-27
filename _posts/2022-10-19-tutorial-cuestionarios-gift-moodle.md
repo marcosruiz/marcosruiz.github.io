@@ -276,6 +276,9 @@ Y la deberemos copiar el cuestionario de la siguiente manera:
 > Recuerda que en la URL de la imagen también se deben escapar los caracteres especiales.
 {:.prompt-warning}
 
+> Esta forma de añadir imágenes solo funciona si hemos marcado `[markdown]` como formato.
+{:.prompt-warning}
+
 Por ejemplo:
 
 ```plaintext
