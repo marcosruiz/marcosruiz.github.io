@@ -699,8 +699,9 @@ Y con éste truco siempre tenemos una animación de ida y vuelta.
 
 animation-timing-function:
 
+- <https://easingwizard.com/>
+- <https://cubic-bezier.com/>
 - <https://tympanus.net/codrops/css_reference/timing-function_value/>
-- <https://cubic-bezier.com/#.17,.67,.83,.67>
 - <https://matthewlein.com/tools/ceaser>
 - <https://easings.net/>
 

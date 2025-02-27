@@ -314,6 +314,52 @@ También existe la opción de usar Doodle aunque me parece menos versátil:
 
 - <https://doodle.com/es/>
 
+{:.section}
+## Autopublicar enlaces a videoconferencias
+
+En el caso de Aragón, se usa la herramienta de Google Meet para realizar las videoconferencias y se deben sincronizar manualmente en Moodle las diferentes videoconferencias.
+
+![Icono de sala de videoconferencia en Moodle](iconoVideoconferencia.png)
+_Icono de sala de videoconferencia en Moodle_
+
+![Últimas sesiones de sala de videoconferencia en Moodle](sesionesVideoconferencia.png)
+_Últimas sesiones de sala de videoconferencia en Moodle_
+
+![Botón para sincronizar grabaciones de la sala de videoconferencia en Moodle](sinconizarConGoogleDrive.png)
+_Botón para sincronizar grabaciones de la sala de videoconferencia en Moodle_
+
+En mi caso uso una página de Notion como Diario del profesor y para que los alumnos puedan ver que se ha explicado en cada sesión si necesidad de abrir el vídeo. Muestro un ejemplo de dos sesiones a continuación:
+
+![Guión de sesiones de videoconferencia en Notion](guionSesionesNotion.png)
+_Guión de sesiones de videoconferencia en Notion_
+
+Considero que es util que se autopubliquen los enlaces en mi página de Notion por si se me olvida publicarlo. Es por esto que he recurrido a la herramienta [Zapier](https://zapier.com/) y he creado un ZAP por cada módulo que imparto.
+
+De manera resumida, lo que hace la siguiente automatización es detectar cuando se añade un fichero nuevo en la carpeta de Google Drive, comprueba si este es un fichero .mp4 y si tiene el código del módulo y escribe un comentario en Notion con el enlace a dicho archivo.
+
+A continuación se muestra la configuración de un módulo:
+
+![Vista general del ZAP](zapier01.png)
+_Vista general del ZAP_
+
+![Paso 1.1: Detección de nuevo fichero](zapier02.png)
+_Paso 1.1: Detección de nuevo fichero_
+
+![Paso 1.1: Detección de nuevo fichero](zapier03.png)
+_Paso 1.1: Detección de nuevo fichero_
+
+![Paso 2: Filtro](zapier04.png)
+_Paso 2: Filtro_
+
+![Paso 3.1: Publicación de comentario en Notion](zapier05.png)
+_Paso 3.1: Publicación de comentario en Notion_
+
+![Paso 3.2: Publicación de comentario en Notion](zapier06.png)
+_Paso 3.2: Publicación de comentario en Notion_
+
+> En lugar de Notion puedes elegir publicar el enlace, por ejemplo, en un documento de Google Docs.
+{:.prompt-info}
+
 ## Bibliografía
 
 - <https://docs.moodle.org/all/es/Formato_GIFT#Caracteres_especiales_.7E_.3D_.23_.7B_.7D>
