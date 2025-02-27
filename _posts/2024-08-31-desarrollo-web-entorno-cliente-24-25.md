@@ -44,6 +44,7 @@ pin: true
 - T04 - [Tarea obligatoria: Arrays, funciones y objetos en JavaScript](/posts/tarea-arrays-funciones-objetos-javascript/)
 - T05.1 - [Tarea: Web para Bayona](/posts/tarea-web-bayona)
 - T05.2 - [Tarea obligatoria: El formulario del gobierno](/posts/tarea-formulario-gobierno)
+- T06 - [Tarea obligatoria: DOM](/posts/tarea-dom/)
 
 ## Enlaces de interés 🔥
 
