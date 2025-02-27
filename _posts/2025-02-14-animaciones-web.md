@@ -679,6 +679,12 @@ Y con éste truco siempre tenemos una animación de ida y vuelta.
 {:.question}
 ¿Qué es una animación simétrica?
 
+{:.section}
+## (Voluntario) Juegos CSS
+
+- [CSS Battle](https://cssbattle.dev/)
+- [100 DAYS CSS CHALLENGE](https://100dayscss.com/)
+
 ## Bibliografía
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
