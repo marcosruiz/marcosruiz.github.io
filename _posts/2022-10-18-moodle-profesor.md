@@ -317,7 +317,7 @@ También existe la opción de usar Doodle aunque me parece menos versátil:
 {:.section}
 ## Autopublicar enlaces de videoconferencias de Google Meet
 
-En el caso de Aragón, se usa la herramienta de Google Meet para realizar las videoconferencias y se deben sincronizar manualmente en Moodle las diferentes videoconferencias.
+En el caso de la formación virtual de Aragón, se usa la herramienta de Google Meet para realizar las videoconferencias y se deben sincronizar manualmente en Moodle las diferentes videoconferencias.
 
 ![Icono de sala de videoconferencia en Moodle](iconoVideoconferencia.png)
 _Icono de sala de videoconferencia en Moodle_
