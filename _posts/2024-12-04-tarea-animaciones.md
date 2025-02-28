@@ -141,6 +141,13 @@ Crea una página web:
 - Al acabar la animación el icono se quedará como estaba.
 - La animación debe durar 1s.
 
+{:.activity}
+### (Voluntaria) Ponte a prueba con 100dayscss
+
+Haz click <https://100dayscss.com/days/41/> y empieza con tu reto de 100 días para convertirte en todo un experto en CSS. El día 41 es perfecto para empezar a practicar.
+
+Si te atascas, recuerda que puedes vers soluciones de otros usuarios que pueden "inspirarte".
+
 ## Dame tu feedback...
 
 <div class="strawpoll-embed" id="strawpoll_e2naXRXeMyB" style="height: 644px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_e2naXRXeMyB" src="https://strawpoll.com/embed/e2naXRXeMyB" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
