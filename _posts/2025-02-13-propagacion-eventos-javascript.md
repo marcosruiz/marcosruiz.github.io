@@ -89,14 +89,14 @@ Propiedades del objeto Event:
 Métodos del objeto Event:
 
 - `preventDefault()`: Cancela cualquier acción asociada por defecto a un evento.
-- `stopPropagation()`: Evita que un evento burbujee. Por ejemplo si tenemos un divA que contiene un divB hijo. Cuando asignamos un evento de click a divA, si hacemos click en divB, por defecto se dispararía también el evento en divA en la fase de burbujeo. Para evitar ésto se puede llamar a `stopPropagation()` en divB. Para ello creamos un evento de click en divB y le hacemos `stopPropagation()`.
+- `stopPropagation()`: Evita que un evento burbujee. Por ejemplo si tenemos un `divA` que contiene un `divB` hijo. Cuando asignamos un evento de click a `divA`, si hacemos click en `divB`, por defecto se dispararía también el evento en `divA` en la fase de burbujeo. Para evitar ésto se puede llamar a `stopPropagation()` en `divB`. Para ello creamos un evento de click en `divB` y le hacemos `stopPropagation()`.
 
 {:.section}
 ## Custom Events
 
 Antes de seguir con la propagación y captura de eventos debemos entender qué son los Custom Events y para qué sirven.
 
-Lee el artículo [¿Qué son los Custom Events?](https://lenguajejs.com/javascript/custom-events/que-son/#custom-events)
+Lee el artículo [¿Qué son los Custom Events?](https://lenguajejs.com/javascript/custom-events/que-son/#custom-events).
 
 {:.section}
 ## Propagación y captura de eventos
@@ -140,6 +140,8 @@ Existen 3 modelos propuestos de disparo de eventos, que clarificarán el orden d
 Lee el artículo [Emisión de eventos](https://lenguajejs.com/javascript/custom-events/emision-eventos/).
 
 Lee el artículo [Propagación de eventos](https://lenguajejs.com/javascript/custom-events/propagacion-eventos/).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xlci1S08Cww?si=JiEPkuEj04c68f0h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 {:.section}
 ## Enviar datos de hijos a padres con eventos personalizados
