@@ -114,9 +114,9 @@ Este objeto forma parte además del objeto `window`, y puede ser accedido a trav
 | Método                   | Descripción                                                                                             |
 | ------------------------ | ------------------------------------------------------------------------------------------------------- |
 | `close()`                | Cierra el flujo abierto previamente con `document.open()`.                                              |
-| `getElementById()`       | Para acceder a un elemento identificado por el id escrito entre paréntesis.                             |
-| `getElementsByName()`    | Para acceder a los elementos identificados por el atributo name escrito entre paréntesis.               |
-| `getElementsByTagName()` | Para acceder a los elementos identificados por el tag o la etiqueta escrita entre paréntesis.           |
+| `getElementById()`       | Para acceder a un elemento identificado por el ID escrito entre paréntesis.                             |
+| `getElementsByName()`    | Para acceder a los elementos identificados por el atributo `name` escrito entre paréntesis.               |
+| `getElementsByTagName()` | Para acceder a los elementos identificados por el tag o la etiqueta escrita entre paréntesis. Este método crea siempre un vector de elementos.           |
 | `open()`                 | Abre el flujo de escritura para poder utilizar `document.write()` o `document.writeln` en el documento. |
 | `write()`                | Para poder escribir expresiones HTML o código de JavaScript dentro de un documento.                     |
 | `writeln()`              | Lo mismo que `write()` pero añade un salto de línea al final de cada instrucción.                       |
@@ -619,3 +619,7 @@ console.log(article.dataset.indexNumber); // 12314
 - <https://learnxinyminutes.com/docs/es-es/javascript-es/>
 - <https://manuais.iessanclemente.net/index.php/Objetos_de_m%C3%A1s_alto_nivel_en_JavaScript>
 - <https://developer.mozilla.org/es/docs/Web/API/Document>
+- <http://html.conclase.net/w3c/dom1-es/level-one-html.html>
+- <https://www.w3.org/DOM/DOMTR>
+- <https://www.w3.org/2005/03/DOM3Core-es/introduccion.html>
+- <http://codexexempla.org/curso/curso_4_3.php>
