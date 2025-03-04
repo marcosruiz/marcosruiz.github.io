@@ -73,7 +73,7 @@ _Ejemplo de galería de imágenes_
 ¿Qué diferencia hay entre una pseudoclase y un pseudoelemento?
 
 <details class="card mb-2">
-  <summary class="card-header question">El título incluido dentro de una etiqueta del HTML <h1> ¿es un elemento interactivo?
+  <summary class="card-header question">El título incluido dentro de una etiqueta del HTML h1 ¿es un elemento interactivo?
 </summary>
   <div class="card-body" markdown="1">
 
