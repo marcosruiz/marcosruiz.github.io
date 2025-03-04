@@ -20,6 +20,7 @@ Un elemento interactivo es aquel que cambia cuando el usuario interactúa con é
   - Las listas de opciones.
   - Los botones.
 
+{:.section}
 ## Comportamientos interactivos
 
 Para añadir un comportamiento interactivo a los elementos podemos hacer uso de:
@@ -27,6 +28,7 @@ Para añadir un comportamiento interactivo a los elementos podemos hacer uso de:
 - Las reglas de estilo (CSS).
 - Los lenguajes de programación dinámicos (JavaScript).
 
+{:.subsection}
 ### Las reglas de estilo
 
 En CSS nos podemos servir de las pseudoclases `link`, `visited`, `hover`, `active`, `focus` que ya hemos visto para añadir interactividad a nuestra web generando elementos interactivos avanzados como:
@@ -43,28 +45,28 @@ En CSS nos podemos servir de las pseudoclases `link`, `visited`, `hover`, `activ
 > Puedes buscar ejemplos de todo tipo buscando en <https://codepen.io>, <https://www.cssplay.co.uk>, <https://css-tricks.com/>, <https://tympanus.net/codrops/>, etc.
 {:.prompt-info}
 
-![imgDescription](css_map_pop.gif)
+![Ejemplo de mapa interactivo](css_map_pop.gif)
 _Ejemplo de mapa interactivo_
 
-![imgDescription](menuNavegacion01.gif)
+![Ejemplo de menú de navegación](menuNavegacion01.gif)
 _Ejemplo de menú de navegación_
 
-![imgDescription](menuNavegacion02.gif)
+![Ejemplo de menú de navegación](menuNavegacion02.gif)
 _Ejemplo de menú de navegación_
 
-![imgDescription](alternanciaDeImagenes.gif)
+![Ejemplo de alternancia de imágenes](alternanciaDeImagenes.gif)
 _Ejemplo de alternancia de imágenes_
 
-![imgDescription](cssplay-momentum-swipe-gallery-v2.gif)
+![Ejemplo de galería de imágenes](cssplay-momentum-swipe-gallery-v2.gif)
 _Ejemplo de galería de imágenes_
 
-![imgDescription](cssplay-horizontal-vertical-sticky-grid-gallery.gif)
-_Ejemplo de Galería de imágenes_
-
-![imgDescription](cssplay-columns-gallery-with-popover.gif)
+![Ejemplo de galería de imágenes](cssplay-horizontal-vertical-sticky-grid-gallery.gif)
 _Ejemplo de galería de imágenes_
 
-![imgDescription](cssplay-vertical-snap-horizontal-scrolling.gif)
+![Ejemplo de galería de imágenes](cssplay-columns-gallery-with-popover.gif)
+_Ejemplo de galería de imágenes_
+
+![Ejemplo de galería de imágenes](cssplay-vertical-snap-horizontal-scrolling.gif)
 _Ejemplo de galería de imágenes_
 
 {:.question}
@@ -81,6 +83,7 @@ No.
   </div>
 </details>
 
+{:.section}
 ## Acceso a elementos del DOM
 
 > A partir de aquí empezamos a mezclar la teoría de DIW con la de DWEC.
@@ -90,6 +93,7 @@ Para comportamientos interactivos más avanzados debemos acceder al DOM mediante
 
 Lee el artículo [¿Qué es el DOM?](/posts/dom-javascript) si no sabes o no recuerdas la manera de acceder al DOM mediante JavaScript y el objeto `document`.
 
+{:.section}
 ## Ejecución de JavaScript para validar formularios
 
 Con JavaScript puedes modificar el comportamiento de los elementos del DOM cambiando sus propiedades.
@@ -109,6 +113,7 @@ No.
   </div>
 </details>
 
+{:.section}
 ## Reproducción de sonido, vídeo y animación
 
 Todos los sistemas operativos actuales permiten al usuario tomar la decisión de ver o no las imágenes, o reproducir o no los sonidos y/o las animaciones. En definitiva, es el usuario el que sabe lo que le interesa de un determinado sitio web.
@@ -117,6 +122,7 @@ El hecho de desactivar estas opciones mejora la experiencia visual de las person
 
 Los recursos gráficos siempre es mejor utilizarlos como complemento del contenido y no como elemento decorativo.
 
+{:.section}
 ## Drag & drop
 
 El drag & drop es una forma de simplificar los interfaces de usuario.
@@ -144,6 +150,7 @@ También tienes dos librerías para crear elementos drag and drop más fácilmen
 - La librería de alto nivel [Dragula](https://bevacqua.github.io/dragula/).
 - La librería de bajo nivel [InteractJS](https://interactjs.io/).
 
+{:.section}
 ## Funcionamiento de drag and drop en JavaScript
 
 Para explicar como funciona drag & drop, vamos a usar el siguiente ejemplo:
@@ -209,6 +216,7 @@ Para explicar como funciona drag & drop, vamos a usar el siguiente ejemplo:
   - `ev.target`: Elemento donde se ha soltado
   - `ev.dataTransfer.getData("text")`: Obtenemos la información de lo que se estaba arrastrando.
 
+{:.subsection}
 ### El objeto dataTransfer
 
 El objeto `dataTransfer` es donde se almacena lo que que se está arrastrando.

@@ -25,7 +25,7 @@ pin: true
   - [Audio en la web](/posts/audio-web)
   - [Video en la web](/posts/video-web)
 - UD5 - [Animaciones en la Web](/posts/animaciones-web/)
-- UD6 - Contenidos web interactivos
+- UD6 - [Contenidos web interactivos](/posts/contenidos-web-interactivos/)
 - UD7 - [Usabilidad en la Web](/posts/usabilidad-web)
 - UD8 - Accesibilidad en la Web
 

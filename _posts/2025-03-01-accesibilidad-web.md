@@ -16,3 +16,5 @@ img_path: /assets/img/accesibilidad-web/
 ## Bibliografía
 
 - <http://codexexempla.org/curso/curso_4_5.php>
+- <https://wave.webaim.org/>
+- <https://idrc.ocadu.ca/>
