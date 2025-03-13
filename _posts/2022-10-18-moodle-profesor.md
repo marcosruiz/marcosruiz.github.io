@@ -317,6 +317,9 @@ También existe la opción de usar Doodle aunque me parece menos versátil:
 {:.section}
 ## Autopublicar enlaces de videoconferencias de Google Meet
 
+> ¡IMPORTANTE! Solo funciona con Zapier de pago.
+{:.prompt-info}
+
 En el caso de la formación virtual de Aragón, se usa la herramienta de Google Meet para realizar las videoconferencias y se deben sincronizar manualmente en Moodle las diferentes videoconferencias.
 
 ![Icono de sala de videoconferencia en Moodle](iconoVideoconferencia.png)
