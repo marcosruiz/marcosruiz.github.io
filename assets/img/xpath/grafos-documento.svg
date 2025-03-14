@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="689.7" height="519.7">
+  <defs>
+    <marker id="a" orient="auto" overflow="visible">
+      <path fill-rule="evenodd" stroke-width=".6" d="M-5.2-2.4L1.3 0l-6.5 2.4c1-1.4 1-3.4 0-4.8z" font-size="12" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <g transform="translate(-32.485497,-194.37868)">
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M476.7 694.6c10.3.2 22.7-.3 33 0" font-family="Times-Roman"/>
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M476.3 496.2c10.4 0 22.7-.3 33 0" font-family="Times-Roman"/>
+    <g transform="translate(-206.58796,-12.426327)">
+      <rect width="83.3" height="27.9" x="304.9" y="428.6" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="316.8" y="447.5" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="316.8" y="447.5" style="line-height:1.25;-inkscape-font-specification:arial" font-size="14" font-family="arial">biblioteca</tspan>
+      </text>
+    </g>
+    <g transform="translate(-137.31368,-57.40527)">
+      <rect width="50.9" height="27.9" x="380.8" y="473.6" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="392.9" y="492.5" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="392.9" y="492.5" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">libro</tspan>
+      </text>
+    </g>
+    <g transform="translate(-137.31368,140.01834)">
+      <rect width="50.9" height="27.9" x="380.8" y="473.6" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="392.9" y="492.5" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="392.9" y="492.5" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">libro</tspan>
+      </text>
+    </g>
+    <g transform="translate(-137.31368,-229.47468)">
+      <rect width="50.9" height="27.9" x="380.8" y="473.6" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="392.9" y="492.5" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="392.9" y="492.5" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">libro</tspan>
+      </text>
+    </g>
+    <g transform="translate(-64.33163,-314.34245)">
+      <rect width="50.9" height="27.9" x="420.4" y="514.5" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="431.2" y="533.3" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="431.2" y="533.3" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">titulo</tspan>
+      </text>
+    </g>
+    <g transform="translate(-137.47323,-268.86436)">
+      <rect width="50.9" height="27.9" x="493.5" y="513" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="502.7" y="531.8" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="502.7" y="531.8" style="line-height:1.25" font-size="14">autor</tspan>
+      </text>
+    </g>
+    <g transform="translate(-207.97048,-226.21733)">
+      <rect width="120.6" height="27.9" x="564" y="514.4" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="571.8" y="533.3" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="571.8" y="533.3" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">fechaPublicacion</tspan>
+      </text>
+    </g>
+    <rect width="175.7" height="27.9" x="509.3" y="200.1" fill="#fff" stroke="#00f" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+    <text x="517.5" y="217.7" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="517.5" y="217.7" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">La vida está en otra parte</tspan>
+    </text>
+    <g transform="translate(-207.97048,-32.13799)">
+      <rect width="120.6" height="27.9" x="564" y="514.4" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="571.8" y="533.3" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="571.8" y="533.3" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">fechaPublicacion</tspan>
+      </text>
+    </g>
+    <rect width="90.8" height="27.9" x="509.3" y="482.2" fill="#fff" stroke="red" stroke-width="1.6" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+    <text x="518.4" y="501.1" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="518.4" y="501.1" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">año=&quot;1973&quot;</tspan>
+    </text>
+    <rect width="109.5" height="27.9" x="509.3" y="244.1" fill="#fff" stroke="#00f" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+    <text x="520" y="263" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="520" y="263" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">Milan Kundera</tspan>
+    </text>
+    <rect width="90.8" height="27.9" x="509.3" y="288.1" fill="#fff" stroke="red" stroke-width="1.6" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+    <text x="518.4" y="307" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="518.4" y="307" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">año=&quot;1973&quot;</tspan>
+    </text>
+    <g transform="translate(-64.33163,-164.28292)">
+      <rect width="50.9" height="27.9" x="420.4" y="514.5" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="431.2" y="533.3" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="431.2" y="533.3" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">titulo</tspan>
+      </text>
+    </g>
+    <g transform="translate(-137.47323,-96.794949)">
+      <rect width="50.9" height="27.9" x="493.5" y="513" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="502.7" y="531.8" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="502.7" y="531.8" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">autor</tspan>
+      </text>
+    </g>
+    <rect width="182.8" height="27.9" x="509.3" y="350.2" fill="#fff" stroke="#00f" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+    <text x="517" y="369.1" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="517" y="369.1" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">Pantaleón y las visitadoras</tspan>
+    </text>
+    <g transform="translate(1.8715858e-5,44.010101)">
+      <rect width="144.5" height="27.9" x="509.4" y="394.2" fill="#fff" stroke="#00f" stroke-width="1.7" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="519.1" y="411.7" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="519.1" y="411.7" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">Mario Vargas Llosa</tspan>
+      </text>
+    </g>
+    <g transform="translate(-207.97048,165.28562)">
+      <rect width="120.6" height="27.9" x="564" y="514.4" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="571.8" y="533.3" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="571.8" y="533.3" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">fechaPublicacion</tspan>
+      </text>
+    </g>
+    <rect width="90.8" height="27.9" x="509.3" y="679.6" fill="#fff" stroke="red" stroke-width="1.6" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+    <text x="518.4" y="698.5" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="518.4" y="698.5" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">año=&quot;1969&quot;</tspan>
+    </text>
+    <g transform="translate(-64.33163,33.140689)">
+      <rect width="50.9" height="27.9" x="420.4" y="514.5" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="431.2" y="533.3" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="431.2" y="533.3" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">titulo</tspan>
+      </text>
+    </g>
+    <g transform="translate(-137.47323,100.62866)">
+      <rect width="50.9" height="27.9" x="493.5" y="513" fill="#fff" stroke="#000" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="502.7" y="531.8" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="502.7" y="531.8" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">autor</tspan>
+      </text>
+    </g>
+    <rect width="191" height="27.9" x="509.3" y="547.6" fill="#fff" stroke="#00f" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+    <text x="518.1" y="566.5" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="518.1" y="566.5" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">Conversación en la catedral</tspan>
+    </text>
+    <g transform="translate(1.8715858e-5,44.010132)">
+      <rect width="144.5" height="27.9" x="509.4" y="591.6" fill="#fff" stroke="#00f" stroke-width="1.7" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="519.1" y="609.1" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="519.1" y="609.1" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">Mario Vargas Llosa</tspan>
+      </text>
+    </g>
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M407 214.5c31.4 0 69-.3 100.4 0" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M407 258.2c31.4.2 69-.2 100.4 0" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M476.3 302.2c10.4.2 22.8-.2 33 0" font-family="Times-Roman"/>
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M407.4 364.3c31.4 0 69-.3 100.3 0" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M407.6 423.6c32-4.6 70-10.7 102-15.3" font-family="Times-Roman"/>
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M407.4 436.3c31.2 5.3 68.6 11 99.8 16.2" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M407.4 562.4c31.4.2 69-.2 100.3 0" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M407.5 621.7c31-4.5 70.6-11.8 101.7-16.3" font-family="Times-Roman"/>
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M407.4 634.5c31.2 5.3 68.6 11 99.8 16.2" font-family="Times-Roman" marker-end="url(#a)"/>
+    <g fill="none" stroke="#000" stroke-width="1.5" transform="translate(36)" font-family="Times-Roman" marker-end="url(#a)">
+      <path d="M258 258.2c18.8.2 41.2-.2 60 0"/>
+      <path d="M258.7 250.8c18.8-11 40.8-24.6 59.6-35.5"/>
+      <path d="M258.7 266c18.7 11 40.8 24.6 59.6 35.5"/>
+    </g>
+    <g fill="none" stroke="#000" stroke-width="1.5" transform="translate(36)" font-family="Times-Roman" marker-end="url(#a)">
+      <path d="M258 430c18.8.2 41.2-.3 60 0"/>
+      <path d="M258.5 423.3c18.8-18 40.8-40.7 59.6-58.6"/>
+      <path d="M258.3 437c19 17.8 41.2 40.3 60 58"/>
+    </g>
+    <g fill="none" stroke="#000" stroke-width="1.5" transform="translate(36.250758,197.70157)" font-family="Times-Roman" marker-end="url(#a)">
+      <path d="M258 430c18.8.2 41.2-.3 60 0"/>
+      <path d="M258.5 423.3c18.8-18 40.8-40.7 59.6-58.6"/>
+      <path d="M258.3 437c19 17.8 41.2 40.3 60 58"/>
+    </g>
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M181.7 429c18.7 0 41.2-.4 60-.2" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M181.2 423.2c20.3-46.8 44-105.5 64.4-152.3" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width="1.5" d="M181.6 437.4c20.5 54.2 44.7 122.3 65.3 176.4" font-family="Times-Roman" marker-end="url(#a)"/>
+    <rect width="28.5" height="27.9" x="38.2" y="416.2" fill="#fff" stroke="green" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+    <text x="50.6" y="435.2" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="50.6" y="435.2" style="line-height:1.25;-inkscape-font-specification:arial" font-size="14" font-family="arial">/</tspan>
+    </text>
+    <path fill="none" stroke="#000" stroke-width="1.1" d="M66 430.4c10 0 21.6-.3 31.4 0" font-family="Times-Roman" marker-end="url(#a)"/>
+    <g transform="translate(0.88751602,-1.0436687)">
+      <rect width="108.6" height="27.9" x="38.2" y="603.1" fill="#fff" stroke="#000" stroke-width="3" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="45.9" y="621.9" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="45.9" y="621.9" style="line-height:1.25;-inkscape-font-specification:arial" font-size="14" font-family="arial">nodo elemento</tspan>
+      </text>
+    </g>
+    <g transform="translate(0.88751602,-3.8146973e-6)">
+      <rect width="108.5" height="27.9" x="38.2" y="679.7" fill="#fff" stroke="#00f" stroke-width="3" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="49.8" y="698.5" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="49.8" y="698.5" style="line-height:1.25;-inkscape-font-specification:arial" font-size="14" font-family="arial">nodo de texto</tspan>
+      </text>
+    </g>
+    <g transform="translate(0.88751602,-0.50415039)">
+      <rect width="108.2" height="27.7" x="38.4" y="641.4" fill="#fff" stroke="red" stroke-width="3" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="51.4" y="660.2" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="51.4" y="660.2" style="line-height:1.25;-inkscape-font-specification:arial" font-size="14" font-family="arial">nodo atributo</tspan>
+      </text>
+    </g>
+    <g transform="translate(0.88751602,1.9073486e-6)">
+      <rect width="108.6" height="27.9" x="38.1" y="563.1" fill="#fff" stroke="green" stroke-width="3" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="62.9" y="582" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="62.9" y="582" style="line-height:1.25;-inkscape-font-specification:arial" font-size="14" font-family="arial">nodo raíz</tspan>
+      </text>
+    </g>
+    <g transform="translate(-1.8715858e-5,-44.010101)">
+      <rect width="207.2" height="27.9" x="509.3" y="438.2" fill="#fff" stroke="red" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="516.8" y="457.2" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="516.8" y="457.2" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">fechaNacimiento=&quot;28/03/1936&quot;</tspan>
+      </text>
+    </g>
+    <g transform="translate(-1.8715858e-5,-44.010132)">
+      <rect width="207.2" height="27.9" x="509.3" y="635.6" fill="#fff" stroke="red" stroke-width="1.5" stroke-dashoffset=".4" ry="9.4" rx="9.4" stroke-linecap="square" stroke-linejoin="round"/>
+      <text x="516.8" y="654.6" style="line-height:0%" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+        <tspan x="516.8" y="654.6" style="line-height:1.25;-inkscape-font-specification:Arial" font-size="14" font-family="Arial">fechaNacimiento=&quot;28/03/1936&quot;</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
