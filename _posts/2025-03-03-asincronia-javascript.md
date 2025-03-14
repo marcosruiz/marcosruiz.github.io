@@ -6,9 +6,6 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/asincronia-javascript/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 {:.section}
 ## Introducción
 
@@ -122,12 +119,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 ## Callbacks en JavaScript
 
+[Callbacks en JavaScript](/posts/callbacks-javascript/)
 
 ## Promesas en JavaScript
 
-
-
-
+[Promesas en JavaScript](/posts/promesas-javascript/)
 
 ## Bibliografía
 

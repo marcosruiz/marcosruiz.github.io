@@ -1,9 +1,9 @@
 ---
-title: "Asincronía en JavaScript"
-date: 2025-03-03 9:00:00 +0100
+title: "Callbacks en JavaScript"
+date: 2025-03-04 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec]
-img_path: /assets/img/asincronia-javascript/
+img_path: /assets/img/callbacks-javascript/
 ---
 
 {:.section}
@@ -11,7 +11,7 @@ img_path: /assets/img/asincronia-javascript/
 
 En JavaScript, un callback es una función que se pasa como argumento a otra función para que se ejecute después de que se complete alguna operación. Los callbacks son esenciales para manejar operaciones asíncronas como la comunicación con servidores, temporizadores, y eventos del DOM. El propio lenguaje Javascript cuenta con multitud de funciones que aceptan funciones de callback, como `forEach`, `map`, `filter`, `addEventListener`...
 
-### Ejemplo de uso de callbacks
+## Ejemplo de uso de callbacks
 
 ```javascript
 (() => {
@@ -37,7 +37,7 @@ En JavaScript, un callback es una función que se pasa como argumento a otra fun
 1. `fetchData` se llama con una función anónima como callback que imprime el `data`.
 1. Mientras `setTimeout` espera, el programa sigue ejecutando el código siguiente y muestra “Data is being fetched…”.
 
-### Ejemplo de uso de callbacks
+## Ejemplo de uso de callbacks
 
 En el siguiente ejemplo, la función `second` tiene código asíncrono que usa un callback para garantizar que la función `third` se ejecute después de que `second` haya terminado su tarea.
 
@@ -232,4 +232,3 @@ Como se puede ver, mantener este código puede ser complicado. Después lo volve
 
 - [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
 - <https://xxjcaxx.github.io/libro_dwec/promesas.html#>
-- 

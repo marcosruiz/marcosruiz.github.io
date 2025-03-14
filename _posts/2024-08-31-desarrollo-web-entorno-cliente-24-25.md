@@ -37,6 +37,9 @@ pin: true
   - [¿Qué es el DOM?](/posts/dom-javascript)
   - [Propagación de eventos en JavaScript](/posts/propagacion-eventos-javascript/)
 - UD7 - Utilización de mecanismos de comunicación asíncrona.
+  - [Asincronía en JavaScript](/posts/asincronia-javascript/)
+  - [Callbacks en JavaScript](/posts/callbacks-javascript/)
+  - [Promesas en JavaScript](/posts/promesas-javascript/)
 
 - T01 - [Tarea: Entorno de desarrollo para JavaScript](/posts/tarea-entorno-desarrollo-javascript/)
 - T02 - [Tarea obligatoria: Introducción a JavaScript](/posts/tarea-introduccion-javascript/)
