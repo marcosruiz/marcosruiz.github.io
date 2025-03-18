@@ -1,13 +1,10 @@
 ---
-title: "Comunicación con el servidor"
+title: "AJAX en JavaScript"
 date: 2025-03-07 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec]
-img_path: /assets/img/comunicacion-servidor/
+img_path: /assets/img/ajax-javascript/
 ---
-
-> Artículo en construcción.
-{:.prompt-warning}
 
 {:.section}
 ## Introducción
@@ -100,11 +97,11 @@ Las APIs (Interfaz de Programación de Aplicaciones) permiten que diferentes sof
 
 Las APIs REST utilizan las peticiones HTTP como verbos del protocolo:
 
-- GET: Recuperar recursos.
-- POST: Crear nuevos recursos.
-- PUT: Actualizar recursos existentes.
-- DELETE: Eliminar recursos.
-- PATCH: Actualizar parcialmente recursos.
+- **GET**: Recuperar recursos.
+- **POST**: Crear nuevos recursos.
+- **PUT**: Actualizar recursos existentes.
+- **DELETE**: Eliminar recursos.
+- **PATCH**: Actualizar parcialmente recursos.
 
 #### Características de las APIs REST
 
@@ -147,11 +144,11 @@ Consulta para obtener el título y autor de un libro específico:
 }
 ```
 
-### SDKs
+## SDKs
 
 Las APIs pueden ser complejas, y herramientas como Firebase, MongoDB Realm, y Supabase ofrecen SDKs (Kits de Desarrollo de Software) que simplifican tareas comunes como la autenticación de usuarios y las consultas avanzadas.
 
-#### Características de los SDKs
+### Características de los SDKs
 
 - Facilitan la interacción con las APIs al proporcionar bibliotecas preconstruidas.
 - Ahorra tiempo en la programación de la comunicación entre el cliente y el servidor.
@@ -160,11 +157,11 @@ Las APIs pueden ser complejas, y herramientas como Firebase, MongoDB Realm, y Su
 > Aunque los SDKs pueden simplificar mucho el trabajo, en este curso evitaremos su uso para centrarnos en aprender los fundamentos de las APIs.
 {:.prompt-info}
 
-### Webs SPA
+## Webs SPA
 
 Las aplicaciones de una sola página (SPA) utilizan AJAX para cargar y actualizar contenido sin necesidad de recargar la página completa. Esto permite crear aplicaciones web más rápidas y con una experiencia de usuario similar a las aplicaciones de escritorio.
 
-#### Ejemplo de SPA con AJAX
+### Ejemplo de SPA con AJAX
 
 ```html
 <!DOCTYPE html>
@@ -172,7 +169,7 @@ Las aplicaciones de una sola página (SPA) utilizan AJAX para cargar y actualiza
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SPA Example</title>
+  <title>Document</title>
   <style>
     .hidden {
       display: none;
@@ -181,9 +178,9 @@ Las aplicaciones de una sola página (SPA) utilizan AJAX para cargar y actualiza
 </head>
   
   <nav>
-    <button onclick="loadPage('home')">Home</button>
-    <button onclick="loadPage('about')">About</button>
-    <button onclick="loadPage('contact')">Contact</button>
+    <button onclick="loadPage('./home')">Home</button>
+    <button onclick="loadPage('./about')">About</button>
+    <button onclick="loadPage('./contact')">Contact</button>
   </nav>
   <div id="content"></div>
   
@@ -208,6 +205,123 @@ function loadPage(page) {
 {: file="script.js" }
 
 En este ejemplo, cada botón en la navegación carga contenido diferente en el `div` con el ID `content` utilizando AJAX. Esto permite que la página se actualice dinámicamente sin necesidad de recargarla por completo.
+
+![imgDescription](ejemploSpa.gif)
+_Ejemplo de funcionamiento de código anterior_
+
+> Deberás crear un fichero `home.html`, `about.html` y `contact.html` con el contenido que quieres que se muestre cuando hagas click en cada uno de los botones.
+{:.prompt-info}
+
+## XMLHttpRequest en JavaScript
+
+`XMLHttpRequest` (XHR) es una API utilizada para enviar y recibir datos entre un cliente web y un servidor. A pesar de su nombre, `XMLHttpRequest` puede manejar diferentes tipos de datos, aunque en este capítulo nos centraremos principalmente en JSON debido a su popularidad en las aplicaciones web modernas.
+
+### Inicialización y Uso Básico
+
+Para comenzar a utilizar `XMLHttpRequest`, primero debemos crear una instancia del objeto `XMLHttpRequest`.
+
+```javascript
+var req = new XMLHttpRequest();
+```
+
+Una vez creado el objeto, debemos configurar la solicitud utilizando el método `open`. Este método tiene tres parámetros principales:
+
+- **Método HTTP**: El método de la solicitud, como ‘GET’ o ‘POST’.
+- **URL**: La URL a la que se envía la solicitud.
+- **Asíncrono**: Un valor booleano que indica si la solicitud debe ser asíncrona (`true`) o síncrona (`false`). En la mayoría de los casos, queremos que sea asíncrona para no bloquear la ejecución del script.
+
+```javascript
+req.open('GET', 'http://www.mozilla.org/', true);
+```
+
+`XMLHttpRequest` tiene un conjunto de estados que indican el progreso de la solicitud. Estos estados están representados por la propiedad `readyState` del objeto XHR. Los posibles valores de `readyState` son:
+
+- 0 (UNSENT): La solicitud no ha sido inicializada.
+- 1 (OPENED): Se ha establecido la conexión con el servidor.
+- 2 (HEADERS_RECEIVED): Se han recibido los encabezados de la respuesta.
+- 3 (LOADING): El cuerpo de la respuesta se está recibiendo.
+- 4 (DONE): La solicitud se ha completado y la respuesta está lista.
+
+Para realizar alguna acción cuando la solicitud cambie de estado, se utiliza la propiedad `onreadystatechange`, que se asigna a una función. Esta función se ejecutará cada vez que cambie el estado de la solicitud.
+
+```javascript
+req.onreadystatechange = function (aEvt) {
+  if (req.readyState == 4) {
+    if (req.status == 200) {
+      console.log(req.responseText);
+    } else {
+      console.log("Error loading page\n");
+    }
+  }
+};
+```
+
+Finalmente, enviamos la solicitud al servidor utilizando el método `send`. Si estamos enviando datos (por ejemplo, en una solicitud POST), estos se pasan como argumento a `send`. En una solicitud GET, simplemente pasamos `null`.
+
+```javascript
+req.send(null);
+```
+
+### Ejemplo Completo
+
+```javascript
+var req = new XMLHttpRequest();
+req.open('GET', 'http://www.mozilla.org/', true);
+req.onreadystatechange = function (aEvt) {
+  if (req.readyState == 4) {
+    if (req.status == 200) {
+      console.log(req.responseText);
+    } else {
+      console.log("Error loading page\n");
+    }
+  }
+};
+req.send(null);
+```
+
+#### Crear el Objeto XHR
+
+```javascript
+var req = new XMLHttpRequest();
+```
+
+Aquí se crea una nueva instancia del objeto `XMLHttpRequest`.
+
+#### Configurar la Solicitud
+
+```javascript
+req.open('GET', 'http://www.mozilla.org/', true);
+```
+
+Se configura la solicitud para hacer una petición GET a la URL especificada. El tercer parámetro, `true`, indica que la solicitud debe ser asíncrona.
+
+#### Monitorear Cambios de Estado
+
+```javascript
+req.onreadystatechange = function (aEvt) {
+  if (req.readyState == 4) {
+    if (req.status == 200) {
+      console.log(req.responseText);
+    } else {
+      console.log("Error loading page\n");
+    }
+  }
+};
+```
+
+Se define una función que se ejecuta cada vez que cambia el estado de la solicitud. Cuando `readyState` es `4`, significa que la solicitud se ha completado. Si `status` es `200`, significa que la solicitud fue exitosa y se imprime la respuesta en la consola. Si el estado es diferente, se imprime un mensaje de error.
+
+#### Enviar la Solicitud
+
+```javascript
+req.send(null);
+```
+
+Finalmente, se envía la solicitud al servidor.
+
+## Conclusión
+
+En este artículo se han cubierto los conceptos básicos y la implementación de `XMLHttpRequest`. En artículos posteriores, exploraremos métodos modernos como `fetch` y la forma en que se integran con las características más recientes de JavaScript, como las promesas y la sintaxis `async/await`.
 
 ## Bibliografía
 
