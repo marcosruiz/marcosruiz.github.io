@@ -353,7 +353,7 @@ Si queremos enviar los datos con JSON, el proceso es un poco más complejo, ya q
 
 Aquí hay un ejemplo de cómo hacerlo:
 
-```javascript
+```html
 <!DOCTYPE html>
 <html lang="es">
 

@@ -40,6 +40,8 @@ pin: true
   - [Asincronía en JavaScript](/posts/asincronia-javascript/)
   - [Callbacks en JavaScript](/posts/callbacks-javascript/)
   - [Promesas en JavaScript](/posts/promesas-javascript/)
+  - [Async await en JavaScript](/posts/async-await-javascript/)
+  - [Comunicación con el servidor](/posts/comunicacion-servidor/)
 
 - T01 - [Tarea: Entorno de desarrollo para JavaScript](/posts/tarea-entorno-desarrollo-javascript/)
 - T02 - [Tarea obligatoria: Introducción a JavaScript](/posts/tarea-introduccion-javascript/)
