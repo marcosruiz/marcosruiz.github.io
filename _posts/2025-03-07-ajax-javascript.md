@@ -42,11 +42,11 @@ Con AJAX, JavaScript puede enviar o solicitar datos en formato XML o JSON al ser
 ```javascript
 document.getElementById('loadData').addEventListener('click', function () {
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://api.example.com/data', true);
+  xhr.open('GET', 'https://api.github.com/users/marcosruiz', true);
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       var data = JSON.parse(xhr.responseText);
-      document.getElementById('result').innerText = data.message;
+      document.getElementById('result').innerText = data.followers;
     }
   };
   xhr.send();
@@ -55,7 +55,10 @@ document.getElementById('loadData').addEventListener('click', function () {
 
 En este ejemplo, cuando se hace clic en el botón “Load Data”, se envía una solicitud GET al servidor. La respuesta, que se espera esté en formato JSON, se procesa y se muestra en el `div` con ID `result`.
 
-Este ejemplo se puede considerar anticuado, a partir de ES6 es mejor hacerlo con fetch y promesas. No obstante, es interesante analizar este código y entender cómo funciona. Además, fetch no permite un control a tan bajo nivel de todas las etapas de una petición, por lo que sigue siendo necesario para hacer barras de progreso, cancelar peticiones, etc.
+Este ejemplo se puede considerar anticuado, a partir de ES6 es mejor hacerlo con `fetch` y promesas. No obstante, es interesante analizar este código y entender cómo funciona. Además, `fetch` no permite un control a tan bajo nivel de todas las etapas de una petición, por lo que sigue siendo necesario para hacer barras de progreso, cancelar peticiones, etc.
+
+> Prueba a hacer debug de este código y comprueba cuantas veces se entra en la función anónima que asignamos a `onreadystatechange`.
+{:.prompt-info}
 
 ## Beneficios de AJAX
 
