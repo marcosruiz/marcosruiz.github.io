@@ -69,23 +69,6 @@ getUser();
 
 Llamar a `getUser()` ejecuta la función asíncrona. Dado que `getUser` retorna una promesa, se podría encadenar con `.then()` si fuera necesario.
 
-## Top-Level await (NO RECOMENDADO)
-
-Introducido en 2024, el top-level `await` permite usar `await` directamente en el nivel superior de los módulos, sin necesidad de envolver el código en una función `async`. Esto simplifica el código y mejora su legibilidad cuando se trabaja con operaciones asíncronas en el contexto global del módulo.
-
-### Ejemplo top-level await
-
-```javascript
-const colors = fetch("./colors.json").then((response) => response.json());
-await colors;
-console.log(colors)
-```
-
-En este ejemplo, se está utilizando `await` directamente en el nivel superior del módulo para esperar la resolución de la promesa devuelta por `fetch`. Esto permite que colors contenga el resultado de la operación asíncrona sin necesidad de definir una función `async`.
-
-> ¡OJO CUIDAO! Si utilizas el top level await bloquearás la ejecución del hilo principal hasta que la promesa se resuelva.
-{:.prompt-info}
-
 ## Ventajas de async/await
 
 Las ventajas de async/await son tres:
@@ -245,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     try {
       // 1. Petición al servidor
-      const datosServidor = await hacerPeticion('http://localhost:5500/datos.json');
+      const datosServidor = await hacerPeticion('./datos.json');
       console.log('Datos recibidos del servidor:', datosServidor);
 
       // 2. Leer el archivo después de un retraso simulado
@@ -264,7 +247,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 ```
 
-El código de las funciones no se ha complicado demasiado. De hecho, el código de la del fetch es mucho más sencillo. Estas funciones retornan una promesa a la que podemos esperar dentro de una función async con un await y hemos reducido los callback a 1, el del evento del click.
+El código de las funciones no se ha complicado demasiado. De hecho, el código de la del `fetch` es mucho más sencillo. Estas funciones retornan una promesa a la que podemos esperar dentro de una función `async` con un `await` y hemos reducido los callback a 1, el del evento del `click`.
 
 ## Bibliografía
 

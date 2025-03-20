@@ -6,9 +6,6 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/comunicacion-servidor/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 {:.section}
 ## Introducción
 
@@ -136,10 +133,19 @@ En esta explicación, veremos cómo y cuándo usar cada uno de estos formatos se
 
 ### Usar el método POST
 
+> Los códigos que hacen peticiones POST necesitan de un backend.
+> 
+> 1. Puedes realizar peticiones a APIs públicas como: <https://postman-echo.com/>, <https://httpbin.org/>, <https://jsonplaceholder.typicode.com/> o <https://designer.mocky.io>.
+> 1. Puedes utilizar el servidor local de Node que está en el artículo [Formularios en HTML](https://marcosruiz.github.io/posts/formularios-html/#servidor-de-node-para-probar-cualquier-formulario).
+> 1. O puedes crearte tu propio backend con Firebase o Supabase.
+>
+> En mi caso voy a utilizar APIs públicas para que puedas probar los ejemplos tu mismo sin necesidad de hacer nada más.
+{:.prompt-info}
+
 Para enviar datos a un servidor, se puede usar el método POST con `fetch`.
 
 ```javascript
-fetch(url, {
+fetch("https://jsonplaceholder.typicode.com/posts", {
   method: 'post',
   headers: {
     "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
@@ -155,24 +161,53 @@ fetch(url, {
   });
 ```
 
+{:.question}
+¿Sabrías hacer la petición anterior utilizando la interfaz de usuario de Postman?
+
 En este ejemplo, se envían datos codificados en la URL (formato de formulario) al servidor.
 
 En el siguiente ejemplo se usa `multipart/form-data` para poder adjuntar ficheros:
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form id="fileForm">
+    <input type="file" id="fileInput">
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
+```
+
 ```javascript
-const fileInput = document.getElementById("fileInput");
-const file = fileInput.files[0]; // Obtiene el archivo seleccionado
+document
+.getElementById("fileForm")
+.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const fileInput = document.getElementById("fileInput");
 
-const formData = new FormData();
-formData.append("archivo", file); // "archivo" es el nombre del campo
-
-fetch("https://ejemplo.com/upload", {
-  method: "POST",
-  body: formData, // Enviamos el FormData con el archivo
-})
-  .then(response => response.json())
-  .then(data => console.log("Archivo subido:", data))
-  .catch(error => console.error("Error:", error));
+  const file = fileInput.files[0]; // Obtiene el archivo seleccionado
+  
+  const formData = new FormData();
+  formData.append("archivo", file); // "archivo" es el nombre del campo
+  
+  fetch("https://httpbin.org/anything", {
+    method: "POST",
+    body: formData, // Enviamos el FormData con el archivo
+  })
+    .then(response => response.json())
+    .then(data => console.log("Archivo subido:", data))
+    .catch(error => console.error("Error:", error));
+  });
 ```
 
 #### Enviar JSON
@@ -182,7 +217,7 @@ Para enviar datos en formato JSON, se debe configurar el encabezado `Content-Typ
 ```javascript
 let datos = { username: 'example' };
 
-fetch(url, {
+fetch("https://jsonplaceholder.typicode.com/posts", {
   method: 'post',
   headers: {
     "Content-type": "application/json; charset=UTF-8"
@@ -205,13 +240,31 @@ En este ejemplo, un objeto JavaScript se convierte a JSON y se envía al servido
 `FormData` es un objeto predefinido en JavaScript que se utiliza para crear pares clave-valor para enviar formularios mediante `XMLHttpRequest` o `fetch`.
 
 ```javascript
-let formElement = document.getElementById("myFormElement"); // Un formulario HTML
-let formData = new FormData(formElement); // Constructor de FormData con un formulario
+let serialNumber = 0;
 
-formData.append("serialnumber", serialNumber++); // Añadir más datos
-formData.append("afile", fileInputElement.files[0]); // Añadir un archivo
+document
+  .getElementById("myFormElement")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-fetch('http://localhost:3000/upload', { method: 'POST', body: formData });
+    let formElement = document.getElementById("myFormElement"); // Un formulario HTML
+    let formData = new FormData(formElement); // Constructor de FormData con un formulario
+
+    formData.append("serialnumber", serialNumber++); // Añadir más datos
+
+    // Añadir un archivo
+    let fileInputElement = document.getElementById("fileInputElement")
+    formData.append("afile", fileInputElement.files[0]);
+
+    fetch('https://httpbin.org/post', { method: 'POST', body: formData })
+      .then(response => response.json())
+      .then(function (data) {
+        console.log('Request succeeded with JSON response', data);
+      })
+      .catch(function (error) {
+        console.log('Request failed', error);
+      });
+  })
 ```
 
 Este ejemplo muestra cómo crear un objeto `FormData` a partir de un formulario HTML y enviar datos adicionales, incluyendo un archivo, al servidor.
@@ -221,16 +274,31 @@ Este ejemplo muestra cómo crear un objeto `FormData` a partir de un formulario 
 Para enviar `FormData` como JSON, se puede convertir a un objeto JavaScript y luego a una cadena JSON.
 
 ```javascript
-let data = new FormData(form);
-let body = JSON.stringify(Object.fromEntries(data));
+document
+  .getElementById("myFormElement")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-return fetch(url, {
-   method: 'POST',
-   headers: {
-       "Content-type": "application/json; charset=UTF-8"
-   },
-   body
-}).then(response => response.json());
+    let form = document.getElementById("myFormElement")
+    let data = new FormData(form);
+    let body = JSON.stringify(Object.fromEntries(data));
+
+    return fetch("https://httpbin.org/anything", {
+      method: 'POST',
+      headers: {
+        "Content-type": "application/json; charset=UTF-8"
+      },
+      body
+    })
+      .then(response => response.json())
+      .then(function (data) {
+        console.log('Request succeeded with JSON response', data);
+      })
+      .catch(function (error) {
+        console.log('Request failed', error);
+      });;
+
+  })
 ```
 
 En este ejemplo, se convierte `FormData` en un objeto JSON antes de enviarlo.
@@ -244,7 +312,7 @@ Es posible cargar imágenes en segundo plano utilizando `fetch` y el método `bl
 ```
 
 ```javascript
-fetch(image_url)
+fetch("https://httpbin.org/image/png")
   .then(response => response.status == 200 ? response : Promise.reject(response.status))
   .then(response => response.blob())
   .then(imageBlob => {
@@ -272,12 +340,39 @@ URL.revokeObjectURL(objectURL); // Liberar la URL cuando ya no sea necesaria
 
 `fetch` puede utilizar URLs construidas dinámicamente. Esto es útil cuando los parámetros de la consulta cambian en tiempo de ejecución.
 
+#### Ejemplo sin URLSearchParams
+
 ```javascript
-let country = `Saint Vincent & the Grenadines`;
+// Obtenemos los comentarios del post 1
+let num = 1
+let url = `https://jsonplaceholder.typicode.com/posts/${num}/comments`
 
-fetch(`/api/cities?country=${country}`);
-//"/api/cities?country=Saint Vincent & the Grenadines"
+fetch(`https://jsonplaceholder.typicode.com/posts/${num}/comments`)
+  .then(response => response.json())
+  .then(function (data) {
+    console.log('Request succeeded with JSON response', data);
+  })
+  .catch(function (error) {
+    console.log('Request failed', error);
+  })
 
+// Obtenemos los comentarios del siguiente post
+num++
+url = `https://jsonplaceholder.typicode.com/posts/${num}/comments`
+
+fetch(url)
+  .then(response => response.json())
+  .then(function (data) {
+    console.log('Request succeeded with JSON response', data);
+  })
+  .catch(function (error) {
+    console.log('Request failed', error);
+  })
+```
+
+#### Ejemplo de crear una URL con URLSearchParams
+
+```javascript
 url = `/api/cities?${new URLSearchParams([['country', country]])}`;
 
 fetch(url);
@@ -285,6 +380,8 @@ fetch(url);
 ```
 
 En este ejemplo, se construye una URL con parámetros de consulta utilizando `URLSearchParams`, asegurándose de que los caracteres especiales estén correctamente codificados.
+
+#### Ejemplo de acceder a los parámetros de una URL con URLSearchParams
 
 Si usamos el constructor con una URL ya formada nos retorna un objeto `URLSearchParams`, que es un iterable con los datos:
 

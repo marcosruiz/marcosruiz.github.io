@@ -42,11 +42,11 @@ Con AJAX, JavaScript puede enviar o solicitar datos en formato XML o JSON al ser
 ```javascript
 document.getElementById('loadData').addEventListener('click', function () {
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://api.github.com/users/marcosruiz', true);
+  xhr.open('GET', 'https://api.github.com/users/octocat', true);
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       var data = JSON.parse(xhr.responseText);
-      document.getElementById('result').innerText = data.followers;
+      document.getElementById('result').innerText = `Followers de octocat: ${data.followers}`;
     }
   };
   xhr.send();
@@ -239,11 +239,11 @@ req.open('GET', 'http://www.mozilla.org/', true);
 
 `XMLHttpRequest` tiene un conjunto de estados que indican el progreso de la solicitud. Estos estados están representados por la propiedad `readyState` del objeto XHR. Los posibles valores de `readyState` son:
 
-- 0 (UNSENT): La solicitud no ha sido inicializada.
-- 1 (OPENED): Se ha establecido la conexión con el servidor.
-- 2 (HEADERS_RECEIVED): Se han recibido los encabezados de la respuesta.
-- 3 (LOADING): El cuerpo de la respuesta se está recibiendo.
-- 4 (DONE): La solicitud se ha completado y la respuesta está lista.
+- `0` (`UNSENT`): La solicitud no ha sido inicializada.
+- `1` (`OPENED`): Se ha establecido la conexión con el servidor.
+- `2` (`HEADERS_RECEIVED`): Se han recibido los encabezados de la respuesta.
+- `3` (`LOADING`): El cuerpo de la respuesta se está recibiendo.
+- `4` (`DONE`): La solicitud se ha completado y la respuesta está lista.
 
 Para realizar alguna acción cuando la solicitud cambie de estado, se utiliza la propiedad `onreadystatechange`, que se asigna a una función. Esta función se ejecutará cada vez que cambie el estado de la solicitud.
 
