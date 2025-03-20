@@ -3,7 +3,7 @@ title: "Fetch en JavaScript"
 date: 2025-03-08 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Desarrollo Web en Entorno Cliente]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, desarrollo web en entorno cliente, dwec]
-img_path: /assets/img/comunicacion-servidor/
+img_path: /assets/img/fetch-javascript/
 ---
 
 {:.section}
@@ -132,15 +132,6 @@ En el desarrollo web, al interactuar con APIs o al enviar datos a un servidor, e
 En esta explicación, veremos cómo y cuándo usar cada uno de estos formatos según las necesidades de tu aplicación web.
 
 ### Usar el método POST
-
-> Los códigos que hacen peticiones POST necesitan de un backend.
-> 
-> 1. Puedes realizar peticiones a APIs públicas como: <https://postman-echo.com/>, <https://httpbin.org/>, <https://jsonplaceholder.typicode.com/> o <https://designer.mocky.io>.
-> 1. Puedes utilizar el servidor local de Node que está en el artículo [Formularios en HTML](https://marcosruiz.github.io/posts/formularios-html/#servidor-de-node-para-probar-cualquier-formulario).
-> 1. O puedes crearte tu propio backend con Firebase o Supabase.
->
-> En mi caso voy a utilizar APIs públicas para que puedas probar los ejemplos tu mismo sin necesidad de hacer nada más.
-{:.prompt-info}
 
 Para enviar datos a un servidor, se puede usar el método POST con `fetch`.
 

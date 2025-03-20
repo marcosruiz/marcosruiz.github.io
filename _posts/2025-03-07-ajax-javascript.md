@@ -18,7 +18,37 @@ AJAX, acrónimo de “Asynchronous JavaScript and XML”, es un conjunto de tecn
 
 Esta es la definición original de AJAX pero ahora se usa JSON en lugar de XML y `fetch` en vez de `XMLHttpRequest`. Sin embargo se sigue manteniendo el nombre de AJAX ya que aunque contradice el acrónimo no contradice la definición.
 
-Con AJAX, JavaScript puede enviar o solicitar datos en formato XML o JSON al servidor sin recargar la página. El servidor responde a estas solicitudes, generalmente a través de una API. El cliente, usando JavaScript, procesa la respuesta y actualiza el contenido de la página dinámicamente.
+## Modelo clásico vs modelo AJAX
+
+El modelo clásico de aplicaciones Web funciona de la siguiente forma: la mayoría de las acciones del usuario se producen en la interfaz, disparando solicitudes HTTP al servidor web. El servidor efectúa un proceso (recopila información, realiza las acciones oportunas), y devuelve una pagina HTML al cliente. Este es un modelo adaptado del uso original de la Web como medio hipertextual, pero a nivel de aplicaciones de software, este tipo de modelo no es necesariamente el más recomendable.
+
+Cada vez que se realiza una petición al servidor, el usuario lo único que puede hacer es esperar, ya que muchas veces la página cambia a otra diferente, y hasta que no reciba todos los datos del servidor, no se mostrará el resultado, con lo que el usuario no podrá interactuar de ninguna manera con el navegador.
+
+Con AJAX, lo que se intenta evitar, son esencialmente esas esperas. El cliente podrá hacer solicitudes al servidor, mientras el navegador sigue mostrando la misma página web, y cuando el navegador reciba una respuesta del servidor, la mostrará al cliente y todo ello sin recargar o cambiar de página, es decir, de manera dinámica.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿En qué modelo de aplicación web la actividad del usuario se ve interrumpida o bloqueada por la espera de las respuestas del servidor?</summary>
+  <div class="card-body" markdown="1">
+
+Clásico.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+## Requerimientos previos
+
+Para la programación con AJAX vamos a necesitar de un servidor web, ya que las peticiones AJAX que hagamos, las haremos a un servidor (backend).
+
+Los códigos que hacen peticiones POST necesitan de un backend.
+
+- Para peticiones GET:
+  - Puedes utilizar la extensión de Live Server de Visual Studio Code, la cual te crea un servidor en el proyecto que estés actualmente.
+- Para peticiones POST:
+  - Puedes realizar peticiones a APIs públicas como: <https://postman-echo.com/>, <https://httpbin.org/>, <https://jsonplaceholder.typicode.com/> o <https://designer.mocky.io>.
+  - Puedes utilizar el servidor local de Node que está en el artículo [Formularios en HTML](https://marcosruiz.github.io/posts/formularios-html/#servidor-de-node-para-probar-cualquier-formulario).
+  - Puedes crearte tu propio backend con Firebase o Supabase de manera rápida.
+  - Puedes utilizar los conocimientos que has obtenido en el módulo profesional de DWES.
 
 ## Ejemplo básico de AJAX con XMLHttpRequest
 
@@ -219,6 +249,22 @@ _Ejemplo de funcionamiento de código anterior_
 
 `XMLHttpRequest` (XHR) es una API utilizada para enviar y recibir datos entre un cliente web y un servidor. A pesar de su nombre, `XMLHttpRequest` puede manejar diferentes tipos de datos, aunque en este capítulo nos centraremos principalmente en JSON debido a su popularidad en las aplicaciones web modernas.
 
+`XMLHTTPRequest` juega un papel muy importante en AJAX, ya que sin este objeto, no sería posible realizar las peticiones asíncronas al servidor.
+
+Con la llegada de las librerías cross-browser como jQuery, Prototype, scriptaculous, etc, los programadores pueden utilizar toda la funcionalidad de `XMLHTTPRequest`, sin codificar directamente sobre la API, con lo que se acelera muchísimo el desarrollo de aplicaciones AJAX.
+
+Y con la llegada de `fetch`, ya no es tan necesario el uso de librerías cross-browser.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué son las peticiones cross-site?</summary>
+  <div class="card-body" markdown="1">
+
+Son peticiones que se hacen a dominios diferentes. Es decir, esto ocurriría si desde la web de Facebook se hacen peticiones `fetch` a la API de X (llamémoslo Twitter). Por defecto, este tipo de peticiones son bloqueadas.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 ### Inicialización y Uso Básico
 
 Para comenzar a utilizar `XMLHttpRequest`, primero debemos crear una instancia del objeto `XMLHttpRequest`.
@@ -297,6 +343,16 @@ req.open('GET', 'http://www.mozilla.org/', true);
 ```
 
 Se configura la solicitud para hacer una petición GET a la URL especificada. El tercer parámetro, `true`, indica que la solicitud debe ser asíncrona.
+
+<details class="card mb-2">
+  <summary class="card-header question">En JavaScript una petición AJAX, ¿puede ser síncrona?</summary>
+  <div class="card-body" markdown="1">
+
+Si. Una petición AJAX puede ser síncrona, pero en general no es recomendable.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 #### Monitorear Cambios de Estado
 
