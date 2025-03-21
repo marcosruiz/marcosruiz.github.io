@@ -43,6 +43,7 @@ pin: true
   - [Async await en JavaScript](/posts/async-await-javascript/)
   - [AJAX en JavaScript](/posts/ajax-javascript/)
   - [Fetch en JavaScript](/posts/fetch-javascript/)
+  - [Tratamiento de datos en clientes web](/posts/tratamiento-datos-clientes-web/)
 
 - T01 - [Tarea: Entorno de desarrollo para JavaScript](/posts/tarea-entorno-desarrollo-javascript/)
 - T02 - [Tarea obligatoria: Introducción a JavaScript](/posts/tarea-introduccion-javascript/)
