@@ -79,7 +79,7 @@ Este ejemplo muestra cómo acceder a diferentes propiedades del objeto `Response
 
 En estos ejemplos, se hace una solicitud a una URL y se procesan los datos como JSON en el primer caso y como texto en el segundo.
 
-## Encadenar Promesas (TODO)
+## Encadenar Promesas
 
 Es posible encadenar promesas para manejar el flujo de la solicitud de manera más estructurada.
 
@@ -230,6 +230,33 @@ En este ejemplo, un objeto JavaScript se convierte a JSON y se envía al servido
 
 `FormData` es un objeto predefinido en JavaScript que se utiliza para crear pares clave-valor para enviar formularios mediante `XMLHttpRequest` o `fetch`.
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <form id="myFormElement">
+    <label>Dato dentro del formulario: </label>
+    <input name="patata" value="valor">
+    <input type="submit" value="Click para enviar!">
+  </form>
+
+  <div class="noForm">
+    <label>Dato fuera del formulario: </label>
+    <input type="file" id="fileInputElement">
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
+```
+
 ```javascript
 let serialNumber = 0;
 
@@ -263,6 +290,28 @@ Este ejemplo muestra cómo crear un objeto `FormData` a partir de un formulario 
 #### Convertir FormData a JSON
 
 Para enviar `FormData` como JSON, se puede convertir a un objeto JavaScript y luego a una cadena JSON.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form id="myFormElement">
+    <input name="clavePatata" value="valorPatata">
+    <input name="claveBerenjena" value="valorBerenjena">
+    <input type="submit" value="Click para enviar!">
+  </form>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
+```
 
 ```javascript
 document
