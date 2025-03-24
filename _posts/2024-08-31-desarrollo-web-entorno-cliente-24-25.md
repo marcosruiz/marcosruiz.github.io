@@ -44,6 +44,7 @@ pin: true
   - [AJAX en JavaScript](/posts/ajax-javascript/)
   - [Fetch en JavaScript](/posts/fetch-javascript/)
   - [Tratamiento de datos en clientes web](/posts/tratamiento-datos-clientes-web/)
+  - [Gestión de cookies en JavaScript](/posts/cookies)
 
 - T01 - [Tarea: Entorno de desarrollo para JavaScript](/posts/tarea-entorno-desarrollo-javascript/)
 - T02 - [Tarea obligatoria: Introducción a JavaScript](/posts/tarea-introduccion-javascript/)
