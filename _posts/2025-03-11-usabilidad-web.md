@@ -170,7 +170,7 @@ El menú de navegación de una página es aquel que permite acceder a los lugare
 - Todos los enlaces muestran el contenido que se esperaba.
 
 <details class="card mb-2">
-  <summary class="card-header question">
+  <summary class="card-header question" markdown="1">
 
 En lo que respecta al desarrollo de interfaces, una de las directrices a tener en cuenta si queremos desarrollar una interfaz usable es...
 
