@@ -1,15 +1,22 @@
 ---
 title: "Usabilidad de la web"
-date: 2024-09-03 9:00:00 +0100
+date: 2025-03-11 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
 img_path: /assets/img/usabilidad-web/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Introducción
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué significa que una página sea usable?</summary>
+  <div class="card-body" markdown="1">
+
+Usable es un término ampliamente utilizado en el ámbito informático. Su significado es “que se puede usar”. ¿Pero qué significa “que se puede usar”? Podríamos pensar que un sitio Web es usable sólo por el hecho de haber accedido a él y haber visitado alguno de sus enlaces. Nada más lejos de la verdad. Una página es usable si al usuario le resulta fácil el uso de su interfaz.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 Cuando hay una buena comunicación entre el usuario y el ordenador se reducen los errores y aumenta la satisfacción del usuario.
 
@@ -22,6 +29,22 @@ La usabilidad, también se define como el grado en que un producto puede ser uti
 La usabilidad se refiere a la capacidad de un software de ser comprendido , aprendido , usado y atractivo para el usuario, en condiciones específicas de uso.
 
 La usabilidad es un atributo **cualitativo** que evalúa cuán fáciles son de usar las interfaces de usuario.
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Por qué es importante que nuestra página sea usable?
+</summary>
+  <div class="card-body" markdown="1">
+
+Porque la facilidad de uso está relacionada directamente con la eficiencia. Si la página es usable, el usuario no dudará al tomar decisiones sobre lo que tiene que hacer y podrá efectuar un mayor número de operaciones en menos tiempo.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+> La web <https://userinyerface.com/> está hecha para conseguir la peor experiencia de usuario posible.
+{:.prompt-info}
+
+Lee el artículo [La usabilidad en el diseño de aplicaciones](https://www.eniun.com/usabilidad-diseno-aplicaciones-reglas-principios/)
 
 ## Objetivos del diseño de interfaces
 
@@ -50,32 +73,6 @@ A la hora de diseñar una interfaz Web, debemos tener en cuenta algunos de los o
 - Facilitar la interactividad de los usuarios con el sitio web.
 - Tener en cuenta las necesidades de los usuarios.
 
-## Normas ISO relacionadas con la usabilidad
-
-Los estándares relativos a la usabilidad se refieren básicamente a los siguientes aspectos:
-
-- Uso del producto, interfaz de usuario e interacción.
-- Proceso llevado a cabo para el desarrollo del producto.
-- Capacidad de una organización para aplicar un diseño centrado en el usuario.
-
-Si nos centramos en la norma ISO IEC 9126, esta define la usabilidad como un atributo de la calidad del software , asociado al diseño y a la evaluación de la interfaz de usuario y a la interacción. Se analiza en términos de:
-
-- **Comprensibilidad**: Capacidad del producto software para permitir al usuario entender si el software es adecuado y cómo puede ser utilizado para la realización de tareas en condiciones de uso particulares.
-- **Aprendizaje**: Capacidad del producto software para permitir a los usuarios aprender a utilizarlo.
-- **Operabilidad**: Capacidad del producto software para permitir que el usuario opere con él y logre el control del mismo considerando aspectos como adaptabilidad, instalación y tolerancia a errores.
-- **Atractividad**:Uso de colores y de un diseño gráfico atractivo para el usuario.
-- **Conformidad**: Capacidad del producto software para adherirse a estándares , convenciones, guías de estilo o regulaciones relacionadas con la usabilidad.
-
-Existen otras normas que también son importantes de cara a la usabilidad:
-
-- ISO DIS 9241-11
-- ISO 13407
-- ISO TR 18529
-- ISO 9241-151
-
-> No es necesario que te aprendas el nombre de estas normas, pero sé consciente de que existen para poder consultarlas el dia de mañana.
-{:.prompt-info}
-
 ## El usuario, ese gran desconocido
 
 Cada usuario es un mundo y, si quieres tener alguna ventaja sobre la competencia, tendrás que identificar qué es lo que pueden tener en común pero sobre todo aquellas cosas que los diferencian.
@@ -100,13 +97,13 @@ para [beneficio u objetivo].
 
 También debes tener en cuenta si el sitio que estés diseñando esté orientado a ser usado por diferentes perfiles de usuario: visitante o invitado, usuario registrado o colaborador, usuario experto o administrador. En este caso, a cada usuario se le suele presuponer una experiencia determinada en el uso de la web.
 
-### Lenguaje y vocabulario
+## Lenguaje y vocabulario
 
 Debemos emplear un lenguaje cercano al usuario. El lenguaje debe ser sencillo y comprensible. El mayor problema radica en saber cuál es ese lenguaje cercano al usuario si nosotros mismos no somos ese usuario objetivo.
 
 La tarea de escribir de manera clara y natural no es fácil. Al contrario, es algo complejo que va más allá de una buena ortografía, de un buen conocimiento de la gramática o de un amplio vocabulario: requiere una buena selección de la palabra o frase adecuada, un ordenamiento lógico del tema a tratar, y una exigente labor de revisión que elimine sin piedad toda palabra superflua, frase ambigua o estructura complicada.
 
-#### Consejos sobre cómo redactar el contenido
+### Consejos sobre cómo redactar el contenido
 
 1. Uso de lenguaje sencillo y directo, palabras sencillas expresadas de forma simple y transmisión clara de las ideas Han de evitarse las estructuras complejas y los conceptos abstractos.
 1. En caso de necesidad de mención de conceptos abstractos es recomendable usar ejemplos concretos o comparaciones que faciliten su comprensión
@@ -136,6 +133,18 @@ Para llegar a todo el mundo y hacer una interfaz más usable hay que tratar de:
   <div class="card-body" markdown="1">
 
 1 y 2 son correctas.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es el copywritting?</summary>
+  <div class="card-body" markdown="1">
+
+El copywriting es la técnica de redactar textos persuasivos con el objetivo de atraer, captar y convencer al lector para que realice una acción determinada, como comprar un producto, suscribirse a un boletín, descargar un contenido, o simplemente generar interés hacia una marca o idea.
+
+(Voluntario) Lee el artículo [Experiencia de usuario. Cómo influye el copywritting](https://www.lawebera.es/diseno-web/experiencia-usuario-copywritting.php).
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -261,7 +270,7 @@ Si la ubicación de los elementos de navegación es consistente y persistente y,
 
 Cuando el usuario se encuentra en medio de un proceso que implique un conjunto de pasos, es conveniente mantenerle en todo momento informado del progreso de dicho proceso.
 
-## Herramientas
+### Herramientas
 
 Hoy en día, casi todo el software está preparado tanto para el uso del ratón como del teclado.
 
@@ -271,161 +280,109 @@ En cualquier navegador al pulsar F7 se activa y desactiva la opción de uso del 
 
 ## Análisis y verificación de la usabilidad
 
+Una parte importante que todo diseño debería tener en cuenta es hacer una prueba de usabilidad con usuarios heterogéneos y con distintos tipos de discapacidad.
 
+<details class="card mb-2">
+  <summary class="card-header question">Una página web usable es, además, siempre accesible. ¿Verdadero o falso?</summary>
+  <div class="card-body" markdown="1">
 
+Falso. Una página web sea usable no significa que sea obligatoriamente accesible. Lo que si podemos decir es que cuando se tiene en cuenta la accesibilidad en el diseño de una interfaz, ésta será más usable para un mayor número de personas en cualquier situación o contexto. El hecho de realizar un diseño accesible posibilita a todos los usuarios la realización y consecución de sus tareas.
 
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
+Existen varios métodos para analizar la usabilidad de una interfaz:
 
+1. Contratar una empresa o experto para que realice una **análisis heurístico**.
+1. Realizar una prueba o **test de usabilidad** antes o después de publicar la página.
+1. Utilizar la técnica **eye tracking**.
 
+### Análisis heurístico
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+La evaluación heurística se realiza siguiendo las directrices marcadas por Jacob Nielsen (padre de la usabilidad):
 
 Lee el artículo [Principios de usabilidad web de Jacob Nielsen y el diseño UX](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/).
 
-Lee el artículo [La usabilidad en el diseño de aplicaciones](https://www.eniun.com/usabilidad-diseno-aplicaciones-reglas-principios/)
+1. **El lenguaje de las páginas**: ¿es cercano al usuario? ¿está presentado en un orden lógico para el usuario?
+1. **La consistencia**: ¿la representación gráfica es la misma en conceptos similares? ¿se emplean los mismo términos para el mismo tipo de elementos?
+1. **La memoria del usuario**: ¿hay enlaces directos a la información relevante? ¿debe el usuario recordar demasiadas cosas?
+1. **Eficiencia y flexibilidad**: ¿el usuario encuentra siempre lo que busca? ¿y el usuario novato, dispone de alguna ayuda adicional?
+1. **Diseño**: ¿es ergonómico y visual o está todo junto sin espacios?
+1. **Información**: ¿está ordenada y correctamente agrupada? ¿el nivel de detalle de la información se suministra bajo demanda o se presenta todo de una sola vez?
+1. **Ubicación y navegación**: ¿sabe el usuario dónde está en todo momento? ¿sabe a dónde puede ir? ¿puede regresar a la página principal de la sección o del sitio? ¿son los enlaces intuitivos? ¿hay enlaces rotos? ¿hay enlaces con contenido impropio según el nombre del enlace?
+
+El profesional que realiza el análisis heurístico deberá responder de forma afirmativa o negativa a un conjunto de preguntas. Aquellas contestadas de forma negativa son las que detectan los problemas de usabilidad.
+
+Este análisis suele ser eficiente si lo que se quiere es encontrar soluciones alternativas ya que suele ser realizado por un experto en usabilidad o en diseño de interfaces de usuario.
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Qué significa que una página sea usable?</summary>
+  <summary class="card-header question">El análisis heurístico debe ser realizado por un experto en accesibilidad. ¿Verdadero o falso?</summary>
   <div class="card-body" markdown="1">
 
-Usable es un término ampliamente utilizado en el ámbito informático. Es una traducción del término inglés “Useable” y su significado, por analogía con el término “utilizable” sería “que se puede usar”. ¿Pero qué significa “que se puede usar”? Podríamos pensar que un sitio Web es usable sólo por el hecho de haber accedido a él y haber visitado alguno de sus enlaces. Nada más lejos de la verdad. Una página es usable si al usuario le resulta fácil el uso de su interfaz.
+Falso.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
 
-<details class="card mb-2">
-  <summary class="card-header question">¿Por qué es importante que nuestra página sea usable?
-</summary>
-  <div class="card-body" markdown="1">
+#### Normas ISO relacionadas con la usabilidad
 
-Porque la facilidad de uso está relacionada directamente con la eficiencia. Si la página es usable, el usuario no dudará al tomar decisiones sobre lo que tiene que hacer y podrá efectuar un mayor número de operaciones en menos tiempo.
+Los estándares relativos a la usabilidad se refieren básicamente a los siguientes aspectos:
 
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
+- Uso del producto, interfaz de usuario e interacción.
+- Proceso llevado a cabo para el desarrollo del producto.
+- Capacidad de una organización para aplicar un diseño centrado en el usuario.
 
-> La web <https://userinyerface.com/> está hecha para conseguir la peor experiencia de usuario posible.
+Si nos centramos en la norma ISO IEC 9126, esta define la usabilidad como un atributo de la calidad del software , asociado al diseño y a la evaluación de la interfaz de usuario y a la interacción. Se analiza en términos de:
+
+- **Comprensibilidad**: Capacidad del producto software para permitir al usuario entender si el software es adecuado y cómo puede ser utilizado para la realización de tareas en condiciones de uso particulares.
+- **Aprendizaje**: Capacidad del producto software para permitir a los usuarios aprender a utilizarlo.
+- **Operabilidad**: Capacidad del producto software para permitir que el usuario opere con él y logre el control del mismo considerando aspectos como adaptabilidad, instalación y tolerancia a errores.
+- **Atractividad**:Uso de colores y de un diseño gráfico atractivo para el usuario.
+- **Conformidad**: Capacidad del producto software para adherirse a estándares , convenciones, guías de estilo o regulaciones relacionadas con la usabilidad.
+
+Existen otras normas que también son importantes de cara a la usabilidad:
+
+- ISO DIS 9241-11
+- ISO 13407
+- ISO TR 18529
+- ISO 9241-151
+
+> No es necesario que te aprendas el nombre de estas normas, pero sé consciente de que existen para poder consultarlas el dia de mañana.
 {:.prompt-info}
 
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué es el copywritting?</summary>
-  <div class="card-body" markdown="1">
+### Test de usabilidad
 
-Lee el artículo [Experiencia de usuario. Cómo influye el copywritting](https://www.lawebera.es/diseno-web/experiencia-usuario-copywritting.php).
+Un test de usabilidad es una medida concreta y objetiva de la usabilidad de una herramienta, un sistema, un sitio web, etc. tomada a partir de usuarios verdaderos que realizan tareas reales.
 
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
+Un test de usabilidad permite verificar si existen problemas de usabilidad y encontrar, en su caso, una posible solución a ellos. Hay que tener varios elementos en cuenta:
 
-## Figma
+1. **El momento**: Cuanto antes mejor. Si es posible debe realizarse antes de publicar el sitio. Idealmente, debería realizarse después de un análisis heurístico.
+1. **Las personas**: ¿Cuántas personas lo van a realizar y qué características tendrán que tener estas personas? Se puede realizar un test con un grupo pequeño de usuarios o emplear un gran grupo. Se pueden incluir personas con distintos grados de discapacidad y con distinto nivel de experiencia.
+1. **La duración**: El tiempo dedicado a la realización de los test suele estar relacionado con el número de personas que lo van a realizar.
+1. **El lugar**: Debe escogerse cuidadosamente, de forma que los usuarios que participan en la prueba se sientan a gusto y no puedan interactuar entre sí.
+1. **El material**: Para realizar el test se debe disponer de toda la tecnología necesaria, incluida la tecnología asistiva en el caso de que haya personas con discapacidad en el grupo de usuarios. También se deberían hacer pruebas en equipos con conexiones lentas y dispositivos portátiles.
+1. **El test**: Debe estar bien planificado: ¿Qué tareas se le van a pedir a los usuarios? ¿En qué momento realizarán cada una de esas tareas? ¿Cuánto tiempo se considera correcto para realizar dicha tarea? Durante la realización del test, se debe observar la interacción de cada usuario con la máquina en la realización de cada una de las tareas, ver sus reacciones mientras maneja la interfaz, anotar el tiempo que le lleva realizar una determinada tarea, etcétera.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Smp-u-8ynbE?si=qkm02srEGZ50kmjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+No es muy recomendable realizar test de usabilidad al usuario final una vez se a publicado la web ya que obliga a publicar la página con fallos. Además los usuarios habituales deberán tomarse la molestia de realizar una encuesta con el objetivo de medir su nivel de satisfacción. Esto puede conllevar a la pérdida de usuarios y reputación.
 
-## Atomic Design
+### Eye tracking
 
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué es el Atomic Design?</summary>
-  <div class="card-body" markdown="1">
+La técnica del eye tracking consiste en analizar y registrar los movimientos oculares que realiza un usuario mientras navega o interactúa con un sitio web o aplicación. Esto permite conocer detalladamente qué áreas captan mayor atención, cómo el usuario explora el contenido y cuáles son las zonas que ignora o le resultan confusas.
 
-Atomic Design es un modo de diseñar aplicaciones g sitios web, comenzando desde 10 más particular para
-poder cambiar de forma flexible g rápida en 10 general, manteniendo la consistencia a 10 largo de todo el sistema.
+Debemos ser conscientes que lo habitual es que un usuario no lea con detalle ni siquiera una mínima parte de los textos de una página web. En su lugar, y por economía de tiempo, el usuario se limita a hojear la página por encima. Es decir, el usuario realiza un rápido barrido visual de cada página buscando elementos que llamen su atención.
 
-La metodología Atomic Design fue teorizada por el diseñador web estadounidense Brad su libro titulado Atomic Design. Tras su publicación, el paradigma de diseñar productos por pantallas cambió a diseñar productos por componentes.
+![Resultados del eye tracking](eyetracking.png)
+_Resultados del eye tracking_
 
-1. Átomos: Son los elementos indivisibles del diseño.
-   1. Tipografía
-   1. Colores
-   1. Iconos
-   1. Variables básicas (como espacios o tamaños)
-   1. Etiquetas
-1. Moléculas: Son grupos de átomos que se combinan para formar componentes funcionales.
-   1. Botones con texto
-   1. Botones con icono
-   1. Inputs con label
-   1. Campos de búsqueda (Input + Botón)
-1. Organismos: Son componentes más complejos que combinan moléculas y/o átomos para formar secciones funcionales de la interfaz.
-   1. Encabezados
-   1. Cards
-1. Plantillas: Son diseños que establecen la estructura y el layout de la página utilizando organismos.
-1. Páginas: Son instancias específicas de las plantillas con contenido real. Permiten probar y validar cómo se ven los elementos en un entorno real.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Cuáles son los beneficios del Atomic Design?</summary>
-  <div class="card-body" markdown="1">
-
-- Facilita la reutilización de componentes.
-- Mejora la coherencia visual y funcional del sistema.
-- Facilita el mantenimiento y escalabilidad del diseño.
-- Potencia el trabajo colaborativo entre equipos de diseño y desarrollo.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-<details class="card mb-2">
-  <summary class="card-header question">¿En qué partes se divide un design system que se usa OscarRGB en el vídeo?</summary>
-  <div class="card-body" markdown="1">
-
-1. Átomos
-   1. Colores
-   1. Tipografía
-   1. Grids
-   1. Iconos
-   1. Sombras
-1. Moléculas
-   1. Botones
-1. Organismos
-   1. Componentes
-   1. Tabs
-   1. Header
-   1. Listas
-   1. Inputs
-1. Plantillas
-   1. Login
-   1. Registro
-   1. Perfil
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué es un wireframe?</summary>
-  <div class="card-body" markdown="1">
-
-Un wireframe es una representación visual esquemática de la estructura básica de una página web o aplicación. Su propósito principal es mostrar cómo se distribuirán los elementos clave en la interfaz, sin enfocarse en aspectos de diseño gráfico como colores, tipografías o imágenes detalladas.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
+Aplicando esta técnica, los expertos en comercio y marketing colocan los productos en los lineales de los supermercados para conseguir un mayor número de ventas o promocionar algún producto.
 
 ## (Voluntario) Artículos en inglés
 
 - [Mitos en la experiencia de usuario (inglés)](https://uxmyths.com/)
 - [Principios de usabilidad web de Jacob Nielsen y el diseño UX](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/)
+- <https://www.nosolousabilidad.com/articulos/eye-tracking.htm>
+- <https://madabelvid.wordpress.com/2016/06/15/la-aportacion-del-eyetracking-en-el-sector-de-usabilidad/>
+- <https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/>
+- <https://www.eniun.com/usabilidad-diseno-aplicaciones-reglas-principios/>
