@@ -263,7 +263,7 @@ _Imagen abierta_
 Y la deberemos copiar el cuestionario de la siguiente manera:
 
 ```plaintext
-::RA1 01::[markdown]Pregunta 
+::RA1 01::[markdown]Pregunta
 ![](URL de la imagen)
 {
     =Respuesta
@@ -282,7 +282,7 @@ Y la deberemos copiar el cuestionario de la siguiente manera:
 Por ejemplo:
 
 ```plaintext
-::TXX XX::[markdown]Pregunta 
+::TXX XX::[markdown]Pregunta
 ![](https\://www.fpvirtualaragon.es/pluginfile.php/123456/mod_folder/content/0/01.png)
 {
     =Respuesta
@@ -335,6 +335,153 @@ En Notion podemos usar `Ctrl + e` para hacer que un texto se vea como código. E
 ## Borrar preguntas
 
 Moodle exporta las preguntas aunque hayan sido eliminadas. Por lo que si queremos exportar, borrar y reimportar las mismas preguntas editadas, en lugar de borrar preguntas es mejor moverlas a una categoria llamada "Papelera" o "Preguntas viejas" para que no molesten.
+
+{:.section}
+## Buscar y reemplazar
+
+A continuación, dejo una serie de búsquedas para estandarizar las preguntas. Deben estar activadas las expresiones regulares.
+
+- Quitar etiquetas para el código
+
+Buscar:
+
+```plaintext
+</?code>
+```
+
+Reemplazar:
+
+```plaintext
+`
+```
+
+- Poner nombre corto a las preguntas
+
+Buscar:
+
+```plaintext
+^::.*::
+```
+
+Reemplazar:
+
+```plaintext
+::T08 001::[markdown]
+```
+
+- Quitar comentarios:
+
+Buscar:
+
+```plaintext
+// question:.*
+```
+
+Reemplazar:
+
+```plaintext
+
+```
+
+- Quitar saltos de línea:
+
+Buscar:
+
+```plaintext
+\n\n\n\n
+```
+
+Reemplazar:
+
+```plaintext
+\n\n
+```
+
+- Convertir preguntas de verdadero y falso:
+
+Buscar:
+
+```plaintext
+\{TRUE\}
+```
+
+Reemplazar:
+
+```plaintext
+{
+  =Verdadero
+  ~Falso
+}
+```
+
+Buscar:
+
+```plaintext
+\{FALSE\}
+```
+
+Reemplazar:
+
+```plaintext
+{
+  =Falso
+  ~Verdadero
+}
+```
+
+- Quitar spans
+
+Buscar:
+
+```plaintext
+<span lang\\="en">(.*)</span>
+```
+
+Reemplazar:
+
+```plaintext
+$1
+```
+
+- Sustituir símbolos `<` y `>`:
+
+Buscar:
+
+```plaintext
+&lt;
+```
+
+Reemplazar:
+
+```plaintext
+<
+```
+
+Buscar:
+
+```plaintext
+&gt;
+```
+
+Reemplazar:
+
+```plaintext
+>
+```
+
+- Mover el enunciado de la pregunta del nombre corto al enunciado:
+
+Buscar:
+
+```plaintext
+::(.*)::
+```
+
+Reemplazar:
+
+```plaintext
+::T08 001::[markdown]$1
+```
 
 ## Bibliografía
 
