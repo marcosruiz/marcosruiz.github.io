@@ -215,7 +215,7 @@ _Ejemplo de barra de navegación NO persistente_
 También es importante que el sistema de búsqueda permanezca siempre en el mismo sitio.
 
 <details class="card mb-2">
-  <summary class="card-header question">
+  <summary class="card-header question" markdown="1">
 
 En lo que respecta al sistema de navegación y al sistema de búsqueda de una interfaz, son deseables la(s) característica(s):
 
