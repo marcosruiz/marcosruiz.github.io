@@ -33,9 +33,7 @@ Existen muchas APIs públicas como son:
 - [API de Marvel](https://developer.marvel.com/)
 - [PokéAPI](https://pokeapi.co/)
 - [COVID Tracking](https://covidtracking.com/data)
-- [Nomics](https://nomics.com/)
 - [OpenWeather APIs](https://openweathermap.org/api)
-- [JSON placeholder](https://jsonplaceholder.typicode.com/)
 
 ## Bibliografía
 
