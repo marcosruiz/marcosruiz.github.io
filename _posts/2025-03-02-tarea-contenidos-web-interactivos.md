@@ -80,14 +80,6 @@ A modo de contexto, vamos a suponer que la página se usa en la torre de control
 {:.prompt-info}
 
 {:.activity}
-### (Voluntaria avanzada) Responsive
-
-Aunque te estarías adelantando al desarrollo habitual de esta asignatura, puedes intentar hacerlo responsive utilizando media queries o cualquier técnica que consideres.
-
-> Puedes utilizar [el artículo de Logongas sobre Diseño Responsivo](https://logongas.es/doku.php?id=clase:daw:diw:2eval:tema06) como ayuda.
-{:.prompt-info}
-
-{:.activity}
 ### Vídeo
 
 Graba un video mostrando la aplicación de vuelos que has desarrollado. El video debe cumplir con los siguientes requisitos:

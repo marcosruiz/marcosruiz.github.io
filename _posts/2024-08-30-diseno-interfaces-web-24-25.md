@@ -37,6 +37,8 @@ pin: true
 - T04 - [Tarea: Imágenes y vídeo para Bayona](/posts/tarea-imagenes-video-bayona)
 - T05 - [Tarea obligatoria: Animaciones en la web](/posts/tarea-animaciones/)
 - T06 - [Tarea obligatoria: Contenidos web interactivos](/posts/tarea-contenidos-web-interactivos/)
+- T07 - Tarea: Usabilidad en la web
+- T08 - Tarea: Accesibilidad en la Web
 
 ## Enlaces de interés
 
