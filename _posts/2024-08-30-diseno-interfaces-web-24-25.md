@@ -26,6 +26,7 @@ pin: true
   - [Video en la web](/posts/video-web)
 - UD5 - [Animaciones en la Web](/posts/animaciones-web/)
 - UD6 - [Contenidos web interactivos](/posts/contenidos-web-interactivos/)
+  - [Figma y atomic design](/posts/figma-atomic-design)
 - UD7 - [Usabilidad en la Web](/posts/usabilidad-web)
 - UD8 - Accesibilidad en la Web
 
@@ -35,6 +36,7 @@ pin: true
 - T03 - No hay
 - T04 - [Tarea: Imágenes y vídeo para Bayona](/posts/tarea-imagenes-video-bayona)
 - T05 - [Tarea obligatoria: Animaciones en la web](/posts/tarea-animaciones/)
+- T06 - [Tarea obligatoria: Contenidos web interactivos](/posts/tarea-contenidos-web-interactivos/)
 
 ## Enlaces de interés
 
