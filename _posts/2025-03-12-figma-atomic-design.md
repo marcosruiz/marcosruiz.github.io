@@ -6,23 +6,15 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/figma-atomic-design/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
+## ¿Qué es Figma?
 
-## Introducción a Figma
+[Figma](https://www.figma.com) es una herramienta de diseño y prototipado de interfaces de usuario (UI/UX) basada en la nube. Permite a diseñadores y equipos de trabajo crear, editar y colaborar en tiempo real en proyectos de diseño, como aplicaciones móviles, sitios web y software.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Smp-u-8ynbE?si=qkm02srEGZ50kmjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## ¿Qué es el Atomic Design?
 
-## Atomic Design
+Atomic Design es un modo de diseñar aplicaciones y sitios web, comenzando desde lo más particular a lo más general con el objetivo de poder cambiar de forma flexible y rápida cualquier aspecto del diseño de una aplicación manteniendo la consistencia a lo largo de todo el sistema.
 
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué es el Atomic Design?</summary>
-  <div class="card-body" markdown="1">
-
-Atomic Design es un modo de diseñar aplicaciones g sitios web, comenzando desde 10 más particular para
-poder cambiar de forma flexible g rápida en 10 general, manteniendo la consistencia a 10 largo de todo el sistema.
-
-La metodología Atomic Design fue teorizada por el diseñador web estadounidense Brad su libro titulado Atomic Design. Tras su publicación, el paradigma de diseñar productos por pantallas cambió a diseñar productos por componentes.
+La metodología Atomic Design fue teorizada por el diseñador web estadounidense Brad Frost en su libro titulado Atomic Design. Tras su publicación, el paradigma de diseñar productos paso de diseñar por pantallas a diseñar por componentes.
 
 1. Átomos: Son los elementos indivisibles del diseño.
    1. Tipografía
@@ -41,22 +33,20 @@ La metodología Atomic Design fue teorizada por el diseñador web estadounidense
 1. Plantillas: Son diseños que establecen la estructura y el layout de la página utilizando organismos.
 1. Páginas: Son instancias específicas de las plantillas con contenido real. Permiten probar y validar cómo se ven los elementos en un entorno real.
 
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Cuáles son los beneficios del Atomic Design?</summary>
-  <div class="card-body" markdown="1">
+## Beneficios del Atomic Design
 
 - Facilita la reutilización de componentes.
 - Mejora la coherencia visual y funcional del sistema.
 - Facilita el mantenimiento y escalabilidad del diseño.
 - Potencia el trabajo colaborativo entre equipos de diseño y desarrollo.
 
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
+## Tutoriales Figma en español
+
+Existen numerosos tutoriales de Figma en español. De los que he podido ver recomiendo ver el siguiente vídeo (muy completo):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Smp-u-8ynbE?si=qkm02srEGZ50kmjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Preguntas sobre el vídeo:
 
 <details class="card mb-2">
   <summary class="card-header question">¿En qué partes se divide un design system que se usa OscarRGB en el vídeo?</summary>
@@ -95,6 +85,17 @@ Un wireframe es una representación visual esquemática de la estructura básica
   </div>
 </details>
 
+Y el siguiente curso básico:
+
+- [Figma Basics (Español) - Primeros pasos en Figma](https://www.figma.com/community/file/923140611594993345) para empezar a utilizar las herramientas principales de Figma.
+
+> Si descubres un tutorial/curso gratuito que creas que merece la pena, por favor déjalo en los comentarios de abajo o házmelo saber de algún modo para incluirlo.
+{:.prompt-info}
+
+## (Voluntario) Cursos oficiales de Figma en inglés
+
+En el [este enlace](https://help.figma.com/hc/en-us/sections/23691657321239) tienes disponibles los cursos oficiales que proporciona Figma.
+
 ## (Voluntario) Artículos en inglés
 
 - [Mitos en la experiencia de usuario (inglés)](https://uxmyths.com/)
@@ -103,3 +104,4 @@ Un wireframe es una representación visual esquemática de la estructura básica
 - <https://madabelvid.wordpress.com/2016/06/15/la-aportacion-del-eyetracking-en-el-sector-de-usabilidad/>
 - <https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/>
 - <https://www.eniun.com/usabilidad-diseno-aplicaciones-reglas-principios/>
+- <https://www.figma.com>
