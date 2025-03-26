@@ -44,7 +44,15 @@ Porque la facilidad de uso está relacionada directamente con la eficiencia. Si 
 > La web <https://userinyerface.com/> está hecha para conseguir la peor experiencia de usuario posible.
 {:.prompt-info}
 
+{:.question}
+¿Cómo sabemos que un elemento de una web es clickable?
+
 Lee el artículo [La usabilidad en el diseño de aplicaciones](https://www.eniun.com/usabilidad-diseno-aplicaciones-reglas-principios/)
+
+Además de los consejos del artículo anterior yo incluiría los siguientes:
+
+- Debemos asegurarnos de que las **áreas clicables tengan el tamaño adecuado**, para que el usuario pueda realizar correctamente dicha acción. Sobre todo en móvil.
+- No abusar de la paginación.
 
 ## Objetivos del diseño de interfaces
 
@@ -105,19 +113,25 @@ La tarea de escribir de manera clara y natural no es fácil. Al contrario, es al
 
 ### Consejos sobre cómo redactar el contenido
 
-1. Uso de lenguaje sencillo y directo, palabras sencillas expresadas de forma simple y transmisión clara de las ideas Han de evitarse las estructuras complejas y los conceptos abstractos.
-1. En caso de necesidad de mención de conceptos abstractos es recomendable usar ejemplos concretos o comparaciones que faciliten su comprensión
-1. No se debe dar por hecho que el usuario tiene conocimientos previos sobre el tema que se trata.
-1. Empleo de palabras cortas, evitando, en la medida de lo posible, palabras largas y/o difíciles de pronunciar.
-1. Dirigirse al usuario de forma directa y personal, utilizando la segunda persona ("Si tienes alguna pregunta no dudes en contactar con nosotros") en lugar de la tercera persona ("En caso de que algún usuario tenga alguna pregunta que no dude en contactar con nosotros").
-1. Adaptar el lenguaje utilizado a la audiencia potencial del sitio, y que dicho lenguaje sea positivo Se han de evitar las negaciones.
-1. Evitar el subjuntivo, que es impreciso y confuso.
-1. Cuidado al utilizar lenguaje figurativo o metafórico, ya que puede resultar confuso para una parte de los usuarios
-1. Uso de voz activa en lugar de pasiva, haciendo que el documento sea más vivo y con menor complicación.
-1. Sistematización en el uso de las palabras, utilizando siempre la misma palabra para denominar una misma cosa, aunque la repetición de palabras afecte al estilo de redacción.
-1. Elección de signos de puntuación sencillos, evitando el punto y coma, los guiones y las comas.
-1. Evitar el uso de jergas, abreviaturas e iniciales, y si se hace uso de ellas etiquetarlas adecuadamente en el código con las etiqueta ABBR (ACRONYM no está soportada en HTML5).
-1. División del texto en varias secciones en caso de que éste sea extenso, de forma que se facilite la lectura.
+Los siguientes consejos generales a la hora de redactar son tanto para atraer la atención del usuario como para mejorar nuestro posicionamiento en motores de búsqueda como Google.
+
+1. **Escribe sin faltas de ortografía**.
+1. Uso de **lenguaje sencillo y directo**, palabras sencillas expresadas de forma simple y transmisión clara de las ideas. Han de evitarse las estructuras complejas y los conceptos abstractos.
+1. Si es **breve**, mejor. Si puedes decir lo mismo con menos palabras, hazlo sin dudar.
+1. En caso de necesidad de mención de conceptos abstractos es recomendable **usar ejemplos concretos** o comparaciones que faciliten su comprensión
+1. **No se debe dar por hecho que el usuario tiene conocimientos previos** sobre el tema que se trata.
+1. **Empleo de palabras cortas**, evitando, en la medida de lo posible, palabras largas y/o difíciles de pronunciar.
+1. **Dirigirse al usuario de forma directa y personal**, utilizando la segunda persona ("Si tienes alguna pregunta no dudes en contactar con nosotros") en lugar de la tercera persona ("En caso de que algún usuario tenga alguna pregunta que no dude en contactar con nosotros").
+1. **Dar instrucciones claras al visitante**. Botones llamativos que sean descritos con acciones sencillas “pincha aquí para recibir el ebook”. Dile lo que va a pasar cuando pincha en un enlace.
+1. **Adaptar el lenguaje utilizado a la audiencia potencial del sitio**, y que dicho lenguaje sea positivo Se han de evitar las negaciones.
+1. **Céntrate en el usuario/cliente**. No hables tanto de ti o tu empresa y habla al cliente de sus problemas y cómo puedes ayudarle a solucionarlos
+1. **Evita el subjuntivo**, que es impreciso y confuso.
+1. **Cuidado al utilizar lenguaje figurativo o metafórico,** ya que puede resultar confuso para una parte de los usuarios
+1. **Uso de voz activa** en lugar de pasiva, haciendo que el documento sea más vivo y con menor complicación.
+1. Sistematización en el uso de las palabras, **utilizando siempre la misma palabra para denominar una misma cosa**, aunque la repetición de palabras afecte al estilo de redacción.
+1. **Elección de signos de puntuación sencillos**, evitando el punto y coma, los guiones y las comas.
+1. **Evitar el uso de jergas, abreviaturas** e iniciales, y si se hace uso de ellas etiquetarlas adecuadamente en el código con las etiqueta ABBR (ACRONYM no está soportada en HTML5).
+1. **División del texto en varias secciones** en caso de que éste sea extenso, de forma que se facilite la lectura.
 
 <details class="card mb-2">
   <summary class="card-header question" markdown="1">
@@ -142,9 +156,9 @@ Para llegar a todo el mundo y hacer una interfaz más usable hay que tratar de:
   <summary class="card-header question">¿Qué es el copywritting?</summary>
   <div class="card-body" markdown="1">
 
-El copywriting es la técnica de redactar textos persuasivos con el objetivo de atraer, captar y convencer al lector para que realice una acción determinada, como comprar un producto, suscribirse a un boletín, descargar un contenido, o simplemente generar interés hacia una marca o idea.
+El copywriting es la técnica de redactar textos persuasivos con el objetivo de atraer, captar y convencer al lector para que realice una acción determinada, como comprar un producto, suscribirse a un boletín, descargar un contenido, o simplemente generar interés hacia una marca o idea. Es decir, el copywriting es el arte de vender con palabras.
 
-(Voluntario) Lee el artículo [Experiencia de usuario. Cómo influye el copywritting](https://www.lawebera.es/diseno-web/experiencia-usuario-copywritting.php).
+También existe el copywriting SEO que es escribir de modo que el buscador de Google te posicione en las primeras posiciones.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
@@ -371,7 +385,7 @@ No es muy recomendable realizar test de usabilidad al usuario final una vez se a
 
 La técnica del eye tracking consiste en analizar y registrar los movimientos oculares que realiza un usuario mientras navega o interactúa con un sitio web o aplicación. Esto permite conocer detalladamente qué áreas captan mayor atención, cómo el usuario explora el contenido y cuáles son las zonas que ignora o le resultan confusas.
 
-Debemos ser conscientes que lo habitual es que un usuario no lea con detalle ni siquiera una mínima parte de los textos de una página web. En su lugar, y por economía de tiempo, el usuario se limita a hojear la página por encima. Es decir, el usuario realiza un rápido barrido visual de cada página buscando elementos que llamen su atención.
+Debemos ser conscientes que lo habitual es que un usuario no lea con detalle ni siquiera una mínima parte de los textos de una página web. En su lugar, y por economía de tiempo, el usuario se limita a hojear la página por encima. Es decir, el usuario realiza un rápido barrido visual de cada página buscando elementos que llamen su atención (como títulos y botones Call To Action (CTA)).
 
 ![Resultados del eye tracking](eyetracking.png)
 _Resultados del eye tracking_
