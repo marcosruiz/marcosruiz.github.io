@@ -392,9 +392,9 @@ _Resultados del eye tracking_
 
 Aplicando esta técnica, los expertos en comercio y marketing colocan los productos en los lineales de los supermercados para conseguir un mayor número de ventas o promocionar algún producto.
 
-## (Voluntario) Artículos en inglés
+## Bibliografía
 
-- [Mitos en la experiencia de usuario (inglés)](https://uxmyths.com/)
+- [Mitos en la experiencia de usuario (inglés)](https://uxmyths.com/) 🔥
 - [Principios de usabilidad web de Jacob Nielsen y el diseño UX](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/)
 - <https://www.nosolousabilidad.com/articulos/eye-tracking.htm>
 - <https://madabelvid.wordpress.com/2016/06/15/la-aportacion-del-eyetracking-en-el-sector-de-usabilidad/>
