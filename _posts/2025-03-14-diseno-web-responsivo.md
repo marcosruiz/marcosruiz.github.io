@@ -70,7 +70,6 @@ Podemos pensar que 100vw es similar a 100%, pero hay dos diferencias
 
 Para ésto último a veces se hace lo siguiente:
 
-
 ```css
 ejemplo {
    width: 100vw;
@@ -91,7 +90,6 @@ También se pueden usar decimales con vw o vh
 
 La unidad rem hace referencia al tamaño de fuente del HTML. El tamaño en píxeles se obtiene de multiplicar el valor de rem por el tamaño de la fuente de la página
 
-
 ```css
 html {
    font-size:12px;
@@ -102,15 +100,27 @@ Otra forma de cambiar el font-size por defecto es configurar el tamaño de 1rem 
 
 Veamos ahora como se usa rem en bootstrap para los botones:
 
-TABLA
+| Tamaño botón   | Tamaño de fuente | Padding horizontal | Padding vertical |
+| -------------- | ---------------- | ------------------ | ---------------- |
+| Normal         | 1rem             | 0.75rem            | 0.375rem         |
+| Grande btn-lg  | 1.25rem          | 1rem               | 0.5rem           |
+| Pequeño btn-sm | 0.875rem         | 0.5rem             | 0.25rem          |
 
 Vamos ahora los mismo datos pero en px suponiendo que el tamaño de fuente es 16px.
 
-TABLA
+| Tamaño botón   | Tamaño de fuente | Padding horizontal | Padding vertical |
+| -------------- | ---------------- | ------------------ | ---------------- |
+| Normal         | 16px             | 12px               | 6px              |
+| Grande btn-lg  | 20px             | 16px               | 8px              |
+| Pequeño btn-sm | 14px             | 8px                | 4px              |
 
 Y por último veamos la relación que hay entre en padding y el tamaño de fuente en %
 
-TABLA
+| Tamaño botón   | Padding horizontal respecto del tamaño de fuente | Padding vertical respecto del tamaño de fuente |
+| -------------- | ------------------------------------------------ | ---------------------------------------------- |
+| Normal         | 75%                                              | 37,5%                                          |
+| Grande btn-lg  | 80%                                              | 40%                                            |
+| Pequeño btn-sm | 57,142%                                          | 28,571%                                        |
 
 Resulta que no hay una relación constante entre el tamaño de la fuente y el tamaño del padding.
 
@@ -118,7 +128,103 @@ Es decir para un tamaño normal el padding horizontal es el 75% del tamaño de l
 
 ### em
 
-La unidad em hace referencia al tamaño de fuente del elemento donde está. El tamaño en píxeles se obtiene de multiplicar el valor de em por el tamaño de la fuente de ese elemento
+La unidad em hace referencia al tamaño de fuente del elemento donde está. El tamaño en píxeles se obtiene de multiplicar el valor de em por el tamaño de la fuente de ese elemento.
+
+## Cálculos en CSS
+
+Podemos usar funciones en CSS para calcular valores.
+
+### min()
+
+Retorna el mínimo de los dos valores.
+
+```css
+.c-titulo {
+    font-size: min(100px,10vw);
+}
+```
+
+```html
+<p class="c-titulo">Hola mundo</p> 
+```
+
+En el ejemplo el tamaño máximo de la fuente nunca será mayor que 100px por mucho que se haga grande la ventana.
+
+### max()
+
+Retorna el máximo de los dos valores.
+
+```css
+.c-titulo {
+    font-size: max(40px,10vw);
+}
+```
+
+```html
+<p class="c-titulo">Hola mundo</p> 
+```
+
+En el ejemplo el tamaño mínimo de la fuente nunca será menor que 40px por mucho que se haga pequeña la ventana.
+
+### clamp()
+
+Retorna un valor pero sin ser menos que un mínimo ni mayor que un máximo
+
+```css
+.c-titulo {
+    font-size: clamp(40px,10vw,100px);
+}
+```
+
+```html
+<p class="c-titulo">Hola mundo</p> 
+```
+
+En el ejemplo el tamaño mínimo de la fuente nunca será menos que 40px por mucho que se haga pequeña la ventana ni será mayor que 100px por mucho que se haga grande la ventana.
+
+### calc()
+
+Permite hacer cálculos en CSS
+
+```css
+.c-titulo {
+    font-size: calc(10vw - 10px);
+}
+```
+
+```css
+.c-titulo {
+    font-size: calc( ( 1 / 3 ) * 100vw);
+}
+```
+
+```css
+.c-titulo {
+    font-size: clamp(40px,10vw - 10px,100px);
+}
+```
+
+Dentro de `clamp` se pueden hacer cálculos directamente sin necesidad de usar `calc`.
+
+Es obligatorio separar siempre las operaciones de suma y resta con espacios en blanco de sus operandos.
+
+Por ejemplo, la siguiente expresión no es correcta:
+
+```css
+calc(50%-8px)
+```
+
+debiéndose corregir y quedando así:
+
+```css
+calc(50% - 8px).
+```
+
+Aunque los operadores * y / no necesitan espacio en blanco, se sugiere agregarlos por razones de consistencia.
+
+```html
+<p class="c-titulo">Hola mundo</p> 
+```
 
 ## Media queries
 
@@ -226,25 +332,33 @@ Pasemos ahora a ver como poder hacer las cosas responsivas con una simple arquit
 }
 ```
 
-En el ejemplo por defecto el tamaño de la fuente será de 40px pero en resoluciones mayores de 992px será de 55px.
+En el ejemplo por defecto el tamaño de la fuente será de `40px` pero en resoluciones mayores de `992px` será de `55px`.
 
-Lo que hacemos es crear todas los modificadores globales o modificadores de bloques para las distintas resoluciones pero añadiendo el sufijo @tablet , @desktop o @fulldesktop. E indicando en el HTML que tamaño usar según la resolución de la pantalla.
-
-Otro ejemplo de ello lo podemos ver en Notes on using CSS Grid in production
-
-También en Boostrap qu permite clases responsivas: Utility API indicando responsive=true
+Lo que hacemos es crear todas los modificadores globales o modificadores de bloques para las distintas resoluciones pero añadiendo el sufijo `@tablet` , `@desktop` o `@fulldesktop`. E indicando en el HTML que tamaño usar según la resolución de la pantalla.
 
 ## Breakpoints
 
 Al crear la arquitectura responsiva es necesario indicar los pixeles de cada pantalla así como los tamaños. En los siguientes artículos se indica cuales se usan en diversos frameworks css.
 
-### Boostrap
+### Bootstrap
 
-TABLA
+| Nombre | Descripcion                                      | Ancho Mínimo |
+| ------ | ------------------------------------------------ | ------------ |
+| --     | Extra small devices (portrait phones)            | none         |
+| sm     | Small devices (landscape phones)                 | 576px        |
+| md     | Medium devices (tablet)                          | 768px        |
+| lg     | Large devices (desktops)                         | 992px        |
+| xl     | Extra large devices (large desktops)             | 1200px       |
+| xxl    | Extra Extra large devices (extra large desktops) | 1400px       |
 
 ### Tailwind
 
-TABLA
+| Nombre | Ancho Mínimo |
+| ------ | ------------ |
+| sm     | 640px        |
+| md     | 768px        |
+| lg     | 1024px       |
+| xl     | 1280px       |
 
 ## Menu responsivo
 
@@ -411,8 +525,8 @@ Es el que usamos con @tablet o @desktop , etc.
 - <https://web.archive.org/web/20200415000746/https://developer.mozilla.org/es/docs/M%C3%B3vil/Viewport_meta_tag>
 - <https://web.dev/articles/responsive-web-design-basics?hl=es#set-the-viewport>
 - <https://github.com/alvaroadlf/HEAD/blob/master/README.md>
-- https://mamutlove.com/blog/funciones-min-max-clamp-en-css/
-- https://nowecreative.com/nowezone/funcion-calc-css/
+- <https://mamutlove.com/blog/funciones-min-max-clamp-en-css/>
+- <https://nowecreative.com/nowezone/funcion-calc-css/>
 
 En inglés:
 
@@ -423,3 +537,6 @@ En inglés:
 - <https://codepen.io/aardrian/pen/MWeRJWd>
 - <https://dev.to/polypane/css-breakpoints-used-by-popular-css-frameworks-hl9>
 - <https://gist.github.com/paultibbetts/7b726ae20914c11eb953fdfdf3ee34ed>
+- <https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/>
+- <https://www.webstoemp.com/blog/notes-on-using-css-grid-in-production/>
+- <https://getbootstrap.com/docs/5.0/utilities/api/>
