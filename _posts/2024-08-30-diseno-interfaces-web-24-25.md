@@ -28,6 +28,7 @@ pin: true
 - UD6 - [Contenidos web interactivos](/posts/contenidos-web-interactivos/)
   - [Figma y atomic design](/posts/figma-atomic-design)
 - UD7 - [Usabilidad en la Web](/posts/usabilidad-web)
+  - [Diseño web responsivo](/posts/diseno-web-responsivo)
 - UD8 - Accesibilidad en la Web
 
 - T01 - [Tarea: Introducción al diseño web](/posts/tarea-introduccion-diseno-web/)
