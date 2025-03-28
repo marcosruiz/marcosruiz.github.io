@@ -297,7 +297,7 @@ Si.
   </div>
 </details>
 
-## (Voluntario) Tamaño de fuente responsive
+## Tamaño de fuente responsive
 
 ### Ejemplo 1
 
@@ -351,7 +351,7 @@ En el ejemplo por defecto el tamaño de la fuente será de `40px` pero en resolu
 
 Lo que hacemos es crear todas los modificadores globales o modificadores de bloques para las distintas resoluciones pero añadiendo el sufijo `@tablet` , `@desktop` o `@fulldesktop`. E indicando en el HTML que tamaño usar según la resolución de la pantalla.
 
-### Ejemplo 2
+### (Voluntario) Ejemplo 2
 
 Personalmente, el ejemplo anterior me resulta muy engorroso por lo que se me ocurre que sea la clase `g--font-size-1` desde CSS la que cambie de tamaño.
 
@@ -383,7 +383,7 @@ Personalmente, el ejemplo anterior me resulta muy engorroso por lo que se me ocu
 }
 ```
 
-### Ejemplo 3
+### (Voluntario) Ejemplo 3
 
 Ahora que lo pienso, ¿por qué no hago directamente que el tamaño de letra esté en función del ancho de la pantalla?
 
@@ -719,23 +719,11 @@ Se usa en un menú responsivo con hamburguesa.
 
 ### Externo/Fluido
 
-Se usa muy poco.
-
-```html
-<thead>
-  <tr>
-    <th class="c-table__head c-table__head--min-width-2 c-table__head--max-width-3">Author</th>
-    <th class="c-table__head c-table__head--min-width-2 c-table__head--max-width-3 ">Title</th>
-    <th class="c-table__head c-table__head--min-width-1 c-table__head--max-width-2">Year</th>
-    <th class="c-table__head c-table__head--min-width-1 c-table__head--max-width-2">ISBN-13</th>
-    <th class="c-table__head c-table__head--min-width-1 c-table__head--max-width-2">ISBN-10</th>
-  </tr>
-</thead>
-```
+No lo vemos.
 
 ### Externo/Escalonado
 
-Es el que usamos con @tablet o @desktop , etc.
+Es el que usamos con `@tablet` o `@desktop` , etc.
 
 ```html
 <p class="g--font-size-1  g--font-size-3@tablet">Hola mundo</p>
