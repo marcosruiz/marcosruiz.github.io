@@ -25,7 +25,10 @@ _Versión móvil de AliExpress_
 ![Versión de escritorio de AliExpress](aliexpressEscritorio.png)
 _Versión de escritorio de AliExpress_
 
-La ventaja de las webs adaptativas es que en la versión móvil solo se cargan las cosas que se necesitan para el movil además de que está hecha pensando en móvil. El inconveniente es que hay que desarrollar dos páginas.
+La ventaja de las webs adaptativas es que en la versión móvil solo se cargan las cosas que se necesitan para el móvil además de que está hecha pensando en móvil. El inconveniente es que hay que desarrollar dos páginas.
+
+{:.question}
+¿Qué diferencia hay entre diseño responsivo y adaptativo?
 
 ## Viewport
 
@@ -38,6 +41,12 @@ Dentro del `head` del documento HTML podemos añadir la siguiente línea:
 Con esto se consigue que la página tenga el tamaño del dispositivo, ya que sino se pone , el dispositivo podría hacer que la página se haga mas grande y crear barras de desplazamiento.
 
 ## Unidades
+
+Existen diferentes tipos de unidades en CSS. En este caso vamos a centrarnos en las siguientes:
+
+- viewport
+- rem
+- em
 
 ### viewport
 
@@ -66,6 +75,9 @@ Podemos pensar que `100vw` es similar a `100%`, pero hay dos diferencias:
 
 - `100%` hace referencia al tamaño de donde está el elemento donde estamos, no al tamaño de la ventana.
 - `100%` no incluye el tamaño de las barras de desplazamiento, mientras que `100vw` si que lo hace.
+
+{:.question}
+¿Es lo mismo un ancho de 100% que un ancho de 100vw?
 
 Para ésto último a veces se hace lo siguiente:
 
@@ -143,7 +155,12 @@ La unidad `em` hace referencia al tamaño de fuente del elemento donde está. El
 
 ## Cálculos en CSS
 
-Podemos usar funciones en CSS para calcular valores.
+Podemos usar funciones en CSS para calcular valores:
+
+- `min()`
+- `max()`
+- `calc()`
+- `clamp()`
 
 ### min()
 
@@ -296,6 +313,9 @@ Si.
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
+
+{:.question}
+¿Qué son las media queries y para qué se usan?
 
 ## Tamaño de fuente responsive
 
@@ -671,6 +691,22 @@ function toggleVisibilityMenu() {
   }
 }
 ```
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Por qué en el ejemplo anterior nombro las clases de esta manera tan extraña (`main-menu__items`)?</summary>
+  <div class="card-body" markdown="1">
+
+Existe un sistema para nombrar clases CSS que busca mejorar la organización, mantenibilidad y escalabilidad del código. Es la llamada metodología BEM (Block, Element, Modifier):
+
+| Concepto     | Significado                                                            | Ejemplo de clase                   |
+| ------------ | ---------------------------------------------------------------------- | ---------------------------------- |
+| **Block**    | Componente independiente que tiene significado propio.                 | `menu`, `card`, `form`             |
+| **Element**  | Parte del bloque que no tiene sentido por sí sola. Se separa con `__`. | `menu__item`, `card__title`        |
+| **Modifier** | Variación del bloque o elemento. Se separa con `--`.                   | `menu__item--active`, `card--dark` |
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 ## Técnicas responsivas
 

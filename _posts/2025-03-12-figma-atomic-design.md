@@ -92,9 +92,17 @@ Y el siguiente curso básico:
 > Si descubres un tutorial/curso gratuito que creas que merece la pena, por favor déjalo en los comentarios de abajo o házmelo saber de algún modo para incluirlo.
 {:.prompt-info}
 
-## (Voluntario) Cursos oficiales de Figma en inglés
+## (Voluntario) Tutoriales Figma en inglés
 
 En el [este enlace](https://help.figma.com/hc/en-us/sections/23691657321239) tienes disponibles los cursos oficiales que proporciona Figma.
+
+En 12 pasos, puedes aprender lo básico de Figma: <https://shiftnudge.com/figma/>.
+
+## Como trabajar con Figma en proyectos reales
+
+Design system de Codely para su web: <https://design-system.codely.com/?path=/docs/intro--docs>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jy0IgvV42es?si=Gve3bQxESJ5Ko1qH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## (Voluntario) Artículos en inglés
 
