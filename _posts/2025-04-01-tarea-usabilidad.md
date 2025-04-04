@@ -1,5 +1,5 @@
 ---
-title: "Tarea: Usabilidad"
+title: "Tarea: Usabilidad y responsividad en la web"
 date: 2024-04-01 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
@@ -30,7 +30,7 @@ mruizg_t07.zip
 
 La tarea se calificará con una nota de APTO (10) o NO APTO (0).
 
-Duración actividades obligatorias: X horas.
+Duración actividades obligatorias: 5 horas.
 
 RA6. Desarrolla interfaces web amigables analizando y aplicando las pautas de usabilidad establecidas.
 
