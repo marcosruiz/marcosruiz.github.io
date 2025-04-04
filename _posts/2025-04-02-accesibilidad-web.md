@@ -3,6 +3,7 @@ title: "Accesibilidad en la web"
 date: 2025-04-02 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
+mermaid: true
 img_path: /assets/img/accesibilidad-web/
 ---
 
