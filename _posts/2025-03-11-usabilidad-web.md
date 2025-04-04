@@ -409,7 +409,7 @@ _Checklist de usabilidad basada en los principios de Jakob Nielsen. Parte 1._
 ![Checklist de usabilidad basada en los principios de Jakob Nielsen. Parte 2.](HeuristicChecklist2.png)
 _Checklist de usabilidad basada en los principios de Jakob Nielsen. Parte 2._
 
-También puedes incluir el análisis de las 8 reglas de de oro de Ben Shneiderman con [este checklist en español](/assets/img/javascript/usabilidad-web/Ocho-reglas-de-oro-del-diseño-de-interfaces.pdf) en tú análisis heurístico.
+También puedes incluir el análisis de las 8 reglas de de oro de Ben Shneiderman con [este checklist en español](/assets/img/usabilidad-web/Ocho-reglas-de-oro-del-diseño-de-interfaces.pdf) en tú análisis heurístico.
 
 ![Checklist con las 8 reglas de oro de Shneiderman en inglés](Shneiderman8GoldenRules.svg)
 _Checklist con las 8 reglas de oro de Shneiderman en inglés_
