@@ -52,7 +52,7 @@ Encuentra 4 fallos de usabilidad distintos en 4 sitios web diferentes. Por cada 
 - Una recomendación para solucionar el problema.
 
 {:.activity}
-###
+### 
 
 
 {:.activity}
@@ -135,7 +135,7 @@ Crea una clase css llamada `.g--color-fondo-responsivo` de forma que cambia el c
 - Más de 992px sea de color naranja.
 
 {:.activity}
-### Color de fondo responsivo II
+### (Voluntaria) Color de fondo responsivo II
 
 Crea las siguientes clases css:
 

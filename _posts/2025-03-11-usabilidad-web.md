@@ -81,6 +81,69 @@ A la hora de diseñar una interfaz Web, debemos tener en cuenta algunos de los o
 - Facilitar la interactividad de los usuarios con el sitio web.
 - Tener en cuenta las necesidades de los usuarios.
 
+## Principios de usabilidad
+
+### Principios de usabilidad de Jakob Nielsen
+
+Jakob Nielsen (padre de la usabilidad) propuso 10 principios de usabilidad.
+
+![alt text](TenUsabilityHeuristicsByJakobNielsen.png)
+_10 principios de usabilidad de Jakob Nielsen_
+
+Lee el artículo [Principios de usabilidad web de Jakob Nielsen y el diseño UX](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/).
+
+### Ley de Hick
+
+La Ley de Hick, es un principio de la psicología cognitiva que se refiere al tiempo que una persona tarda en tomar una decisión en función del número de opciones disponibles. Es decir, cuanto mayor sea el número de alternativas entre las que un individuo debe elegir, más tiempo le llevará tomar una decisión.
+
+Es por esto que cuantas menos opciones le demos al usuario este tomará decisiones más rápidamente.
+
+### Ley de Fitts
+
+La Ley de Fitts establece que el tiempo necesario para alcanzar un objetivo depende de la distancia al objetivo y el tamaño del objetivo.
+
+$$T = a + b \cdot \log_2 \left( \frac{2D}{W} \right)$$
+
+- Cuanto más lejos esté el objetivo, mayor será el tiempo necesario para alcanzarlo. El tiempo aumenta de forma logarítmica en función de la distancia, lo que significa que a medida que la distancia crece, el tiempo que se tarda en cubrir dicha distancia es proporcionalmente menor.
+- Cuanto más grande sea el objetivo, menor será el tiempo necesario para alcanzarlo.
+
+A partir de esta ley aparecen las siguientes conclusiones:
+
+1. Los objetivos más grandes son más fáciles de seleccionar.
+1. Los objetivos más cercanos son más rápidos de alcanzar.
+1. Los elementos más importantes deben estar cerca del área de acción o en zonas de fácil acceso.
+1. Los bordes de la pantalla y las esquinas son zonas de fácil acceso.
+
+### Principios del diseño visual
+
+Los principios de diseño visual son un conjunto de directrices fundamentales que ayudan a organizar los elementos visuales en una interfaz de manera efectiva y coherente, asegurando que los usuarios puedan interactuar de forma clara, intuitiva y agradable. Estos principios se basan en cómo percibimos y procesamos visualmente la información, lo que permite crear diseños atractivos, fáciles de entender y de usar.
+
+Son los siguientes:
+
+![Principios del diseño visual](principiosBasicosDiseno.png)
+_Principios del diseño visual_
+
+1. La **unidad** se refiere a la idea de que todos los elementos de un diseño deben estar relacionados y trabajar juntos para crear un todo armonioso.
+1. El **equilibrio** se refiere a cómo los elementos de un diseño se distribuyen visualmente para crear una sensación de estabilidad y armonía.
+1. El **contraste** se refiere a la creación de diferencias visuales entre los elementos de un diseño, como el uso de diferentes colores o tipos de letra, para destacar ciertas partes del diseño.
+1. La **jerarquía** se refiere a la manera en que se organizan los elementos de un diseño para indicar su importancia y guían al espectador a través del diseño.
+1. La **proporción** se refiere a la relación correcta entre los diferentes tamaños de los elementos de un diseño.
+1. La **simetría** se refiere a la creación de diseños que son equilibrados y armónicos a través del uso de líneas y formas simétricas.
+1. El **movimiento** se refiere a la creación de una sensación de movimiento o dirección en un diseño, como a través del uso de líneas de dirección o de la disposición de los elementos.
+
+### Reglas de oro de Shneiderman
+
+Son 8 reglas propuestas por Ben Shneiderman para mejorar la usabilidad y la experiencia de usuario en aplicaciones informáticas, proporcionando directrices claras sobre cómo diseñar interfaces eficientes y fáciles de usar.
+
+1. **Consistencia**: Los usuarios deben percibir que las acciones y las interfaces son consistentes a través del sistema. Esto incluye el uso consistente de colores, iconos, botones y comportamientos similares. Si un botón realiza una acción en una ventana, el mismo botón debe realizar la misma acción en otras partes de la aplicación. La consistencia facilita el aprendizaje y uso del sistema.
+1. **Atención a las actividades del usuario**: El sistema debe proporcionar retroalimentación clara sobre las actividades del usuario, permitiéndole saber qué está pasando en todo momento. Debes usar mensajes, animaciones o indicaciones visuales que comuniquen al usuario el estado de las operaciones, por ejemplo, cuando una acción se está procesando.
+1. **Control y libertad del usuario**: Los usuarios deben sentir que están en control de la interfaz y poder deshacer o rehacer acciones fácilmente. Esto les permite explorar sin temor a cometer errores irreversibles. Debes incluir botones de "deshacer" o "rehacer", y permitir que los usuarios naveguen entre diferentes opciones sin perder su progreso.
+1. **Reducción de la carga de memoria**: La interfaz debe minimizar la carga cognitiva del usuario, evitando que tenga que recordar información innecesaria o tareas complicadas. Por ejemplo, es recomendable ofrecer información contextual al usuario.
+1. **Diseño basado en la claridad**: La interfaz debe ser clara y fácil de entender. Los elementos deben ser legibles, y las instrucciones deben ser simples y directas. Debes usar un lenguaje simple, iconos reconocibles y una jerarquía visual clara que permita a los usuarios comprender rápidamente qué hacer.
+1. **Sistemas de control flexibles**: El sistema debe permitir que los usuarios elijan diferentes formas de interacción según sus preferencias, habilidades o contexto. Debes ofrecer opciones como accesos directos de teclado, menús contextuales o personalización de la interfaz, lo que permite a los usuarios interactuar de la manera que les resulte más cómoda.
+1. **Minimización de errores**: El sistema debe prevenir errores siempre que sea posible y, cuando ocurran, debe proporcionarse una forma fácil de corregirlos. Debes proveer confirmaciones para acciones importantes, evitar entradas de datos incorrectos y, en caso de error, ofrecer mensajes claros que permitan al usuario corregirlo rápidamente.
+1. **Optimización del rendimiento**: El diseño debe minimizar el tiempo de respuesta y la espera para los usuarios, proporcionando retroalimentación cuando se está procesando una acción. Debes usar indicadores de carga, mantener tiempos de espera cortos, y evitar bloqueos innecesarios que frustren al usuario.
+
 ## El usuario, ese gran desconocido
 
 Cada usuario es un mundo y, si quieres tener alguna ventaja sobre la competencia, tendrás que identificar qué es lo que pueden tener en común pero sobre todo aquellas cosas que los diferencian.
@@ -284,13 +347,13 @@ Si la ubicación de los elementos de navegación es consistente y persistente y,
 
 Cuando el usuario se encuentra en medio de un proceso que implique un conjunto de pasos, es conveniente mantenerle en todo momento informado del progreso de dicho proceso.
 
-### Herramientas
+### Opciones del navegador
 
 Hoy en día, casi todo el software está preparado tanto para el uso del ratón como del teclado.
 
 Los atajos de teclado ahorran gran cantidad de tiempo pero hay que recordarlos y nos permiten acceder a diferentes opciones del menú del navegador. Por ejemplo `[Ctrl] + [+]` para aumentar el tamaño de la fuente, `[Ctrl] + [P]` para imprimir y `[Ctrl] + [T]` para abrir una nueva pestaña. Pero hay infinidad de ellos. Los suelen usar usuarios avanzados pero también usuarios con una discapacidad.
 
-En cualquier navegador al pulsar F7 se activa y desactiva la opción de uso del teclado dentro de una web como si estuviéramos manejando un procesador de textos.
+En cualquier navegador al pulsar `[F7]` se activa y desactiva la opción de uso del teclado dentro de una web como si estuviéramos manejando un procesador de textos.
 
 ## Análisis y verificación de la usabilidad
 
@@ -314,9 +377,7 @@ Existen varios métodos para analizar la usabilidad de una interfaz:
 
 ### Análisis heurístico
 
-La evaluación heurística se realiza siguiendo las directrices marcadas por Jacob Nielsen (padre de la usabilidad):
-
-Lee el artículo [Principios de usabilidad web de Jacob Nielsen y el diseño UX](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/).
+La evaluación heurística se realiza siguiendo las directrices marcadas por Jakob Nielsen:
 
 1. **El lenguaje de las páginas**: ¿es cercano al usuario? ¿está presentado en un orden lógico para el usuario?
 1. **La consistencia**: ¿la representación gráfica es la misma en conceptos similares? ¿se emplean los mismo términos para el mismo tipo de elementos?
@@ -340,31 +401,18 @@ Falso.
   </div>
 </details>
 
-#### Normas ISO relacionadas con la usabilidad
+A continuación te muestro dos imágenes con checklists para hacer un análisis heurístico sacadas de la [comunidad de Figma](https://www.figma.com/design/nHP5HwOEMauNmhz5vhLRx5/UX-Audit--Community-?m=auto&t=4lVdEYYmiPpMszvC-6):
 
-Los estándares relativos a la usabilidad se refieren básicamente a los siguientes aspectos:
+![Checklist de usabilidad basada en los principios de Jakob Nielsen. Parte 1.](HeuristicChecklist1.png)
+_Checklist de usabilidad basada en los principios de Jakob Nielsen. Parte 1._
 
-- Uso del producto, interfaz de usuario e interacción.
-- Proceso llevado a cabo para el desarrollo del producto.
-- Capacidad de una organización para aplicar un diseño centrado en el usuario.
+![Checklist de usabilidad basada en los principios de Jakob Nielsen. Parte 2.](HeuristicChecklist2.png)
+_Checklist de usabilidad basada en los principios de Jakob Nielsen. Parte 2._
 
-Si nos centramos en la norma ISO IEC 9126, esta define la usabilidad como un atributo de la calidad del software , asociado al diseño y a la evaluación de la interfaz de usuario y a la interacción. Se analiza en términos de:
+También puedes incluir el análisis de las 8 reglas de de oro de Ben Shneiderman con [este checklist en español](/assets/img/javascript/usabilidad-web/Ocho-reglas-de-oro-del-diseño-de-interfaces.pdf) en tú análisis heurístico.
 
-- **Comprensibilidad**: Capacidad del producto software para permitir al usuario entender si el software es adecuado y cómo puede ser utilizado para la realización de tareas en condiciones de uso particulares.
-- **Aprendizaje**: Capacidad del producto software para permitir a los usuarios aprender a utilizarlo.
-- **Operabilidad**: Capacidad del producto software para permitir que el usuario opere con él y logre el control del mismo considerando aspectos como adaptabilidad, instalación y tolerancia a errores.
-- **Atractividad**:Uso de colores y de un diseño gráfico atractivo para el usuario.
-- **Conformidad**: Capacidad del producto software para adherirse a estándares , convenciones, guías de estilo o regulaciones relacionadas con la usabilidad.
-
-Existen otras normas que también son importantes de cara a la usabilidad:
-
-- ISO DIS 9241-11
-- ISO 13407
-- ISO TR 18529
-- ISO 9241-151
-
-> No es necesario que te aprendas el nombre de estas normas, pero sé consciente de que existen para poder consultarlas el dia de mañana.
-{:.prompt-info}
+![Checklist con las 8 reglas de oro de Shneiderman en inglés](Shneiderman8GoldenRules.svg)
+_Checklist con las 8 reglas de oro de Shneiderman en inglés_
 
 ### Test de usabilidad
 
@@ -390,13 +438,63 @@ Debemos ser conscientes que lo habitual es que un usuario no lea con detalle ni 
 ![Resultados del eye tracking](eyetracking.png)
 _Resultados del eye tracking_
 
+![Resultados del eye tracking](eyetracking2.png)
+_Resultados del eye tracking_
+
 Aplicando esta técnica, los expertos en comercio y marketing colocan los productos en los lineales de los supermercados para conseguir un mayor número de ventas o promocionar algún producto.
+
+## Normas ISO relacionadas con la usabilidad
+
+Los estándares relativos a la usabilidad se refieren básicamente a los siguientes aspectos:
+
+- Uso del producto, interfaz de usuario e interacción.
+- Proceso llevado a cabo para el desarrollo del producto.
+- Capacidad de una organización para aplicar un diseño centrado en el usuario.
+
+Existen diferentes normas ISO:
+
+- ISO 9241-210
+- ISO IEC 9126
+- ISO 13407
+- ISO TR 18529
+- ISO 9241-151
+
+Nos centraremos en las 2 primeras.
+
+### ISO 9241-210
+
+La ISO 9241-210 es una norma internacional que se enfoca en los principios del diseño centrado en el usuario (DCU), específicamente en cómo garantizar que los sistemas interactivos sean eficaces, eficientes y satisfactorios para los usuarios. Es una evolución del estándar ISO 9241-11.
+
+Sus principales principios de diseño son:
+
+- Enfoquado en los usuarios y sus contextos.
+- Integrado del ciclo de vida del diseño
+- Iterativo para mejorar con la retroalimentación.
+- Con participación activa de los usuarios.
+- Debe involucrar a diferentes profesionales: diseñadores, desarrolladores, psicólogos y expertos en ergonomía, etc.
+
+### ISO IEC 9126
+
+La norma ISO IEC 9126 define la usabilidad como un atributo de la calidad del software , asociado al diseño y a la evaluación de la interfaz de usuario y a la interacción. Se analiza en términos de:
+
+- **Comprensibilidad**: Capacidad del producto software para permitir al usuario entender si el software es adecuado y cómo puede ser utilizado para la realización de tareas en condiciones de uso particulares.
+- **Aprendizaje**: Capacidad del producto software para permitir a los usuarios aprender a utilizarlo.
+- **Operabilidad**: Capacidad del producto software para permitir que el usuario opere con él y logre el control del mismo considerando aspectos como adaptabilidad, instalación y tolerancia a errores.
+- **Atractividad**:Uso de colores y de un diseño gráfico atractivo para el usuario.
+- **Conformidad**: Capacidad del producto software para adherirse a estándares , convenciones, guías de estilo o regulaciones relacionadas con la usabilidad.
 
 ## Bibliografía
 
 - [Mitos en la experiencia de usuario (inglés)](https://uxmyths.com/) 🔥
-- [Principios de usabilidad web de Jacob Nielsen y el diseño UX](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/)
+- [Principios de usabilidad web de Jakob Nielsen y el diseño UX](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/)
 - <https://www.nosolousabilidad.com/articulos/eye-tracking.htm>
 - <https://madabelvid.wordpress.com/2016/06/15/la-aportacion-del-eyetracking-en-el-sector-de-usabilidad/>
 - <https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/>
 - <https://www.eniun.com/usabilidad-diseno-aplicaciones-reglas-principios/>
+- <https://www.hiberus.com/crecemos-contigo/analisis-heuristico-para-ux-evalua-la-usabilidad-de-tu-web/>
+- <https://cronuts.digital/es/analisis-heuristico-guia-para-analizar-tu-web/>
+- <https://221-m4-353-01.folio.uoc.edu/2022/11/18/analisis-heuristico-de-portal-web-universidad-internacional-de-andalucia/>
+- <https://madabelvid.wordpress.com/2016/06/15/la-aportacion-del-eyetracking-en-el-sector-de-usabilidad/>
+- <https://www.nosolousabilidad.com/articulos/heuristica.htm>
+- <https://pixelvivo.es/las-ocho-reglas-de-oro-del-diseno-de-interfaces/>
+-
