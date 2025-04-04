@@ -10,7 +10,7 @@ img_path: /assets/img/tarea/
 
 La entrega será en formato ZIP con un PDF y un GIF o vídeo en MP4 por cada actividad que lo requiera. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
-> 🔥 Te recomiendo que grabes los GIFs o MP4 con la herramienta [Peek Screen Recorder](https://apps.microsoft.com/detail/xp8cd3d3q50ms2?hl=es-ES&gl=ES).
+> 🔥 Te recomiendo que grabes los GIF o MP4 con la herramienta [Peek Screen Recorder](https://apps.microsoft.com/detail/xp8cd3d3q50ms2?hl=es-ES&gl=ES).
 {:.prompt-info}
 
 Ejemplo de entrega si mi usuario es `mruizg`:
@@ -84,7 +84,7 @@ Responde a las siguientes preguntas:
 - ¿Qué diferencia hay entre usar `20%` y `20vw`?
 - Cambia el ancho de la página y mira como de modifica el tamaño de los cuadrados. ¿Qué cuadrados han cambiado de tamaño? ¿Por qué?
 
-> Incluye un vídeo en formato GIF o MP4.
+> Incluye un vídeo en formato GIF o MP4 donde se vea la fecha y hora.
 {:.prompt-info}
 
 {:.activity}
@@ -114,7 +114,7 @@ Responde a las siguientes preguntas:
 
 - ¿Qué cuadrado ha cambiado de tamaño tras cambiar el `font-size`?
 
-> Incluye un vídeo en formato GIF o MP4 a pantalla completa.
+> Incluye un vídeo en formato GIF o MP4 donde se vea la fecha y hora.
 {:.prompt-info}
 
 {:.activity}
@@ -140,7 +140,7 @@ Haz una página HTML de forma que se cargue una imagen distinta según el siguie
 - entre `500px` y `1000px`
 - más de `1000px`
 
-> Incluye un vídeo en formato GIF o MP4 a pantalla completa.
+> Incluye un vídeo en formato GIF o MP4 donde se vea la fecha y hora.
 {:.prompt-info}
 
 {:.activity}
@@ -161,7 +161,7 @@ Crea una clase css llamada `.g--color-fondo-responsivo` de forma que cambia el c
 - Entre `768px` y `992px` sea de color azul.
 - Más de `992px` sea de color naranja.
 
-> Incluye un vídeo en formato GIF o MP4 a pantalla completa.
+> Incluye un vídeo en formato GIF o MP4 donde se vea la fecha y hora.
 {:.prompt-info}
 
 {:.activity}
@@ -186,7 +186,7 @@ Crea las siguientes clases css:
 
 Y modifícalas con el sufijo `@tablet`, `@desktop` y `@fulldesktop` y repite el ejercicio anterior pero en vez de usar la clase `.g--color-fondo-responsivo` uses las clases que acabas de crear.
 
-> Incluye un vídeo en formato GIF o MP4 a pantalla completa.
+> Incluye un vídeo en formato GIF o MP4 donde se vea la fecha y hora.
 {:.prompt-info}
 
 {:.activity}
@@ -270,7 +270,7 @@ Haz que haya una lista responsive de 20 cards.
 > Puedes utilizar la técnica que quieras pero solo se permite usar HTML y CSS puro.
 {:.prompt-info}
 
-> Incluye un vídeo en formato GIF o MP4 a pantalla completa.
+> Incluye un vídeo en formato GIF o MP4 donde se vea la fecha y hora.
 {:.prompt-info}
 
 ## Dame tu feedback...
