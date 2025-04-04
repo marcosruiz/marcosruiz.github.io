@@ -6,12 +6,9 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/tarea/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Información sobre la tarea
 
-La entrega será en formato ZIP con un GIF o vídeo en MP4 por cada actividad realizada. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
+La entrega será en formato ZIP con un PDF y un GIF o vídeo en MP4 por cada actividad que lo requiera. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).
 
 > 🔥 Te recomiendo que grabes los GIFs o MP4 con la herramienta [Peek Screen Recorder](https://apps.microsoft.com/detail/xp8cd3d3q50ms2?hl=es-ES&gl=ES).
 {:.prompt-info}
@@ -20,14 +17,15 @@ Ejemplo de entrega si mi usuario es `mruizg`:
 
 ```plaintext
 mruizg_t07.zip
-├───mruizg_a01.gif
-├───mruizg_a02.gif
-├───mruizg_a03.gif
-├───mruizg_a04.mp4
+├───mruizg_a04.gif
 ├───mruizg_a05.gif
 ├───mruizg_a06.gif
 ├───mruizg_a07.gif
-└───mruizg_a08.gif
+├───mruizg_a08.gif
+├───mruizg_a09.gif
+├───mruizg_a10.gif
+├───mruizg_a11.gif
+└───mruizg_t07.pdf
 ```
 
 La tarea se calificará con una nota de APTO (10) o NO APTO (0).
@@ -43,17 +41,31 @@ A continuación, se muestran las actividades a realizar.
 {:.activity}
 ### Análisis heurístico
 
-Encuentra 4 fallos de usabilidad distintos en 4 sitios web diferentes. Por cada fallo indica:
+Encuentra 3 fallos de usabilidad distintos en 3 sitios web diferentes. Por cada fallo indica:
 
 - La URL de la web.
-- El [principio de Jakob Nielsen](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/) que se está incumpliendo.
+- El principio de Jakob Nielsen o Ben Shneiderman que se está incumpliendo.
 - Una descripción del problema.
 - Plataformas donde ocurre el problema. Al menos probar con un navegador web y un navegador móvil.
 - Una recomendación para solucionar el problema.
+- Capturas del problema.
+
+> Recuerda que puedes usar los diferentes checklist que hay en el artículo [Usabilidad en la Web](/posts/usabilidad-web).
+{:.prompt-info}
 
 {:.activity}
-### 
+### Test A/B
 
+Además de los métodos para analizar la usabilidad que hemos visto en el artículo [Usabilidad en la Web](/posts/usabilidad-web) existen otros. Investiga y explica **brevemente** en que consiste el Test A/B. Encuentra un **ejemplo real** de un Test A/B e incluye capturas.
+
+{:.activity}
+### Investiga sobre el SEO
+
+Responde a las siguientes preguntas:
+
+1. Explica una breve guía de que hay que tener en cuenta para obtener un buen SEO.
+1. ¿Qué es el SEO black hat?
+1. ¿Qué impacto tiene el uso adecuado de estándares en la optimización para motores de búsqueda (SEO)?
 
 {:.activity}
 ### Viewport
@@ -71,6 +83,9 @@ Responde a las siguientes preguntas:
 
 - ¿Qué diferencia hay entre usar `20%` y `20vw`?
 - Cambia el ancho de la página y mira como de modifica el tamaño de los cuadrados. ¿Qué cuadrados han cambiado de tamaño? ¿Por qué?
+
+> Incluye un vídeo en formato GIF o MP4.
+{:.prompt-info}
 
 {:.activity}
 ### px, rem, em
@@ -99,16 +114,22 @@ Responde a las siguientes preguntas:
 
 - ¿Qué cuadrado ha cambiado de tamaño tras cambiar el `font-size`?
 
+> Incluye un vídeo en formato GIF o MP4 a pantalla completa.
+{:.prompt-info}
+
 {:.activity}
 ### (Voluntaria) Cuadrados de colores
 
 Crea una página HTML con lo siguiente:
 
-- Un `div` cuadrado de color rojo de forma que como mínimo tenga 100px pero a medida que el ancho de la pantalla se hace más grande, se haga también más grande el cuadrado.
-- Un `div` cuadrado de color verde de forma que como máximo tenga 800px pero a medida que el ancho de la pantalla se hace más pequeña, se haga también más pequeño el cuadrado.
-- Un `div` cuadrado de color azul de forma que como máximo tenga 800px, de tamaño mínimo tenga 100px, pero a medida que el ancho de la pantalla se hace más pequeña, se hagan también más pequeño el cuadrado y si se hace más grande el ancho de la pantalla, también se haga más grande el cuadrado.
-- Un `div` cuadrado de color rosa de forma que su tamaño siempre sea la mitad de la pantalla más 20px.
-- Un `div` cuadrado de color amarillo de forma que su tamaño siempre sea la mitad de la pantalla más 20px pero no pueda ser menor que 100px ni mayor que 600px.
+- Un `div` cuadrado de color rojo de forma que como mínimo tenga `100px` pero a medida que el ancho de la pantalla se hace más grande, se haga también más grande el cuadrado.
+- Un `div` cuadrado de color verde de forma que como máximo tenga `800px` pero a medida que el ancho de la pantalla se hace más pequeña, se haga también más pequeño el cuadrado.
+- Un `div` cuadrado de color azul de forma que como máximo tenga `800px`, de tamaño mínimo tenga `100px`, pero a medida que el ancho de la pantalla se hace más pequeña, se hagan también más pequeño el cuadrado y si se hace más grande el ancho de la pantalla, también se haga más grande el cuadrado.
+- Un `div` cuadrado de color rosa de forma que su tamaño siempre sea la mitad de la pantalla más `20px`.
+- Un `div` cuadrado de color amarillo de forma que su tamaño siempre sea la mitad de la pantalla más `20px` pero no pueda ser menor que `100px` ni mayor que `600px`.
+
+> Incluye un vídeo en formato GIF o MP4.
+{:.prompt-info}
 
 {:.activity}
 ### Imágenes
@@ -119,20 +140,29 @@ Haz una página HTML de forma que se cargue una imagen distinta según el siguie
 - entre `500px` y `1000px`
 - más de `1000px`
 
+> Incluye un vídeo en formato GIF o MP4 a pantalla completa.
+{:.prompt-info}
+
 {:.activity}
 ### Menu lateral oculto
 
-Dado el típico layout de cabecera, menú lateral, cuerpo y pie. Haz una página HTML pero de forma que si el tamaño de la pantalla es menor que 500px no se vea el menú lateral.
+Dado el típico layout de cabecera, menú lateral, cuerpo y pie. Haz una página HTML pero de forma que si el tamaño de la pantalla es menor que `500px` no se vea el menú lateral.
+
+> Incluye un vídeo en formato GIF o MP4.
+{:.prompt-info}
 
 {:.activity}
-### Color de fondo responsivo
+### (Voluntaria) Color de fondo responsivo
 
 Crea una clase css llamada `.g--color-fondo-responsivo` de forma que cambia el color de fondo si el ancho del dispositivo (o ventana) tiene:
 
-- Menos de 576px sea de color rojo.
-- Entre 576px y 768px sea de color verde.
-- Entre 768px y 992px sea de color azul.
-- Más de 992px sea de color naranja.
+- Menos de `576px` sea de color rojo.
+- Entre `576px` y `768px` sea de color verde.
+- Entre `768px` y `992px` sea de color azul.
+- Más de `992px` sea de color naranja.
+
+> Incluye un vídeo en formato GIF o MP4 a pantalla completa.
+{:.prompt-info}
 
 {:.activity}
 ### (Voluntaria) Color de fondo responsivo II
@@ -155,6 +185,9 @@ Crea las siguientes clases css:
 ```
 
 Y modifícalas con el sufijo `@tablet`, `@desktop` y `@fulldesktop` y repite el ejercicio anterior pero en vez de usar la clase `.g--color-fondo-responsivo` uses las clases que acabas de crear.
+
+> Incluye un vídeo en formato GIF o MP4 a pantalla completa.
+{:.prompt-info}
 
 {:.activity}
 ### 20 cards
@@ -235,6 +268,9 @@ Dado el siguiente código de una `card`:
 Haz que haya una lista responsive de 20 cards.
 
 > Puedes utilizar la técnica que quieras pero solo se permite usar HTML y CSS puro.
+{:.prompt-info}
+
+> Incluye un vídeo en formato GIF o MP4 a pantalla completa.
 {:.prompt-info}
 
 ## Dame tu feedback...
