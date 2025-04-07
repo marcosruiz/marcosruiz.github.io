@@ -27,7 +27,7 @@ Puedes editar el código de la derecha y ver cómo se actualiza el resultado al 
 Si eres un desarrollador experimentado que viene de Vue 2 u otros frameworks, hay algunos ajustes que puedes modificar para sacar el máximo provecho de este tutorial. Si usted es un principiante, se recomienda ir con los valores predeterminados.
 
 <details class="card mb-2">
-  <summary class="card-header question">Tutorial Configuración Detalles</summary>
+  <summary class="card-header">Tutorial Configuración Detalles</summary>
   <div class="card-body" markdown="1">
 
 Vue ofrece dos estilos de API: API de Opciones y API de Composición. Este tutorial está diseñado para funcionar con ambos - puedes elegir tu estilo preferido usando los interruptores de Preferencia de API en la parte superior. [Más información sobre los estilos de API](https://vuejs.org/guide/introduction.html#api-styles).
@@ -71,11 +71,11 @@ console.log(message.value) // "Hello World!"
 message.value = 'Changed'
 ```
 
-Los detalles sobre reactive() y ref() se discuten en [Guía - Fundamentos de la Reactividad](https://vuejs.org/guide/essentials/reactivity-fundamentals.html).
+Los detalles sobre `reactive()` y `ref()` se discuten en [Guía - Fundamentos de la Reactividad](https://vuejs.org/guide/essentials/reactivity-fundamentals.html).
 
 El estado reactivo declarado en el bloque `<script setup>` del componente puede usarse directamente en la plantilla. Así es como podemos renderizar texto dinámico basado en el valor del objeto contador y el `message` ref, usando la sintaxis de los bigotes:
 
-```template
+```html
 <h1>{{ message }}</h1>
 <p>Count is: {{ counter.count }}</p>
 ```
@@ -84,7 +84,7 @@ Fíjate en que no necesitamos usar `.value` cuando accedemos a la ref del `messa
 
 El contenido de los bigotes no se limita a identificadores o rutas: podemos utilizar cualquier expresión válida de JavaScript:
 
-```javascript
+```html
 <h1>{{ message.split('').reverse().join('') }}</h1>
 ```
 
@@ -95,7 +95,7 @@ Ahora, intenta crear algún estado reactivo por ti mismo, y úsalo para renderiz
 
 En Vue, los bigotes sólo se utilizan para la interpolación de texto. Para vincular un atributo a un valor dinámico, utilizamos la directiva `v-bind`:
 
-```javascript
+```html
 <div v-bind:id="dynamicId"></div>
 ```
 
@@ -105,7 +105,7 @@ La parte después de los dos puntos (`:id`) es el "argumento" de la directiva. A
 
 Debido a que `v-bind` se utiliza con tanta frecuencia, tiene una sintaxis abreviada dedicada:
 
-```javascript
+```html
 <div :id="dynamicId"></div>
 ```
 
@@ -116,19 +116,19 @@ Ahora, intente añadir una clase dinámica a `<h1>`, utilizando la ref `titleCla
 
 Podemos escuchar eventos DOM usando la directiva `v-on`:
 
-```javascript
+```html
 <button v-on:click="increment">{{ count }}</button>
 ```
 
 Due to its frequent use, `v-on` also has a shorthand syntax:
 
-```javascript
+```html
 <button @click="increment">{{ count }}</button>
 ```
 
 Aquí, `increment` está haciendo referencia a una función declarada en `<script setup>`:
 
-```javascript
+```vue
 <script setup>
 import { ref } from 'vue'
 
@@ -152,7 +152,7 @@ Ahora, intenta implementar la función de incremento por ti mismo y enlázala al
 
 Utilizando `v-bind` y `v-on` juntos, podemos crear enlaces bidireccionales en los elementos de entrada del formulario:
 
-```javascript
+```html
 <input :value="text" @input="onInput">
 ```
 
@@ -168,7 +168,7 @@ Intenta escribir en el cuadro de entrada - deberías ver el texto en `<p>` actua
 
 Para simplificar los enlaces bidireccionales, Vue proporciona una directiva, `v-model`, que es esencialmente azúcar sintáctico para lo anterior:
 
-```javascript
+```html
 <input v-model="text">
 ```
 
@@ -183,7 +183,7 @@ Ahora, intenta refactorizar el código para usar `v-model` en su lugar.
 
 Podemos utilizar la directiva `v-if` para renderizar condicionalmente un elemento:
 
-```javascript
+```html
 <h1 v-if="awesome">Vue is awesome!</h1>
 ```
 
@@ -191,7 +191,7 @@ Este `<h1>` sólo se mostrará si el valor de awesome es [verdadero](https://dev
 
 También podemos usar `v-else` y `v-else-if` para denotar otras ramas de la condición:
 
-```javascript
+```html
 <h1 v-if="awesome">Vue is awesome!</h1>
 <h1 v-else>Oh no 😢</h1>
 ```
@@ -205,7 +205,7 @@ Más detalles sobre `v-if`: [Guía - Renderizado condicional](https://vuejs.org/
 
 Podemos utilizar la directiva `v-for` para renderizar una lista de elementos basada en un array fuente:
 
-```javascript
+```html
 <ul>
   <li v-for="todo in todos" :key="todo.id">
     {{ todo.text }}
@@ -240,7 +240,7 @@ Más detalles en v-for: [Guía - Renderizado de listas](https://vuejs.org/guide/
 
 Sigamos construyendo sobre la lista de cosas del último paso. Aquí, ya hemos añadido una funcionalidad de alternar a cada `todo`. Esto se hace añadiendo una propiedad done a cada objeto `todo`, y usando v-model para enlazarla a una casilla de verificación:
 
-```javascript
+```html
 <li v-for="todo in todos">
   <input type="checkbox" v-model="todo.done">
   ...
@@ -281,7 +281,7 @@ Hasta ahora, Vue ha estado manejando todas las actualizaciones del DOM por nosot
 
 Podemos solicitar una `ref` de plantilla - es decir, una referencia a un elemento de la plantilla - utilizando el [atributo especial `ref`](https://vuejs.org/api/built-in-special-attributes.html#ref):
 
-```template
+```html
 <p ref="pElementRef">hello</p>
 ```
 
@@ -340,7 +340,7 @@ import ChildComp from './ChildComp.vue'
 
 A continuación, podemos utilizar el componente en la plantilla como:
 
-```javascript
+```html
 <ChildComp />
 ```
 
@@ -351,7 +351,7 @@ Ahora inténtelo usted mismo - importe el componente hijo y renderícelo en la p
 
 Un componente hijo puede aceptar entradas del padre a través de props. En primer lugar, debe declarar los accesorios que acepta:
 
-```javascript
+```vue
 <!-- ChildComp.vue -->
 <script setup>
 const props = defineProps({
@@ -364,7 +364,7 @@ Tenga en cuenta que `defineProps()` es una macro en tiempo de compilación y no 
 
 El padre puede pasar la prop al hijo igual que los atributos. Para pasar un valor dinámico, también podemos utilizar la sintaxis `v-bind`:
 
-```javascript
+```html
 <ChildComp :msg="greeting" />
 ```
 
@@ -389,7 +389,7 @@ El primer argumento de `emit()` es el nombre del evento. Cualquier argumento adi
 
 El padre puede escuchar los eventos emitidos por el hijo usando `v-on` - aquí el manejador recibe el argumento extra de la llamada emit del hijo y lo asigna al estado local:
 
-```javascript
+```html
 <ChildComp @response="(msg) => childMsg = msg" />
 ```
 
@@ -400,7 +400,7 @@ Ahora pruébalo tú mismo en el editor.
 
 Además de pasar datos a través de props, el componente padre también puede pasar fragmentos de plantilla al hijo a través de slots:
 
-```javascript
+```html
 <ChildComp>
   This is some slot content!
 </ChildComp>
@@ -408,14 +408,14 @@ Además de pasar datos a través de props, el componente padre también puede pa
 
 En el componente hijo, puede renderizar el contenido de la ranura del padre utilizando el elemento `<slot>` como salida:
 
-```javascript
+```html
 <!-- in child template -->
 <slot/>
 ```
 
 El contenido dentro de la salida `<slot>` se tratará como contenido "fallback": se mostrará si el padre no pasó ningún contenido de ranura:
 
-```javascript
+```html
 <slot>Fallback content</slot>
 ```
 
