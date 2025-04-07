@@ -7,7 +7,7 @@ img_path: /assets/img/tutorial-vue/
 ---
 
 > Este artículo es una traducción con [DeepL](https://www.deepl.com/) del [tutorial oficial de Vue](https://vuejs.org/tutorial/).
-{:.prompt-warning}
+{:.prompt-info}
 
 {:.step}
 ## Primeros pasos
