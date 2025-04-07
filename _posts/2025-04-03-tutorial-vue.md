@@ -9,8 +9,7 @@ img_path: /assets/img/tutorial-vue/
 > Este artículo es una traducción con [DeepL](https://www.deepl.com/) del [tutorial oficial de Vue](https://vuejs.org/tutorial/).
 {:.prompt-info}
 
-{:.step}
-## Primeros pasos
+## Paso 1: Primeros pasos
 
 ¡Bienvenido al tutorial de Vue!
 
@@ -40,8 +39,7 @@ También puede cambiar entre el modo SFC y el modo HTML. El primero mostrará ej
 
 ¿Estás preparado? Haz clic en "Siguiente" para empezar.
 
-{:.step}
-## Renderizado declarativo
+## Paso 2: Renderizado declarativo
 
 Lo que ves en el editor es un Vue Single-File Component (SFC). Un SFC es un bloque de código autocontenido reutilizable que encapsula HTML, CSS y JavaScript que van juntos, escrito dentro de un archivo `.vue`.
 
@@ -90,8 +88,7 @@ El contenido de los bigotes no se limita a identificadores o rutas: podemos util
 
 Ahora, intenta crear algún estado reactivo por ti mismo, y úsalo para renderizar contenido de texto dinámico para el `<h1>` en la plantilla.
 
-{:.step}
-## Attribute Bindings
+## Paso 3: Attribute Bindings
 
 En Vue, los bigotes sólo se utilizan para la interpolación de texto. Para vincular un atributo a un valor dinámico, utilizamos la directiva `v-bind`:
 
@@ -111,8 +108,7 @@ Debido a que `v-bind` se utiliza con tanta frecuencia, tiene una sintaxis abrevi
 
 Ahora, intente añadir una clase dinámica a `<h1>`, utilizando la ref `titleClass` como valor. Si el enlace es correcto, el texto debería volverse rojo.
 
-{:.step}
-## Event Listeners
+## Paso 4: Event Listeners
 
 Podemos escuchar eventos DOM usando la directiva `v-on`:
 
@@ -147,8 +143,7 @@ Los manejadores de eventos también pueden usar expresiones en línea, y pueden 
 
 Ahora, intenta implementar la función de incremento por ti mismo y enlázala al botón usando `v-on`.
 
-{:.step}
-## Form Bindings
+## Paso 5: Form Bindings
 
 Utilizando `v-bind` y `v-on` juntos, podemos crear enlaces bidireccionales en los elementos de entrada del formulario:
 
@@ -178,8 +173,7 @@ Para simplificar los enlaces bidireccionales, Vue proporciona una directiva, `v-
 
 Ahora, intenta refactorizar el código para usar `v-model` en su lugar.
 
-{:.step}
-## Renderizado condicional
+## Paso 6: Renderizado condicional
 
 Podemos utilizar la directiva `v-if` para renderizar condicionalmente un elemento:
 
@@ -200,8 +194,7 @@ Actualmente, la demo está mostrando ambos `<h1>`s al mismo tiempo, y el botón 
 
 Más detalles sobre `v-if`: [Guía - Renderizado condicional](https://vuejs.org/guide/essentials/conditional.html)
 
-{:.step}
-## Renderizado de listas
+## Paso 7: Renderizado de listas
 
 Podemos utilizar la directiva `v-for` para renderizar una lista de elementos basada en un array fuente:
 
@@ -235,8 +228,7 @@ Aquí tenemos una simple lista de tareas - ¡intenta implementar la lógica de l
 
 Más detalles en v-for: [Guía - Renderizado de listas](https://vuejs.org/guide/essentials/list.html)
 
-{:.step}
-## Propiedad computada
+## Paso 8: Propiedad computada
 
 Sigamos construyendo sobre la lista de cosas del último paso. Aquí, ya hemos añadido una funcionalidad de alternar a cada `todo`. Esto se hace añadiendo una propiedad done a cada objeto `todo`, y usando v-model para enlazarla a una casilla de verificación:
 
@@ -274,8 +266,7 @@ Una propiedad calculada realiza un seguimiento de otros estados reactivos utiliz
 
 Ahora, intenta añadir la propiedad computada filteredTodos e implementa su lógica de computación. Si se implementa correctamente, marcar una tarea al ocultar los elementos completados debería ocultarla al instante.
 
-{:.step}
-## Lifecycle y Template Refs
+## Paso 9: Lifecycle y Template Refs
 
 Hasta ahora, Vue ha estado manejando todas las actualizaciones del DOM por nosotros, gracias a la reactividad y al renderizado declarativo. Sin embargo, inevitablemente habrá casos en los que necesitemos trabajar manualmente con el DOM.
 
@@ -307,8 +298,7 @@ Esto se llama un gancho de ciclo de vida - nos permite registrar una llamada de 
 
 Ahora, intenta añadir un hook onMounted, accede al `<p>` a través de `pElementRef.value`, y realiza algunas operaciones DOM directas sobre él (por ejemplo, cambiar su `textContent`).
 
-{:.step}
-## Watchers
+## Paso 10: Watchers
 
 A veces podemos necesitar realizar "efectos secundarios" de forma reactiva - por ejemplo, registrar un número en la consola cuando cambia. Podemos conseguirlo con observadores:
 
@@ -327,8 +317,7 @@ watch(count, (newCount) => {
 
 Un ejemplo más práctico que el registro en la consola sería la obtención de nuevos datos cuando cambia un ID. El código que tenemos está obteniendo los datos de todos desde una API simulada en el montaje del componente. También hay un botón que incrementa el ID de todo que debe ser recuperado. Intenta implementar un observador que obtenga una nueva tarea cuando se pulse el botón.
 
-{:.step}
-## Componentes
+## Paso 11: Componentes
 
 Hasta ahora, sólo hemos estado trabajando con un único componente. Las aplicaciones Vue reales se crean normalmente con componentes anidados.
 
@@ -346,8 +335,7 @@ A continuación, podemos utilizar el componente en la plantilla como:
 
 Ahora inténtelo usted mismo - importe el componente hijo y renderícelo en la plantilla.
 
-{:.step}
-## Props
+## Paso 12: Props
 
 Un componente hijo puede aceptar entradas del padre a través de props. En primer lugar, debe declarar los accesorios que acepta:
 
@@ -370,8 +358,7 @@ El padre puede pasar la prop al hijo igual que los atributos. Para pasar un valo
 
 Ahora pruébalo tú mismo en el editor.
 
-{:.step}
-## Emits
+## Paso 13: Emits
 
 Además de recibir props, un componente hijo también puede emitir eventos al padre:
 
@@ -395,8 +382,7 @@ El padre puede escuchar los eventos emitidos por el hijo usando `v-on` - aquí e
 
 Ahora pruébalo tú mismo en el editor.
 
-{:.step}
-## Slots
+## Paso 14: Slots
 
 Además de pasar datos a través de props, el componente padre también puede pasar fragmentos de plantilla al hijo a través de slots:
 
