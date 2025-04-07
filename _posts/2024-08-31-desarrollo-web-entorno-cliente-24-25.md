@@ -46,6 +46,7 @@ pin: true
   - [Tratamiento de datos en clientes web](/posts/tratamiento-datos-clientes-web/)
   - [Gestión de cookies en JavaScript](/posts/cookies)
   - [Vue](/posts/vue)
+    - [Tutorial: Vue](/posts/tutorial-vue)
 
 - T01 - [Tarea: Entorno de desarrollo para JavaScript](/posts/tarea-entorno-desarrollo-javascript/)
 - T02 - [Tarea obligatoria: Introducción a JavaScript](/posts/tarea-introduccion-javascript/)
