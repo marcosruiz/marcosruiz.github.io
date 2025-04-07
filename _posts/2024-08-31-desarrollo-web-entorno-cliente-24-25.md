@@ -55,8 +55,7 @@ pin: true
 - T05.1 - [Tarea: Web para Bayona](/posts/tarea-web-bayona)
 - T05.2 - [Tarea obligatoria: El formulario del gobierno](/posts/tarea-formulario-gobierno)
 - T06 - [Tarea obligatoria: DOM](/posts/tarea-dom/)
-- T07.1 - [Tarea obligatoria: Comunicación asíncrona](/posts/tarea-comunicacion-asincrona/)
-- T07.2 - Tarea: Migrar a Vue
+- T07 - [Tarea obligatoria: Comunicación asíncrona](/posts/tarea-comunicacion-asincrona/)
 
 ## Enlaces de interés 🔥
 
