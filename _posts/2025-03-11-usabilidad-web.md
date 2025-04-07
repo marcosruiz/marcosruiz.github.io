@@ -3,6 +3,7 @@ title: "Usabilidad de la web"
 date: 2025-03-11 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
+math: true
 img_path: /assets/img/usabilidad-web/
 ---
 
@@ -82,6 +83,16 @@ A la hora de diseñar una interfaz Web, debemos tener en cuenta algunos de los o
 - Tener en cuenta las necesidades de los usuarios.
 
 ## Principios de usabilidad
+
+Existen diferentes teorías relacionadas con la experiencia de usuario (UX):
+
+- Principios de usabilidad de Jakob Nielsen.
+- Ley de Hick.
+- Ley de Fitts.
+- Principios del diseño visual.
+- Reglas de oro de Shneiderman.
+
+Te los explico a continuación.
 
 ### Principios de usabilidad de Jakob Nielsen
 
