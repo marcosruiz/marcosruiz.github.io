@@ -6,9 +6,6 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/accesibilidad-web/
 ---
 
-> Artículo en construcción.
-{:.prompt-warning}
-
 ## Introducción
 
 A la hora de diseñar una interfaz web no podemos olvidarnos de la gran cantidad de personas en el mundo que tienen algún tipo de discapacidad. También debemos tener en cuenta a usuarios que tienen un ancho de banda limitado. Esto cobra especial relevancia en los sitios web de instituciones públicas.
@@ -83,7 +80,7 @@ Las personas con discapacidad corren el riesgo de quedar excluidos si no se toma
 
 A continuación describiremos algunos de los tipos de discapacidad que como personas dedicadas al diseño de interfaces Web debemos tener en cuenta para hacer nuestros sitios Web más accesibles y posteriormente veremos las pautas a seguir para poder hacerlo.
 
-### Visual
+### (Voluntario) Visual
 
 Una persona tiene una discapacidad visual cuando tiene disminuida la función visual o bien cuando tiene una ceguera.
 
@@ -110,7 +107,7 @@ Las personas que tienen problemas de visión pueden haber adquirido éstos:
 - De forma gradual a causa de una enfermedad o por efecto de la edad.
 - Tenerlos desde su nacimiento.
 
-### Motriz
+### (Voluntario) Motriz
 
 Se dice que una persona tiene una discapacidad motriz cuando padece alguna disfunción en el aparato locomotor. Esta disfunción puede llevar asociados algunos problemas como son:
 
@@ -140,7 +137,7 @@ Es la contracción parcial, pasiva y continua de los músculos.
   </div>
 </details>
 
-### Auditiva
+### (Voluntario) Auditiva
 
 Las personas con discapacidad auditiva tienen una audición deficiente en ambos oídos. Estas personas se pueden clasificar en dos grandes grupos:
 
@@ -151,7 +148,7 @@ La audición es la vía principal a través de la cual se desarrolla el lenguaje
 
 Por ello tenemos que tener en cuenta que una persona con discapacidad auditiva desde su nacimiento, no podrá procesar el lenguaje de la misma forma que una persona sin discapacidad o que una persona que perdió la audición después de aprender a hablar.
 
-### Cognitiva
+### (Voluntario) Cognitiva
 
 <details class="card mb-2">
   <summary class="card-header question">¿Cuáles son las habilidades cognitivas?
@@ -266,6 +263,7 @@ Los más conocidos son:
 
 - Teclado virtual
 - Teclado alternativo
+- Xbox Adaptive Controller
 - Teclado Braille
 - Software de reconocimiento de voz
 - Apuntadores
@@ -292,7 +290,7 @@ Estos teclados pueden tener una retroalimentación auditiva, indicando mediante 
 ![Teclado alternativo](tecladoAlternativo.png)
 _Teclado alternativo_
 
-##### Xbox Adaptive Controller
+#### Xbox Adaptive Controller
 
 Es un mando diseñado por Microsoft específicamente para personas con discapacidades o movilidad reducida. Su objetivo principal es hacer que los videojuegos sean más accesibles para todos.
 
@@ -322,7 +320,7 @@ Los Apuntadores (también llamados licornios) están pensados para aquellas pers
 ![Licornios o apuntadores](licornios.png)
 _Licornios o apuntadores_
 
-#### Trackball gigante
+#### Trackball
 
 Es un ratón que no necesita desplazarse. Tiene una bola de gran tamaño situada por encima del ratón que se mueve en cualquier dirección y unos botones de gran tamaño facilitando, de esta forma, su uso por las personas con discapacidad motriz. Algunos disponen de un botón adicional que permite ampliar las imágenes con lo que se convierte en una herramienta útil también para las personas con discapacidad visual.
 
@@ -347,7 +345,6 @@ Los dispositivos de salida más conocidos empleados como tecnología asistencial
 - Lectores de pantalla
 - Ampliadores de pantalla
 - Líneas Braille
-- Navegadores para ciegos
 
 #### Lectores de pantalla
 
@@ -367,15 +364,17 @@ _Voice Aloud Reader_
 
 #### Ampliadores de pantalla
 
-Son programas especialmente útiles en las personas con baja visión ya que permiten ampliar el texto y las imágenes mostrados en el monitor. En este apartado tenemos como ejemplo la lupa que suministran algunos sistemas operativos. En la imagen ilustrativa de este apartado puedes ver como se activa la lupa en el sistema operativo Windows 7 y como amplía la zona por la que se desplaza el puntero del ratón que, en el caso de la imagen, corresponde a un texto escrito en el bloc de notas.
+Son programas especialmente útiles en las personas con baja visión ya que permiten ampliar el texto y las imágenes mostrados en el monitor. En este apartado tenemos como ejemplo la lupa que suministran algunos sistemas operativos.
+
+![Aplicación de lupa de Windows 11](magnifierW11.png)
+_Aplicación de lupa de Windows 11_
 
 #### Líneas Braille
 
 Están compuestas por una serie de celdas con 6 u 8 puntos cada una que muestran de forma táctil la misma información que leería un lector de pantalla. Son útiles para las personas ciegas y, sobre todo, para las sordo-ciegas que no se pueden beneficiar de los lectores de pantalla ni de los ampliadores de pantalla.
 
-#### Navegadores para ciegos
-
-Son capaces de leer las páginas web en voz alta y los usuarios podrán navegar a través de su voz haciendo uso de una serie de comandos especiales.
+![Lineas Braille](lineasBraille.png)
+_Lineas Braille_
 
 <details class="card mb-2">
   <summary class="card-header question">¿cómo puedes tú (como persona dedicada al diseño web) contribuir a la accesibilidad en la web?</summary>
@@ -418,11 +417,11 @@ Entre los estándares creados por este consorcio destacan:
 
 Pero también incluye estándares centrados en la accesibilidad:
 
-- **WCAG 2.0**: Directrices para crear interfaces accesibles para personas con discapacidad.
+- **WCAG**: Directrices para crear interfaces accesibles para personas con discapacidad.
 
-Nos centraremos en este último.
+Nos centraremos en este último en su versión 2.0.
 
-## WCAG 2.0
+### WCAG 2.0
 
 La Iniciativa para la Accesibilidad Web (WAI) es una iniciativa que desarrolla estrategias, directrices y recursos para ayudar a hacer la Web accesible a las personas con discapacidad. Concretamente, la WAI desarrolla las Directrices de Accesibilidad para el Contenido Web (WCAG).
 
@@ -456,7 +455,7 @@ Desarrollar especificaciones y Desarrollar líneas maestras.
   </div>
 </details>
 
-## Pautas de accesibilidad de las WCAG 2.0
+### Pautas de accesibilidad de las WCAG 2.0
 
 Las Pautas de Accesibilidad para el Contenido Web definen cómo crear contenidos web más accesibles para las personas con discapacidad.
 
@@ -481,7 +480,7 @@ Las WCAG 2.0 tienen 12 pautas que se organizan en los cuatro principios que cons
 1. **Robustez**
    1. Maximizar la compatibilidad con los agentes de usuario actuales y futuros, incluyendo las tecnologías asistivas.
 
-## Niveles de conformidad de las WCAG 2.0
+### Niveles de conformidad de las WCAG 2.0
 
 Para cada pauta se proporcionan los criterios de éxito verificables que permiten emplear las WCAG 2.0 en aquellas situaciones en las que existan requisitos y necesidad de evaluación de conformidad. Existen tres niveles:
 
@@ -499,7 +498,7 @@ No. Lograr un nivel superior implica haber logrado los niveles anteriores.
   </div>
 </details>
 
-## Criterios de conformidad
+### Criterios de conformidad de la WCAG 2.0
 
 Cada pauta de accesibilidad tiene de uno a diez criterios de éxito.
 
@@ -533,13 +532,13 @@ Las personas sordo ciegas pueden leer el texto en braille.
 > (Voluntario) Si quieres conocer todos los 61 criterios de conformidad puedes leer el artículo [Criterios de conformidad de WCAG 2.0](https://accesibilidadweb.dlsi.ua.es/?menu=criterios-2.0).
 {:.prompt-info}
 
-## Técnicas de accesibilidad
+### Técnicas de accesibilidad
 
 Para cada uno criterios de conformidad, el grupo de trabajo de las WCAG 2.0 ha documentado también una amplia variedad de técnicas.
 
 (Voluntario) En el artículo [Techniques and Failures for Web Content Accessibility Guidelines 2.0](https://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/complete.html#G1)n tienes descritas las 375 técnicas en inglés.
 
-## Declaración de conformidad de documentos Web
+### Declaración de conformidad de documentos Web
 
 Una declaración de conformidad de una página web conforme con las WCAG 2.0 (Web Content Accessibility Guidelines 2.0) es un documento (generalmente público) en el que el responsable del sitio web afirma que este cumple con los requisitos de accesibilidad establecidos en las WCAG 2.0.
 
