@@ -94,7 +94,7 @@ Hay muchos tipos de problemas oculares y perturbaciones visuales: visión borros
 
 Cantidad de espacio que podemos observar teniendo la vista fija en un punto central situado en el infinito.
 
-![Límites normales del campo visual](image.png)
+![Límites normales del campo visual](campoVisual.png)
 _Límites normales del campo visual_
 
 <!-- Comentario para que no se descuajeringue la cosa -->
