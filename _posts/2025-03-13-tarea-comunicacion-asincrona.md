@@ -35,8 +35,8 @@ Existen muchas APIs públicas como son:
 
 - [The Rick and Morty API](https://rickandmortyapi.com/)
 - [PokéAPI](https://pokeapi.co/)
-- [AEMET OpenData](https://opendata.aemet.es/dist/index.html)
 - [API de Marvel](https://developer.marvel.com/)
+- [AEMET OpenData](https://opendata.aemet.es/dist/index.html)
 - [COVID Tracking](https://covidtracking.com/data)
 - [OpenWeather APIs](https://openweathermap.org/api)
 
@@ -109,6 +109,12 @@ Prepara un vídeo del tiempo que consideres necesario (pero intenta que sea lo m
 1. Muestra y explica el código que consideres más relevante.
 1. Explica que pasos has realizado para migrar todo a Vue.
 1. Explica que ventajas te ha aportado hacer uso del framework Vue.
+
+## Dame tu feedback...
+
+<div class="strawpoll-embed" id="strawpoll_mpnb1dV7by5" style="height: 644px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_mpnb1dV7by5" src="https://strawpoll.com/embed/mpnb1dV7by5" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
+
+<div class="strawpoll-embed" id="strawpoll_GPgVY7BwMna" style="height: 3012px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_GPgVY7BwMna" src="https://strawpoll.com/embed/GPgVY7BwMna" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
 
 ## Bibliografía
 
