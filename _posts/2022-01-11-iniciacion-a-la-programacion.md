@@ -9,12 +9,12 @@ tags: [tic ii, teoría, programación]
 {:.section}
 ## ¿Qué es programar?
 
-Programar consiste en crear una serie de órdenes dirigidas a un ordenador o dispositivo para que lleve a cabo las tareas que le encomendemos, con el objetivo de solucionar un determinado problema. 
+Programar consiste en crear una serie de órdenes dirigidas a un ordenador o dispositivo para que lleve a cabo las tareas que le encomendemos, con el objetivo de solucionar un determinado problema.
 
 {:.section}
 ## ¿Qué es la programación?
 
-La programación es el instrumento que permite la ejecución de las tareas automatizadas de un sistema informático. 
+La programación es el instrumento que permite la ejecución de las tareas automatizadas de un sistema informático.
 Es pues una herramienta muy poderosa.
 
 Para conseguir esto, se utilizan los lenguajes de programación, a través de los cuales se crearán los programas que contienen las instrucciones que se dan a la máquina para que ésta ejecute determinada acción.
@@ -25,8 +25,8 @@ Para conseguir esto, se utilizan los lenguajes de programación, a través de lo
 {:.section}
 ## ¿Qué es un programa?
 
-Un programa es una secuencia de instrucciones que han sido escritas en un lenguaje de programación concreto, entendibles por el ordenador, y que permiten realizar un trabajo o resolver un problema. 
-Si no sabemos resolver este problema, no podremos escribir el programa. 
+Un programa es una secuencia de instrucciones que han sido escritas en un lenguaje de programación concreto, entendibles por el ordenador, y que permiten realizar un trabajo o resolver un problema.
+Si no sabemos resolver este problema, no podremos escribir el programa.
 De ahí que un buen programador siempre comienza su trabajo con un análisis y compresión exhaustivos del problema que pretende resolver.
 
 Si el objetivo de un programa es la resolución de un problema, lo primero que tenemos que considerar es que las formas de resolver un mismo problema no son únicas, de forma que ante un mismo problema un programador podrá escribir diferentes programas que solucionen de distinta forma el problema planteado. Pero, si bien lo anterior es evidente, lo que sí podemos afirmar es que, en la codificación de cualquier programa, de forma general, se pueden distinguir las siguientes partes:
@@ -60,7 +60,7 @@ _Partes de un programa_
 {:.question}
 ¿Cómo es posible que el compilador de C esté escrito en C?
 
-De la misma forma que el término genérico "lenguaje" se refiere a cualquier sistema estructurado de comunicación (gestos, sonidos, símbolos,... y las reglas que rigen su uso), podemos definir lenguaje de programación como un conjunto de caracteres y reglas que permiten crear un programa, para introducir y procesar la información en un ordenador. 
+De la misma forma que el término genérico "lenguaje" se refiere a cualquier sistema estructurado de comunicación (gestos, sonidos, símbolos,... y las reglas que rigen su uso), podemos definir lenguaje de programación como un conjunto de caracteres y reglas que permiten crear un programa, para introducir y procesar la información en un ordenador.
 Son lenguajes artificiales creados con el objetivo de conseguir la comunicación entre el humano y la máquina, o entre máquinas.
 
 Los lenguajes de programación se pueden clasificar atendiendo a los siguientes criterios: nivel de abstracción, propósito de creación y paradigma de creación.
@@ -68,7 +68,7 @@ Los lenguajes de programación se pueden clasificar atendiendo a los siguientes 
 {:.subsection}
 ### Según el nivel de abstracción
 
-Éste es el criterio que ayuda a una mejor comprensión de lo que en realidad son los lenguajes de programación y para qué se utilizan. 
+Éste es el criterio que ayuda a una mejor comprensión de lo que en realidad son los lenguajes de programación y para qué se utilizan.
 Según dicho nivel de abstracción, los lenguajes de programación pueden ser:
 
 {:.subsubsection}
@@ -113,11 +113,11 @@ _Ejemplo de lenguaje ensamblador_
 ¿En que circunstancias puede ser útil programar directamente en lenguaje ensamblador?
 
 {:.question}
-¿Sabrías nombrar dos arquitecturas de lenguajes de ensamblador? 
+¿Sabrías nombrar dos arquitecturas de lenguajes de ensamblador?
 Pista: uno se usa en PCs y otro en móviles y tablets.
 
 {:.question}
-¿Qué ventajas y desventajas tiene cada arquitectura de lenguaje de ensamblador? 
+¿Qué ventajas y desventajas tiene cada arquitectura de lenguaje de ensamblador?
 ¿Cuándo se usa cada una de ellas?
 
 {:.subsubsection}
@@ -147,7 +147,7 @@ El compilador traduce el programa completo a código máquina antes de empezar a
 ![Funcionamiento de un compilador](/assets/img/iniciacion-a-la-programacion/compilador.png){: width="400px"}
 _Funcionamiento de un compilador_
 
-Una vez compilado el programa, podemos ejecutarlo, es decir, hacer que se inicie la carga del programa y que comiencen a realizarse las acciones programadas. 
+Una vez compilado el programa, podemos ejecutarlo, es decir, hacer que se inicie la carga del programa y que comiencen a realizarse las acciones programadas.
 Ejemplos de lenguajes compilados son C, C++, Java, Pascal o Processing.
 
 Las ventajas de utilizar un compilador son:
@@ -169,9 +169,9 @@ A diferencia de un compilador, un intérprete transcribe a lenguaje máquina y e
 ![Compilador vs intérprete](/assets/img/iniciacion-a-la-programacion/compilador-vs-interprete.png)
 _Compilador vs intérprete_
 
-Es decir, el programa intérprete traduce y ejecuta las instrucciones del programa línea a línea, siguiendo la secuencia real del programa. 
-Cuando detecta un error, la traducción y ejecución del programa se detienen, e indica un código de error. La ejecución del programa en un intérprete es, por lo general, más lenta que en un compilador. 
-El intérprete no genera un archivo ejecutable. 
+Es decir, el programa intérprete traduce y ejecuta las instrucciones del programa línea a línea, siguiendo la secuencia real del programa.
+Cuando detecta un error, la traducción y ejecución del programa se detienen, e indica un código de error. La ejecución del programa en un intérprete es, por lo general, más lenta que en un compilador.
+El intérprete no genera un archivo ejecutable.
 La ventaja de ello es que cualquier programa puede ser interpretado en cualquier sistema operativo.
 
 Ejemplos de lenguajes interpretados son las primeras versiones de BASIC, Logo, JavaScript o Python.
@@ -208,14 +208,14 @@ Se utilizan de forma específica para desarrollar aplicaciones muy específicas 
 
 Otro posible criterio de clasificación de los lenguajes de programación es el hacerlo según su paradigma de programación.
 
-El término "paradigma" ha sido objeto de muchas interpretaciones. En su origen griego, significaba "modelo", "ejemplo" o "patrón". 
-Sobre este punto de partida, podemos hablar de un paradigma como un conjunto de creencias, prácticas y conocimientos que guían el desarrollo de una disciplina durante un periodo de tiempo. 
-En diversas ramas de la ciencia, un conjunto de ideas en vigencia puede ser reemplazado drásticamente por otro que entre en conflicto con él y se demuestre más acertado. 
+El término "paradigma" ha sido objeto de muchas interpretaciones. En su origen griego, significaba "modelo", "ejemplo" o "patrón".
+Sobre este punto de partida, podemos hablar de un paradigma como un conjunto de creencias, prácticas y conocimientos que guían el desarrollo de una disciplina durante un periodo de tiempo.
+En diversas ramas de la ciencia, un conjunto de ideas en vigencia puede ser reemplazado drásticamente por otro que entre en conflicto con él y se demuestre más acertado.
 La programación tiene sus propios paradigmas, pero el concepto "paradigma de programación" no necesariamente representa un modelo único que deba ser respetado hasta que aparezca otro mejor.
 
-Un paradigma de programación es un estilo de desarrollo de programas. 
-Es decir, un modelo para resolver problemas computacionales. 
-Los lenguajes de programación, necesariamente, se encuadran en uno o varios paradigmas a la vez a partir del tipo de órdenes que permiten implementar, algo que tiene una relación directa con su sintaxis. 
+Un paradigma de programación es un estilo de desarrollo de programas.
+Es decir, un modelo para resolver problemas computacionales.
+Los lenguajes de programación, necesariamente, se encuadran en uno o varios paradigmas a la vez a partir del tipo de órdenes que permiten implementar, algo que tiene una relación directa con su sintaxis.
 Según su paradigma, los lenguajes de programación pueden ser imperativos o declarativos.
 
 {:.subsubsection}
@@ -236,15 +236,15 @@ Dentro de la programación imperativa existen subparadigmas bien diferenciados c
 {:.subsubsection}
 #### Declarativos
 
-En la programación imperativa, los programas consisten en secuencias de mandatos, instrucciones u órdenes que han de ser ejecutados por el computador en el orden indicado por el programador. 
-A diferencia de esta visión, en los paradigmas declarativos el programador expresa la finalidad que debe satisfacer el programa, pero no el orden exacto en que han de realizarse las acciones dentro del ordenador hasta llegar a la solución, la cual es obtenida por mecanismos internos de control (son los compiladores de estos lenguajes los que realizan esta función y tienen gran libertad para decidir cómo llegar a esa solución). 
-Un mismo programa puede ser ejecutado siguiendo diferentes secuencias de acciones elementales sin que por ello se vea afectado su resultado final. 
-De esta forma, la programación declarativa facilita la labor del programador, permitiéndole concentrarse en dar una formulación del problema, liberándolo del control del algoritmo ya que la máquina, a partir de tal formulación, encontrará la solución del problema. 
+En la programación imperativa, los programas consisten en secuencias de mandatos, instrucciones u órdenes que han de ser ejecutados por el computador en el orden indicado por el programador.
+A diferencia de esta visión, en los paradigmas declarativos el programador expresa la finalidad que debe satisfacer el programa, pero no el orden exacto en que han de realizarse las acciones dentro del ordenador hasta llegar a la solución, la cual es obtenida por mecanismos internos de control (son los compiladores de estos lenguajes los que realizan esta función y tienen gran libertad para decidir cómo llegar a esa solución).
+Un mismo programa puede ser ejecutado siguiendo diferentes secuencias de acciones elementales sin que por ello se vea afectado su resultado final.
+De esta forma, la programación declarativa facilita la labor del programador, permitiéndole concentrarse en dar una formulación del problema, liberándolo del control del algoritmo ya que la máquina, a partir de tal formulación, encontrará la solución del problema.
 Así, se dice que la componente esencial de este tipo de lenguajes es la componente lógica o especificación de un problema en términos de cierta lógica.
 
 Dentro de la programación declarativa distinguimos dos tipos:
 
-- **Lenguajes funcionales**: Se basan en la utilización de funciones matemáticas predefinidas, es decir, implementaciones de comportamiento que reciben un conjunto de datos de entrada y devuelven un valor de salida. Ejemplo: R (estadística). 
+- **Lenguajes funcionales**: Se basan en la utilización de funciones matemáticas predefinidas, es decir, implementaciones de comportamiento que reciben un conjunto de datos de entrada y devuelven un valor de salida. Ejemplo: R (estadística).
 - **Lenguajes lógicos**: Utilizan la lógica matemática para expresar problemas complejos y resolverlos mediante la aplicación de reglas, hipótesis y teoremas. Ejemplo: Prolog.
 
 {:.subsection}
@@ -278,7 +278,7 @@ Teniendo en cuenta las anteriores etapas del desarrollo existen diferentes maner
 {:.subsubsection}
 #### Definición del problema
 
-El enunciado del problema debe ser claro y no complejo. 
+El enunciado del problema debe ser claro y no complejo.
 Es importante que conozcamos exactamente qué se desea obtener al final del proceso; mientras esto no se comprenda, no puede pasarse a la siguiente etapa.
 
 {:.subsubsection}
@@ -315,7 +315,7 @@ De los dos tipos, los algoritmos más utilizados en la programación son los dia
 ![SIMBOLOGÍA USADA EN LOS DIAGRAMAS DE FLUJO](/assets/img/iniciacion-a-la-programacion/simbologia-diagramas-de-flujo.png)
 _SIMBOLOGÍA USADA EN LOS DIAGRAMAS DE FLUJO_
 
-En cuanto al pseudocódigo, se trata de un falso lenguaje empleado para describir un algoritmo de forma previa a la utilización de un lenguaje de programación real, con el fin de que pueda ser leído en interpretado fácilmente por un ser humano y no por una máquina. 
+En cuanto al pseudocódigo, se trata de un falso lenguaje empleado para describir un algoritmo de forma previa a la utilización de un lenguaje de programación real, con el fin de que pueda ser leído en interpretado fácilmente por un ser humano y no por una máquina.
 Se trata pues de un lenguaje intermedio entre cualquier lenguaje de programación y el lenguaje humano. No existen reglas fijas para escribir en pseudocódigo, aunque casi siempre se utiliza el mismo vocabulario.
 
 {:.subsubsection}
@@ -342,7 +342,7 @@ A menudo, un programa escrito por una persona es usado por otra. Por ello, la do
 {:.subsubsection}
 #### Mantenimiento
 
-Se refiere a las actualizaciones que deban aplicarse al programa cuando las circunstancias así lo requieran. 
+Se refiere a las actualizaciones que deban aplicarse al programa cuando las circunstancias así lo requieran.
 Un programa debe ser susceptible de ser modificado para adecuarlo a nuevas condiciones de operación.
 
 Cualquier actualización o cambio en el programa deberá reflejarse en su documentación.

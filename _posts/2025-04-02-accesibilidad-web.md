@@ -267,7 +267,7 @@ Los más conocidos son:
 - Teclado Braille
 - Software de reconocimiento de voz
 - Apuntadores
-- Trackball gigante
+- Trackball
 - Webcams para seguimiento de ojos o cara
 
 #### Teclado virtual
@@ -324,10 +324,10 @@ _Licornios o apuntadores_
 
 Es un ratón que no necesita desplazarse. Tiene una bola de gran tamaño situada por encima del ratón que se mueve en cualquier dirección y unos botones de gran tamaño facilitando, de esta forma, su uso por las personas con discapacidad motriz. Algunos disponen de un botón adicional que permite ampliar las imágenes con lo que se convierte en una herramienta útil también para las personas con discapacidad visual.
 
-![Trackball Logitech](trackballLogitech.jpg)
+![Trackball Logitech](trackballLogitech.jpg){: width="400px"}
 _Trackball Logitech_
 
-![Trackball Ablenet](trackballAblenet.jpg)
+![Trackball Ablenet](trackballAblenet.jpg){: width="400px"}
 _Trackball Ablenet_
 
 #### Webcams para seguimiento de ojos o cara
@@ -392,7 +392,7 @@ _Lineas Braille_
   </div>
 </details>
 
-{.question}
+{:.question}
 ¿Crees que mi web cumple todos estos requisitos de accesibilidad?
 
 <details class="card mb-2">
