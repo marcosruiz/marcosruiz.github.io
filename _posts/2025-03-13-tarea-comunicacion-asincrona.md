@@ -15,7 +15,7 @@ Ejemplo de entrega si mi usuario es `mruizg`:
 ```plaintext
 mruizg_t07.zip
 ├───mruizg_a01.mp4
-└───mruizg_a03.mp4
+└───mruizg_a04.mp4
 ```
 
 La tarea se calificará con una nota de APTO (10) o NO APTO (0).
@@ -55,6 +55,11 @@ Prepara un vídeo del tiempo que consideres necesario (pero intenta que sea lo m
 1. Muestra y explica el código que consideres relevante de tu aplicación. No te dejes la llamada a la API y como transformas y muestras los datos en la interfaz web.
 1. Muestra y explica como has encadenado peticiones asíncronas. Si no has necesitado usarlas explica un caso donde necesitarías hacerlo y cómo lo harías.
 1. Indica en que navegadores has probado tu aplicación web.
+
+{:.activity}
+### (Voluntaria) Tutorial Vue
+
+Conoce las principales características que proporciona Vue a través del [tutorial oficial de Vue](https://vuejs.org/tutorial/#step-1). He preparado el artículo [Tutorial: Vue](/posts/tutorial-vue) donde he traducido todo el tutorial con DeepL por si tienes dificultades con el inglés.
 
 {:.activity}
 ### (Voluntaria) Lista de tareas con Vue
