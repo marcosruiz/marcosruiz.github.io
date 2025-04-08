@@ -80,7 +80,7 @@ Las personas con discapacidad corren el riesgo de quedar excluidos si no se toma
 
 A continuación describiremos algunos de los tipos de discapacidad que como personas dedicadas al diseño de interfaces Web debemos tener en cuenta para hacer nuestros sitios Web más accesibles y posteriormente veremos las pautas a seguir para poder hacerlo.
 
-### (Voluntario) Visual
+### Visual
 
 Una persona tiene una discapacidad visual cuando tiene disminuida la función visual o bien cuando tiene una ceguera.
 
@@ -107,7 +107,7 @@ Las personas que tienen problemas de visión pueden haber adquirido éstos:
 - De forma gradual a causa de una enfermedad o por efecto de la edad.
 - Tenerlos desde su nacimiento.
 
-### (Voluntario) Motriz
+### Motriz
 
 Se dice que una persona tiene una discapacidad motriz cuando padece alguna disfunción en el aparato locomotor. Esta disfunción puede llevar asociados algunos problemas como son:
 
@@ -137,7 +137,7 @@ Es la contracción parcial, pasiva y continua de los músculos.
   </div>
 </details>
 
-### (Voluntario) Auditiva
+### Auditiva
 
 Las personas con discapacidad auditiva tienen una audición deficiente en ambos oídos. Estas personas se pueden clasificar en dos grandes grupos:
 
@@ -148,7 +148,7 @@ La audición es la vía principal a través de la cual se desarrolla el lenguaje
 
 Por ello tenemos que tener en cuenta que una persona con discapacidad auditiva desde su nacimiento, no podrá procesar el lenguaje de la misma forma que una persona sin discapacidad o que una persona que perdió la audición después de aprender a hablar.
 
-### (Voluntario) Cognitiva
+### Cognitiva
 
 <details class="card mb-2">
   <summary class="card-header question">¿Cuáles son las habilidades cognitivas?
