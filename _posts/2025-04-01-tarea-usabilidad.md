@@ -3,7 +3,7 @@ title: "Tarea: Usabilidad y responsividad en la web"
 date: 2025-04-01 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
-img_path: /assets/img/tarea/
+img_path: /assets/img/tarea-usabilidad/
 ---
 
 ## Información sobre la tarea
