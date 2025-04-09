@@ -1,5 +1,5 @@
 ---
-title: "Accesibilidad en la web"
+title: "Discapacidad y tecnología asistencial"
 date: 2025-04-02 9:00:00 +0100
 categories: [Desarrollo de Aplicaciones Web, Diseño de Interfaces Web]
 tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de aplicaciones web, diseño de interfaces web, diw]
@@ -407,3 +407,4 @@ No. La función de las "sticky keys" es simular la pulsación simultánea de var
 
 ## Bibliografía
 
+- [Ministerio de Educación y Formación Profesional](https://www.educacionyfp.gob.es/portada.html)
