@@ -6,6 +6,9 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/tarea-accesibilidad-web/
 ---
 
+> Artículo en construcción.
+{:.prompt-warning}
+
 ## Información sobre la tarea
 
 La entrega será en formato ZIP con un PDF. Leer [Entrega y presentación de tareas](/posts/entrega-presentacion-tareas/).

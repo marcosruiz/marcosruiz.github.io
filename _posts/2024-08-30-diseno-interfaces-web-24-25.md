@@ -29,7 +29,9 @@ pin: true
   - [Figma y atomic design](/posts/figma-atomic-design)
 - UD7 - [Usabilidad en la Web](/posts/usabilidad-web)
   - [Diseño web responsivo](/posts/diseno-web-responsivo)
-- UD8 - [Accesibilidad en la Web](/posts/accesibilidad-web/)
+- UD8 - Accesibilidad en la Web
+  - [Discapacidad y tecnología asistencial](/posts/accesibilidad-web/)
+  - [WCAG](/posts/wcag/)
 
 - T01 - [Tarea: Introducción al diseño web](/posts/tarea-introduccion-diseno-web/)
 - T02 - [Tarea obligatoria: Introducción a CSS](/posts/tarea-introduccion-css)
@@ -39,7 +41,7 @@ pin: true
 - T05 - [Tarea obligatoria: Animaciones en la web](/posts/tarea-animaciones/)
 - T06 - [Tarea obligatoria: Contenidos web interactivos](/posts/tarea-contenidos-web-interactivos/)
 - T07 - [Tarea: Usabilidad y responsividad en la web](/posts/tarea-usabilidad/)
-- T08 - Tarea: Accesibilidad en la Web
+- T08 - [Tarea: Accesibilidad en la Web](/posts/tarea-accesibilidad-web/)
 
 ## Enlaces de interés
 
