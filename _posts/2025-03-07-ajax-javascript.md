@@ -18,6 +18,7 @@ AJAX, acrónimo de “Asynchronous JavaScript and XML”, es un conjunto de tecn
 
 Esta es la definición original de AJAX pero ahora se usa JSON en lugar de XML y `fetch` en vez de `XMLHttpRequest`. Sin embargo se sigue manteniendo el nombre de AJAX ya que aunque contradice el acrónimo no contradice la definición.
 
+{:.section}
 ## Modelo clásico vs modelo AJAX
 
 El modelo clásico de aplicaciones Web funciona de la siguiente forma: la mayoría de las acciones del usuario se producen en la interfaz, disparando solicitudes HTTP al servidor web. El servidor efectúa un proceso (recopila información, realiza las acciones oportunas), y devuelve una pagina HTML al cliente. Este es un modelo adaptado del uso original de la Web como medio hipertextual, pero a nivel de aplicaciones de software, este tipo de modelo no es necesariamente el más recomendable.
@@ -36,6 +37,7 @@ Clásico.
   </div>
 </details>
 
+{:.section}
 ## Requerimientos previos
 
 Para la programación con AJAX vamos a necesitar de un servidor web, ya que las peticiones AJAX que hagamos, las haremos a un servidor (backend).
@@ -50,6 +52,7 @@ Los códigos que hacen peticiones POST necesitan de un backend.
   - Puedes crearte tu propio backend con Firebase o Supabase de manera rápida.
   - Puedes utilizar los conocimientos que has obtenido en el módulo profesional de DWES.
 
+{:.section}
 ## Ejemplo básico de AJAX con XMLHttpRequest
 
 ```html
@@ -90,16 +93,19 @@ Este ejemplo se puede considerar anticuado, a partir de ES6 es mejor hacerlo con
 > Prueba a hacer debug de este código y comprueba cuantas veces se entra en la función anónima que asignamos a `onreadystatechange`.
 {:.prompt-info}
 
+{:.section}
 ## Beneficios de AJAX
 
 - **Mejora del Rendimiento**: Al no recargar la página completa, solo se actualizan las partes necesarias, lo que resulta en una experiencia de usuario más rápida y fluida.
 - **Experiencia de Usuario Mejorada**: Las actualizaciones dinámicas permiten una interacción más rápida y eficiente.
 
+{:.section}
 ## Problemas de AJAX
 
 - **SEO**: Las páginas que utilizan AJAX pueden ser más difíciles de indexar por los motores de búsqueda, ya que gran parte del contenido se carga de manera dinámica.
 - **Complejidad en el Desarrollo**: El desarrollo de aplicaciones AJAX puede ser más complicado debido a la necesidad de manejar las solicitudes asíncronas y actualizar el DOM dinámicamente.
 
+{:.section}
 ## APIs
 
 La comunicación entre el cliente y el servidor en una aplicación web puede llevarse a cabo de varias maneras. Dos enfoques comunes incluyen:
@@ -126,6 +132,7 @@ Las APIs (Interfaz de Programación de Aplicaciones) permiten que diferentes sof
   - Utiliza HTTP/2, permitiendo una comunicación más eficiente.
   - Ofrece soporte para múltiples lenguajes de programación.
 
+{:.subsection}
 ### API REST
 
 Las APIs REST utilizan las peticiones HTTP como verbos del protocolo:
@@ -136,6 +143,7 @@ Las APIs REST utilizan las peticiones HTTP como verbos del protocolo:
 - **DELETE**: Eliminar recursos.
 - **PATCH**: Actualizar parcialmente recursos.
 
+{:.subsubsection}
 #### Características de las APIs REST
 
 - Utilizan rutas URL para identificar los recursos.
@@ -143,6 +151,7 @@ Las APIs REST utilizan las peticiones HTTP como verbos del protocolo:
 - Los datos (payload) pueden enviarse en XML o JSON.
 - Una API que sigue estrictamente las características REST se denomina RESTful.
 
+{:.subsubsection}
 #### Ejemplo de API REST
 
 Supongamos una API para gestionar una colección de libros:
@@ -153,10 +162,12 @@ Supongamos una API para gestionar una colección de libros:
 - `PUT /books/:id`: Actualiza un libro específico.
 - `DELETE /books/:id`: Elimina un libro específico.
 
+{:.subsection}
 ### API GraphQL
 
 GraphQL es una alternativa a REST que permite realizar consultas más precisas y específicas. En lugar de varias URLs, una sola URL acepta consultas en JSON.
 
+{:.subsubsection}
 #### Características de las APIs GraphQL
 
 - Permiten más control y granularidad en las consultas.
@@ -164,6 +175,7 @@ GraphQL es una alternativa a REST que permite realizar consultas más precisas y
 - No están limitadas a HTTP.
 - Utilizan el IDL (Schema Definition Language) para definir el esquema.
 
+{:.subsubsection}
 #### Ejemplo de API GraphQL
 
 Consulta para obtener el título y autor de un libro específico:
@@ -177,10 +189,12 @@ Consulta para obtener el título y autor de un libro específico:
 }
 ```
 
+{:.section}
 ## SDKs
 
 Las APIs pueden ser complejas, y herramientas como Firebase, MongoDB Realm, y Supabase ofrecen SDKs (Kits de Desarrollo de Software) que simplifican tareas comunes como la autenticación de usuarios y las consultas avanzadas.
 
+{:.subsection}
 ### Características de los SDKs
 
 - Facilitan la interacción con las APIs al proporcionar bibliotecas preconstruidas.
@@ -190,10 +204,12 @@ Las APIs pueden ser complejas, y herramientas como Firebase, MongoDB Realm, y Su
 > Aunque los SDKs pueden simplificar mucho el trabajo, en este curso evitaremos su uso para centrarnos en aprender los fundamentos de las APIs.
 {:.prompt-info}
 
+{:.section}
 ## Webs SPA
 
 Las aplicaciones de una sola página (SPA) utilizan AJAX para cargar y actualizar contenido sin necesidad de recargar la página completa. Esto permite crear aplicaciones web más rápidas y con una experiencia de usuario similar a las aplicaciones de escritorio.
 
+{:.subsection}
 ### Ejemplo de SPA con AJAX
 
 ```html
@@ -245,6 +261,7 @@ _Ejemplo de funcionamiento de código anterior_
 > Deberás crear un fichero `home.html`, `about.html` y `contact.html` con el contenido que quieres que se muestre cuando hagas click en cada uno de los botones.
 {:.prompt-info}
 
+{:.section}
 ## XMLHttpRequest en JavaScript
 
 `XMLHttpRequest` (XHR) es una API utilizada para enviar y recibir datos entre un cliente web y un servidor. A pesar de su nombre, `XMLHttpRequest` puede manejar diferentes tipos de datos, aunque en este capítulo nos centraremos principalmente en JSON debido a su popularidad en las aplicaciones web modernas.
@@ -265,6 +282,7 @@ Son peticiones que se hacen a dominios diferentes. Es decir, esto ocurriría si 
   </div>
 </details>
 
+{:.subsection}
 ### Inicialización y Uso Básico
 
 Para comenzar a utilizar `XMLHttpRequest`, primero debemos crear una instancia del objeto `XMLHttpRequest`.
@@ -311,6 +329,7 @@ Finalmente, enviamos la solicitud al servidor utilizando el método `send`. Si e
 req.send(null);
 ```
 
+{:.subsection}
 ### Ejemplo Completo
 
 ```javascript
@@ -328,6 +347,7 @@ req.onreadystatechange = function (aEvt) {
 req.send(null);
 ```
 
+{:.subsubsection}
 #### Crear el Objeto XHR
 
 ```javascript
@@ -336,6 +356,7 @@ var req = new XMLHttpRequest();
 
 Aquí se crea una nueva instancia del objeto `XMLHttpRequest`.
 
+{:.subsubsection}
 #### Configurar la Solicitud
 
 ```javascript
@@ -354,6 +375,7 @@ Si. Una petición AJAX puede ser síncrona, pero en general no es recomendable.
   </div>
 </details>
 
+{:.subsubsection}
 #### Monitorear Cambios de Estado
 
 ```javascript
@@ -370,6 +392,7 @@ req.onreadystatechange = function (aEvt) {
 
 Se define una función que se ejecuta cada vez que cambia el estado de la solicitud. Cuando `readyState` es `4`, significa que la solicitud se ha completado. Si `status` es `200`, significa que la solicitud fue exitosa y se imprime la respuesta en la consola. Si el estado es diferente, se imprime un mensaje de error.
 
+{:.subsubsection}
 #### Enviar la Solicitud
 
 ```javascript
@@ -378,6 +401,7 @@ req.send(null);
 
 Finalmente, se envía la solicitud al servidor.
 
+{:.section}
 ## Conclusión
 
 En este artículo se han cubierto los conceptos básicos y la implementación de `XMLHttpRequest`. En artículos posteriores, exploraremos métodos modernos como `fetch` y la forma en que se integran con las características más recientes de JavaScript, como las promesas y la sintaxis `async/await`.

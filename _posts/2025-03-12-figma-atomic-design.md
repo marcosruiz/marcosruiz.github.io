@@ -6,10 +6,12 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/figma-atomic-design/
 ---
 
+{:.section}
 ## ¿Qué es Figma?
 
 [Figma](https://www.figma.com) es una herramienta de diseño y prototipado de interfaces de usuario (UI/UX) basada en la nube. Permite a diseñadores y equipos de trabajo crear, editar y colaborar en tiempo real en proyectos de diseño, como aplicaciones móviles, sitios web y software.
 
+{:.section}
 ## ¿Qué es el Atomic Design?
 
 Atomic Design es un modo de diseñar aplicaciones y sitios web, comenzando desde lo más particular a lo más general con el objetivo de poder cambiar de forma flexible y rápida cualquier aspecto del diseño de una aplicación manteniendo la consistencia a lo largo de todo el sistema.
@@ -33,6 +35,7 @@ La metodología Atomic Design fue teorizada por el diseñador web estadounidense
 1. Plantillas: Son diseños que establecen la estructura y el layout de la página utilizando organismos.
 1. Páginas: Son instancias específicas de las plantillas con contenido real. Permiten probar y validar cómo se ven los elementos en un entorno real.
 
+{:.section}
 ## Beneficios del Atomic Design
 
 - Facilita la reutilización de componentes.
@@ -40,6 +43,7 @@ La metodología Atomic Design fue teorizada por el diseñador web estadounidense
 - Facilita el mantenimiento y escalabilidad del diseño.
 - Potencia el trabajo colaborativo entre equipos de diseño y desarrollo.
 
+{:.section}
 ## Tutoriales Figma en español
 
 Existen numerosos tutoriales de Figma en español. De los que he podido ver recomiendo ver el siguiente vídeo (muy completo):
@@ -92,18 +96,21 @@ Y el siguiente curso básico:
 > Si descubres un tutorial/curso gratuito que creas que merece la pena, por favor déjalo en los comentarios de abajo o házmelo saber de algún modo para incluirlo.
 {:.prompt-info}
 
+{:.section}
 ## (Voluntario) Tutoriales Figma en inglés
 
 En el [este enlace](https://help.figma.com/hc/en-us/sections/23691657321239) tienes disponibles los cursos oficiales que proporciona Figma.
 
 En 12 pasos, puedes aprender lo básico de Figma: <https://shiftnudge.com/figma/>.
 
+{:.section}
 ## Como trabajar con Figma en proyectos reales
 
 Design system de Codely para su web: <https://design-system.codely.com/?path=/docs/intro--docs>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jy0IgvV42es?si=Gve3bQxESJ5Ko1qH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+{:.section}
 ## (Voluntario) Artículos en inglés
 
 - [Mitos en la experiencia de usuario (inglés)](https://uxmyths.com/)

@@ -6,10 +6,12 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/diseno-web-responsivo/
 ---
 
+{:.section}
 ## Introducción
 
 El diseño responsivo (o responsive design) es un enfoque de diseño web que busca que las páginas se adapten automáticamente al tamaño y las características del dispositivo desde el que se visualizan (computadoras, tablets, smartphones, etc.).
 
+{:.section}
 ## Responsivo vs Adaptativo
 
 Hacer un diseño responsivo es que la misma página se adapte a distintos tamaños de pantalla. Hacer un diseño adaptativo es hacer páginas distintas según el tamaño de la pantalla.
@@ -30,6 +32,7 @@ La ventaja de las webs adaptativas es que en la versión móvil solo se cargan l
 {:.question}
 ¿Qué diferencia hay entre diseño responsivo y adaptativo?
 
+{:.section}
 ## Viewport
 
 Dentro del `head` del documento HTML podemos añadir la siguiente línea:
@@ -40,6 +43,7 @@ Dentro del `head` del documento HTML podemos añadir la siguiente línea:
 
 Con esto se consigue que la página tenga el tamaño del dispositivo, ya que sino se pone , el dispositivo podría hacer que la página se haga mas grande y crear barras de desplazamiento.
 
+{:.section}
 ## Unidades
 
 Existen diferentes tipos de unidades en CSS. En este caso vamos a centrarnos en las siguientes:
@@ -48,6 +52,7 @@ Existen diferentes tipos de unidades en CSS. En este caso vamos a centrarnos en 
 - rem
 - em
 
+{:.subsection}
 ### viewport
 
 Podemos hacer ciertos tamaños que sean en función del tamaño de la pantalla. Para ello se usan las unidades como `vw` o `vh` que hacen referencia al tamaño de la pantalla.
@@ -97,6 +102,7 @@ También se pueden usar decimales con `vw` o `vh`
 }
 ```
 
+{:.subsection}
 ### rem
 
 La unidad `rem` hace referencia al tamaño de fuente del elemento `html`. El tamaño en píxeles se obtiene de multiplicar el valor de `rem` por el tamaño de la fuente de la página.
@@ -149,10 +155,12 @@ Una solución más responsiva podría incluir funciones que realizan cálculos c
   </div>
 </details>
 
+{:.subsection}
 ### em
 
 La unidad `em` hace referencia al tamaño de fuente del elemento donde está. El tamaño en píxeles se obtiene de multiplicar el valor de `em` por el tamaño de la fuente de ese elemento.
 
+{:.section}
 ## Cálculos en CSS
 
 Podemos usar funciones en CSS para calcular valores:
@@ -162,6 +170,7 @@ Podemos usar funciones en CSS para calcular valores:
 - `calc()`
 - `clamp()`
 
+{:.subsection}
 ### min()
 
 Retorna el mínimo de los dos valores:
@@ -178,6 +187,7 @@ Retorna el mínimo de los dos valores:
 
 En el ejemplo el tamaño máximo de la fuente nunca será mayor que `100px` por mucho que se haga grande la ventana.
 
+{:.subsection}
 ### max()
 
 Retorna el máximo de los dos valores:
@@ -194,6 +204,7 @@ Retorna el máximo de los dos valores:
 
 En el ejemplo el tamaño mínimo de la fuente nunca será menor que `40px` por mucho que se haga pequeña la ventana.
 
+{:.subsection}
 ### calc()
 
 Permite hacer cálculos en CSS:
@@ -236,6 +247,7 @@ Aunque los operadores `*` y `/` no necesitan espacio en blanco, se recomienda ag
 <p class="c-titulo">Hola mundo</p>
 ```
 
+{:.subsection}
 ### clamp()
 
 Retorna un valor pero sin ser menos que un mínimo ni mayor que un máximo:
@@ -254,6 +266,7 @@ En el ejemplo el tamaño mínimo de la fuente nunca será menos que `40px` por m
 
 Dentro de `clamp` se pueden hacer cálculos directamente sin necesidad de usar `calc`.
 
+{:.section}
 ## Media queries
 
 Permiten tener un CSS distinto según el tamaño de la pantalla:
@@ -317,8 +330,10 @@ Si.
 {:.question}
 ¿Qué son las media queries y para qué se usan?
 
+{:.section}
 ## Tamaño de fuente responsive
 
+{:.subsection}
 ### Ejemplo 1
 
 Pasemos ahora a ver como poder hacer las cosas responsivas con una simple arquitectura:
@@ -371,6 +386,7 @@ En el ejemplo por defecto el tamaño de la fuente será de `40px` pero en resolu
 
 Lo que hacemos es crear todas los modificadores globales o modificadores de bloques para las distintas resoluciones pero añadiendo el sufijo `@tablet` , `@desktop` o `@fulldesktop`. E indicando en el HTML que tamaño usar según la resolución de la pantalla.
 
+{:.subsection}
 ### (Voluntario) Ejemplo 2
 
 Personalmente, el ejemplo anterior me resulta muy engorroso por lo que se me ocurre que sea la clase `g--font-size-1` desde CSS la que cambie de tamaño.
@@ -403,6 +419,7 @@ Personalmente, el ejemplo anterior me resulta muy engorroso por lo que se me ocu
 }
 ```
 
+{:.subsection}
 ### (Voluntario) Ejemplo 3
 
 Ahora que lo pienso, ¿por qué no hago directamente que el tamaño de letra esté en función del ancho de la pantalla?
@@ -426,8 +443,10 @@ html{
 }
 ```
 
+{:.section}
 ## Grid responsive
 
+{:.subsection}
 ### Ejemplo 1: Grid con elementos responsive
 
 En este caso vamos a crear un grid similar al de Bootstrap. El grid tendrá siempre 12 columnas y serán los elementos los que ocuparán más o menos columnas en función del ancho de pantalla. En este caso solo se han creado clases para elementos que ocupen 6 (`col-6`) y 12 (`col-12`) columnas pero lo lógico sería crear clases para elementos que ocupen 1, 2, 3 ... y 12 columnas.
@@ -490,6 +509,7 @@ En este caso vamos a crear un grid similar al de Bootstrap. El grid tendrá siem
 ![Ejemplo de grid con elementos responsive](gridConElementosResponsive.gif)
 _Ejemplo de grid con elementos responsive_
 
+{:.subsection}
 ### Ejemplo 2: Grid responsive
 
 Otra alternativa es que sea el mismo grid el que cambie su número de columnas para que los elementos (clase `item`) cambien su tamaño.
@@ -565,10 +585,12 @@ body {
 ![Ejemplo de grid responsive](gridResponsive.gif)
 _Ejemplo de grid responsive_
 
+{:.section}
 ## Breakpoints
 
 Al crear la arquitectura responsiva es necesario indicar los pixeles de cada pantalla así como los tamaños. En las siguientes secciones se indica cuales se usan en diversos frameworks CSS para que los tengas como referencia.
 
+{:.subsection}
 ### Bootstrap
 
 | Nombre | Descripción                           | Ancho Mínimo |
@@ -579,6 +601,7 @@ Al crear la arquitectura responsiva es necesario indicar los pixeles de cada pan
 | `lg`   | Large devices (desktops)              | `992px`      |
 | `xl`   | Extra large devices (large desktops)  | `1200px`     |
 
+{:.subsection}
 ### Tailwind
 
 | Nombre | Ancho Mínimo |
@@ -588,6 +611,7 @@ Al crear la arquitectura responsiva es necesario indicar los pixeles de cada pan
 | `lg`   | `1024px`     |
 | `xl`   | `1280px`     |
 
+{:.section}
 ## Menú responsivo
 
 ```html
@@ -708,6 +732,7 @@ Existe un sistema para nombrar clases CSS que busca mejorar la organización, ma
   </div>
 </details>
 
+{:.section}
 ## Técnicas responsivas
 
 Hemos visto varias formas de hacer las cosas responsivas. Veamos ahora una tabla en la que se explican las 4 formas posibles:
@@ -719,6 +744,7 @@ Hemos visto varias formas de hacer las cosas responsivas. Veamos ahora una tabla
 
 El tipo Externo/Escalonado es el mas normal y es el que usan frameworks como Tailwind o Bootstrap.
 
+{:.subsection}
 ### Interno/Fluido
 
 Las tablas
@@ -733,6 +759,7 @@ Las tablas
 }
 ```
 
+{:.subsection}
 ### Interno/Escalonado
 
 Se usa en un menú responsivo con hamburguesa.
@@ -753,10 +780,12 @@ Se usa en un menú responsivo con hamburguesa.
 }
 ```
 
+{:.subsection}
 ### Externo/Fluido
 
 No lo vemos.
 
+{:.subsection}
 ### Externo/Escalonado
 
 Es el que usamos con `@tablet` o `@desktop` , etc.

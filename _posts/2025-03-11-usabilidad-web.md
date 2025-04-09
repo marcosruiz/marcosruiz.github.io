@@ -7,6 +7,7 @@ math: true
 img_path: /assets/img/usabilidad-web/
 ---
 
+{:.section}
 ## Introducción
 
 <details class="card mb-2">
@@ -55,6 +56,7 @@ Además de los consejos del artículo anterior yo incluiría los siguientes:
 - Debemos asegurarnos de que las **áreas clicables tengan el tamaño adecuado**, para que el usuario pueda realizar correctamente dicha acción. Sobre todo en móvil.
 - No abusar de la paginación.
 
+{:.section}
 ## Objetivos del diseño de interfaces
 
 El diseño de interfaces Web se basa en sus mismos principios:
@@ -82,6 +84,7 @@ A la hora de diseñar una interfaz Web, debemos tener en cuenta algunos de los o
 - Facilitar la interactividad de los usuarios con el sitio web.
 - Tener en cuenta las necesidades de los usuarios.
 
+{:.section}
 ## Principios de usabilidad
 
 Existen diferentes teorías relacionadas con la experiencia de usuario (UX):
@@ -94,6 +97,7 @@ Existen diferentes teorías relacionadas con la experiencia de usuario (UX):
 
 Te los explico a continuación.
 
+{:.subsection}
 ### Principios de usabilidad de Jakob Nielsen
 
 Jakob Nielsen (padre de la usabilidad) propuso 10 principios de usabilidad.
@@ -103,12 +107,14 @@ _10 principios de usabilidad de Jakob Nielsen_
 
 Lee el artículo [Principios de usabilidad web de Jakob Nielsen y el diseño UX](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/).
 
+{:.subsection}
 ### Ley de Hick
 
 La Ley de Hick, es un principio de la psicología cognitiva que se refiere al tiempo que una persona tarda en tomar una decisión en función del número de opciones disponibles. Es decir, cuanto mayor sea el número de alternativas entre las que un individuo debe elegir, más tiempo le llevará tomar una decisión.
 
 Es por esto que cuantas menos opciones le demos al usuario este tomará decisiones más rápidamente.
 
+{:.subsection}
 ### Ley de Fitts
 
 La Ley de Fitts establece que el tiempo necesario para alcanzar un objetivo depende de la distancia al objetivo y el tamaño del objetivo.
@@ -125,6 +131,7 @@ A partir de esta ley aparecen las siguientes conclusiones:
 1. Los elementos más importantes deben estar cerca del área de acción o en zonas de fácil acceso.
 1. Los bordes de la pantalla y las esquinas son zonas de fácil acceso.
 
+{:.subsection}
 ### Principios del diseño visual
 
 Los principios de diseño visual son un conjunto de directrices fundamentales que ayudan a organizar los elementos visuales en una interfaz de manera efectiva y coherente, asegurando que los usuarios puedan interactuar de forma clara, intuitiva y agradable. Estos principios se basan en cómo percibimos y procesamos visualmente la información, lo que permite crear diseños atractivos, fáciles de entender y de usar.
@@ -142,6 +149,7 @@ _Principios del diseño visual_
 1. La **simetría** se refiere a la creación de diseños que son equilibrados y armónicos a través del uso de líneas y formas simétricas.
 1. El **movimiento** se refiere a la creación de una sensación de movimiento o dirección en un diseño, como a través del uso de líneas de dirección o de la disposición de los elementos.
 
+{:.subsection}
 ### Reglas de oro de Shneiderman
 
 Son 8 reglas propuestas por Ben Shneiderman para mejorar la usabilidad y la experiencia de usuario en aplicaciones informáticas, proporcionando directrices claras sobre cómo diseñar interfaces eficientes y fáciles de usar.
@@ -155,6 +163,7 @@ Son 8 reglas propuestas por Ben Shneiderman para mejorar la usabilidad y la expe
 1. **Minimización de errores**: El sistema debe prevenir errores siempre que sea posible y, cuando ocurran, debe proporcionarse una forma fácil de corregirlos. Debes proveer confirmaciones para acciones importantes, evitar entradas de datos incorrectos y, en caso de error, ofrecer mensajes claros que permitan al usuario corregirlo rápidamente.
 1. **Optimización del rendimiento**: El diseño debe minimizar el tiempo de respuesta y la espera para los usuarios, proporcionando retroalimentación cuando se está procesando una acción. Debes usar indicadores de carga, mantener tiempos de espera cortos, y evitar bloqueos innecesarios que frustren al usuario.
 
+{:.section}
 ## El usuario, ese gran desconocido
 
 Cada usuario es un mundo y, si quieres tener alguna ventaja sobre la competencia, tendrás que identificar qué es lo que pueden tener en común pero sobre todo aquellas cosas que los diferencian.
@@ -179,12 +188,14 @@ para [beneficio u objetivo].
 
 También debes tener en cuenta si el sitio que estés diseñando esté orientado a ser usado por diferentes perfiles de usuario: visitante o invitado, usuario registrado o colaborador, usuario experto o administrador. En este caso, a cada usuario se le suele presuponer una experiencia determinada en el uso de la web.
 
+{:.section}
 ## Lenguaje y vocabulario
 
 Debemos emplear un lenguaje cercano al usuario. El lenguaje debe ser sencillo y comprensible. El mayor problema radica en saber cuál es ese lenguaje cercano al usuario si nosotros mismos no somos ese usuario objetivo.
 
 La tarea de escribir de manera clara y natural no es fácil. Al contrario, es algo complejo que va más allá de una buena ortografía, de un buen conocimiento de la gramática o de un amplio vocabulario: requiere una buena selección de la palabra o frase adecuada, un ordenamiento lógico del tema a tratar, y una exigente labor de revisión que elimine sin piedad toda palabra superflua, frase ambigua o estructura complicada.
 
+{:.subsection}
 ### Consejos sobre cómo redactar el contenido
 
 Los siguientes consejos generales a la hora de redactar son tanto para atraer la atención del usuario como para mejorar nuestro posicionamiento en motores de búsqueda como Google.
@@ -238,12 +249,14 @@ También existe el copywriting SEO que es escribir de modo que el buscador de Go
   </div>
 </details>
 
+{:.section}
 ## Navegación en la web
 
 Podemos decir que una interfaz es usable si los usuarios pueden contestar a las preguntas: ¿Dónde estoy? ¿Cómo llegué aquí? ¿A dónde puedo ir después? ¿Qué puedo hacer en este momento? ¿Cómo puedo regresar al punto anterior?
 
 La mayoría de estas preguntas serán de fácil respuesta para el usuario si se tienen presentes las características deseables de un sistema de navegación cuando diseñamos un sitio web.
 
+{:.subsection}
 ### Información accesible
 
 Para lograr un acceso más eficiente y sencillo a la información de un sitio web es importante:
@@ -275,6 +288,7 @@ Dar respuesta inmediata a las acciones de los usuarios.
   </div>
 </details>
 
+{:.subsection}
 ### Consistencia
 
 Cuando hablamos de consistencia en un sistema de navegación hacemos referencia a que sus elementos son coherentes en todas las páginas que componen un sitio web.
@@ -287,6 +301,7 @@ _Ejemplo de barras de navegación consistentes_
 
 A la vista de los tres ejemplos anteriores, podemos decir que el sistema de búsqueda es una parte del diseño Web que todavía no está muy estandarizado y que puede presentar problemas a los usuarios con un nivel de experiencia bajo.
 
+{:.subsection}
 ### Persistencia
 
 Cuando hablamos de persistencia en un sistema de navegación hacemos referencia a que sus elementos se colocan siempre en el mismo sitio en todas las páginas que componen un sitio web.
@@ -320,6 +335,7 @@ Persistencia y consistencia.
   </div>
 </details>
 
+{:.subsection}
 ### Sencillez de navegación
 
 ¿No te ha pasado que cuando una familiar está embarazada empiezas a ver mujeres embarazadas por todas partes? ¿O cuando te compras un coche empiezas a ver el mismo modelo por todas partes? Esto es porque "cada uno ve lo que sabe".
@@ -358,6 +374,7 @@ Si la ubicación de los elementos de navegación es consistente y persistente y,
 
 Cuando el usuario se encuentra en medio de un proceso que implique un conjunto de pasos, es conveniente mantenerle en todo momento informado del progreso de dicho proceso.
 
+{:.subsection}
 ### Opciones del navegador
 
 Hoy en día, casi todo el software está preparado tanto para el uso del ratón como del teclado.
@@ -366,6 +383,7 @@ Los atajos de teclado ahorran gran cantidad de tiempo pero hay que recordarlos y
 
 En cualquier navegador al pulsar `[F7]` se activa y desactiva la opción de uso del teclado dentro de una web como si estuviéramos manejando un procesador de textos.
 
+{:.section}
 ## Análisis y verificación de la usabilidad
 
 Una parte importante que todo diseño debería tener en cuenta es hacer una prueba de usabilidad con usuarios heterogéneos y con distintos tipos de discapacidad.
@@ -386,6 +404,7 @@ Existen varios métodos para analizar la usabilidad de una interfaz:
 1. Realizar una prueba o **test de usabilidad** antes o después de publicar la página.
 1. Utilizar la técnica **eye tracking**.
 
+{:.subsection}
 ### Análisis heurístico
 
 La evaluación heurística se realiza siguiendo las directrices marcadas por Jakob Nielsen:
@@ -425,6 +444,7 @@ También puedes incluir el análisis de las 8 reglas de de oro de Ben Shneiderma
 ![Checklist con las 8 reglas de oro de Shneiderman en inglés](Shneiderman8GoldenRules.svg)
 _Checklist con las 8 reglas de oro de Shneiderman en inglés_
 
+{:.subsection}
 ### Test de usabilidad
 
 Un test de usabilidad es una medida concreta y objetiva de la usabilidad de una herramienta, un sistema, un sitio web, etc. tomada a partir de usuarios verdaderos que realizan tareas reales.
@@ -440,6 +460,7 @@ Un test de usabilidad permite verificar si existen problemas de usabilidad y enc
 
 No es muy recomendable realizar test de usabilidad al usuario final una vez se a publicado la web ya que obliga a publicar la página con fallos. Además los usuarios habituales deberán tomarse la molestia de realizar una encuesta con el objetivo de medir su nivel de satisfacción. Esto puede conllevar a la pérdida de usuarios y reputación.
 
+{:.subsection}
 ### Eye tracking
 
 La técnica del eye tracking consiste en analizar y registrar los movimientos oculares que realiza un usuario mientras navega o interactúa con un sitio web o aplicación. Esto permite conocer detalladamente qué áreas captan mayor atención, cómo el usuario explora el contenido y cuáles son las zonas que ignora o le resultan confusas.
@@ -454,6 +475,7 @@ _Resultados del eye tracking_
 
 Aplicando esta técnica, los expertos en comercio y marketing colocan los productos en los lineales de los supermercados para conseguir un mayor número de ventas o promocionar algún producto.
 
+{:.section}
 ## Normas ISO relacionadas con la usabilidad
 
 Los estándares relativos a la usabilidad se refieren básicamente a los siguientes aspectos:
@@ -472,6 +494,7 @@ Existen diferentes normas ISO:
 
 Nos centraremos en las 2 primeras.
 
+{:.subsection}
 ### ISO 9241-210
 
 La ISO 9241-210 es una norma internacional que se enfoca en los principios del diseño centrado en el usuario (DCU), específicamente en cómo garantizar que los sistemas interactivos sean eficaces, eficientes y satisfactorios para los usuarios. Es una evolución del estándar ISO 9241-11.
@@ -484,6 +507,7 @@ Sus principales principios de diseño son:
 - Con participación activa de los usuarios.
 - Debe involucrar a diferentes profesionales: diseñadores, desarrolladores, psicólogos y expertos en ergonomía, etc.
 
+{:.subsection}
 ### ISO IEC 9126
 
 La norma ISO IEC 9126 define la usabilidad como un atributo de la calidad del software , asociado al diseño y a la evaluación de la interfaz de usuario y a la interacción. Se analiza en términos de:

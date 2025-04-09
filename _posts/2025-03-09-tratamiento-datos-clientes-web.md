@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/tratamiento-datos-clientes-web/
 ---
 
+{:.section}
 ## Introducción
 
 En las aplicaciones web modernas, es común recibir datos del servidor en formato JSON, que es un formato ligero para el intercambio de datos. JavaScript proporciona herramientas potentes para trabajar con JSON, permitiendo convertir objetos en JSON y viceversa. Además, también es importante poder almacenar datos en el lado del cliente para mejorar la experiencia del usuario. En este capítulo, exploraremos:
@@ -20,6 +21,7 @@ En las aplicaciones web modernas, es común recibir datos del servidor en format
   - SessionStorage
   - IndexedDB
 
+{:.section}
 ## Convertir objetos a JSON
 
 {:.question}
@@ -54,6 +56,7 @@ En este ejemplo:
 
 El resultado en la consola será: `{"type":"Golden","color":"red"}`, que es la representación JSON del objeto `apple1`.
 
+{:.section}
 ## Convertir JSON a objetos
 
 Para convertir una cadena JSON en un objeto de JavaScript, utilizamos el método `JSON.parse`. Esto es útil cuando recibimos datos del servidor en formato JSON y necesitamos trabajar con ellos en nuestro código.
@@ -87,6 +90,7 @@ En este ejemplo:
 
 El resultado en la consola mostrará el objeto plano y la instancia de `Hero` con las propiedades correspondientes.
 
+{:.section}
 ## Convertir ficheros binarios a Base64 para enviar en JSON
 
 Si se necesita enviar un binario dentro de un mensaje JSON, podemos convertirlo a Base64:
@@ -128,14 +132,17 @@ document.getElementById('fileForm').addEventListener('submit', event => {
 {:.question}
 ¿Qué es Base64?
 
+{:.section}
 ## Cookies
 
 Leer artículo [Gestión de cookies en JavaScript](/posts/cookies/).
 
+{:.section}
 ## LocalStorage
 
 `LocalStorage` permite almacenar datos en el navegador de forma persistente. Los datos persisten incluso después de cerrar el navegador.
 
+{:.subsection}
 ### Ejemplo
 
 ```javascript
@@ -153,14 +160,17 @@ En este ejemplo:
 - Recuperamos el valor almacenado usando la clave `lastname`.
 - Eliminamos el valor asociado a la clave `lastname`.
 
+{:.section}
 ## SessionStorage
 
 `sessionStorage` es una API de almacenamiento web en JavaScript que permite guardar datos de manera temporal en el navegador. La información almacenada en `sessionStorage` se mantiene mientras la pestaña o ventana del navegador esté abierta, pero se borra automáticamente cuando el usuario la cierra.
 
+{:.section}
 ## IndexedDB
 
 IndexedDB es una base de datos NoSQL integrada en los navegadores web que permite almacenar grandes cantidades de datos estructurados de forma persistente en el lado del cliente. Es más potente que `localStorage` y `sessionStorage`, ya que permite el almacenamiento de datos de manera indexada y consultas eficientes ya que permite crear índices para mejorar la búsqueda y recuperación de datos.
 
+{:.subsection}
 ### Características de IndexedDB
 
 - Hasta 50MB de almacenamiento.
@@ -168,6 +178,7 @@ IndexedDB es una base de datos NoSQL integrada en los navegadores web que permit
 - Transaccional para garantizar la integridad de los datos.
 - Más compleja que LocalStorage.
 
+{:.subsection}
 ### Ejemplo básico de IndexedDB
 
 IndexedDB es más compleja de manejar que LocalStorage o cookies, pero ofrece muchas más capacidades. Aquí presentamos un ejemplo muy básico para ilustrar su uso:

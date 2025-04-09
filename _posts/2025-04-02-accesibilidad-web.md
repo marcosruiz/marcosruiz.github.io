@@ -6,6 +6,7 @@ tags: [fp, ciclo superior, modulo, formación profesional, daw, desarrollo de ap
 img_path: /assets/img/accesibilidad-web/
 ---
 
+{:.section}
 ## Introducción
 
 A la hora de diseñar una interfaz web no podemos olvidarnos de la gran cantidad de personas en el mundo que tienen algún tipo de discapacidad. También debemos tener en cuenta a usuarios que tienen un ancho de banda limitado. Esto cobra especial relevancia en los sitios web de instituciones públicas.
@@ -40,6 +41,7 @@ No. Un sistema puede ser usable pero no accesible.
   </div>
 </details>
 
+{:.section}
 ## Tipos de discapacidad
 
 En Junio de 2002, el Real Patronato sobre Discapacidad encargó la realización de un estudio sobre epidemiología de la discapacidad. Los resultados de este estudio son los siguientes:
@@ -80,6 +82,7 @@ Las personas con discapacidad corren el riesgo de quedar excluidos si no se toma
 
 A continuación describiremos algunos de los tipos de discapacidad que como personas dedicadas al diseño de interfaces Web debemos tener en cuenta para hacer nuestros sitios Web más accesibles y posteriormente veremos las pautas a seguir para poder hacerlo.
 
+{:.subsection}
 ### Visual
 
 Una persona tiene una discapacidad visual cuando tiene disminuida la función visual o bien cuando tiene una ceguera.
@@ -107,6 +110,7 @@ Las personas que tienen problemas de visión pueden haber adquirido éstos:
 - De forma gradual a causa de una enfermedad o por efecto de la edad.
 - Tenerlos desde su nacimiento.
 
+{:.subsection}
 ### Motriz
 
 Se dice que una persona tiene una discapacidad motriz cuando padece alguna disfunción en el aparato locomotor. Esta disfunción puede llevar asociados algunos problemas como son:
@@ -137,6 +141,7 @@ Es la contracción parcial, pasiva y continua de los músculos.
   </div>
 </details>
 
+{:.subsection}
 ### Auditiva
 
 Las personas con discapacidad auditiva tienen una audición deficiente en ambos oídos. Estas personas se pueden clasificar en dos grandes grupos:
@@ -148,6 +153,7 @@ La audición es la vía principal a través de la cual se desarrolla el lenguaje
 
 Por ello tenemos que tener en cuenta que una persona con discapacidad auditiva desde su nacimiento, no podrá procesar el lenguaje de la misma forma que una persona sin discapacidad o que una persona que perdió la audición después de aprender a hablar.
 
+{:.subsection}
 ### Cognitiva
 
 <details class="card mb-2">
@@ -217,6 +223,7 @@ No siempre. Las personas con sordera de nacimiento pueden desarrollar su intelig
   </div>
 </details>
 
+{:.section}
 ## Tecnología asistencial
 
 La tecnología asistencial es el conjunto de equipos, dispositivos, instrumentos o programas empleados con la finalidad de mejorar la calidad de vida de aquellas personas que tienen algún tipo de discapacidad incrementando así su autonomía.
@@ -255,6 +262,7 @@ Relaciona las siguientes tecnologías asistenciales con el tipo de discapacidad 
   </div>
 </details>
 
+{:.subsection}
 ### Dispositivos de entrada
 
 Los dispositivos de entrada considerados como tecnología asistencial son aquellos que permiten realizar las mismas funciones que se realizarían con un teclado o con un ratón convencional.
@@ -270,6 +278,7 @@ Los más conocidos son:
 - Trackball
 - Webcams para seguimiento de ojos o cara
 
+{:.subsubsection}
 #### Teclado virtual
 
 El teclado virtual es un teclado que se muestra en pantalla y que permite escribir textos eligiendo los caracteres con el ratón. Este dispositivo facilita el trabajo a aquellas personas que no pueden usar un teclado con normalidad. Algunos teclados virtuales incorporan un sistema predictivo de palabras con lo cual el esfuerzo para escribir es menor. La mayoría de sistemas operativos ya suministran su propio teclado virtual en pantalla.
@@ -277,6 +286,7 @@ El teclado virtual es un teclado que se muestra en pantalla y que permite escrib
 ![Teclado virtual de Windows 11](tecladoVirtualW11.png)
 _Teclado virtual de Windows 11_
 
+{:.subsubsection}
 #### Teclado alternativo
 
 Son teclados adaptados a las distintas necesidades. Las adaptaciones realizadas pueden ser:
@@ -290,12 +300,14 @@ Estos teclados pueden tener una retroalimentación auditiva, indicando mediante 
 ![Teclado alternativo](tecladoAlternativo.png)
 _Teclado alternativo_
 
+{:.subsubsection}
 #### Xbox Adaptive Controller
 
 Es un mando diseñado por Microsoft específicamente para personas con discapacidades o movilidad reducida. Su objetivo principal es hacer que los videojuegos sean más accesibles para todos.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ie7ad7ZLL74?si=WYoWOVeyPfIjmYFJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+{:.subsubsection}
 #### Teclado Braille
 
 Es un teclado adaptado para personas ciegas. Los teclados braille suelen tener 6 u 8 teclas principales y algunas teclas auxiliares permitiendo, así, representar cualquier carácter mediante la pulsación simultánea de un número reducido de teclas.
@@ -306,6 +318,7 @@ _Teclado Braille_
 ![Teclado Braille](tecladoBraille.png)
 _Teclado Braille_
 
+{:.subsubsection}
 #### Software de reconocimiento de voz
 
 Empleado para poder introducir datos o ejecutar comandos en el ordenador a aquellas personas que no pueden hacer uso del teclado ni del ratón. Para ello el ordenador emplea sus funciones de audio. Los sistemas operativos y algunos navegadores ya dan soporte al reconocimiento de voz sin necesidad de instalar un software adicional.
@@ -313,6 +326,7 @@ Empleado para poder introducir datos o ejecutar comandos en el ordenador a aquel
 ![Windows Speech Recognition](windowsSpeechRecognition.png)
 _Windows Speech Recognition_
 
+{:.subsubsection}
 #### Apuntadores
 
 Los Apuntadores (también llamados licornios) están pensados para aquellas personas que no tienen movilidad en las extremidades pero sí en la cabeza. Es un casco que lleva incorporada una varilla larga acoplada en la frente o en la barbilla y que es empleada para realizar pulsaciones en el teclado. Estos apuntadores deben complementarse con una función conocida como "sticky keys" que permite simular la pulsación simultánea de varias teclas pero pulsándolas de una en una.
@@ -320,6 +334,7 @@ Los Apuntadores (también llamados licornios) están pensados para aquellas pers
 ![Licornios o apuntadores](licornios.png)
 _Licornios o apuntadores_
 
+{:.subsubsection}
 #### Trackball
 
 Es un ratón que no necesita desplazarse. Tiene una bola de gran tamaño situada por encima del ratón que se mueve en cualquier dirección y unos botones de gran tamaño facilitando, de esta forma, su uso por las personas con discapacidad motriz. Algunos disponen de un botón adicional que permite ampliar las imágenes con lo que se convierte en una herramienta útil también para las personas con discapacidad visual.
@@ -330,12 +345,14 @@ _Trackball Logitech_
 ![Trackball Ablenet](trackballAblenet.jpg){: width="400px"}
 _Trackball Ablenet_
 
+{:.subsubsection}
 #### Webcams para seguimiento de ojos o cara
 
 Estas webcams están preparadas para transformar el movimiento de los ojos o la cara en movimientos del puntero del ratón en la pantalla simulando las pulsaciones del ratón con un parpadeo o con un gesto concreto de la cara. Estos dispositivos son adecuados para aquellas personas que tienen una discapacidad motriz severa de las extremidades y además tienen dificultad en el habla como para poder emplear el software de reconocimiento de voz.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_qXh8sz9fuI?si=_oVvr6Kg49lCJ5S3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+{:.subsection}
 ### Dispositivos de salida
 
 Los dispositivos de salida en un sistema informático son: la pantalla o monitor donde se visualiza la información y los altavoces que reproducen el sonido. Hay que adoptar las medidas necesarias para que las personas con discapacidad auditiva puedan tener acceso a la información sonora y que las personas con discapacidad visual puedan tener acceso a toda la información visual presentada en el monitor. Tampoco hay que olvidar que si la información se suministra además con un lenguaje claro y sencillo, las personas con discapacidad auditiva severa y/o cognitiva no tendrán tantos problemas para comprender dicha información.
@@ -346,6 +363,7 @@ Los dispositivos de salida más conocidos empleados como tecnología asistencial
 - Ampliadores de pantalla
 - Líneas Braille
 
+{:.subsubsection}
 #### Lectores de pantalla
 
 Son programas especialmente útiles para las personas con ceguera o con una discapacidad visual muy grande ya que permiten hacer una lectura de lo que se muestra por pantalla mediante un sintetizador de voz. Existen diferentes lectores:
@@ -362,6 +380,7 @@ _Voice Aloud Reader_
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8ZKlKAAh6HI?si=dK9J97CTg9FhXnhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+{:.subsubsection}
 #### Ampliadores de pantalla
 
 Son programas especialmente útiles en las personas con baja visión ya que permiten ampliar el texto y las imágenes mostrados en el monitor. En este apartado tenemos como ejemplo la lupa que suministran algunos sistemas operativos.
@@ -369,6 +388,7 @@ Son programas especialmente útiles en las personas con baja visión ya que perm
 ![Aplicación de lupa de Windows 11](magnifierW11.png)
 _Aplicación de lupa de Windows 11_
 
+{:.subsubsection}
 #### Líneas Braille
 
 Están compuestas por una serie de celdas con 6 u 8 puntos cada una que muestran de forma táctil la misma información que leería un lector de pantalla. Son útiles para las personas ciegas y, sobre todo, para las sordo-ciegas que no se pueden beneficiar de los lectores de pantalla ni de los ampliadores de pantalla.

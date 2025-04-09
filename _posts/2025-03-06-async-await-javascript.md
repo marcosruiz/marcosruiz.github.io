@@ -15,6 +15,7 @@ Una función definida con la palabra clave `async` automáticamente retorna una 
 
 El uso de `async` y `await` en JavaScript simplifica la gestión de operaciones asíncronas, proporcionando una sintaxis más limpia y manejable en comparación con el uso tradicional de promesas con `.then()` y `.catch()`. Con la introducción del top-level `await`, ahora es posible manejar operaciones asíncronas de manera aún más directa en el nivel superior de los módulos.
 
+{:.section}
 ## Primer ejemplo de async await
 
 Los dos siguientes códigos son equivalentes:
@@ -44,6 +45,7 @@ getUser();
 > Es importante darnos cuenta de que si usamos la primera opción NO es necesario declarar la función `getUser()`, ya que el comportamiento tras la llamada a la API se define dentro de las funciones flecha.
 {:.prompt-info}
 
+{:.subsection}
 ### Definición de la función async
 
 ```javascript
@@ -52,6 +54,7 @@ async function getUser() {
 
 Aquí, `async` antes de la función indica que esta función es asíncrona y retornará una promesa.
 
+{:.subsection}
 ### Uso de await
 
 ```javascript
@@ -61,6 +64,7 @@ const data = await response.json();
 
 Dentro de una función `async`, se puede usar await antes de una promesa para esperar su resolución. En este caso, `await fetch` espera a que la promesa devuelta por fetch se resuelva, es decir, que la solicitud HTTP se complete y se reciba una respuesta. Del mismo modo, `await response.json()` espera a que se procese la respuesta en formato JSON.
 
+{:.subsection}
 ### Ejecutar la función asíncrona
 
 ```javascript
@@ -69,6 +73,7 @@ getUser();
 
 Llamar a `getUser()` ejecuta la función asíncrona. Dado que `getUser` retorna una promesa, se podría encadenar con `.then()` si fuera necesario.
 
+{:.section}
 ## Ventajas de async/await
 
 Las ventajas de async/await son tres:
@@ -77,14 +82,17 @@ Las ventajas de async/await son tres:
 1. Manejo de errores simplificado
 1. Ejecución secuencial de operaciones asíncronas
 
+{:.subsection}
 ### Sintaxis más limpia y legible
 
 El código asíncrono escrito con `async/await` es más fácil de leer y entender, ya que se parece más a código síncrono. Esto facilita la identificación de la lógica y el flujo del programa.
 
+{:.subsection}
 ### Manejo de errores simplificado
 
 Se pueden usar bloques `try/catch` para manejar errores en funciones `async`, lo que proporciona una forma clara y estructurada de gestionar excepciones.
 
+{:.subsubsection}
 #### Primer ejemplo de manejo de errores
 
 Los dos siguientes códigos son equivalentes:
@@ -119,6 +127,7 @@ getUser();
 > Es importante darnos cuenta de que si usamos la primera opción NO es necesario declarar la función `getUser()`, ya que el comportamiento tras la llamada a la API se define dentro de las funciones flecha.
 {:.prompt-info}
 
+{:.subsubsection}
 #### Segundo ejemplo de manejo de errores
 
 Otro ejemplo, pero ahora, además, comprobamos que el servidor nos devuelve un código HTTP 200 si `response.ok == true`. En caso contrario lanzamos un error que capturaremos inmediatamente con el bloque `try/catch`.
@@ -142,6 +151,7 @@ Otro ejemplo, pero ahora, además, comprobamos que el servidor nos devuelve un c
 
 En este ejemplo, cualquier error que ocurra dentro de la función `getUser` será capturado y manejado en el bloque `catch`.
 
+{:.subsection}
 ### Ejecución secuencial de operaciones asíncronas
 
 Utilizando `await`, se puede asegurar que las operaciones asíncronas se ejecuten de manera secuencial, lo cual es útil cuando una operación depende de los resultados de otra.

@@ -33,6 +33,7 @@ La función `fetch` de JavaScript proporciona una manera sencilla y poderosa de 
 
 En este ejemplo, `fetch` solicita un archivo JSON. Si la respuesta tiene un estado diferente de 200 (OK), se imprime un mensaje de error. Si la respuesta es correcta, se convierte a JSON y se imprime.
 
+{:.section}
 ## Objeto Response
 
 Si la solicitud tiene éxito, `fetch` devuelve un objeto `Response`, que es un flujo (stream) con varias propiedades y métodos útiles.
@@ -61,6 +62,7 @@ http://127.0.0.1:3000/DWEC%2024%2025/Sesiones/Sesi%C3%B3n%2019/24_objetoResponse
 
 Este ejemplo muestra cómo acceder a diferentes propiedades del objeto `Response`, como los encabezados y el estado de la solicitud.
 
+{:.section}
 ## Guardar los Datos
 
 `fetch` permite obtener el texto o un objeto de la respuesta. Las funciones `response.json()` y `response.text()` devuelven promesas que se resuelven con el contenido adecuado. No es posible usar ambas funciones en una misma petición.
@@ -79,6 +81,7 @@ Este ejemplo muestra cómo acceder a diferentes propiedades del objeto `Response
 
 En estos ejemplos, se hace una solicitud a una URL y se procesan los datos como JSON en el primer caso y como texto en el segundo.
 
+{:.section}
 ## Encadenar Promesas
 
 Es posible encadenar promesas para manejar el flujo de la solicitud de manera más estructurada.
@@ -121,6 +124,7 @@ Es posible encadenar promesas para manejar el flujo de la solicitud de manera m�
 
 En este ejemplo, la función `status` verifica si la respuesta es correcta, y la función `json` convierte la respuesta en un objeto JSON. Luego, se manejan los datos o se capturan errores según corresponda.
 
+{:.section}
 ## Enviar Datos con Fetch
 
 En el desarrollo web, al interactuar con APIs o al enviar datos a un servidor, es común utilizar diferentes tipos de formatos de envío. Tres de los más utilizados son `multipart/form-data`, `x-www-form-urlencoded` y JSON. Cada uno tiene sus características y se usa según el tipo de datos que necesitemos enviar.
@@ -131,6 +135,7 @@ En el desarrollo web, al interactuar con APIs o al enviar datos a un servidor, e
 
 En esta explicación, veremos cómo y cuándo usar cada uno de estos formatos según las necesidades de tu aplicación web.
 
+{:.subsection}
 ### Usar el método POST
 
 Para enviar datos a un servidor, se puede usar el método POST con `fetch`.
@@ -201,6 +206,7 @@ document
   });
 ```
 
+{:.subsubsection}
 #### Enviar JSON
 
 Para enviar datos en formato JSON, se debe configurar el encabezado `Content-Type` y convertir el objeto de datos a JSON.
@@ -226,6 +232,7 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
 
 En este ejemplo, un objeto JavaScript se convierte a JSON y se envía al servidor.
 
+{:.subsubsection}
 #### Uso de FormData
 
 `FormData` es un objeto predefinido en JavaScript que se utiliza para crear pares clave-valor para enviar formularios mediante `XMLHttpRequest` o `fetch`.
@@ -287,6 +294,7 @@ document
 
 Este ejemplo muestra cómo crear un objeto `FormData` a partir de un formulario HTML y enviar datos adicionales, incluyendo un archivo, al servidor.
 
+{:.subsubsection}
 #### Convertir FormData a JSON
 
 Para enviar `FormData` como JSON, se puede convertir a un objeto JavaScript y luego a una cadena JSON.
@@ -343,6 +351,7 @@ document
 
 En este ejemplo, se convierte `FormData` en un objeto JSON antes de enviarlo.
 
+{:.subsection}
 ### Cargar Imágenes en Segundo Plano
 
 Es posible cargar imágenes en segundo plano utilizando `fetch` y el método `blob`.
@@ -376,10 +385,12 @@ const objectURL = URL.createObjectURL(file);
 URL.revokeObjectURL(objectURL); // Liberar la URL cuando ya no sea necesaria
 ```
 
+{:.subsection}
 ### Construcción de URLs
 
 `fetch` puede utilizar URLs construidas dinámicamente. Esto es útil cuando los parámetros de la consulta cambian en tiempo de ejecución.
 
+{:.subsubsection}
 #### Ejemplo sin URLSearchParams
 
 ```javascript
@@ -410,6 +421,7 @@ fetch(url)
   })
 ```
 
+{:.subsubsection}
 #### Ejemplo de crear una URL con URLSearchParams
 
 ```javascript
@@ -421,6 +433,7 @@ fetch(url);
 
 En este ejemplo, se construye una URL con parámetros de consulta utilizando `URLSearchParams`, asegurándose de que los caracteres especiales estén correctamente codificados.
 
+{:.subsubsection}
 #### Ejemplo de acceder a los parámetros de una URL con URLSearchParams
 
 Si usamos el constructor con una URL ya formada nos retorna un objeto `URLSearchParams`, que es un iterable con los datos:

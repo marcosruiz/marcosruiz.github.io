@@ -11,6 +11,7 @@ img_path: /assets/img/promesas-javascript/
 
 Las promesas en JavaScript son objetos que representan la eventual finalización (satisfactoria o con error) de una operación asíncrona y su valor resultante. Proporcionan una forma de manejar operaciones asíncronas de manera más manejable y predecible, evitando los problemas del “callback hell”. A continuación, exploraremos cómo funcionan las promesas y cómo pueden ser utilizadas en diferentes contextos.
 
+{:.section}
 ## Primer ejemplo de promesas
 
 Una promesa se crea (manualmente) utilizando el constructor `Promise`, que acepta una función como argumento. Esta función recibe otras dos funciones como parámetros: `resolve` y `reject`.
@@ -38,6 +39,7 @@ Una promesa se crea (manualmente) utilizando el constructor `Promise`, que acept
 })();
 ```
 
+{:.section}
 ## Estados de las Promesas
 
 Las promesas pueden estar en uno de los siguientes estados:
@@ -48,6 +50,7 @@ Las promesas pueden estar en uno de los siguientes estados:
 
 En el ejemplo anterior, la promesa tiene un 50% de probabilidad de resolverse o rechazarse después de 2 segundos. Dependiendo del resultado, se ejecuta la función correspondiente en `then` o `catch`.
 
+{:.section}
 ## Segundo ejemplo de promesas
 
 El objeto de tipo `Promise` nos permite trabajar con él sin bloquear el hilo de ejecución.
@@ -73,6 +76,7 @@ El objeto de tipo `Promise` nos permite trabajar con él sin bloquear el hilo de
 
 En este ejemplo, la función `fetchData` retorna una promesa que se resuelve con datos después de 3 segundos. Mientras se espera la resolución de la promesa, el código sigue ejecutándose y se imprime “Data is being fetched…”.
 
+{:.section}
 ## Encadenar Promesas en serie
 
 El método then de las promesas permite encadenar varias operaciones asíncronas de manera secuencial. Esto es útil cuando necesitamos ejecutar una serie de tareas asíncronas una tras otra.
@@ -88,6 +92,7 @@ fetchData().then((data) => {
 
 En este ejemplo, la segunda llamada a then solo se ejecuta después de que la primera promesa se resuelva, garantizando un flujo secuencial de operaciones.
 
+{:.section}
 ## Manejo de errores
 
 El método `catch` se utiliza para manejar errores que ocurren durante la ejecución de una promesa. Este se puede encadenar después de uno o varios `then`.
@@ -103,6 +108,7 @@ fetchData().then((data) => {
 
 Aquí, si ocurre algún error en cualquiera de las funciones `then`, será capturado por `catch`.
 
+{:.section}
 ## Promesas en paralelo
 
 El método `Promise.all()` permite ejecutar múltiples promesas en paralelo y esperar a que todas se resuelvan antes de continuar. Si alguna de las promesas se rechaza, `Promise.all()` también se rechazará.
@@ -124,6 +130,7 @@ El método `Promise.all()` permite ejecutar múltiples promesas en paralelo y es
 
 En este ejemplo, `Promise.all()` espera a que todas las promesas se resuelvan y luego imprime los valores resueltos en un array.
 
+{:.section}
 ## Arrays y promesas
 
 En ocasiones es necesario recorrer un array y generar una promesa con cada elemento del array.
@@ -134,6 +141,7 @@ Las situaciones pueden ser distintas, por ejemplo:
 1. No importa el orden, pero queremos hacer algo si se cumplen todas las promesas.
 1. Las promesas se deben ejecutar en un cierto orden.
 
+{:.subsection}
 ### No importa el orden ni si se cumplen las promesas
 
 Por ejemplo, si queremos enviar un mensaje a varios usuarios al mismo tiempo. En caso de que algún mensaje no se pueda enviar, puede aparecer el mensaje en consola pero no debería bloquear nuestro flujo de trabajo.
@@ -164,6 +172,7 @@ Se puede ejecutar un `.forEach()` sobre el array y crear las promesas independie
 })();
 ```
 
+{:.subsection}
 ### No importa el orden, pero queremos hacer algo si se cumplen todas las promesas
 
 Por ejemplo, en el caso de que queramos descargar múltiples archivos y notificar al usuario cuando todas las descargas se completen.
@@ -194,6 +203,7 @@ Podemos transformar el array en un array de promesas con `.map()` y pasarlo a un
 })();
 ```
 
+{:.subsection}
 ### Las promesas se deben ejecutar en un cierto orden
 
 Por ejemplo, si queremos aplicar una serie de filtros a una imagen a través de peticiones a un servidor especializado en edición de imágenes.

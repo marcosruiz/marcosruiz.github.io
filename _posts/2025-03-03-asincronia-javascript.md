@@ -13,10 +13,12 @@ JavaScript solo puede tener un hilo de ejecución. Esto significa que si solicit
 
 Sin embargo, JavaScript es asíncrono gracias al **event loop** y  la **cola de tareas**. Esto permite que operaciones como peticiones HTTP o temporizadores se ejecuten sin bloquear el hilo principal. Estas operaciones asíncronas son gestionadas por el navegador o el entorno de Node.js y, cuando terminan, sus callbacks se colocan en la cola para ser ejecutados cuando el hilo principal esté libre.
 
+{:.subsection}
 ### Event loop (Bucle de eventos)
 
 A pesar de que JavaScript es un lenguaje monohilo (single-threaded), en JavaScript existe el Event Loop (bucle de eventos), que es un mecanismo que permite la ejecución de código asíncrono y no bloqueante.
 
+{:.subsection}
 ### Cola de tareas (Task Queue)
 
 JavaScript gestiona las operaciones asíncronas utilizando varias colas de tareas, cada una con una prioridad diferente. Estas colas incluyen la cola de macrotareas y la cola de microtareas.
@@ -29,6 +31,7 @@ JavaScript gestiona las operaciones asíncronas utilizando varias colas de tarea
 1. Microtareas: Se colocan en la cola de microtareas y tienen prioridad sobre las macrotareas. Esto significa que después de cada macrotarea, el motor de JavaScript procesará todas las microtareas antes de continuar con la siguiente macrotarea. Incluyen:
    - Promesas (`.then`, `.catch`, `.finally`)
 
+{:.subsubsection}
 #### Ejemplo de cómo retrasar un bloqueo
 
 ```javascript
@@ -55,6 +58,7 @@ JavaScript gestiona las operaciones asíncronas utilizando varias colas de tarea
 
 Este ejemplo ilustra cómo retrasar el bloqueo hasta que, por ejemplo, se ejecute todo el programa principal. Pero no soluciona el hecho de que, al final se va a quedar el navegador bloqueado, ya que se ejecutará en el único hilo de ejecución de Javascript.
 
+{:.subsubsection}
 #### Ejemplo de cómo dividir el trabajo
 
 En el siguiente ejemplo se ve cómo dividir el trabajo para que, en medio, dé tiempo a renderizar o ejecutar otras tareas y microtareas como atender eventos:
@@ -85,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 (Voluntario) Lee el artículo <https://www.bbss.dev/posts/eventloop/> con otro ejemplo.
 
+{:.subsubsection}
 #### Ejemplo de micro y macro tareas con promesas
 
 ```javascript
@@ -117,10 +122,12 @@ document.addEventListener("DOMContentLoaded", () => {
 1. Las microtareas (las promesas) se ejecutan antes de la macrotarea (`setTimeout`), imprimiendo ‘Promise 1’ y ‘Promise 2’.
 1. Finalmente, la función de `setTimeout` se ejecuta, imprimiendo ‘SetTimeout’.
 
+{:.section}
 ## Callbacks en JavaScript
 
 [Callbacks en JavaScript](/posts/callbacks-javascript/)
 
+{:.section}
 ## Promesas en JavaScript
 
 [Promesas en JavaScript](/posts/promesas-javascript/)
