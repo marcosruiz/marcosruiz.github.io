@@ -24,6 +24,26 @@ RA5. Desarrolla interfaces web accesibles, analizando las pautas establecidas y 
 A continuación, se muestran las actividades a realizar.
 
 {:.activity}
+### SEO
+
+
+
+{:.activity}
+### Actividad
+
+
+
+{:.activity}
+### Actividad
+
+
+
+{:.activity}
+### Actividad
+
+
+
+{:.activity}
 ### Actividad
 
 
