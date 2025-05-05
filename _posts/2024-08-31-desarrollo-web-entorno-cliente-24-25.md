@@ -59,7 +59,29 @@ pin: true
 
 ## Enlaces de interés 🔥
 
+- <https://roadmap.sh/frontend>: Para saber cual es el siguiente paso en tu aprendizaje.
 
+## Canales de YouTube relacionados con el módulo
+
+Para aprender:
+
+- [Carlos Azaustre - Aprende JavaScript](https://www.youtube.com/@CarlosAzaustre)
+- [Ada Lovecode - Didacticode](https://www.youtube.com/@didacticode)
+- [DevExpert - Programación Android y Kotlin](https://www.youtube.com/@devexpert_io/videos)
+- [hdeleon.net](https://www.youtube.com/@hdeleonnet)
+- [pildorasinformaticas](https://www.youtube.com/@pildorasinformaticas/playlists)
+- [Fazt Code](https://www.youtube.com/@FaztCode)
+
+Para entretenerte y aprender:
+
+- [midudev](https://www.youtube.com/@midudev)
+- [TheCommitShow](https://www.youtube.com/@TheCommitShow)
+- [ThePrimeagen](https://www.youtube.com/@ThePrimeagen) (INGLÉS)
+- [ThePrimeTime](https://www.youtube.com/@ThePrimeTimeagen/featured) (INGLÉS)
+
+## Cursos
+
+- <https://cursos.devtalles.com/>: Cursos muy completos según una alumna.
 
 ## Normativa
 
@@ -67,5 +89,8 @@ pin: true
 - [ORDEN de 8 de julio de 2011](https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=612154820202#:~:text=miento%20de%20instalaciones%20de%20infraestructuras%20comunes%20de%20telecomunicaciones,%20a)
 - [Real Decreto 405/2023](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-13221#:~:text=Este%20real%20decreto%20se%20dicta%20al%20amparo%20de%20las%20competencias)
 
-## Bibliografía
+## Bibliografía principal del módulo
 
+- <https://xxjcaxx.github.io/libro_dwec/intro.html>
+- <https://cipfpbatoi.github.io/materials/daw/dwc/02-vue/>
+- <https://developer.mozilla.org/es/docs/Learn_web_development/Core/Scripting>

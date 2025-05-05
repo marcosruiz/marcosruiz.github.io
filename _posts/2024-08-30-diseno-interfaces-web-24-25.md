@@ -43,12 +43,19 @@ pin: true
 - T07 - [Tarea: Usabilidad y responsividad en la web](/posts/tarea-usabilidad/)
 - T08 - [Tarea: Accesibilidad en la Web](/posts/tarea-accesibilidad-web/)
 
-## Enlaces de interés
+## Canales de YouTube relacionados con el módulo
 
+- [Coding2GO](https://www.youtube.com/@coding2go)
+- [OscarRGB](https://www.youtube.com/@OscarRGB)
+- [Marco Creativo](https://www.youtube.com/@marcocreativo)
 
-
-## Bibliografía
+## Normativa
 
 - <https://www.todofp.es/que-estudiar/loe/informatica-comunicaciones/des-aplicaciones-web.html>
 - [ORDEN de 8 de julio de 2011](https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=612154820202#:~:text=miento%20de%20instalaciones%20de%20infraestructuras%20comunes%20de%20telecomunicaciones,%20a)
 - [Real Decreto 405/2023](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-13221#:~:text=Este%20real%20decreto%20se%20dicta%20al%20amparo%20de%20las%20competencias)
+
+## Bibliografía principal del módulo
+
+- <https://lenguajecss.com/css/>
+- <https://logongas.es/doku.php?id=clase:daw:diw:1eval:tema01>

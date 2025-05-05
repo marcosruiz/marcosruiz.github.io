@@ -512,6 +512,8 @@ _Ejemplo de grid con elementos responsive_
 {:.subsection}
 ### Ejemplo 2: Grid responsive
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/El0OJ6h_2ZI?si=tfgMej8GYf2g9iv2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 Otra alternativa es que sea el mismo grid el que cambie su número de columnas para que los elementos (clase `item`) cambien su tamaño.
 
 ```html
@@ -793,6 +795,11 @@ Es el que usamos con `@tablet` o `@desktop` , etc.
 ```html
 <p class="g--font-size-1  g--font-size-3@tablet">Hola mundo</p>
 ```
+
+{:.section}
+## Más técnicas responsivas
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2IV08sP9m3U?si=SAskfGLGNOwOJnFb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Bibliografía
 
