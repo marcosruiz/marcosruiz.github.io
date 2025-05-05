@@ -624,7 +624,7 @@ Al crear la arquitectura responsiva es necesario indicar los pixeles de cada pan
     <li class="main-menu__item"><a href="#contact">Contact</a></li>
     <li class="main-menu__item"><a href="#about">About</a></li>
   </ul>
-  <a href="javascript:void(0);" class="main-menu__hamburger" onclick="toggleVisibilityMenu()">☰</a>
+  <a href="javascript:void(0);" class="main-menu__hamburger" onclick="toggleVisibilityMenu()">MENÚ</a>
 </div>
 <h1 style="text-align: center">Mi empresa</h1>
 <p style="height: 1200px;width: 500px;"></p>
@@ -710,7 +710,7 @@ function toggleVisibilityMenu() {
 
   if (itemsElements[0].className.indexOf("main-menu__items--movil-visible") >= 0) {
     itemsElements[0].className = " main-menu__items main-menu__items--movil-hide";
-    hamburgerElements[0].innerHTML = "☰";
+    hamburgerElements[0].innerHTML = "MENÚ";
   } else {
     itemsElements[0].className = "main-menu__items main-menu__items--movil-visible";
     hamburgerElements[0].innerHTML = "Cerrar";

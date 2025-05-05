@@ -331,7 +331,7 @@ Veamos un ejemplo con `:hover` y después le vamos a añadir la transición para
           border-radius: 4px;
           cursor: pointer;
         }
-         
+
         .c-button:hover {
           background-color: #deebfc;
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -348,8 +348,8 @@ En el ejemplo que acabo de poner, al pasar el cursor sobre el botón se añade u
 
 Sin embargo el efecto queda mal ya que es muy brusco pasar de:
 
-- `background-color: #ffffff;` ⇒ `background-color: #deebfc;`
-- `box-shadow: none;` ⇒ `box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);`
+- `background-color: #ffffff;` → `background-color: #deebfc;`
+- `box-shadow: none;` → `box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);`
 
 Para evitar ésto, usamos en CSS la transición de la siguiente forma:
 
@@ -659,12 +659,12 @@ Eso se consigue de la siguiente forma:
     transform: rotate(0deg);
     background-color: #bbd4f7;
   }
-   
+
   100% {
     transform: rotate(360deg);
     background-color: #1C4673;
-  } 
-   
+  }
+
 }
 ```
 

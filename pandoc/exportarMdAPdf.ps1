@@ -1,11 +1,11 @@
 # Script de powershell para generar documentos PDF
-# Este fichero debe ejecutarse en la raiz del proyecto ya que usa rutas relativas en las variables: 
+# Este fichero debe ejecutarse en la raiz del proyecto ya que usa rutas relativas en las variables:
 # Es decir, debemos estar dentro de la carpeta marcosruiz.github.io
 # $githubProjectFolder = "."
 
-# 
+#
 # Función para quitar todo lo que tenga que ver con mi web y de problemas a la hora de generar los PDFs.
-# 
+#
 function generarTemporal {
   param(
     [string]$fileRoute,
@@ -41,6 +41,7 @@ function generarTemporal {
     "👱"                                                           = ''
     "👽"                                                           = ''
     "🥚"                                                           = ''
+    "😢"                                                           = ''
     "🐤"                                                           = ':emoji de pollo:'
     "🦑"                                                           = ':emoji de pulpo:'
     "🌱"                                                           = ':emoji de flor:'
@@ -83,11 +84,19 @@ $githubProjectFolder = "."
 # Temas SAA
 # $routes = "redes-neuronales-deep-learning", "casos-practicos-sobre-aprendizaje-automatico", "introduccion-aprendizaje-automatico", "algoritmos-aprendizaje-automatico", "aprendizaje-supervisado", "aprendizaje-no-supervisado"
 
-# Temas DIW
+# Temas DIW C1
 # $routes = "selectores-css", "planificacion-interfaces-graficas", "gestalt", "colores", "guias-estilo", "hojas-estilo-css", "modelo-cajas-css", , "posicionamiento-css", "css-tablas-listas", "tutorial-sass", "imagenes-web", "propiedad-intelectual", "audio-web", "video-web"
 
-# Temas DWEC
+# Temas DIW C2
+
+$routes = "animaciones-web", "contenidos-web-interactivos", "figma-atomic-design", "usabilidad-web", "diseno-web-responsivo", "accesibilidad-web", "wcag"
+
+# Temas DWEC C1
 # $routes = "arquitecturas-lenguajes-programacion-cliente-web", "integracion-codigo-javascript", "tipos-datos-javascript", "objetos-nativos-javascript", "bom-javascript", "dom-javascript", "funciones-javascript", "objetos-javascript", "clases-javascript", "prototipos-javascript", "clases-javascript-es6", "desestructuracion-javascript", "formularios-html", "formularios-javascript", "validacion-formularios-html", "validacion-formularios-javascript", "expresiones-regulares", "cookies", "arrays-javascript", "eventos-javascript"
+
+# Temas DWEC C2
+
+# $routes = "bom-javascript", "dom-javascript", "propagacion-eventos-javascript", "asincronia-javascript", "callbacks-javascript", "promesas-javascript", "async-await-javascript", "ajax-javascript", "fetch-javascript", "tratamiento-datos-clientes-web", "cookies", "vue", "tutorial-vue"
 
 # $routes = "fundamentos-programacion-javascript" # Lo tengo aparte porque da problemas
 
