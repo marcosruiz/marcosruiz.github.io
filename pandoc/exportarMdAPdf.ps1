@@ -57,6 +57,7 @@ function generarTemporal {
     '<iframe [^>]* src="([^"]*)[^>]* title="YouTube video player".*$' = 'Vídeo: $1'
     '^_.*_$'                                                       = ''
     '(\{\s*):(\s*width=.*\})'                                      = '$1$2'
+    '.svg'                                                         = '.pdf'
   }
 
   # Iterar sobre el contenido y modificar las líneas que coincidan con los patrones
@@ -89,7 +90,8 @@ $githubProjectFolder = "."
 
 # Temas DIW C2
 
-$routes = "animaciones-web", "contenidos-web-interactivos", "figma-atomic-design", "usabilidad-web", "diseno-web-responsivo", "accesibilidad-web", "wcag"
+# $routes = "animaciones-web", "contenidos-web-interactivos", "figma-atomic-design", "usabilidad-web", "diseno-web-responsivo", "accesibilidad-web", "wcag"
+$routes = "wcag"
 
 # Temas DWEC C1
 # $routes = "arquitecturas-lenguajes-programacion-cliente-web", "integracion-codigo-javascript", "tipos-datos-javascript", "objetos-nativos-javascript", "bom-javascript", "dom-javascript", "funciones-javascript", "objetos-javascript", "clases-javascript", "prototipos-javascript", "clases-javascript-es6", "desestructuracion-javascript", "formularios-html", "formularios-javascript", "validacion-formularios-html", "validacion-formularios-javascript", "expresiones-regulares", "cookies", "arrays-javascript", "eventos-javascript"
