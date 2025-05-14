@@ -303,9 +303,16 @@ _Teclado alternativo_
 {:.subsubsection}
 #### Xbox Adaptive Controller
 
-Es un mando diseñado por Microsoft específicamente para personas con discapacidades o movilidad reducida. Su objetivo principal es hacer que los videojuegos sean más accesibles para todos.
+En 2018 Microsoft diseñó un mando específicamente para personas con discapacidades o movilidad reducida. Su objetivo principal es hacer que los videojuegos sean más accesibles para todos.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ie7ad7ZLL74?si=WYoWOVeyPfIjmYFJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+{:.subsubsection}
+#### Mando Access
+
+Similar a XBOX, en 2023 SONY diseño el Mando Access haciéndolo únicamente compatible con su PS5.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ViuO3aMspuI?si=etv4pB5D6IF7bba1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 {:.subsubsection}
 #### Teclado Braille
