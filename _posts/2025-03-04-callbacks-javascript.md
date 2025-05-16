@@ -62,6 +62,29 @@ En el siguiente ejemplo, la función `second` tiene código asíncrono que usa u
 
   second(third);
   first();
+  // Salida: 1 2 3
+})();
+```
+
+```javascript
+(() => {
+  function first() {
+    console.log(1);
+  }
+
+  function second(callback) {
+    console.log(2);
+    setTimeout(() => {
+      callback();
+    }, 0);
+  }
+
+  function third() {
+    console.log(3);
+  }
+
+  second(third);
+  first();
   // Salida: 2 1 3
 })();
 ```
@@ -220,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }, 1000);
     });
-    
+
     console.log("patata")
   });
 
