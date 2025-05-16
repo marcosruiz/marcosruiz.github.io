@@ -52,9 +52,9 @@ Si.
 
 <details class="card mb-2">
   <summary class="card-header question" markdown="1">
-  
+
   ¿Podemos añadir información adicional al crear un objeto Event de la siguiente manera: `const event = new Event("click", { detail: 123 });`?
-  
+
   </summary>
   <div class="card-body" markdown="1">
 
@@ -103,7 +103,7 @@ Lee el artículo [¿Qué son los Custom Events?](https://lenguajejs.com/javascri
 
 Los eventos se propagan desde el elemento que los desencadena hacia sus elementos padre. Se puede capturar un evento durante esta propagación y realizar acciones diferentes según el elemento específico que lo desencadenó. Para detener la propagación de un evento a elementos padre, se usa `event.stopPropagation()`.
 
-```javascript
+```html
 <div id="padre">
     <div id="hijo">
         <button id="boton">Haz clic aquí</button>
@@ -137,9 +137,15 @@ Existen 3 modelos propuestos de disparo de eventos, que clarificarán el orden d
   1. En la fase de **burbujeo**, el evento se propaga desde el origen del evento hacia el documento raíz.
   - También disponemos de un método para cancelar eventos con `preventDefault()`, y de un método para detener la propagación de eventos en la fase de burbujeo, con `stopPropagation()`.
 
+![alt text](capturaYBurbujeo.png)
+_Fase de captura y fase de burbujeo_
+
 Lee el artículo [Emisión de eventos](https://lenguajejs.com/javascript/custom-events/emision-eventos/).
 
 Lee el artículo [Propagación de eventos](https://lenguajejs.com/javascript/custom-events/propagacion-eventos/).
+
+> Las imágenes que hay en el artículo [Propagación de eventos](https://lenguajejs.com/javascript/custom-events/propagacion-eventos/) dan lugar a que se entienda que la fase de captura sucede a continuación de la fase de burbujeo, pero esto NO es así.
+{:.prompt-warning}
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xlci1S08Cww?si=JiEPkuEj04c68f0h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -168,7 +174,7 @@ Los eventos personalizados se pueden utilizar para comunicar datos desde un comp
 
         // Añadir un evento personalizado al hijo
         child.addEventListener('click', () => {
-            const customEvent = new CustomEvent('childEvent', { 
+            const customEvent = new CustomEvent('childEvent', {
                 bubbles: true,  // para que se propague
                 detail: { message: 'Hello from child' }
             });
@@ -176,7 +182,7 @@ Los eventos personalizados se pueden utilizar para comunicar datos desde un comp
         });
 
         // Añadir un listener en el padre para capturar el evento del hijo
-        parent.addEventListener('childEvent', (event) => { 
+        parent.addEventListener('childEvent', (event) => {
             console.log('Received message from child:', event.detail.message);
         });
     </script>
@@ -194,6 +200,26 @@ En este ejemplo:
 - Angular también proporciona `@Output` que crea un evento que es capturado por el componente padre.
 
 Ejercicio de eventos y propagación: <https://jsfiddle.net/xxjcaxx/wep0c2j9/1/>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Existe fase de captura si `bubbles: false`?</summary>
+  <div class="card-body" markdown="1">
+
+Si. Siempre que haya `capture: true` el listener se ejecutará en fase de captura independientemente de si hay o no fase de burbujeo.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Se puede enviar información del hijo al padre en la fase de captura?</summary>
+  <div class="card-body" markdown="1">
+
+No. Esto es debido al flujo del evento.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
 
 ## Bibliografía
 
