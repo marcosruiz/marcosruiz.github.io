@@ -150,6 +150,7 @@ Resulta muy arriesgado emplear iconos por el mero hecho de adornar nuestras pág
 
 Os dejo una lista de webs para conseguir iconos de forma gratuita:
 
+- <https://tabler.io/icons>
 - <https://www.iconfinder.com/>
 - <https://icons8.com/>
 - <https://www.flaticon.es/>
