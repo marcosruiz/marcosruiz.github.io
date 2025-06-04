@@ -83,6 +83,8 @@ DOMAIN_NAME=<pon aquí tu dominio aunque creo que no vale para nada>
 
 Con esto ya deberías poder ir al navegador y acceder a través de la IP y el puerto `<IP>:8080`, por ejemplo `192.168.1.140:8080`.
 
+El usuario que se utiliza es el `www-data`, por lo tanto todo lo que haya en `/srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/nextcloud/` deberá ser propiedad de dicho usuario.
+
 En mi caso he copiado varios datos a `/srv/dev-disk-by-uuid-7ba5953f-3094-44b9-9875-98f1dac73873/elements1/nextcloud/mruizg/files` y para que se vean en la web he tenido que ejecutar el siguiente comando:
 
 ```console
