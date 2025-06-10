@@ -62,7 +62,7 @@ En el directorio donde este el fichero `docker-compose.yml`{: .filepath} ejecuta
 $ docker-compose up -d
 ```
 
-Ahora accedemos a `localhost:8080` en el navegador y entramos con la cuenta de administrador `admin` `adminpassword` como se ve a continuación.
+Ahora accedemos a `localhost:8080/login` en el navegador y entramos con la cuenta de administrador `admin` `adminpassword` como se ve a continuación.
 
 ![Paso 1: Nuevo sitio](newSite.png)
 _Paso 1: Nuevo sitio_
