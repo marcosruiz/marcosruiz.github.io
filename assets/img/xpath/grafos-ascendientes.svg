@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290.8" height="205.2" viewBox="0 0 76.940949 54.299368">
+  <defs>
+    <marker id="b" orient="auto" overflow="visible">
+      <path fill="red" fill-rule="evenodd" stroke="red" stroke-width=".4" d="M-5.2-2.4L1.3 0l-6.5 2.4c1-1.4 1-3.4 0-4.8z" font-size="12" stroke-linejoin="round"/>
+    </marker>
+    <marker id="a" orient="auto" overflow="visible">
+      <path fill-rule="evenodd" stroke-width=".6" d="M-5.2-2.4L1.3 0l-6.5 2.4c1-1.4 1-3.4 0-4.8z" font-size="12" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <g transform="translate(177.5477,-87.367948)">
+    <ellipse cx="-109.9" cy="169.8" fill="none" stroke="red" stroke-width=".4" stroke-dashoffset=".4" ry="21" rx="13.1" transform="matrix(0.88977606,0.45639738,-0.34050747,0.94024181,0,0)" stroke-linecap="square" stroke-dasharray="0.39120483, 1.56481934"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-157.5 126.8c1.3 1.6 3 3.2 4 4.6" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-152.8 115.4l-4 4.4" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-146.2 115.7l4 4.6" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-135.4 127.5l3.5 4" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-149.6 101.7v5.6" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-163.7 126.8c-1.2 1.6-2.8 3.2-4 4.6" font-family="Times-Roman" marker-end="url(#a)"/>
+    <circle cx="-58.8" cy="177.3" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(25.251724)" font-family="Times-Roman"/>
+    <circle cx="30.5" cy="199.7" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <circle cx="14.7" cy="202.1" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <circle cx="27" cy="184.1" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <circle cx="11.3" cy="186.5" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <circle cx="-1.4" cy="178.3" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="rotate(56.612568)" font-family="Times-Roman"/>
+    <circle cx="207.2" cy="-68.5" r="4.8" fill="#fff" stroke="#000" stroke-width=".4" transform="matrix(-0.5502976,0.83496859,0.83496859,0.5502976,0,0)" font-family="Times-Roman"/>
+    <text x="-134.1" y="93.7" stroke-width=".3" style="line-height:0%" font-size="4.2" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="-134.1" y="93.7" style="line-height:1.25" font-size="4.9">Nodos</tspan><tspan x="-134.1" y="99.8" style="line-height:1.25" font-size="4.9">ascendientes</tspan><tspan x="-134.1" y="105.9" style="line-height:1.25" font-size="4.9">del nodo &apos;b&apos;</tspan><tspan x="-134.1" y="112" style="line-height:1.25" font-size="4.9"></tspan>
+    </text>
+    <path fill="red" stroke="red" stroke-width=".4" d="M-135.3 92.3L-142 94" marker-end="url(#b)"/>
+    <text x="-173.7" y="138.7" stroke-width=".3" style="line-height:0%" font-size="4.2" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="-173.7" y="138.7" style="line-height:1.25" font-size="9.8">b</tspan>
+    </text>
+  </g>
+</svg>

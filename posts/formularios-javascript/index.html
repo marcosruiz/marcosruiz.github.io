@@ -1,0 +1,449 @@
+<!DOCTYPE html><html lang="es" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="generator" content="Jekyll v4.2.2" /><meta property="og:title" content="Formularios en JavaScript" /><meta property="og:locale" content="es" /><meta name="description" content="Introducción" /><meta property="og:description" content="Introducción" /><link rel="canonical" href="https://marcosruiz.github.io/posts/formularios-javascript/" /><meta property="og:url" content="https://marcosruiz.github.io/posts/formularios-javascript/" /><meta property="og:site_name" content="Marcos Ruiz" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2024-10-24T10:00:00+02:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="Formularios en JavaScript" /><meta name="twitter:site" content="@whataweekhuh" /><meta name="google-site-verification" content="google_meta_tag_verification" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-03-18T12:26:19+01:00","datePublished":"2024-10-24T10:00:00+02:00","description":"Introducción","headline":"Formularios en JavaScript","mainEntityOfPage":{"@type":"WebPage","@id":"https://marcosruiz.github.io/posts/formularios-javascript/"},"url":"https://marcosruiz.github.io/posts/formularios-javascript/"}</script><title>Formularios en JavaScript | Marcos Ruiz</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="Marcos Ruiz"><meta name="application-name" content="Marcos Ruiz"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://cdn.jsdelivr.net" ><link rel="dns-prefetch" href="https://cdn.jsdelivr.net" ><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get MODE_ATTR() { return "data-mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } static get ID() { return "mode-toggle"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } let self = this; /* always follow the system prefers */ this.sysDarkPrefers.addEventListener("change", () => { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.notify(); }); } /* constructor() */ get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode === ModeToggle.DARK_MODE; } get isLightMode() { return this.mode === ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } setDark() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_ATTR); sessionStorage.removeItem(ModeToggle.MODE_KEY); } /* Notify another plugins that the theme mode has changed */ notify() { window.postMessage({ direction: ModeToggle.ID, message: this.modeStatus }, "*"); } } /* ModeToggle */ const toggle = new ModeToggle(); function flipMode() { if (toggle.hasMode) { if (toggle.isSysDarkPrefer) { if (toggle.isLightMode) { toggle.clearMode(); } else { toggle.setLight(); } } else { if (toggle.isDarkMode) { toggle.clearMode(); } else { toggle.setDark(); } } } else { if (toggle.isSysDarkPrefer) { toggle.setLight(); } else { toggle.setDark(); } } toggle.notify(); } /* flipMode() */ </script><body data-spy="scroll" data-target="#toc" data-topbar-visible="true"><div id="sidebar" class="d-flex flex-column align-items-end"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" alt="avatar" class="mx-auto"> <img src=" https://avatars.githubusercontent.com/u/7647613?v=4 " alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/">Marcos Ruiz</a></div><div class="site-subtitle font-italic">Trabaja duro para ser vago</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>INICIO</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORÍAS</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>ETIQUETAS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVOS</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>SOBRE MÍ</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <button class="mode-toggle btn" aria-label="Switch Mode"> <i class="fas fa-adjust"></i> </button> <span class="icon-border"></span> <a href="https://github.com/marcosruiz" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['profesor.mruizg','gmail.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper" class="row justify-content-center"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Inicio </a> </span> <span>Formularios en JavaScript</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Artículo</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Buscar..."> </span> <span id="search-cancel" >Cancelar</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="core-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>Formularios en JavaScript</h1><div class="post-meta text-muted"><div> <em> <a href="https://github.com/marcosruiz">Marcos Ruiz</a> </em></div><div class="d-flex"><div> <span> <em class="timeago" data-ts="1729756800" data-toggle="tooltip" data-placement="bottom" data-tooltip-df="llll" > 2024-10-24 </em> </span> <span> Actualizado <em class="timeago" data-ts="1742297179" data-toggle="tooltip" data-placement="bottom" data-tooltip-df="llll" > 2025-03-18 </em> </span> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1659 palabras"> <em>9 minutos</em> lectura</span></div></div></div><div class="post-content"><h2 class="section" id="introducción">Introducción</h2><p>En este artículo vamos a ver como enviar y probar formularios utilizando javascript.</p><h2 class="section" id="formas-de-selección-del-objeto-form-con-javascript">Formas de selección del objeto form con JavaScript</h2><p>Dentro de un documento tendremos varias formas de selección de un formulario.</p><p>Si partimos del siguiente ejemplo:</p><div class="language-html highlighter-rouge"><div class="code-header"> <span data-label-text="HTML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="nt">&lt;div</span>  <span class="na">id=</span><span class="s">"menulateral"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;form</span>  <span class="na">id=</span><span class="s">"contactar"</span> <span class="na">name=</span><span class="s">"contactar"</span> <span class="na">action=</span><span class="s">"..."</span><span class="nt">&gt;</span>...<span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></table></code></div></div><p>Tendremos los siguientes métodos de selección del objeto <code class="language-plaintext highlighter-rouge">form</code> en el documento:</p><ul><li>A través del método <code class="language-plaintext highlighter-rouge">getElementById()</code> del DOM, nos permite acceder a un objeto a través de su atributo ID. Tendremos que tener la precaución de asignar id únicos a nuestros objetos, para evitar que tengamos objetos con id repetidos:</ul><div class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="JavaScript"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">formulario</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">contactar</span><span class="dl">"</span><span class="p">);</span>
+</pre></table></code></div></div><ul><li>A través del método <code class="language-plaintext highlighter-rouge">getElementsByTagName()</code> del DOM, el cuál nos permite acceder a un objeto a través de la etiqueta HTML que queramos. Por ejemplo para acceder a los objetos con etiqueta form haremos:</ul><div class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="JavaScript"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">formularios</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">"</span><span class="s2">form</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">primerFormulario</span> <span class="o">=</span> <span class="nx">formularios</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span> <span class="c1">// primer formulario del documento</span>
+</pre></table></code></div></div><p>o también todo en una única línea:</p><div class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="JavaScript"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">primerFormulario</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">"</span><span class="s2">form</span><span class="dl">"</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="p">;</span>
+</pre></table></code></div></div><p>Otra posibilidad interesante que te permite el método anterior, es la de buscar objetos con un padre determinado, por ejemplo:</p><div class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="JavaScript"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">menu</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">menulateral</span><span class="dl">"</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">formularios</span> <span class="o">=</span> <span class="nx">menu</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="dl">"</span><span class="s2">form</span><span class="dl">"</span><span class="p">);</span> <span class="c1">// formularios contenidos en el menu lateral</span>
+<span class="kd">let</span> <span class="nx">primerFormulario</span> <span class="o">=</span>  <span class="nx">formularios</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span> <span class="c1">// primer formulario en el menú lateral</span>
+</pre></table></code></div></div><ul><li>Otro método puede ser a través de la colección <code class="language-plaintext highlighter-rouge">forms[]</code> del objeto <code class="language-plaintext highlighter-rouge">document</code>. Esta colección es un array, que contiene la referencia a todos los formularios que tenemos en nuestro documento.</ul><div class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="JavaScript"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">formularios</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">forms</span><span class="p">;</span> <span class="c1">// la referencia a todos los formularios del documento</span>
+<span class="kd">let</span> <span class="nx">miFormulario</span> <span class="o">=</span> <span class="nx">formularios</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span> <span class="c1">// primer formulario del documento</span>
+</pre></table></code></div></div><p>o bien:</p><div class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="JavaScript"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">miFormulario</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">forms</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span> <span class="c1">// primer formulario del documento</span>
+</pre></table></code></div></div><p>o bien:</p><div class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="JavaScript"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="kd">let</span> <span class="nx">miFormulario</span> <span class="o">=</span> <span class="nx">formularios</span><span class="p">[</span><span class="dl">"</span><span class="s2">contactar</span><span class="dl">"</span><span class="p">];</span> <span class="c1">// referenciamos al formulario con name "contactar"</span>
+</pre></table></code></div></div><h2 class="section" id="formas-de-seleccionar-los-hijos-de-form-con-javascript">Formas de seleccionar los hijos de form con JavaScript</h2><p>Una vez visto cómo referenciar a un formulario en JavaScript, tenemos que saber cómo acceder a cada uno de los elementos u objetos, que contiene ese formulario.</p><p>Cada uno de los elementos de un formulario, son objetos en JavaScript que tendrán propiedades y métodos, que nos permitirán realizar acciones sobre ellos. Gracias a esos métodos y propiedades, podremos realizar acciones como validar el contenido de un formulario, marcar o desmarcar una determinada opción, mostrar contenido de un campo u ocultarlo, etc.</p><p>Por ejemplo, si consideramos un ejemplo sencillo de formulario:</p><div class="language-html highlighter-rouge"><div class="code-header"> <span data-label-text="HTML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre><span class="nt">&lt;form</span>  <span class="na">id=</span><span class="s">"formularioBusqueda"</span>  <span class="na">action=</span><span class="s">"cgi-bin/buscar.pl"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span>  <span class="na">id=</span><span class="s">"entrada"</span>  <span class="na">name=</span><span class="s">"cEntrada"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span>  <span class="na">id=</span><span class="s">"enviar"</span>  <span class="na">name=</span><span class="s">"enviar"</span>  <span class="na">value=</span><span class="s">"Buscar..."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</pre></table></code></div></div><p>Las siguientes referencias al campo de texto entrada, serán todas válidas:</p><div class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="JavaScript"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">entrada</span><span class="dl">"</span><span class="p">);</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">formularioBusqueda</span><span class="p">.</span><span class="nx">cEntrada</span><span class="p">;</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">formularioBusqueda</span><span class="p">.</span><span class="nx">elements</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">forms</span><span class="p">[</span><span class="dl">"</span><span class="s2">formularioBusqueda</span><span class="dl">"</span><span class="p">].</span><span class="nx">elements</span><span class="p">[</span><span class="dl">"</span><span class="s2">cEntrada</span><span class="dl">"</span><span class="p">];</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">forms</span><span class="p">[</span><span class="dl">"</span><span class="s2">formularioBusqueda</span><span class="dl">"</span><span class="p">].</span><span class="nx">cEntrada</span><span class="p">;</span>
+</pre></table></code></div></div><p>Aunque muchos de los controles de un formulario tienen propiedades en común, algunas propiedades son únicas a un control en particular. Por ejemplo, en un objeto select tienes propiedades que te permiten conocer la opción que está actualmente seleccionada. Al igual que los <code class="language-plaintext highlighter-rouge">checkbox</code> es o los botones de tipo <code class="language-plaintext highlighter-rouge">radio</code>, que también disponen de propiedades para saber cuál es la opción que está actualmente seleccionada.</p><h2 class="section" id="enviar-formulario-por-javascript">Enviar formulario por JavaScript</h2><p>Podemos enviar un formulario mediante JavaScript utilizando el método <code class="language-plaintext highlighter-rouge">submit()</code>. Esto es útil cuando queremos enviar el formulario después de realizar alguna operación adicional o validación personalizada.</p><h3 class="subsection" id="ejemplo-de-envío-por-javascript">Ejemplo de envío por JavaScript</h3><blockquote class="prompt-info"><div><p>Recuerda que puedes utilizar el mismo servidor de Node que hay en <a href="/posts/formularios-html/">Formularios en HTML</a> para probar todos los formularios.</p></div></blockquote><div file="index.html" class="language-html highlighter-rouge"><div class="code-header"> <span data-label-text="index.html"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Document<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">"formulario"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"tuberculo"</span> <span class="na">value=</span><span class="s">"patata"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"enviarFormulario()"</span> <span class="na">id=</span><span class="s">"buttonSubmit"</span><span class="nt">&gt;</span>Enviar<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"script.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</pre></table></code></div></div><div file="script.js" class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="script.js"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">enviarFormulario</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">formulario</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">formulario</span><span class="dl">"</span><span class="p">);</span>
+  <span class="nx">formulario</span><span class="p">.</span><span class="nx">submit</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></table></code></div></div><details class="card mb-2"> <summary class="card-header question">¿Qué Content-Type estamos usando? ¿Cómo lo podemos saber?</summary><div class="card-body"><p>En este caso estamos usando <code class="language-plaintext highlighter-rouge">Content-Type: multipart/form-data;</code> a pesar de ser un formulario con solo texto.</p><p>En el caso de utilizar Mozilla Firefox lo podemos averiguar de la siguiente manera:</p><p><img data-src="/assets/img/formularios-javascript/requestHeaders.png" alt="Request headers" data-proofer-ignore> <em>Request headers</em></p><p>Además, podemos ver exactamente que información estamos enviando:</p><p><img data-src="/assets/img/formularios-javascript/requestPayload.png" alt="Request payload" data-proofer-ignore> <em>Request payload</em></p></div></details><p>Pero si no nos vale con enviar el formulario con <code class="language-plaintext highlighter-rouge">submit()</code> y queremos manipular sus datos antes de enviar o enviar a una API por POST manualmente, obtendremos el contenido <code class="language-plaintext highlighter-rouge">input</code> por <code class="language-plaintext highlighter-rouge">input</code> o con <code class="language-plaintext highlighter-rouge">FormData</code>:</p><div file="index.html" class="language-html highlighter-rouge"><div class="code-header"> <span data-label-text="index.html"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Document<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">"formulario"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"tuberculo"</span> <span class="na">value=</span><span class="s">"patata"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"buttonSubmit"</span><span class="nt">&gt;</span>Enviar<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"script.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</pre></table></code></div></div><div file="script.js" class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="script.js"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">#buttonSubmit</span><span class="dl">"</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+
+  <span class="kd">const</span> <span class="nx">formulario</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">formulario</span><span class="dl">"</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">formData</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FormData</span><span class="p">(</span><span class="nx">formulario</span><span class="p">)</span>
+
+  <span class="nx">fetch</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://localhost:3003/upload</span><span class="dl">"</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">method</span><span class="p">:</span> <span class="dl">"</span><span class="s2">POST</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">body</span><span class="p">:</span> <span class="nx">formData</span><span class="p">,</span> <span class="c1">// Enviar los datos del formulario</span>
+  <span class="p">})</span>
+<span class="p">});</span>
+</pre></table></code></div></div><p class="question">¿Qué <code class="language-plaintext highlighter-rouge">Content-Type</code> estamos usando?</p><h3 class="subsection" id="envío-de-datos-con-fetch-en-formato-json">Envío de datos con fetch en formato JSON</h3><h3 class="subsection" id="ejemplo">Ejemplo</h3><p>Este ejemplo demuestra cómo utilizar pseudo-clases CSS para estilizar formularios con validación interna en HTML.</p><div file="index.html" class="language-html highlighter-rouge"><div class="code-header"> <span data-label-text="index.html"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"es"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Formulario con Validación<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"styles.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Enviar datos en formato JSON con JavaScript<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">"fileForm"</span> <span class="na">enctype=</span><span class="s">"multipart/form-data"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Enviar<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"script.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</pre></table></code></div></div><div file="script.js" class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="script.js"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre><td class="rouge-code"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">form</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">submit</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+
+  <span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">http://localhost:3003/update</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">POST</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span>  <span class="c1">// Indica que los datos son JSON</span>
+    <span class="p">},</span>
+    <span class="na">body</span><span class="p">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span>
+      <span class="na">nombre</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Juan</span><span class="dl">'</span><span class="p">,</span>
+      <span class="na">edad</span><span class="p">:</span> <span class="mi">30</span>
+    <span class="p">})</span>
+  <span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
+    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Error:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">error</span><span class="p">));</span>
+<span class="p">});</span>
+</pre></table></code></div></div><h2 class="section" id="ficheros-en-formularios">Ficheros en formularios</h2><p>Enviar ficheros al servidor mediante un formulario HTML es una tarea común que se realiza utilizando un <code class="language-plaintext highlighter-rouge">input</code> de tipo <code class="language-plaintext highlighter-rouge">file</code>. El tratamiento de los ficheros puede diferir del de otros elementos del formulario.</p><p>Para entender mejor este apartado, también hay que dominar la comunicación <code class="language-plaintext highlighter-rouge">fetch</code> con el servidor.</p><h3 class="subsection" id="envío-de-ficheros-con-fetch-de-javascript">Envío de ficheros con fetch de JavaScript</h3><p>Para enviar un fichero en un formulario tradicional, simplemente se crea un <code class="language-plaintext highlighter-rouge">FormData</code> a partir del formulario y se envía utilizando un método HTTP como <code class="language-plaintext highlighter-rouge">POST</code>. Los formularios tradicionales aceptan binarios a través del MIME, lo cual facilita este proceso.</p><p>Aquí hay un ejemplo de cómo hacerlo:</p><div file="index.html" class="language-html highlighter-rouge"><div class="code-header"> <span data-label-text="index.html"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+</pre><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"es"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Formulario con Validación<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"styles.css"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Formulario HTML desde JavaScript<span class="nt">&lt;/h1&gt;</span>
+
+    <span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">"fileForm"</span> <span class="na">enctype=</span><span class="s">"multipart/form-data"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"fileInput"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Enviar<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"script.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+</pre></table></code></div></div><div file="script.js" class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="script.js"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">fileForm</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">submit</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+  <span class="kd">const</span> <span class="nx">formData</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FormData</span><span class="p">(</span><span class="k">this</span><span class="p">);</span> <span class="c1">// this es el formulario</span>
+  <span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">http://localhost:3003/update</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">POST</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">body</span><span class="p">:</span> <span class="nx">formData</span>
+  <span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
+    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Error:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">error</span><span class="p">));</span>
+<span class="p">});</span>
+</pre></table></code></div></div><p class="question">¿Qué <code class="language-plaintext highlighter-rouge">Content-Type</code> estamos usando?</p><ol><li>Se crea un formulario con <code class="language-plaintext highlighter-rouge">enctype="multipart/form-data"</code> para manejar la subida de ficheros.<li>En el evento <code class="language-plaintext highlighter-rouge">submit</code> del formulario, se previene el comportamiento por defecto.<li>Se crea un objeto <code class="language-plaintext highlighter-rouge">FormData</code> a partir del formulario y se envía con <code class="language-plaintext highlighter-rouge">fetch</code> usando el método <code class="language-plaintext highlighter-rouge">POST</code>.</ol><h3 class="subsection" id="envío-de-ficheros-con-fetch-de-javascript-y-datos-extra">Envío de ficheros con fetch de JavaScript y datos extra</h3><p>Con el anterior documento HTML podemos modificar el <code class="language-plaintext highlighter-rouge">script.js</code> para añadir inputs nuevos directamente sobre el objeto <code class="language-plaintext highlighter-rouge">FormData</code>.</p><div file="script.js" class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="script.js"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre><td class="rouge-code"><pre><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">fileForm</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">submit</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+
+  <span class="kd">const</span> <span class="nx">fileInput</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">file</span><span class="dl">'</span><span class="p">);</span>
+
+  <span class="kd">const</span> <span class="nx">formData</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FormData</span><span class="p">();</span>
+  <span class="nx">formData</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">patata</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">formData</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="dl">'</span><span class="s1">file</span><span class="dl">'</span><span class="p">,</span> <span class="nx">fileInput</span><span class="p">.</span><span class="nx">files</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+
+  <span class="c1">// No es necesario añadir el Content-Type</span>
+  <span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">http://localhost:3003/update</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">POST</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">body</span><span class="p">:</span> <span class="nx">formData</span>
+  <span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Archivo subido:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">data</span><span class="p">))</span>
+    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Error:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">error</span><span class="p">));</span>
+<span class="p">});</span>
+</pre></table></code></div></div><h3 class="subsection" id="envío-de-ficheros-utilizando-json">Envío de ficheros utilizando JSON</h3><p>Si queremos enviar los datos con JSON, el proceso es un poco más complejo, ya que JSON no puede manejar binarios directamente. Para resolver esto, se puede convertir el fichero en una cadena en formato <code class="language-plaintext highlighter-rouge">Base64</code> antes de enviarlo.</p><p>Aquí hay un ejemplo de cómo hacerlo:</p><div file="index.html" class="language-html highlighter-rouge"><div class="code-header"> <span data-label-text="index.html"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"es"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Formulario con Validación<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"styles.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Subir un JSON con un fichero codificado en Base64<span class="nt">&lt;/h1&gt;</span>
+  
+  <span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">"fileForm"</span> <span class="na">enctype=</span><span class="s">"multipart/form-data"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span> <span class="na">name=</span><span class="s">"file"</span> <span class="na">id=</span><span class="s">"fileInput"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Enviar<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"script.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</pre></table></code></div></div><div file="script.js" class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="script.js"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+</pre><td class="rouge-code"><pre><span class="c1">// Función para convertir archivo a Base64</span>
+<span class="kd">function</span> <span class="nx">toBase64</span><span class="p">(</span><span class="nx">file</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FileReader</span><span class="p">();</span>
+    <span class="nx">reader</span><span class="p">.</span><span class="nx">readAsDataURL</span><span class="p">(</span><span class="nx">file</span><span class="p">);</span>
+    <span class="nx">reader</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">resolve</span><span class="p">(</span><span class="nx">reader</span><span class="p">.</span><span class="nx">result</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">'</span><span class="s1">,</span><span class="dl">'</span><span class="p">)[</span><span class="mi">1</span><span class="p">]);</span> <span class="c1">// Elimina el prefijo 'data:tipo;base64,'</span>
+    <span class="nx">reader</span><span class="p">.</span><span class="nx">onerror</span> <span class="o">=</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">reject</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">fileForm</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">submit</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+
+  <span class="kd">const</span> <span class="nx">fileInput</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">fileInput</span><span class="dl">"</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">fileInput</span><span class="p">.</span><span class="nx">files</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Selecciona un archivo</span><span class="dl">"</span><span class="p">);</span>
+    <span class="k">return</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kd">const</span> <span class="nx">file</span> <span class="o">=</span> <span class="nx">fileInput</span><span class="p">.</span><span class="nx">files</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span> <span class="c1">// Obtener el archivo seleccionado</span>
+  <span class="kd">const</span> <span class="nx">base64String</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">toBase64</span><span class="p">(</span><span class="nx">file</span><span class="p">);</span> <span class="c1">// Convertir a Base64</span>
+
+  <span class="kd">const</span> <span class="nx">jsonData</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">({</span>
+    <span class="na">nombre</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Juan</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">edad</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+    <span class="na">contenidoFichero</span><span class="p">:</span> <span class="nx">base64String</span>
+  <span class="p">});</span>
+
+  <span class="nx">fetch</span><span class="p">(</span><span class="dl">'</span><span class="s1">http://localhost:3003/update</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">POST</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span>  <span class="c1">// Indica que los datos son JSON</span>
+    <span class="p">},</span>
+    <span class="na">body</span><span class="p">:</span> <span class="nx">jsonData</span>
+  <span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">))</span>
+    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Error:</span><span class="dl">'</span><span class="p">,</span> <span class="nx">error</span><span class="p">));</span>
+<span class="p">});</span>
+</pre></table></code></div></div><ol><li>Se crea un formulario sin especificar <code class="language-plaintext highlighter-rouge">enctype</code>.<li>En el evento <code class="language-plaintext highlighter-rouge">submit</code>, se previene el comportamiento por defecto.<li>Se obtiene el fichero del <code class="language-plaintext highlighter-rouge">input</code> y se utiliza <code class="language-plaintext highlighter-rouge">FileReader</code> para leer el fichero como una URL de datos.<li>Se convierte la URL de datos en una cadena Base64.<li>Se crea un objeto JSON con el nombre, tipo y datos del fichero en Base64.<li>Se envía el objeto JSON utilizando fetch con el método POST y el encabezado <code class="language-plaintext highlighter-rouge">Content-Type</code> establecido como <code class="language-plaintext highlighter-rouge">application/json</code>.</ol><p>Algunos servicios como supabase aceptan que se les envíe los binarios con el método tradicional y los datos textuales en JSON, eso implica dos peticiones.</p><h2 id="bibliografía"><span class="mr-2">Bibliografía</span><a href="#bibliografía" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></h2><ul><li><a href="https://xxjcaxx.github.io/libro_dwec/dom.html">https://xxjcaxx.github.io/libro_dwec/dom.html</a><li><a href="https://lenguajejs.com/">https://lenguajejs.com/</a><li><a href="https://learnxinyminutes.com/docs/es-es/javascript-es/">https://learnxinyminutes.com/docs/es-es/javascript-es/</a></ul></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/desarrollo-de-aplicaciones-web/'>Desarrollo de Aplicaciones Web</a>, <a href='/categories/desarrollo-web-en-entorno-cliente/'>Desarrollo Web en Entorno Cliente</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/fp/" class="post-tag no-text-decoration" >fp</a> <a href="/tags/ciclo-superior/" class="post-tag no-text-decoration" >ciclo superior</a> <a href="/tags/modulo/" class="post-tag no-text-decoration" >modulo</a> <a href="/tags/formaci%C3%B3n-profesional/" class="post-tag no-text-decoration" >formación profesional</a> <a href="/tags/daw/" class="post-tag no-text-decoration" >daw</a> <a href="/tags/desarrollo-de-aplicaciones-web/" class="post-tag no-text-decoration" >desarrollo de aplicaciones web</a> <a href="/tags/desarrollo-web-en-entorno-cliente/" class="post-tag no-text-decoration" >desarrollo web en entorno cliente</a> <a href="/tags/dwec/" class="post-tag no-text-decoration" >dwec</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> Este artículo está licenciado bajo <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> por el autor.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Compartir</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Formularios en JavaScript - Marcos Ruiz&amp;url=https://marcosruiz.github.io/posts/formularios-javascript/" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=Formularios en JavaScript - Marcos Ruiz&amp;u=https://marcosruiz.github.io/posts/formularios-javascript/" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://t.me/share/url?url=https://marcosruiz.github.io/posts/formularios-javascript/&amp;text=Formularios en JavaScript - Marcos Ruiz" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copiar link" data-title-succeed="Link copiado satisfactoriamente!"> </i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted"><div class="access"><div id="access-lastmod" class="post"><div class="panel-heading">Recientemente actualizado</div><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/tutorial-moodle-docker/">Tutorial: Instalar Moodle con Docker</a><li><a href="/posts/tutorial-nextcloud/">Tutorial: Monta tu propio Google Drive con NextCloud</a><li><a href="/posts/guias-estilo/">Guías de estilo</a><li><a href="/posts/callbacks-javascript/">Callbacks en JavaScript</a><li><a href="/posts/propagacion-eventos-javascript/">Propagación de eventos en JavaScript</a></ul></div><div id="access-tags"><div class="panel-heading">Etiquetas populares</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/smr/">smr</a> <a class="post-tag" href="/tags/daw/">daw</a> <a class="post-tag" href="/tags/desarrollo-de-aplicaciones-web/">desarrollo de aplicaciones web</a> <a class="post-tag" href="/tags/teor%C3%ADa/">teoría</a> <a class="post-tag" href="/tags/ciclo-superior/">ciclo superior</a> <a class="post-tag" href="/tags/fp/">fp</a> <a class="post-tag" href="/tags/modulo/">modulo</a> <a class="post-tag" href="/tags/pr%C3%A1ctica/">práctica</a> <a class="post-tag" href="/tags/formaci%C3%B3n-profesional/">formación profesional</a> <a class="post-tag" href="/tags/seguridad-inform%C3%A1tica/">seguridad informática</a></div></div></div><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"><div class="panel-heading pl-3 pt-2 mb-2">Índice</div><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="tail-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Otros artículos</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/vue/"><div class="card-body"> <em class="timeago small" data-ts="1741593600" > 2025-03-10 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Vue</h3><div class="text-muted small"><p> Introducción El uso de un framework nos facilita enormemente el trabajo a la hora de crear una aplicación. Vue.js es un framework de JavaScript utilizado para crear interfaces de usuario (UI) y ap...</p></div></div></a></div><div class="card"> <a href="/posts/desarrollo-web-entorno-cliente-24-25/"><div class="card-body"> <em class="timeago small" data-ts="1722931200" > 2024-08-06 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Desarrollo Web en Entorno Cliente 24 25</h3><div class="text-muted small"><p> Unidades UD1 - Arquitecturas y lenguajes de programación en clientes web Integración de código JavaScript Trabajar con Visual Studio Code UD2 - Fundamentos de la prog...</p></div></div></a></div><div class="card"> <a href="/posts/arquitecturas-lenguajes-programacion-cliente-web/"><div class="card-body"> <em class="timeago small" data-ts="1725264000" > 2024-09-02 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Arquitecturas y lenguajes de programación en clientes web</h3><div class="text-muted small"><p> Introducción La web fue inicialmente concebida y creada por Tim Berners-Lee, un especialista del laboratorio europeo de partículas (CERN) en 1989. En sus mismas palabras, había una “necesidad de u...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/tarea-objetos-predefinidos-javascript/" class="btn btn-outline-primary" prompt="Más viejo"><p>Tarea obligatoria: Objetos predefinidos de JavaScript</p></a> <a href="/posts/validacion-formularios-html/" class="btn btn-outline-primary" prompt="Más nuevo"><p>Validación de formularios en HTML</p></a></div><script type="text/javascript"> $(function () { const origin = "https://giscus.app"; const iframe = "iframe.giscus-frame"; const lightTheme = "light"; const darkTheme = "dark_dimmed"; let initTheme = lightTheme; if ($("html[data-mode=dark]").length > 0 || ($("html[data-mode]").length == 0 && window.matchMedia("(prefers-color-scheme: dark)").matches)) { initTheme = darkTheme; } let giscusAttributes = { "src": "https://giscus.app/client.js", "data-repo": "marcosruiz/marcosruiz.github.io", "data-repo-id": "R_kgDOGm1dzA", "data-category": "General", "data-category-id": "DIC_kwDOGm1dzM4CAjhb", "data-mapping": "pathname", "data-reactions-enabled": "1", "data-emit-metadata": "0", "data-theme": initTheme, "data-input-position": "bottom", "data-lang": "es", "crossorigin": "anonymous", "async": "" }; let giscusScript = document.createElement("script"); Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value)); document.getElementById("tail-wrapper").appendChild(giscusScript); addEventListener("message", (event) => { if (event.source === window && event.data && event.data.direction === ModeToggle.ID) { /* global theme mode changed */ const mode = event.data.message; const theme = (mode === ModeToggle.DARK_MODE ? darkTheme : lightTheme); const message = { setConfig: { theme: theme } }; const giscus = document.querySelector(iframe).contentWindow; giscus.postMessage({ giscus: message }, origin); } }); }); </script></div></div></div><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center text-muted"><div class="footer-left"><p class="mb-0"> © 2025 <a href="https://github.com/marcosruiz">Marcos Ruiz</a>. <span data-toggle="tooltip" data-placement="top" title="Excepto donde si indique lo contrario, los artículos de este blog están licenciados bajo Creative Commons Attribution 4.0 International (CC BY 4.0) Licenciado por el autor.">Algunos derechos reservados.</span></p></div><div class="footer-right"><p class="mb-0"> Desarrollado por <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> con el tema <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> .</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><div id="access-tags"><div class="panel-heading">Etiquetas populares</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/smr/">smr</a> <a class="post-tag" href="/tags/daw/">daw</a> <a class="post-tag" href="/tags/desarrollo-de-aplicaciones-web/">desarrollo de aplicaciones web</a> <a class="post-tag" href="/tags/teor%C3%ADa/">teoría</a> <a class="post-tag" href="/tags/ciclo-superior/">ciclo superior</a> <a class="post-tag" href="/tags/fp/">fp</a> <a class="post-tag" href="/tags/modulo/">modulo</a> <a class="post-tag" href="/tags/pr%C3%A1ctica/">práctica</a> <a class="post-tag" href="/tags/formaci%C3%B3n-profesional/">formación profesional</a> <a class="post-tag" href="/tags/seguridad-inform%C3%A1tica/">seguridad informática</a></div></div></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! Resultado no encontrado.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/es.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script> <script defer src="/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id=G-GS5HW4NZ8V"></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-GS5HW4NZ8V'); }); </script>

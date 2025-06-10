@@ -1,0 +1,935 @@
+<!DOCTYPE html><html lang="es" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="generator" content="Jekyll v4.2.2" /><meta property="og:title" content="¿Qué es XSLT?" /><meta property="og:locale" content="es" /><meta name="description" content="Introducción" /><meta property="og:description" content="Introducción" /><link rel="canonical" href="https://marcosruiz.github.io/posts/xslt/" /><meta property="og:url" content="https://marcosruiz.github.io/posts/xslt/" /><meta property="og:site_name" content="Marcos Ruiz" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2024-02-12T09:00:00+01:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="¿Qué es XSLT?" /><meta name="twitter:site" content="@whataweekhuh" /><meta name="google-site-verification" content="google_meta_tag_verification" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-24T10:48:12+02:00","datePublished":"2024-02-12T09:00:00+01:00","description":"Introducción","headline":"¿Qué es XSLT?","mainEntityOfPage":{"@type":"WebPage","@id":"https://marcosruiz.github.io/posts/xslt/"},"url":"https://marcosruiz.github.io/posts/xslt/"}</script><title>¿Qué es XSLT? | Marcos Ruiz</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="Marcos Ruiz"><meta name="application-name" content="Marcos Ruiz"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://cdn.jsdelivr.net" ><link rel="dns-prefetch" href="https://cdn.jsdelivr.net" ><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get MODE_ATTR() { return "data-mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } static get ID() { return "mode-toggle"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } let self = this; /* always follow the system prefers */ this.sysDarkPrefers.addEventListener("change", () => { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.notify(); }); } /* constructor() */ get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode === ModeToggle.DARK_MODE; } get isLightMode() { return this.mode === ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } setDark() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_ATTR); sessionStorage.removeItem(ModeToggle.MODE_KEY); } /* Notify another plugins that the theme mode has changed */ notify() { window.postMessage({ direction: ModeToggle.ID, message: this.modeStatus }, "*"); } } /* ModeToggle */ const toggle = new ModeToggle(); function flipMode() { if (toggle.hasMode) { if (toggle.isSysDarkPrefer) { if (toggle.isLightMode) { toggle.clearMode(); } else { toggle.setLight(); } } else { if (toggle.isDarkMode) { toggle.clearMode(); } else { toggle.setDark(); } } } else { if (toggle.isSysDarkPrefer) { toggle.setLight(); } else { toggle.setDark(); } } toggle.notify(); } /* flipMode() */ </script><body data-spy="scroll" data-target="#toc" data-topbar-visible="true"><div id="sidebar" class="d-flex flex-column align-items-end"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" alt="avatar" class="mx-auto"> <img src=" https://avatars.githubusercontent.com/u/7647613?v=4 " alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/">Marcos Ruiz</a></div><div class="site-subtitle font-italic">Trabaja duro para ser vago</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>INICIO</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORÍAS</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>ETIQUETAS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVOS</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>SOBRE MÍ</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <button class="mode-toggle btn" aria-label="Switch Mode"> <i class="fas fa-adjust"></i> </button> <span class="icon-border"></span> <a href="https://github.com/marcosruiz" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['profesor.mruizg','gmail.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper" class="row justify-content-center"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Inicio </a> </span> <span>¿Qué es XSLT?</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Artículo</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Buscar..."> </span> <span id="search-cancel" >Cancelar</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="core-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>¿Qué es XSLT?</h1><div class="post-meta text-muted"><div> <em> <a href="https://github.com/marcosruiz">Marcos Ruiz</a> </em></div><div class="d-flex"><div> <span> <em class="timeago" data-ts="1707724800" data-toggle="tooltip" data-placement="bottom" data-tooltip-df="llll" > 2024-02-12 </em> </span> <span> Actualizado <em class="timeago" data-ts="1713948492" data-toggle="tooltip" data-placement="bottom" data-tooltip-df="llll" > 2024-04-24 </em> </span> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="5071 palabras"> <em>28 minutos</em> lectura</span></div></div></div><div class="post-content"><h2 class="section" id="introducción">Introducción</h2><p>XSLT (Transformaciones XSL) es un lenguaje de programación declarativo que permite generar documentos a partir de documentos XML.</p><details class="card mb-2"> <summary class="card-header question">¿Qué es un lenguaje de programación declarativo? ¿E imperativo?</summary><div class="card-body"><ul><li><strong>Lenguaje declarativo</strong>: Se centra en lo que deseamos obtener como resultado porque consiste en una serie de reglas o plantillas que hay que aplicar a un documento XML.<li><strong>Lenguaje imperativo</strong>: Se enfoca en la secuencia de pasos para resolver un problema.</ul><iframe width="560" height="315" src="https://www.youtube.com/embed/hcuvB58hwlE?si=UOpQ4NGMPJfbXbIt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></div></details><p>El funcionamiento de transformación de documentos se describe a continuación:</p><p><img data-src="/assets/img/xslt/XSLT-procesador.jpg" alt="Esquema de funcionamiento de procesador XSLT En verde los documentos XML" data-proofer-ignore> <em>Esquema de funcionamiento de procesador XSLT. En verde los documentos XML</em></p><ol><li>El documento XML es el documento inicial a partir del cual se va a generar el resultado.<li>La hoja de estilo XSLT es el documento que contiene el código fuente del programa, es decir, las reglas de transformación que se van a aplicar al documento inicial.<li>El procesador XSLT es el programa de ordenador que aplica al documento inicial las reglas de transformación incluidas en la hoja de estilo XSLT y genera el documento final.<li>El resultado de la ejecución del programa es un nuevo documento (que puede ser un documento XML o no).</ol><p>XSLT se utiliza para obtener a partir de un documento XML otros documentos (XML o no). A un documento XML se le pueden aplicar distintas hojas de estilo XSLT para obtener distintos resultados y una misma hoja de estilo XSLT se puede aplicar a distintos documentos XML.</p><p>El lenguaje XSLT está normalizado por el W3C, que ha publicado tres versiones de este lenguaje:</p><ul><li>noviembre de 1999: XSLT 1.0<li>enero de 2007: XSLT 2.0<li>junio de 2017: XSLT 3.0<li>marzo de 2021: XSLT 2.0 (2ª ed)</ul><p><img data-src="/assets/img/xslt/XSLT-lineaDelTiempo.png" alt="Linea del tiempo de XSLT" data-proofer-ignore> <em>Linea del tiempo de XSLT</em></p><p>Aunque hay incompatibilidades entre estas versiones, lo que se cuenta en esta lección es válido para todas ellas.</p><h2 class="section" id="procesadores-xslt">Procesadores XSLT</h2><p>Un procesador XSLT es un software que lee un documento XSLT y otro XML, y crea un documento de salida aplicando las instrucciones de la hoja de estilos XSLT a la información del documento XML.</p><p>Pueden estar integrados dentro de un explorador Web, en un servidor web, o puede ser un programa que se ejecuta desde la línea de comandos.</p><p>El procesador que vamos a usar un procesador XSL gratuito y de código abierto llamado <a href="https://www.saxonica.com/download/java.xml">Saxon-HE</a>.</p><p>Si quieres saber como instalar Saxon-HE puedes leer el apartado <a href="https://programminghistorian.org/es/lecciones/transformacion-datos-xml-xsl#instalaci%C3%B3n-de-saxon-he">Instalación de Saxon-HE del artículo Transformación de datos con XML y XSL para su reutilización</a>.</p><p>También se puede usar XML Copy Editor como se puede ver en el apartado “Aplicar una transformación XSLT” del artículo <a href="https://www.mclibre.org/consultar/xml/otros/xmlcopyeditor.html">XML Copy Editor</a>.</p><blockquote class="prompt-info"><div><p>Quizás necesites configurar variables de entorno en este proceso. Si quieres saber que son las variables de entorno y como se configuran, lee el artículo <a href="/posts/variable-entorno-path">Tutorial: La variable de entorno Path</a></p></div></blockquote><h2 class="section" id="hojas-de-estilo-xslt">Hojas de estilo XSLT</h2><p>XSLT es un lenguaje declarativo. Por ello, las hojas de estilo XSLT no se escriben como una secuencia de instrucciones, sino como una colección de plantillas (template rules). Cada plantilla establece cómo se transforma un determinado elemento (definido mediante expresiones XPath). La transformación del documento se realiza de la siguiente manera:</p><ul><li>El procesador analiza el documento y construye el árbol del documento.<li>El procesador recorre el árbol del documento desde el nodo raíz.<li>En cada nodo recorrido, el procesador aplica o no alguna plantilla:<ul><li>Si a un nodo no se le puede aplicar ninguna plantilla, su contenido se incluye en el documento final (el texto del nodo, no el de los nodos descendientes). A continuación, el procesador recorre sus nodos hijos.<li>Si a un nodo se le puede aplicar una plantilla, se aplica la plantilla. La plantilla puede generar texto que se incluye en el documento final. En principio, el procesador no recorre sus nodos hijos, salvo que la plantilla indique al procesador que sí que deben recorrerse los nodos hijos.</ul><li>Cuando el procesador ha recorrido el árbol, se ha terminado la transformación.</ul><p>Una hoja de estilos XSL es un documento XML con extensión .xsl, en el que se define las transformaciones a realizar en el documento, mediante una serie de elementos y atributos.</p><p class="question">¿Qué extensión deben tener los ficheros XSLT?</p><p>Primero, se debe indicar la cabecera para indicar que es un fichero XML:</p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
+</pre></table></code></div></div><p>Posteriormente se indica el siguiente elemento raíz para indicar que es un documento XSL:</p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="nt">&lt;xsl:stylesheet</span> <span class="na">version=</span><span class="s">"1.0"</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><p>Dentro de la instrucción <code class="language-plaintext highlighter-rouge">xsl:stylesheet</code> se pueden encontrar los llamados elementos de alto nivel y las plantillas, como en el ejemplo siguiente:</p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:output</span> <span class="na">method=</span><span class="s">"xml"</span> <span class="na">indent=</span><span class="s">"yes"</span><span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><p>Estas etiquetas son:</p><ul><li>El elemento de alto nivel <code class="language-plaintext highlighter-rouge">xsl:output</code> indica el tipo de salida producida.<li>La instrucción <code class="language-plaintext highlighter-rouge">xsl:template</code> es una plantilla.<ul><li>El atributo <code class="language-plaintext highlighter-rouge">match</code> indica los elementos afectados por la plantilla y contiene una expresión XPath.<li>El contenido de la instrucción define la transformación a aplicar (si la instrucción no contiene nada, como en el ejemplo anterior, sustituirá el nodo por nada, es decir, eliminará el nodo, aunque conservará el texto contenido en el elemento).</ul></ul><p>Cuando se aplica una plantilla a un nodo, en principio no se recorren los nodos descendientes. Para indicar que sí queremos recorrer los nodos descendientes y aplicarles las plantillas que les correspondan, hay que utilizar la instrucción <code class="language-plaintext highlighter-rouge">&lt;xsl:apply-templates /&gt;</code>, como en el ejemplo siguiente:</p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;xsl:apply-templates</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"elemento"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><details class="card mb-2"> <summary class="card-header question">¿Qué lenguaje tiene mayor funcionalidad: XSLT o CSS?</summary><div class="card-body"><p>Con CSS NO se pueden realizar operaciones, como sumar valores de todos los elementos de un documento. Por ejemplo, no se podrían combinar todas las nóminas anuales de un empleado con el fin de obtener un total de ingresos.</p></div></details><h2 class="section" id="enlazar-documentos-xml-con-hojas-de-estilo-xslt">Enlazar documentos XML con hojas de estilo XSLT</h2><p>Se puede asociar de forma permanente una hoja de estilo XSLT a un documento XML mediante la instrucción de procesamiento <code class="language-plaintext highlighter-rouge">&lt;?xml-stylesheet ?&gt;</code>, la misma que permite <a href="https://www.mclibre.org/consultar/xml/lecciones/xml-css.html#xml-css">asociar hojas de estilo CSS</a>. La instrucción de procesamiento <code class="language-plaintext highlighter-rouge">&lt;?xml-stylesheet ... ?&gt;</code> va al principio del documento, después de la declaración XML.</p><p class="question">¿Se pueden usar hojas de estilos CSS en un documento XML?</p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="cp">&lt;?xml-stylesheet type="text/xsl" href="ejemplo.xsl"?&gt;</span>
+</pre></table></code></div></div><p>Cuando se visualiza en un navegador web un documento XML enlazado con una hoja de estilo XSLT, los navegadores muestran el resultado de la transformación, aunque si se muestra el código fuente de la página, los navegadores muestran el documento XML original.</p><blockquote class="prompt-info"><div><p>Google Chrome no muestra los documentos XML que enlazan a hojas de estilo XSLT abiertos como archivos locales (<code class="language-plaintext highlighter-rouge">file://...</code>), como se comenta en la lección de diferencias entre navegadores. Firefox sí lo hace.</p></div></blockquote><details class="card mb-2"> <summary class="card-header question">¿Qué ocurre si abro documentos XML con hojas de estilo XSLT en el navegador?</summary><div class="card-body"><p>Al abrir en un navegador una página XML enlazada con una hoja de estilo XSLT, <strong>el navegador muestra el resultado de la transformación</strong>. Pero no muestra el código fuente obtenido como resultado, sino interpretando ese código fuente, como cuando se enlaza una hoja de estilo CSS vacía.</p></div></details><h2 class="section" id="elementos-básicos-de-xslt">Elementos básicos de XSLT</h2><ul><li><code class="language-plaintext highlighter-rouge">xsl:stylesheet</code>: Define el elemento raíz de la hoja de transformaciones.<li><code class="language-plaintext highlighter-rouge">xsl:transform</code>: Define el elemento raíz de la hoja de transformaciones.<li><code class="language-plaintext highlighter-rouge">xsl:output</code>: Define el formato del documento de salida<li><code class="language-plaintext highlighter-rouge">xsl:template</code>: Instrucción principal de XSLT. Representa una plantilla con una serie de acciones que se realizarán si el patrón de la plantilla (atributo match) encaja con algún elemento o elementos del árbol XML.<li><code class="language-plaintext highlighter-rouge">xsl:apply-templates</code>: Instrucción principal de XSLT. Permite aplicar plantillas sobre nodos hijos al actual.<li><code class="language-plaintext highlighter-rouge">xsl:call-template</code>: Permite invocar a una plantilla por su nombre. Al aplicarse la plantilla con nombre el contexto no cambian lo que significa que en la plantilla invocada hay que utilizar las mismas rutas XPath. El atributo name es el que indica el nombre de la plantilla.<li><code class="language-plaintext highlighter-rouge">xsl:value-of</code>: Visualiza el contenido del elemento indicado en el atributo select, y de sus descendientes. Existe una versión simplificada que sólo se puede usar en la creación de nuevos elementos.<li><code class="language-plaintext highlighter-rouge">xsl:text</code>: Permite escribir el texto literal en la salida.</ul><h2 class="section" id="elemento-xslstylesheet">Elemento xsl:stylesheet</h2><p>Elemento raíz en una hoja de estilo XSLT.</p><p>Elementos hijo de <code class="language-plaintext highlighter-rouge">xsl:stylesheet</code>:</p><ul><li><code class="language-plaintext highlighter-rouge">xsl:import</code>: Incluye una hoja de estilo XSLT externa en el documento de salida.<li><code class="language-plaintext highlighter-rouge">xsl:include</code>: Incluye una hoja de estilo XSLT externa en el documento de salida.<li><code class="language-plaintext highlighter-rouge">xsl:strip-space</code>: Elimina espacios en blanco en el documento de origen. Con el atributo obligatorio elements se seleccionan los elementos, en los cuales se eliminarán los espacios en blanco.<li><code class="language-plaintext highlighter-rouge">xsl:preserve-space</code>: Con este elemento puede especificarse qué elementos deben conservar los espacios en blanco.<li><code class="language-plaintext highlighter-rouge">xsl:output</code>: Define el formato del documento de salida<li><code class="language-plaintext highlighter-rouge">xsl:key</code>: Declara una clave para la búsqueda de nodos.<li><code class="language-plaintext highlighter-rouge">xsl:decimal-format</code>: Define el formato de salida para los números decimales.<li><code class="language-plaintext highlighter-rouge">xsl:attribute-set</code>: Con este elemento se definen conjuntos de atributos (<code class="language-plaintext highlighter-rouge">xsl:attribute</code>).<li><code class="language-plaintext highlighter-rouge">xsl:variable</code>: Mediante este elemento podemos definir variables. Cuando se usa como elemento de alto nivel se definen variables globales, que son válidas en toda la hoja de estilo. De no ser así, las variables tendrán validez local.<li><code class="language-plaintext highlighter-rouge">xsl:param</code>: Con este elemento se declaran parámetros.<li><code class="language-plaintext highlighter-rouge">xsl:template</code>: Instrucción principal de XSLT. Representa una plantilla con una serie de acciones que se realizarán si el patrón de la plantilla (atributo match) encaja con algún elemento o elementos del árbol XML.<li><code class="language-plaintext highlighter-rouge">xsl:namespace-alias</code>: Se usa para sustituir un espacio de nombres en la hoja de estilos por otro espacio de nombres en el documento de salida.</ul><h2 class="section" id="elemento-xsltemplate">Elemento xsl:template</h2><p>Con el elemento <code class="language-plaintext highlighter-rouge">xsl:template</code> elemento se definen un conjunto de reglas (plantilla) que indican cómo deben procesarse los nodos.</p><p>A través del atributo <code class="language-plaintext highlighter-rouge">match</code> se establecen los nodos a los que se aplicará la plantilla. Para seleccionar el árbol del documento completo, se utiliza el patrón raíz (<code class="language-plaintext highlighter-rouge">/</code>). Por ejemplo:</p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+  instrucciones de plantilla
+<span class="nt">&lt;/xsl:template&gt;</span>
+</pre></table></code></div></div><p>Con el atribulo opcional <code class="language-plaintext highlighter-rouge">name</code> se le puede asignar un nombre a la plantilla, el cual se puede invocar por medio de <code class="language-plaintext highlighter-rouge">xsl:call-template</code>.</p><p>Las instrucciones de plantilla indican la transformación a realizar sobre el patrón. Este ejemplo, transforma el elemento nombre en su valor con formato título. Por ejemplo:</p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"nombre"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2&gt;&lt;xsl:value-of/&gt;&lt;h2&gt;</span>
+<span class="nt">&lt;/xsl:template&gt;</span>
+</pre></table></code></div></div><p>Elementos hijo de <code class="language-plaintext highlighter-rouge">xsl:template</code>:</p><ul><li><code class="language-plaintext highlighter-rouge">xsl:apply-templates</code><li><code class="language-plaintext highlighter-rouge">xsl:call-template</code>: Este elemento se usa para invocar una plantilla por su nombre.<li><code class="language-plaintext highlighter-rouge">xsl:apply-imports</code><li><code class="language-plaintext highlighter-rouge">xsl:for-each</code>: Crea un bucle que se ejecuta para cada uno de los nodos de contexto seleccionados.<li><code class="language-plaintext highlighter-rouge">xsl:value-of</code>: Este elemento añade el valor de un nodo en el documento de salida.<li><code class="language-plaintext highlighter-rouge">xsl:number</code>: Este elemento asigna un valor numérico a la posición de un elemento en el documento de salida y sirve por lo tanto para la numeración.<li><code class="language-plaintext highlighter-rouge">xsl:choose</code>: Con este elemento se define una elección entre varias alternativas.<li><code class="language-plaintext highlighter-rouge">xsl:if</code>: Con este elemento se crea un proceso condicionado.<li><code class="language-plaintext highlighter-rouge">xsl:text</code>: Permite añadir texto de forma literal en el documento de salida.<li><code class="language-plaintext highlighter-rouge">xsl:copy</code>: Copia un nodo de contexto en el documento de salida.<li><code class="language-plaintext highlighter-rouge">xsl:variable</code>: Mediante este elemento podemos definir variables.<li><code class="language-plaintext highlighter-rouge">xsl:message</code>: Se emplea para mostrar un mensaje durante el proceso de transformación en el procesador XSLT.<li><code class="language-plaintext highlighter-rouge">xsl:fallback</code><li><code class="language-plaintext highlighter-rouge">xsl:processing-instruction</code><li><code class="language-plaintext highlighter-rouge">xsl:comment</code>: Sirve para añadir comentarios en el documento de salida.<li><code class="language-plaintext highlighter-rouge">xsl:element</code>: Crea elementos XML en el documento de salida.<li><code class="language-plaintext highlighter-rouge">xsl:attribute</code>: Se utiliza para crear atributos en el documento de salida.<li><code class="language-plaintext highlighter-rouge">xsl:param</code></ul><h2 class="section" id="instrucciones-de-control">Instrucciones de control</h2><ul><li><code class="language-plaintext highlighter-rouge">xsl:for-each</code>: Permite iterar sobre una lista de elementos y aplicar transformaciones sobre ellos. El atributo select define la lista de elementos sobre los que se va a iterar.<li><code class="language-plaintext highlighter-rouge">xsl:sort</code>: Envía a la salida datos del documento XML de partida ordenados por algún criterio. Los atributos principales son:<ul><li><code class="language-plaintext highlighter-rouge">select</code>: expresión XPath que indica el conjunto de nodos a ordenar.<li><code class="language-plaintext highlighter-rouge">lang</code>: indica qué idioma se utiliza al ordenar<li><code class="language-plaintext highlighter-rouge">data-type</code>: especifica el tipo de datos que se ordenarán.<li><code class="language-plaintext highlighter-rouge">order</code>: concreta si el orden es ascendente o descendente.<li><code class="language-plaintext highlighter-rouge">case-order</code>: especifica si las mayúsculas van antes que las minúsculas o viceversa (<code class="language-plaintext highlighter-rouge">lower-first</code>, <code class="language-plaintext highlighter-rouge">upper-first</code>).</ul><li><code class="language-plaintext highlighter-rouge">xsl:if</code>: Se utiliza para producir un comportamiento condicional. Sólo permite preguntar por una condición y la manera de actuar si esta es cierta. El atributo test es el que incluye la expresión XPath que debe ser cierta o falsa.<li><code class="language-plaintext highlighter-rouge">xsl:choose</code>, <code class="language-plaintext highlighter-rouge">xsl:when</code>, <code class="language-plaintext highlighter-rouge">xsl:otherwise</code>: Permiten implementar un comportamiento condicional con múltiples opciones y una opción por defecto. Es equivalente a un switch de Java.</ul><h2 class="section" id="generación-de-nuevos-elementos">Generación de nuevos elementos</h2><ul><li><code class="language-plaintext highlighter-rouge">xsl:element</code>: Permite generar un nuevo elemento/nodo en el documento de salida. El atributo obligatorio name especifica el nombre del nuevo elemento.<li><code class="language-plaintext highlighter-rouge">xsl:attribute</code>: Permite generar un nuevo atributo de un elemento/nodo. El atributo obligatorio name especifica el nombre del atributo.<li><code class="language-plaintext highlighter-rouge">xsl:comment</code>: Genera un comentario en el documento de salida. Puede ser un texto literal o un dato extraído del documento XML original.<li><code class="language-plaintext highlighter-rouge">xsl:processing-instruction</code>: Permite generar instrucciones de procesamiento de salida.<li><code class="language-plaintext highlighter-rouge">xsl:copy-of</code>: Realiza una copia literal de un elemento a la salida. Los atributos y elementos descendientes se copiarán también.<li><code class="language-plaintext highlighter-rouge">xsl:copy</code>: Realiza una copia de un nodo, pero no de sus descendientes ni atributos.</ul><h2 class="section" id="ejemplo-1">Ejemplo 1</h2><p>Tenemos un XML que queremos transformar que representa un catálogo de CDs:</p><div file="entrada.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;catalog&gt;</span>
+ <span class="nt">&lt;cd&gt;</span>
+   <span class="nt">&lt;title&gt;</span>Empire Burlesque<span class="nt">&lt;/title&gt;</span>
+   <span class="nt">&lt;artist&gt;</span>Bob Dylan<span class="nt">&lt;/artist&gt;</span>
+   <span class="nt">&lt;country&gt;</span>USA<span class="nt">&lt;/country&gt;</span>
+   <span class="nt">&lt;company&gt;</span>Columbia<span class="nt">&lt;/company&gt;</span>
+   <span class="nt">&lt;price&gt;</span>10.90<span class="nt">&lt;/price&gt;</span>
+   <span class="nt">&lt;year&gt;</span>1985<span class="nt">&lt;/year&gt;</span>
+ <span class="nt">&lt;/cd&gt;</span>
+ ...
+<span class="nt">&lt;/catalog&gt;</span>
+</pre></table></code></div></div><p>Y un XSLT que indica como se transforma dicho XML:</p><div file="transformacion.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="transformacion.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">version=</span><span class="s">"1.0"</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span><span class="nt">&gt;</span>
+
+ <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;html&gt;</span>
+     <span class="nt">&lt;body&gt;</span>
+       <span class="nt">&lt;h2&gt;</span>My CD Collection<span class="nt">&lt;/h2&gt;</span>
+       <span class="nt">&lt;table</span> <span class="na">border=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;tr</span> <span class="na">bgcolor=</span><span class="s">"#9acd32"</span><span class="nt">&gt;</span>
+           <span class="nt">&lt;th&gt;</span>Title<span class="nt">&lt;/th&gt;</span>
+           <span class="nt">&lt;th&gt;</span>Artist<span class="nt">&lt;/th&gt;</span>
+         <span class="nt">&lt;/tr&gt;</span>
+         <span class="nt">&lt;xsl:for-each</span> <span class="na">select=</span><span class="s">"catalog/cd"</span><span class="nt">&gt;</span>
+           <span class="nt">&lt;tr&gt;</span>
+             <span class="nt">&lt;td&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"title"</span><span class="nt">/&gt;&lt;/td&gt;</span>
+             <span class="nt">&lt;td&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"artist"</span><span class="nt">/&gt;&lt;/td&gt;</span>
+           <span class="nt">&lt;/tr&gt;</span>
+         <span class="nt">&lt;/xsl:for-each&gt;</span>
+       <span class="nt">&lt;/table&gt;</span>
+     <span class="nt">&lt;/body&gt;</span>
+   <span class="nt">&lt;/html&gt;</span>
+ <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><p>Si aplicamos la transformación obtenemos un fichero HTML que en el navegador se ve de la siguiente manera:</p><p><img data-src="/assets/img/xslt/resultadoHtml.png" alt="Fichero HTML resultado abierto en un navegador" data-proofer-ignore> <em>Fichero HTML resultado abierto en un navegador</em></p><h2 class="section" id="ejemplo-2">Ejemplo 2</h2><p>Tenemos un XML que queremos transformar:</p><div file="entrada.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
+<span class="cp">&lt;?xml-stylesheet type="text/xsl" href="raquetas.xsl"?&gt;</span>
+<span class="nt">&lt;tienda&gt;</span>
+   <span class="nt">&lt;raqueta&gt;</span>
+       <span class="nt">&lt;marca&gt;</span>BABOLAT<span class="nt">&lt;/marca&gt;</span>
+       <span class="nt">&lt;modelo&gt;</span>PURE DRIVE<span class="nt">&lt;/modelo&gt;</span>
+       <span class="nt">&lt;anyo&gt;</span>2012<span class="nt">&lt;/anyo&gt;</span>
+   <span class="nt">&lt;/raqueta&gt;</span>
+   <span class="nt">&lt;raqueta&gt;</span>
+       <span class="nt">&lt;marca&gt;</span>YONEK<span class="nt">&lt;/marca&gt;</span>
+       <span class="nt">&lt;modelo&gt;</span>MPTOUR 5<span class="nt">&lt;/modelo&gt;</span>
+       <span class="nt">&lt;anyo&gt;</span>1997<span class="nt">&lt;/anyo&gt;</span>
+   <span class="nt">&lt;/raqueta&gt;</span>
+   <span class="nt">&lt;raqueta&gt;</span>
+       <span class="nt">&lt;marca&gt;</span>WILSON<span class="nt">&lt;/marca&gt;</span>
+       <span class="nt">&lt;modelo&gt;</span>HAMMER<span class="nt">&lt;/modelo&gt;</span>
+       <span class="nt">&lt;anyo&gt;</span>2000<span class="nt">&lt;/anyo&gt;</span>
+   <span class="nt">&lt;/raqueta&gt;</span>
+<span class="nt">&lt;/tienda&gt;</span>
+</pre></table></code></div></div><div file="transformacion.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="transformacion.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">version=</span><span class="s">"1.0"</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;html&gt;</span>
+           <span class="nt">&lt;h3&gt;</span>COLECCIÓN DE RAQUETAS<span class="nt">&lt;/h3&gt;</span>
+           <span class="nt">&lt;table</span> <span class="na">border=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+               <span class="nt">&lt;tr</span> <span class="na">bgcolor=</span><span class="s">"#ccffff"</span><span class="nt">&gt;</span>
+                   <span class="nt">&lt;th</span> <span class="na">style=</span><span class="s">"text-align:left"</span><span class="nt">&gt;</span>MARCA<span class="nt">&lt;/th&gt;</span>
+                   <span class="nt">&lt;th</span> <span class="na">style=</span><span class="s">"text-align:left"</span><span class="nt">&gt;</span>MODELO<span class="nt">&lt;/th&gt;</span>
+                   <span class="nt">&lt;th</span> <span class="na">style=</span><span class="s">"text-align:left"</span><span class="nt">&gt;</span>AÑO<span class="nt">&lt;/th&gt;</span>
+               <span class="nt">&lt;/tr&gt;</span>
+               <span class="nt">&lt;xsl:for-each</span> <span class="na">select=</span><span class="s">"tienda/raqueta"</span><span class="nt">&gt;</span>
+                   <span class="nt">&lt;tr&gt;</span>
+                       <span class="nt">&lt;td&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"marca"</span><span class="nt">/&gt;&lt;/td&gt;</span>
+                       <span class="nt">&lt;td&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"modelo"</span><span class="nt">/&gt;&lt;/td&gt;</span>
+                       <span class="nt">&lt;td&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"anyo"</span><span class="nt">/&gt;&lt;/td&gt;</span>
+                   <span class="nt">&lt;/tr&gt;</span>
+               <span class="nt">&lt;/xsl:for-each&gt;</span>
+           <span class="nt">&lt;/table&gt;</span>
+       <span class="nt">&lt;/html&gt;</span>
+   <span class="nt">&lt;/xsl:template&gt;</span>
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.html" class="language-html highlighter-rouge"><div class="code-header"> <span data-label-text="salida.html"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre><td class="rouge-code"><pre><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;h3&gt;</span>COLECCIÓN DE RAQUETAS<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;table</span> <span class="na">border=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;tr</span> <span class="na">bgcolor=</span><span class="s">"#ccffff"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;th</span> <span class="na">style=</span><span class="s">"text-align:left"</span><span class="nt">&gt;</span>MARCA<span class="nt">&lt;/th&gt;</span>
+       <span class="nt">&lt;th</span> <span class="na">style=</span><span class="s">"text-align:left"</span><span class="nt">&gt;</span>MODELO<span class="nt">&lt;/th&gt;</span>
+       <span class="nt">&lt;th</span> <span class="na">style=</span><span class="s">"text-align:left"</span><span class="nt">&gt;</span>AÑO<span class="nt">&lt;/th&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+       <span class="nt">&lt;td&gt;</span>BABOLAT<span class="nt">&lt;/td&gt;</span>
+       <span class="nt">&lt;td&gt;</span>PURE DRIVE<span class="nt">&lt;/td&gt;</span>
+       <span class="nt">&lt;td&gt;</span>2012<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+       <span class="nt">&lt;td&gt;</span>YONEK<span class="nt">&lt;/td&gt;</span>
+       <span class="nt">&lt;td&gt;</span>MPTOUR 5<span class="nt">&lt;/td&gt;</span>
+       <span class="nt">&lt;td&gt;</span>1997<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+       <span class="nt">&lt;td&gt;</span>WILSON<span class="nt">&lt;/td&gt;</span>
+       <span class="nt">&lt;td&gt;</span>HAMMER<span class="nt">&lt;/td&gt;</span>
+       <span class="nt">&lt;td&gt;</span>2000<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></table></code></div></div><p><img data-src="/assets/img/xslt/resultado2Html.png" alt="Fichero HTML resultado abierto en un navegador" data-proofer-ignore> <em>Fichero HTML resultado abierto en un navegador</em></p><p class="question">¿Qué tendría que hacer para arreglar el problema de la codificación del fichero HTML de la imagen anterior?</p><h2 class="section" id="elementos-avanzados-de-xslt">Elementos avanzados de XSLT</h2><ul><li><code class="language-plaintext highlighter-rouge">xsl:preserve-space</code>: Con este elemento puede especificarse qué elementos deben conservar los espacios en blanco.<li><code class="language-plaintext highlighter-rouge">xsl:strip-space</code>: Elimina espacios en blanco en el documento de origen. Con el atributo obligatorio elements se seleccionan los elementos, en los cuales se eliminarán los espacios en blanco.<li><code class="language-plaintext highlighter-rouge">xsl:import</code>: Incluye una hoja de estilo XSLT externa en el documento de salida.<li><code class="language-plaintext highlighter-rouge">xsl:apply-imports</code>: El elemento <code class="language-plaintext highlighter-rouge">xsl:apply-imports</code> permite buscar la plantilla adecuada para el nodo de contexto. Para ello se tienen en cuenta los nodos de contexto importados a través de <code class="language-plaintext highlighter-rouge">xsl:import</code>.<li><code class="language-plaintext highlighter-rouge">xsl:include</code>: Incluye una hoja de estilo XSLT externa en el documento de salida.<li><code class="language-plaintext highlighter-rouge">xsl:variable</code>: Mediante este elemento podemos definir variables. Cuando se usa como elemento de alto nivel se definen variables globales, que son válidas en toda la hoja de estilo. De no ser así, las variables tendrán validez local.<li><code class="language-plaintext highlighter-rouge">xsl:with-param</code>: Se define el valor de un parámetro que se pasará a una plantilla.<li><code class="language-plaintext highlighter-rouge">xsl:param</code>: Con este elemento se declaran parámetros.<li><code class="language-plaintext highlighter-rouge">xsl:number</code>: Este elemento asigna un valor numérico a la posición de un elemento en el documento de salida y sirve por lo tanto para la numeración.<li><code class="language-plaintext highlighter-rouge">xsl:decimal-format</code>: Define el formato de salida para los números decimales.<li><code class="language-plaintext highlighter-rouge">xsl:namespace-alias</code>: Se usa para sustituir un espacio de nombres en la hoja de estilos por otro espacio de nombres en el documento de salida.<li><code class="language-plaintext highlighter-rouge">xsl:attribute-set</code>: Con este elemento se definen conjuntos de atributos (<code class="language-plaintext highlighter-rouge">xsl:attribute</code>).<li><code class="language-plaintext highlighter-rouge">xsl:fallback</code>: Define un fragmento de código a ejecutar en caso de que una nueva versión de XSLT o extensión no sea reconocida.<li><code class="language-plaintext highlighter-rouge">xsl:message</code>: Se emplea para mostrar un mensaje durante el proceso de transformación en el procesador XSLT.<li><code class="language-plaintext highlighter-rouge">xsl:key</code>: Declara una clave para la búsqueda de nodos.</ul><h2 class="section" id="prioridades-y-resolución-de-conflictos">Prioridades y resolución de conflictos</h2><p>Si aplicamos varias plantillas a la vez, cada regla tiene una prioridad que puede ir de -9 a 9. Por defecto se aplican las siguientes prioridades:</p><div class="table-wrapper"><table><thead><tr><th>Patrón<th>Prioridad<tbody><tr><td><code class="language-plaintext highlighter-rouge">*</code>, <code class="language-plaintext highlighter-rouge">@*</code>, <code class="language-plaintext highlighter-rouge">text()</code> y otros patrones para los que no se indica un nombre concreto.<td>-0.5<tr><td><code class="language-plaintext highlighter-rouge">Prefijo:*</code>, <code class="language-plaintext highlighter-rouge">@prefijo:</code> y otros patrones para los que se indica el espacio de nombres, pero no el nombre concreto.<td>-0.25<tr><td><code class="language-plaintext highlighter-rouge">producto</code>, <code class="language-plaintext highlighter-rouge">@unidades</code> y otros patrones donde se indiquen los nombres de los elementos y atributos concretos.<td>0<tr><td><code class="language-plaintext highlighter-rouge">proveedor/representante</code>, <code class="language-plaintext highlighter-rouge">/productos/producto/precio</code>, <code class="language-plaintext highlighter-rouge">precio/@unidades</code> y otros patrones para los que se indique una jerarquía (además del nombre del elemento y/o atributo)<td>0.5</table></div><p>Se puede asignar prioridades de manera explícita mediante el atributo priority. Por ejemplo:</p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">version=</span><span class="s">"1.0"</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span> <span class="na">priority=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+     ...
+   <span class="nt">&lt;/xsl:template&gt;</span>
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><p class="question">¿Qué ocurrirá si a una plantilla se le asigna una prioridad mayor que 0.5?</p><h2 class="section" id="más-ejemplos-de-plantillas-xslt">Más ejemplos de plantillas XSLT</h2><p>Vamos a ver ejemplos de plantillas trabajando sobre el documento siguiente:</p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;biblioteca&gt;</span>
+  <span class="nt">&lt;libro&gt;</span>
+    <span class="nt">&lt;titulo&gt;</span>La vida está en otra parte<span class="nt">&lt;/titulo&gt;</span>
+    <span class="nt">&lt;autor&gt;</span>Milan Kundera<span class="nt">&lt;/autor&gt;</span>
+    <span class="nt">&lt;fechaPublicacion</span> <span class="na">año=</span><span class="s">"1973"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/libro&gt;</span>
+  <span class="nt">&lt;libro&gt;</span>
+    <span class="nt">&lt;titulo&gt;</span>Pantaleón y las visitadoras<span class="nt">&lt;/titulo&gt;</span>
+    <span class="nt">&lt;autor</span> <span class="na">fechaNacimiento=</span><span class="s">"28/03/1936"</span><span class="nt">&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/autor&gt;</span>
+    <span class="nt">&lt;fechaPublicacion</span> <span class="na">año=</span><span class="s">"1973"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/libro&gt;</span>
+  <span class="nt">&lt;libro&gt;</span>
+    <span class="nt">&lt;titulo&gt;</span>Conversación en la catedral<span class="nt">&lt;/titulo&gt;</span>
+    <span class="nt">&lt;autor</span> <span class="na">fechaNacimiento=</span><span class="s">"28/03/1936"</span><span class="nt">&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/autor&gt;</span>
+    <span class="nt">&lt;fechaPublicacion</span> <span class="na">año=</span><span class="s">"1969"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/libro&gt;</span>
+<span class="nt">&lt;/biblioteca&gt;</span>
+</pre></table></code></div></div><p>Si los ejemplos de este artículo se abren en el navegador, el resultado no coincide en casi todos los casos con el que se muestra en esta página ya que los navegadores no respetan los saltos de línea ni los espacios en blanco, ni muestran las etiquetas.</p><h3 class="subsection" id="plantillas-vacías-o-no-existentes">Plantillas vacías o no existentes</h3><p>Si no hay plantillas, el procesador simplemente recorre todos los nodos y extrae el texto contenido por cada nodo. En el ejemplo siguiente, el resultado incluye el contenido de los nodos <code class="language-plaintext highlighter-rouge">&lt;título&gt;</code> y <code class="language-plaintext highlighter-rouge">&lt;autor&gt;</code> puesto que no hay ninguna plantilla.</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+
+    La vida está en otra parte
+    Milan Kundera
+
+    Pantaleón y las visitadoras
+    Mario Vargas Llosa
+
+    Conversación en la catedral
+    Mario Vargas Llosa
+</pre></table></code></div></div><p>Si hay una plantilla vacía, el procesador no genera ningún resultado en el documento final ni recorre los nodos hijos. En el ejemplo siguiente, el resultado incluye el contenido de los nodos <code class="language-plaintext highlighter-rouge">&lt;titulo&gt;</code>, ya que no hay regla para ellos, pero los de <code class="language-plaintext highlighter-rouge">&lt;autor&gt;</code> se pierden porque la plantilla es vacía.</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"autor"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+
+    La vida está en otra parte
+
+    Pantaleón y las visitadoras
+
+    Conversación en la catedral
+</pre></table></code></div></div><p>En el caso más extremo, si la plantilla vacía se aplica al nodo raíz, el procesador no genera ningún resultado en el documento final ni recorre ningún nodo hijo.</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+</pre></table></code></div></div><h3 class="subsection" id="la-instrucción-xslvalue-of">La instrucción xsl:value-of</h3><p>La instrucción <code class="language-plaintext highlighter-rouge">xsl:value-of</code> extrae el contenido del nodo seleccionado.</p><p>En el ejemplo siguiente, el documento final contiene los autores de los libros porque la plantilla los genera con la instrucción <code class="language-plaintext highlighter-rouge">xsl:value-of</code>. Como se ha aplicado una plantilla al nodo <code class="language-plaintext highlighter-rouge">&lt;libro&gt;</code>, sus hijos (<code class="language-plaintext highlighter-rouge">&lt;titulo&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;autor&gt;</code> y <code class="language-plaintext highlighter-rouge">&lt;fechaPublicacion&gt;</code>) no se recorren. Por eso, los títulos de los libros no aparecen en el documento final.</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"libro"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"autor"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+
+  Milan Kundera
+  Mario Vargas Llosa
+  Mario Vargas Llosa
+</pre></table></code></div></div><p>En el ejemplo siguiente, se obtienen el titulo y el autor de los libros, pero uno a continuación de otro. Los saltos de línea se crean tras cada aplicación de la regla (es decir, a cada libro), pero no en el interior de la regla.</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"libro"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"titulo"</span><span class="nt">/&gt;</span>
+     <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"autor"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+
+  La vida está en otra parteMilan Kundera
+  Pantaleón y las visitadorasMario Vargas Llosa
+  Conversación en la catedralMario Vargas Llosa
+</pre></table></code></div></div><p>En el ejemplo siguiente, los autores se obtienen gracias a la regla que extrae el contenido del nodo (el carácter punto “.” hace referencia al propio elemento) y los títulos se obtienen porque al no haber reglas para ese nodo se extrae el contenido. El resultado es el mismo que el del ejemplo 1-1, pero por motivos distintos.</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"autor"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"."</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+
+    La vida está en otra parte
+    Milan Kundera
+
+    Pantaleón y las visitadoras
+    Mario Vargas Llosa
+
+    Conversación en la catedral
+    Mario Vargas Llosa
+</pre></table></code></div></div><p>También se pueden extraer los valores de los atributos, utilizando <code class="language-plaintext highlighter-rouge">@</code>.</p><p>En el ejemplo siguiente, las fechas de publicación se obtienen gracias a la regla que extraen el valor del atributo y los títulos y autores se obtienen porque al no haber reglas para ese nodo se extrae el contenido.</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"fechaPublicacion"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"@año"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+
+    La vida está en otra parte
+    Milan Kundera
+    1973
+
+    Pantaleón y las visitadoras
+    Mario Vargas Llosa
+    1973
+
+    Conversación en la catedral
+    Mario Vargas Llosa
+    1969
+</pre></table></code></div></div><h3 class="subsection" id="generar-texto-adicional">Generar texto adicional</h3><p>Se puede generar texto escribiéndolo en la regla, por ejemplo, código html.</p><p>En el ejemplo siguiente se obtienen los nombres de los autores porque la regla selecciona el nodo <code class="language-plaintext highlighter-rouge">&lt;libro&gt;</code> como en el ejemplo, pero además generamos las etiquetas <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>. El resultado sigue sin verse bien en el navegador, porque aunque hay etiquetas <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>, falta la etiqueta global <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code>.</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"libro"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;p&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"autor"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Milan Kundera<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/p&gt;</span>
+</pre></table></code></div></div><p>Dentro de la regla podemos hacer referencia a varios subnodos.</p><p>En el ejemplo siguiente se obtienen los nombres de los autores y los títulos de los libros porque la regla selecciona el nodo <code class="language-plaintext highlighter-rouge">&lt;libro&gt;</code> como en el ejemplo, pero además generamos las etiquetas <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>. El resultado sigue sin verse bien en el navegador, porque aunque hay etiquetas <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>, falta la etiqueta global <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code>.</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"libro"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;p&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"autor"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+     <span class="nt">&lt;p&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"titulo"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Milan Kundera<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>La vida está en otra parte<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Pantaleón y las visitadoras<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>Conversación en la catedral<span class="nt">&lt;/p&gt;</span>
+</pre></table></code></div></div><p>Los siguientes ejemplos intentan conseguir el mismo resultado que el ejemplo anterior , pero utilizando dos reglas, y no lo consiguen:</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"libro"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;p&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"autor"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+ <span class="nt">&lt;/xsl:template&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"libro"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;p&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"titulo"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>La vida está en otra parte<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Pantaleón y las visitadoras<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Conversación en la catedral<span class="nt">&lt;/p&gt;</span>
+</pre></table></code></div></div><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"libro"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;p&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"titulo"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"libro"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;p&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"autor"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+ <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Milan Kundera<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/p&gt;</span>
+</pre></table></code></div></div><p>¿Por qué en un caso se obtienen sólo los títulos y en el otro sólo los autores? Porque el procesador XSLT sólo aplica una regla a cada nodo. Si tenemos dos reglas para el mismo nodo, el procesador sólo aplica una de ellas (la última, en este caso).</p><p>Además de generar etiquetas, se puede generar texto.</p><p>En el ejemplo siguiente se generan frases a partir del contenido de los nodos.</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"libro"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"autor"</span><span class="nt">/&gt;</span> escribió "<span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"titulo"</span><span class="nt">/&gt;</span>"<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Milan Kundera escribió "La vida está en otra parte"<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Mario Vargas Llosa escribió "Pantaleón y las visitadoras"<span class="nt">&lt;/p&gt;</span>
+
+<span class="nt">&lt;p&gt;</span>Mario Vargas Llosa escribió "Conversación en la catedral"<span class="nt">&lt;/p&gt;</span>
+</pre></table></code></div></div><h3 class="subsection" id="aplicar-reglas-a-subnodos-la-instrucción-xslapply-templates">Aplicar reglas a subnodos: la instrucción xsl:apply-templates</h3><p>La instrucción <code class="language-plaintext highlighter-rouge">xsl:apply-templates</code> hace que se apliquen a los subelementos las reglas que les sean aplicables.</p><p>En el ejemplo siguiente, se genera la etiqueta <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> además de unos párrafos con los nombres de los autores. Este ejemplo sí que se puede ver en el navegador ya que se interpreta como html.</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;html&gt;</span>
+      <span class="nt">&lt;h1&gt;</span>Autores<span class="nt">&lt;/h1&gt;</span>
+      <span class="nt">&lt;xsl:apply-templates</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/html&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"libro"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;p&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"autor"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;html&gt;&lt;h1&gt;</span>Autores<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Milan Kundera<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></table></code></div></div><p>La primera regla sustituye el elemento raíz (y todos sus subelementos) por las etiquetas <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> y <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code>, pero además aplica a los subelementos las reglas que les son aplicables. En este caso, sólo hay una regla para los elementos <code class="language-plaintext highlighter-rouge">&lt;libro&gt;</code> que generan los párrafos.</p><h3 class="subsection" id="saltos-de-línea-y-espacios-en-blanco-las-instrucciones-xsltext-y-xslstrip-space">Saltos de línea y espacios en blanco: las instrucciones xsl:text y xsl:strip-space</h3><p>Al transformar un documento, los procesadores XSLT incorporan saltos de línea y espacios en blanco en el resultado, pero no lo hacen de forma uniforme. Por ejemplo, XML Copy Editor y Notepad++ (con el plug-in XML Tools) producen diferentes resultados.</p><p>No parece haber una solución sencilla que funcione en todos los procesadores, pero sí soluciones que funcionen en cada uno de ellos.</p><h3 class="subsection" id="la-instrucción-xslstrip-space">La instrucción xsl:strip-space</h3><p>En el caso de XML Copy Editor, la forma más sencilla de mejorar el formato de presentación de los resultados, eliminando líneas en blanco innecesarias y sangrando los elementos anidados, es utilizar la instrucción <code class="language-plaintext highlighter-rouge">xsl:strip-space</code>. Pero debe tenerse en cuenta que esta instrucción no produce el mismo resultado en otros procesadores XSLT (como en Notepad++ con XML Tools).</p><p>La instrucción <code class="language-plaintext highlighter-rouge">xsl:strip-space</code> permite indicar si los elementos que contienen únicamente espacios en blanco se incluyen en la transformación o no.</p><p>En el ejemplo anterior (del apartado sobre la instrucción <code class="language-plaintext highlighter-rouge">xsl:apply-templates</code>) la etiqueta <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> se generaba en la misma línea que la etiqueta <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code>, pero en el ejemplo siguiente se generan en líneas distintas (y las etiquetas se muestran sangradas) al utilizar la instrucción <code class="language-plaintext highlighter-rouge">xsl:strip-space</code>:</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;xsl:strip-space</span> <span class="na">elements=</span><span class="s">"*"</span> <span class="nt">/&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;html&gt;</span>
+      <span class="nt">&lt;h1&gt;</span>Autores<span class="nt">&lt;/h1&gt;</span>
+      <span class="nt">&lt;xsl:apply-templates</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/html&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"libro"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;p&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"autor"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Autores<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Milan Kundera<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></table></code></div></div><h3 class="subsection" id="la-instrucción-xsltext">La instrucción xsl:text</h3><p>En el caso de Notepad++ con XML Tools, se puede mejorar el formato de presentación de los resultados, insertando líneas en blanco innecesarias y sangrando los elementos anidados, utilizando la instrucción <code class="language-plaintext highlighter-rouge">xsl:text</code>. Pero debe tenerse en cuenta que esta instrucción no permite eliminar líneas en blanco que se producen en otros procesadores (como en XML Copy Editor).</p><p>La instrucción <code class="language-plaintext highlighter-rouge">xsl:text</code> permite generar texto que no se puede generar simplemente añadiéndolo (saltos de líneas y espacios en blanco, por ejemplo).</p><p>En el ejemplo anterior (del apartado sobre la instrucción <code class="language-plaintext highlighter-rouge">xsl:apply-templates</code>) la etiqueta <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> se generaba en la misma línea que la etiqueta <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code>, pero en el ejemplo siguiente se generan en líneas distintas al añadir un salto de línea con la entidad de carácter <code class="language-plaintext highlighter-rouge">&amp;#10;</code> (y un par de espacios para alinear la etiqueta <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> con las etiquetas <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code>):</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;html&gt;</span>
+      <span class="nt">&lt;xsl:text&gt;</span><span class="ni">&amp;#10;</span>  <span class="nt">&lt;/xsl:text&gt;</span>
+      <span class="nt">&lt;h1&gt;</span>Autores<span class="nt">&lt;/h1&gt;</span>
+      <span class="nt">&lt;xsl:apply-templates</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/html&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"libro"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;p&gt;&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"autor"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Autores<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Milan Kundera<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Mario Vargas Llosa<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></table></code></div></div><h3 class="subsection" id="la-instrucción-xslattribute">La instrucción xsl:attribute</h3><p>La instrucción <code class="language-plaintext highlighter-rouge">xsl:attribute</code> permite generar un atributo y su valor. Se utiliza cuando el valor del atributo se obtiene a su vez de algún nodo.</p><p>Por ejemplo, a partir del siguiente documento XML, se quiere generar la etiqueta <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code>. en la que el valor del atributo src sea el contenido de la etiqueta <code class="language-plaintext highlighter-rouge">&lt;imagen&gt;</code>.</p><div class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="XML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;licencias&gt;</span>
+  <span class="nt">&lt;licencia&gt;</span>
+    <span class="nt">&lt;nombre&gt;</span>Creative Commons By - Share Alike<span class="nt">&lt;/nombre&gt;</span>
+    <span class="nt">&lt;imagen&gt;</span>cc-bysa-88x31.png<span class="nt">&lt;/imagen&gt;</span>
+  <span class="nt">&lt;/licencia&gt;</span>
+<span class="nt">&lt;/licencias&gt;</span>
+</pre></table></code></div></div><p>No se puede utilizar la instrucción <code class="language-plaintext highlighter-rouge">xsl:value-of</code> como en el ejemplo incorrecto siguiente:</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"licencia"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;img</span> <span class="na">src=</span><span class="s">"&lt;xsl:value-of select="</span><span class="err">imagen"</span> <span class="nt">/&gt;</span>" /&gt;<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>Error at line 5, column 19: not well-formed (invalid  token)
+</pre></table></code></div></div><p>En este caso el problema no es debido a la utilización de comillas dobles (también daría error si se hubieran utilizado comillas simples o entidades), sino que es necesario utilizar la instrucción <code class="language-plaintext highlighter-rouge">xsl:attribute</code>.</p><p>Para generar un atributo en una etiqueta, es necesario utilizar la instrucción <code class="language-plaintext highlighter-rouge">xsl:attribute</code>, como en el ejemplo siguiente:</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"licencia"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;img&gt;</span>
+    <span class="nt">&lt;xsl:attribute</span> <span class="na">name=</span><span class="s">"src"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"imagen"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/xsl:attribute&gt;</span>
+    <span class="nt">&lt;/img&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;p&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"cc-bysa-88x31.png"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/p&gt;</span>
+</pre></table></code></div></div><p>En la hoja de estilo XSLT, la etiqueta <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> se escribe con apertura y cierre, aunque en el resultado aparece como etiqueta monoatómica.</p><p>De todas formas, el navegador no mostraría todavía la imagen, puesto que no interpreta la etiqueta <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> como la etiqueta de imagen del html.</p><p>Como en ejemplos anteriores, para que la imagen se muestre en el navegador sería necesario generar también la etiqueta <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code>:</p><div file="entrada.xsl" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="entrada.xsl"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">xmlns:xsl=</span><span class="s">"http://www.w3.org/1999/XSL/Transform"</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;html&gt;</span>
+     <span class="nt">&lt;xsl:apply-templates</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/html&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+  <span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">"licencia"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;img&gt;</span>
+    <span class="nt">&lt;xsl:attribute</span> <span class="na">name=</span><span class="s">"src"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">"imagen"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/xsl:attribute&gt;</span>
+    <span class="nt">&lt;/img&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></table></code></div></div><div file="salida.xml" class="language-xml highlighter-rouge"><div class="code-header"> <span data-label-text="salida.xml"><i class="far fa-file-code"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;p&gt;&lt;img</span> <span class="na">src=</span><span class="s">"cc-bysa-88x31.png"</span><span class="nt">/&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></table></code></div></div><h2 id="bibliografía"><span class="mr-2">Bibliografía</span><a href="#bibliografía" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></h2><ul><li><a href="https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms256069(v=vs.100)?redirectedfrom=MSDN">https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms256069(v=vs.100)?redirectedfrom=MSDN</a><li><a href="https://programminghistorian.org/es/lecciones/transformacion-datos-xml-xsl">https://programminghistorian.org/es/lecciones/transformacion-datos-xml-xsl</a><li><a href="https://www.mclibre.org/consultar/xml/lecciones/xml-xslt.html">https://www.mclibre.org/consultar/xml/lecciones/xml-xslt.html</a><li><a href="https://www.data2type.de/es/xml-xslt-xslfo/xslt/referencia-xslt1#xsl%3Atemplate">https://www.data2type.de/es/xml-xslt-xslfo/xslt/referencia-xslt1#xsl%3Atemplate</a><li><a href="https://www.w3schools.com/xml/xsl_intro.asp">https://www.w3schools.com/xml/xsl_intro.asp</a><li><a href="https://www.w3schools.com/xml/xml_xslt.asp">https://www.w3schools.com/xml/xml_xslt.asp</a><li><a href="https://www.mclibre.org/consultar/xml/otros/xmlcopyeditor.html">https://www.mclibre.org/consultar/xml/otros/xmlcopyeditor.html</a></ul></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/desarrollo-de-aplicaciones-multiplataforma/'>Desarrollo de Aplicaciones Multiplataforma</a>, <a href='/categories/lenguajes-de-marcas-y-sistemas-de-gesti%C3%B3n-de-informaci%C3%B3n/'>Lenguajes de Marcas y Sistemas de Gestión de Información</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/desarrollo-de-aplicaciones-multiplataforma/" class="post-tag no-text-decoration" >desarrollo de aplicaciones multiplataforma</a> <a href="/tags/lenguajes-de-marcas-y-sistemas-de-gesti%C3%B3n-de-informaci%C3%B3n/" class="post-tag no-text-decoration" >lenguajes de marcas y sistemas de gestión de información</a> <a href="/tags/administraci%C3%B3n-de-sistemas-inform%C3%A1ticos-de-red/" class="post-tag no-text-decoration" >administración de sistemas informáticos de red</a> <a href="/tags/desarrollo-de-aplicaciones-web/" class="post-tag no-text-decoration" >desarrollo de aplicaciones web</a> <a href="/tags/dam/" class="post-tag no-text-decoration" >dam</a> <a href="/tags/daw/" class="post-tag no-text-decoration" >daw</a> <a href="/tags/asir/" class="post-tag no-text-decoration" >asir</a> <a href="/tags/lmsgi/" class="post-tag no-text-decoration" >lmsgi</a> <a href="/tags/xml/" class="post-tag no-text-decoration" >xml</a> <a href="/tags/teor%C3%ADa/" class="post-tag no-text-decoration" >teoría</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> Este artículo está licenciado bajo <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> por el autor.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Compartir</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=¿Qué es XSLT? - Marcos Ruiz&amp;url=https://marcosruiz.github.io/posts/xslt/" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=¿Qué es XSLT? - Marcos Ruiz&amp;u=https://marcosruiz.github.io/posts/xslt/" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://t.me/share/url?url=https://marcosruiz.github.io/posts/xslt/&amp;text=¿Qué es XSLT? - Marcos Ruiz" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copiar link" data-title-succeed="Link copiado satisfactoriamente!"> </i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted"><div class="access"><div id="access-lastmod" class="post"><div class="panel-heading">Recientemente actualizado</div><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/tutorial-moodle-docker/">Tutorial: Instalar Moodle con Docker</a><li><a href="/posts/tutorial-nextcloud/">Tutorial: Monta tu propio Google Drive con NextCloud</a><li><a href="/posts/guias-estilo/">Guías de estilo</a><li><a href="/posts/callbacks-javascript/">Callbacks en JavaScript</a><li><a href="/posts/propagacion-eventos-javascript/">Propagación de eventos en JavaScript</a></ul></div><div id="access-tags"><div class="panel-heading">Etiquetas populares</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/smr/">smr</a> <a class="post-tag" href="/tags/daw/">daw</a> <a class="post-tag" href="/tags/desarrollo-de-aplicaciones-web/">desarrollo de aplicaciones web</a> <a class="post-tag" href="/tags/teor%C3%ADa/">teoría</a> <a class="post-tag" href="/tags/ciclo-superior/">ciclo superior</a> <a class="post-tag" href="/tags/fp/">fp</a> <a class="post-tag" href="/tags/modulo/">modulo</a> <a class="post-tag" href="/tags/pr%C3%A1ctica/">práctica</a> <a class="post-tag" href="/tags/formaci%C3%B3n-profesional/">formación profesional</a> <a class="post-tag" href="/tags/seguridad-inform%C3%A1tica/">seguridad informática</a></div></div></div><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"><div class="panel-heading pl-3 pt-2 mb-2">Índice</div><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="tail-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Otros artículos</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/practica-html-freecodecamp/"><div class="card-body"> <em class="timeago small" data-ts="1665043200" > 2022-10-06 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Tarea: HTML en freeCodeCamp</h3><div class="text-muted small"><p> Objetivo y duración El objetivo de esta práctica es aprender a escribir HTML de forma correcta para el desempeño correcto del dichos documentos. Duración: 4 h Entrega y presentación La entrega ...</p></div></div></a></div><div class="card"> <a href="/posts/lenguajes-marcas-sistemas-gestion-informacion-23-24/"><div class="card-body"> <em class="timeago small" data-ts="1694073600" > 2023-09-07 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Lenguajes de Marcas y Sistemas de Gestión de Información 23 24</h3><div class="text-muted small"><p> Evaluación 1 UD01 - Reconocimiento de las características de lenguajes de marcas Representación de la información Introducción a los lenguajes de marcas XML UD0...</p></div></div></a></div><div class="card"> <a href="/posts/markdown/"><div class="card-body"> <em class="timeago small" data-ts="1708675200" > 2024-02-23 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>¿Qué es Markdown?</h3><div class="text-muted small"><p> Introducción Markdown es un lenguaje de marcado ligero que se utiliza comúnmente para formatear texto de manera sencilla y legible en plataformas web, como foros, blogs y sitios web estáticos. Fue...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/tarea-matriz-confusion-big-ml/" class="btn btn-outline-primary" prompt="Más viejo"><p>Tarea: Matriz de confusión en BigML</p></a> <a href="/posts/xslfo/" class="btn btn-outline-primary" prompt="Más nuevo"><p>¿Qué es XSL-FO?</p></a></div><script type="text/javascript"> $(function () { const origin = "https://giscus.app"; const iframe = "iframe.giscus-frame"; const lightTheme = "light"; const darkTheme = "dark_dimmed"; let initTheme = lightTheme; if ($("html[data-mode=dark]").length > 0 || ($("html[data-mode]").length == 0 && window.matchMedia("(prefers-color-scheme: dark)").matches)) { initTheme = darkTheme; } let giscusAttributes = { "src": "https://giscus.app/client.js", "data-repo": "marcosruiz/marcosruiz.github.io", "data-repo-id": "R_kgDOGm1dzA", "data-category": "General", "data-category-id": "DIC_kwDOGm1dzM4CAjhb", "data-mapping": "pathname", "data-reactions-enabled": "1", "data-emit-metadata": "0", "data-theme": initTheme, "data-input-position": "bottom", "data-lang": "es", "crossorigin": "anonymous", "async": "" }; let giscusScript = document.createElement("script"); Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value)); document.getElementById("tail-wrapper").appendChild(giscusScript); addEventListener("message", (event) => { if (event.source === window && event.data && event.data.direction === ModeToggle.ID) { /* global theme mode changed */ const mode = event.data.message; const theme = (mode === ModeToggle.DARK_MODE ? darkTheme : lightTheme); const message = { setConfig: { theme: theme } }; const giscus = document.querySelector(iframe).contentWindow; giscus.postMessage({ giscus: message }, origin); } }); }); </script></div></div></div><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center text-muted"><div class="footer-left"><p class="mb-0"> © 2025 <a href="https://github.com/marcosruiz">Marcos Ruiz</a>. <span data-toggle="tooltip" data-placement="top" title="Excepto donde si indique lo contrario, los artículos de este blog están licenciados bajo Creative Commons Attribution 4.0 International (CC BY 4.0) Licenciado por el autor.">Algunos derechos reservados.</span></p></div><div class="footer-right"><p class="mb-0"> Desarrollado por <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> con el tema <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> .</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><div id="access-tags"><div class="panel-heading">Etiquetas populares</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/smr/">smr</a> <a class="post-tag" href="/tags/daw/">daw</a> <a class="post-tag" href="/tags/desarrollo-de-aplicaciones-web/">desarrollo de aplicaciones web</a> <a class="post-tag" href="/tags/teor%C3%ADa/">teoría</a> <a class="post-tag" href="/tags/ciclo-superior/">ciclo superior</a> <a class="post-tag" href="/tags/fp/">fp</a> <a class="post-tag" href="/tags/modulo/">modulo</a> <a class="post-tag" href="/tags/pr%C3%A1ctica/">práctica</a> <a class="post-tag" href="/tags/formaci%C3%B3n-profesional/">formación profesional</a> <a class="post-tag" href="/tags/seguridad-inform%C3%A1tica/">seguridad informática</a></div></div></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! Resultado no encontrado.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/es.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script> <script defer src="/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id=G-GS5HW4NZ8V"></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-GS5HW4NZ8V'); }); </script>

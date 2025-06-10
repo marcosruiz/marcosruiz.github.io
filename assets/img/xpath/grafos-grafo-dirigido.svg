@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="286.8" height="147.2" viewBox="0 0 75.889333 38.952815">
+  <defs>
+    <marker id="a" orient="auto" overflow="visible">
+      <path fill-rule="evenodd" stroke-width=".6" d="M-5.2-2.4L1.3 0l-6.5 2.4c1-1.4 1-3.4 0-4.8z" font-size="12" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <g transform="translate(153.044 -103.62)">
+    <path fill="none" d="M-96.7 105v36h-54.5v-36" font-family="Times-Roman"/>
+    <text x="-152" y="125.8" stroke-width=".3" style="line-height:0%" font-size="4.2" font-family="sans-serif" letter-spacing="0" word-spacing="0">
+      <tspan x="-152" y="125.8" style="line-height:1.25" font-size="4.9">Grafo dirigido</tspan>
+    </text>
+    <circle cx="-83.5" cy="121.3" r="4.8" fill="#fff" stroke="#000" stroke-width=".5" font-family="Times-Roman"/>
+    <circle cx="-93.6" cy="131.8" r="4.8" fill="#fff" stroke="#000" stroke-width=".5" font-family="Times-Roman"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-87 124.7l-2.7 3" font-family="Times-Roman" marker-end="url(#a)"/>
+    <circle cx="-109.4" cy="134.2" r="4.8" fill="#fff" stroke="#000" stroke-width=".5" font-family="Times-Roman"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-98.4 132.6l-5.5.7" font-family="Times-Roman" marker-end="url(#a)"/>
+    <circle cx="-97.1" cy="116.3" r="4.8" fill="#fff" stroke="#000" stroke-width=".5" font-family="Times-Roman"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-94.6 127c-.3-1.5-1-3.4-1.2-5" font-family="Times-Roman" marker-end="url(#a)"/>
+    <circle cx="-112.8" cy="118.7" r="4.8" fill="#fff" stroke="#000" stroke-width=".5" font-family="Times-Roman"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-110.3 129.4l-1.3-5.2" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-108 118l5.4-.8" font-family="Times-Roman" marker-end="url(#a)"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-87.8 119.6l-4-1.7" font-family="Times-Roman" marker-end="url(#a)"/>
+    <circle cx="-125.5" cy="110.4" r="4.8" fill="#fff" stroke="#000" stroke-width=".5" font-family="Times-Roman"/>
+    <path fill="none" stroke="#000" stroke-width=".4" d="M-121.5 113c1 .8 2.6 1.7 3.8 2.5" font-family="Times-Roman" marker-end="url(#a)"/>
+  </g>
+</svg>

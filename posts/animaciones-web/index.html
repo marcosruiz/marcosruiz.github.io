@@ -1,0 +1,425 @@
+<!DOCTYPE html><html lang="es" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="generator" content="Jekyll v4.2.2" /><meta property="og:title" content="Animaciones en la web" /><meta property="og:locale" content="es" /><meta name="description" content="Introducción" /><meta property="og:description" content="Introducción" /><link rel="canonical" href="https://marcosruiz.github.io/posts/animaciones-web/" /><meta property="og:url" content="https://marcosruiz.github.io/posts/animaciones-web/" /><meta property="og:site_name" content="Marcos Ruiz" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2025-02-14T09:00:00+01:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="Animaciones en la web" /><meta name="twitter:site" content="@whataweekhuh" /><meta name="google-site-verification" content="google_meta_tag_verification" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-05T14:29:24+02:00","datePublished":"2025-02-14T09:00:00+01:00","description":"Introducción","headline":"Animaciones en la web","mainEntityOfPage":{"@type":"WebPage","@id":"https://marcosruiz.github.io/posts/animaciones-web/"},"url":"https://marcosruiz.github.io/posts/animaciones-web/"}</script><title>Animaciones en la web | Marcos Ruiz</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="Marcos Ruiz"><meta name="application-name" content="Marcos Ruiz"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://cdn.jsdelivr.net" ><link rel="dns-prefetch" href="https://cdn.jsdelivr.net" ><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get MODE_ATTR() { return "data-mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } static get ID() { return "mode-toggle"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } let self = this; /* always follow the system prefers */ this.sysDarkPrefers.addEventListener("change", () => { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.notify(); }); } /* constructor() */ get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode === ModeToggle.DARK_MODE; } get isLightMode() { return this.mode === ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } setDark() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_ATTR); sessionStorage.removeItem(ModeToggle.MODE_KEY); } /* Notify another plugins that the theme mode has changed */ notify() { window.postMessage({ direction: ModeToggle.ID, message: this.modeStatus }, "*"); } } /* ModeToggle */ const toggle = new ModeToggle(); function flipMode() { if (toggle.hasMode) { if (toggle.isSysDarkPrefer) { if (toggle.isLightMode) { toggle.clearMode(); } else { toggle.setLight(); } } else { if (toggle.isDarkMode) { toggle.clearMode(); } else { toggle.setDark(); } } } else { if (toggle.isSysDarkPrefer) { toggle.setLight(); } else { toggle.setDark(); } } toggle.notify(); } /* flipMode() */ </script><body data-spy="scroll" data-target="#toc" data-topbar-visible="true"><div id="sidebar" class="d-flex flex-column align-items-end"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" alt="avatar" class="mx-auto"> <img src=" https://avatars.githubusercontent.com/u/7647613?v=4 " alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title mt-3"> <a href="/">Marcos Ruiz</a></div><div class="site-subtitle font-italic">Trabaja duro para ser vago</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>INICIO</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORÍAS</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>ETIQUETAS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVOS</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>SOBRE MÍ</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <button class="mode-toggle btn" aria-label="Switch Mode"> <i class="fas fa-adjust"></i> </button> <span class="icon-border"></span> <a href="https://github.com/marcosruiz" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['profesor.mruizg','gmail.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper" class="row justify-content-center"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Inicio </a> </span> <span>Animaciones en la web</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Artículo</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Buscar..."> </span> <span id="search-cancel" >Cancelar</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="core-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>Animaciones en la web</h1><div class="post-meta text-muted"><div> <em> <a href="https://github.com/marcosruiz">Marcos Ruiz</a> </em></div><div class="d-flex"><div> <span> <em class="timeago" data-ts="1739520000" data-toggle="tooltip" data-placement="bottom" data-tooltip-df="llll" > 2025-02-14 </em> </span> <span> Actualizado <em class="timeago" data-ts="1746448164" data-toggle="tooltip" data-placement="bottom" data-tooltip-df="llll" > 2025-05-05 </em> </span> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="3138 palabras"> <em>17 minutos</em> lectura</span></div></div></div><div class="post-content"><h2 class="section" id="introducción">Introducción</h2><p>En el artículo de <a href="/posts/imagenes-web/">Imágenes en la web</a> vimos que el formato GIF era un formato empleado en las imágenes que tienen entre 2 y 256 colores y que uno de sus usos principales seguía siendo el mostrar imágenes animadas en las páginas Web aunque se solía emplear en la creación de los iconos que acompañan a los enlaces y los logotipos y, en general, en aquellas imágenes con grandes áreas de color sólido.</p><p>Tenemos varias formas de añadir animación a la Web:</p><ul><li><strong>Formatos de archivo</strong>: que permiten añadir animaciones. Las dos principales son:<ul><li>GIF (Graphics Interchange Format): es una secuencia de imágenes (frames) reproducidas en bucle.<li>SVG (Scalable Vector Graphics): del tipo gráfico vectorial.</ul><li><strong>Transiciones y animaciones de CSS</strong>: Ideal para animaciones leves y efectos de UI, como transiciones de botones, menús desplegables y efectos de desplazamiento. Utilizado generalmente para simular la animación de los botones, enlaces, elementos de formulario, etcétera.<li><strong>APIs nativas de HTML5</strong> integradas en el navegador como:<ul><li><strong>Canvas API</strong>: permite dibujar píxeles manualmente. Es una API nativa de HTML5 or lo que es una funcionalidad integrada en los navegadores.<li><strong>WebGL</strong>: API basada en OpenGL ES 2.0 que permite renderizar gráficos 3D y 2D. Es una funcionalidad nativa del navegador.</ul><li><strong>Librerías de JavaScript</strong> como:<ul><li><strong>GSAP (GreenSock)</strong>, <strong>Anime.js</strong> y <strong>Three.js</strong> para animaciones avanzadas.<li><strong>LottieFiles</strong> permite importar animaciones exportadas en formato JSON de Adobe After Effects.</ul></ul><p>Lee el artículo <a href="https://lenguajecss.com/animaciones/bases/que-son-animaciones/">¿Qué son las animaciones?</a>.</p><h2 class="section" id="tipos-de-animación">Tipos de animación</h2><p>En general, existen dos tipos de animaciones:</p><ul><li>La animación <strong>fotograma a fotograma</strong> está pensada para realizar animaciones en las que cada fotograma tiene una ligera variación respecto al fotograma anterior. Este es el caso de los dibujos animados o cuando representamos el movimiento de un personaje.<li>La animación por <strong>interpolación de fotogramas</strong> está pensada para la realización de animaciones sencillas: un balón girando, un objeto desplazándose, un cambio de forma en un objeto, un cambio de color. Este tipo de animación se caracteriza por necesitar solamente dos fotogramas clave distintos, uno inicial y otro final, separados entre sí por una serie de fotograma intermedios. La interpolación es la que se va a encargar de crear todos los fotogramas intermedios que haya entre los dos fotogramas clave.<ul><li><strong>Interpolación de forma</strong>: Es aquella que nos permite transformar un objeto en otro (un cuadrado en un círculo, o algo más complejo).<li><strong>Interpolación de movimiento</strong>: Es aquella que nos permite cambiar un objeto de posición, de tamaño y/o rotarlo.</ul></ul><p>Lee el artículo <a href="https://lenguajecss.com/animaciones/bases/tipos-animaciones/">Tipos de animaciones</a>.</p><h2 class="section" id="elementos-de-una-animación">Elementos de una animación</h2><p>Cuando hablamos de animaciones podemos mencionar 3 elementos:</p><ul><li><strong>Transformaciones</strong>: permiten modificar la apariencia de un elemento aplicando efectos como moverlo, rotarlo, escalarlo (agrandarlo o reducirlo) o distorsionarlo.<li><strong>Transiciones</strong>:<ul><li>Permiten suavizar los cambios de estado (color, tamaño, posición, etc.).<li>Requieren un evento.<li>Solo permite cambiar entre dos estados (inicio → fin).</ul><li><strong>Animaciones</strong>:<ul><li>Permiten animaciones más complejas sin necesidad de interacción.<li>Se pueden iniciar automáticamente.<li>Puede incluir varios estados intermedios.<li>Se pueden repetir infinitamente.</ul></ul><details class="card mb-2"> <summary class="card-header question">¿Qué diferencia hay entre transiciones y animaciones?</summary><div class="card-body"><p>Lee el artículo <a href="https://cssanimation.rocks/es/transition-vs-animation/">Transiciones vs. Animaciones</a>.</p></div></details><p>Veamos algunos ejemplos de animaciones usando solo CSS:</p><ul><li><a href="https://codepen.io/YusukeNakaya/full/YLPVER">https://codepen.io/YusukeNakaya/full/YLPVER</a><li><a href="https://codepen.io/Wujek_Greg/pen/KRXYpg">https://codepen.io/Wujek_Greg/pen/KRXYpg</a><li><a href="https://codepen.io/YusukeNakaya/pen/rJxevm">https://codepen.io/YusukeNakaya/pen/rJxevm</a><li><a href="https://codepen.io/miocene/pen/WJRXVg">https://codepen.io/miocene/pen/WJRXVg</a><li><a href="https://codepen.io/miocene/pen/NWRWQpX">https://codepen.io/miocene/pen/NWRWQpX</a></ul><details class="card mb-2"> <summary class="card-header question">¿Cuándo hay que usar animaciones?</summary><div class="card-body"><p>Lo mas importante de las animaciones es usarlas cuando tengan sentido y no solo como una moda o capricho. Es decir hay que usarlas cuando aportan algo al usuario.</p><p>(Voluntario) Lee el artículo <a href="https://css-tricks.com/ground-rules-for-web-animations/">Ground Rules for Web Animations</a> si quieres saber más.</p></div></details><h2 class="section" id="transiciones-vs-animaciones">Transiciones vs animaciones</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/sX5hzEMMQAI?si=NPLwISRM1XV-WJnJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe><p>Preguntas sobre el vídeo:</p><ol><li>¿Para qué se de una transición CSS es necesario un trigger?<li>¿Qué cuatro propiedades podemos definir en las transiciones CSS?<li>¿Qué palabra clave se usa para crear animaciones en CSS?<li>¿Para qué se de una animación CSS es necesario un trigger?<li>¿Qué web usa para ejecutar pruebas de diseño?<li>¿Se puede ejecutar una animación de manera infinita?<li>¿Podemos añadir varias animaciones al mismo tiempo utilizando una sola propiedad de CSS?<li>Nombra un consejo de accesibilidad de la WCAG.<li>¿Qué web nombra con la que puedes calcular la luminancia de un color?<li>¿Qué son las timing-functions?<li>¿Qué opciones hay en las timing-functions?<li>¿Se pueden crear timing-functions personalizadas?<li>¿El truco para hacer una animación perfecta es ensayo y error?<li>Según Noe Medina, ¿es recomendable que se muevan elementos de una web sin que haya una razón?<li>Desde la consola de desarrollo de Google Chrome, ¿podemos los tiempos de las animaciones de manera gráfica?<li>Según Noe Medina, ¿qué es más recomendable para animar una web? ¿CSS o JS?</ol><details class="card mb-2"> <summary class="card-header question">¿Qué es la luminancia relativa?</summary><div class="card-body"><p>La luminancia relativa del color es una medida de cuán brillante parece un color en comparación con un blanco de referencia, tomando en cuenta la forma en que el ojo humano percibe la luz. Se basa en la definición fotométrica de luminancia, pero con valores normalizados entre 0 (negro absoluto) y 1 o 100 (blanco absoluto).</p><p>Se calcula ponderando la cantidad de luz emitida o reflejada por un color según la función de luminosidad de la CIE (Comisión Internacional de Iluminación), que refleja la sensibilidad del ojo humano a diferentes longitudes de onda.</p><p>En la siguiente web <a href="https://contrastchecker.online/color-relative-luminance-calculator">https://contrastchecker.online/color-relative-luminance-calculator</a> puedes obtener este valor de cualquier color.</p></div></details><h2 class="section" id="transformaciones">Transformaciones</h2><p>Las transformaciones es simplemente usar una nueva propiedad de CSS llamada <code class="language-plaintext highlighter-rouge">transform</code>. Esta propiedad es como cualquier otra de CSS y no tiene nada que ver con las animaciones.</p><p>Esta propiedad CSS permite hacer lo siguiente sobre un elemento:</p><ul><li>Moverlo<li>Escalarlo (Hacerlo mas grande o mas pequeño)<li>Rotarlo<li>Distorsionarlo: Es como torce el elemento tanto en el eje X como en el eje Y.</ul><p>El listado de opciones es el siguiente:</p><ul><li><code class="language-plaintext highlighter-rouge">translate(x,y)</code><li><code class="language-plaintext highlighter-rouge">translateX(n)</code><li><code class="language-plaintext highlighter-rouge">translateY(n)</code><li><code class="language-plaintext highlighter-rouge">scale(x,y)</code><li><code class="language-plaintext highlighter-rouge">scaleX(n)</code><li><code class="language-plaintext highlighter-rouge">scaleY(n)</code><li><code class="language-plaintext highlighter-rouge">rotate(angle)</code><li><code class="language-plaintext highlighter-rouge">skew(x-angle,y-angle)</code><li><code class="language-plaintext highlighter-rouge">skewX(angle)</code><li><code class="language-plaintext highlighter-rouge">skewY(angle)</code></ul><h3 class="subsection" id="ejemplos-de-transformaciones">Ejemplos de transformaciones</h3><p>Mover el elemento 50px en el eje X y 100px en el eje Y</p><div class="language-css highlighter-rouge"><div class="code-header"> <span data-label-text="CSS"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">translate</span><span class="p">(</span><span class="m">50px</span><span class="p">,</span> <span class="m">100px</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>Rotar el elemento 20 grados</p><div class="language-css highlighter-rouge"><div class="code-header"> <span data-label-text="CSS"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">20deg</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>Hacer el doble de grande el elemento en el eje X y el tripe en el eje Y.</p><div class="language-css highlighter-rouge"><div class="code-header"> <span data-label-text="CSS"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>Hacer la mitad de grande el elemento tanto eje X como en el eje Y.</p><div class="language-css highlighter-rouge"><div class="code-header"> <span data-label-text="CSS"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">0.5</span><span class="p">,</span> <span class="m">0.5</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>Distorsiona el elemento 20 grados en el eje X y 10 grados en el eje Y.</p><div class="language-css highlighter-rouge"><div class="code-header"> <span data-label-text="CSS"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">skew</span><span class="p">(</span><span class="m">20deg</span><span class="p">,</span> <span class="m">10deg</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>También se pueden aplicar varias transformaciones a la vez:</p><div class="language-css highlighter-rouge"><div class="code-header"> <span data-label-text="CSS"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">translate</span><span class="p">(</span><span class="m">50px</span><span class="p">,</span> <span class="m">100px</span><span class="p">)</span> <span class="n">rotate</span><span class="p">(</span><span class="m">20deg</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>Las transformaciones que hemos visto con en 2 dimensiones. CSS también permite transformaciones en 3D.</p><p>El listado de opciones es el siguiente:</p><ul><li><code class="language-plaintext highlighter-rouge">translate3d(x,y,z)</code><li><code class="language-plaintext highlighter-rouge">translateX(x)</code><li><code class="language-plaintext highlighter-rouge">translateY(y)</code><li><code class="language-plaintext highlighter-rouge">translateZ(z)</code><li><code class="language-plaintext highlighter-rouge">scale3d(x,y,z)</code><li><code class="language-plaintext highlighter-rouge">scaleX(x)</code><li><code class="language-plaintext highlighter-rouge">scaleY(y)</code><li><code class="language-plaintext highlighter-rouge">scaleZ(z)</code><li><code class="language-plaintext highlighter-rouge">rotate3d(x,y,z,angle)</code><li><code class="language-plaintext highlighter-rouge">rotateX(angle)</code><li><code class="language-plaintext highlighter-rouge">rotateY(angle)</code><li><code class="language-plaintext highlighter-rouge">rotateZ(angle)</code><li><code class="language-plaintext highlighter-rouge">perspective(n)</code></ul><blockquote class="prompt-info"><div><p>(Voluntario) Recuerda que tienes en W3Schools el artículo <a href="https://www.w3schools.com/css/css3_2dtransforms.asp">CSS 2D Transforms</a> y <a href="https://www.w3schools.com/css/css3_3dtransforms.asp">CSS 3D Transforms</a> a tu disposición en un inglés fácil de entender. También tienes el artículo de <a href="https://developer.mozilla.org/es/docs/Web/CSS/transform">mdn web docs sobre la propiedad transform</a>.</p></div></blockquote><h3 class="subsection" id="origen-de-la-transformación">Origen de la transformación</h3><p>Existe la propiedad transform-origin que permite especificar el punto desde el que se ejecuta la transformación. Por defecto es el centro del elemento.</p><p>Esto es muy útil por ejemplo para rotaciones para que no rote respecto al centro de la imagen.</p><p>Rotar respecto al centro de la imagen (por defecto):</p><div class="language-css highlighter-rouge"><div class="code-header"> <span data-label-text="CSS"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre><span class="nc">.cuadrado--rotate-centro</span> <span class="p">{</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">360deg</span><span class="p">);</span>
+  <span class="nl">transform-origin</span><span class="p">:</span> <span class="m">50%</span> <span class="m">50%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">Rotar</span> <span class="nt">respecto</span> <span class="nt">a</span> <span class="nt">la</span> <span class="nt">esquina</span> <span class="nt">superior</span> <span class="nt">izquierda</span><span class="o">:</span>
+
+
+<span class="nc">.cuadrado--rotate-esquina-superior-izquierda</span> <span class="p">{</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">360deg</span><span class="p">);</span>
+  <span class="nl">transform-origin</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>Ejemplo completo con transiciones:</p><div class="language-html highlighter-rouge"><div class="code-header"> <span data-label-text="HTML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+</pre><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>transform-origin<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1.0"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+
+  <span class="nt">&lt;/style&gt;</span>
+
+  <span class="nt">&lt;style&gt;</span>
+    <span class="nc">.l-center</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+      <span class="py">place-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+      <span class="nl">height</span><span class="p">:</span> <span class="m">50vw</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.c-cuadrado</span> <span class="p">{</span>
+      <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">red</span><span class="p">;</span>
+      <span class="nl">background</span><span class="p">:</span> <span class="no">lightpink</span><span class="p">;</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+      <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+      <span class="nl">transition</span><span class="p">:</span> <span class="n">transform</span> <span class="m">4s</span><span class="p">;</span>
+      <span class="nl">transform-origin</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.c-cuadrado</span><span class="nd">:hover</span> <span class="p">{</span>
+      <span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">360deg</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"l-center"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"c-cuadrado"</span><span class="nt">&gt;</span>Hola mundo<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</pre></table></code></div></div><h2 class="section" id="transiciones">Transiciones</h2><p>Las transiciones se usan sobre todo para hacer cambios en los eventos de <code class="language-plaintext highlighter-rouge">:hover</code>, <code class="language-plaintext highlighter-rouge">:focus</code>, etc.</p><p>Lee el artículo <a href="https://lenguajecss.com/animaciones/transiciones/que-son/">¿Qué son las transiciones?</a>, el artículo <a href="https://lenguajecss.com/animaciones/transiciones/transition/">Transiciones CSS</a> y el artículo <a href="https://lenguajecss.com/animaciones/transiciones/starting-style/">La regla @starting-style</a>.</p><p>Mira el siguiente vídeo:</p><iframe width="560" height="315" src="https://www.youtube.com/embed/jdGpehoFoWA?si=Kp3OBZF-eQz1pOjp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe><p>Preguntas sobre el vídeo:</p><ol><li>¿Qué hace la propiedad <code class="language-plaintext highlighter-rouge">transition-property</code>?<li>¿Qué hace la propiedad <code class="language-plaintext highlighter-rouge">transition-duration</code>?<li>¿Podemos utilizar cualquier unidad de tiempo en <code class="language-plaintext highlighter-rouge">transition-duration</code>?<li>¿Cuál es su valor por defecto de <code class="language-plaintext highlighter-rouge">transition-duration</code>?<li>¿Existe la propiedad <code class="language-plaintext highlighter-rouge">transition-delay</code>?<li>¿Cuál es la propiedad de atajo para definir una transición?<li>¿Es recomendable usar la propiedad de atajo para las transiciones a la hora de escribir código?<li>¿Se pueden hacer transiciones múltiples únicamente usando una propiedad <code class="language-plaintext highlighter-rouge">transition</code>?<li>¿Podemos hacer que la transición de entrada a diferente tiempo que la transición de salida?<li>¿La propiedad del color es transicionable/animable?<li>¿Es un gradiente transicionable/animable?<li>¿Para qué es útil usar un delay en el caso de las transiciones?</ol><blockquote class="prompt-info"><div><p>(Voluntario) Mas información en <a href="https://www.w3schools.com/css/css3_transitions.asp">W3Schools CSS3 Transitions</a>.</p></div></blockquote><p>Veamos un ejemplo con <code class="language-plaintext highlighter-rouge">:hover</code> y después le vamos a añadir la transición para mejorarlo visualmente.</p><div class="language-html highlighter-rouge"><div class="code-header"> <span data-label-text="HTML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+      <span class="nt">&lt;style&gt;</span>
+        <span class="nc">.c-button</span> <span class="p">{</span>
+          <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">20px</span> <span class="m">10px</span> <span class="m">20px</span><span class="p">;</span>
+          <span class="nl">background-color</span><span class="p">:</span> <span class="m">#ffffff</span><span class="p">;</span>
+          <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#bbd4f7</span><span class="p">;</span>
+          <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>
+          <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="nc">.c-button</span><span class="nd">:hover</span> <span class="p">{</span>
+          <span class="nl">background-color</span><span class="p">:</span> <span class="m">#deebfc</span><span class="p">;</span>
+          <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">8px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.2</span><span class="p">);</span>
+        <span class="p">}</span>
+      <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-button"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></table></code></div></div><p>En el ejemplo que acabo de poner, al pasar el cursor sobre el botón se añade una sombra y cambia el color de fondo.</p><p>Sin embargo el efecto queda mal ya que es muy brusco pasar de:</p><ul><li><code class="language-plaintext highlighter-rouge">background-color: #ffffff;</code> → <code class="language-plaintext highlighter-rouge">background-color: #deebfc;</code><li><code class="language-plaintext highlighter-rouge">box-shadow: none;</code> → <code class="language-plaintext highlighter-rouge">box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);</code></ul><p>Para evitar ésto, usamos en CSS la transición de la siguiente forma:</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>transition: background-color 1s, box-shadow 1s;
+</pre></table></code></div></div><p>Con la línea anterior se hace que el cambio del color y añadir la sombra se haga con un transición que durará 1 segundo. Ahora el ejemplo quedaría así:</p><div class="language-html highlighter-rouge"><div class="code-header"> <span data-label-text="HTML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+    <span class="nc">.c-button</span> <span class="p">{</span>
+      <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">20px</span> <span class="m">10px</span> <span class="m">20px</span><span class="p">;</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="m">#ffffff</span><span class="p">;</span>
+      <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#bbd4f7</span><span class="p">;</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>
+      <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+      <span class="nl">transition</span><span class="p">:</span> <span class="n">background-color</span> <span class="m">1s</span><span class="p">,</span> <span class="n">box-shadow</span> <span class="m">1s</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.c-button</span><span class="nd">:hover</span> <span class="p">{</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="m">#deebfc</span><span class="p">;</span>
+      <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">8px</span> <span class="m">0</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.2</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"c-button"</span><span class="nt">&gt;</span>Aceptar<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</pre></table></code></div></div><p>Podemos aplicar las transiciones a cualquier propiedad CSS que tenga un rango de valores, como al color, a la sombra o como podíais imaginar a las transiciones.</p><p>Por lo tanto, siempre que usemos <code class="language-plaintext highlighter-rouge">:hover</code>, <code class="language-plaintext highlighter-rouge">:focus</code>… lo normal es añadir una <code class="language-plaintext highlighter-rouge">transition</code> con las propiedades que hemos incluido en el <code class="language-plaintext highlighter-rouge">:hover</code> , <code class="language-plaintext highlighter-rouge">:focus</code>, etc.</p><p>La forma concreta de la propiedad <code class="language-plaintext highlighter-rouge">transition</code> es:</p><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>transition: &lt;propiedadCSS&gt; &lt;duración&gt; &lt;timing-function&gt; &lt;retardo&gt;
+</pre></table></code></div></div><ul><li><code class="language-plaintext highlighter-rouge">&lt;propiedadCSS&gt;</code>: La propiedad CSS a la que se le aplica la transición.<li><code class="language-plaintext highlighter-rouge">&lt;duración&gt;</code>: Duración en segundos de la transición<li><code class="language-plaintext highlighter-rouge">&lt;timing-function&gt;</code>: La velocidad de la transición. Sus valores son:<ul><li><code class="language-plaintext highlighter-rouge">linear</code>: Velocidad constante.<li><code class="language-plaintext highlighter-rouge">ease</code><li><code class="language-plaintext highlighter-rouge">ease-in</code>: Aceleración constante.<li><code class="language-plaintext highlighter-rouge">ease-out</code><li><code class="language-plaintext highlighter-rouge">ease-in-out</code><li><code class="language-plaintext highlighter-rouge">steps(pasos)</code><li><code class="language-plaintext highlighter-rouge">cubic-bezier(n,n,n,n)</code></ul><li><code class="language-plaintext highlighter-rouge">&lt;retardo&gt;</code>: Cuanto tiempo en segundos tarda en empezar la transición. Por ejemplo en hover, lo correcto es hacer que no empiece la animación enseguida ya pasando rápido el curso se empieza a hacer y queda feo si no nos detenemos. Por eso hay que poner un retardo de al menos 0.3s</ul><blockquote class="prompt-info"><div><p>(Voluntario) Más información de la timing-function en <a href="https://www.w3schools.com/cssref/css3_pr_transition-timing-function.php">W3Schools CSS transition-timing-function Property</a> y en <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function">mdn web docs transition-timing-function</a>.</p></div></blockquote><p>Por ejemplo:</p><div class="language-css highlighter-rouge"><div class="code-header"> <span data-label-text="CSS"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="nt">transition</span><span class="o">:</span> <span class="nt">width</span> <span class="err">3</span><span class="nt">s</span> <span class="nt">ease-in-out</span> <span class="err">2</span><span class="nt">s</span>
+</pre></table></code></div></div><p>Se cambiará el ancho. Durará 3 segundos. Empezará y terminará mas lentamente. Empezará con 2 segundos de retardo.</p><p>Como pasa mucho en las propiedades CSS se puede poner también como varias propiedades independientes:</p><div class="language-css highlighter-rouge"><div class="code-header"> <span data-label-text="CSS"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre><td class="rouge-code"><pre><span class="nt">transition-property</span><span class="o">:</span> <span class="nt">width</span><span class="o">;</span>
+<span class="nt">transition-duration</span><span class="o">:</span> <span class="err">3</span><span class="nt">s</span><span class="o">;</span>
+<span class="nt">transition-timing-function</span><span class="o">:</span> <span class="nt">ease-in-out</span><span class="o">;</span>
+<span class="nt">transition-delay</span><span class="o">:</span> <span class="err">2</span><span class="nt">s</span><span class="o">;</span>
+</pre></table></code></div></div><p>Lee el artículo <a href="https://lenguajecss.com/animaciones/timing-functions/que-son/">¿Qué son las funciones de tiempo?</a>.</p><p>Preguntas:</p><ol><li>¿Existe la propiedad <code class="language-plaintext highlighter-rouge">transition-timing-function</code>?<li>¿Cuál es la timing-function que tiene un ritmo lento al principio, rápido al final?<li>¿Cuál es la timing-function que se usa por defecto por el navegador?</ol><p>Mira el siguiente vídeo:</p><iframe width="560" height="315" src="https://www.youtube.com/embed/hiRIjRf2QD8?si=0itxR4Uv9w6bzvIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe><p>Preguntas:</p><ol><li>¿Podemos hacer una transición de tiempo personalizada?<li>¿Para que sirve la función <code class="language-plaintext highlighter-rouge">cubic-bezier()</code> de CSS?<li>¿Podemos dar valores fuera del rango de [0,1] en la función <code class="language-plaintext highlighter-rouge">cubic-bezier()</code>?<li>¿Para qué sirven las funciones de salto?<li>¿Se pueden hacer GIFS con animaciones CSS?</ol><h2 class="section" id="animaciones">Animaciones</h2><p>Las animaciones son similares a las transiciones pero más potentes además que suelen usarse desde JavaScript.</p><p>Lee el artículo <a href="https://lenguajecss.com/animaciones/animaciones/que-son/">¿Qué son las animaciones?</a>, <a href="https://lenguajecss.com/animaciones/animaciones/animaciones/">Animaciones CSS</a>.</p><p>Preguntas sobre los artículos anteriores:</p><ol><li>¿Qué dos cosas son necesarias definir para crear una animación?<li>¿Para qué es útil usar un delay en el caso de las transiciones?<li>¿Deberíamos usar el tipo de nombrado camelCase para definir el nombre de una animación en CSS?<li>Si escribimos <code class="language-plaintext highlighter-rouge">change-color 4 normal forwards running;</code>, ¿<code class="language-plaintext highlighter-rouge">4</code> hace referencia a la propiedad <code class="language-plaintext highlighter-rouge">animation-iteration-count</code>, <code class="language-plaintext highlighter-rouge">animation-duration</code> o <code class="language-plaintext highlighter-rouge">animation-delay</code>?</ol><p>Lee el artículo <a href="https://lenguajecss.com/animaciones/animaciones/keyframes/">La regla @keyframes</a>.</p><p>Preguntas:</p><ol><li>¿Para qué sirve la regla <code class="language-plaintext highlighter-rouge">@keyframes</code>?<li>¿Qué es un fotograma clave cuando hablamos de animaciones CSS?<li>En un <code class="language-plaintext highlighter-rouge">@keyframe</code>, ¿es equivalente usar <code class="language-plaintext highlighter-rouge">to</code> a <code class="language-plaintext highlighter-rouge">100%</code> como time-selector?<li>¿Basta únicamente con definir la animación mediante <code class="language-plaintext highlighter-rouge">@keyframes</code> para que funcione una animación?<li>¿Se puede obviar el <code class="language-plaintext highlighter-rouge">from</code> de un <code class="language-plaintext highlighter-rouge">@keyframe</code> en algún caso?<li>¿Cuántos fotogramas clave hay en el siguiente código? ¿Y cuantos fotogramas?</ol><div class="language-css highlighter-rouge"><div class="code-header"> <span data-label-text="CSS"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre><td class="rouge-code"><pre><span class="k">@keyframes</span> <span class="n">change-color</span> <span class="p">{</span>
+  <span class="err">0</span><span class="o">%</span> <span class="p">{</span> <span class="nl">background</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span> <span class="p">}</span>
+  <span class="err">50</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">400px</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="err">100</span><span class="o">%</span> <span class="p">{</span> <span class="nl">background</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nc">.element</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">grey</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">150px</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">150px</span><span class="p">;</span>
+  <span class="nl">animation</span><span class="p">:</span> <span class="n">change-color</span> <span class="m">2s</span> <span class="m">0s</span> <span class="n">infinite</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div><p>Mira el siguiente vídeo:</p><iframe width="560" height="315" src="https://www.youtube.com/embed/8Jh2K3tq5n0?si=9c1t6LLK7qai5d0p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe><p>Preguntas sobre el vídeo:</p><ol><li>Dentro de un <code class="language-plaintext highlighter-rouge">@keyframe</code>, ¿es lo mismo usar <code class="language-plaintext highlighter-rouge">from</code> que <code class="language-plaintext highlighter-rouge">0%</code>?<li>¿Es necesario poner un <code class="language-plaintext highlighter-rouge">from</code> dentro de un <code class="language-plaintext highlighter-rouge">@keyframe</code> si tengo definido el color en el elemento?<li>¿Para qué sirve la propiedad <code class="language-plaintext highlighter-rouge">animation-fill-mode: forwards</code>?<li>¿Qué hace la propiedad <code class="language-plaintext highlighter-rouge">animation-iteration-count: infinite</code>?<li>¿Qué hace la propiedad <code class="language-plaintext highlighter-rouge">animation-direction: alternate-reverse</code>?<li>¿Cuándo es interesante usar la propiedad <code class="language-plaintext highlighter-rouge">animation-play-state</code>?<li>¿Cuál es la propiedad de atajo para definir una animación?<li>¿Cuándo es útil usar un <code class="language-plaintext highlighter-rouge">animation-delay</code> &gt; 0 según Manz?<li>¿Podemos definir varias animaciones con una única propiedad <code class="language-plaintext highlighter-rouge">animation</code>?</ol><blockquote class="prompt-info"><div><p>(Voluntario) Recuerda que tienes a tu disposición la web de W3Schools con el artículo <a href="https://www.w3schools.com/css/css3_animations.asp">CSS3 Animations</a> para consulta.</p></div></blockquote><p>Las animaciones constan de dos apartados distintos:</p><ul><li>La definición de la propia animación con <code class="language-plaintext highlighter-rouge">@keyframes</code>.<li>Los parámetros de la animación con la propiedad <code class="language-plaintext highlighter-rouge">animation</code>.</ul><p>Veamos un ejemplo:</p><div class="language-html highlighter-rouge"><div class="code-header"> <span data-label-text="HTML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+</pre><td class="rouge-code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+    <span class="nc">.c-cuadrado</span> <span class="p">{</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+      <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="m">#bbd4f7</span><span class="p">;</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nc">.c-cuadrado--girar</span> <span class="p">{</span>
+      <span class="nl">animation-name</span><span class="p">:</span> <span class="n">animacion-girar</span><span class="p">;</span>
+      <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">3s</span><span class="p">;</span>
+    <span class="p">}</span>
+
+
+    <span class="k">@keyframes</span> <span class="n">animacion-girar</span> <span class="p">{</span>
+      <span class="err">0</span><span class="o">%</span> <span class="p">{</span>
+        <span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">0deg</span><span class="p">);</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="m">#bbd4f7</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="err">50</span><span class="o">%</span> <span class="p">{</span>
+        <span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">360deg</span><span class="p">);</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="m">#1C4673</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="err">100</span><span class="o">%</span> <span class="p">{</span>
+        <span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">0deg</span><span class="p">);</span>
+        <span class="nl">background-color</span><span class="p">:</span> <span class="m">#bbd4f7</span><span class="p">;</span>
+      <span class="p">}</span>
+
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"padding:200px"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"cuadrado1"</span> <span class="na">class=</span><span class="s">"c-cuadrado c-cuadrado--girar"</span><span class="nt">&gt;</span>Hola<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+
+<span class="nt">&lt;/html&gt;</span>
+</pre></table></code></div></div><p>Dentro de <code class="language-plaintext highlighter-rouge">@keyframes</code> definimos cada uno de los “fotogramas” que queremos que tenga la animación.</p><p>Luego dentro de la clase <code class="language-plaintext highlighter-rouge">c-cuadrado--girar</code> indicamos que animación aplicar y sus parámetros. Las propiedades que hay son:</p><ul><li><code class="language-plaintext highlighter-rouge">animation-name</code>: Nombre de la animación a realizar. Es el nombre del @keyframes.<li><code class="language-plaintext highlighter-rouge">animation-duration</code>: Duración en segundos.<li><code class="language-plaintext highlighter-rouge">animation-timing-function</code>: La velocidad<li><code class="language-plaintext highlighter-rouge">linear</code>: Velocidad constante.<li><code class="language-plaintext highlighter-rouge">ease</code><li><code class="language-plaintext highlighter-rouge">ease-in</code>: Aceleración constante.<li><code class="language-plaintext highlighter-rouge">ease-out</code><li><code class="language-plaintext highlighter-rouge">ease-in-out</code><li><code class="language-plaintext highlighter-rouge">steps(pasos)</code><li><code class="language-plaintext highlighter-rouge">cubic-bezier(n,n,n,n)</code>: Para generar los valores se puede usar la siguiente página: cubic-bezier<li><code class="language-plaintext highlighter-rouge">animation-delay</code>: Retraso en segundos en empezar la animación<li><code class="language-plaintext highlighter-rouge">animation-iteration-count</code>: Nº de repeticiones de la animación. Se puede usar infinite para que nunca acabe.<li><code class="language-plaintext highlighter-rouge">animation-direction</code>: Si va desde el principio al final o al revés, etc.<li><code class="language-plaintext highlighter-rouge">normal</code>: Empieza en el 0% y avanza hacía el 100%<li><code class="language-plaintext highlighter-rouge">reverse</code>: Empieza en el 100% y avanza hacía el 0%<li><code class="language-plaintext highlighter-rouge">alternate</code>: Empieza en el 0% y avanza hacía el 100% y la 2º vez lo hace del 100% al 0% y así sucesivamente.<li><code class="language-plaintext highlighter-rouge">alternate-reverse</code>: Empieza en el 100% y avanza hacía el 0% y la 2º vez lo hace del 0% al 100% y así sucesivamente.<li><code class="language-plaintext highlighter-rouge">animation-fill-mode</code>: Que CSS se aplica cuando acaba.<li><code class="language-plaintext highlighter-rouge">none</code>: La animación antes de empezar o despues de acabar no tiene ningún estilo definido en la animación.<li><code class="language-plaintext highlighter-rouge">forwards</code>: Al acabar la animación se queda como en el último Frame.<li><code class="language-plaintext highlighter-rouge">backwards</code>: Antes de empezar la animación (por si hay un delay), ya está como en el primer Frame.<li><code class="language-plaintext highlighter-rouge">both</code>: Es unir forwards y backwards.<li><code class="language-plaintext highlighter-rouge">animation-play-state</code>: Como empieza la animación. Mas información en How to Play and Pause CSS Animations with CSS Custom Properties<li><code class="language-plaintext highlighter-rouge">running</code>: Empieza ejecutándose<li><code class="language-plaintext highlighter-rouge">paused</code>: Empieza pausada<li><code class="language-plaintext highlighter-rouge">animation</code>: La unión de todas las anteriores</ul><h3 class="subsection" id="animaciones-con-javascript">Animaciones con JavaScript</h3><p>Para volver a ejecutar la animación desde JavaScript se hace de la siguiente forma:</p><div class="language-javascript highlighter-rouge"><div class="code-header"> <span data-label-text="JavaScript"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre><td class="rouge-code"><pre><span class="kd">function</span> <span class="nx">animar</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">cuadradoElement</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">cuadrado1</span><span class="dl">"</span><span class="p">);</span>
+  <span class="nx">cuadradoElement</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="dl">"</span><span class="s2">c-cuadrado--girar</span><span class="dl">"</span><span class="p">);</span>
+  <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">cuadradoElement</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="dl">"</span><span class="s2">c-cuadrado--girar</span><span class="dl">"</span><span class="p">);</span>
+  <span class="p">},</span><span class="mi">10</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></table></code></div></div><div class="language-html highlighter-rouge"><div class="code-header"> <span data-label-text="HTML"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre><span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"animar()"</span><span class="nt">&gt;</span>Animar<span class="nt">&lt;/button&gt;</span>
+</pre></table></code></div></div><p>Es decir que hay que quitar la clase CSS que tiene la animación y volver a ponerla. El problema es que si la quitas y la vuelves a poner, el navegador no se entera. Así que hay que hacer el truco de quitarla, esperar 10 ms con un timeout y añadir la clase.</p><blockquote class="prompt-info"><div><p>(Voluntario) Tienes el artículo <a href="https://www.w3schools.com/jsref/met_win_settimeout.asp">Window setTimeout() de W3Schools</a> a tu disposición para consulta.</p></div></blockquote><h4 class="subsubsection" id="movimiento-de-una-campana">Movimiento de una campana</h4><p>En este apartado podéis ver el movimiento real que haría una campana. Para hacer el movimiento real se han usado las fórmulas físicas que describen el movimiento de dicha campana. Está con rozamiento y sin él.</p><ul><li><a href="/assets/img/animaciones-web/campana.html">campana.html</a>: Ejemplo de movimiento de la campana<li><a href="/assets/img/animaciones-web/calculos_movimiento_campana.xlsx">calculos_movimiento_campana.xlsx</a>: Excel con el cálculo de los movimiento siguiendo la fórmula física</ul><p class="question">¿Se puede integrar audio sincronizado con, por ejemplo, la animación de una campana? ¿Cómo?</p><p class="question">¿Se puede añadir una animación a un video con CSS?</p><p class="question">¿Se puede parar una animación?</p><h2 class="section" id="animaciones-simétricas">Animaciones simétricas</h2><p>La animación que hemos visto, vuelve al mismo sitio. Si queremos una animación que haga eso, no es necesario definir la ida y la vuelta. Es tan sencillo como solo definir la ida y decir que vuelva.</p><p>Eso se consigue de la siguiente forma:</p><div class="language-css highlighter-rouge"><div class="code-header"> <span data-label-text="CSS"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre><td class="rouge-code"><pre><span class="nc">.c-cuadrado--girar</span> <span class="p">{</span>
+  <span class="nl">animation-name</span><span class="p">:</span> <span class="n">animacion-girar</span><span class="p">;</span>
+  <span class="nl">animation-duration</span><span class="p">:</span> <span class="m">1.5s</span><span class="p">;</span>
+  <span class="nl">animation-iteration-count</span><span class="p">:</span> <span class="m">2</span><span class="p">;</span>
+  <span class="nl">animation-direction</span><span class="p">:</span> <span class="n">alternate</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@keyframes</span> <span class="n">animacion-girar</span> <span class="p">{</span>
+  <span class="err">0</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">0deg</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="m">#bbd4f7</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="err">100</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">360deg</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="m">#1C4673</span><span class="p">;</span>
+  <span class="p">}</span>
+
+<span class="p">}</span>
+</pre></table></code></div></div><p>Los cambios que hemos hecho son los siguientes:</p><ul><li>Hacemos que la animación dure la mitad: <code class="language-plaintext highlighter-rouge">animation-duration: 1.5s;</code>.<li>Pero hacemos que la haga 2 veces: <code class="language-plaintext highlighter-rouge">animation-iteration-count: 2;</code>.<li>Por último hacemos que la segunda vez la haga al revés: <code class="language-plaintext highlighter-rouge">animation-direction: alternate;</code>.</ul><p>Y con éste truco siempre tenemos una animación de ida y vuelta.</p><p class="question">¿Qué es una animación simétrica?</p><h2 class="section" id="voluntario-juegos-css">(Voluntario) Juegos CSS</h2><ul><li><a href="https://cssbattle.dev/">CSS Battle</a><li><a href="https://100dayscss.com/">100 DAYS CSS CHALLENGE</a></ul><h2 id="bibliografía"><span class="mr-2">Bibliografía</span><a href="#bibliografía" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></h2><ul><li><a href="https://www.educacionyfp.gob.es/portada.html">Ministerio de Educación y Formación Profesional</a><li><a href="https://logongas.es/doku.php?id=clase:daw:diw:2eval:tema08">https://logongas.es/doku.php?id=clase:daw:diw:2eval:tema08</a><li><a href="https://css-tricks.com/ground-rules-for-web-animations/">https://css-tricks.com/ground-rules-for-web-animations/</a><li><a href="https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9">https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9</a><li><a href="https://www.youtube.com/watch?v=MXMlTOnZSvo">https://www.youtube.com/watch?v=MXMlTOnZSvo</a><li><a href="https://www.smashingmagazine.com/2011/09/the-guide-to-css-animation-principles-and-examples/">https://www.smashingmagazine.com/2011/09/the-guide-to-css-animation-principles-and-examples/</a><li><a href="https://www.kirupa.com/html5/css3_animations_vs_transitions.htm">https://www.kirupa.com/html5/css3_animations_vs_transitions.htm</a><li><a href="https://contrastchecker.online/color-relative-luminance-calculator">https://contrastchecker.online/color-relative-luminance-calculator</a><li><a href="https://lenguajecss.com/animaciones/">https://lenguajecss.com/animaciones/</a></ul><p>animation-timing-function:</p><ul><li><a href="https://easingwizard.com/">https://easingwizard.com/</a><li><a href="https://cubic-bezier.com/">https://cubic-bezier.com/</a><li><a href="https://tympanus.net/codrops/css_reference/timing-function_value/">https://tympanus.net/codrops/css_reference/timing-function_value/</a><li><a href="https://matthewlein.com/tools/ceaser">https://matthewlein.com/tools/ceaser</a><li><a href="https://easings.net/">https://easings.net/</a></ul><p>Animaciones CSS:</p><ul><li><a href="https://css-tricks.com/css-animation-libraries/">https://css-tricks.com/css-animation-libraries/</a><li><a href="https://animxyz.com/">https://animxyz.com/</a><li><a href="https://animate.style/">https://animate.style/</a></ul></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/desarrollo-de-aplicaciones-web/'>Desarrollo de Aplicaciones Web</a>, <a href='/categories/dise%C3%B1o-de-interfaces-web/'>Diseño de Interfaces Web</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/fp/" class="post-tag no-text-decoration" >fp</a> <a href="/tags/ciclo-superior/" class="post-tag no-text-decoration" >ciclo superior</a> <a href="/tags/modulo/" class="post-tag no-text-decoration" >modulo</a> <a href="/tags/formaci%C3%B3n-profesional/" class="post-tag no-text-decoration" >formación profesional</a> <a href="/tags/daw/" class="post-tag no-text-decoration" >daw</a> <a href="/tags/desarrollo-de-aplicaciones-web/" class="post-tag no-text-decoration" >desarrollo de aplicaciones web</a> <a href="/tags/dise%C3%B1o-de-interfaces-web/" class="post-tag no-text-decoration" >diseño de interfaces web</a> <a href="/tags/diw/" class="post-tag no-text-decoration" >diw</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> Este artículo está licenciado bajo <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> por el autor.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Compartir</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Animaciones en la web - Marcos Ruiz&amp;url=https://marcosruiz.github.io/posts/animaciones-web/" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=Animaciones en la web - Marcos Ruiz&amp;u=https://marcosruiz.github.io/posts/animaciones-web/" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://t.me/share/url?url=https://marcosruiz.github.io/posts/animaciones-web/&amp;text=Animaciones en la web - Marcos Ruiz" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copiar link" data-title-succeed="Link copiado satisfactoriamente!"> </i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted"><div class="access"><div id="access-lastmod" class="post"><div class="panel-heading">Recientemente actualizado</div><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/tutorial-moodle-docker/">Tutorial: Instalar Moodle con Docker</a><li><a href="/posts/tutorial-nextcloud/">Tutorial: Monta tu propio Google Drive con NextCloud</a><li><a href="/posts/guias-estilo/">Guías de estilo</a><li><a href="/posts/callbacks-javascript/">Callbacks en JavaScript</a><li><a href="/posts/propagacion-eventos-javascript/">Propagación de eventos en JavaScript</a></ul></div><div id="access-tags"><div class="panel-heading">Etiquetas populares</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/smr/">smr</a> <a class="post-tag" href="/tags/daw/">daw</a> <a class="post-tag" href="/tags/desarrollo-de-aplicaciones-web/">desarrollo de aplicaciones web</a> <a class="post-tag" href="/tags/teor%C3%ADa/">teoría</a> <a class="post-tag" href="/tags/ciclo-superior/">ciclo superior</a> <a class="post-tag" href="/tags/fp/">fp</a> <a class="post-tag" href="/tags/modulo/">modulo</a> <a class="post-tag" href="/tags/pr%C3%A1ctica/">práctica</a> <a class="post-tag" href="/tags/formaci%C3%B3n-profesional/">formación profesional</a> <a class="post-tag" href="/tags/seguridad-inform%C3%A1tica/">seguridad informática</a></div></div></div><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5"><div class="panel-heading pl-3 pt-2 mb-2">Índice</div><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="tail-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Otros artículos</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/usabilidad-web/"><div class="card-body"> <em class="timeago small" data-ts="1741680000" > 2025-03-11 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Usabilidad de la web</h3><div class="text-muted small"><p> Introducción ¿Qué significa que una página sea usable? Usable es un término ampliamente utilizado en el ámbito informático. Su significado es “que se puede usar”. ¿Pero qué significa “q...</p></div></div></a></div><div class="card"> <a href="/posts/figma-atomic-design/"><div class="card-body"> <em class="timeago small" data-ts="1741766400" > 2025-03-12 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Figma y atomic design</h3><div class="text-muted small"><p> ¿Qué es Figma? Figma es una herramienta de diseño y prototipado de interfaces de usuario (UI/UX) basada en la nube. Permite a diseñadores y equipos de trabajo crear, editar y colaborar en tiempo r...</p></div></div></a></div><div class="card"> <a href="/posts/diseno-interfaces-web-24-25/"><div class="card-body"> <em class="timeago small" data-ts="1722931200" > 2024-08-06 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Diseño de Interfaces Web 24 25</h3><div class="text-muted small"><p> Unidades UD1 - Planificación de interfaces gráficas Teoría de la Gestalt Representación de colores Guías de estilo UD2 - Hojas de estilos Modelo de c...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/propagacion-eventos-javascript/" class="btn btn-outline-primary" prompt="Más viejo"><p>Propagación de eventos en JavaScript</p></a> <a href="/posts/tarea-dom/" class="btn btn-outline-primary" prompt="Más nuevo"><p>Tarea obligatoria: DOM</p></a></div><script type="text/javascript"> $(function () { const origin = "https://giscus.app"; const iframe = "iframe.giscus-frame"; const lightTheme = "light"; const darkTheme = "dark_dimmed"; let initTheme = lightTheme; if ($("html[data-mode=dark]").length > 0 || ($("html[data-mode]").length == 0 && window.matchMedia("(prefers-color-scheme: dark)").matches)) { initTheme = darkTheme; } let giscusAttributes = { "src": "https://giscus.app/client.js", "data-repo": "marcosruiz/marcosruiz.github.io", "data-repo-id": "R_kgDOGm1dzA", "data-category": "General", "data-category-id": "DIC_kwDOGm1dzM4CAjhb", "data-mapping": "pathname", "data-reactions-enabled": "1", "data-emit-metadata": "0", "data-theme": initTheme, "data-input-position": "bottom", "data-lang": "es", "crossorigin": "anonymous", "async": "" }; let giscusScript = document.createElement("script"); Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value)); document.getElementById("tail-wrapper").appendChild(giscusScript); addEventListener("message", (event) => { if (event.source === window && event.data && event.data.direction === ModeToggle.ID) { /* global theme mode changed */ const mode = event.data.message; const theme = (mode === ModeToggle.DARK_MODE ? darkTheme : lightTheme); const message = { setConfig: { theme: theme } }; const giscus = document.querySelector(iframe).contentWindow; giscus.postMessage({ giscus: message }, origin); } }); }); </script></div></div></div><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center text-muted"><div class="footer-left"><p class="mb-0"> © 2025 <a href="https://github.com/marcosruiz">Marcos Ruiz</a>. <span data-toggle="tooltip" data-placement="top" title="Excepto donde si indique lo contrario, los artículos de este blog están licenciados bajo Creative Commons Attribution 4.0 International (CC BY 4.0) Licenciado por el autor.">Algunos derechos reservados.</span></p></div><div class="footer-right"><p class="mb-0"> Desarrollado por <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> con el tema <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> .</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><div id="access-tags"><div class="panel-heading">Etiquetas populares</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/smr/">smr</a> <a class="post-tag" href="/tags/daw/">daw</a> <a class="post-tag" href="/tags/desarrollo-de-aplicaciones-web/">desarrollo de aplicaciones web</a> <a class="post-tag" href="/tags/teor%C3%ADa/">teoría</a> <a class="post-tag" href="/tags/ciclo-superior/">ciclo superior</a> <a class="post-tag" href="/tags/fp/">fp</a> <a class="post-tag" href="/tags/modulo/">modulo</a> <a class="post-tag" href="/tags/pr%C3%A1ctica/">práctica</a> <a class="post-tag" href="/tags/formaci%C3%B3n-profesional/">formación profesional</a> <a class="post-tag" href="/tags/seguridad-inform%C3%A1tica/">seguridad informática</a></div></div></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! Resultado no encontrado.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/es.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script> <script defer src="/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id=G-GS5HW4NZ8V"></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-GS5HW4NZ8V'); }); </script>
