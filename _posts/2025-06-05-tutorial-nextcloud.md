@@ -117,6 +117,42 @@ En mi caso queda tal que así:
 
 Posteriormente se reinicia el contenedor con `docker restart <id del contenedor>`. El id del contenedor se saca con `docker ps`.
 
+## Problema con la app de Android
+
+Por alguna razón, la aplicación de Android da problemas.
+
+He aquí las soluciones que me ha propuesto ChatGPT:
+
+Ir a la configuración de nginx-proxy-manager \> Hosts \> Edit en el host de Nextcloud \> Advanced y añadimos lo siguiente:
+
+```
+proxy_set_header Host $host;
+proxy_set_header X-Real-IP $remote_addr;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+proxy_set_header X-Forwarded-Proto https;
+proxy_set_header X-Forwarded-Host $host;
+```
+
+Ir a `/var/lib/docker/volumes/nextcloud_nextcloud/_data/config/config.php` y modificar/añadir las siguientes líneas:
+
+```
+  array (
+    0 => 'nipogi:8080',
+    1 => 'nextcloud.chirihop.duckdns.org',
+    2 => 'localhost:8080',
+    3 => '192.168.1.140:8080',
+  ),
+  // INI: Cambios que dice ChatGPT para que funcione la app Android
+  'overwrite.cli.url' => 'https://nextcloud.chirihop.duckdns.org',
+  'overwritehost' => 'nextcloud.chirihop.duckdns.org',
+  'overwriteprotocol' => 'https',
+  'trusted_proxies' =>
+    array (
+      0 => '172.20.0.0/16',  // o la subred Docker que uses para NPM
+    ),
+  // FIN: Cambios que dice ChatGPT para que funcione la app Android
+```
+
 ## Bibliografía
 
 - <https://pimylifeup.com/nextcloud-docker/>
