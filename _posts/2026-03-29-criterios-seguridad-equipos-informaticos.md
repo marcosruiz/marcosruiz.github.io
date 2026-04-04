@@ -1,8 +1,8 @@
 ---
 title: "Criterios generales sobre seguridad de los equipos informáticos"
-date: 2025-04-02 9:00:00 +0100
-categories: [General]
-tags: [seguridad]
+date: 2026-03-29 9:00:00 +0100
+categories: [Seguridad Informática, Seguridad en equipos informáticos]
+tags: [seguridad, informática, certificado, profesionalidad, mf0486_3, equipos, informáticos, ifct0109, inaem]
 img_path: /assets/img/criterios-seguridad-equipos-informaticos/
 ---
 
@@ -12,7 +12,13 @@ img_path: /assets/img/criterios-seguridad-equipos-informaticos/
 Para la norma ISO 17799 e ISO 27001, la preservación de confidencialidad, integridad y disponibilidad de la información.
 
 {:.question}
-¿Qué es la confidencialidad? ¿Qué es la integridad? ¿Qué es la disponibilidad? 
+¿Qué es la confidencialidad? 
+
+{:.question}
+¿Qué es la integridad? 
+
+{:.question}
+¿Qué es la disponibilidad? 
 
 Para el Ministerio de Administraciones Públicas, es la capacidad de las redes o de los sistemas de información, de resistir, con un determinado nivel de confianza, los accidentes o acciones ilícitas o malintencionadas que comprometan la disponibilidad, autenticidad, integridad y confidencialidad de los datos almacenados o transmitidos, y de los servicios que dichas redes y sistemas ofrecen o hacen accesibles.
 
@@ -140,7 +146,10 @@ Se persigue que, aunque el mensaje encriptado se haga público, no se revele el 
 ## Salvaguardas y tecnologías de seguridad más habituales
 
 Las salvaguardas, o contramedidas, persiguen detectar, prevenir, impedir, reducir, y controlar una amenaza y el daño que pueda generar. Son elementos de defensa, para que las amenazas no causen tanto daño. Como en el caso de las amenazas, las salvaguardas se pueden clasificar según distintas categorías. Por ejemplo, existirán:
-Salvaguardas preventivas o proactivas, que persiguen anticiparse a la ocurrencia del incidente. Salvaguardas reactivas, que persiguen reducir el daño una vez ocurre el incidente. Salvaguarda de “no hacer nada”, o de aceptar el riesgo existente para los equipos (cuando se cumplan los criterios de aceptación de riesgo de la empresa, y solo cuando esta decisión sea autorizada por la Dirección).
+
+- Salvaguardas preventivas o proactivas, que persiguen anticiparse a la ocurrencia del incidente. 
+- Salvaguardas reactivas, que persiguen reducir el daño una vez ocurre el incidente. 
+- Salvaguarda de “no hacer nada”, o de aceptar el riesgo existente para los equipos (cuando se cumplan los criterios de aceptación de riesgo de la empresa, y solo cuando esta decisión sea autorizada por la Dirección).
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es una salvaguarda?</summary>
@@ -273,12 +282,15 @@ Para la construcción de un sistema de seguridad, no bastan los conceptos tecnol
 
 La anterior secuencia describe una repetición continua de fases de:
 
-1. planificación (en inglés, plan)
-2. ejecución (en inglés, do)
-3. medida (en inglés, check)
-4. corrección (en inglés, act)
+1. Planificación (en inglés, plan)
+2. Ejecución (en inglés, do)
+3. Medida (en inglés, check)
+4. Corrección (en inglés, act)
  
-Constituyendo un ciclo de mejora continua de Deming (P-D-C-A), como muestra la siguiente imagen.
+Constituyendo un ciclo de mejora continua de Deming (P-D-C-A), como muestra la siguiente imagen:
+
+![Ciclo de Deming](ciclo-deming.jpg)
+_Ciclo de Deming_
 
 <details class="card mb-2">
   <summary class="card-header question">¿En qué consiste el ciclo de mejora continua de Deming?</summary>
@@ -327,3 +339,8 @@ Las herramientas elementales para la correcta gestión de la seguridad informát
 Ambas herramientas permiten dar los pasos de planificación y medida, y serán las armas esenciales de un SGSI.
 
 La implantación de un SGSI muy exhaustivo puede ser inviable, y paralizar las repeticiones “Plan-Do-Check-Act”.
+
+## Bibliografía
+
+- MF0486_3: Seguridad en equipos informáticos por José Francisco Giménez Albacete
+- <https://asociaciondec.org/blog-dec/que-es-el-ciclo-deming-y-como-puede-mejorar-tu-negocio/65946/>
