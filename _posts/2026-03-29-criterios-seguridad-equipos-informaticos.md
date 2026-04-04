@@ -58,7 +58,7 @@ Por ejemplo, si la amenaza de un corte de suministro eléctrico aprovecha la vul
 
 El riesgo es una medida del daño probable que causará una amenaza, que aprovecha una vulnerabilidad para causar un daño. Es mayor cuanto más frecuente sea la aparición de la amenaza, y cuanto mayor sea el daño del incidente que acarree. Una aproximación cuantitativa sencilla es emplear la siguiente fórmula:
 
-Riesgo = (probabilidad de ocurrencia de una amenaza) x (impacto o daño)
+$$Riesgo = (probabilidad de ocurrencia de una amenaza) x (impacto o daño)$$
 
 Se puede reducir el riesgo, añadiendo las contramedidas que reduzcan las vulnerabilidades a las posibles amenazas. Cuantas más contramedidas se dispongan, es decir, cuantos más recursos se dediquen a la seguridad de los equipos informáticos, menor es el daño probable, o lo que es lo mismo, menor es el riesgo para el sistema de información.
 
@@ -77,25 +77,40 @@ El análisis y gestión de riesgos aporta un valor extraordinario a la gestión 
 {:.subsubsection}
 #### Aplicación práctica
 
-Se parte de una empresa que provee alojamiento de páginas web, con un sistema de información valorado en
-250.000 €. Un análisis de riesgos revela que hay dos amenazas:
+Se parte de una empresa que provee alojamiento de páginas web, con un sistema de información valorado en 250.000 €. Un análisis de riesgos revela que hay dos amenazas:
+
 1. Un fallo del suministro eléctrico, caracterizado por:
-Impacto o daño = 10.000 €
-Probabilidad de ocurrencia de la amenaza= 0.
-1
+  - Impacto o daño = 10.000 €
+  - Probabilidad de ocurrencia de la amenaza= 0.
 2. Un ataque dirigido desde internet, caracterizado por:
-Impacto o daño =500.000 €
-Probabilidad de ocurrencia de la amenaza=
-0.005
+  - Impacto o daño =500.000 €
+  - Probabilidad de ocurrencia de la amenaza= 0.005
+
 El modelo de seguridad de la empresa tiene el criterio de “optimizar la inversión concentrando los recursos en eliminar la mayor amenaza, y asumir el riesgo de las amenazas menores”. Se pide que:
-a. Se cuantifique el riesgo de cada amenaza. b. Se calcule el presupuesto en seguridad que resultaría justificado invertir. c. Se calcule el riesgo que asume la empresa tras la inversión.
+
+a. Se cuantifique el riesgo de cada amenaza. 
+
+b. Se calcule el presupuesto en seguridad que resultaría justificado invertir. 
+
+c. Se calcule el riesgo que asume la empresa tras la inversión.
 
 {:.subsubsection}
 #### Solución
 
 a. CÁLCULO DE RIESGOS:
-Amenaza 1: riesgo = 10.000 x 0. 1 = 1.000 €. Amenaza 2: riesgo = 500.000 x 0.005 = 2.500 €. La amenaza 2, pese a ser veinte veces menos probable que la amenaza 1, es la de mayor riesgo a causa de su elevado impacto. b. PRESUPUESTO EN SEGURIDAD:
-El modelo de seguridad indica que, por criterio de la empresa, debe eliminarse la mayor amenaza, que es la que tiene un riesgo de 2.500 €. El presupuesto que se puede dedicar a combatir la amenaza es de 2.500 €. c. RIESGO TRAS LA INVERSIÓN:
+
+Amenaza 1: riesgo = 10.000 x 0. 1 = 1.000 €. 
+
+Amenaza 2: riesgo = 500.000 x 0.005 = 2.500 €. 
+
+La amenaza 2, pese a ser veinte veces menos probable que la amenaza 1, es la de mayor riesgo a causa de su elevado impacto. 
+
+b. PRESUPUESTO EN SEGURIDAD:
+
+El modelo de seguridad indica que, por criterio de la empresa, debe eliminarse la mayor amenaza, que es la que tiene un riesgo de 2.500 €. El presupuesto que se puede dedicar a combatir la amenaza es de 2.500 €.
+
+c. RIESGO TRAS LA INVERSIÓN:
+
 El modelo de seguridad indica que, por criterio de la empresa, se asume el riesgo del resto de amenazas, es decir el de amenaza 1. El riesgo asumido resultante es de 1.000 €.
 
 {:.section}

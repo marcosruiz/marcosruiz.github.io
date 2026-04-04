@@ -4,6 +4,7 @@ date: 2025-04-02 9:00:00 +0100
 categories: [General]
 tags: [seguridad]
 img_path: /assets/img/seguridad-equipos-informaticos/
+pin: true
 ---
 
 ## Unidades
@@ -22,3 +23,12 @@ img_path: /assets/img/seguridad-equipos-informaticos/
 
 ## Tareas
 
+- Tarea SEI 01
+- Tarea SEI 02
+- Tarea SEI 03
+- Tarea SEI 04
+- Tarea SEI 05
+- Tarea SEI 06
+- Tarea SEI 07
+- Tarea SEI 08
+- Tarea SEI 09
