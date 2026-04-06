@@ -6,6 +6,7 @@ tags: [seguridad, informática, certificado, profesionalidad, mf0486_3, equipos,
 img_path: /assets/img/analisis-impacto-negocio/
 ---
 
+{:.section}
 ## Introducción
 
 El objetivo último de un SGSI asegurar la continuidad del negocio, minimizando los riesgos, y maximizando el retorno de la inversión en seguridad, a la vez que se permiten nuevas oportunidades para la empresa.
@@ -34,6 +35,7 @@ El objetivo del BIA es ordenar los procesos en función de su criticidad, valora
   </div>
 </details>
 
+{:.section}
 ## Identificación de procesos de negocio soportados por sistemas de información
 
 Para una función o proceso de la empresa, el activo esencial será la propia información, es decir, los datos. Pero los datos solo existen en dependencia con otros activos, como:
@@ -131,6 +133,7 @@ Si.
   </div>
 </details>
 
+{:.subsection}
 ### Antes de nada... RPO y RTO
 
 <details class="card mb-2">
@@ -160,6 +163,7 @@ _RPO y RTO_
 Desde que se produce un incidente, hasta que se restablece el servicio, pasa un tiempo sin servicio (RTO). El servicio se recupera, pero con la información que se tenía un tiempo (RPO) previo a la ocurrencia del incidente. El periodo de tiempo total que retrocede la empresa es RPO+RTO.
 
 
+{:.subsection}
 ### Formularios
 
 Se puede distribuir un formulario a todos los trabajadores, o solo a los responsables de área, en los que respondan una serie de preguntas que ayuden a identificar las funciones clave para esa área.
@@ -218,6 +222,7 @@ El análisis de estas tablas puede hacerse asignando valores cuantitativos a las
 > Actividad 02
 {:.prompt-info}
 
+{:.subsection}
 ### Entrevistas a usuarios clave
 
 Una entrevista resulta adecuada cuando no haya certeza de que las preguntas previstas identifiquen todos los aspectos de valoración de la importancia de un proceso: las entrevistas dan cabida a recoger información bajo criterios desconocidos a priori.
@@ -240,6 +245,7 @@ Si. Ya que puede consumir recursos excesivos fácilmente.
 > Actividad 03
 {:.prompt-info}
 
+{:.subsection}
 ### Reuniones entre personal de TIC y usuarios clave
 
 Permite decidir el impacto de los diferentes procesos o funciones, y el tiempo de parada admisible en cada uno de ellos.
@@ -248,6 +254,7 @@ Permite decidir el impacto de los diferentes procesos o funciones, y el tiempo d
 
 El coste de la parada, normalmente aumentará con el tiempo, de manera escalonada o gradual, como en la imagen. El coste de las medidas de recuperación se comporta al revés, de manera que las medidas que proporcionan una recuperación muy rápida, normalmente serán más caras que las que recuperan el proceso en más tiempo. Sumando ambos costes, se obtendrá una curva característica en “U”, cuyo mínimo indicará el coste mínimo del incidente, y el tiempo de recuperación del proceso (RTO).
 
+{:.subsubsection}
 #### Aplicación práctica
 
 El proceso crítico de una empresa es la venta por internet. El BIA determina que el impacto de una parada es de 100 € a la hora. El personal de seguridad considera tres posibles estrategias para restablecer el servicio:
@@ -259,6 +266,7 @@ b. Con un plazo de 3 días, alquilar un servidor alojado por terceros para monta
 
 c. Con un plazo de 5 días, arreglar el servidor averiado. El importe de la reparación es de 100 €. Seleccionar la mejor opción.
 
+{:.subsubsection}
 #### SOLUCIÓN
 
 Es necesario evaluar el coste de cada solución. 
@@ -283,10 +291,12 @@ Restablecido el servicio, la empresa dispone de un mes para restablecerlo por co
 - Dispone de 25 días para repararlo (coste solución total = 8.200 + 100 = 8.300 €). 
 - Dispone de 23 días para comprar uno nuevo (coste solución total = 8.200 + 2.000 = 10.200 €).
 
+{:.section}
 ## Valoración de los requerimientos CIA de los procesos de negocio
 
 La seguridad se apoya en los tres principios de seguridad CIA.
 
+{:.subsection}
 ### Procesos
 
 Existen varias definiciones:
@@ -304,6 +314,7 @@ En el caso de un proceso de negocio representa al conjunto de trabajos que se re
 > Actividad 04
 {:.prompt-info}
 
+{:.subsection}
 ### Clasificación de la información
 
 Desde la perspectiva de la seguridad la información se clasifica en:
@@ -315,6 +326,7 @@ Desde la perspectiva de la seguridad la información se clasifica en:
 > Actividad 05
 {:.prompt-info}
 
+{:.subsubsection}
 #### Confidencial
 
 Su difusión sin control supone incumplimientos legales. Su difusión sin control supone incumplimientos de las normativas o reglamentos a los que la empresa se sujeta. Si se difunde sin control o se hace pública, genera un daño grave/desastroso para la empresa, financiera/económicamente o en su imagen.
@@ -338,6 +350,7 @@ contratos con clientes, datos de carácter personal según la legislación nacio
   </div>
 </details>
 
+{:.subsubsection}
 #### Interna
 
 Su difusión sin control no genera un daño grave para la empresa.
@@ -358,6 +371,7 @@ circulares internas, políticas de diversos aspectos, material formativo, etc.
   </div>
 </details>
 
+{:.subsubsection}
 #### Pública
 
 La no disponibilidad no tiene ninguna consecuencia. Su difusión no genera ningún daño ni pérdida a la empresa, ni económicamente, ni en su imagen.
@@ -382,10 +396,12 @@ notas de prensa, presentaciones comerciales, catálogos de productos o servicios
 {:.question}
 ¿Qué tipo de información es el código fuente de un programa?
 
+{:.subsection}
 ### Valoración CIA de la información
 
 A continuación, se exponen indicaciones habituales que ayudarán a determinar los requisitos de seguridad de la información en sus 3 dimensiones habituales. En líneas generales, el nivel viene dado por el daño que una degradación de una propiedad genera en la empresa.
 
+{:.subsubsection}
 #### Confidencialidad
 
 Requerimientos de confidencialidad para la información:
@@ -427,6 +443,7 @@ notas de prensa, o la información publicada en la web de la empresa.
   </div>
 </details>
 
+{:.subsubsection}
 #### Integridad
 
 La integridad se refiere a la completitud y exactitud de la información. La integridad se pierde cuando se realizan cambios no autorizados. Los criterios para determinar los requisitos de integridad de la información, podrían ser como los siguientes:
@@ -437,6 +454,7 @@ La integridad se refiere a la completitud y exactitud de la información. La int
 | Medio | Una degradación de la información, bien en su completitud o en su precisión, o en ambos, tendría un impacto moderado. |
 | Bajo | La completitud o precisión de la información puede degradarse con un impacto ninguno/bajo en el proceso. |
 
+{:.subsubsection}
 #### Disponibilidad
 
 La disponibilidad se refiere a que la información esté disponible cuando se necesite. Los criterios para determinar los requisitos de disponibilidad de la información podrían ser como los siguientes. Los periodos indicados son meramente orientativos, y se espera que difieran de una empresa a otra:
@@ -450,6 +468,7 @@ La disponibilidad se refiere a que la información esté disponible cuando se ne
 > Actividad 06
 {:.prompt-info}
 
+{:.subsection}
 ### Valoración de los procesos a partir de sus componentes
 
 Los requisitos de seguridad para los procesos pueden observarse entonces como una combinación de los requisitos de seguridad de las personas, de los sistemas, y de la información que intervenga.
@@ -462,6 +481,7 @@ Una opción sencilla cuando se realizan valoraciones cualitativas, es emplear pa
 
 Cada elemento va añadiendo sus requisitos CIA según se asciende hasta el proceso final. Si las relaciones que se emplea son en sentido contrario (“necesita” en lugar de “permite”), se puede realizar el proceso inverso, y propagar los requisitos CIA del proceso hacia sus integrantes.
 
+{:.section}
 ## Determinación de los sistemas de información que soportan los procesos de negocio y sus requerimientos de seguridad
 
 En el apartado anterior se dieron las pautas para determinar los requerimientos de seguridad de la información. Los otros elementos que pueden intervenir en un proceso son:
@@ -469,12 +489,14 @@ En el apartado anterior se dieron las pautas para determinar los requerimientos 
 - Las personas
 - Los sistemas.
 
+{:.subsection}
 ### Personas
 
 La información es manejada por personas, y resulta importante tener identificadas a dichas personas, que serán empleados de la empresa, o externos (proveedores, clientes, visitas, y otros).
 
 La valoración para cada persona que intervenga en el proceso se evalúa en las tres dimensiones de la seguridad CIA.
 
+{:.subsubsection}
 #### Confidencialidad
 
 | Nivel | Descripción |
@@ -483,6 +505,7 @@ La valoración para cada persona que intervenga en el proceso se evalúa en las 
 | Medio | Cuando las personas acceden a información calificada como interna. Un incidente de seguridad tendría un impacto moderado en el proceso. |
 | Bajo | Cuando las personas acceden a información calificada como pública. Un incidente de seguridad tendría una repercusión ninguna/bajo en el proceso. |
 
+{:.subsubsection}
 #### Integridad
 
 | Nivel | Descripción |
@@ -491,6 +514,7 @@ La valoración para cada persona que intervenga en el proceso se evalúa en las 
 | Medio | Cuando las personas pueden modificar completamente información calificada como interna e información calificada como pública. Un incidente de seguridad tendría un impacto moderado en el proceso. |
 | Bajo | Cuando las personas tienen restricciones para modificar la información calificada como interna e información calificada como pública. Un incidente de seguridad tendría una repercusión ninguna/bajo en el proceso. |
 
+{:.subsubsection}
 #### Disponibilidad
 
 | Nivel | Descripción |
@@ -499,6 +523,7 @@ La valoración para cada persona que intervenga en el proceso se evalúa en las 
 | Medio | Cuando la no disponibilidad de la persona tendría un impacto moderado en el proceso. |
 | Bajo | Cuando la no disponibilidad de la persona tendría un impacto ninguno/bajo en el proceso. |
 
+{:.subsection}
 ### Sistemas
 
 En esta categoría se deben clasificar los componentes que intervienen en el proceso, al margen de las personas y de la información.
@@ -522,6 +547,7 @@ Los soportes de almacenamiento son una pieza esencial de un sistema de informaci
 > Actividad 07
 {:.prompt-info}
 
+{:.subsubsection}
 #### Confidencialidad
 
 | Nivel | Descripción |
@@ -530,6 +556,7 @@ Los soportes de almacenamiento son una pieza esencial de un sistema de informaci
 | Medio | Cuando la información procesada, almacenada, o el servicio prestado, es de confidencialidad media. |
 | Bajo | Cuando la información procesada, almacenada, o el servicio prestado, es de confidencialidad baja. |
 
+{:.subsubsection}
 #### Integridad
 
 | Nivel | Descripción |
@@ -538,6 +565,7 @@ Los soportes de almacenamiento son una pieza esencial de un sistema de informaci
 | Medio | La información procesada o almacenada tiene un nivel de disponibilidad medio. Cuando la no disponibilidad de los sistemas tendría un impacto moderado en el proceso. |
 | Bajo | La información procesada o almacenada tiene un nivel de disponibilidad bajo. Cuando la no disponibilidad de los sistemas tendría un impacto ninguno/bajo en el proceso. |
 
+{:.subsubsection}
 #### Disponibilidad
 
 | Nivel | Descripción |
@@ -549,6 +577,7 @@ Los soportes de almacenamiento son una pieza esencial de un sistema de informaci
 > Actividad 08
 {:.prompt-info}
 
+{:.subsection}
 ### Herramientas de ayuda para determinar los componentes
 
 Para determinar los sistemas de información que intervienen en un proceso, puede servir de ayuda partir de una narrativa.
@@ -564,6 +593,7 @@ De esta manera, se puede ordenar de manera jerárquica la dependencia de los com
 {:.question}
 ¿Se te ocurre algún sitio donde se empleen los árboles invertidos para mostrar dependencia?
 
+{:.subsubsection}
 #### Aplicación práctica
 
 El proceso crítico de una empresa es la venta por internet. Resumidamente, un comprador accede desde internet a la web de venta online, alojada en un servidor ubicado en la sede de la empresa. El servidor se comunica a través de un firewall con una base de datos interna, que solo sabe administrar una persona del departamento de informática. La venta tiene interrupciones breves, como sucede durante los trabajos de mantenimiento en la base de datos, que se advierten en la página web. Los elementos del servicio y sus valoraciones CIA (bajo = 1, medio = 2, alto = 3) son:
@@ -582,6 +612,7 @@ Personas
 
 Administrador de base de datos (M, M, A): la información que maneja es interna, de manera que confidencialidad e integridad serán medias. La disponibilidad es elevada, porque sin base de datos y sin su mantenimiento no hay negocio. Determinar los requisitos CIA del proceso, a partir de sus componentes:
 
+{:.subsubsection}
 #### Solución
 
 El siguiente diagrama representa el proceso de venta, e incluye la valoración para cada componente, y el resultado agregado para el proceso (8, 11, 10), de manera que la integridad es el principal requisito.
