@@ -8,9 +8,9 @@ img_path: /assets/img/analisis-impacto-negocio/
 
 ## Introducción
 
-objetivo último de un SGSI asegurar la continuidad del negocio, minimizando los riesgos, y maximizando el retorno de la inversión en seguridad, a la vez que se permiten nuevas oportunidades para la empresa.
+El objetivo último de un SGSI asegurar la continuidad del negocio, minimizando los riesgos, y maximizando el retorno de la inversión en seguridad, a la vez que se permiten nuevas oportunidades para la empresa.
 
-La continuidad del negocio está estrechamente relacionada con: la disponibilidadm, la integridad y la confidencialidad.
+La continuidad del negocio está estrechamente relacionada con: la disponibilidad, la integridad y la confidencialidad.
 
 Para asegurar la continuidad del negocio, hay que asegurar en todas sus dimensiones el sistema de información, empleando un criterio de evaluación de riesgos, con una etapa de análisis, y una etapa de gestión de riesgos.
 
@@ -18,14 +18,41 @@ También pueden concurrir circunstancias que obliguen a reducir el análisis a u
 
 Para asegurar la continuidad del negocio, el punto de partida recomendado es un análisis de impacto del negocio (o BIA a partir de sus iniciales en inglés, Business Impact Analysis). En el BIA se estudian los procesos o funciones vitales del negocio, que dependan en cualquier medida de los sistemas de información. Una vez identificados, se determinará el coste que supone para el negocio una interrupción de esas funciones vitales.
 
+{:.question}
+¿Qué significan las siglas BIA en inglés?
+
+{:.question}
+¿Qué significan las siglas BIA en español?
+
+<details class="card mb-2">
+  <summary class="card-header question">¿Cuál es el objetivo de un BIA?</summary>
+  <div class="card-body" markdown="1">
+
+El objetivo del BIA es ordenar los procesos en función de su criticidad, valorar el daño de una interrupción, y ayudar a determinar si una estrategia de recuperación es adecuada. La valoración puede hacerse de manera cuantitativa, por ejemplo con las pérdidas económicas (€) generadas por la parada; o en términos cualitativos mediante niveles tipo bajo, medio o alto. El criterio debe mantenerse ,para que futuras revisiones del BIA sean coherentes.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 ## Identificación de procesos de negocio soportados por sistemas de información
 
-Para una función o proceso de la empresa, el activo esencial será la propia información, es decir, los datos. Pero los datos solo existen en dependencia con otros activos, como los servicios (que se prestan gracias a los datos, o que son necesarios para producirlos), las aplicaciones (que procesan los datos), los equipos (que ejecutan las aplicaciones), los soportes (que almacenan los datos), las redes de comunicaciones (que transmiten los datos), las instalaciones
-(que albergan los equipos), y las personas (que operan los datos).
+Para una función o proceso de la empresa, el activo esencial será la propia información, es decir, los datos. Pero los datos solo existen en dependencia con otros activos, como:
+
+- los servicios (que se prestan gracias a los datos, o que son necesarios para producirlos), 
+- las aplicaciones (que procesan los datos), 
+- los equipos (que ejecutan las aplicaciones), 
+- los soportes (que almacenan los datos), 
+- las redes de comunicaciones (que transmiten los datos), 
+- las instalaciones (que albergan los equipos), y 
+- las personas (que operan los datos).
 
 La evaluación de riesgos para los equipos informáticos que intervengan en esas funciones vitales, permitirá conocer el coste de recuperación del servicio.
 
-Del BIA se obtienen resultados de muchísimo valor: conocer cuáles son los activos informáticos que intervienen en los procesos críticos del negocio, ser capaces de evaluar su impacto, y conocer cuáles son los requisitos de seguridad para estos activos (tiempo objetivo de restablecimiento, qué salvaguardas planificadas que se deben aplicar, etc.).
+Del BIA se obtienen resultados de muchísimo valor: 
+
+- conocer cuáles son los activos informáticos que intervienen en los procesos críticos del negocio, 
+- ser capaces de evaluar su impacto, y 
+- conocer cuáles son los requisitos de seguridad para estos activos (tiempo objetivo de restablecimiento, qué salvaguardas planificadas que se deben aplicar, etc.).
 
 <details class="card mb-2">
   <summary class="card-header question">Si en la empresa ya existe un análisis de riesgos, ¿debemos tenerlo en cuenta para realizar un BIA?</summary>
@@ -41,8 +68,11 @@ Si en la empresa ya existen análisis de riesgos, el BIA se realiza partiendo de
   <summary class="card-header question">¿Qué es el BIA?</summary>
   <div class="card-body" markdown="1">
 
-El BIA es el estudio de las consecuencias que tendría en el negocio en una parada de sus procesos vitales por un determinado tiempo:
-qué hay que recuperar, cuánto cuesta hacerlo, y cómo hay que recuperarlo.
+El BIA es el estudio de las consecuencias que tendría en el negocio en una parada de sus procesos vitales por un determinado tiempo: 
+
+- qué hay que recuperar, 
+- cuánto cuesta hacerlo, y 
+- cómo hay que recuperarlo.
 
 Este en un enfoque muy adecuado para identificar riesgos, logrando aplicar recursos de manera proporcional, minimizando el riesgo, y con un óptimo retorno de la inversión.
 
@@ -54,9 +84,21 @@ El BIA permite así descubrir componentes frecuentemente olvidados, pero importa
   </div>
 </details>
 
+<details class="card mb-2">
+  <summary class="card-header question">¿Qué es el BCP o Business Continuity Plan?</summary>
+  <div class="card-body" markdown="1">
+
+Un Business Continuity Plan (BCP) —o Plan de Continuidad del Negocio— es un documento estratégico que define cómo una empresa seguirá operando durante y después de una interrupción inesperada.
+
+Estas interrupciones pueden ser de muchos tipos: ciberataques, fallos tecnológicos, desastres naturales, pandemias o incluso errores humanos.
+
+<!-- Comentario para que no se descuajeringue la cosa -->
+  </div>
+</details>
+
 
 <details class="card mb-2">
-  <summary class="card-header question">¿El BIA es una herramienta para elaborar el plan de continuidad de la empresa (o BCP, por las iniciales de Business Continuity Plan)?</summary>
+  <summary class="card-header question">¿El BIA es una herramienta para elaborar el Business Continuity Plan?</summary>
   <div class="card-body" markdown="1">
 
 Si.
@@ -89,44 +131,7 @@ Si.
   </div>
 </details>
 
-
-### Formularios
-
-Se puede distribuir un formulario a todos los trabajadores, o solo a los responsables de área, en los que respondan una serie de preguntas que ayuden a identificar las funciones clave para esa área.
-
-IMPORTANTE: Es obligatorio considerar que, si se hubieran externalizado servicios de TI a proveedores, habría que considerar los contratos para dichos servicios, especialmente en lo referente a las obligaciones y compromisos adquiridos por el proveedor.
-
-<details class="card mb-2">
-  <summary class="card-header question">¿Existe un formulario único para un BIA (Business Impact Analysis)?</summary>
-  <div class="card-body" markdown="1">
-
-No. dependerá de cada empresa, o de lo exhaustivo que se quiera/pueda ser. Además, el método puede ser cualitativo.
-
-Peeeero, en todos los casos, la información recogida debe permitir evaluar los siguientes resultados del BIA:
-
-- A. Cuáles son los procesos críticos, u ordenarlos por prioridad.
-- B. Cuál es el daño/impacto, en función del tiempo que se tarde en restablecerse el servicio.
-- C. Cuál es el coste de las diferentes estrategias de recuperación, que proporcionarán un tiempo y un punto objetivo de recuperación.
-
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
-
-
-A continuación, se dan ejemplos muy sencillos de formularios posibles:
-
-![Formulario de ejemplo](image-1.png)
-_Formulario de evaluación BIA 1_
-
-El apartado A.2 permite evaluar la importancia que los usuarios entregan a la función dentro de la empresa. Sin embargo, la función podría no tener ninguna relación con los sistemas de información.
-
-El apartado B.1 define el periodo de tiempo para el que el usuario está dispuesto a perder información, lo que será especialmente relevante a la hora de evaluar las posibles estrategias de recuperación. Esto indica el valor que la información, y por lo tanto de los sistemas de información que la procesan, representan en el proceso. Los procesos que tengan una valoración de ninguno para el periodo de tiempo total, son los que no tienen ninguna dependencia con los sistemas de información. En el otro extremo, cuanto mayor sea la valoración de la pérdida en cualquiera de los periodos, tanto mayor será la dependencia del proceso para con los sistemas de información.
-
-![Formulario de ejemplo](image-2.png)
-_Formulario de evaluación BIA 1_
-
-El apartado B.2 ayuda a terminar de valorar la criticidad de la función, midiendo el daño que se le produce a la propia función a consecuencia de una interrupción, en función del tiempo que duren, y de 5 aspectos:
-El daño para cumplir la función principal. Por ejemplo, en un proceso de fabricación, pueden existir funciones que si se interrumpen más de un día, conlleven que no sea posible reiniciar la producción. Por ejemplo, en un sistema de alimentación ininterrumpido (SAI) basado en baterías de plomo cuya recarga controla un ordenador, si este no estuviera disponible durante más de 8 horas, el daño sería desastroso, ya que a las 8 horas las baterías se agotarían por completo y su capacidad se recarga quedaría extinguida. El daño financiero para la función, en términos económicos. El daño para otras funciones dependientes de esta. Esta valoración excede el ámbito de la propia área o departamento, ya que valora la dependencia general que de esta función tengan las demás funciones de la empresa. El daño que causaría, para la reputación o imagen del área o departamento que desempeña la función, la interrupción de la misma. El daño que generaría en la comodidad y nivel de satisfacción del área o departamento la interrupción de su función.
+### Antes de nada... RPO y RTO
 
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es un RPO?</summary>
@@ -154,22 +159,64 @@ _RPO y RTO_
 
 Desde que se produce un incidente, hasta que se restablece el servicio, pasa un tiempo sin servicio (RTO). El servicio se recupera, pero con la información que se tenía un tiempo (RPO) previo a la ocurrencia del incidente. El periodo de tiempo total que retrocede la empresa es RPO+RTO.
 
-Para recoger las estrategias de recuperación se puede emplear un formulario similar al siguiente:
 
-![Formulario de evaluación BIA](image-4.png)
-_Formulario de evaluación BIA 2_
+### Formularios
+
+Se puede distribuir un formulario a todos los trabajadores, o solo a los responsables de área, en los que respondan una serie de preguntas que ayuden a identificar las funciones clave para esa área.
+
+IMPORTANTE: Es obligatorio considerar que, si se hubieran externalizado servicios de TI a proveedores, habría que considerar los contratos para dichos servicios, especialmente en lo referente a las obligaciones y compromisos adquiridos por el proveedor.
 
 <details class="card mb-2">
-  <summary class="card-header question">¿Cuál es el objetivo de un BIA?</summary>
+  <summary class="card-header question">¿Existe un formulario único para un BIA (Business Impact Analysis)?</summary>
   <div class="card-body" markdown="1">
 
-El objetivo del BIA es ordenar los procesos en función de su criticidad, valorar el daño de una interrupción, y ayudar a determinar si una estrategia de recuperación es adecuada. La valoración puede hacerse de manera cuantitativa, por ejemplo con las pérdidas económicas (€) generadas por la parada; o en términos cualitativos mediante niveles tipo bajo, medio o alto. El criterio debe mantenerse ,para que futuras revisiones del BIA sean coherentes.
+No. dependerá de cada empresa, o de lo exhaustivo que se quiera/pueda ser. Además, el método puede ser cualitativo o cuantitativo.
+
+Peeeero, en todos los casos, la información recogida debe permitir evaluar los siguientes resultados del BIA:
+
+- A. Cuáles son los procesos críticos, u ordenarlos por prioridad.
+- B. Cuál es el daño/impacto, en función del tiempo que se tarde en restablecerse el servicio.
+- C. Cuál es el coste de las diferentes estrategias de recuperación, que proporcionarán un tiempo y un punto objetivo de recuperación.
 
 <!-- Comentario para que no se descuajeringue la cosa -->
   </div>
 </details>
 
+A continuación, se dan ejemplos muy sencillos de formularios posibles:
+
+![Formulario de ejemplo](image-1.png)
+_Formulario de evaluación BIA 1_
+
+El apartado A.2 permite evaluar la importancia que los usuarios entregan a la función dentro de la empresa. Sin embargo, la función podría no tener ninguna relación con los sistemas de información.
+
+El apartado B.1 define el periodo de tiempo para el que el usuario está dispuesto a perder información, lo que será especialmente relevante a la hora de evaluar las posibles estrategias de recuperación. Esto indica el valor que la información, y por lo tanto de los sistemas de información que la procesan, representan en el proceso. Los procesos que tengan una valoración de ninguno para el periodo de tiempo total, son los que no tienen ninguna dependencia con los sistemas de información. En el otro extremo, cuanto mayor sea la valoración de la pérdida en cualquiera de los periodos, tanto mayor será la dependencia del proceso para con los sistemas de información.
+
+![Formulario de ejemplo](image-2.png)
+_Formulario de evaluación BIA 1_
+
+El apartado B.2 ayuda a terminar de valorar la criticidad de la función, midiendo el daño que se le produce a la propia función a consecuencia de una interrupción, en función del tiempo que duren, y de 5 aspectos:
+
+- El daño para cumplir la función principal. Por ejemplo, en un proceso de fabricación, pueden existir funciones que si se interrumpen más de un día, conlleven que no sea posible reiniciar la producción. Por ejemplo, en un sistema de alimentación ininterrumpido (SAI) basado en baterías de plomo cuya recarga controla un ordenador, si este no estuviera disponible durante más de 8 horas, el daño sería desastroso, ya que a las 8 horas las baterías se agotarían por completo y su capacidad se recarga quedaría extinguida. 
+- El daño financiero para la función, en términos económicos. 
+- El daño para otras funciones dependientes de esta. Esta valoración excede el ámbito de la propia área o departamento, ya que valora la dependencia general que de esta función tengan las demás funciones de la empresa. 
+- El daño que causaría, para la reputación o imagen del área o departamento que desempeña la función, la interrupción de la misma. 
+- El daño que generaría en la comodidad y nivel de satisfacción del área o departamento la interrupción de su función.- 
+
+Para recoger las estrategias de recuperación se puede emplear un formulario similar al siguiente:
+
+![Formulario de evaluación BIA](image-4.png)
+_Formulario de evaluación BIA 2_
+
 El análisis de estas tablas puede hacerse asignando valores cuantitativos a las respuestas cualitativas y calculando el nivel de criticidad con la formula que consideremos oportuna.
+
+{:.question}
+¿Cuál es el objetivo de un BIA?
+
+> Actividad 01
+{:.prompt-info}
+
+> Actividad 02
+{:.prompt-info}
 
 ### Entrevistas a usuarios clave
 
@@ -190,6 +237,8 @@ Si. Ya que puede consumir recursos excesivos fácilmente.
   </div>
 </details>
 
+> Actividad 03
+{:.prompt-info}
 
 ### Reuniones entre personal de TIC y usuarios clave
 
@@ -199,38 +248,61 @@ Permite decidir el impacto de los diferentes procesos o funciones, y el tiempo d
 
 El coste de la parada, normalmente aumentará con el tiempo, de manera escalonada o gradual, como en la imagen. El coste de las medidas de recuperación se comporta al revés, de manera que las medidas que proporcionan una recuperación muy rápida, normalmente serán más caras que las que recuperan el proceso en más tiempo. Sumando ambos costes, se obtendrá una curva característica en “U”, cuyo mínimo indicará el coste mínimo del incidente, y el tiempo de recuperación del proceso (RTO).
 
-### Aplicación práctica
+#### Aplicación práctica
 
-El proceso crítico de una empresa es la venta por internet. El BIA determina que el impacto de una parada es de 100 €
-a la hora. El personal de seguridad considera tres posibles estrategias para restablecer el servicio:
-a. Con un plazo de puesta en marcha de 7 días, disponer un servidor nuevo en el que montar las copias de seguridad. El importe es de 2000 €. b. Con un plazo de 3 días, alquilar un servidor alojado por terceros para montar las copias de seguridad. El contrato mínimo es por un mes, con un importe de
-1000 €. c. Con un plazo de 5 días, arreglar el servidor averiado. El importe de la reparación es de 100 €. Seleccionar la mejor opción.
+El proceso crítico de una empresa es la venta por internet. El BIA determina que el impacto de una parada es de 100 € a la hora. El personal de seguridad considera tres posibles estrategias para restablecer el servicio:
 
-### SOLUCIÓN
+a. Con un plazo de puesta en marcha de 7 días, disponer un servidor nuevo en el que montar las copias de seguridad. El importe es de 2000 €. 
 
-Es necesario evaluar el coste de cada solución. Coste solución A:
-Coste parada = 24x7x100 = 16.800 €. Coste recuperación = 2.000 €. Coste total = 18.800 €. Coste solución B:
-Coste parada = 24x3x100 = 7.200 €. Coste recuperación = 1.000 €. Coste total = 8.200 €
-Coste solución C:
-Coste parada = 24x5x100 = 12.000 €
-Coste recuperación = 100 €. Coste total = 12.100 €. La solución de coste mínimo para restablecer el servicio es la solución B, que además es la que proporciona el menor RTO. Restablecido el servicio, la empresa dispone de un mes para restablecerlo por completo, entendiendo como tal volver a disponer de un servidor en propiedad:
-Dispone de 25 días para repararlo (coste solución total =
-8.200 + 100 = 8.300 €). Dispone de 23 días para comprar uno nuevo (coste solución total = 8.200 + 2.000 = 10.200 €).
+b. Con un plazo de 3 días, alquilar un servidor alojado por terceros para montar las copias de seguridad. El contrato mínimo es por un mes, con un importe de
+1000 €. 
+
+c. Con un plazo de 5 días, arreglar el servidor averiado. El importe de la reparación es de 100 €. Seleccionar la mejor opción.
+
+#### SOLUCIÓN
+
+Es necesario evaluar el coste de cada solución. 
+
+- Coste solución A:
+  - Coste parada = 24x7x100 = 16.800 €. 
+  - Coste recuperación = 2.000 €. 
+  - Coste total = 18.800 €. 
+- Coste solución B:
+  - Coste parada = 24x3x100 = 7.200 €. 
+  - Coste recuperación = 1.000 €. 
+  - Coste total = 8.200 €
+- Coste solución C:
+  - Coste parada = 24x5x100 = 12.000 €
+  - Coste recuperación = 100 €. 
+  - Coste total = 12.100 €. 
+
+La solución de coste mínimo para restablecer el servicio es la solución B, que además es la que proporciona el menor RTO. 
+
+Restablecido el servicio, la empresa dispone de un mes para restablecerlo por completo, entendiendo como tal volver a disponer de un servidor en propiedad:
+
+- Dispone de 25 días para repararlo (coste solución total = 8.200 + 100 = 8.300 €). 
+- Dispone de 23 días para comprar uno nuevo (coste solución total = 8.200 + 2.000 = 10.200 €).
 
 ## Valoración de los requerimientos CIA de los procesos de negocio
 
 La seguridad se apoya en los tres principios de seguridad CIA.
 
-<details class="card mb-2">
-  <summary class="card-header question">¿Qué es un proceso?</summary>
-  <div class="card-body" markdown="1">
+### Procesos
 
-Conjunto de actividades mutuamente relacionadas o que interactúan, las cuales transforman elementos de entrada en resultados.
+Existen varias definiciones:
 
-<!-- Comentario para que no se descuajeringue la cosa -->
-  </div>
-</details>
+- Un conjunto de las fases sucesivas.
+- Conjunto de actividades mutuamente relacionadas o que interactúan, las cuales transforman elementos de entrada en resultados.
 
+{:.question}
+¿Qué es un proceso?
+
+Un proceso puede generar como resultado un producto, un servicio, un resultado o algo desconocido.
+
+En el caso de un proceso de negocio representa al conjunto de trabajos que se realizan para generar un producto o servicio.
+
+> Actividad 04
+{:.prompt-info}
 
 ### Clasificación de la información
 
@@ -239,6 +311,9 @@ Desde la perspectiva de la seguridad la información se clasifica en:
 - Confidencial
 - Interna
 - Pública
+
+> Actividad 05
+{:.prompt-info}
 
 #### Confidencial
 
@@ -263,7 +338,6 @@ contratos con clientes, datos de carácter personal según la legislación nacio
   </div>
 </details>
 
-
 #### Interna
 
 Su difusión sin control no genera un daño grave para la empresa.
@@ -271,6 +345,7 @@ Su difusión sin control no genera un daño grave para la empresa.
 Si se difunde sin control o se hace pública, genera un daño bajo para la empresa, financiera/económicamente, o en su imagen.
 
 Para su gestión, comúnmente se acepta:
+
 Acceso libre para los empleados o personal interno de la empresa.
 
 <details class="card mb-2">
@@ -288,6 +363,7 @@ circulares internas, políticas de diversos aspectos, material formativo, etc.
 La no disponibilidad no tiene ninguna consecuencia. Su difusión no genera ningún daño ni pérdida a la empresa, ni económicamente, ni en su imagen.
 
 Para su gestión, comúnmente se acepta:
+
 Esta información debe ser calificada expresamente para difusión pública, o por el área o responsable de comunicación de la empresa, o por el área de marketing, si se trata de información comercial.
 
 <details class="card mb-2">
@@ -308,8 +384,7 @@ notas de prensa, presentaciones comerciales, catálogos de productos o servicios
 
 ### Valoración CIA de la información
 
-A continuación, se exponen indicaciones habituales que ayudarán a determinar los requisitos de seguridad de la información en sus 3
-dimensiones habituales. En líneas generales, el nivel viene dado por el daño que una degradación de una propiedad genera en la empresa.
+A continuación, se exponen indicaciones habituales que ayudarán a determinar los requisitos de seguridad de la información en sus 3 dimensiones habituales. En líneas generales, el nivel viene dado por el daño que una degradación de una propiedad genera en la empresa.
 
 #### Confidencialidad
 
@@ -372,6 +447,9 @@ La disponibilidad se refiere a que la información esté disponible cuando se ne
 | Medio | La información puede no estar disponible por un periodo de uno o dos días. La indisponibilidad tiene un impacto moderado. |
 | Bajo | La información puede no estar disponible por un periodo de hasta 7 días. La indisponibilidad tiene un impacto ninguno/bajo. |
 
+> Actividad 06
+{:.prompt-info}
+
 ### Valoración de los procesos a partir de sus componentes
 
 Los requisitos de seguridad para los procesos pueden observarse entonces como una combinación de los requisitos de seguridad de las personas, de los sistemas, y de la información que intervenga.
@@ -404,7 +482,6 @@ La valoración para cada persona que intervenga en el proceso se evalúa en las 
 | Alto | Cuando las personas acceden a información calificada como confidencial o crítica para la empresa. Un incidente de seguridad causado por una persona con un requisito de confidencialidad alto tendría un impacto grave/desastroso en el proceso. |
 | Medio | Cuando las personas acceden a información calificada como interna. Un incidente de seguridad tendría un impacto moderado en el proceso. |
 | Bajo | Cuando las personas acceden a información calificada como pública. Un incidente de seguridad tendría una repercusión ninguna/bajo en el proceso. |
-
 
 #### Integridad
 
@@ -442,6 +519,9 @@ Los soportes de almacenamiento son una pieza esencial de un sistema de informaci
   </div>
 </details>
 
+> Actividad 07
+{:.prompt-info}
+
 #### Confidencialidad
 
 | Nivel | Descripción |
@@ -466,25 +546,41 @@ Los soportes de almacenamiento son una pieza esencial de un sistema de informaci
 | Medio | La información procesada o almacenada tiene un nivel de disponibilidad medio. Cuando la no disponibilidad de los sistemas tendría un impacto moderado en el proceso. |
 | Bajo | La información procesada o almacenada tiene un nivel de disponibilidad bajo. Cuando la no disponibilidad de los sistemas tendría un impacto ninguno/bajo en el proceso. |
 
+> Actividad 08
+{:.prompt-info}
+
 ### Herramientas de ayuda para determinar los componentes
 
 Para determinar los sistemas de información que intervienen en un proceso, puede servir de ayuda partir de una narrativa.
 
 Cuando el proceso es complejo, conviene dividirlo en fases. Puede ayudar preguntarse si se encuentran respondidos siete aspectos fundamentales: ¿qué, quién, cuándo, cómo, dónde, por qué, y para qué?
 
-Partiendo de la narrativa, se enumeran los elementos que intervengan en cada categoría:
-personas, sistemas, e información de entrada.
+Partiendo de la narrativa, se enumeran los elementos que intervengan en cada categoría: personas, sistemas, e información de entrada.
 
-Posteriormente, cada uno de estos elementos se relaciona con los demás mediante una acción que puede resumirse en un verbo
-(genera, autoriza, procesa, transmite, etc.).
+Posteriormente, cada uno de estos elementos se relaciona con los demás mediante una acción que puede resumirse en un verbo (genera, autoriza, procesa, transmite, etc.).
 
 De esta manera, se puede ordenar de manera jerárquica la dependencia de los componentes con una estructura de árbol invertido.
+
+{:.question}
+¿Se te ocurre algún sitio donde se empleen los árboles invertidos para mostrar dependencia?
 
 #### Aplicación práctica
 
 El proceso crítico de una empresa es la venta por internet. Resumidamente, un comprador accede desde internet a la web de venta online, alojada en un servidor ubicado en la sede de la empresa. El servidor se comunica a través de un firewall con una base de datos interna, que solo sabe administrar una persona del departamento de informática. La venta tiene interrupciones breves, como sucede durante los trabajos de mantenimiento en la base de datos, que se advierten en la página web. Los elementos del servicio y sus valoraciones CIA (bajo = 1, medio = 2, alto = 3) son:
-Información Base de datos (M, A, M): la información es interna, por lo que la confidencialidad es media. La integridad es alta, porque no puede haber errores en las ventas. La disponibilidad es media, porque se admiten interrupciones. Sistemas Servidor web (M, A, A): la información que recibe es interna, siendo su confidencialidad media. Su integridad es alta, porque se deposita mucha confianza en este equipo. La disponibilidad es alta, porque la web debe estar disponible para advertir que no hay venta. Firewall (M, A, M): la información que procesa tiene un nivel de confidencialidad medio, el servicio que presta tiene un nivel de confianza alto, y
-se admiten interrupciones, al igual que la información que protege. Personas Administrador de base de datos (M, M, A): la información que maneja es interna, de manera que confidencialidad e integridad serán medias. La disponibilidad es elevada, porque sin base de datos y sin su mantenimiento no hay negocio. Determinar los requisitos CIA del proceso, a partir de sus componentes:
+
+Información 
+
+Base de datos (M, A, M): la información es interna, por lo que la confidencialidad es media. La integridad es alta, porque no puede haber errores en las ventas. La disponibilidad es media, porque se admiten interrupciones. 
+
+Sistemas 
+
+Servidor web (M, A, A): la información que recibe es interna, siendo su confidencialidad media. Su integridad es alta, porque se deposita mucha confianza en este equipo. La disponibilidad es alta, porque la web debe estar disponible para advertir que no hay venta. 
+
+Firewall (M, A, M): la información que procesa tiene un nivel de confidencialidad medio, el servicio que presta tiene un nivel de confianza alto, y se admiten interrupciones, al igual que la información que protege. 
+
+Personas 
+
+Administrador de base de datos (M, M, A): la información que maneja es interna, de manera que confidencialidad e integridad serán medias. La disponibilidad es elevada, porque sin base de datos y sin su mantenimiento no hay negocio. Determinar los requisitos CIA del proceso, a partir de sus componentes:
 
 #### Solución
 

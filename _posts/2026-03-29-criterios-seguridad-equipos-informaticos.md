@@ -12,18 +12,24 @@ img_path: /assets/img/criterios-seguridad-equipos-informaticos/
 Para la norma ISO 17799 e ISO 27001, la preservación de confidencialidad, integridad y disponibilidad de la información.
 
 {:.question}
-¿Qué es la confidencialidad? 
+¿Qué es la confidencialidad?
 
 {:.question}
-¿Qué es la integridad? 
+¿Qué es la integridad?
 
 {:.question}
-¿Qué es la disponibilidad? 
+¿Qué es la disponibilidad?
 
 Para el Ministerio de Administraciones Públicas, es la capacidad de las redes o de los sistemas de información, de resistir, con un determinado nivel de confianza, los accidentes o acciones ilícitas o malintencionadas que comprometan la disponibilidad, autenticidad, integridad y confidencialidad de los datos almacenados o transmitidos, y de los servicios que dichas redes y sistemas ofrecen o hacen accesibles.
 
 {:.question}
 ¿Qué es la autenticidad?
+
+> Actividad 01
+{:.prompt-info}
+
+> Actividad 02
+{:.prompt-info}
 
 {:.subsection}
 ### Amenazas, vulnerabilidades e incidentes de seguridad
@@ -42,10 +48,16 @@ Por último, cuando una amenaza o un conjunto de ellas sucede, y aprovecha una v
 
 Normalmente, las amenazas serán genéricas, y no se podrán eliminar por completo, mientras que las vulnerabilidades serán particulares de cada equipo, y sí permiten intervenir en ellas. Frente a los incidentes de seguridad, se deben disponer contramedidas o salvaguardas que fortalezcan el sistema. Las contramedidas persiguen conocer, prevenir, impedir, reducir y controlar el daño que podría tener un equipo.
 
+> Actividad 03
+{:.prompt-info}
+
+> Actividad 04
+{:.prompt-info}
+
 {:.subsection}
 ### Principios de seguridad
 
-no existe la seguridad total
+No existe la seguridad total.
 
 La seguridad se apoya en tres aspectos o “principios de seguridad” esenciales:
 
@@ -130,6 +142,9 @@ Para determinar las amenazas, o encontrar nuevas, ayudará saber que pueden clas
 - Amenazas debidas al entorno (ambiente), o debidas al hombre.
 - Amenazas accidentales o intencionadas.
 
+> Actividad 08
+{:.prompt-info}
+
 <details class="card mb-2">
   <summary class="card-header question">¿Qué es la criptografía?</summary>
   <div class="card-body" markdown="1">
@@ -192,6 +207,8 @@ Las amenazas no pueden impedirse en su totalidad, por lo que deben contemplarse,
   </div>
 </details>
 
+> Actividad 05
+{:.prompt-info}
 
 {:.subsection}
 ### Seguridad física
@@ -215,9 +232,11 @@ Habitualmente, el incidente más frecuente por acceso físico es accidental o no
 - Establecer y definir áreas de acceso público, de entrega, de carga, etc. 
 - Protección contra locales o actividades cercanas (incendios, explosiones, vías de vehículos, o cargas en movimiento).
 
-
 {:.question}
 ¿Conoces alguna película donde se aprovechen vulnerabilidades físicas para acceder a la información de un ordenador?
+
+> Actividad 06
+{:.prompt-info}
 
 {:.subsection}
 ### Seguridad de acceso lógico
@@ -273,6 +292,9 @@ Si.
   </div>
 </details>
 
+> Actividad 07
+{:.prompt-info}
+
 {:.section}
 ## La gestión de la seguridad informática como complemento a salvaguardas y medidas tecnológica 
 
@@ -310,8 +332,8 @@ La solución, sin embargo, es nuevamente sencilla, y consiste en aplicar un prin
 
 Por ejemplo, para el control de acceso a una estación de trabajo, donde los usuarios realizan labores ofimáticas sobre datos no confidenciales, bastaría inicialmente emplear un sistema de usuario y contraseña, integrado en el propio sistema operativo. Parece una medida proporcional en coste al objetivo de seguridad, que vendrá marcado por el riesgo que introducen en la empresa los sistemas informáticos accesibles desde esos puestos.
 
-<details class="card mb-2">Si un usuario puede realizar transferencias entre cuentas de clientes y proveedores, ¿qué control de acceso deberíamos implementar?
-  <summary class="card-header question"></summary>
+<details class="card mb-2">
+  <summary class="card-header question">Si un usuario puede realizar transferencias entre cuentas de clientes y proveedores, ¿qué control de acceso deberíamos implementar?</summary>
   <div class="card-body" markdown="1">
 
 Debería emplearse un sistema de autenticación fuerte, basado no solo en algo que sepa el usuario, como su contraseña, sino también en algo que el usuario tenga, como su DNI electrónico.

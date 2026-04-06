@@ -9,6 +9,12 @@ img_path: /assets/img/plantilla/
 > Artículo en construcción.
 {:.prompt-warning}
 
+## Expresiones regulares
+
+([A-Za-záéíóú,\.“”\(\)])\n([A-Za-záéíóú,\.“”\(\)])
+
+$1 $2
+
 ## Plantillas para copiar y pegar
 
 {:.question}
