@@ -12,7 +12,7 @@ img_path: /assets/img/propagacion-eventos-javascript/
 Este artículo es la continuación de [Eventos en JavaScript](/posts/eventos-javascript/).
 
 {:.section}
-## Objeto Event
+## Objeto Evento
 
 Generalmente, los manejadores de eventos necesitan información adicional para procesar las tareas que tienen que realizar. Si una función procesa, por ejemplo, el evento click, es posible que necesite conocer la posición en la que estaba el ratón en el momento de realizar el click.
 

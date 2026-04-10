@@ -26,6 +26,15 @@ Si.
 Una función contenida en un objeto se conoce como un método. Los métodos no son diferentes de las funciones que has visto anteriormente, excepto que han sido diseñados para ser utilizados en el contexto de un objeto, y por lo tanto, tendrán acceso a las propiedades de ese objeto. Esta conexión entre propiedades y métodos es uno de los ejes centrales de la orientación a objetos.
 
 {:.section}
+## Creación de objetos
+
+Existen diferentes maneras de crear objetos en JavaScript. 
+
+Mira el siguiente video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Gcxa_92X1BY?si=46w9a85CqYNP05xY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+{:.section}
 ## Acceso a los atributos de un objeto
 
 Se puede acceder a los atributos de un objeto utilizando la notación de punto `.` o corchetes `[]`.
