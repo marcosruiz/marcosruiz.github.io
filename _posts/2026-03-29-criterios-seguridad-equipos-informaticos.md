@@ -4,6 +4,7 @@ date: 2026-03-29 9:00:00 +0100
 categories: [Seguridad Informática, Seguridad en equipos informáticos]
 tags: [seguridad, informática, certificado, profesionalidad, mf0486_3, equipos, informáticos, ifct0109, inaem]
 img_path: /assets/img/criterios-seguridad-equipos-informaticos/
+math: true
 ---
 
 {:.section}
