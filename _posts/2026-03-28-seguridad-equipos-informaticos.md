@@ -11,15 +11,15 @@ pin: true
 
 - UD00 - [Conceptos básicos de seguridad informática](/posts/conceptos-basicos-seguridad-informatica/)
 - UD01 - [Criterios generales comúnmente aceptados sobre seguridad de los equipos informáticos](/posts/criterios-seguridad-equipos-informaticos/)
-- UD02 - [Análisis de impacto del negocio](/posts/analisis-impacto-negocio/)
-- UD03 - [Gestión de riesgos](/posts/gestion-riesgos/)
-- UD04 - Plan de implantación de seguridad.
-- UD05 - Protección de datos de carácter personal.
-- UD06.1 - Seguridad física e industrial de los sistemas.
-- UD06.2 - Seguridad lógica de sistemas.
-- UD07 - Identificación de servicios.
-- UD08 - Robustecimiento de sistemas.
-- UD09 - Implantación y configuración de cortafuegos.
+- UD02 - Análisis de impacto del negocio
+- UD03 - Gestión de riesgo
+- UD04 - Plan de implantación de seguridad
+- UD05 - Protección de datos de carácter personal
+- UD06.1 - Seguridad física e industrial de los sistemas
+- UD06.2 - Seguridad lógica de sistemas
+- UD07 - Identificación de servicios
+- UD08 - Robustecimiento de sistemas
+- UD09 - Implantación y configuración de cortafueg
 
 ## Tareas
 

@@ -99,7 +99,7 @@ Se parte de una empresa que provee alojamiento de páginas web, con un sistema d
 
 1. Un fallo del suministro eléctrico, caracterizado por:
   - Impacto o daño = 10.000 €
-  - Probabilidad de ocurrencia de la amenaza= 0.
+  - Probabilidad de ocurrencia de la amenaza= 0.1
 2. Un ataque dirigido desde internet, caracterizado por:
   - Impacto o daño =500.000 €
   - Probabilidad de ocurrencia de la amenaza= 0.005
