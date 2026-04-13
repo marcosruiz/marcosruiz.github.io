@@ -77,7 +77,7 @@ Por ejemplo, si la amenaza de un corte de suministro eléctrico aprovecha la vul
 
 El riesgo es una medida del daño probable que causará una amenaza, que aprovecha una vulnerabilidad para causar un daño. Es mayor cuanto más frecuente sea la aparición de la amenaza, y cuanto mayor sea el daño del incidente que acarree. Una aproximación cuantitativa sencilla es emplear la siguiente fórmula:
 
-$$Riesgo = (probabilidad de ocurrencia de una amenaza) x (impacto o daño)$$
+$$Riesgo = (probabilidad\:de\:ocurrencia\:de\:una\:amenaza) x (impacto\:o\:daño)$$
 
 Se puede reducir el riesgo, añadiendo las contramedidas que reduzcan las vulnerabilidades a las posibles amenazas. Cuantas más contramedidas se dispongan, es decir, cuantos más recursos se dediquen a la seguridad de los equipos informáticos, menor es el daño probable, o lo que es lo mismo, menor es el riesgo para el sistema de información.
 
@@ -181,8 +181,7 @@ Por ejemplo, son salvaguardas preventivas las relacionadas con los controles de 
 
 Por ejemplo, son salvaguardas de carácter reactivo las copias de seguridad. Las copias no evitan que se produzca un incidente que derive en pérdida de información, pero sí reducen el daño limitando la pérdida a la información modificada desde la última copia de seguridad verificada
 
-Como aclaración de salvaguarda de “no hacer nada”, se tomará de ejemplo una empresa, cuya política de seguridad establece que se aprobarán los riesgos, cuando sean inferiores al 10 % del valor de los activos. Si el análisis de riesgos establece que este es del 5
-% del valor de los equipos, puede decidirse asumirlo, y no interponer salvaguardas para reducirlo; pero siempre debe ponerse en conocimiento de la Dirección, que es el órgano responsable en última instancia del riesgo que se asume.
+Como aclaración de salvaguarda de “no hacer nada”, se tomará de ejemplo una empresa, cuya política de seguridad establece que se aprobarán los riesgos, cuando sean inferiores al 10 % del valor de los activos. Si el análisis de riesgos establece que este es del 5 % del valor de los equipos, puede decidirse asumirlo, y no interponer salvaguardas para reducirlo; pero siempre debe ponerse en conocimiento de la Dirección, que es el órgano responsable en última instancia del riesgo que se asume.
 
 {:.subsection}
 ### Seguridad de recursos humanos
@@ -193,10 +192,15 @@ Definición de roles y responsabilidades que contraerá el trabajador. Investiga
 {:.subsection}
 ### Seguridad ambiental
 
-Los equipos informáticos deben disponer de un entorno adecuado. Por ejemplo, no es óptimo que un servidor empresarial comparta las mismas condiciones de temperatura y suministro eléctrico que los ordenadores de usuario. De ser posible, hay que proporcionarle un espacio mejor, porque el riesgo de una amenaza actuando sobre él es mayor. Si existe la posibilidad, debe proporcionarse un sistema de alimentación eléctrica ininterrumpido, y unas condiciones de temperatura adecuadas (por ejemplo entre
-20° y 25°, que reduzcan el deterioro de sus componentes si se vieran forzados a trabajar a temperaturas elevadas). Debe intentar ubicarse en un recinto separado, que se denominará en adelante Centro de Proceso de Datos o CPD. Las amenazas vistas en el apartado anterior, en la categoría de “desastres naturales”, y amenazas “de origen industrial”, precisan de salvaguardas, de las que las más habituales son:
-Medidas que eviten el fuego, el humo o el agua: sistema anti-
-incendio y anti-inundaciones, bien solo de alarma, o incluso de extinción del incendio, o de evacuación del agua. Medidas que eviten las vibraciones, golpes, y caídas accidentales: como la fijación en armarios industriales para fijación de equipos informáticos, o armarios tipo rack). Medidas para proporcionar temperatura y humedad adecuadas, como equipos de aire acondicionado, y alarmas por exceso, o por defecto (riesgo de condensación). Medidas que eviten fallos de suministro eléctrico (corte del suministro, variaciones de tensión por encima o por debajo del suministro nominal, caídas de rayos, etc.). Seguridad del cableado, tanto en los materiales empleados, como en su disposición o tendido, siguiendo pautas de un sistema de cableado estructurado, que aseguren una correcta acometida al CPD, un trazado interior adecuado, y unas conexiones a los equipos correctas, de manera practicable, ordenada, e identificada. Un mantenimiento preventivo de los equipos, según indicaciones del fabricante, y al menos con chequeos periódicos generales (vías de salida de aire de los chasis, revisiones de temperatura de los procesadores y/o placa base, revisiones de leds, u otros indicadores del buen funcionamiento de discos duros, fuentes de alimentación, etc.). Asegurar condiciones de seguridad para desplazamientos del equipo fuera del CPD (vigilancia, exposición a campos electromagnéticos, condiciones de embalaje, y transporte). Seguridad al final del ciclo de vida del equipo, incluida su destrucción segura.
+Los equipos informáticos deben disponer de un entorno adecuado. Por ejemplo, no es óptimo que un servidor empresarial comparta las mismas condiciones de temperatura y suministro eléctrico que los ordenadores de usuario. De ser posible, hay que proporcionarle un espacio mejor, porque el riesgo de una amenaza actuando sobre él es mayor. Si existe la posibilidad, debe proporcionarse un sistema de alimentación eléctrica ininterrumpido, y unas condiciones de temperatura adecuadas (por ejemplo entre 20° y 25°, que reduzcan el deterioro de sus componentes si se vieran forzados a trabajar a temperaturas elevadas). Debe intentar ubicarse en un recinto separado, que se denominará en adelante Centro de Proceso de Datos o CPD. Las amenazas vistas en el apartado anterior, en la categoría de “desastres naturales”, y amenazas “de origen industrial”, precisan de salvaguardas, de las que las más habituales son:
+
+- Medidas que eviten el fuego, el humo o el agua: sistema anti-incendio y anti-inundaciones, bien solo de alarma, o incluso de extinción del incendio, o de evacuación del agua. 
+- Medidas que eviten las vibraciones, golpes, y caídas accidentales: como la fijación en armarios industriales para fijación de equipos informáticos, o armarios tipo rack). 
+- Medidas para proporcionar temperatura y humedad adecuadas, como equipos de aire acondicionado, y alarmas por exceso, o por defecto (riesgo de condensación). 
+- Medidas que eviten fallos de suministro eléctrico (corte del suministro, variaciones de tensión por encima o por debajo del suministro nominal, caídas de rayos, etc.). 
+- Seguridad del cableado, tanto en los materiales empleados, como en su disposición o tendido, siguiendo pautas de un sistema de cableado estructurado, que aseguren una correcta acometida al CPD, un trazado interior adecuado, y unas conexiones a los equipos correctas, de manera practicable, ordenada, e identificada. 
+- Un mantenimiento preventivo de los equipos, según indicaciones del fabricante, y al menos con chequeos periódicos generales (vías de salida de aire de los chasis, revisiones de temperatura de los procesadores y/o placa base, revisiones de leds, u otros indicadores del buen funcionamiento de discos duros, fuentes de alimentación, etc.). 
+- Asegurar condiciones de seguridad para desplazamientos del equipo fuera del CPD (vigilancia, exposición a campos electromagnéticos, condiciones de embalaje, y transporte). Seguridad al final del ciclo de vida del equipo, incluida su destrucción segura.
 
 <details class="card mb-2">
   <summary class="card-header question">¿Podemos impedir una amenaza al 100%?</summary>
@@ -214,7 +218,9 @@ Las amenazas no pueden impedirse en su totalidad, por lo que deben contemplarse,
 {:.subsection}
 ### Seguridad física
 
-El acceso físico a los ordenadores y equipos aumenta el riesgo de cualquier incidente. Debe aplicarse el criterio de conceder acceso exclusivamente a quien lo necesite por sus funciones y, a ser posible, concederlo solamente cuándo y cómo lo necesite (por ejemplo en un horario determinado, y/o en presencia de otra persona). Así, en general, los usuarios no deben tener acceso físico a servidores, o a equipos de comunicaciones; tampoco los desarrolladores de aplicaciones, ni administradores de bases de datos, ni la Dirección de la empresa, deberían tener acceso físico a servidores o equipos de comunicaciones, porque, en todos esos casos, su trabajo no lo exige. Las consecuencias de un ataque con acceso físico, serán normalmente de máxima gravedad, porque se puede lograr el máximo nivel de acceso posible a toda la información. Entre los infractores, se pueden encontrar los propios usuarios o trabajadores de la empresa, antiguos empleados que conserven sistemas de acreditación que les den acceso, y personas externas, como ladrones, salteadores, o hackers.
+El acceso físico a los ordenadores y equipos aumenta el riesgo de cualquier incidente. Debe aplicarse el criterio de conceder acceso exclusivamente a quien lo necesite por sus funciones y, a ser posible, concederlo solamente cuándo y cómo lo necesite (por ejemplo en un horario determinado, y/o en presencia de otra persona). Así, en general, los usuarios no deben tener acceso físico a servidores, o a equipos de comunicaciones; tampoco los desarrolladores de aplicaciones, ni administradores de bases de datos, ni la Dirección de la empresa, deberían tener acceso físico a servidores o equipos de comunicaciones, porque, en todos esos casos, su trabajo no lo exige. 
+
+Las consecuencias de un ataque con acceso físico, serán normalmente de máxima gravedad, porque se puede lograr el máximo nivel de acceso posible a toda la información. Entre los infractores, se pueden encontrar los propios usuarios o trabajadores de la empresa, antiguos empleados que conserven sistemas de acreditación que les den acceso, y personas externas, como ladrones, salteadores, o hackers.
 
 <details class="card mb-2">
   <summary class="card-header question">¿Cómo se denomina a la persona que realiza un infractor o atacante es un trabajador de la propia empresa?</summary>
@@ -226,7 +232,9 @@ Insider
   </div>
 </details>
 
-Habitualmente, el incidente más frecuente por acceso físico es accidental o no intencionado: se trata de errores humanos protagonizados por personal del departamento de informática o TIC, por personal de servicios auxiliares (limpieza, seguridad o mantenimiento), o incluso por proveedores o visitas. Se trata, por tanto, de proteger a los equipos de accidentes que ocurren cuando hay acceso humano a los equipos. Entre las salvaguardas más habituales para proteger el acceso físico, se encuentran las siguientes:
+Habitualmente, el incidente más frecuente por acceso físico es accidental o no intencionado: se trata de errores humanos protagonizados por personal del departamento de informática o TIC, por personal de servicios auxiliares (limpieza, seguridad o mantenimiento), o incluso por proveedores o visitas. Se trata, por tanto, de proteger a los equipos de accidentes que ocurren cuando hay acceso humano a los equipos. 
+
+Entre las salvaguardas más habituales para proteger el acceso físico, se encuentran las siguientes:
 
 - Establecer un perímetro de seguridad física (local, habitaciones), con elementos constructivos acordes (puertas, paredes, ventanas, techos, suelos, etc.). 
 - Mecanismos de control de ingreso físico (acreditaciones, cerraduras automáticas, etc.). 
