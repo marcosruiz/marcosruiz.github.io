@@ -7,6 +7,9 @@ img_path: /assets/img/seguridad-equipos-informaticos/
 pin: true
 ---
 
+> Deprecated
+{:.prompt-warning}
+
 ## Unidades
 
 - UD00 - [Conceptos básicos de seguridad informática](/posts/conceptos-basicos-seguridad-informatica/)
