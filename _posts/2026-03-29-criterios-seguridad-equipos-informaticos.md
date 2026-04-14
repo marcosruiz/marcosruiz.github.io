@@ -371,6 +371,12 @@ Ambas herramientas permiten dar los pasos de planificación y medida, y serán l
 
 La implantación de un SGSI muy exhaustivo puede ser inviable, y paralizar las repeticiones “Plan-Do-Check-Act”.
 
+## MAGERIT
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/06nKNXLc7pQ?si=XTwlsh6mSIcADSTm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PnwCNtu6o20?si=XtVHZjCCVwRj1TFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Bibliografía
 
 - MF0486_3: Seguridad en equipos informáticos por José Francisco Giménez Albacete
