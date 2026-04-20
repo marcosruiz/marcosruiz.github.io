@@ -323,6 +323,9 @@ Constituyendo un ciclo de mejora continua de Deming (P-D-C-A), como muestra la s
 ![Ciclo de Deming](ciclo-deming.jpg)
 _Ciclo de Deming_
 
+![Ciclo de Deming de MAGERIT](image.png)
+_Ciclo de Deming de MAGERIT_
+
 <details class="card mb-2">
   <summary class="card-header question">¿En qué consiste el ciclo de mejora continua de Deming?</summary>
   <div class="card-body" markdown="1">
@@ -370,12 +373,6 @@ Las herramientas elementales para la correcta gestión de la seguridad informát
 Ambas herramientas permiten dar los pasos de planificación y medida, y serán las armas esenciales de un SGSI.
 
 La implantación de un SGSI muy exhaustivo puede ser inviable, y paralizar las repeticiones “Plan-Do-Check-Act”.
-
-## MAGERIT
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/06nKNXLc7pQ?si=XTwlsh6mSIcADSTm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PnwCNtu6o20?si=XtVHZjCCVwRj1TFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Bibliografía
 
